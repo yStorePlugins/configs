@@ -1,0 +1,67 @@
+# Nome da ESTRUTURA
+display-name: '&aTorre de Cacto'
+
+# Bloco que irá aparecer no preview caso esteja bloqueado de por
+preview-block: 'STAINED_GLASS:14'
+
+# Alterar a altura do y ao colocar (se quiser colocar pra setar no ar/setar dentro do solo)
+y-offset: 0
+
+# Blocos que serão desconsiderados e removidos ao setar a estrutura
+block-blacklist: [ 'GRASS', 'STONE' ]
+
+# Quantia de vezes que a estrutura irá se repetir (para cima)
+y-repeat-amount: 3
+
+# Quantia de vezes que a estrutura irá se repetir (para os lados)
+xz-repeat-amount: 1
+
+# Distância em blocos pros lados
+xz-distance: 4.0
+
+# Colocar de modo gradual
+gradual: false
+
+# Item que o jogador irá receber
+item:
+  material: CACTUS
+  name: '&aTorre de Cactos'
+  lore:
+    - '&fTamanho: &76x'
+    - ''
+    - '&fSHIFT + Direito'
+
+# Siglas de cada bloco para identificação no pattern
+blocks:
+  - 'C,CACTUS'
+  - 'X,AIR'
+  - 'D,DIRT'
+  - 'S,SAND'
+  - 'L,WOOD_STEP'
+
+# Modelagem da estrutura
+patterns:
+  sand1:
+    y: 1
+    pattern:
+      - 'SXS'
+      - 'XSX'
+      - 'SXS'
+  cactus:
+    y: 2
+    pattern:
+      - 'CLC'
+      - 'LCL'
+      - 'CLC'
+  sand2:
+    y: 3
+    pattern:
+      - 'XSX'
+      - 'SXS'
+      - 'XSX'
+  cactus2:
+    y: 4
+    pattern:
+      - 'LCL'
+      - 'CLC'
+      - 'LCL'

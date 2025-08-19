@@ -1,0 +1,28 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/tower give &8- &7Dar uma estrutura para um/todos os jogadores.
+    &a/tower reload &8- &7Recarrega as configurações.
+
+  structure-give: '&aVocê deu &7{amount}x {structure}&a para o jogador &7{player}&a.'
+  structure-received: '&aVocê recebeu &7{amount}x {structure}&a.'
+  structure-list: |
+    &cEstrutura não encontrada.
+    &cEstruturas disponíveis: &f{list}
+  structure-activated: '&aEstrutura ativada com sucesso.'

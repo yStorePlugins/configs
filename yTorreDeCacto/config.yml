@@ -1,0 +1,33 @@
+#       _____                   ____        ____           _
+#  _   |_   _|__  _ __ _ __ ___|  _ \  ___ / ___|__ _  ___| |_ ___
+# | | | || |/ _ \| '__| '__/ _ \ | | |/ _ \ |   / _` |/ __| __/ _ \
+# | |_| || | (_) | |  | | |  __/ |_| |  __/ |__| (_| | (__| || (_) |
+#  \__, ||_|\___/|_|  |_|  \___|____/ \___|\____\__,_|\___|\__\___/
+#  |___/
+#
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+general:
+  # Ativar o preview no shift
+  shift-preview-enabled: true
+  # Ativar o preview sem shift
+  no-shift-preview-enabled: true
+  # Ativar o place no shift
+  shift-place: true
+  # Ativar o place sem shift
+  no-shift-place: false
+  # Tempo que levará para atualizar o preview
+  # em ticks (20 ticks = 1 segundo)
+  refresh-time: 5
+  # Distância do preview
+  # em blocos
+  preview-distance: 5
+  # Ativar o uso da task síncrona
+  sync-task: false
