@@ -1,0 +1,295 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de configurações
+settings:
+  name: '&8Feira'
+  size: 27
+  items:
+    icon-slot: 10
+    name-slot: 12
+    area-slot: 13
+    hologram-slot: 14
+    prices-slot: 15
+    spawn-slot: 16
+    name:
+      material: 'NAME_TAG'
+      name: '&eNome'
+      lore:
+        - '&fAtual: &a{name}&f.'
+        - ''
+        - '&aClique para trocar'
+    icon:
+      material: 'ITEM_FRAME'
+      name: '&eÍcone'
+      lore: [ '&7Clique para trocar' ]
+    area:
+      material: 'WOOD_AXE'
+      name: '&eÁrea inicial'
+      lore:
+        - '&7Selecione a região.'
+        - '&7desta mina.'
+        - ''
+        - '&fPOS-1: &7{pos1} &8({world1})&f.'
+        - '&fPOS-2: &7{pos2} &8({world2})&f.'
+        - ''
+        - '&aClique para pegar a wand'
+    spawn:
+      material: 'COMPASS'
+      name: '&eSpawn'
+      lore:
+        - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&aClique com esquerdo para teleportar'
+        - '&aClique com direito para alterar'
+        - '&aAperte Q para deletar'
+    hologram:
+      material: 'ARMOR_STAND'
+      name: '&eHolograma'
+      lore:
+        - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&aBotão &fESQUERDO&a para definir'
+        - '&aBotão &fDIREITO&a para deletar'
+    prices:
+      material: 'EMERALD'
+      name: '&aPreços'
+      lore:
+        - '&7Comercialize a feira para os'
+        - '&7outros jogadores do servidor.'
+        - ''
+        - '&aClique para gerenciar.'
+
+# Menu de mudar ícone
+change-icon:
+  name: '&8Feira'
+  size: 27
+  items:
+    input-slot: 13
+    cancel-slot: 18
+    confirm-slot: 26
+    cancel:
+      material: ARROW
+      name: '&cCANCELAR'
+      lore:
+        - '&7Clique para cancelar e voltar'
+        - '&7ao menu de gerenciamento.'
+    confirm:
+      material: ARROW
+      name: '&aCONFIRMAR'
+      lore:
+        - '&7Clique para confirmar e alterar'
+        - '&7o ícone da feira.'
+  facing:
+    e1:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:15'
+    e2:
+      slot: 4
+      material: 'STAINED_GLASS_PANE:15'
+    e3:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:15'
+    e4:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:15'
+    e5:
+      slot: 10
+      material: 'STAINED_GLASS_PANE:15'
+    e6:
+      slot: 11
+      material: 'STAINED_GLASS_PANE:15'
+    e7:
+      slot: 12
+      material: 'STAINED_GLASS_PANE:15'
+    e8:
+      slot: 14
+      material: 'STAINED_GLASS_PANE:15'
+    e9:
+      slot: 15
+      material: 'STAINED_GLASS_PANE:15'
+    e10:
+      slot: 16
+      material: 'STAINED_GLASS_PANE:15'
+    e11:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:15'
+    e12:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:15'
+    e13:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:15'
+    e14:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:15'
+
+# Menu de feiras
+feiras:
+  name: '&8Feiras'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
+  feira-rent:
+    name: '&aFeira &7(&e{name}&7)'
+    lore:
+      - ''
+      - '&f> Nome: &b{name}'
+      - '&f> Dono: &c{owner}'
+      - '&fO aluguel vence em: &a{expire}'
+      - ''
+      - '&aClique para ir até essa feira.'
+  feira-available:
+    name: '&aFeira &7(&e{name}&7)'
+    lore:
+      - ''
+      - '&f> Nome: &b{name}'
+      - '&7Renovação a cada: &f{time_to_renew}'
+      - ''
+      - '&aClique para teleportar ou alugar.'
+  items:
+    empty-slot: 22
+    empty:
+      material: 'WEB'
+      name: '&cVazio'
+      lore:
+        - '&7Não há nenhuma feira cadastrada'
+        - '&7no nosso servidor.'
+  # Seletor do filtro
+  selector:
+    slot: 40
+    material: 'HOPPER'
+    name: '&aFiltro'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+    # Nomes do seletor
+    names:
+      mine: 'Minhas Feiras'
+      rent: 'Alugadas'
+      available: 'Disponíveis'
+
+# Menu de feira disponível
+feira-available:
+  name: '&8Feira'
+  size: 27
+  back-slot: 9
+  info:
+    name: '&aFeira &7(&e{name}&7)'
+    lore:
+      - ''
+      - '&f> Nome: &b{name}'
+      - '&7Renovação a cada: &f{time_to_renew}'
+      - ''
+  items:
+    info-slot: 11
+    rent-slot: 13
+    teleport-slot: 15
+    rent:
+      material: 'GOLD_INGOT'
+      name: '&eAlugar'
+      lore:
+        - '&7Alugue essa feira e comercialize'
+        - '&7seus itens com outros jogadores.'
+        - ''
+        - '&f> Preço: &2$ &a{money} coins&f.'
+        - '&f> Renovação: &b{rent_type}&f.'
+        - ''
+        - '&aClique para alugar'
+    teleport:
+      material: 'ENDER_PEARL'
+      name: '&aTeleportar'
+      lore:
+        - '&7Teleporte para o local da feira e veja'
+        - '&7com seus olhos o seu futuro local de'
+        - '&7atividade laboral.'
+        - ''
+        - '&aClique para teleportar'
+
+# Menu de feira alugada
+feira-rent:
+  name: '&8Feira'
+  size: 27
+  back-slot: 9
+  info:
+    name: '&aFeira &7(&e{name}&7)'
+    lore:
+      - ''
+      - '&f> Nome: &b{name}'
+      - '&7Renovação a cada: &f{time_to_renew}'
+      - ''
+  items:
+    info-slot: 11
+    renew-slot: 13
+    auto-renew-slot: 14
+    teleport-slot: 15
+    renew:
+      material: 'GOLD_INGOT'
+      name: '&eRenovar'
+      lore:
+        - '&7Renove o aluguel da feira e mantenha o'
+        - '&7comércio dos seus itens com outros jogadores.'
+        - ''
+        - '&f> Preço: &2$ &a{money} coins&f.'
+        - ''
+        - '&aClique para renovar'
+    teleport:
+      material: 'ENDER_PEARL'
+      name: '&aTeleportar'
+      lore:
+        - '&7Teleporte para o local da feira e veja'
+        - '&7com seus olhos o seu futuro local de'
+        - '&7atividade laboral.'
+        - ''
+        - '&aClique para teleportar'
+    auto-renew-on:
+      material: 'INK_SACK:10'
+      name: '&eRenovação Automática'
+      lore:
+        - '&7Mantenha o aluguel da sua feira sempre'
+        - '&7em dias e não afete seu comércio.'
+        - ''
+        - '&fEstado: &aATIVO'
+        - ''
+        - '&aClique para alternar'
+    auto-renew-off:
+      material: 'INK_SACK:8'
+      name: '&eRenovação Automática'
+      lore:
+        - '&7Mantenha o aluguel da sua feira sempre'
+        - '&7em dias e não afete seu comércio.'
+        - ''
+        - '&fEstado: &cINATIVO'
+        - ''
+        - '&aClique para alternar'
+
+# Menu de seleção de economias
+providers:
+  name: '&8Feira'
+  size: 27
+  previous: 9
+  next: 17
+  back: 18
+  slots: [ 10, 11, 12, 13, 14 ]

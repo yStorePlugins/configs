@@ -1,0 +1,80 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+# Mensagens ao entrar em uma feira
+entry:
+  available:
+    chat: ''
+    actionbar: '&aFeira disponível&a.'
+    title: '&aFeira disponível&a.'
+  rent:
+    chat: ''
+    actionbar: '&aFeira de &f{player}&a.'
+    title: '&aFeira de<nl>&f{player}&a.'
+
+# Mensagens ao sair de uma feira alugada
+exit:
+  chat: ''
+  actionbar: '&cVocê saiu da feira de &f{player}&c.'
+  title: ''
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &a/feira - Abre o menu principal
+    &a/feira [nome] - Abre o menu da sua feira ou teleporta para uma feira
+
+  help-staff: |
+
+    &a/feira - Abre o menu principal
+    &a/feira [nome] - Abre o menu da sua feira ou teleporta para uma feira
+
+    &a/feira criar <nome> - Criar uma feira
+    &a/feira deletar [nome] - Deletar uma feira
+    &c/feira reload - Recarrega as configurações
+
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  item-no: '&cO item não pode ser nulo.'
+  feira-renew-type: '&cTipo de renovação não encontrado. Use: &fDAILY, WEEKLY, MONTHLY&c.'
+  feira-already: '&cEssa feira {feira} já existe.'
+  feira-found: '&cEssa feira {feira} não existe.'
+  feira-created: '&aFeira &f{feira}&a criada com sucesso..'
+  feira-deleted: '&aFeira &f{feira}&a deletada com sucesso..'
+  feira-location-set: '&aLocalização &f{location} &asetada com sucesso.'
+  feira-location-found: '&cLocalização &f{location} &cnão encontrada.'
+  feira-location-del: '&aLocalização &f{location} &adeletada com sucesso.'
+  feira-location-teleported: '&aTeleportado para a localização &f{location} &acom sucesso.'
+  feira-pos-set: '&aPosição &f{pos} &asetada com sucesso.'
+  feira-pos-found: '&cPosição &f{pos} &cnão encontrada.'
+  feira-area-set: '&aÁrea setada com sucesso.'
+  digit-name: |
+
+    &aDigite o nome para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-price: |
+
+    &aDigite o preço que você deseja.'
+    &7para cancelar digite &ncancelar&7.'
+
+  feira-change-name: '&aVocê alterou o nome da feira para &e{name}&a.'
+  feira-change-icon: '&aÍcone alterado com sucesso.'
+  feira-change-price: '&aVocê mudou o valor para {amount}.'
+  feira-rent: '&aVocê alugou a feira &e{feira}&a.'
+  feira-renew: '&aVocê renovou o aluguel da feira &e{feira}&a.'
+  feira-renew-cant: '&cVocê só pode renovar o aluguel quando a data de vencimento estiver menor ou igual a 10% do tempo total.'
+  feira-max: '&cVocê atingiu o limite máximo de feiras ({max}).'
