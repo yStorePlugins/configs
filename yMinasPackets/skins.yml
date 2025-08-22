@@ -1,0 +1,45 @@
+skins:
+  stone:
+    order: 1
+    type: 'STONE'
+    item:
+      material: 'STONE'
+      name: '&aSkin de Pedra'
+      lore: ['&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aClique para ativar']
+    menu:
+      equip:
+        material: 'STONE'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aClique para equipar' ]
+      equipped:
+        material: 'STONE'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aJá está equipada' ]
+      has:
+        material: 'STONE'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&cVocê não possui esta skin' ]
+    name: '&fPicareta de Pedra &6[{blocks_broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
+      - ''
+      - '&a+10% ( PEDRA )'
+      - ''
+    bonus: 10.0
+    bonus-blocks: 10.0
+    # Poder da skin (yMinasPacketsDeluxeAddon)
+    power:
+      # Encantamento que será ativado
+      enchant: 'destructor'
+      # Delay para usar novamente
+      # em segundos
+      delay: 6000
+      # Mensagens ao ativar
+      messages:
+        chat: '<nl>&c&lPODER: &cAtivado com sucesso. &fQuebre um bloco.<nl>'
+        actionbar: ''
+        title: ''

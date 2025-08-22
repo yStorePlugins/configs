@@ -1,0 +1,68 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+
+# Providers disponíveis:
+#
+#   AtlasEconomiaSecundaria, AtlasMinas, AtlasMinasV2,
+#   JH_Shop, LegendaryEconomy, NextCash, PlayerPoints,
+#   StormEconomiaSecundaria, StormMinas, TGCash,
+#   yAlmas, yPoints, yRankup,
+#   Vault
+#
+
+economies:
+  money:
+    # Coloque o nome do plugin
+    # Para money deixe Money
+    provider: 'Money'
+    # Formato inteiro
+    display: 'Dinheiro'
+    # Formato abreviado
+    abbreviated: 'coins'
+    # Permitir que comercializem na loja com o jogador offline
+    allow-offline: true
+    # Permitir a fortuna multiplicar essa economia
+    allow-fortune: true
+    # Permissão para o usuário conseguir definir esta economia
+    permission: 'yminaspackets.provider.money'
+    # Formato do símbolo
+    symbol: '$'
+    # ‘Item’ que aparecerá
+    item-settings:
+      material: '209299a117bee88d3262f6ab98211fba344ecae39b47ec848129706dedc81e4f'
+      name: '&aEconomia'
+      lore:
+        - ''
+        - ' &7Tipo de economia: &fMoney&7.'
+        - ' &7Valor atual: &f{value}&7.'
+        - ''
+        - '&aClique para alterar'
+  yminaspackets:
+    # Coloque o nome do plugin
+    # Para money deixe Money
+    provider: 'yMinasPackets'
+    # Formato inteiro
+    display: 'Blocos'
+    # Formato abreviado
+    abbreviated: 'blocos'
+    # Formato do símbolo
+    symbol: '*'
+    # Permitir que comercializem na loja com o jogador offline
+    allow-offline: true
+    # Permitir a fortuna multiplicar essa economia
+    allow-fortune: true
+    # Permissão para o usuário conseguir definir esta economia
+    permission: 'yminaspackets.provider.yminaspackets'
+    # ‘Item’ que aparecerá
+    item-settings:
+      material: '209299a117bee88d3262f6ab98211fba344ecae39b47ec848129706dedc81e4f'
+      name: '&aEconomia'
+      lore:
+        - ''
+        - ' &7Tipo de economia: &fBlocos (yminaspackets)&7.'
+        - ' &7Valor atual: &f{value}&7.'
+        - ''
+        - '&aClique para alterar'

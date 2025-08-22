@@ -1,0 +1,310 @@
+# Configuração da boss-bar
+boss-bar:
+  # Ativar a boss-bar
+  enabled: true
+  # Mensagem da boss-bar
+  bar: 'Energia: {energy}/{next_energy} - {percentage}'
+
+# Encantamento do magnetismo
+magnet:
+  # Duração da animação
+  block-amount: 100
+  # Duração da animação
+  # em segundos
+  duration: 20
+
+# Encantamento do vampiro
+vampire:
+  # Mensagens que irão aparecer depois de 3s de ativo
+  messages:
+    title: 'Aproveite o luar...'
+    actionbar: ''
+    chat: ''
+  # Bônus por nível de vampiro
+  bonus-per-level: 1.0
+  # Partícula que ficará em volta do jogador
+  particle: 'soul'
+  # Tempo total do efeito
+  # em segundos
+  time: 10
+
+enchants:
+  guardian:
+    name: '§aGuardian'
+    pickaxe-level: 500
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 0.0002
+    radius: 20
+    level:
+      default: 0.0
+      maximum: 3000.0
+    messages:
+      title: '&3Guardian<nl>&fDisparando lasers...'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 120000000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 120000000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 100000000.0
+    displays:
+      can:
+        material: 'c25af966a326f9d98466a7bf8582ca4da6453de271b3bc9e59f57a99b63511c6'
+        name: '&3Guardian &8➟ &3&l{actual} &7/ &3&l{maximum}'
+        lore:
+          - '&3▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Chame o Guardian'
+          - '&7para proteger sua mina.'
+          - ''
+          - '&3Requisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&fClique Esquerdo: &71'
+          - '&fPressione Q: &7Evoluir 1000'
+      cant:
+        material: 'c25af966a326f9d98466a7bf8582ca4da6453de271b3bc9e59f57a99b63511c6'
+        name: '&3Guardian &8➟ &3&l{actual} &7/ &3&l{maximum}'
+        lore:
+          - '&3▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Chame o Guardian'
+          - '&7para proteger sua mina.'
+          - ''
+          - '&3Requisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&bVocê não possui os requisitos.'
+      maximum:
+        material: 'c25af966a326f9d98466a7bf8582ca4da6453de271b3bc9e59f57a99b63511c6'
+        name: '&3Guardian &8➟ &3&l{actual} &7/ &3&l{maximum}'
+        lore:
+          - '&3▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Chame o Guardian'
+          - '&7para proteger sua mina.'
+          - ''
+          - '&b&lGG! &3Você atingiu o máximo.'
+
+  twister:
+    name: '§aTornado'
+    pickaxe-level: 700
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 0.0001
+    radius: 10
+    level:
+      default: 0.0
+      maximum: 4000.0
+    messages:
+      title: '&bTornado<nl>&fOlha o vento...'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 500000000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 500000000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 400000000.0
+    displays:
+      can:
+        material: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        name: '&bTornado &8➟ &b&l{actual} &7/ &b&l{maximum}'
+        lore:
+          - '&b▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Convoque um Tornado'
+          - '&7para girar sua mina.'
+          - ''
+          - '&bExigências:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível requerido: &7{level}'
+          - ''
+          - '&fClique Esquerdo: &71'
+          - '&fPressione Q: &7Evoluir 1000'
+      cant:
+        material: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        name: '&bTornado &8➟ &b&l{actual} &7/ &b&l{maximum}'
+        lore:
+          - '&b▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Convoque um Tornado'
+          - '&7para girar sua mina.'
+          - ''
+          - '&bExigências:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível requerido: &7{level}'
+          - ''
+          - '&bVocê não possui os requisitos.'
+      maximum:
+        material: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        name: '&bTornado &8➟ &b&l{actual} &7/ &b&l{maximum}'
+        lore:
+          - '&b▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Convoque um Tornado'
+          - '&7para girar sua mina.'
+          - ''
+          - '&b&lGG! &bVocê atingiu o máximo.'
+
+  magnet:
+    name: '§aMagnetismo'
+    pickaxe-level: 120
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 0.001
+    radius: 250
+    level:
+      default: 0.0
+      maximum: 1000.0
+    messages:
+      title: '&cMagnetismo<nl>&fAtraindo blocos...'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 1500000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 1500000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 1200000.0
+    displays:
+      can:
+        material: '9ada2bddc8080af8fd41bcccc2bc77ff011177de1e81a34580acf3bb4525c6a7'
+        name: '&cMagnetismo &8➟ &c&l{actual} &7/ &c&l{maximum}'
+        lore:
+          - '&c▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Ative seu Magnetismo'
+          - '&7e atraia blocos próximos.'
+          - ''
+          - '&cRequisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&fClique Esquerdo: &71'
+          - '&fPressione Q: &7Evoluir 1000'
+      cant:
+        material: '9ada2bddc8080af8fd41bcccc2bc77ff011177de1e81a34580acf3bb4525c6a7'
+        name: '&cMagnetismo &8➟ &c&l{actual} &7/ &c&l{maximum}'
+        lore:
+          - '&c▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Ative seu Magnetismo'
+          - '&7e atraia blocos próximos.'
+          - ''
+          - '&cRequisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&cVocê não possui os requisitos.'
+      maximum:
+        material: '9ada2bddc8080af8fd41bcccc2bc77ff011177de1e81a34580acf3bb4525c6a7'
+        name: '&cMagnetismo &8➟ &c&l{actual} &7/ &c&l{maximum}'
+        lore:
+          - '&c▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Ative seu Magnetismo'
+          - '&7e atraia blocos próximos.'
+          - ''
+          - '&c&lGG! &cVocê atingiu o máximo.'
+
+  vampire:
+    name: '§aCrepúsculo'
+    pickaxe-level: 1250
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 0.000001
+    radius: 30
+    level:
+      default: 0.0
+      maximum: 50000.0
+    messages:
+      title: '&4&lCrepúsculo<nl>'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 1000000000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 1000000000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 800000000.0
+    displays:
+      can:
+        material: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        name: '&4Radiação X &8➟ &4&l{actual} &7/ &4&l{maximum}'
+        lore:
+          - '&4▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Entre no estado de Crepúsculo'
+          - '&7e irradie energia sombria.'
+          - ''
+          - '&4Requisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&fClique Esquerdo: &71'
+          - '&fPressione Q: &7Evoluir 1000'
+      cant:
+        material: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        name: '&4Radiação X &8➟ &4&l{actual} &7/ &4&l{maximum}'
+        lore:
+          - '&4▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Entre no estado de Crepúsculo'
+          - '&7e irradie energia sombria.'
+          - ''
+          - '&4Requisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&bVocê não possui os requisitos.'
+      maximum:
+        material: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        name: '&4Radiação X &8➟ &4&l{actual} &7/ &4&l{maximum}'
+        lore:
+          - '&4▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Entre no estado de Crepúsculo'
+          - '&7e irradie energia sombria.'
+          - ''
+          - '&b&lGG! &bVocê atingiu o máximo.'

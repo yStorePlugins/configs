@@ -1,0 +1,541 @@
+# Apague apenas os encantamentos que não for usar
+enchants:
+  layer-midas:
+    name: 'Layer-Midas'
+    pickaxe-level: 0
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 10
+    animation: true
+    duration: 30
+    level:
+      default: 0.0
+      maximum: 10.0
+    messages:
+      title: '&cLayer-Midas<nl>&cativado'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 100.0
+    displays:
+      can:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aLayer-Midas'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar uma linha'
+          - '&7de blocos especiais.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      cant:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aLayer-Midas'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar uma linha'
+          - '&7de blocos especiais.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      permission:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aLayer-Midas'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar uma linha'
+          - '&7de blocos especiais.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem permissão para evoluir este.'
+      maximum:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aLayer-Midas'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar uma linha'
+          - '&7de blocos especiais.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+
+  midas:
+    name: 'Midas'
+    pickaxe-level: 0
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 10
+    animation: true
+    duration: 30
+    level:
+      default: 0.0
+      maximum: 10.0
+    messages:
+      title: '&cMidas<nl>&cativado'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 100.0
+    displays:
+      can:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aMidas'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar uma mina'
+          - '&7de blocos especiais.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      cant:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aMidas'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar uma mina'
+          - '&7de blocos especiais.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      permission:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aMidas'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar uma mina'
+          - '&7de blocos especiais.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem permissão para evoluir este.'
+      maximum:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aMidas'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar uma mina'
+          - '&7de blocos especiais.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+
+  meteors:
+    name: 'Meteoros'
+    pickaxe-level: 0
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 10
+    level:
+      default: 0.0
+      maximum: 10.0
+    messages:
+      title: '&cMeteoros<nl>&cativado'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 100.0
+    displays:
+      can:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aMeteoros'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar bolas de fogo'
+          - '&7caindo do céu.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      cant:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aMeteoros'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar bolas de fogo'
+          - '&7caindo do céu.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      permission:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aMeteoros'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar bolas de fogo'
+          - '&7caindo do céu.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem permissão para evoluir este.'
+      maximum:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aMeteoros'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar bolas de fogo'
+          - '&7caindo do céu.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+
+  arrows:
+    name: 'Arrows'
+    pickaxe-level: 0
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 10
+    level:
+      default: 0.0
+      maximum: 10.0
+    messages:
+      title: '&cArrows<nl>&cativado'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 100.0
+    displays:
+      can:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aArrows'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar flechas'
+          - '&7caindo do céu.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      cant:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aArrows'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar flechas'
+          - '&7caindo do céu.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      permission:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aArrows'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar flechas'
+          - '&7caindo do céu.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem permissão para evoluir este.'
+      maximum:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aArrows'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar flechas'
+          - '&7caindo do céu.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+
+  boomerang:
+    name: 'Boomerang'
+    pickaxe-level: 0
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 10
+    duration: 20
+    level:
+      default: 0.0
+      maximum: 10.0
+    messages:
+      title: '&cBoomerang<nl>&cativado'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 100.0
+    displays:
+      can:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aBoomerang'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar um espiral'
+          - '&7que quebra blocos.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      cant:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aBoomerang'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar um espiral'
+          - '&7que quebra blocos.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      permission:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aBoomerang'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar um espiral'
+          - '&7que quebra blocos.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem permissão para evoluir este.'
+      maximum:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aBoomerang'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar um espiral'
+          - '&7que quebra blocos.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+
+  storm:
+    name: 'Storm'
+    pickaxe-level: 0
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 10
+    radius: 2
+    level:
+      default: 0.0
+      maximum: 10.0
+    messages:
+      title: '&cStorm<nl>&cativado'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 10000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 100.0
+    displays:
+      can:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aStorm'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar raios'
+          - '&7que quebram blocos.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      cant:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aStorm'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar raios'
+          - '&7que quebram blocos.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      permission:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aStorm'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar raios'
+          - '&7que quebram blocos.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{yminaspackets} blocos&f.'
+          - '&f > Nível necessário: &a{level}&f.'
+          - ''
+          - '&cVocê não tem permissão para evoluir este.'
+      maximum:
+        material: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        name: '&aStorm'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de spawnar raios'
+          - '&7que quebram blocos.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'

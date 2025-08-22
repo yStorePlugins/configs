@@ -1,0 +1,1177 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Mineração'
+  size: 36
+  items:
+    enchants-slot: 10
+    classe-slot: 11
+    mines-slot: 13
+    top-slot: 14
+    go-slot: 16
+    bombs-slot: 19
+    booster-slot: 20
+    areas-slot: 22
+    blocks-slot: 23
+    reset-slot: 25
+    friend-slot: 12
+    friends-mines-slot: 12
+    enchants:
+      material: 'b2f79016cad84d1ae21609c4813782598e387961be13c15682752f126dce7a'
+      name: '&aEncantamentos'
+      lore:
+        - '&7Gerencie os encantamentos da'
+        - '&7sua picareta.'
+        - ''
+        - '&aClique para acessar.'
+    classe:
+      material: LEATHER_CHESTPLATE
+      name: '&bClasses'
+      lore:
+        - '&7Upando sua classe você irá ganhar'
+        - '&7bônus na mineração, no ganho de'
+        - '&7coins e gemas.'
+        - ''
+        - '&fSua classe: &7{classe}'
+        - ''
+        - '&aClique para gerenciar as classes'
+    mines:
+      material: GOLD_INGOT
+      name: '&aMinas'
+      lore:
+        - '&7Veja as minas disponíveis no'
+        - '&7nosso servidor.'
+        - ''
+        - '&aClique para visualizar.'
+    top:
+      material: BOOK_AND_QUILL
+      name: '&aTop'
+      lore:
+        - '&7Veja os jogadores que'
+        - '&7se destacaram na mineração.'
+        - ''
+        - '&aClique para visualizar.'
+    go:
+      material: DIAMOND_PICKAXE
+      name: '&aIr minerar'
+      lore:
+        - '&7Teleportar para sua mina e começar'
+        - '&7a jornada de mineração.'
+        - ''
+        - ' &fSua mina: &b{mine}&f.'
+        - ''
+        - '&aClique para ir minerar'
+    exit:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&eSair da mineração'
+      lore:
+        - '&7Terminar sua jornada de mineração'
+        - '&7e sair da mina.'
+        - ''
+        - ' &fMina atual: &b{mine}&f.'
+        - ''
+        - '&aClique para sair da mineração'
+    bombs:
+      material: FIREBALL
+      name: '&bArsenal'
+      lore:
+        - '&7Leve bombas no seu arsenal para'
+        - '&7destruir a mina e ganhar muito'
+        - '&7dinheiro.'
+        - ''
+        - '&aClique para abrir o arsenal'
+    areas:
+      material: TNT
+      name: '&bÁreas'
+      lore:
+        - '&7Evolua sua área de mineração'
+        - '&7e tenha mais espaço para minerar.'
+        - ''
+        - '&aClique para fazer o upgrade'
+    blocks:
+      material: PAPER
+      name: '&bBlocos'
+      lore:
+        - '&7Evolua o nível da sua picareta'
+        - '&7para desbloquear blocos melhores.'
+        - ''
+        - '&aClique para ver os upgrades'
+    booster-no:
+      material: GLASS_BOTTLE
+      name: '&aBooster'
+      lore: [ '&cNenhum booster ativo' ]
+    booster:
+      material: EXP_BOTTLE
+      name: '&aBooster'
+      lore:
+        - '&aSeu booster de drops está ativo!'
+        - '&f> &bTempo: &7{time}&f.'
+        - '&f> &bBônus venda: &7{bonus}%&f.'
+        - '&f> &bBônus blocos: &7{bonus-block}%&f.'
+    reset-permission:
+      material: 924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6
+      name: '&aResetar'
+      lore: [ '&cVocê não tem permissão para isso.' ]
+    reset-time:
+      material: 924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6
+      name: '&aResetar'
+      lore: [ '&cAguarde {time} para resetar novamente.' ]
+    reset:
+      material: 924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6
+      name: '&aResetar'
+      lore:
+        - '&7Resete sua mina por completo'
+        - '&7e minere mais blocos.'
+        - ''
+        - '&fPreço: &a{money}'
+        - ''
+        - '&aClique para resetar.'
+    friend:
+      material: 'SKULL_ITEM:3'
+      name: '&aAmigos'
+      lore:
+        - '&7Gerencie as pessoas que podem'
+        - '&7acessar sua mina.'
+        - ''
+        - '&aClique para gerenciar.'
+    friends-mines:
+      material: 'SKULL_ITEM:3'
+      name: '&aMine de Amigos'
+      lore:
+        - '&7Gerencie as mines que você'
+        - '&7recebeu acesso.'
+        - ''
+        - '&aClique para gerenciar.'
+
+# Menu de classes
+classes:
+  name: '&8Mineração'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  items:
+    classe-slot: 50
+    classe:
+      material: 'LEATHER_CHESTPLATE'
+      name: '&eClasse'
+      lore:
+        - '&7Upando sua classe você irá ganhar'
+        - '&7bônus na mineração, no ganho de'
+        - '&7coins e gemas.'
+        - ''
+        - '&fSua classe: &7{classe}'
+        - ''
+
+# Menu de lista de minas
+mines:
+  name: '&8Mineração'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+
+# Menu de bombas
+bombs:
+  name: '&8Mineração'
+  size: 54
+
+# Menu de evolução
+evolution:
+  name: '&8Mineração'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 45
+  items:
+    pickaxe-slot: 47
+    profile-slot: 50
+    skin-slot: 48
+    filter-slot: 52
+    disenchanter-slot: 53
+    profile:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - ''
+        - '&fBlocos: &b{blocks}'
+        - '&fBlocos quebrados: &b{broken_blocks}'
+        - ''
+    skin:
+      material: '731f3279fc112b7f18bd0a2229934fcb5605c62823ce698b8b503ecccf0a3ac4'
+      name: '&aSkins'
+      lore:
+        - '&7Configure a skin da sua picareta'
+        - '&7e ganhe alguns bônus.'
+        - ''
+        - '&aClique para acessar'
+    filter:
+      material: HOPPER
+      glow: true
+      name: '&aFiltro'
+      lore:
+        - '&7Desabilite encantamentos que não'
+        - '&7queira utilizar no momento.'
+        - ''
+        - '&aClique para acessar'
+    disenchanter:
+      material: ANVIL
+      glow: true
+      name: '&aDesencantador'
+      lore:
+        - '&7Desencante encantamentos que não'
+        - '&7queira utilizar e receba o valor'
+        - '&7de volta.'
+        - ''
+        - '&aClique para acessar'
+
+# Menu de skins
+skins:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    pickaxe-slot: 31
+
+# Menu de filtro
+filter:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    pickaxe-slot: 31
+    enchant:
+      name: '&a{enchant}'
+      lore:
+        - ''
+        - '&fEncantamento: &7{enchant}'
+        - '&fDesativado: &7{status}'
+        - ''
+
+# Menu de desencantador
+disenchanter:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    pickaxe-slot: 31
+    enchant:
+      name: '&a{enchant}'
+      lore:
+        - ''
+        - '&fEncantamento: &7{enchant}'
+        - '&fNíveis: &7{level}'
+        - ''
+        - '&fIrá ganhar &a{yminaspackets} blocos&f.'
+        - ''
+        - '&aBotão &fESQUERDO &apara desencatar 1 nível'
+        - '&aBotão &fDIREITO &apara desencatar {level} níveis'
+
+# Menu de upgrade de área
+upgrade-areas:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 31
+  previous-slot: 18
+  next-slot: 26
+
+# Menu de upgrade de blocos
+upgrade-blocks:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 31
+  previous-slot: 18
+  next-slot: 26
+
+# Menu de top
+top:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 30
+  previous-slot: 9
+  next-slot: 17
+  # Seletor dos tops
+  selector:
+    slot: 31
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor do TOP'
+    # Tipos do seletor
+    types:
+      broken:
+        enabled: true
+        name: 'Blocos quebrados'
+      coin:
+        enabled: true
+        name: 'Blocos'
+      time:
+        enabled: true
+        name: 'Tempo no mina'
+    # Formatos do seletor
+    formats:
+      seeing: ' &8• &f{name}'
+      select: ' &8• &7{name}'
+  items:
+    # Item do top flores quebradas
+    broken:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - '&fBlocos quebrados: &7{amount}'
+        - '&fPosição: &7{pos}'
+    # Item do top coin
+    coin:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - '&fBloco: &7{amount}'
+        - '&fPosição: &7{pos}'
+    # Item do top tempo no campo
+    time:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - '&fTempo na mina: &7{amount}'
+        - '&fPosição: &7{pos}'
+
+# Menu de configurações
+settings:
+  name: '&8Gerenciar Mina'
+  size: 54
+  items:
+    name-slot: 10
+    icon-slot: 11
+    area-slot: 12
+    reset-slot: 14
+    spawn-slot: 15
+    percentage-slot: 16
+    luckyblock-slot: 28
+    blocks-slot: 29
+    bungeecord-slot: 30
+    automatic-sell-slot: 32
+    hologram-slot: 33
+    options-slot: 34
+    upgrade-area-slot: 49
+    upgrade-block-slot: 51
+    tool-slot: 47
+    name:
+      material: 'NAME_TAG'
+      name: '&eNome'
+      lore:
+        - '&fAtual: &a{name}&f.'
+        - ''
+        - '&aClique para trocar'
+    icon:
+      material: 'ITEM_FRAME'
+      name: '&eÍcone'
+      lore: [ '&7Clique para trocar' ]
+    area:
+      material: 'WOOD_AXE'
+      name: '&eÁrea inicial'
+      lore:
+        - '&7Selecione a região.'
+        - '&7desta mina.'
+        - ''
+        - '&fPOS-1: &7{pos1} &8({world1})&f.'
+        - '&fPOS-2: &7{pos2} &8({world2})&f.'
+        - ''
+        - '&aClique para pegar a wand'
+    reset:
+      material: 'WATCH'
+      name: '&eTempo de Reset'
+      lore:
+        - '&fDelay Atual: &7{reset_time_total}&f.'
+        - '&fPróximo em: &7{reset_time_next}&f.'
+        - ''
+        - '&aBotão &fESQUERDO&a para alterar'
+        - '&aBotão &fDIREITO&a para resetar'
+    spawn:
+      material: 'COMPASS'
+      name: '&eSpawn'
+      lore:
+        - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&aClique com esquerdo para teleportar'
+        - '&aClique com direito para alterar'
+        - '&aAperte Q para deletar'
+    percentage:
+      material: 'INK_SACK:8'
+      name: '&ePorcentagem'
+      lore:
+        - '&fAtual: &7{percentage}%'
+        - ''
+        - '&aClique para alterar a porcentagem'
+        - '&ade blocos restantes para o reset.'
+    luckyblock:
+      material: 'GOLD_BLOCK'
+      name: '&eLucky-Block'
+      lore:
+        - '&fChance atual: &7{chance}%'
+        - '&fRecompensas configuradas: &7{rewards}'
+        - ''
+        - '&7Esta LuckyBlock irá funcionar apenas'
+        - '&7nos blocos que não forem luckyblocks vísiveis.'
+        - ''
+        - '&aClique com esquerdo para alterar a chance.'
+        - '&aClique com direito para alterar as recompensas.'
+    blocks:
+      material: 'LAPIS_ORE'
+      name: '&eBlocos'
+      lore:
+        - '&fBlocos: &7({blocks})&f.'
+        - ''
+        - '&aClique com esquerdo para configurar.'
+    bungeecord:
+      material: '6274e1605233425091f7b2837a4bb8f4c804dac80db9e4f599f535c03afab0f8'
+      name: '&eBungeeCord'
+      lore:
+        - '&fAtivado: &7{status}&f.'
+        - '&fServidores: &7({servers})&f.'
+        - ''
+        - '&aClique com esquerdo para configurar.'
+    automatic-sell:
+      material: 'SIGN'
+      name: '&eVenda Automática'
+      lore:
+        - '&fStatus: &r{status}&f.'
+        - ''
+        - '&aClique para alternar'
+    hologram:
+      material: 'ARMOR_STAND'
+      name: '&eHolograma'
+      lore:
+        - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&aBotão &fESQUERDO&a para definir'
+        - '&aBotão &fDIREITO&a para deletar'
+    options:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&eOpções'
+      lore:
+        - '&7Gerencie as opções de entrada'
+        - '&7e permissões da mina.'
+        - ''
+        - '&aClique para configurar'
+    upgrade-area:
+      material: 'BEDROCK'
+      name: '&eUpgrades de Área'
+      lore:
+        - '&7Gerencie os upgrades de áreas'
+        - '&7para criar diversos tamanhos'
+        - '&7de minas.'
+        - ''
+        - '&7Áreas criadas: &f{areas}&7.'
+        - ''
+        - '&aClique para configurar'
+    upgrade-block:
+      material: 'PAPER'
+      name: '&eUpgrades de Blocos'
+      lore:
+        - '&7Gerencie os upgrades de blocos'
+        - '&7para criar níveis de blocos pelo'
+        - '&7nível da picareta do jogador.'
+        - ''
+        - '&7Upgrades criados: &f{blocks}&7.'
+        - ''
+        - '&aClique para configurar'
+
+# Menu de opções
+options:
+  name: '&8Gerenciar Mina'
+  size: 36
+  back-slot: 31
+  items:
+    level-slot: 10
+    permission-slot: 11
+    priority-slot: 12
+    custom-pickaxe-slot: 13
+    menu-order-slot: 14
+    teleport-reset-slot: 15
+    classes-slot: 16
+    teleport-delay-slot: 19
+    inv-clear-slot: 20
+    armor-clear-slot: 21
+    show-menu-slot: 22
+    skins-slot: 23
+    invisible-slot: 23
+    level:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aNível'
+      lore:
+        - '&7O nível é o nível necessário da picareta do'
+        - '&7jogador para ele entrar na mina.'
+        - ''
+        - '&fNível: &7{level}&f.'
+        - ''
+        - '&aClique para alterar o nível'
+    permission:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aPermissão'
+      lore:
+        - '&7Permissão para ir quebrar os blocos na mina.'
+        - ''
+        - '&fPermissão: &7{permission}&f.'
+        - ''
+        - '&aClique para alterar a permissão'
+    priority:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aPrioridade'
+      lore:
+        - '&7Prioridade da mina para puxar'
+        - '&7a última mina do player.'
+        - ''
+        - '&fPrioridade: &7{priority}&f.'
+        - ''
+        - '&aClique para alterar a prioridade'
+    custom-pickaxe:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aPicareta Custom'
+      lore:
+        - '&7Habilitar a picareta customizada na mina.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alternar a picareta custom'
+    menu-order:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      Name: '&aOrdem'
+      Lore:
+        - '&7Ordem da mina na lista de minas.'
+        - ''
+        - '&fOrdem atual: &7{order}&f.'
+        - ''
+        - '&aClique para alterar a ordem'
+    teleport-reset:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aTeleportar ao Resetar'
+      lore:
+        - '&7Teleportar ao spawn da mina ao resetar.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alternar o teleporte'
+    classes:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aClasses'
+      lore:
+        - '&7Ativar o sistema de classes na mina.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alternar'
+    teleport-delay:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aDelay de Teleporte'
+      lore:
+        - '&7Alterar o delay para sair da mina.'
+        - ''
+        - '&fAtual: &7{delay}&f.'
+        - ''
+        - '&aClique para alterar'
+    inv-clear:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aInventário Vazio'
+      lore:
+        - '&7Entrar apenas com inventário vazio.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alterar'
+    armor-clear:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aArmadura Vazia'
+      lore:
+        - '&7Entrar apenas com armadura vazio.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alterar'
+    show-menu:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aMostrar no Menu'
+      lore:
+        - '&7Mostrar mina na lista de minas.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alterar'
+    skins:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aSkins'
+      lore:
+        - '&7Ativar o sistema de skins na mina.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alternar'
+    invisible:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aInvisibilidade'
+      lore:
+        - '&7Deixar os jogadores invisíveis na mina.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alternar'
+
+# Menu de mudar ícone
+change-icon:
+  name: '&8Gerenciar Mina'
+  size: 27
+  items:
+    input-slot: 13
+    cancel-slot: 18
+    confirm-slot: 26
+    cancel:
+      material: ARROW
+      name: '&cCANCELAR'
+      lore:
+        - '&7Clique para cancelar e voltar'
+        - '&7ao menu de gerenciamento.'
+    confirm:
+      material: ARROW
+      name: '&aCONFIRMAR'
+      lore:
+        - '&7Clique para confirmar e alterar'
+        - '&7o ícone da mina.'
+  facing:
+    e1:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:15'
+    e2:
+      slot: 4
+      material: 'STAINED_GLASS_PANE:15'
+    e3:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:15'
+    e4:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:15'
+    e5:
+      slot: 10
+      material: 'STAINED_GLASS_PANE:15'
+    e6:
+      slot: 11
+      material: 'STAINED_GLASS_PANE:15'
+    e7:
+      slot: 12
+      material: 'STAINED_GLASS_PANE:15'
+    e8:
+      slot: 14
+      material: 'STAINED_GLASS_PANE:15'
+    e9:
+      slot: 15
+      material: 'STAINED_GLASS_PANE:15'
+    e10:
+      slot: 16
+      material: 'STAINED_GLASS_PANE:15'
+    e11:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:15'
+    e12:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:15'
+    e13:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:15'
+    e14:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:15'
+
+# Menu de lucky block
+luckyblock:
+  name: '&8Gerenciar Mina'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  items:
+    add-slot: 50
+    lore:
+      - ''
+      - '&fChance: &a{chance}%'
+      - ''
+      - '&7Botão esquerdo para alterar a chance.'
+      - '&7Botão Q para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar recompensa'
+      lore: [ '&7Clique para adicionar mais', '&7uma recompensa na luckyblock.' ]
+
+# Menu de adicionar recompensas
+rewards-add:
+  name: '&8Gerenciar Mina'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+
+# Menu de configuração do bungeecord
+bungeecord:
+  name: '&8Gerenciar Mina'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 47
+  items:
+    add-slot: 49
+    status-slot: 51
+    status:
+      material: 'SIGN'
+      name: '&eBungeeCord'
+      lore:
+        - ''
+        - '&7Estado: &f{status}&7.'
+        - ''
+        - '&aClique para alterar.'
+    server:
+      material: 'PAPER'
+      name: '&a{server}'
+      lore:
+        - ''
+        - '&7Servidor: &f{server}&7.'
+        - ''
+        - '&aBotão Q para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar Servidor'
+      lore: [ '&7Clique para adicionar mais', '&7um servidor nesta mina.' ]
+
+# Menu de blocos
+blocks:
+  name: '&8Gerenciar Mina'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  items:
+    add-slot: 50
+    lore:
+      - ''
+      - '&fChance: &a{chance}%'
+      - '&fPreço: &a{money}'
+      - '&fXP: &a{xp}'
+      - '&fXP mcMMO: &a{mcmmo}'
+      - '&fLuckyBlock visível: &a{luckyblock}'
+      - ''
+      - '&aBotão esquerdo para configurar.'
+      - '&aBotão Q para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar Bloco'
+      lore: [ '&7Clique para adicionar mais', '&7um bloco na sua mina.' ]
+
+# Menu de adicionar bloco
+add-block:
+  name: '&8Gerenciar Mina'
+  size: 27
+  items:
+    input-slot: 13
+    cancel-slot: 18
+    confirm-slot: 26
+    cancel:
+      material: ARROW
+      name: '&cCANCELAR'
+      lore:
+        - '&7Clique para cancelar e voltar'
+        - '&7ao menu de gerenciamento.'
+    confirm:
+      material: ARROW
+      name: '&aCONFIRMAR'
+      lore:
+        - '&7Clique para confirmar e alterar'
+        - '&7o ícone da mina.'
+  facing:
+    e1:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:15'
+    e2:
+      slot: 4
+      material: 'STAINED_GLASS_PANE:15'
+    e3:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:15'
+    e4:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:15'
+    e5:
+      slot: 10
+      material: 'STAINED_GLASS_PANE:15'
+    e6:
+      slot: 11
+      material: 'STAINED_GLASS_PANE:15'
+    e7:
+      slot: 12
+      material: 'STAINED_GLASS_PANE:15'
+    e8:
+      slot: 14
+      material: 'STAINED_GLASS_PANE:15'
+    e9:
+      slot: 15
+      material: 'STAINED_GLASS_PANE:15'
+    e10:
+      slot: 16
+      material: 'STAINED_GLASS_PANE:15'
+    e11:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:15'
+    e12:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:15'
+    e13:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:15'
+    e14:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:15'
+
+# Menu de opções do bloco
+block-options:
+  name: '&8Gerenciar Mina'
+  size: 27
+  back-slot: 22
+  items:
+    chance-slot: 10
+    economies-slot: 11
+    xp-slot: 12
+    xp-mcmmo-slot: 13
+    luckyblock-slot: 14
+    luckyblock-rewards-slot: 15
+    party-mine-slot: 16
+    chance:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aChance'
+      lore:
+        - '&7Chance do bloco aparecer'
+        - '&7na mina.'
+        - ''
+        - '&fChance: &7{chance}&f.'
+        - ''
+        - '&aClique para alterar a chance'
+    economies:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aEconomias'
+      lore:
+        - '&7Economias que o bloco irá'
+        - '&7dar ao ser quebrado.'
+        - ''
+        - '&aClique para configurar'
+    xp:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aXP'
+      lore:
+        - '&7XP que o bloco irá'
+        - '&7dar ao ser quebrado.'
+        - ''
+        - '&fXP: &7{xp}&f.'
+        - ''
+        - '&aClique para alterar o xp'
+    xp-mcmmo:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aXP (mcMMO)'
+      lore:
+        - '&7XP (mcMMO) que o bloco irá'
+        - '&7dar ao ser quebrado.'
+        - ''
+        - '&fXP (mcMMO): &7{xp}&f.'
+        - ''
+        - '&aClique para alterar o xp (mcMMO)'
+    luckyblock:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aLuckyBlock'
+      lore:
+        - '&7Tornar este bloco uma'
+        - '&7lucky-block visível.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alternar.'
+    luckyblock-rewards:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aRecompensas da LuckyBlock'
+      lore:
+        - '&fRecompensas configuradas: &7{rewards}'
+        - ''
+        - '&aClique para configurar.'
+    party-mine:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aMina Recheada'
+      lore:
+        - '&7Tornar este bloco um'
+        - '&7bloco da mina recheada.'
+        - ''
+        - '&fEstado: &7{status}&f.'
+        - ''
+        - '&aClique para alternar.'
+
+# Menu de economias
+providers:
+  name: '&8Gerenciar Mina'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+
+# Menu de áreas
+areas:
+  name: '&8Gerenciar Mina'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  items:
+    add-slot: 50
+    lore:
+      - ''
+      - '&fPermissão: &a{permission}'
+      - '&fOrdem: &a{order}'
+      - '&fPreço: &a{money}'
+      - ''
+      - '&fPOS-1: &7{pos1} &8({world1})&f.'
+      - '&fPOS-2: &7{pos2} &8({world2})&f.'
+      - ''
+      - '&aBotão esquerdo para configurar.'
+      - '&aBotão Q para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar Área'
+      lore: [ '&7Clique para adicionar mais', '&7uma área na sua mina.' ]
+
+# Menu de upgrade blocos
+block-upgrades:
+  name: '&8Gerenciar Mina'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  items:
+    add-slot: 50
+    item:
+      material: 'PAPER'
+      name: '&eUpgrade'
+      lore:
+        - ''
+        - '&fNível necessário: &a{level}'
+        - ''
+        - '&aBotão esquerdo para configurar.'
+        - '&aBotão Q para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar Upgrade'
+      lore: [ '&7Clique para adicionar mais', '&7um upgrade de blocos na sua mina.' ]
+
+# Menu de upgrade blocos (blocos)
+block-upgrades-blocks:
+  name: '&8Gerenciar Mina'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  items:
+    add-slot: 50
+    level-slot: 52
+    economies-slot: 46
+    lore:
+      - ''
+      - '&fChance: &a{chance}%'
+      - '&fPreço: &a{money}'
+      - '&fXP: &a{xp}'
+      - '&fXP mcMMO: &a{mcmmo}'
+      - '&fLuckyBlock visível: &a{luckyblock}'
+      - ''
+      - '&aBotão esquerdo para configurar.'
+      - '&aBotão Q para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar Bloco'
+      lore: [ '&7Clique para adicionar mais', '&7um bloco na sua mina.' ]
+    economies:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aEconomias'
+      lore:
+        - '&7Economias que irá custar'
+        - '&7para comprar o upgrade.'
+        - ''
+        - '&aClique para configurar'
+    level:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aNível necessário'
+      lore: [ '&7Atual: &a{level}', '', '&aClique para alterar.' ]
+
+# Menu de opções da área
+area-options:
+  name: '&8Gerenciar Mina'
+  size: 27
+  back-slot: 22
+  items:
+    icon-slot: 10
+    display-slot: 11
+    permission-slot: 12
+    order-slot: 13
+    economies-slot: 14
+    area-slot: 16
+    level-slot: 17
+    icon:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&eÍcone'
+      lore: [ '&7Clique para trocar' ]
+    display:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aNome'
+      lore:
+        - '&7Nome desta área'
+        - '&7da mina.'
+        - ''
+        - '&fNome: &7{display}&f.'
+        - ''
+        - '&aClique para alterar a permissão'
+    permission:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aPermissão'
+      lore:
+        - '&7Permissão para adquirir esta'
+        - '&7área na mina.'
+        - ''
+        - '&fPermissão: &7{permission}&f.'
+        - ''
+        - '&aClique para alterar a permissão'
+    order:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aOrdem'
+      lore:
+        - '&7Ordenação (prioridade) desta área'
+        - '&7área na mina.'
+        - ''
+        - '&fOrdem: &7{order}&f.'
+        - ''
+        - '&aClique para alterar a ordem'
+    level:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aNível necessário'
+      lore: [ '&7Atual: &a{level}', '', '&aClique para alterar.' ]
+    economies:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aEconomias'
+      lore:
+        - '&7Economias que irá custar'
+        - '&7para comprar a área.'
+        - ''
+        - '&aClique para configurar'
+    area:
+      material: 'WOOD_AXE'
+      name: '&eÁrea'
+      lore:
+        - '&7Selecione a região.'
+        - '&7desta área.'
+        - ''
+        - '&fPOS-1: &7{pos1} &8({world1})&f.'
+        - '&fPOS-2: &7{pos2} &8({world2})&f.'
+        - ''
+        - '&aClique para pegar a wand'
+
+# Menu de ferramentas
+tools:
+  name: '&8Gerenciar Mina'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+
+# Menu de amigos
+friends:
+  name: '&8Mina'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+  items:
+    add-slot: 27
+    empty-slot: 22
+    add:
+      material: '8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+      name: '&aAdicionar amigo'
+      lore:
+        - '&7Clique aqui para adicionar'
+        - '&7amigos para poder usar'
+        - '&7esta mina.'
+    friend:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - ''
+        - '&cBotão &fDIREITO&c para remover.'
+        - ''
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Você não possui nenhum', '&7amigo cadastrado.' ]
+
+# Menu de minas de amigos
+friends-mines:
+  name: '&8Mina'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+  item:
+    name: '&eMina {mina}&e de &f{player}'
+    lore:
+      - '&7Você recebeu permissão para'
+      - '&7minerar nesta mina.'
+      - ''
+      - '&7Mina de: &f{player}'
+      - ''
+      - '&aClique para teleportar.'
+  items:
+    empty-slot: 22
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Você não possui nenhuma', '&7mina de amigo para ir.' ]
