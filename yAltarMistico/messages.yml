@@ -1,0 +1,83 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+actionbar:
+  not-cancelled: '&cA operação ainda não foi cancelada.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  help: '&cVocê não tem permissão para fazer isto.'
+  help-admin: |
+
+    &bComandos do plugin:
+
+    &b-> &f/altaradmin criar [altar] &8-&7 Cria um novo altar
+    &b-> &f/altaradmin deletar [altar] &8-&7 Deleta um altar
+    &b-> &f/altaradmin editar [altar] &8-&7 Edita um altar
+    &b-> &f/altaradmin dar [altar] &8-&7 Pega um altar
+    &b-> &f/altaradmin reload &8-&7 Recarrega as configurações
+
+  altar-found: '&cEste altar não existe. Disponíveis: {list}'
+  altar-exists: '&cEste altar {altar} já existe.'
+  altar-created: '&aEste altar {altar} foi criado.'
+  altar-deleted: '&aEste altar {altar} foi deletado.'
+  altar-gived: '&aVocê pegou o item para por o altar {altar} no chão.'
+  altar-placed: '&aVocê colocou o altar {altar} no chão.'
+  altar-breaked: '&aVocê removeu o altar {altar} do chão.'
+  digit-symbol: |
+
+    &aDigite o SÍMBOLO que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  digit-time: |
+
+    &aDigite o TEMPO que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  digit-amount: |
+
+    &aDigite a QUANTIA que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  digit-block: |
+
+    &aDigite o BLOCO que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  digit-entity: |
+
+    &aDigite a ENTIDADE que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  digit-boss: |
+
+    &aDigite o BOSS que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  material-found: '&cMaterial não encontrado.'
+  entity-found: '&cEntidade não encontrada.'
+  boss-found: '&cBoss não encontrado. Disponíveis: {bosses}'
+  change-symbol: '&aSímbolo alterado para &f{symbol}&a.'
+  change-barAmount: '&aQuantia de barras alterada para &f{amount}&a.'
+  change-block: '&aBloco alterado para &f{block}&a.'
+  change-entity: '&aEntidade alterada para &f{entity}&a.'
+  change-boss: '&aBoss alterado para &f{boss}&a.'
+  change-time: '&aTempo alterado para &f{time}&a.'
+  change-dropAmount: '&aQuantia de drops alterada para &f{amount}&a.'
+  change-playerMinimum: '&aQuantia de players mínimos alterada para &f{amount}&a.'
+  change-radiusX: '&aRaio X alterado para &f{amount}&a.'
+  change-radiusY: '&aRaio Y alterado para &f{amount}&a.'
+  change-radiusZ: '&aRaio Z alterado para &f{amount}&a.'
+  change-entityOffset: '&aOff-set da entidade alterado para &f{amount}&a.'
+  change-hologramOffset: '&aOff-set do holograma alterado para &f{amount}&a.'

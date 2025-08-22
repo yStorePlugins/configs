@@ -1,0 +1,321 @@
+colors:
+  preto:
+    color: '&0'
+    permission: 'ylobby.color.preto'
+    slot: 10
+    icons:
+      permission:
+        material: 'WOOL:15'
+        name: '&aPreto'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:15'
+        name: '&aPreto'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:15'
+        name: '&aPreto'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  azul_escuro:
+    color: '&1'
+    permission: 'ylobby.color.azul_escuro'
+    slot: 11
+    icons:
+      permission:
+        material: 'WOOL:11'
+        name: '&aAzul Escuro'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:11'
+        name: '&aAzul Escuro'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:11'
+        name: '&aAzul Escuro'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  verde_escuro:
+    color: '&2'
+    permission: 'ylobby.color.verde_escuro'
+    slot: 12
+    icons:
+      permission:
+        material: 'WOOL:13'
+        name: '&aVerde Escuro'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:13'
+        name: '&aVerde Escuro'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:13'
+        name: '&aVerde Escuro'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  ciano:
+    color: '&3'
+    permission: 'ylobby.color.ciano'
+    slot: 13
+    icons:
+      permission:
+        material: 'WOOL:9'
+        name: '&aCiano'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:9'
+        name: '&aCiano'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:9'
+        name: '&aCiano'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  vermelho_escuro:
+    color: '&4'
+    permission: 'ylobby.color.vermelho_escuro'
+    slot: 14
+    icons:
+      permission:
+        material: 'WOOL:14'
+        name: '&aVermelho Escuro'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:14'
+        name: '&aVermelho Escuro'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:14'
+        name: '&aVermelho Escuro'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  roxo:
+    color: '&5'
+    permission: 'ylobby.color.roxo'
+    slot: 15
+    icons:
+      permission:
+        material: 'WOOL:10'
+        name: '&aRoxo'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:10'
+        name: '&aRoxo'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:10'
+        name: '&aRoxo'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  laranja:
+    color: '&6'
+    permission: 'ylobby.color.laranja'
+    slot: 16
+    icons:
+      permission:
+        material: 'WOOL:1'
+        name: '&aLaranja'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:1'
+        name: '&aLaranja'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:1'
+        name: '&aLaranja'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  cinza_claro:
+    color: '&7'
+    permission: 'ylobby.color.cinza_claro'
+    slot: 19
+    icons:
+      permission:
+        material: 'WOOL:8'
+        name: '&aCinza Claro'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:8'
+        name: '&aCinza Claro'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:8'
+        name: '&aCinza Claro'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  cinza_escuro:
+    color: '&8'
+    permission: 'ylobby.color.cinza_escuro'
+    slot: 20
+    icons:
+      permission:
+        material: 'WOOL:7'
+        name: '&aCinza Escuro'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:7'
+        name: '&aCinza Escuro'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:7'
+        name: '&aCinza Escuro'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  magenta:
+    color: '&9'
+    permission: 'ylobby.color.magenta'
+    slot: 21
+    icons:
+      permission:
+        material: 'WOOL:2'
+        name: '&aMagenta'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:2'
+        name: '&aMagenta'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:2'
+        name: '&aMagenta'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  verde_claro:
+    color: '&a'
+    permission: 'ylobby.color.verde_claro'
+    slot: 22
+    icons:
+      permission:
+        material: 'WOOL:5'
+        name: '&aVerde Claro'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:5'
+        name: '&aVerde Claro'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:5'
+        name: '&aVerde Claro'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  azul_claro:
+    color: '&b'
+    permission: 'ylobby.color.azul_claro'
+    slot: 23
+    icons:
+      permission:
+        material: 'WOOL:3'
+        name: '&aAzul Claro'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:3'
+        name: '&aAzul Claro'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:3'
+        name: '&aAzul Claro'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  vermelho_claro:
+    color: '&c'
+    permission: 'ylobby.color.vermelho_claro'
+    slot: 24
+    icons:
+      permission:
+        material: 'WOOL:14'
+        name: '&aVermelho claro'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:14'
+        name: '&aVermelho claro'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:14'
+        name: '&aVermelho claro'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  rosa:
+    color: '&d'
+    permission: 'ylobby.color.rosa'
+    slot: 25
+    icons:
+      permission:
+        material: 'WOOL:6'
+        name: '&aRosa'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:6'
+        name: '&aRosa'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:6'
+        name: '&aRosa'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  amarelo:
+    color: '&e'
+    permission: 'ylobby.color.amarelo'
+    slot: 28
+    icons:
+      permission:
+        material: 'WOOL:4'
+        name: '&aAmarelo'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:4'
+        name: '&aAmarelo'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:4'
+        name: '&aAmarelo'
+        lore:
+          - '&7Você está utilizando esta cor.'
+  branco:
+    color: '&f'
+    permission: 'ylobby.color.branco'
+    slot: 29
+    icons:
+      permission:
+        material: 'WOOL:0'
+        name: '&aBranco'
+        lore:
+          - '&cVocê não tem a permissão necessária.'
+      equip:
+        material: 'WOOL:0'
+        name: '&aBranco'
+        lore:
+          - '&aClique para selecionar esta cor.'
+      equipped:
+        material: 'WOOL:0'
+        name: '&aBranco'
+        lore:
+          - '&7Você está utilizando esta cor.'

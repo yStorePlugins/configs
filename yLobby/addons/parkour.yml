@@ -1,0 +1,38 @@
+# Blocos que ao passar por cima irá iniciar o parkour
+start-materials: [ 'GOLD_PLATE' ]
+
+# Blocos que ao passar por cima irá setar um checkpoint no parkour
+checkpoint-materials: [ 'STONE_PLATE' ]
+
+# Blocos que ao passar por cima irá completar o parkour
+complete-materials: [ 'WOOD_PLATE' ]
+
+messages:
+  start: '&aParkour iniciado! Boa sorte!'
+  restarted: '&aParkour reiniciado.'
+  checkpoint: '&eCheckpoint alcançado! Tempo atual: &f{time}'
+  complete: '&aParabéns! Você completou o parkour em &f{time}s&a! &eSeu melhor tempo: &f{best}'
+  complete-new: '&6&l&6NOVO RECORDE! &aVocê completou o parkour em &f{time}&a!'
+  exit: '&aVocê saiu do parkour!'
+  checkpoint-none: '&cVocê ainda não passou por nenhum checkpoint!'
+  checkpoint-teleported: '&aTeleportado para o checkpoint!'
+
+# Itens que serão dados ao jogador quando entrar no parkour
+items:
+  parkour-checkpoint:
+    slot: 2
+    material: WATCH
+    name: '&eCheckpoint'
+    lore: [ '&7Clique para voltar ao checkpoint' ]
+  parkour-restart:
+    slot: 4
+    material: EYE_OF_ENDER
+    name: '&bReiniciar Parkour'
+    lore: [ '&7Clique para voltar ao início' ]
+  parkour-quit:
+    slot: 6
+    material: BARRIER
+    name: '&cSair do Parkour'
+    lore:
+      - '&7Clique para sair do parkour'
+      - '&7e voltar ao lobby.'

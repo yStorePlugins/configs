@@ -1,0 +1,170 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+restart-message: '&c&lyStore<nl><nl>     &cEste Lobby está reiniciando.<nl>&cAguarde para entrar novamente.'
+
+actionbar:
+  queue: '&aVocê está na posição &e#{pos}&a do &e{server}&a.'
+  queue-left: '&cVocê saiu da fila do servidor &f{server}&c.'
+  welcome: '&b&lyStorePlugins &8- &fCompre plugins'
+
+title:
+  welcome: '&b&lyStore<nl>&fCompre plugins'
+  battle-start: '&aBatalha contra &f{player}<nl>&a foi iniciada!'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  blocked-command: '&cEste comando foi bloqueado.'
+  found-server: |
+    &cServidor não encontrado.
+    &cDisponíveis: &7{servers}
+  found-server-lobby: |
+    &cServidor ou lobby não encontrado.
+    &cDisponíveis: &7{servers}
+  queue-left: '&cVocê saiu da fila do servidor &f{server}&c.'
+  connecting: '&aConectando ao servidor &e{server}&a...'
+  lobby-connecting: '&aConectando ao lobby &e{lobby}&a...'
+  offline: '&cO servidor &f{server}&c está offline.'
+  maintenance: '&cO servidor &f{server}&c está em manutenção.'
+  deployment: '&cO servidor &f{server}&c está em desenvolvimento.'
+  beta-vip: '&cO servidor &f{server}&c está em &eBeta-Vip&c.'
+  full: '&cO servidor &f{server}&c está lotado.'
+  lobby-offline: '&cO lobby &f{lobby}&c está offline.'
+  lobby-maintenance: '&cO lobby &f{lobby}&c está em manutenção.'
+  lobby-full: '&cO lobby &f{lobby}&c está lotado.'
+  entity-set: '&aEntidade do servidor &f{server}&a setada com sucesso.'
+  entity-del: '&aEntidade do servidor &f{server}&a deletada com sucesso.'
+  beta-vip-on: '&aBeta-VIP ativada para o servidor &f{server}&a.'
+  beta-vip-off: '&cBeta-VIP desativada para o servidor &f{server}&c.'
+  maintenance-on: '&aManutenção ativada para o servidor &f{server}&a.'
+  maintenance-off: '&cManutenção desativada para o servidor &f{server}&c.'
+  deployment-on: '&aModo DEV ativado para o servidor &f{server}&a.'
+  deployment-off: '&cModo DEV desativado para o servidor &f{server}&c.'
+  welcome: |
+    <nl>
+    &bBem vindo ao servidor oficial da yStore.
+    <nl>
+  tablist-reload: '&aConfiguração do tablist recarregada.'
+  tablist-help: |
+    &c&l* &cComandos disponíveis:
+    &c/tablist reload &f- &7Recarregar configurações do tablist do plugin.
+  scoreboard-reload: '&aConfiguração da scoreboard recarregada.'
+  scoreboard-help: |
+    &c&l* &cComandos disponíveis:
+    &c/scoreboard reload &f- &7Recarregar configurações da scoreboard do plugin.
+    &c/scoreboard toggle &f- &7Alterna a scoreboard (apenas para o jogador).
+  scoreboard-on: '&aVocê ativou a visualização da scoreboard.'
+  scoreboard-off: '&cVocê desativou a visualização da scoreboard.'
+  gamemode-found: '&cModo de jogo não encontrado. Disponíveis: <0/1/2/3>'
+  gamemode-permission: '&cVocê não tem permissão nesse modo {gamemode}.'
+  gamemode-change: '&aModo de jogo alterado para &f{gamemode}&a.'
+  gamemode-change-player: '&aModo de jogo do jogador &f{player}&a alterado para &f{gamemode}&a.'
+  fly-on: '&aModo de voo ativado.'
+  fly-off: '&cModo de voo desativado.'
+  fly-change: '&aModo de voo alterado para &f{player}&a.'
+  clear: '&aO seu inventário foi limpo.'
+  clear-player: '&aVocê limpou o inventário do jogador &f{player}&a com sucesso.'
+  tp-world: '&cMundo {world} não encontrado.'
+  tp-cord: '&aVocê foi teleportado para as cordenadas &fx:{x}, y{y}, z{z} &ado mundo &f{world}&a.'
+  tp: '&aVocê foi teleportado para o jogador &f{player}&a.'
+  tp-player: '&aVocê teleportou o jogador &f{player1}&a para o jogador &f{player2}&a.'
+  tphere: '&aVocê teleportou o jogador &f{player}&a para você.'
+  spawn-set: '&aVocê setou o local do spawn.'
+  spawn-del: '&aVocê deletou o local do spawn.'
+  spawn-found: '&cO local do spawn ainda não foi setado.'
+  spawn: '&aVocê foi teleportado ao spawn.'
+  spawn-player: '&aVocê teleportou o jogador &f{player}&a ao spawn.'
+  queue-help: |
+    &c&l* &cComandos disponíveis:
+    &c/queue <servidor> &f- &7Entra na fila de um servidor.
+    &c/queue sair &f- &7Sai da fila de um servidor.
+    &c/queue info &f- &7Vê sua informação na fila.
+  queue-found: '&cVocê não está na fila de nenhum servidor.'
+  vanish-already: '&cVocê já está com o vanish ativo.'
+  vanish-already-player: '&cEste jogador já está com o vanish ativo.'
+  vanish-not: '&cVocê não está com o vanish ativo.'
+  vanish-not-player: '&cEste jogador não está com o vanish ativo.'
+  vanish-enabled: '&aVocê agora está invisível para outros jogadores.'
+  vanish-disabled: '&aVocê agora está visível para outros jogadores.'
+  vanish-enabled-player: '&aEste jogador agora está invisível para outros jogadores.'
+  vanish-disabled-player: '&aEste jogador agora está visível para outros jogadores.'
+  vanish-list: '&aJogadores invisíveis: &f[ &7{players} &f]&a.'
+  tell-self: '&cVocê não pode enviar mensagens à si mesmo.'
+  reply-none: '&cVocê não tem ninguém para responder.'
+  lockchat: '&cO chat foi desativado por um administrador.'
+  lockchat-on: '&aVocê travou o chat.'
+  lockchat-off: '&aVocê destravou o chat.'
+  chat-off: '&cVocê desativou seu chat.'
+  chat-delay: '&cVocê deve aguardar {time} para enviar mensagens novamente.'
+  tell-off: '&cVocê desativou seu tell.'
+  tell-off-player: '&cEste jogador desativou o tell.'
+  battle-enter: '&aVocê entrou na fila de batalha.'
+  battle-leave: '&aVocê saiu da fila de batalha.'
+  battle-win: '&aVocê ganhou a batalha contra &f{player}&a.'
+  battle-lose: '&cVocê perdeu a batalha contra &f{player}&c.'
+  battle-start: '&aA batalha contra &f{player}&a começou.'
+  battle-quit: '&cSeu oponente desistiu.'
+  battle-enabled: '&aVocê ativou o recebimento de desafios.'
+  battle-disabled: '&cVocê desativou o recebimento de desafios.'
+  battle-set-pos1: '&aVocê setou a posição 1 da arena x1.'
+  battle-set-pos2: '&aVocê setou a posição 2 da arena x1.'
+  battle-set-ffa: '&aVocê setou a posição da arena FFA.'
+  battle-del-pos1: '&aVocê deletou a posição 1 da arena x1.'
+  battle-del-pos2: '&aVocê deletou a posição 2 da arena x1.'
+  battle-del-ffa: '&aVocê deletou a posição da arena FFA.'
+  battle-pos1-found: '&cA posição 1 do x1 ainda não foi setada.'
+  battle-pos2-found: '&cA posição 2 do x1 ainda não foi setada.'
+  battle-ffa-found: '&cO local de spawn da arena ffa ainda não foi setado.'
+  battle-ffa-enter: '&aVocê entrou na arena de batalha.'
+  battle-ffa-leave: '&aVocê saiu da arena de batalha.'
+  battle-ffa-no: '&cVocê não está na arena de batalha.'
+  battle-command: '&cVocê não pode usar comandos na batalha.'
+  battle-digit: |
+    <nl>
+    &aDigite o nome do jogador.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  battle-self: '&cVocê não pode desafiar a sí mesmo.'
+  battle-already: '&cVocê já está em batalha.'
+  battle-already-player: '&cEste jogador já está em batalha.'
+  battle-already-sent: '&cVocê já enviou um desafio de batalha para este jogador.'
+  battle-sent: '&aPedido de batalha enviado para &f{player}&a.'
+  battle-none: '&cVocê não tem pedidos de batalha deste jogador.'
+  battle-accept: '&aVocê aceitou o pedido de batalha contra &f{player}&a.'
+  battle-accept-player: '&a{player} aceitou seu pedido para batalhar.'
+  battle-deny: '&cVocê negou o pedido de batalha contra &f{player}&c.'
+  battle-deny-player: '&c{player} negou seu pedido para batalhar.'
+  battle-toggle: '&cEste jogador desativou o recebimento de desafios.'
+  battle-help: |
+    &aComandos disponíveis:
+    &a/battle - &7Abre o menu de batalha.
+    &a/battle desafiar [player] - &7Desafia um jogador para batalhar.
+    &a/battle aceitar [player] - &7Aceita o desafio de um jogador.
+    &a/battle recusar [player] - &7Recusa o desafio de um jogador.
+    &a/battle entrar - &7Entra na arena livre.
+    &a/battle sair - &7Sai da arena livre.
+    &a/battle toggle - &7Ativa/desativa o recebimento de desafios.
+    &a/battle setffa - &7Seta o local da arena livre.
+    &a/battle delffa - &7Deleta o local da arena livre.
+    &a/battle x1setpos1 - &7Seta a posição 1 da arena x1.
+    &a/battle x1setpos2 - &7Seta a posição 2 da arena x1.
+    &a/battle x1delpos1 - &7Deleta a posição 1 da arena x1.
+    &a/battle x1delpos2 - &7Deleta a posição 2 da arena x1.
+  queue-cant-target: '&cNão foi possível conectar o jogador &f{player}&c ao servidor &f{server}&c. O servidor pode estar cheio ou offline!'
+  queue-target: '&aJogador &f{player}&a adicionado à fila do servidor &f{server}&a.'
+  queue-all: '&aTodos os jogadores foram adicionados à fila do servidor &f{server}&a.'
+  hotbar-items: '&aItens enviados com sucesso.'
+  sudo: '&aSudo realizado no jogador &f{player}&a.'
+  sudo-all: '&aSudo realizado em todos os jogadores&a.'
+  sudo-you: '&cVocê não pode executar o sudo à si mesmo.'

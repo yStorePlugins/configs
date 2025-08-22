@@ -1,0 +1,170 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu de servers e lobbies automaticamente enquanto estiver aberto
+menu-updater: true
+
+# Menu de seleção de servidores
+servers:
+  name: '&8Servidores'
+  size: 27
+  facing:
+    soon:
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      slot: 11
+      name: '&cEm Breve'
+      lore: []
+    soon2:
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      slot: 15
+      name: '&cEm Breve'
+      lore: []
+
+# Menu de seleção de lobbies
+lobbies:
+  name: '&8Lobbies'
+  size: 27
+
+# Menu de seleção de cores
+colors:
+  name: '&8Cores'
+  size: 54
+  items:
+    clear-slot: 49
+    clear:
+      material: BARRIER
+      name: '&cLimpar'
+      lore:
+        - '&7Cor equipada: {color}.'
+        - ''
+        - '&aClique para limpar.'
+
+# Menu de preferências
+preferences:
+  name: '&8Preferências'
+  size: 27
+  items:
+    visibility-slot: 10
+    chat-slot: 11
+    tell-slot: 13
+    fly-slot: 15
+    combat-slot: 16
+    visibility-off:
+      material: 'INK_SACK:8'
+      name: '&aVisibilidade de Jogadores'
+      lore:
+        - '&fEstado: &cOFF'
+    visibility-on:
+      material: 'INK_SACK:10'
+      name: '&aVisibilidade de Jogadores'
+      lore:
+        - '&fEstado: &aON'
+    chat-off:
+      material: 'INK_SACK:8'
+      name: '&aChat'
+      lore:
+        - '&fEstado: &cOFF'
+    chat-on:
+      material: 'INK_SACK:10'
+      name: '&aChat'
+      lore:
+        - '&fEstado: &aON'
+    tell-off:
+      material: 'INK_SACK:8'
+      name: '&aMensagens Privadas'
+      lore:
+        - '&fEstado: &cOFF'
+    tell-on:
+      material: 'INK_SACK:10'
+      name: '&aMensagens Privadas'
+      lore:
+        - '&fEstado: &aON'
+    fly-off:
+      material: 'INK_SACK:8'
+      name: '&aModo de Voo'
+      lore:
+        - '&fEstado: &cOFF'
+    fly-on:
+      material: 'INK_SACK:10'
+      name: '&aModo de Voo'
+      lore:
+        - '&fEstado: &aON'
+    combat-off:
+      material: 'INK_SACK:8'
+      name: '&aConvite para Batalhas'
+      lore:
+        - '&fEstado: &cOFF'
+    combat-on:
+      material: 'INK_SACK:10'
+      name: '&aConvite para Batalhas'
+      lore:
+        - '&fEstado: &aON'
+
+# Menu de batalha
+battle:
+  name: '&8Batalha'
+  size: 27
+  items:
+    find:
+      slot: 10
+      material: 'BOW:0'
+      name: '&aProcurar uma batalha'
+      lore:
+        - ''
+        - ' &7Procure uma batalha com um'
+        - ' &7jogador aleatório e tente vencer.'
+        - ''
+        - ' &fJogadores na fila: &7{queue}'
+        - ''
+        - '&aClique para procurar uma batalha'
+    ffa:
+      slot: 11
+      material: 'DIAMOND_SWORD:0'
+      name: '&aArena FFA'
+      lore:
+        - ''
+        - ' &7Lute contra vários jogadores ao'
+        - ' &7mesmo tempo na arena livre.'
+        - ''
+        - ' &fJogadores na arena: &7{players}'
+        - ''
+        - '&aClique para entrar'
+    challenge:
+      slot: 13
+      material: 'BLAZE_ROD:0'
+      name: '&aDesafiar um jogador'
+      lore:
+        - ''
+        - ' &7Desafie um jogador do lobby'
+        - ' &7para uma batalha com você.'
+        - ''
+        - '&aClique para desafiar'
+    profile:
+      slot: 15
+      material: '{player}'
+      name: '&aSeu Perfil'
+      lore:
+        - ''
+        - ' &fAbates: &7{kills}'
+        - ' &fMortes: &7{deaths}'
+        - ' &fKDR: &7{kdr}'
+        - ''
+    ranking:
+      kills-format: '&f {pos}º {player} ({kills} Abates)'
+      deaths-format: '&f {pos}º {player} ({deaths} Mortes)'
+      kdr-format: '&f {pos}º {player} ({kdr} de K/D)'
+      slot: 16
+      material: 'BOOK_AND_QUILL:0'
+      name: '&aRanking de batalhas'
+      lore:
+        - ''
+        - ' &7Top 10 jogadores ordenado por &f{type}'
+        - ''
+        - '{top}'
+        - ''
+        - '&aClique para alterar o ordenamento'

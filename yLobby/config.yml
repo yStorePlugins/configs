@@ -1,0 +1,412 @@
+#           __       _     _           
+#   _   _  / /  ___ | |__ | |__  _   _ 
+#  | | | |/ /  / _ \| '_ \| '_ \| | | |
+#  | |_| / /__| (_) | |_) | |_) | |_| |
+#   \__, \____/\___/|_.__/|_.__/ \__, |
+#   |___/                        |___/ 
+#                                      
+# Discord: discord.ystoreplugins.com.br                                  
+# Site: ystoreplugins.com.br                                  
+#                                      
+
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _                    
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___ 
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#                                   
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, MARIADB (Recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+  # Aqui você poderá configurar algumas coisas do HikariCP.
+  # Por padrão, já são dadas algumas configurações com base na documentação do hikari:
+  # https://github.com/brettwooldridge/HikariCP/wiki/MySQL-Configuration
+  properties:
+    cachePrepStmts: true
+    prepStmtCacheSize: 250
+    prepStmtCacheSqlLimit: 2048
+    useServerPrepStmts: true
+    useLocalSessionState: true
+    rewriteBatchedStatements: true
+    cacheResultSetMetadata: true
+    cacheServerConfiguration: true
+    elideSetAutoCommits: true
+    maintainTimeStats: true
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Ativar o sistema do NPC ficar olhando para o player
+npc-look-close: true
+
+# Desativar o fogo de se espalhar no mapa
+block-fire-splash: true
+
+# Desativar as folhas de caírem
+block-leaf-decay: true
+
+# Desativar as areias e gravel de caírem
+block-sand-fall: true
+
+# Desativar o spawn de items no servidor
+block-item-spawn: true
+
+# Ativar o controle de dano do plugin
+control-damage: true
+
+# Teleportar ao spawn quando logar
+login-spawn: true
+
+# Teleportar ao spawn quando morrer
+death-spawn: true
+
+# Ativar sistema de auto-reconnect ao ser kickado de um servidor
+auto-reconnect: false
+
+# Modo de jogo padrão
+gamemode-default: 'ADVENTURE'
+
+# Mobs que poderão spawnar no lobby
+mob-spawning-whitelist: [ 'GIANT', 'ARMOR_STAND' ]
+
+# Vida do jogador ao entrar no lobby
+# Cada coração são 2.0 pontos de vida
+player-health: 2.0
+
+# Recompensas por kill nas arenas
+# kill-reward: [ 'points add {player} 1' ]
+kill-reward: []
+
+# Y de detecção do void
+# Deixe -64 para a 1.16+
+void-detect-y: 0
+
+# Sistema de TAB do lobby.
+tablist:
+  # Ativar ou desativar o sistema de tablist.
+  enabled: true
+  # Delay para atualizar o tablist (em segundos)
+  delay: 3
+  header: |
+    &r
+    &b&lyStorePlugins
+    &r
+    &fA melhor loja de plugins.
+  footer: |
+    &r
+    &a❤ &fReceba atualizações e novidades exclusivas
+    &fdo nosso servidor através do nosso discord:
+    &9discord.ystoreplugins.com.br
+    &r
+    &r&fAdquira &b&lVIP &facessando: &6ystoreplugins.com.br
+    &r
+    &7ystoreplugins.com.br
+  tags:
+    member:
+      priority: 1 # decrescente (membros com prioridade maior que dono e admin)
+      permission: 'ylobby.tags.member'
+      prefix: '&7[Membro] &7'
+      suffix: ''
+      order: 'a' # ordem das tags no tab, sendo o "A" o primeiro e o "Z" o último
+
+# Sistema de scoreboard do lobby.
+scoreboard:
+  # Ativar ou desativar o sistema de scoreboard.
+  enabled: true
+  # Delay para atualizar a scoreboard (em segundos)
+  delay: 3
+  title: '&b&lyStore'
+  lines:
+    - ''
+    - '&a⋄ &fCargo: %vault_prefix%'
+    - ''
+    - '&a⋄ &fF. Safira: {factions}'
+    - '&a⋄ &fR. Mobs: {rankup}'
+    - ''
+    - '&a⋄ &fLobby #1: &a{lobby}'
+    - ''
+    - '&a⋄ &fCash: &6%playerpoints_points%'
+    - '&a⋄ &fOnline: &a{rede}'
+    - ''
+    - '&eystoreplugins.com.br'
+
+# Sistema de jump pads
+jump-pad:
+  enabled: true
+  # Bloco que será a jump pad
+  block: 'SLIME_BLOCK'
+  # Multiplicador de velocidade
+  multiply: 1.5
+  # Altura que será jogado para cima
+  offset: 2.0
+  # Som que será executado
+  sound: 'FIREWORK_LAUNCH'
+
+# Sistema de double jump
+double-jump:
+  enabled: true
+  # Multiplicador de velocidade
+  multiply: 1.5
+  # Altura que será jogado para cima
+  offset: 2.0
+  # Som que será executado
+  sound: 'FIREWORK_LAUNCH'
+
+# Sistema de status dos servidores e lobbies
+status:
+  offline: '&cOffline'
+  maintenance: '&cManutenção'
+  deployment: '&7Desenvolvimento'
+  beta-vip: '&eBeta-VIP'
+  online: '&aOnline'
+
+# Sistema de gerenciador de comandos
+command-manager:
+  # Comandos bloqueados
+  # coloque em minúsculo e com /
+  # permissão de bypass: ylobby.comando.bypass
+  blocked-commands:
+    - 'plugin'
+  # Comandos permitidos no AntiTab
+  # Permissão de bypass do AntiTab: ylobby.antitab.bypass
+  anti-tab-whitelist:
+    - '/points'
+
+# Sistema de fila para se conectar a um servidor.
+queue:
+  # Ativar ou desativar o sistema de fila.
+  enabled: true
+  # Tempo em segundos para que a fila ande.
+  delay: 3
+  # Sempre mostrar a posição na fila na actionbar
+  always-show: true
+
+# Sistema de entrar no lobby
+join:
+  # Limpar o chat ao entrar no lobby
+  clear-chat: true
+  # Enviar anúncio que o player entrou (deixe vazio para não usar)
+  announce: '&a+ %vault_prefix% &f{player}&a entrou.'
+  # Mundos que não irá receber os Join-Items
+  join-item-world-blacklist: []
+
+# Sistema de day cycle
+day-cycle:
+  # Ativar o bloqueador
+  enabled: true
+  # Tempo que permanecerá
+  time: 6000
+
+# Sistema de top
+top:
+  # Ativar o updater do top
+  enabled: true
+  # Tempo que irá atualizar o top ( em ticks; 20 ticks = 1s )
+  time: 12000
+
+# Itens padrões definidos para o jogador.
+items:
+  # Item utilizado para selecionar qual servidor o jogador deseja ir.
+  game-selector:
+    material: COMPASS:0
+    slot: 1
+    name: '&aServidores'
+    lore:
+      - '&7Selecione um servidor para jogar.'
+  # Item utilizado para selecionar qual lobby o jogador deseja ir.
+  lobby-selector:
+    material: NETHER_STAR:0
+    slot: 3
+    name: '&aLobbies'
+    lore:
+      - '&7Selecione um lobby mais vazio.'
+  # Item utilizado para que o jogador altere suas preferências.
+  preferences:
+    material: 'REDSTONE_COMPARATOR:0'
+    slot: 5
+    name: '&aPreferências'
+    lore:
+      - '&7Altere suas prefêrencias para ter'
+      - '&7a melhor experiência em nosso servidor.'
+  # Item utilizado para entrar no modo combate.
+  combat:
+    material: DIAMOND_SWORD:0
+    slot: 7
+    name: '&cCombate'
+    lore:
+      - '&7Se divirta em um belo PvP.'
+  # Item utilizado para ativar a visibilidade
+  visibility-off:
+    material: INK_SACK:8
+    slot: 8
+    name: '&eVisibilidade'
+    lore:
+      - '&7Atualmente a visibilidade dos'
+      - '&7jogadores está desabilitada.'
+      - ''
+      - '&aClique para habilitar.'
+  # Item utilizado para desativar a visibilidade
+  visibility-on:
+    material: INK_SACK:10
+    slot: 8
+    name: '&eVisibilidade'
+    lore:
+      - '&7Atualmente a visibilidade dos'
+      - '&7jogadores está habilitada.'
+      - ''
+      - '&aClique para desabilitar.'
+  # Siga o exemplo abaixo para criar itens custom
+  #custom:
+  #  material: DIAMOND_SWORD:0
+  #  slot: 0
+  #  name: ''
+  #  lore: []
+  #  left-command: ''
+  #  right-command: ''
+  #  left-perm: 'ylobby.left-perm.custom'
+  #  right-perm: 'ylobby.right-perm.custom'
+
+#     ___                _           _   
+#    / __\___  _ __ ___ | |__   __ _| |_ 
+#   / /  / _ \| '_ ` _ \| '_ \ / _` | __|
+#  / /__| (_) | | | | | | |_) | (_| | |_ 
+#  \____/\___/|_| |_| |_|_.__/ \__,_|\__|
+#
+# Sistema de combate.
+
+# Items a serem utilizados no PvP.
+combat:
+  # Slot padrão que ficará a mão do player
+  held-slot: 0
+  # Resetar os itens ao matar um jogador (Arena FFA)
+  reset: true
+  # Comandos permitidos na arena
+  allowed-commands: [ '/battle', '/batalhar' ]
+  # Armadura pré-definida.
+  armor:
+    helmet:
+      material: DIAMOND_HELMET:0
+      enchants:
+        - DURABILITY:2
+    chestplate:
+      material: DIAMOND_CHESTPLATE:0
+      enchants:
+        - DURABILITY:2
+    leggings:
+      material: DIAMOND_LEGGINGS:0
+      enchants:
+        - DURABILITY:2
+    boots:
+      material: DIAMOND_BOOTS:0
+      enchants:
+        - DURABILITY:2
+  # Itens pré-definidos.
+  items:
+    espada:
+      material: DIAMOND_SWORD:0
+      amount: 1
+      slot: 0
+      enchants:
+        - DAMAGE_ALL:1
+        - DURABILITY:2
+    maca:
+      material: GOLDEN_APPLE:0
+      amount: 16
+      slot: 1
+      enchants: []
+    exit:
+      material: BARRIER
+      amount: 1
+      slot: 8
+      nbt-tag: [ 'yLobby-ArenaExit=>sim' ]
+
+#     ___ _           _   
+#    / __\ |__   __ _| |_ 
+#   / /  | '_ \ / _` | __|
+#  / /___| | | | (_| | |_ 
+#  \____/|_| |_|\__,_|\__|
+#
+# Sistema de chat.
+
+chat:
+  # Ativar ou desativar o sistema de chat. 
+  enabled: true
+  # Desativar ou ativar chat do Vanilla, caso não utilize o do plugin.
+  vanilla-chat: false
+  # Destacar a mensagem para quem tiver a permissão
+  highlight: true
+  # Formato do chat a ser exibido.
+  format: '&7[Chat] &f%vault_prefix% {player}&7: {msg}'
+  # Formato do hover a ser exibido
+  hover: '&eClique aqui para enviar uma mensagem para {player}'
+  # Comando a ser sugerido ao clicar
+  suggest: '/tell {player} '
+  # Delay para falar no chat.
+  delay: 1
+
+tell:
+  # Formato do tell a ser exibido.
+  format-send: '&eMensagem para &f{player}&e: &7{msg}'
+  format-receive: '&eMensagem de &f{player}&e: &7{msg}'
+  # Formato do tell a ser exibido
+  hover: '&eClique aqui para responder o(a) {player}'
+  # Comando a ser sugerido ao clicar
+  suggest: '/reply '
+
+#     _         _                                                
+#    /_\  _   _| |_ ___     /\/\   ___  ___ ___  __ _  __ _  ___ 
+#   //_\\| | | | __/ _ \   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \
+#  /  _  \ |_| | || (_) | / /\/\ \  __/\__ \__ \ (_| | (_| |  __/
+#  \_/ \_/\__,_|\__\___/  \/    \/\___||___/___/\__,_|\__, |\___|
+#                                                     |___/      
+# Sistema de mensagens automáticas.
+
+auto-message:
+  # Ativar ou desativar o sistema de mensagens automáticas.
+  enabled: true
+  # Delay em segundos entre cada mensagem
+  delay: 15
+  # mensagens
+  messages:
+    msg1:
+      priority: 1
+      chat: |
+        <nl>
+        &a&l* &fyStorePlugins, a melhor para os melhores.
+        <nl>
+      actionbar: '&aAcesse nosso site: &fwww.ystoreplugins.com.br&a.'
+      title: '' # HEADER<nl>FOOTER
+      sound: 'LEVEL_UP'
+    msg2:
+      priority: 2
+      chat: |
+        <nl>
+        &a&l* &fAdquira VIP em nosso servidor!
+        <nl>
+      actionbar: '&aAcesse nosso site: &fystoreplugins.com.br&a.'
+      title: '' # HEADER<nl>FOOTER
+      sound: 'LEVEL_UP'

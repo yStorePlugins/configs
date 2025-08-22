@@ -1,0 +1,133 @@
+#     __       _     _     _           
+#    / /  ___ | |__ | |__ (_) ___  ___ 
+#   / /  / _ \| '_ \| '_ \| |/ _ \/ __|
+#  / /__| (_) | |_) | |_) | |  __/\__ \
+#  \____/\___/|_.__/|_.__/|_|\___||___/
+#                                      
+# Lista de lobbies para se conectar.
+
+lobbies:
+  lobby1:
+    # Nome do servidor a ser exibido.
+    display-name: 'Lobby'
+    # Nome do servidor cadastrado na configuração da proxy.
+    proxy-name: 'lobby'
+    # IP numérico da máquina onde o servidor se encontra.
+    ip: '0.0.0.0'
+    # Porta da máquina onde o servidor se encontra.
+    port: 25565
+    # Limite de jogadores que poderão entrar.
+    max-players: 100
+    # Opções para o servidor.
+    options:
+      # Ativar modo manutenção do servidor.
+      maintenance: false
+    # Ícone a ser exibido na lista de lobbies.
+    icon:
+      permission: ''
+      slot: 13
+      custom-skull: false
+      url: ''
+      id: NETHER_STAR
+      data: 0
+      glow: false
+      name: '&aLobby'
+      # Placeholders:
+      # {players} - status (manutenção, offline) ou players online (quando estiver online sem status)
+      # {players_raw} - players online
+      # {max_players} - máximo de jogadores
+      # {status} - status (manutenção, offline)
+      # {players_formatted} - status (manutenção, offline) ou players online/máximo de jogadores (quando estiver online sem status)
+      lore:
+        - ''
+        - '&fLobby #1'
+        - '&f Status: &7{status}'
+        - '&f Jogadores: &b{players_raw}/{max_players}'
+        - ''
+        - '&aClique para conectar-se'
+
+#   __                              
+#  / _\ ___ _ ____   _____ _ __ ___ 
+#  \ \ / _ \ '__\ \ / / _ \ '__/ __|
+#  _\ \  __/ |   \ V /  __/ |  \__ \
+#  \__/\___|_|    \_/ \___|_|  |___/
+#                                   
+# Lista de servidores para conexão.
+
+servers:
+  mina:
+    # Nome do servidor a ser exibido.
+    display-name: '&cMina'
+    # Nome do servidor cadastrado na configuração da proxy.
+    proxy-name: 'mina'
+    # IP numérico da máquina onde o servidor se encontra.
+    ip: '0.0.0.0'
+    # Porta da máquina onde o servidor se encontra.
+    port: 25566
+    # Limite de jogadores que poderão entrar.
+    max-players: 100
+    # Opções para o servidor.
+    options:
+      # Ativar modo manutenção do servidor.
+      maintenance: false
+      # Ativar modo desenvolvimento do servidor.
+      deployment: false
+      # Permitir somente a entrada de jogadores com permissão.
+      beta-vip: false
+      # Permissão para entrar no servidor caso a opção a cima esteja ativa.
+      beta-vip-permission: 'ylobby.betavip.factions'
+    # Ícone a ser exibido na lista de servidores.
+    icon:
+      permission: ''
+      slot: 13
+      custom-skull: false
+      url: ''
+      id: DIAMOND
+      data: 0
+      glow: false
+      name: '&cMina'
+      # Placeholders:
+      # {players} - status (manutenção, dev, beta, offline) ou players online (quando estiver online sem status)
+      # {players_raw} - players online
+      # {max_players} - máximo de jogadores
+      # {status} - status (manutenção, dev, beta, offline)
+      # {players_formatted} - status (manutenção, dev, beta, offline) ou players online/máximo de jogadores (quando estiver online sem status)
+      lore:
+        - ''
+        - '&f Status: &7{status}'
+        - '&f Jogadores: &b{players_raw}/{max_players}'
+        - ''
+        - '&aClique para conectar-se'
+    # Entidade para se conectar ao servidor.
+    teleporter-entity:
+      # Opções disponíveis para a entidade [NPC, HUGE-ITEM, ROTATING-HEAD]
+      type: NPC
+      # Opção para customizar a entidade, exemplos:
+      #
+      # NPC: Utilize o nick de um jogador ou uma textura para definir uma skin.
+      #   EX: zGumeloBr
+      #   EX2: TEXTURE_VALUE:TEXTURE_SIGNATURE
+      #   Recomendado offset: 3.1
+      #
+      # ROTATING-HEAD: Utilize a url de uma cabeça para defini-lá.
+      #   EX: http://textures.minecraft.net/texture/b11777916e756443e30a043f2bc9cce0d0fe624bd6192d7ba23f96a1d71b9f3f
+      #   Recomendado offset: 3.1
+      #
+      # HUGE-ITEM: Utilize o formato ID:DATA para definir o item a ser utilizado.
+      #   EX: MAP:0
+      #   Recomendado offset: 4.1
+      #
+      # MINIATURE-PETS: Utilize o nome do arquivo do pet
+      #   EX: Boxer.mpet
+      #
+      # MYTHIC-MOBS: Utilize o nome do mob
+      #   EX: SkeletonKnight
+      #
+      skin-or-material: 'TheMage'
+      hologram:
+        offset: 3.1
+        lines:
+          - '&aMina'
+          - '{status}'
+          - '&bClique para se conectar!'
+          - '&7{players} conectados'

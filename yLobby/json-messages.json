@@ -1,0 +1,42 @@
+{
+  "queue": {
+    "text": "\n§aVocê está na fila do §e{server} §ana posição §e#{pos}§a.\n§aClique ",
+    "extra":[
+      {
+        "text": "§a§lAQUI ",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/fila sair"
+        }
+      },
+      {
+        "text": "§apara sair da fila.\n"
+      }
+    ]
+  },
+  "battle": {
+    "text": "\n§a{player} te desafiou para uma batalha.\n§aClique ",
+    "extra":[
+      {
+        "text": "§f§lAQUI ",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/battle aceitar {player}"
+        }
+      },
+      {
+        "text": "§apara aceitar e "
+      },
+      {
+        "text": "§c§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/battle recusar {player}"
+        }
+      },
+      {
+        "text": "§a para negar.\n"
+      }
+    ]
+  }
+}

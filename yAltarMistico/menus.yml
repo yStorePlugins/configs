@@ -1,0 +1,122 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Menu principal
+main:
+  name: '&8Altar'
+  size: 45
+  items:
+    icon-slot: 10
+    hologram-slot: 11
+    bars-slot: 13
+    block-slot: 15
+    entity-slot: 16
+    bossArena-slot: 21
+    time-slot: 23
+    dropAmount-slot: 28
+    minimumPlayer-slot: 29
+    radius-slot: 31
+    throwUp-slot: 33
+    strikeLightning-slot: 34
+    icon:
+      material: 'ITEM_FRAME'
+      name: '&aÍcone do Altar'
+      lore:
+        - '&7Clique em um item do seu inventário para alterar'
+    hologram:
+      material: 'ARMOR_STAND'
+      name: '&aHolograma'
+      lore:
+        - '&fOff-set: &a{offset}&f.'
+        - ''
+        - '&7Clique para alterar'
+    bars:
+      material: 'LEGACY_NAME_TAG'
+      name: '&aBarra de Progresso'
+      lore:
+        - '&fSímbolo: &a{symbol}&f.'
+        - '&fQuantia: &a{amount}&f.'
+        - ''
+        - '&7Clique ESQUERDO para alterar o símbolo'
+        - '&7Clique DIREITO para alterar a quantia'
+    block:
+      material: 'STONE'
+      name: '&aBloco'
+      lore:
+        - '&fAtual: &a{block}&f.'
+        - ''
+        - '&7Clique para alterar'
+    entity:
+      material: 'MONSTER_EGG'
+      name: '&aEntidade'
+      lore:
+        - '&fAtivado: &a{status}&f.'
+        - '&fEntidade: &a{entity}&f.'
+        - '&fOff-set: &a{offset}&f.'
+        - ''
+        - '&7Clique ESQUERDO para alternar'
+        - '&7Clique DIREITO para alterar a entidade'
+        - '&7Clique Q para alterar o offset'
+    bossArena:
+      material: 'DIAMOND_SWORD'
+      name: '&aBoss Arena'
+      lore:
+        - '&fAtivado: &a{status}&f.'
+        - '&fEntidade: &a{entity}&f.'
+        - ''
+        - '&7Clique ESQUERDO para alternar'
+        - '&7Clique DIREITO para alterar a entidade'
+    time:
+      material: 'WATCH'
+      name: '&aTempo'
+      lore:
+        - '&fAtual: &a{time}&f.'
+        - ''
+        - '&7Clique para alterar'
+    dropAmount:
+      material: 'EMERALD'
+      name: '&aQuantia de drops'
+      lore:
+        - '&fAtual: &a{amount}&f.'
+        - '&7(mesmo com boss ativo)'
+        - '&fForçar drop: &a{status}&f.'
+        - ''
+        - '&7Clique DIREITO para alternar'
+        - '&7Clique ESQUERDO para alterar a quantia'
+    minimumPlayer:
+      material: 'DIAMOND'
+      name: '&aPlayers mínimos'
+      lore:
+        - '&fAtual: &a{amount}&f.'
+        - ''
+        - '&7Clique para alterar'
+    radius:
+      material: 'BARRIER'
+      name: '&aRaio de checagem'
+      lore:
+        - '&fX: &a{x} blocos&f.'
+        - '&fY: &a{y} blocos&f.'
+        - '&fZ: &a{z} blocos&f.'
+        - ''
+        - '&7Clique ESQUERDO para alterar X'
+        - '&7Clique DIREITO para alterar Y'
+        - '&7Clique Q para alterar Z'
+    throwUp:
+      material: 'SLIME_BLOCK'
+      name: '&aJogar para cima'
+      lore:
+        - '&fEstado: &a{status}&f.'
+        - ''
+        - '&7Clique para alterar'
+    strikeLightning:
+      material: 'BLAZE_ROD'
+      name: '&aRaio'
+      lore:
+        - '&fEstado: &a{status}&f.'
+        - ''
+        - '&7Clique para alterar'
