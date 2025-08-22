@@ -37,3 +37,4 @@ commands:
   sudo: 'sudo'
   preferences: 'preferences|preferencias'
   colors: 'colors|cores'
+  iteminfo: 'iteminfo|infoitem|ii'

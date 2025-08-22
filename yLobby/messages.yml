@@ -168,3 +168,13 @@ chat:
   sudo: '&aSudo realizado no jogador &f{player}&a.'
   sudo-all: '&aSudo realizado em todos os jogadores&a.'
   sudo-you: '&cVocê não pode executar o sudo à si mesmo.'
+  item-info-holding: '&cVocê deve estar segurando um item.'
+  item-info: |
+    &eInformações do item:
+
+    &aMaterial: &f{material}
+    &aID: &f{id}
+    &aData: &f{data}
+    &aEncantamentos: &f{enchants}
+    &aNBTTags: &f{nbttags}
+    &aFlags: &f{flags}
