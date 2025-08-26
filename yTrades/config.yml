@@ -16,3 +16,17 @@ general:
   # Distância máxima entre blocos que irá permitir a troca entre jogadores
   # deixe 0 para não usar
   max-distance: 0
+
+# Sistema de blacklist
+black-list:
+  # Materiais que estarão na black-list
+  materials: [ 'STONE', 'LOG:0' ]
+  # NBTTags que estarão na black-list
+  nbt-tags: []
+
+# Sistema de whitelist
+white-list:
+  # Ativar a whitelist
+  enabled: false
+  # Materiais que estarão na white-list
+  materials: [ 'LOG:1', 'TRIPWIRE_HOOK' ]

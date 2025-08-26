@@ -49,3 +49,4 @@ chat:
   denied-player: '&cO negou &f{player}&c aceitou a sua solicitação de troca.'
   world: '&cO jogador {player} está em um mundo diferente do seu.'
   distance: '&cO jogador {player} está muito distante de você. Máximo: {amount} blocos.'
+  cant-trade: '&cEste item não pode ser trocado.'
