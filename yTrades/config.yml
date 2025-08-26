@@ -1,0 +1,18 @@
+#       _____              _
+#  _   |_   _| __ __ _  __| | ___  ___
+# | | | || || '__/ _` |/ _` |/ _ \/ __|
+# | |_| || || | | (_| | (_| |  __/\__ \
+#  \__, ||_||_|  \__,_|\__,_|\___||___/
+#  |___/
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Sistemas gerais
+general:
+  # Ativar enviar pedido de troca ao interagir com um jogador
+  # (clicar com o botão direito nele)
+  interact-trade: true
+  # Distância máxima entre blocos que irá permitir a troca entre jogadores
+  # deixe 0 para não usar
+  max-distance: 0

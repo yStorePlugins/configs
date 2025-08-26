@@ -1,0 +1,51 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  cancelled-other: '&cA outra parte cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aTroca comandos:
+
+    &a> /troca [player]
+    &a> /troca aceitar [player]
+
+  yourself: '&cVocê não pode trocar com você mesmo.'
+  none: '&cNinguém colocou nada na troca.'
+  full: '&cVocê já selecionou itens demais.'
+  ready: '&cVocê não pode mais modificar, pois já está confirmado. Clique em confirmar novamente para conseguir alterar a troca.'
+
+  digit-price: |
+
+    &aDigite o preço para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  change-price: '&aVocê alterou o preço para {price}.'
+  changed-items: '&cOs itens foram alterados pois uma das partes ({player}) não os possuiam mais.'
+  changed-economies: '&cAs economias foram alteradas pois uma das partes ({player}) não as possuiam suficientemente.'
+  finished: '&aTroca realizada com sucesso.'
+  expired: '&cSua solicitação de troca para {player} expirou.'
+  already-sent: '&cVocê já possui uma solicitação de troca pendente.'
+  target-sent: '&cEste jogador não enviou nenhuma solicitação de troca.'
+  target-sent-you: '&cEste jogador não enviou nenhuma solicitação de troca para você.'
+  sent: '&aSolicitação de troca enviada para &f{player}&a.'
+  received: '&aSolicitação de troca recebida de &f{player}&a. Clique &f&l<click:run_command:/troca aceitar {player}>AQUI</click>&a para aceitar.'
+  accepted: '&aVocê aceitou a solicitação de troca de &f{player}&a.'
+  accepted-player: '&aO jogador &f{player}&a aceitou a sua solicitação de troca.'
+  denied: '&aVocê negou a solicitação de troca de &f{player}&c.'
+  denied-player: '&cO negou &f{player}&c aceitou a sua solicitação de troca.'
+  world: '&cO jogador {player} está em um mundo diferente do seu.'
+  distance: '&cO jogador {player} está muito distante de você. Máximo: {amount} blocos.'
