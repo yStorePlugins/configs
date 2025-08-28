@@ -74,7 +74,7 @@ buy-cost:
 
 # Sistemas de proteções do mundo
 world-protection:
-  # Permitir explosões dentro e fora de terrenos
+  # Permitir explosões fora de terrenos
   explode: false
   # Permitir construir fora de terrenos
   # bypass: yterrenos.protection.construct.bypass
@@ -82,3 +82,8 @@ world-protection:
   # Permitir quebrar fora de terrenos
   # bypass: yterrenos.protection.break.bypass
   break: false
+
+# Sistema de proteção do terreno
+terrain-protection:
+  # Permitir explosões dentro de terrenos
+  explode: false
