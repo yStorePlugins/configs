@@ -1,0 +1,84 @@
+#        _____
+#  _   |_   _|__ _ __ _ __ ___ _ __   ___  ___
+# | | | || |/ _ \ '__| '__/ _ \ '_ \ / _ \/ __|
+# | |_| || |  __/ |  | | |  __/ | | | (_) \__ \
+#  \__, ||_|\___|_|  |_|  \___|_| |_|\___/|___/
+#  |___/
+#
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Sistemas gerais
+general:
+  # Mundos permitidos para criar terrenos
+  allowed-worlds: [ 'PlotWorld' ]
+  # Quantia máxima de terrenos que um jogador pode ter
+  terrain-max: 2
+  # Tamanho mínimo do terreno
+  terrain-min-size: 8
+  # Tamanho máximo do terreno
+  terrain-max-size: 64
+  # Distância mínima entre terrenos
+  terrain-min-distance: 10
+  # Material da cerca
+  fence-material: 'FENCE'
+  # Permitir quebrar a cerca do terreno
+  break-fence: false
+  # Delay para alternar a cerca de um terreno
+  # em segundos
+  fence-delay: 60
+  # Ícone padrão dos terrenos
+  default-icon: '69a28ba3ba79be1954710d4db2a3fd22773f619f18fecf5982353fb7ac18393a'
+  # Custo para teleportar até um terreno
+  teleport-cost:
+    # Preços por tamanho
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+
+# Custo para comprar um terreno
+buy-cost:
+  # Ativar o custo
+  enabled: true
+  # Preços por tamanho
+  prices-per-size:
+    price1:
+      provider: 'money'
+      amount: 1000.0
+
+# Sistemas de proteções do mundo
+world-protection:
+  # Permitir explosões dentro e fora de terrenos
+  explode: false
+  # Permitir construir fora de terrenos
+  # bypass: yterrenos.protection.construct.bypass
+  construct: false
+  # Permitir quebrar fora de terrenos
+  # bypass: yterrenos.protection.break.bypass
+  break: false

@@ -1,0 +1,42 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+
+# Providers disponíveis:
+#
+#   AtlasEconomiaSecundaria, AtlasMinas, AtlasMinasV2,
+#   JH_Shop, LegendaryEconomy, NextCash, PlayerPoints,
+#   StormEconomiaSecundaria, StormMinas, TGCash,
+#   yAlmas, yPoints, yRankup,
+#   Vault
+#
+
+economies:
+  money:
+    # Coloque o nome do plugin
+    # Para money deixe Money
+    provider: 'Money'
+    # Formato inteiro
+    display: 'Dinheiro'
+    # Formato abreviado
+    abbreviated: 'coins'
+    # Permitir que comercializem na loja com o jogador offline
+    allow-offline: true
+    # Permissão para o usuário conseguir definir esta economia
+    permission: 'yterrenos.provider.money'
+    # Formato do símbolo
+    symbol: '$'
+    # ‘Item’ que aparecerá no menu
+    item:
+      material: '209299a117bee88d3262f6ab98211fba344ecae39b47ec848129706dedc81e4f'
+      name: '&aEconomia'
+      lore:
+        - ''
+        - ' &7Tipo de economia: &fMoney&7.'
+        - ''
+        - ' &f* Preço atual: &a{price}&f.'
+        - ''
+        - '&aBotão &fESQUERDO&a para alterar o valor de compra'
+        - '&aBotão &fQ&a para excluir essa economia'

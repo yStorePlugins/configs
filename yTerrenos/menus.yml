@@ -1,0 +1,579 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Terreno'
+  size: 45
+  back-slot: 36
+  items:
+    info-slot: 10
+    upgrade-slot: 12
+    friends-slot: 13
+    sell-slot: 14
+    teleport-slot: 16
+    fly-slot: 20
+    fence-slot: 29
+    pvp-slot: 33
+    home-slot: 31
+    icon-slot: 24
+    delete-slot: 44
+    formats:
+      prices: '&2{provider_symbol} &r{price} &7({provider_abbreviated})'
+      none: '&cNenhuma economia configurada.'
+    info:
+      material: 'PAPER'
+      name: '&aInformações'
+      lore:
+        - '&7Criado em: {created_date} às {created_hour}'
+        - ''
+        - '&aNome: &f{name}'
+        - '&aDono: &f{owner}'
+        - '&aTamanho: &f{size}x{size}'
+        - '&aPVP: &f{pvp}'
+        - '&aCerca: &f{fence}'
+        - ''
+    upgrade:
+      material: 'ANVIL'
+      name: '&aUpgrade'
+      lore:
+        - '&7Aumente o tamanho do seu terreno'
+        - '&7e tenha a maior casa do servidor.'
+        - ''
+        - '&aTamanho atual: &f{size}x{size}'
+        - '&f> Custo &7(+1)&7: &2$ &a{money}'
+        - ''
+        - '&aClique para comprar.'
+    friends:
+      material: 'BOOK'
+      name: '&aAmigos'
+      lore:
+        - '&7Gerencie quem pode morar junto'
+        - '&7contigo nesse terreno.'
+        - ''
+        - '&f> Quantia: &a{friends}'
+        - ''
+        - '&aClique para gerenciar.'
+    sell:
+      material: 'EMERALD'
+      name: '&aVender'
+      lore:
+        - '&7Comercialize seu terreno com'
+        - '&7outros jogadores do servidor.'
+        - ''
+        - '&f> A venda: &r{selling}'
+        - ''
+        - '{formats}'
+        - ''
+        - '&aClique para abrir.'
+    teleport:
+      material: 'ENDER_PEARL'
+      name: '&aTeleportar'
+      lore:
+        - '&7Teleporte para o local exato'
+        - '&7do seu terreno.'
+        - ''
+        - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&f> Custo: &2$ &a1000,00'
+        - ''
+        - '&aClique para teleportar. &6(Apenas VIPS).'
+    fly:
+      material: 'FEATHER'
+      name: '&aModo de Voo'
+      lore:
+        - '&7Gerencie a permissão de voo'
+        - '&7no seu terreno.'
+        - ''
+        - '&f> Modo de Voo: &r{fly}'
+        - ''
+        - '&aClique para alternar.'
+    fence:
+      material: 'FENCE'
+      name: '&aCerca'
+      lore:
+        - '&7Gerencie o bloco que protege'
+        - '&7o seu terreno de invasores.'
+        - ''
+        - '&f> Cerca: &r{fence}'
+        - ''
+        - '&aClique para alternar.'
+    pvp:
+      material: 'DIAMOND_SWORD'
+      name: '&aPVP'
+      lore:
+        - '&7Gerencie a proteção contra'
+        - '&7combate no seu terreno.'
+        - ''
+        - '&f> PVP: &r{pvp}'
+        - ''
+        - '&aClique para alternar.'
+    home:
+      material: 'WOOD_DOOR'
+      name: '&aLocal da Home'
+      lore:
+        - '&7Defina o local que será a entrada'
+        - '&7do seu terreno.'
+        - ''
+        - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&aClique para alterar.'
+    icon:
+      material: 'ITEM_FRAME'
+      name: '&aÍcone do Terreno'
+      lore:
+        - '&7Mude o ícone que ficará'
+        - '&7no seu terreno.'
+        - ''
+        - '&aClique para alterar o ícone.'
+    delete:
+      material: 'BARRIER'
+      name: '&cDeletar Terreno'
+      lore:
+        - '&7Remova por completo a proteção'
+        - '&7desse terreno.'
+        - ''
+        - '&cClique para deletar.'
+  facing:
+    storage:
+      slot: 22
+      material: 'CHEST'
+      name: '&aArmazém'
+      nbt-tag: ['yStore-Menu-Command=>sudo {player} /armazem']
+      lore:
+        - '&7Acesse o armazém de drops deste'
+        - '&7terreno.'
+        - ''
+        - '&aClique para acessar.'
+
+# Menu de amigos
+friends:
+  name: '&8Terreno'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+  items:
+    add-slot: 27
+    add:
+      material: '8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+      name: '&aAdicionar amigo'
+      lore:
+        - '&7Clique aqui para adicionar'
+        - '&7amigos para poder usar'
+        - '&7este terreno.'
+    friend:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - ''
+        - '&f> Colocar Blocos: &a{place_blocks}'
+        - '&f> Quebrar Blocos: &a{break_blocks}'
+        - '&f> Abrir Baús: &a{open_chest}'
+        - '&f> Usar Itens: &a{use_items}'
+        - '&f> Interagir com Entidades: &a{interact_entities}'
+        - ''
+        - '&aClique para gerenciar.'
+        - ''
+
+# Menu de gerenciamento do amigo
+friend:
+  name: '&8Terreno'
+  size: 36
+  back-slot: 31
+  items:
+    place-blocks-slot: 10
+    break-blocks-slot: 11
+    open-chest-slot: 12
+    use-items-slot: 13
+    interact-entity-slot: 14
+    delete-slot: 16
+    place-blocks:
+      material: 'PAPER'
+      name: '&aColocar Blocos'
+      lore:
+        - ''
+        - '&f> Status: &f{status}'
+        - ''
+        - '&aClique para alternar.'
+    break-blocks:
+      material: 'PAPER'
+      name: '&aQuebrar Blocos'
+      lore:
+        - ''
+        - '&f> Status: &f{status}'
+        - ''
+        - '&aClique para alternar.'
+    open-chest:
+      material: 'PAPER'
+      name: '&aAbrir Baús'
+      lore:
+        - ''
+        - '&f> Status: &f{status}'
+        - ''
+        - '&aClique para alternar.'
+    use-items:
+      material: 'PAPER'
+      name: '&aUsar Itess'
+      lore:
+        - ''
+        - '&f> Status: &f{status}'
+        - ''
+        - '&aClique para alternar.'
+    interact-entity:
+      material: 'PAPER'
+      name: '&aInteragir com Entidades'
+      lore:
+        - ''
+        - '&f> Status: &f{status}'
+        - ''
+        - '&aClique para alternar.'
+    delete:
+      material: 'BARRIER'
+      name: '&cDeletar'
+      lore:
+        - '&7Remova esse usuário dos amigos'
+        - '&7do seu terreno.'
+        - ''
+        - '&aClique para deletar.'
+
+# Menu de alterar ícone
+change-icon:
+  name: '&8Terreno'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 37, 38, 39 ]
+  previous-slot: 41
+  next-slot: 43
+  back-slot: 45
+  items:
+    head-slot: 42
+    head:
+      material: '62d90ad63dd826df02994abdcc6c2306163e1072d1b9e63ad4e7d7d1cf87cdf9'
+      name: '&eDefinir head'
+      lore:
+      - '&7Clique para definir uma'
+      - '&7cabeça customizada no terreno.'
+
+# Menu de terrenos
+terrains:
+  name: '&8Terrenos'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
+  terrain:
+    name: '&aTerreno &7(&e{name}&7)'
+    lore:
+      - '&7Criado em: {created_date} às {created_hour}'
+      - ''
+      - '&f> Nome: &b{name}'
+      - '&f> Dono: &c{owner}'
+      - '&f> Tamanho: &b{size}x{size}'
+      - '&f> PVP: &r{pvp}'
+      - '&f> Cerca: &r{fence}'
+      - ''
+      - '&aClique para abrir o menu do terreno.'
+  items:
+    profile-slot: 38
+    selling-slot: 40
+    friends-slot: 42
+    empty-slot: 22
+    profile:
+      material: '{player}'
+      name: '&eMinhas Informações'
+      lore:
+      - '&7Confira as suas informações acerca'
+      - '&7dos seus terrenos no servidor.'
+      - ''
+      - '&f> Quantia de Terrenos: &b{amount}'
+      - '&f> Terrenos à Venda: &c{selling}'
+      - '&f> Terrenos de Amigos: &c{friends}'
+      - ''
+    selling:
+      material: '91be4b5b592fee21a65e0f903038c5333be388234a43731d4adfe5d57d3644e5'
+      name: '&eTerrenos à Venda'
+      lore:
+      - '&7Confira todos os terrenos que'
+      - '&7estão à venda no servidor.'
+      - ''
+      - '&f> Quantia de Terrenos: &b{amount}'
+      - ''
+      - '&aClique para abrir.'
+    friends:
+      material: 'f151bec8f91ef93c60cf40a98acbbeb17f6375725f00d4433a118f1010b298b'
+      name: '&eTerrenos de Amigos'
+      lore:
+      - '&7Confira todos os terrenos que'
+      - '&7você está adicionado como amigo.'
+      - ''
+      - '&f> Quantia de Terrenos: &b{amount}'
+      - ''
+      - '&aClique para abrir.'
+    empty:
+      material: 'WEB'
+      name: '&cVazio'
+      lore:
+      - '&7Você não possui nenhum terreno'
+      - '&7no nosso servidor.'
+
+# Menu de seleção de economias
+providers:
+  name: '&8Terreno'
+  size: 27
+  previous: 9
+  next: 17
+  back: 18
+  slots: [ 10, 11, 12, 13, 14 ]
+  items:
+    selling-slot: 16
+    selling:
+      material: 'EMERALD'
+      name: '&aVender'
+      lore:
+        - '&7Comercialize seu terreno com'
+        - '&7outros jogadores do servidor.'
+        - ''
+        - '&f> A venda: &r{selling}'
+        - ''
+        - '&aClique para alternar.'
+
+# Menu de terrenos a venda
+selling:
+  name: '&8Terrenos'
+  size: 45
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 31
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  items:
+    empty-slot: 13
+    formats:
+      prices: '&2{provider_symbol} &r{price} &7({provider_abbreviated})'
+      none: '&cNenhuma economia configurada.'
+    terrain:
+      name: '&aTerreno &7(&e{name}&7)'
+      lore:
+        - '&7Criado em: {created_date} às {created_hour}'
+        - ''
+        - '&f> Nome: &b{name}'
+        - '&f> Dono: &c{owner}'
+        - '&f> Tamanho: &b{size}x{size}'
+        - '&f> PVP: &r{pvp}'
+        - '&f> Cerca: &r{fence}'
+        - ''
+        - '&f> Localização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&ePreços:'
+        - '{formats}'
+        - ''
+        - '&aClique para comprar.'
+    empty:
+      material: 'WEB'
+      name: '&cVazio'
+      lore:
+        - '&7Não há terrenos a venda'
+        - '&7no nosso servidor.'
+
+# Menu de terrenos de amigos
+friend-terrains:
+  name: '&8Terrenos'
+  size: 45
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 31
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  items:
+    empty-slot: 13
+    terrain:
+      name: '&aTerreno &7(&e{name}&7)'
+      lore:
+        - '&7Criado em: {created_date} às {created_hour}'
+        - ''
+        - '&f> Nome: &b{name}'
+        - '&f> Dono: &c{owner}'
+        - '&f> Tamanho: &b{size}x{size}'
+        - '&f> PVP: &r{pvp}'
+        - '&f> Cerca: &r{fence}'
+        - ''
+        - '&f> Localização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&aClique para gerenciar.'
+    empty:
+      material: 'WEB'
+      name: '&cVazio'
+      lore:
+        - '&7Não há terrenos de amigos'
+        - '&7disponível para você.'
+
+# Menu de confirmar compra
+confirm-sell:
+  name: '&8Terreno'
+  size: 27
+  items:
+    cancel-slot: 11
+    terrain-slot: 13
+    confirm-slot: 15
+    formats:
+      prices: '&2{provider_symbol} &r{price} &7({provider_abbreviated})'
+      none: '&cNenhuma economia configurada.'
+    terrain:
+      name: '&aTerreno &7(&e{name}&7)'
+      lore:
+        - '&7Criado em: {created_date} às {created_hour}'
+        - ''
+        - '&f> Nome: &b{name}'
+        - '&f> Dono: &c{owner}'
+        - '&f> Tamanho: &b{size}x{size}'
+        - '&f> PVP: &r{pvp}'
+        - '&f> Cerca: &r{fence}'
+        - ''
+        - '&f> Localização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&ePreços:'
+        - '{formats}'
+        - ''
+    cancel:
+      material: '32cbdc9d4c590eac285a4544f2b1e068bd27fd52173ac8d7679013823cbab95a'
+      name: '&cCancelar'
+      lore:
+        - '&7Cancele o processo de compra deste'
+        - '&7terreno e volte para o menu anterior.'
+        - ''
+        - '&cClique para cancelar.'
+    confirm:
+      material: '8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+      name: '&aConfirmar'
+      lore:
+        - '&7Confirme o processo de compra deste'
+        - '&7terreno e vá para o menu de informações dele.'
+        - ''
+        - '&aClique para confirmar a compra.'
+
+# Menu de confirmar compra
+confirm-delete:
+  name: '&8Terreno'
+  size: 27
+  items:
+    cancel-slot: 11
+    terrain-slot: 13
+    confirm-slot: 15
+    terrain:
+      name: '&aTerreno &7(&e{name}&7)'
+      lore:
+        - '&7Criado em: {created_date} às {created_hour}'
+        - ''
+        - '&f> Nome: &b{name}'
+        - '&f> Dono: &c{owner}'
+        - '&f> Tamanho: &b{size}x{size}'
+        - '&f> PVP: &r{pvp}'
+        - '&f> Cerca: &r{fence}'
+        - ''
+    cancel:
+      material: '32cbdc9d4c590eac285a4544f2b1e068bd27fd52173ac8d7679013823cbab95a'
+      name: '&cCancelar'
+      lore:
+        - '&7Cancele o processo de deletar este'
+        - '&7terreno e volte para o menu anterior.'
+        - ''
+        - '&cClique para cancelar.'
+    confirm:
+      material: '8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+      name: '&aConfirmar'
+      lore:
+        - '&7Confirme o processo de deletar este'
+        - '&7terreno e vá para o menu principal.'
+        - ''
+        - '&aClique para confirmar e deletar.'
+
+# Menu de informações do terreno (para amigos)
+info-friend:
+  name: '&8Terreno'
+  size: 27
+  items:
+    terrain-slot: 10
+    friends-slot: 12
+    buy-slot: 13
+    teleport-slot: 16
+    formats:
+      prices: '&2{provider_symbol} &r{price} &7({provider_abbreviated})'
+      none: '&cNenhuma economia configurada.'
+    terrain:
+      name: '&aTerreno &7(&e{name}&7)'
+      lore:
+        - '&7Criado em: {created_date} às {created_hour}'
+        - ''
+        - '&f> Nome: &b{name}'
+        - '&f> Dono: &c{owner}'
+        - '&f> Tamanho: &b{size}x{size}'
+        - '&f> PVP: &r{pvp}'
+        - '&f> Cerca: &r{fence}'
+        - ''
+    friends:
+      material: 'BOOK'
+      name: '&aAmigos'
+      lore:
+        - '&7Veja todas as pessoas que possuem'
+        - '&7permissão neste terreno.'
+        - ''
+        - '&f> Quantia: &a{friends}'
+        - ''
+        - '&aClique para ver.'
+    buy-no:
+      material: 'EMERALD'
+      name: '&cComprar'
+      lore:
+        - '&cEste terreno não está a venda.'
+    buy:
+      material: 'EMERALD'
+      name: '&aComprar'
+      lore:
+        - ''
+        - '&f> A venda: &r{selling}'
+        - ''
+        - '{formats}'
+        - ''
+        - '&aClique para comprar.'
+    teleport:
+      material: 'ENDER_PEARL'
+      name: '&aTeleportar'
+      lore:
+        - '&7Teleporte para o local exato'
+        - '&7deste terreno.'
+        - ''
+        - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&f> Custo: &2$ &a1000,00'
+        - ''
+        - '&aClique para teleportar. &6(Apenas VIPS).'
+  facing:
+    storage:
+      slot: 14
+      material: 'CHEST'
+      name: '&aArmazém'
+      nbt-tag: ['yStore-Menu-Command=>sudo {player} /armazem']
+      lore:
+        - '&7Acesse o armazém de drops deste'
+        - '&7terreno.'
+        - ''
+        - '&aClique para acessar.'

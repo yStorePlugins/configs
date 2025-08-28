@@ -1,0 +1,148 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+# Mensagens ao entrar em um terreno
+entry:
+  chat: ''
+  actionbar: '&aTerreno de &f{player}&a.'
+  title: '&aTerreno de<nl>&f{player}&a.'
+
+# Mensagens ao sair de um terreno
+exit:
+  chat: ''
+  actionbar: '&cVocê saiu do terreno de &f{player}&c.'
+  title: ''
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &a/terreno criar <tamanho> - Criar um terreno
+    &a/terreno deletar [nome] - Deletar um terreno
+    &a/terreno info [nome] [player] - Ver informações do terreno
+    &a/terreno teleportar [nome] [player] - Teleportar para um terreno
+    &a/terreno pvp [nome] - Alternar PvP no terreno
+    &a/terreno fly [nome] - Alternar FLY no terreno
+    &a/terreno cerca [nome] - Alternar CERCA do terreno
+    &a/terreno vender [nome] - Colocar terreno à venda
+    &a/terreno comprar [nome] [player] - Comprar terreno
+    &a/terreno lista - Listar seus terrenos
+    &a/terreno upgrade - Fazer upgrade do terreno
+    &a/terreno amigos - Gerenciar amigos
+    &a/terreno loja - Ver terrenos à venda
+
+  help-staff: |
+
+    &a/terreno criar <tamanho> - Criar um terreno
+    &a/terreno deletar [nome] - Deletar um terreno
+    &a/terreno info [nome] [player] - Ver informações do terreno
+    &a/terreno teleportar [nome] [player] - Teleportar para um terreno
+    &a/terreno pvp [nome] - Alternar PvP no terreno
+    &a/terreno fly [nome] - Alternar FLY no terreno
+    &a/terreno cerca [nome] - Alternar CERCA do terreno
+    &a/terreno vender [nome] - Colocar terreno à venda
+    &a/terreno comprar [nome] - Comprar terreno
+    &a/terreno lista - Listar seus terrenos
+    &a/terreno upgrade - Fazer upgrade do terreno
+    &a/terreno amigos - Gerenciar amigos
+    &a/terreno loja - Ver terrenos à venda
+
+    &c/terreno deletar <nome> <player> - Deletar um terreno
+    &c/terreno pvp <nome> <player> - Alternar PvP no terreno
+    &c/terreno fly <nome> <player> - Alternar FLY no terreno
+    &c/terreno cerca <nome> <player> - Alternar cerca do terreno
+    &c/terreno reload - Recarrega as configurações
+
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  terrain-size: '&cO tamanho deve ser entre {min} e {max}.'
+  terrain-world: '&cVocê não pode criar terrenos neste mundo.'
+  terrain-other: '&cVocê não pode criar um terreno aqui. Há outro muito próximo.'
+  terrain-max: '&cVocê atingiu o limite máximo de terrenos ({max}).'
+  terrain-message-format: '<nl>&f{name} &7({size}x{size})'
+  terrain-list: |
+    &r
+    &aTerrenos de &f{player}: {list}
+  terrain-found: |
+    &r
+    &cTerreno não encontrado
+    &cDisponíveis: {list}
+  terrain-info: |
+    &r
+    &a=== Informações do Terreno ===
+    &7Criado em: {created_date} às {created_hour}
+    &r
+    &aNome: &f{name}
+    &aDono: &f{owner}
+    &aTamanho: &f{size}x{size}
+    &aPVP: &f{pvp}
+    &aCerca: &f{fence}
+    &r
+    &aAmigos: &c{friends}
+  terrain-created: '&aTerreno criado com sucesso.'
+  terrain-deleted: '&aTerreno deletado com sucesso.'
+  terrain-owner: '&cVocê não é dono deste terreno.'
+  terrain-owner-target: '&c{player} não é dono deste terreno.'
+  terrain-pvp: '&cO PVP está desabilitado neste terreno.'
+  terrain-break: '&cVocê não tem permissão para quebrar blocos neste terreno.'
+  terrain-break-fence: '&cVocê não pode quebrar a cerca do terreno.'
+  terrain-place: '&cVocê não tem permissão para colocar blocos neste terreno.'
+  terrain-place-fence: '&cVocê não pode colocar blocos na cerca do terreno.'
+  terrain-open: '&cVocê não tem permissão para abrir containers neste terreno.'
+  terrain-use: '&cVocê não tem permissão para usar itens neste terreno.'
+  terrain-interact-entity: '&cVocê não tem permissão para interagir com entidades neste terreno.'
+  terrain-size-max: '&cSeu terreno já está no tamanho máximo ({size}/{size})'
+  terrain-size-to-max: '&cSeu terreno irá ultrapassar o tamanho máximo ({size}/{max})'
+  terrain-found-location: '&cVocê precisa estar dentro de um terreno para realizar essa ação.'
+  terrain-upgraded: '&aVocê deu upgrade no seu terreno.'
+  terrain-just-owner: '&cApenas o dono do terreno pode realizar essa ação.'
+  terrain-teleported: '&aTeleportado para o terreno.'
+  terrain-fence-changed: '&aStatus da cerca alternado para &7(&r{status}&7)&a.'
+  terrain-pvp-changed: '&aStatus do pvp alternado para &7(&r{status}&7)&a.'
+  terrain-fly-changed: '&aStatus do fly alternado para &7(&r{status}&7)&a.'
+  terrain-home-changed: '&aLocal da home alterado com sucesso.'
+  terrain-icon-changed: '&aÍcone alterado com sucesso.'
+  terrain-price-changed: '&aVocê mudou o valor para {amount}.'
+  terrain-fence-delay: '&cVocê deve aguardar {time} para realizar isso novamente.'
+  terrain-home-block: '&cVocê deve definir a localização em cima de um bloco.'
+  terrain-home-wrong: '&cVocê deve definir a localização dentro deste terreno.'
+  terrain-friend-digit-add: |
+
+    &aDigite no chat o nome do seu amigo que quer adicionar.'
+    &7para cancelar digite &ncancelar&7.'
+
+  terrain-head-digit: |
+
+    &aDigite o nome da head que você deseja.'
+    &7para cancelar digite &ncancelar&7.'
+
+  terrain-price-digit: |
+
+    &aDigite o preço que você deseja.'
+    &7para cancelar digite &ncancelar&7.'
+
+  terrain-friend-add-owner: '&cVocê não pode adicionar o dono como amigo no terreno.'
+  terrain-friend-already-added: '&cEste jogador já está adicionado.'
+  terrain-friend-added: '&aVocê adicionou o jogador &7{player}&a no seu terreno.'
+  terrain-friend-deleted: '&aJogador deletado com sucesso.'
+  terrain-not-selling: '&cEste terreno não está a venda.'
+  terrain-buy-owner: '&cVocê não pode comprar seu próprio terreno.'
+  terrain-bought: '&aTerreno &f{name}&a de &f{player}&a adquirido com sucesso.'
+  terrain-bought-target: '&aTerreno &f{name}&a adquirido por &f{player}&a com sucesso.'
+  terrain-just-owner-friend: '&cApenas donos ou amigos deste terreno podem fazer isso.'
+  owner-offline: '&cEsta venda possui uma economia que não permite que o dono esteja offline e o dono deste terreno está offline.'
+  world-protection: '&cVocê não pode fazer isso fora de terrenos.'
+  border-viewer-on: '&aVisualizador de bordas ativado.'
+  border-viewer-off: '&cVisualizador de bordas desativado.'
