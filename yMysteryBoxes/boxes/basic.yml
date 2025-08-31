@@ -1,0 +1,62 @@
+# Nome que aparecerá nas mensagens
+display: '&5Básica'
+
+# Item que será interagido
+item:
+  material: CHEST
+  name: '&5Caixa Misteriosa'
+  lore: ['&7Tipo: &fBásica&7.', '', '&aClique com botão direito', '&apara abrir esta caixa.']
+
+# chance,recompensa-raridade
+# a raridade, caso não tenha, deixe: Nenhuma
+Recompensas:
+  - '50.00,Reco1-raro'
+
+# Configurações de animação da roleta
+animation:
+  # Ativar a animação
+  enabled: true
+  # Duração total da animação (em iterações)
+  duration: 110
+  # Velocidade inicial (ticks entre atualizações)
+  initial-speed: 3
+  # Ponto onde a animação acelera (% da duração)
+  acceleration-point: 15
+  # Ponto onde atinge velocidade máxima (% da duração)
+  max-speed: 25
+  # Ponto onde começa a desacelerar (% da duração)
+  deceleration-point: 60
+  # Velocidade final (ticks entre atualizações no final)
+  final-speed: 6
+  # Som que tocará ao rodar recompensas
+  sound: 'NOTE_STICKS'
+  # Som que tocará ao ganhar a recompensa
+  win-sound: 'LEVEL_UP'
+  # Configurações dos vidros
+  glass:
+    material: 'GLASS_RANDOM_COLOR'
+    material-finish: 'STAINED_GLASS_PANE:7'
+    middle-top: 'STAINED_GLASS_PANE:5'
+    middle-bottom: 'STAINED_GLASS_PANE:5'
+
+# Dê uma chance a mais para os vips
+additional-chance:
+  vip:
+    # Permissão para ter essa chance a mais
+    permission: 'ymysteryboxes.vip'
+    # Raridade válida
+    rarity: 'rare'
+    # Chance a mais
+    chance: 15.0
+
+# Sistema de chaves (yMysteryBoxesKeyAddon)
+key:
+  # Exigir a chave para abrir
+  need: false
+  # Mensagem que não possui a key
+  message: '&cVocê precisa da chave para abrir essa caixa.'
+  # Item da chave
+  item:
+    material: TRIPWIRE_HOOK
+    name: '&5Chave Misteriosa'
+    lore: [ '&7Tipo: &fBásica&7.', '', '&aDeixe-a no inventário', '&apara abrir a caixa.' ]

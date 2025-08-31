@@ -1,0 +1,62 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio.'
+  help: |
+
+    &aCaixas comandos:
+
+    &a> /mbox give
+    &a> /mbox giveall
+    &a> /mbox givekey
+    &a> /mbox givekeyall
+    &a> /mbox preview
+    &a> /mbox reload
+
+  digit-chance: |
+
+    &aDigite a chance para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-command: |
+
+    &aDigite o comando para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  change-chance: '&aVocê alterou a chance para {chance}.'
+  change-command: '&aVocê alterou o comando para {command}.'
+  invalid-chance: '&cA chance não pode ser maior que 100 nem menor que 0.'
+  box-give: '&aVocê deu &7{amount}x &acaixa(s) {box} &apara o jogador &7{player}&a.'
+  box-give-all: '&aVocê deu &7{amount}x &acaixa(s) &7{box}&a para &7({players}) &ajogadores online.'
+  box-received: '&aVocê recebeu &7{amount}x &acaixa(s) {box}&a.'
+  box-received-all: |
+
+    &aTodos os jogadores receberam &7{amount}x &acaixa(s) &7{box}&a.
+
+  box-give-key: '&aVocê deu &7{amount}x &xchave(s) {box} &apara o jogador &7{player}&a.'
+  box-received-key: '&aVocê recebeu &7{amount}x &xchave(s) {box}&a.'
+  box-give-key-all: '&aVocê deu &7{amount}x &achave(s) &7{box}&a para &7({players}) &ajogadores online.'
+  box-received-key-all: |
+    
+    &aTodos os jogadores receberam &7{amount}x &achave(s) &7{box}&a.
+
+  box-command: '&cVocê não pode executar comandos enquanto estiver abrindo uma caixa.'
+  box-found: |
+    &cEsta caixa não existe.
+    &cDisponíveis: {list}
+  box-reward-empty: '&cEsta caixa não possui recompensas configuradas!'
+  item-no: '&cO item não pode ser nulo.'

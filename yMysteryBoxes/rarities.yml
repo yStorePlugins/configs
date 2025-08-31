@@ -1,0 +1,22 @@
+rarities:
+  rare:
+    # Nome nos menus e mensagens
+    display: '&6Raro'
+    effects:
+      # Ativar o efeito de raio
+      strike: false
+      # Ativar o efeito de morcegos
+      bats: false
+    # Ícone no menu
+    icon:
+      material: PAPER
+      name: '&6Raro'
+      lore: [ '&7Altere a raridade dessa recompensa', '&7para a raridade &6RARO&7.' ]
+    # Mensagens que irá retornar
+    messages:
+      actionbar: '&b[CAIXA MISTERIOSA] &fO jogador &b{player}&f encontrou uma recompensa rara na caixa &b{box}&f.'
+      title: ''
+      chat: |
+  
+        &b[CAIXA MISTERIOSA] &fO jogador &b{player}&f encontrou uma recompensa rara na caixa &b{box}&f.
+        &b> &7{item}
