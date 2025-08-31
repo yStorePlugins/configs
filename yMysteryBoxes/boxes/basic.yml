@@ -7,11 +7,6 @@ item:
   name: '&5Caixa Misteriosa'
   lore: ['&7Tipo: &fBásica&7.', '', '&aClique com botão direito', '&apara abrir esta caixa.']
 
-# chance,recompensa-raridade
-# a raridade, caso não tenha, deixe: Nenhuma
-Recompensas:
-  - '50.00,Reco1-raro'
-
 # Configurações de animação da roleta
 animation:
   # Ativar a animação
