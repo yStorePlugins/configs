@@ -1,24 +1,7 @@
-# Comandos e aliases do plugin
-Comando:
-   Comando: 'caixamisteriosa'
-   Aliases: [ mysterybox, mbox ]
-
-# Opções gerais do plugin
-Opcoes:
-   # Ativar o sistema de animação
-   Animacao: true
-
-# Setas dos menus
-Setas:
-   Voltar:
-      material: ARROW
-      name: '&cVoltar'
-      lore: [ '&7Clique para voltar ao menu anterior.' ]
-   Anterior:
-      material: ARROW
-      name: '&cVoltar'
-      lore: [ '&7Clique para voltar à página anterior.' ]
-   Proximo:
-      material: ARROW
-      name: '&aPróxima'
-      lore: [ '&7Clique para ir à próxima página.' ]
+#         __  __           _                  ____
+#  _   _|  \/  |_   _ ___| |_ ___ _ __ _   _| __ )  _____  _____  ___
+# | | | | |\/| | | | / __| __/ _ \ '__| | | |  _ \ / _ \ \/ / _ \/ __|
+# | |_| | |  | | |_| \__ \ ||  __/ |  | |_| | |_) | (_) >  <  __/\__ \
+#  \__, |_|  |_|\__, |___/\__\___|_|   \__, |____/ \___/_/\_\___||___/
+#  |___/        |___/                  |___/
+#
