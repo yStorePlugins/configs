@@ -60,16 +60,19 @@ chat:
     &a/terreno amigos - Gerenciar amigos
     &a/terreno loja - Ver terrenos à venda
 
+    &c/terreno forcedelete - Deletar o terreno atual
     &c/terreno deletar <nome> <player> - Deletar um terreno
     &c/terreno pvp <nome> <player> - Alternar PvP no terreno
     &c/terreno fly <nome> <player> - Alternar FLY no terreno
     &c/terreno cerca <nome> <player> - Alternar cerca do terreno
     &c/terreno reload - Recarrega as configurações
+    &c/terreno chunks <reload|info|status> - Gerenciar chunks
 
   no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
   terrain-size: '&cO tamanho deve ser entre {min} e {max}.'
   terrain-world: '&cVocê não pode criar terrenos neste mundo.'
   terrain-other: '&cVocê não pode criar um terreno aqui. Há outro muito próximo.'
+  terrain-border: '&cVocê não pode criar um terreno aqui. Não há espaço suficiente nas bordas do mundo.'
   terrain-max: '&cVocê atingiu o limite máximo de terrenos ({max}).'
   terrain-message-format: '<nl>&f{name} &7({size}x{size})'
   terrain-list: |
