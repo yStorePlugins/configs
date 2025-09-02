@@ -1,0 +1,36 @@
+#     _                    _      _
+#    / \   _ __ ___  _   _| | ___| |_ ___
+#   / _ \ | '_ ` _ \| | | | |/ _ \ __/ __|
+#  / ___ \| | | | | | |_| | |  __/ |_\__ \
+# /_/   \_\_| |_| |_|\__,_|_|\___|\__|___/
+#
+
+# Sistema de amuletos
+amulets:
+  anti-damage:
+    material: 'dd9850f0a95937be428d96e7b6f8a3e28d68afd5a688568b6936a44085639386'
+    name: '&cBloquear dano'
+    lore:
+      - ''
+      - '&7Este amuleto permite que você não'
+      - '&7sofra dano dos bosses.'
+      - ''
+      - '&aClique para ativar'
+  anti-knockback:
+    material: '61a9ae9db36f70d467354069fbbdcc7d279baf6721561381da60d339b23d8829'
+    name: '&cBloquear KnockBack'
+    lore:
+      - ''
+      - '&7Este amuleto permite que você não'
+      - '&7sofra knockback dos bosses.'
+      - ''
+      - '&aClique para ativar'
+  anti-fire:
+    material: '311e2e8f23609001106c07f1697a5a032646a85de8227033d33caab8c12c5e92'
+    name: '&cBloquear fogo'
+    lore:
+      - ''
+      - '&7Este amuleto permite que você não'
+      - '&7receba fogo dos bosses.'
+      - ''
+      - '&aClique para ativar'

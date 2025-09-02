@@ -1,0 +1,6 @@
+discounts:
+  member:
+    order: 1
+    permission: 'ystackbosses.membro'
+    display: '&7[Membro]'
+    discount: 10.0 # em % do valor total

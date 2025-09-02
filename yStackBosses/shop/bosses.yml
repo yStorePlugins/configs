@@ -1,0 +1,46 @@
+bosses:
+  1:
+    # Tipo da maquina
+    boss: 'creeper'
+    # Placeholder {rank} na lore da compra indisponível
+    rank: '&7[Membro]'
+    # Permissão para comprar
+    permission: ''
+    # Data de liberação para comprar
+    release-in: '16/10/2020-10:00'
+    # Item do boss.
+    item:
+      material: '383:50'
+      name: '&a&lBOSS CREEPER'
+      lore:
+        - ''
+        - '&fPreço: &a{money} coins&f.'
+        - ''
+        - '&a&lFORMAS DE COMPRA'
+        - ''
+        - '&7&l• &fBotão direito: &7Comprar 1&f.'
+        - '&7&l• &fBotão esquerdo: &7Escolher quantia&f.'
+        - ''
+    # Item do boss não disponível.
+    item-release:
+      material: '383:50'
+      name: '&a&lBOSS CREEPER'
+      lore:
+        - ''
+        - '&cVocê não pode comprar este boss.'
+        - '&7Ele será liberado em: &f{date} - &f{hour}'
+        - '&7Tempo para liberar: &f{time_formatted}'
+        - ''
+    # Item do boss sem permissão.
+    item-permission:
+      material: '383:50'
+      name: '&a&lBOSS CREEPER'
+      lore:
+        - ''
+        - '&cVocê não pode comprar este boss.'
+        - '&7Você não possui permissão.'
+        - ''
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0

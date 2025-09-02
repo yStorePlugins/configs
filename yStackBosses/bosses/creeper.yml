@@ -1,0 +1,77 @@
+# item do ovo
+egg:
+  material: '383:50'
+  name: '&a&lBOSS CREEPER'
+  lore: [ '&fHP: &4❤&c1000&f.', '', '&fQuantia: &b{amount}' ]
+
+# Entidade que será spawnada
+# Lista de entidades: https://helpch.at/docs/1.8.8/org/bukkit/entity/EntityType.html
+entity: 'CREEPER'
+
+# Vida do boss
+health: 1000
+
+# Nome do boss
+name: '&a&lBOSS CREEPER &7x{stack}'
+
+# Bater no boss apenas com uma matadora
+sword-hit: true
+
+# Matadora necessária para bater nesse boss
+# Deixe vazio para não usar
+sword-need: ''
+
+custom-entity:
+  # Ativar a entidade custom. Precisa do yStackBossesMPetAddon e do MiniaturePets
+  enabled: false
+  # Arquivo da entidade da pasta de pets do MiniaturePets
+  entity: 'Boxer.mpet'
+
+# Opções das entidades
+entity-options:
+  # Ativar/desativar a IA do mob
+  ai: false
+  # Caso a entidade for um esqueleto, ele vai ser wither?
+  wither-skeleton: false
+  # Caso a entidade for um zombie ou pig-zombie, ele vai ser bebê?
+  baby-zombie: false
+  # Tamanho da entidade caso seja um slime ou magma-cube
+  slime-size: 1
+
+message:
+  sword-need:
+    actionbar: '&cVocê precisa da matadora básica para atacar este boss.'
+    title: ''
+    chat: '&cVocê precisa da matadora básica para atacar este boss.'
+  kill:
+    actionbar: '&c-{stack} &a&lBOSS CREEPER.'
+    title: '&c-{stack} &a&lBOSS CREEPER.'
+    chat: |
+
+      &a&lBOSS CREEPER: &7Parabéns guerreiro, você conseguiu me matar. Recolha suas recompensas no &f&n/boss&7.
+
+  hit:
+    actionbar: '&a&lBOSS CREEPER &7(x{stack}) > &c❤ {health} &4[-{damage}] {progressbar}'
+    title: ''
+    chat: ''
+  interact:
+    actionbar: '&a&lBOSS CREEPER &7(x{stack}) > &c❤ {health} {progressbar}'
+    title: ''
+    chat: ''
+
+# Efeitos que serão aplicados quando um jogador bater no boss
+# Tipos: FOGO, EXPLOSAO, DANO, VENENO, EMPURRAR, NAUSEA, CEGUEIRA
+effects:
+  e1:
+    chance: 10.0
+    # Use: EFEITO:AMPLIFIER
+    list: [ 'FOGO:10', 'EXPLOSAO:1', 'EMPURRAR:3' ]
+
+# Recompensas do boss
+# As recompensas são cadastradas na recompensas.yml
+# Use: chance,recompense
+# Quantia de recompensas que serão dadas
+reward-amount: 1
+# Dropar as recompensas no chão
+reward-ground: false
+rewards: [ '100,reward1' ]

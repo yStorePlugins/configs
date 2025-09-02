@@ -1,0 +1,78 @@
+#  _____            _                 _
+# | ____|_ __   ___| |__   __ _ _ __ | |_ ___
+# |  _| | '_ \ / __| '_ \ / _` | '_ \| __/ __|
+# | |___| | | | (__| | | | (_| | | | | |_\__ \
+# |_____|_| |_|\___|_| |_|\__,_|_| |_|\__|___/
+#
+
+enchants:
+  damage:
+    order: 1
+    display: 'Dano'
+    # Aparecer no menu de evolução
+    menu: true
+    can: # quando puder evoluir
+      material: DIAMOND_SWORD
+      name: '&cDano'
+      lore:
+        - '&fDano atual: &4❤&c{actual}&f.'
+        - '&fDano próximo: &4❤&c{next}&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    can-not: # quando não puder evoluir
+      material: DIAMOND_SWORD
+      name: '&cDano'
+      Lore:
+        - '&fDano atual: &4❤&c{actual}&f.'
+        - '&fDano próximo: &4❤&c{next}&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem coins suficientes.'
+    max: # quando já estiver no máximo
+      material: DIAMOND_SWORD
+      name: '&cDano'
+      Lore:
+        - '&fDano atual: &4❤&c{actual}&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+    book:
+      material: DIAMOND_SWORD
+      name: '&cDano'
+      Lore:
+        - '&fDano: &4❤&c{amount}&f.'
+        - ''
+        - '&aClique na espada para adicionar.'
+  stack:
+    order: 2
+    display: 'Stack'
+    menu: true
+    can: # quando puder evoluir
+      material: BOOK
+      name: '&bStack'
+      lore:
+        - '&fStack atual P/x: &bx{actual}&f.'
+        - '&fStack próximo P/x: &bx{next}&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    can-not: # quando não puder evoluir
+      material: BOOK
+      name: '&bStack'
+      Lore:
+        - '&fStack atual P/x: &bx{actual}&f.'
+        - '&fStack próximo P/x: &bx{next}&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem coins suficientes.'
+    max: # quando já estiver no máximo
+      material: BOOK
+      name: '&bStack'
+      Lore:
+        - '&fStack atual P/x: &bx{actual}&f.'
+        - ''
+        - '&cVocê já está no máximo.'

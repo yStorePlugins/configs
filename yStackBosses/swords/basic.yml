@@ -1,0 +1,34 @@
+# Item da espada
+sword:
+  material: DIAMOND_SWORD
+  name: '&c&lMATADORA DE BOSSES &7(básica)'
+  lore: [ '&fDano: &4❤&c{damage}&f.', '&fStack P/x: &bx{stack}&f.', '', '&aShift+Direito para evoluir' ]
+
+display: '&c&lMATADORA DE BOSSES &7(básica)'
+
+# Bosses que não poderão ser atacados com essa espada
+bosses-blacklist: []
+
+# Ativar a evolução da espada
+evolute: true
+
+# Esta espada vai matar o boss instantaneamente?
+hit-kill: false
+
+enchants:
+  damage:
+    default: 2
+    add-per-level: 50
+    max: 5
+    prices:
+      price1:
+        provider: 'money'
+        price: 1000.0
+  stack:
+    default: 1
+    add-per-level: 1
+    max: 5
+    prices:
+      price1:
+        provider: 'money'
+        price: 10000.0

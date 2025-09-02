@@ -1,0 +1,66 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aBoss comandos:
+
+    &a> /boss
+    &a> /boss armazem
+    &a> /boss top
+    &a> /boss amuletos
+    &a> /boss bosses
+    &a> /boss giveboss <player> <boss> <quantia>
+    &a> /boss givematadora <player> <matadora> <quantia>
+    &a> /boss giveamuleto <damage/knockback/fire> <player/all> <quantia>
+
+  boss-give: '&aVocê deu &7{amount}x {boss}&a para o jogador &7{player}&a.'
+  boss-received: '&aVocê recebeu &7{amount}x {boss}&a.'
+  boss-spawned: '&aVocê spawnou &7{amount}x {boss}&a.'
+  boss-list: |
+    &cBoss não encontrado.
+    &cBosses disponíveis: &f{list}
+  plot-permission: '&cVocê não tem permissão neste terreno.'
+  spawners-mobs: '&cHá mobs ou spawners num raio de 5 blocos.'
+  sword-list: |
+    &cMatadora não encontrada.
+    &cMatadoras disponíveis: &f{list}
+  sword-give: '&aVocê deu &7{amount}x {sword}&a para o jogador &7{player}&a.'
+  sword-received: '&aVocê recebeu &7{amount}x {sword}&a.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  amulet-give: '&aVocê deu {amount}x amuleto(s) do Boss para o jogador {player}.'
+  amulet-give-target: '&aVocê recebeu {amount}x amuleto(s) do Boss.'
+  amulet-give-all: |
+    <nl>
+    &aTodos os jogadores receberam {amount}x amuleto(s) do Boss.
+    <nl>
+  amulet-already: '&cVocê já possui este amuleto ativado.'
+  amulet-activated: '&aAmuleto ativado com sucesso.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  evolute: '&aO encantamento &f{enchant}&a foi evoluído para o nível &f{level}&a.'
+  holding: '&cVocê deve estar segurando sua matadora.'
+  converted: '&bVocê compactou todos seus bosses em 1.'
+  inv-full: '&cSeu inventário está cheio.'
+  digit: |
+    &aDigite a quantia de bosses que deseja.
+    &7para cancelar digite &ncancelar&7.
+  bought: |
+    &bObrigado por adquirir bosses na loja de bosses. Confira as informações da compra:
+
+    &7&l| &fBoss: &7{boss}&f.
+    &7&l| &fQuantia: &7{amount}&f.
