@@ -68,10 +68,12 @@ effects:
     list: [ 'FOGO:10', 'EXPLOSAO:1', 'EMPURRAR:3' ]
 
 # Recompensas do boss
-# As recompensas são cadastradas na recompensas.yml
-# Use: chance,recompense
 # Quantia de recompensas que serão dadas
 reward-amount: 1
 # Dropar as recompensas no chão
 reward-ground: false
+# Dar as recompensas direto para o inventário do jogador
+reward-player: false
+# As recompensas são cadastradas na recompensas.yml
+# Use: chance,recompense
 rewards: [ '100,reward1' ]
