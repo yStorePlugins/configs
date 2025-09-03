@@ -308,3 +308,4 @@ chat:
   remove-player-none: '&cNenhum VIP pôde ser removido. O jogador {player} não possui VIPs ativos.'
   remove-player: '&aTodos os VIPs do jogador &f{player}&a foram removidos.'
   player-converted: '&aUUID convertido. Nome antigo: &f{old_name}&a. Novo nome: &f{new_name}&a.'
+  inv-full: '&cVocê precisa liberar espaço no seu inventário.'
