@@ -1,0 +1,34 @@
+options:
+  url: ''
+  username: 'yVips'
+
+embeds:
+  activated:
+    title: ':mailbox: Um novo VIP foi ativado'
+    thumbnail: 'https://minotar.net/body/{player}/100.png'
+    color: '#fff'
+    content: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      player:
+        inline: true
+        header: 'Player'
+        content: '```{player}```'
+      vip:
+        inline: true
+        header: 'VIP'
+        content: '```{vip}```'
+      time:
+        inline: true
+        header: 'Duração'
+        content: '```{time}```'
+      date_activated:
+        inline: true
+        header: 'Ativado em'
+        content: '```{activation_date} às {activation_hour}```'
+      date_expire:
+        inline: true
+        header: 'Expira em'
+        content: '```{expire_date} às {expire_hour}```'

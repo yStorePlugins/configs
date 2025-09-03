@@ -1,0 +1,429 @@
+vips:
+  iron:
+    display: '&f[VIP Ferro]'
+    prefix: '&f&l✔' # exclusivo yClans e yRankup
+    # ONLINE -> O tempo do VIP é descontado apenas quando o jogador estiver online
+    # SERVER -> O tempo do VIP é descontado apenas quando o servidor estiver online
+    # BASIC -> O tempo do VIP é descontado até quando o servidor estiver offline
+    time-type: 'SERVER'
+    # Créditos VIP que serão dados ao jogador ao ativar este vip
+    credit: 10.0
+    # Valor que acumulará no party-vip
+    party-vip-value: 10.0
+    # Enviar a ativação pro menu de ativações do jogador
+    activation-menu: false
+    # Integração com o yLeague
+    yleague:
+      # Pontos que será dado no yLeague
+      points: 10.0
+      # Título da embed que é enviada no discord
+      # Deixe '' para não enviar
+      embed-title: 'VIP Ferro Ativado'
+    # Sistema de upar o vip
+    upgrade:
+      vip-type: 'ouro'
+      command: []
+      message: |
+
+        &b&lUPGRADE
+        &aVocê upou do &f[VIP Ferro] &apara o &e&lVIP OURO
+        &aVocê pagou &2$&a 10k em coins
+
+      message-broadcast: ''
+      price:
+        price1:
+          provider: 'money'
+          price: 10000
+    icon:
+      material: 'IRON_INGOT'
+      name: '&fVIP Ferro'
+      lore: []
+    announces:
+      sound: ''
+      effect: ''
+      actionbar: '&7{player}&b acaba de ativar o &fVIP Ferro'
+      title: '&7{player}&b ativou o<nl>&fVIP Ferro'
+      chat: |
+
+        &a&lVIPS
+        &bO jogador &7{player} &bacaba de
+        &bse tornar &7(&fVIP Ferro&7)&b.
+
+      chat-private: |
+
+        &a&lVIPS
+        &7Recolha sua ativação no /vip
+
+    discord:
+      # exclusivo yDiscordHook
+      # enviar o embed no privado
+      discordhook:
+        enable: true
+        dm-embed: ''
+      # enviar o embed em um chat
+      webhook:
+        enable: true
+        chat-embed: 'activated'
+    item:
+      key-preview:
+        material: TRIPWIRE_HOOK
+        name: '&f[VIP Ferro] &8{id}'
+        lore: [ '', ' &7Vip: &f[VIP Ferro]', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara vender' ]
+      key-sell-preview:
+        material: TRIPWIRE_HOOK
+        name: '&f[VIP Ferro] &8{id}'
+        lore: [ '', ' &7Vip: &f[VIP Ferro]', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', ' &fStatus: &aVendendo por {price} {provider_abbreviated}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara cancelar a venda' ]
+      key-sell:
+        material: TRIPWIRE_HOOK
+        name: '&f[VIP Ferro] &8{id}'
+        lore: [ '', ' &7Vip: &f[VIP Ferro]', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', ' &fStatus: &aVendendo por {price} {provider_abbreviated}', ' &fVendedor: &7{player}', '', '&aBotão &fESQUERDO &apara comprar' ]
+      key-bonus-preview:
+        material: TRIPWIRE_HOOK
+        name: '&f[VIP Ferro] &8{id}'
+        lore: [ '', ' &7Vip: &f[VIP Ferro]', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara enviar' ]
+      active:
+        material: IRON_INGOT
+        name: '&f[VIP Ferro] &8{id}'
+        lore: [ '' ,' &fAtivado por: &a{player}', '&f Status: &aAtivo', '', '&7 Ativado em: &f{activation_date} às {activation_hour}' , ' &7Expira em: &f {expire_remaining}' , '', '&eClique para copiar a KEY do vip']
+      change:
+        material: IRON_INGOT
+        name: '&f[VIP Ferro] &8{id}'
+        lore: [ '', ' &fStatus: &eAGUARDANDO', ' &7Expira em: &f{expire_remaining}', ' &7Ativado em: &f{activation_date} às {activation_hour}', '', '&cClique para usar este vip' ]
+      expired:
+        material: IRON_INGOT
+        name: '&f[VIP Ferro] &8{id}'
+        lore: [ '', ' &fStatus: &cEXPIRADO', ' &7Ativado em: &f{activation_date} às {activation_hour}', ''  ]
+      activation:
+        material: IRON_INGOT
+        name: '&f[VIP Ferro]'
+        lore: [ '&7Clique para coletar a ativação' ]
+      upgrade:
+        material: GOLD_INGOT
+        name: '&f[VIP Ferro] -> &e&lVIP OURO'
+        lore: [ '&7Faça o upgrade para o VIP OURO.', '', '&fPreço: &2$&a 10k em coins', '', '&aClique para upar' ]
+    group-command:
+      add: [ 'lp user {player} parent add vip_ferro' ]
+      remove: [ 'lp user {player} parent remove vip_ferro' ]
+    activation-commands: [ '100.0,give {player} iron_ingot 64' ]
+    activation-items:
+      item-1:
+        chance: 100.0
+        material: 'IRON_INGOT'
+        name: '&fFerro do VIP'
+        lore: []
+        enchants: ['DURABILITY:1']
+    bungee-activation:
+      bungee1:
+        server: 'mina'
+        commands: [ '100.0,give {player} diamond 64' ]
+        items: {}
+  ouro:
+    display: '&e&lVIP OURO'
+    prefix: '&e&l✔' # exclusivo yClans e yRankup
+    # ONLINE -> O tempo do VIP é descontado apenas quando o jogador estiver online
+    # SERVER -> O tempo do VIP é descontado apenas quando o servidor estiver online
+    # BASIC -> O tempo do VIP é descontado até quando o servidor estiver offline
+    time-type: 'SERVER'
+    # Créditos VIP que serão dados ao jogador ao ativar este vip
+    credit: 20.0
+    # Valor que acumulará no party-vip
+    party-vip-value: 20.0
+    # Enviar a ativação pro menu de ativações do jogador
+    activation-menu: false
+    # Sistema de upar o vip
+    upgrade:
+      vip-type: 'diamante'
+      command: []
+      message: |
+
+        &b&lUPGRADE
+        &aVocê upou do &e&lVIP OURO &apara o &b&lVIP DIAMANTE
+        &aVocê pagou &2$&a 30k em coins
+
+      message-broadcast: ''
+      price:
+        price1:
+          provider: 'money'
+          price: 30000
+    icon:
+      material: 'GOLD_INGOT'
+      name: '&e&lVIP OURO'
+      lore: []
+    announces:
+      sound: ''
+      effect: ''
+      actionbar: '&a{player}&f acaba de ativar o &e&lVIP OURO'
+      title: '&a{player}&f ativou o <nl> &e&lVIP OURO'
+      chat: |
+
+        &a&lVIPS
+        &fO jogador &a{player} &facaba de
+        &fse tornar &e&lVIP OURO&f.
+
+      chat-private: |
+
+        &a&lVIPS
+        &7Recolha sua ativação no /vip
+
+    discord:
+      # exclusivo yDiscordHook
+      # enviar o embed no privado
+      discordhook:
+        enable: true
+        dm-embed: ''
+      # enviar o embed em um chat
+      webhook:
+        enable: true
+        chat-embed: 'activated'
+    item:
+      key-preview:
+        material: TRIPWIRE_HOOK
+        name: '&e&lVIP OURO &8{id}'
+        lore: [ '', ' &7Vip: &e&lVIP OURO', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara vender' ]
+      key-sell-preview:
+        material: TRIPWIRE_HOOK
+        name: '&e&lVIP OURO &8{id}'
+        lore: [ '', ' &7Vip: &e&lVIP OURO', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', ' &fStatus: &aVendendo por {price} {provider_abbreviated}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara cancelar a venda' ]
+      key-sell:
+        material: TRIPWIRE_HOOK
+        name: '&e&lVIP OURO &8{id}'
+        lore: [ '', ' &7Vip: &e&lVIP OURO', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', ' &fStatus: &aVendendo por {price} {provider_abbreviated}', ' &fVendedor: &7{player}', '', '&aBotão &fESQUERDO &apara comprar' ]
+      key-bonus-preview:
+        material: TRIPWIRE_HOOK
+        name: '&e&lVIP OURO &8{id}'
+        lore: [ '', ' &7Vip: &e&lVIP OURO', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara enviar' ]
+      active:
+        material: GOLD_INGOT
+        name: '&e&lVIP OURO &8{id}'
+        lore: [ '', ' &fStatus: &aAtivo&f.', ' &7Expira em: &f{expire_remaining}', ' &7Ativado em: &f{activation_date} às {activation_hour}', '' ]
+      change:
+        material: GOLD_INGOT
+        name: '&e&lVIP OURO &8{id}'
+        lore: [ '', ' &fStatus: &eAguardando&f.', ' &7Expira em: &f{expire_remaining}', ' &7Ativado em: &f{activation_date} às {activation_hour}', '', '&cClique para usar este vip' ]
+      expired:
+        material: GOLD_INGOT
+        name: '&e&lVIP Ouro &8{id}'
+        lore: [ '', ' &fStatus: &cExpirado&f.', ' &7Ativado em: &f{activation_date} às {activation_hour}', ''  ]
+      activation:
+        material: GOLD_INGOT
+        name: '&e&lVIP Ouro'
+        lore: [ '&7Clique para coletar a ativação' ]
+      upgrade:
+        material: DIAMOND
+        name: '&e&lVIP OURO -> &b&lVIP DIAMANTE'
+        lore: [ '&7Faça o upgrade para o VIP DIAMANTE.', '', '&fPreço: &2$&a 30k em coins', '', '&aClique para upar' ]
+    group-command:
+      add: [ 'lp user {player} parent add vip_ouro' ]
+      remove: [ 'lp user {player} parent remove vip_ouro' ]
+    activation-commands: [ '100.0,give {player} gold_ingot 64' ]
+    activation-items:
+      item-1:
+        chance: 100.0
+        material: 'GOLD_INGOT'
+        name: '&6Ouro do VIP'
+        lore: []
+        enchants: ['DURABILITY:1']
+  diamante:
+    display: '&b&lVIP DIAMANTE'
+    prefix: '&b&l✔' # exclusivo yClans e yRankup
+    # ONLINE -> O tempo do VIP é descontado apenas quando o jogador estiver online
+    # SERVER -> O tempo do VIP é descontado apenas quando o servidor estiver online
+    # BASIC -> O tempo do VIP é descontado até quando o servidor estiver offline
+    time-type: 'SERVER'
+    # Créditos VIP que serão dados ao jogador ao ativar este vip
+    credit: 30.0
+    # Valor que acumulará no party-vip
+    party-vip-value: 30.0
+    # Enviar a ativação pro menu de ativações do jogador
+    activation-menu: false
+    # Sistema de upar o vip
+    upgrade:
+      vip-type: 'esmeralda'
+      command: []
+      message: |
+
+        &b&lUPGRADE
+        &aVocê upou do &b&lVIP DIAMANTE &apara o &a&lVIP ESMERALDA
+        &aVocê pagou &2$&a 70k em coins
+
+      message-broadcast: ''
+      price:
+        price1:
+          provider: 'money'
+          price: 70000
+    icon:
+      material: 'DIAMOND'
+      name: '&b&lVIP DIAMANTE'
+      lore: []
+    announces:
+      sound: ''
+      effect: ''
+      actionbar: '&a{player}&f acaba de ativar o &b&lVIP DIAMANTE'
+      title: '&a{player}&f ativou o <nl> &b&lVIP DIAMANTE'
+      chat: |
+
+        &a&lVIPS
+        &fO jogador &a{player} &facaba de
+        &fse tornar &b&lVIP DIAMANTE&f.
+
+      chat-private: |
+
+        &a&lVIPS
+        &7Recolha sua ativação no /vip
+
+    discord:
+      # exclusivo yDiscordHook
+      # enviar o embed no privado
+      discordhook:
+        enable: true
+        dm-embed: ''
+      # enviar o embed em um chat
+      webhook:
+        enable: true
+        chat-embed: 'activated'
+    item:
+      key-preview:
+        material: TRIPWIRE_HOOK
+        name: '&b&lVIP DIAMANTE &8{id}'
+        lore: [ '', ' &7Vip: &b&lVIP DIAMANTE', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara vender' ]
+      key-sell-preview:
+        material: TRIPWIRE_HOOK
+        name: '&b&lVIP DIAMANTE &8{id}'
+        lore: [ '', ' &7Vip: &b&lVIP DIAMANTE', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', ' &fStatus: &aVendendo por {price} {provider_abbreviated}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara cancelar a venda' ]
+      key-sell:
+        material: TRIPWIRE_HOOK
+        name: '&b&lVIP DIAMANTE &8{id}'
+        lore: [ '', ' &7Vip: &b&lVIP DIAMANTE', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', ' &fStatus: &aVendendo por {price} {provider_abbreviated}', ' &fVendedor: &7{player}', '', '&aBotão &fESQUERDO &apara comprar' ]
+      key-bonus-preview:
+        material: TRIPWIRE_HOOK
+        name: '&b&lVIP DIAMANTE &8{id}'
+        lore: [ '', ' &7Vip: &b&lVIP DIAMANTE', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara enviar' ]
+      active:
+        material: DIAMOND
+        name: '&b&lVIP DIAMANTE &8{id}'
+        lore: [ '', ' &fAtivado por: &a{player}', ' &fStatus: &aAtivo', '', ' &7Expira em: &f{expire_remaining}', ' &7Ativado em: &f{activation_date} às {activation_hour}', '', '&eClique para copiar o ID do VIP' ]
+      change:
+        material: DIAMOND
+        name: '&b&lVIP DIAMANTE &8{id}'
+        lore: [ '', ' &fAtivado por: &a{player}', ' &fStatus: &eAguardando', '', ' &7Expira em: &f{expire_remaining}', ' &7Ativado em: &f{activation_date} às {activation_hour}', '', '&eClique para copiar o ID do VIP' ]
+      expired:
+        material: DIAMOND
+        name: '&b&lVIP DIAMANTE &8{id}'
+        lore: [ '', ' &fAtivado por: &a{player}', ' &fStatus: &cExpirado', '', ' &7Expira em: &f{expire_remaining}', ' &7Ativado em: &f{activation_date} às {activation_hour}', '', '&eClique para copiar o ID do VIP' ]
+      activation:
+        material: DIAMOND
+        name: '&b&lVIP DIAMANTE'
+        lore: [ '&7Clique para coletar a ativação' ]
+      upgrade:
+        material: EMERALD
+        name: '&b&lVIP DIAMANTE -> &a&lVIP ESMERALDA'
+        lore: [ '&7Faça o upgrade para o VIP ESMERALDA.', '', '&fPreço: &2$&a 70k em coins', '', '&aClique para upar' ]
+    group-command:
+      add: [ 'lp user {player} parent add vip_diamante' ]
+      remove: [ 'lp user {player} parent remove vip_diamante' ]
+    activation-commands: [ '100.0,give {player} diamond 22' ]
+    activation-items:
+      item-1:
+        chance: 100.0
+        material: 'DIAMOND'
+        name: '&bDiamante do VIP'
+        lore: []
+        enchants: ['DURABILITY:1']
+  esmeralda:
+    display: '&a&lVIP ESMERALDA'
+    prefix: '&a&l✔' # exclusivo yClans e yRankup
+    # ONLINE -> O tempo do VIP é descontado apenas quando o jogador estiver online
+    # SERVER -> O tempo do VIP é descontado apenas quando o servidor estiver online
+    # BASIC -> O tempo do VIP é descontado até quando o servidor estiver offline
+    time-type: 'SERVER'
+    # Créditos VIP que serão dados ao jogador ao ativar este vip
+    credit: 50.0
+    # Valor que acumulará no party-vip
+    party-vip-value: 50.0
+    # Enviar a ativação pro menu de ativações do jogador
+    activation-menu: false
+    # Sistema de upar o vip
+    upgrade:
+      vip-type: ''
+      command: []
+      message: ''
+      message-broadcast: ''
+      price: {}
+    icon:
+      material: 'DIAMOND'
+      name: '&a&lVIP ESMERALDA'
+      lore: []
+    announces:
+      sound: ''
+      effect: ''
+      actionbar: '&a{player}&f acaba de ativar o &a&lVIP ESMERALDA'
+      title: '&a{player}&f ativou o <nl> &a&lVIP ESMERALDA'
+      chat: |
+
+        &a&lVIPS
+        &fO jogador &a{player} &facaba de
+        &fse tornar &a&lVIP ESMERALDA&f.
+
+      chat-private: |
+
+        &a&lVIPS
+        &7Recolha sua ativação no /vip
+
+    discord:
+      # exclusivo yDiscordHook
+      # enviar o embed no privado
+      discordhook:
+        enable: true
+        dm-embed: ''
+      # enviar o embed em um chat
+      webhook:
+        enable: true
+        chat-embed: 'activated'
+    item:
+      key-preview:
+        material: TRIPWIRE_HOOK
+        name: '&a&lVIP ESMERALDA &8{id}'
+        lore: [ '', ' &7Vip: &a&lVIP ESMERALDA', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara vender' ]
+      key-sell-preview:
+        material: TRIPWIRE_HOOK
+        name: '&a&lVIP ESMERALDA &8{id}'
+        lore: [ '', ' &7Vip: &a&lVIP ESMERALDA', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', ' &fStatus: &aVendendo por {price} {provider_abbreviated}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara cancelar a venda' ]
+      key-sell:
+        material: TRIPWIRE_HOOK
+        name: '&a&lVIP ESMERALDA &8{id}'
+        lore: [ '', ' &7Vip: &a&lVIP ESMERALDA', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', ' &fStatus: &aVendendo por {price} {provider_abbreviated}', ' &fVendedor: &7{player}', '', '&aBotão &fESQUERDO &apara comprar' ]
+      key-bonus-preview:
+        material: TRIPWIRE_HOOK
+        name: '&a&lVIP ESMERALDA &8{id}'
+        lore: [ '', ' &7Vip: &a&lVIP ESMERALDA', ' &7ID: &f{id}', ' &7Duração: &f{expire_remaining}', '', '&aBotão &fESQUERDO &apara ativar', '&aBotão &fDIREITO &apara enviar' ]
+      active:
+        material: EMERALD
+        name: '&a&lVIP ESMERALDA &8{id}'
+        lore: [ '' ,' &fAtivado por: &a{player}', '&f Status: &aAtivo', '', ' &7Ativado em: &f{activation_date} às {activation_hour}' , ' &7Expira em: &f {expire_remaining}' , '', '&eClique para copiar a KEY do vip']
+      change:
+        material: EMERALD
+        name: '&a&lVIP ESMERALDA &8{id}'
+        lore: [ '', ' &fStatus: &eAguardando&f.', ' &7Expira em: &f{expire_remaining}', ' &7Ativado em: &f{activation_date} às {activation_hour}', '', '&cClique &fESQUERDO&a para usar este vip', '&eClique DIREITO para copiar a KEY do vip' ]
+      expired:
+        material: EMERALD
+        name: '&a&lVIP ESMERALDA &8{id}'
+        lore: [ '', ' &fStatus: &cExpirado&f.', ' &7Ativado em: &f{activation_date} às {activation_hour}', '', '&eClique para copiar a KEY do vip'  ]
+      activation:
+        material: EMERALD
+        name: '&a&lVIP ESMERALDA'
+        lore: [ '&7Clique para coletar a ativação' ]
+      upgrade:
+        material: BARRIER
+        name: '&cNenhum'
+        lore: [ '&7Não há nenhum VIP para upar' ]
+    group-command:
+      add: [ 'lp user {player} parent add vip_esmeralda' ]
+      remove: [ 'lp user {player} parent remove vip_esmeralda' ]
+    activation-commands: [ '100.0,give {player} emerald 64' ]
+    activation-items:
+      item-1:
+        chance: 100.0
+        material: 'EMERALD'
+        name: '&aEsmeralda do VIP'
+        lore: []
+        enchants: ['DURABILITY:1']

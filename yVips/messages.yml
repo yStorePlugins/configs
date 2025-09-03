@@ -1,0 +1,310 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+actionbar:
+  not-cancelled: '&cA operação ainda não foi cancelada.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  help: |
+
+    &bComandos do plugin:
+
+    &b-> &f/vip &8-&7 Abre o menu principal
+    &b-> &f/vips &8-&7 Veja os vips ativos.
+    &b-> &f/keys &8-&7 Veja as chaves ativas.
+    &b-> &f/tempovip &8-&7 Mostra o seu tempo de vip
+    &b-> &f/trocarvip [vip] &8-&7 Trocqa o seu VIP atual por outro
+    &b-> &f/usarkey [key] &8-&7 Ativa um VIP a partir de uma KEY
+    &b-> &f/partyvip &8-&7 Mostra o progresso atual do party-vip
+    &b-> &f/ativarvip [id] &8-&7 Ativa um VIP a partir do ID do bônus
+    &b-> &f/bonusvip enviar [id] [player] &8-&7 Envia uma chave bônus para um jogador
+    &b-> &f/bonusvip ativar [id] &8-&7 Ativa uma chave bônus
+    &b-> &f/vendervip [id] [economia] [preço] &8-&7 Vende uma chave VIP
+    &b-> &f/comprarvip [id] &8-&7 Compra uma chave VIP
+    &b-> &f/cancelarvendavip [id] &8-&7 Cancela a venda de uma chave VIP
+
+  help-admin: |
+
+    &bComandos do plugin:
+
+    &b-> &f/vip &8-&7 Abre o menu principal
+    &b-> &f/vips [player] &8-&7 Veja os vips ativos.
+    &b-> &f/keys [player/admin] &8-&7 Veja as chaves ativas.
+    &b-> &f/trocarvip [vip] &8-&7 Trocqa o seu VIP atual por outro
+    &b-> &f/vip info [id-vip] &8-&7 Vê as informações gerais do id selecionado.
+    &b-> &f/tempovip [jogador] &8-&7 Mostra o seu tempo de vip ou de outro jogador
+    &b-> &f/usarkey [key] &8-&7 Ativa um VIP a partir de uma KEY
+    &b-> &f/partyvip &8-&7 Mostra o progresso atual do party-vip
+    &b-> &f/ativarvip [id] &8-&7 Ativa um VIP a partir do ID do bônus
+    &b-> &f/bonusvip dar [player/random] [vip] [duração] &8-&7 Dar uma chave bônus para um jogador
+    &b-> &f/bonusvip enviar [id] [player] &8-&7 Envia uma chave bônus para um jogador
+    &b-> &f/bonusvip ativar [id] &8-&7 Ativa uma chave bônus
+    &b-> &f/vendervip [id] [economia] [preço] &8-&7 Vende uma chave VIP
+    &b-> &f/comprarvip [id] &8-&7 Compra uma chave VIP
+    &b-> &f/cancelarvendavip [id] &8-&7 Cancela a venda de uma chave VIP
+    &b-> &f/congerlavip &8-&7 Congela/descongela o tempo dos vips
+    &b-> &f/darvip [jogador] [vip] [tempo] &8-&7 Dá um determinado vip a um jogador
+    &b-> &f/darchave [jogador] [vip] [tempo] &8-&7 Dá uma chave de um determinado vip a um jogador
+    &b-> &f/setarvip [jogador] [vip] [tempo] &8-&7 Dá um determinado vip a um jogador, porém sem as mensagens e os comandos de ativação
+    &b-> &f/gerarkey [vip] [tempo] [tipo] [usos] &8-&7 Cria uma key aleatória de um determinado vip
+    &b-> &f/criarkey [vip] [tempo] [tipo] [usos] [key] &8-&7 Cria uma key customizada de um determinado vip
+    &b-> &f/editarkey [key] [vip] [tempo] [tipo] [usos] &8-&7 Edita uma key
+    &b-> &f/deletarkey [key] &8-&7 Deleta uma key
+    &b-> &f/removervip [id] &8-&7 Remove um vip
+    &b-> &f/removertempovip [id] [tempo] &8-&7 Remove tempo de um vip
+
+  vip-found: '&cEste vip não foi encontrado. Disponíveis: &7{list}&c.'
+  vip-found-player: '&cVocê não possui nenhum vip ativo.'
+  vip-found-player-target: '&cO jogador {player} não possui nenhum vip ativo.'
+  vip-set: '&aVocê setou o &r{vip}&a para o jogador &f{player}&a.'
+  vip-add: '&aVocê adicionou o &r{vip}&a para o jogador &f{player}&a.'
+  vip-trade: '&aVocê alterou seu vip para o &r{vip}&a.'
+  vip-trade-target: '&aVocê alterou o vip do jogador &f{player}&a para o &r{vip}&a.'
+  vip-time: |
+
+    &aInformações do seu VIP:
+
+    &7Seu VIP: &f{vip_display}
+    &7Tag especial: &f{vip_prefix}
+
+    &7Expira em: &f{expire_remaining}
+    &7Ativado em: &f{activation_date} às {activation_hour}
+
+  vip-time-target: |
+
+    &aInformações do VIP de &f{player}&a:
+
+    &7VIP: &f{vip_display}
+    &7Tag especial: &f{vip_prefix}
+
+    &7Expira em: &f{expire_remaining}
+    &7Ativado em: &f{activation_date} às {activation_hour}
+
+  vip-key-not-found: '&cEsta key {key} não existe.'
+  vip-key-found: '&cEsta key {key} já existe.'
+  vip-key-delete: '&aEsta key {key} foi deletada.'
+  vip-key-generate: |
+
+    &aInformações da KEY gerada:
+
+    &7KEY: &f<click:suggest_command:{key}><hover:show_text:"<red>{key}<newline>Clique para copiar</red>">{key}</hover></click>
+    &7VIP: &f{vip}
+
+    &7Usos: &f{use}
+    &7Duração: &f{duration}
+
+  vip-key-edit: |
+
+    &aInformações da KEY editada:
+
+    &7KEY: &f<click:suggest_command:{key}><hover:show_text:"<red>{key}<newline>Clique para copiar</red>">{key}</hover></click>
+    &7VIP: &f{vip}
+
+    &7Usos: &f{use}
+    &7Duração: &f{duration}
+
+  vip-key-use: |
+
+    &aVocê usou uma KEY VIP, informações:
+
+    &7KEY: &f{key}
+    &7VIP: &f{vip}
+
+    &7Duração: &f{duration}
+
+  vips-format: '  &8(<click:suggest_command:{id}><hover:show_text:"<red>{id}<newline>Clique para copiar</red>">{id}</hover></click>)&f {vip_display}&6 -> &7{expire_remaining}'
+  vips-none: '&cVocê não possui nenhum vip.'
+  vips-none-target: '&cO jogador {player} não possui nenhum vip.'
+  vips: |
+
+    &aInformações sobre os seus VIPs:
+    &r
+    &f  ID:            &fVIP:
+    &r
+    {format}
+
+  vips-target: |
+
+    &aInformações sobre os VIPs de &f{player}&a:
+
+    &f  ID:            &fVIP:
+
+    {format}
+
+  vip-trade-found: '&cVocê não possui um VIP com id {id}.'
+  vip-trade-found-target: '&cO jogador {player} não possui um VIP com id {id}.'
+  vip-already: '&cVocê já está usando um VIP com o id {id}.'
+  vip-already-target: '&cO jogador {player} já está usando um VIP com o id {id}.'
+  vip-expired: '&cO seu VIP {id} está expirado.'
+  vip-expired-target: '&cO VIP {id} do jogador {player} está expirado.'
+  keys-format: '  &8(<click:suggest_command:{key}><hover:show_text:"<red>{key}<newline>Clique para copiar</red>">{key}</hover></click>)&f {vip_display}&6 -> &7{duration}'
+  keys-none: '&cNão há nenhuma key disponível.'
+  keys: |
+
+    &aInformações sobre as KEYs disponíveis:
+
+    &f  KEY:                      &fVIP:
+
+    {format}
+
+  keys-player-format: '  &8(<click:suggest_command:{id}><hover:show_text:"<red>{id}<newline>Clique para copiar</red>">{id}</hover></click>)&f {vip_display}&6 -> &7{expire_remaining}'
+  keys-player-none: '&cVocê não possui nenhuma key.'
+  keys-player: |
+
+    &aInformações sobre as suas KEYs disponíveis:
+
+    &f  KEY:                      &fVIP:
+
+    {format}
+
+  keys-target-format: '  &8(<click:suggest_command:{id}><hover:show_text:"<red>{id}<newline>Clique para copiar</red>">{id}</hover></click>)&f {vip_display}&6 -> &7{expire_remaining}'
+  keys-target-none: '&cO jogador {player} não possui nenhuma key.'
+  keys-target: |
+
+    &aInformações sobre as KEYs de {player} disponíveis:
+
+    &f  KEY:                      &fVIP:
+
+    {format}
+
+  vip-data-found: '&cNenhum VIP encontrado com o ID {id}.'
+  vip-data-remove: '&aVIP {id} deletado.'
+  vip-data-remove-permanent: '&cNão é possível alterar o tempo deste VIP, ele é permanente.'
+  vip-data-remove-time: '&aTempo do VIP {id} alterado para duração: {time}.'
+  shop-credit-has: '&cVocê não possui a quantia de {amount} créditos VIP.'
+  shop-credit-spent: '&aVocê comprou na loja utilizando {amount} créditos VIP.'
+  freeze-yes: '&aO tempo dos VIPS agora estão congelados neste servidor.'
+  freeze-no: '&cO tempo dos VIPS não mais estão congelados neste servidor.'
+  key-give: '&aVocê deu uma key do &r{vip}&a para o jogador &f{player}&a.'
+  key-received: '&aVocê recebeu uma key do &r{vip}&a.'
+  key-active: '&aVocê ativou sua key do &r{vip}&a de id {id}&a.'
+  key-active-found: '&cEssa chave de id {id} não foi encontrada na sua conta.'
+  key-copy: '&7Seu ID do VIP: &r {vip_display}&6 -> &7<click:suggest_command:{id}><hover:show_text:"<red>{id}<newline>Clique para copiar</red>">{id}</hover></click>'
+  vip-info: |
+
+    &aInformações sobre o VIP &7({id})&a de &f{player}&a:
+
+    &7VIP: &r{vip_display}
+    &7Tag Especial: &r{vip_prefix}
+
+    &fStatus: &r{status}
+
+    &7Expira em: &f{expire_remaining}
+    &7Ativado em: &f{activation_date} às {activation_hour}
+
+  bonus-give: '&aVocê deu um bônus do &r{vip}&a para o jogador &f{player}&a.'
+  bonus-active: '&aVocê ativou seu bônus do &r{vip}&a de id {id}&a.'
+  bonus-format: '  &8(<click:suggest_command:{id}><hover:show_text:"<red>{id}<newline>Clique para copiar</red>">{id}</hover></click>)&f {vip_display}&6 -> &7{expire_remaining}'
+  bonus-none: '&cNão há nenhum bônus disponível.'
+  bonus: |
+
+    &aInformações sobre as KEYs disponíveis:
+
+    &f  ID:            &fVIP:
+
+    {format}
+
+  bonus-not-found: '&cEste bônus de id {id} não existe.'
+  digit-player: |
+
+    &aDigite o PLAYER que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  digit-price: |
+
+    &aDigite o PREÇO que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  bonus-sent: '&aVocê enviou o bônus de id {id} ao jogador {player}.'
+  provider-permission: '&cVocê não tem permissão para comercializar com esta economia.'
+  change-price: '&aVocê alterou o preço para {price}.'
+  key-selling: |
+
+    &aVocê colocou uma chave à venda
+
+    &7ID: &e{id}
+    &7Preço: &e{price}
+    &7Economia: &e{provider}
+
+    &7VIP: &b{vip}
+    &7Duração: &b{duration}
+
+  key-selling-cancel: |
+
+    &aVocê cancelou a venda de uma chave
+
+    &7ID: &e{id}
+    &7VIP: &b{vip}
+    &7Duração: &b{duration}
+
+  provider-found: '&cEste tipo de economia não foi encontrado. Disponíveis: &7{list}&c.'
+  key-buy-found: '&cEssa chave de id {id} não foi encontrada para venda.'
+  key-buy-self: '&cVocê não pode comprar sua própria chave.'
+  key-buy-target: '&cEste jogador {player} não foi encontrado na base de dados.'
+  key-buy-economy: '&cEsta economia não foi encontrada.'
+  key-buy-offline: '&cEsta economia não permite que comercialize com o dono da venda offline.'
+  key-buy: |
+
+    &aVocê comprou uma chave VIP
+
+    &7ID: &e{id}
+    &7Preço: &e{price}
+    &7Economia: &e{provider}
+
+    &7VIP: &b{vip}
+    &7Duração: &b{duration}
+
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  sell-format: '  &8(<click:suggest_command:{id}><hover:show_text:"<red>{id}<newline>Clique para copiar</red>">{id}</hover></click>)&f {vip_display}&6 -> &7{expire_remaining} &6-> &a{price} {provider_abbreviated} &6-> &f{player}'
+  sell-none: '&cNão há nenhuma key à venda.'
+  sell: |
+
+    &aInformações sobre KEYs à venda disponíveis:
+
+    &f  KEY:                      &fVIP:
+
+    {format}
+
+  sell-target-format: '  &8(<click:suggest_command:{id}><hover:show_text:"<red>{id}<newline>Clique para copiar</red>">{id}</hover></click>)&f {vip_display}&6 -> &7{expire_remaining} &6-> &a{price} {provider_abbreviated}'
+  sell-target-none: '&cNão há nenhuma key à venda deste jogador.'
+  sell-target: |
+
+    &aInformações sobre KEYs à venda de {player} disponíveis:
+
+    &f  KEY:                      &fVIP:
+
+    {format}
+
+  credit-balance: |
+    &aVocê possui: &f{amount}&a créditos.
+  credit-balance-target: |
+    &aO jogador &7{player}&a possui: &f{amount}&a créditos.
+  credit-set: |
+    &aVocê setou os tokens do jogador &7{player} &apara: &f{amount}&a créditos.
+  credit-remove: |
+    &aVocê removeu &f{amount}&a créditos do jogador &7{player}&a.
+  credit-add: |
+    &aVocê adicionou &f{amount}&a créditos para o jogador &7{player}&a.
+  credit-send: |
+    &aVocê enviou &f{amount}&a créditos para o jogador &7{player}&a.
+  credit-received: |
+    &aVocê recebeu &f{amount}&a créditos do jogador &7{player}&a.
+  credit-self: |
+    &cVocê não pode enviar créditos para sí mesmo.
+  bonus-receive: '&aVocê recebeu um bônus do &r{vip}&a do jogador &f{player}&a.'
+  trade-delay: '&cAguarde &e{time} &cpara trocar de vip novamente.'
+  remove-player-none: '&cNenhum VIP pôde ser removido. O jogador {player} não possui VIPs ativos.'
+  remove-player: '&aTodos os VIPs do jogador &f{player}&a foram removidos.'
+  player-converted: '&aUUID convertido. Nome antigo: &f{old_name}&a. Novo nome: &f{new_name}&a.'
