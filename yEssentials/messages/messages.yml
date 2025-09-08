@@ -144,6 +144,7 @@ Teleport:
   Moved: '&cVocê se moveu, por isto seu teleporte foi cancelado.'
   Damaged: '&cVocê foi atacado, por isto seu teleporte foi cancelado.'
   Attacked: '&cVocê atacou, por isto seu teleporte foi cancelado.'
+  Wait actionbar: '&aVocê será teletransportado em {quantia} segundos... Não se mova.'
 
 # Mensagens do sistema de warp
 Warp:
