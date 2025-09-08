@@ -1,0 +1,8 @@
+custom-placeholders:
+  custom1:
+    # O formato ficará: %yessentials_<placeholder>%
+    # Por exemplo: %yessentials_formatted_tag%
+    placeholder: 'formatted_tag'
+    from: '%yclans_has%'
+    return-empty: '&7Sem clan'
+    return-has: '%yclans_clan_tag%'

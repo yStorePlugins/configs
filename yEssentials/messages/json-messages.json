@@ -1,0 +1,27 @@
+{
+  "tpa": {
+    "text": "§7{player} §eestá pedindo para teletransportar até você.\n§eClique ",
+    "extra":[
+      {
+        "text": "§a§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/tpaccept {player}"
+        }
+      },
+      {
+        "text": "§e para aceitar e "
+      },
+      {
+        "text": "§c§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/tpdeny {player}"
+        }
+      },
+      {
+        "text": "§e para negar."
+      }
+    ]
+  }
+}

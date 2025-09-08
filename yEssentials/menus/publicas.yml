@@ -1,0 +1,24 @@
+Nome: '&8Casas públicas'
+Tamanho: 27
+AnteriorSlot: 9
+ProximoSlot: 17
+BackSlot: 18
+Slots: [ 11, 12, 13, 14, 15 ]
+# Configurações do item da home
+Item:
+  Nome: '&e{display}'
+  Lore:
+    - '&7Home de: &f{player}&7.'
+    - ''
+    - '&aClique para ir até ela.'
+# Enfeites do menu
+Itens: {}
+#  Enfeite:
+#    Slot: 0
+#    CustomSkull: false
+#    URL: ''
+#    ID: 0
+#    Data: 0
+#    Glow: true
+#    Name: ''
+#    Lore: []

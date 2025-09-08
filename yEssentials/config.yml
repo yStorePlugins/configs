@@ -1,0 +1,430 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+Formatacao: 'LETRA'
+
+# Ativar a troca do sistema de chat quando estiver no mohist
+# compatível apenas com: UltimateChat, nChat e Legendchat
+mohist-chat: false
+
+#Opções gerais do plugin
+Opcoes:
+  # Ao dar /homes abrir um menu
+  Home menu: true
+  # Verificar se o inventário está cheio antes de pegar o kit
+  Kit cheio: true
+  # Teleportar ao spawn quando morrer
+  Death spawn: true
+  # Teleportar ao local da última cama dormida quando morrer
+  # Caso não tenha, irá teleportar para o spawn (caso o Death Spawn esteja true)
+  Bed spawn: true
+  # Remover a tela de respawn
+  NoRespawnScreen: true
+  # Sistema de back pegar a localização da morte
+  Back-Death: true
+  # Sistema de back pegar a localização do último TP
+  Back-TP: true
+  # Devolver ender-pearl do cooldown
+  Devolver-ender: false
+  # Colocar o vidro abaixo do jogador no RTP
+  Vidro-RTP: true
+  # Nível máximo permitido para encantar
+  # Deixe 0 para não ter máximo
+  Max enchant: 0
+  # Invulnerabilidade ao logar
+  # em segundos
+  Login-Invulnerabilidade: 0
+  # Invulnerabilidade ao teleportar via TPA
+  # em segundos
+  Tpa-Invulnerabilidade: 0
+  # Ticks de atualização da scoreboard e tablist (20 ticks = 1 segundo)
+  ScoreTab delay: 100
+  # Tempo do cooldown de teleporte
+  # este tempo é o padrão para caso não tenha a permissão: yessentials.teleporttempo.<quantia>
+  # em segundos
+  Teleport tempo: 3
+  # Quando o staff enviar o player usando /spawn <player> ou /warp <warp> <player> não ter delay
+  # false = sem delay ao forçar
+  # true = com delay ao forçar
+  ForceTeleport delay: false
+  # Cooldown da enderpearl
+  # deixe 0 para não usar
+  # em segundos
+  Enderpearl cooldown: 5
+  # Raio de verificação do /near
+  # em blocos
+  Near raio: 100
+  # Enviar mensagem de kit recebido caso for executado por um admin
+  KitAdmin recebeu: false
+  # Ícone default das homes
+  Home icon: 'GRASS'
+  # Nome default das homes
+  Home name: '&e{home}'
+  # Ativar o sistema de spawners do plugin
+  Spawners: true
+  # Chance de o spawner dropar ao explodir
+  SpawnerChance: 50.0
+  # Teleportar ao spawn quando cair no void
+  Void spawn: true
+  # Quantidade do Y que vai teleportar ao spawn
+  # 1.19 usa-se -64
+  Void detect: 0
+  # Mundos que o sistema de void não irá funcionar
+  Void blacklist: ['none']
+  # Teleportar ao spawn quando registrar
+  FirstLogin spawn: true
+  # Teleportar ao spawn quando logar
+  Login spawn: true
+  # Limpar o chat ao entrar no servidor
+  Login clearchat: true
+  # Ligar a luz automaticamente ao entrar no servidor
+  # Ligar a luz automaticamente quando o player renascer
+  Login luz: true
+  # Deixar a bigorna infinita
+  Bigorna infinita: true
+  # Desativar chuva
+  Desativar chuva: true
+  # Desativar o gelo e a neve de derreter
+  Desativar derretimento: true
+  # Desativar a queda de areia e gravel
+  Desativar queda areia: true
+  # Desativar a queda de bigornas
+  Desativar queda bigorna: true
+  # Desativar a queda de folhas
+  Desativar queda folha: true
+  # Desativar o spawn de mobs naturais
+  Desativar mobs naturais: true
+  # Mundos que a opção não fará efeito
+  Desativar mobs naturais blacklist: [ 'mundo_sem_nome' ]
+  # Whitelist de mobs que poderá spawnar naturalmente
+  # [] para ignorar
+  Naturais whitelist: [ ]
+  # Desativar a água e lava escorrer
+  Desativar escorrer: true
+  # Desativar o fogo espalhar
+  Desativar espalhar: true
+  # Desativar o ciclo do dia
+  Desativar ciclo: true
+  # Desativar abrir o inventário do jogador ao clicar com direito no vanish
+  Desativar vanish interact: false
+  # Mensagem de morte; deixe '' (vazio) para não usar e desativar
+  # placeholders: {matou}, {morreu}, {item}
+  Morte mensagem: ''
+  # Mensagem de entrada; deixe '' (vazio) para não usar e desativar
+  Entrada mensagem: ''
+  # Mensagem de saida; deixe '' (vazio) para não usar e desativar
+  Saida mensagem: ''
+  # Mensagem de morte; deixe '' (vazio) para não usar e desativar
+  # placeholders: {matou}, {morreu}, {item}
+  Morte actionbar: ''
+  # Mensagem de entrada; deixe '' (vazio) para não usar e desativar
+  Entrada actionbar: ''
+  # Mensagem de saida; deixe '' (vazio) para não usar e desativar
+  Saida actionbar: ''
+  # Bloquear deitar em camas
+  Bloquear cama: true
+  # Bloquear criar portais
+  Bloquear criar portal: true
+  # Bloquear explodir itens
+  Bloquear explodir item: true
+  # Bloquear quebrar plantações pulando
+  Bloquear quebrar plantacao: true
+  # Bloquear mobs pegarem fogo
+  Bloquear mob fogo: true
+  # Bloquear teleportar em portais
+  Bloquear teleportar portal: true
+  # Bloquear dano do cactus
+  Bloquear cactus dano: true
+  # Bloquear de trocar o mob do spawn com ovo
+  Bloquear ovo spawner: true
+  # Bloquear players com vanish pegar itens
+  Bloquear vanish item: true
+  # Blacklist de caracteres no /nick
+  Nick blacklist: [ 'ç', '.', ',', '-', '[', ']', '{', '}', '=', '+', '<', '>', ';', '/', '?', '\', '|', '~', '^', '´', '`', '(', ')', '*', '¨', '%', '$', '#', '@', '!', '°', 'º' ]
+  # Blacklist de mundos no /top
+  Top blacklist: []
+  # Mundos que não serão possíveis receber TPA
+  Tpa blacklist: ['none']
+  # Identificador do kick por spam
+  # Permissão para não ser kickado: yessentials.antispam.bypass
+  AntiSpam identificador: 'disconnect.spam'
+  # Itens banidos (Materiais)
+  # Permissão de bypass: yessentials.banitem.bypass
+  Itens banidos:
+    - 'BEDROCK'
+  # Itens banidos (NBT-Tags)
+  # Permissão de bypass: yessentials.banitem.bypass
+  ItensNBT banidos:
+    - 'NBTTag-Key-Here'
+  # Palavras inapropriadas no /nick
+  # coloque em minúsculo
+  PalavrasNick bloqueados:
+    - 'admin'
+    - 'loja'
+    - 'loja_admin'
+  # Lista de itens bloqueados no /hat
+  Hat bloqueados:
+    - 'DIAMOND_CHESTPLATE'
+    - 'DIAMOND_LEGGINGS'
+    - 'DIAMOND_BOOTS'
+    - 'IRON_CHESTPLATE'
+    - 'IRON_LEGGINGS'
+    - 'IRON_BOOTS'
+    - 'GOLD_CHESTPLATE'
+    - 'GOLD_LEGGINGS'
+    - 'GOLD_BOOTS'
+    - 'CHAINMAIL_CHESTPLATE'
+    - 'CHAINMAIL_LEGGINGS'
+    - 'CHAINMAIL_BOOTS'
+    - 'LEATHER_CHESTPLATE'
+    - 'LEATHER_LEGGINGS'
+    - 'LEATHER_BOOTS'
+  # Plugins que não poderão ser desligados/descarregados
+  # Deixe em minúsculo
+  Plugin bloqueados:
+    - 'nlogin'
+    - 'authme'
+    - 'securitylogin'
+    - 'vault'
+  # Nicks inapropriados
+  # coloque em minúsculo
+  Nicks bloqueados:
+    - 'admin'
+    - 'loja'
+    - 'loja_admin'
+  # Palavras bloqueadas em placas
+  # coloque em minúsculo
+  # permissão de bypass: yessentials.placa.bypass
+  Placa bloqueados:
+    - 'admin'
+    - 'loja'
+    - 'loja_admin'
+  # Comandos bloqueados
+  # coloque em minúsculo e com /
+  # permissão de bypass: yessentials.comando.bypass
+  Comando bloqueados:
+    - '/plugin'
+  # Containers bloqueados
+  # permissão de bypass: yessentials.container.bypass
+  Container bloqueados:
+    - 'ANVIL'
+    - 'ENCHANTING'
+    - 'HOPPER'
+  # Shift em containers bloqueados
+  # permissão de bypass: yessentials.shiftcontainer.bypass
+  ShiftContainer bloqueados:
+    - 'ANVIL'
+    - 'ENCHANTING'
+    - 'HOPPER'
+  # Crafts bloqueados
+  # permissão de bypass: yessentials.craft.bypass
+  Craft bloqueados:
+    - 'HOPPER'
+  # Mundos onde não haverá fome
+  Fome mundos:
+    - 'none'
+  # Mundos onde não será possível setar homes
+  Home proibidos:
+    - 'none'
+  # Mundos onde voar é proibido (bypass: yessentials.fly.bypass)
+  Voar proibidos:
+    - 'none'
+  # Regiões onde voar é proibido (bypass: yessentials.fly.bypass)
+  Regiao voar proibidos:
+    - 'none'
+  # Mundos onde a redstone é bloqueada
+  Redstone proibidos:
+    - 'none'
+  # Comandos permitidos no AntiTab
+  # Permissão de bypass do AntiTab: yessentials.antitab.bypass
+  AntiTab permitidos:
+    - '/points'
+  # Opções gerais das boas vindas
+  Boas vindas:
+    # Caso não queira usar, deixe '' (vazio)
+    Title: '&b&lyStore<nl>&fCompre plugins'
+    # Caso não queira usar, deixe '' (vazio)
+    Actionbar: '&b&lyStorePlugins &8- &fCompre plugins'
+    # Caso não queira usar, deixe: Chat: ''
+    Chat: |
+
+      &bBem vindo ao servidor oficial da yStore.
+
+    # Comandos para executar caso o jogador nunca tenha jogado antes
+    Comandos: []
+  # Sistema de vagas
+  # permissão para entrar mesmo lotado: yessentials.vagas.bypass
+  Vagas:
+    Ativar: true
+    Limite: 300
+    Reservadas: 10
+    Mensagem: '&b&lyStore<nl><nl>&cServidor lotado'
+  # Adicionar lore quando renomear na bigorna
+  # permissão: yessentials.forjado
+  Forjado:
+    Ativar: true
+    Lore:
+      - ''
+      - '&bForjado por: &f{player}&b.'
+  # Comandos que possuem delay para usar novamente
+  # /comando::delay
+  # em segundos
+  Delay commands:
+    - '/pl::5'
+  # Mundos onde não poderá voltar usando /back
+  BackWorld blacklist:
+    - 'none'
+  # NBTTags que não poderão ser reparadas
+  NBTTag blacklist:
+    - 'yNewBosses-Matadora'
+  # Lista de mundos que terá o sistema de anti-explosion
+  WorldExplode blacklist:
+    - 'world'
+  # Lista de itens que não poderão ser utilizados na bigorna
+  AnvilItems blacklist:
+    - 'EXP_BOTTLE'
+  # Lobbies disponíveis para o comando /lobby
+  Lobbies:
+    - 'lobby'
+  # Sistema de sopas
+  Sopa:
+    # quantia de vida que irá curar, o jogador possui 20 por padrão
+    Curar: 3
+    # Mundos em que ao interagir com botão direito em uma sopa, irá reparar vida
+    Mundos:
+      - 'world'
+  # Dropar cabeça do jogador ao matá-lo
+  DropHead:
+    Ativar: true
+    Chance: 50.0
+    Nome: '&e{player}'
+    Lore:
+      - ''
+      - '&7Cabeça dropada ao matar &f{player}&f.'
+      - ''
+  # Hook com o mcmmo
+  # esta aba pode não funcionar nas versões mais novas do mcmmo
+  Mcmmo:
+    # Actionbar quando ganhar xp
+    Actionbar: true
+    # Mensagem que irá aparecer na actionbar ao ganhar XP do mcMMO
+    Msg: '&a{skill}: {level} ({xp_has} / {xp_need}) +{xp_earned}XP'
+    # Sistema de tag para o mctop 1
+    # placeholder {mctop}
+    Mctop:
+      Ativar: true
+      Tag: '&9[⚒] '
+    # Sistema de mensagem ao upar de nível
+    Up:
+      Ativar: true
+      # Enviar mensagem a cada x level ( por exemplo, a cada 100 leveis em tal skill: lvl 100, 200...)
+      Level: 100
+      Raio: true
+      Mensagem:
+        - ''
+        - '&b&lSKILLS: &bO jogador &f{player}&b atingiu o &fnível {nivel} &bna habilidade &f{skill}&f!'
+        - ''
+  # Sistema de tablist
+  Tablist:
+    Ativar: true
+    Header: |
+      &r
+      &b&lyStorePlugins
+    Footer: |
+      &r
+      &fAdquira plugins acessando o nosso site
+      &bystoreplugins.com.br
+      &r
+  # Sistema de vida
+  Vida:
+    Ativar: false
+    # Quantia de vida que o jogador vai ter
+    # cada 2.0 é um coração
+    Padrao: 20.0
+    # Máximo para o comando de /vida add
+    Maximo: 20.0
+  # Sistema de random-tp
+  RandomTP:
+    Mundo: 'world'
+    Min: -2500
+    Max: 2500
+  # Sistema de lore do jogador no kit
+  KitLore:
+    Ativar: false
+    Lore: [ '', '&eKit de &a{player}' ]
+
+Motd:
+  Ativar: true
+  Normal: "&b&lyStorePlugins &fwww.ystoreplugins.com.br\n&bos melhores plugins da comunidade!"
+  Manutencao: "&cServidor em manutenção!\nSem previsão de voltar."
+
+# Sistema de perder % do money ao morrer
+lose-on-death:
+  enabled: false
+  # Máximo de money que poderá ser perdido
+  # Deixe 0 para não ter limite
+  max-money: 0
+  # Porcentagens de acordo com o rank
+  percents:
+    member:
+      order: 1
+      permission: ''
+      percent: 10.0
+      message: '&cVocê morreu e perdeu 10% do seu money. &7($ {amount})'
+    vip:
+      order: 2
+      permission: 'yessentials.deathlose.vip'
+      percent: 5.0
+      message: '&cVocê morreu e perdeu 5% do seu money. &7($ {amount})'
+
+# Setas dos menus
+Setas:
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'
+
+# Formatos de money e quantia
+Formats:
+  - ''
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'

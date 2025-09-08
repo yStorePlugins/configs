@@ -1,0 +1,28 @@
+Nome: '&8Gerenciar home'
+Tamanho: 27
+BackSlot: 18
+Itens:
+  Display:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: NAME_TAG
+    Data: 0
+    Glow: true
+    Name: '&aDisplay'
+    Lore:
+      - ''
+      - '&fAtual: &7{display}&f.'
+      - ''
+      - '&7Clique para alterar o'
+      - '&7nome customizado da home.'
+  Icone:
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: ITEM_FRAME
+    Data: 0
+    Glow: true
+    Name: '&aÍcone'
+    Lore:
+      - '&7Clique para alterar o ícone da home.'

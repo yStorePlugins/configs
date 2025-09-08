@@ -1,0 +1,25 @@
+enabled: true
+
+scoreboards:
+  score1:
+    # Vai sempre pegar a de maior prioridade
+    priority: 1
+    # Utilize ALL para todos
+    world: 'ALL'
+    permission: ''
+    title: '&b&lyStore'
+    lines:
+      - '&bCompre plugins no nosso site:'
+      - '&fwww.ystoreplugins.com.br'
+      - '&r'
+      - '&7Tenha um bom jogo!'
+  score2:
+    priority: 2
+    world: 'MundoPlot2'
+    permission: 'yessentials.scoreboard.2'
+    title: '&b&lyStore Terrenos'
+    lines:
+      - '&bCompre plugins no nosso site:'
+      - '&fwww.ystoreplugins.com.br'
+      - '&r'
+      - '&7Tenha um bom jogo!'

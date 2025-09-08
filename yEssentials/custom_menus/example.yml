@@ -1,0 +1,13 @@
+command: 'test1|teste1'
+permission: ''
+
+name: '&8Menu Exemplo'
+size: 36
+facing:
+  example_facing_1:
+    slot: 10
+    left-command: 'sudo {player} /g Testando...'
+    right-command: 'sudo {player} /g Testando...'
+    material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+    name: '&eEnfeite'
+    lore: [ '&7Clique para testar.' ]

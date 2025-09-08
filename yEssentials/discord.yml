@@ -1,0 +1,22 @@
+Embeds:
+  ystore:
+    # todos, segunda, terca, quarta, quinta, sexta, sabado, domingo
+    # dia-hora-minuto-segundo
+    Horarios:
+      - 'todos-00:00:01'
+    URL: ''
+    Username: 'Propaganda'
+    Ativar: false
+    #
+    Title: 'yStore'
+    Thumbnail: ''
+    Color: '#fff'
+    Content: '@everyone'
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Fields:
+      data:
+        Inline: false
+        Header: 'Acesse'
+        Content: 'https://ystoreplugins.com.br'

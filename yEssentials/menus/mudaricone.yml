@@ -1,0 +1,29 @@
+Nome: '&8Casa - Mudar ícone'
+Tamanho: 54
+Slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 37, 38, 39 ]
+BackSlot: 45
+VoltarSlot: 41
+ProximoSlot: 43
+# Item de colocar uma head
+Head:
+  Slot: 42
+  CustomSkull: true
+  URL: 'http://textures.minecraft.net/texture/62d90ad63dd826df02994abdcc6c2306163e1072d1b9e63ad4e7d7d1cf87cdf9'
+  ID: AIR
+  Data: 0
+  Glow: false
+  Name: '&eDefinir head'
+  Lore:
+    - '&7Clique para definir uma'
+    - '&7cabeça customizada no baú.'
+# Itens customizados
+Itens: {}
+#  Enfeite:
+#    Slot: 1
+#    CustomSkull: false
+#    URL: ''
+#    ID: 1
+#    Data: 0
+#    Glow: false
+#    Name: '&aEnfeite'
+#    Lore: []

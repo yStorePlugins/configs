@@ -1,0 +1,93 @@
+# Item do spawner
+Item:
+  CustomSkull: true
+  URL: '{url}'
+  ID: AIR
+  Data: 0
+  Glow: false
+  Name: '&eGerador de entidades'
+  Lore:
+    - ''
+    - '&fTipo: &7{tipo}&f.'
+    - ''
+
+# Chance de receber o spawner ao quebrar
+Chances:
+  membro:
+    Ordem: 1
+    Permissao: ''
+    Chance: 100.0
+    Msg:
+      Erro: '&cSeu spawner foi quebrado mas você não conseguiu recebê-lo. Sua chance de sucesso era de 100%'
+      Sucesso: '&aSeu spawner foi quebrado e você conseguiu recebê-lo. Sua chance de sucesso era de 100%'
+
+# Tradução dos nomes das entidades
+Nomes:
+  - 'COW:Vaca'
+  - 'AXOLOTL:Axolote'
+  - 'BAT:Morcego'
+  - 'BEE:Abelha'
+  - 'BLAZE:Blaze'
+  - 'CAT:Gato'
+  - 'CAVE_SPIDER:Aranha da Caverna'
+  - 'CHICKEN:Galinha'
+  - 'COD:Bacalhau'
+  - 'CREEPER:Creeper'
+  - 'DOLPHIN:Golfinho'
+  - 'DONKEY:Burro'
+  - 'ELDER_GUARDIAN:Guardião Mestre'
+  - 'ENDER_DRAGON:Dragão do Fim'
+  - 'ENDERMAN:Enderman'
+  - 'ENDERMITE:Endermite'
+  - 'FOX:Raposa'
+  - 'GHAST:Ghast'
+  - 'GIANT:Zumbi Gigante'
+  - 'GOAT:Cabra'
+  - 'GUARDIAN:Guardião'
+  - 'HORSE:Cavalo'
+  - 'HOGLIN:Hoglin'
+  - 'HUSK:Zumbi do Deserto'
+  - 'IRON_GOLEM:Golem de Ferro'
+  - 'LLAMA:Lhama'
+  - 'MAGMA_CUBE:Cubo de Magma'
+  - 'MULE:Mula'
+  - 'MUSHROOM_COW:Vaca de Cogumelo'
+  - 'OCELOT:Jaguatirica'
+  - 'PANDA:Panda'
+  - 'PARROT:Papagaio'
+  - 'PHANTOM:Phantom'
+  - 'PIG:Porco'
+  - 'PIGLIN:Piglin'
+  - 'PIGLIN_BRUTE:Piglin Bárbaro'
+  - 'PIG_ZOMBIE:Porco Zumbi'
+  - 'PILLAGER:Saqueador'
+  - 'POLAR_BEAR:Urso Polar'
+  - 'PARROT:Papagaio'
+  - 'PUFFERFISH:Baiacu'
+  - 'RABBIT:Coelho'
+  - 'SALMON:Salmão'
+  - 'SHEEP:Ovelha'
+  - 'SHULKER:Shulker'
+  - 'SILVERFISH:Silverfish'
+  - 'SKELETON:Esqueleto'
+  - 'SKELETON_HORSE:Cavalo Esqueleto'
+  - 'SLIME:Slime'
+  - 'SNOWMAN:Golem de Neve'
+  - 'SPIDER:Aranha'
+  - 'SQUID:Lula'
+  - 'TROPICAL_FISH:Peixe Tropical'
+  - 'TURTLE:Tartaruga'
+  - 'VEX:Fantasma'
+  - 'VILLAGER:Aldeão'
+  - 'VINDICATOR:Vingador'
+  - 'WITCH:Bruxa'
+  - 'WITHER:Wither'
+  - 'WITHER_SKELETON:Esqueleto Wither'
+  - 'WOLF:Lobo'
+  - 'ZOGLIN:Zoglin'
+  - 'ZOMBIE_HORSE:Cavalo Zumbi'
+  - 'ZOMBIE_VILLAGER:Aldeão Zumbi'
+  - 'ZOMBIFIED_PIGLIN:Piglin Zumbi'
+# URL das entidades para o item
+URLs:
+  - 'COW:5d6c6eda942f7f5f71c3161c7306f4aed307d82895f9d2b07ab4525718edc5'

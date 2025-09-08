@@ -1,0 +1,55 @@
+# Delay parapoder divulgar
+# em segundos
+Delay: 60
+
+# Lista de domínios permitidos
+domain-whitelist: [ 'https', 'http', 'www' ]
+
+# tipos de divulgação
+Divulgar:
+  video:
+    # Caso não queira deixe '' (vazio)
+    Permissao: 'yessentials.divulgar.video'
+    # Caso não queira deixe '' (vazio)
+    Title: '&f{player}<nl>&bestá divulgando.'
+    # Caso não queira deixe '' (vazio)
+    Actionbar: '&f{player} &bestá divulgando.'
+    # Caso não queira deixe '' (vazio)
+    Som: 'LEVEL_UP'
+    # Caso não queira deixe Chat: ''
+    Chat: |
+
+      &bO jogador &f{player}&b está divulgando um vídeo:
+      &b> &f{link}&b.
+
+    # Permitir o envio apenas de link (1 argumento)
+    # Caso "false", poderá enviar mensagens diversas
+    Somente link: true
+    # Custos para enviar essa divulgação
+    Custos:
+      custo1:
+        Provider: 'money'
+        Amount: 100.0
+    # Webhook do discord
+    Discord:
+      #
+      URL: ''
+      Username: 'Divulgação'
+      Ativar: false
+      #
+      Title: ''
+      Thumbnail: ''
+      Color: '#fff'
+      Content: '{player} está divulgando um vídeo!'
+      Footer:
+        Text: 'Todos os direitos reservados'
+        Image: ''
+      Fields:
+        jogador:
+          Inline: false
+          Header: 'Jogador'
+          Content: '{player}'
+        link:
+          Inline: false
+          Header: 'Link'
+          Content: '{link}'

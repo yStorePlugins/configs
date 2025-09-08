@@ -1,0 +1,465 @@
+Nome: '&8Cores'
+Tamanho: 54
+AnteriorSlot: 9
+ProximoSlot: 17
+Slots: [ 11, 12, 13, 14, 15 ]
+
+Limpar:
+  Slot: 49
+  material: BARRIER
+  Name: '&cLimpar'
+  Lore:
+    - '&7Cor equipada: {cor}.'
+    - ''
+    - '&aClique para limpar.'
+
+Cores:
+  preto:
+    Cor: '&0'
+    Permissao: 'yessentials.cor.preto'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 15
+        Name: '&aPreto'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 15
+        Name: '&aPreto'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 15
+        Name: '&aPreto'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  azul_escuro:
+    Cor: '&1'
+    Permissao: 'yessentials.cor.azul_escuro'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 11
+        Name: '&aAzul Escuro'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 11
+        Name: '&aAzul Escuro'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 11
+        Name: '&aAzul Escuro'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  verde_escuro:
+    Cor: '&2'
+    Permissao: 'yessentials.cor.verde_escuro'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 13
+        Name: '&aVerde Escuro'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 13
+        Name: '&aVerde Escuro'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 13
+        Name: '&aVerde Escuro'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  ciano:
+    Cor: '&3'
+    Permissao: 'yessentials.cor.ciano'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 9
+        Name: '&aCiano'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 9
+        Name: '&aCiano'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 9
+        Name: '&aCiano'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  vermelho_escuro:
+    Cor: '&4'
+    Permissao: 'yessentials.cor.vermelho_escuro'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 14
+        Name: '&aVermelho Escuro'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 14
+        Name: '&aVermelho Escuro'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 14
+        Name: '&aVermelho Escuro'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  roxo:
+    Cor: '&5'
+    Permissao: 'yessentials.cor.roxo'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 10
+        Name: '&aRoxo'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 10
+        Name: '&aRoxo'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 10
+        Name: '&aRoxo'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  laranja:
+    Cor: '&6'
+    Permissao: 'yessentials.cor.laranja'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 1
+        Name: '&aLaranja'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 1
+        Name: '&aLaranja'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 1
+        Name: '&aLaranja'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  cinza_claro:
+    Cor: '&7'
+    Permissao: 'yessentials.cor.cinza_claro'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 8
+        Name: '&aCinza Claro'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 8
+        Name: '&aCinza Claro'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 8
+        Name: '&aCinza Claro'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  cinza_escuro:
+    Cor: '&8'
+    Permissao: 'yessentials.cor.cinza_escuro'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 7
+        Name: '&aCinza Escuro'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 7
+        Name: '&aCinza Escuro'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 7
+        Name: '&aCinza Escuro'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  magenta:
+    Cor: '&9'
+    Permissao: 'yessentials.cor.magenta'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 2
+        Name: '&aMagenta'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 2
+        Name: '&aMagenta'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 2
+        Name: '&aMagenta'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  verde_claro:
+    Cor: '&a'
+    Permissao: 'yessentials.cor.verde_claro'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 5
+        Name: '&aVerde Claro'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 5
+        Name: '&aVerde Claro'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 5
+        Name: '&aVerde Claro'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  azul_claro:
+    Cor: '&b'
+    Permissao: 'yessentials.cor.azul_claro'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 3
+        Name: '&aAzul Claro'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 3
+        Name: '&aAzul Claro'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 3
+        Name: '&aAzul Claro'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  vermelho_claro:
+    Cor: '&c'
+    Permissao: 'yessentials.cor.vermelho_claro'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 14
+        Name: '&aVermelho claro'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 14
+        Name: '&aVermelho claro'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 14
+        Name: '&aVermelho claro'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  rosa:
+    Cor: '&d'
+    Permissao: 'yessentials.cor.rosa'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 6
+        Name: '&aRosa'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 6
+        Name: '&aRosa'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 6
+        Name: '&aRosa'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  amarelo:
+    Cor: '&e'
+    Permissao: 'yessentials.cor.amarelo'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 4
+        Name: '&aAmarelo'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 4
+        Name: '&aAmarelo'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 4
+        Name: '&aAmarelo'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+  branco:
+    Cor: '&f'
+    Permissao: 'yessentials.cor.branco'
+    Icones:
+      Permissao:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 0
+        Name: '&aBranco'
+        Lore:
+          - '&cVocê não tem a permissão necessária.'
+      Equipar:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 0
+        Name: '&aBranco'
+        Lore:
+          - '&aClique para selecionar esta cor.'
+      Equipado:
+        CustomSkull: false
+        URL: ''
+        ID: WOOL
+        Data: 0
+        Name: '&aBranco'
+        Lore:
+          - '&7Você está utilizando esta cor.'
+Itens: {}

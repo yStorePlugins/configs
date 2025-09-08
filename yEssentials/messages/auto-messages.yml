@@ -1,0 +1,36 @@
+# Delay entre as mensagens
+# em segundos
+Delay: 60
+# Ativar o AutoMessage
+Ativar: true
+# Ativar o aleatório para não enviar na sequência da ordem
+Aleatorio: false
+# mensagens
+Messages:
+  msg1:
+    # A ordem começa do 1
+    Ordem: 1
+    Chat: |
+
+      &c&l✘ &6Descontos exclusivos em toda a loja
+      &c&l✘ &eConcorra a uma &5&lCadeira Gamer!
+
+    Actionbar: '&aAcesse nosso site: &fwww.ystoreplugins.com.br&a.'
+    Title: '' # HEADER<nl>FOOTER
+    Sound: 'LEVEL_UP'
+    BypassPermission: '' # permissão para não receber a mensagem
+    World blacklist:
+      - 'nenhum'
+  msg2:
+    Ordem: 2
+    Chat: |
+
+      &c&l✘ &6Lembre-se de entrar em nosso discord!
+      &c&l✘ &eE participe de incríveis sorteios &9&l/discord
+
+    Actionbar: '&aAcesse nosso site: &fdiscord.ystoreplugins.com.br&a.'
+    Title: '' # HEADER<nl>FOOTER
+    Sound: 'LEVEL_UP'
+    BypassPermission: ''
+    World blacklist:
+      - 'nenhum'

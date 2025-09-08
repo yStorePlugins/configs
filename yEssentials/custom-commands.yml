@@ -1,0 +1,44 @@
+Commands:
+  c1:
+    Command: '/discord'
+    Permission: '' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Title: '' # deixe '' para não usar
+    Chat: |
+      &aNosso discord: &fwww.ystoreplugins.com.br/discord&a.
+    broadcast:
+      # deixe '' para não usar
+      Actionbar: ''
+      Title: ''
+      Chat: ''
+    # Comando que o jogador irá ser forçado à enviar ao digitar o /discord
+    # Coloque no formato: /<command>
+    ForceCommand: '' # deixe '' para não usar
+    # Som que será executado
+    # Deixe '' para não usar
+    Som: ''
+    # O comando precisa de um argumento?
+    # Ex: /discord oi amigos
+    Argumento: false
+    Uso: '&cUse: /discord'
+    # embed do discord
+    # apague para não usar
+    # placeholder {args} para pegar os argumentos depois do comando
+    Discord:
+      #
+      URL: ''
+      Username: 'CustomEmbed'
+      Ativar: false
+      #
+      Title: ''
+      Thumbnail: ''
+      Color: '#fff'
+      Content: '{player}!'
+      Footer:
+        Text: 'Todos os direitos reservados'
+        Image: ''
+      Fields:
+        jogador:
+          Inline: false
+          Header: 'Jogador'
+          Content: '{player}'

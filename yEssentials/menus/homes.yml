@@ -1,0 +1,24 @@
+Nome: '&8Suas casas'
+Tamanho: 27
+AnteriorSlot: 9
+ProximoSlot: 17
+BackSlot: 18
+Slots: [ 11, 12, 13, 14, 15 ]
+# Configurações do item da home
+Item:
+  Nome: '&e{display}'
+  Lore:
+    - '&7Botão &fesquerdo&7 para teleportar.'
+    - '&7Botão &fdireito&7 para gerenciar.'
+    - '&7Botão &fshift+direito&7 para deletar.'
+# Enfeites do menu
+Itens: {}
+#  Enfeite:
+#    Slot: 0
+#    CustomSkull: false
+#    URL: ''
+#    ID: 0
+#    Data: 0
+#    Glow: true
+#    Name: ''
+#    Lore: []

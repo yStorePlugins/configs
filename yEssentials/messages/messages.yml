@@ -1,0 +1,491 @@
+# Mensagens do sistema de kits
+Kit:
+  Existe: '&cJá existe um kit com esse nome.'
+  Nao existe: '&cNão foi possível localizar esse kit.'
+  Criado: '&aKit criado com sucesso.'
+  Deletado: '&aKit deletado com sucesso.'
+  Display: '&aDisplay do kit alterado para &7{display}&a.'
+  Delay: '&aDelay do kit alterado para &7{delay} segundos&a.'
+  Nenhum: '&cNão há nenhum kit disponível para você.'
+  Kits: '&aKits: &7{kits}&a.'
+  Permissao dar: '&cVocê não tem permissão para dar o kit {display}.'
+  Permissao pegar: '&cVocê não tem permissão para pegar o kit {display}.'
+  Dado: '&aKit {display} dado ao jogador.'
+  Aguardar: '&cVocê deve aguardar &e{tempo}&c para pegar o kit {display} novamente.'
+  Recebeu: '&aVocê recebeu o kit {display} com sucesso.'
+  Cheio: '&cSeu inventário está cheio, alguns itens foram dropados no chão.'
+  Cheio cancelado: '&cSeu inventário está cheio, esvazie-o antes de pegar o kit.'
+  Editarkit comandos: |
+    &a&l* &aComandos disponíveis:
+    &a/editarkit items <kit> &f- &7Edite os itens de um kit.
+    &a/editarkit display <kit> <display> &f- &7Edite o display do kit.
+    &a/editarkit delay <kit> <delay> &f- &7Edite o delay para pegar o kit.
+  Time player: '&cO jogador &f{player}&c ainda precisa aguardar &f{tempo}&c.'
+  Time player none: '&cO jogador &f{player}&c já pode pegar o kit.'
+
+# Mensagens do sistema de spawn
+Spawn:
+  Setou: '&aVocê definiu o local de spawn.'
+  Setou vip: '&aVocê setou o local de &eSpawn VIP.'
+  Setado: '&cO spawn não está definido.'
+  Nenhum: '&cNenhum dos spawns estão definidos.'
+  Teleportado: '&aVocê foi teleportado para o spawn.'
+  Teleportado vip: '&aVocê foi teleportado para o &eSpawn &eVIP.'
+  Teleportado player: '&aVocê teleportou o jogador &f{player}&a para o spawn.'
+  Teleportado player vip: '&aVocê teleportou o jogador &f{player}&a para o spawn vip.'
+  Deletou: '&aVocê deletou o local de spawn.'
+  Deletou vip: '&aVocê deletou o local de &eSpawn VIP.'
+  Setou custom: '&aVocê setou o local de &eSpawn {spawn}.'
+  Deletou custom: '&aVocê deletou o local de &eSpawn {spawn}.'
+  Teleportado custom: '&aVocê foi teleportado para o &eSpawn &e{spawn}.'
+  Teleportado player custom: '&aVocê teleportou o jogador &f{player}&a para o spawn {spawn}.'
+
+# Mensagens do sistema de loja
+Loja:
+  Setou: '&aVocê definiu o local de loja.'
+  Setou vip: '&aVocê setou o local de &eLoja VIP.'
+  Setado: '&cA loja não está definido.'
+  Nenhum: '&cNenhuma das lojas estão definidas.'
+  Teleportado: '&aVocê foi teleportado para a loja.'
+  Teleportado vip: '&aVocê foi teleportado para a &eLoja &eVIP.'
+  Teleportado player: '&aVocê teleportou o jogador &f{player}&a para a loja.'
+  Teleportado player vip: '&aVocê teleportou o jogador &f{player}&a para a loja vip.'
+  Deletou: '&aVocê deletou o local de loja.'
+  Deletou vip: '&aVocê deletou o local de &eLoja VIP.'
+
+# Mensagens do sistema de enchants
+Enchant:
+  Segurando: '&cVocê deve estar segurando um item para encatar.'
+  Encantou: '&aVocê encantou o item que está em sua mão.'
+  Disponiveis: |
+    &a&l* &aEncantamentos disponíveis:
+    &7{enchants}
+
+# Mensagens do sistema de alerta
+Alert:
+  # Deixe Chat: '' para não usar
+  Chat: |
+    
+    &c&l[Anúncio] &f{msg}
+    
+  # Deixe Title: '' para não usar
+  Title: '&f&l{player}&cTransmitiu um anúncio'
+  # Deixe Actionbar: '' para não usar
+  Actionbar: '&c&l[Anúncio] {msg}'
+  # Mensagem enviada ao transmitir pelo console
+  Transmitiu: '&aVocê transmitiu um anúncio.'
+  Transmitiu player: '&aVocê transmitiu um anúncio para {target}.'
+
+# Mensagens do sistema de god
+God:
+  Ativou: '&aVocê ativou o &7GodMode.'
+  Desativou: '&cVocê desativou o &7GodMode.'
+  Ativou player: '&aVocê ativou o GodMode para o jogador &7{player}&a.'
+  Desativou player: '&cVocê desativou o GodMode para o jogador &7{player}&c.'
+
+# Mensagens do sistema de gerenciamento de plugins
+Plugin:
+  Help: |
+    &a&l* &aComandos disponíveis:
+    &a/plugin list &f- &7Liste todos os plugins do servidor.
+    &a/plugin unload &f- &7Descarregue um plugin do servidor.
+    &a/plugin load &f- &7Carregue um plugin no servidor.
+    &a/plugin reload &f- &7Recarregue um plugin no servidor.
+    &a/plugin disable &f- &7Desative um plugin no servidor.
+    &a/plugin enable &f- &7Ative um plugin no servidor.
+    &a/plugin info &f- &7Veja as informações de um plugin no servidor.
+  Info: |
+    &bInformações do plugin &f{name}
+    
+    &7> &bPrefixo: &f{prefix}&b.
+    &7> &bVersão: &f{version}&b.
+    &7> &bDescrição: &f{description}&b.
+    &7> &bSite: &f{website}&b.
+    &7> &bAutores: &f{authors}&b.
+    &7> &bDependências: &f{dependencies}&b.
+    &7> &bComandos: &f{commands}&b.
+  Encontrado: '&cPlugin &7{plugin}&c não encontrado.'
+  Ja desligado: '&cPlugin &7{plugin}&c já está desligado.'
+  Ja ligado: '&cPlugin &7{plugin}&c já está ligado.'
+  Ligado: '&aO plugin &7{plugin} &afoi &e&lLIGADO.'
+  Desligado: '&aO plugin &7{plugin} &afoi &e&lDESLIGADO.'
+  Ja carregado: '&cO plugin &7{plugin} &cjá está carregado.'
+  Carregado: '&aPlugin &7{plugin}&a carregado com sucesso!'
+  Descarregado: '&aPlugin &7{plugin}&a descarregado com sucesso!'
+  Dependencias: '&cOcorreu um erro ao tentar carregar o plugin, as dependências não foram encontradas. Verifique o console.'
+  PluginYML: '&cOcorreu um erro ao tentar carregar o plugin, há um erro na plugin.yml. Verifique o console.'
+  Interno: '&cOcorreu um erro ao tentar carregar o plugin, contate o dono do plugin. Verifique o console.'
+
+# Mensagens do sistema de repair
+Repair:
+  Segurando: '&cVocê deve estar segurando um item.'
+  Repair: '&aVocê reparou o item na sua mão.'
+  Invalido: '&cEste item não pode ser reparado.'
+  Maximo: '&cEste item já está reparado.'
+  Nenhum: '&cVocê não tem nenhum item que possa ser reparado.'
+  All: '&aVocê reparou os itens no seu inventário.'
+  Nenhum player: '&cO jogador {player} não tem nenhum item que possa ser reparado.'
+  All player: '&aVocê reparou os itens no inventário do jogador {player}.'
+
+# Mensagens do sistema de speed
+Speed:
+  Clear: '&aSua velocidade foi definida para padrão.'
+  Clear player: '&aA velocidade do jogador &7{player}&a foi definida para padrão.'
+  Invalido: '&cA velocidade é inválida.'
+  Alterado: '&aSua velocidade foi definida para &7{quantia}&a.'
+  Alterado player: '&aA velocidade do jogador &7{player}&a foi definida para &7{quantia}&a.'
+
+# Mensagens do sistema de teleport
+Teleport:
+  Wait: '&aVocê será teletransportado em {quantia} segundos... Não se mova.'
+  Lobby: '&aVocê será enviado ao lobby em {quantia} segundos... Não se mova.'
+  Contains: '&cVocê já está esperando para ser teletransportado.'
+  Contains player: '&cEste jogador já está teleportando para algum local.'
+  Moved: '&cVocê se moveu, por isto seu teleporte foi cancelado.'
+  Damaged: '&cVocê foi atacado, por isto seu teleporte foi cancelado.'
+  Attacked: '&cVocê atacou, por isto seu teleporte foi cancelado.'
+
+# Mensagens do sistema de warp
+Warp:
+  Existe: '&cEsta warp {warp} já existe.'
+  Nao existe: '&cEsta warp {warp} não existe.'
+  Criado: '&aWarp {warp} criada com sucesso.'
+  Deletado: '&aWarp {warp} deletada com sucesso.'
+  Teleportar outros: '&cVocê não tem permissão para teleportar este jogador {player} à esta warp {warp}.'
+  Teleportar: '&cVocê não tem permissão para ir até esta warp {warp}.'
+  Teleportado: '&aJogador teleportado até a warp {warp}.'
+  Warps: '&aWarps disponíveis: &7[ &7{warps} &f]'
+  Tempo: '&cVocê precisa ter no mínimo {tempo} tempo jogado no servidor.'
+
+# Mensagens do sistema de tp
+Tp:
+  Tpall outro: '&aVocê teleportou todos os jogadores para o jogador &f{player}&a.'
+  Tpall: '&aVocê teleportou todos os jogadores para você.'
+  Tphere: '&aVocê teleportou o jogador &f{player}&a para você.'
+  Toggle: '&cO jogador {player} está com teleportes desativados.'
+  Ativado: '&aVocê ativou o tp toggle.'
+  Desativado: '&aVocê desativou o tp toggle.'
+  Tp: '&aVocê foi teleportado para o jogador &f{player}&a.'
+  Tp player: '&aVocê teleportou o jogador &f{player1}&a para o jogador &f{player2}&a.'
+  Tpa: '&aSolicitação de teleporte enviada para &f{player}&a.'
+  Tpa ja: '&cVocê já enviou uma solicitação de teleporte para o jogador {player}.'
+  Tpa si: '&cVocê não pode enviar solicitação de teleporte à si mesmo.'
+  Tpa nao: '&c{player} não lhe enviou uma solicitação de teleporte.'
+  Tpa tem: '&cVocê não tem solicitações de teleporte pedente.'
+  Tpa aceitou: '&aVocê aceitou a solicitação de teleporte do jogador &f{player}&a.'
+  Tpa aceitou player: '&f{player}&a aceitou sua solicitação de teleporte. Teleportando...'
+  Tpa negou: '&aVocê negou a solicitação de teleporte do jogador &f{player}&a.'
+  Tpa negou player: '&f{player}&a negou sua solicitação de teleporte.'
+  Expirado: '&cSua solicitação de teleporte para {player} expirou.'
+  Cancelado: '&cO jogador saiu do servidor, teleporte cancelado.'
+  World: '&cMundo {world} não encontrado.'
+  Tp cord: '&aVocê foi teleportado para as cordenadas &fx:{x}, y{y}, z{z} &ado mundo &f{world}&a.'
+
+# Mensagens do sistema de divulgação
+Divulgar:
+  Link: '&cEste link não é permitido.'
+  Existe: '&cEste tipo não existe. Disponíveis: &7{tipos}&c.'
+  Permissao: '&cVocê não tem permissão para divulgar este tipo.'
+  Aguardar: '&cVocê deve aguardar &e{tempo}&c para divulgar novamente.'
+  Divulgou: '&aVocê divulgou para todos.'
+
+# Mensagens do sistema de vanish
+Vanish:
+  Ja: '&cVocê já está com o vanish ativo.'
+  Ja player: '&cEste jogador já está com o vanish ativo.'
+  Nao: '&cVocê não está com o vanish ativo.'
+  Nao player: '&cEste jogador não está com o vanish ativo.'
+  Ativou: '&aVocê agora está invisível para outros jogadores.'
+  Desativou: '&aVocê agora está visível para outros jogadores.'
+  Ativou player: '&aEste jogador agora está invisível para outros jogadores.'
+  Desativou player: '&aEste jogador agora está visível para outros jogadores.'
+  Nao encontrado: '&cEste jogador não foi encontrado.'
+  Lista: '&aJogadores invisíveis: &f[ &7{players} &f]&a.'
+  # Deixe '' (vazio) para não usar
+  Actionbar: '&cVocê e ({quantia}) players estão no vanish.'
+
+# Mensagens do sistema de home
+Home:
+  Nenhuma: '&cVocê não tem nenhuma home cadastrada.'
+  Nenhuma player: '&cEste jogador não tem nenhuma home cadastrada.'
+  Nao possui: '&cVocê não possui esta home cadastrada.'
+  Nao possui player: '&cEste jogador não possui esta home cadastrada.'
+  Privada: '&cEsta home está privada.'
+  Teleportado: '&aVocê foi teleportado até a home.'
+  Ja setado: '&cVocê já possui essa home cadastrada.'
+  Setada: '&aHome definida com sucesso.'
+  Deletada: '&aHome &f{home}&a deletada com sucesso.'
+  Deletada player: '&aHome &f{home}&a de &f{player}&a deletada com sucesso.'
+  Ja privada: '&cEsta home já está privada.'
+  Ja publica: '&cEsta home já está pública.'
+  Privou: '&aVocê privou a home &f{home}&a com sucesso.'
+  Privou player: '&aVocê privou a home &f{home}&a de &f{player}&a com sucesso.'
+  Publicou: '&aVocê deixou pública a home &f{home}&a com sucesso.'
+  Publicou player: '&aVocê deixou pública a home &f{home}&a de &f{player}&a com sucesso.'
+  Limite: '&cVocê pode ter apenas até {quantia} homes.'
+  Mudou icone: '&aVocê mudou o ícone da home com sucesso.'
+  Cancelou: '&cVocê cancelou a operação.'
+  Mudou nome: '&aVocê alterou o nome da home para &f{nome}&a.'
+  Grande: '&cO nome da home não pode ser maior que 25 letras.'
+  Mundo: '&cVocê não pode setar homes nesse mundo.'
+  Faction: '&cVocê não pode teleportar para home neste local. Ele pertence a facção {faction}.'
+  SetFaction: '&cVocê não pode setar home neste local. Ele pertence a facção {faction}.'
+  Digite skin: |
+    &aDigite o nome da head que você deseja
+    &7para cancelar digite &ncancelar&7
+  Digite nome: |
+    &aDigite o nome para qual deseja alterar
+    &7para cancelar digite &ncancelar&7
+  Homes: |
+    &aSuas homes públicas: &f{publicas}
+    &aSuas homes privadas: &f{privadas}
+  Homes player: |
+    &aHomes públicas de &7{player}&a: &f{publicas}
+    &aHomes privadas de &7{player}&a: &f{privadas}
+  Nenhuma publica: '&cVocê não tem nenhuma home pública cadastrada.'
+  Publicas: |
+    &aSuas homes públicas: &f{publicas}
+
+# Mensagens do sistema de editar item
+EditarItem:
+  Help: |
+    &a&l* &aComandos disponíveis:
+    &a/editaritem renomear &f- &7Renomeie o item que estiver segurando.
+    &a/editaritem glow &f- &7Deixe o item que estiver segurando brilhando.
+    &a/editaritem addlore &f- &7Adicione uma descrição ao item.
+    &a/editaritem removelore &f- &7Remove a descrição de um item.
+    &a/editaritem inquebravel &f- &7Torna o item inquebrável.
+    &a/editaritem quantia &f- &7Altera a quantia de um item.
+    &a/editaritem esconderatributos &f- &7Esconde os atributos de um item.
+    &a/editaritem addflag &f- &7Adiciona uma flag a um item.
+    &a/editaritem delflag &f- &7Remove uma flag de um item.
+  Nulo: '&cVocê deve estar segurando um item.'
+  Nome: '&aO nome do item foi alterado.'
+  Resetado: '&aO nome do item foi resetado.'
+  Glow: '&aO item agora possui glow.'
+  Adicionada: '&aVocê adicionou uma nova linha na lore do item.'
+  Removida: '&aVocê resetou a lore do item.'
+  Inquebravel: '&aVocê tornou este item inquebrável.'
+  Quantia invalida: '&cA quantia deve ser menor que 64 e maior que 0.'
+  Quantia: '&aVocê alterou a quantia deste item para {quantia}.'
+  HideAttributes: '&aVocê escondeu os atributos deste item.'
+
+# Mensagens diversas
+Outros:
+  Workbench: '&aAbrindo mesa de trabalho...' # Actionbar
+  Anvil: '&aAbrindo bigorna...' # Actionbar
+  Lixeira: '&aAbrindo lixeira...' # Actionbar
+  Invsee: '&aAbrindo inventário de &f{player}&a...' # Actionbar
+  Echest: '&aAbrindo enderchest...' # Actionbar
+  Luz ativou: '&aVocê ativou a luz' # Actionbar
+  Luz desativou: '&cVocê desativou a luz' # Actionbar
+  Invsee simesmo: '&cVocê não pode executar este comando em si mesmo.'
+  Curado: '&aVocê foi curado.'
+  Curado player: '&aJogador curado.'
+  Clearchat: '&aVocê limpou o chat com sucesso.'
+  Clear: '&aO seu inventário foi limpo.'
+  Clear jogador: '&aVocê limpou o inventário do jogador &f{player}&a com sucesso.'
+  Feed: '&aSeu nível de comida foi restaurado.'
+  Feed jogador: '&aNível de comida do jogador &f{player}&a restaurado.'
+  Back: '&aTeleportado para o local anterior.'
+  Back nao: '&cVocê não tem nenhum local para voltar.'
+  Hat: '&aVocê equipou um chapéu.'
+  Hat segurando: '&cVocê deve estar segurando um item.'
+  Skull: '&aVocê pegou a cabeça do jogador &f{player}&a.'
+  Skull custom: '&aVocê pegou uma cabeça customizada.'
+  Skull invalida: '&cEsta cabeça é inválida. Acesse www.minecraft-heads.com/custom-skull para pegar uma válida.'
+  Giveall segurando: '&cVocê deve estar segurando um item.'
+  Giveall: '&aO staff &f{player}&a deu um item para todos online.'
+  Fly ativado: '&aModo de voo ativado.'
+  Fly desativado: '&cModo de voo desativado.'
+  Fly alterado: '&aModo de voo alterado para &f{player}&a.'
+  Gamemode encontrado: '&cModo de jogo não encontrado. Disponíveis: <0/1/2/3>'
+  Gamemode alterado: '&aModo de jogo alterado para &f{gamemode}&a.'
+  Gamemode alterado jogador: '&aModo de jogo do jogador &f{player}&a alterado para &f{gamemode}&a.'
+  Derreter: '&cVocê não possui itens para derreter.'
+  Derreteu: '&aVocê derreteu &f{quantia}&a itens.'
+  Compactar: '&cVocê não possui itens para compactar.'
+  Compactou: '&aVocê compactou &f{quantia}&a itens.'
+  Cores: |
+    &7Lista de cores disponíveis:
+    
+    &0{sm}0 &7- &0preto
+    &1{sm}1 &7- &1azul escuro
+    &2{sm}2 &7- &2verde escuro
+    &3{sm}3 &7- &3ciano
+    &4{sm}4 &7- &4vermelho
+    &5{sm}5 &7- &5roxo
+    &6{sm}6 &7- &6dourado
+    &7{sm}7 &7- &7cinza
+    &8{sm}8 &7- &8cinza escuro
+    &9{sm}9 &7- &9magenta
+    &a{sm}a &7- &averde
+    &b{sm}b &7- &bazul
+    &c{sm}c &7- &cvermelho claro
+    &d{sm}d &7- &drosa
+    &e{sm}e &7- &eamarelo
+    &f{sm}f &7- &fbranco
+  Online: '&a&l> &f&l{quantia}&a jogadores online neste servidor.'
+  Ping: '&a&l> &f&l{quantia}&a é o seu ping atual.'
+  Ping jogador: '&a&l> &f&l{quantia}&a é o ping do &7{player}&a.'
+  Nick: '&cSeu nick está bloqueado de entrar no servidor.'
+  Placa: '&cHá palavra(s) bloqueada(s) na sua placa.'
+  Comando: '&cEste comando foi bloqueado.'
+  Shift: '&cVocê não pode mover itens com shift neste container.'
+  Craft: '&cEste craft foi bloqueado.'
+  Container: '&cVocê não pode abrir este container.'
+  Enderpearl: '&cVocê precisa aguardar {delay} para jogar outra enderpearl.'
+  Comando delay: '&cVocê precisa aguardar {delay} para usar este comando novamente.'
+  YEssentials help: |
+    &c&l* &cComandos disponíveis:
+    &c/yessentials reload &f- &7Recarregar configurações do plugin.
+    &c/yessentials sb-reload &f- &7Recarregar configurações da scoreboard do plugin.
+  YEssentials reload: '&aConfiguração recarregada. Alguns opções podem sofrer as devidas alterações somente ao reiniciar.'
+  List: |
+    &a({quantia}) Jogadores online: &f[ &7{players}&f ]
+  Pocao: '&cVocê deve estar segurando uma poção.'
+  Efeito valido: '&cVocê deve inserir um efeito válido. Válidos: {efeitos}.'
+  Aplicados: '&aOs efeitos foram aplicados.'
+  Encontrado: '&cEste jogador não foi encontrado.'
+  Pocao limpo: '&cOs efeitos desta poção foram limpos.'
+  Vanish aviso: '&aO jogador &f{player}&a acabou de entrar no modo vanish.'
+  Sudo: '&aSudo realizado no jogador &f{player}&a.'
+  Sudo todos: '&aSudo realizado em todos os jogadores&a.'
+  Sudo si: '&cVocê não pode executar o sudo à si mesmo.'
+  Near nao: '&cNão há jogadores por perto.'
+  Near: |
+    &aJogadores próximos à você:
+    &f> &e{players}&a.
+  Suicidio: '&aVocê cometeu suicidio.'
+  Voar proibido: '&cSeu modo de voo foi desabilitado, você não pode voar aqui.'
+  Gamemode permissao: '&cVocê não tem permissão nesse modo {modo}.'
+  Som existe: '&cEste som não existe.'
+  Som enviado: '&aSom executado com sucesso ao jogador &f{player}&a.'
+  Som enviado todos: '&aSom executado com sucesso à todos os jogadores.'
+  Thor: '&aVocê mandou um raio no jogador &f{player}&a.'
+  Thor todos: '&aVocê mandou um raio para todos os jogadores.'
+  Burn: '&aVocê botou fogo no jogador &f{player}&a.'
+  Burn todos: '&aVocê botou fogo em todos os jogadores.'
+  Iteminfo segurando: '&cVocê deve estar segurando um item.'
+  Iteminfo: |
+    &eInformações do item:
+    
+    &aMaterial: &f{material}
+    &aID: &f{id}
+    &aData: &f{data}
+    &aEncantamentos: &f{enchants}
+    &aNBTTags: &f{nbttags}
+    &aFlags: &f{flags}
+  Freeze: '&bVocê congelou o jogador &f{player}&b.'
+  Freeze player: '&bVocê foi congelado por &f{player}&b.'
+  Unfreeze: '&bVocê descongelou o jogador &f{player}&b.'
+  Unfreeze player: '&bVocê foi descongelado por &f{player}&b.'
+  Freezed: '&cVocê está congelado!'
+  Servertime: '&bHorário atual: &f[&a{hora}:{minuto}:{segundo}&f]'
+  Lobby: |
+    &eDeseja realmente ir para o lobby?
+    &eDigite &7/lobby&e novamente para confirmar.
+  Serverstatus: |
+    &bInformações atuais do servidor:
+    
+    &bGerais:
+    &f> &bLíngua: &7{lingua}
+    &f> &bQ. Plugins: &7{plugins}
+    &f> &bQ. Players: &7{players_online}/{players_maximo}
+    &f> &bQ. Entidades: &7{entidades}
+    &f> &bQ. Mundos: &7{mundos}
+    &f> &bQ. Chunks Carregadas: &7{chunks}
+    
+    &bMemória:
+    &f> &bRAM usada: &7{ram_usada}
+    &f> &bRAM livre: &7{ram_livre}
+    &f> &bRAM máxima: &7{ram_maxima}
+    
+    &bTPS:
+    &f> &bTPS Atual: &7{tps_atual}
+    &f> &bTPS 1m: &7{tps_1m}
+    &f> &bTPS 5m: &7{tps_5m}
+    &f> &bTPS 15m: &7{tps_15m}
+  Estatisticas: |
+    &bInformações de &f{player}&b:
+    
+    &f> &bTempo jogado: &7%statistic_time_played%
+    &f> &bKills: &7%statistic_player_kills%
+    &f> &bMortes: &7%statistic_deaths%
+    &f> &bMobs mortos: &7%statistic_mob_kills%
+    &f> &bDano causado: &7%statistic_damage_dealt%
+    &f> &bDano sofrido: &7%statistic_damage_taken%
+    &f> &bCentímetros andados: &7%statistic_walk_one_cm%
+    &f> &bPulos dados: &7%statistic_jump%
+    &f> &bBlocos minerados: &7%statistic_mine_block%
+  Whois: |
+    &bInformações de &f{player}&b:
+    
+    &f> &bIP: &7{ip}
+    &f> &bModo de jogo: &7{gamemode}
+    &f> &bVida: &7{vida}
+    &f> &bFome: &7{fome}
+    &f> &bLocalização atual: &7X:{x} Y:{y} Z:{z} Mundo:{mundo}
+  SBReload: '&aConfiguração da scoreboard recarregada.'
+  Scoreboard help: |
+    &c&l* &cComandos disponíveis:
+    &c/scoreboard reload &f- &7Recarregar configurações da scoreboard do plugin.
+    &c/yessentials toggle &f- &7Alterna a scoreboard (apenas para o jogador).
+  Scoreboard ativou: '&aVocê ativou a visualização da scoreboard.'
+  Scoreboard desativou: '&cVocê desativou a visualização da scoreboard.'
+  VanishStatus on: '&aVocê está invisível.'
+  VanishStatus off: '&cVocê não está invisível.'
+  Spawner tipo: |
+    &cEste tipo de spawner não existe.
+    &cDisponíveis: &f{spawners}&c.
+  Spawner giveall: |
+    &bO STAFF &f{staff} &bdeu &f{quantia}x Spawners de {tipo}&b para todos os jogadores online.
+  Spawner give: '&bVocê deu &f{quantia}x Spawners de {tipo}&b para o jogador &f{player}&b.'
+  Spawner silktouch: '&cVocê precisa de uma picareta com silk-touch para quebrar este spawner.'
+  Hat invalido: '&cEste item não pode ser adicionado à cabeça.'
+  Vida alterado: '&bVida máxima do jogador &f{player}&b alterada para &f{vida}&b.'
+  Slime sim: '&aVocê está numa slime chunk.'
+  Slime nao: '&cAqui não é uma slime chunk.'
+  Random tp: '&aTeleportado para as coordenadas: &fX: {x} - Y: {y} - Z: {z} &ado mundo &f{world}&f.'
+  Vanish existe: '&cEste jogador não está online.'
+  Morreu outro: '&cO jogador {morreu} morreu.'
+  Nick limpo: '&aVocê limpou seu nick.'
+  Nick limpo player: '&aVocê limpou o nick de &f{player}&a.'
+  Nick alterado: '&aVocê alterou o seu nick para &f{nick}&a.'
+  Nick alterado player: '&aVocê alterou o nick de &f{player}&a para &f{nick}&a.'
+  Nick palavra bloqueada: '&cEsta palavra {palavra} está bloqueada no /nick.'
+  Nick apenas cor: '&cVocê pode alterar apenas a cor do seu nome.'
+  Nick blacklisted: '&cO nick informado contém caracteres ilegais.'
+  Registrou: |
+
+    &e&lANUNCIO! &fO jogador &6{player}&f entrou pela primeira vez no servidor!
+
+  Top tp: '&aTeleportado para o bloco mais alto.'
+  Item banido: '&cO item que você possuía está banido &7({item})&c, portanto foi removido do seu inventário.'
+  Flag encontrada: |
+    &cNenhuma FLAG com este nome encontrada.
+    &cDisponíveis: {list}
+  Flag add: '&aFlag {flag} adicionada.'
+  Flag removida: '&aFlag {flag} removida.'
+  BlockDebug on: '&aDebug de blocos ativado.'
+  BlockDebug off: '&cDebug de blocos desativado.'
+  BlockDebug: '&eBloco: &f{block}&e.'
+  Item-give: '&aVocê deu &fx{amount} {item}&a para o jogador &f{player}&a.'
+  No-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  Comando-Bloqueado-Staff: '&cO jogador {player} executou o comando bloqueado: "{command}".'
+  RTP Mundo encontrado: '&cO mundo configurado está errado. Contate um staff.'
+  Mundo encontrado: '&cEste mundo não existe.'
+  Max enchant: '&cVocê pode encantar no máximo &f{max}&c leveis.'
+  Chunk on: '&aDebug de chunk ativado.'
+  Chunk off: '&cDebug de chunk desativado.'
+  Top blacklisted: '&cNão podes executar o /top neste mundo.'
+  Entity list: |
+    &cEntidade não encontrada.
+    &cDisponiveis: {list}
+  Summon: '&aEntidade &f{entity}&a sumonada para o player &f{player}&a.'
+  Invulnerabilidade actionbar: '&cVocê está imune a danos por {time}.'
+  Tpa blacklisted: '&cVocê não pode aceitar o TPA nesse mundo.'
+  Title: '&aVocê enviou um title para o jogador &f{player}&a.'
+  Actionbar: '&aVocê enviou uma actionbar para o jogador &f{player}&a.'
+  Title todos: '&aVocê enviou um title para todos online.'
+  Actionbar todos: '&aVocê enviou uma actionbar para todos online.'

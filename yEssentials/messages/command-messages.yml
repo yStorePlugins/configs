@@ -1,0 +1,5 @@
+Permissao: '&cVocê não tem permissão para isto.'
+Jogador: '&cApenas jogadores podem executar este comando.'
+Target: '&cJogador {player} não encontrado.'
+Numero: '&cO argumento não é um número.'
+Syntax: '&cUse: /{comando} {syntax}'
