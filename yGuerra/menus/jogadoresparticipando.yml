@@ -1,0 +1,13 @@
+Nome: '&8Jogadores participando'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 31
+
+Item:
+   CustomSkull: true
+   URL: '{player}'
+   ID: 0
+   Data: 0
+   Name: '&7[{clan}&7] &f{player}'
+   Lore:
+   - '&fKills: &a{kills}&f.'

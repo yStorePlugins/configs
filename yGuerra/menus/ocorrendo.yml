@@ -1,0 +1,73 @@
+Nome: '&8Guerra - Ocorrendo'
+Tamanho: 27
+Back slot: 18
+EntrarSair slot: 16
+Itens:
+   Informacoes:
+      Slot: 10
+      CustomSkull: false
+      URL: ''
+      ID: 276
+      Data: 0
+      Glow: false
+      Name: '&aInformações'
+      Lore:
+      - ''
+      - '&7Fogo amigo: &f{fogoamigo}&7.'
+      - '&7Itens setados: &f{setados}&7.'
+      - '&7Tempo decorrido: &f{duracao}&7.'
+      - ''
+      - '&7Jogadores participando: &a{jogadores}&7.'
+      - '&7Clans participando: &a{clans}&7.'
+   Jogadores:
+      Slot: 12
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/723863981895b104c1b29c9f5f427ae0a0ede464584587068fb1593a27d'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aJogadores'
+      Lore:
+      - '&7Clique para ver os jogadores participando.'
+   Clans:
+      Slot: 13
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/4571b004409ae2d5b3b95f0bace50207eef9ece866f050540e293dbf632329fd'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aClans'
+      Lore:
+      - '&7Clique para ver os clans participando.'
+   Entrar:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/2c9e601ed9198dbb34c51ddf323929f01a5f958ab11133e3e0407b698393b3f'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aEntrar'
+      Lore:
+      - '&fCusto para entrar &7(jogador)&f: &a{money}&f.'
+      - '&fCusto para entrar &7(banco)&f: &a{banco}&f.'
+      - ''
+      - '&7Clique para participar.'
+   Sair:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/c532576b8bc9a876419a39ae4498c456fe9ee5bdc7ba91fd3b2f1b0a7eb91'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&cSair'
+      Lore:
+      - '&7Clique para sair.'
+   Em andamento:
+      CustomSkull: false
+      URL: ''
+      ID: 166
+      Data: 0
+      Glow: true
+      Name: '&cEM ANDAMENTO'
+      Lore:
+      - '&7Você não pode mais entrar no evento.'
+      
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> SAIR:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

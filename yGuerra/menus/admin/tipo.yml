@@ -1,0 +1,145 @@
+Nome: '&8Guerra - {tipo}'
+Tamanho: 45
+BackSlot: 36
+Itens:
+   Fogo amigo:
+      Slot: 10
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/a4b93f41532fc27ef7df933c181ac3166d56037d5c5ff75d2e85afe37ca257d3'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aFogo amigo'
+      Lore:
+      - '&7Estado: {estado}&7.'
+   Itens setados:
+      Slot: 11
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/d73e983ebfdf3d037bf517be6b1f66ea1603f7c5bd2da6484c8dab19597962b6'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aItens setados'
+      Lore:
+      - '&7Estado: {estado}&7.'
+   Dropar itens:
+      Slot: 15
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/9302fd2222c6c112d85992e094777906a3cfdc84888b38cf962689b11e157f17'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aDropar itens'
+      Lore:
+      - '&7Estado: {estado}&7.'
+   Itens:
+      Slot: 16
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/e467a7b9d76ba6d0fed743602533fc98c87af0c60f80f38da774f7a01a2093fa'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aItens'
+      Lore:
+      - '&7Clique para gerenciar os itens.'
+   Capacete:
+      Slot: 20
+      CustomSkull: false
+      URL: ''
+      ID: 310
+      Data: 0
+      Glow: true
+      Name: '&aCapacete'
+      Lore:
+      - '&7Clique com esquerdo para trocar o capacete.'
+      - '&7Clique com direito para pegar o item.'
+   Peitoral:
+      Slot: 21
+      CustomSkull: false
+      URL: ''
+      ID: 311
+      Data: 0
+      Glow: true
+      Name: '&aPeitoral'
+      Lore:
+      - '&7Clique com esquerdo para trocar o peitoral.'
+      - '&7Clique com direito para pegar o item.'
+   Calca:
+      Slot: 23
+      CustomSkull: false
+      URL: ''
+      ID: 312
+      Data: 0
+      Glow: true
+      Name: '&aCalça'
+      Lore:
+      - '&7Clique com esquerdo para trocar a calça.'
+      - '&7Clique com direito para pegar o item.'
+   Botas:
+      Slot: 24
+      CustomSkull: false
+      URL: ''
+      ID: 313
+      Data: 0
+      Glow: true
+      Name: '&aBotas'
+      Lore:
+      - '&7Clique com esquerdo para trocar as botas.'
+      - '&7Clique com direito para pegar o item.'
+   Saida:
+      Slot: 28
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/5ae0e486db4ec49ff1b52cfeceda4c3f36fde23c835ea3ccfcaac935e49b5f10'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aSaída'
+      Lore:
+      - '&7Clique com esquerdo para setar a saída.'
+      - '&7Clique com direito para teleportá-se.'
+   Espera:
+      Slot: 29
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/2ee174f41e594e64ea3141c07daf7acf1fa045c230b2b0b0fb3da163db22f455'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aEspera'
+      Lore:
+      - '&7Clique com esquerdo para setar o local de espera.'
+      - '&7Clique com direito para teleportá-se.'
+   Entrada:
+      Slot: 31
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/f8d6ad6927cdaa9d8179337cadf964460672117b326e60f5b1d19a4b54f2a323'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aEntrada'
+      Lore:
+      - '&7Clique com esquerdo para setar a entrada.'
+      - '&7Clique com direito para teleportá-se.'
+   Camarote:
+      Slot: 33
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/5639d4079d6b7c0a913cff608ec43fa39a72fca5d64fb22700b1cc6c46cc69c2'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aCamarote'
+      Lore:
+      - '&7Clique com esquerdo para setar o camarote.'
+      - '&7Clique com direito para teleportá-se.'
+   Deathmatch:
+      Slot: 34
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/2ee174f41e594e64ea3141c07daf7acf1fa045c230b2b0b0fb3da163db22f455'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aDeathmatch'
+      Lore:
+      - '&7Clique com esquerdo para setar o deathmatch.'
+      - '&7Clique com direito para teleportá-se.'
+      
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> BOTAS:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

@@ -1,0 +1,357 @@
+# Permissão para poder participar do evento
+Permissao: ''
+
+Comando:
+  Comando: 'gladiador'
+  Aliases: [ gladiadores, gladiator ]
+
+Minimo clans: 2
+Minimo jogadores: 2
+
+# Máximo de clans
+# Deixe 0 para ser infinito
+Maximo clan: 0
+
+# Máximo de jogadores por clan
+# Deixe 0 para ser infinito
+Maximo jogador clan: 0
+
+# Máximo de jogadores no evento
+Maximo jogador: 0
+
+# Precisa de clan pra entrar
+Precisa de clan: true
+
+# Deixa os jogadores apostarem
+Aposta: true
+
+# Ativar o teleporte para a sala de espera
+Sala de espera: false
+
+# O jogador perder os itens ao morrer/deslogar/sair
+Perder itens: true
+
+# Permitir o jogador de dropar itens do inventário no chão
+Player drop: false
+
+# comando para executar no jogador que mais matou
+Comando mais matou: [ 'mito setar {player}' ]
+#
+Temporizador:
+  Chamadas:
+    Quantia: 3
+    Tempo: 10
+  Iniciado:
+    Tempo: 20
+  Finalizar:
+    Tempo: 20
+  Informativo: 20 # tempo entre cada anúncio
+  Deathmatch:
+    # Tempo para iniciar o deathmatch
+    # Ele começa a contar o tempo quando o evento inicia.
+    # Em segundos
+    # deixe 0 para desativar
+    Tempo: 600
+    # Delay para começar o pvp do deathmatch
+    # em segundos
+    Delay: 5
+    # Minimo de clans para iniciar automaticamente
+    # deixe 0 para não usar
+    Minimo clans: 0
+    # Minimo de jogadores para iniciar automaticamente
+    # deixe 0 para não usar
+    Minimo jogadores: 0
+#
+Bloqueadores:
+  SpawnMob: false # bloquear o spawn de mobs durante a guerra
+  Chat: false # bloquear falar no chat durante a guerra
+  Craft: false # bloquear craftar itens durante a guerra
+  Fornalha: false # bloquear derreter itens na fornalha durante a guerra
+  Funil: false # bloquear o funil transferir itens durante a guerra
+#
+ClansPermitidos:
+  Ativar: false
+  # Sempre em caixa alta
+  Lista: [ 'YST' ]
+#
+AutoStart:
+  Ativar: true
+  Horarios:
+    - 'segunda-09:10:1' #dia-hora:minuto:segundo
+    - 'terca-09:10:01'
+    - 'quarta-09:10:01'
+    - 'quinta-09:10:01'
+    - 'sexta-09:10:01'
+    - 'sabado-09:10:01'
+    - 'domingo-09:10:01'
+    - 'todos-09:10:01'
+#
+Scoreboard:
+  Ativar: true
+  Title: '&b&lyStore'
+  Linhas:
+    - '&7           Gladiador'
+    - ''
+    - '&fClans: &b{clans}&f.'
+    - '&fJogadores: &b{jogadores}&f.'
+    - '&fJogadores do Clan: &b{jogadores_clan}&f.'
+    - ''
+    - '&fDuração: &b{duracao}&f.'
+    - ''
+    - '&fFogo Amigo: {fogoamigo}'
+    - '&fItens setados: {setados}'
+    - ''
+    - '&b    ystoreplugins.com.br'
+#
+Borda:
+  Ativar: false
+  ## use /<tipo> setcentro
+  Mundo: ''
+  Centro:
+    X: 0
+    Z: 0
+  Tamanho: 1000 # tamanho padrão em blocos
+  Dano: 5 # dano da borda
+  # tempo decorrido da guerra, tamanho que vai ficar a borda, duração da diminuição da borda (deixe 0 para diminuir instantaneamente)
+  Zonas:
+    - '10,100,10'
+#
+Display:
+  CustomSkull: false
+  URL: ''
+  ID: 276
+  Data: 0
+  Glow: true
+  Name: '&aGladiador'
+  Lore:
+    - '&7Clique para gerenciar o evento gladiador.'
+#
+Custo:
+  Banco: 1000.0 #exclusivo yClans, obriga o player precisar de clan.
+  Jogador: 100.0
+  RemoverBanco: true # remover o dinheiro do banco ao entrar
+  RemoverJogador: true # remover o dinheiro do jogador ao entrar
+  Tempo online: 0 #em segundos (exclusivo yTempoOnline)
+  #
+  Skills: #exclusivo mcMMO, deixe ( Skills: [] ) para não usar
+    - 'SWORDS:1' #nome:level
+#
+Fogo amigo: false #simpleclans é sempre desativado.
+Itens setados: true
+Levar itens: false
+Dropar itens: false #ao morrer dropar os itens do inventário
+#
+Tag:
+  Display: '&6[Gladiador]'
+  Setar em:
+    Apenas quem ganhou: false
+    Cargos:
+      Lider: true
+      Capitao: true #exclusivo yClans
+      Confiavel: true #exclusivo yClans
+      Membro: true
+      Sem clan: true
+#
+Comandos permitidos:
+  - '/g'
+  - '/l'
+  - '/.'
+#
+Recompensas:
+  Apenas quem ganhou: false
+  Dar para todos: true #dar recompensas até para os que já haviam morrido, porém só para os que continuam online
+  Cargos:
+    Lider:
+      - 'give {player} emerald 64'
+    #
+    Capitao: #exclusivo yClans
+      - 'give {player} diamond 64'
+    #
+    Confiavel: #exclusivo yClans
+      - 'give {player} gold_ingot 64'
+    #
+    Membro: [ ] #deixe [] para não usar
+    #
+    Sem clan:
+      - 'give {player} wood 64'
+#
+#
+Efeitos:
+  Ativar: false
+  Lista:
+    - 'INVISIBILITY:1-100' #efeito:level-tempo
+#
+#
+Mensagens:
+  Chamada:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fChamada para participar'
+    - ''
+    - '&fDigite &b/guerra &7para entrar.'
+    - '&fClans participando: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores participando: &b{jogadores}'
+    - ''
+    - '&fFogo Amigo: {fogoamigo}'
+    - '&fItens setados: {setados}'
+    - ''
+    - '&7Chamada &f{min} &7de &f{max}&7 ({tempo}).'
+    - ''
+    - '&b----------------------------------------------'
+  Iniciado:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fEvento iniciado'
+    - ''
+    - '&fClans participando: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores participando: &b{jogadores}'
+    - ''
+    - '&fFogo Amigo: {fogoamigo}'
+    - '&fItens setados: {setados}'
+    - ''
+    - '&7Os clans tem &f{tempo} &7para se prepararem.'
+    - ''
+    - '&b----------------------------------------------'
+  Liberado:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fEvento Liberado'
+    - ''
+    - '&fClans participando: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores participando: &b{jogadores}'
+    - ''
+    - '&fFogo Amigo: {fogoamigo}'
+    - '&fItens setados: {setados}'
+    - ''
+    - '&7Os clans podem se matar.'
+    - ''
+    - '&b----------------------------------------------'
+  Insuficiente:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fEvento cancelado'
+    - ''
+    - '&fClans insuficientes ou jogadores insuficientes.'
+    - ''
+    - '&b----------------------------------------------'
+  Deu errado clan:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fEvento cancelado'
+    - ''
+    - '&fAlgo deu errado ao premiar, ao que parece'
+    - '&ftodos os clans morreram.'
+    - ''
+    - '&b----------------------------------------------'
+  Deu errado jogador:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fEvento cancelado'
+    - ''
+    - '&fAlgo deu errado ao premiar, ao que parece'
+    - '&ftodos os jogadores morreram.'
+    - ''
+    - '&b----------------------------------------------'
+  Operador:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fEvento cancelado'
+    - ''
+    - '&cCancelado por um operador.'
+    - ''
+    - '&b----------------------------------------------'
+  Ganhar clan:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fEvento finalizado'
+    - ''
+    - '&fClan ganhador: &b{clan}&f.'
+    - '&fAbates do clan: &b{abates}&f.'
+    - '&fJogadores do clan: &b{jogadores}&f.'
+    - '&fA guerra durou: &b{duracao}&f.'
+    - ''
+    - '&fOs jogadores têm &b{tempo} &fsegundos para'
+    - '&fse organizar e abrir espaço no inv para as'
+    - '&frecompensas.'
+    - ''
+    - '&b----------------------------------------------'
+  Ganhar player:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fEvento finalizado'
+    - ''
+    - '&fJogador ganhador: &b{player}&f.'
+    - '&fAbates do jogador: &b{abates}&f.'
+    - '&fA guerra durou: &b{duracao}&f.'
+    - ''
+    - '&fO jogador tem &b{tempo} &fsegundos para'
+    - '&fse organizar e abrir espaço no inv para as'
+    - '&frecompensas.'
+    - ''
+    - '&b----------------------------------------------'
+  Teleportado dm:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador | &fDeathmatch'
+    - ''
+    - '&fClans participando: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores participando: &b{jogadores}'
+    - '&fTempo decorrido: &b{duracao}&f.'
+    - ''
+    - '&fFogo Amigo: {fogoamigo}'
+    - '&fItens setados: {setados}'
+    - ''
+    - '&7Todos os jogadores foram teleportados para o deathmatch.'
+    - ''
+    - '&b----------------------------------------------'
+  Informativo:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador'
+    - ''
+    - '&fClans participando: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores participando: &b{jogadores}'
+    - '&fTempo decorrido: &b{duracao}&f.'
+    - ''
+    - '&fFogo Amigo: {fogoamigo}'
+    - '&fItens setados: {setados}'
+    - ''
+    - '&cAlgumas funções foram desativadas!'
+    - ''
+    - '&b----------------------------------------------'
+  InfoComando:
+    - '&b----------------------------------------------'
+    - ''
+    - '&b&lGladiador'
+    - ''
+    - '&fClans participando: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores participando: &b({jogadores_quantia}) &8- &7{jogadores}&f.'
+    - '&fTempo decorrido: &b{duracao}&f.'
+    - ''
+    - '&fFogo Amigo: {fogoamigo}'
+    - '&fItens setados: {setados}'
+    - ''
+    - '&cAlgumas funções foram desativadas!'
+    - ''
+    - '&b----------------------------------------------'
+#
+#
+Actionbar:
+  Iniciando: '&fIniciando gladiador em &b{tempo}&f.' #deixe '' para não usar
+  Entrar: '&fDigite &b/guerra &7para &aentrar&f.' #deixe '' para não usar
+  Morreu: '&7{morreu} &celiminado por &7{matou}&c, kills: &7{kills}&c. Restam: &7{vivos}&c.' #deixe '' para não usar
+#
+# os locais são setados in-game, não altere nada aqui
+Locais:
+  Saida: 'none'
+  Entrada: 'none'
+  Espera: 'none'
+  Camarote: 'none'
+  Deathmatch: 'none'
+#
+# os itens são setados in-game, não altere nada aqui
+Itens:
+Capacete:
+Peitoral:
+Calca:
+Botas:

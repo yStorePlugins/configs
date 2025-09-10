@@ -1,0 +1,199 @@
+Database:
+   Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+   IP: localhost:3306
+   DB: test
+   User: admin
+   Pass: ''
+   Debug: true
+#
+#
+#
+#Use: yClans, AtlasClans, SimpleClans, AtlasFactions, AtlasFactionsV2, UltimateClans, StormClans ou Factions
+Plugin de clan: 'yClans'
+
+# Bloquear o teleporte se estiver no evento
+BlockTp: true
+
+# Teleportar ao centro quando sair da borda enquanto ela estiver se movendo
+TeleportOutside: false
+
+#
+#
+Comando:
+   Comando: 'guerra'
+   Aliases: [ war ]
+#
+#
+
+# Sistema de bloqueadores
+Bloqueadores:
+   # Mundos que não irão funcionar
+   world-blacklist: []
+   # Entidades que serão bloqueadas (no bloqueador de spawn mob)
+   entity-whitelist:
+      - 'ZOMBIE'
+      - 'SKELETON'
+      - 'COW'
+      - 'PIG'
+
+# Sistema de sopas
+Sopa:
+   # Vai funcionar apenas dentro do evento
+   Ativar: true
+   # quantia de vida que irá curar, o jogador possui 20 por padrão
+   Curar: 3
+   # Mundos em que ao interagir com botão direito em uma sopa, irá reparar vida
+   Mundos:
+      - 'world'
+   # Configuração da placa
+   # digite [sopa] na primeira linha da placa e salva
+   Linha1: ''
+   Linha2: '&1Pegue aqui'
+   Linha3: '&1sua sopa'
+   Linha4: ''
+#
+#
+Mensagens:
+   Permissao: '&cVocê não tem permissão para isto.'
+   Itens configurados: '&aItens do evento &7{tipo} &aconfigurados.'
+   Item configurado: '&aItem &7{item}&a do evento &7{tipo} &aconfigurado.'
+   Sopa configurado: '&aItens da placa de sopa configurados.'
+   Item nao setado: '&cEste item &7({item})&c não foi setado.'
+   Pegou item: '&aVocê pegou o item.'
+   Item nao compativel: '&cVocê não está segurando um {tipo}.'
+   Local configurado: '&aLocal &7{local}&a do evento &7{tipo} &aconfigurado.'
+   Local nao setado: '&cEste local &7({local}) &cnão foi setado.'
+   Teleportado: '&aVocê foi teleportado.'
+   Saiu: '&cVocê saiu do evento.'
+   Nao ativo: '&cO evento não está ativo.'
+   Nao pode: '&cVocê não pode mais entrar no evento.'
+   Esvazie: '&cEsvazie seu inventário.'
+   Leve: '&cVocê deve levar itens.'
+   Sem money: '&cSem money suficiente: &f{money}&c.'
+   Sem clan: '&cVocê não possui clan.'
+   Sem money banco: '&cSeu clan não tem money no banco suficiente: &f{money}&c.'
+   Entrou: '&aVocê entrou no evento.'
+   Ja ocorrendo: '&cJá há um evento ocorrendo.'
+   Local nulo: '&cAlgum dos principais locais (Saída, Espera, Entrada) estão nulos.'
+   Iniciado: '&aEvento &7{tipo}&a iniciado.'
+   Esta banido: '&cVocê está banido deste evento.'
+   Clan banido: '&cSeu clan está banido deste evento.'
+   Nao encontrado: '&cClan ou jogador não encontrado.'
+   Kickado: '&cVocê foi kickado do evento.'
+   Kickado clan: '&cSeu clan foi kickado do evento.'
+   Kickado staff: '&aJogador &7{player} &akickado do evento.'
+   Kickado staff clan: '&aClan &7{clan} &akickado do evento.'
+   Banido: '&cVocê foi banido do evento.'
+   Banido clan: '&cSeu clan foi banido do evento.'
+   Banido staff: '&aJogador &7{player} &abanido do evento &7{tipo}&a.'
+   Ja banido: '&cEste jogador/clan já está banido deste evento.'
+   Banido staff clan: '&aClan &7{clan} &abanido do evento &7{tipo}&a.'
+   Nao banido: '&cEste jogador/clan não está banido deste evento.'
+   Desbanido: '&aJogador &7{player}&a desbanido do evento &7{tipo}&a.'
+   Desbanido clan: '&aClan &7{clan}&a desbanido do evento &7{tipo}&a.'
+   Aposta devolvida: '&aSua aposta no valor de &7{money}&a foi devolvida.'
+   Aposta player nao: '&cEste player não está participando do evento.'
+   Aposta clan nao: '&cEste clan não está participando do evento.'
+   Aposta nao si: '&cVocê não pode apostar nem em você nem em teu clan.'
+   Nao e numero: '&cO argumento não é um número.'
+   Aposta realizada: '&aAposta realizada com sucesso.'
+   Comando: '&cVocê não pode utilizar este comando no evento.'
+   Camarote nao setado: '&cO camarote deste evento não está setado.'
+   Teleportado camarote: '&aTeleportado ao camarote.'
+   Tempo erro: '&cVocê deve estar online por pelo menos {tempo} antes de participar desse evento.'
+   Mcmmo erro: '&cVocê deve ter &7{level}&c na skill &7{skill}&c para participar desse evento.'
+   Nao pode apostar: '&cVocê não pode apostar nesse evento.'
+   Apostas encerradas: '&cAs apostas já foram encerradas.'
+   Lotou jogador: '&cA quantia de jogadores participando já chegou no limite.'
+   Lotou jogador clan: '&cA quantia de jogadores participando do seu clan já chegou no limite.'
+   Lotou clan: '&cA quantia de clans participando já chegou no limite.'
+   Deathmatch setado: '&cO local do deathmatch não foi setado.'
+   Deathmatch ja: '&cO deathmatch já está ocorrendo.'
+   Deathmatch forcado: '&aVocê forçou o start do deathmatch.'
+   Craft: '&cO craft de itens está desabilitado durante o evento.'
+   Chat: '&cFalar no chat está desabilitado durante o evento.'
+   Borda: '&aMundo e centro da borda do evento definida com sucesso.'
+   ClanPermitido: '&cSeu clan não está permitido de participar.'
+   Pvp-on: '&aVocê ativou o PVP no evento.'
+   Pvp-off: '&aVocê desativou o PVP no evento.'
+   Pvp-info: '&aO evento está com o PVP desativado.'
+   Add-able: '&cO evento ainda pode ser acessado.'
+   Add-already: '&cEste jogador {player} já está no evento.'
+   Add-added: '&aEste jogador {player} foi adicionado no evento.'
+   Pull-all: '&aTodos os jogadores foram puxados.'
+   Pull-player: '&aJogador {player} puxado.'
+   Ajuda:
+      - '&b-> Comandos do guerra <-'
+      - ''
+      - '&b > &f/guerra'
+      - '&b > &f/guerra apostar'
+      - '&b > &f/guerra camarote'
+      - '&b > &f/guerra admin'
+      - '&b > &f/guerra iniciar'
+      - '&b > &f/guerra parar'
+      - '&b > &f/guerra forcardm'
+      - '&b > &f/guerra kickplayer'
+      - '&b > &f/guerra kickclan'
+      - '&b > &f/guerra banplayer'
+      - '&b > &f/guerra banclan'
+      - '&b > &f/guerra unbanplayer'
+      - '&b > &f/guerra unbanclan'
+   Ja apostou player:
+   - ''
+   - '&cVocê ja realizou sua aposta.'
+   - ''
+   - '&7Apostou no jogador: &f{player}&7.'
+   - '&7Valor da aposta: &f{money}&7.'
+   - ''
+   Ja apostou clan:
+   - ''
+   - '&cVocê ja realizou sua aposta.'
+   - ''
+   - '&7Apostou no clan: &f{clan}&7.'
+   - '&7Valor da aposta: &f{money}&7.'
+   - ''
+#
+#
+#
+Setas:
+   Voltar:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&cVoltar'
+      Lore:
+      - '&7Clique para voltar ao menu ou página anterior.'
+   Proximo:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&aPróxima'
+      Lore:
+      - '&7Clique para ir à próxima página.'
+#
+#
+#
+Formatador:
+   B true: '&aSim'
+   B false: '&cNão'
+#
+#
+#
+Formats:
+ - ''
+ - ''
+ - 'K'
+ - 'M'
+ - 'B'
+ - 'T'
+ - 'Q'
+ - 'QQ'
+ - 'S'
+ - 'SS'
+ - 'O'
+ - 'N'
+ - 'D'

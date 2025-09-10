@@ -1,0 +1,64 @@
+Nome: '&8Guerra - Principal'
+Tamanho: 27
+Back slot: 18
+Itens:
+   Perfil:
+      Slot: 10
+      CustomSkull: true
+      URL: '{player}'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aInformações'
+      Lore:
+      - ''
+      - '&7Participou &f{participou} &7vezes do gladiador.'
+      - '&7Ganhou &f{ganhou} &7vezes o gladiador.'
+      - ''
+      - '&7Kills: &a{kills}&7.'
+      - '&7Mortes: &c{mortes}&7.'
+      - ''
+   Informacoes:
+      Slot: 12
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: false
+      Name: '&aInformações'
+      Lore:
+      - '&7Clique para ver as informações dos eventos.'
+   Top:
+      Slot: 13
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/15a7ee9a86de203674a93b570bc8992e500363dd32f2b9813daaeeabccf92151'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aTop'
+      Lore:
+      - '&7Clique para ver o top clans e jogadores.'
+   Jogadores banidos:
+      Slot: 15
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/744b887a2b5523916a8552fb536f740e173a35bca9b7ebac584b14c7f814a3db'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aJogadores banidos'
+      Lore:
+      - '&7Clique para ver os jogadores banidos e os'
+      - '&7respectivos eventos.'
+   Clans banidos:
+      Slot: 16
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/e55227f2f99abf6155ea13f41fb3b0efb721d4bdcdff49478451809588277c6d'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aClans banidos'
+      Lore:
+      - '&7Clique para ver os clans banidos e os'
+      - '&7respectivos eventos.'
+      
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> CLANS BANIDOS:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

@@ -1,0 +1,19 @@
+Nome: '&8Guerra - Informações'
+Tamanho: 45
+Backslot: 40
+Itens:
+   Gladiador:
+      Slot: 11
+      CustomSkull: false
+      URL: ''
+      ID: 276
+      Data: 0
+      Glow: false
+      Name: '&aGladiador'
+      Lore:
+      - ''
+      - '&fFogo amigo: &cDesativado'
+      - '&fItens setados: &aAtivado'
+      - ''
+      - '&7Horários:'
+      - ' &fTodo dia'

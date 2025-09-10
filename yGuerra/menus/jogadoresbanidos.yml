@@ -1,0 +1,14 @@
+Nome: '&8Guerra - Jogadores Banidos'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 31
+#
+Item:
+   CustomSkull: true
+   URL: '{player}'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&f{player}'
+   Lore:
+   - '&7Banido dos eventos: &f{eventos}&7.'

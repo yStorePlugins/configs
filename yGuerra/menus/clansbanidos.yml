@@ -1,0 +1,15 @@
+Nome: '&8Guerra - Clans Banidos'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 31
+#
+Item:
+   Banner: true
+   CustomSkull: false
+   URL: ''
+   ID: 0
+   Data: 0
+   Glow: false
+   Name: '&f{clan}'
+   Lore:
+   - '&7Banido dos eventos: &f{eventos}&7.'

@@ -1,0 +1,32 @@
+Options:
+  URL: ''
+  Username: 'yGuerra'
+  Ativar: false
+Embeds:
+  evento_glad:
+    Tipo: 'gladiador.yml'
+    Title: 'Evento iniciando...'
+    Thumbnail: ''
+    Color: '#fff'
+    Content: 'Está começando o evento gladiador!\n@everyone'
+    Image: ''
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Fields:
+      evento:
+        Inline: false
+        Header: 'Evento'
+        Content: 'Gladiador'
+      comecando:
+        Inline: false
+        Header: 'Começa em'
+        Content: '30 segundos'
+      server:
+        Inline: false
+        Header: 'Servidor'
+        Content: 'RankUP'
+      data:
+        Inline: false
+        Header: 'Data'
+        Content: '{data} - {hora}'

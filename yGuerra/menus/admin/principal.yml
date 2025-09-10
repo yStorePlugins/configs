@@ -1,0 +1,38 @@
+Nome: '&8Guerra ADM - Principal'
+Tamanho: 27
+Back slot: 18
+Itens:
+   Tipos:
+      Slot: 11
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/5b1ef2a4829a11fd903b5e31088662a8c56e471bb48643c0d9f95006d1820210'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aTipos'
+      Lore:
+      - '&7Clique para gerenciar os eventos.'
+   Jogadores banidos:
+      Slot: 13
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/744b887a2b5523916a8552fb536f740e173a35bca9b7ebac584b14c7f814a3db'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aJogadores banidos'
+      Lore:
+      - '&7Clique para ver os jogadores banidos e os'
+      - '&7respectivos eventos.'
+   Clans banidos:
+      Slot: 15
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/e55227f2f99abf6155ea13f41fb3b0efb721d4bdcdff49478451809588277c6d'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aClans banidos'
+      Lore:
+      - '&7Clique para ver os clans banidos e os'
+      - '&7respectivos eventos.'
+      
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> CLANS BANIDOS:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)
