@@ -17,6 +17,9 @@ BlockTp: true
 # Teleportar ao centro quando sair da borda enquanto ela estiver se movendo
 TeleportOutside: false
 
+# Calcular o KnockBack (repulsão) pelo próprio plugin
+CalculateKnockBack: false
+
 #
 #
 Comando:
