@@ -1,0 +1,331 @@
+yplugins-id: 'yeventos-splegg'
+
+# Utilize "comando|comando" para criar aliases.
+# Por exemplo: "gm|gamemode"
+# Você pode criar quantas aliases quiser.
+command: 'splegg'
+
+# Não altere.
+type: 'SPLEGG'
+
+# Nome do evento
+display: 'Splegg'
+
+# Tempo máximo do evento
+# em segundos
+max-time: 600
+
+discord:
+  # enviar o embed em um chat
+  webhook:
+    enable: true
+    chat-embed: ''
+
+# Integração com o yLeague
+yleague:
+  # Pontos que será dado no yLeague
+  points: 1.0
+  # Título da embed que é enviada no discord
+  # Deixe '' para não enviar
+  embed-title: 'Ganhou o Splegg'
+
+# Itens nos menus
+displays:
+  # Ordem nos menus
+  order: 15
+  # Aparecer no TOP
+  appear-top: true
+  events:
+    material: 'EGG'
+    name: '&eSplegg'
+    lore:
+      - ' &8▶ &fHorários:'
+      - '   &fA configurar.'
+      - ''
+      - ' &8▶ &fVitórias: &7{wins}'
+      - ''
+      - '&7 Preço para ativar: &a{money} coins.'
+      - ''
+      - '&aClique para comprar a ativação do evento.'
+  voting:
+    material: 'EGG'
+    name: '&eSplegg'
+    lore:
+      - ''
+      - ' &8▶ &fVotos: &7{votes}'
+      - ''
+      - '&7 Preço para votar: &a{money} coins.'
+      - ''
+      - '&aClique para votar neste evento.'
+  voted:
+    material: 'EGG'
+    name: '&eSplegg'
+    glow: true
+    lore:
+      - ''
+      - ' &8▶ &fVotos: &7{votes}'
+      - ''
+      - '&aVocê votou neste evento.'
+
+# Sistema de comprar o evento
+buy:
+  # Ativar o sistema
+  enabled: true
+  # Permissão para comprar
+  permission: ''
+  # Delay para comprar novamente
+  # em segundos
+  delay: 600
+  # Custos de economias
+  economies-prices:
+    cost1:
+      provider: 'money'
+      amount: 100.0
+
+# Anúncios até ganhar o evento
+announces:
+  # Quantia total de anúncios antes de finalizar o evento
+  amount: 2
+  # Tempo entre os anúncios
+  # em segundos
+  time-between: 10
+
+warm-up:
+  # Quantia total de anúncios antes de finalizar o evento
+  amount: 1
+  # Tempo entre os anúncios
+  # em segundos
+  time-between: 10
+
+# Opções gerais
+general:
+  # Tag que será dada ao jogador que ganhar o evento
+  tag: '&e[Splegg]'
+  # Mínimo de jogadores
+  minimum-players: 2
+  # Ativar o pvp no evento
+  pvp: false
+  # Ativar o dano natural (queda, lava, etc) no evento
+  natural-damage: false
+  # Requerer inventário vazio
+  inv-empty: true
+  # Andar no warm-up
+  warmup-move: true
+  # Lista de comandos que será possível executar no evento
+  command-whitelist: [ '/g', '/.' ]
+  # Efeitos que o player irá ter no evento
+  # effect:level-time
+  effects: [ 'INVISIBILITY:1-999999' ]
+  # Efeitos que o player irá ter no evento ao passar em cima de um bloco
+  # Block:Data,Effect:Level-Time'
+  block-effects: [ 'STONE:0,INVISIBILITY:1-100' ]
+  # Manter o EXP ao morrer
+  keep-exp: true
+
+# Custos para ingressar ao evento
+costs:
+  # Tempo online para entrar no evento
+  # em segundos
+  # compatível apenas com o yTempoOnline
+  online-time: 60
+  # Custos de economias
+  economies-prices:
+    cost1:
+      provider: 'money'
+      amount: 100.0
+
+# Sistema de área regenerável
+area:
+  # Ativar o sistema
+  enabled: true
+  # Requerer a área setada para iniciar o evento
+  require: true
+  # Permitir quebrar blocos
+  break: true
+  # Ativar o lançador de ovos para quebrar blocos
+  egg-thrower: true
+  # Blocos que serão reconhecidos na definição da área
+  blocks: [ 'SNOW_BLOCK:0' ]
+
+# Sistema de ganhar o evento ao chegar em algum local ou clicar em alguma placa
+winning:
+  # Ativar o sistema
+  enabled: true
+  # Ganhar ao cair no void
+  void: false
+  # Ganhar quando sobrar apenas 1 jogadores
+  rest-one: true
+  # Placa para ganhar
+  sign:
+    # Identificador pra setar a placa
+    # na primeira linha
+    identify: ''
+    # Linhas
+    line1: '&3[Splegg]'
+    line2: '&aClique aqui'
+    line3: '&apara ganhar o'
+    line4: '&aevento.'
+  # Blocos que ao passar em cima irá ganhar o evento
+  blocks: [ 'STONE_PLATE:0' ]
+
+# Sistema de setar CHECKPOINT no evento
+checkpoint-set:
+  # Ativar o sistema
+  enabled: false
+  # Placa para ganhar
+  sign:
+    # Identificador pra setar a placa
+    # na primeira linha
+    identify: ''
+    # Linhas
+    line1: '&3[Splegg]'
+    line2: '&aClique aqui'
+    line3: '&apara setar seu'
+    line4: '&acheckpoint.'
+  # Blocos que ao passar em cima irá ganhar o evento
+  blocks: [ 'WOOD_PLATE:0' ]
+
+# Sistema de teleportar ao CHECKPOINT no evento
+checkpoint-teleport:
+  # Ativar o sistema
+  enabled: false
+  # Teleportar ao cair no void
+  void: false
+  # Placa para ganhar
+  sign:
+    # Identificador pra setar a placa
+    # na primeira linha
+    identify: ''
+    # Linhas
+    line1: '&3[Splegg]'
+    line2: '&aClique aqui'
+    line3: '&apara ir ao'
+    line4: '&acheckpoint.'
+  # Blocos que ao passar em cima irá ganhar o evento
+  blocks: [ 'GOLD_PLATE:0', 'WATER:0', 'STATIONARY_WATER:0' ]
+
+# Sistema de desqualificar do evento
+disqualify:
+  # Desclassificar ao cair no void
+  void: true
+  # Blocos que ao passar em cima irá desclassificar do evento
+  blocks: [ 'LAVA:0', 'STATIONARY_LAVA:0' ]
+
+# Items que serão dados ao jogador
+# dentro do inventário de armaduras
+armor-items:
+  # Bloquear de tirar a armadura do corpo
+  block-remove: true
+  # Item do capacete
+  helmet:
+    material: 'LEATHER_HELMET'
+    glow: true
+  # Item do peitoral
+  chestplate:
+    material: 'LEATHER_CHESTPLATE'
+    glow: true
+  # Item da calça
+  leggings:
+    material: 'LEATHER_LEGGINGS'
+    glow: true
+  # Item das botas
+  boots:
+    material: 'LEATHER_BOOTS'
+    glow: true
+
+# Items que serão dados ao jogador
+# dentro do inventário
+inventory-items:
+  item1:
+    material: 'IRON_SPADE'
+    nbt-tag: [ 'yEventos-EggThrower=>sim' ]
+    glow: true
+    name: '&eAtiradora'
+    enchants: [ 'DURABILITY:100' ]
+
+# Mensagens diretas ao jogador
+messages:
+  permission: '&cVocê não tem permissão para fazer isto.'
+  not-active: '&cO evento Splegg não está ativo.'
+  cant-start: '&cUm evento Splegg já está ocorrendo.'
+  cant-stop: '&cNenhum Splegg corrida ocorrendo.'
+  started: '&aEvento Splegg iniciado.'
+  stopped: '&aEvento Splegg parado.'
+  already: '&cVocê já está participando.'
+  checkpoint-set: '&aCheckPoint setado.'
+  checkpoint-teleported: '&aTeleportado ao CheckPoint.'
+  enter: '&aVocê entrou no evento.'
+  exit: '&aVocê saiu do evento.'
+  not-in: '&cVocê não está participando do evento.'
+  already-in: '&cVocê já está participando do evento.'
+  already-initialized: '&cO evento já começou.'
+  forced: '&aVocê forçou o começo do evento.'
+  help: |
+    &eComandos do Evento
+    &e-> &f/splegg &8- &7Entrar no evento
+    &e-> &f/splegg sair &8- &7Sair no evento
+  help-staff: |
+    &eComandos do Evento
+    &e-> &f/splegg &8- &7Entrar no evento
+    &e-> &f/splegg sair &8- &7Sair no evento
+    &e-> &f/splegg iniciar &8- &7Iniciar o evento
+    &e-> &f/splegg parar &8- &7Parar o evento
+    &e-> &f/splegg setloc &8- &7Setar algum local do evento
+    &e-> &f/splegg addloc &8- &7Adicionar uma entrada no evento
+    &e-> &f/splegg delloc &8- &7Deletar um local do evento
+    &e-> &f/splegg wand &8- &7Pegar a vara de seleção da área
+    &e-> &f/splegg define &8- &7Definir a área
+
+# Anúncios do plugin
+messages-announces:
+  announce: |
+
+    &eSplegg
+    &fEntre no evento &esplegg&f clicando &e<click:run_command:/splegg>AQUI</click>&f.
+    &fJogadores participando: &e{players_size}&f.
+    &fAnúncio &e{min} &fde &e{max} &7({time})&f.
+
+  warm-up: |
+
+    &eSplegg
+    &fOs jogadores foram teleportados.
+    &fJogadores participando: &e{players_size}&f.
+    &fEvento começando em: &7({time})&f.
+
+  initialized: |
+
+    &eSplegg
+    &fO EVENTO COMEÇOU!
+    &fJogadores participando: &e{players_size}&f.
+
+  win: |
+
+    &eSplegg
+    &fO jogador &e{player}&f ganhou o splegg!
+
+  cancelled: |
+
+    &eSplegg
+    &cO evento foi cancelado por um admin.
+
+  no-winners: |
+
+    &eSplegg
+    &cJogadores insuficientes.
+
+  time-is-over: |
+
+    &eSplegg
+    &cO tempo se esgotou.
+
+  # Mensagem de actionbar quando o jogador participar do evento
+  actionbar-entered: '&e{player} entrou ao Splegg.'
+  # Mensagem de actionbar no temporizador do warm-up
+  actionbar-warmup: '&eIniciando em {time}.'
+  # Mensagem de actionbar no decorrer do evento
+  actionbar-initialized: '&cJogadores restantes {players_size}. &7{time_left}'
+
+# Recompensas configuradas na rewards.yml
+# chance,recompensa
+rewards:
+  - '100.0,reward1'

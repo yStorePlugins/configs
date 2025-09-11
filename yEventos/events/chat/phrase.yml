@@ -1,0 +1,164 @@
+yplugins-id: 'yeventos-phrase'
+
+# Utilize "comando|comando" para criar aliases.
+# Por exemplo: "gm|gamemode"
+# Você pode criar quantas aliases quiser.
+command: 'palavra|phrase'
+
+# Não altere.
+type: 'PHRASE'
+
+# Nome do evento
+display: 'Palavra'
+
+discord:
+  # enviar o embed em um chat
+  webhook:
+    enable: true
+    chat-embed: ''
+
+# Integração com o yLeague
+yleague:
+  # Pontos que será dado no yLeague
+  points: 1.0
+  # Título da embed que é enviada no discord
+  # Deixe '' para não enviar
+  embed-title: 'Ganhou o Palavra'
+
+# Itens nos menus
+displays:
+  # Ordem nos menus
+  order: 25
+  # Aparecer no TOP
+  appear-top: true
+  events:
+    material: 'NAME_TAG'
+    name: '&ePalavra'
+    lore:
+      - ' &8▶ &fHorários:'
+      - '   &fA configurar.'
+      - ''
+      - ' &8▶ &fVitórias: &7{wins}'
+      - ''
+      - '&7 Preço para ativar: &a{money} coins.'
+      - ''
+      - '&aClique para comprar a ativação do evento.'
+  voting:
+    material: 'NAME_TAG'
+    name: '&ePalavra'
+    lore:
+      - ''
+      - ' &8▶ &fVotos: &7{votes}'
+      - ''
+      - '&7 Preço para votar: &a{money} coins.'
+      - ''
+      - '&aClique para votar neste evento.'
+  voted:
+    material: 'NAME_TAG'
+    name: '&ePalavra'
+    glow: true
+    lore:
+      - ''
+      - ' &8▶ &fVotos: &7{votes}'
+      - ''
+      - '&aVocê votou neste evento.'
+
+# Sistema de comprar o evento
+buy:
+  # Ativar o sistema
+  enabled: true
+  # Permissão para comprar
+  permission: ''
+  # Delay para comprar novamente
+  # em segundos
+  delay: 600
+  # Custos de economias
+  economies-prices:
+    cost1:
+      provider: 'money'
+      amount: 100.0
+
+# Anúncios até ganhar o evento
+announces:
+  # Quantia total de anúncios antes de finalizar o evento
+  amount: 2
+  # Tempo entre os anúncios
+  # em segundos
+  time-between: 10
+
+# Opções gerais
+general:
+  # Tag que será dada ao jogador que ganhar o evento
+  tag: '&e[Palavra]'
+
+# Custos para ingressar ao evento
+costs:
+  # Tempo online para entrar no evento
+  # em segundos
+  # compatível apenas com o yTempoOnline
+  online-time: 60
+  # Custos de economias
+  economies-prices:
+    cost1:
+      provider: 'money'
+      amount: 100.0
+
+# Mensagens diretas ao jogador
+messages:
+  permission: '&cVocê não tem permissão para fazer isto.'
+  not-active: '&cO evento palavra não está ativo.'
+  cant-start: '&cUm evento palavra já está ocorrendo.'
+  cant-stop: '&cNenhum evento palavra ocorrendo.'
+  started: '&aEvento palavra iniciado.'
+  stopped: '&aEvento palavra parado.'
+  correct: '&aResposta correta! Parabéns.'
+  help: |
+    &eComandos do Evento
+    &e-> &f/palavra <resposta> &8- &7Participar do evento
+  help-staff: |
+    &eComandos do Evento
+    &e-> &f/palavra <resposta> &8- &7Participar do evento
+    &e-> &f/palavra iniciar &8- &7Iniciar o evento
+    &e-> &f/palavra parar &8- &7Parar o evento
+
+# Anúncios do plugin
+messages-announces:
+  win: |
+
+    &ePalavra
+    &fO jogador &e{player}&f foi o mais rápido!
+
+  cancelled: |
+
+    &ePalavra
+    &cO evento foi cancelado por um admin.
+
+  no-winners: |
+
+    &ePalavra
+    &cO tempo se esgotou.
+
+  # Mensagem de actionbar quando o jogador participar do evento
+  actionbar-entered: '&e{player} participou do Evento Palavra.'
+
+# Anúncio
+announce:
+  chat: |
+
+    &ePalavra
+    &eDigite rapidamente a palavra &f{phrase}
+
+  actionbar: '&e[Palavra] Digite rapidamente a palavra &f{phrase}'
+  title: ''
+
+# Recompensas configuradas na rewards.yml
+# chance,recompensa
+rewards:
+  - '100.0,reward1'
+
+# Frases customizadas por você
+custom-phrases:
+  # Ativar o sistema e desativar a frase criada por IA
+  enabled: false
+  # Lista de frases:
+  list: [ 'DEUS É MEU PASTOR' , 'YSTORE É A MELHOR LOJA' ]

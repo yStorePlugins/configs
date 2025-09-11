@@ -1,0 +1,27 @@
+options:
+  url: ''
+  username: 'yEventos'
+
+embeds:
+  jackpot:
+    title: ':mailbox: Um novo Evento começou!'
+    thumbnail: ''
+    color: '#fff'
+    content: ''
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      event:
+        inline: false
+        header: 'Evento'
+        content: '```Bolão```'
+      server:
+        inline: false
+        header: 'Servidor'
+        content: '```RankUP```'
+      date_activated:
+        inline: false
+        header: 'Começou em'
+        content: '```{date} às {hour}```'

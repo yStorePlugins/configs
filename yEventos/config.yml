@@ -1,0 +1,76 @@
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Altura do void do seu servidor
+void-detect: 0
+
+# Cachear inventário caso o jogador entre com itens no evento (em eventos que exige inventário vazio)
+inventory-cache: false
+
+# Mundos em que não irá receber anúncios dos eventos
+announce-world-blacklist: []
+
+# Ativar dar fly no camarote
+camarote-fly: false
+
+# Comandos liberados no camarote
+camarote-allowed-commands:
+  - '/g'
+  - '/l'
+  - '/.'
+
+# Delay de desaparecimento de blocos da arena (TNTRUN ou similar)
+# em ticks (20t = 1s)
+disappear-delay: 8
+
+# Sistema de anúncios na proxy
+proxy:
+  # Ativar o sistema
+  enabled: true
+  # Whitelist de servidores que irão receber os anúncios
+  server-whitelist: [ 'mina' ]
+
+# Autostart dos eventos
+auto-start:
+  schedule1:
+    # nome do arquivo do evento sem o ".yml"
+    type: 'fastclick'
+    # todos, segunda, terca, quarta, quinta, sexta, sabado, domingo
+    # dia-hora:minuto:segundo
+    schedule: [ 'todos-00:00:01' ]
+
+# Configuração do item da varinha
+wand:
+  material: 'GOLD_AXE'
+  name: '&eSeleção de Área'
+  lore: [ '&7Evento: &f{event}', '', '&aEsquerdo -> POS1', '&aDireito -> POS2' ]

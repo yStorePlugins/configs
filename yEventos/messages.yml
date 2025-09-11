@@ -1,0 +1,66 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/evento &8- &7Abre o menu principal.
+    &a/evento reload &8- &7Recarrega as configurações.
+
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  no-time: '&cVocê não tem tempo online. Necessário: {time}.'
+  empty: '&cEsvazie seu inventário (&7conteúdo e armadura)&c para entrar no evento.'
+  command: '&cVocê não pode executar este comando no evento.'
+  already: '&cVocê já está em um evento.'
+  exit-found: '&cVocê precisar setar a saída do evento primeiro.'
+  entry-found: '&cVocê precisar setar a entrada do evento primeiro.'
+  wait-found: '&cVocê precisar setar a sala de espera do evento primeiro.'
+  area-found: '&cVocê precisar setar a área do evento primeiro.'
+  walls-found: '&cVocê precisar setar as paredes do evento primeiro.'
+  camarote-found: '&cO camarote do evento não foi setado.'
+  camarote-exit-found: '&cA saída do camarote do evento não foi setado.'
+  location-set: '&aLocalização &f{location} &asetada com sucesso.'
+  location-found: '&cLocalização &f{location} &cnão encontrada. Disponíveis: {list}'
+  location-del: '&aLocalização &f{location} &adeletada com sucesso.'
+  pos-set: '&aPosição &f{pos} &asetada com sucesso.'
+  pos-found: '&cPosição &f{pos} &cnão encontrada.'
+  area-none: '&cNenhum bloco permitido localizado na área.'
+  area-set: '&aÁrea setada com sucesso.'
+  wall-added: '&aParede adicionada com sucesso.'
+  wall-cleared: '&aParedes limpas.'
+  safezone-added: '&aÁrea segura adicionada com sucesso.'
+  safezone-cleared: '&aÁreas seguras limpas.'
+  duel-pos-1-found: '&cPosição 1 do duelo não encontrada.'
+  duel-pos-2-found: '&cPosição 2 do duelo não encontrada.'
+  camarote-enter: '&aTeleportado ao camarote.'
+  camarote-exit: '&cVocê saiu do camarote.'
+  target-event-found: '&cO jogador {player} não está participando do evento.'
+  economy-found: '&cEconomia não encontrada. Disponíveis: {list}.'
+  bet-already: '&cVocê já está apostando neste evento.'
+  bet: '&cVocê apostou &f{amount} coins&a no jogador &f{player}&a.'
+  bought: '&aVocê comprou a ativação do evento &f{event}&a.'
+  bought-delay: '&cAguarde {time} para comprar este evento novamente.'
+  not-setup: '&cEste evento não está 100% configurado.'
+  already-initialized: '&cEste evento já começou.'
+  already-voted: '&cVocê já votou em um evento.'
+  event-found: '&cVocê não pode adentrar em nenhum evento ou nenhum evento está ocorrendo.'
+  exit-all: '&cSaídas de todos os eventos setadas.'
+  command-camarote: '&cVocê não pode executa este comando no camarote'
+  cache-inventory-full: '&cVocê deve coletar seus itens pendentes no /eventos.'
+  event-list: |
+    &cEvento não encontrado.
+    &cDisponíveis: {list}.
+  event-give-win: '&aVocê deu &f{amount} vitórias&a para o jogador &f{player}&a.'

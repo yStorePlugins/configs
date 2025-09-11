@@ -1,0 +1,359 @@
+yplugins-id: 'yeventos-example'
+
+# Utilize "comando|comando" para criar aliases.
+# Por exemplo: "gm|gamemode"
+# Você pode criar quantas aliases quiser.
+command: 'exampleevent'
+
+# Não altere.
+type: 'CUSTOM'
+
+# Nome do evento
+display: 'Example'
+
+# Tempo máximo do evento
+# em segundos
+max-time: 600
+
+discord:
+  # enviar o embed em um chat
+  webhook:
+    enable: true
+    chat-embed: ''
+
+# Integração com o yLeague
+yleague:
+  # Pontos que será dado no yLeague
+  points: 1.0
+  # Título da embed que é enviada no discord
+  # Deixe '' para não enviar
+  embed-title: 'Ganhou o Custom'
+
+# Itens nos menus
+displays:
+  events:
+    material: 'STONE'
+    name: '&eExample'
+    lore:
+      - ' &8▶ &fHorários:'
+      - '   &fA configurar.'
+      - ''
+      - ' &8▶ &fVitórias: &7{wins}'
+      - ''
+      - '&7 Preço para ativar: &a{money} coins.'
+      - ''
+      - '&aClique para comprar a ativação do evento.'
+  voting:
+    material: 'STONE'
+    name: '&eExample'
+    lore:
+      - ''
+      - ' &8▶ &fVotos: &7{votes}'
+      - ''
+      - '&7 Preço para votar: &a{money} coins.'
+      - ''
+      - '&aClique para votar neste evento.'
+  voted:
+    material: 'STONE'
+    name: '&eExample'
+    glow: true
+    lore:
+      - ''
+      - ' &8▶ &fVotos: &7{votes}'
+      - ''
+      - '&aVocê votou neste evento.'
+
+# Sistema de comprar o evento
+buy:
+  # Ativar o sistema
+  enabled: true
+  # Permissão para comprar
+  permission: ''
+  # Delay para comprar novamente
+  # em segundos
+  delay: 600
+  # Custos de economias
+  economies-prices:
+    cost1:
+      provider: 'money'
+      amount: 100.0
+
+# Anúncios até ganhar o evento
+announces:
+  # Quantia total de anúncios antes de finalizar o evento
+  amount: 2
+  # Tempo entre os anúncios
+  # em segundos
+  time-between: 10
+
+warm-up:
+  # Quantia total de anúncios antes de finalizar o evento
+  amount: 1
+  # Tempo entre os anúncios
+  # em segundos
+  time-between: 10
+
+# Opções gerais
+general:
+  # Tag que será dada ao jogador que ganhar o evento
+  tag: '&e[Example]'
+  # Mínimo de jogadores
+  minimum-players: 2
+  # Ativar o pvp no evento
+  pvp: false
+  # Ativar o dano natural (queda, lava, etc) no evento
+  natural-damage: false
+  # Requerer inventário vazio
+  inv-empty: true
+  # Andar no warm-up
+  warmup-move: true
+  # Lista de comandos que será possível executar no evento
+  command-whitelist: [ '/g', '/.' ]
+  # Efeitos que o player irá ter no evento
+  # effect:level-time
+  effects: [ 'INVISIBILITY:1-999999' ]
+  # Efeitos que o player irá ter no evento ao passar em cima de um bloco
+  # Block:Data,Effect:Level-Time'
+  block-effects: [ 'STONE:0,INVISIBILITY:1-100' ]
+
+# Custos para ingressar ao evento
+costs:
+  # Tempo online para entrar no evento
+  # em segundos
+  # compatível apenas com o yTempoOnline
+  online-time: 60
+  # Custos de economias
+  economies-prices:
+    cost1:
+      provider: 'money'
+      amount: 100.0
+
+# Sistema de duelos
+# ***** Não ative caso NÃO seja EVENTO PVP
+duels:
+  # Ativar o sistema
+  enabled: false
+  # Delay entre duelos
+  # em segundos
+  time-between: 10
+
+# Sistema de área regenerável
+area:
+  # Ativar o sistema
+  enabled: true
+  # Permitir quebrar blocos
+  break: false
+  # Ativar o sistema de o bloco desaparecer ao ficar em cima
+  disappear: true
+  # Requerer a área setada para iniciar o evento
+  require: true
+  # Blocos que serão reconhecidos na definição da área
+  blocks: [ 'TNT:0', 'SAND:0', 'SAND:1', 'GRAVEL:0' ]
+
+# Sistema de pontos por entidade matada
+# ENTIDADE:pontos
+mob-points:
+  - 'COW:1'
+
+# Sistema de ganhar o evento ao chegar em algum local ou clicar em alguma placa
+winning:
+  # Ativar o sistema
+  enabled: true
+  # Ganhar ao cair no void
+  void: false
+  # Ganhar quando sobrar apenas 1 jogadores
+  rest-one: true
+  # Placa para ganhar
+  sign:
+    # Identificador pra setar a placa
+    # na primeira linha
+    identify: ''
+    # Linhas
+    line1: '&3[Example]'
+    line2: '&aClique aqui'
+    line3: '&apara ganhar o'
+    line4: '&aevento.'
+  # Blocos que ao passar em cima irá ganhar o evento
+  blocks: [ 'STONE_PLATE:0' ]
+  # Mob-points necessários
+  mob-points:
+    # Ativar o sistema
+    enabled: true
+    # Quantia necessária
+    amount: 10.0
+
+# Sistema de setar CHECKPOINT no evento
+checkpoint-set:
+  # Ativar o sistema
+  enabled: false
+  # Placa para ganhar
+  sign:
+    # Identificador pra setar a placa
+    # na primeira linha
+    identify: ''
+    # Linhas
+    line1: '&3[Example]'
+    line2: '&aClique aqui'
+    line3: '&apara setar seu'
+    line4: '&acheckpoint.'
+  # Blocos que ao passar em cima irá ganhar o evento
+  blocks: [ 'WOOD_PLATE:0' ]
+
+# Sistema de teleportar ao CHECKPOINT no evento
+checkpoint-teleport:
+  # Ativar o sistema
+  enabled: false
+  # Teleportar ao cair no void
+  void: false
+  # Placa para ganhar
+  sign:
+    # Identificador pra setar a placa
+    # na primeira linha
+    identify: ''
+    # Linhas
+    line1: '&3[Example]'
+    line2: '&aClique aqui'
+    line3: '&apara ir ao'
+    line4: '&acheckpoint.'
+  # Blocos que ao passar em cima irá ganhar o evento
+  blocks: [ 'GOLD_PLATE:0', 'WATER:0', 'STATIONARY_WATER:0' ]
+
+# Sistema de desqualificar do evento
+disqualify:
+  # Desclassificar ao cair no void
+  void: true
+  # Blocos que ao passar em cima irá desclassificar do evento
+  blocks: [ 'LAVA:0', 'STATIONARY_LAVA:0' ]
+
+# Items que serão dados ao jogador
+# dentro do inventário de armaduras
+armor-items:
+  # Bloquear de tirar a armadura do corpo
+  block-remove: true
+  # Item do capacete
+  helmet:
+    material: 'LEATHER_HELMET'
+    glow: true
+  # Item do peitoral
+  chestplate:
+    material: 'LEATHER_CHESTPLATE'
+    glow: true
+  # Item da calça
+  leggings:
+    material: 'LEATHER_LEGGINGS'
+    glow: true
+  # Item das botas
+  boots:
+    material: 'LEATHER_BOOTS'
+    glow: true
+
+# Items que serão dados ao jogador
+# dentro do inventário
+inventory-items:
+  item1:
+    material: 'BOW'
+    name: '&eArco'
+    glow: true
+    enchants: [ 'DURABILITY:1000', 'ARROW_INFINITE:1', 'ARROW_FIRE:1' ]
+  item2:
+    material: 'ARROW'
+    name: '&eFlecha'
+
+# Mensagens diretas ao jogador
+messages:
+  permission: '&cVocê não tem permissão para fazer isto.'
+  not-active: '&cO evento Example não está ativo.'
+  cant-start: '&cUm evento Example já está ocorrendo.'
+  cant-stop: '&cNenhum Example corrida ocorrendo.'
+  started: '&aEvento Example iniciado.'
+  stopped: '&aEvento Example parado.'
+  already: '&cVocê já está participando.'
+  checkpoint-set: '&aCheckPoint setado.'
+  checkpoint-teleported: '&aTeleportado ao CheckPoint.'
+  enter: '&aVocê entrou no evento.'
+  exit: '&aVocê saiu do evento.'
+  not-in: '&cVocê não está participando do evento.'
+  already-in: '&cVocê já está participando do evento.'
+  already-initialized: '&cO evento já começou.'
+  forced: '&aVocê forçou o começo do evento.'
+  mob-killed: '&aVocê matou um MOB e ganhou &f+{amount} pontos&a!'
+  help: |
+    &eComandos do Evento
+    &e-> &f/tntrun &8- &7Entrar no evento
+    &e-> &f/tntrun sair &8- &7Sair no evento
+  help-staff: |
+    &eComandos do Evento
+    &e-> &f/tntrun &8- &7Entrar no evento
+    &e-> &f/tntrun sair &8- &7Sair no evento
+    &e-> &f/tntrun iniciar &8- &7Iniciar o evento
+    &e-> &f/tntrun parar &8- &7Parar o evento
+    &e-> &f/tntrun setloc &8- &7Setar algum local do evento
+    &e-> &f/tntrun addloc &8- &7Adicionar uma entrada no evento
+    &e-> &f/tntrun delloc &8- &7Deletar um local do evento
+    &e-> &f/tntrun wand &8- &7Pegar a vara de seleção da área
+    &e-> &f/tntrun define &8- &7Definir a área
+
+# Anúncios do plugin
+messages-announces:
+  announce: |
+
+    &eExample
+    &fEntre no evento &eexample&f clicando &e<click:run_command:/exampleevent>AQUI</click>&f.
+    &fJogadores participando: &e{players_size}&f.
+    &fAnúncio &e{min} &fde &e{max} &7({time})&f.
+
+  warm-up: |
+
+    &eExample
+    &fOs jogadores foram teleportados.
+    &fJogadores participando: &e{players_size}&f.
+    &fEvento começando em: &7({time})&f.
+
+  initialized: |
+
+    &eExample
+    &fO EVENTO COMEÇOU!
+    &fJogadores participando: &e{players_size}&f.
+
+  duel: |
+
+    &eExample
+    &fNOVO DUELO ENTRE {players}!
+    &fJogadores participando: &e{players_size}&f.
+
+  win: |
+
+    &eExample
+    &fO jogador &e{player}&f ganhou o example!
+
+  cancelled: |
+
+    &eExample
+    &cO evento foi cancelado por um admin.
+
+  no-winners: |
+
+    &eExample
+    &cJogadores insuficientes.
+
+  time-is-over: |
+
+    &eExample
+    &cO tempo se esgotou.
+
+  # Mensagem de actionbar quando o jogador participar do evento
+  actionbar-entered: '&e{player} entrou ao Example.'
+  # Mensagem de actionbar no temporizador do warm-up
+  actionbar-warmup: '&eIniciando em {time}.'
+  # Mensagem de actionbar do próximo duelo
+  actionbar-next-duel: '&ePróximo duelo em: {time}.'
+  # Mensagem de actionbar do duelo
+  actionbar-duel: '&eDuelo entre: {players}.'
+  # Mensagem de actionbar no decorrer do evento
+  actionbar-initialized: '&cJogadores restantes {players_size}. &7{time_left}'
+  actionbar-mob-killed: '&a{player} matou um MOB e ganhou &f+{amount} pontos&a!'
+
+# Recompensas configuradas na rewards.yml
+# chance,recompensa
+rewards:
+  - '100.0,reward1'

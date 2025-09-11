@@ -1,0 +1,73 @@
+yplugins-id: 'yeventos-voting'
+
+# Utilize "comando|comando" para criar aliases.
+# Por exemplo: "gm|gamemode"
+# Você pode criar quantas aliases quiser.
+command: 'voting'
+
+# Não altere.
+type: 'VOTING'
+
+# Nome do evento
+display: 'Voting'
+
+discord:
+  # enviar o embed em um chat
+  webhook:
+    enable: true
+    chat-embed: ''
+
+# Itens nos menus
+displays: {}
+
+# Anúncios até ganhar o evento
+announces:
+  # Quantia total de anúncios antes de finalizar o evento
+  amount: 2
+  # Tempo entre os anúncios
+  # em segundos
+  time-between: 10
+
+# Mensagens diretas ao jogador
+messages:
+  permission: '&cVocê não tem permissão para fazer isto.'
+  not-active: '&cO Evento Votação não está ativo.'
+  cant-start: '&cUm Evento Votação já está ocorrendo.'
+  cant-stop: '&cNenhum Evento Votação ocorrendo.'
+  started: '&aEvento Votação iniciado.'
+  stopped: '&aEvento Votação parado.'
+  help: ''
+  help-staff: |
+    &eComandos do Evento
+    &e-> &f/voting iniciar &8- &7Iniciar o evento
+    &e-> &f/voting parar &8- &7Parar o evento
+
+# Anúncios do plugin
+messages-announces:
+  announce: |
+
+    &8> &eVotação
+    &8> &fVote para iniciar um evento &e&l<click:run_command:/voting>AQUI</click>&f.
+
+  win: |
+
+    &eVotação
+    &fO evento &e{event}&f foi o mais votado.
+
+  cancelled: |
+
+    &eVotação
+    &cO evento foi cancelado por um admin.
+
+  no-winners: |
+
+    &eVotação
+    &cTodos os eventos estão ocupados.
+
+  # Mensagem de actionbar quando o jogador participar do evento
+  actionbar-entered: '&e{player} votou.'
+
+# Configuração do evento
+voting:
+  # Eventos que não poderão participar da votação
+  event-blacklist: []
