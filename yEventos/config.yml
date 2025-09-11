@@ -43,6 +43,9 @@ announce-world-blacklist: []
 # Ativar dar fly no camarote
 camarote-fly: false
 
+# Calcular o KnockBack (repulsão) pelo próprio plugin
+calculate-knockback: false
+
 # Comandos liberados no camarote
 camarote-allowed-commands:
   - '/g'
