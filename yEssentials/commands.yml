@@ -108,3 +108,4 @@ Commands:
   WorldBorderSet: 'worldborderset'
   Chunk: 'chunk'
   Summon: 'summon|sumonar'
+  QueueClear: 'queueclear|agendarclear'

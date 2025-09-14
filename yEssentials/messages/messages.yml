@@ -490,3 +490,5 @@ Outros:
   Actionbar: '&aVocê enviou uma actionbar para o jogador &f{player}&a.'
   Title todos: '&aVocê enviou um title para todos online.'
   Actionbar todos: '&aVocê enviou uma actionbar para todos online.'
+  Clear queue: '&aAgendamento de limpeza para o jogador {player} efetuado.'
+  Clear queue cancelado: '&cAgendamento de limpeza para o jogador {player} cancelado.'
