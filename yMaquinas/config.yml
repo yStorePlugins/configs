@@ -51,6 +51,14 @@ Opcoes:
   Silk: true
   # Quantia máxima que pode ter de multiplicador
   Multiplicador max: 10
+
+  # Quantia máxima de máquinas que um jogador poderá colocar
+  # Permissão: ymaquinas.maquina_limite.[numero]
+  # Exemplo: ymaquinas.maquina_limite.1000
+  # Lembrando que sempre será respeitado o máximo aqui
+  # deixe 0 para desativar
+  Player limite max: 0
+
   # Ativar a compra usando o limite disponível com o botão "Q"
   # Isto só funciona se o limite estiver ativado
   Compra Q: true
