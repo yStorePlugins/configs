@@ -1,0 +1,47 @@
+Maquinas:
+  1:
+    # Item da máquina.
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: IRON_BLOCK
+      Data: 0
+      Glow: false
+      Name: '&fMáquina de Ferro'
+      Lore:
+        - ''
+        - '&fPreço: &a1000 coins &7e &610 pontos&f.'
+        - '&fPreço p/ drop: &7100 coins&f.'
+        - ''
+        - '&a&lFORMAS DE COMPRA'
+        - ''
+        - '&7&l• &fBotão direito: &7Comprar 1&f.'
+        - '&7&l• &fBotão Q: &7Comprar limite&f.'
+        - '&7&l• &fBotão esquerdo: &7Escolher quantia&f.'
+        - '&7&l• &fBotão shift+direito: &7Preview do drop&f.'
+        - ''
+    # Preview do drop da máquina
+    Drop:
+      CustomSkull: false
+      URL: ''
+      ID: IRON_INGOT
+      Data: 0
+      Name: '&fFerro'
+      Lore:
+        - ' &fValor por drop: &a100 coins&f.'
+    # Tipo da maquina
+    Maquina: 'ferro'
+    # Data de liberação para comprar
+    Libera em: '16/10/2020-10:00'
+    # Placeholder {rank} na lore da compra indisponível
+    Rank: '&7[Membro]'
+    Comprar:
+      Custos:
+        Custo1:
+          Display: 'Money'
+          Tipo: 'Money' #tipos: Money, plugin de pontos
+          Custo: 1000.0
+        Custo2:
+          Display: 'Pontos'
+          Tipo: 'PlayerPoints'
+          Custo: 10.0

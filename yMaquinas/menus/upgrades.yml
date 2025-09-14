@@ -1,0 +1,105 @@
+Nome: '{maquina}'
+Tamanho: 27
+Backslot: 18
+Itens:
+  CapacidadeUpgrade:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: FIREBALL
+    Data: 0
+    Name: '&aUpgrade de Capacidade'
+    Lore:
+      - '&7Esta evolução faz com que a'
+      - '&7capacidade de combustível da'
+      - '&7máquina seja aumentada.'
+      - ''
+      - ' &fNível: &7{nivel_atual}/{nivel_maximo}&f.'
+      - ' &fCapacidade: &7{capacidade_atual}/{capacidade_maximo}&f.'
+      - ' &fCusto para próx nível: &7{money} coins&f.'
+      - ''
+      - '&aClique para evoluir.'
+  CapacidadeUpgradeMaximo:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: FIREBALL
+    Data: 0
+    Name: '&aUpgrade de Capacidade'
+    Lore:
+      - '&7Esta evolução faz com que a'
+      - '&7capacidade de combustível da'
+      - '&7máquina seja aumentada.'
+      - ''
+      - ' &fNível: &7{nivel_atual}/{nivel_maximo}&f.'
+      - ' &fCapacidade: &7{capacidade_atual}/{capacidade_maximo}&f.'
+      - ''
+      - '&cVocê já está no máximo.'
+  DropsUpgrade:
+    Slot: 13
+    CustomSkull: false
+    URL: ''
+    ID: EYE_OF_ENDER
+    Data: 0
+    Name: '&aUpgrade de Geração'
+    Lore:
+      - '&7Esta evolução faz com que a'
+      - '&7máquina produza mais drops'
+      - '&7por vez.'
+      - ''
+      - ' &fNível: &7{nivel_atual}/{nivel_maximo}&f.'
+      - ' &fDrops gerados por vez: &7{drops_atual}/{drops_maximo}&f.'
+      - ' &fCusto para próx nível: &7{money} coins&f.'
+      - ''
+      - '&aClique para evoluir.'
+  DropsUpgradeMaximo:
+    Slot: 13
+    CustomSkull: false
+    URL: ''
+    ID: EYE_OF_ENDER
+    Data: 0
+    Name: '&aUpgrade de Geração'
+    Lore:
+      - '&7Esta evolução faz com que a'
+      - '&7máquina produza mais drops'
+      - '&7por vez.'
+      - ''
+      - ' &fNível: &7{nivel_atual}/{nivel_maximo}&f.'
+      - ' &fDrops gerados por vez: &7{drops_atual}/{drops_maximo}&f.'
+      - ''
+      - '&cVocê já está no máximo.'
+  VelocidadeUpgrade:
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: EXP_BOTTLE
+    Data: 0
+    Name: '&aUpgrade de Velocidade'
+    Lore:
+      - '&7Esta evolução faz com que o'
+      - '&7tempo de geração da máquina'
+      - '&7seja reduzido.'
+      - ''
+      - ' &fNível: &7{nivel_atual}/{nivel_maximo}&f.'
+      - ' &fTempo a menos: &7-{velocidade_atual}s/-{velocidade_maximo}s&f.'
+      - ' &fCusto para próx nível: &7{money} coins&f.'
+      - ''
+      - '&aClique para evoluir.'
+  VelocidadeUpgradeMaximo:
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: EXP_BOTTLE
+    Data: 0
+    Name: '&aUpgrade de Velocidade'
+    Lore:
+      - '&7Esta evolução faz com que o'
+      - '&7tempo de geração da máquina'
+      - '&7seja reduzido.'
+      - ''
+      - ' &fNível: &7{nivel_atual}/{nivel_maximo}&f.'
+      - ' &fTempo a menos: &7-{velocidade_atual}s/-{velocidade_maximo}s&f.'
+      - ''
+      - '&cVocê já está no máximo.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> VelocidadeUpgradeMaximo:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

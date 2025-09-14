@@ -1,0 +1,9 @@
+Bonus:
+  membro:
+    Ordem: 1
+    # Permissão para ser reconhecido
+    Permissao: 'ymaquinas.bonus.membro'
+    # Nome que irá aparecer nas mensagens
+    Display: '&7[Membro]'
+    # Quantia do bônus em %
+    Bonus: 10.0

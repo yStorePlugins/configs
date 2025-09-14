@@ -1,0 +1,386 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Maquina:
+    Comando: 'maquinas'
+    Aliases: [ maquina, machine, machines ]
+  Combustivel:
+    Comando: 'combustiveis'
+    Aliases: [ combustivel, fuel, fuels ]
+  Limite:
+    Comando: 'limite'
+    Aliases: [ maquinalimite ]
+  Drops:
+    Comando: 'drops'
+    Aliases: [ ]
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Opções gerais do plugin
+Opcoes:
+  # Sistema de bolsa de valores (yBolsa ou HeroBolsa)
+  Bolsa: true
+  # Raio de checagem de maquinas perto
+  # em blocos.
+  Raio: 5
+  # Ativar o holograma do maquinas
+  # pode elevar o timings um *pouco*
+  Holograma: true
+  # Tempo de atualização da task do holograma
+  # Quanto menor o tempo, mais lag poderá ser gerado
+  # em ticks; 20 ticks = 1 segundo
+  TaskTempo: 5
+  # Quando ativo, só poderá colocar máquinas no plot (PlotSquared)
+  Plot: true
+  # Acumular os bônus que tiver permissão
+  Acumular bonus: false
+  # Limite máximo de amigos que uma máquina pode ter
+  # deixe 0 para ser infinito
+  Maximo amigo: 0
+  # Quebrar somente com silk touch
+  Silk: true
+  # Quantia máxima que pode ter de multiplicador
+  Multiplicador max: 10
+  # Ativar a compra usando o limite disponível com o botão "Q"
+  # Isto só funciona se o limite estiver ativado
+  Compra Q: true
+  # Ativar a compra via chat
+  # caso desativado, comprará apenas 1 unidade (sem contar o multiplicador)
+  Compra chat: true
+  # Gastar limite ao comprar
+  GastarLimite: false
+  # Permitir compactar combústiveis do mesmo tipo
+  CompactarCombustivel: true
+  # Máquinas com combustível infinito gerar apenas com o dono on
+  InfinitoDonoOn: false
+  # Formato do status da máquina quebrada
+  QuebradaStatus: '&cQUEBRADA'
+  # Formato do status da máquina sem combustivel
+  SemCombustivelStatus: '&cSEM COMBUSTÍVEL'
+  # Verificar se há máquinas por perto
+  # para colocar um outro tipo
+  Verificar perto: true
+  # Ativar a máquina automaticamente ao colocá-la no chão
+  Ativar colocar: false
+  # Rodar a task de limpeza de máquinas inexistentes após 5 segundos do load do servidor
+  MaquinaClearTask: true
+  # Rodar a task de limpeza de hologramas
+  HologramaClearTask:
+    Ativar: true
+    Delay: 30 # em segundos
+  # Fechar inventário dos jogadores que estiverem com a máquina aberta após ela ser quebrada
+  FecharQuebrada: true
+  # Checar se a máquina possui combustível infinito para poder colocar somente em um stack que for combustível infinito
+  ChecarInfinito: true
+  # Dár máquina com combustível infinito se a quebrada possuir
+  QuebrarInfinito: true
+  # Mostrar máquinas de amigos no /maquina drops
+  DropsMostrarAmigo: true
+  # Zerar o combústivel quando a máquina quebrar
+  ZerarQuebrar: false
+  # Permitir o jogador colocar apenas 1 stack de spawner de cada tipo
+  ApenasUm: false
+  # Delay da compra com Q
+  # em segundos
+  DelayQ: 10
+  # Blocos que não podem colocar máquinas em cima
+  BlockCima blacklist:
+    - 'SANDSTONE:0'
+  # Configuração da barra de progresso
+  Progress bar:
+    Quantia: 10
+    Simbolo: ':'
+    Cor sim: '&a'
+    Cor nao: '&7'
+  # Formatador de mensagens
+  Formatador:
+    Bonus tem: '&fBônus: &a{bonus}%&7 ({display}&7)'
+    Bonus nao tem: ''
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não possui permissão para isto.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Nao e numero: '&cO argumento não é um número.'
+  StackMax: '&cO stack máximo desta máquina é {stackmax}.'
+  Deu: '&aVocê deu &7x{quantia} {maquina}&a para o jogador &7{player}&a.'
+  Deu combustivel: '&aVocê deu &7x{quantia} {combustivel}&a para o jogador &7{player}&a.'
+  Deu todos: |
+    &aO staff &f{player}&a deu &7x{quantia} {maquina}&a para todos online&a.
+  Deu todos combustivel: |
+    &aO staff &f{player}&a deu &7x{quantia} {combustivel}&a para todos online&a.
+  Maquinas: '&cMáquinas disponíveis: &7{maquinas}'
+  Combustiveis: '&cCombustiveis disponíveis: &7{combustiveis}'
+  Help: |
+    &bComandos disponíveis:
+    &b > &3/maquinas &8- &fAbre o menu de máquinas
+    &b > &3/maquinas help &8- &fEnvia essa mensagem
+    &b > &3/maquinas lista &8- &fMostra a lista de máquinas disponíveis
+    &b > &3/maquinas give <player/all> <maquina> <quantia> &8- &fDá máquinas para um jogador / todos os jogadores
+  Help combustivel: |
+    &bComandos disponíveis:
+    &b > &3/combustiveis &8- &fAbre o menu de combustíveis
+    &b > &3/combustiveis help &8- &fEnvia essa mensagem
+    &b > &3/combustiveis lista &8- &fMostra a lista de combustíveis disponíveis
+    &b > &3/combustiveis give <player/all> <combustivel> <quantia> &8- &fDá combustíveis para um jogador / todos os jogadores
+  Help limite: |
+    &bComandos disponíveis:
+    &b > &3/limite &8- &fMostra o seu limite
+    &b > &3/limite <player> &8- &fMostra o limite de outro jogador
+    &b > &3/limite help &8- &fEnvia essa mensagem
+    &b > &3/limite top &8- &fAbre o menu do top limite
+    &b > &3/limite give <player> <quantia> &8- &fDá limite em item para um jogador
+    &b > &3/limite remove <player> <quantia> &8- &fRemove limite de um jogador
+    &b > &3/limite add <player> <quantia> &8- &fAdiciona limite para um jogador
+    &b > &3/limite set <player> <quantia> &8- &fSeta o limite de um jogador
+  Perm: '&cVocê não tem permissão para abrir esta máquina.'
+  Perm maquina: '&cVocê não tem permissão para colocar este tipo de máquina.'
+  Perm plot: '&cVocê não tem permissão neste terreno.'
+  Colocada: '&a{quantia}x {maquina} &acolocada(s).'
+  Removida: '&a{quantia}x {maquina} &aremovida(s).'
+  Somente dono: '&cSomente o dono da máquina pode realizar esta ação.'
+  Ativou drop: '&aVocê ativou o(s) drop(s) da {maquina}.'
+  Gamemode: '&cEssa ação só pode ser realizada no modo survival.'
+  Infinito: '&cEsta máquina possui combustível infinito.'
+  Cheio: '&cEsta máquina está totalmente abastecida.'
+  Abasteceu: '&aVocê abasteceu a máquina com o combustível {combustivel}.'
+  Incompativel: '&cEsta máquina não aceita o combustível {combustivel}.'
+  Inv cheio: '&cSeu inventário está cheio.'
+  Suficiente: '&cEsta máquina não possui drops suficiente.'
+  Coletou: '&aVocê coletou &7{quantia}x drops&7.'
+  Cancelou: '&cVocê cancelou a operação.'
+  Maximo amigo: '&cEsta máquina atingiu o limite máximo de amigos.'
+  Adicionou: '&aVocê adicionou o jogador &7{player}&a na sua máquina.'
+  Ja adicionado: '&cEste jogador já está adicionado.'
+  Adicionar dono: '&cVocê não pode adicionar o dono como amigo na máquina.'
+  Toque suave: '&cVocê precisa de uma picareta com toque suave para quebrar esta máquina.'
+  Consertou: '&aVocê consertou a máquina e pagou &f{money} coins&a.'
+  Consertar: '&cVocê precisa de &f{money} coins&c para consertar essa máquina.'
+  MoneyUpgrade: '&cVocê precisa de &f{money} coins&c para comprar esse upgrade.'
+  Comprou capacidade: '&aVocê adquiriu &f+1 nível&a do upgrade &fcapacidade &apor &f{money} coins&a.'
+  Comprou drops: '&aVocê adquiriu &f+1 nível&a do upgrade &fdrops &apor &f{money} coins&a.'
+  Comprou velocidade: '&aVocê adquiriu &f+1 nível&a do upgrade &fvelocidade &apor &f{money} coins&a.'
+  Max multiplicador: '&cVocê não pode definir mais que o seu máximo: &7{maximo}&c.'
+  Definido: '&aVocê definiu seu multiplicador para &7{multiplicador}&a.'
+  Nao possui: '&cVocê não possui a quantia &7{quantia} em &7{tipo}&c.'
+  Cadastrado: '&cEste plugin &f{plugin}&c não está implementado no plugin de shop.'
+  Desabilitado: '&cEste plugin &f{plugin}&c não está ligado.'
+  Limite insuficiente: '&cVocê não possui limite suficiente. Disponível: &7{limite}&c.'
+  Limite alterado: '&aLimite do jogador &7{player}&a alterado para &7{quantia}&a.'
+  Deu limite: '&aVocê deu &e{quantia} &ade limite para o jogador &e{player}&a.'
+  Converteu: '&cVocê compactou todos seus limites em 1.'
+  Ativou: '&aVocê ativou &e{quantia} &ade limites.'
+  Max limite: '&cVocê já chegou no máximo.'
+  Ha maquinas: '&cHá máquinas num raio de {raio} blocos.'
+  Booster recebeu: '&aVocê recebeu &7{quantia} &a booster(s) de drops.'
+  Booster deu: '&aVocê deu &7{quantia} &a booster(s) de drops para o jogador &7{player}&a.'
+  Acabou booster: '&cSeu booster de drops acabou.'
+  Ja esta booster: '&cVocê já está usando um booster.'
+  Ativou booster: '&aVocê ativou um booster de drops. Multiplicador: &e{bonus}&a. Tempo: &e{tempo}&a.'
+  Booster nenhum: '&cVocê não está usando nenhum booster.'
+  Booster usando: '&aSeu booster de &f{bonus}% &aacaba em &f{tempo}&a.'
+  Cheio limite-stack: '&cEsta máquina está no limite de stack máximo ({limite}).'
+  Abasteceu limite-stack: '&aVocê aumentou o limite de stack da máquina para {limite}.'
+  Recolher insuficiente: '&cEste stack possui apenas {stack} máquinas.'
+  BlockBaixo: '&cVocê não pode colocar máquinas em cima deste bloco.'
+  Si mesmo: '&cVocê não pode realizar esta ação à si mesmo.'
+  Limite enviado: '&bVocê enviou &f{limite} limite&b para o jogador &f{player}&b.'
+  Limite recebido: '&bVocê recebeu &f{limite} limite&b do jogador &f{player}&b.'
+  Nao possui limite: '&bVocê não possui &f{limite} limite&b.'
+  Target max limite: '&bO jogador já possui o máximo de limite permitido: &f{limite}&b.'
+  Delay: '&cAguarde &e{time} &cpara adquirir novamente.'
+  No-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  Ja colocou: '&cVocê já colocou uma máquina deste tipo.'
+  Seu limite:
+    - '&bQuantidade de limite que você possui: &f{limite}&b.'
+  Limite jogador:
+    - '&bQuantidade de limite que &7{player}&b possui: &f{limite}&b.'
+  Adicionar:
+    - ''
+    - '&aDigite no chat o nome do seu amigo que quer adicionar.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Coletar:
+    - ''
+    - '&aDigite a quantia que você quer coletar.'
+    - ''
+    - '&8| &fVocê possui &6{quantia}&f disponível.'
+    - '&8| &fDigite &8TUDO &fpara coletar tudo.'
+    - ''
+    - '&7Para cancelar digite &ncancelar&7.'
+    - ''
+  Digite:
+    - ''
+    - '&aDigite a quantia de máquinas que deseja.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Digite combustivel:
+    - ''
+    - '&aDigite a quantia de combustíveis que deseja.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Digite multiplicador:
+    - ''
+    - '&8| &aDigite no chat a quantia de multiplicador que deseja.'
+    - ''
+    - '&f> &7Atual: &b{atual}&7.'
+    - '&f> &7Máximo: &b{maximo}&7.'
+    - ''
+  Comprou:
+    - '&bObrigado por adquirir máquinas na loja de máquinas. Confira as informações da compra:'
+    - ''
+    - '&7&l| &fMáquina: &7{maquina}&f.'
+    - '&7&l| &fQuantia: &7{quantia}&f.'
+    - ''
+  Comprou combustivel:
+    - '&bObrigado por adquirir combustíveis na loja de combustível. Confira as informações da compra:'
+    - ''
+    - '&7&l| &fCombustível: &7{combustivel}&f.'
+    - '&7&l| &fQuantia: &7{quantia}&f.'
+    - ''
+  Digite remover:
+    - ''
+    - '&aDigite a quantia de máquinas que deseja remover.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+
+# Limite de compra de máquinas na loja.
+Limite:
+  # Quantia de limite que o jogador ganhar ao se registrar.
+  Default: 1
+  # Máximo de limite que o jogador pode ter.
+  # Deixe 0 para ser infinito.
+  Max: 100
+  # Ativar o limite
+  Ativar: true
+  # Item do limite que será ativável
+  Item:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&bLimite de compra'
+    Lore:
+      - ''
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+
+# Limite de stack de máquinas.
+Limite stack:
+  CustomSkull: true
+  URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+  ID: 0
+  Data: 0
+  Glow: true
+  Name: '&bLimite de stack'
+  Lore:
+    - ''
+    - '&fQuantia: &a{quantia}'
+    - ''
+    - '&7Clique com botão direito na máquina para ativar.'
+    - ''
+    - '&7Clique com shift + botão direito para compactar'
+    - '&7todos os seus limites no inventário em 1 só.'
+    - ''
+
+# Configurações gerais dos itens
+Items:
+  # Quando a máquina não foi liberado na data ainda.
+  Nao pode:
+    CustomSkull: false
+    URL: ''
+    ID: BARRIER
+    Data: 0
+    Glow: true
+    Name: '{maquina}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar esta máquina.'
+      - '&7Ela será liberado em: &f{data} - &f{hora}'
+      - '&7Tempo para liberar: &f{time_formatted}'
+      - ''
+  # Quando o jogador não tiver permissão de comprar aquela máquina.
+  Permissao:
+    CustomSkull: false
+    URL: ''
+    ID: BARRIER
+    Data: 0
+    Glow: true
+    Name: '{maquina}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar esta máquina.'
+      - '&7Você não possui permissão.'
+      - ''
+  # Quando o item não foi liberado na data ainda.
+  Nao pode combustivel:
+    CustomSkull: false
+    URL: ''
+    ID: BARRIER
+    Data: 0
+    Glow: true
+    Name: '{combustivel}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar este combustível.'
+      - '&7Ele será liberado em: &f{data} - &f{hora}'
+      - '&7Tempo para liberar: &f{time_formatted}'
+      - ''
+  # Quando o jogador não tiver permissão de comprar aquela máquina.
+  Permissao combustivel:
+    CustomSkull: false
+    URL: ''
+    ID: BARRIER
+    Data: 0
+    Glow: true
+    Name: '{combustivel}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar este combustível.'
+      - '&7Você não possui permissão.'
+      - ''
+# Setas dos menus.
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para ir à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróximo'
+    Lore:
+      - '&7Clique para ir à próxima página.'

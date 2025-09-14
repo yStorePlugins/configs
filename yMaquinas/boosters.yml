@@ -1,0 +1,18 @@
+# Item dos boosters
+Booster:
+   CustomSkull: false
+   URL: ''
+   ID: 384
+   Data: 0
+   Glow: true
+   Name: '&aBônus de venda'
+   Lore:
+      - ''
+      - '&aTempo: &e{tempo}'
+      - '&aPorcentagem: &e{bonus}%'
+      - ''
+
+Boosters:
+   Booster1:
+      Tempo: 60 #em segundos
+      Bonus: 10.0 #porcentagem a mais

@@ -1,0 +1,21 @@
+Nome: '&8Loja de combustíveis'
+Tamanho: 54
+Slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34  ]
+AnteriorSlot: 45
+ProximoSlot: 53
+# Itens da loja
+Itens:
+  Informacoes:
+    Slot: 49
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/1cba7277fc895bf3b673694159864b83351a4d14717e476ebda1c3bf38fcf37'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aInformações gerais'
+    Lore:
+      - '&7Combustível são essenciais para o'
+      - '&7funcionamento de uma máquina.'
+      - ''
+      - '&fCoins: &7{money}&f.'
+      - '&fDesconto: &7{desconto}% ( {grupo} &7)&f.'

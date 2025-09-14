@@ -1,0 +1,182 @@
+Maquinas:
+  ferro:
+    # Nome que irá aparecer nas mensagens
+    Nome: '&fMáquina de Ferro'
+    # Permissão para poder por o spawner
+    # deixe '' (vazio) para não usar
+    Permissao: ''
+    # Stack máximo de máquinas (total)
+    StackMax: 2
+    # Limite padrão de stack de máquinas
+    # Deixe 0 para não usar
+    LimiteStackPadrao: 30
+    # Velocidade de geração
+    Velocidade: 10
+    # Chance da máquina quebrar a cada onda (deixe 0 para não usar)
+    QuebrarChance: 10.0
+    # Preço para consertar a máquina
+    ConsertarPreco: 1000.0
+    # Quantia de combustível que irá gastar por onda
+    CombustivelOnda: 10
+    # Gastar combustível apenas se o dono estiver offline?
+    GastarApenasOff: false
+    # Combustíveis que a máquina aceita
+    Combustiveis:
+      - 'gasolina'
+    # A máquina vai gerar um vidro com uma cabeça dentro?
+    Glass: false
+    # Tipo do vidro
+    GlassType: 'STAINED_GLASS'
+    # Data da cor do vidro
+    GlassData: 11
+    # Ajuste a cabeça dentro do vidro
+    Glass-offset: -1.2
+    # Mensagem de venda
+    Mensagens:
+      Vendeu: '&aVocê vendeu &7{quantia}x {drop}&a por &6{money} coins &8{bonus}&a.'
+    # Item da máquina
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: IRON_BLOCK
+      Data: 0
+      Name: '&fMáquina de Ferro'
+      Lore:
+        - ''
+        - '&f Stack: &7{stack}'
+        - '&f Combustível atual: &c{combustivel_tem}'
+        - '&f Drops armazenados: &c{drops_armazenados}'
+        - '&f Preço por drop: &a100 coins'
+        - ''
+        - '&f Upgrades:'
+        - '&f  > Capacidade de combustível: &b{capacidade}'
+        - '&f  > Drops gerados por rodada: &b{drops}'
+        - '&f  > Velocidade de geração: &b{velocidade}s'
+        - ''
+    # Holograma que irá aparecer em cima da máquina
+    Holograma:
+      Altura: 3.5
+      Holograma:
+        - '&fMáquina de Ferro'
+        - '&fDono: &7{dono}&f.'
+        - '&fStack: &bx{quantia}&f.'
+        - '&fDrops armazenados: &bx{drops}&f.'
+        - '&fCombustível: &7{combustivel_tem}/{capacidade} &8{progressbar} &a{porcentagem}%'
+        - '&fStatus: &r{status}'
+        # '&fDrops p/ rodada: &b{drops_rodada}'
+        # '&fVelocidade de geração: &b{velocidade_upgrade}s'
+        - ''
+        - '[item]IRON_INGOT:0'
+    # Upgrades da máquina
+    Upgrades:
+      # Capacidade de combústivel da máquina
+      Capacidade:
+        PrecoPorLevel: 10.0
+        Maximo: 9
+        Padrao: 3
+        AdicionarPorLevel: 25
+        # Multiplicar a capacidade pelo stack
+        MultiplicarStack: true
+        Prices-PerLevel:
+          price1:
+            provider: 'yeconomias-token'
+            price: 10000.0
+      # Quantidade de drops por rodada da máquina
+      Drops:
+        PrecoPorLevel: 20.0
+        Maximo: 5
+        Padrao: 1
+        AdicionarPorLevel: 2
+        Prices-PerLevel:
+          price1:
+            provider: 'yeconomias-token'
+            price: 10000.0
+      # Velocidade de geração de drops da máquina
+      Velocidade:
+        PrecoPorLevel: 15.0
+        Maximo: 5
+        Padrao: 0
+        RemoverPorLevel: 1
+        Prices-PerLevel:
+          price1:
+            provider: 'yeconomias-token'
+            price: 10000.0
+    # Drop da máquina
+    Drop:
+      Nome: '&fFerro'
+      # ícone que irá ficar no menu de drops
+      Icone:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_INGOT
+        Data: 0
+        Name: '&fFerro'
+        Lore:
+          - ''
+          - ' &fDrops armazenados: &a{drops_armazenados}&f.'
+          - ' &fValor por drop: &a100 coins&f.'
+          - ' &fValor total: &a{money} coins&f.'
+          - ' &fBolsa: &7{bolsa}%&f.'
+          - ' &fSeu bônus: &b{bonus_raw}%&f.' # bonus formatado: {bonus}
+          - ''
+          - '&aBotão &fESQUERDO&a para vender.'
+          - '&aBotão &fDIREITO&a para recolher.'
+      # ícone que irá ficar no menu de all_drops
+      Icone-All:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_INGOT
+        Data: 0
+        Name: '&fMáquina de Ferro'
+        Lore:
+          - '&7Dono da Máquina: &f{player}'
+          - ''
+          - ' &fDrops armazenados: &a{drops_armazenados}&f.'
+          - ' &fValor por drop: &a100 coins&f.'
+          - ' &fValor total: &a{money} coins&f.'
+          - ' &fBolsa: &7{bolsa}%&f.'
+          - ' &fSeu bônus: &b{bonus_raw}%&f.' # bonus formatado: {bonus}
+          - ''
+          - '&aBotão &fESQUERDO&a para vender.'
+          - '&aBotão &fDIREITO&a para recolher.'
+      Item:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_INGOT
+        Data: 0
+        Name: '&fFerro'
+        Lore: [ ]
+      # Ativar o armazém de drops
+      Armazem: true
+      # Possibilitar recolher o drop no armazém
+      Recolher: true
+      # Possibilitar vender o drop no armazém
+      Vender: true
+      # Botão que será realizada a venda (LEFT | RIGHT)
+      Vender botao: 'LEFT'
+      # Botão que será realizado recolher (LEFT | RIGHT)
+      Recolher botao: 'RIGHT'
+      # Permissão para recolher drops (deixe vazio '' para não usar)
+      Recolher perm: 'ymaquinas.ferro.coletar'
+      # Permissão para vender drops (deixe vazio '' para não usar)
+      Vender perm: 'ymaquinas.ferro.vender'
+      # Preço por drop (para o comando)
+      Preco: 100
+      # Economias que a máquina irá dar
+      Currencies:
+        preco1:
+          Provider: 'money'
+          Amount: 100.0
+      # O Drop vai executar um comando ao ser recolhido?
+      # Caso seja um comando e o armazem estiver desativado
+      # a máquina irá dropar itens que ao serem ativados
+      # executarão o comando
+      Comando:
+        Ativar: false
+        UsarQuantia: true # usar a placeholder {quantia} para ter a quantia de drops e executar o comando só 1x
+        MultiplicarQuantiaPreco: true # multiplica a quantia pelo preço e o bônus (essencial para dar em outras economias)
+        InvBypass: true # não checar se o inv está cheio (apenas quando os comandos tiverem ativos)
+        ColetarChatBypass: true # coletar diretamente, sem precisar digitar a quantia no chat (apenas quando os comandos tiverem ativos)
+        FormatarQuantia: true # formatar a quantia que será executada no comando. Ex: 1k, 10k, 1M
+        Comandos:
+        - 'give {player} iron_ingot {quantia}'

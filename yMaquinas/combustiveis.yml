@@ -1,0 +1,23 @@
+Combustiveis:
+  gasolina:
+    Nome: '&7Gasolina'
+    # Deixar a máquina infinita ao abastecer
+    Infinito: false
+    # Consumir o combustível ao abastecer uma máquina
+    Consumir: true
+    # Abastecer a máquina completamente sem deixar ela infinita
+    CombustivelInfinito: false
+    Litros: 50
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: COAL
+      Data: 0
+      Name: '&7Gasolina'
+      Lore:
+        - '&7Utilize este item para abastecer'
+        - '&7as suas máquinas.'
+        - ''
+        - '&fLitros: &b{litros} litros&f.'
+        - ''
+        - '&aClique com o combustível em uma máquina.'

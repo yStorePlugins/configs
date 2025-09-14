@@ -1,0 +1,33 @@
+Combustiveis:
+  1:
+    # Item do combustível.
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: COAL
+      Data: 0
+      Glow: false
+      Name: '&8Gasolina'
+      Lore:
+        - ''
+        - '&fPreço: &a1000 coins&f.'
+        - '&fLitros: &750 litros&f.'
+        - ''
+        - '&a&lFORMAS DE COMPRA'
+        - ''
+        - '&7&l• &fBotão direito: &7Comprar 1&f.'
+        - '&7&l• &fBotão esquerdo: &7Escolher quantia&f.'
+        - ''
+    # Tipo do combustível
+    Combustivel: 'gasolina'
+    # Data de liberação para comprar
+    Libera em: '16/10/2020-10:00'
+    # Permissão para comprar o combustível
+    # Deixe '' (vazio) para não usar
+    Permissao: 'ymaquinas.combustivel.gasolina'
+    Comprar:
+      Custos:
+        Custo1:
+          Display: 'Money'
+          Tipo: 'Money' #tipos: Money, plugin de pontos
+          Custo: 100.0
