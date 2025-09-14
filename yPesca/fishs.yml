@@ -1,0 +1,97 @@
+#     ___ _     _
+#    / __(_)___| |__  ___
+#   / _\ | / __| '_ \/ __|
+#  / /   | \__ \ | | \__ \
+#  \/    |_|___/_| |_|___/
+#
+# Peixes disponíveis para pesca.
+
+fishs:
+  normal:
+    # Nível necessário da vara de pesca
+    level: 1
+    display-name: 'Normal L.1'
+    # Raridades do peixe
+    # Definida na rarities.yml
+    # chance,raridade
+    rarities:
+      - '100.0,normal'
+    # Preços base de venda do peixe
+    base-prices:
+      cost1:
+        type: 'Money'
+        price: 10.0
+      cost2:
+        type: 'PlayerPoints'
+        price: 5.0
+    # Preços por peso do peixe (será somado ao preço base)
+    weight-prices:
+      cost1:
+        type: 'Money'
+        price: 10.0
+      cost2:
+        type: 'PlayerPoints'
+        price: 5.0
+    # Peso mínimo e máximo do peixe
+    weight:
+      min: 1
+      max: 10
+    # Quantia mínima e máxima que pode ganhar de Moedas de evolução ao pescar um peixe
+    coin:
+      min: 1
+      max: 2
+    # Quantia mínima e máxima que pode ganhar de XP do MCMMO ao pescar um peixe
+    mcmmo:
+      min: 1
+      max: 2
+    # Item do peixe no menu de venda
+    display-sell:
+      material: 'RAW_FISH:0'
+      name: '&aPeixe normal &7[&fL.1]'
+      lore:
+        - ''
+        - ' &7Nível: &f{level}'
+        - ' &7Raridade: &f{rarity} &8(+{rarity_price} coins) (+{rarity_price_PlayerPoints} pontos)'
+        - ' &7Peso: &f{weight} &8(+{weight_price} coins) (+{weight_price_PlayerPoints} pontos)'
+        - ' &7Quantia: &f{amount}'
+        - ''
+        - ' &7Preço unitário: &f10'
+        - ' &fSeu bônus: &b{bonus}%'
+        - ''
+        - ' &7Preço total (somado bônus, peso e raridade):'
+        - '  &f->&a {total_price} coins, {total_price_PlayerPoints} pontos'
+        - ''
+        - '&aClique para vender'
+    # Item do peixe no menu de preview
+    display:
+      material: 'FISH:0'
+      name: '&aPeixe normal &7[&fL.1]'
+      lore:
+        - ''
+        - ' &7Pesos: &f1 à 10 gramas'
+        - ' &7Raridades: &fNormal'
+        - ' &7Preço unitário: &f10'
+        - ''
+
+rarities:
+  normal:
+    # Valores bônus que o peixe irá dar na venda
+    bonus-prices:
+      cost1:
+        type: 'Money'
+        price: 5.0
+      cost2:
+        type: 'PlayerPoints'
+        price: 2.0
+    # Pode utilizar cor
+    display: 'Normal'
+    # Mensagens que serão enviadas (ao jogador)
+    messages:
+      title: ''
+      actionbar: '&aVocê pescou um peixe de raridade normal'
+      chat: ''
+    # Mensagens que serão enviadas (ao jogador)
+    broadcast-messages:
+      title: ''
+      actionbar: '' #'&a{player} pescou um peixe de raridade normal'
+      chat: ''

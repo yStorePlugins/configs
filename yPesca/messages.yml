@@ -1,0 +1,203 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+# Mensagens e ações ao entrar
+enter:
+  title: '&bBem vindo à área de pesca'
+  actionbar: '&bVocê entrou na área de pesca.'
+  sound: 'ORB_PICKUP'
+  chat: |
+    <nl>
+    &bBem vindo à área de pesca.
+    <nl>
+
+# Mensagens e ações ao sair
+leave:
+  title: ''
+  actionbar: '&bVocê saiu da área de pesca.'
+  sound: 'ORB_PICKUP'
+  chat: |
+    <nl>
+    &bVocê saiu da área de pesca.
+    <nl>
+
+# Mensagens e ações ao começar a pescar
+start:
+  title: '&aPesca<nl>&eVocê começou a pescar'
+  actionbar: '&aPesca: &eVocê começou a pescar!'
+  sound: 'ORB_PICKUP'
+  chat: |
+    <nl>
+    &r  &aPesca:
+    &r  &eVocê começou a pescar
+    <nl>
+
+# Mensagens e ações ao parar de pescar
+stop:
+  title: '&aPesca<nl>&cVocê parou de pescar'
+  actionbar: '&aPesca: &cVocê parou de pescar!'
+  sound: 'CAT_MEOW'
+  chat: |
+    <nl>
+    &r  &aPesca:
+    &r  &cVocê parou de pescar
+    <nl>
+
+actionbar:
+  fishing: '&aPesca: &eVocê está pescando! Peixes pescados &a{fished}&e.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  spawn: '&cO spawn da área de pesca não foi setado.'
+  exit: '&cA saída da área de pesca não foi setada.'
+  empty: '&cVocê deve esvaziar seu inventário.'
+  help: |
+    <nl>
+    &a/pesca &8- &7Abre o menu principal.
+    &a/pesca ir &8- &7Vai até a pesca.
+    &a/pesca sair &8- &7Sai da pesca.
+    &a/pesca peixes &8- &7Abre o armazem de peixes.
+    &a/pesca setspawn &8- &7Seta o local de spawn da pesca.
+    &a/pesca setsaida &8- &7Seta o local de saída da pesca.
+    &a/pesca iniciartorneio &8- &7Inicia um torneio.
+    &a/pesca parartorneio &8- &7Finaliza um torneio.
+    &a/pesca givebooster &8- &7Dá um booster à um jogador.
+    &a/pesca givefish &8- &7Dá um peixe à um jogador.
+    <nl>
+  not-in: '&cVocê não está na área de pesca.'
+  set-exit: '&aLocal de saída setado com sucesso.'
+  set-spawn: '&aLocal de spawn setado com sucesso.'
+  command: '&cVocê não pode usar este comando na área de pesca. Utilize /spawn para sair dela.'
+  evolved: '&aO encantamento &f{enchantment}&a foi evoluido para o nível &f{level}&a.'
+  coin-help: |
+    <nl>
+    &a/corais &8- &7Ver os seus corais.
+    &a/corais <player> &8- &7Ver os corais de alguém.
+    &a/corais enviar <player> <quantia> &8- &7Envia seus corais para alguém.
+    &a/corais give <player/all> <quantia> &8- &7Dar corais a alguém.
+    &a/corais add <player> <quantia> &8- &7Adiciona corais a alguém.
+    &a/corais set <player> <quantia> &8- &7Remove corais de alguém.
+    &a/corais remove <player> <quantia> &8- &7Seta corais a alguém.
+    <nl>
+  coin: '&bVocê possui &f{coin} corais&b.'
+  coin-player: '&bO jogador &f{player}&b possui &f{coin} corais&b.'
+  coin-added: '&bVocê adicionou &f{coin} corais&b ao jogador &f{player}&b.'
+  coin-removed: '&bVocê removeu &f{coin} corais&b do jogador &f{player}&b.'
+  coin-set: '&bVocê setou &f{coin} corais&b para o jogador &f{player}&b.'
+  coin-sent: '&bVocê enviou &f{coin} corais&b para o jogador &f{player}&b.'
+  coin-received: '&bVocê recebeu &f{coin} corais&b do jogador &f{player}&b.'
+  coin-has: '&cVocê não possui a quantia de &f{coin}&c corais.'
+  fished-heavy: '&cVocê pescou um peixe mais pesado do que sua vara suporta, portanto ele escapou.'
+  fished-heavy-break: '&cVocê pescou um peixe mais pesado do que sua vara suporta, portanto sua vara quebrou.'
+  broken: '&cSua vara está quebrada, você precisa repará-la antes de usar.'
+  dont-has: '&cVocê não possui a quantia &7{amount} em &7{type}&c.'
+  registered: '&cEste plugin &f{plugin}&c não está implementado no plugin de shop.'
+  deactivated: '&cEste plugin &f{plugin}&c não está ligado.'
+  repaired: '&aVocê reparou sua vara com sucesso.'
+  bought: '&aVocê comprou a vara nível {level} com sucesso.'
+  sell: '&aVocê vendeu &fx{amount} {fish} &apor &f{value} coins, {value_PlayerPoints} pontos&a.'
+  sell-all: '&aVocê vendeu todos os seus peixes por &f{value} coins, {value_PlayerPoints} pontos&a.'
+  fish-null: |
+    &cEste peixe não existe.
+    &cDisponíveis: &7{list}
+  rarity-null: |
+    &cEsta raridade não existe.
+    &cDisponíveis: &7{list}
+  booster-null: |
+    &cEste booster não existe.
+    &cDisponíveis: &7{list}
+  fish-give: '&aVocê deu x{amount} {fish} &8({rarity}) &apara o jogador &f{player}&a.'
+  fish-received: '&aVocê recebeu x{amount} {fish} &8({rarity})&a.'
+  booster-give: '&aVocê deu x{amount} Booster(s) &8(+{bonus}%) &apara o jogador &f{player}&a.'
+  booster-received: '&aVocê recebeu x{amount} Booster(s) &8(+{bonus}%)&a.'
+  booster-finished: '&aPesca: &cSeu booster acabou.'
+  booster-has: '&cVocê já está com um booster ativado.'
+  booster-activated: '&aVocê ativou um booster de pesca. Multiplicador: &e{bonus}&a. Tempo: &e{time}&a.'
+  tournament-type: '&cTipos disponíveis: &7WEIGHT, FISHED'
+  tournament-already: '&cJá há um torneio ocorrendo.'
+  tournament-no: '&cNão há um torneio ocorrendo.'
+  tournament-weight-started: |
+    <nl>
+    &a&lTORNEIO
+    &eFoi iniciado um novo torneio na pesca
+    <nl>
+    &aPrêmio: &b{prize} coins
+    &aTempo de torneio: &b{time}
+    <nl>
+    &7Vencerá o jogador que pescar o peixe mais pesado!
+    <nl>
+  tournament-fished-started: |
+    <nl>
+    &a&lTORNEIO
+    &eFoi iniciado um novo torneio na pesca
+    <nl>
+    &aPrêmio: &b{prize} coins
+    &aTempo de torneio: &b{time}
+    <nl>
+    &7Vencerá o jogador que pescar a maior quantia de peixes!
+    <nl>
+  tournament-no-win: |
+    <nl>
+    &a&lTORNEIO
+    &eO torneio foi encerrado sem vencedor
+    <nl>
+    &aPrêmio: &b{prize} coins
+    <nl>
+    &cNão houve vencedores.
+    <nl>
+  tournament-win: |
+    <nl>
+    &a&lTORNEIO
+    &eO torneio foi encerrado com vencedor
+    <nl>
+    &aPrêmio: &b{prize} coins
+    <nl>
+    &aO jogador vencedor foi &f{player}&a!
+    <nl>
+
+  tournament-canceled: |
+    <nl>
+    &a&lTORNEIO
+    &eO torneio foi cancelado por um administrador
+    <nl>
+    &cNão houve vencedores.
+    <nl>
+  time: '&cVocê só pode pescar das {from} às {to}.'
+  time-removed: '&cVocê foi removido da área de pesca pois só pode pescar das {from} às {to}.'
+  fishing-net-full: '&cSua sacola de peixes está cheia, venda os peixes antes de pescar novamente.'
+  previous-rod: '&cVocê deve ter a vara anterior para conseguir evoluir à esta.'
+  give: '&bVocê deu &f{coin} &bcorais para o jogador &f{player}&b.'
+  give-all: |
+    <nl>
+    &bO usuário &f{player}&b deu &f{coin} &bcorais para todos os jogadores online&b.
+    <nl>
+  converted: '&bVocê compactou todos seus corais em 1.'
+  activated: '&bVocê ativou &f{coin} corais&b.'
+  reseted: '&aVocê resetou a vara do jogador &f{player}&a.'
+  coin-added-all: '&bVocê adicionou &f{coin} corais&b para todos os jogadores&b.'
+  shop-credit-has: '&cVocê não possui a quantia de {amount} corais.'
+  shop-credit-spent: '&aVocê comprou na loja utilizando {amount} corais.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  classe-bought: '&aVocê evoluiu para a classe &7{classe}&a.'
+  classe-permission: '&cVocê não tem permissão para evoluir para esta classe.'
+  classe-previous: '&cVocê deve possuir a classe anterior primeiro.'
+  classe-reset: '&aVocê resetou a classe do jogador &f{player}&a.'
+  classe-set: '&aVocê definiu a classe {classe} ao jogador &f{player}&a.'
+  classe-found: '&aEsta classe não existe. Disponíveis: {classes}'
+  classe-give: '&aVocê deu x{amount} {classe} &apara o jogador &f{player}&a.'
+  classe-received: '&aVocê recebeu x{amount} {classe}&a.'
+  classe-activated: '&aVocê ativou a classe &7{classe}&a.'
+  classe-already: '&cVocê já possui esta classe.'
+  upgraded: '&aLimite da sacola de peixes melhorado para &f{limit}&a.'

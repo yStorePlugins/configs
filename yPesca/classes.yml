@@ -1,0 +1,170 @@
+classes:
+  class1:
+    # O padrão é a ordem 0
+    order: 0
+    display: '&fQuartzo'
+    # Cor da armadura
+    # Formato: RED:GREEN:BLUE (255:255:255)
+    # deixe RAINBOW para ser colorido
+    color: '255:255:255'
+    # Permissão para evoluir à esta classe
+    # Deixe '' (vazio) para não usar
+    permission: ''
+    # Efeito:Nível
+    effects: ['SPEED:1']
+    # Bônus que serão dados
+    bonus:
+      fish-chance: 5.0
+      coin: 10.0
+    # Custos de evolução
+    prices:
+      price1:
+        provider: 'money'
+        price: 1000.0
+      price2:
+        provider: 'yminas'
+        price: 1000.0
+    # Item ativável
+    item:
+      material: LEATHER_HELMET
+      name: '&fClasse Quartzo'
+      lore:
+        - ''
+        - ' &7As classes irão te dar mais'
+        - ' &7chance e coins ao pescar!'
+        - ''
+        - '&fBônus adquiridos:'
+        - '&7- +{fish-chance}% de chance'
+        - '&7- +{coin}% de coins'
+        - ''
+        - '&aClique para ativar'
+    # Itens da armadura
+    armor:
+      helmet:
+        material: LEATHER_HELMET
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7chance e coins ao pescar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{fish-chance}% de chance'
+          - '&7- +{coin}% de coins'
+          - ''
+      chestplate:
+        material: LEATHER_CHESTPLATE
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7chance e coins ao pescar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{fish-chance}% de chance'
+          - '&7- +{coin}% de coins'
+          - ''
+      leggings:
+        material: LEATHER_LEGGINGS
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7chance e coins ao pescar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{fish-chance}% de chance'
+          - '&7- +{coin}% de coins'
+          - ''
+      boots:
+        material: LEATHER_BOOTS
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7chance e coins ao pescar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{fish-chance}% de chance'
+          - '&7- +{coin}% de coins'
+          - ''
+    # Itens do menu de classes
+    menu:
+      buy:
+        material: LEATHER_CHESTPLATE
+        color: '255:255:255'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7chance e coins ao pescar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{fish-chance}% de chance'
+          - '&7- +{coin}% de coins'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&f{money} coins'
+          - '&7- &e{ypesca} moedas'
+          - ''
+          - '&aClique para evoluir'
+      has:
+        material: LEATHER_CHESTPLATE
+        color: '255:255:255'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7chance e coins ao pescar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{fish-chance}% de chance'
+          - '&7- +{coin}% de coins'
+          - ''
+          - '&aClique para equipar.'
+      equipped:
+        material: LEATHER_CHESTPLATE
+        color: '255:255:255'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7chance e coins ao pescar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{fish-chance}% de chance'
+          - '&7- +{coin}% de coins'
+          - ''
+          - '&aVocê está usando este.'
+      need:
+        material: LEATHER_CHESTPLATE
+        color: '255:255:255'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7chance e coins ao pescar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{fish-chance}% de chance'
+          - '&7- +{coin}% de coins'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&f{money} coins'
+          - '&7- &e{ypesca} moedas'
+          - ''
+          - '&cVocê não possui os custos para evoluir.'
+      previous:
+        material: LEATHER_CHESTPLATE
+        color: '255:255:255'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7chance e coins ao pescar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{fish-chance}% de chance'
+          - '&7- +{coin}% de coins'
+          - ''
+          - '&cVocê não possui a classe anterior.'

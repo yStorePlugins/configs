@@ -1,0 +1,132 @@
+#     __           _
+#    /__\ ___   __| |___
+#   / \/// _ \ / _` / __|
+#  / _  \ (_) | (_| \__ \
+#  \/ \_/\___/ \__,_|___/
+#
+# Configurações das varas de pesca.
+
+# Item para quando o jogador não possui uma vara
+default:
+  material: 'BARRIER:0'
+  name: '&cVocê não possui uma vara'
+  lore:
+    - '&7Clique para abrir o menu de compra'
+
+rods:
+  basic:
+    # Nível da vara
+    # Padrão: 1
+    level: 1
+    # Peso suportado pela vara
+    supported-weight: 2
+    # Delay para pescar
+    # em segundos
+    delay: 10
+    # Quebrar a vara caso pesque um peixe mais pesado que o suportado
+    break-heavy: true
+    # Preço em coin (moeda do plugin) para reparar a vara
+    repair-coin-cost: 0
+    # Preço para reparar a vara
+    repair-cost:
+      cost1:
+        type: 'Money'
+        cost: 100.0
+        display: 'Money'
+    # Preço para upar para este nível
+    upgrade-cost: {}
+    # Preço em coin (moeda do plugin) para upar para este nível
+    coin-cost: 0
+    # Recompensas que podem ser dadas ao conseguir pescar um peixe
+    # Definida na rewards.yml
+    # chance,recompensa
+    rewards:
+      - '20.0,Reco1'
+    # Nome e lore da vara
+    rod:
+      name: '&bVara de pesca &f[L.{level}]'
+      lore:
+        - '&7Inquebrável ∞'
+        - '{enchants}'
+        - ''
+        - '&a* Vara de pesca &fLVL {level}'
+        - '&a* Peso suportado: &f{weight} gramas'
+        - ''
+        - '&a* &fCorais: &7{coin_has}/{coin_next} &f({progressbar}&f)'
+    shop:
+      priority: 1
+      items:
+        upgrade:
+          material: FISHING_ROD
+          name: '&bVara de pesca &f[L.{level}]'
+          lore:
+            - ''
+            - '&a* Vara de pesca &fLVL {level}'
+            - '&a* Peso suportado: &f{weight} gramas'
+            - ''
+            - '&fPreço: &7Grátis'
+            - ''
+            - '&aClique para dar upgrade'
+        has:
+          material: FISHING_ROD
+          name: '&bVara de pesca &f[L.{level}]'
+          lore:
+            - ''
+            - '&a* Vara de pesca &fLVL {level}'
+            - '&a* Peso suportado: &f{weight} gramas'
+            - ''
+            - '&cVocê já possui uma vara igual ou melhor que esta.'
+  medium:
+    level: 2
+    supported-weight: 15
+    delay: 5
+    break-heavy: true
+    # Preço em coin (moeda do plugin) para reparar a vara
+    repair-coin-cost: 10
+    repair-cost:
+      cost1:
+        type: 'Money'
+        cost: 100.0
+        display: 'Money'
+    upgrade-cost:
+      cost1:
+        type: 'Money'
+        cost: 200.0
+        display: 'Money'
+    coin-cost: 10
+    rewards:
+      - '20.0,Reco1'
+    rod:
+      name: '&bVara de pesca &f[L.{level}]'
+      lore:
+        - '&7Inquebrável ∞'
+        - '{enchants}'
+        - ''
+        - '&a* Vara de pesca &fLVL {level}'
+        - '&a* Peso suportado: &f{weight} gramas'
+        - ''
+        - '&a* &fCorais: &7{coin_has}/{coin_next} &f({progressbar}&f)'
+    shop:
+      priority: 1
+      items:
+        upgrade:
+          material: FISHING_ROD
+          name: '&bVara de pesca &f[L.{level}]'
+          lore:
+            - ''
+            - '&a* Vara de pesca &fLVL {level}'
+            - '&a* Peso suportado: &f{weight} gramas'
+            - ''
+            - '&fPreço em corais: &b{coin} corais'
+            - '&fPreço: &a{Money} coins'
+            - ''
+            - '&aClique para dar upgrade'
+        has:
+          material: FISHING_ROD
+          name: '&bVara de pesca &f[L.{level}]'
+          lore:
+            - ''
+            - '&a* Vara de pesca &fLVL {level}'
+            - '&a* Peso suportado: &f{weight} gramas'
+            - ''
+            - '&cVocê já possui uma vara igual ou melhor que esta.'

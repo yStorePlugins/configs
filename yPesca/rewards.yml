@@ -1,0 +1,19 @@
+#     __                            _
+#    /__\ _____      ____ _ _ __ __| |___
+#   / \/// _ \ \ /\ / / _` | '__/ _` / __|
+#  / _  \  __/\ V  V / (_| | | | (_| \__ \
+#  \/ \_/\___| \_/\_/ \__,_|_|  \__,_|___/
+#
+# Sistema de recompensa.
+
+rewards:
+  Reco1:
+    item:
+      material: STONE
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEu valho muito!' ]
+      enchants: [ '' ]
+    command:
+      use: false
+      list: [ 'give {player} stone 1' ]

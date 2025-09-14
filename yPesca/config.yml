@@ -1,0 +1,282 @@
+#           ___
+#   _   _  / _ \___  ___  ___ __ _
+#  | | | |/ /_)/ _ \/ __|/ __/ _` |
+#  | |_| / ___/  __/\__ \ (_| (_| |
+#   \__, \/    \___||___/\___\__,_|
+#   |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.]
+
+# Ativar a invisibilidade na área de pesca
+invisibility: false
+
+# O jogador deverá evoluir uma vara por vez
+evolute-crescent: true
+
+# Nome da skill de pesca no mcmmo
+mcmmo-skill: 'FISHING'
+
+# Somar um nível a mais na evolução
+sum-evolute: true
+
+# Ativar o menu de confirmação de compra
+confirm-menu: true
+
+# Sistema de bolsa de valores (yBolsa, StormEconomy ou HeroBolsa)
+bolsa: true
+
+# Quantidade do Y que vai teleportar ao spawn
+# 1.19 usa-se -64
+void-detect: 0
+
+# Tag do ganhador do torneio
+tournament-tag: '&e[*]'
+
+# Ativar o sistema de classes
+classes: true
+
+# Para evoluir as classes ele deverá seguir a ordem delas?
+classes-ordered: true
+
+# Sistemas quando estiver pescando
+fishing:
+  # Raio de detecção de água perto ou quando clicar para pescar
+  # em blocos
+  water-radius: 10.0
+  # Ativar a verificação de água por perto (quando se afastar, para de pescar)
+  # Pode gerar lag
+  verify-has-water: false
+  # Cancelar quando o peixe vanila encostar na vara
+  cancel-fish-interact: false
+  # Horário para pescar
+  time:
+    enabled: false
+    # Calibre o horário do plugin (Brasil: GMT-3)
+    gmt-offset: -3
+    # Horário de início
+    from: '10:00'
+    # Horário de término
+    to: '18:00'
+  # Sistema da sacola de peixe
+  fishing-net:
+    # Limite padrão de peixes que poderá ser armazenado
+    # Recomendado: 30
+    # Deixe 0 para ser infinito
+    limit: 40
+    # Limite máximo de peixes que poderá ser armazenado
+    limit-max: 200
+    # Limite adquirido por upgrade na sacola
+    limit-per-level: 10
+    # Preços para upar a sacola de peixe
+    limit-prices:
+      price1:
+        provider: 'money'
+        amount: 100.0
+  # Sistema de sell-all
+  sell-all:
+    # Ativar o sell-all em async
+    async: true
+    # Fechar o menu ao vender tudo
+    close-menu: true
+    # Limite de itens vendidos pelo sell-all
+    # Recomendado: 40
+    # Deixe 0 para ser infinito
+    limit: 40
+  # Fechar o menu ao vender
+  sell-close-menu: true
+
+# Sistema de scoreboard
+scoreboard:
+  enabled: true
+  title: '&b&lyStore'
+  # Delay para atualizar a scoreboard (em segundos)
+  delay: 1
+  lines:
+    - '&7         Área de pesca'
+    - ''
+    - '&f Status: &r{status}'
+    - ''
+    - '&f Peixes pescados: &7{fished}'
+    - '&f Tempo pescando: &7{time}'
+    - ''
+    - '&e Vara'
+    - '&8  ❘&f Nível: &7{level}'
+    - '&8  ❘&f Corais: &7{coin_has}/{coin_next}'
+    - '&8  ❘ {progressbar}'
+    - ''
+    - '&f Coins: &2$&a{money}'
+    - ''
+    - '&b    ystoreplugins.com.br'
+
+# Itens padrões definidos para o jogador.
+items:
+  rod-slot: 1
+  # Item utilizado para que o jogador veja os drops (peixes) armazenados/pescados
+  fishing-net:
+    material: '4cb3acdc11ca747bf710e59f4c8e9b3d949fdd364c6869831ca878f0763d1787'
+    slot: 4
+    name: '&bSacola de peixes'
+    lore:
+      - '&7Clique para gerenciar os'
+      - '&7seus peixes pescados.'
+  # Item utilizado para que o jogador saia da pesca.
+  exit:
+    material: 'BARRIER:0'
+    slot: 7
+    name: '&cSair da pesca'
+    lore:
+      - '&7Clique para sair da'
+      - '&7área de pesca.'
+  # Item utilizado para que o jogador saia da pesca.
+  classes:
+    material: 'LEATHER_CHESTPLATE:0'
+    slot: 6
+    name: '&bClasses'
+    lore:
+      - ' &7As classes irão te dar mais'
+      - ' &7chance e coins ao pescar!'
+      - ''
+      - '&fSua classe: &7{classe}'
+      - ''
+      - '&aClique para upar sua classe'
+  # Siga o exemplo abaixo para criar itens custom
+  #custom:
+  #  material: BARRIER:0
+  #  slot: 0
+  #  name: ''
+  #  lore: []
+  #  left-command: ''
+  #  right-command: ''
+  #  left-perm: 'ypesca.left-perm.custom'
+  #  right-perm: 'ypesca.right-perm.custom'
+
+# Sistema de comandos na pesca
+commands:
+  # Lista de comandos permitidos na pesca
+  allowed: [ '/g', '/l', '/pesca' ]
+  # Lista de comandos para sair da pesca
+  exit: [ '/sair', '/spawn', '/exit' ]
+
+# Sistema de barra de progresso
+progress-bar:
+  amount: 10
+  symbol: ':'
+  color-full: '&a'
+  color-empty: '&7'
+
+# Sistema de status
+status:
+  fishing: '&aPescando... {delay_now}s'
+  not-fishing: '&cInativo'
+
+# Sistema de boosters
+# Você pode criar quantos boosters quiser
+boosters:
+  booster1:
+    time: 60 # em segundos
+    bonus: 10.0 # porcentagem a mais
+    items:
+      interact:
+        material: 'EXP_BOTTLE:0'
+        name: '&aBônus de pesca'
+        lore:
+          - '&7Este booster permite que você tenha'
+          - '&7mais chances de pescar algo melhor.'
+          - ''
+          - '&aTempo: &e{time}'
+          - '&aPorcentagem: &e{bonus}%'
+          - ''
+      menu:
+        material: 'EXP_BOTTLE:0'
+        name: '&aBônus de pesca'
+        lore:
+          - '&aVocê possui um booster ativo'
+          - ''
+          - '&7Este booster permite que você tenha'
+          - '&7mais chances de pescar algo melhor.'
+          - ''
+          - '&aTempo: &e{time}'
+          - '&aPorcentagem: &e{bonus}%'
+          - ''
+
+# Sistema de bônus
+# Você pode criar quantos bônus quiser
+# Será dado o bônus ao vender para a loja do servidor.
+bonus:
+  member:
+    priority: 1
+    # Permissão para ser reconhecido
+    permission: 'ypesca.bonus.member'
+    # Quantia do bônus em %
+    bonus: 10.0
+
+# Item de coin ativável
+usable-item:
+  material: '1ba16c3890af39c3f2d576586cff443de07dad32b2315e2ff6f0d5d6a3c663dd'
+  name: '&b+{amount} Corais'
+  lore:
+    - ''
+    - '&fQuantia: &b{amount}'
+    - ''
+    - '&7Clique com botão direito para ativar.'
+    - ''
+    - '&7Clique com shift + botão direito para compactar'
+    - '&7todos os seus corais no inventário em 1 só.'
+    - ''
+
+# Sistema de formatos de money e quantia
+format:
+  type: 'LETTER' # Tipos: LETTER - NUMBER
+  max-decimals: 4
+  formats:
+    - ''
+    - ''
+    - 'K'
+    - 'M'
+    - 'B'
+    - 'T'
+    - 'Q'
+    - 'QQ'
+    - 'S'
+    - 'SS'
+    - 'O'
+    - 'N'
+    - 'D'
