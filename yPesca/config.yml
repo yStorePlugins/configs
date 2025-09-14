@@ -76,6 +76,9 @@ classes: true
 # Para evoluir as classes ele deverá seguir a ordem delas?
 classes-ordered: true
 
+# Ativar o pvp na área de pesca
+pvp: false
+
 # Sistemas quando estiver pescando
 fishing:
   # Raio de detecção de água perto ou quando clicar para pescar
