@@ -95,7 +95,16 @@ Setas:
     Glow: true
     Name: '&cVoltar'
     Lore:
-      - '&7Clique para voltar ao menu ou página anterior.'
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar a página anterior.'
   Proximo:
     CustomSkull: false
     URL: ''
@@ -105,6 +114,7 @@ Setas:
     Name: '&aPróxima'
     Lore:
       - '&7Clique para ir à próxima página.'
+
 # Lores das recompensas
 Lores:
   Coletar:
