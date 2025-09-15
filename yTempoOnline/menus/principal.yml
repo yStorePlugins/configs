@@ -1,0 +1,39 @@
+Nome: '&7Tempo online'
+Tamanho: 27
+Itens:
+   Perfil: # primeiro
+      Slot: 11
+      CustomSkull: true
+      URL: '{player}'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&f{player}'
+      Lore:
+      - ''
+      - '&fSeu tempo online total:'
+      - '&a -> &e{tempo}'
+      - ''
+      - '&fTempo online desde o último login:'
+      - '&a -> &e{tempo_atual}'
+      - ''
+   Missoes: #segundo
+      Slot: 13
+      CustomSkull: false
+      URL: ''
+      ID: 54
+      Data: 0
+      Glow: false
+      Name: '&aMissões'
+      Lore:
+      - '&7Clique para gerenciar as missões.'
+   Top: #terceiro
+      Slot: 15
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: false
+      Name: '&aTOP'
+      Lore:
+      - '&7Clique para ver os jogadores com maior tempo online.'

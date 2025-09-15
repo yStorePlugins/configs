@@ -1,0 +1,14 @@
+Nome: '&8TOP Tempo'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 30
+VoltarSlot: 18
+ProximoSlot: 17
+
+Item:
+   Name: '&a{pos}º &f{player}'
+   Lore:
+   - ''
+   - '&fTempo: &e{tempo}'
+   - '&fPosição: &a{pos}º'
+   - ''

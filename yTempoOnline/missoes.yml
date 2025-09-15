@@ -1,0 +1,50 @@
+Missoes:
+   1:
+      Display:
+         material: EMERALD
+         Glow: true
+         Name: '&8Pedra'
+         Lore: 
+         - '&7Fique online por &f1 minuto &7e ganhe'
+         - '&f  &a1 pão.'
+      Item: #se o ( Command -> Use ) tiver true, isso não vai funcionar
+         material: STONE
+         Glow: true
+         Name: '&8Pedra'
+         Amount: 64
+         Lore:
+         - '&aTu ganhou uma pedra.'
+         Enchants: #se não desejar, deixe assim:
+         - ''
+      Tempo: 60 #em segundos
+      # Permissão para coletar a recompensa
+      Permissao: ''
+      Mensagem: '&aVocê coletou as recompensas do desafio 1.'
+      Mensagem-Perm: '&cVocê não permissão para coletar o desafio 1.'
+      Command:
+         Use: false
+         List: #se o ( Use ) tiver false, isso não funcionar.
+         - 'give {player} stone 1'
+   2:
+      Display:
+         material: EMERALD
+         Glow: true
+         Name: '&8Diamantes'
+         Lore: 
+         - '&7Fique online por &f1 hora &7e ganhe'
+         - '&7 -> &a2 diamantes.'
+      Item: #se o ( Command -> Use ) tiver true, isso não vai funcionar
+         material: STONE
+         Glow: true
+         Name: '&8Pedra'
+         Amount: 64
+         Lore:
+         - ''
+         Enchants: #se não desejar, deixe assim:
+         - ''
+      Tempo: 3600 #em segundos
+      Permissao: ''
+      Command:
+         Use: true
+         List: #se o ( Use ) tiver false, isso não funcionar.
+         - 'give {player} diamond 2'

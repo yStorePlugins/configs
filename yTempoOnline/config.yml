@@ -1,0 +1,118 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Comando: 'tempo'
+  Aliases: [ ]
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+#Coloque Legendchat, OpeNChat (ou nChat), UltimateChat, NoxusChat ou deixe Automatico para o auto-detect
+Plugin de chat: 'Automatico'
+
+# Tag que será dada ao TOP 1 do tempo online
+Tag: '&e[VICIADO]'
+# Tag que retornará as horas no chat
+# Placeholder {horas_raw} -> retorna sem o "h" (ex: 1)
+# Placeholder {horas} -> retorna com o "h" (ex: 1h)
+TagHoras: '&e[{horas}]'
+
+# Proibir staffs poderem contar tempo
+# permissão para não contar: ytempoonline.bypass (apenas se estiver ativado abaixo)
+ProibirStaff: true
+
+# Limpar as missões coletadas ao resetar pelo /tempo reset
+LimparColetadasReset: true
+# Limite de usuários que o TOP irá retornar
+TopLimite: 7
+
+# Resetar o tempo atual (de recompensas diretas) ao deslogar do servidor
+Logout-Reset-Actual: false
+
+# Recompensas diretas vai pegar o Tempo Atual?
+Tempo-Atual-Recompensas: true
+
+# Sistema de atualizar o menu
+MenuUpdater:
+  Ativar: true
+  Tempo: 20 # em ticks
+# NPC do tempo
+NPC:
+  Id: 218217
+  Skin: 'ySpeed_'
+  Altura: 3.1
+  Holograma:
+    - '&a&lTempo Online'
+    - '&fJogue no servidor e ganhe recompensas'
+    - '&7(/tempo)'
+  Mensagens:
+    Setado: '&a&lSUCESSO! &aNPC do tempo setado com sucesso.'
+    Removido: '&a&lSUCESSO! &aNPC do tempo removido com sucesso.'
+    Nao removido: '&c&lERRO! &aNPC do tempo não está setado.'
+# Mensagens do plugin  
+Mensagens:
+  Permissao: '&c&lERRO! &cVocê não tem permissão para isto.'
+  Nao encontrado: '&c&lERRO! &cJogador não encontrado.'
+  Numero: '&cO argumento não é um número.'
+  Alterado: '&aTempo do jogador &f{player} &aalterado para &f{tempo}&a.'
+  Tempo jogador: |
+    <nl>
+    &aO jogador &7{player}&a está online há &8-> &f{tempo}&7.
+    &aVisto por último: &7{data} às {hora}&a.
+    <nl>
+  Resetou: '&aVocê resetou o tempo do jogador &7{player}&a.'
+  Tempo:
+    - ''
+    - '&a&lTEMPO! &aVocê recebeu uma recompensa de tempo'
+    - '&ause &e/tempo &apara recolher.'
+    - ''
+  Ajuda:
+    - ''
+    - '&b-> Comandos disponíveis <-'
+    - ''
+    - ' &f> &7/tempo'
+    - ' &f> &7/tempo <player>'
+    - ' &f> &7/tempo resetar <player>'
+    - ' &f> &7/tempo setnpc'
+    - ' &f> &7/tempo delnpc'
+    - ''
+# Setas dos menus
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu ou página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'
+# Lores das recompensas
+Lores:
+  Coletar:
+    Sobrepor: false
+    Lore:
+      - ''
+      - '&aClique para coletar essa recompensa'
+  Ja coletou:
+    Sobrepor: true
+    Lore:
+      - '&cVocê já coletou essa recompensa.'
