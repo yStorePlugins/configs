@@ -1,0 +1,256 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Liga'
+  size: 36
+  items:
+    profile-slot: 10
+    clan-slot: 19
+    rewards-slot: 20
+    participate-slot: 13
+    leagues-slot: 24
+    market-slot: 16
+    profile:
+      material: '{player}'
+      name: '&eSuas informações'
+      lore:
+        - '&7Veja as suas informações'
+        - '&7referente a todas as ligas do'
+        - '&7servidor.'
+        - ''
+        - ' &fLigas participadas: &a{leagues}'
+        - ' &fPontos ganhos &8(total)&f: &a{total_points}'
+        - ''
+        - ' &fLigas ganhas: &b{wins}'
+        - ''
+        - ' &fMortes na liga atual: &c{deaths}'
+        - ' &fKills na liga atual: &c{kills}'
+        - ''
+        - ' &fMedalhas ganhas: {medals} &8({medal_amount}/2)'
+        - ''
+    clan:
+      material: 'c09741fca109c4cb0b5efaa0634616503051a199e1d44e4e1149ede0bdc49c8a'
+      name: '&eInformações do Clan'
+      lore:
+        - '&7Veja as informações do seu clan'
+        - '&7referente a todas as ligas do'
+        - '&7servidor.'
+        - ''
+        - ' &fPontos atuais: &a{points}'
+        - ' &fRank atual: &c{rank}'
+        - ' &fLiga atual: &c{league}'
+        - ''
+        - ' &fLigas participadas: &b{participated}'
+        - ' &fLigas ganhas: &b{wins}'
+        - ''
+        - ' &fMaior col.: &b{highest_clan}º'
+        - ' &fMaior col. &8(liga atual)&f: &b{highest_clan_league}º'
+        - ''
+    clan-no-has:
+      material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+      name: '&eInformações do Clan'
+      lore:
+        - '&cVocê não possui um clan'
+    leagues:
+      material: 'BOOK'
+      name: '&eLigas de Clans'
+      lore:
+        - '&7Confira todas as ligas'
+        - '&7existentes no servidor.'
+        - ''
+        - '&aClique para acessar'
+    rewards:
+      material: 'cf128540839bd1b70930353112a3b8d295713c0eece615fd4a0340a00d8d55e2'
+      name: '&6Recompensas'
+      lore:
+        - '&7Gerencie as recompensas'
+        - '&7que você ganhou.'
+        - ''
+        - ' &8▶ &fRecompensas: &7{rewards}'
+        - ''
+        - '&6Clique para gerenciar!'
+    participate-none:
+      material: 'BARRIER'
+      name: '&cNenhuma'
+      lore:
+        - ''
+        - '&7Nenhuma liga encontrada.'
+        - ''
+    market:
+      material: '533fc9a45be13ca57a78b21762c6e1262dae411f13048b963d972a29e07096ab'
+      name: '&eMercado da Liga'
+      lore:
+        - '&7Troque os pontos da liga (PDL)'
+        - '&7em itens exclusivos na nossa loja!'
+        - ''
+        - '&aClique para acessar.'
+  facing:
+    information:
+      slot: 25
+      material: '7ff8cf8ee2f233b172e162182cefac84b1b8e13d948c15dc892731bb2aba729d'
+      name: '&eInformações'
+      lore:
+        - '&7Veja quantos pontos você'
+        - '&7pode ganhar ao realizar'
+        - '&7certas ações no nosso servidor!'
+        - ''
+        - ' &f> Matar um jogador: &b1 ponto'
+        - ' &f> Upar de rank: &b1 ponto'
+        - ' &f> Ganhar eventos: &b1 ponto'
+        - ' &f> Matar mobs: &b0.3 ponto'
+        - ' &f> Matar bosses: &b0.5 ponto'
+        - ' &f> Quebrar blocos &7(mina)&f: &b0.1 ponto'
+        - ' &f> Quebrar plantações: &b0.1 ponto'
+        - ' &f> Pescar um peixe: &b0.3 ponto'
+        - ''
+        - ' &c> Morrer: -1 ponto'
+        - ' &c> Perder eventos: -1 ponto'
+        - ' &c> Expulsar jogador &8(durante a liga)&c: -1 ponto'
+        - ''
+
+# Menu de ligas
+main-leagues:
+  name: '&7Ligas'
+  size: 45
+  slots: [ 11, 12, 13, 14, 15 ]
+  previous-slot: 32
+  next-slot: 33
+  back-slot: 29
+
+# Menu de recompensas
+main-rewards:
+  name: '&7Ligas'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  #
+  empty-slot: 22
+  collect-slot: 50
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
+    collect:
+      material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+      name: '&eRecolher tudo'
+      lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+
+# Menu do mercado
+main-market:
+  name: '&8Liga'
+  size: 45
+  back-slot: 30
+  items:
+    permission-slot: 32
+    permission:
+      material: '7ff8cf8ee2f233b172e162182cefac84b1b8e13d948c15dc892731bb2aba729d'
+      name: '&ePermissões de acesso'
+      lore:
+        - '&7Gerencie os jogadores do seu clan'
+        - '&7que podem acessar o mercado da liga.'
+        - ''
+        - '&aClique para gerenciar.'
+
+# Menu de permissões do mercado
+market-permissions:
+  name: '&7Ligas'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  #
+  items:
+    player-on:
+      material: '{player}'
+      name: '&a{player}'
+      lore: [ '&7Este jogador consegue SIM acessar', '&7o mercado da liga.', '', '&cClique para não permitir.' ]
+    player-off:
+      material: '{player}'
+      name: '&a{player}'
+      lore: [ '&7Este jogador NÃO consegue acessar', '&7o mercado da liga.', '', '&aClique para permitir.' ]
+
+# Menu de clans participantes da liga
+league-clans:
+  name: '&7Ligas'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  #
+  items:
+    clan:
+      material: '{banner}'
+      name: '&a{league}'
+      lore:
+        - ''
+        - ' &7Clan: &f{clan_tag} &8- &f{clan_name}'
+        - ''
+        - ' &fPontuação total: &a{points} &8- &b{pos}º'
+        - ' &fJogador com maior pontuação &8(na liga)&f: &b{highest_actual_player} &8- &a{highest_actual_player_points}'
+        - ' &fJogador com maior pontuação &8(total)&f: &b{highest_player} &8- &a{highest_player_points}'
+        - ''
+        - '&aClique para ver mais detalhes.'
+
+# Menu de players do clan
+league-clan-players:
+  name: '&7Ligas'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  #
+  items:
+    player:
+      material: '{player}'
+      name: '&b{player}'
+      lore:
+        - ''
+        - ' &7Clan: &f{clan_tag} &8- &f{clan_name}'
+        - ''
+        - ' &eAuditoria de pontos:'
+        - ' &f> Abates: &a{kills} pontos'
+        - ' &f> Ranks evoluídos: &a{yrankup} pontos'
+        - ' &f> Eventos ganhos: &a{yeventos} pontos'
+        - ' &f> Mobs mortos: &a{mobs} pontos'
+        - ' &f> Bosses mortos: &a{bosses} pontos'
+        - ' &f> Blocos quebrados: &a{blocks_broken} pontos'
+        - ' &f> Plantações quebradas: &a{farm_broken} pontos'
+        - ' &f> Peixes pescados: &a{fished} pontos'
+        - ' &f> Vips ativados: &a{yvips} pontos'
+        - ''
+        - ' &f> Mortes: &c-{deaths} pontos'
+        - ' &f> Eventos perdidos: &c-{yeventos_lose} pontos'
+        - ' &f> Banimentos: &c-{punish_ban} pontos'
+        - ' &f> Mutes: &c-{punish_mute} pontos'
+        - ''
+        - '&eTotal de pontos: &a{points}'
+        - ''

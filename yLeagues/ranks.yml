@@ -1,0 +1,28 @@
+ranks:
+  silver1:
+    # Ordem do rank
+    order: 0
+    # Tag do rank
+    display: '&7[>]'
+    # Pontos necessários
+    points: 0
+  silver2:
+    order: 1
+    display: '&7[>>]'
+    points: 10
+  silver3:
+    order: 2
+    display: '&7[>>>]'
+    points: 20
+  silver4:
+    order: 3
+    display: '&7[>>>>]'
+    points: 40
+  silver5:
+    order: 4
+    display: '&7[(>>>>]'
+    points: 80
+  silver6:
+    order: 5
+    display: '&7[(*>>>>]'
+    points: 160

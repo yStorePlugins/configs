@@ -1,0 +1,42 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/league &8- &7Abre o menu principal.
+    &a/league add &8- &7Adiciona pontos para um clan.
+    &a/league remove &8- &7Remove pontos de um clan.
+    &a/league set &8- &7Seta pontos para um clan.
+
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  just-leader: '&cApenas o líder do clan ({player}) pode ingressar a liga.'
+  no-points: '&cSeu clan precisa de {need_points} pontos para participar da liga. Atual: {points}'
+  no-previous: '&cSeu clan precisaria ter participado da liga {league} para participar desta.'
+  no-limit: '&cA liga chegou ao limite de clans participantes ({amount}).'
+  target-clan: '&cNenhum clan ou jogador encontrado com o nome {name}.'
+  target-has: '&cO jogador {player} não possui um clan.'
+  points-changed: '&aPontos do clan &f{clan}&a alterado para &f{points}&a.'
+  league-none: '&cNenhuma liga acontecendo.'
+  league-already: '&cA liga já foi encerrada.'
+  league-finished: '&cA liga foi encerrada.'
+  market-clan: '&cVocê precisa de um clan para acessar o mercado da liga.'
+  market-just-leader: '&cApenas o líder do clan ({player}) pode alterar as permissões de acesso.'
+  market-permission: '&cVocê não tem permissão para acessar o mercado da liga.'
+  market-need: '&cO seu clan precisa de {need_points} pontos para comprar. Atual: {points}.'
+  market-buy: '&aVocê comprou itens no mercado da liga por {points} pontos.'

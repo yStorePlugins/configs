@@ -1,0 +1,171 @@
+# Identificação necessária para a API de TOP do yPlugins
+yplugins-id: 'yleagues-iron'
+
+order: 1
+
+# Data de ínicio da liga
+start-date: '01/01/2020-10:00'
+
+# Data de término da liga
+end-date: '01/01/2028-10:00'
+
+# Nome da liga
+display: '&fLiga de Ferro'
+
+# Ícones nos menus
+icons:
+  finished:
+    material: 'IRON_INGOT'
+    name: '&fLiga de Ferro'
+    lore:
+      - ''
+      - ' &7Líderes:'
+      - '  &f> 1º {clan_1}: &a{amount_1}'
+      - '  &f> 2º {clan_2}: &a{amount_2}'
+      - '  &f> 3º {clan_3}: &a{amount_3}'
+      - ''
+      - '&cEsta liga já finalizou.'
+  current:
+    material: 'IRON_INGOT'
+    name: '&fLiga de Ferro'
+    lore:
+      - ''
+      - ' &7Líderes:'
+      - '  &f> 1º {clan_1}: &a{amount_1}'
+      - '  &f> 2º {clan_2}: &a{amount_2}'
+      - '  &f> 3º {clan_3}: &a{amount_3}'
+      - ''
+      - '&f Finaliza em: &b{end_time} &7({end_date}-{end_hour})'
+      - ''
+      - '&aEsta liga está ocorrendo.'
+  coming:
+    material: 'IRON_INGOT'
+    name: '&fLiga de Ferro'
+    lore:
+      - '&7Esta liga ainda será iniciada,'
+      - '&7não perca tempo e fique preparado'
+      - '&7para garantir sua participação.'
+      - ''
+      - '&f Inicia em: &b{start_time} &7({start_date}-{start_hour})'
+      - ''
+  participate:
+    material: 'IRON_INGOT'
+    name: '&fLiga de Ferro'
+    lore:
+      - '&7Participe da liga dos clans e'
+      - '&7garanta prêmios exclusivos.'
+      - ''
+      - ' &fPontos iniciais necessários: &b{points}'
+      - ' &fMoney necessário: &2$ &a{money}'
+      - ''
+      - ' &7Líderes Atuais:'
+      - '  &f> 1º {clan_1}: &a{amount_1}'
+      - '  &f> 2º {clan_2}: &a{amount_2}'
+      - '  &f> 3º {clan_3}: &a{amount_3}'
+      - ''
+      - '&aClique para participar.'
+  participating:
+    material: 'IRON_INGOT'
+    name: '&fLiga de Ferro'
+    lore:
+      - '&7Seu clan está participando desta liga'
+      - '&7e pode garantir prêmios exclusivos.'
+      - ''
+      - ' &7Líderes Atuais:'
+      - '  &f> 1º {clan_1}: &a{amount_1}'
+      - '  &f> 2º {clan_2}: &a{amount_2}'
+      - '  &f> 3º {clan_3}: &a{amount_3}'
+      - ''
+      - '&f Finaliza em: &b{end_time} &7({end_date}-{end_hour})'
+      - ''
+  no-clan:
+    material: 'IRON_INGOT'
+    name: '&fLiga de Ferro'
+    lore:
+      - '&7Você precisa entrar ou criar'
+      - '&7um clan para participar das ligas.'
+      - ''
+      - '&c Você não possui um clan.'
+      - ''
+
+participate:
+  # Limite de clans participando da liga
+  clan-limit: 10
+  # Quantidade mínima de pontos para ingressar na liga
+  min-initial-points: 10.0
+  # Liga anterior participada necessária para entrar nesta
+  # Deixe 0 caso não queira
+  previous-league: 0
+  # Inserir clans (que estão cadastrados no database do yLeagues) automaticamente na liga
+  insert-automatic: false
+  # Mensagem de compra
+  message:
+    private: '&aVocê pagou &f{money}&a para ingressar seu clan na liga de clans.'
+    broadcast: ''
+  # Preços para participar
+  prices:
+    price1:
+      provider: 'money'
+      amount: 1000.0
+
+win:
+  # Ganhar a liga quando atingir X pontos acumulados
+  # Caso não queira, deixe 0 (irá ganhar apenas na data de término)
+  amount: 100.0
+  # Resetar os pontos dos clans participantes ao finalizar a liga
+  reset: true
+  # Recompensas (serão dadas ao líder do clan)
+  # chance, recompensa
+  rewards:
+    - '100.0,reward1'
+
+# Mensagens do torneio
+messages:
+  start: |
+
+    &f&lLIGA DE FERRO: &aA liga COMEÇOU!
+
+  stop: |
+
+    &f&lLIGA DE FERRO: &aA liga acabou!
+    &bGanhador: &a{clan} com {amount} pontos!
+
+  stop-none: |
+
+    &f&lLIGA DE FERRO: &aA liga acabou!
+    &cNINGUÉM GANHOU!
+
+  rewards-give: |
+    &f&lLIGA DE FERRO: &aAs recompensas foram depositadas no correio de recompensas do líder &f{player}&a.
+
+# Sistema de mercado da liga
+market:
+  # Itens do mercado
+  items:
+    item1:
+      # Slot do item do menu
+      slot: 11
+      # Preço em pontos
+      price: 10.0
+      # Ícone no menu
+      display:
+        material: 'STONE'
+        name: '&cPedra Misteriosa'
+        lore:
+          - '&7Esta pedra irá lhe causar'
+          - '&7efeitos diferenciados.'
+          - ''
+          - ' &fPDL necessário: &b10'
+          - ''
+          - '&7Clique para comprar a pedra'
+      # Item que será dado
+      # Caso não queira, apague
+      item:
+        material: 'STONE'
+        amount: 64
+        name: '&cPedra Misteriosa'
+      # Comandos que serão dados
+      commands: []
+
+finished: false
+started: false

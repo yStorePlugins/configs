@@ -1,0 +1,119 @@
+#        _____                     _
+#  _   |_   _|__  _ __ _ __   ___(_) ___  ___
+# | | | || |/ _ \| '__| '_ \ / _ \ |/ _ \/ __|
+# | |_| || | (_) | |  | | | |  __/ | (_) \__ \
+#  \__, ||_|\___/|_|  |_| |_|\___|_|\___/|___/
+#  |___/
+#
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Sistemas gerais do plugin
+general:
+  # Apenas o líder conseguir clicar para participar da liga
+  just-leader: true
+  # Sistema de notificar o ganho de pontos (yDiscordHook)
+  discordhook:
+    enabled: true
+    channel: ''
+    # Placeholders disponíveis:
+    # {action}
+    # {player}
+    # {clan_tag}
+    # {clan_name}
+    # {points}
+    embed: ''
+  # Sistema de notificar o ganho de pontos em webhook
+  webhook:
+    enabled: true
+    # Placeholders disponíveis:
+    # {action}
+    # {player}
+    # {clan_tag}
+    # {clan_name}
+    # {points}
+    embed: 'earn'
+
+# Configuração do ganho de pontos
+points:
+  # Ao morrer
+  player-death: -1.0
+  # Ao matar um player
+  player-kill: 1.0
+  # Ao upar de rank
+  yrankup: 1.0
+  # Ao ganhar um evento
+  yeventos: 1.0
+  # Ao perder um evento
+  yeventos-lose: 1.0
+  # Ao kickar um jogador do clan (yClans)
+  yclans-kick: -1.0
+  # Ao ganhar um evento
+  yguerra: 1.0
+  # Ao matar um mob
+  yspawners: 0.3
+  # Ao matar um boss
+  ystackbosses: 0.5
+  # Ao matar um boss
+  ybosses: 0.5
+  # Ao quebrar um bloco
+  yminas: 0.1
+  # Ao quebrar um bloco
+  yminaspackets: 0.1
+  # Ao quebrar uma plantação
+  yplantacoes: 0.1
+  # Ao quebrar uma plantação
+  ycampo: 0.1
+  # Ao quebrar um bloco
+  yfloresta: 0.1
+  # Ao pescar um peixe
+  ypesca: 0.3
+  # Ao levar mute (yPunish)
+  punish-mute: -5.0
+  # Ao levar ban (yPunish e StormPunish)
+  punish-ban: -10.0
+
+# Sistema de medalhas
+medals:
+  # Maior número de mortes ao final da temporada
+  enemy-of-life: '&c[X]'
+  # Maior número de kills ao final da temporada
+  hard-to-kill: '&a[V]'

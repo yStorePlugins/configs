@@ -1,0 +1,31 @@
+options:
+  url: ''
+  username: 'yLeagues'
+
+embeds:
+  earn:
+    title: ':mailbox: + Pontos de Liga!'
+    thumbnail: ''
+    color: '#fff'
+    content: ''
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      player:
+        inline: false
+        header: 'Player'
+        content: '```{player}```'
+      clan:
+        inline: false
+        header: 'Clan'
+        content: '```{clan_tag}```'
+      action:
+        inline: false
+        header: 'Ação'
+        content: '```{action}```'
+      points:
+        inline: false
+        header: 'Ação'
+        content: '```{points}```'
