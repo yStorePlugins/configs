@@ -75,13 +75,13 @@ chats:
 # Sistema de comandos que serão executados em determinadas ações
 execute-commands:
   # Quando criar um clan
-  create: ''
+  create: []
   # Quando desfazer o clan
-  disband: ''
+  disband: []
   # Quando entrar num clan
-  enter: ''
+  enter: []
   # Quando sair dum clan
-  leave: ''
+  leave: []
 
 # Sistema de valores padrão
 default-values:
