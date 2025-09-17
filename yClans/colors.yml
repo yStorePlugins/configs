@@ -1,0 +1,169 @@
+#    ____      _
+#  / ___|___ | | ___  _ __ ___
+# | |   / _ \| |/ _ \| '__/ __|
+# | |__| (_) | | (_) | |  \__ \
+#  \____\___/|_|\___/|_|  |___/
+#
+
+# Sistema de cores
+colors:
+  0:
+    color: '&0'
+    item:
+      material: '967a2f218a6e6e38f2b545f6c17733f4ef9bbb288e75402949c052189ee'
+      name: '&aPreto'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: '967a2f218a6e6e38f2b545f6c17733f4ef9bbb288e75402949c052189ee'
+      name: '&aPreto'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  1:
+    color: '&1'
+    item:
+      material: '9f1e69ec52ab1e3bd185591c1642b5b74498e11a53140eff55f5321988fc996'
+      name: '&aAzul escuro'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: '9f1e69ec52ab1e3bd185591c1642b5b74498e11a53140eff55f5321988fc996'
+      name: '&aAzul escuro'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  2:
+    color: '&2'
+    item:
+      material: '2c9e601ed9198dbb34c51ddf323929f01a5f958ab11133e3e0407b698393b3f'
+      name: '&aVerde escuro'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: '2c9e601ed9198dbb34c51ddf323929f01a5f958ab11133e3e0407b698393b3f'
+      name: '&aVerde escuro'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  3:
+    color: '&3'
+    item:
+      material: 'db67772b93d4aba189ce2c78aa6e54181aea21f4b72ebcd97f62a3cf87e0a'
+      name: '&aCiano'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: 'db67772b93d4aba189ce2c78aa6e54181aea21f4b72ebcd97f62a3cf87e0a'
+      name: '&aCiano'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  4:
+    color: '&4'
+    item:
+      material: 'df4dc3c3753bf5b0b7f081cdb49b83d37428a12e4187f6346dec06fac54ce'
+      name: '&aVermelho escuro'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: 'df4dc3c3753bf5b0b7f081cdb49b83d37428a12e4187f6346dec06fac54ce'
+      name: '&aVermelho escuro'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  5:
+    color: '&5'
+    item:
+      material: 'a5fc2e5d75106d491154450152bf4223e9dc92916c52118f64a812436c736'
+      name: '&aRoxo'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: 'a5fc2e5d75106d491154450152bf4223e9dc92916c52118f64a812436c736'
+      name: '&aRoxo'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  6:
+    color: '&6'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&aLaranja'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&aLaranja'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  7:
+    color: '&7'
+    item:
+      material: '2a17e97037ce353f85f5c65df435d29449a88da4442e4361cf99abbe1f892fb'
+      name: '&aCinza'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: '2a17e97037ce353f85f5c65df435d29449a88da4442e4361cf99abbe1f892fb'
+      name: '&aCinza'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  8:
+    color: '&8'
+    item:
+      material: '608f323462fb434e928bd6728638c944ee3d812e162b9c6ba070fcac9bf9'
+      name: '&aCinza escuro'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: '608f323462fb434e928bd6728638c944ee3d812e162b9c6ba070fcac9bf9'
+      name: '&aCinza escuro'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  9:
+    color: '&9'
+    item:
+      material: '565e24eb655d507763254b4364e9fe3c36b7dba366c6347376f97bc97e5c0'
+      name: '&aMagenta'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: '565e24eb655d507763254b4364e9fe3c36b7dba366c6347376f97bc97e5c0'
+      name: '&aMagenta'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  a:
+    color: '&a'
+    item:
+      material: 'a7695f96dda626faaa010f4a5f28a53cd66f77de0cc280e7c5825ad65eedc72e'
+      name: '&aVerde claro'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: 'a7695f96dda626faaa010f4a5f28a53cd66f77de0cc280e7c5825ad65eedc72e'
+      name: '&aVerde claro'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  b:
+    color: '&b'
+    item:
+      material: '83d1c463756ca33c9d6cebd2423795d8a4d87e7194b503579e8e11225166fe'
+      name: '&aAzul claro'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: '83d1c463756ca33c9d6cebd2423795d8a4d87e7194b503579e8e11225166fe'
+      name: '&aAzul claro'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  c:
+    color: '&c'
+    item:
+      material: 'c2569cc67d6794beb03e2cb242bd107e49ee94c83d64c23b77c798a2cf1231c'
+      name: '&aVermelho claro'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: 'c2569cc67d6794beb03e2cb242bd107e49ee94c83d64c23b77c798a2cf1231c'
+      name: '&aVermelho claro'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  d:
+    color: '&d'
+    item:
+      material: '1e3dcdbeea35f7ecb16674ac6ffed7906775139e22c78bf7295386d3194e9f6'
+      name: '&aRosa'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: '1e3dcdbeea35f7ecb16674ac6ffed7906775139e22c78bf7295386d3194e9f6'
+      name: '&aRosa'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  e:
+    color: '&e'
+    item:
+      material: '29a030ca2b2c6fe67fe8097d3cd206969fc5c0017c60b6b40990c772a6f0ac0a'
+      name: '&aAmarelo'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: '29a030ca2b2c6fe67fe8097d3cd206969fc5c0017c60b6b40990c772a6f0ac0a'
+      name: '&aAmarelo'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']
+  f:
+    color: '&f'
+    item:
+      material: 'ad93117b9e180e0dc39e5e8a0508482cf1f60e446e022978fe0651a562a597f'
+      name: '&aBranco'
+      lore: ['', '&7A letra está: &r{color_letter}', '', '&7Clique com esquerdo para ALTERAR', '&7Clique com direito para escolher RANDOM']
+    select:
+      material: 'ad93117b9e180e0dc39e5e8a0508482cf1f60e446e022978fe0651a562a597f'
+      name: '&aBranco'
+      lore: ['', '&7A letra ficará: &r{color_letter}', '', '&7Clique para usar esta']

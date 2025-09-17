@@ -1,0 +1,400 @@
+#         ____ _
+#  _   _ / ___| | __ _ _ __  ___
+# | | | | |   | |/ _` | '_ \/ __|
+# | |_| | |___| | (_| | | | \__ \
+#  \__, |\____|_|\__,_|_| |_|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Ativar o sistema de menus do comando /clan
+clan-menu: true
+# Mundos em que o Friendly-Fire é sempre ativo
+always-active-ff: [ 'none' ]
+# Ativar o sistema de chat na proxy (Velocity e BungeeCord)
+proxy-chat: true
+
+# Ativar a troca do sistema de chat quando estiver no mohist
+# compatível apenas com: UltimateChat, nChat e Legendchat
+mohist-chat: false
+
+# Sistema de chats
+# Placeholders disponíveis:
+# {own_tag} - Retorna a tag customizada do jogador
+# {clan_tag} - Retorna a tag do clan
+# {clan_colortag} - Retorna a tag colorida do clan
+# {clan_name} - Retorna o nome do clan
+# {role} - Retorna o cargo do jogador
+# {role_symbol} - Retorna o símbolo do cargo do jogador
+# {player} - Retorna o nome co jogador
+# {message} - Retorna a mensagem enviada pelo jogador
+chats:
+  clan-format: '&b[C] &7[{clan_colortag}&7] &b{role} &f{player}: &7{message}'
+  ally-format: '&a[A] &7[{clan_colortag}&7] &b{role} &f{player}: &7{message}'
+  clan-spy-format: '&8[C] [{clan_colortag}&8] [{clan_name}] [{role}&8]{player}: {message}'
+  ally-spy-format: '&8[A] &8- [{clan_colortag}&8] [{clan_name}] [{role}&8]{player}: {message}'
+
+# Sistema de comandos que serão executados em determinadas ações
+execute-commands:
+  # Quando criar um clan
+  create: ''
+  # Quando desfazer o clan
+  disband: ''
+  # Quando entrar num clan
+  enter: ''
+  # Quando sair dum clan
+  leave: ''
+
+# Sistema de valores padrão
+default-values:
+  clan:
+    # Cor padrão das letras da tag
+    # O líder de cada clan poderá alterar posteriormente
+    tag-color: '&7'
+    # Descrição padrão do clan
+    # O líder de cada clan poderá alterar posteriormente
+    description: 'Nenhuma descrição configurada.'
+    # Quantia padrão de slots que um clan vai ter
+    max-players: 10
+    # Quantia padrão de slots de alianças que um clan vai ter
+    max-allies: 10
+    # Quantia padrão de slots de rivais que um clan vai ter
+    max-rivals: 10
+    # Quantia de linhas que um baú vai ter por padrão
+    chest-lines: 1
+    # O clan já vai ser criado e verificado automaticamente?
+    verified: false
+    # PRIVATE = Apenas jogadores convidados poderão entrar
+    # REQUEST = Jogadores poderão solicitar adesão ao clan
+    # PUBLIC = Jogadores poderão entrar livremente ao clan
+    # O líder de cada clan poderá alterar posteriormente
+    entry-type: 'PRIVATE'
+
+# Sistema do clan verificado
+verify:
+  # Bloquear o home quando não estiver verificado
+  home: true
+  # Bloquear o baú quando não estiver verificado
+  chest: true
+  # Bloquear o banco quando não estiver verificado
+  bank: true
+  # Bloquear o mercado quando não estiver verificado
+  market: true
+  # Bloquear mudar a cor da tag quando não estiver verificado
+  modtag: true
+  # Bloquear mudar o nome quando não estiver verificado
+  name: true
+  # Bloquear mudar a descrição quando não estiver verificado
+  description: true
+  # Bloquear aceitar/fazer alianças quando não estiver verificado
+  ally: true
+  # Bloquear fazer/receber rivalidades quando não estiver verificado
+  rival: true
+
+# Sistemas gerais
+general:
+  # Até quanto o clan poderá aumentar os slots
+  # disponíveis para convidar membros.
+  max-slots: 100
+  # Até quanto o clan poderá aumentar os slots
+  # disponíveis para fazer alianças.
+  max-ally-slots: 100
+  # Até quanto o clan poderá aumentar os slots
+  # disponíveis para fazer rivalidades.
+  max-rival-slots: 100
+  # Preço para criar um clan (Vault)
+  create-cost: 100.0
+  # Tempo online necessário para criar um clan (yTempoOnline) (segundos)
+  time-min: 0
+  # Enviar mensagem dos boletins ao logar no servidor
+  login-send-newsletters: true
+  # A tag vai ser forçada a ser minúscula ou maiúscula? Ou vai seguir o que o player digitou?
+  # Tipos:
+  # UPPER - Força a tag a ser maiúscula
+  # LOWER - Força a tag a ser minúscula
+  # NONE - Não interfere no que o jogador digitou
+  force-tag-case: 'NONE'
+  # Regex dos caracteres disponíveis para a TAG do clan
+  tag-regex: '[0-9a-zA-Z]*'
+  # Regex dos caracteres disponíveis para o NOME do clan
+  name-regex: '[0-9a-zA-Z _]*'
+  # Regex dos caracteres disponíveis para a DESCRIÇÃO do clan
+  description-regex: '[0-9a-zA-Z _]*'
+  # Regex dos caracteres disponíveis para a CUSTOM-TAG do jogador em um clan
+  own-tag-regex: '[0-9a-zA-Z _&§]*'
+  # Quantia máxima de caracteres que uma tag poderá ter
+  max-tag-length: 3
+  # Quantia mínima de caracteres que uma tag deverá ter
+  min-tag-length: 3
+  # Quantia máxima de caracteres que um nome poderá ter
+  max-name-length: 10
+  # Quantia mínima de caracteres que um nome deverá ter
+  min-name-length: 5
+  # Quantia máxima de caracteres que uma descrição poderá ter
+  max-description-length: 20
+  # Quantia mínima de caracteres que uma descrição deverá ter
+  min-description-length: 10
+  # Quantia máxima de caracteres que uma custom_tag poderá ter
+  max-own-tag-length: 20
+  # Quantia mínima de caracteres que uma custom_tag deverá ter
+  min-own-tag-length: 10
+  # Quantia máxima de caracteres que uma mensagem de boletim poderá ter
+  max-newsletter-length: 100
+  # Contabilizar as kills civilian no kdr
+  kdr-kills-civilian: true
+  # Contabilizar as kills neutral no kdr
+  kdr-kills-neutral: true
+  # Contabilizar as kills rival no kdr
+  kdr-kills-rival: true
+  # Cores permitidas nas tags
+  allowed-colors: ['&0', '&1', '&2', '&3', '&4', '&5', '&6', '&7', '&8', '&9', '&a', '&b', '&c', '&d', '&e', '&f']
+  # Palavras proibidas no nome do clan
+  # Coloque em minúsculo
+  name-blocked-words: []
+  # Tags proibidas de serem usadas
+  # Coloque em minúsculo
+  tag-blocked: ['stf', 'tsj', 'tse', 'gov', 'tcu']
+  # Quantia máxima de linhas que o baú pode ter
+  # Não pode ser maior que 6 (limite do mine)
+  max-chest-lines: 6
+  # Preço para expandir o baú
+  chest-expand-money: 100.0
+  # Habilitar o uso de teclas numéricas no baú
+  chest-numkeys: false
+  # Habilitar o uso de shift no baú
+  chest-shift: false
+  # Habilitar o uso de criativo no baú
+  chest-creative: false
+  # Prevenir de desfazer o clan com money no banco
+  prevent-disband-money: true
+  # Mundos em que não irá contabilizar KDR
+  kdr-world-blacklist: []
+  # Mundos em que não poderá setar a base do clan
+  home-world-blacklist: []
+  # Contabilizar mortes naturais no KDR
+  kdr-natural-death: true
+  # Desativar o spy ao deslogar
+  spy-quit-disable: false
+  # Mundos em que o sistema de fly irá funcionar
+  fly-world-whitelist: [ 'PlotWorld' ]
+  # Delay para "criar/entrar" em um clan após sair de um
+  # em segundos
+  exit-delay: 3600
+
+# Sistema de kills
+kills:
+  # Ativar o sistema de anti-free-kill
+  anti-free-kill: true
+  # Eventos que serão executados ao matar um civil
+  civilian:
+    # Money que o jogador irá receber
+    money: 1.0
+    # Comando que irá executar
+    command: ''
+  # Eventos que serão executados ao matar um neutro
+  neutral:
+    # Money que o jogador irá receber
+    money: 3.0
+    # Comando que irá executar
+    command: ''
+  # Eventos que serão executados ao matar um rival
+  rival:
+    # Money que o jogador irá receber
+    money: 5.0
+    # Comando que irá executar
+    command: ''
+
+# Sistema de itens especiais
+special-items:
+  # Item para o resetkdr
+  reset-kdr:
+    material: 'NETHER_STAR'
+    name: '&aReset KDR'
+    lore: ['&7Ative para resetar seu KDR.']
+  # Item para expandir baú
+  expand-chest:
+    material: '95732d3e57b9a62159b35d2754574452a32b4c221fc4fd363bff522ff04a577e'
+    name: '&aExpandir baú'
+    lore: ['&7Ative para expandir o baú do clan em 1 linha.']
+  # Item para expandir vagas de membros
+  expand-member:
+    material: 'BRICK'
+    name: '&aExpandir vagas de membros'
+    lore: ['&7Ative para expandir a vaga de membros em 1.']
+  # Item para expandir vagas de aliados
+  expand-ally:
+    material: 'QUARTZ'
+    name: '&aExpandir vagas de aliados'
+    lore: ['&7Ative para expandir a vaga de aliados em 1.']
+  # Item para expandir vagas de rivais
+  expand-rival:
+    material: 'NETHER_STALK'
+    name: '&aExpandir vagas de rivais'
+    lore: ['&7Ative para expandir a vaga de rivais em 1.']
+  # Item para habilitar o fly nas plots
+  fly:
+    material: 'FEATHER'
+    name: '&aHabilitar o FLY nas plots'
+    lore: ['&7Ative para permitir voar nas plots', '&7dos membros dos clans.']
+
+# Sistema de tipos de clan
+clan-type:
+  public: 'Público'
+  semi-public: 'Semi-Público'
+  private: 'Privado'
+
+# Sistema de cargos
+roles:
+  nothing:
+    display-name: 'Nenhum'
+    symbol: ''
+  member:
+    display-name: 'Membro'
+    symbol: '&9-'
+  trusted:
+    display-name: 'Confiável'
+    symbol: '&b='
+  captain:
+    display-name: 'Capitão'
+    symbol: '&e+'
+  leader:
+    display-name: 'Líder'
+    symbol: '&c#'
+
+# Sistema de boletins
+newsletters:
+  create:
+    message: '&bO jogador &f{player} &bcriou o clan {clan_tag} - {clan_name}.'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&aClan criado'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+  join:
+    message: '&bO jogador &f{player} &bentrou para o clan {clan_tag}.'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&aJogador aderiu'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+  leave:
+    message: '&bO jogador &f{player} &bsaiu do clan {clan_tag}.'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&aJogador saiu'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+  kicked:
+    message: '&bO jogador &f{player} &bfoi expulso por &f{kicker}&b.'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&aJogador kickado'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+  banner:
+    message: '&bO jogador &f{player} &bmudou o banner do clan.'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&aMudança de banner'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+  name:
+    message: '&bO jogador &f{player} &balterou o nome do clan para {clan_name}.'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&aMudança de nome'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+  description:
+    message: '&bO jogador &f{player} &balterou a descrição do clan para {clan_description}.'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&aMudança de descrição'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+  leadership:
+    message: '&bO jogador &f{player} &btransferiu a liderança do clan para o jogador &f{player_to}&b.'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&aTransferência de liderança'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+  message:
+    message: '{message}'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&a{player}'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+
+# Sistema de placeholders no chat
+chat-placeholders:
+  tag: '&7[{tag}]'
+  colortag: '&7[{tag}&7]'
+  name: '&7[{name}&7]'
+  role: ' {role} '
+  symbol: ' {role_symbol} '
+
+# Sistema de placeholders custom
+custom-placeholders:
+  custom1:
+    # O formato ficará: %yclans_<placeholder>%
+    # Por exemplo: %yclans_formatted_tag%
+    placeholder: 'formatted_tag'
+    from: '%yclans_has%'
+    return-empty: '&7Sem clan'
+    return-has: '%yclans_clan_tag%'
+  custom2:
+    # Use: %yclans_owntag_formatted%
+    placeholder: 'owntag_formatted'
+    from: '%yclans_own_tag%'
+    return-empty: '%yclans_clan_tag%'
+    return-has: '%yclans_own_tag%'
+
+# Sistema de formatos de money e quantia
+format:
+  type: 'LETTER' # Tipos: LETTER - NUMBER
+  max-decimals: 4
+  formats:
+    - ''
+    - ''
+    - 'K'
+    - 'M'
+    - 'B'
+    - 'T'
+    - 'Q'
+    - 'QQ'
+    - 'S'
+    - 'SS'
+    - 'O'
+    - 'N'
+    - 'D'

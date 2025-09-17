@@ -1,0 +1,31 @@
+#   __  __            _        _
+# |  \/  | __ _ _ __| | _____| |_
+# | |\/| |/ _` | '__| |/ / _ \ __|
+# | |  | | (_| | |  |   <  __/ |_
+# |_|  |_|\__,_|_|  |_|\_\___|\__|
+#
+
+menu:
+  name: '&8{clan_tag} - {clan_name}'
+  size: 27
+  back-slot: 9
+
+items:
+  resetkdr:
+    prices:
+      price1:
+        display: 'Money'
+        type: 'Clan_Money' #tipos: Money, Clan_Money, plugin de pontos
+        price: 10000.0
+    slot: 11
+    display:
+      material: 'NETHER_STAR'
+      name: '&aReset KDR'
+      lore: ['&7Este item permite que você resete o seu KDR', '', '&fPreço: &2$&a10K', '']
+      amount: 1
+    #item-give: {}
+    commands: ['clan daritemespecial {player} resetkdr 1']
+    messages:
+      actionbar: ''
+      chat: '&bVocê comprou um &fReset-KDR&b no mercado do clan.'
+      title: ''

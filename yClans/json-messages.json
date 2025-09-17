@@ -1,0 +1,77 @@
+{
+  "clan_invite": {
+    "text": "\n§bVocê recebeu um convite do jogador §f{player}§b para integrar ao clan §f[{clan_colortag}§f] {clan_name}§b.\n§bClique ",
+    "extra":[
+      {
+        "text": "§a§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/clan aceitar {clan_tag}"
+        }
+      },
+      {
+        "text": "§b para aceitar e "
+      },
+      {
+        "text": "§c§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/clan negar {clan_tag}"
+        }
+      },
+      {
+        "text": "§b para negar.\n"
+      }
+    ]
+  },
+  "clan_ally_invite": {
+    "text": "\n§bVocê recebeu um convite de aliança do clan §f[{clan_colortag}§f] {clan_name}§b.\n§bClique ",
+    "extra":[
+      {
+        "text": "§a§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/clan ally aceitar {clan_tag}"
+        }
+      },
+      {
+        "text": "§b para aceitar e "
+      },
+      {
+        "text": "§c§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/clan ally negar {clan_tag}"
+        }
+      },
+      {
+        "text": "§b para negar.\n"
+      }
+    ]
+  },
+  "clan_solicitation": {
+    "text": "\n§bO jogador §f{player}§b está solicitando para aderir ao clan.\n§bClique ",
+    "extra":[
+      {
+        "text": "§a§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/clan solicitacoes aceitar {player}"
+        }
+      },
+      {
+        "text": "§b para aceitar e "
+      },
+      {
+        "text": "§c§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/clan solicitacoes negar {player}"
+        }
+      },
+      {
+        "text": "§b para negar.\n"
+      }
+    ]
+  }
+}

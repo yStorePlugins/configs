@@ -1,0 +1,489 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+# Anúncios à todos do servidor
+announces:
+  join:
+    title: ''
+    actionbar: '&bO jogador &f{player}&b entrou ao clan &f{clan_colortag}&b.'
+    chat: '&bO jogador &f{player}&b entrou ao clan &f{clan_colortag}&b.'
+  leave:
+    title: ''
+    actionbar: '&bO jogador &f{player}&b saiu do clan &f{clan_colortag}&b.'
+    chat: '&bO jogador &f{player}&b saiu do clan &f{clan_colortag}&b.'
+  create:
+    title: ''
+    actionbar: '&bO clan &f{clan_colortag}&b foi criado pelo jogador &f{player}&b.'
+    chat: '&bO clan &f{clan_colortag}&b foi criado pelo jogador &f{player}&b.'
+  disband:
+    title: ''
+    actionbar: '&bO clan &f{clan_colortag}&b foi desfeito.'
+    chat: '&bO clan &f{clan_colortag}&b foi desfeito.'
+
+actionbar:
+  not-cancelled: '&cA operação ainda não foi cancelada.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  help: |
+    <nl>
+    &bComandos do plugin:
+    <nl>
+    &b-> &f/clan &8-&7 Abre o menu principal
+    &b-> &f/clan online &8-&7 Mostra os clans online
+    &b-> &f/clan top &8-&7 Mostra o top clans
+    &b-> &f/clan info [player/clan] <nome> &8-&7 Mostra as informações de um clan/player
+    &b-> &f/clan convites &8-&7 Mostra os convites para aderir à um clan
+    &b-> &f/clan criar <tag> <nome> &8-&7 Cria um novo clan
+    &b-> &f/clan solicitar <clan> &8-&7 Solicita para entrar em um clan
+    &b-> &f/clan aceitar <clan> &8-&7 Aceita o convite de um clan
+    &b-> &f/clan negar <clan> &8-&7 Nega o convite de um clan
+    &b-> &f/clan sair &8-&7 Sai de um clan
+    &b-> &f/clan desfazer &8-&7 Desfaz de um clan
+    <nl>
+    &b-> &f/clan convidar <player> &8-&7 Convida um player ao clan
+    &b-> &f/clan kickar <player> &8-&7 Kicka um player do clan
+    &b-> &f/clan membros &8-&7 Mostra os membros do clan
+    &b-> &f/clan boletins &8-&7 Mostra os boletins do clan
+    &b-> &f/clan transferir <player> &8-&7 Transferir a liderança do clan
+    &b-> &f/clan modbanner &8-&7 Modifica o banner do clan
+    &b-> &f/clan resetbanner &8-&7 Reseta o banner do clan
+    &b-> &f/clan moddescription &8-&7 Modifica a descrição do clan
+    &b-> &f/clan modname &8-&7 Modifica o nome do clan
+    &b-> &f/clan modtag &8-&7 Modifica a tag do clan
+    &b-> &f/clan modowntag &8-&7 Modifica a tag de um jogador
+    &b-> &f/clan modrole <player> &8-&7 Modifica o cargo de um jogador
+    &b-> &f/clan roleperm &8-&7 Modifica as permissões de um cargo
+    &b-> &f/clan roles &8-&7 Mostra os cargos do clan
+    &b-> &f/clan solicitacoes &8-&7 Mostra as solicitações de adesão ao clan
+    &b-> &f/clan mercado &8-&7 Abre o mercado do clan
+    &b-> &f/clan money &8-&7 Abre o banco do clan
+    &b-> &f/clan money depositar &8-&7 Deposita uma quantia no banco no clan
+    &b-> &f/clan money sacar &8-&7 Saca uma quantia do banco do clan
+    &b-> &f/clan money historico &8-&7 Mostra o histórico do banco do clan
+    &b-> &f/clan bau &8-&7 Abre o baú do clan
+    &b-> &f/clan bau expandir &8-&7 Expande o baú do clan
+    &b-> &f/clan bau historico &8-&7 Mostra o histórico do baú do clan
+    &b-> &f/clan base &8-&7 Vai até a base do clan
+    &b-> &f/clan base setar &8-&7 Seta o local da base do clan
+    &b-> &f/clan base deletar &8-&7 Deleta o local da base do clan
+    &b-> &f/clan base <clan> &8-&7 Vai até a base de outro clan
+    &b-> &f/clan ff membros &8-&7 Alterna o fogo amigo entre membros
+    &b-> &f/clan ff aliados &8-&7 Alterna o fogo amigo entre aliados
+    &b-> &f/clan rival &8-&7 Mostra os rivais do clan
+    &b-> &f/clan rival add <clan> &8-&7 Adiciona rivalidade com um clan
+    &b-> &f/clan rival remove <clan> &8-&7 Remove rivalidade com um clan
+    &b-> &f/clan ally &8-&7 Mostra os aliados do clan
+    &b-> &f/clan ally add <clan> &8-&7 Envia um convite de aliança
+    &b-> &f/clan ally remove <clan> &8-&7 Remove uma aliança
+    &b-> &f/clan ally aceitar <clan> &8-&7 Aceita o convite de aliança
+    &b-> &f/clan ally negar <clan> &8-&7 Nega o convite de aliança
+    <nl>
+    &b-> &f/c &8-&7 Fala no chat do clan
+    &b-> &f/a &8-&7 Fala no chat de aliados
+    <nl>
+  help-admin: |
+    <nl>
+    &bComandos do plugin:
+    <nl>
+    &b-> &f/clan &8-&7 Abre o menu principal
+    &b-> &f/clan online &8-&7 Mostra os clans online
+    &b-> &f/clan top &8-&7 Mostra o top clans
+    &b-> &f/clan info [player/clan] <nome> &8-&7 Mostra as informações de um clan/player
+    &b-> &f/clan convites &8-&7 Mostra os convites para aderir à um clan
+    &b-> &f/clan criar <tag> <nome> &8-&7 Cria um novo clan
+    &b-> &f/clan solicitar <clan> &8-&7 Solicita para entrar em um clan
+    &b-> &f/clan aceitar <clan> &8-&7 Aceita o convite de um clan
+    &b-> &f/clan negar <clan> &8-&7 Nega o convite de um clan
+    &b-> &f/clan sair &8-&7 Sai de um clan
+    &b-> &f/clan desfazer &8-&7 Desfaz de um clan
+    <nl>
+    &b-> &f/clan convidar <player> &8-&7 Convida um player ao clan
+    &b-> &f/clan kickar <player> &8-&7 Kicka um player do clan
+    &b-> &f/clan membros &8-&7 Mostra os membros do clan
+    &b-> &f/clan boletins &8-&7 Mostra os boletins do clan
+    &b-> &f/clan transferir <player> &8-&7 Transferir a liderança do clan
+    &b-> &f/clan modbanner &8-&7 Modifica o banner do clan
+    &b-> &f/clan resetbanner &8-&7 Reseta o banner do clan
+    &b-> &f/clan moddescription &8-&7 Modifica a descrição do clan
+    &b-> &f/clan modname &8-&7 Modifica o nome do clan
+    &b-> &f/clan modtag &8-&7 Modifica a tag do clan
+    &b-> &f/clan modowntag &8-&7 Modifica a tag de um jogador
+    &b-> &f/clan modrole <player> &8-&7 Modifica o cargo de um jogador
+    &b-> &f/clan roleperm &8-&7 Modifica as permissões de um cargo
+    &b-> &f/clan roles &8-&7 Mostra os cargos do clan
+    &b-> &f/clan solicitacoes &8-&7 Mostra as solicitações de adesão ao clan
+    &b-> &f/clan mercado &8-&7 Abre o mercado do clan
+    &b-> &f/clan money &8-&7 Abre o banco do clan
+    &b-> &f/clan money depositar &8-&7 Deposita uma quantia no banco no clan
+    &b-> &f/clan money sacar &8-&7 Saca uma quantia do banco do clan
+    &b-> &f/clan money historico &8-&7 Mostra o histórico do banco do clan
+    &b-> &f/clan bau &8-&7 Abre o baú do clan
+    &b-> &f/clan bau expandir &8-&7 Expande o baú do clan
+    &b-> &f/clan bau historico &8-&7 Mostra o histórico do baú do clan
+    &b-> &f/clan base &8-&7 Vai até a base do clan
+    &b-> &f/clan base setar &8-&7 Seta o local da base do clan
+    &b-> &f/clan base deletar &8-&7 Deleta o local da base do clan
+    &b-> &f/clan base <clan> &8-&7 Vai até a base de outro clan
+    &b-> &f/clan ff membros &8-&7 Alterna o fogo amigo entre membros
+    &b-> &f/clan ff aliados &8-&7 Alterna o fogo amigo entre aliados
+    &b-> &f/clan rival &8-&7 Mostra os rivais do clan
+    &b-> &f/clan rival add <clan> &8-&7 Adiciona rivalidade com um clan
+    &b-> &f/clan rival remove <clan> &8-&7 Remove rivalidade com um clan
+    &b-> &f/clan ally &8-&7 Mostra os aliados do clan
+    &b-> &f/clan ally add <clan> &8-&7 Envia um convite de aliança
+    &b-> &f/clan ally remove <clan> &8-&7 Remove uma aliança
+    &b-> &f/clan ally aceitar <clan> &8-&7 Aceita o convite de aliança
+    &b-> &f/clan ally negar <clan> &8-&7 Nega o convite de aliança
+    <nl>
+    &b-> &f/c &8-&7 Fala no chat do clan
+    &b-> &f/a &8-&7 Fala no chat de aliados
+    <nl>
+    &c-> /clan verificar - Verificar um clan
+    &c-> /clan givespecialitem - Dá itens especiais para um jogador
+    &c-> /clan spy - Alterna o modo espião
+    &c-> /clan entrar <clan> - Força a entrada em um clan
+    &c-> /clan deletar <clan> - Deleta um clan
+    &c-> /clan reload - Recarrega os arquivos de configuração
+    <nl>
+  dont-have-money: '&cVocê não possui {money} coins.'
+  dont-have-time: '&cVocê não possui o tempo de {time} online.'
+  clan-dont-have-money: '&cSeu clan não possui {money} coins.'
+  clan-no-exists: '&cO clan {clan} não existe.'
+  tag-exists: '&cJá existe um clan com esta tag.'
+  name-exists: '&cJá existe um clan com este nome.'
+  tag-invalid: '&cCaracteres inválidos para a tag.'
+  name-invalid: '&cCaracteres inválidos para o nome.'
+  description-invalid: '&cCaracteres inválidos para a descrição.'
+  own-tag-invalid: '&cCaracteres inválidos para a custom-tag.'
+  tag-length: '&cA tag deve ser maior ou igual a {min_length} caracteres e menor ou igual a {max_length} caracteres.'
+  name-length: '&cO nome deve ser maior ou igual a {min_length} caracteres e menor ou igual a {max_length} caracteres.'
+  description-length: '&cA descrição deve ser maior ou igual a {min_length} caracteres e menor ou igual a {max_length} caracteres.'
+  own-tag-length: '&cA custom-tag deve ser maior ou igual a {min_length} caracteres e menor ou igual a {max_length} caracteres.'
+  player-has: '&cVocê já possui um clan.'
+  player-no-has: '&cVocê não possui um clan.'
+  created: '&bClan &f[{clan_tag}] ({clan_name}) &bcriado com sucesso.'
+  tag-invalid-format: '&cO formato &e{format} &cnão é válido.'
+  tag-contains-color: '&cA tag especificada não contém cores.'
+  tag-not-changed: '&cA tag especificada contém erros.'
+  tag-changed: '&bA tag do seu clan foi alterada para: &f{clan_colortag}&b.'
+  tag-blocked: '&cA tag {tag} está bloqueada para uso.'
+  name-blocked-word: '&cA palavra {word} está bloqueada para uso no nome.'
+  digit-tag: |
+    <nl>
+    &aDigite a TAG que deseja.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-name: |
+    <nl>
+    &aDigite o NOME que deseja.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-player-invite: |
+    <nl>
+    &aDigite o PLAYER que deseja.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-deposit: |
+    <nl>
+    &aDigite o VALOR que deseja DEPOSITAR.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-withdraw: |
+    <nl>
+    &aDigite o VALOR que deseja SACAR.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-management-name: |
+    <nl>
+    &aDigite o NOME que deseja ALTERAR.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-description: |
+    <nl>
+    &aDigite a DESCRIÇÃO que deseja ALTERAR.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-own-tag: |
+    <nl>
+    &aDigite a CUSTOM-TAG que deseja ALTERAR.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-leader: |
+    <nl>
+    &aDigite o JOGADOR que deseja TRANSFERIR A LIDERANÇA.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-newsletter: |
+    <nl>
+    &aDigite o BOLETIM que deseja TRANSMITIR.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-ally: |
+    <nl>
+    &aDigite o CLAN que deseja ALIAR.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-rival: |
+    <nl>
+    &aDigite o CLAN que deseja VIRAR RIVAL.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  digit-ask: |
+    <nl>
+    &aDigite o CLAN que deseja SOLICITAR ADESÃO.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  clan-max: '&cO seu clan já está com o máximo de membros permitidos. ({members_has}/{members_total})'
+  permission-invite: '&cVocê não tem permissão para convidar jogadores.'
+  permission-deposit: '&cVocê não tem permissão para depositar no banco.'
+  permission-withdraw: '&cVocê não tem permissão para sacar no banco.'
+  permission-home-go: '&cVocê não tem permissão para ir à base.'
+  permission-home-go-other: '&cVocê não tem permissão para ir à base deste clan.'
+  permission-home-set: '&cVocê não tem permissão para setar o local da base.'
+  permission-home-delete: '&cVocê não tem permissão para deletar o local da base.'
+  permission-name: '&cVocê não tem permissão para alterar o nome.'
+  permission-description: '&cVocê não tem permissão para alterar a descrição.'
+  permission-own-tag: '&cVocê não tem permissão para alterar a custom-tag de um jogador.'
+  permission-chest: '&cVocê não tem permissão para abrir o baú.'
+  permission-chest-expand: '&cVocê não tem permissão para expandir o baú.'
+  permission-transfer: '&cVocê não tem permissão para transferir a liderança.'
+  permission-ff-member: '&cVocê não tem permissão para alternar o ff dos membros.'
+  permission-ff-ally: '&cVocê não tem permissão para alternar o ff dos aliados.'
+  permission-newsletter: '&cVocê não tem permissão para adicionar boletins.'
+  permission-ally-add: '&cVocê não tem permissão para adicionar aliados.'
+  permission-ally-remove: '&cVocê não tem permissão para remover aliados.'
+  permission-rival-add: '&cVocê não tem permissão para adicionar rivais.'
+  permission-rival-remove: '&cVocê não tem permissão para remover rivais.'
+  permission-accept: '&cVocê não tem permissão para aceitar solicitações.'
+  permission-decline: '&cVocê não tem permissão para rejeitar solicitações.'
+  permission-reset-banner: '&cVocê não tem permissão para resetar o banner.'
+  permission-change-banner: '&cVocê não tem permissão para mudar o banner.'
+  permission-leader: '&cApenas o líder pode fazer isto.'
+  permission-kick: '&cVocê não tem permissão para kickar jogadores.'
+  target-has: '&cO jogador {player} já possui clan.'
+  target-invitations: '&cO jogador {player} desativou os convites de clan.'
+  target-already-invited: '&cSeu clan já convidou o jogador {player}.'
+  invited: '&bVocê convidou o jogador &f{player}&b para juntar-se ao seu clan.'
+  entered: '&bVocê se juntou ao clan &f{clan_colortag}&b.'
+  declined: '&bVocê negou o pedido do clan &f{clan_colortag}&b.'
+  clan-no-invited: '&cEste clan não lhe fez um convite.'
+  clan-deposit: '&bVocê depositou &f{money}&b no banco do seu clan.'
+  clan-withdraw: '&bVocê sacou &f{money}&b do banco do seu clan.'
+  clan-money: |
+    <nl>
+    &bSeu clan possui: &2$&a{money} coins&b no banco.
+    &7Caso queira depositar ou sacar digite /clan money <depositar/sacar> <money>
+    <nl>
+  clan-transactions-deposit-format: '&b{player} &a+ &2$&a{money} &7({date} - {hour})'
+  clan-transactions-withdraw-format: '&b{player} &c- &2$&a{money} &7({date} - {hour})'
+  clan-transactions: |
+    <nl>
+    &bÚltimas 15 transações do seu clan:
+    {transactions}
+    <nl>
+  clan-home-not-set: '&cO local da base do clan ainda não foi setado.'
+  clan-home-set: '&bO local da base do clan foi setado.'
+  clan-home-already-set: '&bO local da base do clan já está setada.'
+  clan-home-delete: '&bO local da base do clan foi deletado.'
+  clan-home-teleported: '&bVocê foi teleportado até a base do clan.'
+  clan-name-changed: '&bVocê mudou o nome do clan para &f{name}&b.'
+  clan-description-changed: '&bVocê mudou a descrição do clan para &f{description}&b.'
+  clan-chest-already: '&cO jogador {player} já está com o baú aberto.'
+  clan-chest-numkeys: '&cVocê não pode usar teclas numéricas no baú.'
+  clan-chest-shift: '&cVocê não pode usar shift no baú.'
+  clan-chest-creative: '&cVocê não pode usar criativo no baú.'
+  clan-chest-max: '&cO baú já está no máximo.'
+  clan-chest-expanded: '&bO baú foi expandido.'
+  clan-chest-transactions-open-format: '&b{player} &aabriu o baú &7({date} - {hour})'
+  clan-chest-transactions-close-format: '&b{player} &cfechou o baú &7({date} - {hour})'
+  clan-chest-transactions: |
+    <nl>
+    &bÚltimos 15 históricos do baú do seu clan:
+    {transactions}
+    <nl>
+  clan-banner-invalid: '&cO item precisa ser um banner.'
+  clan-banner-changed: '&bVocê mudou o banner do clan.'
+  clan-banner-reseted: '&bVocê resetou o banner do clan.'
+  clan-transfer-self: '&cVocê não pode transferir a liderança para o líder atual.'
+  clan-transfer-no-has: '&cO jogador informado não possui clan.'
+  clan-transfer-target-different: '&cO jogador informado não é do seu clan.'
+  clan-transfered: '&bLiderança transferida para o jogador &f{player}&b.'
+  clan-ff-member: '&bVocê alterou o FF dos membros para o estado {state}&b.'
+  clan-ff-ally: '&bVocê alterou o FF dos aliados para o estado {state}&b.'
+  clan-own-tag-changed: '&bVocê alterou a custom-tag do jogador &f{player} &bpara &f{own_tag}&b.'
+  clan-own-tag-reseted: '&bVocê resetou a custom-tag do jogador &f{player}&b.'
+  clan-kicked: '&bVocê kickou o jogador &f{player}&b do clan.'
+  clan-role-changed: '&bVocê alterou o cargo do jogador &f{player}&b para &f{role_symbol} {role}&b.'
+  role-invalid: |
+    &cCargo inválido.
+    &7Disponíveis: MEMBER, TRUSTED, CAPTAIN
+  permission-invalid: |
+    &cPermissão inválido.
+    &7Disponíveis: {permissions}
+  permission-changed: '&bPermissão &f{permission}&b permitida para o cargo &f{role_symbol} {role}&b: {state}'
+  newsletter-added: '&bVocê adicionou um novo boletim.'
+  clan-newsletters-player-format: '&b&7({date} - {hour}) {player}: &f{newsletter}'
+  clan-newsletters-format: '&b&7({date} - {hour}): &f{newsletter}'
+  clan-newsletters: |
+    <nl>
+    &bÚltimos 15 boletins do seu clan:
+    {newsletters}
+    <nl>
+  clan-tag-random: '&bTag alterada para &f{clan_colortag}&b.'
+  clan-ally-invitations: '&cO clan {clan} desativou o recebimento de convite de alianças.'
+  clan-ally-invite-already: '&cO seu clan ou o clan {clan} já possui pedido para se aliar.'
+  clan-ally-invite-no: '&cO seu clan não possui pedido para se aliar ao clan {clan}.'
+  clan-ally-self: '&cVocê não pode solicitar aliança ao próprio clan.'
+  clan-ally-rival: '&cVocê não pode se aliar com rivais.'
+  clan-ally-already: '&cSeus clans já são aliados.'
+  clan-ally-max: '&cSeu clan já tem aliados demais. ({max_allies})'
+  clan-ally-max-target: '&cO clan {clan} já tem aliados demais. ({max_allies})'
+  clan-ally-invited: '&bPedido de aliança enviado ao clan {clan}.'
+  clan-ally-deny: '&cVocê negou o pedido de aliança do clan {clan}.'
+  clan-ally-accept: '&bVocê aceitou o pedido de aliança do clan {clan}.'
+  clan-ally-deny-target: '&cO clan {clan} negou o pedido de aliança.'
+  clan-ally-accept-target: '&bO clan {clan} aceitou o pedido de aliança.'
+  clan-ally-remove: '&bVocê desfez a aliança com o clan {clan}.'
+  clan-ally-remove-target: '&cO clan {clan} desfez a aliança.'
+  clan-ally-no: '&cO seu clan não é aliado do clan {clan}.'
+  clan-allies: |
+    <nl>
+    &bClans aliados ao seu: &7{clans}
+    <nl>
+  clan-allies-empty: '&cSeu clan não possui nenhum aliado.'
+  clan-rival-self: '&cVocê não pode adicionar rivalidade ao próprio clan.'
+  clan-rival-ally: '&cVocê não pode rivalizar com aliados.'
+  clan-rival-already: '&cSeus clans já são rivais.'
+  clan-rival-max: '&cSeu clan já tem rivais demais. ({max_rivals})'
+  clan-rival-max-target: '&cO clan {clan} já tem rivais demais. ({max_rivals})'
+  clan-rival-owner: '&cApenas o clan que começou a rivalidade pode desfazê-la.'
+  clan-rival-remove: '&bVocê desfez a rivalidade com o clan {clan}.'
+  clan-rival-remove-target: '&cO clan {clan} desfez a rivalidade.'
+  clan-rival-no: '&cO seu clan não é rival do clan {clan}.'
+  clan-rivals: |
+    <nl>
+    &bClans rivais ao seu: &7{clans}
+    <nl>
+  clan-rivals-empty: '&cSeu clan não possui nenhum rival.'
+  clan-rival: |
+    <nl>
+    &bO seu clan iniciou uma rivalidade com o clan &f{clan_tag} - {clan_name}&b.
+    <nl>
+  clan-rival-target: |
+    <nl>
+    &bO clan &f{clan_tag} - {clan_name}&b iniciou uma rivalidade com o seu clan.
+    <nl>
+  clan-ask-private: '&cEste clan é privado.'
+  clan-ask-max: '&cEste clan não possui vagas suficientes.'
+  clan-ask-already: '&cVocê já tem um pedido de adesão pendente à este clan.'
+  clan-ask: '&bPedido de adesão enviado ao clan {clan_colortag}.'
+  clan-leave: '&cVocê saiu do clan.'
+  clan-kicked-target: '&cVocê foi kickado do clan.'
+  clan-disband: '&cO seu clan foi desfeito por {player}.'
+  clan-prevent-money: '&cRemova o dinheiro do banco antes de desfazer o clan.'
+  clan-disband-leave: '&cPara sair do clan, digite: /clan sair.'
+  clan-leave-disband: '&cPara desfazer o clan, digite: /clan desfazer.'
+  clan-force-enter: '&bVocê forçou a entrada no clan {clan_tag}.'
+  clan-verify-already: '&cO clan {clan_tag} já está verificado.'
+  clan-verified: '&bO clan {clan_tag} foi verificado.'
+  clan-deleted: '&bO clan {clan_tag} foi deletado.'
+  clan-approved: '&bVocê aprovou a adesão do jogador &f{player}&b.'
+  clan-approved-target: '&bVocê foi aprovado para entrar no clan {clan_tag}.'
+  clan-denied: '&bVocê negou a adesão do jogador &f{player}&b.'
+  clan-verify: '&cO seu clan não é verificado.'
+  clan-invitations: |
+    <nl>
+    &bClans que convidaram você ao clan:
+    &7{clans}
+    <nl>
+    &aPara aceitar digite /clan aceitar <clan>
+    &cPara aceitar digite /clan negar <clan>
+    <nl>
+  clan-solicitations: |
+    <nl>
+    &bPlayers que solicitaram adesão ao clan:
+    &7{players}
+    <nl>
+    &aPara aceitar digite /clan solicitacoes aceitar <player>
+    &cPara aceitar digite /clan solicitacoes negar <player>
+    <nl>
+  clan-online: |
+    <nl>
+    &bClans que estão online atualmente:
+    &7{clans}
+    <nl>
+  clan-members: |
+    <nl>
+    &bMembros do seu clan:
+    &7{players}
+    <nl>
+  clan-info: |
+    <nl>
+    &bInformações do clan {clan_colortag} &b- &b{clan_name}&b:
+    <nl>
+    &7{clan_description}
+    <nl>
+    &7Líder: &f{leader}
+    &7Verificado: &r{verified}
+    &7Membros: &f{members_online} &7: &a{members_total} online
+    &7Vagas do clan: &f{max_slots}
+    &7Tipo do clan: &f{clan_type}
+    <nl>
+    &r &7Money no banco: &a${money} coins
+    <nl>
+    &7Abates: &8[Civil: {kills_civilian} Neutro: {kills_neutral} Rival: {kills_rival}]
+    &7Mortes: &f{deaths}
+    &7KDR: &f{kdr}
+    <nl>
+    &7Criado em: &f{date} - {hour}
+    <nl>
+  clan-info-player: |
+    <nl>
+    &bInformações do player &f{player}&b:
+    <nl>
+    &7Clan: &f{clan_colortag}
+    &7Cargo: &f{role_symbol} {role}
+    &7Money: &a${money} coins
+    <nl>
+    &7Abates: &8[Civil: {kills_civilian} Neutro: {kills_neutral} Rival: {kills_rival}]
+    &7Mortes: &f{deaths}
+    &7KDR: &f{kdr}
+    <nl>
+    &7Entrou em: &f{enter_date} - {enter_hour}
+    <nl>
+  item-not-found: '&cEste item não foi encontrado. &7Disponíveis: {items}'
+  item-give: '&bVocê deu &f{amount}x item especial&b ao jogador &f{player}&b.'
+  item-received: '&bVocê recebeu &f{amount}x item especial&b.'
+  reset-kdr: '&bSeu KDR foi resetado.'
+  reset-kdr-already: '&cSeu KDR já está zerado.'
+  max-slots: '&cO clan já possui o máximo de slots de membros que pode evoluir.'
+  max-ally-slots: '&cO clan já possui o máximo de slots de aliados que pode evoluir.'
+  max-rival-slots: '&cO clan já possui o máximo de slots de rivais que pode evoluir.'
+  slots-upgrade: '&bVocê aumentou o máximo de vagas de membros em 1.'
+  slots-ally-upgrade: '&bVocê aumentou o máximo de vagas de aliados em 1.'
+  slots-rival-upgrade: '&bVocê aumentou o máximo de vagas de rivais em 1.'
+  spy-changed: '&bModo espião alterado para &r{spy}&b.'
+  dont-has: '&cVocê não possui a quantia &7{amount} em &7{type}&c.'
+  registered: '&cEste plugin &f{plugin}&c não está implementado no plugin de clans.'
+  disabled: '&cEste plugin &f{plugin}&c não está ligado.'
+  clan-home-world-blacklist: '&cVocê não pode setar a base do clan neste mundo.'
+  clan-home-public-yes: '&bBase do clan definida para &aPÚBLICA&b.'
+  clan-home-public-no: '&bBase do clan definida para &cPRIVADA&b.'
+  clan-home-public-already-yes: '&cA base do clan já está pública.'
+  clan-home-public-already-no: '&cA base do clan já está privada.'
+  clan-online-none: '&cNão há nenhum clan online.'
+  already-fly: '&cSeu clan já possui o FLY liberado nas plots.'
+  fly-activated: '&aFLY liberado nas plots dos membros.'
+  clan-enter-delay: '&cVocê precisa aguardar &f{time}&c para entrar em um clan novamente.'
