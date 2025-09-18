@@ -1,0 +1,150 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  help: |
+    &bComandos disponíveis:
+    &b > &3/maquinas &8- &fAbre o menu de máquinas
+    &b > &3/maquinas help &8- &fEnvia essa mensagem
+    &b > &3/maquinas lista &8- &fMostra a lista de máquinas disponíveis
+    &b > &3/maquinas give <player/all> <maquina> <quantia> &8- &fDá máquinas para um jogador / todos os jogadores
+  help-fuel: |
+    &bComandos disponíveis:
+    &b > &3/combustiveis &8- &fAbre o menu de combustíveis
+    &b > &3/combustiveis help &8- &fEnvia essa mensagem
+    &b > &3/combustiveis lista &8- &fMostra a lista de combustíveis disponíveis
+    &b > &3/combustiveis give <player/all> <combustivel> <quantia> &8- &fDá combustíveis para um jogador / todos os jogadores
+  help-limit: |
+    &bComandos disponíveis:
+    &b > &3/limite &8- &fMostra o seu limite
+    &b > &3/limite <player> &8- &fMostra o limite de outro jogador
+    &b > &3/limite help &8- &fEnvia essa mensagem
+    &b > &3/limite top &8- &fAbre o menu do top limite
+    &b > &3/limite give <player> <quantia> &8- &fDá limite em item para um jogador
+    &b > &3/limite remove <player> <quantia> &8- &fRemove limite de um jogador
+    &b > &3/limite add <player> <quantia> &8- &fAdiciona limite para um jogador
+    &b > &3/limite set <player> <quantia> &8- &fSeta o limite de um jogador
+  inv-full: '&cSeu inventário está cheio.'
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  give: '&aVocê deu &7x{quantia} {maquina}&a para o jogador &7{player}&a.'
+  give-fuel: '&aVocê deu &7x{quantia} {combustivel}&a para o jogador &7{player}&a.'
+  give-all: '&aO staff &f{player}&a deu &7x{quantia} {maquina}&a para todos online&a.'
+  give-fuel-all: '&aO staff &f{player}&a deu &7x{quantia} {combustivel}&a para todos online&a.'
+  machines: '&cMáquinas disponíveis: &7{maquinas}'
+  fuels: '&cCombustiveis disponíveis: &7{combustiveis}'
+  plot-permission: '&cVocê não tem permissão neste terreno.'
+  drop-activated: '&aVocê ativou o(s) drop(s) da {maquina}.'
+  max-multiplier: '&cVocê não pode definir mais que o seu máximo: &7{maximo}&c.'
+  multiplier-defined: '&aVocê definiu seu multiplicador para &7{multiplicador}&a.'
+  drop-collected: '&aVocê coletou &7{quantia}x drops&7.'
+  machine-stack-max: '&cO stack máximo desta máquina é {stackmax}.'
+  machine-permission-open: '&cVocê não tem permissão para abrir esta máquina.'
+  machine-permission-place: '&cVocê não tem permissão para colocar este tipo de máquina.'
+  machine-placed: '&a{quantia}x {maquina} &acolocada(s).'
+  machine-removed: '&a{quantia}x {maquina} &aremovida(s).'
+  machine-just-owner: '&cSomente o dono da máquina pode realizar esta ação.'
+  machine-gamemode: '&cEssa ação só pode ser realizada no modo survival.'
+  machine-infinity-fuel: '&cEsta máquina possui combustível infinito.'
+  machine-full: '&cEsta máquina está totalmente abastecida.'
+  machine-filled: '&aVocê abasteceu a máquina com o combustível {combustivel}.'
+  machine-fuel-compatibility: '&cEsta máquina não aceita o combustível {combustivel}.'
+  machine-available-drops: '&cEsta máquina não possui drops suficiente.'
+  machine-max-friend: '&cEsta máquina atingiu o limite máximo de amigos.'
+  machine-added: '&aVocê adicionou o jogador &7{player}&a na sua máquina.'
+  machine-friend-already: '&cEste jogador já está adicionado.'
+  machine-add-owner: '&cVocê não pode adicionar o dono como amigo na máquina.'
+  machine-silk-touch: '&cVocê precisa de uma picareta com toque suave para quebrar esta máquina.'
+  machine-repaired: '&aVocê consertou a máquina e pagou &f{money} coins&a.'
+  machine-repair: '&cVocê precisa de &f{money} coins&c para consertar essa máquina.'
+  machine-upgrade-money: '&cVocê precisa de &f{money} coins&c para comprar esse upgrade.'
+  machine-bought-capacity: '&aVocê adquiriu &f+1 nível&a do upgrade &fcapacidade &apor &f{money} coins&a.'
+  machine-bought-drops: '&aVocê adquiriu &f+1 nível&a do upgrade &fdrops &apor &f{money} coins&a.'
+  machine-bought-velocity: '&aVocê adquiriu &f+1 nível&a do upgrade &fvelocidade &apor &f{money} coins&a.'
+  machine-collect-available: '&cEste stack possui apenas {stack} máquinas.'
+  machine-block-below: '&cVocê não pode colocar máquinas em cima deste bloco.'
+  machine-placed-already: '&cVocê já colocou uma máquina deste tipo.'
+  machine-nearby: '&cHá máquinas num raio de {raio} blocos.'
+  limit-need: '&cVocê não possui limite suficiente. Disponível: &7{limite}&c.'
+  limit-changed: '&aLimite do jogador &7{player}&a alterado para &7{quantia}&a.'
+  limit-give: '&aVocê deu &e{quantia} &ade limite para o jogador &e{player}&a.'
+  limit-converted: '&cVocê compactou todos seus limites em 1.'
+  limit-activated: '&aVocê ativou &e{quantia} &ade limites.'
+  limit-max: '&cVocê já chegou no máximo.'
+  limit-stack-full: '&cEsta máquina está no limite de stack máximo ({limite}).'
+  limit-stack-activated: '&aVocê aumentou o limite de stack da máquina para {limite}.'
+  limit-sent: '&bVocê enviou &f{limite} limite&b para o jogador &f{player}&b.'
+  limit-received: '&bVocê recebeu &f{limite} limite&b do jogador &f{player}&b.'
+  limit-has: '&bVocê não possui &f{limite} limite&b.'
+  limit-target-max: '&bO jogador já possui o máximo de limite permitido: &f{limite}&b.'
+  limit-player: '&bQuantidade de limite que você possui: &f{limite}&b.'
+  limit-target: '&bQuantidade de limite que &7{player}&b possui: &f{limite}&b.'
+  booster-received: '&aVocê recebeu &7{quantia} &a booster(s) de drops.'
+  booster-give: '&aVocê deu &7{quantia} &a booster(s) de drops para o jogador &7{player}&a.'
+  booster-ended: '&cSeu booster de drops acabou.'
+  booster-already: '&cVocê já está usando um booster.'
+  booster-activated: '&aVocê ativou um booster de drops. Multiplicador: &e{bonus}&a. Tempo: &e{tempo}&a.'
+  booster-none: '&cVocê não está usando nenhum booster.'
+  booster-using: '&aSeu booster de &f{bonus}% &aacaba em &f{tempo}&a.'
+  delay: '&cAguarde &e{time} &cpara adquirir novamente.'
+  digit-add: |
+    &r
+    &aDigite no chat o nome do seu amigo que quer adicionar.
+    &7para cancelar digite &ncancelar&7.
+    &r
+  digit-collect: |
+    &r
+    &aDigite a quantia que você quer coletar.
+    &r
+    &8| &fVocê possui &6{quantia}&f disponível.
+    &8| &fDigite &8TUDO &fpara coletar tudo.
+    &r
+    &7Para cancelar digite &ncancelar&7.
+    &r
+  digit-machine: |
+    &r
+    &aDigite a quantia de máquinas que deseja.
+    &7para cancelar digite &ncancelar&7.
+    &r
+  digit-fuel: |
+    &r
+    &aDigite a quantia de combustíveis que deseja.
+    &7para cancelar digite &ncancelar&7.
+    &r
+  digit-multiplier: |
+    &r
+    &8| &aDigite no chat a quantia de multiplicador que deseja.
+    &r
+    &f> &7Atual: &b{atual}&7.
+    &f> &7Máximo: &b{maximo}&7.
+    &r
+  digit-remove: |
+    &r
+    &aDigite a quantia de máquinas que deseja remover.
+    &7para cancelar digite &ncancelar&7.
+    &r
+  bought: |
+    &r
+    &bObrigado por adquirir máquinas na loja de máquinas. Confira as informações da compra:
+    &r
+    &7&l| &fMáquina: &7{maquina}&f.
+    &7&l| &fQuantia: &7{quantia}&f.
+    &r
+  bought-fuel: |
+    &bObrigado por adquirir combustíveis na loja de combustível. Confira as informações da compra:
+    &r
+    &7&l| &fCombustível: &7{combustivel}&f.
+    &7&l| &fQuantia: &7{quantia}&f.
+    &r
