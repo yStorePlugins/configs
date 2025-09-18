@@ -315,6 +315,10 @@ protection:
   allow-break-warzone: true
   # Permitir colocar blocos em warzone
   allow-place-warzone: true
+  # Permitir quebrar blocos em vipzone
+  allow-break-vipzone: true
+  # Permitir colocar blocos em vipzone
+  allow-place-vipzone: true
   # Permitir interagir com blocos (baús, portas, etc) em território inimigo
   allow-interact-enemy-territory: false
   # Permitir interagir com blocos em território aliado
@@ -566,6 +570,7 @@ map:
       temporary-claim: '<gold>▓ Claim Temporário</gold>'
       safezone: '<light_purple>█ Safezone</light_purple>'
       warzone: '<dark_red>█ Warzone</dark_red>'
+      vipzone: '<dark_blue>█ Vipzone</dark_blue>'
       wilderness: '<dark_gray>█ Wilderness (Clicável)</dark_gray>'
       world-border: '<black>█ Borda do Mundo</black>'
   # Símbolos utilizados no mapa
@@ -578,6 +583,7 @@ map:
     temporary-claim: '▓'
     safezone: '█'
     warzone: '█'
+    vipzone: '█'
     wilderness: '█'
     world-border: '█'
     row-indicator: '►'
@@ -591,6 +597,7 @@ map:
     temporary-claim: '<gold>'
     safezone: '<light_purple>'
     warzone: '<dark_red>'
+    vipzone: '<dark_blue>'
     wilderness: '<dark_gray>'
     world-border: '<black>'
     row-indicator: '<yellow>'
@@ -611,6 +618,7 @@ zones:
   enemy: '&c{faction_name}'
   safe: '&dZona Segura'
   war: '&4Zona de Guerra'
+  vip: '&1Zona VIP'
   wilderness: '&7Zona Livre'
 
 # Sistema de dropar coordenadas ao ser morto
