@@ -1,0 +1,77 @@
+{
+  "faction_invite": {
+    "text": "\n§bVocê recebeu um convite do jogador §f{player}§b para integrar à faction §f[{faction_colortag}§f] {faction_name}§b.\n§bClique ",
+    "extra":[
+      {
+        "text": "§a§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/faction aceitar {faction_tag}"
+        }
+      },
+      {
+        "text": "§b para aceitar e "
+      },
+      {
+        "text": "§c§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/faction negar {faction_tag}"
+        }
+      },
+      {
+        "text": "§b para negar.\n"
+      }
+    ]
+  },
+  "faction_ally_invite": {
+    "text": "\n§bVocê recebeu um convite de aliança da faction §f[{faction_colortag}§f] {faction_name}§b.\n§bClique ",
+    "extra":[
+      {
+        "text": "§a§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/faction ally aceitar {faction_tag}"
+        }
+      },
+      {
+        "text": "§b para aceitar e "
+      },
+      {
+        "text": "§c§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/faction ally negar {faction_tag}"
+        }
+      },
+      {
+        "text": "§b para negar.\n"
+      }
+    ]
+  },
+  "faction_solicitation": {
+    "text": "\n§bO jogador §f{player}§b está solicitando para aderir à faction.\n§bClique ",
+    "extra":[
+      {
+        "text": "§a§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/faction solicitacoes aceitar {player}"
+        }
+      },
+      {
+        "text": "§b para aceitar e "
+      },
+      {
+        "text": "§c§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/faction solicitacoes negar {player}"
+        }
+      },
+      {
+        "text": "§b para negar.\n"
+      }
+    ]
+  }
+}

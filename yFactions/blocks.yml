@@ -1,0 +1,24 @@
+# Tipos de blocos de proteção disponíveis
+blocks:
+  obsidian:
+    # Nome nas mensagens
+    display: '&5Obsidian'
+    # Permissão para por esse bloco
+    permission: ''
+    # Material do bloco no chão
+    material: 'OBSIDIAN:0'
+    # Necessitar da Silk Touch II para quebrar
+    silk-touch-need: false
+    # Item que será pego na mão
+    icon:
+      material: 'OBSIDIAN:0'
+      name: '&8Obsidian'
+      lore:
+        - '&7Resistência: &c10 &7explosões'
+        - '&7Regenera 1 resistência a cada 60s'
+    # Configurações de resistência
+    # Aguenta 10 explosões antes de quebrar
+    max-resistance: 10
+    # Regenera 1 explosão a cada x tempo
+    # em segundos
+    resistance-regen-delay: 60

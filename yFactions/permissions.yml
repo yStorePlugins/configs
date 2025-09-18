@@ -1,0 +1,179 @@
+#   ____                     _         _
+# |  _ \ ___ _ __ _ __ ___ (_)___ ___(_) ___  _ __  ___
+# | |_) / _ \ '__| '_ ` _ \| / __/ __| |/ _ \| '_ \/ __|
+# |  __/  __/ |  | | | | | | \__ \__ \ | (_) | | | \__ \
+# |_|   \___|_|  |_| |_| |_|_|___/___/_|\___/|_| |_|___/
+#
+
+# Sistema de permissões
+permissions:
+  kick-players:
+    display-name: 'Kickar jogadores'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  access-chest:
+    display-name: 'Acessar baú'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  deposit-money:
+    display-name: 'Depositar coins'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  withdraw-money:
+    display-name: 'Sacar coins'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  home-go:
+    display-name: 'Teleportar à base'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  home-set:
+    display-name: 'Setar o local da base'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  home-delete:
+    display-name: 'Deletar o local da base'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  invite-members:
+    display-name: 'Convidar jogadores'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  ally-add:
+    display-name: 'Adicionar aliados'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  ally-remove:
+    display-name: 'Remover aliados'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  rival-add:
+    display-name: 'Adicionar rivais'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  rival-remove:
+    display-name: 'Remover rivais'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  newsletter-add:
+    display-name: 'Adicionar boletins'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  ff-member-change:
+    display-name: 'Alternar FF dos Membros'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  ff-ally-change:
+    display-name: 'Alternar FF dos Aliados'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  custom-tag-change:
+    display-name: 'Modificar custom tag'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  claim:
+    display-name: 'Claimar Terreno'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  unclaim:
+    display-name: 'Abandonar Terreno'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  unclaim_all:
+    display-name: 'Abandonar todos os Terrenos'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  fly:
+    display-name: 'Voar'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  break-blocks:
+    display-name: 'Quebrar Blocos'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  place-blocks:
+    display-name: 'Colocar Blocos'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  interact-blocks:
+    display-name: 'Interagir com Blocos'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  manage-brasao:
+    display-name: 'Editar o Brasão'
+    item:
+      material: 'e79add3e5936a382a8f7fdc37fd6fa96653d5104ebcadb0d4f7e9d4a6efc454'
+      name: '&b{permission}'
+      lore: ['', '&7Permitido: &f{state}', '']
+  
+  # Permissões para Aliados
+  ally-fly:
+    display-name: 'Aliados podem voar'
+    item:
+      material: 'e609e36c6d6a631eb7b76b3eded9ccb37d2fea82031b50479be364bbd01e6340'
+      name: '&e{permission}'
+      lore: ['', '&7Permite aliados voarem no território', '&7Permitido: &f{state}', '']
+  ally-break-blocks:
+    display-name: 'Aliados podem quebrar blocos'
+    item:
+      material: 'e609e36c6d6a631eb7b76b3eded9ccb37d2fea82031b50479be364bbd01e6340'
+      name: '&e{permission}'
+      lore: ['', '&7Permite aliados quebrarem blocos no território', '&7Permitido: &f{state}', '']
+  ally-place-blocks:
+    display-name: 'Aliados podem colocar blocos'
+    item:
+      material: 'e609e36c6d6a631eb7b76b3eded9ccb37d2fea82031b50479be364bbd01e6340'
+      name: '&e{permission}'
+      lore: ['', '&7Permite aliados colocarem blocos no território', '&7Permitido: &f{state}', '']
+  ally-interact-blocks:
+    display-name: 'Aliados podem interagir com blocos'
+    item:
+      material: 'e609e36c6d6a631eb7b76b3eded9ccb37d2fea82031b50479be364bbd01e6340'
+      name: '&e{permission}'
+      lore: ['', '&7Permite aliados interagirem com blocos no território', '&7Permitido: &f{state}', '']

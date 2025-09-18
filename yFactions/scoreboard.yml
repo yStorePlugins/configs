@@ -1,0 +1,33 @@
+# Ativar ou desativar o sistema de scoreboard.
+enabled: true
+# Delay para atualizar a scoreboard (em segundos)
+delay: 3
+
+no-faction:
+  title: '&b&lyStore'
+  lines:
+    - ''
+    - '&f Zona: &7{zone}'
+    - '&f Poder: &a{current_power}/{max_power}'
+    - ''
+    - '&c Você não possui uma facção'
+    - ''
+    - ' &fCoins: &2$&a%yeconomy_money%'
+    - ''
+    - '&eystoreplugins.com.br'
+
+with-faction:
+  title: '&b&lyStore'
+  lines:
+    - ''
+    - '&f Zona: &7{zone}'
+    - '&f Poder: &a{current_power}/{max_power}'
+    - ''
+    - '&f {faction_attack}{faction_colortag} &7- {faction_name}'
+    - '&f   Online: &a{faction_members_online}/{faction_members_total}'
+    - '&f   Poder: &a{faction_current_power}/{faction_max_power}'
+    - '&f   Terras: &a{faction_claims}/{faction_max_claims}'
+    - ''
+    - ' &fCoins: &2$&a%yeconomy_money%'
+    - ''
+    - '&eystoreplugins.com.br'
