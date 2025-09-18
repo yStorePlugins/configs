@@ -1,5 +1,9 @@
 Comandos: [ 'shop' ] #comandos para abrir (deixe [] para não usar)
 
+# Aliases compostas para o comando
+# exemplo: /kit membro
+aliases-compostas: ['shop bom']
+
 Permissao: '' #permissao para abrir
 
 Tamanho: 27 #tamanho do inventário
