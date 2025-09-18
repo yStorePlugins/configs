@@ -1,0 +1,5 @@
+Descontos:
+   VIP:
+      Permissao: 'yshopv2.vip'
+      Desconto: 10.0
+      Ordem: 1

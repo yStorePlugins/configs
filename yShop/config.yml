@@ -1,0 +1,85 @@
+#         ____  _
+#  _   _/ ___|| |__   ___  _ __
+# | | | \___ \| '_ \ / _ \| '_ \
+# | |_| |___) | | | | (_) | |_) |
+#  \__, |____/|_| |_|\___/| .__/
+#  |___/                  |_|
+#
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Opções gerais
+general:
+  # Maximo de itens por compra
+  max-buy: 64
+  # Fechar o menu depois de confirmar
+  close-confirm: false
+  # Delay entre operações de compra e venda
+  # em segundos
+  delay: 3
+  # Formato do desconto nas mensagens
+  format-discount: ' &7( {desconto}% )'
+  # Formato do bônus nas mensagens
+  format-bonus: ' &7( {bonus}% )'
+
+# Opcoes de configuração do NPC
+npc:
+  # Skin do NPC
+  skin: 'TheThunderGod063'
+  # Categoria que irá abrir ao clicar no NPC
+  category: 'padrao.yml'
+  # Configurações do holograma
+  hologram:
+    # Altura em relação ao NPC
+    offset: 3.1
+    # Linhas do holograma
+    lines:
+      - '&6Shop'
+      - '&7Veja os itens à venda.'
+
+# Sistema de bonus
+# Será adicionado no próximo update. PORTANTO, DEIXE CONFIGURADO
+bonus:
+  VIP:
+    # Ordem de reconhecimento da permissão
+    order: 1
+    # Permissão para ser reconhecido
+    permission: 'yshop.vip'
+    # Porcentagem do bônus
+    bonus: 10.0
+
+# Sistema de descontos
+# Será adicionado no próximo update. PORTANTO, DEIXE CONFIGURADO
+discount:
+  VIP:
+    # Ordem de reconhecimento da permissão
+    order: 1
+    # Permissão para ser reconhecido
+    permission: 'yshop.vip'
+    # Porcentagem do desconto
+    discount: 10.0

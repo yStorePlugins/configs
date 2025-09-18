@@ -1,0 +1,61 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/yshop setnpc &8- &7Seta o NPC.
+    &a/yshop delnpc &8- &7Deleta o NPC.
+    &a/yshop reload &8- &7Recarrega as configurações.
+
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  no-balance: '&cVocê não possui a quantia &7{quantia} em &7{tipo}&c.'
+  action-found: '&cA ação não foi encontrada.'
+  category-found: '&cA categoria não foi encontrada.'
+  buy-max: '&cDesculpe, o valor máximo por compra é de 64.'
+  inv-full: '&cSeu inventário não tem espaço suficiente.'
+  bought: '&aVocê adquiriu produtos no shop.'
+  fragment-has: '&cVocê não possui fragmentos suficientes.'
+  sold: '&aVocê vendeu produtos no shop.' #deixe '' para não usar
+  sell-has: '&aVocê não tem {amount} itens para vender.'
+  delay: '&c&lERRO! &cAguarde &e{time} &cpara comercializar na loja novamente.'
+  digit: |
+    &r
+    &aDigite a quantia que deseja comprar do item {item}&a.
+    &r
+    &7Preços:
+    &7> &fMoney: &a{money}&7.
+    &7> &fPoints: &a{playerpoints}&7.
+    &r
+    &7Seu desconto:{desconto}&7.
+    &r
+    &7para cancelar digite &ncancelar&7.
+    &r
+  digit-sell: |
+    &r
+    &aDigite a quantia que deseja vender do item {item}&a.
+    &r
+    &7Valor de cada:
+    &7> &fMoney: &a{money}&7.
+    &7> &fPoints: &a{playerpoints}&7.
+    &r
+    &7Seu bonus:{bonus}&7.
+    &r
+    &7para cancelar digite &ncancelar&7.
+    &r
+  npc-set: '&aNPC do shop setado com sucesso.'
+  npc-removed: '&aNPC do shop removido com sucesso'
+  npc-found: '&cO NPC não está setado.'

@@ -1,0 +1,28 @@
+Nome: '&8Confirmação de compra'
+Tamanho: 27
+Item slot: 13
+Itens:
+   Confirmar:
+      Slot: 11
+      CustomSkull: false #se colocar true, coloque o URL
+      URL: ''
+      ID: 35
+      Data: 5
+      Glow: false
+      Name: '&aConfirmar'
+      Lore:
+      - '&7Quantia a ser comprada: &a{quantia}&7.'
+      - '&7Seu desconto: {desconto}&7.'
+      - '&7Valor total: &c{playerpoints} pontos e {money} coins&7.'
+      - ''
+      - '&7Clique para &aconfirmar&7 a compra.'
+   Cancelar:
+      Slot: 15
+      CustomSkull: false #se colocar true, coloque o URL
+      URL: ''
+      ID: 35
+      Data: 14
+      Glow: false
+      Name: '&cCancelar'
+      Lore:
+      - '&7Clique para &ccancelar&7 a compra.'

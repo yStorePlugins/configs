@@ -1,0 +1,133 @@
+Comandos: [ 'shop' ] #comandos para abrir (deixe [] para não usar)
+
+Permissao: '' #permissao para abrir
+
+Tamanho: 27 #tamanho do inventário
+
+Nome: '&7Loja padrão' #nome do inventário
+
+# Som ao abrir a loja
+Som: ''
+
+# Ativar a compra de uma quantia customizada via chat
+# Só afeta esta categoria
+Quantia chat: true
+
+# Ativar a confirmação da compra no menu
+Confirmacao: true
+#
+Itens:
+   Item1:
+      # Sistema de permissão para comercializar
+      Permissao:
+         Permissao: ''
+         Mensagem: '&cVocê não tem permissão para comprar este item.'
+      # necessário para verificar a quantia disponível no inv
+      # deixe 0 para não usar
+      InvStackVerify: 64
+      Slot: 10
+      Display:
+         material: BRICK
+         name: '&cCategoria de blocos'
+         lore: [ '&7Clique para comprar blocos' ]
+      # Caso não queira usar, apague
+      Display-Perm:
+         material: BRICK
+         name: '&cCategoria de blocos'
+         lore: [ '&7Clique para comprar blocos', '', '&cVocê não tem permissão.' ]
+      # Ação com botão esquerdo
+      Acao:
+      - '[abrir]blocos.yml'
+      # Ação com botão direito
+      Acao direito:
+      - '[nenhuma]'
+      ## Ações: [comprar], [cmd], [cmd_console], [abrir], [nenhuma]
+      Comprar:
+         # Permitir que os usuários comprem com desconto
+         # Padrão: true, mesmo se não estiver definido na config
+         # se quiser false, defina aqui.
+         Permitir desconto: true
+         Usar itens: true
+         Usar comandos: true
+         # Ao ativar, cada comando será 1 slot
+         # Ele poderá comprar só a quantia de slots disponíveis.
+         Contabilizar comandos: true
+         # Se essa opção estiver true, ele irá executar o comando pela quantidade que o player escolheu na hora na compra,
+         # se estiver false, irá adicionar a placeholder {quantia} no comando.
+         Repetir comandos: true
+         # Executar os comandos após um delay
+         # em ticks -> 20t = 1s
+         Comandos delay: 0
+         Comandos:
+         - 'alerta {player} é bonito'
+         # Mensagens customizadas ao comprar
+         Messages:
+            Chat: '&aObrigado &f{player}&a por comprar!'
+            Actionbar: '&aObrigado &f{player}&a por comprar!'
+            Title: ''
+         Itens:
+            Pedra preciosa:
+               material: STONE
+               amount: 64
+               name: '&cPedra preciosa'
+               glow: true
+               lore: [ '&aVocê é um mago' ]
+   #
+   Item2:
+      Slot: 11
+      InvStackVerify: 64
+      Display:
+         material: IRON_INGOT
+         name: '&fAlerta de beleza'
+         lore:
+            - '&7Seu desconto: {desconto}&7.'
+            - '&7Seu bônus: {bonus}&7.'
+      # Sistema de comprar apenas 1x
+      Onetime:
+         Ativar: false
+         Display:
+            material: IRON_INGOT
+            name: '&fAlerta de beleza'
+            lore: [ '&cEste item já foi adquirido.' ]
+      Custos:
+         Custo1:
+            Display: 'money'
+            Tipo: 'money'
+            Custo: 1000.0
+         Custo2:
+            Display: 'Pontos'
+            Tipo: 'playerpoints'
+            Custo: 10.0
+      Custos fragmentos:
+         - 'Fragmento1:32'
+         - 'Fragmento2:10'
+      Acao: '[comprar]'
+      Comprar:
+         Usar itens: false
+         Usar comandos: true
+         Contabilizar Comandos: true
+         Comandos: ['alerta {player} é bonito']
+         Messages:
+            Chat: '&aObrigado &f{player}&a por comprar!'
+            Actionbar: '&aObrigado &f{player}&a por comprar!'
+            Title: ''
+         Itens:
+            Pedra preciosa:
+               material: STONE
+               amount: 64
+               name: '&cPedra preciosa'
+               glow: true
+               lore: [ '&aVocê é um mago' ]
+      Vender:
+         Quantia: 1
+         Depositos:
+            Deposito1:
+               Tipo: 'money'
+               Deposito: 100.0
+         Item:
+            material: STONE
+            amount: 1
+            name: '&cPedra preciosa'
+            glow: true
+            lore: [ '&aVocê é um mago' ]
+   #
