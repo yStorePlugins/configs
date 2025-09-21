@@ -59,4 +59,5 @@ chat:
     &cEsta caixa não existe.
     &cDisponíveis: {list}
   box-reward-empty: '&cEsta caixa não possui recompensas configuradas!'
+  box-world: '&cVocê não pode abrir essa caixa nesse mundo.'
   item-no: '&cO item não pode ser nulo.'

@@ -24,7 +24,7 @@ arrows:
 # Menu de pré-visualização
 preview:
   name: '&8Caixa'
-  size: 36
+  size: 54
   slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
   previous-slot: 9
   next-slot: 17

@@ -7,6 +7,12 @@ item:
   name: '&5Caixa Misteriosa'
   lore: ['&7Tipo: &fBásica&7.', '', '&aClique com botão direito', '&apara abrir esta caixa.']
 
+# Mundos em que poderá abrir essa caixa
+worlds: []
+
+# Ativar o sistema de UUID (para não estacar caixas sem ser pelo comando de give)
+uuid: false
+
 # Configurações de animação da roleta
 animation:
   # Ativar a animação
