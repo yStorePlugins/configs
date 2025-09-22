@@ -1,0 +1,168 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s
+menu-updater-time: 20
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Mochila de Chaves'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 21, 22, 23 ]
+  previous-slot: 18
+  next-slot: 26
+  items:
+    automatic-slot: 38
+    upgrade-open-slot: 39
+    upgrade-storage-slot: 40
+    store-slot: 42
+    automatic-has:
+      material: '1c8e0ddf2432f4332b87691b5952c7679763ef4f275b874e9bceb888ed5b5b9'
+      name: '&cAbertura automática'
+      lore:
+        - '&7A mochila consegue abrir'
+        - '&7suas chaves automaticamente!'
+        - ''
+        - ' &8> &fPeríodo: &7{time}'
+        - ''
+        - ' &7Adquira este item:'
+        - ' &fystoreplugins.com.br'
+        - ''
+    automatic:
+      material: '1391203d3752afc71d8f8cb0da8dbc7f13a3baafe0bf5f911cb21c38341f87db'
+      name: '&aAbertura automática'
+      lore:
+        - '&7A mochila consegue abrir'
+        - '&7suas chaves automaticamente!'
+        - ''
+        - ' &8> &fPeríodo: &7{time}'
+        - ' &8> &fStatus: &7{status}'
+        - ''
+        - '&aClique para alternar.'
+    upgrade-open:
+      material: '4ce36fcb1e5f6b36517fbbeb9cbf4b0c05c30d8bdb5154824e60e6d550f528e9'
+      name: '&aQuantidade de abertura'
+      lore:
+        - '&7Evolua a quantidade que'
+        - '&7sua mochila consegue abrir'
+        - '&7chaves por vez.'
+        - ''
+        - ' &aAtual:'
+        - ' &8> &fQuantidade: &7{actual}'
+        - ''
+        - ' &aEvolução:'
+        - ' &8> &fPreço: &2$&f{money}'
+        - ' &8> &fQuantidade: &7{next}'
+        - ''
+        - '&aClique para evoluir.'
+    upgrade-open-max:
+      material: '4ce36fcb1e5f6b36517fbbeb9cbf4b0c05c30d8bdb5154824e60e6d550f528e9'
+      name: '&aQuantidade de abertura'
+      lore:
+        - '&7Evolua a quantidade que'
+        - '&7sua mochila consegue abrir'
+        - '&7chaves por vez.'
+        - ''
+        - ' &aAtual:'
+        - ' &8> &fQuantidade: &7{actual}'
+        - ''
+        - '&cEsta mochila já está no upgrade máximo.'
+    upgrade-storage:
+      material: '4ce36fcb1e5f6b36517fbbeb9cbf4b0c05c30d8bdb5154824e60e6d550f528e9'
+      name: '&aQuantidade de armazenamento'
+      lore:
+        - '&7Evolua a quantidade que'
+        - '&7sua mochila consegue armazenar'
+        - '&7de chaves.'
+        - ''
+        - ' &aAtual:'
+        - ' &8> &fQuantidade: &7{actual}'
+        - ''
+        - ' &aEvolução:'
+        - ' &8> &fPreço: &2$&f{money}'
+        - ' &8> &fQuantidade: &7{next}'
+        - ''
+        - '&aClique para evoluir.'
+    upgrade-storage-max:
+      material: '4ce36fcb1e5f6b36517fbbeb9cbf4b0c05c30d8bdb5154824e60e6d550f528e9'
+      name: '&aQuantidade de armazenamento'
+      lore:
+        - '&7Evolua a quantidade que'
+        - '&7sua mochila consegue armazenar'
+        - '&7de chaves.'
+        - ''
+        - ' &aAtual:'
+        - ' &8> &fQuantidade: &7{actual}'
+        - ''
+        - '&cEsta mochila já está no upgrade máximo.'
+    store:
+      material: 'ef221b33f5b39e99ee6fd343abaaa9abdf66d93d4306cf01cca9f202e8773fd6'
+      name: '&dGuardar chaves'
+      lore:
+        - '&7Clique para guardar todas'
+        - '&7as chaves disponíveis em'
+        - '&7seu inventário.'
+  facing:
+    e0:
+      slot: 11
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e1:
+      slot: 12
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e2:
+      slot: 13
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e3:
+      slot: 14
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e4:
+      slot: 15
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e5:
+      slot: 21
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e6:
+      slot: 22
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e7:
+      slot: 23
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []

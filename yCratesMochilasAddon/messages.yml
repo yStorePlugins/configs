@@ -1,0 +1,33 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aCrate Mochilas comandos:
+
+    &a> /cratebackpack
+    &a> /cratebackpack give <player> <automatico:[sim/nao]>
+    &a> /cratebackpack giveautomatic <player> <quantia>
+
+  inv-full: '&cSeu inventário está cheio.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  backpack-give: '&aVocê deu &61x Mochila de Chaves&a para o jogador &7{player}&a.'
+  backpack-received: '&aVocê recebeu &61x Mochila de Chaves&a.'
+  backpack-full: '&cSua mochila já está cheia.'
+  automatic-give: '&aVocê deu &e{amount} &ade *ATIVADOR AUTOMÁTICO* para o jogador &e{player}&a.'
+  automatic-activated: '&aO *ATIVADOR AUTOMÁTICO* foi ativado na mochila.'
+  automatic-already: '&cEsta mochila já possui o ativador automático.'
