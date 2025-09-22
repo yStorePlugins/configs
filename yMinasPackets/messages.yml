@@ -231,6 +231,8 @@ chat:
   skin-no-has: '&cA ferramenta não possui essa skin.'
   skin-removed: '&aSkin removida com sucesso.'
   skin-has-player: '&aO jogador já possui esta skin.'
+  skin-best: '&aEssa já é a melhor skin possível.'
+  skin-upgraded: '&aSkin melhorada com sucesso.'
   classe-bought: '&aVocê evoluiu para a classe &7{classe}&a.'
   classe-permission: '&cVocê não tem permissão para evoluir para esta classe.'
   classe-previous: '&cVocê deve possuir a classe anterior primeiro.'

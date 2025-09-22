@@ -26,6 +26,8 @@ economies:
     allow-offline: true
     # Permitir a fortuna multiplicar essa economia
     allow-fortune: true
+    # Permitir o bônus nessa economia
+    allow-bonus: true
     # Permissão para o usuário conseguir definir esta economia
     permission: 'yminaspackets.provider.money'
     # Formato do símbolo
@@ -54,6 +56,8 @@ economies:
     allow-offline: true
     # Permitir a fortuna multiplicar essa economia
     allow-fortune: true
+    # Permitir o bônus nessa economia
+    allow-bonus: true
     # Permissão para o usuário conseguir definir esta economia
     permission: 'yminaspackets.provider.yminaspackets'
     # ‘Item’ que aparecerá
