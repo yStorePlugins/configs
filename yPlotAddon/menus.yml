@@ -35,6 +35,7 @@ main:
     home-slot: 31
     icon-slot: 24
     customize-slot: 40
+    title-slot: 42
     delete-slot: 44
     formats:
       prices: '&2{provider_symbol} &r{price} &7({provider_abbreviated})'
@@ -118,6 +119,16 @@ main:
         - '&7ficar do jeito que goste.'
         - ''
         - '&aClique para abrir.'
+    title:
+      material: 'PAINTING'
+      name: '&aTítulo'
+      lore:
+        - '&7Aparecer o nome do terreno no título'
+        - '&7ao entrar nele.'
+        - ''
+        - '&fStatus: &r{title}'
+        - ''
+        - '&cClique para alternar.'
     delete:
       material: 'BARRIER'
       name: '&cDeletar Terreno'
