@@ -1,0 +1,94 @@
+#         ____  _       _      _       _     _
+#  _   _|  _ \| | ___ | |_   / \   __| | __| | ___  _ __
+# | | | | |_) | |/ _ \| __| / _ \ / _` |/ _` |/ _ \| '_ \
+# | |_| |  __/| | (_) | |_ / ___ \ (_| | (_| | (_) | | | |
+#  \__, |_|   |_|\___/ \__/_/   \_\__,_|\__,_|\___/|_| |_|
+#  |___/                                                  
+#
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Sistemas gerais
+general:
+  # Quantia máxima de terrenos que um jogador pode ter
+  # (Essencial para o sistema de comprar terrenos)
+  plot-max: 2
+  # Ícone padrão dos terrenos
+  default-icon: '69a28ba3ba79be1954710d4db2a3fd22773f619f18fecf5982353fb7ac18393a'
+  # Custo para teleportar até um terreno
+  teleport-cost:
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+  # Custo para limpar um plot (PlotSquared apenas)
+  clear-cost:
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+  # Custo para agrupar seus plots (PlotSquared apenas)
+  merge-cost:
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+
+# Sistema de blocos compráveis para a parede dos plots (PlotSquared apenas)
+wall-blocks:
+  diamond:
+    material: 'DIAMOND_BLOCK'
+    # Preços
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+  emerald:
+    material: 'EMERALD_BLOCK'
+    # Preços
+    prices:
+      price1:
+        provider: 'money'
+        amount: 5000.0
+
+# Sistema de blocos compráveis para a borda dos plots (PlotSquared apenas)
+border-blocks:
+  diamond:
+    material: 'DIAMOND_BLOCK'
+    # Preços
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+  emerald:
+    material: 'EMERALD_BLOCK'
+    # Preços
+    prices:
+      price1:
+        provider: 'money'
+        amount: 5000.0

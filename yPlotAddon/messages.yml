@@ -1,0 +1,89 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+# Mensagens ao entrar em um terreno
+entry:
+  chat: ''
+  actionbar: '&aTerreno de &f{player}&a.'
+  title: '&aTerreno de<nl>&f{player}&a.'
+
+# Mensagens ao sair de um terreno
+exit:
+  chat: ''
+  actionbar: '&cVocê saiu do terreno de &f{player}&c.'
+  title: ''
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &a/plot - Abre o menu principal
+    &a/plots - Abre o menu de todos os terrenos
+
+  help-staff: |
+
+    &a/plot - Abre o menu principal
+    &a/plots - Abre o menu de todos os terrenos
+    
+    &c/plots reload - Recarrega as configurações
+
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  plot-friend-digit-add: |
+
+    &aDigite no chat o nome do seu amigo que quer adicionar.'
+    &7para cancelar digite &ncancelar&7.'
+
+  plot-head-digit: |
+
+    &aDigite o nome da head que você deseja.'
+    &7para cancelar digite &ncancelar&7.'
+
+  plot-price-digit: |
+
+    &aDigite o preço que você deseja.'
+    &7para cancelar digite &ncancelar&7.'
+
+
+  plot-name-digit: |
+
+    &aDigite o nome que você deseja.'
+    &7para cancelar digite &ncancelar&7.'
+
+  plot-home-block: '&cVocê deve definir a localização em cima de um bloco.'
+  plot-home-wrong: '&cVocê deve definir a localização dentro deste terreno.'
+  plot-home-set: '&cA home desse terreno não está definida.'
+  plot-just-owner: '&cApenas o dono do terreno pode realizar essa ação.'
+  plot-fly-changed: '&aStatus do fly alternado para &7(&r{status}&7)&a.'
+  plot-home-changed: '&aLocal da home alterado com sucesso.'
+  plot-icon-changed: '&aÍcone alterado com sucesso.'
+  plot-price-changed: '&aVocê mudou o valor para {amount}.'
+  plot-name-changed: '&aVocê mudou o nome para {name}.'
+  plot-friend-add-owner: '&cVocê não pode adicionar o dono como amigo no terreno.'
+  plot-friend-already-added: '&cEste jogador já está adicionado.'
+  plot-friend-added: '&aVocê adicionou o jogador &7{player}&a no seu terreno.'
+  plot-friend-deleted: '&aJogador deletado com sucesso.'
+  plot-teleported: '&aTeleportado para o terreno.'
+  plot-deleted: '&aTerreno deletado com sucesso.'
+  plot-buy-owner: '&cVocê não pode comprar seu próprio terreno.'
+  plot-max: '&cVocê atingiu o limite máximo de terrenos ({max}).'
+  plot-not-selling: '&cEste terreno não está a venda.'
+  plot-bought: '&aTerreno &f{name}&a de &f{player}&a adquirido com sucesso.'
+  plot-bought-target: '&aTerreno &f{name}&a adquirido por &f{player}&a com sucesso.'
+  owner-offline: '&cEsta venda possui uma economia que não permite que o dono esteja offline e o dono deste terreno está offline.'
+  wall-block-buy: '&aVocê comprou um novo bloco de parede para o terreno.'
+  border-block-buy: '&aVocê comprou um novo bloco de borda para o terreno.'
+  cleared: '&aTerreno limpo com sucesso.'
+  merged: '&aTerrenos agrupado com sucesso.'
