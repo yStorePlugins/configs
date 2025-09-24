@@ -131,6 +131,11 @@ Mensagens:
   Suficiente: '&cEsta plantação não possui quantia suficiente.'
   Alterou: '&aVocê alterou o limite de venda do jogador &f{player}&a para &f{quantia}&a.'
   SellAll-Delay: '&c&lERRO! &cAguarde &e{time} &cpara vender plantações novamente.'
+  booster-give: '&aVocê deu &7{amount}x Booster(s)&a para o jogador &7{player}&a.'
+  booster-received: '&aVocê recebeu &7{amount}x Booster(s)&a.'
+  booster-finished: '&cSeu booster de armazém acabou.'
+  booster-already: '&cVocê já está usando um booster.'
+  booster-activated: '&aVocê ativou um booster de armazém. Multiplicador: &e{bonus}% coins&a. Tempo: &e{time}&a.'
   Coletar:
     - ''
     - '&aDigite a quantia que você quer coletar.'
