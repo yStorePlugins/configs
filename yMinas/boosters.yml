@@ -1,0 +1,14 @@
+boosters:
+   booster1:
+      # Duração do booster em segundos
+      time: 60
+      # Bônus de venda
+      bonus: 10.0
+      # Bônus de venda
+      bonus-block: 10.0
+      # Item do booster
+      item:
+         material: EXP_BOTTLE
+         glow: true
+         name: '&aBônus de Mineração'
+         lore: [ '', '&aTempo: &e{time}', '&aBônus de coins: &e{bonus}%', '&aBônus de blocos: &e{bonus-block}%', '' ]

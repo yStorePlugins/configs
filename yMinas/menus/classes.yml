@@ -1,0 +1,22 @@
+Nome: '&8Mina - Classes'
+Tamanho: 54
+Slots: [ 11, 12,13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33]
+BackSlot: 48
+AnteriorSlot: 18
+ProximoSlot: 26
+# Item da classe atual
+Classe:
+  Slot: 50
+  CustomSkull: false
+  URL: ''
+  ID: LEATHER_CHESTPLATE
+  Data: 0
+  Name: '&bClasses'
+  Lore:
+    - '&7Upando sua classe você irá ganhar'
+    - '&7bônus na mineração, no ganho de'
+    - '&7coins e gemas.'
+    - ''
+    - '&fSua classe: &7{classe}'
+    - ''
+Itens: {}

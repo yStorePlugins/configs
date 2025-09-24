@@ -1,0 +1,154 @@
+Nome: '&8Mina - Mudar ícone'
+Tamanho: 27
+# Local onde irá ficar o ícone
+InputSlot: 13
+Itens:
+  Cancelar:
+    Slot: 18
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: false
+    Name: '&cCANCELAR'
+    Lore:
+      - '&7Clique para cancelar e voltar'
+      - '&7ao menu de gerenciamento.'
+  Confirmar:
+    Slot: 26
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: false
+    Name: '&aCONFIRMAR'
+    Lore:
+      - '&7Clique para confirmar e alterar'
+      - '&7o ícone da mina.'
+  Enfeite1:
+    Slot: 3
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite2:
+    Slot: 4
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite3:
+    Slot: 5
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite4:
+    Slot: 9
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite5:
+    Slot: 10
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite6:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite7:
+    Slot: 12
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite8:
+    Slot: 14
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite9:
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite10:
+    Slot: 16
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite11:
+    Slot: 17
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite12:
+    Slot: 21
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite13:
+    Slot: 22
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite14:
+    Slot: 23
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_GLASS_PANE
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  # Você pode adicionar enfeites, apenas adicionando itens iguais o Confirmar e mudando os dados.

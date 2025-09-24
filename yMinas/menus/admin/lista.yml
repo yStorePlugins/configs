@@ -1,0 +1,22 @@
+Nome: '&8Mina - ListaAdmin'
+Tamanho: 54
+Slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+AnteriorSlot: 27
+ProximoSlot: 35
+# Este item será mostrado para cada mina que não estiver configurada na seção Minas.
+Padrao:
+  Name: '&e{nome}'
+  Lore:
+    - '&7Clique com esquerdo para editar.'
+    - '&7Clique com Q para deletar.'
+# Configure as minas que irão aparecer
+Minas:
+  Mina1:
+    # Nome da mina criada
+    Mina: 'Mina1'
+    Name: '&eMina 1'
+    Lore:
+      - '&7Clique com esquerdo para editar.'
+      - '&7Clique com Q para deletar.'
+
+Itens: {}

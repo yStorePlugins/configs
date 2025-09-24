@@ -1,0 +1,14 @@
+# Itens que poderão ser usados no lugar na Pickaxe default
+Ferramentas:
+  Spade:
+    CustomSkull: false
+    URL: ''
+    ID: DIAMOND_SPADE
+    Data: 0
+    Name: '&bPá &6[{blocos_quebrados}]'
+    Lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{nivel}'
+      - ' &fEnergia: &7{energia}/{energia_proximo} &f({progressbar}&f)'

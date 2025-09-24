@@ -1,0 +1,65 @@
+Nome: '&8TOP Mineração'
+Tamanho: 36
+Slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+BackSlot: 30
+AnteriorSlot: 9
+ProximoSlot: 17
+# Item do top Blocos
+Item blocos:
+  CustomSkull: true
+  URL: '{player}'
+  ID: 0
+  Data: 0
+  Name: '&f{player}'
+  Lore:
+    - ''
+    - '&fBlocos: &7{blocos}'
+    - '&fPosição: &e{pos}º'
+    - ''
+# Item do top blocos quebrados
+Item quebrados:
+  CustomSkull: true
+  URL: '{player}'
+  ID: 0
+  Data: 0
+  Name: '&f{player}'
+  Lore:
+    - ''
+    - '&fBlocos Quebrados: &7{blocos}'
+    - '&fPosição: &e{pos}º'
+    - ''
+# Item do top tempo
+Item tempo:
+  CustomSkull: true
+  URL: '{player}'
+  ID: 0
+  Data: 0
+  Name: '&f{player}'
+  Lore:
+    - ''
+    - '&fTempo de mineração: &7{tempo}'
+    - '&fPosição: &e{pos}º'
+    - ''
+# Seletor dos tops
+Seletor:
+  Slot: 31
+  CustomSkull: true
+  URL: 'http://textures.minecraft.net/texture/22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+  ID: 0
+  Data: 0
+  Name: '&aSeletor do TOP'
+# Tipos do seletor
+Tipos:
+  Blocos:
+    Ativar: true
+    Nome: 'Blocos'
+  Quebrados:
+    Ativar: true
+    Nome: 'Blocos Quebrados'
+  Tempo:
+    Ativar: true
+    Nome: 'Tempo de mineração'
+# Formatos do seletor
+Formato:
+  Visualizando: ' &f• &a{nome}'
+  Selecionar: ' &f• &7{nome}'

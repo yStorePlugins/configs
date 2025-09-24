@@ -1,0 +1,117 @@
+Nome: '&8Mineração'
+Tamanho: 27
+Itens:
+  Encantamentos:
+    Slot: 10
+    CustomSkull: true
+    URL: 'b2f79016cad84d1ae21609c4813782598e387961be13c15682752f126dce7a'
+    ID: AIR
+    Data: 0
+    Name: '&aEncantamentos'
+    Lore:
+      - '&7Gerencie os encantamentos da'
+      - '&7sua picareta.'
+      - ''
+      - '&aClique para acessar.'
+  Top:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: BOOK_AND_QUILL
+    Data: 0
+    Name: '&aTop'
+    Lore:
+      - '&7Veja os jogadores que'
+      - '&7se destacaram na mineração.'
+      - ''
+      - '&aClique para visualizar.'
+  Minas:
+    Slot: 12
+    CustomSkull: false
+    URL: ''
+    ID: GOLD_INGOT
+    Data: 0
+    Name: '&aMinas'
+    Lore:
+      - '&7Veja as minas disponíveis no'
+      - '&7nosso servidor.'
+      - ''
+      - '&aClique para visualizar.'
+  Ir:
+    Slot: 16
+    CustomSkull: false
+    URL: ''
+    ID: DIAMOND_PICKAXE
+    Data: 0
+    Name: '&aIr minerar'
+    Lore:
+      - '&7Teleportar para sua mina e começar'
+      - '&7a jornada de mineração.'
+      - ''
+      - ' &fSua mina: &b{mina}&f.'
+      - ''
+      - '&aClique para ir minerar'
+  Sair:
+    Slot: 16
+    CustomSkull: true
+    URL: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    ID: AIR
+    Data: 0
+    Name: '&eSair da mineração'
+    Lore:
+      - '&7Terminar sua jornada de mineração'
+      - '&7e sair da mina.'
+      - ''
+      - ' &fMina atual: &b{mina}&f.'
+      - ''
+      - '&aClique para sair da mineração'
+  Classe:
+    Slot: 13
+    CustomSkull: false
+    URL: ''
+    ID: LEATHER_CHESTPLATE
+    Data: 0
+    Name: '&bClasses'
+    Lore:
+      - '&7Upando sua classe você irá ganhar'
+      - '&7bônus na mineração, no ganho de'
+      - '&7coins e gemas.'
+      - ''
+      - '&fSua classe: &7{classe}'
+      - ''
+      - '&aClique para gerenciar as classes'
+  Bombs:
+    Slot: 14
+    CustomSkull: false
+    URL: ''
+    ID: FIREBALL
+    Data: 0
+    Name: '&bArsenal'
+    Lore:
+      - '&7Leve bombas no seu arsenal para'
+      - '&7destruir a mina e ganhar muito'
+      - '&7dinheiro.'
+      - ''
+      - '&aClique para abrir o arsenal'
+  Booster-no:
+    CustomSkull: false
+    URL: ''
+    ID: GLASS_BOTTLE
+    Data: 0
+    Name: '&aBooster'
+    Lore:
+      - '&cNenhum booster ativo'
+  Booster:
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: EXP_BOTTLE
+    Data: 0
+    Name: '&aBooster'
+    Lore:
+      - '&aSeu booster de drops está ativo!'
+      - '&f> &bTempo: &7{time}&f.'
+      - '&f> &bBônus venda: &7{bonus}%&f.'
+      - '&f> &bBônus blocos: &7{bonus-block}%&f.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Sair:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

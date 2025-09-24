@@ -1,0 +1,218 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  mine-exists: '&cEssa mina já existe.'
+  mine-found: |
+    &cEssa mina não existe.
+    &cDisponiveis: {minas}
+  mine-created: '&aMina &f{mina}&a criada com sucesso.'
+  mine-deleted: '&aMina &f{mina}&a deletada com sucesso.'
+  mine-admin-help: |
+    &cComandos disponíveis:
+    &c> /minaadmin criar <mina>
+    &c> /minaadmin editar <mina>
+    &c> /minaadmin resetar <mina>
+    &c> /minaadmin resetarpicareta <player>
+    &c> /minaadmin darnivel <player> <quantia>
+    &c> /minaadmin removernivel <player> <quantia>
+    &c> /minaadmin darenergia <player> <quantia>
+    &c> /minaadmin removerenergia <player> <quantia>
+    &c> /minaadmin lista
+    &c> /minaadmin setsaida
+    &c> /minaadmin reload
+  change-name: '&aVocê alterou o nome da arena mina &e{nome}&a.'
+  change-time: '&aVocê alterou o tempo de reset da mina para &e{tempo} segundos&a.'
+  change-percentage: '&aVocê alterou a porcentagem de reset da mina para &e{porcentagem}%&a.'
+  change-chance: '&aVocê alterou a chance para {chance}.'
+  change-price: '&aVocê alterou o preço para {preco}.'
+  change-xp: '&aVocê alterou o xp para {xp}.'
+  change-mcmmo: '&aVocê alterou o xp do mcMMO para {xp}.'
+  change-priority: '&aVocê alterou a prioridade para {prioridade}.'
+  change-order: '&aVocê alterou a ordem para {ordem}.'
+  change-level: '&aVocê alterou o nível para {nivel}.'
+  change-permission: '&aVocê alterou a permissao para {permissao}.'
+  change-server: '&aVocê alterou o servidor para {server}.'
+  change-icon: '&aÍcone alterado com sucesso.'
+  item-no: '&cO item não pode ser nulo.'
+  local-set: '&aLocal definido com sucesso.'
+  local-deleted: '&aLocal deletado com sucesso.'
+  local-not-set: '&cO local não foi definido ainda.'
+  teleported: '&aTeleportado para a mina com sucesso.'
+  pos1-set: '&aPosição 1 da mina &f{mina}&a setada.'
+  pos2-set: '&aPosição 2 da mina &f{mina}&a setada.'
+  chance: '&cA chance não pode ser maior que 100 nem menor que 0.'
+  block: '&cVocê deve inserir um bloco.'
+  block-already: '&cEsta mina já possui este bloco.'
+  block-add: '&aBloco adicionado com sucesso.'
+  invalid-percentage: '&cA porcentagem deve ser maior que 0% e menor que 100%.'
+  reward-added: '&aRecompensa adicionada com sucesso.'
+  none: '&cNenhuma mina foi encontrada disponível para você.'
+  spawn: '&cO spawn da mina &f{mina}&c não foi setado.'
+  exit: '&cA saída das minas não foi setada.'
+  exit-set: '&aA saída das minas foi setada com sucesso.'
+  slot-empty: '&cO slot {slot} deve estar vazio para poder receber a picareta. Por favor, re-entre na mina.'
+  inv-full: '&cSeu inventário está cheio!'
+  not-in: '&cVocê não está em uma mina.'
+  command: '&cVocê não pode usar este comando na mina. Utilize /mina para sair dela.'
+  evolved: '&aO encantamento &f{encantamento}&a foi evoluido para o nível &f{nivel}&a.'
+  mine-permission: '&cVocê não tem permissão para ir até a mina {mina}.'
+  mine-level: '&cSua picareta não tem nível suficiente para ir até a mina {mina}.'
+  exceeds: '&cEstes níveis excedem o nível máximo do encantamento.'
+  has: '&cVocê não possui a quantia de &f{blocos}&c blocos.'
+  has-level: '&cVocê não possui a quantia de &f{nivel}&c níveis necessários.'
+  already-in: '&cVocê já está em uma mina. Utilize /mina para sair dela.'
+  blocks: '&bVocê possui &f{blocos} blocos&b.'
+  blocks-player: '&bO jogador &f{player}&b possui &f{blocos} blocos&b.'
+  blocks-added: '&bVocê adicionou &f{blocos} blocos&b ao jogador &f{player}&b.'
+  blocks-removed: '&bVocê removeu &f{blocos} blocos&b do jogador &f{player}&b.'
+  blocks-set: '&bVocê setou &f{blocos} blocos&b para o jogador &f{player}&b.'
+  blocks-give: '&bVocê deu &f{blocos} &bblocos para o jogador &f{player}&b.'
+  blocks-converted: '&bVocê compactou todos seus blocos em 1.'
+  blocks-activated: '&bVocê ativou &f{blocos} blocos&b.'
+  blocks-sent: '&bVocê enviou &f{blocos} blocos&b para o jogador &f{player}&b.'
+  blocks-received: '&bVocê recebeu &f{blocos} blocos&b do jogador &f{player}&b.'
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  reset-mine: '&aVocê resetou a mina &f{mina}&a.'
+  reset-tool: '&aVocê resetou a picareta do jogador &f{player}&a.'
+  give-level: '&aVocê deu &f{nivel}&a níveis para o jogador &f{player}&a.'
+  removed-level: '&aVocê removeu &f{nivel}&a níveis do jogador &f{player}&a.'
+  give-energy: '&aVocê deu &f{energia}&a em energia para o jogador &f{player}&a.'
+  removed-energy: '&aVocê removeu &f{energia}&a de energia do jogador &f{player}&a.'
+  clear: '&cVocê deve esvaziar seu inventário.'
+  classe-bought: '&aVocê evoluiu para a classe &7{classe}&a.'
+  classe-permission: '&cVocê não tem permissão para evoluir para esta classe.'
+  classe-previous: '&cVocê deve possuir a classe anterior primeiro.'
+  classe-reset: '&aVocê resetou a classe do jogador &f{player}&a.'
+  classe-set: '&aVocê definiu a classe {classe} ao jogador &f{player}&a.'
+  classe-found: '&aEsta classe não existe. Disponíveis: {classes}'
+  added-all: '&bVocê adicionou &f{blocos} blocos&b para todos os jogadores online.'
+  give-all: '&bO usuário &f{player}&b deu &f{blocos} &bblocos para todos os jogadores online&b.'
+  bomb-shift: '&cVocê não pode usar shift no arsenal.'
+  bomb-numkeys: '&cVocê não pode usar as teclas numéricas no arsenal.'
+  bomb-creative: '&cVocê não pode usar clicar no arsenal estando no criativo.'
+  bomb-blocked: '&cVocê pode colocar apenas bombas no arsenal.'
+  cant-buy: '&cVocê não pode comprar esse encantamento.'
+  wait: '&aVocê será teletransportado em {quantia} segundos... Não se mova.'
+  desenchanted: '&aVocê desencantou &f{level} níveis &ado encantamento &f{enchant}&a.'
+  skin-found: '&cEsta skin não existe. Disponíveis: &7{list}'
+  skin-give: '&bVocê deu uma skin para o jogador &f{player}&b.'
+  skin-has: '&aVocê já possui esta skin ativada.'
+  skin-activated: '&aSkin ativada com sucesso.'
+  skin-no-has: '&cA ferramenta não possui essa skin.'
+  skin-removed: '&aSkin removida com sucesso.'
+  skin-has-player: '&aO jogador já possui esta skin.'
+  digit-name: |
+
+    &aDigite o nome para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-time: |
+
+    &aDigite o tempo (em seg) para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-percentage: |
+
+    &aDigite a porcentagem para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-chance: |
+
+    &aDigite a chance para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-price: |
+
+    &aDigite o preço para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-xp: |
+
+    &aDigite o xp para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-mcmmo: |
+
+    &aDigite o xp do mcMMO para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-priority: |
+
+    &aDigite a prioridade para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-order: |
+
+    &aDigite a ordem para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-level: |
+
+    &aDigite o nivel para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-permission: |
+
+    &aDigite a permissão para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-server: |
+
+    &aDigite o servidor para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-enchant: |
+
+    &aDigite a quantia de níveis que você quer adquirir ao encantamento &f{encantamento}&a.
+    &7para cancelar digite &ncancelar&7.
+
+  blocks-help: |
+
+    &a/blocos &8- &7Ver os seus blocos.
+    &a/blocos <player> &8- &7Ver os blocos de alguém.
+    &a/blocos enviar <player> <quantia> &8- &7Envia seus blocos para alguém.
+    &a/blocos add <player> <quantia> &8- &7Adiciona blocos a alguém.
+    &a/blocos give <player> <quantia> &8- &7Dá blocos em forma de item a alguém.
+    &a/blocos set <player> <quantia> &8- &7Remove blocos de alguém.
+    &a/blocos remove <player> <quantia> &8- &7Seta blocos a alguém.
+
+  mine-help: |
+
+    &a/mina &8- &7Abre o menu principal.
+    &a/mina ir &8- &7Vai até a sua maior mina.
+    &a/mina ir <mina> &8- &7Vai até uma mina específica.
+    &a/mina sair &8- &7Sai da mina.
+    &a/mina lista &8- &7Abre o menu de minas.
+    &a/mina bombas &8- &7Abre o menu do arsenal.
+    &a/mina skins &8- &7Abre o menu de skins.
+    &a/mina classes &8- &7Abre o menu de classes.
+    &a/mina evoluir &8- &7Abre o menu de evolução.
+
+  booster-give: '&aVocê deu &7{amount}x Booster(s)&a para o jogador &7{player}&a.'
+  booster-received: '&aVocê recebeu &7{amount}x Booster(s)&a.'
+  booster-list: |
+    &cBooster não encontrado.
+    &cBooster disponíveis: &f{list}
+  booster-finished: '&cSeu booster de mineração acabou.'
+  booster-already: '&cVocê já está usando um booster.'
+  booster-activated: '&aVocê ativou um booster de mineração. Multiplicador: &e{bonus}% coins &ae &e{bonus-block}% blocos&a. Tempo: &e{time}&a.'
+  mine-maintenance: '&cEsta mina {mina} &cestá em manutenção.'
+  mine-maintenance-on: '&aA mina {mina} &aestá agora em manutenção.'
+  mine-maintenance-off: '&cA mina {mina} &cnão está mais em manutenção.'
+  mine-kick-all: '&aVocê expulsou todos os jogadores das minas.'
+  enchantment-permission: '&cVocê não tem permissão para evoluir este encantamento.'

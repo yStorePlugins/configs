@@ -1,0 +1,217 @@
+Nome: '&8Gerenciar mina'
+Tamanho: 36
+BackSlot: 27
+Itens:
+  Nivel:
+    Slot: 10
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aNível'
+    Lore:
+      - '&7O nível é o nível necessário da picareta do'
+      - '&7jogador para ele entrar na mina.'
+      - ''
+      - '&fNível: &7{nivel}&f.'
+      - ''
+      - '&aClique para alterar o nível'
+  Permissao:
+    Slot: 11
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aPermissão'
+    Lore:
+      - '&7Permissão para ir quebrar os blocos na mina.'
+      - ''
+      - '&fPermissão: &7{permissao}&f.'
+      - ''
+      - '&aClique para alterar a permissão'
+  Prioridade:
+    Slot: 12
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aPrioridade'
+    Lore:
+      - '&7Prioridade da mina para puxar'
+      - '&7a última mina do player.'
+      - ''
+      - '&fPrioridade: &7{prioridade}&f.'
+      - ''
+      - '&aClique para alterar a prioridade'
+  Pvp:
+    Slot: 13
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aPvP'
+    Lore:
+      - '&aHabilitar o combate entre jogadores na mina.'
+      - ''
+      - '&fPVP: &7{pvp}&f.'
+      - ''
+      - '&aClique para alternar o pvp'
+  CustomPickaxe:
+    Slot: 14
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aPicareta Custom'
+    Lore:
+      - '&7Habilitar a picareta customizada na mina.'
+      - ''
+      - '&fPicareta Custom: &7{picareta}&f.'
+      - ''
+      - '&aClique para alternar a picareta custom'
+  DanoNatural:
+    Slot: 15
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aDano natural'
+    Lore:
+      - '&7Habilitar o dano natural na mina.'
+      - ''
+      - '&fDano natural: &7{dano}&f.'
+      - ''
+      - '&aClique para alternar o dano natural'
+  MenuOrdem:
+    Slot: 16
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aOrdem'
+    Lore:
+      - '&7Ordem da mina na lista de minas.'
+      - ''
+      - '&fOrdem atual: &7{ordem}&f.'
+      - ''
+      - '&aClique para alterar a ordem'
+  TeleportarReset:
+    Slot: 19
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aTeleportar ao resetar'
+    Lore:
+      - '&7Teleportar ao spawn da mina ao resetar.'
+      - ''
+      - '&fTeleportar: &7{teleportar}&f.'
+      - ''
+      - '&aClique para alternar o teleporte'
+  Fly:
+    Slot: 20
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aModo voar'
+    Lore:
+      - '&7Ativar o fly na mina para os jogadores'
+      - '&7que tiverem a permissão: "yminas.fly"'
+      - ''
+      - '&fFly: &7{fly}&f.'
+      - ''
+      - '&aClique para alternar o fly'
+  Haste:
+    Slot: 21
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aHaste'
+    Lore:
+      - '&7Ativar o encantamento de hasye na mina.'
+      - ''
+      - '&fHaste: &7{haste}&f.'
+      - ''
+      - '&aClique para alternar o haste'
+  Speed:
+    Slot: 22
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aSpeed'
+    Lore:
+      - '&7Ativar o encantamento de speed na mina.'
+      - ''
+      - '&fSpeed: &7{speed}&f.'
+      - ''
+      - '&aClique para alternar o speed'
+  Classes:
+    Slot: 23
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aClasses'
+    Lore:
+      - '&7Ativar o sistema de classes na mina.'
+      - ''
+      - '&fClasses: &7{classes}&f.'
+      - ''
+      - '&aClique para alternar'
+  TeleportDelay:
+    Slot: 24
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aDelay de teletransporte'
+    Lore:
+      - '&7Alterar o delay para sair da mina.'
+      - ''
+      - '&fAtual: &7{delay}&f.'
+      - ''
+      - '&aClique para alterar'
+  Skins:
+    Slot: 25
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aSkins'
+    Lore:
+      - '&7Ativar o sistema de skins na mina.'
+      - ''
+      - '&fClasses: &7{skins}&f.'
+      - ''
+      - '&aClique para alternar'
+  RankupBook:
+    Slot: 26
+    CustomSkull: true
+    URL: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aRankup Book'
+    Lore:
+      - '&7Ativar o sistema de rankup-book na mina.'
+      - ''
+      - '&fClasses: &7{rankup-book}&f.'
+      - ''
+      - '&aClique para alternar'

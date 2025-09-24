@@ -1,0 +1,206 @@
+# Você pode criar quantos quiser
+Encantamentos:
+  Chaveiro:
+    Displays: # Item que aparecerá no menu de evolução
+      Pode: # quando puder evoluir
+        CustomSkull: false
+        URL: ''
+        ID: TRIPWIRE_HOOK
+        Data: 0
+        Name: '&aChaveiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode: # quando não puder evoluir
+        CustomSkull: false
+        URL: ''
+        ID: TRIPWIRE_HOOK
+        Data: 0
+        Name: '&aChaveiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo: # quando já estiver no máximo
+        CustomSkull: false
+        URL: ''
+        ID: TRIPWIRE_HOOK
+        Data: 0
+        Name: '&aChaveiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission: # quando já estiver no máximo
+        CustomSkull: false
+        URL: ''
+        ID: TRIPWIRE_HOOK
+        Data: 0
+        Name: '&aChaveiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Chaveiro'
+    # Nível da picareta necessário para poder evoluir o encantamento
+    NivelPicareta: 0
+    Ordem: 13
+    MostrarMenu: true
+    PodeComprar: true
+    # chance,comando
+    Comandos:
+      - '20,give {player} tripwire_hook 1'
+    Mensagens:
+      Title: '&aChave<nl>&eencontrada' # deixe '' para não usar
+      Actionbar: '' # deixe '' para não usar
+      Chat: [ ]
+    Nivel:
+      Padrao: 1.0
+      Maximo: 1.0 # Use -1 para ser infinito
+      Porcentagem: 0.0 # porcentagem adquirida por nível (ele acrescenta na chance do comando)
+    Preco:
+      Padrao: 100.0
+      PerLevel: 200.0
+      Multiplicador: 1.00
+    Prices-Default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    Prices-PerLevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    Prices-Desencantador:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
+  Aventureiro:
+    Displays: # Item que aparecerá no menu de evolução
+      Pode: # quando puder evoluir
+        CustomSkull: false
+        URL: ''
+        ID: QUARTZ
+        Data: 0
+        Name: '&aAventureiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre limites ao minerar.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode: # quando não puder evoluir
+        CustomSkull: false
+        URL: ''
+        ID: QUARTZ
+        Data: 0
+        Name: '&aAventureiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre limites ao minerar.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo: # quando já estiver no máximo
+        CustomSkull: false
+        URL: ''
+        ID: QUARTZ
+        Data: 0
+        Name: '&aAventureiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre limites ao minerar.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission: # quando já estiver no máximo
+        CustomSkull: false
+        URL: ''
+        ID: QUARTZ
+        Data: 0
+        Name: '&aAventureiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre limites ao minerar.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Aventureiro'
+    # Nível da picareta necessário para poder evoluir o encantamento
+    NivelPicareta: 0
+    Ordem: 14
+    MostrarMenu: true
+    PodeComprar: true
+    # chance,comando
+    Comandos:
+      - '20,give {player} quartz 1'
+    Mensagens:
+      Title: '&aLimite<nl>&eencontrado' # deixe '' para não usar
+      Actionbar: '' # deixe '' para não usar
+      Chat: [ ]
+    Nivel:
+      Padrao: 1.0
+      Maximo: 1.0 # Use -1 para ser infinito
+      Porcentagem: 0.0 # porcentagem adquirida por nível (ele acrescenta na chance do comando)
+    Preco:
+      Padrao: 100.0
+      PerLevel: 200.0
+      Multiplicador: 1.00
+    Prices-Default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    Prices-PerLevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    Prices-Desencantador:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0

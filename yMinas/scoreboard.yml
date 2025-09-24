@@ -1,0 +1,17 @@
+Ativar: true
+Title: '&b&lyStore'
+Linhas:
+  - '&7     Área de mineração'
+  - ''
+  - '&f Mina: &7{mina}'
+  - '&f B. quebrados: &7{blocos_quebrados}'
+  - ''
+  - '&e Picareta'
+  - '&8  ❘&f Nível: &7{nivel}'
+  - '&8  ❘&f Energia: &7{energia}/{energia_proximo}'
+  - ''
+  - '&f Blocos: &e⛃{blocos}'
+  - '&f Coins: &2$&a{money}'
+  - '&f Cash: &6✪%playerpoints_points%'
+  - ''
+  - '&b    ystoreplugins.com.br'

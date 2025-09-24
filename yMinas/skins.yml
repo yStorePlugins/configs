@@ -1,0 +1,41 @@
+Skins:
+  stone:
+    order: 1
+    type: 'STONE'
+    custom-model-data: 1
+    item:
+      material: 'STONE'
+      name: '&aSkin de Pedra'
+      lore: ['&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aClique para ativar']
+    buy:
+      enabled: true
+      message: '&aVocê comprou a skin &&Pedra&a por &f{money}&a.'
+      prices:
+        price1:
+          provider: 'money'
+          amount: 100.0
+    menu:
+      equip:
+        material: 'STONE'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aClique para equipar' ]
+      equipped:
+        material: 'STONE'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aJá está equipada' ]
+      has:
+        material: 'STONE'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', ' &fPreço: &2$ &a{money} coins', '', '&aClique para comprar.' ]
+    name: '&fPicareta de Pedra &6[{blocos_quebrados}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{nivel}'
+      - ' &fEnergia: &7{energia}/{energia_proximo} &f({progressbar}&f)'
+      - ''
+      - '&a+10% ( PEDRA )'
+      - ''
+    bonus: 10.0
+    bonus-blocks: 10.0

@@ -1,0 +1,19 @@
+# Ativar o sistema de bungeecord
+Ativar: false
+
+# Modo deste servidor
+# LOBBY (ex: servidor de RankUP)
+# SERVER (ex: servidor que contém a mina)
+Modo: 'LOBBY'
+
+# Nome do servidor na config do BungeeCord em que o jogador vai ao sair da mina
+Saida: 'rankup'
+
+# Delay para enviar a picareta ao trocar para o servidor da mina
+# em ticks
+Delay: 3
+
+# Bloquear ações neste servidor caso esteja fora da mina
+# Somente caso o "Modo" for "SERVER"
+# permissão de bypass: yminas.blocked.bypass
+Block-actions: true

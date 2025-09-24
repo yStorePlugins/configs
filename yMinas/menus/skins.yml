@@ -1,0 +1,9 @@
+Nome: '&8Picareta - Skins'
+Tamanho: 36
+Slots: [11, 12, 13, 14, 15]
+BackSlot: 29
+AnteriorSlot: 18
+ProximoSlot: 26
+# Slot onde ficará a picareta do jogador
+PicaretaSlot: 31
+Itens: {}

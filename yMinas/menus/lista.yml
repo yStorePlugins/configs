@@ -1,0 +1,32 @@
+Nome: '&8Mina - Lista'
+Tamanho: 36
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 31
+AnteriorSlot: 29
+ProximoSlot: 33
+# Este item será mostrado para cada mina que não estiver configurada na seção Minas.
+Padrao:
+  Name: '&e{nome}'
+  Lore:
+    - ''
+    - '&7Clique para se teleportar'
+    - '&7até esta mina.'
+    - ''
+# Configure as minas que irão aparecer
+Minas:
+  Mina1:
+    # Nome da mina criada
+    Mina: 'Mina1'
+    Name: '&eMina 1'
+    Lore:
+      - '&7Essa mina comporta os seguintes'
+      - '&7ranks:'
+      - ''
+      - '&f・&fPorcoIII &7-> &7PorcoI&7.'
+      - ''
+      - '&f・&7Permite Lucky Blocks.'
+      - '&f・&7PVP &cOFF&7.'
+      - ''
+      - '&9&lyStore'
+
+Itens: {}

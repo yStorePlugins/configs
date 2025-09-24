@@ -1,0 +1,51 @@
+Nome: '&8Picareta - Evoluir'
+Tamanho: 54
+Slots: [11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33]
+BackSlot: 45
+AnteriorSlot: 18
+ProximoSlot: 26
+# Slot onde ficará a picareta do jogador
+PicaretaSlot: 47
+# Item para ver adicionar mais blocos
+Perfil:
+  Slot: 50
+  material: '{player}'
+  name: '&a{player}'
+  lore:
+    - ''
+    - '&fBlocos: &b{blocos}'
+    - '&fBlocos quebrados: &b{blocos_quebrados}'
+    - ''
+Skin:
+  Slot: 48
+  material: '731f3279fc112b7f18bd0a2229934fcb5605c62823ce698b8b503ecccf0a3ac4'
+  name: '&aSkins'
+  lore:
+    - '&7Configure a skin da sua picareta'
+    - '&7e ganhe alguns bônus.'
+    - ''
+    - '&aClique para acessar'
+# Item do filtro
+Filtro:
+  Slot: 52
+  material: HOPPER
+  glow: true
+  name: '&aFiltro'
+  lore:
+    - '&7Desabilite encantamentos que não'
+    - '&7queira utilizar no momento.'
+    - ''
+    - '&aClique para acessar'
+# Item do desencantador
+Desencantador:
+  Slot: 53
+  material: ANVIL
+  glow: true
+  name: '&aDesencantador'
+  lore:
+    - '&7Desencante encantamentos que não'
+    - '&7queira utilizar e receba o valor'
+    - '&7de volta.'
+    - ''
+    - '&aClique para acessar'
+Itens: {}

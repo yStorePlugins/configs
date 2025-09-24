@@ -1,0 +1,418 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Tabela: 'yminas.players'
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  MinaAdmin:
+    Comando: 'Minaadmin'
+    Aliases: [ minadmin ]
+  Mina:
+    Comando: 'mina'
+    Aliases: [ minas, minerar, mine ]
+  Blocos:
+    Comando: 'blocos'
+    Aliases: [ bloco, blocks, block ]
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Resetar as minas ao carregá-las da config
+load-reset: true
+
+# Quantidade do Y que vai teleportar ao spawn
+# 1.19+ usa-se -64
+void-detect: 0
+
+# Coloque o identificador da sua skill de mineração do mcMMO ou AuraSkills
+mining-skill-identify: 'MINING'
+
+# Permissão para a venda automática
+auto-sell-perm: ''
+
+# Opções gerais do plugin
+Opcoes:
+  # Ativar o sistema de bolsa
+  Bolsa: false
+  # Abrir o menu ao digitar /mina
+  Mina menu: true
+  # Ativar o livro do yRankup
+  RankupBook: true
+  # Ativar o sistema de minas em bungeecord
+  Bungeecord: false
+  # Teleportar o jogador para cima da mina ao resetar
+  # caso false, vai ficar o padrão = teleporta ao spawn da mina
+  Teleport-up: false
+  # Quantia que irá somar no nível da fortuna
+  # essencial para definir valores a partir da fortuna 1
+  Fortuna-Acrescer: 0.5
+  # Ativar o sistema de reset do FastAsyncWorldEdit ou WorldEdit (inclui AsyncWorldEdit)
+  FAWE: true
+  # Opções do FastAsyncWorldEdit ou WorldEdit (inclui AsyncWorldEdit)
+  FAWEOptions:
+    Normal: false # apagar o bloco quebrado usando o FastAsyncWorldEdit ou WorldEdit (inclui AsyncWorldEdit) (recomendo deixar desativado)
+    Destruidor: true # apagar os blocos do raio do destruidor
+    Explosao: true # -- da explosão
+    Furadeira: true # -- da furadeira
+    Laser: true # -- do raio do laser
+  # Opções da luckyblock
+  Luckyblock:
+    Nuclear: false # dar lucky block quando o nuclear for ativado
+    Destruidor: true # dar lucky block quando o destruidor for ativado
+    Explosao: true # dar lucky block quando a explosão for ativada
+    Furadeira: true # dar lucky block quando a furadeira for ativada
+    Laser: true # dar lucky block quando o laser for ativado
+  # Opções da recompensa
+  Recompensa:
+    Nuclear: false # dar recompensa quando o nuclear for ativado
+    Destruidor: true # dar recompensa quando o destruidor for ativado
+    Explosao: true # dar recompensa quando a explosão for ativada
+    Furadeira: true # dar recompensa quando a furadeira for ativada
+    Laser: true # dar recompensa quando o laser for ativado
+  # Opções dos custom-enchants
+  Custom-Enchant:
+    Nuclear: false # dar custom-enchants quando o nuclear for ativado
+    Destruidor: true # dar custom-enchants quando o destruidor for ativado
+    Explosao: true # dar custom-enchants quando a explosão for ativada
+    Furadeira: true # dar custom-enchants quando a furadeira for ativada
+    Laser: true # dar custom-enchants quando o laser for ativado
+  # Esconder o encantamento na lore da picareta caso o player desative ele
+  # caso esteja false, o encantamento ficará riscado na lore da picareta
+  DesativadoEsconder: false
+  # Evoluir a picareta com a ação do botão direito
+  EvoluirDireito: true
+  # Evoluir a picareta com a ação do botão Q
+  EvoluirQ: true
+  # Máximo permitido para evoluir com Q
+  QMax: 0
+  # Acumular os bônus que tiver permissão
+  Acumular bonus: false
+  # Bloquear de quebrar blocos da mina enquanto o inventário estiver cheio
+  Bloquear InvCheio: true
+  # Ativar a picareta custom
+  CustomPickaxe: true
+  # Fazer com que a CustomPickaxe nunca quebre
+  PickaxeUnbreakable: true
+  # Resetar a picareta ao morrer na mina pvp
+  ResetPvpDeath: false
+  # Slot em que será setada a picareta do jogador
+  # Deixe -1 para setar no slot que o jogador está selecionado
+  PickaxeSlot: 2
+  # Slot em que será setada a classe do jogador
+  # Deixe -1 para não usar
+  ClassesSlot: 6
+  # Habilitar o menu de evolução ao interagir com a picareta sem shift
+  InteragirEvolucaoNoShift: true
+  # Habilitar o menu de evolução ao interagir com a picareta com shift
+  InteragirEvolucaoYesShift: true
+  # Permitir mover itens do inventário com os números na mina
+  # Ativar esta opção pode causar erros dependendo da versão
+  Numkeys: false
+  # Para evoluir as classes ele deverá seguir a ordem delas?
+  Classe ordem: true
+  # Checar outras minas ao quebrar o bloco
+  # Ideal para fazer 2 minas no mesmo warp
+  Checar outras: false
+  # Valor padrão (sem contar o multiplicador) que irá dar de blocos ao quebrar na mina
+  BlocosDefault: 1
+  # Skin default da picareta
+  Skin-default: ''
+  # Materiais que irão ser reconhecidos na skin
+  Skin-materiais:
+    - 'WOOD'
+    - 'STONE'
+    - 'IRON'
+    - 'GOLD'
+    - 'DIAMOND'
+  # Sistema de money da mina
+  # Quando o jogador minerar e receber money
+  Money:
+    # Dar o money direto pelo vault
+    VaultAtivar: true
+    # Caso a opção acima esteja desativada
+    # irá executar o comando abaixo
+    # (pode gerar lag)
+    ComandoDar: 'money give {player} {quantia}'
+  # Sistema de tags
+  Tags:
+    Blocos: '&b[B]'
+    Quebrados: '&b[BQ]'
+    Tempo: '&b[T]'
+  # Sistema de energia
+  Energia:
+    # Ativar o sistema de energia
+    Ativar: true
+    # Quantia de energia por bloco quebrado
+    Quantia: 1
+    # Quantia de energia que irá aumentar a cada nível
+    PorNivel: 1000
+    # Ativar o sistema de dar encantamento aleatório
+    DarEnchant: true
+    # Comandos que irá dar quando evoluir (com enchant)
+    ComandosEnchant: []
+    # Comandos que irá dar quando evoluir (sem enchant)
+    ComandosSemEnchant: []
+    # Enchants que poderão ser dados
+    # chance,encantamento
+    Enchants:
+      - '10.0,Eficiencia'
+      - '10.0,Nuclear'
+      - '10.0,Destruidor'
+      - '10.0,Explosao'
+      - '10.0,Laser'
+      - '10.0,Furadeira'
+      - '10.0,DestruidorInvertido'
+      - '10.0,Linear'
+      - '10.0,Esfera'
+      - '10.0,X'
+      - '10.0,Fortuna'
+      - '10.0,Sumonador'
+      - '10.0,Velocidade'
+      - '10.0,Pressa'
+      - '10.0,Sortudo'
+      - '10.0,Multiplicador'
+      - '10.0,Eletricidade'
+    # Mensagens
+    EvoluiuEnchant:
+      - ''
+      - '&bSua picareta evoluiu de nível!'
+      - '&bEncantamento adquirido: &f+1 nível de {encantamento}&b.'
+      - ''
+    EvoluiuSemEnchant:
+      - ''
+      - '&bSua picareta evoluiu de nível!'
+      - '&cInfelizmente todos seus encantamentos estão no máximo.'
+      - ''
+  # Sistema de encantamento aleatório por chance
+  AleatorioChance:
+    Chance: 0
+    Mensagem:
+      - ''
+      - '&bEncantamento adquirido: &f+1 nível de {encantamento}&b.'
+      - ''
+  # Item da custompickaxe
+  Pickaxe:
+    CustomSkull: false
+    URL: ''
+    ID: DIAMOND_PICKAXE
+    Data: 0
+    Name: '&bPicareta &6[{blocos_quebrados}]'
+    Lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{nivel}'
+      - ' &fEnergia: &7{energia}/{energia_proximo} &f({progressbar}&f)'
+  # Item das classes
+  Classes:
+    CustomSkull: false
+    URL: ''
+    ID: LEATHER_CHESTPLATE
+    Data: 0
+    Name: '&bClasses'
+    Lore:
+      - '&7Upando sua classe você irá ganhar'
+      - '&7bônus na mineração, no ganho de'
+      - '&7coins e gemas.'
+      - ''
+      - '&fSua classe: &7{classe}'
+      - ''
+      - '&aClique para upar sua classe'
+  # Configuração do sistema de livro (yRankup)
+  Livro:
+    Formatador:
+      Tem: '&a✔ {precisa} {tipo} &7(Possui {possui} {tipo})'
+      NaoTem: '&c✖ {precisa} {tipo} &7(Possui {possui} {tipo})'
+    Tipos:
+      MONEY: 'coins'
+      CASH: 'cash'
+      ALMAS: 'almas'
+      FRAGMENTOS: 'fragmentos'
+      KILLS: 'kills'
+      BLOCOS: 'blocos'
+      FENOS: 'fenos'
+      TEMPO: 'tempo'
+    Item:
+      # Slot em que será setada a classe do jogador
+      # Deixe -1 para não usar
+      Slot: 4
+      Titulo: '&1Checklist'
+      Conteudo:
+        - ''
+        - '&0Requisitos para o'
+        - '&0próximo rank:'
+        - ''
+        - '&0Progresso: &7{progressbar} &7{porcentagem}'
+        - ''
+        - '{requisitos}'
+        - ''
+  # Varinha de seleção da mina
+  Wand:
+    CustomSkull: false
+    URL: ''
+    ID: GOLD_AXE
+    Data: 0
+    Glow: true
+    Name: '&eSelecionar região'
+    Lore:
+      - '&fMina: &7{mina}&f.'
+      - ''
+      - '&aBotão esquerdo para selecionar a POS1'
+      - '&aBotão direito para selecionar a POS2'
+  # Item de blocos ativável
+  Bloco:
+    CustomSkull: true
+    URL: '1ba16c3890af39c3f2d576586cff443de07dad32b2315e2ff6f0d5d6a3c663dd'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&b+{quantia} Blocos'
+    Lore:
+      - ''
+      - '&fQuantia: &b{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus blocos no inventário em 1 só.'
+      - ''
+  # Mensagens e ações ao entrar
+  Entrar:
+    Title: '&bBem vindo à<nl>&fMina: {mina}'
+    Actionbar: '&bVocê entrou na mina &f{mina}&b.'
+    Som: 'ORB_PICKUP'
+    Chat:
+      - ''
+      - '&bBem vindo à área de mineração.'
+      - '&bVocê está na mina &f{mina}&b.'
+      - ''
+  # Mensagens e ações ao sair
+  Sair:
+    Title: ''
+    Actionbar: '&bVocê saiu da mina &f{mina}&b.'
+    Som: 'ORB_PICKUP'
+    Chat:
+      - ''
+      - '&bVocê saiu da mina &f{mina}&b.'
+      - ''
+  # Lista de comandos permitidos na mina
+  Comandos permitidos:
+    - '/g'
+    - '/l'
+    - '/mina'
+    - '/minerar'
+    - '/mine'
+    - '/minas'
+  # Lista de comandos para sair da mina
+  Comandos saida:
+    - '/sair'
+    - '/spawn'
+    - '/exit'
+
+# Configuração das outras mensagens
+OutrasMensagens:
+  LuckyBlock Encontrou:
+    Title: '' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Chat: []
+  LuckyBlock Nada:
+    Title: '' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Chat:
+      - '&e&lLuckyBlock: &cInfelizmente você não ganhou nada :c'
+  Vendeu:
+    Title: '' # deixe '' para não usar
+    Actionbar: '&a+{money} coins adicionados ┃ &r{bonus}&a.' # deixe '' para não usar
+    Chat: []
+  VendeuNegativo:
+    Title: '' # deixe '' para não usar
+    Actionbar: '&c-{money}' # deixe '' para não usar
+    Chat: []
+  Resetou: # envia apenas para quem está na mina
+    Title: '&a{mina}<nl>&aResetada!' # deixe '' para não usar
+    Actionbar: '&a{mina} &aresetada com sucesso.' # deixe '' para não usar
+    Chat: []
+  Evoluiu: # envia quando a picareta evolui de nível
+    Title: '&aPicareta evoluída<nl>&apara &e{nivel}!' # deixe '' para não usar
+    Actionbar: '&aSua picareta evoluiu para o nível &e{nivel}!' # deixe '' para não usar
+    Chat: []
+  InvCheio: # envia quando o jogador quebra um bloco com o inv cheio
+    Title: '&cInventário cheio!' # deixe '' para não usar
+    Actionbar: '&cSeu inventário está cheio!' # deixe '' para não usar
+    Chat: []
+
+# Itens padrões definidos para o jogador.
+#items:
+  # Siga o exemplo abaixo para criar itens custom
+  #custom:
+  #  material: BARRIER:0
+  #  slot: 0
+  #  name: ''
+  #  lore: []
+  #  left-command: ''
+  #  right-command: ''
+  #  left-perm: 'yminas.left-perm.custom'
+  #  right-perm: 'yminas.right-perm.custom'
+
+# Setas dos menus
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'
+
+# Formatador de mensagens
+Formatador:
+  Bonus tem: '&a+{bonus}% por ser {display}&a.'
+  Bonus nao tem: ''
+
+# Configuração da barra de progresso
+Progress bar:
+  Quantia: 10
+  Simbolo: ':'
+  Cor sim: '&a'
+  Cor nao: '&7'
+
+# Enviar a mensagem de recompensas ganhas a cada x tempo
+Luckyblock mensagem:
+  ativar: true
+  # delay para enviar a mensagem
+  # em segundos
+  delay: 60
+  mensagem:
+    - ''
+    - '&eLuckyBlock'
+    - '&7Suas recompensas do último minuto.'
+    - ''
+    - '{chat}'
+    - ''

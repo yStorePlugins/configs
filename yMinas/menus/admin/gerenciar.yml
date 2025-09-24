@@ -1,0 +1,227 @@
+Nome: '&8Gerenciar mina'
+Tamanho: 45
+BackSlot: 27
+FerramentaSlot: 31
+Itens:
+  Nome:
+    Slot: 10
+    CustomSkull: false
+    URL: ''
+    ID: 421
+    Data: 0
+    Glow: false
+    Name: '&aNome da mina'
+    Lore:
+      - '&fAtual: &a{nome}&f.'
+      - ''
+      - '&7Clique para trocar'
+  Icone:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: 389
+    Data: 0
+    Glow: false
+    Name: '&aÍcone da mina'
+    Lore:
+      - '&7Clique para trocar'
+  Visibilidade:
+    Slot: 12
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/fc8593b91058ff24a0f6845130ed3e449569ce9c6b22fa9cd1ed7360b5045ea3'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aVisibilidade'
+    Lore:
+      - '&7Status: &a{status}&f.'
+      - ''
+      - '&aClique para alternar'
+  Reset:
+    Slot: 14
+    CustomSkull: false
+    URL: ''
+    ID: 347
+    Data: 0
+    Glow: false
+    Name: '&aTempo de reset'
+    Lore:
+      - '&fAtual total: &7{tempo}&f.'
+      - '&fAtual à resetar: &7{tempo_atual}&f.'
+      - ''
+      - '&aClique para alterar'
+  Spawn:
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: 345
+    Data: 0
+    Glow: false
+    Name: '&aLocal de spawn'
+    Lore:
+      - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z}'
+      - ''
+      - '&aClique com esquerdo para teleportar'
+      - '&aClique com direito para alterar'
+      - '&aAperte Q para deletar'
+  Porcentagem:
+    Slot: 16
+    CustomSkull: false
+    URL: ''
+    ID: 351
+    Data: 8
+    Glow: false
+    Name: '&aPorcentagem'
+    Lore:
+      - '&fAtual: &7{porcentagem}%'
+      - ''
+      - '&aClique para alterar a porcentagem'
+      - '&ade blocos restantes para o reset.'
+  LuckyBlock:
+    Slot: 21
+    CustomSkull: false
+    URL: ''
+    ID: 41
+    Data: 0
+    Glow: false
+    Name: '&aLucky Block'
+    Lore:
+      - '&fChance atual: &7{chance}%'
+      - ''
+      - '&7Esta LuckyBlock irá funcionar apenas'
+      - '&7nos blocos que não forem luckyblocks vísiveis.'
+      - ''
+      - '&aClique com esquerdo para alterar a chance.'
+      - '&aClique com direito para alterar as recompensas.'
+  Bungee:
+    Slot: 23
+    CustomSkull: true
+    URL: '6274e1605233425091f7b2837a4bb8f4c804dac80db9e4f599f535c03afab0f8'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aBungeecord'
+    Lore:
+      - '&fAtivado: &7{estado}&f.'
+      - '&fServidor: &7{servidor}&f.'
+      - ''
+      - '&aClique com esquerdo para alternar.'
+      - '&aClique com direito para alterar o servidor.'
+      - '&aAperte Q para remover o servidor.'
+  Informacoes:
+    Slot: 28
+    CustomSkull: false
+    URL: ''
+    ID: 395
+    Data: 0
+    Glow: false
+    Name: '&aInformações'
+    Lore:
+      - '&7Informações disponíveis:'
+      - ''
+      - '&7・&fBlocos totais: &7{blocos}'
+      - '&7・&fBlocos quebrados: &7{quebrados}'
+      - '&7・&fPorcentagem minerada: &7{porcentagem_minerada}%'
+      - '&7・&fLucky blocks quebradas: &7{lucky_quebrados}'
+      - ''
+      - '&7・&fTempo de reset: &7{tempo}'
+      - '&7・&fTempo de reset atual: &7{tempo_atual}'
+      - ''
+      - '&7・&fJogadores invisiveis: &r{invisiveis}&7.'
+      - '&7・&fVenda automatica: &r{automatica}&7.'
+      - ''
+      - '&7・&fLocalização: &7X: &a{x} &f- &7Y: &a{y} &f- &7Z: &a{z}'
+      - '&7・&fHolograma: &7X: &a{hx} &f- &7Y: &a{hy} &f- &7Z: &a{hz}'
+  Blocos:
+    Slot: 29
+    CustomSkull: false
+    URL: ''
+    ID: 21
+    Data: 0
+    Glow: false
+    Name: '&aBlocos da mina'
+    Lore:
+      - '&7Gerencie os blocos'
+      - '&7que terá nessa mina.'
+  Regiao:
+    Slot: 30
+    CustomSkull: false
+    URL: ''
+    ID: 271
+    Data: 0
+    Glow: false
+    Name: '&aSelecionar região'
+    Lore:
+      - '&7Selecione a região.'
+      - '&7desta mina.'
+      - ''
+      - '&fPOS1: &7{pos1} &8({mundo1})&f.'
+      - '&fPOS2: &7{pos2} &8({mundo2})&f.'
+  Opcoes:
+    Slot: 32
+    CustomSkull: false
+    URL: ''
+    ID: 289
+    Data: 0
+    Glow: false
+    Name: '&aOpções'
+    Lore:
+      - '&7O nível é o nível necessário da picareta do'
+      - '&7jogador para ele entrar na mina.'
+      - ''
+      - '&fNível: &7{nivel}&f.'
+      - '&fPrioridade: &7{prioridade}&f.'
+      - '&fPermissão: &7{permissao}&f.'
+      - '&fPVP: &7{pvp}&f.'
+      - '&fPicareta Custom: &7{picareta}&f.'
+      - '&fDano natural: &7{dano}&f.'
+      - '&fOrdem: &7{ordem}&f.'
+      - '&fTeleportar: &7{teleportar}&f.'
+      - '&fFly: &7{fly}&f.'
+      - '&fHaste: &7{haste}&f.'
+      - '&fSpeed: &7{speed}&f.'
+      - '&fClasses: &7{classes}&f.'
+      - ''
+      - '&aClique para alterar as opções'
+  VendaAutomatica:
+    Slot: 33
+    CustomSkull: false
+    URL: ''
+    ID: 323
+    Data: 0
+    Glow: false
+    Name: '&aVenda automática'
+    Lore:
+      - '&fStatus: &r{status}&f.'
+      - ''
+      - '&aClique para alternar'
+  Holograma:
+    Slot: 34
+    CustomSkull: false
+    URL: ''
+    ID: 416
+    Data: 0
+    Glow: false
+    Name: '&aHolograma'
+    Lore:
+      - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z}'
+      - ''
+      - '&7Clique com esquerdo para definir'
+      - '&7Clique com direito para deletar'
+  Bloqueadores:
+    Slot: 22
+    CustomSkull: false
+    URL: ''
+    ID: BARRIER
+    Data: 0
+    Glow: false
+    Name: '&aBloqueadores'
+    Lore:
+      - ''
+      - '&fEntrar apenas de Inventário Vazio: &r{inv}&f.'
+      - '&fEntrar apenas de Armadura Vazia: &r{armadura}&f.'
+      - '&fBloquear jogares dropar itens na mina: &r{dropar}&f.'
+      - ''
+      - '&7Clique com esquerdo para alternar o inv vazio'
+      - '&7Clique com direito para alternar o dropar'
+      - '&7Clique com Q para alternar a armadura vazia'

@@ -1,0 +1,22 @@
+Nome: '&8Picareta - Desencatador'
+Tamanho: 36
+Slots: [11, 12, 13, 14, 15]
+BackSlot: 29
+AnteriorSlot: 18
+ProximoSlot: 26
+# Slot onde ficará a picareta do jogador
+PicaretaSlot: 31
+# Configurações do enchant
+Item:
+  Nome: '&a{enchant}'
+  Lore:
+    - ''
+    - '&fEncantamento: &7{enchant}'
+    - '&fNíveis: &7{level}'
+    - ''
+    - '&fIrá ganhar &a{yminas} blocos &fe'
+    - '&a{money} coins&f por nível.'
+    - ''
+    - '&aBotão &fESQUERDO &apara desencatar 1 nível'
+    - '&aBotão &fDIREITO &apara desencatar {level} níveis'
+Itens: {}

@@ -1,0 +1,311 @@
+ Classes:
+  class1:
+    # O padrão é a ordem 0
+    Ordem: 0
+    Display: '&fQuartzo'
+    # Cor da armadura
+    # Formato: RED:GREEN:BLUE (255:255:255)
+    # deixe RAINBOW para ser colorido
+    Cor: '255:255:255'
+    # Permissão para evoluir à esta classe
+    # Deixe '' (vazio) para não usar
+    Permissao: ''
+    # Efeito:Nível
+    Efeitos: ['SPEED:1']
+    # Bônus que serão dados
+    Bonus:
+      Drops: 50
+      Blocos: 30
+    # Custos de evolução
+    Custos:
+      price1:
+        provider: 'money'
+        price: 1000.0
+      price2:
+        provider: 'yminas'
+        price: 1000.0
+    # Itens da armadura
+    Armaduras:
+      Capacete:
+        Material: LEATHER_HELMET
+        Name: '&fClasse Quartzo'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+      Peitoral:
+        Material: LEATHER_CHESTPLATE
+        Name: '&fClasse Quartzo'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+      Calca:
+        Material: LEATHER_LEGGINGS
+        Name: '&fClasse Quartzo'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+      Botas:
+        Material: LEATHER_BOOTS
+        Name: '&fClasse Quartzo'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+    # Itens do menu de classes
+    Menu:
+      Comprar:
+        Material: LEATHER_CHESTPLATE
+        Cor: '255:255:255'
+        Name: '&fClasse Quartzo'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&f{money} coins'
+          - '&7- &e{yminas} blocos'
+          - ''
+          - '&aClique para evoluir'
+      Possui:
+        Material: LEATHER_CHESTPLATE
+        Cor: '255:255:255'
+        Name: '&fClasse Quartzo'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&aClique para equipar.'
+      Equipado:
+        Material: LEATHER_CHESTPLATE
+        Cor: '255:255:255'
+        Name: '&fClasse Quartzo'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&aVocê está usando este.'
+      Requisitos:
+        Material: LEATHER_CHESTPLATE
+        Cor: '255:255:255'
+        Name: '&fClasse Quartzo'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&f{money} coins'
+          - '&7- &e{yminas} blocos'
+          - ''
+          - '&cVocê não possui os custos para evoluir.'
+      Anterior:
+        Material: LEATHER_CHESTPLATE
+        Cor: '255:255:255'
+        Name: '&fClasse Quartzo'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&cVocê não possui a classe anterior.'
+  class2:
+    # O padrão é a ordem 0
+    Ordem: 1
+    Display: '&fBauxita'
+    Cor: '238:0:255'
+    Permissao: ''
+    Efeitos: ['SPEED:2']
+    Bonus:
+      Drops: 80
+      Blocos: 50
+    Custos:
+      price1:
+        provider: 'money'
+        price: 2000.0
+      price2:
+        provider: 'yminas'
+        price: 2000.0
+    Armaduras:
+      Capacete:
+        Material: LEATHER_HELMET
+        Glow: true
+        Name: '&5Classe Bauxita'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+      Peitoral:
+        Material: LEATHER_CHESTPLATE
+        Glow: true
+        Name: '&5Classe Bauxita'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+      Calca:
+        Material: LEATHER_LEGGINGS
+        Glow: true
+        Name: '&5Classe Bauxita'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+      Botas:
+        Material: LEATHER_BOOTS
+        Glow: true
+        Name: '&5Classe Bauxita'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+    # Itens do menu de classes
+    Menu:
+      Comprar:
+        Material: LEATHER_CHESTPLATE
+        Cor: '238:0:255'
+        Glow: true
+        Name: '&5Classe Bauxita'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&f{money} coins'
+          - '&7- &e{yminas} blocos'
+          - ''
+          - '&aClique para evoluir'
+      Possui:
+        Material: LEATHER_CHESTPLATE
+        Cor: '238:0:255'
+        Glow: true
+        Name: '&5Classe Bauxita'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&aClique para equipar.'
+      Equipado:
+        Material: LEATHER_CHESTPLATE
+        Cor: '238:0:255'
+        Glow: true
+        Name: '&5Classe Bauxita'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&aVocê está usando este.'
+      Requisitos:
+        Material: LEATHER_CHESTPLATE
+        Cor: '238:0:255'
+        Glow: true
+        Name: '&5Classe Bauxita'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&f{money} coins'
+          - '&7- &e{yminas} blocos'
+          - ''
+          - '&cVocê não possui os custos para evoluir.'
+      Anterior:
+        Material: LEATHER_CHESTPLATE
+        Cor: '238:0:255'
+        Glow: true
+        Name: '&5Classe Bauxita'
+        Lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{drops}% de coins'
+          - '&7- +{blocos}% de blocos'
+          - ''
+          - '&cVocê não possui a classe anterior.'

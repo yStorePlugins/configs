@@ -1,0 +1,76 @@
+Recompensas:
+  Reco1:
+    # Item que aparecerá no preview.
+    Preview:
+      CustomSkull: false
+      URL: ''
+      ID: 1
+      Data: 0
+      Name: '&a+100 Blocos'
+      Amount: 64
+      Lore:
+        - '&aVocê irá ganhar blocos de mineração!'
+      # Caso não queira deixe:
+      # Enchants:
+      # - ''
+      Enchants:
+        - ''
+    # Só será dado o item se os comandos estiverem em false.
+    # Item que será dado ao jogador.
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 1
+      Data: 0
+      Name: ''
+      Amount: 1
+      Lore: []
+      # Caso não queira deixe:
+      # Enchants:
+      # - ''
+      Enchants:
+        - ''
+    # Mensagens que serão enviadas ao receber a recompensa
+    Mensagens:
+      Title: '&a+100 Blocos' # deixe '' para não usar
+      Actionbar: '' # deixe '' para não usar
+      Chat: []
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      Use: true
+      List:
+        - 'blocos add {player} 100'
+  Reco2:
+    Preview:
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&6+10 Cash'
+      Amount: 64
+      Lore:
+        - '&6Você irá ganhar cash!'
+      Enchants:
+        - ''
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 1
+      Data: 0
+      Name: ''
+      Amount: 1
+      Lore: []
+      Enchants:
+        - ''
+    Mensagens:
+      Title: '' # deixe '' para não usar
+      Actionbar: '' # deixe '' para não usar
+      Chat:
+        - '&e&lLuckyBlock: &fVocê encontrou &610 cash&f.'
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      Use: true
+      List:
+        - 'points add {player} 10'

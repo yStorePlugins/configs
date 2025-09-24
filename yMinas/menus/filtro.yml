@@ -1,0 +1,17 @@
+Nome: '&8Picareta - Filtro'
+Tamanho: 36
+Slots: [11, 12, 13, 14, 15]
+BackSlot: 29
+AnteriorSlot: 18
+ProximoSlot: 26
+# Slot onde ficará a picareta do jogador
+PicaretaSlot: 31
+# Configurações do enchant
+Item:
+  Nome: '&a{enchant}'
+  Lore:
+    - ''
+    - '&fEncantamento: &7{enchant}'
+    - '&fDesativado: &7{status}'
+    - ''
+Itens: {}
