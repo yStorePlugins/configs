@@ -122,6 +122,8 @@ Opcoes:
   Checar outras: false
   # Valor padrão (sem contar o multiplicador) que irá dar de blocos ao quebrar na mina
   BlocosDefault: 1
+  # Dropar o EXP do auto-sell (para a picareta do minecraft, sem ser a customizada) no chão
+  exp-drop-ground: false
   # Skin default da picareta
   Skin-default: ''
   # Materiais que irão ser reconhecidos na skin
