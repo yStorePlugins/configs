@@ -1,0 +1,92 @@
+Nome: '&7Armazém de plantações'
+Tamanho: 36
+Slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+AnteriorSlot: 18
+ProximoSlot: 26
+Plantacao:
+  Nome: '&b{display}'
+  Lore:
+    - '&fQuantia: &a{quantia}&f.'
+    - '&fPreço unitário: &a{unitario}&f.'
+    - '&fPreço total: &a{total}&f.'
+    - ''
+    - '&7Clique com esquerdo para vender.'
+    - '&7Clique com direito para coletar.'
+Itens:
+  Informacoes:
+    Slot: 30
+    CustomSkull: false
+    URL: ''
+    ID: 339
+    Data: 0
+    Glow: true
+    Name: '&aInformações'
+    Lore:
+      - '&fItens armazenados: &b{itens}&f.'
+      - '&fQuantia de tipos: &b{tipos}&f.'
+      - ''
+      - '&fSeu limite: &a{limite_venda}&f.'
+      - '&fLimite do armazem: &a{limite_armazem}&f.'
+      - '&fPlantações armazenadas: &a{armazenado}&f.'
+      - '&fSeu bonus: &b{bonus}%&f.'
+      - '&fValor da bolsa: &a{bolsa}%&f.'
+  Vender:
+    Slot: 32
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/d883f946202bbdf25f8a1062e8c3317194333128207c89a474bde300c533dc3c'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aVender tudo'
+    Lore:
+      - '&f* Uso exclusivo &6VIP&f.'
+    Lore perm:
+      - '&7Clique para vender todos os itens.'
+  Recompensas:
+    Slot: 33
+    material: 'CHEST'
+    name: '&aRecompensas'
+    lore:
+      - ''
+      - ' &fRecompensas no armazém: &a{rewards}&f.'
+      - ''
+      - '&7Clique para gerenciar'
+  AutoSell:
+    Slot: 34
+    material: 'GOLD_INGOT'
+    name: '&aAuto-Sell'
+    lore:
+      - '&7Venda automaticamente enquanto'
+      - '&7você estiver dentro do plot.'
+      - ''
+      - ' &fAtivado: &a{status}&f.'
+      - ''
+      - '&aClique para alternar'
+  AutoSell permissao:
+    material: 'GOLD_INGOT'
+    name: '&aAuto-Sell'
+    lore:
+      - '&7Venda automaticamente enquanto'
+      - '&7você estiver dentro do plot.'
+      - ''
+      - '&cVocê não tem permissão.'
+  LimiteUpgrade:
+    Slot: 28
+    material: FIREBALL
+    name: '&aUpgrade de Capacidade'
+    lore:
+      - ''
+      - ' &fAtual: &7{limite_armazem_atual}/{limite_armazem_maximo}&f.'
+      - ' &fCusto para +{limite_armazem_addperlevel}: &7{Money} coins&f.'
+      - ''
+      - '&aClique para evoluir.'
+  LimiteUpgradeMaximo:
+    material: FIREBALL
+    name: '&aUpgrade de Capacidade'
+    lore:
+      - ''
+      - ' &fAtual: &7{limite_armazem_atual}/{limite_armazem_maximo}&f.'
+      - ''
+      - '&cEste armazém já está no máximo.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Vender:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

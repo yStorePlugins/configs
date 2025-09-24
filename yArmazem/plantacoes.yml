@@ -1,0 +1,52 @@
+# Você pode configurar quantas plantas quiser.
+Plantacoes:
+  cacto:
+    # Ordenação no menu
+    Ordem: 1
+    # Id do item da planta
+    ID: CACTUS
+    # Data do item da planta
+    Data: 0
+    # Nome que irá aparecer no menu e nas mensagens
+    Display: '&aCacto'
+    # Preço por cada unidade (para a sessão de comando)
+    Preco: 10.0
+    # Preços por cada unidade
+    Precos:
+      preco1:
+        Provider: 'Money'
+        Amount: 10.0
+    # Permissão para vender a plantação
+    PermissionVender: ''
+    # Permissão para recolher a plantação
+    PermissionRecolher: ''
+    # Item que aparecerá no menu
+    ItemDisplay:
+      CustomSkull: false
+      URL: ''
+      ID: CACTUS
+      Data: 0
+      Glow: true
+      Name: '&aCacto'
+      Lore:
+        - '&fQuantia: &a{quantia}&f.'
+        - '&fPreço unitário: &a{unitario}&f.'
+        - '&fPreço total: &a{total}&f.'
+        - ''
+        - '&7Clique com esquerdo para vender.'
+        - '&7Clique com direito para coletar.'
+    # Recompensas que poderão vir ao armazenar esta plantação
+    Recompensas:
+      - '0.0,reward1'
+    # Botão que será realizada a venda (LEFT | RIGHT)
+    Vender botao: 'LEFT'
+    # Botão que será realizado recolher (LEFT | RIGHT)
+    Recolher botao: 'RIGHT'
+    # O Drop vai executar um comando ao ser recolhido?
+    Comando:
+      Ativar: false
+      UsarQuantia: true # usar a placeholder {quantia} para ter a quantia de drops e executar o comando só 1x
+      MultiplicarQuantiaPreco: true # multiplica a quantia pelo preço e o bônus (essencial para dar em outras economias)
+      InvBypass: true # não checar se o inv está cheio (apenas quando os comandos tiverem ativos)
+      Comandos:
+        - 'give {player} cactus {quantia}'

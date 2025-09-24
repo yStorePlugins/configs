@@ -1,0 +1,19 @@
+name: '&8Armazém recompensas'
+size: 54
+slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+previous-slot: 18
+next-slot: 26
+back-slot: 48
+#
+empty-slot: 22
+collect-slot: 50
+#
+items:
+  empty:
+    material: 'WEB'
+    name: '&eVazio...'
+    lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
+  collect:
+    material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+    name: '&eRecolher tudo'
+    lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]

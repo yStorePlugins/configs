@@ -1,0 +1,13 @@
+categorias:
+  farm:
+    material-list:
+      - 'CACTUS:0'
+    icon:
+      slot: 8
+      material: 'SEEDS'
+      name: '&ePlantações'
+      lore:
+        - '&7Confira os seus drops de farm'
+        - '&7e venda ou colete-os.'
+        - ''
+        - '&aClique para acessar'

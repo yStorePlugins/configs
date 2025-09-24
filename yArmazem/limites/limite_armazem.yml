@@ -1,0 +1,34 @@
+# Ativar o sistema de limite de armazenamento
+Ativar: true
+
+# Quantia que dá ao registrar.
+Default: 10
+
+# O limite vai ser total ou por plantação?
+LimiteTotal: false
+
+# Quantia máxima que cada plot terá de limite
+# deixe 0 para ser infinito
+Maximo: 0
+
+# Compra de limite por menu
+AdicionarPorLevel: 25
+Prices-PerLevel:
+  price1:
+    provider: 'Money'
+    display: 'Money'
+    price: 10000.0
+
+Item:
+  CustomSkull: true
+  URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+  ID: 0
+  Data: 0
+  Glow: true
+  Name: '&bLimite do armazém'
+  Lore:
+    - '&fQuantia: &a{quantia}'
+    - ''
+    - '&7Clique com botão direito para ativar.'
+    - '&7Clique com shift + botão direito para compactar'
+    - '&7todos os seus limites no inventário em 1 só.'

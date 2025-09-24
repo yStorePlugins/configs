@@ -1,0 +1,39 @@
+# Ativar o sistema de limite de venda
+Ativar: true
+# Deixar o valor fixo do "Fixos" abaixo
+Fixo: true
+# Configurações do limite ativável ( apenas se o "Fixo" estiver false )
+Ativavel:
+  # Quantia que dá ao registrar.
+  Default: 10
+  Item:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&bLimite de venda do armazém'
+    Lore:
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+# Lembrando que só estará disponível, caso a opção "Limite fixo" da config.yml
+# estiver em true, assim desabilitando o uso do item ativável e os máximos.
+Fixos:
+  membro:
+    # Permissão para ser reconhecido
+    Permissao: 'yarmazem.limitevenda.fixo.membro'
+    # Quantia de limite que terá
+    Limite: 100
+
+# O Maximos serve para definir quanto de limite o jogador poderá ativar.
+# Lembrando que só estará disponível, caso a opção "Limite fixo" da config.yml
+# estiver em false, assim habilitando o limite ativável e os máximos.
+Maximos:
+  membro:
+    # Permissão para ser reconhecido
+    Permissao: 'yarmazem.limitevenda.max.membro'
+    # Quantia máxima de limite que poderá ter.
+    Maximo: 100

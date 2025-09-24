@@ -1,0 +1,193 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Comando: 'armazem'
+  Aliases: [ ]
+
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+Formatacao: 'LETRA'
+
+# Mundos que irá funcionar o armazem
+# Deixe ALL para todos
+Mundos plot:
+  - 'MundoPlot'
+
+# Mundos que não irá funcionar o armazem
+# Útil se você usa o ALL no "Mundos plot"
+Mundos plot blacklist: []
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Opções gerais
+Opcoes:
+  # Ativar o sistema de bolsa
+  Bolsa: false
+  # Ativar a coleta de plantações
+  Coletar: true
+  # Ativar a venda de plantações
+  Vender: true
+  # Ativar a venda de tudo
+  Vender tudo: true
+  # A opção vender tudo ignorar o limite
+  # false = ignorar o limite
+  Tudo limite: true
+  # Armazenar mesmo com o jogador offline
+  Armazenar off: false
+  # Armazenar mesmo com os jogadores afk
+  Armazenar afk: false
+  # Acumular os bônus que tiver permissão
+  Acumular bonus: false
+  # Acesso para quem está com add na plot
+  Plot add: true
+  # Acesso para quem está com trust na plot
+  Plot trust: true
+  # Ativar o sistema de atualizar o menu do armazém automaticamente enquanto estiver aberto
+  MenuUpdater: true
+  # Coletar o disponível no inventário (sem ter que digitar no chat)
+  ColetarDisponivel: false
+  # Armazenar itens com meta? (nome e/ou lore, nbt)
+  Armazenar meta: false
+  # Ativar a coleta usando o botão Q para coletar o disponível no inventário
+  Botao Q: true
+  # Aparecer a plantação no armazém mesmo sem ter uma unidade
+  Aparecer sem: true
+  # Ativar o sistema de recompensas
+  # Pode GERAR LAG
+  Recompensas: false
+  # Tempo para depositar as recompensas pendentes
+  Recompensas tempo: 180
+  # Fechar menu ao vender uma plantação
+  Fechar vender: false
+  # Fechar menu ao vender todas as plantações
+  Fechar vender todos: false
+  # Fechar menu ao coletar uma plantação
+  Fechar coletar: false
+  # Delay do auto-sell
+  # em segundos
+  AutoSell-delay: 5
+  # Delay entre vendas do sell-all para o player
+  # em segundos
+  Player-SellAll-delay: 5
+  # Permitir o Auto-Sell nas plots de amigos e trusts
+  Auto-Sell-Friends: false
+  # Ativar o menu da plantacao para venda e coleta
+  sell-collect-menu: false
+
+# Sistema de auto-break quando crescer um bloco
+AutoBreak:
+  Ativar: true
+  Blocos:
+    bloco1:
+      Tipo: 'CACTUS'
+      Drop: 'CACTUS'
+    bloco2:
+      Tipo: 'SUGAR_CANE_BLOCK'
+      Drop: 'SUGAR_CANE'
+
+# Mensagens em title do plugin
+Title:
+  Vendeu: '&a&lVENDA!<nl>&fVocê recebeu &2$&a{money}&f de coins.'
+  Vendeu tudo: '&a&lVENDA!<nl>&fVocê recebeu &2$&a{money}&f de coins.'
+  Coletou: '&a&lCOLETA!<nl>&fVocê coletou &2$&a{quantia}&f plantas.'
+
+# Mensagens em actionbar do plugin
+Actionbar:
+  Vendeu: '&a&lVENDA! &fVocê recebeu &2$&a{money}&f de coins.'
+  Vendeu tudo: '&a&lVENDA! &fVocê recebeu &2$&a{money}&f de coins.'
+  Coletou: '&a&lCOLETA! &fVocê coletou &2$&a{quantia}&f plantas.'
+
+# Mensagens do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isto.'
+  Terreno permissao: '&cVocê não tem permissão neste terreno.'
+  Sem dono: '&cEste terreno não tem dono.'
+  Terreno nulo: '&cVocê não está em um terreno.'
+  Mundo: '&cEste mundo não está cadastrado.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Nao e numero: '&cO argumento não é um número.'
+  Deu: '&aVocê deu &e{quantia} &ade limite para o jogador &e{player}&a.'
+  Converteu: '&cVocê compactou todos seus limites em 1.'
+  Max limite: '&cVocê já chegou no máximo.'
+  Ativou: '&aVocê ativou &e{quantia} &ade limites.'
+  Vendeu: '&aVocê vendeu &7x{quantia} {display}&a e ganhou &6{money}&a coins! {bonus}'
+  Vendeu tudo: '&aVocê vendeu &7x{quantia} em plantações &a e ganhou &6{money}&a coins! {bonus}'
+  Coletou: '&aVocê coletou &7x{quantia} {display}&a.'
+  Inv cheio: '&cVocê está com o inventário cheio!'
+  Slot: '&cÉ necessário 1 slot vazio para fazer isto.'
+  Cancelou: '&cVocê cancelou a operação.'
+  Suficiente: '&cEsta plantação não possui quantia suficiente.'
+  Alterou: '&aVocê alterou o limite de venda do jogador &f{player}&a para &f{quantia}&a.'
+  SellAll-Delay: '&c&lERRO! &cAguarde &e{time} &cpara vender plantações novamente.'
+  Coletar:
+    - ''
+    - '&aDigite a quantia que você quer coletar.'
+    - ''
+    - '&8| &fPossui &6{quantia}&f disponível.'
+    - '&8| &fDigite &8TUDO &fpara coletar tudo.'
+    - ''
+    - '&7Para cancelar digite &ncancelar&7.'
+    - ''
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  upgraded: '&aVocê adquiriu uma expansão da capacidade do armazém.'
+  Ajuda:
+    - '&aComandos do armazem:'
+    - ''
+    - '&e/armazem'
+    - '&e/armazem ajuda'
+    - '&e/armazem reload'
+    - '&e/armazem add'
+    - '&e/armazem set'
+    - '&e/armazem remove'
+    - '&e/armazem givelimitevenda'
+    - '&e/armazem givelimitearmazem'
+
+# Formatador de mensagens
+Formatador:
+  Bonus tem: '&7Bônus: &f{bonus}%&7 ({display}&7).'
+  Bonus nao tem: ''
+
+# Setas do menu
+Setas:
+  Anterior:
+    material: ARROW
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  Proximo:
+    material: ARROW
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'
+
+# Formatos de money e quantia
+Formats:
+  - ''
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'

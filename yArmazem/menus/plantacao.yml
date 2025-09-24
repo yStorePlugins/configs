@@ -1,0 +1,30 @@
+name: '&7Armazém de plantações'
+size: 27
+back-slot: 18
+items:
+  plantacao:
+    name: '&b{display}'
+    lore:
+    - '&fQuantia: &a{quantia}&f.'
+    - '&fPreço unitário: &a{unitario}&f.'
+    - '&fPreço total: &a{total}&f.'
+    - ''
+  sell-slot: 11
+  collect-slot: 15
+  item-slot: 13
+  sell:
+    material: '20c1e2b1d46cec8db5cd905a5915283d1613f0a91cec6f39bb503345000f3c7f'
+    name: '&aVender'
+    lore:
+    - '&7Venda a plantação e receba o'
+    - '&7dinheiro diretamente na conta.'
+    - ''
+    - '&aClique para vender'
+  collect:
+    material: '207f1b7db0fdb2f853ef892c438f14e6cf8e7e5136db94cd862caee178a9c84a'
+    name: '&aColetar'
+    lore:
+    - '&7Colete a plantação para sua mão'
+    - '&7e venda nas placas do servidor.'
+    - ''
+    - '&aClique para pegar.'

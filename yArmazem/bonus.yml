@@ -1,0 +1,11 @@
+# Você pode criar quantos bônus quiser
+# Será dado o bônus ao vender as platanções.
+Bonus:
+  membros:
+    Ordem: 1
+    # Permissão para ser reconhecido
+    Permissao: 'yarmazem.bonus.membro'
+    # Nome que irá aparecer nas mensagens
+    Display: '&7[Membro]'
+    # Quantia do bônus em %
+    Bonus: 10.0
