@@ -14,6 +14,10 @@ Bloquear mensagens: true #o jogador não irá receber mensagens de outros jogado
 Forcar ao registrar: true #quando ele entrar pela primeira vez, irá passar pelo tutorial ( recomendável desativar se usar um plugin de login no servidor )
 Usar nlogin: false #os eventos de login serão executados após a autenticação.
 
+# Teleportar o jogador ao local anterior ao finalizar o tutorial
+# caso false, teleportará até a saída
+teleport-previous: true
+
 Mensagens:
   Permissao: '&c&lERRO! &cVocê não tem permissão para fazer isto.'
   Saida: '&a&lSUCESSO! &aSaída setada.'
