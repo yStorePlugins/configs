@@ -1,0 +1,62 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+
+Comando:
+  Comando: 'tutorial'
+  Aliases: []
+
+Sempre limpar chat: true #a cada passo limpar o chat.
+Bloquear mensagens: true #o jogador não irá receber mensagens de outros jogadores
+Forcar ao registrar: true #quando ele entrar pela primeira vez, irá passar pelo tutorial ( recomendável desativar se usar um plugin de login no servidor )
+Usar nlogin: false #os eventos de login serão executados após a autenticação.
+
+Mensagens:
+  Permissao: '&c&lERRO! &cVocê não tem permissão para fazer isto.'
+  Saida: '&a&lSUCESSO! &aSaída setada.'
+  Local: '&a&lSUCESSO! &aLocal setado.'
+  Completou:
+    - ''
+    - '&aObrigado por completar nosso tutorial.'
+    - ''
+  # Deixe Sugestao: [] para não usar
+  # é enviada quando digitar um command dentro do tutorial
+  Sugestao:
+    - ''
+    - '&aUtilize &c/tutorial sair&a para sair do tutorial.'
+    - ''
+
+Premio:
+  Primeira vez: true
+  Quantia: 50000.0
+  Comandos:
+    - 'give {player} stone 1'
+  Mensagens:
+    Actionbar:
+      Ativar: true
+      Msg: '&aVocê recebeu sua recompensa pelo tutorial. &750K&a.'
+    Title:
+      Ativar: true
+      Title: '&aVocê foi recompensado<nl>&aem &750K'
+    Chat:
+      Ativar: true
+      Msg:
+        - ''
+        - '&aObrigado por completar nosso tutorial. Por isso lhe recompensamos em &750K &aem money.'
+        - ''
+
+NPC:
+  Id: 821923
+  Skin: 'ySpeed_'
+  Altura: 3.1
+  Holograma:
+    - '&a&lTutorial'
+    - '&fRealize o tutorial para conhecer o server!'
+    - '&7(/tutorial)'
+  Mensagens:
+    Setado: '&a&lSUCESSO! &aNPC do tutorial setado com sucesso.'
+    Removido: '&a&lSUCESSO! &aNPC do tutorial removido com sucesso.'
+    Nao removido: '&c&lERRO! &aNPC do tutorial não está setado.'

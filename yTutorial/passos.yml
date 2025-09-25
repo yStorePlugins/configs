@@ -1,0 +1,36 @@
+Passos:
+   0:
+      Local: 'none'
+      Som: 'ORB_PICKUP'
+      Tempo: 10 #em segundos
+      Mensagens:
+         Actionbar:
+            Ativar: true
+            Msg: '&aOlá &7{player}&a, bem vindo ao tutorial.'   
+         Title:
+            Ativar: true
+            Title: '&aOlá &7{player}&a,<nl>&aconfira o chat.'
+         Chat:
+            Ativar: true
+            Msg:
+            - ''
+            - '&aSeja bem vindo &7{player}&a, obrigado por entrar em nosso tutorial.'
+            - '&aA seguir irei lhe mostrar algumas warps.'
+            - ''
+   1:
+      Local: 'none'
+      Som: 'ORB_PICKUP'
+      Tempo: 5
+      Mensagens:
+         Actionbar:
+            Ativar: true
+            Msg: '&aSpawn.'   
+         Title:
+            Ativar: true
+            Title: '&aOlá &7{player}&a,<nl>&aeste é o spawn.'
+         Chat:
+            Ativar: true
+            Msg:
+            - ''
+            - '&aEste é nosso lindo spawn.'
+            - ''
