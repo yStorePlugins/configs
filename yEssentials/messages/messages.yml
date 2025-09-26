@@ -290,6 +290,8 @@ Outros:
   Feed jogador: '&aNível de comida do jogador &f{player}&a restaurado.'
   Back: '&aTeleportado para o local anterior.'
   Back nao: '&cVocê não tem nenhum local para voltar.'
+  Back target: '&aJogador &f{player}&ateleportado para o local anterior.'
+  Back nao target: '&cO jogador &f{player}&c não tem nenhum local para voltar.'
   Hat: '&aVocê equipou um chapéu.'
   Hat segurando: '&cVocê deve estar segurando um item.'
   Skull: '&aVocê pegou a cabeça do jogador &f{player}&a.'
