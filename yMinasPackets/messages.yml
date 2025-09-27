@@ -296,3 +296,11 @@ chat:
   friend-not-friend: '&cVocê não é amigo de &e{player}&c na mina &e{mine}&c!'
   friend-offline: '&cO jogador &e{player}&c não está online!'
   friend-mine-already: '&cVocê já está em uma mina! Saia primeiro com /mine exit'
+  enchant-found: |
+    &cEncantamento não encontrado.
+    &cEncantamentos disponíveis: &f{list}
+
+  enchant-book: '&cO livro deste encantamento não foi configurado.'
+  give-enchant: '&aVocê deu &f{amount}x {enchantment}&a para o jogador &f{player}&a.'
+  activated-enchant: '&aVocê ativou &f{amount}x {enchantment}&a.'
+  maximum-enchant: '&cVocê já está no nível máximo deste encantamento.'

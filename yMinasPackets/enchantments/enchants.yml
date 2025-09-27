@@ -60,6 +60,17 @@ enchants:
       price2:
         provider: 'yminaspackets'
         price: 100.0
+    # Livro do encantamento
+    book:
+      material: ENCHANTED_BOOK
+      name: '&bLivro de Eficiência &7(MINA)'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7minere com mais agilidade.'
+        - ''
+        - '&f > Nível: &b{amount}&f.'
+        - ''
+        - '&aBotão &fdireito &apara ativar'
     displays: # Item que aparecerá no menu de evolução
       can: # quando puder evoluir
         material: DIAMOND_PICKAXE
@@ -203,6 +214,7 @@ enchants:
       title: '&cNuclear<nl>&cativado'
       actionbar: ''
       chat: ''
+      sound: ''
     prices-default:
       price1:
         provider: 'yminaspackets'

@@ -44,6 +44,8 @@ rewards:
       title: '&a+64 Pedras'
       actionbar: ''
       chat: '&a+{amount} Pedras'
+      # Mensagem que irá enviar mesmo se a opção "Enviar a mensagem de recompensas ganhas a cada x tempo" estiver ativa
+      chat-ignore-timed: ''
   reward2:
     preview:
       material: 'DIAMOND:0'
