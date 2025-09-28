@@ -1,0 +1,76 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Menu principal
+main:
+  name: '&8Auto-Pickup'
+  size: 27
+  items:
+    auto-pickup-slot: 11
+    auto-smelt-slot: 13
+    auto-compact-slot: 15
+    auto-pickup-off:
+      material: '6f55a57639c9f7dbb246b28a292cff298344c969cfd4252709d4a5fa663128b9'
+      name: '&cAuto-Pickup'
+      lore:
+        - '&7Colete os itens automaticamente'
+        - '&7ao quebrar os blocos.'
+        - ''
+        - '&fEstado: &cDesligado'
+        - ''
+        - '&aClique para ativar.'
+    auto-pickup-on:
+      material: 'c245036782c6a7e25ff84c5087a65966d650c033ba37e00965e8b99021b3ecae'
+      name: '&aAuto-Pickup'
+      lore:
+        - '&7Colete os itens automaticamente'
+        - '&7ao quebrar os blocos.'
+        - ''
+        - '&fEstado: &aLigado'
+        - ''
+        - '&cClique para desativar.'
+    auto-smelt-off:
+      material: '6f55a57639c9f7dbb246b28a292cff298344c969cfd4252709d4a5fa663128b9'
+      name: '&cAuto-Smelt'
+      lore:
+        - '&7Derreta os itens automaticamente'
+        - '&7ao quebrar os blocos.'
+        - ''
+        - '&fEstado: &cDesligado'
+        - ''
+        - '&aClique para ativar.'
+    auto-smelt-on:
+      material: 'c245036782c6a7e25ff84c5087a65966d650c033ba37e00965e8b99021b3ecae'
+      name: '&aAuto-Smelt'
+      lore:
+        - '&7Derreta os itens automaticamente'
+        - '&7ao quebrar os blocos.'
+        - ''
+        - '&fEstado: &aLigado'
+        - ''
+        - '&cClique para desativar.'
+    auto-compact-off:
+      material: '6f55a57639c9f7dbb246b28a292cff298344c969cfd4252709d4a5fa663128b9'
+      name: '&cAuto-Compact'
+      lore:
+        - '&7Agrupe os itens automaticamente'
+        - '&7ao apertar o botão SHIFT.'
+        - ''
+        - '&fEstado: &cDesligado'
+        - ''
+        - '&aClique para ativar.'
+    auto-compact-on:
+      material: 'c245036782c6a7e25ff84c5087a65966d650c033ba37e00965e8b99021b3ecae'
+      name: '&aAuto-Compact'
+      lore:
+        - '&7Agrupe os itens automaticamente'
+        - '&7ao apertar o botão SHIFT.'
+        - ''
+        - '&fEstado: &aLigado'
+        - ''
+        - '&cClique para desativar.'

@@ -1,0 +1,33 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+title:
+  inv-full: '&cINVENTÁRIO<nl>LOTADO!'
+  compact: '&aSeu inventário foi compactado com sucesso.'
+
+actionbar:
+  inv-full: '&cSeu inventário está cheio!'
+  compact: '&aSeu inventário foi compactado com sucesso.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    <nl>
+    &bComandos do plugin:
+    <nl>
+    &b-> &f/autopickup &8-&7 Abre o menu principal
+    <nl>
+  inv-full: ''
+  compact: '&aSeu inventário foi compactado com sucesso.'

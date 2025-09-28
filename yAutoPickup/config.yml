@@ -1,0 +1,121 @@
+#            _         _        ____  _      _
+#  _   _   / \  _   _| |_ ___ |  _ \(_) ___| | ___   _ _ __
+# | | | | / _ \| | | | __/ _ \| |_) | |/ __| |/ / | | | '_ \
+# | |_| |/ ___ \ |_| | || (_) |  __/| | (__|   <| |_| | |_) |
+#  \__, /_/   \_\__,_|\__\___/|_|   |_|\___|_|\_\\__,_| .__/
+#  |___/                                              |_|
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Lista de mundos que o plugin não irá funcionar
+  world-blacklist: []
+  # Lista de blocos que não serão afetados pelo auto-pickup
+  block-blacklist:
+    - 'SHULKER_BOX'
+  # Lista de blocos com certas metadatas que não serão afetados pelo auto-pickup
+  metadata-blacklist:
+    - 'yfactions-tnt-impulse'
+  # Lista de blocos que a fortuna irá aplicar
+  fortune-whitelist:
+    - 'COAL_ORE'
+    - 'REDSTONE_ORE'
+    - 'GLOWING_REDSTONE_ORE'
+    - 'DIAMOND_ORE'
+    - 'EMERALD_ORE'
+  # Lista de blocos que a fortuna irá aplicar quando o smelt estiver ativado
+  smelt-fortune-whitelist:
+    - 'IRON_ORE'
+    - 'GOLD_ORE'
+  # Lista de blocos que a silk-touch irá aplicar
+  silk-touch-whitelist:
+    - 'COAL_ORE'
+    - 'REDSTONE_ORE'
+    - 'GLOWING_REDSTONE_ORE'
+    - 'DIAMOND_ORE'
+    - 'EMERALD_ORE'
+
+# Sistema de xp do mcMMO
+# BLOCO,SKILL-XP
+mcmmo-xp-list:
+  - 'COAL_ORE,MINING-1'
+  - 'REDSTONE_ORE,MINING-1'
+  - 'GLOWING_REDSTONE_ORE,MINING-1'
+  - 'IRON_ORE,MINING-2'
+  - 'GOLD_ORE,MINING-3'
+  - 'DIAMOND_ORE,MINING-4'
+  - 'EMERALD_ORE,MINING-5'
+
+# Sistema de auto-smelt
+# BLOCO,RESULTADO-QUANTIA
+auto-smelt-list:
+  - 'IRON_ORE,IRON_INGOT-1'
+  - 'GOLD_ORE,GOLD_INGOT-1'
+
+# Sistema de auto-compactar itens
+auto-compact:
+  item1:
+    need-item:
+      material: 'IRON_INGOT'
+      amount: 9
+      hideAttributes: false
+      hidePotionEffects: false
+      hideUnbreakable: false
+      hideDestroys: false
+      hidePlacedOn: false
+      hideEnchants: false
+      disableMetadata: true
+    give-item:
+      material: 'IRON_BLOCK'
+      amount: 1
+      hideAttributes: false
+      hidePotionEffects: false
+      hideUnbreakable: false
+      hideDestroys: false
+      hidePlacedOn: false
+      hideEnchants: false
+      disableMetadata: true
