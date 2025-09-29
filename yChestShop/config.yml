@@ -73,6 +73,13 @@ max-price: 0
 # Máximo de amigos por loja
 max-friends: 5
 
+# Sistema de blacklist
+black-list:
+  # Materiais que estarão na black-list
+  materials: [ 'STONE', 'LOG:0' ]
+  # NBTTags que estarão na black-list
+  nbt-tags: []
+
 # Tipo padrão da placa
 # BUY - Players compram
 # SELL - Players vendem
