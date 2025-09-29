@@ -1,0 +1,95 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+actionbar:
+  owner-stock: '&cSua loja de &7{item}&c está sem estoque.'
+  owner-space: '&cSua loja de &7{item}&c está sem espaço.'
+  owner-buy: '&aO jogador &f{player}&a comprou &f{amount}x {item}&a por &f{price} {provider_display_abbreviated}&a na sua loja.'
+  owner-sell: '&aO jogador &f{player}&a vendeu &f{amount}x {item}&a por &f{price} {provider_display_abbreviated}&a na sua loja.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  chest: '&cVocê precisa definir a placa em um baú.'
+  permission-create-admin: '&cVocê não tem permissão para criar este tipo de loja.'
+  permission-create: '&cVocê não tem permissão para criar lojas.'
+  price-low: '&cO preço deve ser maior ou igual a 0.'
+  price-buy-changed: '&aVocê alterou o preço que você quer receber pelo item para &f{price}&a.'
+  price-sell-changed: '&aVocê alterou o preço que você quer pagar pelo item para &f{price}&a.'
+  amount-changed: '&aVocê alterou a quantia que quer comercializar do item para &f{amount}&a.'
+  name-changed: '&aVocê alterou o nome que quer comercializar do item para &f{name}&a.'
+  price-buy-digit: |
+    <nl>
+    &aDigite o preço que você quer pagar pelo item.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  price-sell-digit: |
+    <nl>
+    &aDigite o preço que você quer receber pelo item.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  amount-digit: |
+    <nl>
+    &aDigite a quantia que você quer comercializar do item.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  name-digit: |
+    <nl>
+    &aDigite o nome que você quer por no item do comércio.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  amount-buy-digit: |
+    <nl>
+    &aDigite a quantia que você quer comprar do item.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  amount-sell-digit: |
+    <nl>
+    &aDigite a quantia que você quer vender do item.
+    &7para cancelar digite &ncancelar&7.
+    <nl>
+  provider-permission: '&cVocê não tem permissão para comercializar com esta economia.'
+  not-configured: '&cEssa loja ainda não foi totalmente configurada.'
+  provider-not-configured: '&cA economia provedora desta loja está desconfigurada.'
+  stock: '&cEsta loja está sem estoque.'
+  player-stock: '&cVocê não possui este item para vender.'
+  space: '&cEsta loja está sem espaço no baú.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  no-balance-owner: '&cO jogador {player} não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  buy-admin: '&aVocê comprou com sucesso &f{amount}x {item}&a por &f{price} {provider_display_abbreviated}&a na loja do servidor. &7Desconto: {discount}%'
+  buy-player: '&aVocê comprou com sucesso &f{amount}x {item}&a por &f{price} {provider_display_abbreviated}&a na loja de &f{player}&a.'
+  sell-admin: '&aVocê vendeu com sucesso &f{amount}x {item}&a por &f{price} {provider_display_abbreviated}&a na loja do servidor. &7Bônus: {bonus}%'
+  sell-player: '&aVocê vendeu com sucesso &f{amount}x {item}&a por &f{price} {provider_display_abbreviated}&a na loja de &f{player}&a.'
+  owner-offline: '&cEsta loja possui uma economia que não permite que o dono esteja offline e o dono desta loja está offline.'
+  amount-low: '&cA quantia deve ser maior ou igual a 1.'
+  inv-full: '&cSeu inventário está cheio.'
+  closed: '&cEsta loja está fechada no momento.'
+  owner-stock: '&cSua loja de &7{item}&c está sem estoque.'
+  owner-space: '&cSua loja de &7{item}&c está sem espaço.'
+  owner-buy: '&aO jogador &f{player}&a comprou &f{amount}x {item}&a por &f{price} {provider_display_abbreviated}&a na sua loja.'
+  owner-sell: '&aO jogador &f{player}&a vendeu &f{amount}x {item}&a por &f{price} {provider_display_abbreviated}&a na sua loja.'
+  set-owner-admin: '&cVocê não pode mudar o dono da placa ADMIN.'
+  set-owner-found: '&cNenhum shop encontrado.'
+  set-owner: '&aVocê mudou o dono da placa para &f{player}&a.'
+  price-high: '&cVocê não pode definir um preço maior que {amount}.'
+
+  digit-friend-add: |
+
+    &aDigite no chat o nome do seu amigo que quer adicionar.'
+    &7para cancelar digite &ncancelar&7.'
+
+  friend-max: '&cEsta mina atingiu o limite máximo de amigos.'
+  friend-added: '&aVocê adicionou o jogador &7{player}&a na sua placa.'
+  friend-already-added: '&cEste jogador já está adicionado.'
+  friend-add-owner: '&cVocê não pode adicionar o dono como amigo na placa.'
+  price-changed: '&cO vendedor alterou os preços da loja enquanto você tentava comprar.'

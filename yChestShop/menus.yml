@@ -1,0 +1,366 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de configuração
+settings:
+  name: '&8Configuração da loja'
+  size: 36
+  items:
+    item-slot: 11
+    provider-slot: 13
+    type-slot: 14
+    price-slot: 15
+    name-slot: 20
+    amount-slot: 21
+    open-close-slot: 22
+    hologram-slot: 23
+    warns-slot: 24
+    friend-slot: 25
+    item:
+      material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+      name: '&aItem que será comercializado'
+      lore:
+        - '&7Item que será utilizado no comércio'
+        - '&7desta loja.'
+        - ''
+        - '&aClique em um item do seu inventário'
+    provider:
+      material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+      name: '&aMoeda da loja'
+      lore:
+        - '&7Moeda que será utilizada no comércio'
+        - '&7desta loja.'
+        - ''
+        - '&7Atual: &fNenhuma'
+        - ''
+        - '&aClique para alterar a moeda'
+    name:
+      material: 'NAME_TAG:0'
+      name: '&aNome do item'
+      lore:
+        - '&7Nome do item que será comercializado'
+        - '&7nesta loja.'
+        - ''
+        - '&7Atual: &f{item_name}'
+        - ''
+        - '&aClique para alterar o nome'
+    amount:
+      material: 'e146b765fca7d406de0079fe6a762fe439a418129d2395b5c6c5044be71c13d1'
+      name: '&aQuantia do item'
+      lore:
+        - '&7Quantia do item que será comercializado'
+        - '&7nesta loja.'
+        - ''
+        - '&7Atual: &f{amount}'
+        - ''
+        - '&aClique para alterar a quantia'
+    type-buy:
+      material: '7e3deb57eaa2f4d403ad57283ce8b41805ee5b6de912ee2b4ea736a9d1f465a7'
+      name: '&aTipo da loja'
+      lore:
+        - '&7Tipo da sua loja:'
+        - ''
+        - ' &f• &aComprar item &8(Jogadores vendem a você)'
+        - ' &f• &7Vender item &8(Jogadores compram de você)'
+        - ' &f• &7Comprar e vender item'
+        - ''
+        - '&aClique para alterar'
+    type-sell:
+      material: '7e3deb57eaa2f4d403ad57283ce8b41805ee5b6de912ee2b4ea736a9d1f465a7'
+      name: '&aTipo da loja'
+      lore:
+        - '&7Tipo da sua loja:'
+        - ''
+        - ' &f• &7Comprar item &8(Jogadores vendem a você)'
+        - ' &f• &aVender item &8(Jogadores compram de você)'
+        - ' &f• &7Comprar e vender item'
+        - ''
+        - '&aClique para alterar'
+    type-buy-sell:
+      material: '7e3deb57eaa2f4d403ad57283ce8b41805ee5b6de912ee2b4ea736a9d1f465a7'
+      name: '&aTipo da loja'
+      lore:
+        - '&7Tipo da sua loja:'
+        - ''
+        - ' &f• &7Comprar item &8(Jogadores vendem a você)'
+        - ' &f• &7Vender item &8(Jogadores compram de você)'
+        - ' &f• &aComprar e vender item'
+        - ''
+        - '&aClique para alterar'
+    price-buy:
+      material: '945f47feb4d75cb333914bfdb999a489c9d0e320d548f310419ad738d1e24b9'
+      name: '&aPreço do item'
+      lore:
+        - '&7Quantia que você vai oferecer por este item:'
+        - ''
+        - ' &fPreço atual: &7{price_buy}'
+        - ''
+        - '&aClique para alterar'
+    price-sell:
+      material: '945f47feb4d75cb333914bfdb999a489c9d0e320d548f310419ad738d1e24b9'
+      name: '&aPreço do item'
+      lore:
+        - '&7Quantia que você vai ganhar por este item:'
+        - ''
+        - ' &fPreço atual: &7{price_sell}'
+        - ''
+        - '&aClique para alterar'
+    price-buy-sell:
+      material: '945f47feb4d75cb333914bfdb999a489c9d0e320d548f310419ad738d1e24b9'
+      name: '&aPreço do item'
+      lore:
+        - '&7Quantia que o item será comercializado:'
+        - ''
+        - ' &fPreço de venda atual: &7{price_sell} &8(Você recebe pela venda do item)'
+        - ' &fPreço de compra atual: &7{price_buy} &8(Você paga para comprar o item)'
+        - ''
+        - '&aBotão &fESQUERDO&a para alterar o preço de venda.'
+        - '&aBotão &fDIREITO&a para alterar o preço de compra.'
+    open:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aAbrir loja'
+      lore:
+        - '&7Esta loja está fechada no momento.'
+        - '&7Jogadores não poderão comprar nem vender.'
+        - ''
+        - '&aClique para abrir a loja'
+    close:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&cFechar loja'
+      lore:
+        - '&7Esta loja está aberta no momento.'
+        - '&7Jogadores poderão comprar e vender.'
+        - ''
+        - '&aClique para fechar a loja'
+    hologram-enable:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aHabilitar holograma'
+      lore:
+        - '&7Esta loja está com o holograma'
+        - '&7desabilitado no momento.'
+        - ''
+        - '&aClique para habilitar'
+    hologram-disable:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&cDesabilitar holograma'
+      lore:
+        - '&7Esta loja está com o holograma'
+        - '&7habilitado no momento.'
+        - ''
+        - '&aClique para desabilitar'
+    warns-enable:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aHabilitar avisos'
+      lore:
+        - '&7Esta loja está com os avisos'
+        - '&7desabilitados no momento.'
+        - ''
+        - '&aClique para habilitar'
+    warns-disable:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&cDesabilitar avisos'
+      lore:
+        - '&7Esta loja está com os avisos'
+        - '&7habilitados no momento.'
+        - ''
+        - '&aClique para desabilitar'
+    friend:
+      material: 'SKULL_ITEM:3'
+      name: '&aAmigos'
+      lore:
+        - '&7Gerencie as pessoas que podem'
+        - '&7acessar o baú dessa loja.'
+        - ''
+        - '&aClique para gerenciar.'
+
+# Menu de seleção de economias
+providers:
+  name: '&8Selecionar economia'
+  size: 27
+  previous: 9
+  next: 17
+  back: 18
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+
+# Menu de preview de uma placa admin
+preview-admin:
+  name: '&8Loja do servidor'
+  size: 27
+  items:
+    provider-slot: 11
+    display-slot: 13
+
+# Menu de preview de uma placa de um jogador
+preview-player:
+  name: '&8Loja de &a{player}'
+  size: 27
+  items:
+    provider-slot: 11
+    display-slot: 13
+    owner-slot: 15
+    owner:
+      material: '{player}'
+      name: '&aDono do comércio'
+      lore:
+        - ''
+        - '&7Esta loja pertence ao jogador &f{player}&7.'
+        - ''
+
+# Menu de compra
+buy:
+  name: '&8Loja {player}'
+  size: 27
+  items:
+    provider-slot: 11
+    display-slot: 13
+    confirm-slot: 15
+    amount-slot: 16
+    confirm:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aComprar'
+      lore:
+        - '&7Comprar o item à venda'
+        - ''
+        - ' &7Preço: &f{price} {provider_abbreviated}&7 a cada &f{amount}'
+        - ' &7Preço: &f{price_unity} {provider_abbreviated}&7 a cada &f1 unidade'
+        - ' &7Preço: &f{price_inv} {provider_abbreviated}&7 a cada &f1 inventário &7(2304)'
+        - ''
+        - ' &7Estoque atual: &f{stock}'
+        - ''
+        - '&aBotão &fESQUERDO&a para comprar &f{amount}'
+    amount:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&aQuantia'
+      lore:
+        - '&7Configure a quantia que gostaria'
+        - '&7de comercializar nessa loja.'
+        - ''
+        - ' &fAtual: &b{amount}'
+        - ''
+        - '&aClique para alterar'
+
+# Menu de venda
+sell:
+  name: '&8Loja {player}'
+  size: 27
+  items:
+    provider-slot: 11
+    display-slot: 13
+    confirm-slot: 15
+    amount-slot: 16
+    confirm:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aVender'
+      lore:
+        - '&7Vender seus itens à loja'
+        - ''
+        - ' &7Preço: &f{price} {provider_abbreviated}&7 a cada &f{amount}'
+        - ' &7Preço: &f{price_unity} {provider_abbreviated}&7 a cada &f1 unidade'
+        - ' &7Preço: &f{price_inv} {provider_abbreviated}&7 a cada &f1 inventário &7(2304)'
+        - ''
+        - '&aBotão &fESQUERDO&a para vender &f{amount}'
+    amount:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&aQuantia'
+      lore:
+        - '&7Configure a quantia que gostaria'
+        - '&7de comercializar nessa loja.'
+        - ''
+        - ' &fAtual: &b{amount}'
+        - ''
+        - '&aClique para alterar'
+
+# Menu de compra e venda
+buy-sell:
+  name: '&8Loja {player}'
+  size: 27
+  items:
+    provider-slot: 10
+    display-slot: 12
+    buy-slot: 14
+    sell-slot: 15
+    amount-slot: 17
+    buy:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aComprar'
+      lore:
+        - '&7Comprar o item à venda'
+        - ''
+        - ' &7Preço: &f{price} {provider_abbreviated}&7 a cada &f{amount}'
+        - ' &7Preço: &f{price_unity} {provider_abbreviated}&7 a cada &f1 unidade'
+        - ' &7Preço: &f{price_inv} {provider_abbreviated}&7 a cada &f1 inventário &7(2304)'
+        - ''
+        - ' &7Estoque atual: &f{stock}'
+        - ''
+        - '&aBotão &fESQUERDO&a para comprar &f{amount}'
+    sell:
+      material: 'c532576b8bc9a876419a39ae4498c456fe9ee5bdc7ba91fd3b2f1b0a7eb91'
+      name: '&aVender'
+      lore:
+        - '&7Vender seus itens à loja'
+        - ''
+        - ' &7Preço: &f{price} {provider_abbreviated}&7 a cada &f{amount}'
+        - ' &7Preço: &f{price_unity} {provider_abbreviated}&7 a cada &f1 unidade'
+        - ' &7Preço: &f{price_inv} {provider_abbreviated}&7 a cada &f1 inventário &7(2304)'
+        - ''
+        - '&aBotão &fESQUERDO&a para vender &f{amount}'
+    amount:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&aQuantia'
+      lore:
+        - '&7Configure a quantia que gostaria'
+        - '&7de comercializar nessa loja.'
+        - ''
+        - ' &fAtual: &b{amount}'
+        - ''
+        - '&aClique para alterar'
+
+# Menu de amigos
+friends:
+  name: '&8Shop'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+  items:
+    add-slot: 27
+    empty-slot: 22
+    add:
+      material: '8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+      name: '&aAdicionar amigo'
+      lore:
+        - '&7Clique aqui para adicionar'
+        - '&7amigos para poder acessar o'
+        - '&7baú desta loja.'
+    friend:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - ''
+        - '&cBotão &fDIREITO&c para remover.'
+        - ''
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Você não possui nenhum', '&7amigo cadastrado.' ]
