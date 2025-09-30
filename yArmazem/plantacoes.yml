@@ -20,6 +20,9 @@ Plantacoes:
     PermissionVender: ''
     # Permissão para recolher a plantação
     PermissionRecolher: ''
+    # Mostrar no menu principal
+    # caso false, mostrará apenas nas categorias
+    MostrarPrincipal: true
     # Item que aparecerá no menu
     ItemDisplay:
       CustomSkull: false
