@@ -79,9 +79,19 @@ general:
     - 'DIAMOND_ORE'
     - 'EMERALD_ORE'
 
+# Sistema de auto-pickup para entidades
+entity:
+  enabled: true
+  # Lista de entidades que não serão afetados pelo auto-pickup
+  blacklist: []
+  # Lista de entidades com certas metadatas que não serão afetados pelo auto-pickup
+  metadata-blacklist:
+    - 'ySpawnersV2-MobStacked'
+    - 'ySpawners-MobStacked'
+
 # Sistema de xp do mcMMO
 # BLOCO,SKILL-XP
-mcmmo-xp-list:
+block-mcmmo-xp-list:
   - 'COAL_ORE,MINING-1'
   - 'REDSTONE_ORE,MINING-1'
   - 'GLOWING_REDSTONE_ORE,MINING-1'
@@ -89,6 +99,17 @@ mcmmo-xp-list:
   - 'GOLD_ORE,MINING-3'
   - 'DIAMOND_ORE,MINING-4'
   - 'EMERALD_ORE,MINING-5'
+
+# Sistema de xp do mcMMO
+# BLOCO,SKILL-XP
+entity-mcmmo-xp-list:
+  - 'ZOMBIE,SWORDS-1'
+  - 'SKELETON,SWORDS-1'
+  - 'SPIDER,SWORDS-1'
+  - 'IRON_GOLEM,SWORDS-2'
+  - 'SNOW_GOLEM,SWORDS-3'
+  - 'ENDERMAN,SWORDS-4'
+  - 'CREEPER,SWORDS-5'
 
 # Sistema de auto-smelt
 # BLOCO,RESULTADO-QUANTIA
