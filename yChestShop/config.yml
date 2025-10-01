@@ -79,6 +79,8 @@ black-list:
   materials: [ 'STONE', 'LOG:0' ]
   # NBTTags que estarão na black-list
   nbt-tags: []
+  # NBTTags que serão ignoradas ao verificar se os itens são idênticos
+  nbt-tags-bypass: []
 
 # Tipo padrão da placa
 # BUY - Players compram
