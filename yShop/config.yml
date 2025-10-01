@@ -46,6 +46,8 @@ general:
   format-discount: ' &7( {desconto}% )'
   # Formato do bônus nas mensagens
   format-bonus: ' &7( {bonus}% )'
+  # Acumular os bônus que tiver permissão
+  accumulate-bonus: false
 
 # Opcoes de configuração do NPC
 npc:
