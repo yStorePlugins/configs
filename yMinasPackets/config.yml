@@ -341,6 +341,16 @@ progress-bar:
   color-yes: '&a'
   color-no: '&7'
 
+# Sistema de npc
+npc:
+  skin: 'Pitombaa'
+  hologram:
+    offset: 3.4
+    hologram:
+      - '&6&lMINERAÇÃO'
+      - '&7Minere e fique rico!'
+      - '[item]GOLD_INGOT'
+
 # Você pode criar quantos bônus quiser
 # Será dado o bônus ao minerar.
 bonus:

@@ -304,3 +304,6 @@ chat:
   give-enchant: '&aVocê deu &f{amount}x {enchantment}&a para o jogador &f{player}&a.'
   activated-enchant: '&aVocê ativou &f{amount}x {enchantment}&a.'
   maximum-enchant: '&cVocê já está no nível máximo deste encantamento.'
+  npc-set: '&aNPC definido com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'
