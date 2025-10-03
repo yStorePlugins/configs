@@ -79,6 +79,16 @@ classes-ordered: true
 # Ativar o pvp na área de pesca
 pvp: false
 
+# Sistema de npc
+npc:
+  skin: 'Pitombaa'
+  hologram:
+    offset: 3.4
+    hologram:
+      - '&6&lPESCA'
+      - '&7Pesque peixes no servidor!'
+      - '[item]EMERALD'
+
 # Sistemas quando estiver pescando
 fishing:
   # Raio de detecção de água perto ou quando clicar para pescar

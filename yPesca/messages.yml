@@ -201,3 +201,6 @@ chat:
   classe-activated: '&aVocê ativou a classe &7{classe}&a.'
   classe-already: '&cVocê já possui esta classe.'
   upgraded: '&aLimite da sacola de peixes melhorado para &f{limit}&a.'
+  npc-set: '&aNPC definido com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'
