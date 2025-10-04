@@ -1,0 +1,22 @@
+Informações necessárias para algumas opções que estão dentro do arquivo da dominação da mina.
+
+## DOMINATION-TIME
+Tempo para começar a dominar a mina (em segundos)
+
+## REWARD-INTERVAL
+Tempo entre recompensas durante o domínio (em segundos)
+
+## MESSAGE-TIME
+Enviar a mensagem de dominância global a cada x tempo (em segundos)
+
+## PARTICLES
+Ativar as partículas
+
+## RADIUS
+Raio da dominação a partir do local de criação
+
+## SPHERE-SHAPE
+Formato da dominação, esférico ou cubo
+
+## START-ON-LOAD
+Ligar a dominação quando o servidor ligar

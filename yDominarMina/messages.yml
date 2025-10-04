@@ -1,0 +1,42 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aDominar mina comandos:
+
+    &a> /dominarmina
+    &a> /dominarmina armazem
+    &a> /dominarmina top
+    &a> /dominarmina iniciar
+    &a> /dominarmina parar
+    &a> /dominarmina criar
+    &a> /dominarmina deletar
+    &a> /dominarmina changeloc
+    &a> /dominarmina changehololoc
+
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  mine-found: '&cMina não encontrada.<nl>&cDisponíveis: &7{list}'
+  mine-active: '&cEsta mina {mine} não está ativa.'
+  mine-already: '&cEsta mina {mine} já está ativa.'
+  mine-exists: '&cEsta mina {mine} já existe.'
+  mine-stop: '&cMina {mine} parada com sucesso.'
+  mine-start: '&aMina {mine} foi iniciada com sucesso.'
+  mine-created: '&aMina {mine} foi criada com sucesso.'
+  mine-deleted: '&aMina {mine} foi deletada com sucesso.'
+  mine-changed: '&aA localização da mina {mine} foi alterada com sucesso.'
