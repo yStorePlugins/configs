@@ -60,3 +60,7 @@ limit:
 # Partículas e status
 # em ticks
 update-period: 3
+
+# Distância que irá mostrar a partícula pros jogadores
+# em blocos
+particle-distance: 20
