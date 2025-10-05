@@ -10,6 +10,9 @@ generate-online: false
 # Gerar mesmo com o dono e amigos AFK (yAfk)
 generate-afk: true
 
+# Ordem no menu
+order: 1
+
 # Item que poderá ser ativado
 item:
   material: 'INK_SACK:10'
