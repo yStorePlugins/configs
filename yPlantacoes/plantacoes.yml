@@ -1,0 +1,73 @@
+## ESTE PLUGIN NÃO É COMPATÍVEL COM PLANTAÇÕES DIFERENTES DE CROPS E FUNGOS, OU SEJA,
+## NÃO RECOMENDAMOS O USO COM CACTO, CANA DE AÇÚCAR, BAMBU E DERIVADOS QUE CRESCEM EM BLOCOS PARA CIMA
+
+Plantacoes:
+  fungo:
+    # Tipo da plantação
+    Plantacao: 'NETHER_WARTS'
+    # Configurações do replante
+    Replantar:
+      Ativar: true
+      # Replantar apenas se ter a planta no inventário
+      ApenasTer: true
+      # Planta que precisará ter no inventário para replantar
+      Planta: 'NETHER_STALK'
+    # Quebrar apenas se estiver crescido
+    QuebrarCrescido: true
+    # Estágio máximo que a planta pode chegar (fungos = 3; os outros crops normalmente são 7)
+    NivelMaximo: 3
+    # Delay para quebrar o mesmo bloco novamente
+    # em segundos
+    FarmDelay: 0
+    # Bônus por cada nível de fortuna (enchant default)
+    # Ex: 1.0 de bônus por nível = nivel*bonus (10 niveis * 1 = 10% a mais)
+    FortunaBonus: 1.0
+    # Permissão para quebrar este tipo de plantação
+    # Deixe '' (vazio) para não usar
+    Permissao: 'yplantacoes.fungo'
+    # XP que será dado ao jogador
+    XP:
+      Vanilla: 1.0
+      Mcmmo: 1.0 # skill HERBALISM
+    # Permitir dar mais de um DROP que tenha permissão
+    Multi-Drop: false
+    # Configuração do drop
+    Drops:
+      membro:
+        Ordem: 1
+        Drop:
+          material: 'NETHER_STALK'
+        Permissao: 'yplantacoes.fungo.membro'
+        Minimo: 10
+        Maximo: 15
+        Title: ''
+        Actionbar: '&aVocê recebeu &e{quantia} fungos&a e &e{moedas} moedas&a.'
+        Chat: ''
+        # Moedas que serão ganhas
+        Moedas:
+          Min: 1
+          Max: 5
+        # Sistema de auto-sell do drop
+        AutoSell:
+          Ativar: false
+          DarMoney: true
+          BasePrice: 100.0 # preço por drop (para o comando)
+          Currencies:
+            preco1:
+              Provider: 'money'
+              Amount: 100.0
+          Mensagem:
+            Actionbar: '&aVocê vendeu &fx{quantia} Fungos&a por &6{money}&a e &e{moedas} moedas&a.'
+            Chat: '&aVocê vendeu &fx{quantia} Fungos&a por &6{money}&a e &e{moedas} moedas&a.'
+          # O Drop vai executar um comando ao ser vendido?
+          Comando:
+            Ativar: false
+            UsarQuantia: true # usar a placeholder {quantia} para ter a quantia de drops e executar o comando só 1x
+            MultiplicarQuantiaPreco: true # multiplica a quantia pelo preço e o bônus (essencial para dar em outras economias)
+            InvBypass: true # não checar se o inv está cheio (apenas quando os comandos tiverem ativos)
+            Comandos:
+              - 'give {player} NETHER_STALK {quantia}'
+    # Configuração das recompensas
+    # recompensa (recompensas.yml),chance
+    Recompensas:
+      - 'Reco1,50.0'

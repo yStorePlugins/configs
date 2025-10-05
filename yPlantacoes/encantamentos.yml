@@ -1,0 +1,270 @@
+# Velocidade ao quebrar
+Eficiencia:
+  # Ordem do enchant no menu
+  Ordem: 1
+  Display: 'Eficiência'
+  Padrao: 0
+  Maximo: -1
+  BonusPorLevel: 10.0 # em porcentagem
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  # Aparecer no menu de evolução
+  MostrarMenu: true
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: FEATHER
+      Data: 0
+      Name: '&aEficiência'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre mais rápido.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: FEATHER
+      Data: 0
+      Name: '&aEficiência'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre mais rápido.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&cVocê não tem moedas suficientes.'
+    Maximo: # quando já estiver no máximo
+      CustomSkull: false
+      URL: ''
+      ID: FEATHER
+      Data: 0
+      Name: '&aEficiência'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre mais rápido.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+# Bônus de drop
+Fortuna:
+  # Ordem do enchant no menu
+  Ordem: 2
+  Display: 'Bônus'
+  Padrao: 0
+  Maximo: -1
+  BonusPorLevel: 10.0 # em porcentagem
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  # Aparecer no menu de evolução
+  MostrarMenu: true
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aFortuna'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais drops.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Bônus atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aFortuna'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais drops.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Bônus atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&cVocê não tem moedas suficientes.'
+    Maximo: # quando já estiver no máximo
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aFortuna'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais drops.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Bônus atual: &b{porcentagem}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+# Aumenta chance nas recompensas
+Sortudo:
+  Ordem: 3
+  Display: 'Sortudo'
+  Padrao: 0
+  Maximo: -1
+  BonusPorLevel: 10.0 # em porcentagem
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  # Aparecer no menu de evolução
+  MostrarMenu: true
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      CustomSkull: true
+      URL: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      ID: AIR
+      Data: 0
+      Name: '&aSortudo'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      CustomSkull: true
+      URL: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      ID: AIR
+      Data: 0
+      Name: '&aSortudo'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&cVocê não tem blocos ou nível suficientes.'
+    Maximo: # quando já estiver no máximo
+      CustomSkull: true
+      URL: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      ID: AIR
+      Data: 0
+      Name: '&aSortudo'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+# Ganhar mais moedas de farm
+Multiplicador:
+  Ordem: 4
+  Display: 'Multiplicador'
+  Padrao: 0
+  Maximo: -1
+  BonusPorLevel: 10.0 # em porcentagem
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  # Aparecer no menu de evolução
+  MostrarMenu: true
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      CustomSkull: true
+      URL: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
+      ID: AIR
+      Data: 0
+      Name: '&aMultiplicador'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais moedas ao farmar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Multiplicador Atual: &b{multiplicador}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      CustomSkull: true
+      URL: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
+      ID: AIR
+      Data: 0
+      Name: '&aMultiplicador'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais moedas ao farmar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{multiplicador}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&cVocê não tem blocos ou nível suficientes.'
+    Maximo: # quando já estiver no máximo
+      CustomSkull: true
+      URL: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
+      ID: AIR
+      Data: 0
+      Name: '&aMultiplicador'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais moedas ao farmar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{multiplicador}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'

@@ -1,0 +1,46 @@
+Nome: '&8Plantação'
+Tamanho: 27
+Itens:
+  Encantamentos:
+    Slot: 11
+    CustomSkull: true
+    URL: 'b2f79016cad84d1ae21609c4813782598e387961be13c15682752f126dce7a'
+    ID: AIR
+    Data: 0
+    Name: '&aEncantamentos'
+    Lore:
+      - '&7Gerencie os encantamentos da'
+      - '&7sua enxada.'
+      - ''
+      - '&aClique para acessar.'
+  Top:
+    Slot: 12
+    ID: BOOK_AND_QUILL
+    Name: '&aTop'
+    Lore:
+      - '&7Veja os jogadores que'
+      - '&7se destacaram ao plantar.'
+      - ''
+      - '&aClique para visualizar.'
+  Recompensas:
+    Slot: 13
+    ID: CHEST
+    Name: '&aRecompensas'
+    Lore:
+      - '&7Veja as recompensas que'
+      - '&7você conseguiu na farm.'
+      - ''
+      - '&aClique para visualizar.'
+  Enxada:
+    Slot: 15
+    ID: DIAMOND_HOE
+    Name: '&aEnxada'
+    Lore:
+      - '&7Compre sua enxada e começe a farmar'
+      - '&7para ganhar bastante dinheiro!'
+      - ''
+      - '&fValor: &a100 coins&f.'
+      - ''
+      - '&aClique para comprar.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Sair:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

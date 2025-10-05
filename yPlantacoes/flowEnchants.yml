@@ -1,0 +1,283 @@
+linear:
+  Ordem: 5
+  Display: 'Linear'
+  Padrao: 0
+  Maximo: -1
+  ChancePorLevel: 10.0 # em chance
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  # Aparecer no menu de evolução
+  MostrarMenu: true
+  Mensagens:
+    Title: '&aLinear<nl>&eativada' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Chat: [ ]
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aLinear'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma linha reta.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aLinear'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma linha reta.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&cVocê não tem moedas suficientes.'
+    Maximo: # quando já estiver no máximo
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aLinear'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma linha reta.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+explosive:
+  Ordem: 5
+  Display: 'Explosão'
+  Padrao: 0
+  Maximo: -1
+  ChancePorLevel: 10.0 # em chance
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  # Aparecer no menu de evolução
+  MostrarMenu: true
+  Mensagens:
+    Title: '&aExplosão<nl>&eativada' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Chat: [ ]
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aExplosão'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma esfera.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aExplosão'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma esfera.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&cVocê não tem moedas suficientes.'
+    Maximo: # quando já estiver no máximo
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aExplosão'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma esfera.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+laser:
+  Ordem: 5
+  Display: 'Laser'
+  Padrao: 0
+  Maximo: -1
+  ChancePorLevel: 10.0 # em chance
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  # Aparecer no menu de evolução
+  MostrarMenu: true
+  Mensagens:
+    Title: '&alaser<nl>&eativada' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Chat: [ ]
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&alaser'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma esfera.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&alaser'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma esfera.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&cVocê não tem moedas suficientes.'
+    Maximo: # quando já estiver no máximo
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&alaser'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma esfera.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+boomerang:
+  Ordem: 5
+  Display: 'Boomerang'
+  Padrao: 0
+  Maximo: -1
+  ChancePorLevel: 10.0 # em chance
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  # Aparecer no menu de evolução
+  MostrarMenu: true
+  Mensagens:
+    Title: '&aBoomerang<nl>&eativada' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Chat: [ ]
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aBoomerang'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma esfera.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aBoomerang'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma esfera.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} moedas&f.'
+        - ''
+        - '&cVocê não tem moedas suficientes.'
+    Maximo: # quando já estiver no máximo
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Name: '&aBoomerang'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebra uma esfera.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance atual: &b{chance}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'

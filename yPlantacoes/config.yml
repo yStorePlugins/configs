@@ -1,0 +1,159 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Farm:
+    Comando: 'farm'
+    Aliases: [ ]
+
+# Opções gerais do plugin
+Opcoes:
+  # Pode conflitar com plugins de armazém
+  AutoPickup: false
+  # Bloquear de quebrar com inventário cheio
+  Block-InvFull: false
+  # Subcomando de moedas
+  Moedas subcomandos: ['moeda', 'moedas']
+  # Mundos blacklistados
+  MundoBlacklist:
+    - 'nenhum'
+  # Ao quebrar com uma enxada no shift não executar o evento do plugin
+  ShiftEnxadaBypass: true
+  # Ao quebrar uma plantação não crescida (sem shift) irá executar o evento padrão do bukkit (caso esteja sem a enxada na mão)
+  NoShiftNoCrescidoBypass: false
+  # Ao quebrar uma plantação caso esteja sem a enxada na mão (sem shift) irá executar o evento padrão do bukkit.
+  NoShiftBypass: false
+  # Ao quebrar no modo criativo não executar o evento do plugin
+  CriativoBypass: true
+  # Fazer com que a Enxada nunca quebre
+  EnxadaUnbreakable: true
+  # Valor da enxada no menu principal
+  EnxadaValor: 100.0
+  # Quebrar as plantações apenas com a enxada custom
+  QuebrarSoCustom: false
+  # Abrir menu de evolução ao interagir com a enxada (Shift+Botão direito)
+  InteragirMenu: true
+  # Somar um nível a mais na evolução
+  # Padrão: true (versões anteriores)
+  SomarEvolute: true
+  # Máximo permitido para evoluir com Q
+  QMax: 0
+  # Acumular os bônus que tiver permissão
+  Acumular bonus: false
+  # Enviar recompensas para o menu de recompensas
+  RecompensasMenu: true
+  # Skill do herbalismo no seu mcMMO/AuraSkills
+  Herbalismo: 'HERBALISM'
+  # Formatador de mensagens
+  Formatador:
+    Bonus tem: '&a+{bonus}% por ser {display}&a.'
+    Bonus nao tem: ''
+  # Materiais que irão ser reconhecidos na skin
+  Skin-materiais:
+    - 'WOOD'
+    - 'STONE'
+    - 'IRON'
+    - 'GOLD'
+    - 'DIAMOND'
+  # Materiais que não poderão quebrar com a enxada
+  material-blacklist:
+    - 'MELON_STEM'
+    - 'PUMPKIN_STEM'
+  # Item da enxada
+  Enxada:
+    CustomSkull: false
+    URL: ''
+    ID: DIAMOND_HOE
+    Data: 0
+    Name: '&bEnxada de farm'
+    Lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isto.'
+  Segurando: '&cVocê deve estar segurando sua enxada.'
+  Evoluido: '&aO encantamento &f{encantamento}&a foi evoluido para o nível &f{nivel}&a.'
+  Numero: '&cO argumento não é um número.'
+  Jogador: '&cEste jogador não foi encontrado.'
+  SiMesmo: '&cVocê não pode realizar esta ação à si mesmo.'
+  Moedas: '&bVocê possui &f{moedas} moedas&b.'
+  Moedas player: '&bO jogador &f{player}&b possui &f{moedas} moedas&b.'
+  Adicionou: '&bVocê adicionou &f{moedas} moedas&b ao jogador &f{player}&b.'
+  Removeu: '&bVocê removeu &f{moedas} moedas&b do jogador &f{player}&b.'
+  Setou: '&bVocê setou &f{moedas} moedas&b para o jogador &f{player}&b.'
+  Enviou: '&bVocê enviou &f{moedas} moedas&b para o jogador &f{player}&b.'
+  Recebeu: '&bVocê recebeu &f{moedas} moedas&b do jogador &f{player}&b.'
+  Possui: '&cVocê não possui a quantia de &f{moedas}&c moedas.'
+  Deu: '&bVocê deu uma enxada para o jogador &f{player}&b.'
+  Custo: '&cVocê não possui 100 coins.'
+  Comprou: '&aVocê comprou uma enxada por 100 coins.'
+  PermPlanta: '&cVocê não possui a permissão deste tipo de planta.'
+  Enxada: '&cVocê deve quebrar esta plantação com uma enxada de farm.'
+  Aguarde: '&cVocê precisa aguardar {time} para quebrar essa plantação novamente.'
+  Cancelou: '&cOperação cancelada.'
+  Excede: '&cEstes níveis excedem o nível máximo do encantamento.'
+  Skin encontrada: '&cEsta skin não existe. Disponíveis: &7{list}'
+  Deu skin: '&bVocê deu uma skin para o jogador &f{player}&b.'
+  Skin possui: '&aA ferramenta já possui esta skin ativada.'
+  Skin ativou: '&aSkin ativada com sucesso.'
+  Skin nao possui: '&cA ferramenta não possui essa skin.'
+  Skin removida: '&aSkin removida com sucesso.'
+  Ja tem: '&cVocê já possui uma enxada no inventário.'
+  NoBalance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  InvFull: '&cO seu inventário está cheio.'
+  Digite encantamento:
+    - ''
+    - '&aDigite a quantia de níveis que você quer adquirir ao encantamento &f{encantamento}&a.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Farm help:
+    - ''
+    - '&a/farm &8- &7Abre o menu principal.'
+    - '&a/farm moedas &8- &7Vê as suas moedas.'
+    - '&a/farm <player> &8- &7Ver as moedas de alguém.'
+    - '&a/farm enviar <player> <quantia> &8- &7Envia suas moedas para alguém.'
+    - '&a/farm darenxada <player> &8- &7Dá enxada para um jogador.'
+    - '&a/farm add <player> <quantia> &8- &7Adiciona moedas a alguém.'
+    - '&a/farm set <player> <quantia> &8- &7Remove moedas de alguém.'
+    - '&a/farm remove <player> <quantia> &8- &7Seta moedas a alguém.'
+    - ''
+  Reward-collected: '&eItem recolhido com sucesso.'
+  Reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+
+# Setas dos menus
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'

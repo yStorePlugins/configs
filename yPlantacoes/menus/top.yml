@@ -1,0 +1,18 @@
+Nome: '&8TOP Plantação'
+Tamanho: 36
+Slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+BackSlot: 31
+AnteriorSlot: 9
+ProximoSlot: 17
+# Item do top Moedas
+Item moedas:
+  CustomSkull: true
+  URL: '{player}'
+  ID: 0
+  Data: 0
+  Name: '&f{player}'
+  Lore:
+    - ''
+    - '&fMoedas: &7{moedas}'
+    - '&fPosição: &e{pos}º'
+    - ''

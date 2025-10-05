@@ -1,0 +1,29 @@
+Nome: '&8Enxada - Ferramenta'
+Tamanho: 36
+Slots: [11, 13, 15]
+BackSlot: 31
+AnteriorSlot: 18
+ProximoSlot: 26
+Ferramentas:
+  enxada:
+    type: 'DIAMOND_HOE'
+    material: 'DIAMOND_HOE'
+    name: '&bMachado de Diamante'
+    lore:
+      - ''
+      - '&eTroque sua ferramenta por uma'
+      - '&ebelíssima enxada de diamante.'
+      - ''
+      - '&aClique para trocar.'
+  machado:
+    type: 'DIAMOND_AXE'
+    material: 'DIAMOND_AXE'
+    name: '&bMachado de Diamante'
+    lore:
+      - ''
+      - '&eTroque sua ferramenta por um'
+      - '&ebelíssimo machado de diamante.'
+      - ''
+      - '&aClique para trocar.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Sair:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

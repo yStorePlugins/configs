@@ -1,0 +1,42 @@
+Nome: '&8Enxada - Evoluir'
+Tamanho: 36
+Slots: [11, 13, 15]
+BackSlot: 27
+AnteriorSlot: 18
+ProximoSlot: 26
+# Slot onde ficará a enxada do jogador
+EnxadaSlot: 29
+# Item para ver adicionar mais blocos
+Perfil:
+  Slot: 31
+  CustomSkull: true
+  URL: '{player}'
+  ID: AIR
+  Data: 0
+  Glow: true
+  Name: '&a{player}'
+  Lore:
+    - ''
+    - '&fMoedas: &b{moedas}'
+    - ''
+# Item para trocar a ferramenta
+Ferramenta:
+  Slot: 33
+  CustomSkull: false
+  URL: ''
+  ID: DIAMOND_HOE
+  Data: 0
+  Glow: true
+  Name: '&aFerramenta'
+  Lore:
+    - '&aClique para gerenciar a ferramenta'
+Skin:
+  Slot: 35
+  material: '731f3279fc112b7f18bd0a2229934fcb5605c62823ce698b8b503ecccf0a3ac4'
+  name: '&aSkins'
+  lore:
+    - '&7Configure a skin da sua ferramenta'
+    - '&7e ganhe alguns bônus.'
+    - ''
+    - '&aClique para acessar'
+Itens: {}

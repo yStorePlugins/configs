@@ -1,0 +1,32 @@
+Recompensas:
+  Reco1:
+    # Item que aparecerá para coletar.
+    Collect:
+      material: 'STONE:0'
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEsta pedra vale muito dinheiro!', '', ' &7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    # Só será dado o item se os comandos estiverem em false.
+    # Item que será dado ao jogador.
+    Item:
+      material: STONE
+      name: ''
+      amount: 1
+      lore: []
+    # Mensagens que serão enviadas ao receber a recompensa
+    Mensagens:
+      Title: '&a+100 coins' # deixe '' para não usar
+      Actionbar: '&a+100 coins' # deixe '' para não usar
+      Chat: |
+        &a+100 coins
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      Use: true
+      # quantia padrão da placeholder {amount} no comando (valor base)
+      Placeholder-amount: 100
+      # multiplicar a placeholder {amount} pela quantia de recompensas do mesmo tipo
+      Multiply-placeholder: true
+      List:
+        - 'money add {player} {amount}'
