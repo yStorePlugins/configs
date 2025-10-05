@@ -1,0 +1,466 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de gerenciar membros
+main:
+  name: '&8Máquinas'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 20, 21, 22, 23, 24, 25 ]
+  previous-slot: 36
+  next-slot: 44
+  #
+  sell-all-slot: 39
+  profile-slot: 40
+  top-slot: 41
+  shop-slot: 37
+  friends-machines-slot: 43
+  #
+  items:
+    profile:
+      material: '{player}'
+      name: '&eSuas informações'
+      lore: [ '', ' &fSlots: &c{slots_current}&7/&a{slots_total}', '', ' &fMáquinas funcionando: &a{machines}&f.', ' &fDrops a vender: &7{to_sell}&f.', '' ]
+    sell-all:
+      material: 'CAULDRON_ITEM'
+      name: '&eVender Tudo!'
+      lore: [ '&7Venda os drops da sua', '&7máquina de uma só vez.', '', ' &fDrops a vender: &7{to_sell}', '', '&aClique para vender.' ]
+    sell-all-permission:
+      material: 'CAULDRON_ITEM'
+      name: '&cVender Tudo!'
+      lore: [ '&7Venda os drops da sua', '&7máquina de uma só vez.', ' &fDrops a vender: &7{to_sell}', '', '&cVocê não tem permissão' ]
+    top:
+      material: 'SIGN'
+      name: '&eTOP'
+      lore: [ '&7Clique para ver os', '&7jogadores que possuem', '&7mais máquinas.' ]
+    shop:
+      material: 'EMERALD'
+      name: '&eShop!'
+      lore: [ '&7Clique para comprar', '&7mais máquinas.' ]
+    friends-machines:
+      material: 'GOLD_INGOT'
+      name: '&eMáquinas de Amigos!'
+      lore: [ '&7Clique para gerenciar as', '&7máquinas dos seus amigos.' ]
+  facing:
+    e0:
+      slot: 10
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e1:
+      slot: 11
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e2:
+      slot: 12
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e3:
+      slot: 13
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e4:
+      slot: 14
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e5:
+      slot: 15
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e6:
+      slot: 16
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e7:
+      slot: 19
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e8:
+      slot: 20
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e9:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e10:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e11:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e12:
+      slot: 24
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e13:
+      slot: 25
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+
+# Menu de máquinas de amigos
+friends-machines:
+  name: '&8Máquinas - Amigos'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 20, 21, 22, 23, 24, 25 ]
+  previous-slot: 36
+  next-slot: 44
+  #
+  back-slot: 39
+  sell-all-slot: 40
+  #
+  items:
+    sell-all:
+      material: 'CAULDRON_ITEM'
+      name: '&eVender Tudo!'
+      lore: [ '&7Venda os drops da sua', '&7máquina de uma só vez.', '', ' &fDrops a vender: &7{to_sell}', '', '&aClique para vender.' ]
+    sell-all-permission:
+      material: 'CAULDRON_ITEM'
+      name: '&cVender Tudo!'
+      lore: [ '&7Venda os drops da sua', '&7máquina de uma só vez.', ' &fDrops a vender: &7{to_sell}', '', '&cVocê não tem permissão' ]
+  facing:
+    e0:
+      slot: 10
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e1:
+      slot: 11
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e2:
+      slot: 12
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e3:
+      slot: 13
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e4:
+      slot: 14
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e5:
+      slot: 15
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e6:
+      slot: 16
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e7:
+      slot: 19
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e8:
+      slot: 20
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e9:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e10:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e11:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e12:
+      slot: 24
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+    e13:
+      slot: 25
+      material: 'STAINED_GLASS_PANE:14'
+      name: ' '
+      lore: []
+
+# Menu da máquina
+machine:
+  name: '&8Máquina'
+  size: 27
+  back-slot: 0
+  items:
+    info-slot: 10
+    drops-slot: 11
+    friends-slot: 13
+    upgrades-slot: 15
+    level-slot: 16
+    remove-slot: 12
+    # ícones do menu upgrades direto no principal
+    upgrades-drops-slot: -1
+    upgrades-speed-slot: -1
+    #
+    info:
+      material: '{machine}'
+      name: '&a{machine} &fL.{level}'
+      lore:
+        - ''
+        - ' &fDono: &7{owner}&f.'
+        - ' &fStack: &7{stack}&f.'
+        - ' &fDrops armazenados: &a{to_sell}&f.'
+        - ''
+        - ' &f> Drops gerados por rodada: &b{drops_round}&f.'
+        - ' &f> Velocidade de geração: &b{speed}s&f.'
+        - ''
+    drops:
+      material: '12ef39437d7d43a034c5a40b974e8d2c6734a218c76485d04910f507bdc2e809'
+      name: '&aDrops'
+      lore:
+        - '&7Gerencie os drops que estão'
+        - '&7armazenados nesta máquina.'
+        - ''
+        - ' &fDrops armazenados: &a{to_sell}&f.'
+        - ''
+        - '&aClique para gerenciar.'
+    upgrades:
+      material: '365fc0426230a2e88df29d2d8ec4512e6dbdbc0777b4b83cdda2ede81864d6'
+      name: '&aUpgrades'
+      lore:
+        - '&7Sua máquina necessita de'
+        - '&7melhorias para ficar mais'
+        - '&7eficiente.'
+        - ''
+        - '&aClique para acessar.'
+    level-cant:
+      material: 'BARRIER'
+      name: '&cEvoluir Nível'
+      lore:
+        - '&cA máquina já está no nível máximo.'
+    friends:
+      material: '1cba7277fc895bf3b673694159864b83351a4d14717e476ebda1c3bf38fcf37'
+      name: '&aAmigos'
+      lore:
+        - '&7Acesse as preferências de'
+        - '&7amizade desta máquina.'
+        - ''
+        - '&aClique para acessar.'
+    remove:
+      material: BARRIER
+      name: '&cRemover'
+      lore:
+        - '&7Remova máquinas deste stack de'
+        - '&7máquinas.'
+        - ''
+        - '&aBotão &fESQUERDO&a para remover TODOS.'
+        - '&aBotão &fDIREITO&a para escolher a quantia.'
+
+# Menu de top
+top:
+  name: '&8TOP MÁQUINAS'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 9
+  next-slot: 17
+  items:
+    # Item do top máquinas
+    machines:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - ''
+        - '&fMáquinas funcionando: &7{amount}'
+        - '&fPosição: &e{pos}º'
+        - ''
+
+# Menu upgrades
+upgrades:
+  name: '&8Máquina'
+  size: 27
+  back-slot: 18
+  items:
+    drops-slot: 12
+    speed-slot: 14
+    drops:
+      material: EYE_OF_ENDER
+      name: '&aUpgrade de Drops'
+      lore:
+        - '&7Esta evolução faz com que a'
+        - '&7máquina produza mais drops'
+        - '&7por rodada.'
+        - ''
+        - ' &fNível: &7{nivel_actual}/{nivel_max}&f.'
+        - ' &fDrops obtidos por mob: &7{drops_actual}/{drops_max}&f.'
+        - ' &fCusto para próx nível: &7{money} coins&f.'
+        - ''
+        - '&aClique para evoluir.'
+    drops-max:
+      material: EYE_OF_ENDER
+      name: '&aUpgrade de Drops'
+      lore:
+        - '&7Esta evolução faz com que a'
+        - '&7máquina produza mais drops'
+        - '&7por rodada.'
+        - ''
+        - ' &fNível: &7{nivel_actual}/{nivel_max}&f.'
+        - ' &fDrops obtidos por mob: &7{drops_actual}/{drops_max}&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+    speed:
+      material: EXP_BOTTLE
+      name: '&aUpgrade de Velocidade'
+      lore:
+        - '&7Esta evolução faz com que o'
+        - '&7tempo de geração da máquina'
+        - '&7seja reduzido.'
+        - ''
+        - ' &fNível: &7{nivel_actual}/{nivel_max}&f.'
+        - ' &fTempo: &7{speed_actual}s/{speed_max}s&f.'
+        - ' &fCusto para próx nível: &7{money} coins&f.'
+        - ''
+        - '&aClique para evoluir.'
+    speed-max:
+      material: EXP_BOTTLE
+      name: '&aUpgrade de Velocidade'
+      lore:
+        - '&7Esta evolução faz com que o'
+        - '&7tempo de geração da máquina'
+        - '&7seja reduzido.'
+        - ''
+        - ' &fNível: &7{nivel_actual}/{nivel_max}&f.'
+        - ' &fTempo: &7{speed_actual}s/{speed_max}s&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+# Menu de drops
+drops:
+  name: '&8Máquina'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+
+# Menu de amigos
+friends:
+  name: '&8Máquina'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+  items:
+    add-slot: 27
+    add:
+      material: '8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+      name: '&aAdicionar amigo'
+      lore:
+        - '&7Clique aqui para adicionar'
+        - '&7amigos para poder usar'
+        - '&7esta máquina.'
+    friend:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - ''
+        - '&aBotão &fDIREITO&a para deletar.'
+        - ''
+
+shop:
+  name: '&8Loja de máquinas'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 47
+  next-slot: 53
+  back-slot: 45
+  # Itens da loja
+  items:
+    info-slot: 49
+    multiplier-slot: 50
+    info:
+      material: '1cba7277fc895bf3b673694159864b83351a4d14717e476ebda1c3bf38fcf37'
+      name: '&aInformações gerais'
+      lore:
+        - '&7Máquinas são uma das partes mais'
+        - '&7importantes do servidor! Com'
+        - '&7elas, é possível receber muuuitos'
+        - '&7coins!'
+        - ''
+        - '&fDesconto: &7{discount}% ( {group} &7)&f.'
+        - '&fLimite de compra: &7{limit}&f.'
+    multiplier:
+      material: 'b73e87235a2f691cf14bb0d414fda2563f040865c74273bf2c8bc095fecb228'
+      name: '&aMultiplicador de compra'
+      lore:
+        - '&7Quanto mais limite de compra,'
+        - '&7mais máquinas é possível comprar'
+        - '&7por vez, porém, há mais um jeito'
+        - '&7de comprar máquinas mais rápido,'
+        - '&7que é o multiplicador de compra!'
+        - '&7Ele fornece mais máquinas a'
+        - '&7cada compra feita.'
+        - ''
+        - ' &fMultiplicador ativo: &7{active}&f.'
+        - ' &fMultiplicador máximo: &7{max}&f.'
+        - ''
+        - '&aClique para alterar seu multiplicador.'
+    # Configurações gerais dos itens
+    # Quando a máquina não foi liberado na data ainda.
+    wait:
+      material: BARRIER
+      name: '{machine}'
+      lore:
+        - ''
+        - '&cVocê não pode comprar esta máquina.'
+        - '&7Ela será liberado em: &f{date} - &f{hour}'
+        - '&7Tempo para liberar: &f{time_formatted}'
+        - ''
+    # Quando o jogador não tiver permissão de comprar aquela máquina.
+    permission:
+      material: BARRIER
+      name: '{machine}'
+      lore:
+        - ''
+        - '&cVocê não pode comprar esta máquina.'
+        - '&7Você não possui permissão.'
+        - ''

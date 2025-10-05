@@ -1,0 +1,182 @@
+# Nome que irá aparecer nas mensagens
+name: '&aMáquina de Tokens'
+
+# Permissão para poder ativar a máquina
+permission: ''
+
+# Gerar apenas com o dono ou amigo online
+generate-online: false
+
+# Gerar mesmo com o dono e amigos AFK (yAfk)
+generate-afk: true
+
+# Item que poderá ser ativado
+item:
+  material: 'INK_SACK:10'
+  name: '&aMáquina de Tokens &fL.{level}'
+  lore:
+    - ''
+    - '&f Tipo: &7Tokens&f.'
+    - '&f Stack: &7{stack}'
+    - ''
+    - '&f Upgrades:'
+    - '&f  > Drops gerados por rodada: &b{drops_round}'
+    - '&f  > Velocidade de geração: &b{speed}s'
+    - ''
+
+# Mensagens
+messages:
+  sell: '&aVocê vendeu &7{amount}x {drop}&a por &6{yeconomias-tokens} tokens &8{bonus}&a.'
+
+menu:
+  icon:
+    material: 'INK_SACK:10'
+    name: '&aMáquina de Tokens &fL.{level}'
+    lore:
+      - '&7Esta maquina gera &aTokens&7.'
+      - ''
+      - '&f Stack: &7{stack}'
+      - '&f Tokens gerados: &a{to_sell}'
+      - ''
+      - '&f Upgrades:'
+      - '&f  > Drops gerados por rodada: &b{drops_round}'
+      - '&f  > Velocidade de geração: &b{speed}s'
+      - ''
+      - '&aClique para gerenciar.'
+  icon-friend:
+    material: 'INK_SACK:10'
+    name: '&aMáquina de Tokens &fL.{level}'
+    lore:
+      - '&7Esta maquina gera &aTokens&7.'
+      - ''
+      - '&f* Máquina de: &a{player}'
+      - ''
+      - '&f Stack: &7{stack}'
+      - '&f Tokens gerados: &a{to_sell}'
+      - ''
+      - '&f Upgrades:'
+      - '&f  > Drops gerados por rodada: &b{drops_round}'
+      - '&f  > Velocidade de geração: &b{speed}s'
+      - ''
+      - '&aClique para gerenciar.'
+  level:
+    material: '365fc0426230a2e88df29d2d8ec4512e6dbdbc0777b4b83cdda2ede81864d6'
+    name: '&aEvoluir Nível'
+    lore:
+      - '&7Evolua o nível da sua máquina'
+      - '&7para deixar ela mais eficiente.'
+      - ''
+      - '&f{current_level} -> &a{next_level}'
+      - ''
+      - '&7Custo: &e{money} coins.'
+      - ''
+      - '&aClique para evoluir.'
+
+# Níveis da máquina
+levels:
+  # nível máximo
+  level-max: 2
+  level1:
+    # ordem do nível
+    # default = 1
+    order: 1
+    # Delay de geração
+    # em segundos
+    delay: 10
+    # Drops gerados por round
+    drops: 1
+    # Preço para chegar neste nível
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+  level2:
+    order: 2
+    delay: 5
+    drops: 2
+    prices:
+      price1:
+        provider: 'money'
+        amount: 10000.0
+
+# Upgrades da máquina
+upgrades:
+  # Permitir o upgrade apenas ao chegar no nível máximo
+  level-max: true
+  # Quantidade de drops gerados
+  drops:
+    prices-per-level:
+      price1:
+        provider: 'money'
+        amount: 10.0
+    max: 5
+    default: 0
+    add-per-level: 1
+  # Velocidade de geração de mobs
+  speed:
+    prices-per-level:
+      price1:
+        provider: 'money'
+        amount: 15.0
+    max: 5
+    default: 0
+    add-per-level: 1
+
+# Sistema de drops
+drop:
+  # Possibilitar recolher o drop no armazém
+  collect: true
+  # Possibilitar vender o drop no armazém
+  sell: true
+
+  # Botão que será realizada a venda (LEFT | RIGHT)
+  sell-button: 'LEFT'
+  # Botão que será realizado recolher (LEFT | RIGHT)
+  collect-button: 'RIGHT'
+
+  # Permissão para recolher drops (deixe vazio '' para não usar)
+  collect-permission: 'ymaquinasvirtuais.iron.coletar'
+  # Permissão para vender drops (deixe vazio '' para não usar)
+  sell-permission: 'ymaquinasvirtuais.iron.vender'
+
+  # Tipos de drop
+  types:
+    tokens:
+      drop:
+        material: 'INK_SACK:10'
+      name: '&aTokens'
+      # ícone que irá ficar no menu de drops
+      icon:
+        material: 'INK_SACK:10'
+        name: '&aTokens'
+        lore:
+          - ''
+          - ' &fDrops armazenados: &a{drops_stored}&f.'
+          - ' &fValor por drop: &a1 tokens&f.'
+          - ' &fValor total: &a{yeconomias-tokens} tokens&f.'
+          - ' &fSeu bônus: &b{bonus_raw}%&f.' # bonus formatado: {bonus}
+          - ''
+          - '&aBotão &fESQUERDO&a para vender.'
+          - '&aBotão &fDIREITO&a para recolher.'
+      # Economias que o drop irá dar
+      currencies:
+        preco1:
+          provider: 'yeconomias-tokens'
+          amount: 1.0
+
+  # O Drop vai executar um comando ao ser recolhido?
+  command:
+    enabled: false
+    # Preço por drop (para o comando)
+    price: 100.0
+    # usar a placeholder {quantia} para ter a quantia de drops e executar o comando só 1x
+    use-amount: true
+    # multiplica a quantia pelo preço e o bônus (essencial para dar em outras economias)
+    multiply-price: true
+    # não checar se o inv está cheio (apenas quando os comandos tiverem ativos)
+    inv-bypass: true
+    # coletar diretamente, sem precisar digitar a quantia no chat (apenas quando os comandos tiverem ativos)
+    collect-chat-bypass: true
+    # formatar a quantia que será executada no comando. Ex: 1k, 10k, 1M
+    amount-format: true
+    commands: [ 'give {player} iron_ingot {amount}' ]

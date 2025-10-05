@@ -1,0 +1,125 @@
+#        __  __                   _               __     ___      _               _
+#  _   _|  \/  | __ _  __ _ _   _(_)_ __   __ _ __\ \   / (_)_ __| |_ _   _  __ _(_)___
+# | | | | |\/| |/ _` |/ _` | | | | | '_ \ / _` / __\ \ / /| | '__| __| | | |/ _` | / __|
+# | |_| | |  | | (_| | (_| | |_| | | | | | (_| \__ \\ V / | | |  | |_| |_| | (_| | \__ \
+#  \__, |_|  |_|\__,_|\__, |\__,_|_|_| |_|\__,_|___/ \_/  |_|_|   \__|\__,_|\__,_|_|___/
+#  |___/                 |_|
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Sistemas gerais
+general:
+  # Limite máximo de amigos que uma máquina pode ter
+  # deixe 0 para ser infinito
+  friend-max: 0
+  # Acumular os bônus que tiver permissão
+  accumulate-bonus: true
+  # Sistema de bolsa de valores (yBolsa, StormEconomy ou HeroBolsa)
+  bolsa: true
+  # Formatador de bônus
+  formatter-bonus-has: '&fBônus: &a{bonus}%&7 ({display}&7)'
+  formatter-bonus-no-has: ''
+  # Quantia máxima que pode ter de multiplicador
+  multiplier-max: 10
+  # Ativar a compra usando o limite disponível com o botão "Q"
+  # Isto só funciona se o limite estiver ativado
+  buy-q: true
+  # Delay da compra com Q
+  # em segundos
+  buy-q-delay: 10
+  # Ativar a compra via chat
+  # caso desativado, comprará apenas 1 unidade (sem contar o multiplicador)
+  buy-chat: true
+  # Gastar limite ao comprar
+  spend-limit: false
+  # Delay da coleta
+  # em segundos
+  collect-delay: 10
+
+# Limite de compra de máquinas na loja.
+limit-shop:
+  # Ativar o limite
+  enabled: true
+  # Quantia de limite que o jogador ganhar ao se registrar.
+  default: 1
+  # Máximo de limite que o jogador pode ter.
+  # Deixe 0 para ser infinito.
+  max: 100
+  # Item do limite que será ativável
+  item:
+    material: '667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    name: '&bLimite de compra'
+    lore:
+      - ''
+      - '&fQuantia: &a{amount}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+
+slots:
+  # Quantia padrão de slots que o jogador irá ter
+  default: 1
+  # Quantia máxima de slots que o jogador poderá ter
+  max: 20
+  # Item do slot que será ativável
+  item:
+    material: 'HOPPER'
+    name: '&bSlots'
+    lore:
+      - ''
+      - '&fQuantia: &a{amount}'
+      - ''
+      - '&7Clique com botão direito para ativar.'

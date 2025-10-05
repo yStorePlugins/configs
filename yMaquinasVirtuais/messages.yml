@@ -1,0 +1,122 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aMáquinas comandos:
+
+    &a> /maquinas
+    &a> /maquinas top
+    &a> /maquinas shop
+    &a> /maquinas amigos
+    &a> /maquinas givemaquina <player> <maquina> <level> <quantia>
+    &a> /maquinas giveslot <player> <quantia>
+
+  help-limit: |
+    &bComandos disponíveis:
+    &b > &3/limite &8- &fMostra o seu limite
+    &b > &3/limite <player> &8- &fMostra o limite de outro jogador
+    &b > &3/limite help &8- &fEnvia essa mensagem
+    &b > &3/limite give <player> <quantia> &8- &fDá limite em item para um jogador
+    &b > &3/limite remove <player> <quantia> &8- &fRemove limite de um jogador
+    &b > &3/limite add <player> <quantia> &8- &fAdiciona limite para um jogador
+    &b > &3/limite set <player> <quantia> &8- &fSeta o limite de um jogador
+  machine-give: '&aVocê deu &7{amount}x {machine}&a para o jogador &7{player}&a.'
+  machine-received: '&aVocê recebeu &7{amount}x {machine}&a.'
+  machine-list: |
+    &cMáquina não encontrada.
+    &cMáquinas disponíveis: &f{list}
+  level-list: |
+    &cLevel não encontrado.
+    &cLéveis disponíveis: &f{list}
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  digit-remove: |
+
+    &aDigite a quantia de máquinas que deseja remover.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-add: |
+
+    &aDigite no chat o nome do seu amigo que quer adicionar.'
+    &7para cancelar digite &ncancelar&7.'
+
+  collect-need: '&cEste stack possui apenas {stack} máquinas.'
+  max-friend: '&cEsta máquina atingiu o limite máximo de amigos.'
+  added: '&aVocê adicionou o jogador &7{player}&a na sua máquina.'
+  already-added: '&cEste jogador já está adicionado.'
+  add-owner: '&cVocê não pode adicionar o dono como amigo na máquina.'
+  upgraded: '&aVocê adquiriu &f+1 nível&a do upgrade por &f{money} coins&a.'
+  evolved: '&aVocê evoluiu &f+1 nível&a da sua máquina por &f{money} coins&a.'
+  digit-collect: |
+
+    &aDigite a quantia que você quer coletar.
+
+    &8| &fVocê possui &6{amount}&f disponível.
+    &8| &fDigite &8TUDO &fpara coletar tudo.
+
+    &7Para cancelar digite &ncancelar&7.
+
+  digit-multiplier: |
+
+    &8| &aDigite no chat a quantia de multiplicador que deseja.
+
+    &f> &7Atual: &b{active}&7.
+    &f> &7Máximo: &b{max}&7.
+
+  digit-machines: |
+
+    &aDigite a quantia de máquinas que deseja.
+    &7para cancelar digite &ncancelar&7.
+
+  collect: '&aVocê coletou &7{amount}x {drop} (&8{bonus})&a.'
+  inv-full: '&cSeu inventário está cheio.'
+  insufficient: '&cEsta máquina não possui drops suficiente.'
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  perm-this-machine: '&cVocê não tem permissão para nesta máquina.'
+  need-level-max: '&cA máquina precisa estar no nível máximo.'
+  just-owner: '&cApenas o dono da máquina pode fazer isto.'
+  not-enough-slot: '&cVocê não possui slot disponíveis.'
+  sell-all: '&aVocê vendeu &fx{amount} drops&a.'
+  delay: '&cAguarde &e{time} &cpara adquirir novamente.'
+  limit-insuficient: '&cVocê não possui limite suficiente. Disponível: &7{limit}&c.'
+  bought: |
+    &bObrigado por adquirir máquinas na loja de máquinas. Confira as informações da compra:
+
+    &7&l| &fMáquina: &7{machine}&f.
+    &7&l| &fQuantia: &7{amount}&f.
+
+  multiplier-max: '&cVocê não pode definir mais que o seu máximo: &7{max}&c.'
+  multiplier-defined: '&aVocê definiu seu multiplicador para &7{multiplier}&a.'
+  limit: |
+    &bQuantidade de limite que você possui: &f{limit}&b.
+  limit-changed: '&aLimite do jogador &7{player}&a alterado para &7{amount}&a.'
+  limit-give: '&aVocê deu &e{amount} &ade limite para o jogador &e{player}&a.'
+  limit-no-balance: '&bVocê não possui &f{limit} limite&b.'
+  limit-target-max: '&bO jogador já possui o máximo de limite permitido: &f{limit}&b.'
+  limit-sent: '&bVocê enviou &f{limit} limite&b para o jogador &f{player}&b.'
+  limit-received: '&bVocê recebeu &f{limit} limite&b do jogador &f{player}&b.'
+  limit-target: |
+    &bQuantidade de limite que &7{player}&b possui: &f{limit}&b.
+  limit-converted: '&cVocê compactou todos seus limites em 1.'
+  limit-activated: '&aVocê ativou &e{amount} &ade limites.'
+  limit-max: '&cVocê já chegou no máximo.'
+  slot-activated: '&aVocê ativou &e{amount} &ade slots.'
+  slot-max: '&cVocê já chegou no máximo.'
+  slot-give: '&aVocê deu &e{amount} &ade slots para o jogador &e{player}&a.'
+  machine-activated: '&cMáquina ativada com sucesso.'
+  machine-collected: '&a{amount}x {machine} &aremovida(s).'
+  delay-collect: '&cAguarde &e{time} &cpara coletar novamente.'

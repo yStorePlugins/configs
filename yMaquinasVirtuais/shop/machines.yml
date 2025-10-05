@@ -1,0 +1,29 @@
+machines:
+  1:
+    # Item da máquina.
+    item:
+      material: 'INK_SACK:10'
+      name: '&aMáquina de Tokens'
+      lore:
+        - ''
+        - '&fPreço: &a{money} coins&f.'
+        - ''
+        - '&a&lFORMAS DE COMPRA'
+        - ''
+        - '&7&l• &fBotão direito: &7Comprar 1&f.'
+        - '&7&l• &fBotão Q: &7Comprar limite&f.'
+        - '&7&l• &fBotão esquerdo: &7Escolher quantia&f.'
+        - ''
+    # Tipo da maquina
+    machine: 'tokens'
+    # Nível da máquina
+    level: 1
+    # Data de liberação para comprar
+    release-in: '16/10/2020-10:00'
+    # Placeholder {rank} na lore da compra indisponível
+    rank: '&7[Membro]'
+    # Custos para comprar
+    prices:
+      price1:
+        provider: 'money' #tipos: Money, plugin de pontos
+        amount: 1000.0
