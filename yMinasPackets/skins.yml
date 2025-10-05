@@ -47,3 +47,6 @@ skins:
         chat: '<nl>&c&lPODER: &cAtivado com sucesso. &fQuebre um bloco.<nl>'
         actionbar: ''
         title: ''
+    trail:
+      particle: 'REDSTONE'
+      item: 'STONE:0,REDSTONE:0'
