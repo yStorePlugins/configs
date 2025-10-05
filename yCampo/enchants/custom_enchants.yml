@@ -1,0 +1,65 @@
+Encantamentos:
+  Chaveiro:
+    Ordem: 5
+    Display: 'Chaveiro'
+    Padrao: 0
+    Maximo: -1
+    BonusPorLevel: 10.0 # em porcentagem
+    Preco:
+      Padrao: 100.0
+      PerLevel: 200.0
+    Prices-Default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    Prices-PerLevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    # chance,comando
+    Comandos:
+      - '20,give {player} quartz 1'
+    Mensagens:
+      Title: '&aChave<nl>&eencontrado' # deixe '' para não usar
+      Actionbar: '' # deixe '' para não usar
+      Chat: [ ]
+    Displays: # Item que aparecerá no menu de evolução
+      Pode: # quando puder evoluir
+        Material: GOLD_INGOT
+        Name: '&aChaveiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao colher.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Bônus atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{moedas} fertilizantes&f.'
+          - '&f > Custo: &a{money} coins&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir'
+      NaoPode: # quando não puder evoluir
+        Material: GOLD_INGOT
+        Name: '&aChaveiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao colher.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Chance atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{moedas} fertilizantes&f.'
+          - '&f > Custo: &a{money} coins&f.'
+          - ''
+          - '&cVocê não tem valores suficientes.'
+      Maximo: # quando já estiver no máximo
+        Material: GOLD_INGOT
+        Name: '&aChaveiro'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao colher.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Chance atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'

@@ -1,0 +1,29 @@
+# Sistema de boosters
+# Você pode criar quantos boosters quiser
+boosters:
+  booster1:
+    time: 60 # em segundos
+    bonus: 10.0 # porcentagem a mais
+    items:
+      interact:
+        material: 'EXP_BOTTLE:0'
+        name: '&aBônus de campo'
+        lore:
+          - '&7Este booster permite que você ganhe'
+          - '&7mais ao quebrar plantas.'
+          - ''
+          - '&aTempo: &e{time}'
+          - '&aPorcentagem: &e{bonus}%'
+          - ''
+      menu:
+        material: 'EXP_BOTTLE:0'
+        name: '&aBônus de campo'
+        lore:
+          - '&aVocê possui um booster ativo'
+          - ''
+          - '&7Este booster permite que você ganhe'
+          - '&7mais ao quebrar plantas.'
+          - ''
+          - '&aTempo: &e{time}'
+          - '&aPorcentagem: &e{bonus}%'
+          - ''

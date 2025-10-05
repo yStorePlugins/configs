@@ -1,0 +1,234 @@
+# Bônus de drop
+Fortuna:
+  # Ordem do enchant no menu
+  Ordem: 2
+  Display: 'Bônus'
+  Padrao: 0
+  Maximo: -1
+  BonusPorLevel: 10.0 # em porcentagem
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      Material: GOLD_INGOT
+      Name: '&aFortuna'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais drops.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Bônus atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      Material: GOLD_INGOT
+      Name: '&aFortuna'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais drops.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Bônus atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem valores suficientes.'
+    Maximo: # quando já estiver no máximo
+      Material: GOLD_INGOT
+      Name: '&aFortuna'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais drops.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Bônus atual: &b{porcentagem}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+# Aumenta chance nas recompensas
+Sortudo:
+  Ordem: 3
+  Display: 'Sortudo'
+  Padrao: 0
+  Maximo: -1
+  BonusPorLevel: 10.0 # em porcentagem
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      Material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      Name: '&aSortudo'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      Material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      Name: '&aSortudo'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem valores suficientes.'
+    Maximo: # quando já estiver no máximo
+      Material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      Name: '&aSortudo'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+# Ganhar mais moedas de farm
+Multiplicador:
+  Ordem: 4
+  Display: 'Multiplicador'
+  Padrao: 0
+  Maximo: -1
+  BonusPorLevel: 10.0 # em porcentagem
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      Material: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
+      Name: '&aMultiplicador'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais moedas ao farmar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Multiplicador Atual: &b{multiplicador}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      Material: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
+      Name: '&aMultiplicador'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais moedas ao farmar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{multiplicador}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem valores suficientes.'
+    Maximo: # quando já estiver no máximo
+      Material: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
+      Name: '&aMultiplicador'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe mais moedas ao farmar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{multiplicador}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+Velocidade:
+  Ordem: 5
+  Display: 'Velocidade'
+  Padrao: 0
+  Maximo: -1
+  NivelPorcentagem: 10.0 # em porcentagem
+  Duracao: 200 # em ticks
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      Material: FEATHER
+      Name: '&aVelocidade'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha o efeito de velocidade na mina.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      Material: FEATHER
+      Name: '&aVelocidade'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha o efeito de velocidade na mina.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem valores suficientes.'
+    Maximo: # quando já estiver no máximo
+      Material: FEATHER
+      Name: '&aVelocidade'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha o efeito de velocidade na mina.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'

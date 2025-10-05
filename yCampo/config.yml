@@ -1,0 +1,185 @@
+#          ____
+#  _   _ / ___|__ _ _ __ ___  _ __   ___
+# | | | | |   / _` | '_ ` _ \| '_ \ / _ \
+# | |_| | |__| (_| | | | | | | |_) | (_) |
+#  \__, |\____\__,_|_| |_| |_| .__/ \___/
+#  |___/                     |_|
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Ativar a invisibilidade na área de campo
+invisibility: false
+
+# Abrir menu de evolução ao interagir com a tesoura (Shift+Botão direito)
+interact-menu: true
+
+# Somar um nível a mais na evolução
+sum-evolute: true
+
+# Máximo permitido para evoluir com Q
+q-max: 0
+
+# Acumular os bônus que tiver permissão
+acumulate-bonus: false
+
+# Limite de plantações quebradas por segundo
+limit-broken-second: 5
+
+# Delay para resetar a plantação pro jogador
+# em segundos
+reset-delay: 5
+
+# Dar a ferramenta ao entrar no campo caso o jogador não tiver ela no inventário
+give-enter: true
+
+# Altura do void do seu servidor
+void-detect: 0
+
+# Coloque o identificador da sua skill do mcMMO ou AuraSkills
+skill-identify: 'HERBALISM'
+
+# Sistemas gerais
+general:
+  # Slot da ferramenta no inventário
+  tool-slot: 2
+  # Esconder o encantamento na lore da picareta caso o player desative ele
+  # caso esteja false, o encantamento ficará riscado na lore da ferramenta
+  hide-deactivated: false
+  # Fazer com que a ferramenta nunca quebre
+  tool-unbreakable: true
+  # Materiais que irão ser reconhecidos na skin
+  skin-materiais:
+    - 'WOOD'
+    - 'STONE'
+    - 'IRON'
+    - 'GOLD'
+    - 'DIAMOND'
+
+# Sistema de pvp
+pvp:
+  enable: true
+  # Lucro com pvp off
+  off-receiving: 70.0
+  # Lucro com pvp on
+  on-receiving: 100.0
+  # Delay para executar o comando de pvp
+  delay: 60
+  # Actionbar persistente
+  # deixe '' para não usar
+  actionbar-off: '&c&lPVP &cdesativado! &8 - &fLucro {receiving}%  &7/pvp {pvp_time}'
+  actionbar-on: '&a&lPVP &aativo! &8 - &fLucro {receiving}%  &7/pvp {pvp_time}'
+  # Ativar o PVP por padrão assim que entrar no campo
+  default: false
+
+# Sistema de scoreboard
+scoreboard:
+  enabled: true
+  title: '&b&lyStore'
+  # Delay para atualizar a scoreboard (em segundos)
+  delay: 1
+  lines:
+    - '&7         Área de campo'
+    - ''
+    - '&f Plantas quebradas: &7{broken}'
+    - '&f Tempo no campo: &7{time}'
+    - '&f PVP Ativado: &7{pvp}'
+    - ''
+    - '&f Coins: &2$&a%yeconomy_money%'
+    - ''
+    - '&b    ystoreplugins.com.br'
+
+# Sistema de comandos no campo
+commands:
+  # Lista de comandos permitidos no campo
+  allowed: [ '/g', '/l', '/campo' ]
+  # Lista de comandos para sair do campo
+  exit: [ '/sair', '/spawn', '/exit' ]
+  # Lista de comandos para executar o pvp
+  pvp: [ '/pvp' ]
+
+# Sistema de bônus
+# Você pode criar quantos bônus quiser
+# Será dado o bônus ao vender para a loja do servidor.
+bonus:
+  member:
+    priority: 1
+    # Permissão para ser reconhecido
+    permission: 'ycampo.bonus.member'
+    # Quantia do bônus em %
+    bonus: 10.0
+
+# Sistema de lores
+lore:
+  chance: ['', '&6Chance: &f{chance}%', '']
+
+# Item de coin ativável
+usable-item:
+  material: '1ba16c3890af39c3f2d576586cff443de07dad32b2315e2ff6f0d5d6a3c663dd'
+  name: '&b+{amount} Fertilizantes'
+  lore:
+    - ''
+    - '&fQuantia: &b{amount}'
+    - ''
+    - '&7Clique com botão direito para ativar.'
+    - ''
+    - '&7Clique com shift + botão direito para compactar'
+    - '&7todos os seus fertilizantes no inventário em 1 só.'
+    - ''
+
+# Item da tesoura
+tool:
+    material: SHEARS
+    name: '&bTesoura &7[{broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'

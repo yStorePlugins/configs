@@ -1,0 +1,187 @@
+Explosao:
+  Ordem: 6
+  Display: 'Explosao'
+  Padrao: 0
+  Maximo: -1
+  NivelPorcentagem: 10.0 # em porcentagem
+  Raio: 3 # em ticks
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Mensagens:
+    Title: '&aExplosão<nl>&eativada' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Chat: [ ]
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      Material: TNT
+      Name: '&aExplosao'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre várias plantações ao ativar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      Material: TNT
+      Name: '&aExplosao'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre várias plantações ao ativar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem valores suficientes.'
+    Maximo: # quando já estiver no máximo
+      Material: TNT
+      Name: '&aExplosao'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre várias plantações ao ativar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+Laser:
+  Ordem: 7
+  Display: 'Laser'
+  Padrao: 0
+  Maximo: -1
+  NivelPorcentagem: 10.0 # em porcentagem
+  Raio: 10 # em ticks
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Mensagens:
+    Title: '&aLaser<nl>&eativado' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Chat: [ ]
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      Material: BLAZE_ROD
+      Name: '&aLaser'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre várias plantações ao ativar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      Material: BLAZE_ROD
+      Name: '&aLaser'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre várias plantações ao ativar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem valores suficientes.'
+    Maximo: # quando já estiver no máximo
+      Material: BLAZE_ROD
+      Name: '&aLaser'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre várias plantações ao ativar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+Boomerang:
+  Ordem: 8
+  Display: 'Boomerang'
+  Padrao: 0
+  Maximo: -1
+  NivelPorcentagem: 10.0 # em porcentagem
+  Preco:
+    Padrao: 100.0
+    PerLevel: 200.0
+  Prices-Default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Prices-PerLevel:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  Mensagens:
+    Title: '&aBoomerang<nl>&eativada' # deixe '' para não usar
+    Actionbar: '' # deixe '' para não usar
+    Chat: [ ]
+  Displays: # Item que aparecerá no menu de evolução
+    Pode: # quando puder evoluir
+      Material: TNT
+      Name: '&eBoomerang'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre várias plantações ao ativar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    NaoPode: # quando não puder evoluir
+      Material: TNT
+      Name: '&aBoomerang'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre várias plantações ao ativar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&f > Custo: &a{moedas} fertilizantes&f.'
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem valores suficientes.'
+    Maximo: # quando já estiver no máximo
+      Material: TNT
+      Name: '&aBoomerang'
+      Lore:
+        - '&7Este encantamento permite que você'
+        - '&7quebre várias plantações ao ativar.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Chance Atual: &b{chance}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'

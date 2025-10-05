@@ -1,0 +1,17 @@
+Skins:
+  stone:
+    order: 1
+    type: 'STONE'
+    custom-model-data: 0
+    name: '&bTesoura &7[{broken}]'
+    item:
+      material: 'STONE'
+      name: '&aSkin de Pedra'
+      lore: ['&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aClique na ferramenta para ativar']
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - '&a+10% ( PEDRA )'
+      - ''
+    bonus: 10.0

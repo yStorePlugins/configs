@@ -1,0 +1,228 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s
+menu-updater-time: 200
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Campo - Principal'
+  size: 36
+  items:
+    profile-slot: 10
+    rewards-slot: 12
+    flowers-slot: 14
+    top-slot: 16
+    booster-slot: 20
+    areas-slot: 22
+    profile:
+      material: '{player}'
+      name: '&eSeu Perfil'
+      lore:
+        - '&7Confira detalhes do seu'
+        - '&7jogador no campo.'
+        - ''
+        - ' &8▶ &fTempo no campo: &7{time}'
+        - ''
+        - ' &8▶ &fFlores quebradas: &7{broken}'
+        - ' &8▶ &fRecompensas no armazém: &7{rewards}'
+        - ' &8▶ &fFertilizantes: &a✿&f{coin}'
+        - ''
+    rewards:
+      material: 'CHEST'
+      name: '&6Recompensas'
+      lore:
+        - '&7Gerencie as recompensas'
+        - '&7que você ganhou.'
+        - ''
+        - ' &8▶ &fRecompensas: &7{rewards}'
+        - ''
+        - '&6Clique para gerenciar!'
+    flowers:
+      material: 'RED_ROSE'
+      name: '&dFlores'
+      lore:
+        - '&7Consulte as possíveis'
+        - '&7recompensas das flores.'
+        - ''
+        - '&dClique para acessar!'
+    top:
+      material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+      name: '&aTOP Jogadores'
+      lore:
+        - '&7Visualize os jogadores que estão'
+        - '&7se destacando em nosso campo.'
+        - ''
+        - '&aClique para acessar!'
+    booster:
+      material: 'GLASS_BOTTLE:0'
+      name: '&aBooster'
+      glow: true
+      lore:
+        - '&cVocê não possui nenhum booster ativo.'
+    go:
+      slot: 24
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aIr ao campo'
+      lore:
+        - '&7Clique para entrar na'
+        - '&7área de campo'
+    leave:
+      slot: 24
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&cSair do campo'
+      lore:
+        - '&7Clique para sair da'
+        - '&7área de campo'
+    areas:
+      material: TNT
+      name: '&bÁreas'
+      lore:
+        - '&7Evolua sua área de campo'
+        - '&7e tenha plantações diferenciadas.'
+        - ''
+        - '&aClique para fazer o upgrade'
+
+# Menu de recompensas
+main-rewards:
+  name: '&8Campo - Recompensas'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  #
+  empty-slot: 22
+  collect-slot: 50
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
+    collect:
+      material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+      name: '&eRecolher tudo'
+      lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+
+# Preview de flores
+flowers:
+  name: '&8Campo'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  lore:
+    - '&7Clique para ver as recompensas'
+
+# Preview de recompensas
+rewards-preview:
+  name: '&8Campo'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+
+# Menu de top
+top:
+  name: '&8Campo - Destaques'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 30
+  previous-slot: 9
+  next-slot: 17
+  # Seletor dos tops
+  selector:
+    slot: 31
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor do TOP'
+    # Tipos do seletor
+    types:
+      broken:
+        enabled: true
+        name: 'Flores quebradas'
+      coin:
+        enabled: true
+        name: 'Fertilizantes'
+      time:
+        enabled: true
+        name: 'Tempo no campo'
+    # Formatos do seletor
+    formats:
+      seeing: ' &8• &f{name}'
+      select: ' &8• &7{name}'
+  items:
+    # Item do top flores quebradas
+    broken:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - '&fFlores quebradas: &7{amount}'
+        - '&fPosição: &7{pos}'
+    # Item do top coin
+    coin:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - '&fFertilizantes: &7{amount}'
+        - '&fPosição: &7{pos}'
+    # Item do top tempo no campo
+    time:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - '&fTempo no campo: &7{amount}'
+        - '&fPosição: &7{pos}'
+
+evolute:
+  name: '&8Campo - Evoluir'
+  size: 36
+  slots: [ 11, 13, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  # Slot onde ficará a tesoura do jogador
+  tool-slot: 31
+  profile-slot: 33
+  items:
+    profile:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - ''
+        - '&fFertilizantes: &b{coin}'
+        - ''
+
+# Menu de upgrade de área
+upgrade-areas:
+  name: '&8Campo - Áreas'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 31
+  previous-slot: 18
+  next-slot: 26

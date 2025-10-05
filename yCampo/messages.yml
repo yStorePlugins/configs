@@ -1,0 +1,117 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+# Mensagens e ações ao entrar
+enter:
+  title: '&bBem vindo à área de campo'
+  actionbar: '&bVocê entrou na área de campo.'
+  chat: |
+
+    &bBem vindo à área de campo.
+
+  sound: 'ORB_PICKUP'
+
+# Mensagens e ações ao sair
+leave:
+  title: ''
+  actionbar: '&bVocê saiu da área de campo.'
+  chat: |
+
+    &bVocê saiu da área de campo.
+
+  sound: 'ORB_PICKUP'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/campo &8- &7Abre o menu principal.
+    &a/campo ir &8- &7Vai até o campo.
+    &a/campo flores &8- &7Abre o menu de flores disponíveis.
+    &a/campo armazem &8- &7Abre o menu de armazém de recompensas.
+    &a/campo top &8- &7Abre o menu de top.
+    &a/campo sair &8- &7Sai do campo.
+    &a/campo setspawn &8- &7Seta o local de spawn do campo.
+    &a/campo setareaspawn &8- &7Seta o local de spawn de uma área do campo.
+    &a/campo setsaida &8- &7Seta o local de saída do campo.
+    &a/campo givebooster &8- &7Dá um booster à um jogador.
+
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  not-in: '&cVocê não está na área de campo.'
+  spawn: '&cO spawn da área de campo não foi setado.'
+  exit: '&cA saída da área de campo não foi setada.'
+  set-exit: '&aLocal de saída setado com sucesso.'
+  set-spawn: '&aLocal de spawn setado com sucesso.'
+  command: '&cVocê não pode usar este comando na área de campo. Utilize /spawn para sair dele.'
+  coin-help: |
+
+    &a/fertilizantes &8- &7Ver os seus fertilizantes.
+    &a/fertilizantes <player> &8- &7Ver os fertilizantes de alguém.
+    &a/fertilizantes enviar <player> <quantia> &8- &7Envia seus fertilizantes para alguém.
+    &a/fertilizantes give <player/all> <quantia> &8- &7Dar fertilizantes a alguém.
+    &a/fertilizantes add <player> <quantia> &8- &7Adiciona fertilizantes a alguém.
+    &a/fertilizantes set <player> <quantia> &8- &7Remove fertilizantes de alguém.
+    &a/fertilizantes remove <player> <quantia> &8- &7Seta fertilizantes a alguém.
+
+  coin: '&bVocê possui &f{coin} fertilizantes&b.'
+  coin-player: '&bO jogador &f{player}&b possui &f{coin} fertilizantes&b.'
+  coin-added: '&bVocê adicionou &f{coin} fertilizantes&b ao jogador &f{player}&b.'
+  coin-removed: '&bVocê removeu &f{coin} fertilizantes&b do jogador &f{player}&b.'
+  coin-set: '&bVocê setou &f{coin} fertilizantes&b para o jogador &f{player}&b.'
+  coin-sent: '&bVocê enviou &f{coin} fertilizantes&b para o jogador &f{player}&b.'
+  coin-received: '&bVocê recebeu &f{coin} fertilizantes&b do jogador &f{player}&b.'
+  coin-has: '&cVocê não possui a quantia de &f{coin}&c fertilizantes.'
+  converted: '&bVocê compactou todos seus fertilizantes em 1.'
+  activated: '&bVocê ativou &f{coin} fertilizantes&b.'
+  give: '&bVocê deu &f{coin} &bfertilizantes para o jogador &f{player}&b.'
+  give-all: |
+
+    &bO usuário &f{player}&b deu &f{coin} &bfertilizantes para todos os jogadores online&b.
+
+  coin-added-all: '&bVocê adicionou &f{coin} fertilizantes&b para todos os jogadores&b.'
+  holding: '&cVocê não está segurando uma tesoura.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  pvp-on: '&aVocê ativou o modo de combate.'
+  pvp-off: '&cVocê desativou o modo de combate.'
+  pvp-wait: '&cVocê deve aguardar {time} para alterar o modo de combate.'
+  booster-null: |
+    &cEste booster não existe.
+    &cDisponíveis: &7{list}
+  booster-give: '&aVocê deu x{amount} Booster(s) &8(+{bonus}%) &apara o jogador &f{player}&a.'
+  booster-received: '&aVocê recebeu x{amount} Booster(s) &8(+{bonus}%)&a.'
+  booster-finished: '&aCampo: &cSeu booster acabou.'
+  booster-has: '&cVocê já está com um booster ativado.'
+  booster-activated: '&aVocê ativou um booster de campo. Bônus: &e{bonus}&a. Tempo: &e{time}&a.'
+  give-tool: '&bVocê deu uma tesoura para o jogador &f{player}&b.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  evolute: '&aO encantamento &f{enchant}&a foi evoluído para o nível &f{level}&a.'
+  tool: '&aVocê recebeu sua tesoura do campo.'
+  digit: |
+
+    &aDigite a quantia de níveis que você quer adquirir ao encantamento &f{encantamento}&a.
+    &7para cancelar digite &ncancelar&7.
+
+  exceeds: '&cEstes níveis excedem o nível máximo do encantamento.'
+  area-found: '&cÁrea não encontrada. Disponíveis: {list}'
+  area-set-spawn: '&aLocal de spawn da área setado com sucesso.'
+  area-bought: '&aVocê comprou a área.'
+  slot-empty: '&cO slot {slot} deve estar vazio para poder receber a ferramenta. Por favor, re-entre no campo.'
+  skin-found: '&cEsta skin não existe. Disponíveis: &7{list}'
+  skin-give: '&bVocê deu uma skin para o jogador &f{player}&b.'
+  skin-has: '&aA ferramenta já possui esta ou uma melhor skin ativada.'
+  skin-activated: '&aSkin ativada com sucesso.'
+  player-not-camping: '&cO jogador {player} não está no campo.'
+  already-visualizing: '&cVocê já está visualizando um campo. Digite /sair para sair.'

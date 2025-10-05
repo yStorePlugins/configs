@@ -1,0 +1,55 @@
+areas:
+  area1:
+    # Ordem da área para compra
+    order: 1
+    # Permissão para comprar a área
+    permission: ''
+    # NÃO ALTERAR
+    location: 'none'
+    # Preços para comprar a área
+    costs:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+    # Itens do menu
+    icon:
+      buy:
+        material: 'WHEAT'
+        name: '&aÁrea {order} &8(Trigo)'
+        lore:
+          - '&7Área: &b{order}'
+          - '&7Plantação: &bTrigo'
+          - ''
+          - '&7Preço: &2$&f{money}'
+          - ''
+          - '&aClique para comprar'
+      previous:
+        material: 'WHEAT'
+        name: '&aÁrea {order} &8(Trigo)'
+        lore:
+          - '&7Área: &b{order}'
+          - '&7Plantação: &bTrigo'
+          - ''
+          - '&7Preço: &2$&f{money}'
+          - ''
+          - '&cVocê precisa comprar a anterior'
+      has:
+        material: 'WHEAT'
+        name: '&aÁrea {order} &8(Trigo)'
+        lore:
+          - '&7Área: &b{order}'
+          - '&7Plantação: &bTrigo'
+          - ''
+          - '&7Preço: &2$&f{money}'
+          - ''
+          - '&aVocê já possui esta area'
+      equipped:
+        material: 'WHEAT'
+        name: '&aÁrea {order} &8(Trigo)'
+        lore:
+          - '&7Área: &b{order}'
+          - '&7Plantação: &bTrigo'
+          - ''
+          - '&7Preço: &2$&f{money}'
+          - ''
+          - '&aVocê está nessa area'

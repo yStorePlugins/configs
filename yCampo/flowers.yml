@@ -1,0 +1,95 @@
+flowers:
+  red-rose:
+    # Permissão para quebrar a planta
+    permission-break: ''
+    # Mensagem de permissão
+    permission-message: '&cVocê ainda não pode quebrar a ROSA.'
+    # Definir um item custom para o display preview
+    # Deixe '' para usar o padrão do bloco
+    preview-display: ''
+    # Materiais que serão reconhecidos
+    materials:
+      # material que deverá ser quebrado
+      break-material: 'RED_ROSE:0'
+      # material que vai virar ao quebrar
+      to-material: AIR
+      # material que vai virar ao resetar
+      reset-material: 'RED_ROSE:0'
+    effects:
+      # efeito ao quebrar
+      break-particle: ''
+      # som ao quebrar
+      break-sound: ''
+      # efeito ao resetar
+      reset-particle: 'HAPPY_VILLAGER'
+      # som ao resetar
+      reset-sound: ''
+    sells:
+      sell1:
+        order: 1
+        permission: ''
+        # holograma de venda
+        hologram: [ '&a+{money}' ]
+        # Altura que o holograma vai spawnar na flor
+        hologram-off-set: 0.6
+        # Ativar o auto-sell
+        auto-sell: true
+        # Configurações do drop caso o auto-sell esteja desativado
+        drop:
+          amount: 1
+          material: 'RED_ROSE:0'
+        # mensagens de venda
+        message:
+          actionbar: '&e&lCAMPO: &a+{money} coins &7(+{bonus}%) &c{receiving}%'
+          title: ''
+          chat: ''
+        # quantidade de flores (coin/fertilizante) que será dada
+        flower: 1.0
+        # EXP do mcMMO
+        xp-mcmmo: 1
+        # quantidade que será dada em outras economias
+        prices:
+          price1:
+            provider: 'money'
+            price: 1.0
+        # Recompensas do boss
+        # As recompensas são cadastradas na recompensas.yml
+        # Use: chance,recompense
+        # Quantia de recompensas que serão dadas
+        reward-amount: 1
+        # Dropar as recompensas no chão
+        reward-ground: false
+        rewards: [ '100,reward1' ]
+  double_plant:
+    permission-break: ''
+    # Mensagem de permissão
+    permission-message: '&cVocê ainda não pode quebrar a ROSA DUPLA.'
+    materials:
+      break-material: 'DOUBLE_PLANT:0'
+      to-material: AIR
+      reset-material: 'DOUBLE_PLANT:0'
+    effects:
+      break-particle: ''
+      break-sound: ''
+      reset-particle: 'HAPPY_VILLAGER'
+      reset-sound: ''
+    sells:
+      sell1:
+        order: 1
+        permission: ''
+        hologram: [ '&a+{money}' ]
+        hologram-off-set: 1.0
+        auto-sell: true
+        message:
+          actionbar: '&e&lCAMPO: &a+{money} coins &7(+{bonus}%) &c{receiving}%'
+          title: ''
+          chat: ''
+        flower: 1.0
+        xp-mcmmo: 1
+        prices:
+          price1:
+            provider: 'money'
+            price: 1.0
+        reward-amount: 1
+        reward-ground: false
+        rewards: [ '100,reward1' ]
