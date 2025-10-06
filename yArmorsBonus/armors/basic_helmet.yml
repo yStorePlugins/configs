@@ -1,0 +1,80 @@
+# Nome do PET
+display-name: '&aCapacete Básico'
+
+# Identificar esse item como "capacete"
+# necessário para a opção de equipar ao clicar com botão direito da config.yml
+identify-as-helmet: true
+
+# Placeholders disponíveis
+# {bonus_spawners}
+# {bonus_machines}
+# {bonus_mines}
+# {bonus_minespv}
+# {bonus_storage}
+# {bonus_farm}
+# {bonus_forest}
+# {bonus_sell}
+# {bonus_fish}
+# {bonus_almas}
+# {discount_spawners}
+# {discount_machines}
+item:
+  material: 'DIAMOND_HELMET'
+  name: '&aCapacete Básico'
+  lore:
+    - '&7Este capacete garante buffs'
+    - '&7nos &fspawners&7.'
+    - ''
+    - '&6Informações'
+    - ' &fBônus &6(spawners)&f: &7{bonus_spawners}%'
+    - ' &fDesconto &6(spawners)&f: &7{discount_spawners}%'
+    - ''
+
+buffs:
+  # Lista de efeitos que o jogador irá ter
+  # effect:level
+  effect-list: [ 'INCREASE_DAMAGE:1', 'SPEED:1' ]
+  # Mundos que o jogador irá ter fly
+  fly-worlds: [ 'PlotWorld' ]
+
+# Bônus de Venda de drops de Spawners -> ySpawners
+bonus-spawners: 10.0
+
+# Bônus de Venda de drops de Máquinas -> yMaquinas e yMaquinasVirtuais
+bonus-machines: 0.0
+
+# Bônus de Venda na mina -> yMinas e yMinasPackets
+bonus-mines: 0.0
+
+# Bônus de Venda na mina privada -> yMinasPv
+bonus-minespv: 0.0
+
+# Bônus de Venda no armazém -> yArmazem
+bonus-storage: 0.0
+
+# Bônus de Venda nas plantas -> yCampo e yPlantacoes
+bonus-farm: 0.0
+
+# Bônus de Venda na floresta -> yFloresta
+bonus-forest: 0.0
+
+# Bônus de Venda -> yVender
+bonus-sell: 0.0
+
+# Bônus na venda de itens -> yChestShop
+bonus-chestshop: 0.0
+
+# Bônus de Venda na pesca -> yPesca
+bonus-fish: 0.0
+
+# Bônus de Almas -> yAlmas
+bonus-almas: 0.0
+
+# Desconto na compra de spawners -> ySpawnersShop
+discount-spawners: 5.0
+
+# Desconto na compra de máquinas -> yMaquinas e yMaquinasVirtuais
+discount-machines: 0.0
+
+# Desconto na compra de itens -> yChestShop
+discount-chestshop: 0.0

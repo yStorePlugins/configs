@@ -1,0 +1,14 @@
+#           _                                  ____
+#  _   _   / \   _ __ _ __ ___   ___  _ __ ___| __ )  ___  _ __  _   _ ___
+# | | | | / _ \ | '__| '_ ` _ \ / _ \| '__/ __|  _ \ / _ \| '_ \| | | / __|
+# | |_| |/ ___ \| |  | | | | | | (_) | |  \__ \ |_) | (_) | | | | |_| \__ \
+#  \__, /_/   \_\_|  |_| |_| |_|\___/|_|  |___/____/ \___/|_| |_|\__,_|___/
+#  |___/
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Sistemas gerais
+general:
+  # Permitir equipar como capacete ao clicar com botão direito
+  equip-helmet: true

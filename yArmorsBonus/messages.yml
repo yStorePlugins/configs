@@ -1,0 +1,30 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &aArmors-Bonus comandos:
+
+    &a> /armors give <player> <armor>
+    &a> /armors reload
+
+  armor-give: '&aVocê deu &71x {armor}&a para o jogador &7{player}&a.'
+  armor-received: '&aVocê recebeu &71x {armor}&a.'
+  armor-list: |
+    &cArmadura não encontrada.
+    &cArmaduras disponíveis: &f{list}
