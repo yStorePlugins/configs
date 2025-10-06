@@ -5,6 +5,11 @@ display-name: '&aCapacete Básico'
 # necessário para a opção de equipar ao clicar com botão direito da config.yml
 identify-as-helmet: true
 
+# Sistema de trail
+trail:
+  particle: 'REDSTONE'
+  item: 'STONE:0,REDSTONE:0'
+
 # Placeholders disponíveis
 # {bonus_spawners}
 # {bonus_machines}
