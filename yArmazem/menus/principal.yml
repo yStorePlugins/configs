@@ -88,5 +88,14 @@ Itens:
       - ' &fAtual: &7{limite_armazem_atual}/{limite_armazem_maximo}&f.'
       - ''
       - '&cEste armazém já está no máximo.'
+  Depositar:
+    Slot: 29
+    material: 'ENDER_CHEST'
+    name: '&aDepositar Itens'
+    lore:
+      - '&7Coloque itens manualmente no'
+      - '&7seu armazém.'
+      - ''
+      - '&aClique para abrir e depositar.'
 
 ## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Vender:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

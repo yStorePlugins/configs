@@ -136,6 +136,7 @@ Mensagens:
   booster-finished: '&cSeu booster de armazém acabou.'
   booster-already: '&cVocê já está usando um booster.'
   booster-activated: '&aVocê ativou um booster de armazém. Multiplicador: &e{bonus}% coins&a. Tempo: &e{time}&a.'
+  deposit-full: '&cLimite atingido. Alguns itens foram devolvidos.'
   Coletar:
     - ''
     - '&aDigite a quantia que você quer coletar.'
