@@ -42,3 +42,6 @@ general:
   # Raio de checagem de orb perto
   # em blocos
   radius: 10
+  # Distância que irá mostrar a partícula pros jogadores
+  # em blocos
+  particle-distance: 20

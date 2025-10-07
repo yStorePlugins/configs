@@ -24,6 +24,12 @@ feed-time: 10
 # efeito ao crescer
 feed-particle: 'HAPPY_VILLAGER'
 
+# efeito que ficará aparecendo no raio de feed
+border-particle: 'WITCH'
+
+# Bônus para o yPlantacoes
+farm-bonus: 10.0
+
 # Quantia de ondas que a ORB irá ter
 # deixe 0 para ser infinita
 rounds: 5
