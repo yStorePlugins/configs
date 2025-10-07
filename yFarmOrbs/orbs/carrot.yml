@@ -1,0 +1,62 @@
+# item da orb
+item:
+  material: 'e43dca8f3bda01152a1ee351d19bf3a580f0582d6a3f437576e3f6cb233bc6f2'
+  name: '&a&lORB DE FARM &8(CENOURA)'
+  lore:
+    - '&7Ao colocar essa orb no chão'
+    - '&7ela irá fazer sua plantação de'
+    - '&7cenoura crescer totalmente a cada'
+    - '&710 segundos.'
+    - ''
+    - ' &fTempo de crescimento: &a10 segundos'
+    - ' &fOndas: &a6 ondas'
+    - ' &fRaio: &a8 blocos'
+    - ''
+    - '&aAperte com ela no chão para ativar.'
+
+# Nome da ORB
+name: '&a&lORB DE FARM &8(CENOURA)'
+
+# Tempo a cada onda para crescer as plantas
+# em segundos
+feed-time: 10
+
+# efeito ao crescer
+feed-particle: 'HAPPY_VILLAGER'
+
+# Quantia de ondas que a ORB irá ter
+# deixe 0 para ser infinita
+rounds: 5
+
+# Mundos que não poderá colocar essa orb
+world-blacklist: []
+
+# Quantia de blocos que a ORB irá afetar
+radius:
+  x: 8
+  y: 10
+  z: 8
+
+# Plantas que serão reconhecidas pela ORB
+farm-types:
+  - 'CARROT'
+
+# Nível que irá crescer a farm
+feed-level:
+  - 'CARROT:7'
+
+# Cabeça que ficará flutuando
+floating:
+  # Altura da cabeça em relação ao chão
+  off-set: 2.0
+  # Item da cabeça que ficará flutuando
+  item: 'e43dca8f3bda01152a1ee351d19bf3a580f0582d6a3f437576e3f6cb233bc6f2'
+  # Altura do holograma em relação a cabeça
+  hologram-off-set : 3.7
+  # Holograma da cabeça que ficará flutuando
+  hologram:
+    - '&a&lORB DE FARM &8(CENOURA)'
+    - ''
+    - ' &fTempo de crescimento: &a{feed_time} segundos'
+    - ' &fOndas restantes: &a{rounds} ondas'
+    - ' &fRaio: &a8 blocos'

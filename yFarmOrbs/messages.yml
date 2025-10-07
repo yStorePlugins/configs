@@ -1,0 +1,33 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &aOrbs comandos:
+
+    &a> /orb give <player> <orb> <quantia>
+    &a> /orb reload
+
+  orb-give: '&aVocê deu &7{amount}x {orb}&a para o jogador &7{player}&a.'
+  orb-received: '&aVocê recebeu &7{amount}x {orb}&a.'
+  orb-list: |
+    &cOrb não encontrada.
+    &cOrbs disponíveis: &f{list}
+  orb-activated: '&aVocê ativou &7{amount}x {orb}&a.'
+  orb-world-blacklist: '&cVocê não pode colocar essa orb nesse mundo.'
+  orb-radius: '&cHá uma orb muito perto daqui.'
