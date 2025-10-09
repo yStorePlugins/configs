@@ -383,6 +383,18 @@ lose-on-death:
       percent: 5.0
       message: '&cVocê morreu e perdeu 5% do seu money. &7($ {amount})'
 
+# Sistema de jump pads
+jump-pad:
+  enabled: true
+  # Bloco que será a jump pad
+  block: 'SLIME_BLOCK'
+  # Multiplicador de velocidade
+  multiply: 1.5
+  # Altura que será jogado para cima
+  offset: 2.0
+  # Som que será executado
+  sound: 'FIREWORK_LAUNCH'
+
 # Setas dos menus
 Setas:
   Anterior:
