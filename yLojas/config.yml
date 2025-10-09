@@ -49,6 +49,12 @@ Tag: '&5[SHOP]'
 # Deixe 0 para não usar
 Tempo off fechar: 2592000
 
+# Seletor padrão no menu de /lojas
+# NOTA - maior pontuação de votos
+# ALFABETICA - ordenação em ordem alfabética dos nomes dos jodaores
+# VISITAS - lojas mais visitadas
+Seletor: 'NOTA'
+
 # Mensagens do plugin
 Mensagens:
   Permissao: '&c&lERRO! &cVocê não tem permissão para isto.'
