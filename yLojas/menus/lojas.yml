@@ -1,0 +1,46 @@
+Nome: '&8Lojas'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 29
+Itens:
+   Vazio:
+      Slot: 13
+      CustomSkull: false
+      URL: ''
+      ID: 328
+      Data: 0
+      Name: '&cOps...'
+      Lore:
+      - '&7Não há nenhuma loja aberta cadastrada :c'
+   Item:
+      CustomSkull: true
+      URL: '{player}'
+      ID: 0
+      Data: 0
+      Name: '&a{nome}' #variavel {player} disponivel
+      Lore: #variavel {nome} disponivel
+      - '&fDescrição: &7{desc}'
+      - '&fDono: &7{player}'
+      - ''
+      - '&fVisitas: &a{visitas}'
+      - '&fAvaliações: {nota}'
+      - ''
+      - '&7Clique com o botão esquerdo para ir até ela.'
+      - '&7Clique com o botão direito para avaliar.'
+      - ''
+   Seletor:
+      Slot: 31
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      ID: 0
+      Data: 0
+      Name: '&aSeletor das Lojas'
+   Favoritas:
+      Slot: 32
+      material: 'd4a1d6d0a62e1e46e76fec45a5dd2ffbe4bf0b35b7f4c75f6d23f676f77992fd'
+      name: '&eFavoritas'
+      lore: [ '', ' &fLojas favoritadas: &b{amount}', '', '&aClique para visualizar' ]
+   
+Formato:
+   Visualizando: ' &f• &a{nome}'
+   Selecionar: ' &f• &7{nome}'

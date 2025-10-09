@@ -1,0 +1,67 @@
+Nome: '&8Loja config'
+Tamanho: 27
+Back slot: 9
+Setar tp slot: 16
+Itens:
+   Perfil:
+      Slot: 11
+      CustomSkull: true
+      URL: '{player}'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aInformações' #disponível a variável {player}
+      Lore:
+      - '&fAberta: &7{aberta}&f.'
+      - '&fVisitas: &f{visitas}&f.'
+      - ''
+      - '&fAvalições positivas: &7{positivas}&f.'
+      - '&fAvaliações negativas: &7{negativas}&f.'
+      - ''
+      - '&fNota total: {total}&f.'
+      - ''
+      - '&7Clique para abrir/fechar tua loja.'
+      - '&7Clique com o botão do meio para deletar tua loja.'
+   Nome:
+      Slot: 13
+      CustomSkull: false
+      URL: ''
+      ID: 339
+      Data: 0
+      Glow: true
+      Name: '&aNome'
+      Lore:
+      - '&fNome atual: &7{nome}&f.'
+      - '&7Clique para alterar o nome da loja.'
+   Desc:
+      Slot: 14
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: true
+      Name: '&aDescrição'
+      Lore:
+      - '&fDescrição atual: &7{desc}&f.'
+      - '&7Clique para alterar a descrição da loja.'
+   Setar:
+      CustomSkull: false
+      URL: ''
+      ID: 331
+      Data: 0
+      Glow: true
+      Name: '&aSetar local'
+      Lore:
+      - '&7Clique para setar o local da tua loja.'
+   Tp:
+      CustomSkull: false
+      URL: ''
+      ID: 368
+      Data: 0
+      Glow: true
+      Name: '&aTeleportar'
+      Lore:
+      - '&7Clique com botão esquerdo para ir a tua loja.'
+      - '&7Clique com botão direito para remover o local da loja.'
+      
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> LOJAS:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

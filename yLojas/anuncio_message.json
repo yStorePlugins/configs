@@ -1,0 +1,33 @@
+{
+  "verde": {
+    "text": "§a[Anuncio] O jogador §7{player}§a está anunciando sua loja! \n§aClique ",
+    "extra":[
+      {
+        "text": "§7§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/loja {player}"
+        }
+      },
+      {
+        "text": "§a para ir até a loja dele!"
+      }
+    ]
+  },
+  "azul": {
+    "text": "§b[Anuncio] O jogador §f{player}§b está anunciando sua loja! \n§bClique ",
+    "extra":[
+      {
+        "text": "§f§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/loja {player}"
+        }
+      },
+      {
+        "text": "§b para ir até a loja dele!"
+      }
+    ]
+  }
+
+}

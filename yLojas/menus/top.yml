@@ -1,0 +1,16 @@
+name: '&8Top Lojas'
+size: 36
+slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+back-slot: 30
+previous-slot: 9
+next-slot: 17
+items:
+  # Item do top loja visitadas
+  visited:
+    material: '{player}'
+    name: '&f{player}'
+    lore:
+      - ''
+      - '&fVisitas: &7{amount}'
+      - '&fPosição: &e{pos}º'
+      - ''

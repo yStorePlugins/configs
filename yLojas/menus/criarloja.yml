@@ -1,0 +1,21 @@
+Nome: '&8Loja criar'
+Tamanho: 27
+Back slot: 9
+Itens:
+  Criar:
+    Slot: 13
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/8169e179c314499fa837498a2626c6bbc9300a3d175813e29bd0c06401f5901a'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aCriar Loja'
+    Lore:
+      - '&fPreço: &a{money} coins &7e &6{cash} cash&f.'
+      - ''
+      - '&7Clique para criar sua loja.'
+    Lore gratis:
+      - '&fVocê pode criar sua loja gratuitamente.'
+      - '&7Clique para criar sua loja.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> CRIAR:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

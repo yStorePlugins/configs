@@ -1,0 +1,34 @@
+Nome: '&8Loja principal'
+Tamanho: 27
+Itens:
+   Minha:
+      Slot: 12
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/182d36b973e57e4c0fe28c371a7f11fc04a2a342a88a7e5e5d83edbcab61770e'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aMinha Loja'
+      Lore:
+      - '&7Clique para gerenciar sua loja.'
+   Lojas:
+      Slot: 14
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/152353641d287ce9ed30906f938ae9c517ec04caa8da71571954c81b09db454c'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aLojas'
+      Lore:
+      - '&7Clique para acessar o menu de lojas.'
+   Top:
+      Slot: 14
+      material: 'GOLD_INGOT'
+      name: '&eTOP'
+      lore:
+         - '&7Confira os usuários que possuem'
+         - '&7as lojas mais visitadas do servidor.'
+         - ''
+         - '&aClique para acessar.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> LOJAS:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

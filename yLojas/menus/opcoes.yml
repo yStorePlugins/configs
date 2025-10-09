@@ -1,0 +1,22 @@
+Nome: '&8Loja opções'
+Tamanho: 27
+Back-slot: 9
+Itens:
+   Teleportar:
+      Slot: 11
+      material: 'http://textures.minecraft.net/texture/182d36b973e57e4c0fe28c371a7f11fc04a2a342a88a7e5e5d83edbcab61770e'
+      Name: '&aTeleportar'
+      Lore:
+      - '&aClique para teleportar até a loja.'
+   Avaliar:
+      Slot: 13
+      material: 'GLASS_BOTTLE'
+      name: '&eAvaliar'
+      lore: [ '&7Avalie essa loja com uma bela nota.' ]
+   Favoritar:
+      Slot: 15
+      material: 'd4a1d6d0a62e1e46e76fec45a5dd2ffbe4bf0b35b7f4c75f6d23f676f77992fd'
+      name: '&eFavoritar'
+      lore: [ '&7Coloque esta loja na', '&7sua lista de lojas favoritas.', '', ' &fFavorita: &r{status}&f.', '', '&aClique para alternar' ]
+      
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> LOJAS:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)
