@@ -10,3 +10,5 @@ heads:
       up-down: true
       # Ativar o shake
       shake: true
+      # Ativar a rotação
+      rotate: true
