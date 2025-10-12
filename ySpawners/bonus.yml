@@ -1,0 +1,9 @@
+bonus:
+  membro:
+    order: 1
+    # Permissão para ser reconhecido
+    permission: 'yspawnersv2.bonus.membro'
+    # Nome que irá aparecer nas mensagens
+    display: '&7[Membro]'
+    # Quantia do bônus em %
+    bonus: 10.0

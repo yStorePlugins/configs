@@ -1,0 +1,159 @@
+#        ____                                         __     ______
+#  _   _/ ___| _ __   __ ___      ___ __   ___ _ __ __\ \   / /___ \
+# | | | \___ \| '_ \ / _` \ \ /\ / / '_ \ / _ \ '__/ __\ \ / /  __) |
+# | |_| |___) | |_) | (_| |\ V  V /| | | |  __/ |  \__ \\ V /  / __/
+#  \__, |____/| .__/ \__,_| \_/\_/ |_| |_|\___|_|  |___/ \_/  |_____|
+#  |___/      |_|
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Sistemas gerais
+general:
+  # Permitir colocar spawners apenas nos plots
+  plot: false
+  # Verifica se há mobs (ou outros spawners) por perto antes de colocar o spawner
+  # Raio em blocos.
+  radius: 5
+  # Delay para hitar os mobs
+  # Deixe 0 para não usar
+  # em millisegundos
+  hit-delay: 500
+  # Mundos bloqueados para colocar spawners
+  world-blacklist: [ 'none' ]
+  # Formato do status do spawner quebrado
+  broken-status: '&cQUEBRADO'
+  # Fechar inventário dos jogadores que estiverem com o spawner aberta após ele ser quebrado
+  close-broken: true
+  # Limite máximo de amigos que um spawner pode ter
+  # deixe 0 para ser infinito
+  friend-max: 0
+  # Acumular os bônus que tiver permissão
+  accumulate-bonus: true
+  # Sistema de bolsa de valores (yBolsa, StormEconomy ou HeroBolsa)
+  bolsa: true
+  # Formatador de bônus
+  formatter-bonus-has: '&fBônus: &a{bonus}%&7 ({display}&7)'
+  formatter-bonus-no-has: ''
+  # Blacklist de nbttags que não pode bater no spawner
+  nbttag-blacklist: [ 'yMinas-Pickaxe', 'yPlantacoes-Enxada', 'yCampo-Tool-Type' ]
+  # Blacklist de nbttags que não vai descontar durabilidade
+  nbttag-durability-blacklist: [ 'yMinas-Pickaxe', 'yPlantacoes-Enxada', 'yCampo-Tool-Type' ]
+  # Habilitar o spawn de mob em spawners naturais
+  natural-enabled: false
+  # Rodar a task de limpeza de spawners inexistentes após 5 segundos do load do servidor
+  spawner-clear-task: true
+  # Permitir os jogadores desligarem as máquinas
+  status-change: true
+  # Permitir o jogador colocar apenas 1 stack de spawner de cada tipo
+  just-one: false
+  # Deletar as entidades ao desligar o servidor
+  delete-shutdown: false
+  # Deletar a entidade quando sobrar a entidade 0
+  delete-zero: false
+  # Ativar o menu do drop para venda e coleta
+  sell-collect-menu: false
+
+# Sistema para detectar matadoras
+sword-detect:
+  enabled: false
+  whitelist-nbt: ['yEspadasFarm-Sword']
+
+# Limite de stack de spawners.
+limit-stack:
+  material: '667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+  name: '&bLimite de stack'
+  lore:
+    - ''
+    - '&fQuantia: &a{amount}'
+    - ''
+    - '&7Clique com botão direito no spawner para ativar.'
+    - ''
+    - '&7Clique com shift + botão direito para compactar'
+    - '&7todos os seus limites no inventário em 1 só.'
+    - ''
+
+# Limite de stack de mobs.
+limit-mobs:
+  material: '667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+  name: '&bLimite de mobs'
+  lore:
+    - ''
+    - '&fQuantia: &a{amount}'
+    - ''
+    - '&7Clique com botão direito no spawner para ativar.'
+    - ''
+    - '&7Clique com shift + botão direito para compactar'
+    - '&7todos os seus limites no inventário em 1 só.'
+    - ''
+
+# Limite de venda de drops de spawners.
+limit-drop:
+  # Ativar o sistema
+  enabled: false
+  # Padrão que o jogador irá receber
+  default: 64
+  # Deixe 0 para ser infinito
+  max: 0
+  # Item do limite
+  item:
+    material: '667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    name: '&bLimite de Drops'
+    lore:
+      - ''
+      - '&fQuantia: &a{amount}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''

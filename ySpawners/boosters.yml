@@ -1,0 +1,12 @@
+boosters:
+   booster1:
+      # Duração do booster em segundos
+      time: 60
+      # Bônus de venda
+      bonus: 10.0
+      # Item do booster
+      item:
+         material: EXP_BOTTLE
+         glow: true
+         name: '&aBônus de Venda &7(drops)'
+         lore: [ '', '&aTempo: &e{time}', '&aBônus: &e{bonus}%', '' ]

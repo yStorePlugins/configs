@@ -1,0 +1,296 @@
+head: '5d6c6eda942f7f5f71c3161c7306f4aed307d82895f9d2b07ab4525718edc5'
+egg: 'MONSTER_EGG:92'
+
+# Item que poderá ser colocado no chão
+# Necessário ser um bloco
+item:
+  material: '5d6c6eda942f7f5f71c3161c7306f4aed307d82895f9d2b07ab4525718edc5'
+  name: '&eGerador de entidades'
+  lore:
+    - ''
+    - '&f Tipo: &7Vaca&f.'
+    - '&f Stack: &7{stack}'
+    - ''
+    - '&f Drops armazenados: &c{drops_stored}'
+    - ''
+    - '&f Upgrades:'
+    - '&f  > Drops gerados por mob morto: &b{drops_round}'
+    - '&f  > Velocidade de geração: &b{speed}s'
+    - ''
+
+# Nome que irá aparecer nas mensagens
+name: '&fSpawner de Vaca'
+
+# Nome da entidade
+entity-name: 'Vaca'
+
+# Permissão para poder por o spawner
+permission: ''
+
+# Permissão para poder matar os mobs
+permission-kill: ''
+
+# Entidade que irá spawnar
+entity: 'COW'
+
+# Vida do mob
+health: 20.0
+
+# Velocidade de geração
+speed: 10
+
+# Quebrar somente com silk touch
+silk-touch: true
+
+# Nível necessário de silk-touch para quebrar
+silk-touch-level: 1
+
+# Fazer o mob spawnar em cima da gaiola
+above: false
+
+# Distância que o mob irá spawnar da gaiola
+distance: 2
+
+# Gerar apenas com o dono ou amigo online
+generate-online: false
+
+# Gerar com o amigo online
+generate-friend-online: false
+
+# EXP (vanilla) que será dado ao jogador
+exp: 1
+
+custom-entity:
+  # Ativar a entidade custom. Precisa do ySpawnersMPetAddon e do MiniaturePets
+  enabled: false
+  # Arquivo da entidade da pasta de pets do MiniaturePets
+  entity: 'Boxer.mpet'
+
+# Opções das entidades
+entity-options:
+  # Caso a entidade for um esqueleto, ele vai ser wither?
+  wither-skeleton: false
+  # Caso a entidade for um zombie ou pig-zombie, ele vai ser bebê?
+  baby-zombie: false
+  # Tamanho da entidade caso seja um slime ou magma-cube
+  slime-size: 1
+
+# Sistema de stack de spawners
+stack-spawners:
+  # Stack máximo de spawners (total)
+  max: 2
+  # Limite padrão de stack de spawners
+  # Deixe 0 para não usar
+  default-limit: 30
+  # Raio de verificação de mobs e spawners
+  radius: 5
+  # Compra de limite por menu
+  add-per-level: 10
+  prices-per-level:
+    price1:
+      provider: 'money'
+      price: 10000.0
+
+# Sistema de stack de mobs
+stack-mobs:
+  # Ativar o stackmobs
+  enabled: true
+  # Nome do stackmob
+  name: '&7{amount}x &c{mob}'
+  # Quantia máxima do stackmob
+  # deixe 0 para ser infinito
+  max: 0
+  # Desativar a inteligencia artificial do mob
+  no-ai: true
+  # Aplicar lentidão máxima na entidade (não funciona em entidades que voam)
+  slow: true
+  # Raio de verificação de mobs
+  radius: 5
+  # Ao matar segurando shift, irá matar apenas 1 mob do stackmobs.
+  shift-unit: true
+  # Ao matar sem shift, irá matar apenas 1 mob do stackmob
+  no-shift-unit: false
+  # Dar recompensas ao matar no shift
+  shift-reward: false
+  # Dar recompensas ao matar sem shift
+  no-shift-reward: false
+  # Habilitar os mobs de levar dano do ambiente
+  mob-natural-damage: false
+  # Habilitar os mobs de atacar players
+  mob-attack: false
+  # Permitir o creeper explodir (só funciona com o NoAI false)
+  creeper-explode: false
+  # Recompensas ao matar o mob
+  # As recompensas são cadastradas na recompensas.yml
+  # Use: chance,recompensa
+  rewards: [ '100,reward1' ]
+  # Limite padrão de stack de mobs
+  # Deixe 0 para não usar
+  default-limit: 0
+  # Compra de limite por menu
+  add-per-level: 10
+  prices-per-level:
+    price1:
+      provider: 'money'
+      price: 10000.0
+
+# Sistema de quebrar o spawner
+break:
+  # Chance do spawner quebrar a cada onda (deixe 0 para não usar)
+  chance: 10.0
+  # Preço para consertar o spawner
+  prices:
+    price1:
+      provider: 'money'
+      amount: 1000.0
+
+# Sistema de bloco de vidro
+glass:
+  # O spawner vai gerar um vidro com uma cabeça dentro?
+  enabled: false
+  # material do vidro
+  material: 'STAINED_GLASS'
+  # Data da cor do vidro
+  data: 11
+  # Ajuste a cabeça dentro do vidro
+  off-set: -1.2
+  # Animação da cabeça dentgro do vidro
+  # Pode gerar lag
+  animation-enabled: false
+  # Velocidade da animação
+  animation-speed: 4
+
+# Partícula ao redor do spawner
+# Pode gerar lag
+particle:
+  #type: 'SMALL_FLAME'
+  # Deixe vazio para não usar
+  type: ''
+  # Cores
+  red: 0.2
+  green: 0.2
+  blue: 0.2
+  # Quantia de partículas
+  count: 1
+  # Offset - espalhar
+  offset:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+
+# Holograma que irá aparecer em cima do spawner
+hologram:
+  enabled: true
+  # Altura em relação ao spawner
+  off-set: 3.3
+  # Utilize {head} para pegar a cabeça
+  # Utilize {egg} para pegar o ovo
+  # configurada acima. Ou coloque o material
+  # por exemplo: "DIAMOND_BLOCK"
+  lines:
+  - '&aSpawner de Vaca'
+  - '&fDono: &7{owner}&f.'
+  - '&fStack: &7x{amount}&f.'
+  - '&fDrops armazenados: &bx{drops}&f.'
+  - '&fStatus: &r{status}'
+  - ''
+  - '[item]MONSTER_EGG:92'
+
+# Upgrades do spawner
+upgrades:
+  # Quantidade de drops por mob morto
+  drops:
+    prices-per-level:
+      price1:
+        provider: 'money'
+        amount: 10.0
+    max: 5
+    default: 1
+    add-per-level: 2
+  # Velocidade de geração de mobs
+  speed:
+    prices-per-level:
+      price1:
+        provider: 'money'
+        amount: 15.0
+    max: 5
+    default: 0
+    add-per-level: 1
+
+# Hook com o mcMMO
+mcmmo:
+  swords: 1
+  axes: 1
+  unarmed: 1
+
+# Sistema de drops
+drop:
+  # Ativar o armazém de drops
+  storage: true
+  # Dropar os drops no chão caso o spawner esteja público
+  published-drop: true
+  # Possibilitar recolher o drop no armazém
+  collect: true
+  # Possibilitar vender o drop no armazém
+  sell: true
+
+  # Quantia máxima permitida no armazém
+  # Deixe 0 para não ter máximo
+  storage-max: 0
+
+  # Botão que será realizada a venda (LEFT | RIGHT)
+  sell-button: 'LEFT'
+  # Botão que será realizado recolher (LEFT | RIGHT)
+  collect-button: 'RIGHT'
+
+  # Permissão para recolher drops (deixe vazio '' para não usar)
+  collect-permission: 'yspawnersv2.cow.coletar'
+  # Permissão para vender drops (deixe vazio '' para não usar)
+  sell-permission: 'yspawnersv2.cow.vender'
+
+  # Tipos de drop
+  types:
+    leather:
+      # Chance de dropar
+      chance: 100.0
+      drop:
+        material: 'LEATHER:0'
+      name: '&fCouro'
+      # ícone que irá ficar no menu de drops
+      icon:
+        material: 'LEATHER:0'
+        name: '&fCouro'
+        lore:
+          - ''
+          - ' &fDrops armazenados: &a{drops_stored}&f.'
+          - ' &fValor por drop: &a100 coins&f.'
+          - ' &fValor total: &a{money} coins&f.'
+          - ' &fSeu bônus: &b{bonus_raw}%&f.' # bonus formatado: {bonus}
+          - ''
+          - '&aBotão &fESQUERDO&a para vender.'
+          - '&aBotão &fDIREITO&a para recolher.'
+      # Economias que o drop irá dar
+      currencies:
+        preco1:
+          provider: 'money'
+          amount: 100.0
+
+  # O Drop vai executar um comando ao ser recolhido?
+  # Caso seja um comando e o armazem estiver desativado
+  # o spawner irá dropar itens que ao serem ativados
+  # executarão o comando
+  command:
+    enabled: false
+    # Preço por drop (para o comando)
+    price: 100.0
+    # usar a placeholder {quantia} para ter a quantia de drops e executar o comando só 1x
+    use-amount: true
+    # multiplica a quantia pelo preço e o bônus (essencial para dar em outras economias)
+    multiply-price: true
+    # não checar se o inv está cheio (apenas quando os comandos tiverem ativos)
+    inv-bypass: true
+    # coletar diretamente, sem precisar digitar a quantia no chat (apenas quando os comandos tiverem ativos)
+    collect-chat-bypass: true
+    # formatar a quantia que será executada no comando. Ex: 1k, 10k, 1M
+    amount-format: true
+    commands: [ 'give {player} iron_ingot {quantia}' ]

@@ -1,0 +1,12 @@
+heads:
+   # Identificador para colocar no custom-entity do spawner
+   # nesse exemplo ficará: [yspawners_entity]stone
+   stone:
+      # Material que ficará flutuando
+      material: 'STONE'
+      # Ativar animação
+      animation: true
+      # Ativar o up-down
+      up-down: true
+      # Ativar o shake
+      shake: true

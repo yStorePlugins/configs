@@ -1,0 +1,142 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aSpawners comandos:
+
+    &a> /spawner
+    &a> /spawner top
+    &a> /spawner givespawner <player> <spawner> <quantia>
+    &a> /spawner givelimitstack <player> <quantia>
+    &a> /spawner givelimitdrop <player> <quantia>
+
+  spawner-give: '&aVocê deu &7{amount}x {spawner}&a para o jogador &7{player}&a.'
+  spawner-received: '&aVocê recebeu &7{amount}x {spawner}&a.'
+  spawner-list: |
+    &cSpawner não encontrado.
+    &cSpawners disponíveis: &f{list}
+  plot-permission: '&cVocê não tem permissão neste terreno.'
+  spawners-mobs: '&cHá mobs ou spawners num raio de 5 blocos.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  gamemode: '&cEssa ação só pode ser realizada no modo survival.'
+  perm-spawner: '&cVocê não tem permissão para colocar este tipo de spawner.'
+  perm-this-spawner: '&cVocê não tem permissão para neste spawner.'
+  perm-kill: '&cVocê não tem permissão para matar este mob.'
+  perm-plot: '&cVocê não tem permissão neste terreno.'
+  placed: '&a{amount}x {spawner} &acolocada(s).'
+  broken: '&a{amount}x {spawner} &aremovida(s).'
+  has-spawners: '&cHá spawners num raio de {radius} blocos.'
+  silk-touch: '&cVocê precisa de uma picareta com toque suave para quebrar este spawner.'
+  just-owner: '&cSomente o dono do spawner pode realizar esta ação.'
+  repair: '&aVocê reparou seu spawner por {money} coins.'
+  digit-remove: |
+
+    &aDigite a quantia de spawners que deseja remover.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-add: |
+
+    &aDigite no chat o nome do seu amigo que quer adicionar.'
+    &7para cancelar digite &ncancelar&7.'
+
+  collect-need: '&cEste stack possui apenas {stack} spawners.'
+  max-friend: '&cEste spawner atingiu o limite máximo de amigos.'
+  added: '&aVocê adicionou o jogador &7{player}&a no seu spawner.'
+  already-added: '&cEste jogador já está adicionado.'
+  add-owner: '&cVocê não pode adicionar o dono como amigo no spawner.'
+  upgraded: '&aVocê adquiriu &f+1 nível&a do upgrade por &f{money} coins&a.'
+  limit-stack-give: '&aVocê deu &7{amount}x limites&a para o jogador &7{player}&a.'
+  limit-stack-received: '&aVocê recebeu &7{amount}x limites&a.'
+  limit-stack-converted: '&aVocê converteu todos seus limites em um só.'
+  limit-stack-full: '&cEste spawner está no limite de stack máximo ({amount}).'
+  limit-stack-fill: '&aVocê aumentou o limite de stack do spawner para {amount}.'
+  sell: '&aVocê vendeu &7{amount}x {drop}&a por &6{money} coins &8{bonus}&a.'
+  digit-collect: |
+
+    &aDigite a quantia que você quer coletar.
+
+    &8| &fVocê possui &6{amount}&f disponível.
+    &8| &fDigite &8TUDO &fpara coletar tudo.
+
+    &7Para cancelar digite &ncancelar&7.
+
+  collect: '&aVocê coletou &7{amount}x {drop} (&8{bonus})&a.'
+  inv-full: '&cSeu inventário está cheio.'
+  insufficient: '&cEste spawner não possui drops suficiente.'
+  nbttag-blacklist: '&cVocê não pode bater com este item.'
+  world-blacklist: '&cVocê não pode colocar spawners neste mundo.'
+  limit-drop-give: '&aVocê deu &7{amount}x limites&a para o jogador &7{player}&a.'
+  limit-drop-received: '&aVocê recebeu &7{amount}x limites&a.'
+  limit-drop-converted: '&aVocê converteu todos seus limites em um só.'
+  limit-drop-full: '&cVocê já está no limite máximo ({amount}).'
+  limit-drop-activated: '&aVocê aumentou o seu limite de drops para {amount}.'
+  digit-limit-collect: |
+
+    &aDigite a quantia que você quer coletar.
+
+    &8| &fVocê possui &6{amount}&f disponível.
+
+    &7Para cancelar digite &ncancelar&7.
+
+  limit-default: '&cVocê não pode recolher uma quantia de limite que diminua o valor padrão.'
+  limit-break: '&cVocê precisa quebrar alguns spawners.'
+  limit-need: '&cVocê não possui limite suficiente.'
+  limit-collect: '&aVocê coletou {amount} limites.'
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  limit-drop-sent: '&bVocê enviou &f{amount} limite&b para o jogador &f{player}&b.'
+  limit-drop-received-player: '&bVocê recebeu &f{amount} limite&b do jogador &f{player}&b.'
+  limit-drop-no-has: '&bVocê não possui &f{amount} limite&b.'
+  limit-drop-target-max: '&bO jogador já possui o máximo de limite permitido: &f{amount}&b.'
+  limit-drop: '&bQuantidade de limite que você possui: &f{amount}&b.'
+  limit-drop-target: '&bQuantidade de limite que &7{player}&b possui: &f{amount}&b.'
+  limit-drop-changed: '&aLimite do jogador &7{player}&a alterado para &7{amount}&a.'
+  limit-drop-help: |
+    &aComandos do /limitedrop
+
+    &f-> &b/limitedrop
+    &f-> &b/limitedrop set
+    &f-> &b/limitedrop add
+    &f-> &b/limitedrop remove
+    &f-> &b/limitedrop send
+    &f-> &b/limitedrop help
+    &f-> &b/limitedrop [player]
+  spawner-already-placed: '&cVocê já colocou um spawner deste tipo.'
+  booster-give: '&aVocê deu &7{amount}x Booster(s)&a para o jogador &7{player}&a.'
+  booster-received: '&aVocê recebeu &7{amount}x Booster(s)&a.'
+  booster-list: |
+    &cBooster não encontrado.
+    &cBooster disponíveis: &f{list}
+  booster-finished: '&cSeu booster de drops acabou.'
+  booster-already: '&cVocê já está usando um booster.'
+  booster-activated: '&aVocê ativou um booster de drops. Multiplicador: &e{bonus}&a. Tempo: &e{time}&a.'
+  booster-active: |
+
+    &aSeu booster de drops está ativo!
+    &f> &bTempo: &7{time}&f.
+    &f> &bBônus: &7{bonus}%&f.
+
+  booster-none: '&cVocê não possui nenhum booster de drops ativo.'
+  limit-mobs-give: '&aVocê deu &7{amount}x limites&a para o jogador &7{player}&a.'
+  limit-mobs-received: '&aVocê recebeu &7{amount}x limites&a.'
+  limit-mobs-converted: '&aVocê converteu todos seus limites em um só.'
+  limit-mobs-full: '&cEste spawner está no limite de mobs máximo ({amount}).'
+  limit-mobs-fill: '&aVocê aumentou o limite de mobs do spawner para {amount}.'
+  upgraded-mobs: '&aVocê adquiriu uma expansão da capacidade de stack mobs do spawner.'
+  upgraded-spawners: '&aVocê adquiriu uma expansão da capacidade de stack do spawner.'
