@@ -1,0 +1,189 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Bolsa'
+  size: 27
+  items:
+    bolsa-slot: 10
+    fixed-slot: 12
+    effects-slot: 14
+    historic-slot: 16
+    bolsa:
+      material: '6f55a57639c9f7dbb246b28a292cff298344c969cfd4252709d4a5fa663128b9'
+      name: '&eInformações'
+      lore:
+        - '&7Ganhe mais dinheiro nas operações'
+        - '&7financeiras do servidor.'
+        - '&e(quando a bolsa estiver >100)'
+        - ''
+        - '&fValor atual: &b{value}% &7(&e+{fixed}%&7)'
+        - ''
+        - '&e* A bolsa irá atualizar em'
+        - '&f  {time}'
+        - ''
+        - '&7Tendência: &r{trend}'
+        - '&7Mercado atual: &r{market}'
+    bolsa-paused:
+      material: '6f55a57639c9f7dbb246b28a292cff298344c969cfd4252709d4a5fa663128b9'
+      name: '&eInformações'
+      lore:
+        - '&7Ganhe mais dinheiro nas operações'
+        - '&7financeiras do servidor.'
+        - '&e(quando a bolsa estiver >100)'
+        - ''
+        - '&fValor atual: &b{value}% &7(&e+{fixed}%&7)'
+        - ''
+        - '&e* A bolsa está pausada por mais'
+        - '&f  {time}'
+        - ''
+        - '&7Tendência: &r{trend}'
+        - '&7Mercado atual: &r{market}'
+    bolsa-paused-staff:
+      material: '6f55a57639c9f7dbb246b28a292cff298344c969cfd4252709d4a5fa663128b9'
+      name: '&eInformações'
+      lore:
+        - '&7Ganhe mais dinheiro nas operações'
+        - '&7financeiras do servidor.'
+        - '&e(quando a bolsa estiver >100)'
+        - ''
+        - '&fValor atual: &b{value}% &7(&e+{fixed}%&7)'
+        - ''
+        - '&e* A bolsa está pausada pela administração!'
+        - ''
+        - '&7Tendência: &r{trend}'
+        - '&7Mercado atual: &r{market}'
+    fixed:
+      material: 'a10f3b26c471680d667cdd514f1f8debcbd671064ea2d8626627aa7c564e3920'
+      name: '&eBônus Adicional'
+      lore:
+        - '&7Garanta uma porcentagem fixa a mais'
+        - '&7para a bolsa do servidor.'
+        - ''
+        - '&fValor atual: &b{value}%'
+        - '&fPróximo: &b{next_value}%'
+        - ''
+        - '&fPreço: &2$&a {money} coins&f.'
+        - ''
+        - '&aClique para comprar.'
+    fixed-max:
+      material: 'a10f3b26c471680d667cdd514f1f8debcbd671064ea2d8626627aa7c564e3920'
+      name: '&eBônus Adicional'
+      lore:
+        - '&7Garanta uma porcentagem fixa a mais'
+        - '&7para a bolsa do servidor.'
+        - ''
+        - '&fValor atual: &b{value}%'
+        - ''
+        - '&cO bônus adicional já está maximizado.'
+    effects:
+      material: 'efbc604b167a302ea7dafb17eb5fbd281261f82d8c430b78d1b930ded93ef601'
+      name: '&eEfeitos Especiais'
+      lore:
+        - '&7Realize a manipulação de mercado e'
+        - '&7adquira efeitos para a bolsa.'
+        - ''
+        - '&aClique para abrir.'
+    historic:
+      material: '9b7521b59b90af3ba3ead5c65dab01f91c4d12cf19ced1ac43857c4d4472531b'
+      name: '&eHistórico'
+      lore:
+        - '&7Confira o histórico de flutuação'
+        - '&7da bolsa do servidor.'
+        - ''
+        - '&aClique para abrir.'
+
+# Menu de efeitos
+effects:
+  name: '&8Bolsa'
+  size: 27
+  back-slot: 9
+  items:
+    bull-slot: 12
+    bear-slot: 14
+    bull:
+      material: '452b8b820fe8eb3010815160aa8ae31f3e39b402d554238749687e2229b586ff'
+      name: '&aBULL MARKET'
+      lore:
+        - '&7Influencie uma grande alta na'
+        - '&7bolsa do servidor.'
+        - ''
+        - '&fPreço: &2$&a {money} coins&f.'
+        - ''
+        - '&aClique para comprar.'
+    bear:
+      material: 'c8cb1a47c8528b4e29a85f55ab3084fe6aef7a395470c4e12d16f13dfb3514c6'
+      name: '&cBEAR MARKET'
+      lore:
+        - '&7Influencie uma grande baixa na'
+        - '&7bolsa do servidor.'
+        - ''
+        - '&fPreço: &2$&a {money} coins&f.'
+        - ''
+        - '&aClique para comprar.'
+    occurring:
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: '&cEvento ocorrendo'
+      lore:
+        - '&7Já há algum evento especial ocorrendo'
+        - '&7neste momento na bolsa do servidor.'
+
+# Menu de histórico
+historic:
+  name: '&8Bolsa'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  back-slot: 49
+  previous-slot: 18
+  next-slot: 26
+  items:
+    maintained:
+      material: '3da29fe23b69f76bc49474102226b0699ca2a5ad11f7a48542b13ad9cabaf89d'
+      name: '&eESTABILIDADE!'
+      lore:
+        - '&7A bolsa não sofreu uma variação'
+        - '&7às {hour} de {date}'
+        - ''
+        - '&fValor: &a{new_value}%'
+        - ''
+    valued:
+      material: 'f9b43f813dc1f8c853454c45f1ede94f43873df4742cd90d18ec842fafb8878d'
+      name: '&aALTA!'
+      lore:
+        - '&7A bolsa sofreu uma variação &apositiva'
+        - '&7às {hour} de {date}'
+        - ''
+        - '&fValor Antigo: &c{old_value}%'
+        - '&fValor Novo: &a{new_value}%'
+        - ''
+    devalued:
+      material: 'c3a03c06ffe2356ce00aef5b708878d2fe4365a97bc4dae1e1542c27b2eb30dd'
+      name: '&cBAIXA!'
+      lore:
+        - '&7A bolsa sofreu uma variação &cnegativa'
+        - '&7às {hour} de {date}'
+        - ''
+        - '&fValor Antigo: &a{old_value}%'
+        - '&fValor Novo: &c{new_value}%'
+        - ''

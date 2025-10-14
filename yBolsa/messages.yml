@@ -1,0 +1,130 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+title:
+  inv-full: '&cINVENTÁRIO<nl>LOTADO!'
+  compact: '&aSeu inventário foi compactado com sucesso.'
+
+actionbar:
+  inv-full: '&cSeu inventário está cheio!'
+  compact: '&aSeu inventário foi compactado com sucesso.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &bComandos do plugin:
+    &r
+    &b-> &f/autopickup &8-&7 Abre o menu principal
+    &r
+  paused: '&e⏸Bolsa pausada por mais {time}.<nl>&7Valor atual: &f{value}'
+  bull: '&e⏰ Bull-Market finaliza em: {time}.'
+  bear: '&e⏰ Bear-Market finaliza em: {time}.'
+  crash: '<nl>&c&l⚠ ALERTA: CRASH NA BOLSA! ⚠<nl>'
+  boom: '<nl>&a&l⚡ ALERTA: BOOM NA BOLSA! ⚡<nl>'
+  valued: |
+    &r
+    &a▲ A bolsa de valores subiu! &f(+{variation}%)
+    &7Valor antigo: &f{old}
+    &7Valor atual: &a{new}
+    &7Tendência: {trend} &7| Mercado: {market}
+    &r
+  devalued: |
+    &r
+    &c▼ A bolsa de valores desceu! &f(-{variation}%)
+    &7Valor antigo: &f{old}
+    &7Valor atual: &c{new}
+    &7Tendência: {trend} &7| Mercado: {market}
+    &r
+  maintained: |
+    &r
+    &e■ A bolsa de valores se manteve!
+    &7Valor atual: &f{new}
+    &r
+  circuit-breaker: |
+    &r
+    &c&l⚠ ═════════════════════════════ ⚠
+    &c&l    CIRCUIT BREAKER ATIVADO!
+    &c&l⚠ ═════════════════════════════ ⚠
+    &r
+    &eVariação extrema de &c{variation}% &eem &f{direction} &edetectada!
+    &eBolsa pausada por &f{time} &epara estabilização.
+    &7Valor caiu para: &f{value}
+    &r
+    &7O mercado será reaberto automaticamente.
+    &r
+  circuit-breaker-stop: |
+    &r
+    &a&l✓ ═════════════════════════════ ✓
+    &a&l    CIRCUIT BREAKER DESATIVADO
+    &a&l✓ ═════════════════════════════ ✓
+    &r
+    &aBolsa voltou a operar normalmente!
+    &7Valor atual: &f{value}
+    &r
+  bull-market: |
+    &r
+    &a&l═════════════════════════════
+    &a&l      BULL MARKET INICIADO!
+    &a&l═════════════════════════════
+    &r
+    &eO mercado está em &a&lALTA FORTE&e!
+    &eDuração: &f{duration}
+    &7Valor atual: &f{value}
+    &r
+    &a➜ &7Momento ideal para investir!
+    &a➜ &7Espere-se valorizações frequentes!
+    &r
+  bear-market: |
+    &r
+    &c&l══════════════════════════════
+    &c&l      BEAR MARKET INICIADO!
+    &c&l══════════════════════════════
+    &r
+    &eO mercado está em &c&lBAIXA FORTE&e!
+    &eDuração: &f{duration}
+    &7Valor atual: &f{value}
+    &r
+    &c⚠ &7Cuidado com suas ações!
+    &c⚠ &7Espere-se desvalorizações frequentes!
+    &r
+  bull-market-stop: |
+    &r
+    &e&l⏹ ═════════════════════════════ ⏹
+    &e&l    Bull-Market FINALIZADO
+    &e&l⏹ ═════════════════════════════ ⏹
+    &r
+    &7O mercado voltou ao normal
+    &7Valor atual: &f{value}
+    &r
+  bear-market-stop: |
+    &r
+    &e&l⏹ ═════════════════════════════ ⏹
+    &e&l    Bear-Market FINALIZADO
+    &e&l⏹ ═════════════════════════════ ⏹
+    &r
+    &7O mercado voltou ao normal
+    &7Valor atual: &f{value}
+    &r
+  no-balance: '&cVocê não tem {amount} {provider_abbreviated} suficiente para isto. Disponível: {provider_balance}&c.'
+  fixed-broadcast: '&eO jogador &f{player}&e adquiriu um bônus de &a+{value}%&e para a bolsa!'
+  bull-bought: '&aVocê comprou o efeito BULL-MARKET.'
+  bear-bought: '&aVocê comprou o efeito &cBEAR-MARKET&a.'
+  delay-buy: '&cVocê precisa aguardar {time} para comprar o efeito novamente.'
+  value-set: '&aValor alterado para &f{value}%&a.'
+  circuit-breaker-started: '&aVocê forçou a inicialização do circuit-breaker.'
+  circuit-breaker-stopped: '&aVocê forçou a finalização do circuit-breaker.'
+  toggle-on: '&aA variação da bolsa foi religada'
+  toggle-off: '&aA variação da bolsa foi desligada'
