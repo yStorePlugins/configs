@@ -49,6 +49,8 @@ general:
   fence-material: 'FENCE'
   # Permitir quebrar a cerca do terreno
   break-fence: false
+  # Definir a cerca sempre no bloco mais alto
+  fence-up-block: true
   # Delay para alternar a cerca de um terreno
   # em segundos
   fence-delay: 60
