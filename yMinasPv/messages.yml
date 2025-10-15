@@ -67,3 +67,4 @@ chat:
   skin-give: '&bVocê deu uma skin para o jogador &f{player}&b.'
   skin-has: '&aVocê já possui esta skin ativada.'
   skin-activated: '&aSkin ativada com sucesso.'
+  cant-place: '&cNão é possível colocar a estrutura aqui.'
