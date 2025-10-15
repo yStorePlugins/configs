@@ -1,0 +1,29 @@
+skins:
+  stone:
+    order: 1
+    type: 'STONE'
+    item:
+      material: 'STONE'
+      name: '&aSkin de Pedra'
+      lore: ['&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aClique em uma picareta para ativar']
+    menu:
+      equip:
+        material: 'STONE'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aClique para equipar' ]
+      equipped:
+        material: 'STONE'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aJá está equipada' ]
+      has:
+        material: 'STONE'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&cVocê não possui esta skin' ]
+    name: '&fPicareta de Pedra &6[{blocks_broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - '&a+10% ( PEDRA )'
+      - ''
+    bonus: 10.0

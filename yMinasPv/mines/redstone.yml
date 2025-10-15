@@ -1,0 +1,208 @@
+# Nome da ESTRUTURA
+display-name: '&aTorre de Cacto'
+
+# Bloco que irá aparecer no preview caso esteja bloqueado de por
+preview-block: 'STAINED_GLASS:14'
+
+# Tempo de reset da mina
+# em segundos
+reset-time: 600
+
+# Porcentagem de blocos restantes para resetar a mina
+percentage-reset: 10.0
+
+# Alterar a altura do y ao colocar (se quiser colocar pra setar no ar/setar dentro do solo)
+y-offset: 0
+
+# Blocos que serão desconsiderados e removidos ao setar a estrutura
+block-blacklist: [ 'GRASS', 'STONE' ]
+
+# Colocar de modo gradual
+gradual: false
+
+# Item que o jogador irá receber
+item:
+  material: f9033bbf23a40e409cd0c1eaecab6b1c0dc6b3c31e253a06550b22bce9899575
+  name: '&aMina Privada'
+  lore:
+    - '&7Para iniciar a minerar nessa'
+    - '&7mina coloque-a em sua plot!'
+    - ''
+    - '&fTamanho: &77x6'
+    - ''
+    - '&fSHIFT + Direito'
+
+# Preços dos blocos da mina
+mine-block-prices:
+  block1:
+    type: 'REDSTONE_ORE:0'
+    # EXP do minecraft vanilla
+    xp: 1
+    # EXP do mcMMO (MINING)
+    xp-mcmmo: 1
+    # Valores de economias
+    prices:
+      price1:
+        provider: 'money'
+        amount: 100.0
+  block2:
+    type: 'GLOWING_REDSTONE_ORE:0'
+    xp: 1
+    xp-mcmmo: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 100.0
+  block4:
+    type: 'REDSTONE_BLOCK:0'
+    xp: 1
+    xp-mcmmo: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 500.0
+
+# Recompensas dos blocos da mina
+mine-block-rewards:
+  block1:
+    type: 'REDSTONE_ORE:0'
+    rewards:
+      - '10.0,reward1'
+  block4:
+    type: 'REDSTONE_BLOCK:0'
+    rewards:
+      - '50.0,reward2'
+
+# Sistema de resetar a própria mina
+manual-reset:
+  enabled: true
+  # em segundos
+  delay: 600
+  # Permissão para resetar
+  permission: 'yminaspv.reset.self'
+  # Preços para resetar
+  prices:
+    price1:
+      provider: 'money'
+      amount: 100.0
+
+# Mensagens
+messages:
+  # Mensagens ao quebrar um bloco
+  sell:
+    title: ''
+    actionbar: '&a+{money} coins adicionados ┃ &r{bonus}&a.'
+    chat: ''
+  # Mensagens ao resetar
+  reset:
+    title: '&aMINA<nl>&aRESETADA'
+    actionbar: '&aMINA RESETADA'
+    chat: ''
+
+# Siglas de cada bloco para identificação no pattern
+blocks:
+  - '1,STONE:0'
+  - '4,REDSTONE_ORE:0'
+  - 'X,AIR:0'
+  - '2,COBBLESTONE:0'
+  - '3,REDSTONE_BLOCK:0'
+  - '0,SPONGE:0'
+
+# Modelagem da estrutura
+patterns:
+  layer_1:
+    y: 1
+    pattern:
+      - '00000000'
+      - '01111120'
+      - '01111110'
+      - '01111110'
+      - '01111110'
+      - '01111110'
+      - '01111110'
+      - '01111110'
+      - '00000000'
+  layer_2:
+    y: 2
+    pattern:
+      - 'XXXXXXXX'
+      - 'X333334X'
+      - 'X444444X'
+      - 'X433344X'
+      - 'X444433X'
+      - 'X434443X'
+      - 'X344433X'
+      - 'X334334X'
+      - 'XXXXXXXX'
+  layer_3:
+    y: 3
+    pattern:
+      - 'XXXXXXXX'
+      - 'X443343X'
+      - 'X343344X'
+      - 'X334333X'
+      - 'X443333X'
+      - 'X444333X'
+      - 'X333333X'
+      - 'X343443X'
+      - 'XXXXXXXX'
+  layer_4:
+    y: 4
+    pattern:
+      - 'XXXXXXXX'
+      - 'X443333X'
+      - 'X344433X'
+      - 'X443344X'
+      - 'X433433X'
+      - 'X434344X'
+      - 'X343434X'
+      - 'X434434X'
+      - 'XXXXXXXX'
+  layer_5:
+    y: 5
+    pattern:
+      - 'XXXXXXXX'
+      - 'X334344X'
+      - 'X433434X'
+      - 'X334334X'
+      - 'X344444X'
+      - 'X444444X'
+      - 'X344434X'
+      - 'X334334X'
+      - 'XXXXXXXX'
+  layer_6:
+    y: 6
+    pattern:
+      - 'XXXXXXXX'
+      - 'X434343X'
+      - 'X343433X'
+      - 'X434334X'
+      - 'X334434X'
+      - 'X344333X'
+      - 'X433443X'
+      - 'X343444X'
+      - 'XXXXXXXX'
+  layer_7:
+    y: 7
+    pattern:
+      - 'XXXXXXXX'
+      - 'X344334X'
+      - 'X343444X'
+      - 'X333343X'
+      - 'X433443X'
+      - 'X343434X'
+      - 'X433343X'
+      - 'X434444X'
+      - 'XXXXXXXX'
+  layer_8:
+    y: 8
+    pattern:
+      - 'XXXXXXXX'
+      - 'XXXXXXXX'
+      - 'XXXXXXXX'
+      - 'XXXXXXXX'
+      - 'XXXXXXXX'
+      - 'XXXXXXXX'
+      - 'XXXXXXXX'
+      - 'XXXXXXXX'
+      - 'XXXXXXXX'

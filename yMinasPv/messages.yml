@@ -1,0 +1,69 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &a/minaspv give &8- &7Dar uma mina para um/todos os jogadores.
+    &a/minaspv reload &8- &7Recarrega as configurações.
+
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  mine-give: '&aVocê deu &7{amount}x {mine}&a para o jogador &7{player}&a.'
+  mine-received: '&aVocê recebeu &7{amount}x {mine}&a.'
+  mine-list: |
+    &cMina não encontrada.
+    &cMinas disponíveis: &f{list}
+  mine-max: '&cVocê já possui o máximo de minas privadas ativas. &7({max})'
+  mine-activated: '&aVocê ativou &7{amount}x {mine}&a.'
+  mine-found: '&cVocê não está em nenhuma mina privada.'
+  mine-reset-time: '&cVocê deve aguardar {time} para resetar esta mina novamente.'
+  mine-reset-permission: '&cVocê não tem permissão para resetar esta mina.'
+  mine-reset-full: '&cNão há blocos para resetar nessa mina.'
+  mine-reset: '&aVocê resetou sua mina.'
+  mine-remove-empty: '&cA mina precisa está resetada para conseguir removê-la.'
+  mine-remove-owner: '&cSomente o dono da mina consegue removê-la.'
+  mine-removed: '&aMina removida com sucesso.'
+  mine-just-owner: '&cSomente o dono da mina consegue realizar essa ação.'
+  mine-friend-digit-add: |
+
+    &aDigite no chat o nome do seu amigo que quer adicionar.'
+    &7para cancelar digite &ncancelar&7.'
+
+  digit-enchant: |
+
+    &aDigite a quantia de níveis que você quer adquirir ao encantamento &f{enchantment}&a.
+    &7para cancelar digite &ncancelar&7.
+
+  mine-friend-max: '&cEsta mina privada atingiu o limite máximo de amigos.'
+  mine-friend-add-owner: '&cVocê não pode adicionar o dono como amigo na mina privada.'
+  mine-friend-already-added: '&cEste jogador já está adicionado.'
+  mine-friend-added: '&aVocê adicionou o jogador &7{player}&a na sua mina privada.'
+  mine-pickaxe-has: '&cVocê já possui uma picareta no inventário.'
+  enchantment-evolved: '&aO encantamento &f{enchantment}&a foi evoluido para o nível &f{level}&a.'
+  enchantment-cant-buy: '&cVocê não pode comprar esse encantamento.'
+  enchantment-exceeds: '&cEstes níveis excedem o nível máximo do encantamento.'
+  enchantment-has-level: '&cVocê não possui a quantia de &f{level}&c níveis necessários.'
+  enchantment-disenchanted: '&aVocê desencantou &f{level} níveis &ado encantamento &f{enchant}&a.'
+  enchantment-permission: '&cVocê não tem permissão para evoluir este encantamento.'
+  mine-slot-give: '&aVocê deu &7{amount}x slot(s) de amigos&a para o jogador &7{player}&a.'
+  mine-slot-received: '&aVocê recebeu &7{amount}x slot(s) de amigos&a.'
+  mine-slot-max: '&cEssa mina já possui a quantia máxima de slots de amigos &7({amount})&c.'
+  mine-slot-activated: '&aVocê ativou +1 slot de amigo para a mina. Atual: &f{amount}&a.'
+  skin-found: '&cEsta skin não existe. Disponíveis: &7{list}'
+  skin-give: '&bVocê deu uma skin para o jogador &f{player}&b.'
+  skin-has: '&aVocê já possui esta skin ativada.'
+  skin-activated: '&aSkin ativada com sucesso.'

@@ -1,0 +1,205 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Mineração'
+  size: 27
+  items:
+    reset-slot: 10
+    info-slot: 11
+    pickaxe-slot: 13
+    friends-slot: 15
+    remove-slot: 16
+    info:
+      material: 'PAPER'
+      name: '&aInformações'
+      lore:
+        - '&7Visualize o status e informações'
+        - '&7gerais da sua mina privada.'
+        - ''
+        - ' &8> &fBlocos: &c{blocks_mined}&7/&a{blocks_total}'
+        - ' &8> &fAmigos: &a{friends}'
+        - ' &8> &fTempo para resetar: &a{time}'
+        - ''
+    pickaxe:
+      material: 'DIAMOND_PICKAXE'
+      name: '&aPicareta'
+      lore:
+        - '&7Garanta sua picareta e comece já'
+        - '&7a sua jornada de mineração.'
+        - ''
+        - '&aClique para pegar.'
+    friends:
+      material: 'EMERALD'
+      name: '&aAmigos'
+      lore:
+        - '&7Gerencie quem pode minerar junto'
+        - '&7contigo nessa mina.'
+        - ''
+        - '&f> Quantia: &a{friends}'
+        - ''
+        - '&aClique para gerenciar.'
+    # icon to remove mine
+    remove:
+      material: 'BARRIER'
+      name: '&cRemover'
+      lore:
+        - '&7Remova sua estrutura de mina e'
+        - '&7pegue ela em item novamente.'
+        - ''
+        - '&aClique para remover.'
+    reset-permission:
+      material: 924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6
+      name: '&aResetar'
+      lore: [ '&cVocê não tem permissão para isso.' ]
+    reset-time:
+      material: 924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6
+      name: '&aResetar'
+      lore: [ '&cAguarde {time} para resetar novamente.' ]
+    reset:
+      material: 924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6
+      name: '&aResetar'
+      lore:
+        - '&7Resete sua mina por completo'
+        - '&7e minere mais blocos.'
+        - ''
+        - '&fPreço: &a{money}'
+        - ''
+        - '&aClique para resetar.'
+
+# Menu de evolução
+evolution:
+  name: '&8Mineração'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  items:
+    pickaxe-slot: 47
+    filter-slot: 49
+    disenchanter-slot: 51
+    skin-slot: 48
+    filter:
+      material: HOPPER
+      glow: true
+      name: '&aFiltro'
+      lore:
+        - '&7Desabilite encantamentos que não'
+        - '&7queira utilizar no momento.'
+        - ''
+        - '&aClique para acessar'
+    disenchanter:
+      material: ANVIL
+      glow: true
+      name: '&aDesencantador'
+      lore:
+        - '&7Desencante encantamentos que não'
+        - '&7queira utilizar e receba o valor'
+        - '&7de volta.'
+        - ''
+        - '&aClique para acessar'
+    skin:
+      material: '731f3279fc112b7f18bd0a2229934fcb5605c62823ce698b8b503ecccf0a3ac4'
+      name: '&aSkins'
+      lore:
+        - '&7Configure a skin da sua picareta'
+        - '&7e ganhe alguns bônus.'
+        - ''
+        - '&aClique para acessar'
+
+# Menu de filtro
+filter:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    pickaxe-slot: 31
+    enchant:
+      name: '&a{enchant}'
+      lore:
+        - ''
+        - '&fEncantamento: &7{enchant}'
+        - '&fDesativado: &7{status}'
+        - ''
+
+# Menu de desencantador
+disenchanter:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    pickaxe-slot: 31
+    enchant:
+      name: '&a{enchant}'
+      lore:
+        - ''
+        - '&fEncantamento: &7{enchant}'
+        - '&fNíveis: &7{level}'
+        - ''
+        - '&fIrá ganhar &a{money} coins&f.'
+        - ''
+        - '&aBotão &fESQUERDO &apara desencatar 1 nível'
+        - '&aBotão &fDIREITO &apara desencatar {level} níveis'
+
+# Menu de amigos
+friends:
+  name: '&8Mineração'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+  items:
+    add-slot: 27
+    add:
+      material: '8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+      name: '&aAdicionar amigo'
+      lore:
+        - '&7Clique aqui para adicionar'
+        - '&7amigos para poder usar'
+        - '&7esta mina.'
+    friend:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - ''
+        - '&aBotão &fDIREITO&a para deletar.'
+        - ''
+
+# Menu de skins
+skins:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    pickaxe-slot: 31

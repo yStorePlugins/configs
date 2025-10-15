@@ -1,0 +1,79 @@
+# Você pode criar quantos quiser
+enchants:
+  chaveiro:
+    name: 'Chaveiro'
+    pickaxe-level: 0
+    order: 14
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 0.15
+    level:
+      default: 0.0
+      maximum: 10.0
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-per-level:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanter:
+      price2:
+        provider: 'money'
+        price: 100.0
+    commands: ['100.0,give {player} STONE 1']
+    displays:
+      can:
+        material: TRIPWIRE_HOOK
+        name: '&aChaveiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{money} coins&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      cant:
+        material: TRIPWIRE_HOOK
+        name: '&aChaveiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{money} coins&f.'
+          - ''
+          - '&cVocê não tem coins suficientes.'
+      permission:
+        material: TRIPWIRE_HOOK
+        name: '&aChaveiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&f > Custo: &a{money} coins&f.'
+          - ''
+          - '&cVocê não tem permissão para evoluir este.'
+      maximum:
+        material: TRIPWIRE_HOOK
+        name: '&aChaveiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &b{actual}&f/&b{maximum}&f.'
+          - '&f > Porcentagem Atual: &b{percentage}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'

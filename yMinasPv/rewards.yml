@@ -1,0 +1,94 @@
+#   ____                            _
+# |  _ \ _____      ____ _ _ __ __| |___
+# | |_) / _ \ \ /\ / / _` | '__/ _` / __|
+# |  _ <  __/\ V  V / (_| | | | (_| \__ \
+# |_| \_\___| \_/\_/ \__,_|_|  \__,_|___/
+#
+
+rewards:
+  reward1:
+    # Item que aparecerá no preview.
+    preview:
+      material: 'STONE:0'
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEsta pedra vale muito dinheiro!' ]
+      enchants: []
+    # Item que aparecerá para coletar.
+    collect:
+      material: 'STONE:0'
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEsta pedra vale muito dinheiro!', '', ' &7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    # Item que será dado ao player
+    item:
+      give: true
+      material: 'STONE:0'
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEu valho muito!' ]
+      enchants: []
+    # Comandos que será dado ao player
+    command:
+      give: false
+      # quantia padrão da placeholder {amount} no comando (valor base)
+      placeholder-amount: 1
+      # multiplicar a placeholder {amount} pela quantia de recompensas do mesmo tipo
+      multiply-placeholder: true
+      list: [ 'give {player} stone {amount}' ]
+    # Mensagens que serão enviadas ao receber a recompensa
+    messages:
+      # Quantia que irá multiplicar na placeholder de recompensas no chat
+      amount-placeholder: 64
+      title: '&a+64 Pedras'
+      actionbar: ''
+      chat: '&a+{amount} Pedras'
+  reward2:
+    preview:
+      material: 'DIAMOND:0'
+      name: '&bDiamante'
+      amount: 1
+      lore: [ '&bQuem não adora uma pedra preciosa?!' ]
+      enchants: []
+    collect:
+      material: 'DIAMOND:0'
+      name: '&bDiamante'
+      amount: 1
+      lore: [ '&bQuem não adora uma pedra preciosa?!', '', ' &7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 1
+      multiply-placeholder: true
+      list: [ 'give {player} diamond {amount}' ]
+    messages:
+      amount-placeholder: 1
+      title: '&a+1 Diamante'
+      actionbar: ''
+      chat: '&a+{amount} Diamante'
+  reward3:
+    preview:
+      material: 'EMERALD:0'
+      name: '&aEsmeralda'
+      amount: 1
+      lore: [ '&aEsmeraldas valem muito?' ]
+      enchants: []
+    collect:
+      material: 'EMERALD:0'
+      name: '&aEsmeralda'
+      amount: 1
+      lore: [ '&aEsmeraldas valem muito?', '', ' &7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    item:
+      give: true
+      material: 'EMERALD:0'
+      name: '&aEsmeralda'
+      amount: 1
+      lore: [ '&aEu valho muito!' ]
+      enchants: []
+    messages:
+      amount-placeholder: 1
+      title: '&a+1 Esmeralda'
+      actionbar: ''
+      chat: '&a+{amount} Esmeralda'

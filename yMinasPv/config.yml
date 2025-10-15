@@ -1,0 +1,172 @@
+#         __  __ _                 ____
+#  _   _|  \/  (_)_ __   __ _ ___|  _ \__   __
+# | | | | |\/| | | '_ \ / _` / __| |_) \ \ / /
+# | |_| | |  | | | | | | (_| \__ \  __/ \ V /
+#  \__, |_|  |_|_|_| |_|\__,_|___/_|     \_/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Coloque o identificador da sua skill de mineração do mcMMO ou AuraSkills
+mining-skill-identify: 'MINING'
+
+general:
+  # Acumular os bônus que tiver permissão
+  accumulate-bonus: false
+  formatter-bonus-has: '&a+{bonus}% por ser {display}&a.'
+  formatter-bonus-no-has: ''
+  # Ativar o preview no shift
+  shift-preview-enabled: true
+  # Ativar o preview sem shift
+  no-shift-preview-enabled: true
+  # Ativar o place no shift
+  shift-place: true
+  # Ativar o place sem shift
+  no-shift-place: false
+  # Tempo que levará para atualizar o preview
+  # em ticks (20 ticks = 1 segundo)
+  refresh-time: 5
+  # Distância do preview
+  # em blocos
+  preview-distance: 7
+  # Máximo de minas privadas que um jogador poderá ter
+  player-max-mines: 1
+  # Ativar o sistema de limitador de amigos da mina
+  mine-limit-friends: true
+  # Quantia de amigos (padrão) que cada mina poderá ter
+  mine-default-friends: 10
+  # Máximo de amigos que uma mina privada poderá ter
+  mine-max-friends: 20
+  # Habilitar o menu de evolução ao interagir com a picareta sem shift
+  no-shfit-evolution: true
+  # Habilitar o menu de evolução ao interagir com a picareta com shift
+  shfit-evolution: true
+  # Habilitar o price-multiplier de maneira exponencial
+  # Vai multiplicar sempre o x pelo valor do nível anterior já multiplicado
+  # Caso false, vai apenas multiplicar o valor atual do encantamento x o multiplicador
+  price-multiplier-exponential: true
+  # Evoluir a picareta com a ação do botão direito
+  evolute-right: true
+  # Evoluir a picareta com a ação do botão Q
+  evolute-q: true
+  # Máximo permitido para evoluir com Q
+  evolute-q-max: 1000
+  # Máximo permitido para evoluir com Direito
+  evolute-right-max: 1000
+  # Esconder o encantamento na lore da picareta caso o player desative ele
+  # caso esteja false, o encantamento ficará riscado na lore da picareta
+  hide-deactivated: false
+  # Habilitar o menu da mina ao interagir com a mina sem shift
+  no-shift-menu: true
+  # Habilitar o menu da mina ao interagir com a mina com shift
+  shift-menu: true
+  # Materiais que irão ser reconhecidos na skin
+  skin-materials:
+    - 'WOOD'
+    - 'STONE'
+    - 'IRON'
+    - 'GOLD'
+    - 'DIAMOND'
+
+# Item da picareta customizada
+pickaxe:
+  unbreakable: true
+  material: DIAMOND_PICKAXE
+  name: '&bPicareta &7(Mina Privada)'
+  lore:
+    - '&7Inquebrável ∞'
+    - '{enchants}'
+
+# Item do slot de amigos
+friend-slot:
+  material: 'f5eafa77ffc89b1c4cb939beca1e0364a176b8f44e13be76d5d51b59fd084144'
+  name: '&b+1 Slot de Amigo &7(Mina Privada)'
+  lore:
+    - '&7Ativando este item na sua mina privada'
+    - '&7ela ira receber +1 slot para adicionar amigos.'
+    - ''
+    - '&aClique com botão direito na Mina para ativar.'
+
+# Você pode criar quantos bônus quiser
+# Será dado o bônus ao minerar.
+bonus:
+  membros:
+    order: 1
+    # Permissão para ser reconhecido
+    permission: 'yminaspv.bonus.membro'
+    # Nome que irá aparecer nas mensagens
+    display: '&7[Membro]'
+    # Quantia do bônus em %
+    bonus: 10.0
+
+# Enviar a mensagem de recompensas ganhas a cada x tempo
+reward-message:
+  enabled: true
+  # delay para enviar a mensagem
+  # em segundos
+  delay: 60
+  message: |
+    &r
+    &eMina Privada
+    &7Suas recompensas do último minuto.
+    &r
+    {chat}
+    &r
+
+# Enviar a mensagem de montantes ganhos a cada x tempo
+earns-message:
+  enabled: true
+  # delay para enviar a mensagem
+  # em segundos
+  delay: 60
+  chat-format: '&6&l|&f {provider_display}: &2{provider_symbol}&f{provider_value}'
+  message: |
+    &r
+    &e&lGG! &eVocê quebrou &e&l{blocks}&e blocos no último minuto.
+    &r
+    &6Confira o lucro dos blocos quebrados:
+    {chat}
+    &r
