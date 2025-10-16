@@ -317,8 +317,6 @@ target:
   # Items que serão dados ao jogador com a batata
   # dentro do inventário de armaduras
   armor-items:
-  # Bloquear de tirar a armadura do corpo
-  block-remove: true
     # Item do capacete
     helmet:
       material: 'TNT'
