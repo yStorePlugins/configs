@@ -280,6 +280,7 @@ fishing-net:
   items:
     sell-all-slot: 40
     info-slot: 42
+    auto-sell-slot: 44
     fish-format: '&f{fish_display} &8(Q.{amount}) &f- &7Peso: &f{weight}&7: (&2$&f{value}&7)'
     fish-format-none: '&cVocê não possui nenhum peixe'
     sell-all:
@@ -323,6 +324,25 @@ fishing-net:
         - '&f> Limite: &b{limit}'
         - ''
         - '&aSua sacola está no limite máximo.'
+    auto-sell:
+      material: 'GOLD_INGOT'
+      name: '&aAuto-Sell'
+      lore:
+        - '&7Venda automaticamente todos'
+        - '&7os seus peixes.'
+        - ''
+        - ' &fAtivado: &a{status}&f.'
+        - ''
+        - '&aClique para alternar'
+    auto-sell-permission:
+      material: 'GOLD_INGOT'
+      name: '&aAuto-Sell'
+      lore:
+        - '&7Venda automaticamente todos'
+        - '&7os seus peixes.'
+        - ''
+        - '&cVocê não tem permissão.'
+
 # Menu de comprar varas
 shop:
   name: '&8Evoluir vara'

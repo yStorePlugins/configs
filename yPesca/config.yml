@@ -79,6 +79,10 @@ classes-ordered: true
 # Ativar o pvp na área de pesca
 pvp: false
 
+# Delay do auto-sell
+# em segundos
+auto-sell-delay: 5
+
 # Sistema de npc
 npc:
   skin: 'Pitombaa'
