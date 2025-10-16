@@ -149,3 +149,5 @@ chat:
   world-protection: '&cVocê não pode fazer isso fora de terrenos.'
   border-viewer-on: '&aVisualizador de bordas ativado.'
   border-viewer-off: '&cVisualizador de bordas desativado.'
+  terrain-expand-smart: '&eDevido a terrenos próximos, seu terreno foi expandido para &6{size}&e de tamanho &7(ao invés de {requested_size})'
+  terrain-delete-all-world: '&aTodos os terrenos do mundo &c{world}&a foram deletados.'
