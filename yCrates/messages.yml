@@ -1,0 +1,60 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfiguração recarregada com sucesso.'
+  inv-full: '&cSeu inventário está cheio.'
+  help: |
+    &c&lERRO! &cComandos disponíveis:
+    &c-> /crate compactar
+    &c-> /crate descompactar
+    &c-> /crate verconteudo
+    &c-> /crate givecrate
+    &c-> /crate givekey
+    &c-> /crate keyall
+    &c-> /crate reload
+  crate-found: |
+    &cEsta crate não foi encontrada.
+    &7Disponíveis: {list}
+  crate-give: '&aVocê deu &7{amount}x {crate} &apara o jogador &7{player}&a.'
+  crate-received: '&aVocê recebeu &7{amount}x {crate}&a.'
+  crate-already: '&cAlguém já está abrindo a crate &7{crate}&c neste local.'
+  crate-malformed: '&cEsta crate não existe ou está mal configurada.'
+  crate-set: '&aCrate &7{crate} &asetada.'
+  crate-removed: '&aCrate &7{crate} &aremovida.'
+  crate-reward-collected: '&eItem recolhido com sucesso.'
+  crate-reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  key-give: '&aVocê deu &7{amount}x &akey(s) da crate &7{crate} &apara o jogador &7{player}&a.'
+  key-received: '&aVocê recebeu &7{amount}x &a key(s) da crate &7{crate}&a.'
+  key-give-all: '&aVocê deu &7{amount}x &akey(s) da crate &7{crate}&a para &7({players}) &ajogadores online.'
+  key-received-all: '<nl>&aTodos os jogadores receberam &7{amount}x &akey(s) da crate &7{crate}&a.<nl>'
+  key-holding: '&cVocê deve estar segurando uma key para abrir a crate &7{crate}&c.'
+  key-cant: '&cEsta key não abre a crate &7{crate}&c.'
+  decompress-holding: '&cVocê precisa estar segurando keys compactadas.'
+  decompress-found: '&cA crate vinculada nesta key não foi encontrada.'
+  decompress-min: '&cA sua key já está no mínimo possível.'
+  decompress: '&a{amount} Keys descompactadas.'
+  compress-holding: '&cVocê precisa estar segurando keys compactadas.'
+  compress-found: '&cA crate vinculada nesta key não foi encontrada.'
+  compress: '&a{amount} Keys compactadas.'
+  filter-added: '&aEste item foi adicionado ao filtro.'
+  filter-removed: '&aEste item foi removido do filtro.'
+  world-blacklisted: '&cVocê não pode coletar recompensas neste mundo.'
+  wait-collect: '&cAguarde parar recolher recompensas novamente.'
+  batch-opening: '&aAbrindo &f{amount}&a caixas em lote...'
+  batch-changed: '&cAbertura cancelada - key original removida/trocada.'
+  batch-interrupted: '&6Abertura interrompida! &aForam abertas &f{amount}&a caixas.'
+  batch-progress: '&7Progresso: &a{percentage}% &7({consumed}/{total}).'
+  batch-finalized: '&aFinalizou a abertura de &f{amount}&a crates.'

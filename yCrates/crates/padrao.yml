@@ -1,0 +1,131 @@
+# Criar uma cabeça animada (que fica rodando) no lugar de um bloco
+HeadAnimada: false
+
+HAOptions:
+  Velocidade: 4
+  Altura: -1.2
+  Particula:
+    Ativar: true
+    Particula: 'FLAME'
+
+Holograma:
+  # Esta opção serve para ajustar a altura do holograma
+  # caso a crate seja uma cabeça animada, recomendamos 4.3
+  Altura: 2.5
+  # Ajustar a altura do holograma de recompensa ( apenas se tiver ativado )
+  Altura recompensa: 0.5
+  # O texto que irá aparecer no holograma
+  Holograma:
+    - '&fCrate &bdiamante&f.'
+    - '&7Consiga itens raros ao abrí-la.'
+    - ''
+    - '&7Ver conteúdo: &fBotão esquerdo&7.'
+    - '&7Abrir crate: &fBotão direito com a chave&7.'
+    - ''
+    - ''
+    - '[item]DIAMOND_BLOCK' #use [item] para colocar um item
+
+# Este é o item que servirá para abrir a crate
+Key:
+  material: 'TRIPWIRE_HOOK'
+  glow: true
+  name: '&fChave da caixa &bdiamante&f.'
+  lore:
+    - '&7Esta chave abre a caixa &bdiamante&7,'
+    - '&7com ela, você consegue itens raros.'
+    - ''
+    - '&7Vá até a &f/warp crates&7 para abrir.'
+    - ''
+    - '&f Quantia: &b{amount}'
+    - ''
+
+# Este é o item que será dado para gerar a crate
+Item:
+  material: CHEST
+  glow: true
+  name: '&fCaixa &bdiamante&f.'
+  lore: ['&7Coloque-a no chão para gerar a crate.']
+
+# Os locais das caixas. Não altere nada aqui.
+Locais: [ ]
+
+# Permissão para poder abrir a crate. Deixe vazio para não usar.
+Permissao: ''
+
+# Nome da crate
+Display name: 'Diamante'
+
+# Ativar a animação do item subir para cima do bloco (delay de 4 segundos)
+# Funciona apenas na 1.8
+Animacao: false
+
+# Fireworks = Fogos de artifício
+# Explode = Explosão ao redor
+# Estas opções podem gerar um timings a mais.
+Fireworks: false
+Explode: false
+
+# Ao clicar com shift, irá abrir a crate de acordo com a quantia de keys na mão
+Shift tudo: true
+
+# Verificar se o inventário está cheio
+Verificar inv: true
+
+# Recompensas da crate
+Recompensas:
+  #
+  Reco1:
+    # Chance para conseguir a recompensa
+    Chance: 50.0
+    # Opção para não vir nada ao receber esta recompensa
+    Nada: false
+    # Mensagens que serão enviadas
+    # Broadcast envia para todos do servidor
+    Mensagens:
+      # Enviar a mensagem quando ativar no shift (uma para cada recompensa)
+      Shift: true
+      Actionbar:
+        Ativar: true
+        Broadcast: true
+        Msg: '&aO jogador &7{player} &aabriu uma caixa.'
+      Chat:
+        Ativar: true
+        Broadcast: false
+        Msg: ['&aVocê &7({player}) &aabriu uma caixa.']
+      Title: '&eVocê abriu<nl>&auma caixa!'
+    # Item que irá aparecer na pré-visualização
+    Display:
+      material: DIAMOND
+      glow: true
+      name: '&bDIAMANTES!'
+      amount: 64
+      lore: ['&7Chance: &f50%&7.']
+      lore-collect: [ '&aEsta pedra vale muito dinheiro!', '', ' &7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+    #
+    Recompensa:
+      # Ativar o give de itens
+      Usar itens: true
+      # Ativar o give de comandos
+      Usar comandos: true
+      # quantia padrão da placeholder {amount} no comando (valor base)
+      placeholder-amount: 1
+      # multiplicar a placeholder {amount} pela quantia de recompensas do mesmo tipo
+      multiply-placeholder: true
+      # Comandos a serem dados
+      Comandos: ['alerta {player} é bonito']
+      # Itens a serem dados
+      Itens:
+        #
+        Diamante:
+          material: DIAMOND
+          glow: true
+          name: '&bDIAMANTES!'
+          amount: 64
+
+
+
+
+
+
+
+
