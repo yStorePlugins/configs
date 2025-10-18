@@ -118,6 +118,10 @@ general:
   show-none-enchants: false
   # Expulsar o jogador da mina ao dar upgrades
   kick-on-upgrade: false
+  # Som para quando evoluir algum encantamento
+  evolute-sound: 'LEVEL_UP'
+  # Som para quando não conseguir evoluir algum encantamento
+  evolute-fail-sound: 'VILLAGER_HIT'
   # Materiais que irão ser reconhecidos na skin
   skin-materiais:
     - 'WOOD'
