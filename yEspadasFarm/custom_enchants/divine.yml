@@ -1,0 +1,32 @@
+# Máximo de divine que uma espada pode ter
+# deixe 0 para não ter máximo
+divine-maximum: 1500
+
+chance-per-level: 10.0
+
+# em segundos
+duration: 30
+
+# Multiplicador de drops (ySpawners)
+multiplier: 1.5
+
+# Slot no menu principal
+slot: 17
+
+title-activated: '&eDivine<nl>&eAtivado!'
+actionbar-activated: '&eDivine ativado! Duração: &7{duration}&e.'
+actionbar-duration: '&eDivine ativado! Duração: &7{duration}&e.'
+
+give-book: '&bVocê deu &71x Livro de Divine {divine}&b para o jogador &f{player}.'
+received-book: '&bVocê recebeu &71x Livro de Divine {divine}&b.'
+maximum: '&cVocê não pode encantar esta espada, pois ela já está no máximo, com {divine} em Divine.'
+
+# Item da sharpness ativável
+usable-item:
+  material: ENCHANTED_BOOK
+  name: '&b+{divine} Divine'
+  lore:
+    - ''
+    - '&fDivine: &b{divine}'
+    - ''
+    - '&7Clique em uma espada para ativar.'

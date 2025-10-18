@@ -1,0 +1,21 @@
+# Máximo de sharpness que uma espada pode ter
+# essencial para o sistema de stack sharpness looting usando o item
+# deixe 0 para não ter máximo
+sharpness-maximum: 1500
+
+# Slot no menu principal
+slot: 16
+
+give-book: '&bVocê deu &71x Livro de Sharpness {sharpness}&b para o jogador &f{player}.'
+received-book: '&bVocê recebeu &71x Livro de Sharpness {sharpness}&b.'
+maximum: '&cVocê não pode encantar esta espada, pois ela já está no máximo, com {sharpness} em Sharpness.'
+
+# Item da sharpness ativável
+usable-item:
+  material: ENCHANTED_BOOK
+  name: '&b+{sharpness} Sharpness'
+  lore:
+    - ''
+    - '&fSharpness: &b{sharpness}'
+    - ''
+    - '&7Clique em uma espada para ativar.'

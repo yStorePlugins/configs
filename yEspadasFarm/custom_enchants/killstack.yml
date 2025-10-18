@@ -1,0 +1,21 @@
+# Máximo de kill-stack que uma espada pode ter
+# deixe 0 para não ter máximo
+# (ySpawners)
+kill-stack-maximum: 5
+
+# Slot no menu principal
+slot: 18
+
+give-book: '&bVocê deu &71x Livro de Kill-Stack {killstack}&b para o jogador &f{player}.'
+received-book: '&bVocê recebeu &71x Livro de Kill-Stack {killstack}&b.'
+maximum: '&cVocê não pode encantar esta espada, pois ela já está no máximo, com {killstack} em Kill-Stack.'
+
+# Item da sharpness ativável
+usable-item:
+  material: ENCHANTED_BOOK
+  name: '&b+{killstack} Kill-Stack'
+  lore:
+    - ''
+    - '&fKill-Stack: &b{killstack}'
+    - ''
+    - '&7Clique em uma espada para ativar.'

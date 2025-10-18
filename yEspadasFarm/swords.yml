@@ -1,0 +1,75 @@
+#   __                       _
+#  / _\_      _____  _ __ __| |___
+#  \ \\ \ /\ / / _ \| '__/ _` / __|
+#  _\ \\ V  V / (_) | | | (_| \__ \
+#  \__/ \_/\_/ \___/|_|  \__,_|___/
+#
+# Espadas de pilhagem disponíveis
+
+swords:
+  basic:
+    priority: 1
+    # Essa é a última looting disponível?
+    latest: true
+    # Pilhagem necessária para comprar essa
+    looting-needed: 0
+    # Pilhagem da espada
+    looting: 1000
+    # Permissão para poder comprar essa espada
+    permission: ''
+    # Display nas mensagens
+    display: '&aEspada de Farm'
+    # Tornar a espada inquebrável
+    unbreakable: true
+    # Preços para compra
+    prices:
+      cost1:
+        type: 'PlayerPoints'
+        price: 10.0
+        display: 'cash'
+    # Configuração da espada no menu
+    menu:
+      buy-item-cant:
+        material: DIAMOND_SWORD
+        name: '&aEspada de Farm &7[{looting}&7]'
+        lore:
+          - '&7Inquebrável ∞'
+          - '&7Pilhagem {looting}'
+          - '&7Sortudo {lucky}'
+          - '&7Sortudo B.A {lucky_bossarena}'
+          - '&7Reco Duplo {double_reward}'
+          - ''
+          - '&f Preço: &6{PlayerPoints} cash'
+          - '&f Pilhagem necessária: &7Nenhuma!'
+          - ''
+          - '&cRequisitos insuficientes para compra.'
+          - ''
+      buy-item-can:
+        material: DIAMOND_SWORD
+        name: '&aEspada de Farm &7[{looting}&7]'
+        lore:
+          - '&7Inquebrável ∞'
+          - '&7Pilhagem {looting}'
+          - '&7Sortudo {lucky}'
+          - '&7Sortudo B.A {lucky_bossarena}'
+          - '&7Reco Duplo {double_reward}'
+          - ''
+          - '&f Preço: &6{PlayerPoints} cash'
+          - '&f Pilhagem necessária: &7Nenhuma!'
+          - ''
+          - '&aClique para comprar.'
+          - ''
+    # Configuração da espada
+    item:
+      material: DIAMOND_SWORD
+      name: '&aEspada de Farm &7[{looting}&7]'
+      glow: true
+      lore:
+        - '&7Inquebrável ∞'
+        - '&7Afiação {sharpness}'
+        - '&7Pilhagem {looting}'
+        - '&7Sortudo {lucky}'
+        - '&7Sortudo B.A {lucky_bossarena}'
+        - '&7Reco Duplo {double_reward}'
+      enchants:
+        - 'DAMAGE_ALL:35'

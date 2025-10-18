@@ -1,0 +1,156 @@
+# Aumenta chance nas recompensas do ySpawners
+lucky:
+  display: 'Sortudo'
+  default: 0
+  maximum: -1
+  bonus-per-level: 10.0 # em porcentagem
+  prices-default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  prices-per-level:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  displays: # Item que aparecerá no menu de evolução
+    can: # quando puder evoluir
+      material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      name: '&aSortudo'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    cant: # quando não puder evoluir
+      material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      name: '&aSortudo'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem blocos ou nível suficientes.'
+    maximum: # quando já estiver no máximo
+      material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      name: '&aSortudo'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+lucky_bossarena:
+  display: 'Sortudo B.A'
+  default: 0
+  maximum: -1
+  bonus-per-level: 10.0 # em porcentagem
+  prices-default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  prices-per-level:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  displays: # Item que aparecerá no menu de evolução
+    can: # quando puder evoluir
+      material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      name: '&aSortudo B.A'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    cant: # quando não puder evoluir
+      material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      name: '&aSortudo B.A'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem blocos ou nível suficientes.'
+    maximum: # quando já estiver no máximo
+      material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      name: '&aSortudo B.A'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7tenha mais sorte para ganhar recompensas.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'
+
+double_reward:
+  display: 'Reco Duplo'
+  default: 0
+  maximum: -1
+  bonus-per-level: 10.0 # em porcentagem
+  prices-default:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  prices-per-level:
+    price1:
+      provider: 'money'
+      price: 10000.0
+  displays: # Item que aparecerá no menu de evolução
+    can: # quando puder evoluir
+      material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      name: '&aReco Duplo'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe recompensas em dobro.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&aBotão &fesquerdo &apara evoluir'
+    cant: # quando não puder evoluir
+      material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      name: '&aReco Duplo'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe recompensas em dobro.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&f > Custo: &a{money} coins&f.'
+        - ''
+        - '&cVocê não tem blocos ou nível suficientes.'
+    maximum: # quando já estiver no máximo
+      material: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
+      name: '&aReco Duplo'
+      lore:
+        - '&7Este encantamento permite que você'
+        - '&7ganhe recompensas em dobro.'
+        - ''
+        - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+        - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+        - ''
+        - '&cVocê já está no máximo.'

@@ -1,0 +1,38 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  number: '&cO argumento não é um número.'
+  list: |
+    &cEspada não encontrada
+    &7Disponíveis: {list}
+  help: |
+    <nl>
+    &a/swords &8- &7Abre o menu principal.
+    &a/sword give &8- &7Dar uma espada para um jogador.
+    &a/sword givebook &8- &7Dar um item ativável com looting para um jogador.
+    <nl>
+  give: '&bVocê deu &71x {sword}&b para o jogador &f{player}.'
+  received: '&bVocê recebeu &71x {sword}&b.'
+  no-has-looting: '&cVocê não possui a &aEspada de Farm&7[{looting}] &cno inventário.'
+  no-has-permission: '&cVocê não possui permissão para comprar esta espada.'
+  no-has: '&cVocê não possui &f{value} {type}&c.'
+  bought: '&bVocê comprou &71x {sword}&b.'
+  give-book: '&bVocê deu &71x Livro de Pilhagem {looting}&b para o jogador &f{player}.'
+  received-book: '&bVocê recebeu &71x Livro de Pilhagem {looting}&b.'
+  maximum: '&cVocê não pode encantar esta espada, pois ela já está no máximo, com {looting} em pilhagem.'
+  latest: '&cVocê não pode encantar esta espada, pois ela não é a última disponível para compra.'
+  enchanted: '&aVocê encantou sua espada de farm.'
+  attack: '&cVocê não pode bater em players com essa espada.'
+  converted: '&bVocê compactou todos seus livros em 1.'
+  need-sword: '&cVocê precisa de uma espada-farm para atacar este mob.'
+  holding: '&cVocê precisa estar segurando sua espada-farm.'

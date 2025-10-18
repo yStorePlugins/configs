@@ -1,0 +1,39 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Menu principal
+main:
+  name: '&8Espadas'
+  size: 27
+  items:
+    sword-slot: 14
+    sortudo-slot: 15
+    sortudo-ba-slot: 16
+    double-reward-slot: 17
+    sword-no-has:
+      material: 'BARRIER'
+      name: '&eNão disponível'
+      glow: true
+      lore: ['', '&cVocê já possui a última espada', '&cdisponível para compra.', '']
+  facing:
+    info:
+      slot: 12
+      material: BOOK
+      name: '&aInformações'
+      lore:
+        - '&7As espadas com pilhagem'
+        - '&7no servidor são muito'
+        - '&7importantes! Com elas,'
+        - '&7você recebe mais drops'
+        - '&7matando monstros.'
+        - ''
+        - ' &fPara ter níveis infinitos'
+        - ' &fde pilhagem, você deve ter'
+        - ' &fa espada mais avançada deste'
+        - ' &fmenu. Compre-as ao lado!'
+        - ''

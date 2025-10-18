@@ -1,0 +1,68 @@
+#         _____                     _           _____
+#  _   _| ____|___ _ __   __ _  __| | __ _ ___|  ___|_ _ _ __ _ __ ___
+# | | | |  _| / __| '_ \ / _` |/ _` |/ _` / __| |_ / _` | '__| '_ ` _ \
+# | |_| | |___\__ \ |_) | (_| | (_| | (_| \__ \  _| (_| | |  | | | | | |
+#  \__, |_____|___/ .__/ \__,_|\__,_|\__,_|___/_|  \__,_|_|  |_| |_| |_|
+#  |___/          |_|
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Sistemas gerais do plugin
+general:
+  # Máximo de looting que uma espada pode ter
+  # essencial para o sistema de stack de looting usando o item
+  # deixe 0 para não ter máximo
+  looting-maximum: 1500
+  # Permitir que a espada possa ser usada para atacar jogadores
+  attack-players: false
+  # Abrir menu de evolução ao interagir com a espada (Shift+Botão direito)
+  interact-menu: true
+  # Mundos que a matadora não irá funcionar
+  world-blacklist: []
+  # Item da looting ativável
+  usable-item:
+    material: ENCHANTED_BOOK
+    name: '&b+{looting} Pilhagem'
+    lore:
+      - ''
+      - '&fPilhagem: &b{looting}'
+      - ''
+      - '&7Clique em uma espada para ativar.'
+
+# Sistema de bloquear matar mobs sem a espada-farm
+kill-normal:
+  # Ativar o sistema
+  enable: false
+  # Lista de metadatas que o sistema não vai funcionar
+  blacklist-metadata: []
+
+# Sistema de formatos de money e quantia
+format:
+  type: 'LETTER' # Tipos: LETTER - NUMBER
+  max-decimals: 4
+  formats:
+    - ''
+    - ''
+    - 'K'
+    - 'M'
+    - 'B'
+    - 'T'
+    - 'Q'
+    - 'QQ'
+    - 'S'
+    - 'SS'
+    - 'O'
+    - 'N'
+    - 'D'
