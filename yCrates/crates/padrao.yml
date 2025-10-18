@@ -8,6 +8,19 @@ HAOptions:
     Ativar: true
     Particula: 'FLAME'
 
+# Sistema de bloco de vidro
+glass:
+  # A crate vai gerar um vidro com uma cabeça dentro?
+  enabled: false
+  # material do vidro
+  material: 'STAINED_GLASS'
+  # material da cabeça dentro do vidro
+  head: 'CHEST'
+  # Data da cor do vidro
+  data: 11
+  # Ajuste a cabeça dentro do vidro
+  off-set: -1.2
+
 Holograma:
   # Esta opção serve para ajustar a altura do holograma
   # caso a crate seja uma cabeça animada, recomendamos 4.3
