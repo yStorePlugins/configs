@@ -1,0 +1,15 @@
+# Comandos e aliases do plugin
+Comando:
+  GiveItem:
+    Comando: 'giveitemcomando'
+    Aliases: [ gic, giveitemcomandos, givecustomitem, giveitemcustom ]
+
+# Mensagens do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isto.'
+  Nao e numero: '&cO argumento não é um número.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Inv cheio: '&cO seu inventário está cheio.'
+  Deu: '&aVocê deu &7{quantia}x&a {item}&a para o jogador &7{player}&a.'
+  Recebeu: '&aVocê recebeu &7{quantia}x&a {item}&a do jogador &7{player}&a.'
+  Delay: '&cVocê precisa aguardar {time} para usar este item novamente.'
