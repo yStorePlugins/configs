@@ -13,6 +13,10 @@ Items:
     # Delay para ativar o item novamente
     # em segundos
     Delay: 60
+    # Abrir um menu de confirmação ao ativar o item
+    confirm: false
+    # Mundos que não poderá consumir este item
+    world-blacklist: []
     Necessario:
       # Permissão para poder usar o item
       # Deixe Permissao: '' para não usar
@@ -47,8 +51,10 @@ Items:
       Bloco: '&cVocê deve clicar numa pedra.'
       # Será enviada caso não tenha money
       Money: '&cVocê precisa ter 10 coins.'
-      # Será enviada caso não tenha tempo sucifiente
+      # Será enviada caso não tenha tempo suficiente
       Tempo: '&cVocê precisa ter jogador por 10 segundos.'
+      # Será enviada caso não possa ativar o item no mundo
+      Mundo: '&cVocê não pode usar esse item nesse mundo.'
       # Deixe Chat: '' para não usar
       Chat: |
         '&bVocê ativou uma &5Pedra misteriosa&b, descubra seu segredo!'

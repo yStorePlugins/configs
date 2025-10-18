@@ -1,0 +1,23 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Menu de confirmação
+confirm:
+  name: '&8Confirmação'
+  size: 27
+  items:
+    confirm-slot: 11
+    cancel-slot: 15
+    confirm:
+      material: 'e9e4bdcf172d5dc77c2bd4e37ad985399a9f2cdebf72463929ea4b666ef6f80'
+      name: '&aConfirmar'
+      lore: [ '&7Clique para usar esse item.' ]
+    cancel:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&cCancelar'
+      lore: [ '&7Clique para cancelar.' ]
