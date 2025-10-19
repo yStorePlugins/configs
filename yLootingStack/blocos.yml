@@ -1,0 +1,6 @@
+Blocos:
+   bloco1:
+      ID: 1
+      Data: 0
+      Chance: 100.0
+      Quantia: 100 #quantia de looting

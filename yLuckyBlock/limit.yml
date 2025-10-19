@@ -1,0 +1,32 @@
+# Quantia de limite que o jogador ganhar ao se registrar.
+default: 1
+
+# Máximo de limite que o jogador pode ter.
+# Deixe 0 para ser infinito.
+maximum: 100
+
+# Delay para compactar
+# em segundos
+delay: 5
+
+give: '&aVocê deu &7{amount}x &6&lLimite Lucky Block&a para o jogador &7{player}&a.'
+received: '&aVocê recebeu &7{amount}x &6&lLimite Lucky Bloc&a.'
+converted: '&cVocê compactou todos seus limites em 1.'
+activated: '&aVocê ativou &e{amount} &ade limites.'
+max: '&cVocê já chegou no máximo.'
+converted-lb: '&cVocê compactou suas lucky-blocks.'
+delay-msg: '&cVocê deve aguardar {time}.'
+
+# Item do limite que será ativável
+item:
+  material: '667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+  name: '&bLimite de LukcyBlock'
+  lore:
+    - ''
+    - '&fQuantia: &a{amount}'
+    - ''
+    - '&7Clique com botão direito para ativar.'
+    - ''
+    - '&7Clique com shift + botão direito para compactar'
+    - '&7todos os seus limites no inventário em 1 só.'
+    - ''

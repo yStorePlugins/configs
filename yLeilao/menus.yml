@@ -1,0 +1,357 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s
+menu-updater-time: 200
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Leilão'
+  size: 27
+  items:
+    center-slot: 10
+    bids-slot: 12
+    auctions-slot: 14
+    courier-slot: 16
+    center:
+      material: 'GOLD_BLOCK'
+      name: '&eCentral de leilões'
+      lore:
+        - '&7Aqui você pode encontrar os'
+        - '&7itens que estão sendo leiloados'
+        - '&7pelos jogadores do servidor.'
+        - ''
+        - '&7Caso você consiga ter maior'
+        - '&7lance até o fim do leilão de um'
+        - '&7item, ele será seu.'
+        - ''
+        - '&eClique para ver os leilões.'
+    bids:
+      material: 'GOLDEN_CARROT'
+      name: '&eMeus lances'
+      lore:
+        - '&7Você possui &f{amount}'
+        - '&7lance(s) no momento. :)'
+        - ''
+        - '&eClique para ver seus lances.'
+    bids-none:
+      material: 'GOLDEN_CARROT'
+      name: '&eMeus lances'
+      lore:
+        - '&7Você não possui nenhum'
+        - '&7lance no momento. :('
+    auctions:
+      material: 'GOLD_BARDING'
+      name: '&eMeus leilões'
+      lore:
+        - '&7Anuncie seus itens na casa de'
+        - '&7leilões para que outros jogadores'
+        - '&7possam comprá-los.'
+        - ''
+        - '&eClique para leiloar.'
+    courier:
+      material: 'CHEST'
+      name: '&eMeu correio'
+      lore:
+        - '&7Colete aqui suas compras, leilões'
+        - '&7cancelados ou expirados e valores'
+        - '&7de lances não efetivados.'
+        - ''
+        - '&eClique para acessar.'
+
+# Menu de correio
+courier:
+  name: '&8Leilão'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 47
+  #
+  empty-slot: 22
+  currencies-slot: 49
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&cVazio...'
+      lore: [ '&7Você não tem nenhum lance ativo!' ]
+    currencies-none:
+      material: 'GOLD_INGOT'
+      name: '&cValores'
+      lore: [ '&7Você não tem nenhum valor para coletar!' ]
+    currencies:
+      material: 'GOLD_INGOT'
+      name: '&eValores'
+      lore:
+        - '&r'
+        - ' &eValores a receber:'
+        - ' {format}'
+        - ''
+        - '&eClique para coletar os valores.'
+  formats:
+    currency: ' &7> &f{amount} {provider_abbreviated}'
+
+# Menu de lances
+bids:
+  name: '&8Leilão'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  #
+  empty-slot: 22
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&cVazio...'
+      lore: [ '&7Você não tem nenhum lance ativo!' ]
+  lore:
+    - '&f'
+    - ' &fLeiloador: &7{owner}'
+    - ''
+    - ' {format}'
+    - ''
+    - '&8> &fTermina em: &7{time}'
+    - '&8> &fSeu lance: &6{amount} {provider_abbreviated}'
+    - ''
+    - '&eClique para aumentar o seu lance.'
+  formats:
+    bid: ' &7> {pos}º {player}: &f{amount} {provider_abbreviated}'
+    none: ' &cNenhum lance até o momento'
+    has: ' &eMaiores lances:<nl>{formats}'
+
+# Menu de leilões
+auctions:
+  name: '&8Leilão'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  #
+  empty-slot: 22
+  filter-slot: 50
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&cVazio...'
+      lore: [ '&7Não há nenhum leilão ocorrendo!' ]
+    filter:
+      material: HOPPER
+      name: '&aFiltro'
+  lore:
+    - '&r'
+    - ' &fLeiloador: &7{owner}'
+    - ''
+    - ' {format}'
+    - ''
+    - '&8> &fTermina em: &7{time}'
+    - '&8> &fLance inicial: &6{amount} {provider_abbreviated}'
+    - ''
+    - '&eClique para dar um lance.'
+  lore-has:
+    - '&r'
+    - ' &fLeiloador: &7{owner}'
+    - ''
+    - ' {format}'
+    - ''
+    - '&8> &fTermina em: &7{time}'
+    - '&8> &fLance inicial: &6{amount} {provider_abbreviated}'
+    - ''
+    - '&eClique para aumentar seu lance.'
+  formats:
+    bid: ' &7> {pos}º {player}: &f{amount} {provider_abbreviated}'
+    none: ' &cNenhum lance até o momento'
+    has: ' &eMaiores lances:<nl>{formats}'
+  filter:
+    types:
+      oldest: 'Menor tempo restante'
+      newest: 'Maior tempo restante'
+    format:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+
+# Menu de lances
+my-auctions:
+  name: '&8Leilão'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 27
+  #
+  empty-slot: 13
+  create-slot: 31
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&cVazio...'
+      lore: [ '&7Você não tem nenhum leilão ativo!' ]
+    create:
+      material: '2ddcfe7d91cd80b364cc060160a0699386d096e0e5adf98e8e45e0a198631d8f'
+      name: '&aIniciar um leilão'
+      lore: [ '&7Faça um leilão do seu item para', '&7ver quem paga mais por ele.', '', '&aClique para iniciar.' ]
+  lore:
+    - '&f'
+    - '{format}'
+    - ''
+    - '&8> &fTermina em: &7{time}'
+    - '&8> &fLance inicial: &6{amount} {provider_abbreviated}'
+    - ''
+    - '&eClique para remover o leilão.'
+  formats:
+    bid: ' &7> {pos}º {player}: &f{amount} {provider_abbreviated}'
+    none: ' &cNenhum lance até o momento'
+    has: ' &eMaiores lances:<nl>{formats}'
+
+# Menu de criação
+create:
+  name: '&8Leilão'
+  size: 45
+  back-slot: 0
+  items:
+    item-slot: 13
+    confirm-slot: 28
+    provider-slot: 30
+    start-bid-slot: 32
+    duration-slot: 34
+    item:
+      material: 'BARRIER'
+      name: '&eClique em algum item do seu inventário'
+      lore:
+        - '&7Selecione algum item para leiloar.'
+    confirm:
+      material: 'STAINED_CLAY:5'
+      name: '&aIniciar leilão'
+      lore:
+        - '&7Esse item será leiloado para'
+        - '&7outros jogadores comprarem.'
+        - ''
+        - '&8> &fItem: &7{item}'
+        - '&8> &fDuração: &6{time}'
+        - '&8> &fLance inicial: &6{amount} {provider_abbreviated}'
+        - ''
+    confirm-cant:
+      material: 'STAINED_CLAY:14'
+      name: '&cIniciar leilão'
+      lore:
+        - '&7Selecione um item do seu inventário'
+        - '&7para iniciar este leilão.'
+    provider:
+      material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+      name: '&aMoeda do leilão'
+      lore:
+        - '&7Moeda que será utilizada no leilão'
+        - '&7deste item.'
+        - ''
+        - '&7Atual: &fNenhuma'
+        - ''
+        - '&aClique para alterar a moeda'
+    start-bid:
+      material: 'GOLD_INGOT'
+      name: '&6Lance inicial'
+      lore:
+        - '&7Defina o valor mínimo que um jogador'
+        - '&7pode oferecer pelo seu item.'
+        - ''
+        - '&7Lance inicial: &f{amount} {provider_abbreviated}'
+        - ''
+        - '&eClique para modificar.'
+    duration:
+      material: 'WATCH'
+      name: '&aDuração customizada'
+      lore:
+        - '&7Defina um tempo específico'
+        - '&7para a duração do seu leilão.'
+        - ''
+        - '&fDuração: &6{time}'
+        - ''
+        - '&eClique para modificar.'
+
+# Menu de seleção de economias
+providers:
+  name: '&8Selecionar economia'
+  size: 27
+  previous: 9
+  next: 17
+  back: 18
+  slots: [ 11, 12, 13, 14, 15 ]
+
+# Menu de seleção de duração
+durations:
+  name: '&8Selecionar duração'
+  size: 36
+  previous: 9
+  next: 17
+  back: 27
+  slots: [ 11, 12, 13, 14, 15 ]
+  items:
+    select-slot: 31
+    select:
+      material: 'WATCH'
+      name: '&aDuração customizada'
+      lore:
+        - '&7Defina um tempo específico'
+        - '&7para a duração do seu leilão.'
+        - ''
+        - '&eClique para definir.'
+    15min:
+      material: 'PAPER'
+      name: '&a15m'
+      nbt-tag: [ 'yLeilao-Duration=>900' ]
+    30min:
+      material: 'PAPER'
+      name: '&a30m'
+      nbt-tag: [ 'yLeilao-Duration=>1800' ]
+    1hour:
+      material: 'PAPER'
+      name: '&a1h'
+      nbt-tag: [ 'yLeilao-Duration=>3600' ]
+    2hour:
+      material: 'PAPER'
+      name: '&a2h'
+      nbt-tag: [ 'yLeilao-Duration=>7200' ]
+    3hour:
+      material: 'PAPER'
+      name: '&a3h'
+      nbt-tag: [ 'yLeilao-Duration=>10800' ]
+    4hour:
+      material: 'PAPER'
+      name: '&a4h'
+      nbt-tag: [ 'yLeilao-Duration=>14400' ]
+    5hour:
+      material: 'PAPER'
+      name: '&a5h'
+      nbt-tag: [ 'yLeilao-Duration=>18000' ]
+    6hour:
+      material: 'PAPER'
+      name: '&a6h'
+      nbt-tag: [ 'yLeilao-Duration=>21600' ]

@@ -1,0 +1,63 @@
+# *** ALERTA
+# ESTE PLUGIN REQUER A OPÇÃO "packet-events" ATIVADA NO SEU yPlugins
+# ***
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Permitir colocar luckyblock apenas nos plots
+  plot: false
+  # Abridor gastar 1 uso por luckyblock (mesmo que esta tenha ex: 50 tentativas)
+  opener-one-decrease: false
+  # Abrir automaticamente a lucky-block (bloco) ao colocar no chão
+  # permissão necessária: yluckyblock.open.bypass
+  # deixe "false" para não usar
+  open-automatic-bypass: false
+  # Quantia máxima que irá abrir automaticamente
+  open-automatic-amount: 1
+
+# Abridor de lucky blocks.
+opener:
+  material: 'LEASH'
+  name: '&6&lOPEN LUCKY BLOCK'
+  lore:
+    - '&fUsos restantes: &e{uses}'
+
+# Configuração da barra de progresso
+progress-bar:
+  amount: 10
+  symbol: ':'
+  color-yes: '&a'
+  color-no: '&7'

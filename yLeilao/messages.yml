@@ -1,0 +1,78 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/leilao &8- &7Abre o menu principal.
+    &a/leilao setnpc &8- &7Setar o NPC.
+    &a/leilao delnpc &8- &7Deletar o NPC.
+
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  provider-permission: '&cVocê não tem permissão para leiloar com esta economia.'
+  start-bid: '&aLance inicial alterado para &f{amount}&a.'
+  start-bid-digit: |
+
+    &aDigite o preço mínimo que você quer leiloar o item.
+    &7para cancelar digite &ncancelar&7.
+
+  time-digit: |
+
+    &aDigite o tempo que você deseja.
+    &7para cancelar digite &ncancelar&7.
+
+  bid-digit: |
+
+    &aDigite o lance que você quer dar no item.
+    &7para cancelar digite &ncancelar&7.
+
+  bid-high: |
+
+    &cOPS! Parece que alguém, deu um lance maior que o seu em um leilão que você estava participando, porém foi adicionado &f{time}&c no leilão para você tentar recuperar seu lugar.
+
+  auction-cancelled: |
+
+    &cOPS! Um leilão no qual você participava foi cancelado pelo leiloador, o seu lance foi devolvido.
+
+  auction-winner: |
+
+    &cOPS! Um leilão no qual você participava foi arrematado pelo jogador &f{player}&c.
+
+  auction-win: |
+
+    &aOPA! Um leilão no qual você participava foi arrematado.
+
+  auction-new: |
+
+    &6&l[Leilão]&e O jogador &f{player}&e adicionou um novo item no leilão.
+
+  max-auctions: '&cA casa de leilões já está com seu limite máximo simultâneo ({max}).'
+  player-max-auctions: '&cVocê já está com seu limite máximo simultâneo ({max}).'
+  start-auction: '&aVocê iniciou um novo leilão.'
+  cancel-auction: '&aVocê cancelou o leilão.'
+  no-balance: '&cVocê não tem {amount} {provider_abbreviated} suficiente para isto. Disponível: {provider_balance}&c.'
+  bid-minimum: '&cO seu lance deve ser no mínimo {amount} {provider_abbreviated}.'
+  bid-updated: '&aO seu lance foi atualizado para {amount} {provider_abbreviated}.'
+  bid-success: '&aO seu lance foi dado em {amount} {provider_abbreviated}.'
+  inv-full: '&cO seu inventário está cheio.'
+  courier-collected-item: '&aVocê coletou um item do seu correio do leilão.'
+  courier-collected-currencies: '&aVocê coletou os valores a receber.'
+  cant-auction: '&cEste item não pode ser leiloado.'
+  currency-found: '&cConfigure a moeda do leilão.'
+  time-found: '&cVocê precisa definir um tempo entre {min} e {max} para iniciar um leilão.'
+  npc-set: '&aNPC setado com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'

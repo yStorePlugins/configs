@@ -1,0 +1,51 @@
+name: '&eLucky Block &7(Básica)'
+
+animation:
+  icon: '238c0d2f1ec26754dca3c7cdae31f1f164883d453e688643da047568e7fa5cc9'
+  # Tempo total de animação
+  # em segundos
+  time: 5
+  # Velocidade padrão
+  stage-default: 4
+  # Tempo (em segundos), velocidade da animação
+  stages:
+    - '2,20'
+    - '3,40'
+  # Tempo máximo que ficará subindo
+  # em segundos
+  y-max-time: 2
+  # Premiar após quanto tempo
+  reward-time: 6
+  # Remover o holograma após quanto tempo
+  delete-time: 8
+  # Configuração da partícula
+  particle:
+    # Tempo mínimo para aparecer partículas
+    min-time: 3
+    # Tipo da partícula
+    type: 'happy_villager'
+  # Configuração do holograma
+  hologram:
+    time:
+      off-set: 3.0
+      lines: ['&aSorteando em {time}...']
+    reward:
+      off-set: 3.0
+      lines: ['{reward}', '[item]{reward_preview}']
+
+# Item da lucky block
+# use apenas blocos
+item:
+  material: '238c0d2f1ec26754dca3c7cdae31f1f164883d453e688643da047568e7fa5cc9'
+  name: '&eLucky Block &7(Básica)'
+  lore:
+    - '&7Nível: &fBásica'
+    - '&7* você irá ganhar itens comuns e raros'
+    - ''
+    - '&aColoque no chão para ativar'
+
+# chance,recompensa-raridade
+# a raridade, caso não tenha, deixe: none
+rewards:
+  - '50.00,reward1-none'
+  - '50.00,reward2-rare'

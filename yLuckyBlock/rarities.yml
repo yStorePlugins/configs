@@ -1,0 +1,9 @@
+rarities:
+  rare:
+    display: '&6Raro'
+    strike: false # pode causar lag
+    bat: false # pode causar lag
+    actionbar: '&e[Lucky Block] &fO jogador &e{player}&f encontrou uma recompensa rara na LuckyBlock&f.'
+    title: ''
+    chat: |
+      &e[Lucky Block] &fO jogador &e{player}&f encontrou uma recompensa rara na LuckyBlock&f.

@@ -1,0 +1,56 @@
+name: '&eLucky Block &7(Básica)'
+
+# Permissão para poder por a luckyblock
+permission: ''
+
+# Cabeça dentro do vidro
+head: '238c0d2f1ec26754dca3c7cdae31f1f164883d453e688643da047568e7fa5cc9'
+
+title: ''
+chat: ''
+actionbar: '&6&lLUCKY BLOCK &8{progressbar} &7({current_uses}/{total_uses})'
+
+# Ativar a partícula de explosão ao abrir a luckyblock
+particle-effect: true
+
+# Precisa de um abridor para abrir
+# Irá desativar a abertura ao quebrar
+opener-need: false
+
+animation:
+  enabled: true
+  # Velocidade padrão
+  stage-default: 4
+  # Tempo máximo que ficará subindo
+  # em segundos
+  y-max-time: 1.5
+
+# Item da lucky block
+# use apenas blocos
+item:
+  material: '238c0d2f1ec26754dca3c7cdae31f1f164883d453e688643da047568e7fa5cc9'
+  name: '&eLucky Block &7(Básica)'
+  lore:
+    - '&7Nível: &fBásica'
+    - '&7* você irá ganhar itens comuns e raros'
+    - ''
+    - '&f Usos: &7{total_uses}'
+    - ''
+    - '&aColoque no chão para ativar'
+
+# Sistema de bloco de vidro
+glass:
+  # O spawner vai gerar um vidro com uma cabeça dentro?
+  enabled: true
+  # material do vidro
+  material: 'STAINED_GLASS'
+  # Data da cor do vidro
+  data: 11
+  # Ajuste a cabeça dentro do vidro
+  off-set: -1.2
+
+# chance,recompensa-raridade
+# a raridade, caso não tenha, deixe: none
+rewards:
+  - '50.00,reward1-none'
+  - '50.00,reward2-rare'

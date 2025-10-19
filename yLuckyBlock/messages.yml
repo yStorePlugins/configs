@@ -1,0 +1,53 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aLucky-Block comandos:
+
+    &a> /luckyblock giveopener <player <usos> <quantia>
+    &a> /luckyblock giveanimated <player> <luckyblock> <quantia>
+    &a> /luckyblock give <player> <luckyblock> <usos> <quantia>
+    &a> /luckyblock reload
+
+  animated-luckyblock-give: '&aVocê deu &7{amount}x {luckyblock}&a para o jogador &7{player}&a.'
+  animated-luckyblock-received: '&aVocê recebeu &7{amount}x {luckyblock}&a.'
+  animated-luckyblock-list: |
+    &cLuckyBlock Animada não encontrada.
+    &cLuckyBlocks Animadas disponíveis: &f{list}
+  luckyblock-give: '&aVocê deu &7{amount}x {luckyblock} &7({uses} usos)&a para o jogador &7{player}&a.'
+  luckyblock-received: '&aVocê recebeu &7{amount}x {luckyblock} &7({uses} usos)&a.'
+  luckyblock-list: |
+    &cLuckyBlock não encontrada.
+    &cLuckyBlocks disponíveis: &f{list}
+  plot-permission: '&cVocê não tem permissão neste terreno.'
+  perm-luckyblock: '&cVocê não tem permissão para colocar este tipo de luckyblock.'
+  placed: '&a{amount}x {luckyblock} &acolocada(s).'
+  already: '&cVocê já possui uma luckyblock colocada.'
+  just-owner: '&cSomente o dono da luckyblock pode realizar esta ação.'
+  opener-give: '&aVocê deu &7{amount}x &6&lOPEN LUCKY BLOCK &7({uses} usos)&a para o jogador &7{player}&a.'
+  opener-received: '&aVocê recebeu &7{amount}x &6&lOPEN LUCKY BLOCK &7({uses} usos)&a.'
+  animated-luckyblock-spawn: '&aVocê spawnou &7{amount}x {luckyblock}&a na localização do jogador &7{player}&a.'
+  opener-need: '&cVocê precisa de um abridor para fazer isso.'
+  all-luckyblock-list: |
+    &r
+    &cLuckyBlock não encontrada.
+    &r
+    &cLuckyBlocks disponíveis: &f{list}
+    &r
+    &cLuckyBlocks (animadas) disponíveis: &f{list_animated}
+    &r

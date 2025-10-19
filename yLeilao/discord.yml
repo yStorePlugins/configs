@@ -1,0 +1,27 @@
+options:
+  url: ''
+  username: 'yLeilao'
+
+embeds:
+  new_item:
+    title: ':mailbox: Item anunciado!'
+    thumbnail: ''
+    color: '#fff'
+    content: ''
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      player:
+        inline: false
+        header: 'Player'
+        content: '```{player}```'
+      item:
+        inline: false
+        header: 'Item'
+        content: '```{item}```'
+      price:
+        inline: false
+        header: 'Preço'
+        content: '```{amount} {provider}```'

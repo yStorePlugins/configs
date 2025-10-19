@@ -1,0 +1,5 @@
+Mobs:
+   mob1:
+      Entidade: 'ZOMBIE'
+      Chance: 100.0
+      Quantia: 100 #quantia de looting

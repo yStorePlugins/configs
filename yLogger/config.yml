@@ -1,0 +1,172 @@
+#        _
+#  _   _| |    ___   __ _  __ _  ___ _ __
+# | | | | |   / _ \ / _` |/ _` |/ _ \ '__|
+# | |_| | |__| (_) | (_| | (_| |  __/ |
+#  \__, |_____\___/ \__, |\__, |\___|_|
+#  |___/            |___/ |___/
+#
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Tipos de logs
+types:
+  # Registro ao falar no chat
+  chat:
+    enabled: true
+    format: '[{date}:{hour}] {player} digitou no chat {chat} a mensagem {message} no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao logar no servidor
+  login:
+    enabled: true
+    format: '[{date}:{hour}] {player} logou no servidor nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao deslogar do servidor
+  quit:
+    enabled: true
+    format: '[{date}:{hour}] {player} saiu do servidor nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao executar um comando
+  command:
+    enabled: true
+    format: '[{date}:{hour}] {player} utilizou o comando {command} no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao morrer
+  death:
+    enabled: true
+    format: '[{date}:{hour}] {player} morreu para {type} no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao matar um player
+  kill:
+    enabled: true
+    format: '[{date}:{hour}] {player} matou {type} nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao colocar um bloco
+  place-block:
+    enabled: true
+    format: '[{date}:{hour}] {player} colocou um bloco do tipo ({type}) no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao quebrar um bloco
+  break-block:
+    enabled: true
+    format: '[{date}:{hour}] {player} quebrou um bloco do tipo ({type}) no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao dropar um item
+  drop-item:
+    enabled: true
+    format: '[{date}:{hour}] {player} dropou ({amount}x) item(s) do tipo ({type} - {item_name}) no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao coletar um item
+  collect-item:
+    enabled: true
+    format: '[{date}:{hour}] {player} coletou ({amount}x) item(s) do tipo ({type} - {item_name}) no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao clone um item
+  clone-item:
+    enabled: true
+    format: '[{date}:{hour}] {player} clonou ({amount}x) item(s) do tipo ({type} - {item_name}) no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao abrir um baú
+  open-chest:
+    enabled: true
+    format: '[{date}:{hour}] {player} abriu um baú no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao executar um comando (console)
+  server-command:
+    enabled: true
+    format: '[{date}:{hour}] {player} executou o comando {command}'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao comprar um item (yChestShop)
+  chestshop-buy:
+    enabled: true
+    format: '[{date}:{hour}] {player} comprou de {seller} ({amount}x) item(s) do tipo ({type} - {item_name}) no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+  # Registro ao vender um item (yChestShop)
+  chestshop-sell:
+    enabled: true
+    format: '[{date}:{hour}] {player} vendeu para {seller} ({amount}x) item(s) do tipo ({type} - {item_name}) no mundo [{world}] nas coordenadas ({coords})'
+    discordhook:
+      enabled: true
+      channel: ''
+      embed: ''
+
+# Blacklist de logs que não serão registradas
+blacklist:
+  # Comandos ignorados
+  commands:
+    - '/login'
+    - '/register'
+    - '/loginstaff'
+    - '/stafflogin'
+    - '/ls'
+    - '/sl'
+  # Blocos ignorados
+  blocks: [ 'BEDROCK' ]
+  # Itens ignorados
+  items: []
