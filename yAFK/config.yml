@@ -1,0 +1,137 @@
+Database:
+   Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+   IP: localhost:3306
+   DB: test
+   User: admin
+   Pass: ''
+   Debug: true
+#
+Comando:
+   Comando: 'yafk'
+   Aliases: []
+
+# Quem tiver a permissão ( yafk.bypass ) não será checado.
+Permissao usar: true
+
+# Tempo para checar se o jogador está afk
+# Só será usado caso o jogador não tenha nenhuma permissão: yafk.tempo.<numero>
+# Em segundos
+Tempo: 60
+
+# Tempo em que manda os titles
+# Só será usado caso o jogador não tenha nenhuma permissão: yafk.tempo-afk.<numero>
+# Em segundos
+Tempo afk: 20
+
+# Placeholder pro papi %yafk_isafk%
+Placeholder:
+   # Deixe '' (vazio) para não usar
+   Afk: '&cJogador AFK'
+   # Deixe '' (vazio) para não usar
+   NaoAfk: ''
+
+Mensagens:
+   Permissao: '&cVocê não tem permissão para isso.'
+   Setado: '&aLocal setado com sucesso.'
+   Tempo: '&aTempo definido para &f{tempo}&a segundos.'
+   Timer: '&aTimer definido para &f{tempo}&a segundos.'
+   Numero: '&cO argumento não é um número'
+   Tell: '&cO jogador &f{player}&c está AFK!'
+   AfkMotivo: '&aVocê ficou AFK com o motivo: &f{motivo}&a.'
+   Tpa: '&cO jogador &f{player}&c está AFK!'
+   Help: |
+      &bComandos disponiveis:
+      &b -> &f/yafk [motivo] &7- Fica AFK
+      &b -> &f/yafk setlocal &7- Seta o local do afk
+      &b -> &f/yafk settempo &7- Seta o tempo para checar se o jogador está afk
+      &b -> &f/yafk settimer &7- Seta o tempo que ele poderá ficar afk, antes de executar a ação
+
+Mencao:
+   Ativar: true
+   Mensagem: '&cO jogador &f{player}&c está AFK!'
+
+# Para evitar anti-afk com gelo
+Block blacklist:
+- 'ICE'
+- 'PACKED_ICE'
+
+# Onde o yAFK não irá intervir
+Mundo blacklist:
+- 'nenhum'
+
+# Verificar anti-afk com soulsand, slab, neve e carpete.
+Agua checker:
+- 0.0
+- 1.0
+- -1.0
+
+# Ao hitar em algo sair do AFK
+HitSairAfk: false
+
+Detect:
+   X: true # Quando false, não irá resetar o anti-afk ao variar a coordenada X
+   Y: false # Quando false, não irá resetar o anti-afk ao variar a coordenada Y
+   Z: true # Quando false, não irá resetar o anti-afk ao variar a coordenada Z
+   Agua: false # Quando andar na água irá resetar o anti-afk
+   Lava: false # Quando andar na lava irá resetar o anti-afk
+   Veiculo: false # Quando estiver montado em algo, não irá resetar o anti-afk
+   Caindo: false # Quando estiver caindo, não irá resetar o anti-afk
+
+# Ordem a ser executada: Bungeecord, Comando, Teleportar, Holograma
+Acoes:
+   Bungeecord: false # Enviar para um dos servidores configurado
+   Comando: false # Executar os comandos definidos abaixo
+   Teleportar: false # Teleportar para um local definido]
+   Holograma: true # Colocar um holograma em cima da cabeça do jogador.
+
+Comandos:
+- 'kick {player} Você está afk'
+
+Holograma:
+   Altura: 3.1
+   Holograma:
+   - '&cEste jogador está AFK'
+   - ''
+   - ''
+   - '[item]BARRIER' #use [item] para colocar um item
+
+Holograma-Motivo:
+   Altura: 3.1
+   Holograma:
+   - '&cEste jogador está AFK'
+   - '&cMotivo: &f{motivo}'
+   - ''
+   - ''
+   - '[item]BARRIER' #use [item] para colocar um item
+
+Servidores: []
+
+# Comandos de teleporte
+# Deixe sempre o espaço " " no comando antes do nick
+Comandos tp:
+   - '/tpa '
+   - '/etpa '
+   - '/tpahere '
+   - '/etpahere '
+
+Bloquear: # Quando o jogador ficar afk
+   Quebrar: true # Bloquear de quebrar blocos
+   Colocar: true # Bloquear de colocar blocos
+   Bater: true # Bloquear de bater
+   Interagir: true # Bloquear de interagir
+   Comandos: true # Bloquear executar comandos
+   Chat: true # Bloquear de falar no chat
+   Tell: true # Bloquear de receber tell
+   Tpa: true # Bloquear de receber tpa
+
+Title:
+   Timer:
+      Title: '&cVocê está AFK!<nl>&7Restam &e{tempo}&7.'
+   Mover:
+      Title: '&cVocê está AFK!<nl>&7Mova-se para retornar.'
+   Bloquear:
+      Title: '&cVocê está AFK!<nl>&7Essa ação não pode ser realizada.'
+   Nao mais:
+      Title: '' # Deixe vazio para apenas limpar a tela
+
+Local: 'none'
