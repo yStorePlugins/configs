@@ -1,0 +1,28 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+
+items:
+  sell1:
+    cost:
+      - 'rocha,3'
+    display:
+      slot: 10
+      material: 'STONE'
+      name: ''
+      lore: ['&7Esta pedra custa &f3 fragmentos de rocha']
+    # Item que será dado ao player
+    item:
+      give: true
+      material: 'STONE:0'
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEu valho muito!' ]
+      enchants: []
+    # Comandos que será dado ao player
+    command:
+      give: false
+      list: [ 'give {player} stone 1' ]

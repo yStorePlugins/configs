@@ -1,0 +1,39 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  help: |
+    <nl>
+    &eComandos do plugin:
+    <nl>
+    &e-> &f/fragmentos &8-&7 Abre o menu principal
+    <nl>
+    &c-> /fragmentos give <item/direto> <player/all> <fragmento> <quantia> - Dá fragmentos para um jogador
+    &c-> /fragmentos reload - Recarrega as configurações
+    <nl>
+  fragmento-found: |
+    &cEste fragmento não foi encontrado.
+    &7Disponíveis: {list}
+  fragmento-give: '&eVocê deu &f{amount}x fragmento(s) &r{fragmento}&e para o jogador &f{player}&e.'
+  fragmento-give-all: '&eVocê deu &f{amount}x fragmento(s) &r{fragmento}&e para todos os jogadores online.'
+  fragmento-give-all-target: |
+    <nl>
+    &eTodos os jogadores receberam &f{amount}x fragmento(s) &r{fragmento}&e.
+    <nl>
+  fragmento-activated: '&eForam adicionados &f{amount}x fragmento(s) &r{fragmento}&e em seu /fragmentos.'
+  fragmento-collected: '&eVocê retirou &f{amount}x fragmento(s) &r{fragmento}&e.'
+  shop-has: '&cVocê não possui &f{amount}x fragmento(s) &r{fragmento}&c.'
+  shop-buy: '&aVocê adquiriu itens no shop fragmentos.'
+  yourself: '&cVocê não pode pagar à si mesmo.'

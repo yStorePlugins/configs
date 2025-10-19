@@ -1,0 +1,149 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+# Mensagens e ações ao entrar
+enter:
+  title: '&bBem vindo à área da floresta'
+  actionbar: '&bVocê entrou na área da floresta.'
+  chat: |
+
+    &bBem vindo à área da floresta.
+
+  sound: 'ORB_PICKUP'
+
+# Mensagens e ações ao sair
+leave:
+  title: ''
+  actionbar: '&bVocê saiu da área de floresta.'
+  chat: |
+
+    &bVocê saiu da área da floresta.
+
+  sound: 'ORB_PICKUP'
+
+evolved:
+  title: '&aFerramenta evoluída<nl>&apara &e{level}!'
+  actionbar: '&aSua ferramenta evoluiu para o nível &e{level}!'
+  chat: ''
+
+actionbar:
+  cant-break: '&cEssa ferramenta não consegue quebrar essa árvore!'
+  break-log: '&cUse sua ferramenta para quebrar troncos de árvore!'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/floresta &8- &7Abre o menu principal.
+    &a/floresta ir &8- &7Vai até a floresta.
+    &a/floresta blocos &8- &7Abre o menu de blocos disponíveis.
+    &a/floresta armazem &8- &7Abre o menu de armazém de recompensas.
+    &a/floresta top &8- &7Abre o menu de top.
+    &a/floresta sair &8- &7Sai da floresta.
+    &a/floresta setspawn &8- &7Seta o local de spawn da floresta.
+    &a/floresta setareaspawn &8- &7Seta o local de spawn de uma área da floresta.
+    &a/floresta setsaida &8- &7Seta o local de saída da floresta.
+    &a/floresta givebooster &8- &7Dá um booster à um jogador.
+    &a/floresta giveskin &8- &7Dá uma skin à um jogador.
+    &a/floresta giveskindireto &8- &7Adiciona uma skin à um jogador.
+    &a/floresta removerskin &8- &7Remove uma skin de um jogador.
+    &a/floresta addclasse &8- &7Adiciona uma classe à um jogador.
+    &a/floresta removerclasse &8- &7Remove uma classe de um jogador.
+    &a/floresta setarclasse &8- &7Define uma classe à um jogador.
+    &a/floresta resetarclasse &8- &7Reseta a classe de um jogador.
+
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  not-in: '&cVocê não está na área da floresta.'
+  spawn: '&cO spawn da área da floresta não foi setado.'
+  exit: '&cA saída da área da floresta não foi setada.'
+  set-exit: '&aLocal de saída setado com sucesso.'
+  set-spawn: '&aLocal de spawn setado com sucesso.'
+  command: '&cVocê não pode usar este comando na área da floresta. Utilize /spawn para sair dela.'
+  coin-help: |
+
+    &a/folhas &8- &7Ver os seus folhas.
+    &a/folhas <player> &8- &7Ver os folhas de alguém.
+    &a/folhas enviar <player> <quantia> &8- &7Envia seus folhas para alguém.
+    &a/folhas give <player/all> <quantia> &8- &7Dar folhas a alguém.
+    &a/folhas add <player> <quantia> &8- &7Adiciona folhas a alguém.
+    &a/folhas set <player> <quantia> &8- &7Remove folhas de alguém.
+    &a/folhas remove <player> <quantia> &8- &7Seta folhas a alguém.
+
+  coin: '&bVocê possui &f{coin} folhas&b.'
+  coin-player: '&bO jogador &f{player}&b possui &f{coin} folhas&b.'
+  coin-added: '&bVocê adicionou &f{coin} folhas&b ao jogador &f{player}&b.'
+  coin-removed: '&bVocê removeu &f{coin} folhas&b do jogador &f{player}&b.'
+  coin-set: '&bVocê setou &f{coin} folhas&b para o jogador &f{player}&b.'
+  coin-sent: '&bVocê enviou &f{coin} folhas&b para o jogador &f{player}&b.'
+  coin-received: '&bVocê recebeu &f{coin} folhas&b do jogador &f{player}&b.'
+  coin-has: '&cVocê não possui a quantia de &f{coin}&c folhas.'
+  converted: '&bVocê compactou todos seus folhas em 1.'
+  activated: '&bVocê ativou &f{coin} folhas&b.'
+  give: '&bVocê deu &f{coin} &bfolhas para o jogador &f{player}&b.'
+  give-all: |
+
+    &bO usuário &f{player}&b deu &f{coin} &bfolhas para todos os jogadores online&b.
+
+  coin-added-all: '&bVocê adicionou &f{coin} folhas&b para todos os jogadores&b.'
+  holding: '&cVocê não está segurando uma ferramenta.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  booster-null: |
+    &cEste booster não existe.
+    &cDisponíveis: &7{list}
+  booster-give: '&aVocê deu x{amount} Booster(s) &8(+{bonus}%) &apara o jogador &f{player}&a.'
+  booster-received: '&aVocê recebeu x{amount} Booster(s) &8(+{bonus}%)&a.'
+  booster-finished: '&aCampo: &cSeu booster acabou.'
+  booster-has: '&cVocê já está com um booster ativado.'
+  booster-activated: '&aVocê ativou um booster da floresta. Multiplicador: &e{bonus}% coins &ae &e{bonus-leave}% folhas&a. Tempo: &e{time}&a.'
+  booster-already: '&cVocê já está usando um booster.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  evolute: '&aO encantamento &f{enchant}&a foi evoluído para o nível &f{level}&a.'
+  digit: |
+
+    &aDigite a quantia de níveis que você quer adquirir ao encantamento &f{enchantment}&a.
+    &7para cancelar digite &ncancelar&7.
+
+  exceeds: '&cEstes níveis excedem o nível máximo do encantamento.'
+  area-found: '&cÁrea não encontrada. Disponíveis: {list}'
+  area-set-spawn: '&aLocal de spawn da área setado com sucesso.'
+  area-bought: '&aVocê comprou a área.'
+  slot-empty: '&cO slot {slot} deve estar vazio para poder receber a ferramenta. Por favor, re-entre na floresta.'
+  digit-enchant: |
+
+    &aDigite a quantia de níveis que você quer adquirir ao encantamento &f{enchantment}&a.
+    &7para cancelar digite &ncancelar&7.
+
+  enchantment-evolved: '&aO encantamento &f{enchantment}&a foi evoluido para o nível &f{level}&a.'
+  enchantment-cant-buy: '&cVocê não pode comprar esse encantamento.'
+  enchantment-exceeds: '&cEstes níveis excedem o nível máximo do encantamento.'
+  enchantment-has-level: '&cVocê não possui a quantia de &f{level}&c níveis necessários.'
+  enchantment-disenchanted: '&aVocê desencantou &f{level} níveis &ado encantamento &f{enchant}&a.'
+  skin-found: '&cEsta skin não existe. Disponíveis: &7{list}'
+  skin-give: '&bVocê deu uma skin para o jogador &f{player}&b.'
+  skin-has: '&aVocê já possui esta skin ativada.'
+  skin-activated: '&aSkin ativada com sucesso.'
+  skin-no-has: '&cA ferramenta não possui essa skin.'
+  skin-removed: '&aSkin removida com sucesso.'
+  skin-has-player: '&aO jogador já possui esta skin.'
+  classe-bought: '&aVocê evoluiu para a classe &7{classe}&a.'
+  classe-permission: '&cVocê não tem permissão para evoluir para esta classe.'
+  classe-previous: '&cVocê deve possuir a classe anterior primeiro.'
+  classe-reset: '&aVocê resetou a classe do jogador &f{player}&a.'
+  classe-set: '&aVocê definiu a classe {classe} ao jogador &f{player}&a.'
+  classe-found: '&aEsta classe não existe. Disponíveis: {classes}'
+  cant-break: ''
+  break-log: ''
+  inv-full: '&cSeu inventário está cheio.'

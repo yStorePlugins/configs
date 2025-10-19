@@ -1,0 +1,16 @@
+Nome: '&8Caçador -> Colocaram'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 31
+VoltarSlot: 27
+ProximoSlot: 35
+
+Item:
+   CustomSkull: true
+   URL: '{player}'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&e{player}'
+   Lore:
+   - '&7Este jogador já colocou &aR${money}&7 em sua cabeça.' #disponível variável {player}

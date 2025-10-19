@@ -1,0 +1,49 @@
+Nome: '&8Caçador - Principal'
+Tamanho: 27
+Itens:
+   Perfil: # primeiro
+      Slot: 10
+      CustomSkull: true
+      URL: '{player}'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&f{player}'
+      Lore:
+      - ''
+      - '&7Já colocaram um total de &aR${colocaram} &7em sua cabeça.'
+      - '&7Você já coletou um total de &aR${coletou}&7.'
+      - ''
+      - '&7Clique para ver os jogadores que pagaram pela sua morte.'
+   Adicionar: # segundo
+      Slot: 12
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&cAdicionar recompensa'
+      Lore:
+      - '&7Clique para adicionar uma recompensa na cabeça de alguém.'
+   Recompensas: #terceiro
+      Slot: 14
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/1a696e152363ad477ed6cb5a518bfea84b036148fecac0581f32c5b5396958'
+      ID: 0
+      Data: 0
+      Glow: false
+      Name: '&aRecompensas'
+      Lore:
+      - '&7Clique para ver os players online com recompensas existentes.'
+   Top: #quarto
+      Slot: 16
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/15a7ee9a86de203674a93b570bc8992e500363dd32f2b9813daaeeabccf92151'
+      ID: 0
+      Data: 0
+      Glow: false
+      Name: '&aTop'
+      Lore:
+      - '&7Clique para ver os jogadores que mais coletaram recompensas.'
+      
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> LOJAS:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

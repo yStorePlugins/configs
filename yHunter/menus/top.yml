@@ -1,0 +1,21 @@
+Nome: '&8TOP Hunter'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 30
+
+Item:
+   Name: '&7#&f{pos} - &e{player}'
+   Lore:
+   - ''
+   - '&fColetado: &aR${coletado}'
+   - '&fPosição: &6{pos}'
+   - ''
+
+Item p:
+   Slot: 32
+   Name: '&7#&f{pos} - &aVocê &7({player})'
+   Lore:
+   - ''
+   - '&fColetado: &aR${coletado}'
+   - '&fPosição: &6{pos}'
+   - ''

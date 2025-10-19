@@ -1,0 +1,68 @@
+Tamanho: 27 #tamanho do inventário
+Nome: '&7Fragmentos loja padrão' #nome do inventário
+Backslot: 9
+#
+Comando: '' #deixe '' para não usar
+Permissao: ''
+#
+Icone:
+    Slot: 10
+    CustomSkull: false
+    URL: ''
+    Name: '&cCategoria das pedras'
+    ID: 1
+    Data: 0
+    Lore:
+    - '&7Clique para abrir.'
+#
+Items:
+   Item1:
+       Slot: 10
+       Preco:
+        - 'Fragmento1:32'
+        - 'Fragmento2:10'
+       Money: 0
+       Item:
+          CustomSkull: false
+          URL: ''
+          Name: '&cPedra preciosa'
+          ID: 1
+          Data: 0
+          Amount: 64
+          Lore:
+          - ''
+          - '&fCusto: &e32x &aFragmento de Rocha'
+          - '&fCusto: &e10x &aFragmento de Terra'
+          - ''
+          Lore normal:
+          - ''
+          - '&fEssa pedra é preciosa'
+          - ''
+          Enchants:
+          - 'DIG_SPEED:1'
+          Use command: false
+          Commands:
+          - ''
+   Item2:
+       Slot: 12
+       Preco:
+        - 'Fragmento1:64'
+       Money: 0
+       Item:
+          CustomSkull: false
+          URL: ''
+          Name: '&cSay'
+          ID: 1
+          Data: 0
+          Amount: 64
+          Lore:
+          - ''
+          Lore normal:
+          - ''
+          - '&fEssa pedra é preciosa'
+          - ''
+          Enchants:
+          - ''
+          Use command: true
+          Commands:
+          - 'say {player} e bonito'

@@ -1,0 +1,348 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s
+menu-updater-time: 200
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Floresta'
+  size: 36
+  items:
+    profile-slot: 10
+    go-slot: 26
+    rewards-slot: 12
+    blocks-slot: 14
+    top-slot: 16
+    booster-slot: 20
+    areas-slot: 22
+    classe-slot: 24
+    profile:
+      material: '{player}'
+      name: '&eSeu Perfil'
+      lore:
+        - '&7Confira detalhes do seu'
+        - '&7jogador na floresta.'
+        - ''
+        - ' &8▶ &fTempo na Floresta: &7{time}'
+        - ''
+        - ' &8▶ &fFlores quebradas: &7{broken}'
+        - ' &8▶ &fRecompensas no armazém: &7{rewards}'
+        - ' &8▶ &fFolhas: &a✿&f{coin}'
+        - ''
+    rewards:
+      material: 'CHEST'
+      name: '&6Recompensas'
+      lore:
+        - '&7Gerencie as recompensas'
+        - '&7que você ganhou.'
+        - ''
+        - ' &8▶ &fRecompensas: &7{rewards}'
+        - ''
+        - '&6Clique para gerenciar!'
+    blocks:
+      material: 'LOG'
+      name: '&dBlocos'
+      lore:
+        - '&7Consulte as possíveis'
+        - '&7recompensas dos blocos.'
+        - ''
+        - '&dClique para acessar!'
+    top:
+      material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+      name: '&aTOP Jogadores'
+      lore:
+        - '&7Visualize os jogadores que estão'
+        - '&7se destacando em nossa floresta.'
+        - ''
+        - '&aClique para acessar!'
+    booster-no:
+      material: GLASS_BOTTLE
+      name: '&aBooster'
+      lore: [ '&cNenhum booster ativo' ]
+    booster:
+      material: EXP_BOTTLE
+      name: '&aBooster'
+      lore:
+        - '&aSeu booster de drops está ativo!'
+        - '&f> &bTempo: &7{time}&f.'
+        - '&f> &bBônus venda: &7{bonus}%&f.'
+        - '&f> &bBônus folhas: &7{bonus-leave}%&f.'
+    go:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aIr à Floresta'
+      lore:
+        - '&7Clique para entrar na'
+        - '&7área da floresta'
+    leave:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&cSair da Floresta'
+      lore:
+        - '&7Clique para sair da'
+        - '&7área da floresta'
+    areas:
+      material: TNT
+      name: '&bÁreas'
+      lore:
+        - '&7Evolua sua área da floresta'
+        - '&7e tenha blocos diferenciados.'
+        - ''
+        - '&aClique para fazer o upgrade'
+    classe:
+      material: LEATHER_CHESTPLATE
+      name: '&bClasses'
+      lore:
+        - '&7Upando sua classe você irá ganhar'
+        - '&7bônus na floresta, no ganho de'
+        - '&7coins e folhas.'
+        - ''
+        - '&fSua classe: &7{classe}'
+        - ''
+        - '&aClique para gerenciar as classes'
+
+# Menu de recompensas
+main-rewards:
+  name: '&8Floresta'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  #
+  empty-slot: 22
+  collect-slot: 50
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
+    collect:
+      material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+      name: '&eRecolher tudo'
+      lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+
+# Preview de blocos
+blocks:
+  name: '&8Floresta'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  lore:
+    - '&7Clique para ver as recompensas'
+
+# Preview de recompensas
+rewards-preview:
+  name: '&8Floresta'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+
+# Menu de top
+top:
+  name: '&8Floresta'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 30
+  previous-slot: 9
+  next-slot: 17
+  # Seletor dos tops
+  selector:
+    slot: 31
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor do TOP'
+    # Tipos do seletor
+    types:
+      broken:
+        enabled: true
+        name: 'Blocos quebrados'
+      coin:
+        enabled: true
+        name: 'Folhas'
+      time:
+        enabled: true
+        name: 'Tempo na floresta'
+    # Formatos do seletor
+    formats:
+      seeing: ' &8• &f{name}'
+      select: ' &8• &7{name}'
+  items:
+    # Item do top flores quebradas
+    broken:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - '&fBlocos quebrados: &7{amount}'
+        - '&fPosição: &7{pos}'
+    # Item do top coin
+    coin:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - '&fFolhas: &7{amount}'
+        - '&fPosição: &7{pos}'
+    # Item do top tempo na floresta
+    time:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - '&fTempo na Floresta: &7{amount}'
+        - '&fPosição: &7{pos}'
+
+# Menu de evolução
+evolution:
+  name: '&8Floresta'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 45
+  items:
+    tool-slot: 47
+    profile-slot: 50
+    skin-slot: 48
+    filter-slot: 52
+    disenchanter-slot: 53
+    profile:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - ''
+        - '&fFolhas: &b{leaves}'
+        - '&fBlocos quebrados: &b{broken_blocks}'
+        - ''
+    skin:
+      material: '731f3279fc112b7f18bd0a2229934fcb5605c62823ce698b8b503ecccf0a3ac4'
+      name: '&aSkins'
+      lore:
+        - '&7Configure a skin da sua ferramenta'
+        - '&7e ganhe alguns bônus.'
+        - ''
+        - '&aClique para acessar'
+    filter:
+      material: HOPPER
+      glow: true
+      name: '&aFiltro'
+      lore:
+        - '&7Desabilite encantamentos que não'
+        - '&7queira utilizar no momento.'
+        - ''
+        - '&aClique para acessar'
+    disenchanter:
+      material: ANVIL
+      glow: true
+      name: '&aDesencantador'
+      lore:
+        - '&7Desencante encantamentos que não'
+        - '&7queira utilizar e receba o valor'
+        - '&7de volta.'
+        - ''
+        - '&aClique para acessar'
+
+# Menu de skins
+skins:
+  name: '&8Floresta'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    tool-slot: 31
+
+# Menu de filtro
+filter:
+  name: '&8Floresta'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    tool-slot: 31
+    enchant:
+      name: '&a{enchant}'
+      lore:
+        - ''
+        - '&fEncantamento: &7{enchant}'
+        - '&fDesativado: &7{status}'
+        - ''
+
+# Menu de desencantador
+disenchanter:
+  name: '&8Floresta'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    tool-slot: 31
+    enchant:
+      name: '&a{enchant}'
+      lore:
+        - ''
+        - '&fEncantamento: &7{enchant}'
+        - '&fNíveis: &7{level}'
+        - ''
+        - '&fIrá ganhar &a{yfloresta} folhas&f.'
+        - ''
+        - '&aBotão &fESQUERDO &apara desencatar 1 nível'
+        - '&aBotão &fDIREITO &apara desencatar {level} níveis'
+
+# Menu de upgrade de área
+upgrade-areas:
+  name: '&8Floresta'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 31
+  previous-slot: 18
+  next-slot: 26
+
+# Menu de classes
+classes:
+  name: '&8Floresta'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  items:
+    classe-slot: 50
+    classe:
+      material: 'LEATHER_CHESTPLATE'
+      name: '&eClasse'
+      lore:
+        - '&7Upando sua classe você irá ganhar'
+        - '&7bônus na floresta, no ganho de'
+        - '&7coins e folhas.'
+        - ''
+        - '&fSua classe: &7{classe}'
+        - ''

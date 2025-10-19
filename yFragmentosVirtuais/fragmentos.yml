@@ -1,0 +1,50 @@
+#    ____           _
+#  / ___|_ __ __ _| |_ ___  ___
+# | |   | '__/ _` | __/ _ \/ __|
+# | |___| | | (_| | ||  __/\__ \
+#  \____|_|  \__,_|\__\___||___/
+#
+
+fragmentos:
+  rocha:
+    # Ordem no menu
+    order: 1
+    # Identificação necessária para a API de Economias do yPlugins
+    yplugins-id: 'yfragmentosvirtuais-rocha'
+    # Nome nas mensagens
+    display: '&8Rocha'
+    # Ativar a coleta
+    collect: true
+    # Comando
+    command:
+      command: 'rocha'
+      aliases: [ 'rochas' ]
+    # Mensagem de uso do comando
+    usage:
+      pay: '&cUse: /{command} {arg} <player> <quantia>'
+    # Permissões dos comandos
+    permission:
+      look: 'yfragmentosvirtuais.rocha.look'
+      pay: 'yfragmentosvirtuais.rocha.pay'
+    # Mensagens do comando
+    message:
+      balance: '&aVocê possui: &f{fragment}&a rochas.'
+      balance-target: '&aO jogador &7{player}&a possui: &f{fragment}&a rochas.'
+      has: '&cVocê não possui esta quantia de rochas.'
+      send: '&aVocê enviou &f{fragment}&a rochas para o jogador &7{player}&a.'
+      received: '&aVocê recebeu &f{fragment}&a rochas do jogador &7{player}&a.'
+    # Item que poderá ser ativado
+    usable:
+      material: 'f8d818e65ee36cdcab6e315f499d3f5dde2323bf2df56f1e914089cebefa37f6'
+      name: '&8Fragmento de rocha &7[{amount}]'
+      lore: [ '&7Utilize este fragmento', '&7acessando &f/fragmentos' ]
+    # Item da crate no menu
+    menu:
+      has:
+        material: 'f8d818e65ee36cdcab6e315f499d3f5dde2323bf2df56f1e914089cebefa37f6'
+        name: '&8Fragmento de rocha'
+        lore: [ '&fQuantidade: &7{amount}', '', '&aClique para recolher.' ]
+      no-has:
+        material: 'f8d818e65ee36cdcab6e315f499d3f5dde2323bf2df56f1e914089cebefa37f6'
+        name: '&8Fragmento de rocha'
+        lore: [ '', '&cVocê não possui esse fragmento.' ]

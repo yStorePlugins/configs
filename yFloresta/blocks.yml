@@ -1,0 +1,54 @@
+blocks:
+  log:
+    # Permissão para quebrar o bloco
+    permission-break: ''
+    # Mensagem de permissão
+    permission-message: '&cVocê ainda não pode quebrar a MADEIRA BRUTA.'
+    # Delay para resetar
+    # em segundos
+    delay: 10
+    materials:
+      # material que deverá ser quebrado
+      break-material: 'LOG:0'
+      # material que vai virar ao quebrar
+      to-material: 'BEDROCK:0'
+      # material que vai virar ao resetar
+      reset-material: 'LOG:0'
+    effects:
+      # efeito ao quebrar
+      break-particle: ''
+      # som ao quebrar
+      break-sound: ''
+      # efeito ao resetar
+      reset-particle: 'HAPPY_VILLAGER'
+      # som ao resetar
+      reset-sound: ''
+    sells:
+      sell1:
+        order: 1
+        permission: ''
+        # holograma de venda
+        hologram: [ '&a+{money}' ]
+        # Altura que o holograma vai spawnar no bloco
+        hologram-off-set: 0.6
+        # mensagens de venda
+        message:
+          actionbar: '&e&lFLORESTA: &a+{money} coins &7(+{bonus}%)'
+          title: ''
+          chat: ''
+        # quantidade de folhas que será dada
+        coin: 1.0
+        # EXP do mcMMO
+        xp-mcmmo: 1
+        # quantidade que será dada em outras economias
+        prices:
+          price1:
+            provider: 'money'
+            price: 1.0
+        # As recompensas são cadastradas na rewards.yml
+        # Use: chance,recompensa
+        # Quantia de recompensas que serão dadas
+        reward-amount: 1
+        # Dropar as recompensas no chão
+        reward-ground: false
+        rewards: [ '100,reward1' ]

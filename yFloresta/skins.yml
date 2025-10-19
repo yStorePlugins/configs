@@ -1,0 +1,179 @@
+skins:
+  default:
+    order: 0
+    type: 'WOOD'
+    item:
+      material: 'WOOD_AXE'
+      name: '&aMachado de Madeira'
+      lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '', '&fBônus: &a0%', '', '&aClique para ativar' ]
+    menu:
+      equip:
+        material: 'WOOD_AXE'
+        name: '&aMachado de Madeira'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '', '&fBônus: &a0%', '', '&aClique para equipar' ]
+      equipped:
+        material: 'WOOD_AXE'
+        name: '&aMachado de Madeira'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '', '&fBônus: &a0%', '', '&aJá está equipada' ]
+      has:
+        material: 'WOOD_AXE'
+        name: '&aMachado de Madeira'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '', '&fBônus: &a0%', '', '&cVocê não possui esta skin' ]
+    name: '&fMachado de Madeira &6[{blocks_broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
+      - ''
+    bonus: 0.0
+    bonus-blocks: 0.0
+    whitelist-blocks: [ 'LOG:0', 'LOG:4', 'LOG:8' ]
+    trail:
+      particle: 'REDSTONE'
+      item: 'LOG:0,REDSTONE:0'
+  stone:
+    order: 1
+    type: 'STONE'
+    item:
+      material: 'STONE_AXE'
+      name: '&aMachado de Pedra'
+      lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '', '&fBônus: &a10%', '', '&aClique para ativar' ]
+    menu:
+      equip:
+        material: 'STONE_AXE'
+        name: '&aMachado de Pedra'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '', '&fBônus: &a10%', '', '&aClique para equipar' ]
+      equipped:
+        material: 'STONE_AXE'
+        name: '&aMachado de Pedra'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '', '&fBônus: &a10%', '', '&aJá está equipada' ]
+      has:
+        material: 'STONE_AXE'
+        name: '&aMachado de Pedra'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '', '&fBônus: &a10%', '', '&cVocê não possui esta skin' ]
+    name: '&fMachado de Pedra &6[{blocks_broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
+      - ''
+      - '&a+10% &7(pedra)'
+      - ''
+    bonus: 10.0
+    bonus-blocks: 10.0
+    whitelist-blocks: [ 'LOG:0', 'LOG:4', 'LOG:8', 'LOG:1', 'LOG:5', 'LOG:9' ]
+    trail:
+      particle: 'REDSTONE'
+      item: 'STONE:0,REDSTONE:0'
+  iron:
+    order: 2
+    type: 'IRON'
+    item:
+      material: 'IRON_AXE'
+      name: '&aMachado de Ferro'
+      lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '', '&fBônus: &a15%', '', '&aClique para ativar' ]
+    menu:
+      equip:
+        material: 'IRON_AXE'
+        name: '&aMachado de Ferro'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '', '&fBônus: &a15%', '', '&aClique para equipar' ]
+      equipped:
+        material: 'IRON_AXE'
+        name: '&aMachado de Ferro'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '', '&fBônus: &a15%', '', '&aJá está equipada' ]
+      has:
+        material: 'IRON_AXE'
+        name: '&aMachado de Ferro'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '', '&fBônus: &a15%', '', '&cVocê não possui esta skin' ]
+    name: '&fMachado de Ferro &6[{blocks_broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
+      - ''
+      - '&a+15% &7(ferro)'
+      - ''
+    bonus: 15.0
+    bonus-blocks: 15.0
+    whitelist-blocks: [ 'LOG:0', 'LOG:4', 'LOG:8', 'LOG:1', 'LOG:5', 'LOG:9', 'LOG:2', 'LOG:6', 'LOG:10' ]
+    trail:
+      particle: 'REDSTONE'
+      item: 'IRON_INGOT:0,REDSTONE:0'
+  gold:
+    order: 3
+    type: 'GOLD'
+    item:
+      material: 'GOLD_AXE'
+      name: '&aMachado de Ouro'
+      lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '&8> &f Madeira de Acácia', '', '&fBônus: &a20%', '', '&aClique para ativar' ]
+    menu:
+      equip:
+        material: 'GOLD_AXE'
+        name: '&aMachado de Ouro'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '&8> &f Madeira de Acácia', '', '&fBônus: &a20%', '', '&aClique para equipar' ]
+      equipped:
+        material: 'GOLD_AXE'
+        name: '&aMachado de Ouro'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '&8> &f Madeira de Acácia', '', '&fBônus: &a20%', '', '&aJá está equipada' ]
+      has:
+        material: 'GOLD_AXE'
+        name: '&aMachado de Ouro'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '&8> &f Madeira de Acácia', '', '&fBônus: &a20%', '', '&cVocê não possui esta skin' ]
+    name: '&fMachado de Ouro &6[{blocks_broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
+      - ''
+      - '&a+20% &7(ouro)'
+      - ''
+    bonus: 20.0
+    bonus-blocks: 20.0
+    whitelist-blocks: [ 'LOG:0', 'LOG:4', 'LOG:8', 'LOG:1', 'LOG:5', 'LOG:9', 'LOG:2', 'LOG:6', 'LOG:10', 'LOG_2:0', 'LOG_2:4', 'LOG_2:8' ]
+    trail:
+      particle: 'REDSTONE'
+      item: 'GOLD_INGOT:0,REDSTONE:0'
+  diamond:
+    order: 4
+    type: 'DIAMOND'
+    item:
+      material: 'DIAMOND_AXE'
+      name: '&aMachado de Diamante'
+      lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '&8> &f Madeira de Acácia', '&8> &f Madeira da Selva', '', '&fBônus: &a25%', '', '&aClique para ativar' ]
+    menu:
+      equip:
+        material: 'DIAMOND_AXE'
+        name: '&aMachado de Diamante'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '&8> &f Madeira de Acácia', '&8> &f Madeira da Selva', '', '&fBônus: &a25%', '', '&aClique para equipar' ]
+      equipped:
+        material: 'DIAMOND_AXE'
+        name: '&aMachado de Diamante'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '&8> &f Madeira de Acácia', '&8> &f Madeira da Selva', '', '&fBônus: &a25%', '', '&aJá está equipada' ]
+      has:
+        material: 'DIAMOND_AXE'
+        name: '&aMachado de Diamante'
+        lore: [ '&7Essa skin lhe permite quebrar', '&7os seguintes tipos de madeiras:', '', '&8> &f Madeira de Carvalho', '&8> &f Madeira de Pinheiro', '&8> &f Madeira de Eucalipto', '&8> &f Madeira de Acácia', '&8> &f Madeira da Selva', '', '&fBônus: &a25%', '', '&cVocê não possui esta skin' ]
+    name: '&fMachado de Diamante &6[{blocks_broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
+      - ''
+      - '&a+20% &7(diamante)'
+      - ''
+    bonus: 25.0
+    bonus-blocks: 25.0
+    whitelist-blocks: [ 'LOG:0', 'LOG:4', 'LOG:8', 'LOG:1', 'LOG:5', 'LOG:9', 'LOG:2', 'LOG:6', 'LOG:10', 'LOG_2:0', 'LOG_2:4', 'LOG_2:8', 'LOG:3', 'LOG:7', 'LOG:11' ]
+    trail:
+      particle: 'REDSTONE'
+      item: 'DIAMOND:0,REDSTONE:0'

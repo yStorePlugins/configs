@@ -1,0 +1,147 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s
+menu-updater-time: 20
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Fragmentos'
+  size: 45
+  slots: [ 11, 12, 13, 20, 21, 22, 29, 30, 31 ]
+  previous-slot: 18
+  next-slot: 26
+  #
+  empty-slot: -1
+  shop-slot: 24
+  info-slot: 15
+  top-slot: 33
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&cVocê não possui nenhum fragmento'
+      lore: []
+    shop:
+      material: 'GOLD_INGOT'
+      name: '&eLoja'
+      lore: [ '&7Clique para abrir a loja', '&7de fragmentos.' ]
+    info:
+      material: 'd01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f'
+      name: '&eSuas informações'
+      lore: [ '', ' &fFragmentos Armazenados: &7{stored}', '' ]
+    top:
+      material: 'BOOK'
+      name: '&eTOP'
+      lore: [ '&7Clique para ver os', '&7jogadores que possuem', '&7mais fragmentos.' ]
+  facing:
+    e0:
+      slot: 11
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e1:
+      slot: 12
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e2:
+      slot: 13
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e3:
+      slot: 20
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e4:
+      slot: 21
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e5:
+      slot: 22
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e6:
+      slot: 29
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e7:
+      slot: 30
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e8:
+      slot: 31
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+
+# Menu de abrir as chaves
+collect:
+  name: '&8Fragmentos'
+  size: 36
+  back-slot: 31
+  collect-1-slot: 11
+  collect-all-slot: 15
+  items:
+    collect-1:
+      material: 'd9b30303f94e7c785a31e5727a9381535daf4753449ea41db746e1234e9dd2b5'
+      name: '&aRetirar 1x'
+      lore: [ '', ' &fFragmentos disponíveis: &7{amount}', '', '&aClique para retirar' ]
+    collect-all:
+      material: '1a6f1bce5461368a40707c54dc0b895bd61499e812145093db32f9eb12c32954'
+      name: '&aRetirar tudo'
+      lore: [ '', ' &fFragmentos disponíveis: &7{amount}', '', '&aClique para retirar' ]
+
+# Menu de shop
+shop:
+  name: '&8Loja fragmentos'
+  size: 36
+  back-slot: 31
+
+# Menu de top
+top:
+  name: '&8Top fragmentos'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 9
+  next-slot: 17
+  items:
+    # Item do top fragmentos
+    stored:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - ''
+        - '&fFragmentos Armazenados: &7{amount}'
+        - '&fPosição: &e{pos}º'
+        - ''
