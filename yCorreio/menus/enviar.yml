@@ -1,0 +1,13 @@
+Nome: '&8Itens'
+Tamanho: 45
+# Item de confirmar
+Confirmar:
+  Slot: 40
+  CustomSkull: true
+  URL: 'http://textures.minecraft.net/texture/22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+  ID: AIR
+  Data: 0
+  Glow: true
+  Name: '&aConfirmar'
+  Lore:
+    - '&7Clique para confirmar e enviar.'

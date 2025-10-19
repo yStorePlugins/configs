@@ -1,0 +1,126 @@
+#         ____           _          __     ___      _               _
+#  _   _ / ___|_ __ __ _| |_ ___  __\ \   / (_)_ __| |_ _   _  __ _(_)___
+# | | | | |   | '__/ _` | __/ _ \/ __\ \ / /| | '__| __| | | |/ _` | / __|
+# | |_| | |___| | | (_| | ||  __/\__ \\ V / | | |  | |_| |_| | (_| | \__ \
+#  \__, |\____|_|  \__,_|\__\___||___/ \_/  |_|_|   \__|\__,_|\__,_|_|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Delay para carregar os dados depois do servidor ligar
+# Necessário para as crates em bloco
+# Recomendado: 20 ticks
+load-delay: 20
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Mundos que não poderão coletar recompensas
+world-reward-collect-blacklist: [ 'none' ]
+
+# Sistema de abertura automatica
+automatic-open:
+  enabled: true
+  # em ticks -> 20 ticks = 1 segundo
+  time: 20
+
+# Sistema de blocos
+crate-block:
+  # Ajustar a altura do holograma
+  offset: 2.5
+  hologram:
+    - '&6&lCAIXAS'
+    - '&7Abra as suas chaves aqui'
+    - '&f(/crates)'
+    - '[item]TRIPWIRE_HOOK'
+
+# Sistema de botões do menu
+menu:
+  # Mostrar todas as chaves no menu (mesmo se o jogador não tiver)
+  show-all: true
+  # Botão para abrir o menu de preview
+  preview: 'RIGHT'
+  # Botão para abrir o menu de gerenciamento
+  management: 'LEFT'
+  # Mostrar os ícones de 0 a 64
+  numerate: true
+
+# Sistema de lores
+lore:
+  chance: ['', '&6Chance: &7[{chance_progressbar}&7] &f{chance}%', '']
+  filter-add: ['&eClique para adicionar ao filtro']
+  filter-remove: ['&cClique para remover do filtro']
+
+# Configuração da progressbar
+progress-bar:
+  amount: 10
+  symbol: ':'
+  color-yes: '&a'
+  color-not: '&7'
+
+# Sistema de formatos de money e quantia
+format:
+  type: 'LETTER' # Tipos: LETTER - NUMBER
+  max-decimals: 4
+  formats:
+    - ''
+    - ''
+    - 'K'
+    - 'M'
+    - 'B'
+    - 'T'
+    - 'Q'
+    - 'QQ'
+    - 'S'
+    - 'SS'
+    - 'O'
+    - 'N'
+    - 'D'

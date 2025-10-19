@@ -1,0 +1,47 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  help: |
+    <nl>
+    &eComandos do plugin:
+    <nl>
+    &e-> &f/crates &8-&7 Abre o menu principal
+    &e-> &f/crates armazem &8-&7 Abre o menu de coletar recompensas
+    <nl>
+    &c-> /crates give <item/direto> <player/all> <crate> <quantia> - Dá chaves para um jogador
+    &c-> /crates definir - Defini um bloco como crate
+    &c-> /crates reload - Recarrega as configurações
+    <nl>
+  crate-found: |
+    &cEsta crate não foi encontrada.
+    &7Disponíveis: {list}
+  crate-give: '&eVocê deu &f{amount}x chaves(s) &r{crate}&e para o jogador &f{player}&e.'
+  crate-give-all: '&eVocê deu &f{amount}x chaves(s) &r{crate}&e para todos os jogadores online.'
+  crate-give-all-target: |
+    <nl>
+    &eTodos os jogadores receberam &f{amount}x chaves(s) &r{crate}&e.
+    <nl>
+  crate-activated: '&eForam adicionadas &f{amount}x chaves(s) &r{crate}&e em seu /crates.'
+  crate-collect: '&eColete as recompensas obtidas em &f/crates armazem&e.'
+  crate-collected: '&eVocê retirou &f{amount}x chaves(s) &r{crate}&e.'
+  crate-reward-collected: '&eItem recolhido com sucesso.'
+  crate-reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  crate-defined: '&eBloco da crate definido com sucesso.'
+  crate-define-enter: '&eClique em um bloco para definir como crate. Para sair digite /crate definir novamente.'
+  crate-define-leave: '&eVocê saiu do modo definição.'
+  crate-define: '&cVocê está no modo definir. Para sair: /crate definir'
+  world-blacklisted: '&cVocê não pode coletar recompensas neste mundo.'
+  wait-collect: '&cAguarde parar recolher recompensas novamente.'

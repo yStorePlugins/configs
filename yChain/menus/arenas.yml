@@ -1,0 +1,38 @@
+Nome: '&8Arenas do servidor'
+Tamanho: 36
+Slots: [ 10, 11, 12, 13, 14, 15, 16, 21, 22, 23, 24, 25]
+BackSlot: 18
+AnteriorSlot: 27
+ProximoSlot: 35
+Itens: {}
+#  Enfeite:
+#    Slot: 10
+#    CustomSkull: false
+#    URL: ''
+#    ID: 1
+#    Data: 0
+#    Glow: false
+#    Name: '&aEnfeite'
+#    Lore: []
+  # Você pode adicionar enfeites, apenas adicionando itens iguais o Enfeite e mudando os dados.
+##################
+# Este item será mostrado para cada arena que não estiver configurada na seção Arenas.
+Padrao:
+  Name: '&e{nome}'
+  Lore:
+    - '&fJogadores na arena: &b{jogadores}&f.'
+    - ''
+    - '&7Clique para entrar nesta arena.'
+# Configure as minas que irão aparecer
+Arenas:
+  Arena1:
+    # Id da arena criada (nome do arquivo sem o .yml na pasta arenas)
+    Arena: 'Chain'
+    Name: '&e{nome}'
+    Lore:
+      - '&7Essa arena é a mais capaz de'
+      - '&7suportar todos os tipos de pvp insanos!'
+      - ''
+      - '&fJogadores na arena: &b{jogadores}&f.'
+      - ''
+      - '&9&lyStore'

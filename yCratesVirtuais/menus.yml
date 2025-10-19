@@ -1,0 +1,333 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s
+menu-updater-time: 20
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de gerenciar membros
+main:
+  name: '&8Crates'
+  size: 54
+  slots: [ 11, 12, 13, 20, 21, 22, 29, 30, 31 ]
+  previous-slot: 18
+  next-slot: 26
+  #
+  empty-slot: -1
+  open-all-slot: 15
+  open-automatic-slot: 33
+  filter-slot: 24
+  info-slot: 47
+  top-slot: 49
+  rewards-slot: 51
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&cVocê não possui nenhuma chave'
+      lore: []
+    open-all:
+      material: '4ced34211fed4010a8c85724a27fa5fb205d67684b3da517b6821279c6b65d3f'
+      name: '&cAbrir todas chaves!'
+      lore: [ '&7Abra todas suas crates', '&7de uma só vez.', '', ' &fChaves a abrir: &7{to_open}', '', '&aClique para abrir.' ]
+    open-all-permission:
+      material: '4ced34211fed4010a8c85724a27fa5fb205d67684b3da517b6821279c6b65d3f'
+      name: '&cAbrir todas chaves!'
+      lore: [ '&7Abra todas suas crates', '&7de uma só vez.', ' &fChaves a abrir: &7{to_open}', '', '&cVocê não tem permissão' ]
+    open-automatic-on:
+      material: 'a7695f96dda626faaa010f4a5f28a53cd66f77de0cc280e7c5825ad65eedc72e'
+      name: '&cAbrir automaticamente'
+      lore: [ '&7Abra todas suas crates', '&7automaticamente.', ' &fChaves a abrir: &7{to_open}', '', '&fStatus: &aATIVADO', '' ]
+    open-automatic-off:
+      material: 'df4dc3c3753bf5b0b7f081cdb49b83d37428a12e4187f6346dec06fac54ce'
+      name: '&cAbrir automaticamente'
+      lore: [ '&7Abra todas suas crates', '&7automaticamente.', ' &fChaves a abrir: &7{to_open}', '', '&fStatus: &cDESATIVADO', '' ]
+    open-automatic-permission:
+      material: 'df4dc3c3753bf5b0b7f081cdb49b83d37428a12e4187f6346dec06fac54ce'
+      name: '&cAbrir automaticamente'
+      lore: [ '&7Abra todas suas crates', '&7automaticamente.', ' &fChaves a abrir: &7{to_open}', '', '&cVocê não tem permissão.' ]
+    filter:
+      material: 'HOPPER'
+      name: '&eItens filtrados'
+      lore: [ '&7Clique para gerenciar', '&7os &f{filtered}&7 itens filtrados.' ]
+    info:
+      material: 'd01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f'
+      name: '&eSuas informações'
+      lore: [ '', ' &fChaves abertas: &7{opened}', ' &fChaves a abrir: &7{to_open}', '', ' &fRecompensas a coletar: &7{rewards}', '' ]
+    top:
+      material: 'BOOK'
+      name: '&eTOP'
+      lore: [ '&7Clique para ver os', '&7jogadores que abriram', '&7mais crates.' ]
+    rewards:
+      material: 'CHEST'
+      name: '&eSuas recompensas'
+      lore: [ '&7Clique para gerenciar', '&7suas &f{rewards}&7 recompensas.' ]
+  facing:
+    e0:
+      slot: 11
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e1:
+      slot: 12
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e2:
+      slot: 13
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e3:
+      slot: 20
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e4:
+      slot: 21
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e5:
+      slot: 22
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e6:
+      slot: 29
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e7:
+      slot: 30
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+    e8:
+      slot: 31
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: ' '
+      lore: []
+
+# Menu de abrir as chaves
+open:
+  name: '&8Crates'
+  size: 36
+  back-slot: 31
+  open-1-slot: 11
+  open-all-slot: 12
+  collect-1-slot: 14
+  collect-all-slot: 15
+  items:
+    open-1:
+      material: '71bc2bcfb2bd3759e6b1e86fc7a79585e1127dd357fc202893f9de241bc9e530'
+      name: '&aAbrir 1x'
+      lore: [ '', ' &fChaves disponíveis: &7{amount}', '', '&aClique para abrir' ]
+    open-all:
+      material: '49dd36759307db8e2d9f4b0c2aed2556db1ddcf3f67fa19cc826acbd965fe'
+      name: '&aAbrir tudo'
+      lore: [ '', ' &fChaves disponíveis: &7{amount}', '', '&aClique para abrir' ]
+    collect-1:
+      material: 'd9b30303f94e7c785a31e5727a9381535daf4753449ea41db746e1234e9dd2b5'
+      name: '&aRetirar 1x'
+      lore: [ '', ' &fChaves disponíveis: &7{amount}', '', '&aClique para retirar' ]
+    collect-all:
+      material: '1a6f1bce5461368a40707c54dc0b895bd61499e812145093db32f9eb12c32954'
+      name: '&aRetirar tudo'
+      lore: [ '', ' &fChaves disponíveis: &7{amount}', '', '&aClique para retirar' ]
+
+# Menu de preview das recompensas
+preview:
+  name: '&8Crates'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  #
+  collect-slot: 38
+  open-slot: 42
+  #
+  items:
+    collect:
+      material: 'TRIPWIRE_HOOK'
+      name: '&eRetirar as chaves!'
+      lore: [ '&7Receba a chave em', '&7seu inventário.', '', ' &8> &f{amount}&7 chaves', '', '&8>&f Botão esquerdo: &7Retira 100', '&8>&f Botão direito: &7Retira 1', '&8>&f Botão Q: &7Retira todas' ]
+    open:
+      material: '4ced34211fed4010a8c85724a27fa5fb205d67684b3da517b6821279c6b65d3f'
+      name: '&eAbrir as chaves!'
+      lore: [ '&7Abrir as chaves e', '&7receber recompensas.', '', ' &8> &f{amount}&7 chaves', '', '&8>&f Botão esquerdo: &7Abre 100', '&8>&f Botão direito: &7Abre 1', '&8>&f Botão Q: &7Abre todas' ]
+  facing:
+    e0:
+      slot: 11
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e1:
+      slot: 12
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e2:
+      slot: 13
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e3:
+      slot: 14
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e4:
+      slot: 15
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e5:
+      slot: 20
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e6:
+      slot: 21
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e7:
+      slot: 22
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e8:
+      slot: 23
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e9:
+      slot: 24
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+
+# Menu de recompensas
+rewards:
+  name: '&8Crates'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  #
+  empty-slot: 22
+  collect-slot: 50
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
+    collect:
+      material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+      name: '&eRecolher tudo'
+      lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+
+# Menu de filtro das recompensas
+filter:
+  name: '&8Crates'
+  size: 45
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 40
+  facing:
+    e0:
+      slot: 11
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e1:
+      slot: 12
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e2:
+      slot: 13
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e3:
+      slot: 14
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e4:
+      slot: 15
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e5:
+      slot: 20
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e6:
+      slot: 21
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e7:
+      slot: 22
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e8:
+      slot: 23
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+    e9:
+      slot: 24
+      material: 'BARRIER'
+      name: ' '
+      lore: []
+
+# Menu de top
+top:
+  name: '&8Top crates'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 9
+  next-slot: 17
+  items:
+    # Item do top abertas
+    opened:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - ''
+        - '&fChaves abertas: &7{amount}'
+        - '&fPosição: &e{pos}º'
+        - ''

@@ -1,0 +1,168 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Chain:
+    Comando: 'chain'
+    Aliases: [ arenachain ]
+
+# Opcoes de configuração do NPC
+NPC:
+  ID: 923284
+  Skin: 'TheThunderGod063'
+  Holograma:
+    Altura: 3.1
+    Holograma:
+      - '&6Chain'
+      - '&7Clique para entrar na arena chain.'
+
+# Opções gerais do plugin
+Opcoes:
+  # Tag do top kills
+  Tag: '&c[MATADOR]'
+  # o comando /chain arenas abrir um menu
+  Arenas menu: true
+  # o comando /chain kits abrir um menu
+  Kits menu: true
+  # Evitar reparar itens, regenerar, ganhar itens, ganhar recompensas, killstreak ao matar o jogador 2x ou mais seguidas.
+  AntiFreeKill: true
+  # Comandos que poderão ser usados na arena
+  Command whitelist:
+    - '/g'
+  # Recompensas configuradas na recompensas.yml que poderão ser dadas ao matar um jogador
+  # Deixe Recompensas: [] para não usar
+  # chance,recompensa
+  Recompensas:
+    - '100.0,Reco1'
+  # Regenerar a vida ao matar um jogador
+  # a vida total do jogador é 20 (10 corações)
+  # deixe 0 para não usar
+  Regenerar: 5
+  # Resetar inventário ao matar um jogador
+  # Apenas se os itens forem setados
+  ResetarMatar: false
+  # Itens que poderão ser dado ao matar um jogador
+  # será escolhido apenas um da lista por kill.
+  Itens dar:
+    - 'GOLDEN_APPLE:0'
+  # Quando o jogador fizer x kills (minimo definido)
+  # irá enviar mensagem para o broadcast e/ou para o jogador, informando
+  # que ele está fazendo uma série de kills (matando muito)
+  Killstreak:
+    Ativar: true
+    Minimo: 2
+    # Deixe '' para não usar alguma das duas.
+    Broadcast: '&aO jogador &f{player}&a está com um &nkillstreak&a de &6{kills} &a&nkills&a.'
+    Player: '&aVocê está com um &nkillstreak&a de &6{kills} &a&nkills&a.'
+    # Recompensas configuradas na recompensas.yml que poderão ser dadas ao atingir um killstreak
+    # Deixe Recompensas: [] para não usar
+    # KillStreak,chance,recompensa
+    Recompensas:
+      - '2,100.0,Reco1'
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não possui permissão para isto.'
+  Setado npc: '&aNPC do chain setado com sucesso.'
+  Removido npc: '&aNPC do chain removido com sucesso'
+  Nao setado npc: '&cO NPC não está setado.'
+  Setado: '&aLocal &7{local} &ada arena setado com sucesso.'
+  Removido: '&aLocal &7{local} &ada arena removido com sucesso.'
+  Nao setado: '&cO local &7{local} &cda arena chain não está setado.'
+  Setado kit: '&aO kit da arena chain foi setado com sucesso. &7(Todos os itens do seu inventário foram reconhecidos)'
+  Recebeu kit: '&aVocê recebeu o kit da arena chain.'
+  Entrou: '&aVocê entrou na arena chain.'
+  Saiu: '&aVocê saiu da arena chain.'
+  Ja esta: '&cVocê já está na arena chain.'
+  Nao esta: '&cVocê não está na arena chain.'
+  Esvazie: '&cEsvazie seu inventário para entrar na arena chain.'
+  Kit criado: '&aKit &7{kit} &8(#{id})&a criado com sucesso.'
+  Arena criada: '&aArena &7{arena} &8(#{id})&a criada com sucesso.'
+  Arena existe: '&cEsta arena já existe.'
+  Kit existe: '&cEste kit já existe.'
+  Arena nao existe: '&cEsta arena não existe.'
+  Kit nao existe: '&cEste kit não existe.'
+  Arena deletada: '&cArena deletada.'
+  Kit deletado: '&cKit deletado.'
+  Item nao: '&cO item não pode ser nulo.'
+  Icone mudou: '&aÍcone alterado com sucesso.'
+  Cancelou: '&cVocê cancelou a operação.'
+  Mudou nome: '&aVocê alterou o nome da arena para &e{nome}&a.'
+  Mudou kit: '&aVocê alterou o kit da arena para &e{kit}&a.'
+  Inv cheio: '&cSeu inventário está cheio.'
+  Digite nome:
+    - ''
+    - '&aDigite o nome para qual deseja alterar.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Arenas:
+    - '&aArenas disponíveis: &7{arenas}&a.'
+  Kits:
+    - '&aKits disponíveis: &7{kits}&a.'
+  Recebeu:
+    - '&aVocê recebeu uma recompensa, digite /chain para coletá-la.'
+  Help admin:
+    - ''
+    - '&b--> &7Comandos disponíveis &b<--'
+    - ''
+    - '&b -> &f/chain &8- &7Abre o menu principal'
+    - '&b -> &f/chain entrar &8- &7Entra na arena chain'
+    - '&b -> &f/chain sair &8- &7Sai da arena chain'
+    - '&b -> &f/chain arenas - Vê todas as arenas do servidor'
+    - '&b -> &f/chain ajuda - Vê todos os comandos'
+    - '&b -> &f/chain kits - Vê os kits configurados'
+    - '&b -> &f/chain arenasadmin - Gerenciar as arenas'
+    - '&b -> &f/chain criararena - Cria uma nova arena'
+    - '&b -> &f/chain delarena - Deleta uma arena'
+    - '&b -> &f/chain criarkit - Cria um novo kit'
+    - '&b -> &f/chain delkit - Deleta um kit'
+    - '&b -> &f/chain setnpc &8- &7Seta o NPC do chain'
+    - '&b -> &f/chain delnpc &8- &7Deleta o NPC do chain'
+    - ''
+  Help:
+    - ''
+    - '&b--> &7Comandos disponíveis &b<--'
+    - ''
+    - '&b -> &f/chain &8- &7Abre o menu principal'
+    - '&b -> &f/chain entrar &8- &7Entra na arena chain'
+    - '&b -> &f/chain sair &8- &7Sai da arena chain'
+    - '&b -> &f/chain arenas - Vê todas as arenas do servidor'
+    - '&b -> &f/chain ajuda - Vê todos os comandos'
+    - '&b -> &f/chain kits - Vê os kits configurados'
+    - ''
+
+# Setas dos menus
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'

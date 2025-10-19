@@ -1,0 +1,94 @@
+# Ordem do tipo de cubo
+# O jogador começa no cubo de ordem 1
+# Ele evolui o nível assim que termina de coletar todos
+order: 1
+
+# Nome nas mensagens
+display: '&fCubo Básico'
+
+# Permissão para abrir os cubos
+permission: ''
+
+# Item do cubo coletado
+collected:
+  material: 'BARRIER'
+  name: '&cCubo resgatado!'
+  lore: [ '&7Este cubo já foi resgatado', '&7tente abrir outro cubo!' ]
+
+# Configurações do menu
+menu:
+  name: '&8Cubos'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 20, 21, 22, 23, 24, 25, 29, 30, 31, 32, 33, 34, 38, 39, 40, 41, 42, 43 ]
+  previous-slot: 48
+  next-slot: 50
+  items:
+    info-slot: 0
+    collect-slot: 45
+    top-slot: 53
+    info:
+      material: '9a3cc25a16c97b4fc63858ad1a8f5d293ecf285f702efdc4caa31a8cea9e4621'
+      name: '&eCubos aleatórios'
+      lore: [ '&7Sua recompensa está oculta', '&7em um dos mistérios aqui.', '', '&e* Gaste &l10&e fragmentos para', '&e abrir um cubo.', '', '&fSeu saldo de fragmentos: &e{fragments}' ]
+    collect:
+      material: 'QUARTZ'
+      name: '&eFragmento'
+      lore: [ '&7Clique para recolher os', '&7fragmentos que você possui.', '', '&fSeu saldo de fragmentos: &e{fragments}' ]
+    top:
+      material: 'GOLD_INGOT'
+      name: '&eTOP Cubos'
+      lore: [ '&7Clique para ver os usuários', '&7que mais ativaram cubos.' ]
+  facing:
+    1:
+      material: 'STAINED_GLASS_PANE:15'
+      name: '&r'
+      slot: 9
+    2:
+      material: 'STAINED_GLASS_PANE:15'
+      name: '&r'
+      slot: 18
+    3:
+      material: 'STAINED_GLASS_PANE:15'
+      name: '&r'
+      slot: 27
+    4:
+      material: 'STAINED_GLASS_PANE:15'
+      name: '&r'
+      slot: 36
+
+# Configuração de cada cubo
+cubos:
+  cubo1:
+    material: '925aca61e1b8beca9befcadd08262c5821e275be414d94f0b27e8580f20dbf3a'
+    name: '&e&kaaaaaaaaaaaa'
+    lore: [ '&7Um item misterioso está oculto aqui.', '', '&fRequisitos p/ abrir:', '&e* &f&l{ycubos}x &ffragmentos.', '', '&fClique para abrir.' ]
+    # Preços do cubo
+    prices:
+      price1:
+        provider: 'ycubos'
+        amount: 10.0
+    # Quantia máxima de recompensas que o cubo pode dar
+    # Deixe 0 para rodar toda a lista
+    max-rewards: 0
+    # chance,recompensa
+    rewards: [ '100.0,reward1' ]
+  cubo2:
+    material: '925aca61e1b8beca9befcadd08262c5821e275be414d94f0b27e8580f20dbf3a'
+    name: '&e&kaaaaaaaaaaaa'
+    lore: [ '&7Um item misterioso está oculto aqui.', '', '&fRequisitos p/ abrir:', '&e* &f&l{ycubos}x &ffragmentos.', '', '&fClique para abrir.' ]
+    prices:
+      price1:
+        provider: 'ycubos'
+        amount: 10.0
+    max-rewards: 0
+    rewards: [ '100.0,reward2' ]
+  cubo3:
+    material: '925aca61e1b8beca9befcadd08262c5821e275be414d94f0b27e8580f20dbf3a'
+    name: '&e&kaaaaaaaaaaaa'
+    lore: [ '&7Um item misterioso está oculto aqui.', '', '&fRequisitos p/ abrir:', '&e* &f&l{ycubos}x &ffragmentos.', '', '&fClique para abrir.' ]
+    prices:
+      price1:
+        provider: 'ycubos'
+        amount: 10.0
+    max-rewards: 0
+    rewards: [ '100.0,reward3' ]

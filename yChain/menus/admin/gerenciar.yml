@@ -1,0 +1,91 @@
+Nome: '&8Gerenciar arena'
+Tamanho: 36
+BackSlot: 27
+Itens:
+  Nome:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: 421
+    Data: 0
+    Glow: false
+    Name: '&aNome da arena'
+    Lore:
+      - '&7Nome da arena que ficará'
+      - '&7no /chain arenas'
+      - ''
+      - '&7 Atual: {arena}'
+      - ''
+      - '&7Clique para renomear.'
+  Icone:
+    Slot: 12
+    CustomSkull: false
+    URL: ''
+    ID: 389
+    Data: 0
+    Glow: false
+    Name: '&aÍcone da arena'
+    Lore:
+      - '&7Mude o ícone que ficará'
+      - '&7no /chain arenas'
+      - ''
+      - '&7Clique para alterar o ícone.'
+  Kit:
+    Slot: 14
+    CustomSkull: false
+    URL: 'http://textures.minecraft.net/texture/3857d6b17901fd3f0109bd9bdcc28021b65947fce0a958327247d26d92915b85'
+    ID: 347
+    Data: 0
+    Glow: false
+    Name: '&aKit da arena'
+    Lore:
+      - '&7Configure o kit que esta'
+      - '&7arena irá fornecer.'
+      - ''
+      - '&7 Atual: &b{kit}&7.'
+      - ''
+      - '&7Clique para alterar'
+      - '&7o kit desta arena.'
+  Itens setados:
+    Slot: 15
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/adaa574a2e5248e61b8566629b457b5101420eff14a16c4774ed2fa83535a0ba'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aItens setados'
+    Lore:
+      - '&7Definir que esta arena'
+      - '&7entrega itens para os jogadores.'
+      - ''
+      - '&fEstado: &7{estado}&f.'
+  Entrada:
+    Slot: 20
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aEntrada da arena'
+    Lore:
+      - '&7Configure o local de'
+      - '&7entrada desta arena.'
+      - ''
+      - '&7Botão &fesquerdo &7para teleportar.'
+      - '&7Botão &fdireito &7para setar.'
+      - '&7Botão &fQ &7para deletar.'
+  Saida:
+    Slot: 21
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aSaída da arena'
+    Lore:
+      - '&7Configure o local de'
+      - '&7saída desta arena.'
+      - ''
+      - '&7Botão &fesquerdo &7para teleportar.'
+      - '&7Botão &fdireito &7para setar.'
+      - '&7Botão &fQ &7para deletar.'

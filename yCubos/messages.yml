@@ -1,0 +1,42 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aCubos comandos:
+
+    &a> /cubos
+    &a> /cubo enviar
+    &a> /cubo darfragmento
+    &a> /cubo add
+    &a> /cubo set
+    &a> /cubo remove
+    &a> /cubo reload
+
+  no-has: '&cVocê não possui nenhuma lista de cubos disponível.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  opened: '&aVocê coletou um cubo por &f{ycubos} fragmentos&a.'
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  fragments-sent: '&bVocê enviou &f{amount} fragmentos&b para o jogador &f{player}&b.'
+  fragments-received-player: '&bVocê recebeu &f{amount} fragmentos&b do jogador &f{player}&b.'
+  fragments-no-has: '&bVocê não possui &f{amount} fragmentos&b.'
+  fragments-changed: '&aFragmentos do jogador &7{player}&a alterado para &7{amount}&a.'
+  fragments-give: '&aVocê deu &7{amount}x fragmentos&a para o jogador &7{player}&a.'
+  fragments-received: '&aVocê recebeu &7{amount}x fragmentos&a.'
+  fragments-converted: '&aVocê converteu todos seus fragmentos em um só.'
+  fragments-activated: '&aVocê aumentou o seu fragmentos em {amount}.'
+  fragments-collected: '&aVocê coletou {amount} fragmentos.'

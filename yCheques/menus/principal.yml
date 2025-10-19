@@ -1,0 +1,62 @@
+Nome: '&8Gerenciar cheques'
+Tamanho: 27
+Itens:
+  Informacoes:
+    Slot: 11
+    CustomSkull: true
+    URL: '{player}'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aSuas informações'
+    Lore:
+      - '&7Veja suas informações'
+      - '&7referente aos cheques.'
+      - ''
+      - ' &fCheques criados: &a{criados}&f.'
+      - ''
+# Caso queira enfeitar seu menu, poderá criar itens nesta seção:
+Itens custom: {}
+  #Enfeite1:
+  #  Slot: 0
+  #  CustomSkull: false
+  #  URL: ''
+  #  ID: 1
+  #  Data: 0
+  #  Glow: true
+  #  Name: ''
+  #  Lore: []
+# Tipos de cheques que irão aparecer no menu.
+# Você poderá checar os tipos além do "Money" na página do plugin
+# em nosso site.
+Cheques:
+  Cheque1:
+    Tipo: 'Money'
+    Slot: 13
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/8381c529d52e03cd74c3bf38bb6ba3fde1337ae9bf50332faa889e0a28e8081f'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aCheque de Money'
+    Lore:
+      - ''
+      - ' &fLimite usado: &c{usado}&f/&a{limite}&f.'
+      - ' &fVocê possui &7{quantia}&f disponível.'
+      - ''
+      - '&aClique para criar um cheque de money.'
+  Cheque2:
+    Tipo: 'yPoints'
+    Slot: 14
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&6Cheque de Cash'
+    Lore:
+      - ''
+      - ' &fLimite usado: &c{usado}&f/&a{limite}&f.'
+      - ' &fVocê possui &7{quantia}&f disponível.'
+      - ''
+      - '&aClique para criar um cheque de cash.'

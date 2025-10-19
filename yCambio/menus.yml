@@ -1,0 +1,56 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Câmbio'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 18
+  next-slot: 26
+  #
+  profile-slot: 31
+  #
+  items:
+    profile:
+      material: '{player}'
+      name: '&eSuas informações'
+      lore: [ '', '&fCoins: &a%yeconomy_money%', '&fCash: &6%ypoints_points%', '' ]
+
+# Menu de confirmação
+confirm:
+  name: '&8Câmbio'
+  size: 27
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  items:
+    item-slot: 13
+    confirm-slot: 11
+    cancel-slot: 15
+    confirm:
+      material: 'WOOL:5'
+      name: '&aConfirmar'
+      lore: [ '&7Clique para &aconfirmar&7 o câmbio.' ]
+    cancel:
+      material: 'WOOL:14'
+      name: '&cCancelar'
+      lore: [ '&7Clique para &ccancelar&7 o câmbio.' ]

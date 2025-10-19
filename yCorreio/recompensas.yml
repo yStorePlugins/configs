@@ -1,0 +1,48 @@
+Recompensas:
+  Reco1:
+    # Nome que aparecerá nas mensagens
+    Nome: '&6Pedra mística'
+    # Item que aparecerá no preview do menu.
+    Preview:
+      CustomSkull: false
+      URL: ''
+      ID: STONE
+      Data: 0
+      Name: '&8Pedra'
+      Amount: 64
+      Lore:
+        - '&aEsta pedra vale muito dinheiro!'
+      # Caso não queira deixe:
+      # Enchants:
+      # - ''
+      Enchants:
+        - ''
+    # Só será dado o item se os comandos estiverem em false.
+    # Item que será dado ao jogador.
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: STONE
+      Data: 0
+      Name: '&8Pedra'
+      Amount: 64
+      Lore:
+        - '&aEu valho muito!'
+      # Caso não queira deixe:
+      # Enchants:
+      # - ''
+      Enchants:
+        - ''
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      Use: false
+      # Ativando essa opção ele vai executar o comando apenas 1x
+      # e vai dar a quantia usando a placeholder {quantia}
+      UsarQuantia: true
+      # Limitar a quantia de recolher para o disponível no inventário
+      LimiteInv: false
+      # quantia padrão da placeholder {quantia} no comando (valor base)
+      placeholder-amount: 1
+      List:
+        - 'give {player} stone {quantia}'

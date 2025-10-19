@@ -1,0 +1,29 @@
+Nome: '&8Kit {arena}'
+Tamanho: 36
+Backslot: 18
+Itens: {}
+  #Enfeite1:
+  #  Slot: 10
+  #  CustomSkull: false
+  #  URL: ''
+  #  ID: 340
+  #  Data: 0
+  #  Glow: false
+  #  Name: ''
+  #  Lore: []
+  # Você pode adicionar enfeites, apenas adicionando itens iguais o Enfeite1 e mudando os dados.
+##################
+Kits:
+  g1:
+    # ID do kit criado
+    Slot: 10
+    Kit: 'Chain'
+    CustomSkull: false
+    URL: ''
+    ID: 340
+    Data: 0
+    Glow: false
+    Name: '&eChain'
+    Lore:
+      - '&7Clique para configurar nesta arena'
+      - '&7este kit.'

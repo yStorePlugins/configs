@@ -1,0 +1,99 @@
+#         ____ _                 ____  _       _
+#  _   _ / ___| | ___  __ _ _ __|  _ \| | ___ | |_
+# | | | | |   | |/ _ \/ _` | '__| |_) | |/ _ \| __|
+# | |_| | |___| |  __/ (_| | |  |  __/| | (_) | |_
+#  \__, |\____|_|\___|\__,_|_|  |_|   |_|\___/ \__|
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Limite de limpezas por vez
+# Ideal para não lagar seu servidor
+limit: 10
+
+# Opções gerais do plugin
+general:
+  # Precisar de shift para ativar o limpador
+  need-shift: true
+  # Abrir o menu de confirmação
+  open-menu: true
+  # Utilizar o WorldEdit
+  worldedit: false
+  # Limpar de forma instantânea
+  # Pode gerar LAG
+  instant: false
+  # Ativar para apenas o dono da plot conseguir limpar
+  just-owner: true
+  # Mundos que não será possível usar o limpador
+  world-blacklist: []
+  # Blocos que não serão limpos
+  block-blacklist: ['RAW_NAME:0']
+  # Comandos bloqueados para o jogador que está limpando a plot
+  command-blacklist:
+    - '/p'
+    - '/plot'
+
+hologram:
+  enabled: true
+  off-set: 2.0
+  lines:
+    - '&a&lLIMPADOR'
+    - '&eRealizando limpeza...'
+    - ''
+    - '&fBlocos: &a{min}&7/&c{max}'
+    - '&8[{progressbar}&8] &7{percentage}'
+
+# Item da limpeza
+item:
+  material: 'DIAMOND_SPADE'
+  name: '&aLimpador'
+  lore:
+    - '&7Use este item no seu plot para'
+    - '&7limpá-lo por completo.'
+    - ''
+    - '&7Clique com botão direito para ativar.'
+
+# Configuração da barra de progresso
+progress-bar:
+  amount: 10
+  symbol: ':'
+  color-yes: '&a'
+  color-no: '&7'

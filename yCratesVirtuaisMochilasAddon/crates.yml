@@ -1,0 +1,9 @@
+crates:
+  vip:
+    # Identificador da key no yCratesVirtuais
+    ycratesvirtuais-key: 'vip'
+    # Ícone no menu
+    menu:
+      material: 'TRIPWIRE_HOOK'
+      name: '&6Chave VIP'
+      lore: [ '', '&fQuantidade: &7{amount}', '', '&aClique para recolher.' ]

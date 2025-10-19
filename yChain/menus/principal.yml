@@ -1,0 +1,73 @@
+Nome: '&7Chain'
+Tamanho: 27
+Itens:
+  Informacoes:
+    Slot: 10
+    CustomSkull: true
+    URL: '{player}'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aSuas informações'
+    Lore:
+      - ''
+      - ' &fTempo total na arena: &7{tempo}&f.'
+      - ' &fKillstreak máximo e atual: &7A: {killstreak} &8- &7M: {killstreak_maximo}&f.'
+      - ''
+      - ' &fKills: &a{kills}&f.'
+      - ' &fMortes: &c{mortes}&f.'
+      - ' &fKDR: &b{kdr}&f.'
+      - ''
+  Recompensas:
+    Slot: 12
+    CustomSkull: false
+    URL: ''
+    ID: 130
+    Data: 0
+    Glow: true
+    Name: '&aRecompensas!'
+    Lore:
+      - '&7Recolha as recompensas'
+      - '&7que você ganhou na arena!'
+      - ''
+      - '&aClique para acessar.'
+  Top:
+    Slot: 14
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aTop jogadores'
+    Lore:
+      - '&7Veja os jogadores que'
+      - '&7se destacaram na arena.'
+      - ''
+      - '&aClique para visualizar.'
+  Entrar:
+    Slot: 16
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aEntrar'
+    Lore:
+      - '&7Entrar para o combate em'
+      - '&7alguma das nossas arenas.'
+      - ''
+      - '&aClique para entrar.'
+  Sair:
+    Slot: 16
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&cSair'
+    Lore:
+      - '&7Você está batalhando!'
+      - ''
+      - '&aClique para sair.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Magnata:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

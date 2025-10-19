@@ -1,0 +1,43 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aCâmbio comandos:
+
+    &a> /cambio
+    &a> /cambio reload
+
+  digit-amount: |
+
+    &aDigite no chat a quantia que quer cambiar.
+    &7para cancelar digite &ncancelar&7.
+
+  minimum: '&cO valor mínimo para cambiar de {from} para {to} é {minimum}.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  exchanged: |
+    &eCâmbio
+    &aVocê trocou de {from_display} para {to_display}
+
+    &7Valor pago: &c{from_value} {from_abbreviated}
+    &7Valor recebido: &a{to_value} {to_abbreviated}
+    &7Taxa: &e{tax}% -> {tax_value}
+
+  not-found: '&cEconomia {economy} não cadastrada no servidor.'
+  npc-set: '&aNPC setado com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'

@@ -1,0 +1,24 @@
+Nome: '&8Arenas - Lista admin'
+Tamanho: 27
+Slots: [ 11, 12, 13, 14, 15 ]
+AnteriorSlot: 17
+ProximoSlot: 9
+Itens: {}
+  #Enfeite:
+  #  Slot: 10
+  #  CustomSkull: false
+  #  URL: ''
+  #  ID: 340
+  #  Data: 0
+  #  Glow: false
+  #  Name: '&7Enfeite'
+  #  Lore:
+  #    - '&7Sou apenas um enfeite'
+# Item da arena
+Arena:
+  Name: '&e{nome}'
+  Lore:
+    - ''
+    - '&eOpções disponíveis:'
+    - '&e&l| &fBotão esquerdo&7: Gerenciar.'
+    - '&e&l| &fBotão direito&7: Deletar.'

@@ -1,0 +1,45 @@
+# Limite padrão do jogador
+default: 1
+
+# Máximo de limite que o jogador poderá ter
+# -1 para ser infinito
+maximum: -1
+
+# Slot do display no menu
+display-slot: 48
+
+messages:
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  bought: '&aVocê comprou +1 limite de abertura de key.'
+
+# Custos de evolução por nível
+costs:
+  cost1:
+    provider: 'Money'
+    amount: 100.0
+
+# Item do menu
+display:
+  material: 'INK_SACK:10'
+  name: '&eLimite de abertura'
+  lore:
+    - '&7Abra mais keys ao mesmo'
+    - '&7tempo.'
+    - ''
+    - '&7Limite Atual: &b{limit}'
+    - ''
+    - '&f* +1 por: &a{Money} coins&f.'
+    - ''
+    - '&aClique para adquirir.'
+
+# Item do menu
+display-max:
+  material: 'INK_SACK:10'
+  name: '&eLimite de abertura'
+  lore:
+    - '&7Abra mais keys ao mesmo'
+    - '&7tempo.'
+    - ''
+    - '&7Limite Atual: &b{limit}'
+    - ''
+    - '&cVocê está no máximo.'

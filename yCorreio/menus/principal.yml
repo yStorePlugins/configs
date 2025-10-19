@@ -1,0 +1,78 @@
+Nome: '&8Seu correio'
+Tamanho: 54
+Slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+VoltarSlot: 18
+ProximoSlot: 26
+
+# Item do perfil
+Perfil:
+  Slot: 46
+  CustomSkull: true
+  URL: '{player}'
+  ID: AIR
+  Data: 0
+  Glow: true
+  Name: '&eSuas informações'
+  Lore:
+    - ''
+    - '&f Seu grupo: &a{grupo}&f.'
+    - ''
+    - '&f Recompensas armazenadas: &a{recompensas}&f.'
+    - '&f Encomendas armazenadas: &a{entregas}&f.'
+    - ''
+
+# Item para recolher todas as recompensas
+Recolher todos:
+  Slot: 48
+  CustomSkull: false
+  URL: ''
+  ID: HOPPER_MINECART
+  Data: 0
+  Glow: true
+  Name: '&6Recolher todos'
+  Lore:
+    - '&7Clique para recolher'
+    - '&7todos os armazenados'
+    - '&7nesta categoria.'
+
+# Item para enviar encomenda à um jogador
+Enviar:
+  Slot: 52
+  CustomSkull: true
+  URL: 'http://textures.minecraft.net/texture/22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+  ID: AIR
+  Data: 0
+  Glow: true
+  Name: '&aEnviar'
+  Lore:
+    - '&7Clique para enviar encomenda'
+    - '&7para um jogador.'
+
+# Seletor da categoria
+Seletor:
+  Slot: 50
+  CustomSkull: false
+  URL: ''
+  ID: HOPPER
+  Data: 0
+  Name: '&aSeletor de Categorias'
+
+# Seletor da categoria
+Empty:
+  Slot: 22
+  CustomSkull: false
+  URL: ''
+  ID: BARRIER
+  Data: 0
+  Name: '&cVazio'
+  Lore: []
+
+# Tipos do seletor
+Tipos:
+  Encomenda:
+    Nome: 'Encomendas'
+
+# Formatos do seletor
+Formato:
+  Visualizando: ' &f• &a{nome} [{quantia}]'
+  Selecionar: ' &f• &7{nome} [{quantia}]'

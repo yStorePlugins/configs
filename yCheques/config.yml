@@ -1,0 +1,73 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Tabela: 'ycheques.players'
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Cheque:
+    Comando: 'cheque'
+    Aliases: [ cheques ]
+
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+Formatacao: 'LETRA'
+
+# Opcoes de configuração do NPC
+NPC:
+  ID: 923283
+  Skin: 'TheThunderGod063'
+  Holograma:
+    Altura: 3.1
+    Holograma:
+      - '&6Cheques'
+      - '&7Gerenciador de cheques.'
+
+# Opções gerais do plugin
+Opcoes:
+  # Limite de criação de cada cheque
+  # Deixe 0 para não ter limite
+  Limite: 10
+  # Tempo para resetar o limite
+  # em segundos
+  Resetar com: 60
+  # Minimo para criar um cheque
+  Minimo: 2000.0
+  # Caso true, o comando /cheque criar será apenas executado pelo console
+  Criar console: true
+  # Quando ativo, o jogador poderá juntar todos os cheques do mesmo tipo em 1 só
+  Juntar: true
+  # Taxa para criar cheque (em %)
+  # permissão de bypass: ycheques.taxa.bypass
+  Taxa: 20
+  # Ativar o sistema de UUID - ANTI-DUPE
+  # **** Cuidado ao desativar
+  UUID: true
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não possui permissão para isto.'
+  Cancelou: '&cVocê cancelou a operação.'
+  Nao e numero: '&cO argumento não é um número.'
+  Menor minimo: '&cEsta operação requer um mínimo de &7{quantia}&c.'
+  Inv cheio: '&cSeu inventário está cheio.'
+  Nao possui: '&cVocê não possui a quantia &7{quantia}&c.'
+  Setado: '&aNPC do cheque setado com sucesso.'
+  Removido: '&aNPC do cheque removido com sucesso'
+  Nao setado: '&cO NPC não está setado.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Cadastrado: '&cEste plugin &f{plugin}&c não está implementado no plugin de cheques.'
+  Desabilitado: '&cEste plugin &f{plugin}&c não está ligado.'
+  Configurado: '&cNão foi encontrado nenhum cheque configurado na cheques.yml para o plugin &f{plugin}&c.'
+  Aguarde: '&cVocê atingiu seu limite diário deste cheque, aguarde &7{tempo}&c para realizar essa operação novamente.'
+  Criou: '&aVocê criou um cheque de &7{quantia}&a com sucesso.'
+  Converteu: '&aVocê juntou seus cheques com sucesso.'
+  UUID: '&cEste cheque está duplicado e já utilizado.'
+  Cheque:
+    - ''
+    - '&aDigite no chat a quantia que quer criar um cheque.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''

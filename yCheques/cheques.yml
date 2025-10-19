@@ -1,0 +1,39 @@
+Cheques:
+  Cheque1:
+    Tipo: 'Money'
+    material: 'http://textures.minecraft.net/texture/8381c529d52e03cd74c3bf38bb6ba3fde1337ae9bf50332faa889e0a28e8081f'
+    name: '&aCheque de Money'
+    lore:
+      - ''
+      - '&7Criado por: &a{player}&7.'
+      - '&7Criado em: &f{data} &8- &f{hora}&7.'
+      - ''
+      - '&bValor do cheque: &a{quantia}&b.'
+      - ''
+      - '&aClique para ativar este cheque.'
+    Mensagem:
+      Title: '&a{quantia} coins<nl>&erecebidos!'
+      Actionbar: '&aVocê ativou um cheque de &e{quantia}&a coins.'
+      Chat: |
+        &aVocê ativou um cheque de &e{quantia}&a coins.
+      Chat-criou: |
+        &aVocê criou um cheque de &e{quantia} coins&a com sucesso.
+  Cheque2:
+    Tipo: 'yPoints'
+    material: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    name: '&6Cheque de Cash'
+    lore:
+      - ''
+      - '&7Criado por: &a{player}&7.'
+      - '&7Criado em: &f{data} &8- &f{hora}&7.'
+      - ''
+      - '&bValor do cheque: &a{quantia}&b.'
+      - ''
+      - '&aClique para ativar este cheque.'
+    Mensagem:
+      Title: '&a{quantia} cash<nl>&erecebidos!'
+      Actionbar: '&aVocê ativou um cheque de &e{quantia}&a cash.'
+      Chat: |
+        &aVocê ativou um cheque de &e{quantia} cash&a.
+      Chat-criou: |
+        &aVocê criou um cheque de &e{quantia} cash&a com sucesso.

@@ -1,0 +1,5 @@
+Grupos:
+  gp1:
+    Ordem: 1
+    Permissao: 'ycorreio.membro'
+    Display: '&7[Membro]'

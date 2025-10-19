@@ -1,0 +1,37 @@
+exchanges:
+  coin-to-cash:
+    # Economia que precisa
+    from: 'money'
+    # Economia que vai obter
+    to: 'ypoints'
+    # Taxa de câmbio
+    taxes:
+      tax1:
+        order: 1
+        permission: ''
+        tax: 10.0
+    # Mínimo para converter
+    minimum: 1000.0
+    # items
+    items:
+      display:
+        material: '8381c529d52e03cd74c3bf38bb6ba3fde1337ae9bf50332faa889e0a28e8081f'
+        name: '&aCoins &f-> &6Cash'
+        lore:
+          - '&7Realize o câmbio de coins para cash'
+          - ''
+          - '&7Taxa de conversão: &f{tax}%'
+          - '&7Mínimo para converter: &f{minimum}'
+          - ''
+          - '&aClique para digitar o valor'
+      confirm:
+        material: '8381c529d52e03cd74c3bf38bb6ba3fde1337ae9bf50332faa889e0a28e8081f'
+        name: '&aCoins &f-> &6Cash'
+        lore:
+          - '&7Informações sobre o câmbio pendente'
+          - ''
+          - '&7Valor que será pago: &c{from_value} {from_abbreviated}'
+          - '&7Valor que irá receber: &c{to_value} {to_abbreviated}'
+          - ''
+          - '&7Taxa de conversão: &f{tax}% -> {tax_value} {from_abbreviated}'
+          - ''

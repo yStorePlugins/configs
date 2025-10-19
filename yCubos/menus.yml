@@ -1,0 +1,41 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de top
+top:
+  name: '&8TOP Cubos'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 9
+  next-slot: 17
+  items:
+    # Item do top abertas
+    opened:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - ''
+        - '&fCubos abertas: &7{amount}'
+        - '&fPosição: &e{pos}º'
+        - ''

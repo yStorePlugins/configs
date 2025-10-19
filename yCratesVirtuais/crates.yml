@@ -1,0 +1,37 @@
+#    ____           _
+#  / ___|_ __ __ _| |_ ___  ___
+# | |   | '__/ _` | __/ _ \/ __|
+# | |___| | | (_| | ||  __/\__ \
+#  \____|_|  \__,_|\__\___||___/
+#
+
+crates:
+  vip:
+    # Ordem no menu
+    order: 1
+    display: '&6VIP'
+    # Item que poderá ser ativado
+    usable:
+      material: 'TRIPWIRE_HOOK'
+      name: '&6Chave VIP &7[1]'
+      lore: [ '&7Utilize esta chave', '&7acessando &f/crates' ]
+    # Item da crate no menu
+    menu:
+      has:
+        material: 'TRIPWIRE_HOOK'
+        name: '&6Chave VIP'
+        lore: [ '&fQuantidade: &7{amount}', '', ' &a> &f{to_gain} &7recompensas a', '&7  serem ganhas.', '', '&aBotão esquerdo para abrir.', '&aBotão direito para ver as recompensas.' ]
+      no-has:
+        material: 'TRIPWIRE_HOOK'
+        name: '&6Chave VIP'
+        lore: [ '', '&cVocê não possui essa chave.' ]
+    # Recompensas que poderão ser ganhar
+    rewards:
+      # Quantia de recompensas que serão ganhas
+      amount: 1
+      # Lista de recompensas
+      # Chance,recompensa (rewards.yml)
+      list:
+        - '50.0,reward1'
+        - '30.0,reward2'
+        - '10.0,reward3'

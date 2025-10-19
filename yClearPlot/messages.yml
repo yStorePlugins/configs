@@ -1,0 +1,49 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+actionbar:
+  clearing: '&a&lLIMPADOR: &eStatus -> &8[{progressbar}&8] &7{percentage}'
+  finished: '&a&lLIMPADOR: &eLimpeza concluída.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aClearPlot comandos:
+
+    &a> /clearplot give
+    &a> /clearplot reload
+
+  clearplot-give: '&aVocê deu &7{amount}x Limpador de Plot&a para o jogador &7{player}&a.'
+  clearplot-give-all: |
+
+    &bO usuário &f{player}&b deu &f{amount}x Limpador de Plot&bpara todos os jogadores online&b.
+
+  clearplot-received: '&aVocê recebeu &7{amount}x Limpador de Plot&a.'
+  clearplot-finished: |
+
+    &a&lLIMPADOR: &eLimpeza concluída.
+
+  clearplot-activated: '&a&lLIMPADOR: &eIniciando limpeza...'
+  clearplot-confirm: |
+
+    &a&lLIMPADOR: &eUtilize &ashift + botão direito&e para confirmar o uso do limpador.
+
+  limit-reached: '&cTodos os {limit} pedreiros estão trabalhando. Aguarde para limpar seu terreno.'
+  world-blacklisted: '&cVocê não pode usar isto neste mundo.'
+  plot-permission: '&cVocê não tem permissão neste terreno.'
+  already: '&cVocê já está limpando um terreno.'
+  already-plot: '&cEste plot já está sendo limpo.'
+  command-block: '&cVocê deve aguardar seu plot ficar limpo.'
