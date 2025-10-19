@@ -50,6 +50,9 @@ general:
   # Delay para checagem da notificação de pagamento (automático)
   # Em segundos
   notification-delay: 10
+  # Delay para checagem da aprovação de pagamento (automático)
+  # Em segundos
+  verification-delay: 30
   # Delay para checagem da notificação de pagamento (manual)
   # Em segundos
   manual-delay: 30
