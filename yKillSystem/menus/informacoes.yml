@@ -1,0 +1,23 @@
+Nome: '&8KillRank - Informacoes'
+Tamanho: 27
+Toggle slot: 11
+Itens:
+  Perfil:
+    Slot: 10
+    CustomSkull: true
+    URL: '{player}'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aInformações de {player}'
+    Lore:
+      - ''
+      - '&fRank: {rank}&f.'
+      - '&fPróximo rank: {proximo_rank}&f.'
+      - '&fProgresso: {progressbar} &8({porcentagem})'
+      - '&fK/D: &b{kdr} &7(&a{kills}&7/&c{deaths}&7)'
+      - '&fCríticos: &7({criticos})&f / &bNormais: &7({hits})&f.'
+      - ''
+      - '&fBônus: &a{bonus}%&f.'
+      - '&fXP: &a{xp}&f.'
+      - ''

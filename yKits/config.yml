@@ -1,0 +1,141 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Tabela: 'ykits.players'
+  Debug: true
+
+# Opções gerais do plugin
+Opcoes:
+  # Ativar o menu ao digitar /kit
+  Menu: true
+  # Verificar se o inventário está cheio antes de pegar o kit
+  Kit cheio: true
+  # Só pegar o kit se estiver vinculado (yDiscordHook)
+  Vinculado: false
+  # Lore para quando o jogador precisar aguardar para pegar o kit novamente
+  Lore aguardar:
+    # Substituir a lore do kit
+    Sobrepor: true
+    Lore:
+      - ''
+      - '&cVocê deve aguardar &f{tempo} &cpara pegar'
+      - '&ceste kit novamente.'
+      - ''
+  # Sistema de lore do jogador no kit
+  Item Lore:
+    Ativar: false
+    Lore: [ '', '&eKit de &a{player}' ]
+    # Tipos de itens que não terão a lore
+    Type-Blacklist: [ 'BARRIER' ]
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isto.'
+  Jogador: '&cEste jogador {player} não foi encontrado.'
+  Existe: '&cJá existe um kit com esse nome.'
+  Nao existe: |
+    &cNão foi possível localizar esse kit.
+    &cDisponíveis: &7{kits}&c.
+  Criado: '&aKit &f{kit}&a criado com sucesso.'
+  Deletado: '&aKit &f{kit}&a deletado com sucesso.'
+  Numero: '&cO argumento não é um número.'
+  Mudou nome: '&aVocê alterou o nome do kit para &e{nome}&a.'
+  Mudou delay: '&aVocê alterou o tempo de reset do kit &f{kit}&a para &f{delay}&a.'
+  Mudou permissao: '&aVocê alterou a permissao do kit &f{kit}&a para {permissao}.'
+  Cancelou: '&cOperação cancelada.'
+  Item nao: '&cO item não pode ser nulo.'
+  Icone mudou: '&aÍcone do kit &f{kit}&a alterado com sucesso.'
+  Icone mudou categoria: '&aÍcone da categoria &f{categoria}&a alterado com sucesso.'
+  Itens mudou: '&aNovos itens do kit &f{kit}&a itens salvos com sucesso.'
+  Recebeu: '&aVocê recebeu o kit {kit}&a com sucesso.'
+  Cheio: '&cSeu inventário está cheio, alguns itens foram dropados no chão.'
+  Permissao dar: '&cVocê não tem permissão para dar o kit {kit}&a.'
+  Permissao pegar: '&cVocê não tem permissão para pegar o kit {kit}&a.'
+  Dado: '&aKit {kit}&a dado ao jogador {player}.'
+  Aguardar: '&cVocê deve aguardar &e{tempo}&c para pegar o kit {kit}&a novamente.'
+  Existe categoria: '&cJá existe uma categoria com esse nome.'
+  Nao existe categoria: '&cNão foi possível localizar essa categoria.'
+  Criado categoria: '&aCategoria &f{categoria}&a criada com sucesso.'
+  Deletado categoria: '&aCategoria &f{categoria}&a deletada com sucesso.'
+  Categorias: '&cCategorias disponíveis: &f{categorias}&c.'
+  Mudou nome categoria: '&aVocê alterou o nome da categoria para &e{nome}&a.'
+  Mudou comando: '&aVocê alterou o comando da categoria para &e{comando}&a.'
+  Slot maior: '&aO slot não pode ser maior que 53.'
+  Mudou slot: '&aVocê alterou o slot para &e{slot}&a.'
+  Mudou backslot: '&aVocê alterou o backslot da categoria para &e{slot}&a.'
+  Tamanho: '&cO tamanho deve ser maior ou igual a 9, ou múltiplo de 9.'
+  Mudou tamanho: '&aVocê alterou o tamanho da categoria para &e{tamanho}&a.'
+  Cheio cancelado: '&cSeu inventário está cheio, esvazie-o antes de pegar o kit.'
+  Vinculado: '&cVocê precisa vincular seu discord primeiro. /discord para vincular.'
+  Delay resetado: '&aDelay do kit &f{kit} &aresetado para {player}.'
+  Time player: '&cO jogador &f{player}&c ainda precisa aguardar &f{tempo}&c.'
+  Categoria permissao: '&cVocê não tem permissão para acessar essa categoria.'
+  CategoriaHelp: |
+    &cComandos disponíveis:
+    &c-> /kitcategoria criar <categoria>
+    &c-> /kitcategoria deletar <categoria>
+    &c-> /kitcategoria editar <categoria>
+    &c-> /kitcategoria lista
+  Digite nome:
+    - ''
+    - '&aDigite o nome para qual deseja alterar.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Digite delay:
+    - ''
+    - '&aDigite o delay (em seg) para qual deseja alterar.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Digite permissao:
+    - ''
+    - '&aDigite a permissão para qual deseja alterar.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Digite comando:
+    - ''
+    - '&aDigite o comando para qual deseja alterar.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Digite slot:
+    - ''
+    - '&aDigite o slot para qual deseja alterar.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Digite tamanho:
+    - ''
+    - '&aDigite o tamanho para qual deseja alterar.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+
+# Setas dos menus
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'

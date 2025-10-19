@@ -1,0 +1,54 @@
+# Você pode configurar quantos ranks quiser.
+# Quando cair de rank, serão enviadas as mensagens e executados
+# os comandos do rank para qual ele caiu. Por exemplo:
+# se ele caiu de Ferro para Bronze, serão executadas as ações de cair do Bronze.
+Ranks:
+  bronze:
+    # O jogador começa na ordem 0
+    Ordem: 0
+    # Este será o nome do rank
+    Display: 'Bronze'
+    # Esta é a tag que irá aparecer no chat e na placeholder do papi
+    Tag: '&7[&cBronze&7]'
+    # Este é o custo em XP (do plugin) para upar à este rank
+    Custo xp: 0.0
+    # Comandos a serem executados pelo console quando um jogador evoluir seu rank.
+    # Se a ordem for 0, ao se registrar, também serão executados.
+    # Deixe - 'none' para não usar
+    Comandos evoluiu:
+      - 'give {player} grass 1'
+    Comandos caiu:
+      - 'give {player} diamond 1'
+    # Essas mensagens são executadas quando o jogador upar ou cair de rank
+    # São executadas também ao registrar.
+    Mensagens:
+      Actionbar:
+        Ativar: true
+        Msg evoluiu: '&aO jogador &f{player} &ase registrou.'
+        Msg caiu: '&cO jogador &f{player} &ccaiu para o rank &6Bronze&c.'
+      Chat:
+        Ativar: true
+        Msg evoluiu:
+          - '&aVocê se registrou.'
+        Msg caiu:
+          - '&cVocê caiu para o rank &6Bronze&c.'
+  ferro:
+    Ordem: 1
+    Tag: '&7[&fFerro&7]'
+    Display: 'Ferro'
+    Custo xp: 50.0
+    Comandos evoluiu:
+      - 'give {player} stone 1'
+    Comandos caiu:
+      - 'give {player} coal 1'
+    Mensagens:
+      Actionbar:
+        Ativar: true
+        Msg evoluiu: '&aO jogador &f{player} &aupou para &fFerro&a.'
+        Msg caiu: '&cO jogador &f{player} &ccaiu para o rank &fFerro&c.'
+      Chat:
+        Ativar: true
+        Msg evoluiu:
+          - '&aVocê upou para o rank &6Ferro&a.'
+        Msg caiu:
+          - '&cVocê caiu para o rank &fFerro&c.'

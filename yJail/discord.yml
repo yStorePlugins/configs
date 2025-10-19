@@ -1,0 +1,45 @@
+options:
+  url: ''
+  username: 'yJail'
+
+embeds:
+  arrested:
+    title: ':mailbox: Jogador Preso!'
+    thumbnail: ''
+    color: '#fff'
+    content: ''
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      player:
+        inline: false
+        header: 'Player'
+        content: '```{player}```'
+      staff:
+        inline: false
+        header: 'Staff'
+        content: '```{staff}```'
+      time:
+        inline: false
+        header: 'Tempo'
+        content: '```{time}```'
+      reason:
+        inline: false
+        header: 'Rasão'
+        content: '```{reason}```'
+  released:
+    title: ':mailbox: Jogador Solto!'
+    thumbnail: ''
+    color: '#fff'
+    content: ''
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      player:
+        inline: false
+        header: 'Player'
+        content: '```{player}```'

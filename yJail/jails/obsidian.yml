@@ -1,0 +1,84 @@
+name: '&5Prisão de Obsidian'
+location: ''
+
+# Blocos que o jogador irá quebrar para reduzir a pena
+blocks:
+  block1:
+    # Tipo do bloco
+    type: 'OBSIDIAN'
+    # tempo que irá reduzir da pena, em segundos
+    time-reduce: 10
+
+# Comandos liberados
+allowed-commands: [ '/jail' ]
+
+# Comandos que serão executados no jogador ao ser preso
+# Placeholder de player: {player}
+arrested-commands: []
+
+# Comandos que serão executados no jogador ao ser solto
+# Placeholder de player: {player}
+released-commands: []
+
+# Ferramenta para quebrar o bloco
+tool:
+  material: 'DIAMOND_PICKAXE'
+
+release:
+  enabled: true
+  # Permissão para poder soltar
+  permission: ''
+  # Preço para libertar o prisioneiro
+  prices:
+    price1:
+      provider: 'money'
+      amount: 1000.0
+
+increase:
+  enabled: true
+  # Permissão para poder aumentar a pena
+  permission: ''
+  # Tempo que irá aumentar, em segundos
+  time: 60
+  # Delay para aumentar novamente, em segundos
+  delay: 3600
+  # Preço para libertar o prisioneiro
+  prices:
+    price1:
+      provider: 'money'
+      amount: 1000.0
+
+tax:
+  enabled: true
+  # Taxa que irá cobrar do jogador, em %
+  taxes:
+    tax1:
+      provider: 'money'
+      amount: 10.0
+
+messages:
+  arrested: |
+
+    &cVocê foi preso por &f{staff}
+    &cTempo: &f{time}&c.
+    &cMotivo: &f{reason}&c.
+
+  stuck: |
+
+    &cVocê está preso por &f{time_left}&c.
+    &cMotivo: &f{reason}&c.
+
+  reduce: '&aPena reduzida em &f{time}&a.'
+  actionbar: '&cVocê ainda ficará preso por {time_left}&c.'
+  released: '&aSua pena acabou. Você está livre.'
+
+broadcast:
+  arrested:
+    chat: |
+
+      &f{player}&c foi preso por &f{staff}
+      &cTempo: &f{time}&c.
+      &cMotivo: &f{reason}&c.
+
+    actionbar: ''
+    title: ''

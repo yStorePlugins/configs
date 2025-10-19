@@ -1,0 +1,32 @@
+Nome: '&8Informativo dos ranks'
+Tamanho: 36
+Slots: [10, 11, 12, 13, 14, 15]
+BackSlot: 0
+VoltarSlot: 27
+ProximoSlot: 35
+
+Vazio:
+   Slot: 22
+   CustomSkull: false
+   URL: ''
+   ID: 408
+   Data: 0
+   Glow: true
+   Name: '&cSem ranks'
+   Lore:
+   - '&cNão há nenhum rank cadastrado :c'
+   
+Itens: #se o Usar item rank estiver false, isso não irá funcionar
+   item1:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&6Rank Bronze'
+      Lore:
+      - '&7Informações deste rank:'
+      - ''
+      - '&6 Nenhum -> Bronze'
+      - ' &f Preço: &71 kill'
+      - ''

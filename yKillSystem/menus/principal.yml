@@ -1,0 +1,91 @@
+Nome: '&8KillRank - Principal'
+Tamanho: 27
+Toggle slot: 11
+Itens:
+  Perfil:
+    Slot: 10
+    CustomSkull: true
+    URL: '{player}'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aSuas informações'
+    Lore:
+      - ''
+      - '&fSeu rank: {rank}&f.'
+      - '&fPróximo rank: {proximo_rank}&f.'
+      - '&fProgresso: {progressbar} &8({porcentagem})'
+      - '&fK/D: &b{kdr} &7(&a{kills}&7/&c{deaths}&7)'
+      - '&fCríticos: &7({criticos})&f / &bNormais: &7({hits})&f.'
+      - ''
+      - '&fSeu bônus: &a{bonus}%&f.'
+      - '&fXP: &a{xp}&f.'
+      - ''
+  Toggle on:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+    ID: 1
+    Data: 0
+    Glow: false
+    Name: '&aProteção'
+    Lore:
+      - '&fEstado: &aAtivo&f.'
+      - ''
+      - '&7Você não poderá levar dano e bater em jogadores.'
+  Toggle off:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    ID: 1
+    Data: 0
+    Glow: false
+    Name: '&aProteção'
+    Lore:
+      - '&fEstado: &cDesativado&f.'
+      - ''
+      - '&7Você poderá levar dano e bater em jogadores.'
+  Top:
+    Slot: 13
+    CustomSkull: false
+    URL: ''
+    ID: 340
+    Data: 0
+    Glow: false
+    Name: '&aTOP'
+    Lore:
+      - '&7Clique para ver o TOP Jogadores.'
+  Loja:
+    Slot: 14
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/7e3deb57eaa2f4d403ad57283ce8b41805ee5b6de912ee2b4ea736a9d1f465a7'
+    ID: 1
+    Data: 0
+    Glow: false
+    Name: '&aLoja'
+    Lore:
+      - '&7Clique para acessar a loja.'
+  Missoes:
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: 54
+    Data: 0
+    Glow: false
+    Name: '&aMissões'
+    Lore:
+      - '&7Clique para gerenciar as missões.'
+  Ranks:
+    Slot: 16
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/152353641d287ce9ed30906f938ae9c517ec04caa8da71571954c81b09db454c'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aRanks'
+    Lore:
+      - '&7Clique para acessar o menu de ranks.'
+  #Custom1:
+  #  Slot: 17
+  #  Comando: 'kill {player}'
+  #  Material: '152353641d287ce9ed30906f938ae9c517ec04caa8da71571954c81b09db454c'
+  #  Name: '&aCustomizado'
+  #  Lore: []

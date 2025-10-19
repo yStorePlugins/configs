@@ -1,0 +1,89 @@
+Nome: '{kit}'
+Tamanho: 45
+IconeSlot: 13
+Itens:
+  Permissao:
+    Slot: 28
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aPermissao'
+    Lore:
+      - ''
+      - '&7Atual: &f{permissao}&7.'
+      - ''
+      - '&aClique &fesquerdo&a para alterar a permissão.'
+      - '&aClique &fdireito&a para remover a permissão.'
+  Display:
+    Slot: 30
+    CustomSkull: false
+    URL: ''
+    ID: NAME_TAG
+    Data: 0
+    Glow: false
+    Name: '&aNome'
+    Lore:
+      - ''
+      - '&7Atual: &f{nome}&7.'
+      - ''
+      - '&aClique para alterar o nome.'
+  Icone:
+    Slot: 31
+    CustomSkull: false
+    URL: ''
+    ID: ITEM_FRAME
+    Data: 0
+    Glow: false
+    Name: '&aÍcone'
+    Lore:
+      - '&aClique para alterar o ícone.'
+  Delay:
+    Slot: 32
+    CustomSkull: false
+    URL: ''
+    ID: WATCH
+    Data: 0
+    Glow: false
+    Name: '&aDelay'
+    Lore:
+      - ''
+      - '&7Atual: &f{delay}&7.'
+      - ''
+      - '&aClique para alterar o delay.'
+  MainSlot:
+    Slot: 33
+    CustomSkull: false
+    URL: ''
+    ID: WATCH
+    Data: 0
+    Glow: false
+    Name: '&aSlot no /kits'
+    Lore:
+      - ''
+      - '&7Atual: &f{slot}&7.'
+      - ''
+      - '&aClique para alterar o slot.'
+  Itens:
+    Slot: 25
+    CustomSkull: false
+    URL: ''
+    ID: CHEST
+    Data: 0
+    Glow: false
+    Name: '&aItens'
+    Lore:
+      - '&aClique &fesquerdo&a para alterar os itens.'
+      - '&aClique &fdireito&a para ver os itens.'
+  Armor:
+    Slot: 34
+    CustomSkull: false
+    URL: ''
+    ID: IRON_HELMET
+    Data: 0
+    Glow: false
+    Name: '&aItens (Armadura)'
+    Lore:
+      - '&aClique &fesquerdo&a para alterar os itens.'
+      - '&aClique &fdireito&a para ver os itens.'

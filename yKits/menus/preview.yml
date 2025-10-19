@@ -1,0 +1,19 @@
+Nome: '{kit}'
+Tamanho: 54
+Slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+AnteriorSlot: 18
+ProximoSlot: 26
+BackSlot: 45
+ArmorSlots: [ 47, 48, 49, 50 ]
+Itens:
+  Coletar:
+    Slot: 53
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aColetar'
+    Lore:
+      - '&7Clique para coletar os itens deste kit.'
+  # Você pode adicionar enfeites, apenas adicionando itens iguais o Coletar e mudando os dados.

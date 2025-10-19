@@ -1,0 +1,204 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+# Comandos e aliases do plugin
+Comando:
+  Comando: 'kills'
+  Aliases: []
+#Coloque Legendchat, OpeNChat (ou nChat), UltimateChat, NoxusChat ou deixe Automatico para o auto-detect
+Plugin de chat: 'Automatico'
+# Mundos onde os sistemas não irão funcionar
+# Sistemas: AntiFreeKill, Dominando, KillStreak, LostXp, Roubar, PvPToggle
+Mundo blacklist:
+  - 'nenhum'
+# Configuração da barra de progresso
+Progress bar:
+  Quantia: 10
+  Simbolo: ':'
+  Cor sim: '&a'
+  Cor nao: '&7'
+# Algumas opções gerais do plugin:
+Opcoes:
+  # Acumular os bônus que tiver permissão
+  Acumular bonus: false
+  # Caso for staff ficar com a tag no chat e no placeholderapi invisível
+  # Permissão: (ykillsystem.staff)
+  Staff invisivel: false
+  # Ativar o sistema de ranks
+  Ranks: true
+  # Barra de corações abaixo do nome do jogador
+  Healthbar:
+    Ativar: true
+    Icone: '&c❤'
+  # Quando ativo, o jogador poderá ativar e usar até o tempo acabar.
+  # Ele não poderá levar dano ou bater, mesmo em áreas de pvp on.
+  Toggle:
+    Ativar: true
+    # Deixar o toggle com tempo infinito
+    Infinito: false
+    # Ativar o toggle ao registrar
+    Registro: true
+    # Comando para ativar o toggle (deixe '' para não usar)
+    Cmd ativar: '/pvp on'
+    # Comando para desativar o toggle (deixe '' para não usar)
+    Cmd desativar: '/pvp off'
+    Tempo: 20
+    # Deixe '' para não usar
+    Actionbar: '§cVocê ainda tem {tempo} de proteção.'
+    # Deixe '' para não usar
+    Actionbar infinito: '§cVocê está com a proteção contra pvp ativada.'
+  # Evitar ganhar XP e Coins, killstreak ao matar o jogador 2x ou mais seguidas.
+  AntiFreeKill: true
+  # Quando um jogador matar outro por x vezes (minimo definido)
+  # irá enviar a mensagem para o morto e para o matador.
+  Dominar:
+    Ativar: true
+    Minimo: 1
+  # Quando o jogador fizer x kills (minimo definido)
+  # irá enviar mensagem para o broadcast e/ou para o jogador, informando
+  # que ele está fazendo uma série de kills (matando muito)
+  Killstreak:
+    Ativar: true
+    Minimo: 2
+    # Deixe '' para não usar alguma das duas.
+    Broadcast: '&aO jogador &f{player}&a está com um &nkillstreak&a de &6{kills} &a&nkills&a.'
+    Player: '&aVocê está com um &nkillstreak&a de &6{kills} &a&nkills&a.'
+    # Estes serão os efeitos dado para cada killstreak
+    Efeitos:
+      Ativar: true
+      Lista:
+        - 'SPEED:1-100' # Efeito:LEVEL-segundos
+# Mensagens em actionbar do plugin
+Actionbar:
+  # Deixe vazio ( '' ) caso não queira usar alguma
+  # A placeholder {bonus} irá usar a do formatador.
+  Matou player: '&aVocê ganhou &7{xp} XP &apor matar &7{player}&a. {bonus}'
+  Matou mob: '&aVocê matou um mob e ganhou &7{xp} &aXP. {bonus}'
+# Mensagens no chat do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isto.'
+  Suficiente xp: '&cVocê não tem XP suficiente &6{xp}&c.'
+  Suficiente money: '&cVocê não tem money suficiente &6{money}&c.'
+  Inv cheio: '&cSeu inventário está cheio. Necessário &f{quantia}&c de espaço.'
+  Comprou: '&aVocê adquiriu item(ns) na loja de combate.'
+  Loja rank: '&cEste item requer um rank que ainda não foi cadastrado.'
+  Rank necessario: '&cVocê precisa estar no rank &f{tag}&c para poder comprar este item.' # Disponível variável {tag} e {rank}
+  Esgotou: '&cSua proteção do toggle esgotou. Agora você está apto a levar dano de outros jogadores.'
+  Ativou toggle: '&aVocê ativou a proteção.'
+  Desativou toggle: '&aVocê desativou a proteção.'
+  Nao ativar: '&cVocê já usou todo o tempo da proteção.'
+  Toggle player: '&cVocê está com a proteção ativa.'
+  Toggle target: '&cEste jogar está com a proteção ativa.'
+  Coletou: '&aVocê coletou a recompensa da missão.'
+  # Deixe vazio ( '' ) caso não queira usar alguma ( Apenas as: Matou player e Matou mob ).
+  # A placeholder {bonus} irá usar a do formatador.
+  Matou player: '&aVocê matou o jogador &7{player}&a e ganhou &6{money}&a coins! {bonus}'
+  Matou mob: '&aVocê ganhou &6{money}&a coins por matar este mob! {bonus}'
+  Morreu: '&cVocê perdeu &6{xp}&c XP por ter morrido.'
+  Dominando: '&aVocê está dominando o jogador &7{player}&a.'
+  Dominado: '&aVocê está sendo dominado pelo jogador &7{player}&a.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Ja ativo: '&cO toggle já está ativo.'
+  Ja desativado: '&cO toggle já está desativado.'
+  Nao e numero: '&cO argumento não é um número.'
+  Add todos: '&aVocê adicionou &7{quantia} xp&a para todos os jogadores online.'
+  Add: '&aVocê adicionou &7{quantia} xp&a para o jogador &7{player}&a.'
+  Del todos: '&aVocê removeu &7{quantia} xp&a de todos os jogadores online.'
+  Del: '&aVocê removeu &7{quantia} xp&a do jogador &7{player}&a.'
+  Set todos: '&aVocê setou &7{quantia} xp&a para todos os jogadores online.'
+  Set: '&aVocê setou &7{quantia} xp&a para o jogador &7{player}&a.'
+  Help staff: |
+    &b-> Comandos disponíveis <-
+    &f > &b/kills
+    &f > &b/kills &7<player>
+    &f > &b/kills &7addxp
+    &f > &b/kills &7setxp
+    &f > &b/kills &7delxp
+    &f > &b/kills &7resetkdr
+    &f > &b/kills &7giveresetkdr
+    &f > &b/kills &7setrank
+    &f > &b/kills &7delrank
+    &f > &b/kills &7addrank
+    &f > &b/kills &reload
+  Help: |
+    &b-> Comandos disponíveis <-
+    &f > &b/kills
+    &f > &b/kills &7<player>
+  Reset abates: '&aVocê resetou os abates do jogador &f{player}&a.'
+  Reset mortes: '&aVocê resetou as mortes do jogador &f{player}&a.'
+  Reset kdr: '&aVocê resetou o kdr do jogador &f{player}&a.'
+  Reset abates all: '&aVocê resetou os abates de todos os jogadores.'
+  Reset mortes all: '&aVocê resetou as mortes de todos os jogadores.'
+  Reset kdr all: '&aVocê resetou o kdr de todos os jogadores.'
+  Deu resetkdr: '&aVocê deu x{quantia} ResetKDR para o jogador &7{player}&a.'
+  Recebeu resetkdr: '&aVocê recebeu x{quantia} ResetKDR&a.'
+  Ativou resetkdr: '&aVocê resetou seu KDR.'
+  NaoRank: '&cNão há essa quantia de ranks disponíveis.'
+  Definiu: '&aVocê definiu o rank de &f{player}&a para &f{rank}&a.'
+# Item para o resetkdr
+Resetkdr:
+  CustomSkull: true
+  URL: 'http://textures.minecraft.net/texture/1ad6c81f899a785ecf26be1dc48eae2bcfe777a862390f5785e95bd83bd14d'
+  ID: 0
+  Data: 0
+  Glow: false
+  Name: '&aReset KDR'
+  Lore:
+    - '&7Ative para resetar seu KDR.'
+# Formatador de mensagens
+Formatador:
+  Bonus tem: '&7Bônus: &f{bonus}%&7 ({display}&7).'
+  Bonus nao tem: ''
+  Tag tem: '{tag}'
+  Tag nao tem: ''
+  Nome tem: '{nome}'
+  Nome nao tem: '&7Sem rank'
+  Porcentagem: ''
+  Progressbar: ''
+# Lores das missões
+Lores:
+  Coletar:
+    Sobrepor: false
+    Lore:
+      - ''
+      - '&aClique para coletar essa recompensa'
+  Ja coletou:
+    Sobrepor: true
+    Lore:
+      - '&cVocê já coletou essa recompensa.'
+# As setas dos menus
+Setas:
+  # Voltar ao menu anterior
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  # Voltar a página anterior
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  # Ir para a próxima página
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'

@@ -1,0 +1,40 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aKill rank comandos:
+
+    &a> /killrank
+    &a> /killrank [player]
+    &a> /killrank add
+    &a> /killrank setnpc
+    &a> /killrank delnpc
+    &a> /killrank reload
+
+  kill-changed: '&aKills do jogador &f{player}&a alterada para &f{kills}&a.'
+  reward-collected: '&aVocê coletou a recompensa.'
+  npc-set: '&aNPC setado com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'
+  look: |
+    &r
+    &7Informações do jogador &f{player}&7:
+    &r
+    &fKills: &b{kills}
+    &fRank: &b{rank} &7({rank_nome})
+    &r

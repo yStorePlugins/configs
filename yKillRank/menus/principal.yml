@@ -1,0 +1,42 @@
+Nome: '&8KillRank - Principal'
+Tamanho: 27
+Itens:
+   Perfil: # primeiro
+      Slot: 11
+      Name: '&f{player}'
+      Lore:
+      - ''
+      - '&7Você matou &f{kills} &ajogadores.'
+      - '&7Rank: &f{rank}'
+      - '&7Próximo rank: &f{nextrank}'
+      - ''
+   Recompensas: #segundo
+      Slot: 13
+      CustomSkull: false
+      URL: ''
+      ID: 54
+      Data: 0
+      Glow: false
+      Name: '&aRecompensas'
+      Lore:
+      - '&7Clique para gerenciar as recompensas.'
+   Ranks:
+      Slot: 14
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/152353641d287ce9ed30906f938ae9c517ec04caa8da71571954c81b09db454c'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aRanks'
+      Lore:
+      - '&7Clique para acessar o menu de ranks.'
+   Top: #terceiro
+      Slot: 15
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: false
+      Name: '&aTOP'
+      Lore:
+      - '&7Clique para ver os jogadores mais matadores.'

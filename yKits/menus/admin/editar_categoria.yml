@@ -1,0 +1,144 @@
+Nome: '{categoria}'
+Tamanho: 54
+IconeSlot: 13
+Itens:
+  Display:
+    Slot: 28
+    CustomSkull: false
+    URL: ''
+    ID: NAME_TAG
+    Data: 0
+    Glow: false
+    Name: '&aNome'
+    Lore:
+      - ''
+      - '&7Atual: &f{nome}&7.'
+      - ''
+      - '&aClique para alterar o nome.'
+  Icone:
+    Slot: 29
+    CustomSkull: false
+    URL: ''
+    ID: ITEM_FRAME
+    Data: 0
+    Glow: false
+    Name: '&aÍcone'
+    Lore:
+      - '&aClique para alterar o ícone.'
+  Comando:
+    Slot: 30
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/b14697ee6fa322f61955fb8b7f6a3c8182dc92c04648df0851bc2b8cf2eaa94a'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aComando'
+    Lore:
+      - '&7Este comando será executado pelo jogador'
+      - '&7ao clicar para abrir a categoria.'
+      - ''
+      - '&7Atual: &f{comando}&7.'
+      - ''
+      - '&aClique para alterar o comando.'
+  UsarComando:
+    Slot: 31
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/d1700e0c21dec131901a5a38595a577402af0c7b1631f060c3235416e4f0a688'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aUsar Comando'
+    Lore:
+      - '&7Esta opção irá liberar o uso do comando'
+      - '&7da opção anterior.'
+      - ''
+      - '&7Estado: &f{estado}&7.'
+      - ''
+      - '&aClique para alternar.'
+  MenuPrincipal:
+    Slot: 32
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/889372b63ea92e29d03c362a46fcfc20dd05af3a5e27cd0d1ab43df371a14215'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aMenu principal'
+    Lore:
+      - '&7Esta opção irá ativar a categoria no'
+      - '&7menu principal.'
+      - ''
+      - '&7Estado: &f{estado}&7.'
+      - ''
+      - '&aClique para alternar.'
+  Slot:
+    Slot: 33
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/278257209fd5b077b814802691b75d52c1fe69efe6e69f516fe3426dbd1ff65c'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aSlot'
+    Lore:
+      - '&7Esta opção irá definir o slot da'
+      - '&7categoria no menu principal.'
+      - ''
+      - '&7Atual: &f{slot}&7.'
+      - ''
+      - '&aClique para alterar o slot.'
+  Tamanho:
+    Slot: 34
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/4ceb175378446e137e7405123520c45c5409bd79bc07ab1b887c87e712a093c3'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aTamanho'
+    Lore:
+      - '&7Esta opção irá definir o tamanho'
+      - '&7do menu da categoria.'
+      - ''
+      - '&7Atual: &f{tamanho}&7.'
+      - ''
+      - '&aClique para alterar o tamanho.'
+  Backslot:
+    Slot: 37
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: false
+    Name: '&aBack slot'
+    Lore:
+      - '&7Esta opção irá definir o slot em que'
+      - '&7ficará a setinha de voltar ao menu'
+      - '&7principal.'
+      - ''
+      - '&7Atual: &f{slot}&7.'
+      - ''
+      - '&aClique para alterar o slot (deixe -1 para não usar).'
+  Kits:
+    Slot: 38
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/6bf74eb8818e99e9a42691fe3b51c6b8d8d5eff066ec00cab0036245b6dfa5d3'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aKits'
+    Lore:
+      - '&7Esta opção irá definir os kits presentes'
+      - '&7nesta categoria.'
+      - ''
+      - '&aClique para definir os kits.'
+  Categorias:
+    Slot: 39
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/14aeab01c04f36ba887b7bda8d9c538bc9686dbbce7e3a5bb10f308c50302bc4'
+    ID: AIR
+    Data: 0
+    Glow: false
+    Name: '&aCategorias'
+    Lore:
+      - '&7Esta opção irá definir quais categorias'
+      - '&7irão aparecer dentro desta.'
+      - ''
+      - '&aClique para definir as categorias.'

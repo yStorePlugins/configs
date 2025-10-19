@@ -1,0 +1,66 @@
+# Estas são as missões que poderão ser configuradas.
+# Você pode criar quantas quiser
+# Os tipos são: Mate x jogadores, Dê x hits críticos em jogadores e Dê x hits em jogadores.
+Missoes:
+  1:
+    Display:
+      CustomSkull: false
+      URL: ''
+      ID: 388
+      Data: 0
+      Glow: true
+      Name: '&8Pedra'
+      Lore:
+        - '&7Mate &f1 &7jogador&f; &7Dê &f1 &7hit crítico&f; &7Dê &f5 &7hits normais e ganhe'
+        - '&7 -> &a1 pedra.'
+    # Se o ( Command -> Use ) tiver true, isso não vai funcionar
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&8Pedra'
+      Amount: 64
+      Lore:
+        - '&aEsta pedra não é apenas uma pedra comum.'
+      Enchants: #se não desejar, deixe assim:
+        - ''
+    Kills: 1
+    Criticos: 1
+    Hits: 5
+    Command:
+      Use: false
+      # Se o ( Use ) tiver false, isso não funcionar.
+      List: []
+  2:
+    Display:
+      CustomSkull: false
+      URL: ''
+      ID: 388
+      Data: 0
+      Glow: true
+      Name: '&aEsmeralda'
+      Lore:
+        - '&7Mate &f2 &7jogadores e ganhe'
+        - '&7 -> &a1 pedra.'
+    # Se o ( Command -> Use ) tiver true, isso não vai funcionar
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: 'Nada'
+      Amount: 0
+      Lore: []
+      Enchants: #se não desejar, deixe assim:
+        - ''
+    Kills: 2
+    Criticos: 0
+    Hits: 0
+    Command:
+      Use: true
+      # Se o ( Use ) tiver false, isso não funcionar.
+      List:
+        - 'give {player} emerald 1'

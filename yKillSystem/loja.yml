@@ -1,0 +1,55 @@
+Loja:
+  Nome: '&8Loja de combate'
+  Tamanho: 54
+  Back slot: 27
+  Items:
+    Pedra preciosa:
+      Slot: 10
+      Preco xp: 10.0
+      Preco money: 100.0
+      Rank minimo: 0
+      CustomSkull: false
+      URL: ''
+      Name: '&fFerros!'
+      Glow: true
+      ID: 1
+      Data: 0
+      Quantia: 64
+      Usar lore: false
+      Lore:
+        - '&fEstes ferros são usados para construir pontes.'
+      Usar lore preco: true
+      Lore preco:
+        - ''
+        - '&fPreço:'
+        - ' &8> &710 XP&f; &7100 coins&f.'
+      Encantamentos: #( deixe - '' caso não queira usar )
+        - 'DAMAGE_ALL:1'
+      Usar comandos: false
+      Comandos:
+        - ''
+    Diamante:
+      Slot: 11
+      Preco xp: 20.0
+      Preco money: 200.0
+      Rank minimo: 1
+      CustomSkull: false
+      URL: ''
+      Name: '&bDiamantes!'
+      Glow: true
+      ID: 56
+      Data: 0
+      Quantia: 64
+      Usar lore: true
+      Lore:
+        - '&bEstas são as pedras preciosas mais caras do mundo!'
+      Usar lore preco: true
+      Lore preco:
+        - ''
+        - '&fPreço:'
+        - ' &8> &720 XP&f; &7200 coins&f.'
+      Encantamentos: #( deixe - '' caso não queira usar )
+        - ''
+      Usar comandos: true
+      Comandos:
+        - 'give {player} diamond 64'

@@ -1,0 +1,45 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aPrisão comandos:
+
+    &a> /jail
+    &a> /jail setarsaida
+    &a> /jail setarjail <jail>
+    &a> /jail <player> <jail> <tempo> <motivo>
+    &a> /jail soltar <player>
+
+  jail-list: |
+    &cJail não encontrada.
+    &cJail disponíveis: &f{list}
+  set-exit: '&aLocal da saída definido com sucesso.'
+  set-jail: '&aLocal da JAIL definido com sucesso.'
+  arrest: '&aVocê prendeu o jogador &f{player}&a.'
+  jail-location: '&cA entrada da jail não está setada.'
+  exit-location: '&cA saída da jail não está setada.'
+  released: '&aVocê soltou o jogador &f{player}&a.'
+  arrest-self: '&cVocê não pode prender a sí mesmo.'
+  arrest-staff: '&cVocê não pode prender este jogador.'
+  not-arrested: '&cO jogador &f{player}&c não está preso.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  release: '&aVocê soltou o jogador &f{player}&a por &f{money} coins&a.'
+  release-broadcast: '&f{player}&a soltou o jogador &f{target}&a e pagou &f{money} coins&a.'
+  increase: '&aVocê aumentou em &f{time}&a a pena do jogador &f{player}&a por &f{money} coins&a.'
+  increase-broadcast: '&f{player}&a aumentou em &f{time}&a a pena do jogador &f{target}&a e pagou &f{money} coins&a.'
+  increase-command: '&aVocê aumentou em &f{time}&a a pena do jogador &f{player}&a.'

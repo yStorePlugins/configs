@@ -1,0 +1,6 @@
+Bonus:
+  membros:
+    Ordem: 1
+    Permissao: 'ykillsystem.membro'
+    Display: '&7[Membro]'
+    Bonus: 10.0 # em % do valor total

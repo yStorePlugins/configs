@@ -1,0 +1,46 @@
+# Lista dos mobs: https://helpch.at/docs/1.8.8/org/bukkit/entity/EntityType.html
+# Você pode configurar quantos mobs quiser.
+# Use PLAYER para configurar um player.
+Mobs:
+  PLAYER:
+    # Quantia de money que será dada ao jogador ao matar um PLAYER.
+    # Será dado um valor entre o min e max (sem contar o bônus)
+    # Só será dado se o jogador tiver a chance. Deixe 100.0 para dar sempre.
+    Money:
+      Chance: 100.0
+      Min: 20.0
+      Max: 70.0
+    # Quantia de xp que será dada ao jogador ao matar um PLAYER (usado para upar de rank).
+    # Será dado um valor entre o min e max (sem contar o bônus)
+    # Só será dado se o jogador tiver a chance. Deixe 100.0 para dar sempre.
+    Xp:
+      Chance: 100.0
+      Min: 5.0
+      Max: 10.0
+  PIG:
+    Money:
+      Chance: 100.0
+      Min: 10.0
+      Max: 50.0
+    Xp:
+      Chance: 50.0
+      Min: 1.0
+      Max: 5.0
+  SKELETON:
+    Money:
+      Chance: 100.0
+      Min: 12.0
+      Max: 52.0
+    Xp:
+      Chance: 100.0
+      Min: 2.0
+      Max: 6.0
+  ZOMBIE:
+    Money:
+      Chance: 100.0
+      Min: 13.0
+      Max: 53.0
+    Xp:
+      Chance: 100.0
+      Min: 3.0
+      Max: 7.0

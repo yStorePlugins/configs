@@ -1,0 +1,23 @@
+# Quando um jogador matar outro e o que matou estiver em algum dos grupos
+# configurados abaixo, irá roubar uma % de dinheiro do morto.
+# Sem ultrapassar o limite máximo.
+Roubos:
+  vip:
+    # Permissão para ser reconhecido
+    Permissao: 'ykillsystem.roubar'
+    # Chance de conseguir roubar. Deixe 100.0 para sempre conseguir
+    Chance: 100.0
+    # Porcentagem que será roubada
+    Porcentagem: 10.0
+    # Maximo que pode roubar de um jogador, deixe 0 para ser infinito.
+    Maximo: 100.0
+    # Deixe Mensagem roubou: [] para não usar
+    Mensagem roubou:
+      - ''
+      - '&aVocê roubou &6{money} &7( {porcentagem}% ) &ado money do jogador &7{player}&a.'
+      - ''
+    # Deixe Mensagem roubado: [] para não usar
+    Mensagem roubado:
+      - ''
+      - '&aVocê perdeu &6{money} &7( {porcentagem}% ) &ado money por morrer para o jogador &7{player}&a.'
+      - ''

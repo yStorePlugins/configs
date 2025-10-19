@@ -1,0 +1,13 @@
+Ranks:
+   Nenhum:
+      Ordem: 0
+      Tag: '&cNenhum'
+      Kills: 0
+   Broze:
+      Ordem: 1
+      Tag: '&7[&6Bronze&7]'
+      Kills: 1
+   Ferro:
+      Ordem: 2
+      Tag: '&7[&fFerro&7]'
+      Kills: 2

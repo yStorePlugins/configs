@@ -1,0 +1,99 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Presos online'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
+  items:
+    arrested:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - ''
+        - '&cTempo: &f{time}&c'
+        - '&cTempo Restante: &f{time_left}&c'
+        - '&cMotivo: &f{reason}&c'
+        - ''
+        - '&f > &a{money_increase} coins &fp/ aumentar &7({increase_time})&f.'
+        - '&f > &a{money_release} coins &fp/ soltar.'
+        - ''
+        - '&aClique para visualizar opções.'
+
+# Menu de opções
+options:
+  name: '&8{player}'
+  size: 27
+  back-slot: 9
+  release-slot: 12
+  increase-slot: 14
+  items:
+    release:
+      material: 'FEATHER'
+      name: '&aSoltar'
+      lore:
+        - ''
+        - '&f > &a{money_release} coins &fp/ soltar.'
+        - ''
+        - '&aClique para pagar a fiança.'
+    release-no:
+      material: 'FEATHER'
+      name: '&cSoltar'
+      lore:
+        - '&cVocê não pode soltar esse jogador.'
+    release-permission:
+      material: 'FEATHER'
+      name: '&cSoltar'
+      lore:
+        - '&cVocê não tem permissão para soltar.'
+    increase:
+      material: 'BARRIER'
+      name: '&aAumentar Pena'
+      lore:
+        - ''
+        - '&f > &a{money_increase} coins &fp/ aumentar &7({increase_time})&f.'
+        - ''
+        - '&aClique para aumentar a pena.'
+    increase-no:
+      material: 'BARRIER'
+      name: '&cAumentar Pena'
+      lore:
+        - '&cVocê não pode aumentar a pena desse jogador.'
+    increase-already:
+      material: 'BARRIER'
+      name: '&cAumentar Pena'
+      lore:
+        - '&cVocê já aumentou a pena desse jogador.'
+    increase-wait:
+      material: 'BARRIER'
+      name: '&cAumentar Pena'
+      lore:
+        - '&cAguarde {time} para aumentar a pena desse jogador.'
+    increase-permission:
+      material: 'BARRIER'
+      name: '&cAumentar Pena'
+      lore:
+        - '&cVocê não tem permissão para aumentar a pena.'

@@ -1,0 +1,12 @@
+# Quando um jogador com um dos grupos definidos abaixo morrer,
+# irá perder entre o Min e o Max de xp
+Mortes:
+  membro:
+    # Permissão para ser reconhecido
+    Permissao: 'ykillsystem.morrer'
+    # Chance de perder o Xp
+    Chance: 100.0
+    # Mínimo que poderá ser perdido
+    Min: 5
+    # Máximo que poderá ser perdido
+    Max: 10

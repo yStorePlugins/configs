@@ -1,0 +1,405 @@
+animals:
+  avestruz:
+    # Ordem do bicho conforme a tabela
+    order: 1
+    # Nome do bicho para as mensagens
+    name: '&fAvestruz'
+    # Item no menu da tabela
+    display:
+      material: 'c40e7551843f1c416da50dd82eaba165ae7ca843db9d17ab5a8cc279050059b3'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    # Item no menu da tabela (selecionado)
+    display-selected:
+      material: 'c40e7551843f1c416da50dd82eaba165ae7ca843db9d17ab5a8cc279050059b3'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  aguia:
+    order: 2
+    name: '&fÁguia'
+    display:
+      material: '21f829d84d0e87112f685e7d234bef010964debb7a86f38d9f7072c8a4468527'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '21f829d84d0e87112f685e7d234bef010964debb7a86f38d9f7072c8a4468527'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  burro:
+    order: 3
+    name: '&fBurro'
+    display:
+      material: '46dcda265e57e4f51b145aacbf5b59bdc6099ffd3cce0a661b2c0065d80930d8'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '46dcda265e57e4f51b145aacbf5b59bdc6099ffd3cce0a661b2c0065d80930d8'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  borboleta:
+    order: 4
+    name: '&fBorboleta'
+    display:
+      material: '9fd806defdfdf59b1f2609c8ee364666de66127a623415b5430c9358c601ef7c'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '9fd806defdfdf59b1f2609c8ee364666de66127a623415b5430c9358c601ef7c'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  cachorro:
+    order: 5
+    name: '&fCachorro'
+    display:
+      material: '6c537dc81d1279459d485fa9a9d33e0ff60a1cc26a62bcb4ca2f4cc55369a423'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '6c537dc81d1279459d485fa9a9d33e0ff60a1cc26a62bcb4ca2f4cc55369a423'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  cabra:
+    order: 6
+    name: '&fCachorro'
+    display:
+      material: '6c537dc81d1279459d485fa9a9d33e0ff60a1cc26a62bcb4ca2f4cc55369a423'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '6c537dc81d1279459d485fa9a9d33e0ff60a1cc26a62bcb4ca2f4cc55369a423'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  carneiro:
+    order: 7
+    name: '&fCarneiro'
+    display:
+      material: '88170c84a763f8d3ac345c913d54a8654b20e35ec291844f16ebd386a7b0023d'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '88170c84a763f8d3ac345c913d54a8654b20e35ec291844f16ebd386a7b0023d'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  camelo:
+    order: 8
+    name: '&fCamelo'
+    display:
+      material: 'ba4c95bfa0b61722255389141b505cf1a38bad9b0ef543de619f0cc9221ed974'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: 'ba4c95bfa0b61722255389141b505cf1a38bad9b0ef543de619f0cc9221ed974'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  cobra:
+    order: 9
+    name: '&fCobra'
+    display:
+      material: '60503b81ac020c67c37787b45c9a26223f9bc26bca27f81af32f2cf55e2440b7'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '60503b81ac020c67c37787b45c9a26223f9bc26bca27f81af32f2cf55e2440b7'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  coelho:
+    order: 10
+    name: '&fCoelho'
+    display:
+      material: '9dcb88ed79bf3bd93ed57d18e0d2d8ce1039719d82cf413404cd6f0d83d81208'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '9dcb88ed79bf3bd93ed57d18e0d2d8ce1039719d82cf413404cd6f0d83d81208'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  cavalo:
+    order: 11
+    name: '&fCavalo'
+    display:
+      material: 'e335e31961713353a76401e00c3454b7ca885b7784d5288d3227222d9b48d393'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: 'e335e31961713353a76401e00c3454b7ca885b7784d5288d3227222d9b48d393'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  elefante:
+    order: 12
+    name: '&fElefante'
+    display:
+      material: '25ce762bc8e7ad5e16b35354f7d9341cbccd2de61791a7a6882ac43c38cc8e'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '25ce762bc8e7ad5e16b35354f7d9341cbccd2de61791a7a6882ac43c38cc8e'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  galo:
+    order: 13
+    name: '&fGalo'
+    display:
+      material: '1caea4b7a0b2f1c6a8b0eb71f9c8e143cf1ad0e6bd859567d6cbd4d8b45aad15'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '1caea4b7a0b2f1c6a8b0eb71f9c8e143cf1ad0e6bd859567d6cbd4d8b45aad15'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  gato:
+    order: 14
+    name: '&fGato'
+    display:
+      material: 'c67b2b6a9c75168b50776ff002739002c84fc8217f739fb185018ffe77b0b5ed'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: 'c67b2b6a9c75168b50776ff002739002c84fc8217f739fb185018ffe77b0b5ed'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  jacaré:
+    order: 15
+    name: '&fJacaré'
+    display:
+      material: 'fc2391da81052360007623c749a23b74dd1773f8c1ea0d1156682a3e97ab5989'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: 'fc2391da81052360007623c749a23b74dd1773f8c1ea0d1156682a3e97ab5989'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  leao:
+    order: 16
+    name: '&fLeão'
+    display:
+      material: '73987090cb8641f55d8320f05ff896b9afc1c36c8c54a960dadaec42d2e86a6d'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '73987090cb8641f55d8320f05ff896b9afc1c36c8c54a960dadaec42d2e86a6d'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  macaco:
+    order: 17
+    name: '&fMacaco'
+    display:
+      material: 'a6b856d923ca6f40013832af51370196db541b8c5209f4ea80e2eadf658d7949'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: 'a6b856d923ca6f40013832af51370196db541b8c5209f4ea80e2eadf658d7949'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  porca:
+    order: 18
+    name: '&fPorca'
+    display:
+      material: '75a9e8ee9361c99255df509db11d1a464a1c6f2f6e5c51d8cad86e3892d38e9a'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '75a9e8ee9361c99255df509db11d1a464a1c6f2f6e5c51d8cad86e3892d38e9a'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  pavao:
+    order: 19
+    name: '&fPavão'
+    display:
+      material: '7fd6ab3f0324190d8c8f73221791510c2fc406c4a7ddb7301d3e14b313a12de2'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '7fd6ab3f0324190d8c8f73221791510c2fc406c4a7ddb7301d3e14b313a12de2'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  peru:
+    order: 20
+    name: '&fPeru'
+    display:
+      material: '231251c8da0eb52d6578c57a22c2df15d101becfbddd19752cecafe9bfc7f517'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '231251c8da0eb52d6578c57a22c2df15d101becfbddd19752cecafe9bfc7f517'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  touro:
+    order: 21
+    name: '&fTouro'
+    display:
+      material: '81096384fa719d1a94b3b2a502289ed385aa54e45fcb58b83878552ad5066ee'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: '81096384fa719d1a94b3b2a502289ed385aa54e45fcb58b83878552ad5066ee'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  tigre:
+    order: 22
+    name: '&fTigre'
+    display:
+      material: 'b2609ea8464153f86e957a7425f16e4ff7060a0b5f0bbebdfa4f7eee703f08b4'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: 'b2609ea8464153f86e957a7425f16e4ff7060a0b5f0bbebdfa4f7eee703f08b4'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  urso:
+    order: 23
+    name: '&fUrso'
+    display:
+      material: 'bdc22f6eb9d8227d5b402f2cf0bae6fd7f270ec46742580c92f7ff4537324f5c'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: 'bdc22f6eb9d8227d5b402f2cf0bae6fd7f270ec46742580c92f7ff4537324f5c'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  veado:
+    order: 24
+    name: '&fVeado'
+    display:
+      material: 'c14af5ac6a96bfdee1b83c7e33c874a268936284384d66c9c61c18c9fc366bc6'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: 'c14af5ac6a96bfdee1b83c7e33c874a268936284384d66c9c61c18c9fc366bc6'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'
+  vaca:
+    order: 25
+    name: '&fVaca'
+    display:
+      material: 'f88be57af6d248c297b3cae676f45cc2a438f15a9ef26cdf5f035fb842d86dd9'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&6{numbers}'
+        - ''
+        - '&aClique para selecionar este bicho'
+    display-selected:
+      material: 'f88be57af6d248c297b3cae676f45cc2a438f15a9ef26cdf5f035fb842d86dd9'
+      name: '&f&l{order} {name}'
+      lore:
+        - '&aApostando com: &f{name}'
+        - '&6{numbers}'

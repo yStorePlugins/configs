@@ -1,0 +1,106 @@
+Database:
+   Tipo: SQLITE #Tipos: MYSQL, SQLITE
+   IP: localhost:3306
+   DB: test
+   User: admin
+   Pass: ''
+   Debug: true
+   
+Comando:
+   Comando: 'kills'
+   Aliases: {}
+
+Anti freekill: true #so ira contabilizar uma kill, quando matar um jogador diferente do morto anteriormente.
+Recompensa auto: true #quando o player atingir a quantia necessária de kills ele já recebe a recompensa automaticamente.
+
+# Comandos que poderão ser dados ao matar um jogador
+ComandosPorKill:
+   - '25.0,give {player} STONE 1'
+
+# Mundos onde não irá contar kills
+Mundo blacklist:
+   - 'none'
+
+# Regiões onde irá contar kills
+Region whitelist: []
+
+# Tag que será dada ao TOP 1
+Tag: '&e[A+]'
+
+Placeholders:
+   Tag tem: '{tag}'
+   Tag nao tem: ''
+   Nome tem: '{nome}'
+   Nome nao tem: '&7Sem rank'
+
+# Configuração da barra de progresso
+progress-bar:
+   amount: 10
+   symbol: ':'
+   color-yes: '&a'
+   color-no: '&7'
+
+# Sistema de npc
+npc:
+   skin: 'Pitombaa'
+   hologram:
+      offset: 3.4
+      hologram:
+         - '&6&lRanking de Kills'
+         - '&7Evolua seu rank com a matança!'
+         - '[item]DIAMOND_SWORD'
+
+Upou:
+   Msgs:
+      Actionbar:
+         Ativar: true
+         Broadcast: false
+         Msg: '&aVocê &7({player})&a upou seu rank de kills &ede {atual} &epara {rank} &7({nome})&a.'
+      Title:
+         Ativar: true
+         Broadcast: false
+         Title: '&aRank evoluido'
+         Subtitle: '&e{rank} &7({nome})' # placeholder {atual} disponível
+      Chat:
+         Ativar: true
+         Broadcast: false
+         # placeholder {atual} disponível
+         Msg:
+         - ''
+         - '&aVocê &7({player})&a evoluiu seu rank para &e{rank} &7({nome})&a.'
+         - ''  
+         
+Setas:
+   Voltar:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&cVoltar'
+      Lore:
+      - ''
+      - '&7Clique para voltar.'
+      - ''
+   Proximo:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&aPróximo'
+      Lore:
+      - ''
+      - '&7Clique para ir à próxima página.'
+      - ''
+      
+Lores:
+   Coletar:
+      Sobrepor: false
+      Lore:
+      - ''
+      - '&aClique para coletar essa recompensa'
+   Ja coletou:
+      Sobrepor: true
+      Lore:
+      - '&cVocê já coletou essa recompensa.'

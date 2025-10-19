@@ -1,0 +1,44 @@
+Nome: '&8Lista de ranks'
+Tamanho: 27
+Slots: [ 10, 11, 12, 13, 14, 15 ]
+BackSlot: 0
+VoltarSlot: 18
+ProximoSlot: 26
+# Quando não tiver nenhum rank cadastrado.
+Vazio:
+  Slot: 22
+  CustomSkull: false
+  URL: ''
+  ID: 408
+  Data: 0
+  Glow: true
+  Name: '&cSem ranks'
+  Lore:
+    - '&cNão há nenhum rank cadastrado :c'
+# Ranks que estarão visíveis no menu
+Itens:
+  item1:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/a54947de7f52598255d6afee9d77befad9b4f24c0c4663d28bcdf8a6457f34'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&6Rank Bronze'
+    Lore:
+      - '&7Informações deste rank:'
+      - ''
+      - '&7> &f Dado ao cadastrar.'
+      - ''
+  item2:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/1ad5424d9903953843526a7c416866e7d79501c88ce7cdabeee5284ea39f'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&fRank Ferro'
+    Lore:
+      - '&7Informações deste rank:'
+      - ''
+      - '&6 Bronze -> &fFerro'
+      - ' &f Preço: &750 XP&f.'
+      - ''

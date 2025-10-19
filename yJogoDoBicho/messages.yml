@@ -1,0 +1,47 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aJogo do Bicho comandos:
+
+    &a> /jogodobicho
+    &a> /jogodobicho top
+
+  provider-permission: '&cVocê não tem permissão para utilizar esta economia.'
+  select-economy: '&cSelecione uma moeda para apostar.'
+  select-animal: '&cSelecione um bicho para apostar.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  win: '&aVocê obteve um sucesso de saldo de &f{amount} ({odd})&a.'
+  lose: '&cVocê perdeu.'
+  lose-other: '&cVocê perdeu. Número sorteado: {sorted}.'
+  minimum: '&cVocê precisa apostar no mínimo {amount}.'
+  digit-amount: |
+
+    &aDigite a quantia que deseja apostar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-number: |
+
+    &aDigite o número que deseja apostar.
+    &7para cancelar digite &ncancelar&7.
+
+  number-syntax: '&cVocê precisa selecionar um número entre 1 e 9999.'
+  number-syntax-dozen: '&cVocê precisa selecionar um número entre 01 e 99 na aposta em dezenas.'
+  number-syntax-hundred: '&cVocê precisa selecionar um número entre 001 e 999 na aposta em centenas.'
+  number-syntax-thousand: '&cVocê precisa selecionar um número entre 0001 e 9999 na aposta em milhar.'
+  delay: '&cAguarde &e{time} &cpara apostar novamente.'
