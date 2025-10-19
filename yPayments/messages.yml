@@ -1,0 +1,94 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/shop &8- &7Abre o menu principal.
+    &a/shop transacoes &8- &7Abre o menu de transações.
+    &a/shop historico &8- &7Abre o menu de compras.
+    &a/shop correio &8- &7Abre o menu de correio de produtos.
+    &a/shop comprar [produto] &8- &7Abre o menu de comprar o produto.
+
+  help-admin: |
+
+    &a/shop &8- &7Abre o menu principal.
+    &a/shop transacoes &8- &7Abre o menu de transações.
+    &a/shop historico &8- &7Abre o menu de compras.
+    &a/shop correio &8- &7Abre o menu de correio de produtos.
+    &a/shop comprar [produto] &8- &7Abre o menu de comprar o produto.
+    &a/shop admin &8- &7Abre o menu principal de ADM.
+    &a/shop resetarcorreio &8- &7Ativa os produtos comprados novamente para todos.
+    &a/shop criardesconto &8- &7Cria um cupom de desconto.
+    &a/shop deletardesconto &8- &7Deletar um cupom de desconto.
+    &a/shop descontos &8- &7Lista os descontos disponíveis.
+    &a/shop setnpc &8- &7Seta o NPC.
+    &a/shop delnpc &8- &7Deleta o NPC.
+    &a/shop reload &8- &7Recarrega a configuração.
+
+  pay: |
+
+    &aSua cobrança foi gerada com sucesso no meio de pagamento &f{gateway}&a.
+    &7Clique &a&l<click:open_url:{url}>AQUI</click> &7para realizar o pagamento.
+
+  wait: '&cVocê precisa aguardar {time} para realizar essa operação.'
+  courier-reset: '&aAs compras do jogador &f{player}&a foram liberadas para coleta novamente.'
+  courier-reset-all: '&aAs compras de &f{amount} jogadores&a foram liberadas para coleta novamente.'
+  discount-created: |
+
+    &aInformações do CUPOM gerada:
+
+    &7CUPOM: &f<click:suggest_command:{coupon}><hover:show_text:"<red>{coupon}<newline>Clique para copiar</red>">{coupon}</hover></click>
+    &fDesconto: &f{discount}%
+
+    &7Usos: &f{use}
+    &7Expira em: &f{date} às {hour}
+  discount-found: '&cEste cupom {coupon} já existe.'
+  discount-not-found: '&cEste cupom {coupon} não existe.'
+  discount-deleted: '&aEsta cupom {coupon} foi deletado.'
+  discount-digit: |
+
+    &aDigite o CUPOM que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  discount-max: '&cEste cupom {coupon} esgotou.'
+  discount-expired: '&cEste cupom {coupon} expirou em {date} às {hour}.'
+  discount-applied: '&cEste cupom {coupon} foi aplicado.'
+  discount-format: '  &8(<click:suggest_command:{id}><hover:show_text:"<red>{coupon}<newline>Clique para copiar</red>">{coupon}</hover></click>)&f {coupon}&6 -> &7{discount}&6 -> &7{use}&6 -> &7{date} às {hour}'
+  discount-none: '&cNão há nenhum cupom disponível.'
+  discounts: |
+
+    &aInformações sobre os CUPONS disponíveis:
+
+    &f  CUPOM:            &fDESCONTO:            &fUSOS:            &fEXPIRA EM:
+
+    {format}
+
+  generating-report: '&aGerando relatório na pasta &f/report&a.'
+  credentials: '&cCredenciais não configuradas.'
+  npc-set: '&aNPC setado com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'
+  product-found: |
+    &cProduto não encontrado.
+    &7Disponíveis: {list}
+  minimum-stripe: '&cA compra precisa ser de no mínimo 50 centavos.'
+  alert-message: |
+
+    &a&lLOJA
+    &aVocê possui &f{amount}x compras &apara serem coletadas no &f/shop&a.
+
+  already-map: '&cVocê já possui um mapa com QR-Code no inventário.'

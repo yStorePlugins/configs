@@ -1,0 +1,45 @@
+options:
+  approved:
+    url: ''
+    username: 'yPayments - Nova Compra'
+  mediation:
+    url: ''
+    username: 'yPayments - Pedido de Reembolso'
+  refunded:
+    url: ''
+    username: 'yPayments - Novo Reembolso'
+
+embeds:
+  bought:
+    title: ':mailbox: Uma nova compra foi detectada'
+    thumbnail: 'https://minotar.net/body/{player}/100.png'
+    color: '#fff'
+    content: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      player:
+        inline: true
+        header: 'Player'
+        content: '```{player}```'
+      product:
+        inline: true
+        header: 'Produto'
+        content: '```{product}```'
+      price:
+        inline: true
+        header: 'Preço'
+        content: '```{price}```'
+      discount:
+        inline: true
+        header: 'Desconto'
+        content: '```{discount}% - {coupon}```'
+      reference:
+        inline: true
+        header: 'Referência'
+        content: '```{reference} | {gateway}```'
+      date_activated:
+        inline: true
+        header: 'Comprado em'
+        content: '```{bought_date} às {bought_hour}```'

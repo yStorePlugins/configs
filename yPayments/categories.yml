@@ -1,0 +1,20 @@
+categories:
+  items:
+    # Comando para acessar a categoria
+    command: 'diamantes'
+    # Permissão para acessar a categoria
+    permission: ''
+    # Categoria aparecer no menu principal
+    main-menu: true
+    # Slot no menu principal
+    slot: 13
+    # Ícone no menu principal
+    icon:
+      material: 'DIAMOND'
+      name: '&aLoja de &bDiamantes'
+      lore: ['&7Compre aqui os diamantes mais', '&7bonitos já lapidados.', '', '&aClique para acessar']
+    # Configurações do menu
+    menu:
+      title: '&8Loja Virtual'
+      size: 27
+      back-slot: 9

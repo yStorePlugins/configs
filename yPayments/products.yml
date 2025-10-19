@@ -1,0 +1,114 @@
+products:
+  diamond:
+    # Nome nas mensagens
+    name: '&bDiamantes!'
+    # Nome no pagamento
+    title: 'yStore - Diamantes'
+    # Meio de pagamento
+    # Disponível: MERCADOPAGO, PICPAY, PAYPAL, COINBASE, STRIPE, PIX
+    gateways: ['PICPAY', 'MERCADOPAGO', 'PAYPAL', 'COINBASE', 'STRIPE', 'PIX']
+    # Meios de pagamento que irão dar o mapa
+    # Disponível: MERCADOPAGO, PICPAY, PAYPAL, COINBASE, STRIPE, PIX
+    map-gateways: ['PICPAY', 'MERCADOPAGO', 'PAYPAL', 'COINBASE', 'STRIPE', 'PIX']
+    # Em reais
+    price: 0.01
+    # Lista de descontos já aplicados
+    # GATEWAY:PORCENTAGEM
+    gateway-discount: [ 'PIX:10.0' ]
+    # Lista de gateways que não será possível aplicar cupom
+    # GATEWAY
+    coupon-block: []
+    # O que será dado ao player
+    rewards:
+      commands: []
+      items:
+        diamond:
+          material: DIAMOND
+          amount: 10
+    discord:
+      # exclusivo yDiscordHook
+      # enviar o embed no privado
+      discordhook:
+        enable: true
+        dm-bought-embed: 'bought'
+        dm-mediation-embed: ''
+        dm-refunded-embed: ''
+      # enviar o embed em um chat
+      webhook:
+        enable: true
+        chat-bought-embed: 'bought'
+        chat-mediation-embed: ''
+        chat-refunded-embed: ''
+    # Comandos que serão executados quando o for reembolsado
+    commands-refunded: ['give {player} barrier 1']
+    # Comandos que serão executados quando o jogador contestar
+    commands-mediation: ['give {player} stone 1']
+    # Mensagens que serão executadas ao aprovar
+    messages:
+      broadcast:
+        chat: ''
+        actionbar: ''
+        title: ''
+      private:
+        chat: |
+
+          &a&lLOJA
+          &aObrigado pela sua compra na nossa loja.
+          &7Desfrute do seu novo item &bDiamantes!
+
+        actionbar: ''
+        title: ''
+      refunded:
+        chat: |
+
+          &a&lLOJA
+          &cSua compra de referência &f{reference} &7{gateway}&c foi reembolsada.
+          &7Sanções serão aplicadas.
+
+        actionbar: ''
+        title: ''
+      in-mediation:
+        chat: |
+
+          &a&lLOJA
+          &cSua compra de referência &f{reference} &7{gateway}&c foi contestada.
+          &7Sanções serão aplicadas.
+
+        actionbar: ''
+        title: ''
+      collect:
+        chat: |
+
+          &a&lLOJA
+          &bOs itens da sua compra foram adicionados ao seu inventário.
+
+        actionbar: ''
+        title: ''
+    # Ícone no menu
+    icons:
+      sell:
+        categories: ['11,items', '11,main-menu']
+        material: DIAMOND
+        name: '&bDiamantes'
+        amount: 10
+        lore: [ '&7Ostente esses belíssimos', '&7diamantes no servidor.', '', '&fPreço: &2R$ &a0,01', '', '&7Clique para comprar' ]
+      historic:
+        material: DIAMOND
+        name: '&bDiamantes'
+        amount: 10
+        lore: [ '&7Ostente esses belíssimos', '&7diamantes no servidor.', '', '&fReferência: &b{reference}&f.', '&aComprado em &f{date} &aàs &f{hour}', '&aPreço pago: &fR$ {price}' ]
+      transactions:
+        material: DIAMOND
+        name: '&bDiamantes'
+        amount: 10
+        lore: [ '&7Ostente esses belíssimos', '&7diamantes no servidor.', '', '&fReferência: &b{reference}&f.', '&fStatus: &e{status}&f.', '&fGateway: &b{gateway}', '', '&aAtualizado em &f{date} &aàs &f{hour}', '&aPreço pago: &fR$ {price}', '' ]
+      transactions-admin:
+        material: DIAMOND
+        name: '&bDiamantes'
+        amount: 10
+        lore: [ '&7Ostente esses belíssimos', '&7diamantes no servidor.', '', '&fJogador: &6{owner}', '&fReferência: &b{reference}&f.', '&fStatus: &e{status}&f.', '&fGateway: &b{gateway}', '', '&aAtualizado em &f{date} &aàs &f{hour}', '&aPreço pago: &fR$ {price}', '' ]
+      collect:
+        material: DIAMOND
+        name: '&bDiamantes'
+        amount: 10
+        lore: [ '&7Ostente esses belíssimos', '&7diamantes no servidor.', '', '&fReferência: &b{reference}&f.', '', '&aClique para recolher' ]
