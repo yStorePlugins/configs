@@ -1,0 +1,13 @@
+Nome: '&8Encantamentos - Preview'
+Tamanho: 27
+Slots: [ 10, 11, 12, 13, 14, 15 ]
+BackSlot: 0
+VoltarSlot: 18
+ProximoSlot: 26
+Item:
+  CustomSkull: false
+  URL: ''
+  ID: BOOK
+  Data: 0
+  Name: '&eLivro encantado'
+  Lore: []

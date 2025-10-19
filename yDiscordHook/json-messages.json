@@ -1,0 +1,17 @@
+{
+  "discord": {
+    "text": "\n§bAcesse nosso servidor do discord clicando ",
+    "extra":[
+      {
+        "text": "§f§lAQUI",
+        "clickEvent": {
+          "action": "open_url",
+          "value": "https://ystoreplugins.com.br/discord"
+        }
+      },
+      {
+        "text": "§b.\n"
+      }
+    ]
+  }
+}

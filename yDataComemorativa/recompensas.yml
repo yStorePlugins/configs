@@ -1,0 +1,64 @@
+Recompensas:
+   Reco1:
+      Msgs:
+         Actionbar:
+            Ativar: true
+            Msg: '&cGanhou carvão por sel mal :c'
+         Title:
+            Ativar: false
+            Title: ''
+            Subtitle: ''
+         Chat:
+            Ativar: true
+            Msg:
+            - ''
+            - '&cProcure se comportar melhor para ganhar coisas boas!'
+            - ''
+      Item: #se o ( Command -> Use ) tiver true, isso não vai funcionar
+         CustomSkull: false
+         URL: ''
+         ID: 263
+         Data: 0
+         Glow: true
+         Name: '&cCarvão'
+         Amount: 1
+         Lore:
+         - '&cVocê se comportou mal, por isto'
+         - '&cganhou um carvão.'
+         Enchants: #se não desejar, deixe assim:
+         - ''
+      Command:
+         Use: false
+         List: #se o ( Use ) tiver false, isso não funcionar.
+         - 'give {player} stone 1'
+   Reco2:
+      Msgs:
+         Actionbar:
+            Ativar: true
+            Msg: '&aVocê foi ótimo(a) esse ano.'
+         Title:
+            Ativar: false
+            Title: ''
+            Subtitle: ''
+         Chat:
+            Ativar: true
+            Msg:
+            - ''
+            - '&aParabéns por se comportar bem, te dei diamantes.'
+            - ''
+      Item: #se o ( Command -> Use ) tiver true, isso não vai funcionar
+         CustomSkull: false
+         URL: ''
+         ID: 264
+         Data: 0
+         Glow: true
+         Name: '&bDiamantes!'
+         Amount: 64
+         Lore:
+         - '&bVocê foi um ótimo garoto(a)!'
+         Enchants: #se não desejar, deixe assim:
+         - ''
+      Command:
+         Use: false
+         List: #se o ( Use ) tiver false, isso não funcionar.
+         - 'give {player} stone 1'

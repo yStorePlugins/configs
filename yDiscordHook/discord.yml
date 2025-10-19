@@ -1,0 +1,78 @@
+Embeds:
+  vincular:
+    Title: 'Pedido de vinculação de conta'
+    Thumbnail: ''
+    Color: '#fff'
+    Footer:
+      Text: '{data} às {hora}'
+      Image: ''
+    Description: 'Para completar a verificação, digite o código a seguir no chat do servidor'
+    Fields:
+      jogador:
+        Inline: false
+        Header: 'Jogador'
+        Content: '{player}'
+      codigo:
+        Inline: false
+        Header: 'Código'
+        Content: '{codigo}'
+  vinculado:
+    Title: 'Vinculação de conta'
+    Thumbnail: ''
+    Color: '#fff'
+    Footer:
+      Text: '{data} às {hora}'
+      Image: ''
+    Description: ''
+    Fields:
+      jogador:
+        Inline: false
+        Header: 'Jogador'
+        Content: '{player}'
+      estado:
+        Inline: false
+        Header: 'Estado'
+        Content: 'Vinculado com sucesso.'
+  vincular_dc:
+    Title: 'Vinculação de conta'
+    Thumbnail: ''
+    Color: '#fff'
+    Footer:
+      Text: '{data} às {hora}'
+      Image: ''
+    Description: ''
+    Fields:
+      jogador:
+        Inline: false
+        Header: 'Seu código é'
+        Content: '`{code}`'
+      estado:
+        Inline: false
+        Header: 'Entre no servidor do Minecraft'
+        Content: 'Digite o comando: `/vinculardc {code}`'
+  ystafflogin_verificacao:
+    Title: 'Realize seu LoginStaff'
+    Thumbnail: ''
+    Color: '#fff'
+    Content: ''
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Description: ''
+    Fields:
+      usuario:
+        Inline: false
+        Header: 'Usuário'
+        Content: '{player}'
+      codigo:
+        Inline: false
+        Header: 'Código'
+        Content: '{codigo}'
+      ip:
+        Inline: false
+        Header: 'IP'
+        Content: '{ip}'
+      data:
+        Inline: false
+        Header: 'Data'
+        Content: '{data} - {hora}'

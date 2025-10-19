@@ -1,0 +1,10 @@
+Datas:
+   natal:
+      Nome arquivo: 'natal'
+      Inicio: '25/12/2020-12:48'
+      Fim: '25/12/2020-12:50'
+      # Recompensas da data comemorativa
+      # As recompensas são cadastradas na recompensas.yml
+      # Use: chance,recompense
+      Recompensas:
+         - '100,Reco1'

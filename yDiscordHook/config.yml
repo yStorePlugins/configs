@@ -1,0 +1,151 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Vincular:
+    Comando: 'vinculardiscord'
+    Aliases: [ vincular, vinculardc, dcvincular, discordvincular ]
+  Desvincular:
+    Comando: 'desvinculardiscord'
+    Aliases: [ desvincular, desvinculardc, dcdesvincular, discorddesvincular ]
+  Discord:
+    Comando: 'discord'
+    Aliases: [ ]
+
+# Comando no discord
+Discord-Command:
+  enabled: true
+  commands: [ 'vincular' ]
+
+# Ativar a troca do sistema de chat quando estiver no mohist
+# compatível apenas com: UltimateChat, nChat e Legendchat
+mohist-chat: false
+
+# Tag do vinculado
+# %ydiscordhook_tag%
+Tag: '&a&l[V]'
+
+# Configurações do bot
+Bot:
+  # Token do bot
+  Token: ''
+  # ID do grupo (guilda) do discord
+  Guild: ''
+  # Status do bot
+  # Deixe '' (vazio para não usar)
+  Status: 'ystoreplugins.com.br'
+
+# Sistema de aviso para vincular
+Aviso:
+  Ativar: true
+  Mensagem:
+    - ' '
+    - ' &aVocê ainda não vinculou sua conta do discord.'
+    - ' &7Utilize &f/vinculardiscord&7 para vincular.'
+    - ' '
+
+# Opções gerais do plugin
+Opcoes:
+  # Ativar a permissão de bypass para não receber cargos
+  # Permissão: ydiscordhook.bypass
+  Bypass: false
+  # Tamanho mínimo do ID
+  TamanhoMinimo: 18
+  # Enviar mensagem no chat apenas se estiver vinculado
+  ChatVinculado: false
+  # Habilitar o jogador desvincular o discord
+  Desvincular: true
+  # Delay para carregar os dados depois do login
+  # Necessário para usar em servidor de mina separado
+  # Recomendado: 20 ticks
+  Login delay: 20
+  # Recompensas dadas ao vincular pela primeira vez
+  # As recompensas são cadastradas na recompensas.yml
+  # Use: chance,recompense
+  Recompensas:
+    - '100,Reco1'
+  # Sistema de verificação do server booster
+  Booster:
+    Ativar: true
+    # ID do cargo do booster
+    CargoID: ''
+    # Comandos que serão executados
+    Comandos:
+      # Ao virar booster
+      Booster:
+        # Executar o comando sempre ao logar
+        # caso false, será executado apenas uma vez
+        AoLogar: false
+        Lista:
+          - 'alert {player} virou server booster'
+      # Ao não ser mais booster
+      NaoBooster:
+        Lista:
+          - 'alert {player} não é mais server booster'
+  # Sistema de verificação do mito (yMito pago)
+  Mito:
+    Ativar: true
+    # ID do cargo do mito
+    CargoID: ''
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isto.'
+  Cancelou: '&cVocê cancelou a ação.'
+  Valido: |
+    &cVocê deve por um ID ou TAG válido.
+    &7O ID é composto somente por números e com no mínimo 18 números.
+    &7A sua tag deve possuir # e não pode conter letras especiais.
+  Ja vinculado sua: '&cEste ID já está vinculado à sua conta.'
+  Ja vinculado: '&cEste ID já está vinculado à {player}.'
+  Privado: '&cSeu privado está bloqueado.'
+  Errado: '&cO token está errado.'
+  Encontrado: '&cO membro com este ID ou TAG não foi encontrado.'
+  Enviando: '&aEnviando token...' # deixe '' para não usar
+  Nao vinculado: '&cVocê não está vinculado.'
+  Nao vinculado player: '&cO jogador &f{player}&c não está vinculado.'
+  Jogador: '&cJogador não encontrado.'
+  Chat: '&cVocê não pode enviar mensagens antes de se vincular. -> /vincular'
+  DesvincularBooster: '&cVocê não pode desvincular enquanto for server-booster.'
+  Ja vinculado player: '&cO jogador &f{player}&c já está vinculado.'
+  Codigo invalido: '&cCódigo inválido ou expirado!'
+  Vinculou target:
+    - ''
+    - '&aVocê vinculou com sucesso o discord do jogador &f{player}&a.'
+    - '&aConta: &f{discord_tag}&a.'
+    - '&aID: &f{discord_id}&a.'
+    - ''
+  Digite:
+    - ''
+    - '&aDigite o ID do discord que deseja vincular.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Desvinculou:
+    - ''
+    - '&aVocê desvinculou com sucesso o discord.'
+    - '&aConta: &f{discord_tag}&a.'
+    - '&aID: &f{discord_id}&a.'
+    - ''
+  Vinculou:
+    - ''
+    - '&aVocê vinculou com sucesso o discord.'
+    - '&aConta: &f{discord_tag}&a.'
+    - '&aID: &f{discord_id}&a.'
+    - ''
+  Verifique:
+    - ''
+    - '&aDigite o código enviado à sua DM para completar a verificação.'
+    - '&7A verificação irá expirar em 1 minuto.'
+    - ''
+  Info:
+    - ''
+    - '&aInformações do jogador &f{player}&a:'
+    - '&aConta: &f{discord_tag}&a.'
+    - '&aID: &f{discord_id}&a.'
+    - ''

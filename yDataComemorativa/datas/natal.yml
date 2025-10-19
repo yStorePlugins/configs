@@ -1,0 +1,95 @@
+NPC:
+   Skin: 'yChusy'
+   Altura: 3.1
+   Holograma:
+   - '&c&lNatal'
+   - '&aClique para pegar seu presente de natal'
+   Mensagens:
+      Setado: '&a&lSUCESSO! &aNPC do data comemorativa setado com sucesso.'
+      Removido: '&a&lSUCESSO! &aNPC do data comemorativa removido com sucesso.'
+      Nao removido: '&c&lERRO! &aNPC do data comemorativa não está setado.'
+
+ArmorStand:
+   Altura: 3.1
+   Holograma:
+   - '&c&lNatal'
+   - '&aClique para pegar seu presente de natal'
+   Posicoes:
+      Cabeca:
+         Pos1: 0
+         Pos2: 0
+         Pos3: 0
+      Corpo:
+         Pos1: 0
+         Pos2: 20
+         Pos3: 0
+      Braco esquerdo:
+         Pos1: 261
+         Pos2: 16
+         Pos3: 0
+      Braco direito:
+         Pos1: 261
+         Pos2: 345
+         Pos3: 0
+      Perna esquerda:
+         Pos1: 9
+         Pos2: 0
+         Pos3: 0
+      Perna direita:
+         Pos1: 9
+         Pos2: 180
+         Pos3: 0
+   Itens:
+      Mao:
+         Nulo: false
+         CustomSkull: true
+         URL: 'http://textures.minecraft.net/texture/f5612dc7b86d71afc1197301c15fd979e9f39e7b1f41d8f1ebdf8115576e2e'
+         Colorida: false #armadura de couro colorida
+         Red: 0
+         Green: 0
+         Blue: 0
+         ID: 0
+         Data: 0
+         Glow: false
+      Capacete:
+         Nulo: false
+         CustomSkull: true
+         URL: 'http://textures.minecraft.net/texture/14e424b1676feec3a3f8ebade9e7d6a6f71f7756a869f36f7df0fc182d436e'
+         Colorida: true #armadura de couro colorida
+         Red: 0
+         Green: 0
+         Blue: 0
+         ID: 0
+         Data: 0
+         Glow: false
+      Peitoral:
+         Nulo: false
+         Colorida: true
+         Red: 252
+         Green: 3
+         Blue: 23
+         ID: 0
+         Data: 0
+         Glow: true
+      Calca:
+         Nulo: false
+         Colorida: true
+         Red: 0
+         Green: 112
+         Blue: 0
+         ID: 0
+         Data: 0
+         Glow: true
+      Bota:
+         Nulo: false
+         Colorida: true
+         Red: 252
+         Green: 3
+         Blue: 23
+         ID: 0
+         Data: 0
+         Glow: true
+   Mensagens:
+      Setado: '&a&lSUCESSO! &aNPC do data comemorativa setado com sucesso.'
+      Removido: '&a&lSUCESSO! &aNPC do data comemorativa removido com sucesso.'
+      Nao removido: '&c&lERRO! &aNPC do data comemorativa não está setado.'

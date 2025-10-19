@@ -1,0 +1,108 @@
+# quantia de xp para qualquer item encantado
+XP base: 200
+# lista de encantamentos
+Encantamentos:
+  enc1:
+    # nome do encantamento
+    # lista: https://helpch.at/docs/1.8.8/org/bukkit/enchantments/Enchantment.html
+    Encantamento: 'ARROW_DAMAGE'
+    # quantia de XP pelo nível 1
+    Padrao: 100
+    # quantia de XP acrescida aos outros níveis
+    PorLevel: 10
+  enc2:
+    Encantamento: 'ARROW_FIRE'
+    Padrao: 100
+    PorLevel: 10
+  enc3:
+    Encantamento: 'ARROW_INFINITE'
+    Padrao: 100
+    PorLevel: 10
+  enc4:
+    Encantamento: 'ARROW_KNOCKBACK'
+    Padrao: 100
+    PorLevel: 10
+  enc5:
+    Encantamento: 'DAMAGE_ALL'
+    Padrao: 100
+    PorLevel: 10
+  enc6:
+    Encantamento: 'DAMAGE_ARTHROPODS'
+    Padrao: 100
+    PorLevel: 10
+  enc7:
+    Encantamento: 'DAMAGE_UNDEAD'
+    Padrao: 100
+    PorLevel: 10
+  enc8:
+    Encantamento: 'DEPTH_STRIDER'
+    Padrao: 100
+    PorLevel: 10
+  enc9:
+    Encantamento: 'DIG_SPEED'
+    Padrao: 100
+    PorLevel: 10
+  enc10:
+    Encantamento: 'DURABILITY'
+    Padrao: 100
+    PorLevel: 10
+  enc11:
+    Encantamento: 'FIRE_ASPECT'
+    Padrao: 100
+    PorLevel: 10
+  enc12:
+    Encantamento: 'KNOCKBACK'
+    Padrao: 100
+    PorLevel: 10
+  enc13:
+    Encantamento: 'LOOT_BONUS_BLOCKS'
+    Padrao: 100
+    PorLevel: 10
+  enc14:
+    Encantamento: 'LOOT_BONUS_MOBS'
+    Padrao: 100
+    PorLevel: 10
+  enc15:
+    Encantamento: 'LUCK'
+    Padrao: 100
+    PorLevel: 10
+  enc16:
+    Encantamento: 'LURE'
+    Padrao: 100
+    PorLevel: 10
+  enc17:
+    Encantamento: 'OXYGEN'
+    Padrao: 100
+    PorLevel: 10
+  enc18:
+    Encantamento: 'PROTECTION_ENVIRONMENTAL'
+    Padrao: 100
+    PorLevel: 10
+  enc19:
+    Encantamento: 'PROTECTION_EXPLOSIONS'
+    Padrao: 100
+    PorLevel: 10
+  enc20:
+    Encantamento: 'PROTECTION_FALL'
+    Padrao: 100
+    PorLevel: 10
+  enc21:
+    Encantamento: 'PROTECTION_FIRE'
+    Padrao: 100
+    PorLevel: 10
+  enc22:
+    Encantamento: 'PROTECTION_PROJECTILE'
+    Padrao: 100
+    PorLevel: 10
+  enc23:
+    Encantamento: 'SILK_TOUCH'
+    Padrao: 100
+    PorLevel: 10
+  enc24:
+    Encantamento: 'THORNS'
+    Padrao: 100
+    PorLevel: 10
+  enc25:
+    Encantamento: 'WATER_WORKER'
+    Padrao: 100
+    PorLevel: 10

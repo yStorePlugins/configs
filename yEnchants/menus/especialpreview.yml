@@ -1,0 +1,16 @@
+Nome: '&8Encantamentos - Preview'
+Tamanho: 27
+Slots: [ 10, 11, 12, 13, 14, 15 ]
+BackSlot: 0
+VoltarSlot: 18
+ProximoSlot: 26
+Itens:
+  Item1:
+    CustomSkull: false
+    URL: ''
+    ID: 1
+    Data: 0
+    Glow: true
+    Name: '&aPedra preciosa'
+    Lore:
+      - '&fEsta é uma pedra preciosa.'

@@ -1,0 +1,17 @@
+Item:
+  CustomSkull: false
+  URL: ''
+  ID: 384
+  Data: 0
+  Glow: False
+  Name: '&eFrasco de experiência'
+  Lore:
+    - '&fXP: &a{xp}&f.'
+Frascos:
+  frasco1:
+    # Custo em XP
+    Custo: 1000
+  frasco2:
+    Custo: 3000
+  frasco3:
+    Custo: 5000

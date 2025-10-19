@@ -1,0 +1,21 @@
+# Cargo dado ao vincular o usuário
+Vincular:
+  # ID do cargo no discord
+  ID: ''
+  # Sincronizar o nick no discord
+  Sincronizar:
+    Ativar: false
+    Nick: '[MEMBRO] {player}'
+
+Cargos:
+  vip:
+    # Prioridade, quanto maior melhor
+    Ordem: 1
+    # ID do cargo no discord
+    ID: ''
+    # Permissão para receber o cargo
+    Permissao: 'ydiscordhook.vip'
+    # Sincronizar o nick no discord
+    Sincronizar:
+      Ativar: false
+      Nick: '[VIP] {player}'

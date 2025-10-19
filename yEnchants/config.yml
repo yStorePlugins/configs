@@ -1,0 +1,182 @@
+# Comandos e aliases do plugin
+Comando:
+  Enchant:
+    Comando: 'encantar'
+    Aliases: [ enchant ]
+  XP:
+    Comando: 'xp'
+    Aliases: [ exp ]
+  Reciclar:
+    Comando: 'reciclar'
+    Aliases: [ reciclador, recycle, recycler ]
+
+#Coloque yPoints, PlayerPoints, JH_Shop, yCash, TGCash, AtlasEconomiaSecundaria, MageCash, WheavelGems, LegendaryEconomy
+Plugin de Pontos: 'PlayerPoints'
+
+# Opcoes de configuração do NPC
+NPC:
+  ID: 9232856
+  Skin: 'TheMage'
+  Holograma:
+    Altura: 3.1
+    Holograma:
+      - '&6Feiticeiro'
+      - '&7Encante seus itens.'
+
+# Opcoes de configuração do NPC do reciclador
+NPC reciclador:
+  ID: 92328566
+  Skin: 'TheMage'
+  Holograma:
+    Altura: 3.1
+    Holograma:
+      - '&6Reciclador'
+      - '&7Recicle seus itens.'
+
+# Opções gerais do plugin
+Opcoes:
+  # Para encantar, deve-se ter o nível anterior do encantamento.
+  Anterior: true
+  # Ao clicar numa mesa de encantamentos, abrir o menu do plugin
+  Mesa menu: true
+  # "Somar" encantamentos iguais ao encantar
+  # Por exemplo: o peitoral tem protection 3 e o usuário tenta encantar
+  # com um livro protection 3; o item vai ser encantado com o protection 4
+  Somar iguais: false
+  # Metadatas que o bloco tiver não irá abrir o menu do plugin
+  Metadata blacklist:
+    - 'yMultiAltar'
+  # Lista de itens que a runa de extração não irá funcionar
+  # id:data
+  Runa blacklist:
+    - '403:0'
+  # Encantamentos máximos
+  # Necessário para definir um máximo para não somar
+  Max enchants:
+    - 'DURABILITY:10'
+  Especial:
+    # Executar um comando ao invés de dar o livro
+    Comando-executar: false
+    # Comando que será executado caso a opção acima esteja ativada
+    Comando: 'give {player} stone {quantia}'
+    # Ao abrir um livro, irá escolher um dos comandos abaixo
+    Comandos:
+      - 'give {player} stone 1'
+    Custos:
+      custo1:
+        Tipo: 'yPoints'
+        Display: 'Pontos'
+        Preco: 1000.0
+    Coins:
+      Ativar: true
+      Custo: 1000
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não possui permissão para isto.'
+  Setado: '&aNPC setado com sucesso.'
+  Removido: '&aNPC removido com sucesso'
+  Nao setado: '&cO NPC não está setado.'
+  Suficiente: '&cVocê não possui XP suficiente.'
+  Comprou frasco: '&aVocê adquiriu um frasco de &7{xp} XP&a.'
+  Comprou livro: '&aVocê adquiriu um livro de encantamentos por &7{xp} XP&a.'
+  Nao e numero: '&cO argumento não é um número.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Setou: '&aVocê setou &7{xp} XP &apara o jogador &7{player}&a.'
+  Adicionou: '&aVocê adicionou &7{xp} XP &apara o jogador &7{player}&a.'
+  Removeu: '&aVocê removeu &7{xp} XP &ado jogador &7{player}&a.'
+  Olhar: '&aXP do jogador &7{player}&a: &7{xp} XP&a.'
+  Deu: '&aVocê deu um frasco de &7{xp} XP&a para o jogador &7{player}&a.'
+  Deu runa: '&aVocê deu &7{quantia}x Runas de Extração&a para o jogador &7{player}&a.'
+  Deu livro: '&aVocê deu &7{quantia}x Livros de Encantamento {livro}&a para o jogador &7{player}&a.'
+  Deu especial: '&aVocê deu &7{quantia}x Livros de Encantamento &6Especial&a para o jogador &7{player}&a.'
+  Ativou frasco: '&aVocê ativou um frasco de &7{xp} XP&a.'
+  Nao pode: '&cEste encantamento não é para esse item.'
+  Anterior: '&cVocê precisa ter o level anterior deste encantamento.'
+  Superior: '&cO item já está encantado com um level superior.'
+  Igual: '&cO item já contem este encantamento no mesmo level.'
+  Falhou: '&cInfelizmente o encantamento falhou.'
+  Encantou: '&aItem encantado com sucesso.'
+  Sem: '&cEste item não contém encantamentos.'
+  Extraido: '&aEncantamentos extraidos com sucesso.'
+  Money suficiente: '&cVocê não possui money suficiente.'
+  Cash suficiente: '&cVocê não possui cash suficiente.'
+  Comprou especial: '&aVocê comprou um livro especial com sucesso.'
+  Abriu especial: '&aVocê abriu um livro especial.'
+  Cancelado: '&cReciclagem cancelada.'
+  Reciclado: '&aVocê reciclou seus itens com sucesso.'
+  Proibido: '&cVocê só pode reciclar itens ou livros com encantamentos.'
+  Maximo: '&cEste item já possui o nível máximo deste encantamento.'
+  Inserir: '&cVocê deve inserir o item e o livro.'
+  No-has: '&cVocê não possui &f{value} {type}&c.'
+  Deu encantamento: '&aVocê deu &71x Livros de Encantamento {encantamento} LVL.{level} &8({chance}%) &a para o jogador &7{player}&a.'
+
+# Item do encantamento que será aplicado
+Aplicavel:
+  CustomSkull: false
+  URL: ''
+  ID: 403
+  Data: 0
+  Name: '&eLivro encantado'
+  Lore:
+    - ''
+    - '&aChances: &e{chance}%&a.'
+
+# Item da runa de extração
+Runa:
+  CustomSkull: false
+  URL: ''
+  ID: 154
+  Data: 0
+  Name: '&aRuna de extração'
+  Glow: true
+  Lore:
+    - ''
+    - '&7Clique em um item encantando para'
+    - '&7extrair os seus encantamentos.'
+    - ''
+
+# Item do livro especial
+Especial:
+  CustomSkull: false
+  URL: ''
+  ID: 403
+  Data: 0
+  Name: '&aLivro de encantamentos'
+  Lore:
+    - ''
+    - '&7Clique para abrir este livro &6especial&7.'
+    - ''
+
+# As setas dos menus
+Setas:
+  # Voltar ao menu anterior
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  # Voltar a página anterior
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  # Ir para a próxima página
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'

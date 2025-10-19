@@ -1,0 +1,114 @@
+Categorias:
+  basico:
+    Nome: 'Básico'
+    # Custo em XP
+    Custo: 1000
+    # Chance de vir algum livro encantado
+    # ao abrir.
+    Chance:
+      Min: 50
+      Max: 90
+    # Encantamentos que poderá vir neste livro
+    # encantamento,nível
+    # Lista de nomes de encantamentos: https://helpch.at/docs/1.8.8/index.html?org/bukkit/enchantments/Enchantment.html
+    Encantamentos:
+      - PROTECTION_ENVIRONMENTAL,1
+      - PROTECTION_ENVIRONMENTAL,2
+      - PROTECTION_FIRE,1
+      - PROTECTION_FIRE,2
+      - OXYGEN,1
+      - PROTECTION_FALL,1
+      - PROTECTION_FALL,2
+      - DEPTH_STRIDER,1
+      - DAMAGE_ALL,1
+      - DAMAGE_ALL,2
+      - LOOT_BONUS_MOBS,1
+      - DIG_SPEED,1
+      - DIG_SPEED,2
+      - DURABILITY,1
+      - DURABILITY,2
+      - LOOT_BONUS_BLOCKS,1
+      - ARROW_DAMAGE,1
+      - ARROW_DAMAGE,2
+    # Item que o jogador irá abrir
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: False
+      Name: '&eLivro de encantamento'
+      Lore:
+        - '&fTipo: &7Básico.'
+        - ''
+        - '&7Clique com &fbotão direito &7para abrir.'
+  medio:
+    Nome: 'Médio'
+    Custo: 1500
+    Chance:
+      Min: 40
+      Max: 70
+    Encantamentos:
+      - PROTECTION_ENVIRONMENTAL,3
+      - PROTECTION_ENVIRONMENTAL,4
+      - PROTECTION_FIRE,3
+      - OXYGEN,2
+      - PROTECTION_FALL,3
+      - DEPTH_STRIDER,2
+      - DAMAGE_ALL,3
+      - DAMAGE_ALL,4
+      - LOOT_BONUS_MOBS,2
+      - DIG_SPEED,3
+      - DIG_SPEED,4
+      - DURABILITY,3
+      - DURABILITY,4
+      - LOOT_BONUS_BLOCKS,2
+      - ARROW_DAMAGE,3
+      - ARROW_DAMAGE,4
+      - FIRE_ASPECT,1
+      - ARROW_KNOCKBACK,1
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: False
+      Name: '&eLivro de encantamento'
+      Lore:
+        - '&fTipo: &7Médio.'
+        - ''
+        - '&7Clique com &fbotão direito &7para abrir.'
+  avancado:
+    Nome: 'Avançado'
+    Custo: 2500
+    Chance:
+      Min: 20
+      Max: 40
+    Encantamentos:
+      - PROTECTION_ENVIRONMENTAL,4
+      - PROTECTION_FIRE,4
+      - OXYGEN,3
+      - PROTECTION_FALL,4
+      - DEPTH_STRIDER,3
+      - DAMAGE_ALL,5
+      - LOOT_BONUS_MOBS,3
+      - DIG_SPEED,5
+      - DURABILITY,4
+      - LOOT_BONUS_BLOCKS,3
+      - ARROW_DAMAGE,5
+      - ARROW_INFINITE,1
+      - FIRE_ASPECT,2
+      - ARROW_KNOCKBACK,2
+      - ARROW_FLAME,1
+      - SILK_TOUCH,1
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: False
+      Name: '&eLivro de encantamento'
+      Lore:
+        - '&fTipo: &7Avançado.'
+        - ''
+        - '&7Clique com &fbotão direito &7para abrir.'

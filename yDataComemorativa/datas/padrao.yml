@@ -1,0 +1,95 @@
+NPC:
+   Skin: 'ySpeed_'
+   Altura: 3.1
+   Holograma:
+   - '&c&lAguardando'
+   - '&7Esperando uma próxima data comemorativa.'
+   Mensagens:
+      Setado: '&a&lSUCESSO! &aNPC do data comemorativa setado com sucesso.'
+      Removido: '&a&lSUCESSO! &aNPC do data comemorativa removido com sucesso.'
+      Nao removido: '&c&lERRO! &aNPC do data comemorativa não está setado.'
+   
+ArmorStand:
+   Altura: 3.1
+   Holograma:
+   - '&c&lAguardando'
+   - '&7Esperando uma próxima data comemorativa.'
+   Posicoes:
+      Cabeca:
+         Pos1: 0
+         Pos2: 0
+         Pos3: 0
+      Corpo:
+         Pos1: 0
+         Pos2: 0
+         Pos3: 0
+      Braco esquerdo:
+         Pos1: 0
+         Pos2: 0
+         Pos3: 0
+      Braco direito:
+         Pos1: 0
+         Pos2: 0
+         Pos3: 0
+      Perna esquerda:
+         Pos1: 0
+         Pos2: 0
+         Pos3: 0
+      Perna direita:
+         Pos1: 0
+         Pos2: 0
+         Pos3: 0
+   Itens:
+      Mao:
+         Nulo: false
+         CustomSkull: true
+         URL: 'http://textures.minecraft.net/texture/f5612dc7b86d71afc1197301c15fd979e9f39e7b1f41d8f1ebdf8115576e2e'
+         Colorida: false #armadura de couro colorida
+         Red: 0
+         Green: 0
+         Blue: 0
+         ID: 0
+         Data: 0
+         Glow: false
+      Capacete:
+         Nulo: false
+         CustomSkull: true
+         URL: 'http://textures.minecraft.net/texture/40bd1ea6b264b7a1cebf47fbede13558c7d1e1b168608e65b652a9147cf7f125'
+         Colorida: false #armadura de couro colorida
+         Red: 0
+         Green: 0
+         Blue: 0
+         ID: 0
+         Data: 0
+         Glow: false
+      Peitoral:
+         Nulo: false
+         Colorida: false
+         Red: 0
+         Green: 0
+         Blue: 0
+         ID: 303
+         Data: 0
+         Glow: true
+      Calca:
+         Nulo: false
+         Colorida: false
+         Red: 0
+         Green: 0
+         Blue: 0
+         ID: 304
+         Data: 0
+         Glow: true
+      Bota:
+         Nulo: false
+         Colorida: false
+         Red: 0
+         Green: 0
+         Blue: 0
+         ID: 305
+         Data: 0
+         Glow: true
+   Mensagens:
+      Setado: '&a&lSUCESSO! &aArmorStand do data comemorativa setado com sucesso.'
+      Removido: '&a&lSUCESSO! &aArmorStand do data comemorativa removido com sucesso.'
+      Nao removido: '&c&lERRO! &aArmorStand do data comemorativa não está setado.'

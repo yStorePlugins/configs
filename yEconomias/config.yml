@@ -1,0 +1,40 @@
+#        _____                                _
+#  _   _| ____|___ ___  _ __   ___  _ __ ___ (_) __ _ ___
+# | | | |  _| / __/ _ \| '_ \ / _ \| '_ ` _ \| |/ _` / __|
+# | |_| | |__| (_| (_) | | | | (_) | | | | | | | (_| \__ \
+#  \__, |_____\___\___/|_| |_|\___/|_| |_| |_|_|\__,_|___/
+#  |___/
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Nome da tabela dos usuários
+  table: 'yeconomias.players'
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''

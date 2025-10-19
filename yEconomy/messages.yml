@@ -1,0 +1,85 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+# Mensagens do magnata
+rich-new:
+  chat: |
+
+    &2&l[$]&a O jogador &f{player} &aé o novo &a&nMAGNATA&a do servidor.
+    &7O novo magnata possui &f{money} &7{unidade}.
+
+  actionbar: ''
+  title: '&6{player}<nl>&aé o novo magnata.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a<--> Comandos da economia <-->
+
+    &f > &a/money &8- &7Ver suas informações.
+    &f > &a/money &f<jogador> &8- &7Ver as informações de outro jogador.
+    &f > &a/money enviar &f<jogador> <quantia> &8- &7Enviar coins para um jogador.
+    &f > &a/money formatar &f<quantia> &8- &7Formata a quantia em (numeros -> letras) ou (letras -> números).
+    &f > &a/money toggle &8- &7Ativar/Desativar o recebimento de coins.
+    &f > &a/money top &8- &7Ver o TOP mais ricos.
+    &f > &a/magnata &8- &7Ver o jogador mais rico do servidor.
+
+  help-staff: |
+
+    &a<--> Comandos da economia &7(STAFF)&a <-->
+
+    &f > &a/money &8- &7Ver suas informações.
+    &f > &a/money &f<jogador> &8- &7Ver as informações de outro jogador.
+    &f > &a/money enviar &f<jogador> <quantia> &8- &7Enviar coins para um jogador.
+    &f > &a/money cheque &f<quantia> &8- &7Cria um cheque do seu money.
+    &f > &a/money chequemedia &f<player> <porcentagem> <multiplier> &8- &7Cria um cheque da média da economia.
+    &f > &a/money adicionar &f<jogador> <quantia> &8- &7Adicionar coins para um jogador.
+    &f > &a/money remover &f<jogador> <quantia> &8- &7Remover coins de um jogador.
+    &f > &a/money setar &f<jogador> <quantia> &8- &7Setar coins para um jogador.
+    &f > &a/money formatar &f<quantia> &8- &7Formata a quantia em (numeros -> letras) ou (letras -> números).
+    &f > &a/money toggle &8- &7Ativar/Desativar o recebimento de coins.
+    &f > &a/money top &8- &7Ver o TOP mais ricos.
+    &f > &a/money setnpc &f<1/2/3> &8- &7Setar o TOP NPC.
+    &f > &a/money delnpc &f<1/2/3> &8- &7Deletar o TOP NPC.
+    &f > &a/magnata &8- &7Ver o jogador mais rico do servidor.
+
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  balance: '&aVocê possui: &f{money}&a {unidade}.'
+  balance-target: '&aO jogador &7{player}&a possui: &f{money}&a {unidade}.'
+  balance-set: '&aVocê setou o money do jogador &7{player} &apara: &f{money}&a {unidade}.'
+  balance-removed: '&aVocê removeu &f{money}&a {unidade} do jogador &7{player}&a.'
+  balance-added: '&aVocê adicionou &f{money}&a {unidade} para o jogador &7{player}&a.'
+  balance-sent: '&aVocê enviou &f{money}&a {unidade} para o jogador &7{player}&a.'
+  balance-received: '&aVocê recebeu &f{money}&a {unidade} do jogador &7{player}&a.'
+  balance-format: '&f > &a&n{entrada} &e-> &a&n{saida}&a.'
+  balance-check-activated: '&aVocê ativou um cheque no valor de &f{money}&a {unidade}&a.'
+  balance-check-created: '&aVocê criou um cheque no valor de &f{money}&a {unidade}&a.'
+  balance-check-give: '&aVocê criou um cheque no valor de &f{money}&a {unidade}&a para o jogador &f{player}&a.'
+  balance-toggle-enabled: '&aVocê ativou o recebimento de coins.'
+  balance-toggle-disabled: '&cVocê desativou o recebimento de coins.'
+  rich-actual: |
+
+    &2&l[$]&a O jogador &f{player} &aé o &a&nMAGNATA&a do servidor.
+    &7O magnata possui &f{money} &7{unidade}.
+
+  rich-none: '&cNão há nenhum magnata no servidor.'
+  receive-disabled: '&cEste jogador desativou o recebimento de coins.'
+  ilegal: '&cO argumento contém caracteres ilegais. Use apenas letras e números.'
+  top-none: '&cNão há nenhum top nesta posição ainda.'
+  no-has: '&cVocê não possui esta quantia de coins.'
+  npc-set: '&aNPC setado.'
+  npc-removed: '&aNPC removido.'
+  check-media-give: '&aVocê enviou um cheque de &f{amount} coins&a para o jogador &f{player}&a.'

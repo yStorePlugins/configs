@@ -1,0 +1,14 @@
+Database:
+   Tipo: SQLITE #Tipos: MYSQL, SQLITE
+   IP: localhost:3306
+   DB: test
+   User: admin
+   Pass: ''
+
+Comando:
+   Comando: 'datafesta'
+   Aliases: {}
+   
+Mensagens:
+   Permissao: '&c&lERRO! &cVocê não tem permissão para isto.'
+   Ja coletou: '&c&lERRO! &cVocê já coletou a recompensa desta data comemorativa.'

@@ -1,0 +1,44 @@
+Nome: '&8Conta do Discord'
+Tamanho: 27
+VincularSlot: 12
+Itens:
+  Vincular:
+    CustomSkull: true
+    URL: '{player}'
+    ID: AIR
+    Data: 0
+    Glow: true
+    Name: '&aMinha conta'
+    Lore:
+      - ''
+      - ' &fConta vinculada: &7Nenhuma'
+      - ''
+      - '&aClique para vincular sua conta'
+  Vinculada:
+    CustomSkull: true
+    URL: '{player}'
+    ID: AIR
+    Data: 0
+    Glow: true
+    Name: '&aMinha conta'
+    Lore:
+      - ''
+      - ' &fConta vinculada: &7{discord_tag}&f.'
+      - ' &fID da conta: &7{discord_id}&f.'
+      - ' &fServer Booster: {booster}&f.'
+      - ''
+      - ' &fData da vinculação: &7{data} às {hora}&f.'
+      - ''
+      - '&aClique para desvincular sua conta'
+  Discord:
+    Slot: 14
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/4d42337be0bdca2128097f1c5bb1109e5c633c17926af5fb6fc20000011aeb53'
+    ID: AIR
+    Data: 0
+    Glow: true
+    Name: '&aDiscord do servidor'
+    Lore:
+      - '&7Clique para entrar no discord'
+      - '&7do nosso servidor.'
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Discord:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

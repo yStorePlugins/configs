@@ -1,0 +1,187 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Balanço'
+  size: 27
+  items:
+    info:
+      slot: 10
+      material: '{player}'
+      name: '&aSuas informações'
+      lore:
+        - '&7Veja suas informações'
+        - '&7referente ao money.'
+        - ''
+        - ' &fSaldo atual: &a{saldo}&f.'
+        - ' &fTransações realizadas: &b{transacoes}&f.'
+        - ' &fRecebimento de coins: &r{toggle}&f.'
+        - ''
+        - '&7Clique para ativar/desativar o'
+        - '&7recebimento de coins.'
+        - ''
+    transactions:
+      slot: 12
+      material: '4883d656e49c38c6b5378572f31c63c4c7a5dd4375b6ecbca43f5971c2cc4ff'
+      name: '&aTransações'
+      lore:
+        - '&7Veja as movimentações que'
+        - '&7você realizou.'
+        - ''
+        - '&aClique para visualizar.'
+    top:
+      slot: 14
+      material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+      name: '&aTop jogadores'
+      lore:
+        - '&7Veja os jogadores que'
+        - '&7se destacam sendo os'
+        - '&7mais ricos do servidor.'
+        - ''
+        - '&aClique para visualizar.'
+    rich:
+      slot: 16
+      material: 'f809d2e69610f1e6b75fe0d4598e441e560325d2d52d97cf66859c44fa3d8a79'
+      name: '&aMagnata'
+      lore:
+        - ''
+        - ' &fMagnata atual: &6{player}&f.'
+        - ' &fSaldo do magnata: &a{saldo} {unidade}&f.'
+        - ''
+
+# Menu de top
+top:
+  name: '&8TOP Ricos'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 9
+  next-slot: 17
+  # Item do top
+  item:
+    material: '{player}'
+    name: '&f#{pos} &7> &a{player}'
+    lore:
+      - ''
+      - '&fCoins: &a{money}&f.'
+      - ''
+
+# Menu de transações
+transactions:
+  name: '&8Histórico de transações'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 27
+  next-slot: 35
+  items:
+    added:
+      material: '3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716'
+      name: '&a+ {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Quantia adicionada: &a{money}&.'
+        - ''
+    received:
+      material: '3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716'
+      name: '&a+ {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Recebeu de &f{player}&7: &a{money}&.'
+        - ''
+    removed:
+      material: 'bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+      name: '&c- {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Quantia removida: &a{money}&.'
+        - ''
+    paid:
+      material: 'bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+      name: '&c- {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Pagou para &f{player}&7: &a{money}&.'
+        - ''
+    check:
+      material: 'bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+      name: '&c- {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Cheque criado no valor: &a{money}&.'
+        - ''
+
+# Menu de transações de outro jogador
+transactions-player:
+  name: '&8Transações de {player}'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 27
+  next-slot: 35
+  items:
+    added:
+      material: '3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716'
+      name: '&a+ {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Quantia adicionada: &a{money}&.'
+        - ''
+    received:
+      material: '3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716'
+      name: '&a+ {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Recebeu de &f{player}&7: &a{money}&.'
+        - ''
+    removed:
+      material: 'bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+      name: '&c- {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Quantia removida: &a{money}&.'
+        - ''
+    paid:
+      material: 'bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+      name: '&c- {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Pagou para &f{player}&7: &a{money}&.'
+        - ''
+    check:
+      material: 'bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+      name: '&c- {money}'
+      lore:
+        - ''
+        - '&7Data: &f{data} &8- &f{hora}&7.'
+        - '&7Cheque criado no valor: &a{money}&.'
+        - ''

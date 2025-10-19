@@ -1,0 +1,188 @@
+Nome: '&8Encantamentos'
+Tamanho: 45
+Itens:
+  Informacoes:
+    Slot: 13
+    CustomSkull: true
+    URL: '{player}'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aSua experiência'
+    Lore:
+      - '&fXP atual: &7{xp}&f.'
+  Frasco sim:
+    Slot: 29
+    CustomSkull: false
+    URL: ''
+    ID: 384
+    Data: 0
+    Glow: false
+    Name: '&eFrasco de experiência'
+    Lore:
+      - '&fCusto: &a{xp} XP&f.'
+      - ''
+      - '&7Você receberá um frasco de'
+      - '&7experiência com &n{xp} XP.'
+  Frasco nao:
+    Slot: 29
+    CustomSkull: false
+    URL: ''
+    ID: 374
+    Data: 0
+    Glow: false
+    Name: '&eFrasco de experiência'
+    Lore:
+      - '&cVocê não possui XP para'
+      - '&cser coletado.'
+  Especiais:
+    Slot: 34
+    CustomSkull: false
+    URL: ''
+    ID: 403
+    Data: 0
+    Glow: false
+    Name: '&eLivro de encantamento'
+    Lore:
+      - '&fTipo: &6Especiais&f.'
+      - ''
+      - '&7Clique com &fbotão direito &7para'
+      - '&7ver os encantamentos especiais.'
+      - ''
+      - '&fCusto: &a10.000 coins &7ou &6100 cash&f.'
+  Encantar:
+    Slot: 31
+    CustomSkull: false
+    URL: ''
+    ID: 145
+    Data: 0
+    Glow: false
+    Name: '&eForjar'
+    Lore:
+      - '&7Clique para abrir o menu e'
+      - '&7forjar o encantamento no seu item.'
+  Reciclar:
+    Slot: 22
+    CustomSkull: false
+    URL: ''
+    ID: HOPPER
+    Data: 0
+    Glow: false
+    Name: '&eReciclar'
+    Lore:
+      - '&7Clique para abrir o menu e'
+      - '&7reciclar os encantamentos do seu item.'
+# Caso queira enfeitar seu menu, poderá criar itens nesta seção:
+Itens custom: {}
+  #Enfeite1:
+  #  Slot: 0
+  #  CustomSkull: false
+  #  URL: ''
+  #  ID: 1
+  #  Data: 0
+  #  Glow: true
+  #  Name: ''
+  #  Lore: []
+# Itens das categorias
+# configuradas na "categorias.yml"
+Categorias:
+  cat1:
+    Categoria: 'basico'
+    Slot: 24
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: False
+      Name: '&eLivro de encantamento'
+      Lore:
+        - '&fTipo: &7Básico.'
+        - ''
+        - '&7Clique com &fbotão direito &7para.'
+        - '&7ver os encantamentos básicos.'
+        - ''
+        - '&fCusto: &a1000 XP&f.'
+  cat2:
+    Categoria: 'medio'
+    Slot: 25
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: False
+      Name: '&eLivro de encantamento'
+      Lore:
+        - '&fTipo: &7Médio.'
+        - ''
+        - '&7Clique com &fbotão direito &7para.'
+        - '&7ver os encantamentos médios.'
+        - ''
+        - '&fCusto: &a1500 XP&f.'
+  cat3:
+    Categoria: 'avancado'
+    Slot: 33
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: False
+      Name: '&eLivro de encantamento'
+      Lore:
+        - '&fTipo: &7Avançado.'
+        - ''
+        - '&7Clique com &fbotão direito &7para.'
+        - '&7ver os encantamentos avançados.'
+        - ''
+        - '&fCusto: &a2500 XP&f.'
+# Itens dos frascos
+# configuradas na "frascos.yml"
+Frascos:
+  frasco1:
+    Frasco: 'frasco1'
+    Slot: 19
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 384
+      Data: 0
+      Glow: False
+      Name: '&eFrasco de experiência'
+      Lore:
+        - '&fCusto: &a1000 XP&f.'
+        - ''
+        - '&7Você receberá um frasco de'
+        - '&7experiência com &n1000 XP.'
+  frasco2:
+    Frasco: 'frasco2'
+    Slot: 20
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 384
+      Data: 0
+      Glow: False
+      Name: '&eFrasco de experiência'
+      Lore:
+        - '&fCusto: &a3000 XP&f.'
+        - ''
+        - '&7Você receberá um frasco de'
+        - '&7experiência com &n3000 XP.'
+  frasco3:
+    Frasco: 'frasco3'
+    Slot: 28
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 384
+      Data: 0
+      Glow: False
+      Name: '&eFrasco de experiência'
+      Lore:
+        - '&fCusto: &a5000 XP&f.'
+        - ''
+        - '&7Você receberá um frasco de'
+        - '&7experiência com &n5000 XP.'
+

@@ -1,0 +1,41 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aDominar arena comandos:
+
+    &a> /dominararena
+    &a> /dominararena armazem
+    &a> /dominararena top
+    &a> /dominararena iniciar
+    &a> /dominararena parar
+    &a> /dominararena criar
+    &a> /dominararena deletar
+    &a> /dominararena alterarloc
+
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  arena-found: '&cArena não encontrada.<nl>&cDisponíveis: &7{list}'
+  arena-active: '&cEsta arena {arena} não está ativa.'
+  arena-already: '&cEsta arena {arena} já está ativa.'
+  arena-exists: '&cEsta arena {arena} já existe.'
+  arena-stop: '&cArena {arena} parada com sucesso.'
+  arena-start: '&aArena {arena} foi iniciada com sucesso.'
+  arena-created: '&aArena {arena} foi criada com sucesso.'
+  arena-deleted: '&aArena {arena} foi deletada com sucesso.'
+  arena-changed: '&aA localização da arena {arena} foi alterada com sucesso.'

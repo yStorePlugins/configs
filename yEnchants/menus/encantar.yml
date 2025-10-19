@@ -1,0 +1,344 @@
+Nome: '&8Encantar item'
+Tamanho: 45
+Itens:
+  LivroSlot: 31
+  ItemSlot: 29
+  BackSlot: 18
+  Confirmar:
+    Slot: 24
+    CustomSkull: false
+    URL: ''
+    ID: 35
+    Data: 5
+    Name: '&aConfirmar'
+    Lore: [ '&7Clique para comprar e encantar' ]
+# Caso queira enfeitar seu menu, poderá criar itens nesta seção:
+Itens custom:
+  Livro:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: 340
+    Data: 0
+    Name: '&eColoque o livro abaixo'
+    Lore: []
+  Item:
+    Slot: 13
+    CustomSkull: false
+    URL: ''
+    ID: 276
+    Data: 0
+    Name: '&eColoque o item abaixo'
+    Lore: []
+  Enfeite1:
+    Slot: 0
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite2:
+    Slot: 1
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite3:
+    Slot: 2
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite4:
+    Slot: 3
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite5:
+    Slot: 4
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite6:
+    Slot: 5
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite7:
+    Slot: 6
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite8:
+    Slot: 7
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite9:
+    Slot: 8
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite10:
+    Slot: 9
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite11:
+    Slot: 10
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite12:
+    Slot: 12
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite13:
+    Slot: 14
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite14:
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite15:
+    Slot: 16
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite16:
+    Slot: 17
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite18:
+    Slot: 19
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite19:
+    Slot: 20
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite20:
+    Slot: 21
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite21:
+    Slot: 22
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite22:
+    Slot: 23
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite23:
+    Slot: 25
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite24:
+    Slot: 26
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite25:
+    Slot: 27
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite26:
+    Slot: 28
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite27:
+    Slot: 30
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite28:
+    Slot: 32
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite29:
+    Slot: 33
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite30:
+    Slot: 34
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite31:
+    Slot: 35
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite32:
+    Slot: 36
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite33:
+    Slot: 37
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite34:
+    Slot: 38
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite35:
+    Slot: 39
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite36:
+    Slot: 40
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite37:
+    Slot: 41
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite38:
+    Slot: 42
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite39:
+    Slot: 43
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []
+  Enfeite40:
+    Slot: 44
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Name: ''
+    Lore: []

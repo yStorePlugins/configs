@@ -1,0 +1,106 @@
+Nome: '&8Reciclador'
+Tamanho: 45
+FrascoSlot: 40
+Itens:
+  Cancelar:
+    Slot: 39
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 14
+    Glow: false
+    Name: '&cCancelar'
+    Lore:
+      - '&7Clique para cancelar a reciclagem.'
+  Confirmar:
+    Slot: 41
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 5
+    Glow: false
+    Name: '&aConfirmar'
+    Lore:
+      - '&7Clique para reciclar todos'
+      - '&7os itens selecionados.'
+  Frasco sim:
+    CustomSkull: false
+    URL: ''
+    ID: 384
+    Data: 0
+    Glow: false
+    Name: '&eFrasco de experiência'
+    Lore:
+      - '&fValor total: &a{xp} XP'
+      - ''
+      - '&7Todos os seus itens serão transformados em'
+      - '&7um frasco de experiência com &n{xp} XP&7.'
+      - ''
+  Frasco nao:
+    CustomSkull: false
+    URL: ''
+    ID: 374
+    Data: 0
+    Glow: false
+    Name: '&eExperiência reciclada'
+    Lore:
+      - '&fValor total: &a0 XP'
+      - ''
+      - '&7Todos os seus itens serão transformados em'
+      - '&7um frasco de experiência com &n0 XP&7.'
+# Caso queira enfeitar seu menu, poderá criar itens nesta seção:
+Itens custom:
+  Enfeite1:
+    Slot: 36
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite2:
+    Slot: 37
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite3:
+    Slot: 38
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite4:
+    Slot: 42
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite5:
+    Slot: 43
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
+  Enfeite6:
+    Slot: 44
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 15
+    Glow: false
+    Name: ''
+    Lore: []
