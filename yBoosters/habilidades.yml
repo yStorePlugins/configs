@@ -1,0 +1,22 @@
+Boosters:
+  Booster1:
+    # Duração do booster
+    # em segundos
+    Duracao: 10
+    # Multiplicador do booster
+    # em multiplicador direto (vezes).
+    Multiplicador: 1.2
+    Lore:
+      - '&fDuracao: &710s&f.'
+      - '&fMultiplicador: &71.2x&f.'
+      - ''
+      - '&aClique para escolher a habilidade'
+      - '&ae ativar o booster.'
+    Lore todas:
+      - '&fDuracao: &710s&f.'
+      - '&fMultiplicador: &71.2x&f.'
+      - ''
+      - '&e | Este booster vale para'
+      - '&e | todas as skills.'
+      - ''
+      - '&aClique para ativar o booster.'

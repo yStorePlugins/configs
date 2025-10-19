@@ -1,0 +1,80 @@
+Nome: '&8Bosses - Principal'
+Tamanho: 27
+Itens:
+   Loja:
+      Slot: 10
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/7e3deb57eaa2f4d403ad57283ce8b41805ee5b6de912ee2b4ea736a9d1f465a7'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aLoja'
+      Lore:
+      - ''
+      - '&7Clique para comprar bosses e/ou upgrades.'
+      - ''
+   Top:
+      Slot: 11
+      CustomSkull: false
+      URL: ''
+      ID: 425
+      Data: 0
+      Glow: true
+      Name: '&5TOP'
+      Lore:
+      - ''
+      - '&7Clique para ver o TOP Bosses e o TOP Matadoras.'
+      - ''
+   Matadora automatica:
+      Slot: 12 #para desativar deixe -1
+      CustomSkull: false
+      URL: ''
+      ID: 425
+      Data: 0
+      Glow: true
+      Name: '&aMatadora automática'
+      Lore:
+      - ''
+      - '&7Clique para gerenciar sua matadora automatica.'
+      - ''
+   Bosses:
+      Slot: 13
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/8321bd865442f7af8f3aae159cb42d78e8fe63b21f51b367dfb0a4e642273ec3'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&cBosses'
+      Lore:
+      - ''
+      - '&7Clique para ver e matar seus Bosses.'
+      - ''
+   Armazem:
+      Slot: 14
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/d218cc1941492939ffbeccacca3a3342e8c260c333cea1b6dbfdd5e3bebd2f'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&6Armazém'
+      Lore:
+      - ''
+      - '&7Clique para gerenciar suas recompensas.'
+      - ''
+   Perfil:
+      Slot: 16
+      Name: '&b{player}'
+      Lore:
+      - ''
+      - '&fBosses matados: &a{matados}'
+      - '&fBosses Spawnados: &a{min}&f/&a{max}'
+      - '&fNível da Matadora: &a{matadora}'
+      - '&fDano da Matadora: &a{danomatadora}'
+      - ''
+      - '&fAnti-Regressor: &a{regressor}%'
+      - '&fAnti-Inviabilizador: &a{inviabilizador}%'
+      - ''
+      - '&fXP de evolução: &a{xptenho}&f/&a{xpnecessario}'
+      - ''
+      - '&fAcréscimo de Dano: &a{dano}%'
+      - ''

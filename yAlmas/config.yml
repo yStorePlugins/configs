@@ -1,0 +1,206 @@
+Database:
+   Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+   IP: localhost:3306
+   DB: test
+   User: admin
+   Pass: ''
+   
+Comando:
+   Comando: 'almas'
+   Aliases: [alma, soul, souls]
+      
+Actionbar: 
+   Ativar: true #ao ganhar almas irá mandar uma msg no actionbar
+   Mensagem: '&c[Almas] Você ganhou &7{almas} &calmas. &7({bonus}%)'
+
+# Opcoes de configuração do NPC
+NPC:
+   ID: 9232912
+   Skin: 'ySpeed_'
+   Holograma:
+      Altura: 3.1
+      Holograma:
+         - '&5Almas'
+         - '&7Clique para gerenciar suas almas.'
+
+Metadata: 'ySpawners-MobStacked' #deixe vazio para não usar
+
+# Ao matar com shift, dar apenas a quantia de almas de 1 mob morto.
+Shift unitario: true
+
+# Ao matar com shift, dropar o boss
+Boss shift: false
+
+# Ao matar o boss criar um baú
+# obs: os itens físicos (sem considerar os comandos),
+# irão dropar no chão.
+Chest spawn: true
+
+# Acumular os bônus que tiver permissão
+Acumular bonus: false
+
+# Tag que será dada ao TOP 1
+Tag: '&5[ALMA-PENADA]'
+   
+Player kill:
+   Anti-Anterior: true #o jogador irá precisar aguardar x tempo para poder ganhar almas ao matar aquele mesmo jogador
+   Delay: 3 #delay para o anti-anterior
+   Quantia: 50.0 #quantia de almas por kill
+   Chance: 100.0
+   Mundos:
+   - 'world'
+   
+Mensagens:
+   Permissao: '&cVocê não tem permissão para isto.'
+   Permissao plot: '&cVocê não tem permissão neste terreno.'
+   Setado npc: '&aNPC do correio setado com sucesso.'
+   Removido npc: '&aNPC do correio removido com sucesso'
+   Nao setado npc: '&cO NPC não está setado.'
+   Nao encontrado: '&cEste jogador não foi encontrado.'
+   Booster recebeu: '&aVocê recebeu &7{quantia} &a booster(s) de drops.'
+   Booster deu: '&aVocê deu &7{quantia} &a booster(s) de drops para o jogador &7{player}&a.'
+   Nao e numero: '&cO argumento não é um número.'
+   Acabou booster: '&cSeu booster de drops acabou.'
+   Ja esta booster: '&cVocê já está usando um booster.'
+   Ativou booster: '&aVocê ativou um booster de drops. Multiplicador: &e{bonus}&a. Tempo: &e{tempo}&a.'
+   Adicionou: '&cVocê adicionou &7{almas} &cpara o jogador &7{player}&c.'
+   Pagar si mesmo: '&cVocê não pode pagar a si mesmo.'
+   Pagou: '&cVocê pagou ao jogador &7{player} &cuma quantia de &7{almas} &calmas.'
+   Pagou player: '&cVocê recebeu do jogador &7{player} &cuma quantia de &7{almas} &calmas.'
+   Removeu: '&cVocê removeu &7{almas} &cdo jogador &7{player}&c.'
+   Remover mais: '&cVocê não pode remover esta quantia, o jogador &7{player} &ctem apenas &7{almas}&c almas.'
+   Setou: '&cVocê setou &7{almas} &cpara o jogador &7{player}&c.'
+   Olhar: '&cO jogador &7{player} &cpossui &7{almas} &calmas.'
+   Suficiente: '&cVocê não tem almas suficiente &7{almas}&c.'
+   Inv cheio: '&cSeu inventário está cheio.'
+   Comprou: '&aVocê adquiriu coisas na loja por: &7{almas}&a. Desconto: &7{desconto}%&a.'
+   Nao pode enchant: '&cEste encantamento não serve para este item.'
+   Ja possui enchant: '&cSeu item já possui este encantamento.'
+   Encantado: '&aSeu item foi encantado com sucesso.'
+   Livro deu: '&aVocê deu &7{quantia}&a de livros ceifador para o jogador &7{player}&a.'
+   Livro recebeu: '&aVocê recebeu &7{quantia} &a de livros ceifador.'
+   Boss deu: '&aVocê deu &7{quantia}&a de Bosses para o jogador &7{player}&a.'
+   Boss recebeu: '&aVocê recebeu &7{quantia} &a de Bosses.'
+   Parte de cima: '&cVocê deve spawnar o boss na face de cima do bloco.'
+   Mobs ou spawners: '&cHá mobs ou spawners por perto, spawne-o mais distante.'
+   Usando ceifadora: '&cVocê deve estar usando uma ceifadora.'
+   
+Boss:
+   Bloco de spawn: 'SOUL_SAND'
+   Raio de checagem: 5 #verifica se há mobs por perto antes de spawnar
+   PlotSquared: false #ao ativar, só poderá ser spawnado no plot
+   Entidade:
+      Tipo: 'WITHER_SKELETON'
+      Vida: 1000
+      Nome: '&c&lMorto Vivo'
+      Actionbar: '&eVida do &7Morto Vivo &8(&c{vida}&8/&c{max}&8)'
+      RequerirCeifadora: true
+      Dano da ceifadora: 10
+      Raio: true #manda um raio quando spawna e quando morre
+      Morcegos: true #spawna morcegos quando spawna e quando morre
+      Efeitos: #caso não queira deixe ( - '' ) ou ( - 'none' )
+      - '30,WITHER:4-1' #chance,EFEITO:TEMPO-LEVEL (em segundos)
+      - '70,POISON:4-1'
+      - '10,SLOW:4-1'
+      Dano:
+         Chance: 50.0
+         Dano: 4 #deixe 0 para desativar. O dano é calculado a partir da vida total (20)
+      Jogar pra cima: 10.0 #deixe 0 para desativar
+   Encantamento:
+      Nome: 'Ceifador'
+      Encanta:
+      - 'DIAMOND_SWORD'
+      - 'IRON_SWORD'
+      - 'STONE_SWORD'
+      - 'WOOD_SWORD'
+      - 'GOLD_SWORD'
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: 403
+         Data: 0
+         Glow: false
+         Name: '&eLivro de encantamento'
+         Lore:
+         - '&7Ceifador I'
+         - ''
+         - '&eClique em cima de uma espada para encantá-la.'
+   Item:
+      CustomSkull: false
+      URL: ''
+      ID: 383
+      Data: 5
+      Glow: true
+      Name: '&cSpawn do &7Morto Vivo'
+      Lore:
+      - ''
+      - '&fVida: &c1000 HP'
+      - '&fSpawne-o em cima de uma &careia das almas&f.'
+      - ''
+   Mensagens:
+      Title:
+         Ativar: true
+         Title: '&cVocê recebeu um ovo'
+         Subtitle: '&cdo &7Morto Vivo'
+      Chat:
+         Ativar: true
+         Mensagem:
+         - ''
+         - '&cVocê recebeu um ovo do &7Morto Vivo&c.'
+         - ''
+      Morrer:
+         Title:
+            Ativar: true
+            Title: '&cVocê matou'
+            Subtitle: '&cum &7Morto Vivo'
+         Chat:
+            Ativar: true
+            Mensagem:
+            - ''
+            - '&cVocê matou um &7Morto Vivo&c.'
+            - '&cPegue suas recompensas no baú'
+            - ''
+         
+Booster:
+   CustomSkull: false
+   URL: ''
+   ID: 384
+   Data: 0
+   Glow: true
+   Name: '&aMultiplicador de almas'
+   Lore:
+   - ''
+   - '&aTempo: &e{tempo}'
+   - '&aMultiplicador: &e{bonus}%'
+   - ''
+   
+Setas:
+   Voltar:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/f84f597131bbe25dc058af888cb29831f79599bc67c95c802925ce4afba332fc'
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&c&lVoltar'
+      Lore:
+      - ''
+      - '&7Clique para voltar.'
+      - ''
+   Proximo:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/4ef356ad2aa7b1678aecb88290e5fa5a3427e5e456ff42fb515690c67517b8'
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&a&lPróximo'
+      Lore:
+      - ''
+      - '&7Clique para ir à próxima página.'
+      - ''     
+       
+Formats:
+ - ''
+ - ''
+ - 'K'
+ - 'M'
+ - 'B'

@@ -1,0 +1,28 @@
+Nome: '&8Bosses - Bosses Principal'
+Tamanho: 27
+BackSlot: 18
+Itens:
+   Bosses:
+      Slot: 11
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/3857d6b17901fd3f0109bd9bdcc28021b65947fce0a958327247d26d92915b85'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aBosses Armazenados'
+      Lore:
+      - ''
+      - '&7Clique para gerenciar seus bosses armazenados.'
+      - ''
+   Spawnados:
+      Slot: 15
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/8ddd74dfcc447bc2e787d5ba17361f27d910decafd275d60bd2aeaf83270'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aBosses Spawnados'
+      Lore:
+      - ''
+      - '&7Clique para gerenciar seus bosses spawnados.'
+      - ''

@@ -1,0 +1,241 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s
+menu-updater-time: 200
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Arenas'
+  size: 27
+  items:
+    profile-slot: 10
+    rewards-slot: 11
+    arenas-slot: 13
+    top-slot: 14
+    go-slot: 16
+    profile:
+      material: '{player}'
+      name: '&eSeu Perfil'
+      lore:
+        - '&7Confira detalhes do seu'
+        - '&7desempenho nas arenas.'
+        - ''
+        - ' &8▶ &fAbates: &a{kills}'
+        - ' &8▶ &fMortes: &c{deaths}'
+        - ''
+        - ' &8▶ &fRank: &r{rank}'
+        - ' &8▶ &fPontos: &b{points}'
+        - ''
+    rewards:
+      material: 'CHEST'
+      name: '&aRecompensas'
+      lore:
+        - ''
+        - ' &fRecompensas no armazém: &a{amount}&f.'
+        - ''
+        - '&7Clique para gerenciar'
+    arenas:
+      material: 'd01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f'
+      name: '&eArenas'
+      lore:
+        - '&7Confira aqui as arenas do nosso'
+        - '&7servidor e comece já sua batalha!'
+        - ''
+        - '&6Clique para acessar!'
+    top:
+      material: '4ea96c49302132167c81c87b79e06dd343020ff20923fce87d388c462409261c'
+      name: '&aTOP Jogadores'
+      lore:
+        - '&7Visualize os jogadores que estão'
+        - '&7se destacando em nossas arenas.'
+        - ''
+        - '&aClique para acessar!'
+    go:
+      material: DIAMOND_SWORD
+      name: '&aIr batalhar'
+      lore:
+        - '&7Teleportar para sua arena e começar'
+        - '&7a jornada de batalha.'
+        - ''
+        - ' &fSua arena: &b{arena}&f.'
+        - ''
+        - '&aClique para ir batalhar'
+    exit:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&eSair da arena'
+      lore:
+        - '&7Terminar sua jornada de batalha'
+        - '&7e sair da arena.'
+        - ''
+        - ' &fArena atual: &b{arena}&f.'
+        - ''
+        - '&aClique para sair da arena'
+
+# Menu de recompensas
+main-rewards:
+  name: '&8Arenas'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  #
+  empty-slot: 22
+  collect-slot: 50
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
+    collect:
+      material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+      name: '&eRecolher tudo'
+      lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+
+# Menu de arenas
+arenas:
+  name: '&8Arenas'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 32
+  next-slot: 33
+  back-slot: 29
+
+# Menu de arenas
+top:
+  name: '&8Arenas'
+  size: 45
+  slots: [ 10, 12, 14, 16 ]
+  previous-slot: 33
+  next-slot: 34
+  back-slot: 28
+
+# Menu principal
+manage:
+  name: '&8Gerenciar Arena'
+  size: 27
+  items:
+    locations-slot: 10
+    kits-slot: 12
+    locations:
+      material: 'PAPER'
+      name: '&aLocais'
+      lore:
+        - ''
+        - ' &fLocais cadastrados: &a{amount}&f.'
+        - ''
+        - '&7Clique para gerenciar'
+    kits:
+      material: 'PAPER'
+      name: '&aKits'
+      lore:
+        - ''
+        - ' &fKits cadastrados: &a{amount}&f.'
+        - ''
+        - '&7Clique para gerenciar'
+
+# Menu de configuração dos locais
+locations:
+  name: '&8Gerenciar Arena'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 47
+  items:
+    add-slot: 49
+    location:
+      material: 'PAPER'
+      name: '&aLocal #{location}'
+      lore:
+        - ''
+        - '&fLocalização: &fX:&b{x}&f - &fY:&b{y}&f - &fZ:&b{z} &7({world})'
+        - ''
+        - '&aBotão ESQUERDO para teleportar.'
+        - '&aBotão Q para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar Local'
+      lore: [ '&7Clique para adicionar mais', '&7um local nesta arena.' ]
+
+# Menu de configuração dos kits
+kits:
+  name: '&8Gerenciar Arena'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 47
+  items:
+    add-slot: 49
+    kit:
+      material: 'PAPER'
+      name: '&aKit &e#{order}'
+      lore:
+        - ''
+        - ' &fOrdem: &e{order}'
+        - ' &fPermissão: &e{permission}'
+        - ''
+        - '&aBotão &fESQUERDO&a para gerenciar.'
+        - '&aBotão &fDIREITO&a para pré-visualizar.'
+        - '&aBotão &fQ&a para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar Kit'
+      lore: [ '&7Clique para adicionar mais', '&7um kit nesta arena.', '', '&f* &8(Necessário estar com os itens)', '' ]
+
+# Menu de opções
+options:
+  name: '&8Gerenciar Arena'
+  size: 27
+  back-slot: 10
+  items:
+    order-slot: 12
+    permission-slot: 14
+    order:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aOrdem'
+      lore:
+        - '&7A ordem serve para classificar os kits'
+        - '&7de acordo com sua permissão. Assim dando'
+        - '&7o melhor kit que o jogador tem direito.'
+        - ''
+        - '&fOrdem: &7{order}&f.'
+        - ''
+        - '&aClique para alterar a ordem'
+    permission:
+      material: 'e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674'
+      name: '&aPermissão'
+      lore:
+        - '&7Permissão para obter esse kit ao'
+        - '&7entrar na arena.'
+        - ''
+        - '&fPermissão: &7{permission}&f.'
+        - ''
+        - '&aBotão &fESQUERDO&a para alterar a permissão'
+        - '&aBotão &fDIREITO&a para remover a permissão'

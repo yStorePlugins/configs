@@ -1,0 +1,211 @@
+# Nome da arena
+display-name: '&fArena chain'
+
+# Permissão para entrar na arena
+permission: ''
+
+# Ordem da arena na lista
+# os jogadores começam na arena de ordem ("order") 1
+order: 2
+
+# Lista de comandos que será possível executar na arena
+command-whitelist: [ '/g', '/.' ]
+
+# Sistema de desbloqueio de arena
+unlock:
+  # Pontos mínimos necessários para desbloquear essa arena
+  need-points: 2.0
+  # Habilitar a compra dessa arena
+  buy: true
+  # Preços para comprar o acesso a esta arena
+  prices:
+    price1:
+      provider: 'money'
+      amount: 10.0
+
+private:
+  # Mensagens e ações ao entrar
+  entry:
+    sound: 'ORB_PICKUP'
+    title: '&bBem vindo à<nl>&fArena chain'
+    actionbar: '&bVocê entrou na &fArena chain&b.'
+    chat: '<nl>&bBem vindo à &fArena chain.<nl>&bLute bravamente.<nl>'
+  # Mensagens e ações ao sair
+  exit:
+    sound: 'ORB_PICKUP'
+    title: ''
+    actionbar: '&bVocê saiu da &fArena chain&b.'
+    chat: '<nl>&bVocê saiu da &fArena chain&b.<nl>'
+  # Mensagens e ações ao morrer
+  death:
+    sound: 'ORB_PICKUP'
+    title: ''
+    actionbar: '&bVocê morreu na &cArena Couro&b.'
+    chat: '<nl>&bVocê morreu na &cArena Couro&b.<nl>'
+
+broadcast:
+  # Mensagens e ações ao entrar
+  entry:
+    sound: ''
+    title: ''
+    actionbar: ''
+    chat: ''
+  # Mensagens e ações ao sair
+  exit:
+    sound: ''
+    title: ''
+    actionbar: ''
+    chat: ''
+  # Mensagens e ações ao sair
+  death:
+    sound: ''
+    title: ''
+    actionbar: ''
+    chat: '&f{killer}&b matou &f{dead}&b.'
+  # Mensagens e ações ao obter kill-streak
+  kill-streak:
+    sound: ''
+    title: ''
+    actionbar: '&aO jogador &f{player}&a está com um &nkillstreak&a de &6{killstreak} &a&nkills&a.'
+    chat: ''
+
+# Quando o jogador fizer x kills (minimo definido)
+# irá enviar mensagem para o broadcast e/ou para o jogador, informando
+# que ele está fazendo uma série de kills (matando muito)
+kill-streak:
+  enabled: true
+  minimum: 2
+  # Recompensas configuradas na recompensas.yml que poderão ser dadas ao atingir um killstreak
+  # Deixe Recompensas: [] para não usar
+  # KillStreak,chance,recompensa
+  rewards:
+    - '100.0,reward1'
+
+scoreboard:
+  enabled: true
+  title: '&b&lyStore'
+  lines:
+    - '&7     Área de batalha'
+    - ''
+    - '&f &fArena Chain'
+    - '&f Rank: &7{rank}'
+    - ''
+    - '&e Dados'
+    - '&8  ❘&f Abates: &a{kills}'
+    - '&8  ❘&f Mortes: &c{deaths}'
+    - ''
+    - '&f A. KillStreak&f: &e{killstreak}'
+    - '&f M. KillStreak&f: &e{highest_killstreak}'
+    - ''
+    - '&b    ystoreplugins.com.br'
+
+# Ícones no menu
+icons:
+  access:
+    material: 'CHAINMAIL_CHESTPLATE'
+    name: '&fArena chain'
+    lore:
+      - '&7Esta é a Arena Intermediária. Aqui você'
+      - '&7poderá sentir o peso da espada'
+      - '&7dos outros jogadores.'
+      - ''
+      - ' &8▶ &fAbates: &a{kills}'
+      - ' &8▶ &fMortes: &c{deaths}'
+      - ''
+      - ' &8▶ &fKill-Streak: &c{killstreak}'
+      - ' &8▶ &fMaior Kill-Streak: &c{highest_killstreak}'
+      - ''
+      - '&f> &aVocê pode acessar essa arena.'
+      - ''
+  unlock:
+    material: 'CHAINMAIL_CHESTPLATE'
+    name: '&fArena chain'
+    lore:
+      - '&7Esta é a Arena Intermediária. Aqui você'
+      - '&7poderá sentir o peso da espada'
+      - '&7dos outros jogadores.'
+      - ''
+      - ' &fPontos necessários: &a{points}'
+      - ' &fRank necessário: &b[ÁguaI]'
+      - ''
+      - '&f> &aVocê já pode desbloquear essa arena.'
+      - ''
+  already:
+    material: 'CHAINMAIL_CHESTPLATE'
+    name: '&fArena chain'
+    lore:
+      - '&7Esta é a Arena Intermediária. Aqui você'
+      - '&7poderá sentir o peso da espada'
+      - '&7dos outros jogadores.'
+      - ''
+      - ' &8▶ &fAbates: &a{kills}'
+      - ' &8▶ &fMortes: &c{deaths}'
+      - ''
+      - ' &8▶ &fKill-Streak: &c{killstreak}'
+      - ' &8▶ &fMaior Kill-Streak: &c{highest_killstreak}'
+      - ''
+      - '&f> &cVocê já está dentro desta arena.'
+      - ''
+  permission:
+    material: 'CHAINMAIL_CHESTPLATE'
+    name: '&fArena chain'
+    lore:
+      - '&7Esta é a Arena Intermediária. Aqui você'
+      - '&7poderá sentir o peso da espada'
+      - '&7dos outros jogadores.'
+      - ''
+      - ' &fRank necessário: &b[ÁguaI]'
+      - ''
+      - '&f> &cVocê não tem permissão para'
+      - '&c  entrar nesta arena.'
+      - ''
+  points:
+    material: 'CHAINMAIL_CHESTPLATE'
+    name: '&fArena chain'
+    lore:
+      - '&7Esta é a Arena Intermediária. Aqui você'
+      - '&7poderá sentir o peso da espada'
+      - '&7dos outros jogadores.'
+      - ''
+      - ' &fPontos necessários: &a{points}'
+      - ''
+      - '&f> &cVocê não tem pontos suficientes'
+      - '&c  para entrar nesta arena.'
+      - ''
+      - '&f> &7Adquira o acesso pagando:'
+      - '&2  $&a{money} coins&7.'
+      - ''
+  top:
+    material: 'CHAINMAIL_CHESTPLATE'
+    name: '&fArena chain'
+    lore:
+      - ''
+      - ' &7Líderes:'
+      - '  &f> 1º {player_1}: &a{amount_1}'
+      - '  &f> 2º {player_2}: &a{amount_2}'
+      - '  &f> 3º {player_3}: &a{amount_3}'
+      - '  &f> 4º {player_4}: &a{amount_4}'
+      - '  &f> 5º {player_5}: &a{amount_5}'
+      - ''
+
+# Itens que o jogador irá receber ao entrar na arena
+kit:
+  # Ativar o sistema itens setados
+  enabled: true
+
+player-kill:
+  # Regenerar a vida ao matar um jogador
+  # a vida total do jogador é 20 (10 corações)
+  # deixe 0 para não usar
+  heal: 5.0
+  # Resetar o kit do inventário do jogador ao matar um jogador
+  reset-kit: true
+  # Pontos que serão dados por kill
+  give-points: 1.0
+  # Dar algum item ao matar um jogador
+  give-items: {}
+  # Dar algum comando ao matar um jogador
+  give-commands: []
+  # Efeitos que serão dados ao matar um jogador
+  give-effects:
+    - 'SPEED:1-15'

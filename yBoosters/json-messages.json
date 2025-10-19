@@ -1,0 +1,17 @@
+{
+  "agradecer": {
+    "text": "\n§bO jogador §f{player}§b ativou um booster global.\n§bAgradeça-o clicando ",
+    "extra":[
+      {
+        "text": "§f§lAQUI",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/booster agradecer"
+        }
+      },
+      {
+        "text": "§b.\n"
+      }
+    ]
+  }
+}

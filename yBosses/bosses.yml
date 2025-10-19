@@ -1,0 +1,82 @@
+Bosses:
+  BossCreeper:
+    # Item que o jogador receberá
+    Ovo:
+      CustomSkull: false
+      URL: ''
+      ID: 383
+      Data: 50
+      Glow: true
+      Name: '&a&lBOSS CREEPER'
+      Lore:
+        - '&fHP: &4❤&c1000&f.'
+    # Entidade que será spawnada
+    # Lista de entidades: https://helpch.at/docs/1.8.8/org/bukkit/entity/EntityType.html
+    Entidade: 'CREEPER'
+    # Vida do boss
+    Vida: 1000
+    # Nome do boss
+    Nome: '&a&lBOSS CREEPER'
+    # Bater no boss apenas com uma matadora
+    Bater matadora: true
+    # Opções das entidades
+    Entity-Options:
+      # Ativar os movimentos do boss
+      AI: false
+      # Caso a entidade for um esqueleto, ele vai ser wither?
+      Wither-Skeleton: false
+      # Caso a entidade for um zombie ou pig-zombie, ele vai ser bebê?
+      Baby-Zombie: false
+      # Tamanho da entidade caso seja um slime ou magma-cube
+      Slime-Size: 1
+    # Mensagem que será enviada quando um jogador matar o boss
+    # Deixe "Matou: []" caso não queira usar.
+    Matou:
+      - ''
+      - '&a&lBOSS CREEPER: &7Parabéns guerreiro, você conseguiu me matar. Recolha suas recompensas no &f&n/boss&7.'
+      - ''
+    # Mensagens que serão enviadas no actionbar
+    # Deixe '' para não usar alguma.
+    Actionbar:
+      # Actionbar ao bater
+      Bater: '&a&lBOSS CREEPER &7> &c❤ {vida} &4[-{dano}] {progressbar}'
+      # Actionbar ao clicar com botão direito
+      Direito: '&a&lBOSS CREEPER &7> &c❤ {vida} {progressbar}'
+    # Efeitos que serão aplicados quando um jogador bater no boss
+    # Tipos: FOGO, EXPLOSAO, DANO, VENENO, EMPURRAR, NAUSEA, CEGUEIRA
+    Efeitos:
+      e1:
+        Chance: 10.0
+        # Use: EFEITO:AMPLIFIER
+        Lista:
+          - 'FOGO:10'
+          - 'EXPLOSAO:1'
+          - 'EMPURRAR:3'
+    # Opões de compra da matadora
+    # Apague esta seção caso não queira usar.
+    Comprar:
+      Compravel: true
+      Preco: 100.0
+      # Ordem que irá ser representada na Loja de Bosses
+      # Do menor ao maior.
+      Ordem: 1
+      Item:
+        CustomSkull: false
+        URL: ''
+        ID: 276
+        Data: 0
+        Glow: true
+        Name: '&a&lBOSS CREEPER'
+        Lore:
+        - '&fHP: &4❤&c1000&f.'
+        - '&fPreço: &b100 coins&f.'
+        - ''
+        - '&aClique com esquerdo para comprar.'
+        - '&aClique com direito para ver as recompensas.'
+    # Recompensas do boss
+    # As recompensas são cadastradas na recompensas.yml
+    # Use: chance,recompense
+    # Sempre dar alguma recompensa? (ativando essa opção, evita que o jogador fique sem receber nada)
+    SempreDar: true
+    Recompensas:
+      - '100,Reco1'

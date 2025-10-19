@@ -1,0 +1,12 @@
+Nome: '&8TOP Banco'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 31
+
+Item:
+   Name: '&7#&f{pos} - &e{player}'
+   Lore:
+   - ''
+   - '&fDinheiro no banco: &6{money}'
+   - '&fPosição: &6{pos}'
+   - ''

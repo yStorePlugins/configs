@@ -1,0 +1,47 @@
+Nome: '&8Booster - Habilidades'
+Tamanho: 27
+# Você pode adicionar mais habilidades
+Itens:
+  Espadas:
+    # A skill que o booster irá ativar.
+    Skill: 'SWORDS'
+    Skill display: 'Espadas'
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: 276
+    Data: 0
+    Glow: true
+    Name: '&aEspadas'
+    Lore:
+      - '&7Ganhe bônus de xp na evolução'
+      - '&7da skill espadas.'
+      - ''
+      - '&aClique para ativar o booster.'
+  Escavacao:
+    # A skill que o booster irá ativar.
+    Skill: 'EXCAVATION'
+    Skill display: 'Escavação'
+    Slot: 12
+    CustomSkull: false
+    URL: ''
+    ID: 277
+    Data: 0
+    Glow: true
+    Name: '&aEscavação'
+    Lore:
+      - '&7Ganhe bônus de xp na evolução'
+      - '&7da skill escavação.'
+      - ''
+      - '&aClique para ativar o booster.'
+# Enfeite o menu com estes itens
+Itens custom: {}
+  #Enfeite1:
+  #  Slot: 11
+  #  CustomSkull: false
+  #  URL: ''
+  #  ID: 1
+  #  Data: 0
+  #  Glow: true
+  #  Name: ''
+  #  Lore: []

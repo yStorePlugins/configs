@@ -1,0 +1,55 @@
+Matadoras:
+  Default:
+    # Dano da matadora
+    # Deixe 0 para ser uma HitKill
+    Dano: 20
+    # Nome da matadora
+    Nome: '&7Padrão'
+    # Opões de compra da matadora
+    # Apague esta seção caso não queira usar.
+    Comprar:
+      Compravel: true
+      Preco: 100.0
+      Item:
+        CustomSkull: false
+        URL: ''
+        ID: 276
+        Data: 0
+        Glow: true
+        Name: '&aMatadora de Bosses'
+        Lore:
+          - '&7Essa espada fornece mais'
+          - '&7dano aos bosses!'
+          - ''
+          - ' &fDano: &c20❤'
+          - ' &fPreço: &b100 coins&f.'
+          - ''
+          - '&aClique para comprar.'
+    # Item da matadora
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 276
+      Data: 0
+      Glow: true
+      Name: '&aMatadora de Bosses'
+      Lore:
+        - '&7Essa espada fornece mais'
+        - '&7dano aos bosses!'
+        - ''
+        - ' &fDano: &c20❤'
+  Avancada:
+    Dano: 0 #deixe 0 para hitkill
+    Nome: '&7Avançada'
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 276
+      Data: 0
+      Glow: true
+      Name: '&aMatadora de Bosses'
+      Lore:
+        - '&7Essa espada fornece mais'
+        - '&7dano aos bosses!'
+        - ''
+        - ' &fDano: &cHitKill&f.'

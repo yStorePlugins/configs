@@ -1,0 +1,38 @@
+Nome: '&7Banco operações'
+Tamanho: 27
+Backslot: 18
+Itens:
+   Saque:
+      Slot: 11
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aSacar'
+      Lore:
+      - '&7Clique para realizar um saque.'
+      - '&7Limite diário usado: &c{sacou}&7/&a{pode}&7.'
+   Deposito:
+      Slot: 13
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/2c9e601ed9198dbb34c51ddf323929f01a5f958ab11133e3e0407b698393b3f'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aDepositar'
+      Lore:
+      - '&7Clique para realizar um depósito.'
+   Cheque:
+      Slot: 15
+      CustomSkull: false
+      URL: ''
+      ID: 339
+      Data: 0
+      Glow: true
+      Name: '&aCheques'
+      Lore:
+      - '&7Clique para criar um cheque.'
+      - '&7Limite diário usado: &c{criou}&7/&a{pode}&7.'
+      
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Cheque:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

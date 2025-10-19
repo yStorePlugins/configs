@@ -1,0 +1,21 @@
+entities:
+  creeper:
+    entity: 'CREEPER'
+    custom-name: '&aCreeper'
+    # Opções das entidades
+    entity-options:
+      # Caso a entidade for um esqueleto, ele vai ser wither?
+      wither-skeleton: false
+      # Caso a entidade for um zombie ou pig-zombie, ele vai ser bebê?
+      baby-zombie: false
+      # Tamanho da entidade caso seja um slime ou magma-cube
+      slime-size: 1
+    display:
+      selected:
+        material: 'MONSTER_EGG:50'
+        name: '&aCreeper'
+        lore: [ '&fVocê está usando: &aCreeper&f.', '', '&7Clique para alterar a entidade.' ]
+      select:
+        material: 'MONSTER_EGG:50'
+        name: '&aCreeper'
+        lore: [ '&7Clique para usar esta entidade.' ]

@@ -1,0 +1,113 @@
+Nome: '&8Bosses - Loja de Upgrades'
+Tamanho: 27
+BackSlot: 18
+Itens:
+   Max bosses spawnados:
+      Slot: 10
+      Usar: true
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/564a91433d66bfc6ef1c9ac4e371a886a1c462c975ff8127761d703e0a3e7306'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aMáx bosses spawnados'
+      Lore:
+      - ''
+      - '&fSeu level: &b{playerlevel}.'
+      - '&fPróximo: &b{proximolevel}'
+      - '&fPreço: &b{preco} &aem Money.'
+      - ''
+      - '&7Clique para comprar.'
+      - ''
+      Lore max:
+      - ''
+      - '&cVocê já atingiu o máximo desse upgrade.'
+      - ''
+   Anti-Regressor:
+      Slot: 12
+      Usar: true
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/564a91433d66bfc6ef1c9ac4e371a886a1c462c975ff8127761d703e0a3e7306'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aAnti-Regressor'
+      Lore:
+      - ''
+      - '&fSeu level: &b{playerlevel}%'
+      - '&fPróximo: &b{proximolevel}%'
+      - '&fPreço: &b{preco} &aem Money.'
+      - ''
+      - '&7Clique para comprar.'
+      - ''
+      Lore max:
+      - ''
+      - '&cVocê já atingiu o máximo desse upgrade.'
+      - ''
+   Anti-Inviabilizador:
+      Slot: 13
+      Usar: true
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/564a91433d66bfc6ef1c9ac4e371a886a1c462c975ff8127761d703e0a3e7306'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aAnti-Inviabilizador'
+      Lore:
+      - ''
+      - '&fSeu level: &b{playerlevel}%'
+      - '&fPróximo: &b{proximolevel}%'
+      - '&fPreço: &b{preco} &aem Money.'
+      - ''
+      - '&7Clique para comprar.'
+      - ''
+      Lore max:
+      - ''
+      - '&cVocê já atingiu o máximo desse upgrade.'
+      - ''
+   Acrescimo de dano:
+      Slot: 14
+      Usar: true
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/564a91433d66bfc6ef1c9ac4e371a886a1c462c975ff8127761d703e0a3e7306'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aAcréscimo de dano'
+      Lore:
+      - ''
+      - '&fSeu level: &b{playerlevel}%'
+      - '&fPróximo: &b{proximolevel}%'
+      - '&fPreço: &b{preco} &aem Money.'
+      - ''
+      - '&7Clique para comprar.'
+      - ''
+      Lore max:
+      - ''
+      - '&cVocê já atingiu o máximo desse upgrade.'
+      - ''
+   Matadora:
+      Slot: 16
+      Usar: true
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/564a91433d66bfc6ef1c9ac4e371a886a1c462c975ff8127761d703e0a3e7306'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aMatadora'
+      Lore:
+      - ''
+      - '&fSeu level: &b{playerlevel}'
+      - '&fPróximo: &b{proximolevel}'
+      - ''
+      - '&fSeu dano: &b{playerdano}'
+      - '&fDano da próxima: &b{proximodano}'
+      - ''
+      - '&fPreço: &b{preco} &aem {tipo}.'
+      - ''
+      - '&7Clique para comprar.'
+      - ''
+      Lore max:
+      - ''
+      - '&cVocê já atingiu o máximo desse upgrade.'
+      - ''

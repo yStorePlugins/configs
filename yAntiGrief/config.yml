@@ -1,0 +1,59 @@
+# Comandos e aliases do plugin
+Comando:
+  Antigrief:
+    Comando: 'antigrief'
+    Aliases: []
+  Build:
+    Comando: 'build'
+    Aliases: []
+
+# Opções gerais do plugin
+Opcoes:
+  Senha: 'yantigrief'
+  # Quantia máxima de tentativas de login
+  Tentativas: 3
+  # Comandos a serem executados quando exceder as tentativas
+  Comandos:
+    - 'kick {player} você errou o login do AntiGrief.'
+  # Comandos que serão bloqueados
+  Comandos bloqueados:
+    - '//'
+    - '/worldedit:'
+    - '/build'
+  # Itens que o jogador não poderá interagir com ele na mão sem logar
+  # https://helpch.at/docs/1.8.8/org/bukkit/Material.html
+  Interagir bloqueados:
+    - 'FLINT_AND_STEEL'
+    - 'LAVA_BUCKET'
+    - 'LAVA'
+    - 'WATER'
+    - 'WATER_BUCKET'
+    - 'FIREBALL'
+    - 'ARMOR_STAND'
+    - 'ITEM_FRAME'
+  # Mundos em que o plugin não irá funcionar
+  World blacklist: []
+
+# Configuração das logs
+Logs:
+  Ativar: true
+  # Formato da log
+  Formato: '[ [{data}] - ({hora}) ] {action}'
+  # Tipos de ações
+  Tipos:
+    Errou: '{player} errou a senha, tentativa: {tentativa}.'
+    Excedeu: '{player} foi kickado por errar 3x o login do antigrief.'
+    Logou: '{player} logou ao antigrief.'
+    Comando: '{player} executou o comando {comando}.'
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isso.'
+  Bloqueado: '&cEste comando foi bloqueado pelo AntiGrief.'
+  Logar: '&cPara usar este comando, você deve logar-se ao antigrief. /antigrief <senha>'
+  Logou: '&aVocê logou com sucesso, já pode executar normalmente os comandos bloqueados.'
+  Build: '&cVocê deve desativar a restrição: /build.'
+  Build ativado: '&aVocê agora pode quebrar livremente.'
+  Build desativado: '&cVocê agora não pode mais quebrar blocos.'
+  Logado: '&cVocê já está logado.'
+  Tentativa: '&cVocê errou a senha, tentativas restantes: {tentativas}.'

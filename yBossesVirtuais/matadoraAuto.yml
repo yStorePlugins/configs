@@ -1,0 +1,48 @@
+Nome: '&8Matadora automatica'
+Tamanho: 27
+BackSlot: 18
+
+Default: false
+
+Comprar:
+   Compravel: true
+   Tipo: 'MONEY'
+   Preco: 100.0
+   Comprou: '&aObrigado pela sua compra, você adquiriu a matadora automática com sucesso.'
+   
+Item fisico:
+   CustomSkull: false
+   URL: ''
+   ID: 276
+   Data: 0
+   Glow: true
+   Name: '&aMatadora automática'
+   Lore:
+   - '&7Clique com botão direito para ativar.'
+   
+Item:
+   Slot: 13
+   CustomSkull: false
+   URL: ''
+   ID: 276
+   Data: 0
+   Glow: true
+   Name: '&aMatadora automática'
+   Lore:
+   - ''
+   - '&fPreço: &7100 money'
+   - ''
+   - '&7Clique para comprar.'
+   - ''
+   Lore on:
+   - ''
+   - '&fEstado: &aON'
+   - ''
+   - '&7Clique para desativar.'
+   - ''
+   Lore off:
+   - ''
+   - '&fEstado: &cOFF'
+   - ''
+   - '&7Clique para ativar.'
+   - ''

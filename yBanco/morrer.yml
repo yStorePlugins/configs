@@ -1,0 +1,14 @@
+# Quando o jogador morrer, ele irá perder essa porcentagem de money
+# O money do banco não é afetado
+Grupos:
+ membro:
+  Ordem: 1
+  Permissao: 'ybanco.membro'
+  Porcentagem: 10.0
+  Mensagem:
+  - ''
+  - '&cVocê morreu e perdeu 10% de todo seu money em mãos.'
+  - '&fMontante antigo: &7{antigo}&f.'
+  - '&fMontante atual: &7{atual}&f.'
+  - ''
+  

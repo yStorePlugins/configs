@@ -1,0 +1,68 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/arena &8- &7Abre o menu principal.
+    &a/arena ir &8- &7Entra na arena.
+    &a/arena sair &8- &7Sai da arena.
+    &a/arena top &8- &7Abre o menu de top.
+    &a/arena recompensas &8- &7Abre o menu de recompensas.
+    &a/arena arenas &8- &7Abre o menu de arenas.
+    &a/arena setsaida &8- &7Define a saída das arenas.
+    &a/arena edit &8- &7Edita uma arena.
+    &a/arena add &8- &7Adiciona pontos para um jogador.
+    &a/arena remove &8- &7Remove pontos de um jogador.
+    &a/arena set &8- &7Seta pontos para um jogador.
+    &a/arena reload &8- &7Recarregar as configurações.
+
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  command: '&cVocê não pode executar este comando na arena.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  bought: '&aVocê comprou a ativação da arena &f{arena}&a.'
+  arena-found: |
+    &cEssa arena não existe.
+    &cDisponiveis: {list}
+  arena-location-added: '&aLocal adicionado.'
+  arena-location-removed: '&aLocal removido.'
+  arena-location-teleported: '&aTeleportado.'
+  arena-player-found: '&cNenhuma arena disponível para você.'
+  arena-not-in: '&cVocê não está está em uma arena.'
+  arena-not-unlocked: '&cVocê não desbloqueou esta arena ainda.'
+  arena-already-in: '&cVocê já está em uma arena.'
+  arena-location-found: '&cNenhuma entrada encontrada.'
+  arena-exit-found: '&cSaída da arena não encontrada.'
+  arena-exit-set: '&aA saída das arenas foi setada com sucesso.'
+  arena-kit-added: '&aKit adicionado.'
+  arena-kit-removed: '&aKit removido.'
+  arena-kit-empty: '&cO seu inventário está vazio.'
+  arena-inventory-empty: '&cVocê deve esvaziar seu inventário.'
+  digit-order: |
+
+    &aDigite a ordem para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-permission: |
+
+    &aDigite a permissão para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  change-order: '&aVocê alterou a ordem para {order}.'
+  change-permission: '&aVocê alterou a permissão para {permission}.'
+  points-changed: '&aPontos do jogador &f{player}&a alterado para &f{points}&a.'

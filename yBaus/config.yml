@@ -1,0 +1,174 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Comandos e aliases do plugin
+Comando:
+  Baus:
+    Comando: 'bau'
+    Aliases: [ baus, chest, chests, baú, baús ]
+
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+Formatacao: 'LETRA'
+
+# Opcoes de configuração do NPC
+NPC:
+  ID: 923288
+  Skin: 'ySpeed_'
+  Holograma:
+    Altura: 3.1
+    Holograma:
+      - '&6Baús'
+      - '&7Clique para gerenciar seus baús.'
+
+# Opções do plugin
+Opcoes:
+  # Máximo de baús que um jogador poderá ter
+  # O plugin tem um limite para um maximo de 20 baús
+  Maximo: 2
+  # Quantia default de baús que o jogador vai ganhaar
+  Default: 1
+  # Quantia de linhas que um baú terá
+  Rows default: 1
+  # Ativar o uso de shift no baú
+  Shift: false
+  # Ativar o uso de teclas no baú
+  Numkeys: false
+  # Ativar o uso de criativo no baú
+  Criativo: false
+  # Habilitar o uso do /bau <numero>
+  Command open: false
+  # Abrir o menu principal ao fechar um baú
+  Open-close: true
+  Default-Item:
+    Material: 'CHEST'
+    Data: 0
+    Name: 'Baú {id}'
+
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não possui permissão para isto.'
+  Cancelou: '&cVocê cancelou a operação.'
+  Nao e numero: '&cO argumento não é um número.'
+  Nao encontrado: '&cEste jogador não está online.'
+  Possui: '&cVocê não possui este baú.'
+  Jogador possui: '&cEste jogador não possui este baú.'
+  Olhando: '&cO jogador {player} já está olhando este baú.'
+  Mudou nome: '&aVocê alterou o nome do baú para &e{nome}&a.'
+  Mudou icone: '&aVocê alterou o ícone do baú.'
+  Grande: '&cO nome do baú não pode ser maior que 25 letras.'
+  Comprou: '&aVocê adquiriu um novo baú.'
+  Expandiu: '&aVocê expandiu seu baú.'
+  Nao possui: '&cVocê não possui a quantia &7{quantia} em &7{tipo}&c.'
+  Cadastrado: '&cEste plugin &f{plugin}&c não está implementado no plugin de baús.'
+  Desabilitado: '&cEste plugin &f{plugin}&c não está ligado.'
+  Maximo: '&cEste baú já está com o máximo de linhas.'
+  Setado npc: '&aNPC do chain setado com sucesso.'
+  Removido npc: '&aNPC do chain removido com sucesso'
+  Nao setado npc: '&cO NPC não está setado.'
+  Ativar: '&cVocê não pode ativar um baú extra pois já está no limite de baús.'
+  Ativou: '&aVocê ativou um baú extra!'
+  # Deixe '' para não usar.
+  Deu: '&aVocê deu &7x{quantia} &abaú(s) extra(s) para o jogador &7{player}&a.'
+  # Deixe '' para não usar.
+  Recebeu: '&aVocê recebeu &7x{quantia} &abaú(s) extra(s).'
+  Expansao: '&cNão há nenhuma expansão configurada para um baú com este tamanho.'
+  Shift: '&cVocê não pode usar shift no baú.'
+  Numkeys: '&cVocê não pode usar as teclas numéricas no baú.'
+  Criativo: '&cVocê não pode usar clicar no baú estando no criativo.'
+  Digite nome:
+    - ''
+    - '&aDigite o nome para qual deseja alterar.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Digite skin:
+    - ''
+    - '&aDigite o nome da head que você deseja.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Ajuda:
+    - '&b-> Comandos disponíveis <-'
+    - ''
+    - '&f > &7/bau'
+    - '&f > &7/bau <numero>'
+    - '&f > &7/bau <numero> <player>'
+    - '&f > &7/bau ajuda'
+    - '&f > &7/bau darbau <player> <quantia>'
+    - '&f > &7/bau setnpc'
+    - '&f > &7/bau delnpc'
+
+# Item do baú extra
+BauExtra:
+  CustomSkull: false
+  URL: ''
+  ID: CHEST
+  Data: 0
+  Glow: true
+  Name: '&6Baú Extra'
+  Lore:
+    - '&7Clique para ativar e'
+    - '&7ganhar &6+1 baú&7.'
+
+# Setas dos menus
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'
+
+# Formatos de money e quantia
+Formats:
+  - ''
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'

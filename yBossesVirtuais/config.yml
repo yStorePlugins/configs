@@ -1,0 +1,183 @@
+Database:
+   Tipo: SQLITE #Tipos: MYSQL, SQLITE
+   IP: localhost:3306
+   DB: test
+   User: admin
+   Pass: ''
+   Debug: true
+
+#Coloque yPoints, PlayerPoints ou JH_Shop ou yCash ou AtlasEconomiaSecundaria
+Plugin de Pontos: 'PlayerPoints'
+
+Um de cada tipo: false #permitir spawnar só 1 boss de cada tipo por vez
+Tempo matadora automatica: 20 #em segundos
+
+Comando:
+   Comando: 'bosses'
+   Aliases: []
+
+Mensagens:
+   Nao tem pontos: '&cDesculpe, mas você não possui a quantia necessária de pontos, &7{pontos} pontos&c.'
+   Nao tem money: '&cDesculpe, mas você não possui a quantia necessária de money, &7{money} money&c.'
+   Comprou boss: '&aObrigado pela sua compra, você adquiriu 1x &7Boss ( {boss} &7)&a com sucesso.'
+   Comprou matadora: '&aObrigado pela sua compra, você adquiriu 1x &7Matadora nível {matadora}&a com sucesso.'
+   Comprou upgrade: '&aVocê adquiriu este upgrade com sucesso.'
+   Maximo: '&cVocê atingiu o máximo de bosses spawnados.'
+   Ja spawnado: '&cVocê já tem um boss desse tipo spawnado, mate-o primeiro antes de spawnar outro.'
+   Spawnado: '&aVocê spawnou um boss do tipo &7( {boss} &7)&a.'
+   Minimo: '&cSua matadora não tem o level mínimo para este boss.'
+   Regredido: '&cVocê teve sua matadora regredida, ou seja, perdeu um nível.'
+   Inviabilizado: '&cVocê foi antingido pelo efeito de inviabilizar. Você não pode bater em bosses por {tempo} segundos.'
+   Nao bater: '&cVocê está impossibilitado de bater em bosses durante {tempo} segundos.'
+   Evoluiu: '&aVocê alcançou o XP necessário para evolução da matadora, como consequência, teve sua matadora evoluida.'
+   Inv cheio: '&cSeu inventário está cheio.'
+   Matadora maior: '&cVocê possui uma matadora melhor ou equivalente a essa.'
+   Matadora ativa: '&aVocê ativou uma matadora melhor.'
+   Nao compravel: '&cEsta matadora não pode ser comprada.'
+   MatadoraAuto ja: '&cVocê já possui a matadora automática.'
+   MatadoraAuto ativa: '&aVocê ativou sua matadora automática.'
+   Armazenou: '&aVocê armazenou seu(s) boss(es).'
+   Nao e numero: '&cO argumento não é um número.'
+   Cancelou: '&cVocê cancelou a compra.'
+   Quantia insuficiente: '&cVocê não tem bosses suficiente.'
+   Recolheu: '&aVocê recolheu &7{quantia}x &abosses de &7( {boss} )&a.'
+   Digite:
+   - ''
+   - '&aDigite a quantia de bosses que deseja.'
+   - '&7para cancelar digite &ncancelar&7.'
+   - ''
+   
+Formatador:
+   Money: 'Money'
+   Points: 'Cash'
+   Vida: true
+
+Sons:
+   Usar: true
+   Comprar upgrade: 'LEVEL_UP'
+   Comprar boss: 'VILLAGER_YES'
+
+Upgrades:
+   Valores default:
+      Max boss spawnados: 1
+      Anti-Regressor: 0.0
+      Anti-Inviabilizador: 0.0
+      Acrescimo de dano: 0.0
+      
+   Valores maximos:
+      Max boss spawnados: 2
+      Anti-Regressor: 5.0
+      Anti-Inviabilizador: 4.0
+      Acrescimo de dano: 3.0
+   
+   Precos:
+      Max boss spawnados:
+         Tipo: 'MONEY'
+         Preco: 100.0
+         Porcentagem por level: 30.0
+         Acrescentar: 1
+      Anti-Regressor:
+         Tipo: 'MONEY'
+         Preco: 120.0
+         Porcentagem por level: 50.0
+         Acrescentar: 1.0
+      Anti-Inviabilizador:
+         Tipo: 'MONEY'
+         Preco: 110.0
+         Porcentagem por level: 10.0
+         Acrescentar: 1.0
+      Acrescimo de dano:
+         Tipo: 'MONEY'
+         Preco: 100.0
+         Porcentagem por level: 30.0
+         Acrescentar: 1.0
+         
+Setas:
+   Voltar:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&cVoltar'
+      Lore:
+      - '&7Clique para voltar ao menu anterior.'
+   Anterior:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&cVoltar'
+      Lore:
+      - '&7Clique para voltar à página anterior.'
+   Proximo:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&aPróximo'
+      Lore:
+      - '&7Clique para ir à próxima página.'
+
+Lores:
+   Lore bater:
+   - ''
+   - '&fVida: &c{vida}'
+   - '&fLevel mínimo da Matadora: &b{matadora}'
+   - ''
+   - '&fRegredir: &c{regredir}% &e- {playerregredir}%'
+   - '&fInviabilizar: &c{inviabilizar}% &e- {playerinviabilizar}%'
+   - '&fDano da matadora: &c{danomatadora}'
+   - ''
+   - '&fQuantidade spawnada: &b{quantia}'
+   - ''
+   - '&7Clique com botão esquerdo para dar dano.'
+   - '&7Clique com botão direito para de-spawnar.'
+   - '&7Clique com botão do meio para ver as recompensas.'
+   - ''
+   Lore comprar:
+   - ''
+   - '&fVida: &c{vida}'
+   - '&fLevel mínimo da Matadora: &b{matadora}'
+   - ''
+   - '&fRegredir: &a{regredir}%'
+   - '&fInviabilizar: &a{inviabilizar}%'
+   - ''
+   - '&fPreço: &a{preco} em {tipo}'
+   - ''
+   - '&7Clique com o botão esquerdo para comprar.'
+   - '&7Clique com o botão direito para ver as recompensas.'
+   - ''
+   Lore ativar:
+   - ''
+   - '&fVida: &c{vida}'
+   - '&fLevel mínimo da Matadora: &b{matadora}'
+   - ''
+   - '&fRegredir: &a{regredir}%'
+   - '&fInviabilizar: &a{inviabilizar}%'
+   - ''
+   - '&7Clique com o botão direito para armazenar.'
+   - ''
+   Lore spawnar:
+   - ''
+   - '&fVida: &c{vida}'
+   - '&fLevel mínimo da Matadora: &b{matadora}'
+   - ''
+   - '&fRegredir: &a{regredir}% &e- {playerregredir}%'
+   - '&fInviabilizar: &a{inviabilizar}% &e- {playerinviabilizar}%'
+   - ''
+   - '&fQuantidade armazenada: &a{quantia}'
+   - ''
+   - '&7Clique com botão esquerdo para spawnar.'
+   - '&7Clique com botão direito para recolher em forma de item.'
+   - '&7Clique com botão do meio para ver as recompensas.'
+   - ''
+      
+Formats:
+ - ''
+ - ''
+ - 'K'
+ - 'M'
+ - 'B'

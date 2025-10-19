@@ -1,0 +1,102 @@
+Nome: '&8Booster - Principal'
+Tamanho: 27
+Actionbar slot: 12
+HabilidadeGlobal slot: 14
+Habilidade slot: 16
+Itens:
+  Pontos:
+    Slot: 10
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/24c22b8df0a853a49cb82e90a618d65012122361c8398062fcbaf74d5696c2a9'
+    ID: 1
+    Data: 0
+    Glow: true
+    Name: '&aPontos'
+    Lore:
+      - '&7Você ganha pontos quando um jogador lhe agradecer'
+      - '&7por você ter ativado um booster global.'
+      - ''
+      - '&f > Você possui: &b{pontos} pontos&f.'
+      - '&f > Custo da "Recompensa Misteriosa": &b1 ponto&f.'
+      - ''
+      - '&fEsquerdo&a para comprar a "Recompensa Misteriosa".'
+      - '&fDireito&a para ver as recompensas da "Recompensa Misteriosa".'
+  Actionbar sim:
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 5
+    Glow: true
+    Name: '&aActionbar'
+    Lore:
+      - '&aVocê está recebendo a notificação'
+      - '&ado tempo restante do seu booster na'
+      - '&aactionbar.'
+  Actionbar nao:
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 14
+    Glow: true
+    Name: '&cActionbar'
+    Lore:
+      - '&cVocê não está recebendo a notificação'
+      - '&cdo tempo restante do seu booster na'
+      - '&cactionbar.'
+  HabilidadeGlobal sim:
+    CustomSkull: false
+    URL: ''
+    ID: 384
+    Data: 0
+    Glow: true
+    Name: '&aBooster Global de Habilidades'
+    Lore:
+      - '&fSkill: &7{skill}&f.'
+      - '&fMultiplicador: &7{multiplicador}&f.'
+      - '&fDuração: &7{duracao}&f.'
+  HabilidadeGlobal nao:
+    CustomSkull: false
+    URL: ''
+    ID: 374
+    Data: 0
+    Glow: true
+    Name: '&cBooster Global de Habilidades'
+    Lore:
+      - '&7Não há nenhum booster global'
+      - '&7de habilidades ativo.'
+  Habilidade sim:
+    CustomSkull: false
+    URL: ''
+    ID: 384
+    Data: 0
+    Glow: true
+    Name: '&cBooster de Habilidades'
+    Lore:
+      - '&fSkill: &7{skill}&f.'
+      - '&fMultiplicador: &7{multiplicador}&f.'
+      - '&fDuração: &7{duracao}&f.'
+      - ''
+      - '&7Estado: &r{estado}&7.'
+      - ''
+      - '&7Clique para pausar/retomar o booster.'
+  Habilidade nao:
+    CustomSkull: false
+    URL: ''
+    ID: 374
+    Data: 0
+    Glow: true
+    Name: '&cBooster de Habilidades'
+    Lore:
+      - '&7Não há nenhum booster de'
+      - '&7habilidades ativo.'
+# Enfeite o menu com estes itens
+Itens custom: {}
+  #Enfeite1:
+  #  Slot: 11
+  #  CustomSkull: false
+  #  URL: ''
+  #  ID: 1
+  #  Data: 0
+  #  Glow: true
+  #  Name: ''
+#  Lore: []

@@ -1,0 +1,60 @@
+Nome: '&8Bosses - Menu'
+Tamanho: 27
+Itens:
+  Recompensas:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: 130
+    Data: 0
+    Glow: true
+    Name: '&aRecompensas!'
+    Lore:
+      - '&7Recolha as recompensas'
+      - '&7de todos os bosses mortos!'
+      - ''
+      - '&aClique para acessar.'
+  Informacoes:
+    Slot: 12
+    CustomSkull: true
+    URL: '{player}'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aSuas informações'
+    Lore:
+      - '&7Veja suas informações'
+      - '&7referente aos bosses.'
+      - ''
+      - ' &fBosses mortos: &a{mortos}&f.'
+      - ' &fDano causado: &a{dano}&f.'
+      - ''
+  Loja:
+    Slot: 14
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/7e3deb57eaa2f4d403ad57283ce8b41805ee5b6de912ee2b4ea736a9d1f465a7'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aLoja'
+    Lore:
+      - '&7Compre aqui bosses e'
+      - '&7matadoras.'
+      - ''
+      - '&aClique para visualizar.'
+  Top:
+    Slot: 15
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aTop jogadores'
+    Lore:
+      - '&7Veja os jogadores que'
+      - '&7se destacaram matando'
+      - '&7diversos bosses.'
+      - ''
+      - '&aClique para visualizar.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Top:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

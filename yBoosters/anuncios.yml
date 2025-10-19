@@ -1,0 +1,11 @@
+Mensagem:
+  - ''
+  - '&8[Upgrade] &eO jogador &6{player} &eatingiu o lével &a{level} &ena skill &6{skill}&f.'
+  - ''
+# Leveis que serão anunciados
+Leveis:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5

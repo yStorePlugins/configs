@@ -1,0 +1,49 @@
+Loja:
+   Nome: '&8Mercado Negro'
+   Tamanho: 54
+   Back slot: 27
+   Items:
+      Pedra preciosa:
+         Slot: 10
+         Preco: 10000.0
+         CustomSkull: false
+         URL: ''
+         Name: '&cPedra preciosa'
+         ID: 1
+         Data: 0
+         Quantia: 64
+         Usar lore: true
+         Lore:
+         - ''
+         - '&cCompre para se tornar um mago.'
+         - ''
+         Usar lore preco: true
+         Lore preco:
+          - '&fPreco: 10K'
+         Encantamentos:
+          - 'DIG_SPEED:1'
+         Usar comandos: false
+         Comandos:
+         - ''
+      Diamante:
+         Slot: 11
+         Preco: 5000.0
+         CustomSkull: false
+         URL: ''
+         Name: '&bDiamantes'
+         ID: 56
+         Data: 0
+         Quantia: 64
+         Usar lore: true
+         Lore:
+         - ''
+         - '&cCompre para se tornar rico.'
+         - ''
+         Usar lore preco: true
+         Lore preco:
+          - '&fPreco: 5K'
+         Encantamentos:
+          - ''
+         Usar comandos: true
+         Comandos:
+         - 'give {player} diamond 64'

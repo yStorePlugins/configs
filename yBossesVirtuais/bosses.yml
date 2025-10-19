@@ -1,0 +1,40 @@
+Bosses:
+   1:
+      Ovo:
+         CustomSkull: false
+         URL: ''
+         ID: 383
+         Data: 50
+         Glow: true
+         Name: '&aBoss Creeper'
+         Lore:
+         - ''
+         - '&fVida: &c{vida}'
+         - '&fLevel mínimo da Matadora: &b{matadora}'
+         - ''
+         - '&fRegredir: &c{regredir}%'
+         - '&fInviabilizar: &c{inviabilizar}%'
+         - ''
+         - '&7Clique com botão direito para armazenar.'
+         - ''
+      Vida: 1000
+      Matadora minimo: 0
+      XP: 50
+      Sons:
+         Usar: true
+         Dano: 'CREEPER_HISS'
+         Matar: 'CREEPER_DEATH'
+      Comprar:
+         Tipo: 'Money'
+         Preco: 100.0
+         Compravel: true
+      Efeitos:
+         Regredir: #regredir 1 nível da matadora do player
+            Usar: true
+            Chance: 10.0
+         Inviabilizar: #inviabilizar o player de dar dano no boss
+            Usar: true
+            Chance: 10.0
+            Tempo: 10 #em segundos
+      Recompensas:
+      - '100,Reco1' #chance,recompensa

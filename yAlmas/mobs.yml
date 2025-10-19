@@ -1,0 +1,19 @@
+Mobs:
+   Mob1:
+      Entidade: 'ZOMBIE'
+      Quantia: 20.0
+      Chance: 60.0
+      Boss:
+         Chance: 100.0
+         Quantia: 1
+      Mundos:
+      - 'world'
+   Mob2:
+      Entidade: 'CREEPER'
+      Quantia: 20.0
+      Chance: 10.0
+      Boss:
+         Chance: 10.0
+         Quantia: 2
+      Mundos:
+      - 'world'

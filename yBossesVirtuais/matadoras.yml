@@ -1,0 +1,105 @@
+Matadoras:
+   Default:
+      Ordem: 1
+      Nivel: 0
+      Dano: 20
+      Regredir: true
+      Evoluir: false #evolucao com xp
+      Comprar:
+         Compravel: true
+         Tipo: 'MONEY'
+         Preco: 0.0
+         XP: 0
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: 276
+         Data: 0
+         Glow: true
+         Name: '&aMatadora Default'
+         Lore:
+         - ''
+         - '&fDano: &c20'
+         - ''
+         - '&7Clique com botão direito para ativar.'
+         - ''
+      Loja:
+         CustomSkull: false
+         URL: ''
+         ID: 276
+         Data: 0
+         Glow: true
+         Name: '&aMatadora Default'
+         Lore: #esta matadora é a default, portanto não irá aparecer.
+         - ''
+   Nivelado:
+      Ordem: 2
+      Nivel: 0
+      Dano: 50
+      Regredir: true
+      Evoluir: false #evolucao com xp
+      Comprar:
+         Compravel: true
+         Tipo: 'MONEY'
+         Preco: 5000.0
+         XP: 20
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: 276
+         Data: 0
+         Glow: true
+         Name: '&aMatadora Nivelado'
+         Lore:
+         - ''
+         - '&fDano: &c50'
+         - ''
+         - '&7Clique com botão direito para ativar.'
+         - ''
+      Loja:
+         CustomSkull: false
+         URL: ''
+         ID: 276
+         Data: 0
+         Glow: true
+         Name: '&aMatadora Nivelado'
+         Lore:
+         - ''
+         - '&fDano: &c50'
+         - ''
+         - '&fPreço: &a5K em money.'
+         - ''
+         - '&7Clique para comprar.'
+   Avancada:
+      Ordem: 3
+      Nivel: 1
+      Dano: 9999999 #deixe 9999999 para hitkill
+      Regredir: false
+      Evoluir: false #evolucao com xp
+      Comprar:
+         Compravel: false
+         Tipo: 'MONEY'
+         Preco: 10000.0
+         XP: 100
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: 276
+         Data: 0
+         Glow: true
+         Name: '&aMatadora Avançada'
+         Lore:
+         - ''
+         - '&fDano: &cHitKill'
+         - ''
+         - '&7Clique com botão direito para ativar.'
+         - ''
+      Loja: #se não for comprável, não irá aparecer
+         CustomSkull: false
+         URL: ''
+         ID: 276
+         Data: 0
+         Glow: true
+         Name: '&aMatadora Avançada'
+         Lore:
+         - ''

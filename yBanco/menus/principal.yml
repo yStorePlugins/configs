@@ -1,0 +1,51 @@
+Nome: '&7Banco principal'
+Tamanho: 27
+Itens:
+   Perfil:
+      Slot: 11
+      CustomSkull: true
+      URL: '{player}'
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&aSuas informações'
+      Lore:
+      - ''
+      - '&7Dinheiro no banco: &a{banco}&7.'
+      - '&7Dinheiro em mãos: &a{money_player}&7.'
+      - ''
+      - '&7Selic atual: &b{selic}%&7.'
+      - ''
+   Historico:
+      Slot: 12
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/97a530f5c5742bf19e175a4d78ad435ac0f4396d3b5464bd6182ab382aca417d'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aHistórico'
+      Lore:
+      - '&7Clique para ver seu histórico de transações.'
+   Operacoes:
+      Slot: 14
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/152353641d287ce9ed30906f938ae9c517ec04caa8da71571954c81b09db454c'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aOperações'
+      Lore:
+      - '&7Clique para realizar um depósito,'
+      - '&7saque ou criar um cheque.'
+   Top:
+      Slot: 15
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/15a7ee9a86de203674a93b570bc8992e500363dd32f2b9813daaeeabccf92151'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aTop'
+      Lore:
+      - '&7Clique para ver os jogadores mais ricos do banco.'
+      
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Top:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)

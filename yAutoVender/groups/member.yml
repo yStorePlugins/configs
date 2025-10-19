@@ -1,0 +1,39 @@
+# Ordem para checagem
+order: 1
+
+# Mundos onde esse grupo não irá funcionar
+world-blacklist: []
+
+# Permissão para pertencer a esse grupo
+permission: ''
+
+# Mensagens de venda
+messages:
+  chat: ''
+  title: ''
+  actionbar: '&a+ &2$ &f{money}&a coins'
+
+# Blocos desse grupo
+blocks:
+  stone:
+    # Material do bloco
+    material: 'STONE:0'
+    # Ativar a fortuna nesse bloco
+    fortune: true
+    # XP do vanilla
+    exp: 1.0
+    # XP do mcMMO
+    mcmmo:
+      exp: 1.0
+      skill: 'MINING'
+    # Lista de recompensas
+    # Chance,recompensa (rewards.yml)
+    rewards:
+      - '50.0,reward1'
+      - '30.0,reward2'
+      - '10.0,reward3'
+    # Economias que irá dar ao quebrar o bloco
+    prices:
+      price1:
+        provider: 'money'
+        amount: 100.0

@@ -1,0 +1,43 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+start-clicking:
+  actionbar: '&a&lAUTO-CLICK: &aVocê começou a clicar!'
+  title: ''
+  chat: '&a&lAUTO-CLICK: &aVocê começou a clicar!'
+
+stop-clicking:
+  actionbar: '&c&lAUTO-CLICK: &cVocê parou de clicar!'
+  title: ''
+  chat: '&c&lAUTO-CLICK: &cVocê parou de clicar!'
+
+actionbar:
+  clicking: '&aVocê está clicando... Tempo restante: &f{time}&a.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &a/autoclick &8- &7Abre o menu principal
+    &a/autoclick ajuda &8- &7Envia a mensagem de ajuda.
+    &a/autoclick reload &8- &7Recarrega as configurações.
+
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  permission-buy: '&cVocê não tem permissão para desbloquear este mob.'
+  already: '&cVocê já possui este mob desbloqueado.'
+  bought: '&aMob desbloqueado com sucesso.'
+  bought-time: '&a{time} &aadquirido com sucesso.'
+  bought-upgrade: '&e+1 upgrade &aadquirido com sucesso.'

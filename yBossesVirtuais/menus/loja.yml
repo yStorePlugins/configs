@@ -1,0 +1,40 @@
+Nome: '&8Bosses - Loja'
+Tamanho: 27
+BackSlot: 18
+Itens:
+   Bosses:
+      Slot: 11
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/3857d6b17901fd3f0109bd9bdcc28021b65947fce0a958327247d26d92915b85'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aBosses'
+      Lore:
+      - ''
+      - '&7Clique para comprar bosses.'
+      - ''
+   Matadoras:
+      Slot: 13
+      CustomSkull: false
+      URL: ''
+      ID: 276
+      Data: 0
+      Glow: true
+      Name: '&aMatadoras'
+      Lore:
+      - ''
+      - '&7Clique para comprar matadoras.'
+      - ''
+   Upgrades:
+      Slot: 15
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/564a91433d66bfc6ef1c9ac4e371a886a1c462c975ff8127761d703e0a3e7306'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aUpgrades'
+      Lore:
+      - ''
+      - '&7Clique para comprar upgrades.'
+      - ''

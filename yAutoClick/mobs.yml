@@ -1,0 +1,49 @@
+mobs:
+  cow:
+    # Ordem no menu
+    order: 1
+    # Entidade
+    entity-type: 'COW'
+    # Permissão para bater nesse mob sem precisar comprar
+    permission: 'yautoclick.cow'
+    # Permissão para comprar esse mob
+    permission-buy: ''
+    # XP do vanilla que será dado por MOB morto
+    vanilla-exp: 1
+    # XP do mcMMO que será dado por MOB morto
+    mcmmo:
+      swords: 1
+      axes: 1
+      unarmed: 1
+    # Preços para desbloquear esse MOB
+    prices:
+      price1:
+        provider: 'money'
+        amount: 100.0
+    # Ícones no menu
+    icons:
+      has:
+        material: 'b1634b0c8e3bb99a49a2e3044b6dbcc619e4ee4a72f23a818d88ea1f094e8ef8'
+        name: '&eVaca'
+        lore:
+          - '&7Você pode atacar livremente a'
+          - '&7vaca com seu auto-click.'
+          - ''
+          - '&fBenefícios:'
+          - '&f> XP: &b1'
+          - '&f> mcMMO:'
+          - '&e   | Espadas: &b1'
+          - '&e   | Machados: &b1'
+          - '&e   | Desarmado: &b1'
+          - ''
+          - '&aVocê possui este mob desbloqueado.'
+      buy:
+        material: 'b1634b0c8e3bb99a49a2e3044b6dbcc619e4ee4a72f23a818d88ea1f094e8ef8'
+        name: '&eVaca'
+        lore:
+          - '&7Você não pode atacar a'
+          - '&7vaca com seu auto-click.'
+          - ''
+          - '&fPreço: &2$ &a{money} coins&f.'
+          - ''
+          - '&aClique para comprar.'

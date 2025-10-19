@@ -1,0 +1,60 @@
+Nome: '&8Histórico de operações'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 31
+VoltarSlot: 27
+ProximoSlot: 35
+
+Adicionar:
+   CustomSkull: true
+   URL: 'http://textures.minecraft.net/texture/3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&a+ {money}'
+   Lore:
+   - ''
+   - '&7Data: &f{data} &8- &f{hora}&7.'
+   - '&7Quantia adicionada: &a{money}&.'
+   - ''
+   
+Render:
+   CustomSkull: true
+   URL: 'http://textures.minecraft.net/texture/3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&a+ {money}'
+   Lore:
+   - ''
+   - '&7Data: &f{data} &8- &f{hora}&7.'
+   - '&7Rendeu: &a{money}&.'
+   - ''
+   
+Sacar:
+   CustomSkull: true
+   URL: 'http://textures.minecraft.net/texture/bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&c- {money}'
+   Lore:
+   - ''
+   - '&7Data: &f{data} &8- &f{hora}&7.'
+   - '&7Quantia sacada: &a{money}&.'
+   - '&7Taxa: &c{taxa}%&7.'
+   - ''
+   
+Cheque:
+   CustomSkull: true
+   URL: 'http://textures.minecraft.net/texture/bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&c- {money}'
+   Lore:
+   - ''
+   - '&7Data: &f{data} &8- &f{hora}&7.'
+   - '&7Cheque criado: &a{money}&.'
+   - '&7Taxa: &c{taxa}%&7.'
+   - ''

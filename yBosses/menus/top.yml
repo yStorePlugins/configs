@@ -1,0 +1,18 @@
+Nome: '&6&lTOP JOGADORES'
+Tamanho: 36
+Slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+BackSlot: 31
+AnteriorSlot: 9
+ProximoSlot: 17
+# Item do top
+Item:
+  CustomSkull: true
+  URL: '{player}'
+  ID: 0
+  Data: 0
+  Name: '&f#{pos} &7> &a{player}'
+  Lore:
+    - ''
+    - '&fBosses mortos: &a{mortos}&f.'
+    - '&fDano causado: &a{dano}&f.'
+    - ''

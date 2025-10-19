@@ -1,0 +1,11 @@
+ranks:
+   bronze:
+      order: 1
+      # Tag do rank
+      tag: '&7[&6Bronze&7]'
+      # Pontos necessários para ficar no rank
+      points: 0.0
+   iron:
+      order: 2
+      tag: '&7[&fFerro&7]'
+      points: 2.0

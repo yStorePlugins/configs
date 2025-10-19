@@ -1,0 +1,6 @@
+# Taxa que acrescenta o valor para sacar e criar cheques
+Grupos:
+  membro:
+    Ordem: 1
+    Permissao: 'ybanco.membro'
+    Porcentagem: 10.0

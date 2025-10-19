@@ -1,0 +1,31 @@
+# Custos para comprar um novo baú
+Comprar:
+  # Porcentagem a + para comprar novos baús
+  # será usada a partir da compra do 2º baú
+  Porcentagem: 10.0
+  Custos:
+    Custo1:
+      Display: 'Money'
+      Tipo: 'Money' #tipos: Money, plugin de pontos
+      Custo: 1000.0
+    Custo2:
+      Display: 'Pontos'
+      Tipo: 'PlayerPoints'
+      Custo: 10.0
+# Custos para expandir um baú
+Expandir:
+  # Neste exemplo padrão, o baú que tiver 1 linha irá evoluir 1 linha
+  Linha2:
+    # Número de linhas necessárias para essa evolução
+    LinhasPrecisa: 1
+    # Número de linhas que dará ao evoluir
+    Evolucao: 1
+    Custos:
+      Custo1:
+        Display: 'Money'
+        Tipo: 'Money' #tipos: Money, plugin de pontos
+        Custo: 2000.0
+      Custo2:
+        Display: 'Pontos'
+        Tipo: 'PlayerPoints'
+        Custo: 20.0

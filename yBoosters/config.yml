@@ -1,0 +1,137 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Booster:
+    Comando: 'booster'
+    Aliases: [ boosters ]
+
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+Formatacao: 'LETRA'
+
+# Opções gerais do plugin
+Opcoes:
+  # Stackar o booster global com o booster proprio
+  Stack: true
+  # Sistema de pausar o booster
+  Pausar: true
+  # Actionbar do booster individual
+  Actionbar: '&cBooster de &f{skill}&c, restante: &f{tempo}&c.'
+  # Preço da recompensa misteriosa
+  RecoMisteriosa preco: 1.0
+  # Sistema de agradecer
+  Agradecer:
+    # Pontos mínimos a serem dados
+    Min: 1.0
+    # Pontos máximos a serem dados
+    Max: 5.0
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isto.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Nao e numero: '&cO argumento não é um número.'
+  Recebeu habilidade: '&aVocê recebeu um booster de habilidades.'
+  Deu habilidade: '&aVocê deu um booster de habilidades para o jogador &7{player}&a.'
+  Nao global: '&cNão há nenhum booster global ativado.'
+  Online: '&cEste jogador não está mais online.'
+  Ja agradeceu: '&cVocê já agradeceu este booster.'
+  Agradeceu: '&aVocê agradeceu o jogador &f{player}&a pelo booster.'
+  Removeu global: '&cVocê removeu o booster global.'
+  Possui: '&cVocê deve ter 1 ponto para comprar a "Recompensa Misteriosa".'
+  Comprou: '&aVocê comprou a &f"Recompensa Misteriosa"&a por &f1 ponto&a.'
+  Si mesmo: '&cVocê não pode agradecer a si mesmo.'
+  Nao player: '&cO jogador {player} não tem nenhum booster ativado.'
+  Removeu player: '&cVocê removeu o booster do player {player}.'
+  Acabou habilidade:
+    - ''
+    - '&cSeu booster de habilidades encerrou.'
+    - ''
+  Acabou habilidade global:
+    - ''
+    - '&cO booster global de habilidades encerrou.'
+    - ''
+  Ja usando habilidade:
+    - '&cVocê já está usando um booster de habilidades, use &7&n/boosters&c para checar.'
+  Ja global habilidade:
+    - '&cUm booster global de habilidades já está ativo, use &7&n/boosters&c para checar.'
+  Ativou habilidade global:
+    - '&eO jogador &8{player}&e ativou um booster &8Global&e de habilidades.'
+    - '&f > &eSkill: &a{skill}&e.'
+    - '&f > &eDuração: &a{duracao}&e.'
+    - '&f > &eMultiplicador: &a{multiplicador}&e.'
+  Ativou habilidade:
+    - '&eVocê ativou um booster de habilidades&e.'
+    - '&f > &eSkill: &a{skill}&e.'
+    - '&f > &eDuração: &a{duracao}&e.'
+    - '&f > &eMultiplicador: &a{multiplicador}&e.'
+
+# Item do booster
+# A lore do item é configurada em cada booster
+# na habilidades.yml
+Item:
+  Habilidade:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/24c22b8df0a853a49cb82e90a618d65012122361c8398062fcbaf74d5696c2a9'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&8Booster de habilidades'
+  Habilidade global:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/ff778f72eaca452ee013893e2bc53d8d5b1fca44cfe2703865b054c28a3dd7'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&8Booster Global de habilidades'
+# Setas dos menus.
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para ir à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróximo'
+    Lore:
+      - '&7Clique para ir à próxima página.'
+
+# Formatos de quantia
+Formats:
+  - ''
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'

@@ -1,0 +1,57 @@
+Nome: '&8Lista de baús'
+Tamanho: 36
+Slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+BackSlot: 18
+VoltarSlot: 27
+ProximoSlot: 35
+# Item do baú
+Bau:
+  Name: '&e{nome}'
+  Lore:
+    - ''
+    - '&f > &bBaú #{id}&f.'
+    - '&f > &7Slots: &c{slot_usado}&7/&a{slot_total}&f.'
+    - ''
+    - '&7Botão &fesquerdo&7 para abrir o baú.'
+    - '&7Botão &fdireito&7 para gerenciar o baú.'
+# Item para comprar novo baú
+Comprar:
+  Slot: 30
+  CustomSkull: false
+  URL: ''
+  ID: 54
+  Data: 0
+  Glow: false
+  Name: '&6Comprar baú'
+  Lore:
+    - '&7Clique para comprar'
+    - '&7um novo baú.'
+    - ''
+    - '&7Preços:'
+    - '&f > &a{Money} coins.'
+    - '&f > &6{PlayerPoints} pontos.'
+    - ''
+    - '&fSeu desconto: &a{desconto}%&f.'
+# Item para abrir o enderchest
+Enderchest:
+  Slot: 32
+  CustomSkull: false
+  URL: ''
+  ID: 130
+  Data: 0
+  Glow: false
+  Name: '&aBaú do fim'
+  Lore:
+    - '&7Clique para abrir seu'
+    - '&7baú do fim.'
+# Itens customizados
+Itens: {}
+#  Enfeite:
+#    Slot: 1
+#    CustomSkull: false
+#    URL: ''
+#    ID: 1
+#    Data: 0
+#    Glow: false
+#    Name: '&aEnfeite'
+#    Lore: []

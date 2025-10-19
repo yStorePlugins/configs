@@ -1,0 +1,80 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    <nl>
+    &aBoss-Arena comandos:
+    <nl>
+    &a> /bossarena criar <boss>
+    &a> /bossarena editar <boss>
+    &a> /bossarena deletar <boss>
+    &a> /bossarena daramuleto
+    <nl>
+  already-exists: '&cEste boss {boss} já existe.'
+  no-exists: '&cEste boss {boss} não existe. Bosses cadastrados: {bosses}'
+  created: '&aEste boss {boss} foi criado.'
+  deleted: '&aEste boss {boss} foi deletado.'
+  digit-name: |
+    <nl>
+    &aDigite o NOME que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+    <nl>
+  digit-chance: |
+    <nl>
+    &aDigite a CHANCE que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+    <nl>
+  digit-health: |
+    <nl>
+    &aDigite a VIDA que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+    <nl>
+  digit-damage: |
+    <nl>
+    &aDigite o DANO que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+    <nl>
+  digit-delay: |
+    <nl>
+    &aDigite o DELAY que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+    <nl>
+  digit-amount: |
+    <nl>
+    &aDigite a QUANTIA que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+    <nl>
+  change-name: '&aNome alterado para &f{name}&a.'
+  change-health: '&aVida alterada para &f{health}&a.'
+  change-chance: '&aChance alterada para &f{chance}&a.'
+  change-damage: '&aDano alterado para &f{damage}&a.'
+  change-delay: '&aDelay alterado para &f{delay}&a.'
+  change-amount: '&aQuantia alterada para &f{amount}&a.'
+  health-error: '&cA vida precisa ser maior que 0.'
+  chance-error: '&cA chance não pode ser menor que 0 ou maior que 100.'
+  delay-error: '&cO delay não pode ser menor ou igual a 0.'
+  amount-error: '&cA quantia não pode ser menor ou igual a 0.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  amulet-give: '&aVocê deu {amount}x amuleto(s) do BossArena para o jogador {player}.'
+  amulet-give-target: '&aVocê recebeu {amount}x amuleto(s) do BossArena.'
+  amulet-give-all: |
+    <nl>
+    &aTodos os jogadores receberam {amount}x amuleto(s) do BossArena.
+    <nl>
+  amulet-already: '&cVocê já possui este amuleto ativado.'
+  amulet-activated: '&aAmuleto ativado com sucesso.'

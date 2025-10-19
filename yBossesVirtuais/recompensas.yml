@@ -1,0 +1,34 @@
+Recompensas:
+   Reco1:
+      Preview:
+         CustomSkull: false
+         URL: ''
+         ID: 1
+         Data: 0
+         Glow: true
+         Name: '&8Pedra'
+         Amount: 64
+         Lore:
+         - ''
+         - '&aTu vais ganhar uma pedra.'
+         - ''
+         Enchants: #se não desejar, deixe assim:
+         - ''
+      Item: #se o ( Command -> Use ) tiver true, isso não vai funcionar
+         CustomSkull: false
+         URL: ''
+         ID: 1
+         Data: 0
+         Glow: true
+         Name: '&8Pedra'
+         Amount: 64
+         Lore:
+         - ''
+         - '&aTu ganhou uma pedra.'
+         - ''
+         Enchants: #se não desejar, deixe assim:
+         - ''
+      Command:
+         Use: false
+         List: #se o ( Use ) tiver false, isso não funcionar.
+         - 'give {player} stone 1'

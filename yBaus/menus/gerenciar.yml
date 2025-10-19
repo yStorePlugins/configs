@@ -1,0 +1,47 @@
+Nome: '&8Gerenciar baú'
+Tamanho: 27
+BackSlot: 18
+Itens:
+  Nome:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: 421
+    Data: 0
+    Glow: false
+    Name: '&aNome do baú'
+    Lore:
+      - '&7Nome do baú que ficará'
+      - '&7no /bau.'
+      - ''
+      - '&7 Atual: {bau}'
+      - ''
+      - '&7Clique para renomear.'
+  Icone:
+    Slot: 13
+    CustomSkull: false
+    URL: ''
+    ID: 389
+    Data: 0
+    Glow: false
+    Name: '&aÍcone do baú'
+    Lore:
+      - '&7Mude o ícone que ficará'
+      - '&7no /bau.'
+      - ''
+      - '&7Clique para alterar o ícone.'
+  Expandir:
+    Slot: 15
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/3857d6b17901fd3f0109bd9bdcc28021b65947fce0a958327247d26d92915b85'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aExpandir baú'
+    Lore:
+      - '&7Expanda a quantia de'
+      - '&7linhas do baú.'
+      - ''
+      - '&7 Atual: &b{linhas}&7.'
+      - ''
+      - '&7Clique para expandir.'

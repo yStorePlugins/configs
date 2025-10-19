@@ -1,0 +1,38 @@
+Nome: '&8Expandir baú'
+Tamanho: 27
+Itens:
+  Confirmar:
+    Slot: 11
+    CustomSkull: false
+    URL: ''
+    ID: 35
+    Data: 5
+    Glow: false
+    Name: '&aConfirmar'
+    Lore:
+      - '&7Clique para confirmar e expandir.'
+  Cancelar:
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: 35
+    Data: 14
+    Glow: false
+    Name: '&cCancelar'
+    Lore:
+      - '&7Clique para cancelar e retornar.'
+  Expandir:
+    Slot: 13
+    CustomSkull: false
+    URL: ''
+    ID: 54
+    Data: 0
+    Glow: false
+    Name: '&aExpansão'
+    Lore:
+      - ''
+      - '&7Preços:'
+      - '&f > &a{Money} coins.'
+      - '&f > &6{PlayerPoints} pontos.'
+      - ''
+      - '&fSeu desconto: &a{desconto}%&f.'

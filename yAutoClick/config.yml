@@ -1,0 +1,142 @@
+#            _         _         ____ _ _      _
+#  _   _   / \  _   _| |_ ___  / ___| (_) ___| | __
+# | | | | / _ \| | | | __/ _ \| |   | | |/ __| |/ /
+# | |_| |/ ___ \ |_| | || (_) | |___| | | (__|   <
+#  \__, /_/   \_\__,_|\__\___/ \____|_|_|\___|_|\_\
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Mundos onde será permitido o auto-click
+  world-whitelist: [ 'world' ]
+  # Permitir o auto-click somente no terreno
+  plot: false
+  # Delay para atacar os mobs
+  # em ticks, ex: 20 ticks = 1 segundo, 30 ticks = 1,5 segundos.
+  delay: 30
+  # Raio de verificação dos mobs
+  radius:
+    x: 3
+    y: 3
+    z: 3
+  # Blacklist de entidades com metadatas que não serão atingidos
+  metadata-blacklist: []
+  mcmmo-axes-skill: 'AXES'
+  mcmmo-swords-skill: 'SWORDS'
+  mcmmo-unarmed-skill: 'UNARMED'
+
+# Sistema de atacar várias entidades por vez
+attack-multiples:
+  # Quantia padrão
+  default: 1
+  # Quantia máxima
+  max: 3
+  # Preços para comprar o upgrade
+  prices:
+    price1:
+      provider: 'money'
+      amount: 100.0
+
+# Sistema de compra de tempo extra
+times:
+  time1:
+    # Nome nas mensagens
+    display-name: '&e+1 min'
+    # Tempo que será comprado
+    # em segundos
+    time-extra: 60
+    # Preços para comprar esse tempo extra
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+    # Ícone no menu
+    icon:
+      material: 'PAPER'
+      name: '&e+1 min'
+      lore:
+        - '&7Compre mais tempo para continuar'
+        - '&7usufruindo do sistema de auto-click.'
+        - ''
+        - '&fPreço: &2$ &a{money} coins&f.'
+        - ''
+        - '&aClique para comprar'
+  time2:
+    display-name: '&e+10 min'
+    time-extra: 600
+    prices:
+      price1:
+        provider: 'money'
+        amount: 10000.0
+    icon:
+      material: 'PAPER'
+      name: '&e+10 min'
+      lore:
+        - '&7Compre mais tempo para continuar'
+        - '&7usufruindo do sistema de auto-click.'
+        - ''
+        - '&fPreço: &2$ &a{money} coins&f.'
+        - ''
+        - '&aClique para comprar'
+  time3:
+    display-name: '&e+60 min'
+    time-extra: 3600
+    prices:
+      price1:
+        provider: 'money'
+        amount: 60000.0
+    icon:
+      material: 'PAPER'
+      name: '&e+60 min'
+      lore:
+        - '&7Compre mais tempo para continuar'
+        - '&7usufruindo do sistema de auto-click.'
+        - ''
+        - '&fPreço: &2$ &a{money} coins&f.'
+        - ''
+        - '&aClique para comprar'
