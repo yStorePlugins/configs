@@ -51,6 +51,8 @@ general:
   break-fence: false
   # Definir a cerca sempre no bloco mais alto
   fence-up-block: true
+  # Substituir blocos existentes no caminho da cerca
+  fence-overlap: true
   # Delay para alternar a cerca de um terreno
   # em segundos
   fence-delay: 60
