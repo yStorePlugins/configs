@@ -1,0 +1,174 @@
+jewelries:
+  add:
+    order: 1
+    # Nome da joia nas mensagens
+    display: '&aJoia da Adição'
+    # Esta joia será apenas de amplificação
+    amplifier: true
+    # Quantia que irá adicionar de aplificação
+    to-add: 1
+    # Item utilizável
+    item:
+      material: 'INK_SACK:1'
+      name: '&aJoia da Adição'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &f+1 amplificador em todas as', '&7outras joias&7 permanentemente.', '', '&aClique para ativar.' ]
+    # Item utilizável (para a joia temporária)
+    item-temporary:
+      material: 'INK_SACK:1'
+      name: '&aJoia da Adição'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &f+1 amplificador em todas as', '&7outras joias&7 permanentemente.', '', '&fTempo: &c{time}', '', '&aClique para ativar.' ]
+    # Item do menu
+    menu:
+      material: 'INK_SACK:1'
+      name: '&aJoia da Adição'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &f+1 amplificador em todas as', '&7outras joias&7 permanentemente.', '', '&aClique para remover.' ]
+    # Item do menu (para a joia temporária)
+    menu-temporary:
+      material: 'INK_SACK:1'
+      name: '&aJoia da Adição'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &f+1 amplificador em todas as', '&7outras joias&7 permanentemente.', '', '&fTempo restante: &c{time}', '', '&aClique para remover.' ]
+  time:
+    order: 2
+    # Nome da joia nas mensagens
+    display: '&aJoia do Tempo'
+    # Item utilizável
+    item:
+      material: 'INK_SACK:10'
+      name: '&aJoia do Tempo'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fSuper Pulo I&7 permanentemente.', '', '&aClique para ativar.' ]
+    # Item utilizável (para a joia temporária)
+    item-temporary:
+      material: 'INK_SACK:10'
+      name: '&aJoia do Tempo'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fSuper Pulo I&7 permanentemente.', '', '&fTempo: &c{time}', '', '&aClique para ativar.' ]
+    # Item  do menu
+    menu:
+      material: 'INK_SACK:10'
+      name: '&aJoia do Tempo'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fSuper Pulo I&7 permanentemente.', '', '&aClique para remover.' ]
+    # Item  do menu (para a joia temporária)
+    menu-temporary:
+      material: 'INK_SACK:10'
+      name: '&aJoia do Tempo'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fSuper Pulo I&7 permanentemente.', '', '&fTempo restante: &c{time}', '', '&aClique para remover.' ]
+    # Efeitos da joia
+    potion-effects:
+      effect1:
+        type: 'JUMP'
+        amplifier: 1
+  power:
+    order: 3
+    # Nome da joia nas mensagens
+    display: '&5Joia do Poder'
+    # Item utilizável
+    item:
+      material: 'INK_SACK:5'
+      name: '&5Joia do Poder'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fResistência I&7 permanentemente.', '', '&aClique para ativar.' ]
+    # Item utilizável (para a joia temporária)
+    item-temporary:
+      material: 'INK_SACK:5'
+      name: '&5Joia do Poder'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fResistência I&7 permanentemente.', '', '&fTempo: &c{time}', '', '&aClique para ativar.' ]
+    # Item  do menu
+    menu:
+      material: 'INK_SACK:5'
+      name: '&5Joia do Poder'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fResistência I&7 permanentemente.', '', '&aClique para remover.' ]
+    # Item  do menu (para a joia temporária)
+    menu-temporary:
+      material: 'INK_SACK:5'
+      name: '&5Joia do Poder'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fResistência I&7 permanentemente.', '', '&fTempo restante: &c{time}', '', '&aClique para remover.' ]
+    # Efeitos da joia
+    potion-effects:
+      effect1:
+        type: 'DAMAGE_RESISTANCE'
+        amplifier: 1
+  space:
+    order: 4
+    # Nome da joia nas mensagens
+    display: '&1Joia do Espaço'
+    # Item utilizável
+    item:
+      material: 'INK_SACK:4'
+      name: '&1Joia do Espaço'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fVelocidade I&7 permanentemente.', '', '&aClique para ativar.' ]
+    # Item utilizável (para a joia temporária)
+    item-temporary:
+      material: 'INK_SACK:4'
+      name: '&1Joia do Espaço'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fVelocidade I&7 permanentemente.', '', '&fTempo: &c{time}', '', '&aClique para ativar.' ]
+    # Item  do menu
+    menu:
+      material: 'INK_SACK:4'
+      name: '&1Joia do Espaço'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fVelocidade I&7 permanentemente.', '', '&aClique para remover.' ]
+    # Item  do menu (para a joia temporária)
+    menu-temporary:
+      material: 'INK_SACK:4'
+      name: '&1Joia do Espaço'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fVelocidade I&7 permanentemente.', '', '&fTempo restante: &c{time}', '', '&aClique para remover.' ]
+    # Efeitos da joia
+    potion-effects:
+      effect1:
+        type: 'SPEED'
+        amplifier: 1
+  mind:
+    order: 5
+    # Nome da joia nas mensagens
+    display: '&eJoia da Mente'
+    # Item utilizável
+    item:
+      material: 'INK_SACK:11'
+      name: '&eJoia da Mente'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fPressa I&7 permanentemente.', '', '&aClique para ativar.' ]
+    # Item utilizável (para a joia temporária)
+    item-temporary:
+      material: 'INK_SACK:11'
+      name: '&eJoia da Mente'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fPressa I&7 permanentemente.', '', '&fTempo: &c{time}', '', '&aClique para ativar.' ]
+    # Item  do menu
+    menu:
+      material: 'INK_SACK:11'
+      name: '&eJoia da Mente'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fPressa I&7 permanentemente.', '', '&aClique para remover.' ]
+    # Item  do menu (para a joia temporária)
+    menu-temporary:
+      material: 'INK_SACK:11'
+      name: '&eJoia da Mente'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fPressa I&7 permanentemente.', '', '&fTempo restante: &c{time}', '', '&aClique para remover.' ]
+    # Efeitos da joia
+    potion-effects:
+      effect1:
+        type: 'FAST_DIGGING'
+        amplifier: 1
+  reality:
+    order: 5
+    # Nome da joia nas mensagens
+    display: '&dJoia da Realidade'
+    # Item utilizável
+    item:
+      material: 'INK_SACK:9'
+      name: '&dJoia da Realidade'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fForça I&7 permanentemente.', '', '&aClique para ativar.' ]
+    # Item utilizável (para a joia temporária)
+    item-temporary:
+      material: 'INK_SACK:9'
+      name: '&dJoia da Realidade'
+      lore: [ '', '&7Por meio desta joia você irá', '&7adquirir &fForça I&7 permanentemente.', '', '&fTempo: &c{time}', '', '&aClique para ativar.' ]
+    # Item  do menu
+    menu:
+      material: 'INK_SACK:9'
+      name: '&dJoia da Realidade'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fForça I&7 permanentemente.', '', '&aClique para remover.' ]
+    # Item  do menu (para a joia temporária)
+    menu-temporary:
+      material: 'INK_SACK:9'
+      name: '&dJoia da Realidade'
+      lore: [ '', '&7Por meio desta joia você está', '&7adquirindo &fForça I&7 permanentemente.', '', '&fTempo restante: &c{time}', '', '&aClique para remover.' ]
+    # Efeitos da joia
+    potion-effects:
+      effect1:
+        type: 'INCREASE_DAMAGE'
+        amplifier: 1

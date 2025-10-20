@@ -1,0 +1,120 @@
+# Nome padrão do mascote
+name: '&eMascote Gorilla'
+
+# Entidade do mascote
+entity: 'ZOMBIE'
+
+# Item ativável
+item:
+  material: '20a969b6ec7deae807cc362e5aca5a35b36b0f9c76514767bb5ca4bb3d7f2b9d'
+  name: '&eMascote Gorilla'
+  lore:
+    - '&7Considerado um dos mais fortes,'
+    - '&7este mascote irá trazer aos membros'
+    - '&7do seu clan vários buffs.'
+    - ''
+    - '&8> &fBônus venda &8(spawners)&f: &b10%'
+    - '&8> &5Força 1 ∞'
+    - '&8> &bSpeed 1 ∞'
+    - ''
+    - '&aClique para ativar.'
+
+# Entidade customizada do MiniturePets
+custom-entity:
+  # Ativar a entidade custom. Precisa do MiniaturePets
+  enabled: true
+  # Arquivo da entidade da pasta de pets do MiniaturePets
+  entity: 'Boxer.mpet'
+
+# Holograma do mascote
+hologram:
+  enabled: true
+  # Altura em relação ao spawner
+  off-set: 2.0
+  lines:
+    - '{name}'
+    - '&eMascote do clan: {clan_colortag}'
+
+# Buffs que irá dar aos jogadores
+# Se o mascote for de clan, irá dar os bônus para todos os membros
+buffs:
+  # Bônus de Venda de drops de Spawners -> ySpawners
+  bonus-spawners: 10.0
+  # Bônus de Venda de drops de Máquinas -> yMaquinas e yMaquinasVirtuais
+  bonus-machines: 10.0
+  # Bônus de Venda na mina -> yMinas
+  bonus-mines: 10.0
+  # Bônus de Venda no armazém -> yArmazem
+  bonus-storage: 10.0
+  # Bônus de Venda nas plantas -> yCampo, yPlantacoes
+  bonus-farm: 10.0
+  # Bônus de Venda na floresta -> yFloresta
+  bonus-forest: 0.0
+  # Bônus de Venda -> yVender
+  bonus-sell: 0.0
+  # Bônus de Venda na pesca -> yPesca
+  bonus-fish: 10.0
+  # Desconto na compra de spawners -> ySpawnersShop
+  discount-spawners: 5.0
+  # Desconto na compra de máquinas -> yMaquinas e yMaquinasVirtuais
+  discount-machines: 5.0
+  # Lista de efeitos que o jogador irá ter
+  # effect:level
+  effect-list: [ 'INCREASE_DAMAGE:1', 'SPEED:1' ]
+  # Mundos que o jogador irá ter fly
+  fly-worlds: [ 'PlotWorld' ]
+  # Comandos que será executado ao renascer
+  # Caso queira dar um "kit", por exemplo.
+  respawn-commands: []
+
+# Preços para comprar o mascote
+costs:
+  cost1:
+    provider: 'money'
+    amount: 1000.0
+
+# Itens que irão ficar no menu
+displays:
+  buy:
+    material: '20a969b6ec7deae807cc362e5aca5a35b36b0f9c76514767bb5ca4bb3d7f2b9d'
+    name: '&eMascote Gorilla'
+    lore:
+      - '&7Considerado um dos mais fortes,'
+      - '&7este mascote irá trazer aos membros'
+      - '&7do seu clan vários buffs.'
+      - ''
+      - '&f* Preço: &a{money} coins'
+      - ''
+      - '&8> &fBônus venda &8(spawners)&f: &b10%'
+      - '&8> &5Força 1 ∞'
+      - '&8> &bSpeed 1 ∞'
+      - ''
+      - '&aClique para comprar.'
+  equipped:
+    material: '20a969b6ec7deae807cc362e5aca5a35b36b0f9c76514767bb5ca4bb3d7f2b9d'
+    name: '&eMascote Gorilla'
+    lore:
+      - '&7Considerado um dos mais fortes,'
+      - '&7este mascote irá trazer aos membros'
+      - '&7do seu clan vários buffs.'
+      - ''
+      - '&8> &fBônus venda &8(spawners)&f: &b10%'
+      - '&8> &5Força 1 ∞'
+      - '&8> &bSpeed 1 ∞'
+      - ''
+      - '&f* Nome Atual: &b{name}'
+      - ''
+      - '&aClique para editar o nome.'
+  active:
+    material: '20a969b6ec7deae807cc362e5aca5a35b36b0f9c76514767bb5ca4bb3d7f2b9d'
+    name: '&eMascote Gorilla'
+    lore:
+      - '&7Considerado um dos mais fortes,'
+      - '&7este mascote irá trazer aos membros'
+      - '&7do seu clan vários buffs.'
+      - ''
+      - '&8> &fBônus venda &8(spawners)&f: &b10%'
+      - '&8> &5Força 1 ∞'
+      - '&8> &bSpeed 1 ∞'
+      - ''
+      - '&aClique para equipar.'

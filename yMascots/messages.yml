@@ -1,0 +1,51 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aMascote comandos:
+
+    &a> /mascotes
+    &a> /mascotes give <player> <mascote>
+    &a> /mascotes giveslot <player> <quantia>
+
+  mascot-give: '&aVocê deu 1x {mascot}&a para o jogador &7{player}&a.'
+  mascot-received: '&aVocê recebeu &71x {mascot}&a.'
+  mascot-list: |
+    &cMascote não encontrado.
+    &cMascotes disponíveis: &f{list}
+  plot-permission: '&cVocê não tem permissão neste terreno.'
+  clan-have: '&cVocê não possui um clan.'
+  mascot-have: '&cSeu clan já possui este mascote.'
+  mascot-activated: '&aVocê ativou o mascote para o seu clan.'
+  location-set: '&aLocalização setada com sucesso.'
+  location-removed: '&aLocalização removida com sucesso.'
+  location-found: '&cLocalização não encontrada.'
+  just-leader: '&cApenas o líder do clan pode realizar esta ação.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  bought: '&aVocê comprou o mascote {mascot}&a.'
+  digit-name: |
+
+    &aDigite o nome que você quer.
+    &7para cancelar digite &ncancelar&7.
+
+  name-changed: '&aNome alterado para &f{name}&a.'
+  slots-need: '&cVocê precisa de mais slots livres.'
+  slot-activated: '&aVocê ativou &e{amount} &ade slots.'
+  slot-max: '&cVocê já chegou no máximo.'
+  slot-give: '&aVocê deu &e{amount} &ade slots para o jogador &e{player}&a.'
+  location-already: '&cA localização já está setada.'

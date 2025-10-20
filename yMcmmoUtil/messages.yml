@@ -1,0 +1,31 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  credit: '&bVocê possui &f{credit}&b créditos.'
+  credit-other: '&bO jogador &f{player}&b possui &f{credit}&b créditos.'
+  credit-changed: '&bVocê alterou os créditos do jogador &f{player}&b para &f{credit}&b.'
+  credit-self: '&cVocê não pode enviar para sí mesmo.'
+  credit-has: '&cVocê não possui &f{credit}&c créditos&c.'
+  credit-sent: '&bVocê enviou &f{credit}&b créditos para o jogador &f{player}&b.'
+  credit-received: '&bVocê recebeu &f{credit}&b créditos do jogador &f{player}&b.'
+  credit-buy: '&bVocê comprou xp no shop de habilidades.'
+  help: |
+    &bComandos disponíveis:
+    &b-> &f/mccredits
+    &b-> &f/mccredits <player>
+    &b-> &f/mccredits enviar <player> <quantia>
+    &b-> &f/mccredits set <player> <quantia>
+    &b-> &f/mccredits add <player> <quantia>
+    &b-> &f/mccredits remove <player> <quantia>

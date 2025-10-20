@@ -1,0 +1,5 @@
+Descontos:
+   VIP:
+      Ordem: 1
+      Permissao: 'ymercador.vip'
+      Desconto: 10.0

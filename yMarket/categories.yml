@@ -1,0 +1,247 @@
+categories:
+  weapons:
+    # Ordem de verificação da categoria
+    order: 1
+    # Nome da categoria nas mensagens
+    name: '&fArmas'
+    # Ícone da categoria nos menus
+    icon:
+      slot: 20
+      material: 'DIAMOND_SWORD'
+      name: '&aArmas'
+      lore:
+        - '&7A categoria de armas permite a'
+        - '&7venda de itens de ataque e poções.'
+        - ''
+        - '&f* &7Esta categoria possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para abrir a categoria.'
+    # Itens permitidos na categoria
+    items:
+      # Permitir todos os DEMAIS itens (que não estiverem na BlackList da config.yml)
+      all: false
+      nbts: []
+      names: []
+      types:
+        - 'DIAMOND_SWORD'
+        - 'GOLD_SWORD'
+        - 'IRON_SWORD'
+        - 'STONE_SWORD'
+        - 'WOOD_SWORD'
+        - 'BOW'
+        - 'ARROW'
+        - 'GLASS_BOTTLE'
+        - 'POTION'
+  armors:
+    order: 2
+    name: '&fArmaduras'
+    icon:
+      slot: 21
+      material: 'DIAMOND_CHESTPLATE'
+      name: '&aArmaduras'
+      lore:
+        - '&7A categoria de armaduras permite a'
+        - '&7venda de itens de defesa.'
+        - ''
+        - '&f* &7Esta categoria possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para abrir a categoria.'
+    items:
+      all: false
+      nbts: []
+      names: []
+      types:
+        - 'DIAMOND_HELMET'
+        - 'DIAMOND_CHESTPLATE'
+        - 'DIAMOND_LEGGINGS'
+        - 'DIAMOND_BOOTS'
+        - 'GOLD_HELMET'
+        - 'GOLD_CHESTPLATE'
+        - 'GOLD_LEGGINGS'
+        - 'GOLD_BOOTS'
+        - 'IRON_HELMET'
+        - 'IRON_CHESTPLATE'
+        - 'IRON_LEGGINGS'
+        - 'IRON_BOOTS'
+        - 'LEATHER_HELMET'
+        - 'LEATHER_CHESTPLATE'
+        - 'LEATHER_LEGGINGS'
+        - 'LEATHER_BOOTS'
+        - 'CHAINMAIL_HELMET'
+        - 'CHAINMAIL_CHESTPLATE'
+        - 'CHAINMAIL_LEGGINGS'
+        - 'CHAINMAIL_BOOTS'
+  tools:
+    order: 3
+    name: '&fFerramentas'
+    icon:
+      slot: 22
+      material: 'DIAMOND_PICKAXE'
+      name: '&aFerramentas'
+      lore:
+        - '&7A categoria de ferramentas permite a'
+        - '&7venda de itens de trabalho.'
+        - ''
+        - '&f* &7Esta categoria possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para abrir a categoria.'
+    items:
+      all: false
+      nbts: []
+      names: []
+      types:
+        - 'DIAMOND_PICKAXE'
+        - 'DIAMOND_AXE'
+        - 'DIAMOND_SPADE'
+        - 'DIAMOND_HOE'
+        - 'IRON_PICKAXE'
+        - 'IRON_AXE'
+        - 'IRON_SPADE'
+        - 'IRON_HOE'
+        - 'GOLD_PICKAXE'
+        - 'GOLD_AXE'
+        - 'GOLD_SPADE'
+        - 'GOLD_HOE'
+        - 'STONE_PICKAXE'
+        - 'STONE_AXE'
+        - 'STONE_SPADE'
+        - 'STONE_HOE'
+        - 'WOOD_PICKAXE'
+        - 'WOOD_AXE'
+        - 'WOOD_SPADE'
+        - 'WOOD_HOE'
+  blocks:
+    order: 4
+    name: '&fBlocos'
+    icon:
+      slot: 28
+      material: 'LOG'
+      name: '&aBlocos'
+      lore:
+        - '&7A categoria de blocos permite a'
+        - '&7venda de blocos e decorações.'
+        - ''
+        - '&f* &7Esta categoria possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para abrir a categoria.'
+    items:
+      all: false
+      nbts: []
+      names: []
+      types:
+        - 'STONE'
+        - 'DIRT'
+        - 'GRASS'
+        - 'GLASS'
+        - 'SAND'
+        - 'COBBLESTONE'
+        - 'WOOD'
+        - 'LOG'
+        - 'WOOL'
+        - 'NETHER_BRICKS'
+        - 'SANDSTONE'
+        - 'ENDER_STONE'
+        - 'END_BRICKS'
+        - 'OBSIDIAN'
+        - 'LEAVES'
+        - 'WOOD_STEP'
+        - 'TRAP_DOOR'
+        - 'STAINED_GLASS'
+        - 'STAINED_GLASS_PANE'
+        - 'STAINED_CLAY'
+        - 'BOOKSHELF'
+        - 'BRICKS'
+        - 'STEP'
+        - 'CHEST'
+        - 'ENDER_CHEST'
+        - 'SMOOTH_BRICK'
+        - 'WORKBENCH'
+        - 'FURNACE'
+  books:
+    order: 5
+    name: '&fLivros'
+    icon:
+      slot: 29
+      material: 'ENCHANTED_BOOK'
+      name: '&aLivros'
+      lore:
+        - '&7A categoria de livros permite a'
+        - '&7venda de livros de encantamentos.'
+        - ''
+        - '&f* &7Esta categoria possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para abrir a categoria.'
+    items:
+      all: false
+      nbts: []
+      names: []
+      types:
+        - 'BOOK'
+        - 'ENCHANTED_BOOK'
+  spawners:
+    order: 6
+    name: '&fGeradores'
+    icon:
+      slot: 30
+      material: 'MOB_SPAWNER'
+      name: '&aGeradores'
+      lore:
+        - '&7A categoria de geradores permite a'
+        - '&7venda de spawners de mobs.'
+        - ''
+        - '&f* &7Esta categoria possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para abrir a categoria.'
+    items:
+      all: false
+      nbts: [ 'ySpawnersV2-Item' ]
+      names: []
+      types: []
+  machines:
+    order: 7
+    name: '&fMáquinas'
+    icon:
+      slot: 31
+      material: 'EMERALD_BLOCK'
+      name: '&aMáquinas'
+      lore:
+        - '&7A categoria de máquinas permite a'
+        - '&7venda de geradores de minérios.'
+        - ''
+        - '&f* &7Esta categoria possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para abrir a categoria.'
+    items:
+      all: false
+      nbts:
+        - 'yMaquinas-MaquinaItem'
+        - 'yMaquinasVirtuais-Item'
+      names: []
+      types: []
+  others:
+    order: 8
+    name: '&fOutros'
+    icon:
+      slot: 32
+      material: 'CHEST'
+      name: '&aOutros'
+      lore:
+        - '&7A categoria "outros" permite a'
+        - '&7venda de itens em geral.'
+        - ''
+        - '&f* &7Esta categoria possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para abrir a categoria.'
+    items:
+      all: true
+      nbts: []
+      names: []
+      types: []

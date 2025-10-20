@@ -1,0 +1,96 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/mercado &8- &7Abre o menu principal.
+    &a/mercado vender [player] &8- &7Inicia uma venda no mercado.
+    &a/mercado pessoal &8- &7Abre o menu de vendas pessoais.
+    &a/mercado vendas &8- &7Abre o menu de vendas próprias.
+    &a/mercado ban &8- &7Banir um jogador do mercado.
+    &a/mercado unban &8- &7Desbanir um jogador do mercado.
+    &a/mercado setnpc &8- &7Setar o NPC.
+    &a/mercado delnpc &8- &7Deletar o NPC.
+    &a/mercado reload &8- &7Recarregar as configurações.
+
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  provider-permission: '&cVocê não tem permissão para vender com esta economia.'
+  price: '&aPreço alterado para &f{amount}&a.'
+  price-digit: |
+
+    &aDigite o preço que você quer anunciar o item.
+    &7para cancelar digite &ncancelar&7.
+
+  time-digit: |
+
+    &aDigite o tempo que você deseja.
+    &7para cancelar digite &ncancelar&7.
+
+  target-digit: |
+
+    &aDigite o jogador alvo que você deseja.
+    &7para cancelar digite &ncancelar&7.
+
+  market-cancelled: |
+
+    &cOPS! Um leilão no qual você participava foi cancelado pelo leiloador, o seu lance foi devolvido.
+
+  market-bought: |
+
+    &aOPA! Você adquiriu um novo item no mercado!
+
+  market-bought-owner: |
+
+    &aOPA! O jogador &f{player}&a adquiriu um item seu no mercado :)
+
+  market-new: |
+
+    &6&l[MERCADO]&e O jogador &f{player}&e adicionou um novo item &7({item}&7)&e na categoria &f{category} &edo mercado.
+
+  market-new-personal: |
+
+    &6&l[MERCADO]&e O jogador &f{player}&e adicionou um novo item &7({item}&7)&e no seu mercado pessoal.
+
+  market-expired: |
+
+    &6&l[MERCADO]&e Um item seu que estava a venda expirou.
+
+  max-sells: '&cO mercado já está com seu limite máximo simultâneo ({max}).'
+  player-max-sells: '&cVocê já está com seu limite máximo simultâneo ({max}).'
+  player-max-sponsoreds: '&cVocê já está com seu limite máximo simultâneo ({max}).'
+  start-market: '&aVocê iniciou um novo anúncio no mercado.'
+  cancel-market: '&aVocê cancelou o anúncio no mercado.'
+  no-balance: '&cVocê não tem {amount} {provider_abbreviated} suficiente para isto. Disponível: {provider_balance}&c.'
+  inv-full: '&cO seu inventário está cheio.'
+  courier-collected-item: '&aVocê coletou um item do seu correio do mercado.'
+  courier-collected-currencies: '&aVocê coletou os valores a receber.'
+  cant-market: '&cEste item não pode ser anunciado.'
+  currency-found: '&cConfigure a moeda do anúncio.'
+  time-found: '&cVocê precisa definir um tempo entre {min} e {max} para iniciar um anúncio.'
+  npc-set: '&aNPC setado com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'
+  market-collected: '&aVocê coletou um item do seu mercado para o inventário.'
+  target-changed: '&aJogador alvo alterado para &f{target}&a.'
+  market-expired-already: '&cEste item já expirou.'
+  market-already: '&cEste item já foi vendido.'
+  market-sponsored: '&aVocê colocou seu item em destaque no mercado.'
+  market-sponsored-already: '&cEste item já está destacado.'
+  banned: '&aJogador &f{player}&a banido do mercado com sucesso.'
+  ban-already: '&cO jogador &f{player}&c já está banido do mercado.'
+  unbanned: '&aJogador &f{player}&a desbanido do mercado com sucesso.'
+  not-banned: '&cO jogador &f{player}&c não está banido do mercado.'

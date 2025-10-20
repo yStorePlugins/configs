@@ -1,0 +1,163 @@
+# Ordem da meta
+# começa em 1
+order: 1
+
+# Nome nas mensagens
+display-name: '&aSpawners 1'
+
+# Categoria da meta
+# criada na categories.yml
+category: 'spawners'
+
+# Ícones nos menus
+displays:
+  # Ícone de meta atual
+  current:
+    material: 'MOB_SPAWNER'
+    glow: true
+    name: '&aSpawners &eMETA 1'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fVacas&7 para ajudar no progresso'
+      - '&7dessa meta.'
+      - ''
+      - '&f *Progresso: &a{yspawners_actual}&7/&c{yspawners_total} &8({yspawners_percentage})'
+      - '&f -> &7[{yspawners_progressbar}&7]'
+      - ''
+      - '&aIniciada em: &7{start_date} às {start_hour}'
+      - ''
+      - '&e*Jogadores que mais contribuíram:'
+      - '&e * 1º -> &f{player_1}: {amount_1}%'
+      - '&e * 2º -> &f{player_2}: {amount_2}%'
+      - '&e * 3º -> &f{player_3}: {amount_3}%'
+      - '&e * 4º -> &f{player_4}: {amount_4}%'
+      - '&e * 5º -> &f{player_5}: {amount_5}%'
+      - '&a * Outros: {others}%'
+      - ''
+  # Ícone de meta atual (no menu principal)
+  current-main:
+    material: 'MOB_SPAWNER'
+    name: '&aMetas de Spawners'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fMOBS&7 para ajudar no progresso'
+      - '&7dessa meta.'
+      - ''
+      - '&f *Progresso: &a{yspawners_actual}&7/&c{yspawners_total} &8({yspawners_percentage})'
+      - '&f -> &7[{yspawners_progressbar}&7]'
+      - ''
+      - '&aIniciada em: &7{start_date} às {start_hour}'
+      - ''
+      - '&aClique para ver mais informações.'
+  # Ícone de próxima meta
+  next:
+    material: 'BARRIER'
+    name: '&aSpawners &eMETA 1'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fVacas&7 para ajudar no progresso'
+      - '&7dessa meta.'
+      - ''
+      - '&c*Essa meta ainda não foi liberada.'
+      - '&cConclua a anterior.'
+      - ''
+  # Ícone de meta concluída
+  completed:
+    material: 'MOB_SPAWNER'
+    name: '&aSpawners &eMETA 1'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fVacas&7 para ajudar no progresso'
+      - '&7dessa meta.'
+      - ''
+      - '&c*Essa meta já foi concluída.'
+      - '&cConcluída em: &7{end_date} às {end_hour}'
+      - ''
+  # Ícone de meta concluída (com recompensa para coletar)
+  to-collect:
+    material: 'MOB_SPAWNER'
+    name: '&aSpawners &eMETA 1'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fVacas&7 para ajudar no progresso'
+      - '&7dessa meta.'
+      - ''
+      - '&c*Essa meta já foi concluída.'
+      - '&cConcluída em: &7{end_date} às {end_hour}'
+      - ''
+      - '&aClique para coletar sua recompensa.'
+
+# Mensagens da meta
+messages:
+  start:
+    chat: '<nl>&a&l[METAS]&a A meta &eSPAWNERS 1&a foi iniciada. &aAcesse em: &f/metas&e.'
+    actionbar: ''
+    title: ''
+  finish:
+    chat: '<nl>&a&l[METAS]&a A meta &eSPAWNERS 1&a foi concluída, resgate sua recompensa em &f/metas&e.'
+    actionbar: ''
+    title: ''
+
+# Objetivos dessa meta
+goals:
+  yspawners:
+    # Tipo do objetivo
+    # disponível em: goals.txt
+    goal-type: 'KILL_MOBS'
+    # Tipos necessários
+    types:
+      type1:
+        # (Material / Entidade / config-key) necessária
+        # Para permitir todos os blocos (materiais): ALL_BLOCKS
+        # Para permitir todas entidades: ALL_ENTITIES
+        # caso não for uma meta de blocos ou entidades, deixe ALL ou a config-key
+        type: 'ALL_ENTITIES'
+        # Quantidade necessária
+        amount: 100.0
+
+# Sistema de recompensas
+milestones:
+  reward1:
+    # Progresso (%) necessário para liberar cada recompensa
+    progress: 25.0
+    # chance,recompensa
+    rewards: [ '100.0,reward1' ]
+  reward2:
+    progress: 50.0
+    rewards: [ '100.0,reward2' ]
+  reward3:
+    progress: 100.0
+    rewards: [ '100.0,reward3' ]
+
+# Sistema de anúncios
+announces:
+  announce1:
+    # Progresso (%) necessário para liberar cada recompensa
+    progress: 25.0
+    # Mensagem na actionbar
+    actionbar: ''
+    # Mensagem no título e subtítulo
+    title: ''
+    # Mensagem no chat
+    chat: |
+      &r
+      &a&l[METAS]&a A meta &eSPAWNERS 1&a está com um progresso de 25%!
+      &r
+  announce2:
+    progress: 50.0
+    actionbar: ''
+    title: ''
+    chat: |
+      &r
+      &a&l[METAS]&a A meta &eSPAWNERS 1&a está com um progresso de 50%!
+      &r
+
+# Sistema de ranking de contribuidores
+ranking:
+  # Recompensas para o TOP 5 contribuidores
+  # chance,recompensa
+  top-1-rewards: [ '100.0,reward3' ]
+  top-2-rewards: [ '100.0,reward3' ]
+  top-3-rewards: [ '100.0,reward3' ]
+  top-4-rewards: [ '100.0,reward3' ]
+  top-5-rewards: [ '100.0,reward3' ]

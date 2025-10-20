@@ -1,0 +1,447 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s
+menu-updater-time: 200
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Mercado'
+  size: 54
+  sponsored-slots: [ 16, 25, 34 ]
+  scroller:
+    enabled: false
+    slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+    previous-slot: 18
+    next-slot: 26
+  items:
+    sponsored-slot: 12
+    currencies-slot: 46
+    personal-slot: 49
+    own-slot: 52
+    sponsored:
+      material: 'NETHER_STAR'
+      name: '&aDestaques!'
+      lore:
+        - '&7Aqui você pode encontrar os'
+        - '&7melhores itens que estão anunciados'
+        - '&7no nosso servidor.'
+        - ''
+        - '&f* &bAtualmente possuímos &f&n{amount}'
+        - '&bitens(s) em destaque. :)'
+        - ''
+        - '&eClique para ver os anúncios.'
+    personal:
+      material: '{player}'
+      name: '&aMercado Pessoal'
+      lore:
+        - '&7Aqui você pode encontrar os'
+        - '&7itens que outros jogadores'
+        - '&7anunciaram exclusivamente para você.'
+        - ''
+        - '&7Você possui &f&n{amount}'
+        - '&7anúncio(s) exclusivo(s) no momento. :)'
+        - ''
+        - '&eClique para ver os anúncios.'
+    own:
+      material: 'b544a770e894a1fab11e2a2bac15fe3d96946fa52396b531978eb37ac64b8a90'
+      name: '&eMeus Anúncios'
+      lore:
+        - '&7Veja aqui os itens colocados'
+        - '&7a venda por você.'
+        - ''
+        - '&7Você possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para ver seus anúncios.'
+    currencies-none:
+      material: 'GOLD_INGOT'
+      name: '&cValores'
+      lore: [ '&7Você não tem nenhum valor para coletar!' ]
+    currencies:
+      material: 'GOLD_INGOT'
+      name: '&eValores'
+      lore:
+        - '&r'
+        - ' &eValores a receber:'
+        - ' {format}'
+        - ''
+        - '&eClique para coletar os valores.'
+  formats:
+    currency: ' &7> &f{amount} {provider_abbreviated}'
+  lore:
+    - '&r'
+    - ' &f* &bITEM EM DESTAQUE &f*'
+    - ''
+    - ' &fVendedor: &7{owner}'
+    - ''
+    - '&8> &fPreço: &a{amount} {provider_abbreviated}'
+    - '&8> &fExpira em: &7{time}'
+    - ''
+    - '&eClique para adquirir este item.'
+  facing:
+    e1:
+      slot: 16
+      material: 'BARRIER'
+      name: '&cSlot de Destaque'
+    e2:
+      slot: 25
+      material: 'BARRIER'
+      name: '&cSlot de Destaque'
+    e3:
+      slot: 34
+      material: 'BARRIER'
+      name: '&cSlot de Destaque'
+
+# Menu de criação
+create:
+  name: '&8Mercado'
+  size: 45
+  back-slot: 0
+  items:
+    item-slot: 13
+    confirm-slot: 28
+    provider-slot: 30
+    price-slot: 31
+    duration-slot: 33
+    target-slot: 34
+    item:
+      material: 'BARRIER'
+      name: '&eClique em algum item do seu inventário'
+      lore:
+        - '&7Selecione algum item para leiloar.'
+    confirm:
+      material: 'STAINED_CLAY:5'
+      name: '&aIniciar'
+      lore:
+        - '&7Esse item será anunciado para'
+        - '&7outros jogadores comprarem.'
+        - ''
+        - '&8> &fItem: &7{item}'
+        - '&8> &fDuração: &6{time}'
+        - '&8> &fPreço: &6{amount} {provider_abbreviated}'
+        - ''
+    confirm-cant:
+      material: 'STAINED_CLAY:14'
+      name: '&cIniciar'
+      lore:
+        - '&7Selecione um item do seu inventário'
+        - '&7para iniciar este anúncio.'
+    provider:
+      material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+      name: '&aMoeda'
+      lore:
+        - '&7Moeda que será utilizada no anúncio'
+        - '&7deste item.'
+        - ''
+        - '&7Atual: &fNenhuma'
+        - ''
+        - '&aClique para alterar a moeda'
+    price:
+      material: 'GOLD_INGOT'
+      name: '&6Preço'
+      lore:
+        - '&7Defina o valor que o jogador'
+        - '&7terá que pagar pelo seu item.'
+        - ''
+        - '&7Preço: &f{amount} {provider_abbreviated}'
+        - ''
+        - '&eClique para modificar.'
+    duration:
+      material: 'WATCH'
+      name: '&aDuração customizada'
+      lore:
+        - '&7Defina um tempo específico'
+        - '&7para a duração do seu anúncio.'
+        - ''
+        - '&fDuração: &6{time}'
+        - ''
+        - '&eClique para modificar.'
+    target:
+      material: '{player}'
+      name: '&aPessoa alvo'
+      lore:
+        - '&7Defina quem poderá comprar'
+        - '&7este seu anúncio.'
+        - ''
+        - '&fAlvo: &6{target}'
+        - ''
+        - '&eBotão &fESQUERDO&e para alterar.'
+        - '&eBotão &fDIREITO&e para resetar.'
+
+# Menu de gerenciamento
+edit:
+  name: '&8Mercado'
+  size: 45
+  back-slot: 0
+  items:
+    item-slot: 13
+    expire-slot: 28
+    provider-slot: 30
+    price-slot: 31
+    sponsor-slot: 33
+    target-slot: 34
+    expire:
+      material: 'STAINED_CLAY:14'
+      name: '&aExpirar'
+      lore:
+        - '&7Esse anúncio será cancelado'
+        - '&7e o item ficará disponível para coleta.'
+        - ''
+        - '&8> &fItem: &7{item}'
+        - '&8> &fDuração: &6{time}'
+        - '&8> &fPreço: &6{amount} {provider_abbreviated}'
+        - ''
+        - '&eClique para cancelar o anúncio.'
+    provider:
+      material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+      name: '&aMoeda'
+      lore:
+        - '&7Moeda que será utilizada no anúncio'
+        - '&7deste item.'
+        - ''
+        - '&7Atual: &fNenhuma'
+        - ''
+        - '&aClique para alterar a moeda'
+    price:
+      material: 'GOLD_INGOT'
+      name: '&6Preço'
+      lore:
+        - '&7Defina o valor que o jogador'
+        - '&7terá que pagar pelo seu item.'
+        - ''
+        - '&7Preço: &f{amount} {provider_abbreviated}'
+        - ''
+        - '&eClique para modificar.'
+    target:
+      material: '{player}'
+      name: '&aPessoa alvo'
+      lore:
+        - '&7Defina quem poderá comprar'
+        - '&7este seu anúncio.'
+        - ''
+        - '&fAlvo: &6{target}'
+        - ''
+        - '&eBotão &fESQUERDO&e para alterar.'
+        - '&eBotão &fDIREITO&e para resetar.'
+    sponsor-perm:
+      material: 'NETHER_STAR'
+      name: '&aDestacar'
+      lore:
+        - '&7Deixe esse anúncio destacado nas'
+        - '&7páginas de venda e em uma'
+        - '&7categoria exclusiva.'
+        - ''
+        - ' &f* &aVocê é VIP e pode destacar seus'
+        - ' &a  anúncios gratuitamente.'
+        - ''
+        - '&eClique para destacar.'
+    sponsor-already:
+      material: 'NETHER_STAR'
+      name: '&aDestacar'
+      lore:
+        - '&7Deixe esse anúncio destacado nas'
+        - '&7páginas de venda e em uma'
+        - '&7categoria exclusiva.'
+        - ''
+        - '&aEste item já está destacado.'
+    sponsor:
+      material: 'NETHER_STAR'
+      name: '&aDestacar'
+      lore:
+        - '&7Deixe esse anúncio destacado nas'
+        - '&7páginas de venda e em uma'
+        - '&7categoria exclusiva.'
+        - ''
+        - ' &f* Preço: &2$ &a{money} coins&f.'
+        - ''
+        - '&eClique para destacar.'
+
+# Menu de seleção de economias
+providers:
+  name: '&8Selecionar economia'
+  size: 27
+  previous: 9
+  next: 17
+  back: 18
+  slots: [ 11, 12, 13, 14, 15 ]
+
+# Menu de seleção de duração
+durations:
+  name: '&8Selecionar duração'
+  size: 36
+  previous: 9
+  next: 17
+  back: 27
+  slots: [ 11, 12, 13, 14, 15 ]
+  items:
+    select-slot: 31
+    select:
+      material: 'WATCH'
+      name: '&aDuração customizada'
+      lore:
+        - '&7Defina um tempo específico'
+        - '&7para a duração do seu leilão.'
+        - ''
+        - '&eClique para definir.'
+    15min:
+      material: 'PAPER'
+      name: '&a15m'
+      nbt-tag: [ 'yMarket-Duration=>900' ]
+    30min:
+      material: 'PAPER'
+      name: '&a30m'
+      nbt-tag: [ 'yMarket-Duration=>1800' ]
+    1hour:
+      material: 'PAPER'
+      name: '&a1h'
+      nbt-tag: [ 'yMarket-Duration=>3600' ]
+    2hour:
+      material: 'PAPER'
+      name: '&a2h'
+      nbt-tag: [ 'yMarket-Duration=>7200' ]
+    3hour:
+      material: 'PAPER'
+      name: '&a3h'
+      nbt-tag: [ 'yMarket-Duration=>10800' ]
+    4hour:
+      material: 'PAPER'
+      name: '&a4h'
+      nbt-tag: [ 'yMarket-Duration=>14400' ]
+    5hour:
+      material: 'PAPER'
+      name: '&a5h'
+      nbt-tag: [ 'yMarket-Duration=>18000' ]
+    6hour:
+      material: 'PAPER'
+      name: '&a6h'
+      nbt-tag: [ 'yMarket-Duration=>21600' ]
+
+# Menu de vendas
+my-sells:
+  name: '&8Mercado'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 27
+  #
+  empty-slot: 13
+  create-slot: 31
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&cVazio...'
+      lore: [ '&7Você não tem nenhum anúncio ativo!' ]
+    create:
+      material: '2ddcfe7d91cd80b364cc060160a0699386d096e0e5adf98e8e45e0a198631d8f'
+      name: '&aVender um Item'
+      lore: [ '&7Faça um anúncio do seu item para', '&7ver quem gostaria de adquirí-lo.', '', '&aClique para iniciar.' ]
+  lore:
+    - '&f'
+    - '&8> &fPreço: &a{amount} {provider_abbreviated}'
+    - '&8> &fVender para: &b{target}'
+    - ''
+    - '&8> &fExpira em: &7{time}'
+    - ''
+    - '&eClique para gerenciar o anúncio.'
+  lore-expired:
+    - '&f'
+    - '&8> &fPreço: &a{amount} {provider_abbreviated}'
+    - ''
+    - '&8* Expirado *'
+    - ''
+    - '&eClique para coletar o item'
+    - '&epara o seu inventário.'
+
+# Menu de vendas
+sells:
+  name: '&8Mercado'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  #
+  empty-slot: 22
+  filter-slot: 50
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&cVazio...'
+      lore: [ '&7Não há nenhum anúncio ocorrendo!' ]
+    filter:
+      material: HOPPER
+      name: '&aFiltro'
+  lore:
+    - '&r'
+    - ' &fVendedor: &7{owner}'
+    - ''
+    - '&8> &fPreço: &a{amount} {provider_abbreviated}'
+    - '&8> &fExpira em: &7{time}'
+    - ''
+    - '&eBotão &7ESQUERDO&e para adquirir este item.'
+  filter:
+    types:
+      oldest: 'Menor tempo restante'
+      newest: 'Maior tempo restante'
+    format:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+
+# Menu de confirmação
+confirm:
+  name: '&8Mercado'
+  size: 27
+  items:
+    item-slot: 13
+    confirm-slot: 11
+    cancel-slot: 15
+    confirm:
+      material: 'WOOL:5'
+      name: '&aCONFIRMAR'
+      lore:
+        - '&7Você está prestes a adquirir'
+        - '&7um item no nosso mercado.'
+        - ''
+        - '&aClique para CONFIRMAR a compra.'
+    cancel:
+      material: 'WOOL:14'
+      name: '&cCANCELAR'
+      lore:
+        - '&7Você está prestes a desistir de'
+        - '&7comprar um item no nosso mercado.'
+        - ''
+        - '&cClique para DESISTIR da compra.'
+  lore:
+    - '&r'
+    - ' &fVendedor: &7{owner}'
+    - ''
+    - '&8> &fPreço: &a{amount} {provider_abbreviated}'
+    - '&8> &fExpira em: &7{time}'
+    - ''

@@ -1,0 +1,145 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Manopla'
+  size: 27
+  slots: [ 11, 12, 14, 15 ]
+  previous-slot: 9
+  next-slot: 17
+  items:
+    slot-empty:
+      material: 'STAINED_GLASS_PANE:5'
+      name: '&aSlot Livre'
+      lore: []
+    slot-need:
+      material: 'STAINED_GLASS_PANE:14'
+      name: '&cSlot Bloqueado'
+      lore: []
+  facing:
+    e0:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e1:
+      slot: 1
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e2:
+      slot: 2
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e3:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e4:
+      slot: 4
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e5:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e6:
+      slot: 6
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e7:
+      slot: 7
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e8:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e9:
+      slot: 10
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e10:
+      slot: 13
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e11:
+      slot: 16
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e12:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e13:
+      slot: 19
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e14:
+      slot: 20
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e15:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e16:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e17:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e18:
+      slot: 24
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e19:
+      slot: 25
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e20:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []

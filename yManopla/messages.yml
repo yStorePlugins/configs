@@ -1,0 +1,38 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aManopla comandos:
+
+    &a> /manopla
+    &a> /manopla give <player> <joia> <quantia>
+    &a> /manopla giveslot <player> <quantia>
+
+  jewelry-give: '&aVocê deu 1x {jewelry}&a para o jogador &7{player}&a.'
+  jewelry-received: '&aVocê recebeu &71x {jewelry}&a.'
+  jewelry-list: |
+    &cJoia não encontrada.
+    &cJoias disponíveis: &f{list}
+  jewelry-have: '&cVocê já possui esta joia {jewelry}&c.'
+  jewelry-activated: '&aVocê ativou a joia {jewelry}&a.'
+  jewelry-removed: '&aVocê removeu a joia {jewelry}&a.'
+  jewelry-expired: '&cSua joia &f{jewelry} expirou&c.'
+  slots-need: '&cVocê precisa de mais slots livres.'
+  slot-activated: '&aVocê ativou &e{amount} &ade slots.'
+  slot-max: '&cVocê já chegou no máximo.'
+  slot-give: '&aVocê deu &e{amount} &ade slots para o jogador &e{player}&a.'

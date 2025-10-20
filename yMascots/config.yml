@@ -1,0 +1,80 @@
+#        __  __                     _
+#  _   _|  \/  | __ _ ___  ___ ___ | |_ ___
+# | | | | |\/| |/ _` / __|/ __/ _ \| __/ __|
+# | |_| | |  | | (_| \__ \ (_| (_) | |_\__ \
+#  \__, |_|  |_|\__,_|___/\___\___/ \__|___/
+#  |___/
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Sistemas gerais
+general:
+  # Permitir colocar spawners apenas nos plots
+  plot: false
+  # Ativar o sistema de mascotes por clan
+  use-clans: false
+  # Ativar o modo bungeecord
+  bungeecord: false
+  # Número padrão de slots para o mascote do clan
+  clan-slot-default: 1
+  # Número máximo de slots para o mascote do clan
+  clan-slot-maximum: 10
+  # Item do slot que será ativável
+  clan-slot-item:
+    material: 'HOPPER'
+    name: '&bSlots'
+    lore:
+      - ''
+      - '&fQuantia: &a{amount}'
+      - ''
+      - '&7Clique com botão direito para ativar.'

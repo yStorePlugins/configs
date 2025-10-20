@@ -1,0 +1,129 @@
+#        __  __                                _   _ _   _ _
+#  _   _|  \/  | ___ _ __ ___  _ __ ___   ___ | | | | |_(_) |
+# | | | | |\/| |/ __| '_ ` _ \| '_ ` _ \ / _ \| | | | __| | |
+# | |_| | |  | | (__| | | | | | | | | | | (_) | |_| | |_| | |
+#  \__, |_|  |_|\___|_| |_| |_|_| |_| |_|\___/ \___/ \__|_|_|
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Ativar o sistema de loja no menu
+shop-menu: true
+
+# Acumular os bônus que tiver permissão
+accumulate-bonus: false
+
+# Sistemas gerais
+general:
+  formatter-bonus-has: '&a+{bonus}% por ser {display}&a.'
+  formatter-bonus-no-has: ''
+
+# Actionbar quando ganhar xp
+actionbar:
+  enabled: true
+  # Mensagem que irá aparecer na actionbar ao ganhar XP do mcMMO
+  message: '&a{skill}: {level} ({xp_has} / {xp_need}) +{xp_earned}XP'
+
+# Sistema de mensagem ao upar de nível
+level-up:
+  enabled: true
+  # Enviar mensagem a cada x level ( por exemplo, a cada 100 leveis em tal skill: lvl 100, 200...)
+  level: 100
+  strike: true
+  message: |
+    <nl>
+    &b&lSKILLS: &bO jogador &f{player}&b atingiu o &fnível {nivel} &bna habilidade &f{skill}&f!
+    <nl>
+
+# Sistema de recompensas ao upar de nível
+rewards:
+  mining_lvl100:
+    skill: 'MINING'
+    level: 100
+    reward:
+      - 'give {player} stone 1'
+
+# Sistema de tasks
+task:
+  # Segundos para atualizar o ranking
+  ranking: 1800
+  # Segundos para atualizar as tags
+  tags: 1800
+
+# Sistema de tags
+tags:
+  all:
+    skill: ''
+    tag: '&9[⚒] '
+    # {ymcmmoutil_global} e %ymcmmoutil_ymcmmoutil_global%
+    placeholder: 'ymcmmoutil_global'
+    min-level: 0
+
+# Você pode criar quantos bônus quiser
+# Será dado o bônus ao ganhar XP.
+bonus:
+  membros:
+    order: 1
+    # Permissão para ser reconhecido
+    permission: 'ymcmmoutil.bonus.membro'
+    # Nome que irá aparecer nas mensagens
+    display: '&7[Membro]'
+    # Quantia do bônus em %
+    bonus: 10.0
+
+# Sistema de formatos de money e quantia
+format:
+  type: 'LETTER' # Tipos: LETTER - NUMBER
+  max-decimals: 4
+  formats:
+    - ''
+    - ''
+    - 'K'
+    - 'M'
+    - 'B'
+    - 'T'
+    - 'Q'
+    - 'QQ'
+    - 'S'
+    - 'SS'
+    - 'O'
+    - 'N'
+    - 'D'

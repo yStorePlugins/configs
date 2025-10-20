@@ -1,0 +1,32 @@
+# Categorias disponíveis
+# crie quantas quiser
+categories:
+  # Identificador
+  spawners:
+    # Nome nas mensagens
+    display-name: '&aSpawners'
+    # Comando customizado para abrir diretamente esta categoria
+    # Deixe vazio para não usar
+    command: ''
+    # Ícone no menu
+    display:
+      material: 'MOB_SPAWNER'
+      name: '&aMetas de Spawners'
+      lore:
+        - '&7Os jogadores do servidor precisarão'
+        - '&7matar &fMOBS&7 para ajudar no progresso'
+        - '&7dessa meta.'
+        - ''
+        - '&c*Nenhuma meta encontrada para esta categoria.'
+        - ''
+    # Ícone no menu (quando tiver todas completas)
+    display-completed:
+      material: 'MOB_SPAWNER'
+      name: '&aMetas de Spawners'
+      lore:
+        - '&7Os jogadores do servidor precisarão'
+        - '&7matar &fMOBS&7 para ajudar no progresso'
+        - '&7dessa meta.'
+        - ''
+        - '&a*Todas as metas dessa categoria foram concluídas.'
+        - ''

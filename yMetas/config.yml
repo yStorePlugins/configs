@@ -1,0 +1,157 @@
+#         __  __      _
+#  _   _|  \/  | ___| |_ __ _ ___
+# | | | | |\/| |/ _ \ __/ _` / __|
+# | |_| | |  | |  __/ || (_| \__ \
+#  \__, |_|  |_|\___|\__\__,_|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Sistemas gerais
+general:
+  # Deletar a recompensa ao clicar com botão direito
+  right-delete-reward: true
+  # Dar as recompensas das metas para todos os usuários cadastrados
+  # caso "false" dará apenas para quem contribuiu
+  give-reward-all: true
+  # Enviar as recompensas de metas concluídas para o armazém de recompensas
+  send-complete-storage: false
+
+# Configuração da barra de progresso
+progress-bar:
+  amount: 10
+  symbol: ':'
+  color-yes: '&a'
+  color-no: '&7'
+
+# Sistema de metas aleatórias e relâmpago
+flash-goals:
+  enabled: true
+  # Tempo em segundos entre novas flash metas
+  interval: 3600
+  # Duração da flash meta em segundos
+  duration: 900
+  # Mensagens aa flash-meta
+  messages:
+    start:
+      chat: '<nl>&a&l[FlashMetas]&e Uma nova meta relâmpago foi iniciada. &aAcesse em: &f/metas&e.'
+      actionbar: ''
+      title: ''
+    stop:
+      chat: ''
+      actionbar: '&aA meta relâmpago acabou.'
+      title: ''
+    finish:
+      chat: '<nl>&a&l[FlashMetas]&e A meta relâmpago foi concluída, resgate sua recompensa em &f/metas&e.'
+      actionbar: ''
+      title: ''
+  goals:
+    blocks_break:
+      # Tipo do objetivo
+      # disponível em: goals.txt
+      goal-type: BREAK_BLOCKS
+      # (Material / Entidade) necessária
+      # Para permitir todos os blocos (materiais): ALL_BLOCKS
+      # Para permitir todas entidades: ALL_ENTITIES
+      # caso não for uma meta de blocos ou entidades, deixe ALL
+      type: STONE
+      # Quantidade necessária
+      amount: 100
+      # chance,recompensa
+      rewards: [ '100.0,reward1' ]
+      # Ícone no menu principal
+      icon:
+        material: 'STONE'
+        glow: true
+        name: '&aFlash meta'
+        lore:
+          - '&7Os jogadores do servidor precisarão'
+          - '&7quebrar &fPEDRAS&7 para ajudar no progresso'
+          - '&7dessa meta.'
+          - ''
+          - '&f *Progresso: &a{actual}&7/&c{total} &8({percentage})'
+          - '&f -> &7[{progressbar}&7]'
+          - ''
+          - '&cFinaliza em: {time}'
+    mobs_kill:
+      goal-type: KILL_MOBS
+      type: ZOMBIE
+      amount: 20
+      rewards: [ '100.0,reward1' ]
+      icon:
+        material: 'MONSTER_EGG'
+        glow: true
+        name: '&aFlash meta'
+        lore:
+          - '&7Os jogadores do servidor precisarão'
+          - '&7matar &fZUMBIS&7 para ajudar no progresso'
+          - '&7dessa meta.'
+          - ''
+          - '&f *Progresso: &a{actual}&7/&c{total} &8({percentage})'
+          - '&f -> &7[{progressbar}&7]'
+          - ''
+          - '&cFinaliza em: {time}'

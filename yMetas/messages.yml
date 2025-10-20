@@ -1,0 +1,30 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &a/metas &8- &7Abre o menu principal
+    &a/metas <categoria> &8- &7Abre o menu de metas em determinada categoria.
+    &a/metas ajuda &8- &7Envia a mensagem de ajuda.
+    &a/metas reload &8- &7Recarrega as configurações.
+
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  category-found: |
+    &cCategoria não encontrada.
+    &cDisponíveis: {list}.
