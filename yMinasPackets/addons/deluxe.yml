@@ -2,6 +2,12 @@
 boss-bar:
   # Ativar a boss-bar
   enabled: true
+  # Delay de atualização
+  # em segundos
+  delay: 3
+  # Porcentagem de preenchimento da barra de progresso
+  # deixe -1 para usar a % de evolução do nível da picareta
+  progress: -1
   # Mensagem da boss-bar
   bar: 'Energia: {energy}/{next_energy} - {percentage}'
 
