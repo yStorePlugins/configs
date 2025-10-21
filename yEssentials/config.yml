@@ -354,6 +354,11 @@ Opcoes:
     Mundo: 'world'
     Min: -2500
     Max: 2500
+    # Custos para teleportar
+    Custos:
+      custo1:
+        Provider: 'money'
+        Amount: 100.0
   # Sistema de lore do jogador no kit
   KitLore:
     Ativar: false
