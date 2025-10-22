@@ -4,6 +4,7 @@ HeadAnimada: false
 HAOptions:
   Velocidade: 4
   Altura: -1.2
+  Shake: false
   Particula:
     Ativar: true
     Particula: 'FLAME'

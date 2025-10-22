@@ -143,6 +143,8 @@ area:
   enabled: true
   # Permitir quebrar blocos
   break: false
+  # Enviar o bloco quebrado para o inventário do jogador
+  give: false
   # Ativar o sistema de o bloco desaparecer ao ficar em cima
   disappear: true
   # Requerer a área setada para iniciar o evento
