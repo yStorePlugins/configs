@@ -119,6 +119,25 @@ toggle-register: false
 # Comandos que serão executados no jogador quando ele entrar em combate
 combat-commands: []
 
+# Sistema de barreiras
+barriers:
+  enabled: true
+  # Bloco que será colocado
+  material: 'STAINED_GLASS:14'
+
+# Sistema de anti 2v1
+anti-boring:
+  enabled: true
+  messages:
+    target:
+      title: ''
+      chat: '&cO jogador {player} já está em combate com {target}.'
+      actionbar: ''
+    self:
+      title: ''
+      chat: '&cVocê já está em combate com {target}.'
+      actionbar: ''
+
 # Mensagens do plugin
 Mensagens:
   Quitou:
