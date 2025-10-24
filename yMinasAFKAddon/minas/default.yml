@@ -1,0 +1,61 @@
+# Prioridade da mina
+order: 1
+
+# Nome da mina nas mensagens
+name: '&5Mina AFK &7(1)'
+
+# Delay para recompensar e cobrar
+# em segundos
+delay: 5
+
+# Tempo que o jogador poderá ficar minerado
+# em segundos
+total-time: 1800
+
+# Tempo que irá levar para resetar o total-time do jogador
+# em segundos
+total-time-reset: 1800
+
+# Ícone no menu de evolução
+icons:
+  has:
+    material: 'INK_SACK:5'
+    name: '&5Mina AFK &7(1)'
+    lore: [ '&7Esta mina irá consumir', '&c100 coins &7para gerar', '&a10 tokens&7.', '', '&cVocê já possui este upgrade' ]
+  upgrade:
+    material: 'INK_SACK:5'
+    name: '&5Mina AFK &7(1)'
+    lore: [ '&7Esta mina irá consumir', '&c100 coins &7para gerar', '&a10 tokens&7.', '', '&aClique para comprar este upgrade', '&apor &f{money} coins&a.' ]
+
+# Mensagens gerais
+messages:
+  afk:
+    title: '&5MINA AFK<nl>&fMinerando...'
+    actionbar: '&aVocê ainda pode minerar por {time}.'
+    chat: ''
+  deposit:
+    title: ''
+    actionbar: '&a+{yeconomias-tokens} tokens adicionados ┃ &r{bonus}&a.'
+    chat: ''
+  balance:
+    title: ''
+    actionbar: '&cVocê não possui {money} coins.'
+    chat: ''
+
+# Preços para minerar
+withdrawals:
+  withdrawal1:
+    provider: 'money'
+    amount: 100
+
+# Recompensas que o jogador irá ganhar
+deposits:
+  deposit1:
+    provider: 'yeconomias-tokens'
+    amount: 10
+
+# Preços para dar upgrade
+upgrade-prices:
+  price1:
+    provider: 'money'
+    amount: 1000000

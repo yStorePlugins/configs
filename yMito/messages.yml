@@ -1,0 +1,81 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  help: |
+
+    &bComandos do plugin:
+
+    &b-> &f/mito &8-&7 Abre o menu principal
+    &b-> &f/mito top &8-&7 Abre o menu de top
+
+  help-admin: |
+
+    &bComandos do plugin:
+
+    &b-> &f/mito &8-&7 Abre o menu principal
+    &b-> &f/mito top &8-&7 Abre o menu de top
+    &b-> &f/mito set [player] &8-&7 Define um usuário como mito
+    &b-> &f/mito random &8-&7 Define um usuário aleatório como mito
+    &b-> &f/mito setnpc &8-&7 Define o NPC
+    &b-> &f/mito delnpc &8-&7 Deleta o NPC
+    &b-> &f/mito reload &8-&7 Recarrega as configurações
+
+  mito-defined: '&aVocê definiu o jogador {player} como o novo mito.'
+  mito-npc-set: '&aVocê definiu o NPC do MITO.'
+  mito-npc-delete: '&aVocê deletou o NPC do MITO.'
+  mito-join: |
+
+    &5&l[MITO] &5O(a) jogador(a) &f{player}&5 acabou de entrar no servidor.
+    &7Vocês agoram podem ficar com medo da lenda viva!
+
+  mito-left: |
+
+    &5&l[MITO] &5O(a) jogador(a) &f{player}&5 acabou de sair do servidor.
+    &7Vocês agoram podem ficar calmos!
+
+  mito-death: |
+
+    &5&l[MITO] &5O(a) jogador(a) &f{player}&5 acabou de morrer e perdeu a TAG para o jogador(a) &f{killer}&5.
+    &7Esse cara era muito ruim, hein!
+
+  mito-death-delay: |
+
+    &5&l[MITO] &5O(a) jogador(a) &f{player}&5 acabou de morrer para o jogador(a) &f{killer}&5, mas ele não perdeu a tag por causa do delay :o.
+    &7Mais cuidado da próxima, você não vai ter o delay ao seu favor!
+
+  mito-delay: |
+
+    &5&l[MITO] &5O(a) jogador(a) &f{player}&5 perdeu a TAG por ficar muito tempo OFFLINE. A TAG foi dada aleatóriamente para o(a) jogador(a) &f{receiver}&5.
+    &7O cara arregou no servidor mesmo, hein!
+
+  mito-delay-none: |
+
+    &5&l[MITO] &5O(a) jogador(a) &f{player}&5 perdeu a TAG por ficar muito tempo OFFLINE. A TAG está sem dono no momento.
+    &7O cara arregou no servidor mesmo, hein!
+
+  mito-actual: |
+
+    &5&l[MITO] &5O(a) jogador(a) &f{player}&5 é o mito atual.
+    &7Morra de medo dele!
+
+  mito-none: |
+
+    &5&l[MITO] &cAtualmente não há nenhum mito.
+
+  mito-define: |
+
+    &5&l[MITO] &5O(a) jogador(a) &f{player}&5 é o novo MITO do servidor!
+    &7Morra de medo dele!

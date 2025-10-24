@@ -1,0 +1,10 @@
+# Você pode criar quantos bônus quiser
+bonus:
+  membros:
+    order: 1
+    # Permissão para ser reconhecido
+    permission: 'yminas.bonus.membro'
+    # Nome que irá aparecer nas mensagens
+    display: '&7[Membro]'
+    # Quantia do bônus em %
+    bonus: 10.0

@@ -1,0 +1,18 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Menu de gerenciamento dos mobs
+set-spawn:
+  name: '&8Mobs - SetSpawn'
+  size: 27
+  #facing:
+  #  soon:
+  #    material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+  #    slot: 11
+  #    name: '&cEm Breve'
+  #    lore: []

@@ -1,0 +1,87 @@
+#                      _     __      _   __
+#   _   _  /\/\   ___ | |__ / _\ ___| |_/ _\_ __   __ ___      ___ __
+#  | | | |/    \ / _ \| '_ \\ \ / _ \ __\ \| '_ \ / _` \ \ /\ / / '_ \
+#  | |_| / /\/\ \ (_) | |_) |\ \  __/ |__\ \ |_) | (_| |\ V  V /| | | |
+#   \__, \/    \/\___/|_.__/\__/\___|\__\__/ .__/ \__,_| \_/\_/ |_| |_|
+#   |___/                                  |_|
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _                    
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___ 
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#                                   
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, MARIADB (Recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+  # Aqui você poderá configurar algumas coisas do HikariCP.
+  # Por padrão, já são dadas algumas configurações com base na documentação do hikari:
+  # https://github.com/brettwooldridge/HikariCP/wiki/MySQL-Configuration
+  properties:
+    cachePrepStmts: true
+    prepStmtCacheSize: 250
+    prepStmtCacheSqlLimit: 2048
+    useServerPrepStmts: true
+    useLocalSessionState: true
+    rewriteBatchedStatements: true
+    cacheResultSetMetadata: true
+    cacheServerConfiguration: true
+    elideSetAutoCommits: true
+    maintainTimeStats: true
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Configurações gerais
+general:
+  # Blacklist de mundos onde o plugin não funciona
+  blacklisted-worlds: ['none']
+  # Comandos que serão detectados pelo plugin
+  # Escreva em letras minúsculas
+  commands:
+    - '/mobsetspawn'
+    - '/f setspawn'
+    - '/p setspawn'
+  # Coloque aqui os cargos permitidos do factions
+  # Se teu plugin de factions for MassiveCore editado, é possível que
+  # estes nomes estejam diferentes, portanto consulte o desenvolvedor
+  # que editou o plugin.
+  faction-roles:
+    - 'LEADER'
+    - 'OFFICER'
+
+# Sistema de inteligência artificial dos mobs
+artificial-intelligence:
+  enabled: false
+  # Whitelist de mundos em que o sistema de AI irá funcionar
+  whitelisted-worlds: ['none']
+  # Blacklist de entidades que o sistema de AI não vai funcionar
+  blacklisted-entities: ['none']

@@ -1,0 +1,34 @@
+# Comandos e aliases do plugin
+Comando:
+  Mochila:
+    Comando: 'mochila'
+    Aliases: [ backpack, mochilas, backpacks ]
+# Opções gerais do plugin
+Opcoes:
+  # Permitir colocar mochila dentro de mochila
+  Mochila dentro: true
+  # Ativar o uso de shift na mochila
+  Shift: false
+  # Ativar o uso de teclas numéricas na mochila
+  Numkeys: false
+  # Abrir a mochila com botão esquerdo
+  AbrirEsquerdo: true
+  # Abrir a mochila com botão direito
+  AbrirDireito: true
+  # Blacklist de itens que não poderão ser colocados na mochila
+  Item blacklist:
+    - 'MOB_SPAWNER'
+  # Som ao abrir a mochila
+  Som: ''
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não possui permissão para isso.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Deu: '&aVocê deu um(a) &r{mochila}&a para o jogador &7{player}&a.'
+  Olhando: '&cHá alguém olhando esta mochila.'
+  Encontrada: '&cMochila não encontrada.'
+  Coincide: '&cA mochila na sua mão não é a mesma que está aberta.'
+  Bloqueado: '&cEste item está bloqueado.'
+  Quantia: '&cEsta mochila está agrupada. Desagrupe-a para usar.'
+  Shift: '&cVocê não pode usar shift na mochila.'
+  Numkeys: '&cVocê não pode usar as teclas numéricas na mochila.'

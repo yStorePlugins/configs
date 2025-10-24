@@ -1,0 +1,123 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s
+menu-updater-time: 20
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Mito'
+  size: 27
+  items:
+    player-slot: 11
+    top-slot: 13
+    missions-slot: 15
+    player-none:
+      material: 'BARRIER'
+      name: '&cNenhum'
+      lore:
+        - '&7Atualmente não há nenhum'
+        - '&7mito no servidor.'
+    player:
+      material: '{player}'
+      name: '&a{player}'
+      lore:
+        - '&7Este é o mito atual :)'
+        - ''
+        - '&fTempo como mito atual: &a{current_time}'
+        - '&fTempo como mito total: &a{total_time}'
+        - '&fVezes que foi mito: &a{times}'
+        - ''
+    top:
+      material: 'BOOK_AND_QUILL'
+      name: '&b&lTOP'
+      lore:
+        - '&7Veja os jogadores que mais'
+        - '&7destacaram no servidor.'
+        - ''
+        - '&aClique para abrir'
+    missions:
+      material: 'NETHER_STAR'
+      name: '&e&lMISSÕES'
+      lore:
+        - '&7Veja as recompensas que você'
+        - '&7ganhará por ser mito no servidor.'
+        - ''
+        - '&aClique para abrir'
+
+# Menu top
+top:
+  name: '&8TOP MITO'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 30
+  previous-slot: 9
+  next-slot: 17
+  # Seletor dos tops
+  selector:
+    slot: 31
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor do TOP'
+    # Tipos do seletor
+    types:
+      total-time:
+        enabled: true
+        name: 'Tempo Total'
+      times:
+        enabled: true
+        name: 'Vezes'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{nome}'
+      select: ' &f• &7{nome}'
+  items:
+    # Item do top total-time
+    total-time:
+      material: '{player}'
+      name: '&f{player}'
+      lore:
+        - ''
+        - '&fTempo Total: &7{amount}'
+        - '&fPosição: &e{pos}º'
+        - ''
+    # Item do top times
+    times:
+      material: '{player}'
+      name: '&f{player}'
+      lore:
+        - ''
+        - '&fVezes: &7{amount}'
+        - '&fPosição: &e{pos}º'
+        - ''
+
+# Menu de missões
+missions:
+  name: '&8Mito'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 30
+  previous-slot: 9
+  next-slot: 17

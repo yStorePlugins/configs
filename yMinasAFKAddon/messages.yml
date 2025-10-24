@@ -1,0 +1,36 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aMina-AFK comandos:
+
+    &a> /minaafk
+    &a> /minaafk menu
+    &a> /minaafk setarentrada
+    &a> /minaafk wand
+
+  set-pos-1: '&aPOS-1 da MinaAFK setada com sucesso.'
+  set-pos-2: '&aPOS-2 da MinaAFK setada com sucesso.'
+  set-entry: '&aEntrada da MinaAFK setada com sucesso.'
+  entry-not-set: '&cA entrada da MinaAFK não foi setada ainda.'
+  pos-not-set: '&cAs posições da MinaAFK não foram setadas ainda.'
+  previous: '&cPrimeiro evolua o upgrade anterior.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  upgraded: '&aMinaAFK evoluída com sucesso ao nível &7({level})&a.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'

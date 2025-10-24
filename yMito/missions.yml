@@ -1,0 +1,49 @@
+missions:
+   mission_1:
+      # Ordem da missão
+      # começa no 1
+      order: 1
+      # Tempo de mito necessário para coletar
+      # em segundos
+      time: 60
+      # Permissão para coletar
+      permission: ''
+      # Mensagens da missão
+      messages:
+         collected: '&aVocê coletou as recompensas do desafio 1.'
+         permission: '&cVocê não permissão para coletar o desafio 1.'
+      # Ícone da missão no menu
+      icons:
+         time:
+            material: EMERALD
+            glow: true
+            name: '&8Pedra'
+            lore:
+               - '&7Seja mito por &f1 minuto &7e ganhe'
+               - '&f > &a1 pão.'
+               - ''
+               - '&cVocê ainda não pode coletar essa missão'
+               - ''
+         collected:
+            material: EMERALD
+            glow: true
+            name: '&8Pedra'
+            lore:
+               - '&7Seja mito por &f1 minuto &7e ganhe'
+               - '&f > &a1 pão.'
+               - ''
+               - '&cVocê já coletou essa missão'
+               - ''
+         collect:
+            material: EMERALD
+            glow: true
+            name: '&8Pedra'
+            lore:
+               - '&7Seja mito por &f1 minuto &7e ganhe'
+               - '&f > &a1 pão.'
+               - ''
+               - '&aClique para coletar essa missão'
+      # Recompensas que serão dadas (da rewards.yml)
+      # chance,recompensa
+      rewards:
+         - '100.0,reward1'

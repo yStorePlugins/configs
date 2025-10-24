@@ -1,0 +1,20 @@
+KILL_MOBS -> Matar mobs (incluindo ySpawners e Vanilla)
+KILL_PLAYERS -> Matar jogadores
+DEATH -> Morrer
+CRAFT_ITEM -> Craftar itens
+
+BREAK_BLOCKS -> Quebrar blocos normais
+PLACE_BLOCKS -> Colocar blocos normais
+WALK -> Andar blocos
+
+YMINAS -> Quebrar blocos em minas (yMinas)
+YMINASPACKETS -> Quebrar blocos em minas (yMinasPackets)
+
+YCAMPO -> Quebrar plantas em farms (yCampos)
+YPLANTACOES -> Quebrar plantas em plot (yPlantacoes)
+
+YPESCA -> Pescar peixes (yPesca)
+YPESCASIMPLES -> Pescar recompensas (yPescaSimples)
+
+YBOSSES -> Matar bosses (yBosses)
+YSTACKBOSSES -> Matar stack de bosses (yStackBosses)

@@ -1,0 +1,474 @@
+#   ____                            _
+# |  _ \ _____      ____ _ _ __ __| |___
+# | |_) / _ \ \ /\ / / _` | '__/ _` / __|
+# |  _ <  __/\ V  V / (_| | | | (_| \__ \
+# |_| \_\___| \_/\_/ \__,_|_|  \__,_|___/
+#
+
+rewards:
+  reward1:
+    # Item que aparecerá no preview.
+    preview:
+      material: 'STONE:0'
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEsta pedra vale muito dinheiro!' ]
+      enchants: []
+    # Item que aparecerá para coletar.
+    collect:
+      material: 'STONE:0'
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEsta pedra vale muito dinheiro!', '', ' &7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    # Item que será dado ao player
+    item:
+      give: true
+      material: 'STONE:0'
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEu valho muito!' ]
+      enchants: []
+    # Comandos que será dado ao player
+    command:
+      give: false
+      # quantia padrão da placeholder {amount} no comando (valor base)
+      placeholder-amount: 1
+      # multiplicar a placeholder {amount} pela quantia de recompensas do mesmo tipo
+      multiply-placeholder: true
+      list: [ 'give {player} stone {amount}' ]
+    # Mensagens que serão enviadas ao receber a recompensa
+    messages:
+      # Quantia que irá multiplicar na placeholder de recompensas no chat
+      amount-placeholder: 64
+      title: '&a+64 Pedras'
+      actionbar: ''
+      chat: '&a+{amount} Pedras'
+  reward2:
+    preview:
+      material: 'DIAMOND:0'
+      name: '&bDiamante'
+      amount: 1
+      lore: [ '&bQuem não adora uma pedra preciosa?!' ]
+      enchants: []
+    collect:
+      material: 'DIAMOND:0'
+      name: '&bDiamante'
+      amount: 1
+      lore: [ '&bQuem não adora uma pedra preciosa?!', '', ' &7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 1
+      multiply-placeholder: true
+      list: [ 'give {player} diamond {amount}' ]
+    messages:
+      amount-placeholder: 1
+      title: '&a+1 Diamante'
+      actionbar: ''
+      chat: '&a+{amount} Diamante'
+  reward3:
+    preview:
+      material: 'EMERALD:0'
+      name: '&aEsmeralda'
+      amount: 1
+      lore: [ '&aEsmeraldas valem muito?' ]
+      enchants: []
+    collect:
+      material: 'EMERALD:0'
+      name: '&aEsmeralda'
+      amount: 1
+      lore: [ '&aEsmeraldas valem muito?', '', ' &7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    item:
+      give: true
+      material: 'EMERALD:0'
+      name: '&aEsmeralda'
+      amount: 1
+      lore: [ '&aEu valho muito!' ]
+      enchants: []
+    messages:
+      amount-placeholder: 1
+      title: '&a+1 Esmeralda'
+      actionbar: ''
+      chat: '&a+{amount} Esmeralda'
+      
+  # ============================================
+  # CONQUISTAS SECRETAS
+  # ============================================
+  
+  # Caçador Noturno
+  night-hunter-sword:
+    preview:
+      material: 'DIAMOND_SWORD:0'
+      name: '&6&lLâmina Noturna'
+      amount: 1
+      lore: [ '&7Forjada nas trevas da noite', '&7Uma arma lendária dos caçadores.' ]
+      enchants: [ 'DAMAGE_ALL:3', 'DURABILITY:2' ]
+    collect:
+      material: 'DIAMOND_SWORD:0'
+      name: '&6&lLâmina Noturna'
+      amount: 1
+      lore: [ '&7Forjada nas trevas da noite', '&7Uma arma lendária dos caçadores.', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: [ 'DAMAGE_ALL:3', 'DURABILITY:2' ]
+    item:
+      give: true
+      material: 'DIAMOND_SWORD:0'
+      name: '&6&lLâmina Noturna'
+      amount: 1
+      lore: [ '&7Forjada nas trevas da noite', '&8Conquista Secreta: &6Caçador Noturno' ]
+      enchants: [ 'DAMAGE_ALL:3', 'DURABILITY:2' ]
+    messages:
+      amount-placeholder: 1
+      title: '&6+Lâmina Noturna'
+      actionbar: ''
+      chat: '&6+{amount} Lâmina Noturna'
+      
+  # Explorador Perdido
+  lost-explorer-compass:
+    preview:
+      material: 'COMPASS:0'
+      name: '&b&lBússola Mística'
+      amount: 1
+      lore: [ '&7Aponta para tesouros ocultos', '&7Guia os exploradores perdidos.' ]
+      enchants: []
+    collect:
+      material: 'COMPASS:0'
+      name: '&b&lBússola Mística'
+      amount: 1
+      lore: [ '&7Aponta para tesouros ocultos', '&7Guia os exploradores perdidos.', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    item:
+      give: true
+      material: 'COMPASS:0'
+      name: '&b&lBússola Mística'
+      amount: 1
+      lore: [ '&7Aponta para tesouros ocultos', '&8Conquista Secreta: &bExplorador Perdido' ]
+      enchants: []
+    messages:
+      amount-placeholder: 1
+      title: '&b+Bússola Mística'
+      actionbar: ''
+      chat: '&b+{amount} Bússola Mística'
+      
+  # Sequência Mística
+  mystic-feather:
+    preview:
+      material: 'FEATHER:0'
+      name: '&d&lPluma Mística'
+      amount: 1
+      lore: [ '&7Leveza eterna', '&7Concede poderes de levitação.' ]
+      enchants: []
+    collect:
+      material: 'FEATHER:0'
+      name: '&d&lPluma Mística'
+      amount: 1
+      lore: [ '&7Leveza eterna', '&7Concede poderes de levitação.', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    item:
+      give: true
+      material: 'FEATHER:0'
+      name: '&d&lPluma Mística'
+      amount: 1
+      lore: [ '&7Leveza eterna', '&8Conquista Secreta: &dSequência Mística' ]
+      enchants: []
+    messages:
+      amount-placeholder: 1
+      title: '&d+Pluma Mística'
+      actionbar: ''
+      chat: '&d+{amount} Pluma Mística'
+      
+  # Colecionador Obsessivo
+  perfection-apple:
+    preview:
+      material: 'GOLDEN_APPLE:0'
+      name: '&e&lMaçã da Perfeição'
+      amount: 5
+      lore: [ '&7Fruto da perfeição absoluta', '&7Apenas os obsessivos a possuem.' ]
+      enchants: []
+    collect:
+      material: 'GOLDEN_APPLE:0'
+      name: '&e&lMaçã da Perfeição'
+      amount: 5
+      lore: [ '&7Fruto da perfeição absoluta', '&7Apenas os obsessivos a possuem.', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    item:
+      give: true
+      material: 'GOLDEN_APPLE:0'
+      name: '&e&lMaçã da Perfeição'
+      amount: 5
+      lore: [ '&7Fruto da perfeição absoluta', '&8Conquista Secreta: &eColecionador Obsessivo' ]
+      enchants: []
+    messages:
+      amount-placeholder: 5
+      title: '&e+Maçãs da Perfeição'
+      actionbar: ''
+      chat: '&e+{amount} Maçãs da Perfeição'
+      
+  # Fantasma
+  ghost-potion:
+    preview:
+      material: 'POTION:0'
+      name: '&8&lPoção Fantasma'
+      amount: 3
+      lore: [ '&7Invisibilidade prolongada', '&7Para aqueles que vivem nas sombras.' ]
+      enchants: []
+    collect:
+      material: 'POTION:0'
+      name: '&8&lPoção Fantasma'
+      amount: 3
+      lore: [ '&7Invisibilidade prolongada', '&7Para aqueles que vivem nas sombras.', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 3
+      multiply-placeholder: true
+      list: [ 'give {player} potion 1 8270' ]
+    messages:
+      amount-placeholder: 3
+      title: '&8+Poções Fantasma'
+      actionbar: ''
+      chat: '&8+{amount} Poções Fantasma'
+      
+  # Rewards de dinheiro para conquistas secretas
+  money-3000:
+    preview:
+      material: 'EMERALD:0'
+      name: '&a&l$3.000'
+      amount: 1
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma quantia razoável.' ]
+      enchants: []
+    collect:
+      material: 'EMERALD:0'
+      name: '&a&l$3.000'
+      amount: 1
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma quantia razoável.', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 3000
+      multiply-placeholder: false
+      list: [ 'money give {player} {amount}' ]
+    messages:
+      amount-placeholder: 3000
+      title: '&a+$3.000'
+      actionbar: ''
+      chat: '&a+${amount}'
+      
+  money-5000:
+    preview:
+      material: 'EMERALD:0'
+      name: '&a&l$5.000'
+      amount: 2
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma boa quantia.' ]
+      enchants: []
+    collect:
+      material: 'EMERALD:0'
+      name: '&a&l$5.000'
+      amount: 2
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma boa quantia.', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 5000
+      multiply-placeholder: false
+      list: [ 'money give {player} {amount}' ]
+    messages:
+      amount-placeholder: 5000
+      title: '&a+$5.000'
+      actionbar: ''
+      chat: '&a+${amount}'
+      
+  money-7500:
+    preview:
+      material: 'EMERALD:0'
+      name: '&a&l$7.500'
+      amount: 3
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma quantia generosa.' ]
+      enchants: []
+    collect:
+      material: 'EMERALD:0'
+      name: '&a&l$7.500'
+      amount: 3
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma quantia generosa.', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 7500
+      multiply-placeholder: false
+      list: [ 'money give {player} {amount}' ]
+    messages:
+      amount-placeholder: 7500
+      title: '&a+$7.500'
+      actionbar: ''
+      chat: '&a+${amount}'
+      
+  money-10000:
+    preview:
+      material: 'EMERALD_BLOCK:0'
+      name: '&a&l$10.000'
+      amount: 1
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma quantia excelente!' ]
+      enchants: []
+    collect:
+      material: 'EMERALD_BLOCK:0'
+      name: '&a&l$10.000'
+      amount: 1
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma quantia excelente!', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 10000
+      multiply-placeholder: false
+      list: [ 'money give {player} {amount}' ]
+    messages:
+      amount-placeholder: 10000
+      title: '&a+$10.000'
+      actionbar: ''
+      chat: '&a+${amount}'
+      
+  money-25000:
+    preview:
+      material: 'EMERALD_BLOCK:0'
+      name: '&a&l$25.000'
+      amount: 5
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma fortuna!' ]
+      enchants: [ 'DURABILITY:1' ]
+    collect:
+      material: 'EMERALD_BLOCK:0'
+      name: '&a&l$25.000'
+      amount: 5
+      lore: [ '&7Dinheiro das conquistas secretas', '&7Uma fortuna!', '', '&7> &fQuantidade: &7{amount}', '', '&eClique esquerdo para receber', '&eClique direito para deletar' ]
+      enchants: [ 'DURABILITY:1' ]
+    command:
+      give: true
+      placeholder-amount: 25000
+      multiply-placeholder: false
+      list: [ 'money give {player} {amount}' ]
+    messages:
+      amount-placeholder: 25000
+      title: '&a+$25.000'
+      actionbar: ''
+      chat: '&a+${amount}'
+      
+  # Rewards de experiência para conquistas secretas
+  experience-1000:
+    preview:
+      material: "EXPERIENCE_BOTTLE:0"
+      name: "&b&l1.000 XP"
+      amount: 5
+      lore: [ "&7Experiência das conquistas secretas", "&7Conhecimento é poder." ]
+      enchants: []
+    collect:
+      material: "EXPERIENCE_BOTTLE:0"
+      name: "&b&l1.000 XP"
+      amount: 5
+      lore: [ "&7Experiência das conquistas secretas", "&7Conhecimento é poder.", "", "&7> &fQuantidade: &7{amount}", "", "&eClique esquerdo para receber", "&eClique direito para deletar" ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 1000
+      multiply-placeholder: false
+      list: [ 'xp add {player} {amount}' ]
+    messages:
+      amount-placeholder: 1000
+      title: '&b+1.000 XP'
+      actionbar: ''
+      chat: '&b+{amount} XP'
+      
+  experience-2000:
+    preview:
+      material: "EXPERIENCE_BOTTLE:0"
+      name: "&b&l2.000 XP"
+      amount: 10
+      lore: [ "&7Experiência das conquistas secretas", "&7Sabedoria acumulada." ]
+      enchants: []
+    collect:
+      material: "EXPERIENCE_BOTTLE:0"
+      name: "&b&l2.000 XP"
+      amount: 10
+      lore: [ "&7Experiência das conquistas secretas", "&7Sabedoria acumulada.", "", "&7> &fQuantidade: &7{amount}", "", "&eClique esquerdo para receber", "&eClique direito para deletar" ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 2000
+      multiply-placeholder: false
+      list: [ 'xp add {player} {amount}' ]
+    messages:
+      amount-placeholder: 2000
+      title: '&b+2.000 XP'
+      actionbar: ''
+      chat: '&b+{amount} XP'
+      
+  experience-5000:
+    preview:
+      material: "EXPERIENCE_BOTTLE:0"
+      name: "&b&l5.000 XP"
+      amount: 20
+      lore: [ "&7Experiência das conquistas secretas", "&7Mestria absoluta!" ]
+      enchants: [ "DURABILITY:1" ]
+    collect:
+      material: "EXPERIENCE_BOTTLE:0"
+      name: "&b&l5.000 XP"
+      amount: 20
+      lore: [ "&7Experiência das conquistas secretas", "&7Mestria absoluta!", "", "&7> &fQuantidade: &7{amount}", "", "&eClique esquerdo para receber", "&eClique direito para deletar" ]
+      enchants: [ "DURABILITY:1" ]
+    command:
+      give: true
+      placeholder-amount: 5000
+      multiply-placeholder: false
+      list: [ 'xp add {player} {amount}' ]
+    messages:
+      amount-placeholder: 5000
+      title: '&b+5.000 XP'
+      actionbar: ''
+      chat: '&b+{amount} XP'
+      
+  # Rewards especiais
+  jump-boost-potion:
+    preview:
+      material: "POTION:0"
+      name: "&d&lPoção de Pulo"
+      amount: 1
+      lore: [ "&7Poção especial das conquistas", "&7Eleva-se acima dos outros." ]
+      enchants: []
+    collect:
+      material: "POTION:0"
+      name: "&d&lPoção de Pulo"
+      amount: 1
+      lore: [ "&7Poção especial das conquistas", "&7Eleva-se acima dos outros.", "", "&7> &fQuantidade: &7{amount}", "", "&eClique esquerdo para receber", "&eClique direito para deletar" ]
+      enchants: []
+    command:
+      give: true
+      placeholder-amount: 1
+      multiply-placeholder: true
+      list: [ 'give {player} potion 1 8235' ]
+    messages:
+      amount-placeholder: 1
+      title: '&d+Poção de Pulo'
+      actionbar: ''
+      chat: '&d+{amount} Poção de Pulo'
+      
+  perfectionist-title:
+    preview:
+      material: "NAME_TAG:0"
+      name: "&e&lTítulo Perfeccionista"
+      amount: 1
+      lore: [ "&7Título especial das conquistas", "&7Para os obsessivos por perfeição." ]
+      enchants: [ "DURABILITY:1" ]
+    collect:
+      material: "NAME_TAG:0"
+      name: "&e&lTítulo Perfeccionista"
+      amount: 1
+      lore: [ "&7Título especial das conquistas", "&7Para os obsessivos por perfeição.", "", "&7> &fQuantidade: &7{amount}", "", "&eClique esquerdo para receber", "&eClique direito para deletar" ]
+      enchants: [ "DURABILITY:1" ]
+    command:
+      give: true
+      placeholder-amount: 1
+      multiply-placeholder: false
+      list: [ 'lp user {player} meta addprefix 100 "&e[&6Perfeccionista&e] "' ]
+    messages:
+      amount-placeholder: 1
+      title: '&e+Título Perfeccionista'
+      actionbar: ''
+      chat: '&e+{amount} Título: &6Perfeccionista'

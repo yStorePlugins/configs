@@ -1,0 +1,367 @@
+# Apague apenas os encantamentos que não for usar
+Encantamentos:
+  DestruidorInvertido: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays: # Item que aparecerá no menu de evolução
+      Pode: # quando puder evoluir
+        CustomSkull: true
+        URL: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        ID: AIR
+        Data: 0
+        Name: '&aDestruidor Invertido'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a coluna inteira.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode: # quando não puder evoluir
+        CustomSkull: true
+        URL: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        ID: AIR
+        Data: 0
+        Name: '&aDestruidor Invertido'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a coluna inteira.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo: # quando já estiver no máximo
+        CustomSkull: true
+        URL: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        ID: AIR
+        Data: 0
+        Name: '&aDestruidor Invertido'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a coluna inteira.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission: # quando já estiver no máximo
+        CustomSkull: true
+        URL: '4f824d1622d00457816ba02c7fa6602d7d6d11dfa3c9684e0d94412ed59e8424'
+        ID: AIR
+        Data: 0
+        Name: '&aDestruidor Invertido'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a coluna inteira.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Destruidor Invertido'
+    NivelPicareta: 0
+    Ordem: 13
+    MostrarMenu: true
+    PodeComprar: true
+    # Mostrar um ícone de infinito no lugar do nível
+    # do encantamento na lore
+    MostrarInfinito: false
+    Animacao: true
+    Nivel:
+      Padrao: 0.0
+      Maximo: 10.0 # Use -1 para ser infinito
+      Porcentagem: 0.0015 # porcentagem adquirida por nível
+    Preco:
+      Padrao: 100.0
+      PerLevel: 200.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&cDestruidor Invertido<nl>&cativado' # deixe '' para não usar
+      Actionbar: '' # deixe '' para não usar
+      Chat: [ ]
+  Linear: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays: # Item que aparecerá no menu de evolução
+      Pode: # quando puder evoluir
+        CustomSkull: true
+        URL: 'a8259df25c9de155b063cbef86646574d694eff3ad8d4d0cc64c4abc84d1441f'
+        ID: AIR
+        Data: 0
+        Name: '&aLinear'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar uma cruz.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode: # quando não puder evoluir
+        CustomSkull: true
+        URL: 'a8259df25c9de155b063cbef86646574d694eff3ad8d4d0cc64c4abc84d1441f'
+        ID: AIR
+        Data: 0
+        Name: '&aLinear'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar uma cruz.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo: # quando já estiver no máximo
+        CustomSkull: true
+        URL: 'a8259df25c9de155b063cbef86646574d694eff3ad8d4d0cc64c4abc84d1441f'
+        ID: AIR
+        Data: 0
+        Name: '&aLinear'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar uma cruz.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission: # quando já estiver no máximo
+        CustomSkull: true
+        URL: 'a8259df25c9de155b063cbef86646574d694eff3ad8d4d0cc64c4abc84d1441f'
+        ID: AIR
+        Data: 0
+        Name: '&aLinear'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar uma cruz.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Linear'
+    NivelPicareta: 0
+    Ordem: 14
+    MostrarMenu: true
+    PodeComprar: true
+    # Mostrar um ícone de infinito no lugar do nível
+    # do encantamento na lore
+    MostrarInfinito: false
+    Animacao: true
+    Nivel:
+      Padrao: 0.0
+      Maximo: 10.0 # Use -1 para ser infinito
+      Porcentagem: 0.0015 # porcentagem adquirida por nível
+    Preco:
+      Padrao: 100.0
+      PerLevel: 200.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&cLinear<nl>&cativado' # deixe '' para não usar
+      Actionbar: '' # deixe '' para não usar
+      Chat: [ ]
+  Esfera: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays: # Item que aparecerá no menu de evolução
+      Pode: # quando puder evoluir
+        CustomSkull: true
+        URL: '7ff91e15b31fe4cfda13fb44634da87a75ba2c17fce7b524a55a314f5aa99d9f'
+        ID: AIR
+        Data: 0
+        Name: '&aEsfera'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar uma esfera.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode: # quando não puder evoluir
+        CustomSkull: true
+        URL: '7ff91e15b31fe4cfda13fb44634da87a75ba2c17fce7b524a55a314f5aa99d9f'
+        ID: AIR
+        Data: 0
+        Name: '&aEsfera'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar uma esfera.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo: # quando já estiver no máximo
+        CustomSkull: true
+        URL: '7ff91e15b31fe4cfda13fb44634da87a75ba2c17fce7b524a55a314f5aa99d9f'
+        ID: AIR
+        Data: 0
+        Name: '&aEsfera'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar uma esfera.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission: # quando já estiver no máximo
+        CustomSkull: true
+        URL: '7ff91e15b31fe4cfda13fb44634da87a75ba2c17fce7b524a55a314f5aa99d9f'
+        ID: AIR
+        Data: 0
+        Name: '&aEsfera'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar uma esfera.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Esfera'
+    NivelPicareta: 0
+    Ordem: 15
+    Raio: 5
+    MostrarMenu: true
+    PodeComprar: true
+    # Mostrar um ícone de infinito no lugar do nível
+    # do encantamento na lore
+    MostrarInfinito: false
+    Animacao: true
+    Nivel:
+      Padrao: 0.0
+      Maximo: 10.0 # Use -1 para ser infinito
+      Porcentagem: 0.0015 # porcentagem adquirida por nível
+    Preco:
+      Padrao: 100.0
+      PerLevel: 200.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&cEsfera<nl>&cativada' # deixe '' para não usar
+      Actionbar: '' # deixe '' para não usar
+      Chat: [ ]
+  X: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays: # Item que aparecerá no menu de evolução
+      Pode: # quando puder evoluir
+        CustomSkull: true
+        URL: '91b7a0c210e6cdf5a35fd8197e6e24a038315bbe3bdcd1bcc3630bf26f59ec5c'
+        ID: AIR
+        Data: 0
+        Name: '&aX'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar um X.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode: # quando não puder evoluir
+        CustomSkull: true
+        URL: '91b7a0c210e6cdf5a35fd8197e6e24a038315bbe3bdcd1bcc3630bf26f59ec5c'
+        ID: AIR
+        Data: 0
+        Name: '&aX'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar um X.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo: # quando já estiver no máximo
+        CustomSkull: true
+        URL: '91b7a0c210e6cdf5a35fd8197e6e24a038315bbe3bdcd1bcc3630bf26f59ec5c'
+        ID: AIR
+        Data: 0
+        Name: '&aX'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar um X.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission: # quando já estiver no máximo
+        CustomSkull: true
+        URL: '91b7a0c210e6cdf5a35fd8197e6e24a038315bbe3bdcd1bcc3630bf26f59ec5c'
+        ID: AIR
+        Data: 0
+        Name: '&aX'
+        Lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar um X.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'X'
+    NivelPicareta: 0
+    Ordem: 16
+    MostrarMenu: true
+    PodeComprar: true
+    # Mostrar um ícone de infinito no lugar do nível
+    # do encantamento na lore
+    MostrarInfinito: false
+    Animacao: true
+    Nivel:
+      Padrao: 0.0
+      Maximo: 10.0 # Use -1 para ser infinito
+      Porcentagem: 0.0015 # porcentagem adquirida por nível
+    Preco:
+      Padrao: 100.0
+      PerLevel: 200.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&cX<nl>&cativado' # deixe '' para não usar
+      Actionbar: '' # deixe '' para não usar
+      Chat: [ ]

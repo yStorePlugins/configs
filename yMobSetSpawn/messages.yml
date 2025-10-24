@@ -1,0 +1,22 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  permission: '&cVocê não tem permissão para fazer isto.'
+  retrieving: '&aCarregando dados...'
+  blacklisted-world: '&cVocê não pode realizar esta ação neste mundo.'
+  plot-null: '&cVocê não está em um terreno.'
+  plot-owner: '&cEste terreno não tem dono.'
+  plot-permission: '&cVocê não tem permissão neste terreno.'
+  faction-null: '&cVocê não possui facção.'
+  faction-role: '&cVocê não é o líder ou capitão da facção.'
+  faction-location: '&cVocê não está no território da sua facção.'
+  mob-permission: '&cVocê não tem a permissão deste mob.'
+  mob-removed: '&aLocalização do mob &f{mob}&a removida com sucesso.'
+  mob-set: '&aLocalização do mob &f{mob}&a  setada com sucesso.'

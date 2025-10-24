@@ -1,0 +1,145 @@
+# Ordem da missão
+# começa em 1
+order: 1
+
+# Nome nas mensagens
+display-name: '&aSpawners 1'
+
+# Categoria da missão
+# criada na categories.yml
+category: 'spawners'
+
+# Ícones nos menus
+displays:
+  # Ícone de missão atual
+  current:
+    material: 'MOB_SPAWNER'
+    glow: true
+    name: '&aSpawners &eMETA 1'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fVacas&7 para ajudar no progresso'
+      - '&7dessa missão.'
+      - ''
+      - '&f *Progresso: &a{yspawners_actual}&7/&c{yspawners_total} &8({yspawners_percentage})'
+      - '&f -> &7[{yspawners_progressbar}&7]'
+      - ''
+      - '&aIniciada em: &7{start_date} às {start_hour}'
+      - ''
+  # Ícone de missão atual (no menu principal)
+  current-main:
+    material: 'MOB_SPAWNER'
+    name: '&aMetas de Spawners'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fMOBS&7 para ajudar no progresso'
+      - '&7dessa missão.'
+      - ''
+      - '&f *Progresso: &a{yspawners_actual}&7/&c{yspawners_total} &8({yspawners_percentage})'
+      - '&f -> &7[{yspawners_progressbar}&7]'
+      - ''
+      - '&aIniciada em: &7{start_date} às {start_hour}'
+      - ''
+      - '&aClique para ver mais informações.'
+  # Ícone de próxima missão
+  next:
+    material: 'BARRIER'
+    name: '&aSpawners &eMETA 1'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fVacas&7 para ajudar no progresso'
+      - '&7dessa missão.'
+      - ''
+      - '&c*Essa missão ainda não foi liberada.'
+      - '&cConclua a anterior.'
+      - ''
+  # Ícone de missão concluída
+  completed:
+    material: 'MOB_SPAWNER'
+    name: '&aSpawners &eMETA 1'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fVacas&7 para ajudar no progresso'
+      - '&7dessa missão.'
+      - ''
+      - '&c*Essa missão já foi concluída.'
+      - '&cConcluída em: &7{end_date} às {end_hour}'
+      - ''
+  # Ícone de missão concluída (com recompensa para coletar)
+  to-collect:
+    material: 'MOB_SPAWNER'
+    name: '&aSpawners &eMETA 1'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fVacas&7 para ajudar no progresso'
+      - '&7dessa missão.'
+      - ''
+      - '&c*Essa missão já foi concluída.'
+      - '&cConcluída em: &7{end_date} às {end_hour}'
+      - ''
+      - '&aClique para coletar sua recompensa.'
+
+# Mensagens da missão
+messages:
+  start:
+    chat: '<nl>&a&l[MISSÃO]&a A missão &eSPAWNERS 1&a foi iniciada. &aAcesse em: &f/missoes&e.'
+    actionbar: ''
+    title: ''
+  finish:
+    chat: '<nl>&a&l[MISSÃO]&a A missão &eSPAWNERS 1&a foi concluída, resgate sua recompensa em &f/missoes&e.'
+    actionbar: ''
+    title: ''
+
+# Objetivos dessa missão
+goals:
+  yspawners:
+    # Tipo do objetivo
+    # disponível em: goals.txt
+    goal-type: 'KILL_MOBS'
+    # Tipos necessários
+    types:
+      type1:
+        # (Material / Entidade / config-key) necessária
+        # Para permitir todos os blocos (materiais): ALL_BLOCKS
+        # Para permitir todas entidades: ALL_ENTITIES
+        # caso não for uma missão de blocos ou entidades, deixe ALL ou a config-key
+        type: 'ALL_ENTITIES'
+        # Quantidade necessária
+        amount: 100.0
+
+# Sistema de recompensas
+milestones:
+  reward1:
+    # Progresso (%) necessário para liberar cada recompensa
+    progress: 25.0
+    # chance,recompensa
+    rewards: [ '100.0,reward1' ]
+  reward2:
+    progress: 50.0
+    rewards: [ '100.0,reward2' ]
+  reward3:
+    progress: 100.0
+    rewards: [ '100.0,reward3' ]
+
+# Sistema de anúncios
+announces:
+  announce1:
+    # Progresso (%) necessário para liberar cada anúncio
+    progress: 25.0
+    # Mensagem na actionbar
+    actionbar: ''
+    # Mensagem no título e subtítulo
+    title: ''
+    # Mensagem no chat
+    chat: |
+      &r
+      &a&l[MISSÕES]&a A missão &eSPAWNERS 1&a está com um progresso de 25%!
+      &r
+  announce2:
+    progress: 50.0
+    actionbar: ''
+    title: ''
+    chat: |
+      &r
+      &a&l[MISSÕES]&a A missão &eSPAWNERS 1&a está com um progresso de 50%!
+      &r

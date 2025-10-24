@@ -1,0 +1,4 @@
+rewards:
+  mine_reward1:
+    chance: 20.0
+    reward: 'reward1'

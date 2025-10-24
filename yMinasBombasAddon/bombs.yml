@@ -1,0 +1,30 @@
+bombs:
+  bomb-small:
+    # Nome do item
+    name: '&eBOMBA PEQUENA &7{time}...'
+    # Nome da bomba nas mensagens
+    message-display: '&eBOMBA PEQUENA &7({time})'
+    # Delay para explodir, em segundos
+    delay: 3
+    # Raio de explosão, em blocos
+    radius: 2
+    # Delay para colocar mais bombas
+    # em segundos
+    place-delay: 3
+    # Animação da explosão (quebrar os blocos)
+    animation: true
+    # Ativar as recompensas nos blocos quebrados pela bomba
+    reward: true
+    # Ativar a lucky-block nos blocos quebrados pela bomba
+    luckyblock: true
+    # Essa bomba será nuclear? (deletar toda a mina)
+    nuclear: false
+    # Efeitos da bomba
+    effects:
+      sound: 'EXPLODE'
+      effect: 'EXPLOSION_LARGE'
+    # Item da bomba
+    item:
+      material: FIREBALL
+      name: '&eBOMBA PEQUENA &7(3s)'
+      lore: ['&7Esta bomba irá quebrar vários', '&7blocos ao redor de onde', '&7ela for plantada.', '', '&7 Raio: &23x3x2', '&7 Delay: &f3s', '', '&aClique em um bloco da mina', '&apara plantar a bomba.']

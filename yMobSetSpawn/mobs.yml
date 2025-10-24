@@ -1,0 +1,59 @@
+#                _
+#    /\/\   ___ | |__  ___
+#   /    \ / _ \| '_ \/ __|
+#  / /\/\ \ (_) | |_) \__ \
+#  \/    \/\___/|_.__/|___/
+#
+# Cadastre aqui os mobs permitidos.
+
+mobs:
+   cow:
+      slot: 10
+      permission: 'ymobsetspawn.cow'
+      display: 'Vaca'
+      entity: 'COW'
+      items:
+         set:
+            material: 'c5a9cd58d4c67bccc8fb1f5f756a2d381c9ffac2924b7f4cb71aa9fa13fb5c'
+            name: '&eVaca'
+            lore:
+               - ''
+               - '&aX: &f{x}&8 - &aY: &f{y} &8- &aZ: &f{z} &7({world})'
+               - ''
+               - '&7Botão &FESQUERDO&7 para mudar a localização.'
+               - '&7Botão &fDIREITO&7 para deletar a localização.'
+               - ''
+         not-set:
+            material: 'c5a9cd58d4c67bccc8fb1f5f756a2d381c9ffac2924b7f4cb71aa9fa13fb5c'
+            name: '&eVaca'
+            lore:
+               - ''
+               - '&cEste mob ainda não possui uma localização setada.'
+               - ''
+               - '&7Botão &FESQUERDO&7 para setar a localização.'
+               - ''
+   pig:
+      slot: 11
+      permission: 'ymobsetspawn.pig'
+      display: 'Porco'
+      entity: 'PIG'
+      items:
+         set:
+            material: '621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4'
+            name: '&ePorco'
+            lore:
+               - ''
+               - '&aX: &f{x}&8 - &aY: &f{y} &8- &aZ: &f{z} &7({world})'
+               - ''
+               - '&7Botão &FESQUERDO&7 para mudar a localização.'
+               - '&7Botão &fDIREITO&7 para deletar a localização.'
+               - ''
+         not-set:
+            material: '621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4'
+            name: '&ePorco'
+            lore:
+               - ''
+               - '&cEste mob ainda não possui uma localização setada.'
+               - ''
+               - '&7Botão &FESQUERDO&7 para setar a localização.'
+               - ''
