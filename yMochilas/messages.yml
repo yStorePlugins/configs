@@ -1,0 +1,32 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+    &r
+    &a/mochila give &8- &7Dar uma mochila para um jogador.
+    &a/mochila reload &8- &7Recarrega as configurações.
+    &r
+  backpack-give: '&aVocê deu um(a) &r{mochila}&a para o jogador &7{player}&a.'
+  backpack-looking: '&cHá alguém olhando esta mochila.'
+  backpack-found: '&cMochila não encontrada.<nl>&cDisponíveis: &7{list}'
+  backpack-found-player: '&cMochila não encontrada.'
+  backpack-equal: '&cA mochila na sua mão não é a mesma que está aberta.'
+  backpack-blocked: '&cEste item está bloqueado.'
+  backpack-stacked: '&cEsta mochila está agrupada. Desagrupe-a para usar.'
+  backpack-shift: '&cVocê não pode usar shift na mochila.'
+  backpack-numkeys: '&cVocê não pode usar as teclas numéricas na mochila.'

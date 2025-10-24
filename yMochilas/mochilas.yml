@@ -1,15 +1,14 @@
 Mochilas:
   pequena:
+    # Permissão para poder abrir essa mochila
+    # deixe '' para não usar
+    permission: ''
     Fileiras: 1
     Menu: '&8Mochila Pequena'
     Item:
-      CustomSkull: false
-      URL: ''
-      ID: 54
-      Data: 0
-      Glow: false
-      Name: '&6Mochila pequena'
-      Lore:
+      material: 'CHEST'
+      name: '&6Mochila pequena'
+      lore:
         - '&7Fileiras: &f1&7.'
         - ''
         - '&fÚltimo jogador a abrir: &b{player}&f.'
