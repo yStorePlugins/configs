@@ -116,3 +116,5 @@ boosters:
     time: 60
     # Bonus de chance a mais
     bonus: 10.0
+    # Bonus de xp a mais para a vara
+    bonus-xp: 10.0
