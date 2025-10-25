@@ -1,0 +1,139 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Pesca'
+  size: 27
+  slots: [ 11, 12, 13, 14, 15 ]
+  previous-slot: 10
+  next-slot: 16
+  items:
+    rod-slot: 10
+    booster-slot: 12
+    top-slot: 13
+    rewards-slot: 14
+    location-slot: 16
+    rod:
+      material: 'FISHING_ROD'
+      name: '&aVara de Pesca'
+      lore:
+        - '&7Pegue sua Vara de Pesca e comece'
+        - '&7a obter diversas recompensas.'
+        - ''
+        - '&c* Não há nenhuma vara disponível'
+        - '&c  para comprar.'
+        - ''
+    rewards:
+      material: 'CHEST'
+      name: '&aRecompensas'
+      lore:
+        - ''
+        - ' &fRecompensas no armazém: &a{amount}&f.'
+        - ''
+        - '&7Clique para gerenciar'
+    location:
+      material: '4528ed45802400f465b5c4e3a6b7a9f2b6a5b3d478b6fd84925cc5d988391c7d'
+      name: '&aMundo pesca'
+      lore:
+        - '&7Na área de pesca você poderá'
+        - '&7conseguir diversas recompensas.'
+        - ''
+        - '&aClique para teleportar.'
+    top:
+      material: '15a7ee9a86de203674a93b570bc8992e500363dd32f2b9813daaeeabccf92151'
+      name: '&aTOP'
+      lore:
+        - '&7Veja os TOP Jogadores que mais'
+        - '&7pescaram recompensas.'
+        - ''
+        - '&aClique para abrir.'
+    booster-has:
+      material: 'EXP_BOTTLE'
+      name: '&aBooster'
+      lore:
+        - '&7Tenha mais chances de receber'
+        - '&7melhores recompensas.'
+        - ''
+        - '&f> Bonus: &a{bonus}%&f.'
+        - '&f> Duração: &b{time}&f.'
+        - ''
+    booster-no-has:
+      material: 'GLASS_BOTTLE'
+      name: '&cBooster'
+      lore:
+        - '&7Tenha mais chances de receber'
+        - '&7melhores recompensas.'
+        - ''
+        - '&c* Você não possui nenhum booster ativo.'
+        - ''
+
+# Menu de recompensas
+main-rewards:
+  name: '&8Pesca'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  #
+  empty-slot: 22
+  collect-slot: 50
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
+    collect:
+      material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+      name: '&eRecolher tudo'
+      lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+
+# Menu de preview
+preview:
+  name: '&8Pesca'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+
+# Menu top
+top:
+  name: '&8TOP'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 9
+  next-slot: 17
+  items:
+    # Item do top que mais pescou
+    fished:
+      material: '{player}'
+      name: '&f{player}'
+      lore:
+        - ''
+        - '&fPescados: &7{amount}'
+        - '&fPosição: &e{pos}º'
+        - ''

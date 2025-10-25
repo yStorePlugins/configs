@@ -1,0 +1,85 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+start-fishing:
+  actionbar: '&a&lPESCA: &aVocê começou a pescar!'
+  title: ''
+  chat: '&a&lPESCA: &aVocê começou a pescar!'
+
+stop-fishing:
+  actionbar: '&c&lPESCA: &cVocê parou de pescar!'
+  title: ''
+  chat: '&c&lPESCA: &cVocê parou de pescar!'
+
+evolve:
+  actionbar: '&aVocê evoluiu o nível da tua vara de pesca.'
+  title: '&aVara de pesca<nl>&a+1'
+  chat: '<nl>&aVocê evoluiu o nível da vara de pesca.<nl>'
+
+fish:
+  actionbar: '&aVocê pescou uma recompensa.'
+  title: '&aRecompensa<nl>&a+{amount}'
+  chat: '<nl>&aVocê encontrou uma recompensa pescando.<nl>'
+
+actionbar:
+  fishing: '&aVocê está pescando... Próxima recompensa em: &f{time}&a.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &a/pesca &8- &7Abre o menu principal
+    &a/pesca ajuda &8- &7Envia a mensagem de ajuda.
+    &a/pesca setloc &8- &7Seta o local da pesca.
+    &a/pesca delloc &8- &7Deleta o local da pesca.
+    &a/pesca giverod &8- &7Dar uma vara para um jogador.
+    &a/pesca givebooster &8- &7Dar um Booster para um jogador.
+    &a/pesca setnpc &8- &7Seta o local do NPC.
+    &a/pesca delnpc &8- &7Deleta o local do NPC.
+    &a/metas reload &8- &7Recarrega as configurações.
+
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  rod-found: |
+    &cVara não encontrada.
+    &cDisponíveis: {list}.
+  booster-found: |
+    &cBooster não encontrado.
+    &cDisponíveis: {list}.
+  booster-received: '&aVocê recebeu &f{amount} &abooster(s) de pesca.'
+  booster-give: '&aVocê deu &f{amount} &abooster(s) de pesca para o jogador &f{player}&a.'
+  booster-finished: '&cSeu booster de pesca acabou.'
+  booster-already: '&cVocê já está usando um booster.'
+  booster-activated: |
+    &aVocê ativou um booster de pesca.
+    &r
+    Multiplicador: &e{bonus}&a.
+    Tempo: &e{time}&a.
+    &r
+  npc-set: '&aNPC definido com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'
+  pesca-location-set: '&aO Local da Pesca foi definido com sucesso.'
+  pesca-location-deleted: '&aO Local da Pesca foi removido com sucesso.'
+  pesca-location-not-set: '&cO Local da Pesca não está definido.'
+  pesca-location-delay: '&cVocê deve aguardar {time} para teleportar ao Local da Pesca novamente.'
+  pesca-location-teleported: '&aTeleportado para o Local da Pesca.'
+  rod-give: '&aVocê deu &f{amount} &avara de pesca para o jogador &f{player}&a.'
+  rod-received: '&aVocê recebeu &f{amount} &avara de pesca.'
+  rod-buy-delay: '&cVocê deve aguardar {time} para comprar uma Vara de Pesca novamente.'
+  rod-bought: '&aVocê comprou uma Vara de Pesca.'
+  rod-registered: '&cEssa Vara de Pesca não está cadastrada.'

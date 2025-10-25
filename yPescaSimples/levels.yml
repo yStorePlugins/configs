@@ -1,0 +1,76 @@
+levels:
+   level1:
+      # A ordem das varas começa em 0
+      order: 0
+      # Habilitar o preview do menu ao clicar com botão direito
+      preview-enabled: true
+      # Configuração da vara de pesca
+      rod:
+         # Precisa ser uma vara de pesca.
+         material: 'FISHING_ROD'
+         name: '&eVara de Pesca &7(Nível {level})'
+         lore:
+            - '&eEXP: &a{has}&7/&c{need}'
+            - ''
+            - '&7Clique com botão shift+direito para ver as'
+            - '&7possíveis recompensas.'
+            - ''
+      # Configuração do item no menu
+      menu-item:
+         material: 'FISHING_ROD'
+         name: '&eVara de Pesca &7(Nível 1)'
+         lore:
+            - '&7Pegue sua vara e comece a pescar'
+            - '&7as melhores recompensas do servidor.'
+            - ''
+            - '&f> Preço: &2$&a{money} coins'
+            - ''
+            - '&aClique para comprar.'
+      # Sistema de compra de varas
+      buy:
+         # Ativar o sistema
+         enabled: true
+         # Preços para comprar
+         prices:
+            price1:
+               provider: 'money'
+               amount: 1000.0
+      # Sistema de evolução
+      evolute:
+         # Ativar o sistema
+         enabled: false
+         # XP necessário (do plugin) para evoluir
+         need-xp: 0.0
+      # Coisas que serão dadas ao pescar
+      gives:
+         # XP do mcMMO que será dado ao pescar
+         mcmmo-exp: 1.0
+         # XP do vanilla que será dado ao pescar
+         vanilla-exp: 1.0
+         # Quantidade máxima de recompensas que poderão ser dadas por vez
+         reward-max: 1
+         # Recompensas que serão dadas
+         # chance,recompensa-xp(do plugin)
+         rewards:
+            - '100.0,reward1-10.0'
+   level2:
+      order: 1
+      preview-enabled: true
+      rod:
+         material: 'FISHING_ROD'
+         name: '&eVara de Pesca &7(Nível {level})'
+         lore:
+            - '&eEXP: &a{has}&7/&c{need}'
+            - ''
+            - '&7Clique com botão shift+direito para ver as'
+            - '&7possíveis recompensas.'
+            - ''
+      evolute:
+         enabled: true
+         need-xp: 20.0
+      gives:
+         mcmmo-exp: 1.0
+         vanilla-exp: 1.0
+         reward-max: 1
+         rewards:
+            - '100.0,reward2-40.0'
