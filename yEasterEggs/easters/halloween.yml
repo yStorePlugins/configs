@@ -1,0 +1,128 @@
+# Data que poderá começar a coletar
+start-date: '01/10/2025-10:00'
+
+# Data que finalizerá a possibilidade de coletar
+end-date: '31/10/2025-10:00'
+
+# Lista de variedade de cabeças que poderão ser colocadas
+heads:
+  - '43c00154c561f3d66ac69b37d056a610f3700f41ea9323cdd40eeba5e6f3df91'
+  - 'ecc184cec63a8c14bd6d5f878a09cab861c8ed03064c3ccef99186bf380c5d6'
+  - '861b57ab8943ddfb8cb1fe478ae7e03d984782565d72880c4862f2eb3da0fd2'
+  - '78015fb3e8a6c24a98d8070d554d968bb7e083263d25b29d59f27e1dc0d36198'
+  - 'e6168c946de5f20d76bcf4aa6e2e9bb48c680a5447d0f79ef3dc21ffb8d3dd2'
+  - '9f19157eaaba31c5d215f2cdf7134dff9307569e65d6195bbdbbe5345d61f264'
+  - 'c562a073255fd90b1234ee752cde8cd24aac39b44c664ddd24edb9fad6f7f63d'
+  - '2b2c7fd836dd64890e04722db8a1336691dcdff1cea1aa8579b930137d60400e'
+
+# Ítem que o staff irá pegar pelo "give" para por no chão
+item:
+  name: '&6Abóbora do Halloween'
+  lore:
+    - '&7Coloque essa abóbora no chão'
+    - '&7em um lugar escondido.'
+    - ''
+    - '&6Depois, aguarde os jogadores'
+    - '&6a encontrarem.'
+
+# Configurações dos ícones dos menus
+icons:
+  # Ícone no menu de gerenciamento
+  main-staff-waiting:
+    material: '43c00154c561f3d66ac69b37d056a610f3700f41ea9323cdd40eeba5e6f3df91'
+    name: '&6Evento Halloween'
+    lore:
+      - '&7Easter-Eggs para o evento mais'
+      - '&7assombroso do ano.'
+      - ''
+      - '&e* &fEsse evento irá começar em'
+      - '&e* &f{start_time} &7({start_date}-{start_hour})'
+      - ''
+      - '&aClique para gerenciar.'
+  main-staff-started:
+    material: '43c00154c561f3d66ac69b37d056a610f3700f41ea9323cdd40eeba5e6f3df91'
+    name: '&6Evento Halloween'
+    lore:
+      - '&7Easter-Eggs para o evento mais'
+      - '&7assombroso do ano.'
+      - ''
+      - '&a* &fEsse evento irá finalizar em'
+      - '&a* &f{end_time} &7({end_date}-{end_hour})'
+      - ''
+      - '&aClique para gerenciar.'
+  main-staff-finished:
+    material: '43c00154c561f3d66ac69b37d056a610f3700f41ea9323cdd40eeba5e6f3df91'
+    name: '&6Evento Halloween'
+    lore:
+      - '&7Easter-Eggs para o evento mais'
+      - '&7assombroso do ano.'
+      - ''
+      - '&c* &fEsse evento já acabou.'
+      - ''
+      - '&aClique para gerenciar.'
+  #
+  # Ícone no menu de pegar a head
+  staff:
+    name: '&6Abóbora do Halloween'
+    lore:
+      - '&7Coloque essa abóbora no chão'
+      - '&7em um lugar escondido.'
+      - ''
+      - '&6Depois, aguarde os jogadores'
+      - '&6a encontrarem.'
+      - ''
+      - '&aClique para pegar.'
+  #
+  # Ícone no menu principal
+  main-waiting:
+    material: '43c00154c561f3d66ac69b37d056a610f3700f41ea9323cdd40eeba5e6f3df91'
+    name: '&6Evento Halloween'
+    lore:
+      - '&7Easter-Eggs para o evento mais'
+      - '&7assombroso do ano.'
+      - ''
+      - '&e* &fEsse evento irá começar em'
+      - '&e* &f{start_time} &7({start_date}-{start_hour})'
+      - ''
+  main-started:
+    material: '43c00154c561f3d66ac69b37d056a610f3700f41ea9323cdd40eeba5e6f3df91'
+    name: '&6Evento Halloween'
+    lore:
+      - '&7Easter-Eggs para o evento mais'
+      - '&7assombroso do ano.'
+      - ''
+      - '&6 Abóboras coletadas: &f{collected}/{total}'
+      - ''
+      - '&a* &fEsse evento irá finalizar em'
+      - '&a* &f{end_time} &7({end_date}-{end_hour})'
+      - ''
+  main-finished:
+    material: '43c00154c561f3d66ac69b37d056a610f3700f41ea9323cdd40eeba5e6f3df91'
+    name: '&6Evento Halloween'
+    lore:
+      - '&7Easter-Eggs para o evento mais'
+      - '&7assombroso do ano.'
+      - ''
+      - '&6 Abóboras coletadas: &f{collected}/{total}'
+      - ''
+      - '&c* &fEsse evento já acabou.'
+      - ''
+
+# Sistema de partículas ao redor da head
+particles:
+  enabled: true
+  particle: 'witch'
+
+# Recompensas configuradas na rewards.yml
+# chance,recompensa
+rewards:
+  - '100.0,reward1'
+
+# Mensagens
+messages:
+  placed: '&6Easter-Egg de Halloween colocado! &7({total}) easter-eggs.'
+  removed: '&6Easter-Egg de Halloween removido! &7({total}) easter-eggs.'
+  collected: '&6[Halloween] Mais uma abóbora coletada! &f({collected}/{total}).'
+  collected-all: '&6[Halloween] Você coletou todas as abóboras! &fRecompensa enviada.'
+  already-collected: '&6[Halloween] &cVocê já coletou essa abóbora!'
+  already-collected-all: '&6[Halloween] &cVocê já coletou todas as abóboras!'
