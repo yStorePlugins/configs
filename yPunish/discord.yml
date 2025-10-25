@@ -1,0 +1,96 @@
+options:
+  tempmute:
+    url: ''
+    username: 'yPunish - Mutado temporariamente'
+  mute:
+    url: ''
+    username: 'yPunish - Mutado permanentemente'
+  ban:
+    url: ''
+    username: 'yPunish - Banido permanentemente'
+  tempban:
+    url: ''
+    username: 'yPunish - Banido temporariamente'
+  kick:
+    url: ''
+    username: 'yPunish - Kickado'
+  warn:
+    url: ''
+    username: 'yPunish - Avisado'
+  unban:
+    url: ''
+    username: 'yPunish - Desbanido'
+  unbanip:
+    url: ''
+    username: 'yPunish - Desbanido'
+  unmute:
+    url: ''
+    username: 'yPunish - Desmutado'
+
+embeds:
+  mute:
+    title: ':mailbox: Um novo jogador foi mutado permanentemente'
+    thumbnail: 'https://minotar.net/body/{player}/100.png'
+    color: '#fff'
+    content: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      id:
+        inline: true
+        header: 'Punição Nº'
+        content: '```#{id}```'
+      player:
+        inline: true
+        header: 'Player'
+        content: '```{player}```'
+      sender:
+        inline: true
+        header: 'Staff'
+        content: '```{sender}```'
+      reason:
+        inline: true
+        header: 'Motivo'
+        content: '```{reason}```'
+      proof:
+        inline: true
+        header: 'Prova'
+        content: '```{proof}```'
+      duration:
+        inline: true
+        header: 'Término'
+        content: '```Nunca```'
+  tempmute:
+    title: ':mailbox: Um novo jogador foi mutado temporariamente'
+    thumbnail: 'https://minotar.net/body/{player}/100.png'
+    color: '#fff'
+    content: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      id:
+        inline: true
+        header: 'Punição Nº'
+        content: '```#{id}```'
+      player:
+        inline: true
+        header: 'Player'
+        content: '```{player}```'
+      sender:
+        inline: true
+        header: 'Staff'
+        content: '```{sender}```'
+      reason:
+        inline: true
+        header: 'Motivo'
+        content: '```{reason}```'
+      proof:
+        inline: true
+        header: 'Prova'
+        content: '```{proof}```'
+      duration:
+        inline: true
+        header: 'Término'
+        content: '```{expire_date} às {expire_hour}```'

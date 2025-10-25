@@ -1,0 +1,64 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aShop comandos:
+
+    &a> /playershop
+    &a> /playershop favoritas
+    &a> /playershop <player>
+    &a> /playershop giveslot <player> <quantia>
+
+  yourself: '&cVocê não pode executar esse comando em sí mesmo.'
+  slots-need: '&cVocê precisa de mais slots livres.'
+  slot-activated: '&aVocê ativou &e{amount} &ade slots.'
+  slot-max: '&cVocê já chegou no máximo.'
+  slot-give: '&aVocê deu &e{amount} &ade slots para o jogador &e{player}&a.'
+  category-digit-icon: |
+    &aDigite o item que você deseja
+    &7para cancelar digite &ncancelar&7
+  category-digit-slot: |
+    &aDigite o slot que você deseja
+    &7para cancelar digite &ncancelar&7
+  category-digit-name: |
+    &aDigite o nome que você deseja
+    &7para cancelar digite &ncancelar&7
+  category-change-icon: '&aVocê mudou o ícone da categoria com sucesso.'
+  category-change-slot: '&aVocê mudou o slot da categoria para {slot}.'
+  category-change-name: '&aVocê mudou o nome da categoria para {name}.'
+  reviewed: '&aVocê avaliou a loja de &f{player}&a com &f{amount} estrelas&a.'
+  digit-slot: |
+    &aDigite o slot que você deseja
+    &7para cancelar digite &ncancelar&7
+  digit-amount: |
+    &aDigite o valor que você deseja
+    &7para cancelar digite &ncancelar&7
+  change-slot: '&aVocê mudou o slot para {slot}.'
+  change-amount: '&aVocê mudou o valor para {amount}.'
+  inv-full: '&cSeu inventário está cheio. É necessário no mínimo um slot vazio.'
+  stock-add: '&aVocê adicionou &f{amount}x &aitens no estoque.'
+  stock-remove: '&aVocê removeu &f{amount}x &aitens do estoque.'
+  cant-buy: '&cEste item não foi completamente configurado.'
+  stock-has: '&cEsta loja possui apenas {amount}x itens em estoque.'
+  owner-offline: '&cEsta loja possui uma economia que não permite que o dono esteja offline e o dono desta loja está offline.'
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  no-balance-owner: '&cO jogador {player} não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  inv-amount-empty: '&cVocê precisa de {amount}x slots vazios.'
+  bought: '&aVocê comprou &f{amount}x&a itens na loja de &f{player}&a.'
+  sell: '&aVocê vendeu &f{amount}x&a itens na loja de &f{player}&a.'
+  inv-has: '&cVocê possui apenas {amount}x itens no inventário.'

@@ -1,0 +1,65 @@
+year: 2023
+month: 02
+
+menu:
+  name: '&8Recompensas FEV/2023'
+  size: 27
+  slots: [11, 12, 13, 14, 15]
+  previous-slot: 10
+  next-slot: 16
+
+rewards:
+  reward01:
+    order: 01
+    day: 01
+    # Apenas com o yDiscordHook
+    discord-hook-linked: false
+    # Tempo mínimo do yTempoOnline
+    # em segundos
+    time-minimum: 60
+    # Permissão para coletar sem precisar aguardar o tempo
+    # Deixe '' (vazio) para não usar essa opção
+    permission-bypass: ''
+    # Item que aparecerá no preview.
+    previews:
+      already:
+        material: 'IRON_INGOT'
+        name: '&eRecompensa dia 01'
+        amount: 64
+        lore: [ '&cVocê já coletou esta recompensa.' ]
+        enchants: []
+      wait:
+        material: 'IRON_INGOT'
+        name: '&eRecompensa dia 01'
+        amount: 64
+        lore: [ '&7Esta é a recompensa do dia 01', '&7de fevereiro.', '', '&a>&f 64x Barra de Ferro', '', '&cAguarde para coletar.' ]
+        enchants: []
+      cant:
+        material: 'IRON_INGOT'
+        name: '&eRecompensa dia 01'
+        amount: 64
+        lore: [ '&7Esta é a recompensa do dia 01', '&7de fevereiro.', '', '&a>&f 64x Barra de Ferro', '', '&cO dia para coletar já passou.' ]
+        enchants: []
+      collect:
+        material: 'IRON_INGOT'
+        name: '&eRecompensa dia 01'
+        amount: 64
+        lore: [ '&7Esta é a recompensa do dia 01', '&7de fevereiro.', '', '&a>&f 64x Barra de Ferro', '', '&aClique para coletar' ]
+        enchants: []
+    # Item que será dado ao player
+    item:
+      give: true
+      material: 'IRON_INGOT'
+      name: ''
+      amount: 64
+      lore: []
+      enchants: []
+    # Comandos que será dado ao player
+    command:
+      give: false
+      list: [ 'give {player} stone 1' ]
+    # Mensagens da recompensa
+    messages:
+      chat: '&aRecompensa do dia 01 coletada com sucesso.'
+      actionbar: '&aRecompensa do dia 01 coletada com sucesso.'
+      title: ''

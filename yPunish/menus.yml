@@ -1,0 +1,675 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de avisos
+warns:
+  name: '&8Punições'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 47
+  # Item do warn
+  items:
+    active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fAviso #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Avisado por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - '&f> &7Aviso: &c#{min}/{max}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+    inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fAviso #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Avisado por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - '&f> &7Aviso: &c#{min}/{max}'
+        - ''
+        - '&cEsta punição já expirou'
+  # Seletor dos tops
+  selector:
+    slot: 49
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor de STATUS'
+    # Tipos do seletor
+    types:
+      active:
+        enabled: true
+        name: 'Ativos'
+      inactive:
+        enabled: true
+        name: 'Inativos'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+
+# Menu de avisos para staff
+warns-staff:
+  name: '&8Punições'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
+  info-slot: 51
+  # Item do warn
+  items:
+    info:
+      material: '{player}'
+      name: '&aSeus Avisos'
+      lore:
+        - '&7Aqui estão concentrados os avisos'
+        - '&7que você recebeu.'
+        - ''
+        - '&aClique para abrir'
+    active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fAviso #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador avisado: &c{punished}'
+        - '&f> &7Avisado por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - '&f> &7Aviso: &c#{min}/{max}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para editar'
+    inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fAviso #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador avisado: &c{punished}'
+        - '&f> &7Avisado por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - '&f> &7Aviso: &c#{min}/{max}'
+        - ''
+        - '&cEsta punição já expirou'
+        - ''
+        - '&aClique para editar'
+  # Seletor dos tops
+  selector:
+    slot: 49
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor de STATUS'
+    # Tipos do seletor
+    types:
+      active:
+        enabled: true
+        name: 'Ativos'
+      inactive:
+        enabled: true
+        name: 'Inativos'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+
+# Menu de editar o aviso
+warn-edit:
+  name: '&8Punições'
+  size: 27
+  back-slot: 9
+  server-slot: 12
+  proof-slot: 15
+  # Item do warn
+  items:
+    server:
+      material: 'BOOK'
+      name: '&eEditar Servidor'
+      lore:
+        - ''
+        - '&7Atual: &f{server}'
+        - ''
+        - '&aClique para editar'
+    proof:
+      material: 'EMERALD'
+      name: '&eProva'
+      lore:
+        - ''
+        - '&7Atual: &f{proof}'
+        - ''
+        - '&aClique para editar'
+
+# Menu de punições
+punishes:
+  name: '&8Punições'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 47
+  # Item do warn
+  items:
+    temp-ban-active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fBanimento Temporário #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Banido TEMPORARIAMENTE por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+    temp-ban-inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fBanimento Temporário #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Banido TEMPORARIAMENTE por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&cEsta punição já expirou'
+    temp-mute-active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fMute Temporário #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Mutado TEMPORARIAMENTE por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+    temp-mute-inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fMute Temporário #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Mutado TEMPORARIAMENTE por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&cEsta punição já expirou'
+    mute-active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fMute Permanente #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Mutado PERMANENTEMENTE por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+    mute-inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fMute Permanente #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Mutado PERMANENTEMENTE por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&cEsta punição já expirou'
+    ban-active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fBanimento Permanente #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Banido PERMANENTEMENTE por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+    ban-inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fBanimento Permanente #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Banido PERMANENTEMENTE por: &c{sender}'
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&cEsta punição já expirou'
+  # Seletor dos tops
+  selector:
+    slot: 49
+    material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+    name: '&aSeletor de TIPO'
+    # Tipos do seletor
+    types:
+      ban:
+        enabled: true
+        name: 'Ban'
+      mute:
+        enabled: true
+        name: 'Mute'
+      temp-ban:
+        enabled: true
+        name: 'Temp-Ban'
+      temp-mute:
+        enabled: true
+        name: 'Temp-Mute'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+  # Seletor dos tops
+  selector-status:
+    slot: 51
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor de STATUS'
+    # Tipos do seletor
+    types:
+      active:
+        enabled: true
+        name: 'Ativos'
+      inactive:
+        enabled: true
+        name: 'Inativos'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+
+# Menu de punições
+punishes-staff:
+  name: '&8Punições'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
+  info-slot: 47
+  approve-slot: 45
+  # Item do warn
+  items:
+    info:
+      material: '{player}'
+      name: '&aSuas Punições'
+      lore:
+        - '&7Aqui estão concentrados as punições'
+        - '&7que você recebeu.'
+        - ''
+        - '&aClique para abrir'
+    approve:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aPunições Pendentes'
+      lore:
+        - '&7Aqui estão concentradas as punições'
+        - '&7que ainda não receberam aprovação.'
+        - ''
+        - '&aClique para abrir'
+    temp-ban-active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fBanimento Temporário #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Banido TEMPORARIAMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para editar'
+    temp-ban-inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fBanimento Temporário #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Banido TEMPORARIAMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&cEsta punição já expirou'
+        - ''
+        - '&aClique para editar'
+    temp-mute-active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fMute Temporário #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Mutado TEMPORARIAMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para editar'
+    temp-mute-inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fMute Temporário #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Mutado TEMPORARIAMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&cEsta punição já expirou'
+        - ''
+        - '&aClique para editar'
+    mute-active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fMute Permanente #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Mutado PERMANENTEMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para editar'
+    mute-inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fMute Permanente #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Mutado PERMANENTEMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&cEsta punição já expirou'
+        - ''
+        - '&aClique para editar'
+    ban-active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fBanimento Permanente #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Banido PERMANENTEMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para editar'
+    ban-inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fBanimento Permanente #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Banido PERMANENTEMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&cEsta punição já expirou'
+        - ''
+        - '&aClique para editar'
+    banip-active:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fBanimento Permanente #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7IP punido: &c{punished}'
+        - '&f> &7Banido PERMANENTEMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para editar'
+    banip-inactive:
+      material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+      name: '&fBanimento Permanente #{id} &7(&cInativo&7)'
+      lore:
+        - ''
+        - '&f> &7IP punido: &c{punished}'
+        - '&f> &7Banido PERMANENTEMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&cEsta punição já expirou'
+        - ''
+        - '&aClique para editar'
+  # Seletor dos tops
+  selector:
+    slot: 49
+    material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+    name: '&aSeletor de TIPO'
+    # Tipos do seletor
+    types:
+      ban:
+        enabled: true
+        name: 'Ban'
+      mute:
+        enabled: true
+        name: 'Mute'
+      temp-ban:
+        enabled: true
+        name: 'Temp-Ban'
+      temp-mute:
+        enabled: true
+        name: 'Temp-Mute'
+      banip:
+        enabled: true
+        name: 'Ban-IP'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+  # Seletor dos tops
+  selector-status:
+    slot: 51
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor de STATUS'
+    # Tipos do seletor
+    types:
+      active:
+        enabled: true
+        name: 'Ativos'
+      inactive:
+        enabled: true
+        name: 'Inativos'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+
+# Menu de editar a punição
+punish-edit:
+  name: '&8Punições'
+  size: 27
+  back-slot: 9
+  server-slot: 12
+  proof-slot: 13
+  reason-slot: 14
+  # Item do warn
+  items:
+    server:
+      material: 'BOOK'
+      name: '&eEditar Servidor'
+      lore:
+        - ''
+        - '&7Atual: &f{server}'
+        - ''
+        - '&aClique para editar'
+    proof:
+      material: 'EMERALD'
+      name: '&eProva'
+      lore:
+        - ''
+        - '&7Atual: &f{proof}'
+        - ''
+        - '&aClique para editar'
+    reason:
+      material: 'PAPER'
+      name: '&aMotivo'
+      lore:
+        - ''
+        - '&7Atual: &f{reason}'
+        - ''
+        - '&aClique para editar'
+
+# Menu de punições para aprovar
+punishes-staff-approve:
+  name: '&8Punições'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
+  info-slot: 47
+  # Item do warn
+  items:
+    temp-ban:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fBanimento Temporário #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Banido TEMPORARIAMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para aprovar'
+    temp-mute:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fMute Temporário #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Mutado TEMPORARIAMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para aprovar'
+    mute:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fMute Permanente #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Mutado PERMANENTEMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para aprovar'
+    ban:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fBanimento Permanente #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7Jogador punido: &c{punished}'
+        - '&f> &7Banido PERMANENTEMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para aprovar'
+    banip:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&fBanimento Permanente #{id} &7(&aAtivo&7)'
+      lore:
+        - ''
+        - '&f> &7IP punido: &c{punished}'
+        - '&f> &7Banido PERMANENTEMENTE por: &c{sender}'
+        - ''
+        - '&f> &7Servidor: &f{server}'
+        - '&f> &7Motivo: &f{reason}'
+        - '&f> &7Prova: &f{proof}'
+        - ''
+        - '&fTérmino: &c{expire_date} às {expire_hour}'
+        - ''
+        - '&aClique para aprovar'
+  # Seletor dos tops
+  selector:
+    slot: 49
+    material: '548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8'
+    name: '&aSeletor de TIPO'
+    # Tipos do seletor
+    types:
+      ban:
+        enabled: true
+        name: 'Ban'
+      mute:
+        enabled: true
+        name: 'Mute'
+      temp-ban:
+        enabled: true
+        name: 'Temp-Ban'
+      temp-mute:
+        enabled: true
+        name: 'Temp-Mute'
+      banip:
+        enabled: true
+        name: 'Ban-IP'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'

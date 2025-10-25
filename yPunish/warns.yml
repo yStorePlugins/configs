@@ -1,0 +1,9 @@
+warns:
+  chatting:
+    reason: 'Ofensa-Chat'
+    # máximo de warns para executar o comando
+    max: 2
+    # em segundos
+    expire: 60
+    # comando que será executado ao atingir o max
+    commands: [ "tempmute {player} 1d {server} null Ofensa-Chat" ]

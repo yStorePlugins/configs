@@ -1,0 +1,12 @@
+punishes:
+  chatting:
+    reason: 'Ofensa-Chat'
+    # Permissão para executar a punição
+    permission: 'ypunish.punish.chatting'
+    # Mensagem de permissão
+    message: '&cVocê precisa ser SUPORTE para executar esta punição.'
+    # Tipo de punição
+    # BAN - TEMPBAN - MUTE - TEMPMUTE - KICK
+    type: 'TEMPMUTE'
+    # Duração da punição (apenas para o TEMPMUTE e TEMPBAN)
+    duration: 10

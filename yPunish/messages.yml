@@ -1,0 +1,461 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+announces:
+  ban:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &c{punished}&f foi punido por &c{sender}
+      &fServidor: &c{server}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+      &fTérmino: &cNunca
+
+  banip:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &cSeu IP &e{punished}&f foi punido por &c{sender}
+      &fServidor: &c{server}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+      &fTérmino: &cNunca
+
+  tempban:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &c{punished}&f foi punido temporariamente por &c{sender}
+      &fServidor: &c{server}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+      &fTérmino: &c{expire_date} às {expire_hour}
+
+  mute:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &c{punished}&f foi mutado por &c{sender}
+      &fServidor: &c{server}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+      &fTérmino: &cNunca
+
+  tempmute:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &c{punished}&f foi mutado temporariamente por &c{sender}
+      &fServidor: &c{server}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+      &fTérmino: &c{expire_date} às {expire_hour}
+
+  warn:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &c{punished}&f foi avisado por &c{sender}
+      &fServidor: &c{server}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+      &fAviso: &c#{min}/{max}
+
+  kick:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &c{punished}&f foi expulso por &c{sender}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+
+  kick-all:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &cTodos os jogadores foram expulsos por &c{sender}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+
+  unban:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &c{punished}&f foi desbanido por &c{sender}
+      &fServidor: &c{server}
+
+  unbanip:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &cO IP &e{punished}&f foi desbanido por &c{sender}
+      &fServidor: &c{server}
+
+  unmute:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &c{punished}&f foi desmutado por &c{sender}
+      &fServidor: &c{server}
+
+  #
+
+logout:
+  ban: |
+
+    &c&lPUNIÇÕES
+
+    <s><s><s><s><s><s><s><s>&cVocê&f foi punido PERMANENTEMENTE por &c{sender}
+
+    &fServidor: &c{server}
+    &fMotivo: &c{reason}
+    &fProva: &c{proof}
+
+    &fTérmino: &cNunca
+
+    &eEsta punição possui o id &c#{id}&e, para contestá-la acesse google.com.br
+
+  tempban: |
+
+    &c&lPUNIÇÕES
+
+    <s><s><s><s><s><s><s><s>&cVocê&f foi punido temporariamente por &c{sender}
+
+    &fServidor: &c{server}
+    &fMotivo: &c{reason}
+    &fProva: &c{proof}
+
+    &fTérmino: &c{expire_date} às {expire_hour}
+
+    &eEsta punição possui o id &c#{id}&e, para contestá-la acesse google.com.br
+
+  banip: |
+
+    &c&lPUNIÇÕES
+
+    <s><s><s><s><s><s><s><s>&cSeu IP &e{punished}&f foi punido por &c{sender}
+
+    &fServidor: &c{server}
+    &fMotivo: &c{reason}
+    &fProva: &c{proof}
+
+    &fTérmino: &c{expire_date} às {expire_hour}
+
+    &eEsta punição possui o id &c#{id}&e, para contestá-la acesse google.com.br
+
+  kick: |
+
+    &c&lPUNIÇÕES
+
+    <s><s><s><s><s><s><s><s>&cVocê&f foi kickado por &c{sender}
+
+    &fMotivo: &c{reason}
+    &fProva: &c{proof}
+
+  #
+
+private:
+  mute:
+    actionbar: ''
+    title: ''
+    chat: ''
+  tempmute:
+    actionbar: ''
+    title: ''
+    chat: ''
+  warn:
+    actionbar: ''
+    title: ''
+    chat: ''
+  unmute:
+    actionbar: ''
+    title: ''
+    chat: ''
+  ban:
+    actionbar: ''
+    title: ''
+    chat: ''
+  banip:
+    actionbar: ''
+    title: ''
+    chat: ''
+  tempban:
+    actionbar: ''
+    title: ''
+    chat: ''
+  #
+
+chatting:
+  mute:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &cVocê&f foi mutado por &c{sender}
+      &fServidor: &c{server}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+      &fTérmino: &cNunca
+
+      &eEsta punição possui o id &c#{id}&e, para contestá-la acesse google.com.br
+
+  tempmute:
+    actionbar: ''
+    title: ''
+    chat: |
+
+      &c&lPUNIÇÕES
+      &cVocê&f foi mutado temporariamente por &c{sender}
+      &fServidor: &c{server}
+      &fMotivo: &c{reason}
+      &fProva: &c{proof}
+      &fTérmino: &c{expire_date} às {expire_hour}
+
+      &eEsta punição possui o id &c#{id}&e, para contestá-la acesse google.com.br
+
+  #
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  targetip: '&cIP {ip} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/punicoes &8- &7Abre o menu de punições.
+    &a/avisos &8- &7Abre o menu de avisos.
+
+  help-admin: |
+
+    &a/punicoes &8- &7Abre o menu de punições.
+    &a/avisos &8- &7Abre o menu de avisos.
+
+    &a/ban <player> <server/all> <prova/null> <motivo> &8- &7Executa um banimento.
+    &a/kick <player/all> <prova/null> <motivo> &8- &7Executa um kick.
+    &a/banip <player/ip> <server/all> <prova/null> <motivo> &8- &7Executa um banimento no IP.
+    &a/mute <player> <server/all> <prova/null> <motivo> &8- &7Executa um mute.
+    &a/punir <player> <motivo> <prova/null> <server/all> &8- &7Executa uma punição.
+    &a/tempban <player> <tempo> <server/all> <prova/null> <motivo> &8- &7Executa um banimento temporário.
+    &a/tempmute <player> <tempo> <server/all> <prova/null> <motivo> &8- &7Executa um mute temporário.
+    &a/checkban <player> &8- &7Verifica os banimentos de um player.
+    &a/checkmute <player> &8- &7Verifica os mutes de um player.
+    &a/checkwarn <player> &8- &7Verifica os avisos de um player.
+    &a/iphistory <player> &8- &7Verifica os IPS de um player.
+    &a/staffhistory <player> &8- &7Verifica o histórico de um staff.
+    &a/unban <player> &8- &7Desbane um jogador.
+    &a/unbanip <player> &8- &7Desbane um IP.
+    &a/unmute <player> &8- &7Desmuta um jogador.
+    &a/verificar <player/id> &8- &7Verifica se o jogador está banido e mutado / verifica uma punição ou aviso.
+    &a/warn <player> <server/all> <prova/null> <tipo> &8- &7Avisa um jogador.
+    &a/ypunish reload &8- &7Recarrega as configurações.
+
+  yourself: '&cVocê não pode aplicar punições para sí mesmo.'
+  not-ban: '&cEste jogador {player} não possui nenhum banimento em registro. &7Server: {server}'
+  not-banip: '&cEste IP {ip} não possui nenhum banimento em registro. &7Server: {server}'
+  not-mute: '&cEste jogador {player} não possui nenhum mute em registro. &7Server: {server}'
+  not-warn: '&cEste jogador {player} não possui nenhum warn em registro. &7Server: {server}'
+  already-ban: '&cEste jogador {player} já está PERMANENTEMENTE banido. &7Server: {server}'
+  already-banip: '&cEste IP {ip} já está PERMANENTEMENTE banido. &7Server: {server}'
+  already-mute: '&cEste jogador {player} já está PERMANENTEMENTE mutado. &7Server: {server}'
+  applied-ban: '&aO jogador &f{player} &afoi banido permanentemente. &7Server: {server}'
+  applied-banip: '&aO IP &f{ip} &afoi banido permanentemente. &7Server: {server}'
+  applied-tempban: '&aO jogador &f{player} &afoi banido temporariamente. &7Server: {server}'
+  applied-mute: '&aO jogador &f{player} &afoi mutado permanentemente. &7Server: {server}'
+  applied-tempmute: '&aO jogador &f{player} &afoi mutado temporariamente. &7Server: {server}'
+  applied-kick: '&aO jogador &f{player} &afoi expulso.'
+  applied-kick-all: '&aVocê expulsou todos os jogadores.'
+  applied-unban: '&aO jogador &f{player} &afoi desbanido. &7Server: {server}'
+  applied-unbanip: '&aO IP &f{ip} &afoi desbanido. &7Server: {server}'
+  applied-unmute: '&aO jogador &f{player} &afoi desmutado. &7Server: {server}'
+  applied-warn: '&aO jogador &f{player} &afoi avisado. &7Server: {server}'
+  report: |
+
+    &a&lRELATÓRIO
+    &7Confira o relatório atual das punições aplicadas
+
+    &f-> &aPunições desde o último reinício: &b{current}
+    &f-> &aPunições totais em toda a rede: &b{total}
+
+  history: |
+    &aHistórico de IP do jogador &7{player}
+
+    &fAtual: &b{ip}
+
+    &fOutros IPs: &7({list})
+  checkban-format: '&f> <click:suggest_command:/verificar {id}><hover:show_text:"<red>#{id}<newline>Clique para copiar</red>">#{id}</hover></click> &7- &6{sender} &7- &b{server} &7- &8({status}&8)'
+  checkban-temp-format: '&f> #{id} &7- &6{sender} &7- &a{expire_date} às {expire_hour} &7- &b{server} &7- &8({status}&8)'
+  checkban: |
+
+    &aHistórico de BANIMENTOS do jogador &7{player}
+
+    {format}
+
+    &7Clique em um #ID para verificar as informações completas
+    &ePágina &a{page} &ede &a{total_page}
+    <click:suggest_command:/checkban {player} {back}>❮ Anterior</click> <click:suggest_command:/checkban {player} {next}>Próxima ❯</click>
+
+  checkbanip-format: '&f> <click:suggest_command:/verificar {id}><hover:show_text:"<red>#{id}<newline>Clique para copiar</red>">#{id}</hover></click> &7- &6{sender} &7- &b{server} &7- &8({status}&8)'
+  checkbanip: |
+
+    &aHistórico de BANIMENTOS do IP &7{ip}
+
+    {format}
+
+    &7Clique em um #ID para verificar as informações completas
+    &ePágina &a{page} &ede &a{total_page}
+    <click:suggest_command:/checkbanip {ip} {back}>❮ Anterior</click> <click:suggest_command:/checkbanip {ip} {next}>Próxima ❯</click>
+
+  checkmute-format: '&f> <click:suggest_command:/verificar {id}><hover:show_text:"<red>#{id}<newline>Clique para copiar</red>">#{id}</hover></click> &7- &6{sender} &7- &b{server} &7- &8({status}&8)'
+  checkmute-temp-format: '&f> #{id} &7- &6{sender} &7- &a{expire_date} às {expire_hour} &7- &b{server} &7- &8({status}&8)'
+  checkmute: |
+
+    &aHistórico de MUTES do jogador &7{player}
+
+    {format}
+
+    &7Clique em um #ID para verificar as informações completas
+    &ePágina &a{page} &ede &a{total_page}
+    <click:suggest_command:/checkmute {player} {back}>❮ Anterior</click> <click:suggest_command:/checkmute {player} {next}>Próxima ❯</click>
+
+  checkwarn-format: '&f> <click:suggest_command:/verificar {id}><hover:show_text:"<red>#{id}<newline>Clique para copiar</red>">#{id}</hover></click> &7- &6{sender} &7- &b{server} &7- &8({status}&8)'
+  checkwarn: |
+
+    &aHistórico de WARNS do jogador &7{player}
+
+    {format}
+
+    &7Clique em um #ID para verificar as informações completas
+    &ePágina &a{page} &ede &a{total_page}
+    <click:suggest_command:/checkwarn {player} {back}>❮ Anterior</click> <click:suggest_command:/checkwarn {player} {next}>Próxima ❯</click>
+
+  staffhistory-format: '&f> <click:suggest_command:/verificar {id}><hover:show_text:"<red>#{id}<newline>Clique para copiar</red>">#{id}</hover></click> &7- &6{type} &7- &6{punished} &7- &b{server} &7- &8({status}&8)'
+  staffhistory: |
+
+    &aHistórico de PUNIÇÕES APLICADAS do staff &7{player}
+
+    {format}
+
+    &7Clique em um #ID para verificar as informações completas
+    &ePágina &a{page} &ede &a{total_page}
+    <click:suggest_command:/staffhistory {player} {back}>❮ Anterior</click> <click:suggest_command:/staffhistory {player} {next}>Próxima ❯</click>
+
+  info: |
+
+    &aInformações do jogador &7{player}
+
+    &f> Banido: &r{ban}
+    &f> Mutado: &r{mute}
+
+  info-punish: |
+
+    &aInformações da punição &7#{id}
+
+    &f> Tipo: &a{type}
+    &f> Status: &r{status}
+
+    &f> Jogador punido: &c{punished}
+    &f> Staff: &c{sender}
+
+    &f> Servidor: &c{server}
+    &f> Motivo: &c{reason}
+    &f> Prova: &c{proof}
+
+    &f> Término: &e{formatted_expire_date}
+
+  info-warn: |
+
+    &aInformações do aviso &7#{id}
+
+    &f> Status: &r{status}
+
+    &f> Jogador avisado: &c{punished}
+    &f> Staff: &c{sender}
+
+    &f> Servidor: &c{server}
+    &f> Motivo: &c{reason}
+    &f> Prova: &c{proof}
+
+    &f> Término: &e{formatted_expire_date}
+
+  not-found: '&cNenhum jogador, punição ou aviso foi encontrado(a) de acordo com o dado fornecido {data}.'
+  not-found-alt: '&cNenhum jogador ou IP foi encontrado de acordo com o dado fornecido {data}.'
+  not-found-warn: |
+    &cEste tipo de warn não foi encontrado.
+    &7Disponíveis: {list}
+  not-found-punish: |
+    &cEste tipo de punição não foi encontrada.
+    &7Disponíveis: {list}
+
+  punish-format: '&6>&f <click:suggest_command:/punir {player} {punish}><hover:show_text:"<red>/punir {player} {reason}<newline>Clique para copiar</red>">{reason}</hover></click>'
+  punish: |
+
+    &aSelecione um dos motivos abaixos
+
+    {format}
+
+    &7Clique em um motivo para punir o jogador {player}
+
+  alts: |
+
+    &aInformações do IP &7{ip}
+
+    &f> Usuários encontrados: &a{list}
+
+    &7Estes são todos os usuários que utilizaram do mesmo IP.
+
+  change-server: '&aServidor alterado para &f{server}&a.'
+  change-proof: '&aProva alterado para &f{proof}&a.'
+  change-reason: '&aMotivo alterado para &f{reason}&a.'
+  digit-server: |
+
+    &aDigite o SERVIDOR que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  digit-proof: |
+
+    &aDigite a PROVA que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  digit-reason: |
+
+    &aDigite o MOTIVO que você quer.
+    &7Para cancelar, digite &ncancelar&7.
+
+  set-local: '&aLocal setado com sucesso.'
+  imune: '&cO jogador {player} está imune.'
+  imune-on: '&aImunidade ativada.'
+  imune-off: '&cImunidade desativada.'

@@ -1,0 +1,47 @@
+Database:
+ Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+ IP: localhost:3306
+ DB: test
+ User: admin
+ Pass: ''
+ Debug: true
+
+# Comando e aliases do plugin
+Comando:
+ Comando: 'preferencias'
+ Aliases: [toggle, opcoes]
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+Login delay: 20
+
+# Mensagens do plugin
+Mensagens:
+ Permissao: '&c&lERRO! &cVocê não tem permissão para isto.'
+ Desativou tell: '&cEste jogador desativou o recebimento de mensagens privadas.'
+ Desativou coins: '&cEste jogador desativou o recebimento de coins.'
+ Desativou teleporte: '&cEste jogador desativou o recebimento de solicitações de teleporte.'
+ Desativou global: '&cVocê desativou seu chat global.'
+ Desativou local: '&cVocê desativou seu chat local.'
+ Nao encontrado: '&cJogador não encontrado.'
+
+# Configurações do chat
+Chat global nome: 'global'
+Chat local nome: 'local'
+
+# Comandos de teleporte
+# Deixe sempre o espaço " " no comando antes do nick
+Comandos tp:
+ - '/tpa '
+ - '/etpa '
+ - '/tpahere '
+ - '/etpahere '
+
+# Comandos de money
+# Deixe sempre o espaço " " no comando antes do nick
+Comandos coin:
+ - '/pay '
+ - '/money pay '
+ - '/eco pay '
+ - '/bal pay '

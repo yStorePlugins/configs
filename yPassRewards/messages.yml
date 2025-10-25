@@ -1,0 +1,27 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    <nl>
+    &aPasse diário comandos:
+    <nl>
+    &a> /diaria
+    &a> /diaria reload
+    <nl>
+  no-exists: '&cNão há nenhum calendário de recompensas disponível.'
+  discord-hook-linked: '&cVocê precisa estar vinculado para coletar.'
+  time-minimum: '&cVocê precisa ter {time} online.'
