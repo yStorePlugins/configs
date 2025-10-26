@@ -23,6 +23,9 @@ CompraDireito: true
 # Habilitar o drop de fragmentos em bosses
 Bosses: false
 
+# Verificar se o inventário está cheio
+VerificarInv: true
+
 # Mensagens gerais do plugin
 Mensagens:
   Permissao: '&cVocê não tem permissão para fazer isto.'
