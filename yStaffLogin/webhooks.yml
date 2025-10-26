@@ -1,0 +1,6 @@
+# Webhook para cada grupo
+# Será enviada para o canal definido
+Webhooks:
+  staff:
+    Permissao: 'ystafflogin.staff'
+    URL: 'https://discord.com/api/webhooks/818193190913572884/Umi4lmG2TnEva3GDWoB6NnAi_oUo3UhLU89q8I1Pj7CbskzHHRoFyMfUk3ICHkrAQ1eW'

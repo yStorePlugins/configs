@@ -1,0 +1,6 @@
+Descontos:
+  membros:
+    Ordem: 1
+    Permissao: 'ysshop.membro'
+    Display: '&7[Membro]'
+    Desconto: 10.0 # em % do valor total

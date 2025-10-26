@@ -1,0 +1,29 @@
+Options:
+  Username: 'yStaffLogin'
+  Ativar: false
+Embeds:
+  verificacao:
+    Title: 'Realize seu LoginStaff'
+    Thumbnail: ''
+    Color: '255;255;255'
+    Content: ''
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Fields:
+      usuario:
+        Inline: false
+        Header: 'Usuário'
+        Content: '{player}'
+      codigo:
+        Inline: false
+        Header: 'Código'
+        Content: '{codigo}'
+      ip:
+        Inline: false
+        Header: 'IP'
+        Content: '{ip}'
+      data:
+        Inline: false
+        Header: 'Data'
+        Content: '{data} - {hora}'

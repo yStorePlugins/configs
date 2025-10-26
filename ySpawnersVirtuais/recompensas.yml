@@ -1,0 +1,26 @@
+# Recompensa que será dada ao matar um mob.
+# Você pode criar quantas quiser.
+Recompensas:
+  Reco1:
+    # Se o ( Command -> Use ) tiver true, isso não vai funcionar
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 1
+      Data: 0
+      Glow: true
+      Name: '&8Pedra'
+      Amount: 64
+      Lore:
+        - '&aTu ganhou uma pedra.'
+      # Se não desejar, deixe:
+      # Enchants:
+      # - ''
+      Enchants:
+        - ''
+    Chance: 30.0
+    Command:
+      Use: false
+      # Se o ( Use ) tiver false, isso não funcionar.
+      List:
+        - 'give {player} stone 1'

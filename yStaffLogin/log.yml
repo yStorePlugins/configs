@@ -1,0 +1,16 @@
+# Ativar o sistema de logs
+Ativar: false
+# Webhook que irá enviar as logs
+Webhook: 'https://discord.com/api/webhooks/746113536740032523/HgpcMhC58oPf3KERKI9zY24OAVXEyEWRh-J1ZGOejyvYXeTvU7KNYqXlEbKqn_hKNV35'
+# Formato da log
+Formato: '[ [{data}] - ({hora}) ] {action}'
+# Usuário da webhook
+Username: 'Auditoria'
+# Tipos de log
+Tipos:
+  Entrou: '{player} realizou o login-staff no servidor RankUP'
+  Saiu: '{player} saiu do servidor RankUP'
+  Errou: '{player} errou o login-staff!'
+LogEmbed:
+  Color: '255;255;255'
+  Footer: 'Todos os direitos reservados'

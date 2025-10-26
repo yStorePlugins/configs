@@ -1,0 +1,9 @@
+# Preço de cada drop anteriormente configurado na mobs.yml
+Precos:
+  Preco1:
+    # Drop configurado na mobs.yml.
+    Drop: '289:0'
+    # Preço unitário.
+    Preco: 10.0
+    # Display do drop no menu de armazém.
+    Nome: '&cPólvora'

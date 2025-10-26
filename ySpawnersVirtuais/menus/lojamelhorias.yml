@@ -1,0 +1,65 @@
+Nome: '&8Geradores - Melhorias'
+Tamanho: 27
+BackSlot: 9
+# Itens da loja de melhorias.
+Itens:
+  Drop bonus:
+    Slot: 12
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/4cb3acdc11ca747bf710e59f4c8e9b3d949fdd364c6869831ca878f0763d1787'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aDrop bônus'
+    Lore:
+      - ''
+      - '&fSeu nível: &e{playerlevel}&f.'
+      - '&fPróximo: &e{proximolevel} &f- &7(&a{preco}c &7(&e-{desconto}%&7) &7)&f.'
+      - ''
+      - '&aClique para comprar.'
+      - ''
+    Lore max:
+      - ''
+      - '&aVocê ja está no nível'
+      - '&amáximo do drop bônus.'
+      - ''
+  Spawnar:
+    Slot: 13
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/81359b8150b25cca5dc3a92ece02f2dfb6a5235d4f7bffacc3934880033a7'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aSpawnar mais rápido'
+    Lore:
+      - ''
+      - '&fSeu nível: &e{playerlevel}%'
+      - '&fPróximo: &e{proximolevel}% &f- &7(&a{preco}c &7(&e-{desconto}%&7) &7)&f.'
+      - ''
+      - '&aClique para comprar.'
+      - ''
+    Lore max:
+      - ''
+      - '&aVocê ja está no nível'
+      - '&amáximo de spawnar rápido.'
+      - ''
+  Bonus de venda:
+    Slot: 14
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/7e3deb57eaa2f4d403ad57283ce8b41805ee5b6de912ee2b4ea736a9d1f465a7'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aBônus de venda'
+    Lore:
+      - ''
+      - '&fSeu nível: &b{playerlevel}%'
+      - '&fPróximo: &b{proximolevel}% &f- &7(&a{preco}c &7(&e-{desconto}%&7) &7)&f.'
+      - ''
+      - '&aClique para comprar.'
+      - ''
+    Lore max:
+      - ''
+      - '&aVocê ja está no nível'
+      - '&amáximo do bônus de venda.'
+      - ''

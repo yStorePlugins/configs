@@ -1,0 +1,24 @@
+Recompensas:
+  Reco1:
+    # Só será dado o item se os comandos estiverem em false.
+    # Item que será dado ao jogador.
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 1
+      Data: 0
+      Name: '&8Pedra'
+      Amount: 64
+      Lore:
+        - '&aEu valho muito!'
+      # Caso não queira deixe:
+      # Enchants:
+      # - ''
+      Enchants:
+        - ''
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      Use: false
+      List:
+        - 'give {player} stone 1'

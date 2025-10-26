@@ -1,0 +1,65 @@
+Nome: '&8Geradores - Principal'
+Tamanho: 27
+# Itens do menu principal
+Itens:
+  Perfil: # primeiro
+    Slot: 10
+    Name: '&f{player}'
+    Lore:
+      - ''
+      - '&fGeradores ativos: &a{ativos}&fx.'
+      - '&fDrops armazenados: &a{dropsarmazenados}&fx.'
+      - ''
+      - '&fXP de evolução: &a{xp}&f.'
+      - ''
+      - '&e⭐ Melhorias'
+      - ''
+      - '&f > Tempo de spawn: &7({tempomin}/{tempomax}) &e-{tempo}s'
+      - '&f > Drop bônus: &7({dropbonusmin}/{dropbonusmax}) &e+{dropbonus}%'
+      - '&f > Bônus de venda: &7({bonusvendamin}/{bonusvendamax}) &e+{bonusvenda}%'
+      - ''
+  Spawners: #segundo
+    Slot: 11
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/4faaf642babf93f96e146e2bb7b3cd70a4ec9d17f4a2957a99e2d8ed5bc8306d'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&eGeradores'
+    Lore:
+      - '&7Clique para acessar seus geradores.'
+      - '&fGeradores sendo usados: &a{geradores}&f.'
+      - '&fSeu limite: &a{limite}&f.'
+  Armazem: #terceiro
+    Slot: 12
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/95732d3e57b9a62159b35d2754574452a32b4c221fc4fd363bff522ff04a577e'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&bArmazém'
+    Lore:
+      - '&7Clique para acessar seu armazém.'
+      - '&fDrops disponíveis: &a{drops}x&f.'
+      - '&fSeu limite: &a{limite}&f.'
+  Loja: #quarto
+    Slot: 15
+    CustomSkull: false
+    URL: ''
+    ID: 266
+    Data: 0
+    Glow: false
+    Name: '&aLoja'
+    Lore:
+      - '&7Clique para comprar geradores e melhorias'
+  Top: #quinto
+    Slot: 16
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/15a7ee9a86de203674a93b570bc8992e500363dd32f2b9813daaeeabccf92151'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&eTOP Geradores'
+    Lore:
+      - '&7Clique para ver os jogadores com o maior'
+      - '&7valor de geradores acumulados.'

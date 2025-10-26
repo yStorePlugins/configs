@@ -1,0 +1,12 @@
+Nome: '&8Geradores - SLoja'
+Tamanho: 27
+Slots: [ 11, 12, 13, 14, 15 ]
+BackSlot: 9
+VoltarSlot: 9
+ProximoSlot: 17
+# Item de perfil da loja.
+Limite:
+  Slot: 4
+  Name: '&b{player}'
+  Lore:
+    - '&fVocê possui &a{limite} &fem limite.'

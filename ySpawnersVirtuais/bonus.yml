@@ -1,0 +1,7 @@
+# Este bônus servirá na hora de vender drops.
+# Você pode criar quantos quiser.
+Bonus:
+  VIP:
+    Permissao: 'yspawners.vip'
+    Bonus: 10.0
+    Ordem: 1

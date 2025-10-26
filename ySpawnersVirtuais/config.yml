@@ -1,0 +1,386 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+# Comandos e aliases do plugin
+Comandos:
+  Spawners:
+    Comando: 'spawners'
+    Aliases: [ geradores, spawner, gerador ]
+  Limite:
+    Comando: 'limite'
+    Aliases: [ limites ]
+# Opções das melhorias disponíveis para o jogador.
+Melhorias:
+  # Esta melhoria serve para diminuir o tempo de spawnar um mob
+  # de todos os spawners.
+  Delay:
+    # Preço de cada lével.
+    Preco: 10.0
+    # Porcentagem que irá aumentar no preço a cada lével que comprar.
+    # Por exemplo: Level 1 = 10.0, Level 2 = 10 + 30% ( que seria, 13 )
+    Porcentagem acrescida: 30.0
+    # Segundos que irá diminuir por cada lével adquirido.
+    # Por exemplo: Spawner de porco (delay 10segundos). Level 1 irá diminuir 1 segundo,
+    # ou seja, irá spawnar com 9 segundos. O level 2 irá diminuir 2 segundos, ou seja,
+    # irá spawnar com 8 segundos.
+    Segundos por level: 1
+    # Máximo de léveis que o jogador pode comprar deste upgrade.
+    Max: 3
+    # Quantia de léveis que o jogador ganha ao se registrar.
+    Default: 1
+  Drop bonus:
+    # Preço de cada lével.
+    Preco: 10.0
+    # Porcentagem que irá aumentar no preço a cada lével que comprar.
+    # Por exemplo: Level 1 = 10.0, Level 2 = 10 + 30% ( que seria, 13 )
+    Porcentagem acrescida: 30.0
+    # Porcentagem que irá aumentar de drops por cada lével.
+    # Por exemplo: 10 drops no lével 1 se tornariam 10 drops + 5%, ou seja, 10,5 drops.
+    Porcentagem por level: 5.0
+    # Máximo de léveis que o jogador pode comprar deste upgrade.
+    Max: 3
+    # Quantia de léveis que o jogador ganha ao se registrar.
+    Default: 0.0
+  Bonus de venda:
+    # Preço de cada lével.
+    Preco: 10.0
+    # Porcentagem que irá aumentar no preço a cada lével que comprar.
+    # Por exemplo: Level 1 = 10.0, Level 2 = 10 + 30% ( que seria, 13 )
+    Porcentagem acrescida: 30.0
+    # Porcentagem que irá aumentar no money ao vender drops.
+    # Por exemplo: 100 em money no lével 1 se tornariam 100 + 5%, ou seja 105 em money.
+    Porcentagem por level: 5.0
+    # Máximo de léveis que o jogador pode comprar deste upgrade.
+    Max: 3
+    # Quantia de léveis que o jogador ganha ao se registrar.
+    Default: 0.0
+# Opções do armazém de drops.
+Armazem:
+  # Ativar o armazem
+  Ativar: true
+  # Permitir a venda direta de drops
+  Venda: true
+  # Permitir a coleta de drops.
+  Coleta: true
+# Opções de geração de mobs.
+Gerar:
+  # Gerar quando o jogador estiver offline.
+  Offline: true
+  # Gerar quando a chunk do spawner estiver descarregada. ( Pode gerar lag )
+  Chunk descarregada: true
+  # Raio de verificação do stack mobs
+  Raio: 5
+  # Nome do mob no stackmobs
+  Nome: '&7{quantia}x &c{mob}'
+  # Desativar a AI dos mobs
+  NoAI: true
+# Opções gerais do plugin
+###
+# O limite de spawners vai ser geral ou por cada spawner
+Limite geral: false
+# Acumular os bônus que tiver permissão
+Acumular bonus: false
+# Multiplicar o xp com a quantidade de mobs
+XP multiplicar: false
+# Limite máximo do stackmobs
+# Deixe 0 para ser infinito
+MobStack max: 0
+# Ativar a variação de 20% para menos ou para mais da quantia de spawners.
+# Por exemplo: 10 spawners com a variação em true. Gerariam entre 8 a 12 mobs.
+Variacao: false
+# Multiplicação fixa da looting de acordo ao nível e a quantia de mobs.
+# Caso esteja ativado, será (drops x mobs x looting)
+Fixo: true
+# Ao matar segurando shift, irá matar apenas 1 mob do stackmobs.
+Shift unitario: true
+# Ativar a coleta de spawners armazenados
+Spawners coleta: true
+# Limite de compra de spawners na loja.
+Limite:
+  # Quantia de limite que o jogador ganhar ao se registrar.
+  Default: 1
+  # Máximo de limite que o jogador pode ter.
+  # Deixe 0 para ser infinito.
+  Max: 100
+  # Ativar o limite
+  Ativar: true
+  # Item do limite que será ativável
+  Item:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&bLimite de compra'
+    Lore:
+      - ''
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+# Limite de spawners armazenados de cada tipo.
+Limite spawners:
+  # Quantia de limite que o jogador ganhar ao se registrar.
+  Default: 1
+  # Máximo de limite que o jogador pode ter.
+  # Deixe 0 para ser infinito.
+  Max: 100
+  # Ativar o limite
+  Ativar: true
+  # Item do limite que será ativável
+  Item:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&bLimite de spawners'
+    Lore:
+      - ''
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+# Limite de drops armazenados de cada tipo.
+Limite drops:
+  # Quantia de limite que o jogador ganhar ao se registrar.
+  Default: 1
+  # Máximo de limite que o jogador pode ter.
+  # Deixe 0 para ser infinito.
+  Max: 100
+  # Ativar o limite
+  Ativar: true
+  # Item do limite que será ativável
+  Item:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&bLimite de drops'
+    Lore:
+      - ''
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+# Configuração da matadora de mobs.
+Matadora:
+  # Ativar a matadora.
+  Usar: true
+  # Item da matadora.
+  Item:
+    CustomSkull: false
+    URL: ''
+    ID: 276
+    Data: 0
+    Glow: true
+    Name: '&bEspada matadora'
+    Lore:
+      - '&7Use para matar os mobs spawnados.'
+      - '&7Clique com shift+botão direito para abrir a evolução.'
+  # Encantamentos que vem por padrão na matadora.
+  Default:
+    # Multiplicador de drops. (Looting própria, infinita)
+    Looting: 1
+    # Encantamento para dropar recompensas.
+    Sortudo: 0
+    # Dano acrescido da matadora. ( Irá somar o encantamento dano + o dano vanilla do item)
+    Dano: 1
+  # Preços de cada encantamento.
+  Precos:
+    # Acréscimo de valor para cada nível.
+    # Por exemplo: Nivel 1 custa 10, já o Nivel 2 custa 10 + 20%, ou seja, 12.
+    Acrescimo: 20.0
+    Looting: 20
+    Sortudo: 20
+    Dano: 20
+  # Máximo de léveis para cada encantamento.
+  Maximo:
+    Looting: 3
+    Sortudo: 5
+    Dano: 10
+  # Atributos de cada encantamento.
+  Atributos por level:
+    Looting: 10.0 # Recomendo deixar assim para um calculo mais proximo do vanilla.
+    Sortudo: 5.0 # 5% de chance a cada nível para dropar recompensas.
+    Dano: 1 # 1 de dano acrescido a cada nível.
+# Interação ao clicar com botão direito em um mob do stackmobs.
+Interacao:
+  # Ativar a interação.
+  Ativar: true
+  # Mensagem que será enviada ao clicar no mob.
+  Mensagem:
+    - ''
+    - '&cTipo do mob: &7{mob}'
+    - '&cXP de evolução dropável: &7{xp}'
+    - '&cSpawnado por: &7{spawner}'
+    - '&cDono do spawner: &7{dono}'
+    - '&cQuantidade stackada: &7{quantidade}'
+    - ''
+# Mensagens do plugin.
+Mensagens:
+  Permissao: '&cVocê não tem permissão para usar isto.'
+  Help: '&cSub-comandos: givelimite, givelimitespawners, givelimitedrops, givespawner, espada, setspawn, delspawn.'
+  Matadora desativada: '&cO sistema de matadora foi desativado.'
+  Matadora dada: '&cMatadora dada ao jogador {player}.'
+  Nao tem money: '&cDesculpe, mas você não possui a quantia necessária de money, &7{money} money&c.'
+  Comprou spawner: '&aObrigado pela sua compra, você adquiriu {quantia}x &7Spawner ( {spawner} &7)&a com sucesso.'
+  Comprou melhoria: '&aVocê adquiriu esta melhoria com sucesso.'
+  Nao e numero: '&cO argumento não é um número.'
+  Cancelou: '&cVocê cancelou a compra.'
+  Local nao setado: '&cO local de spawn deste spawner não foi setado.'
+  Local setado: '&aVocê setou o local de spawn deste spawner.'
+  Local removido: '&aVocê removeu o local de spawn deste spawner.'
+  Nao pode vender: '&cA venda foi bloqueada.'
+  Nao pode coletar: '&cA coleta foi bloqueada.'
+  Vendeu: '&aVocê vendeu &7{quantia}x {item} &apor &7{preco}&a.'
+  Inv cheio: '&cSeu inventário está cheio.'
+  XP insuficiente: '&cVocê não possui xp suficiente para isso.'
+  Limite insuficiente: '&cVocê não possui limite suficiente. Disponível: &7{limite}&c.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Deu: '&aVocê deu &e{quantia} &ade limite para o jogador &e{player}&a.'
+  Converteu: '&cVocê compactou todos seus limites em 1.'
+  Ativou: '&aVocê ativou &e{quantia} &ade limites.'
+  Espada: '&cVocê necessita da espada matadora para isto.'
+  Armazenou: '&aVocê armazenou &7{quantia}x &aspawners de &7( {spawner} )&a.'
+  Deu spawner: '&aVocê deu &7{quantia}x &aspawner(s) de &7( {spawner} ) &apara o jogador &7{player}&a.'
+  Quantia insuficiente: '&cVocê não tem spawners suficiente.'
+  Recolheu: '&aVocê recolheu &7{quantia}x &aspawners de &7( {spawner} )&a.'
+  Max limite: '&cVocê já chegou no máximo.'
+  Seus spawners:
+    - ''
+    - '&cVocê não possui este spawner.'
+    - '&7Disponíveis: {spawners}'
+    - ''
+  Digite:
+    - ''
+    - '&aDigite a quantia de spawners que deseja.'
+    - '&7para cancelar digite &ncancelar&7.'
+    - ''
+  Seu limite:
+    - '&bInformações sobre seus limites:'
+    - ''
+    - '&bLimite de compra: &7{limite_compra}&b.'
+    - '&bLimite de spawners: &7{limite_spawners}&b.'
+    - '&bLimite de drops: &7{limite_drops}&b.'
+    - ''
+  Limite jogador:
+    - '&bInformações sobre os limites do jogador &f{player}&b:'
+    - ''
+    - '&bLimite de compra: &7{limite_compra}&b.'
+    - '&bLimite de spawners: &7{limite_spawners}&b.'
+    - '&bLimite de drops: &7{limite_drops}&b.'
+    - ''
+# Sons gerais do plugin.
+Sons:
+  # Ativar os sons.
+  Usar: true
+  # Som ao comprar uma melhoria.
+  Comprar melhoria: 'LEVEL_UP'
+  # Som ao comprar um spawner.
+  Comprar spawner: 'VILLAGER_YES'
+# Setas dos menu.
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - ''
+      - '&7Clique para voltar.'
+      - ''
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróximo'
+    Lore:
+      - ''
+      - '&7Clique para ir à próxima página.'
+      - ''
+# Itens que substituirá o spawner na loja de spawners.
+Items:
+  # Quando o item não foi liberado na data ainda.
+  Nao pode:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '{spawner}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar este spawner.'
+      - '&7Ele será liberado em: &f{data} - &f{hora}'
+      - ''
+  # Quando o jogador não tiver permissão de comprar aquele spawner.
+  Permissao:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '{spawner}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar este spawner.'
+      - '&7Você não possui permissão.'
+      - ''
+# Lore que substituirá a dos spawners.
+Lores:
+  # Lore na loja
+  Lore comprar:
+    - ''
+    - '&fEntidade: &a{entidade}'
+    - '&fDelay de spawn: &a{delay}s'
+    - '&fPreço: &a{preco} &7(&e-{desconto}%&7)'
+    - ''
+    - '&7Clique com o botão esquerdo para comprar.'
+    - ''
+  # Lore para armazenar o spawner
+  Lore ativar:
+    - ''
+    - '&fEntidade: &c{entidade}'
+    - '&fDelay de spawn: &a{delay}s'
+    - '&fQuantidade: &a{quantidade}'
+    - ''
+    - '&7Clique com o botão direito para armazenar.'
+    - ''
+# Formatos de quantia e money
+Formats:
+  - ''
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'
+# Formatador booleano.
+Formatador:
+  B true: '&aSim'
+  B false: '&cNão'

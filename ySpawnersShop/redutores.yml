@@ -1,0 +1,19 @@
+Redutores:
+  1hora:
+    # Tempo que irá reduzir da liberação de spawners
+    # Em segundos
+    Tempo: 3600
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: WATCH
+      Data: 0
+      Glow: true
+      Name: '&eMáquina do tempo'
+      Lore:
+        - '&7Diminuia a sua espera para'
+        - '&7liberar um gerador.'
+        - ''
+        - ' &fTempo: &71 hora'
+        - ''
+        - '&cClique para utilizar'

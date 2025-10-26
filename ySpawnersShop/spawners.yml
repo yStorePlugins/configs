@@ -1,0 +1,49 @@
+Spawners:
+  1:
+    # Item do spawner.
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 383
+      Data: 92
+      Glow: false
+      Name: '&aGerador de Monstros'
+      Lore:
+        - ''
+        - '&fTipo: &7Vaca&f.'
+        - '&fPreço p/ drop: &71M&f.'
+        - ''
+        - '&fPreço: &71000 coins&F.'
+        - ''
+        - '&a&lFORMAS DE COMPRA'
+        - ''
+        - '&7&l• &fBotão direito: &7Comprar 1&f.'
+        - '&7&l• &fBotão Q: &7Comprar limite&f.'
+        - '&7&l• &fBotão esquerdo: &7Escolher quantia&f.'
+        - ''
+    # Display name do spawner
+    Display: '&7Vaca'
+    # Data de liberação para comprar
+    Libera em: '16/10/2020-10:00'
+    # Tempo reduzido (não mexa aqui :) )
+    Deduced: 0
+    # Valor para somar no gasto do jogador
+    Gasto: 1000.0
+    # Comando que será executado quando o jogador comprar
+    Comandos:
+      - 'mobspawner give {player} COW {quantia}' # {quantia} para a quantia digitada
+    # Placeholder {rank} na lore da compra indisponível
+    Rank: '&7[Membro]'
+    Comprar:
+      # Preço de cada spawner.
+      Custos:
+        Custo1:
+          Display: 'Money'
+          Tipo: 'Money' #tipos: Money, plugin de pontos
+          Custo: 1000.0
+        Custo2:
+          Display: 'Pontos'
+          Tipo: 'PlayerPoints'
+          Custo: 10.0
+      # Permissão para comprar o spawner.
+      Permissao: 'ysshop.vaca'

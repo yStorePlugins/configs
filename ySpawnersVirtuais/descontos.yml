@@ -1,0 +1,7 @@
+# Estes descontos servirão para comprar spawners e melhorias.
+# Você pode criar quantos quiser.
+Descontos:
+  VIP:
+    Permissao: 'yspawners.vip'
+    Desconto: 10.0
+    Ordem: 1

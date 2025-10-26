@@ -1,0 +1,58 @@
+Nome: '&8Loja de geradores'
+Tamanho: 54
+Slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34  ]
+AnteriorSlot: 45
+ProximoSlot: 53
+# Itens da loja
+Itens:
+  Informacoes:
+    Slot: 48
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/1cba7277fc895bf3b673694159864b83351a4d14717e476ebda1c3bf38fcf37'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aInformações gerais'
+    Lore:
+      - '&7Geradores são uma das partes mais'
+      - '&7importantes do servidor! Com'
+      - '&7eles, é possível receber muuuitos'
+      - '&7coins e itens especiais!'
+      - ''
+      - '&fCoins: &7{money}&f.'
+      - '&fDesconto: &7{desconto}% ( {grupo} &7)&f.'
+      - '&fLimite de compra: &7{limite}&f.'
+      - '&fGeradores Adquiridos: &7{geradores}&f.'
+  Top:
+    Slot: 49
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aTOP'
+    Lore:
+      - '&7Clique aqui para acessar'
+      - '&7a lista de jogadores com'
+      - '&7mais limites do servidor.'
+  Multiplicador:
+    Slot: 50
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/b73e87235a2f691cf14bb0d414fda2563f040865c74273bf2c8bc095fecb228'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aMultiplicador de compra'
+    Lore:
+      - '&7Quanto mais limite de compra,'
+      - '&7mais geradores é possível comprar'
+      - '&7por vez, porém, há mais um jeito'
+      - '&7de comprar geradores mais rápido,'
+      - '&7que é o multiplicador de compra!'
+      - '&7Ele fornece mais geradores a'
+      - '&7cada compra feita.'
+      - ''
+      - ' &fMultiplicador ativo: &7{ativo}&f.'
+      - ' &fMultiplicador máximo: &7{maximo}&f.'
+      - ''
+      - '&aClique para alterar seu multiplicador.'

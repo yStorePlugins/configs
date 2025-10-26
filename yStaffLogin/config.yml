@@ -1,0 +1,76 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Stafflogin:
+    Comando: 'sl'
+    Aliases: [ stafflogin, ls, loginstaff ]
+
+# Será solicitado o loginstaff após logar
+# Só é compatível com o nLogin
+Depois de logar: true
+
+# Salvar IP ao logar staff e não pedir mais o código pro user+IP
+Salvar ip: false
+
+# Forçar gamemode survival?
+Forcar gamemode: true
+
+# Quantia de caracteres do código de verificação
+Quantia caracteres: 6
+
+# Limpar chat ao entrar no servidor e quando realizar o login staff
+Limpar chat: true
+
+# Remover os itens ao logar
+Remover itens: true
+
+# Estes são os nomes dos menus caso seu servidor tenha captcha próprio
+Menus liberados:
+  - '&7Captcha'
+
+# Enviar o embed no privado (somente para quem tem yDiscordHook)
+DiscordHook:
+  # Ativar o sistema
+  Ativar: true
+  # Embed configurada no yDiscordHook
+  Embed: 'ystafflogin_verificacao'
+
+# Mensagens que irão ser enviadas no chat do servidor, ao entrar e sair
+Chatmsg:
+ # Deixe vazia para não usar
+ Logou: '&7[&a+&7] &a{player}'
+ # Deixe vazia para não usar
+ Saiu: '&7[&c-&7] &c{player}'
+
+# Lista de comandos liberados no loginstaff (deixe os do próprio plugin também)
+Comandos liberados:
+- '/login'
+- '/sl'
+- '/stafflogin'
+- '/logar'
+- '/registro'
+- '/registrar'
+- '/register'
+- '/autenticar'
+
+Mensagens:
+ Use login:
+ - '&7O código foi enviado no discord.'
+ - '&eUse: /sl <codigo>'
+ - ''
+ Use: '&cUse: /sl <codigo>'
+ Permissao: '&cVocê não tem permissão para isto.'
+ Ja logado: '&cVocê já está logado.'
+ Logou: '&aVocê logou com sucesso!'
+ Errou: '&c&lyStore<nl><nl>     &cVocê errou o login staff.<nl>&cRelogue para tentar novamente.'
+ Relogue: '&c&lyStore<nl><nl>     &cO servidor foi recarregado.<nl>&cRelogue para autenticar-se novamente.'
+
+# Enviado quando logar.
+Title: '&aSucesso<nl>&eVocê realizou seu login Staff.'

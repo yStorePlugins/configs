@@ -1,0 +1,39 @@
+# Comandos e aliases do plugin
+Comando:
+  Sorteio:
+    Comando: 'sorteio'
+    Aliases: [ sortear, giveaway ]
+# Opções gerais do plugin
+Opcoes:
+  # Quantia de vezes que irá mandar a mensagem "Sorteando"
+  # Deixe 0 para ser a quantia de jogadores no servidor
+  Vezes: 5
+# Autostart de sorteios
+Autostart:
+  vip:
+    # nome do sorteio
+    # deixe 'random' para ser um aleatório
+    Sorteio: 'random'
+    # todos, segunda, terca, quarta, quinta, sexta, sabado, domingo
+    # dia-hora-minuto-segundo
+    Horario: 'todos-00:00:01'
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isso.'
+  Quantia: '&cNão foi possível realizar o sorteio por falta de jogadores.'
+  Parou: '&cO sorteio foi cancelado por um administrador.'
+  Ocorrendo: '&cJá existe um sorteio ocorrendo.'
+  NaoOcorrendo: '&cNão existe um sorteio ocorrendo.'
+  Iniciado: '&aSorteio iniciado com sucesso.'
+  Parado: '&aSorteio parado com sucesso.'
+  Help: |
+     &bLista de &6comandos:
+     &f> &3/sorteio help &8- &7Aparece esta mensagem.
+     &f> &3/sorteio lista &8- &7Ver os tipos de sorteios disponíveis.
+     &f> &3/sorteio iniciar <nome> &8- &7Iniciar um sorteio.
+     &f> &3/sorteio parar &8- &7Iniciar um sorteio.
+  Existe: |
+    &cEste sorteio não existe.
+    &cDisponíveis: &7{lista}&c.
+  Lista: |
+    &bDisponíveis: &7{lista}&c.

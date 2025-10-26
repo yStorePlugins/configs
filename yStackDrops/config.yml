@@ -1,0 +1,48 @@
+#         ____  _             _    ____
+#  _   _/ ___|| |_ __ _  ___| | _|  _ \ _ __ ___  _ __  ___
+# | | | \___ \| __/ _` |/ __| |/ / | | | '__/ _ \| '_ \/ __|
+# | |_| |___) | || (_| | (__|   <| |_| | | | (_) | |_) \__ \
+#  \__, |____/ \__\__,_|\___|_|\_\____/|_|  \___/| .__/|___/
+#  |___/                                         |_|
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Sistemas gerais
+general:
+  # Raio para stackar os itens
+  # em blocos
+  stack-radius: 5
+  # Som ao pegar um item
+  sound: ITEM_PICKUP
+  # Lista de mundos que o plugin não irá funcionar
+  world-blacklist: []
+  # Lista de materiais que não serão stackados
+  material-blacklist: []
+  # Lista de NBT-TAGS que não serão stackadas
+  nbt-tag-blacklist: []
+
+# Sistema de black-list de spawn natural de itens
+# por exemplo, o cacto gerado pela farm
+# NÃO AFETA ITENS DROPADOS POR JOGADORES (SOMENTE NO BLACKLIST GENERAL)
+spawn-blacklist:
+  # Lista de materiais que não serão stackados naturalmente
+  material: [ 'CACTUS' ]
+  # Lista de NBT-TAGS que não serão stackadas naturalmente
+  nbt-tag: []
+
+# Sistema de nome em cima do item
+custom-name:
+  # Ativar o sistema
+  enabled: true
+  # Formato do nome
+  format: '&f{amount}x &a{material}'

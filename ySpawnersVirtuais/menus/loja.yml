@@ -1,0 +1,26 @@
+Nome: '&8Geradores - Loja'
+Tamanho: 27
+BackSlot: 9
+# Itens da loja principal.
+Itens:
+  Spawners:
+    Slot: 12
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/4faaf642babf93f96e146e2bb7b3cd70a4ec9d17f4a2957a99e2d8ed5bc8306d'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&eGeradores'
+    Lore:
+      - '&7Clique para abrir a loja de geradores.'
+  Melhorias:
+    Slot: 15
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/e9e4bdcf172d5dc77c2bd4e37ad985399a9f2cdebf72463929ea4b666ef6f80'
+    ID: 0
+    Data: 0
+    Glow: false
+    Name: '&aMelhorias'
+    Lore:
+      - '&7Clique para comprar melhorias para'
+      - '&7os seus geradores.'

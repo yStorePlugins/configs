@@ -1,0 +1,77 @@
+Nome: '&8Evolucao da espada'
+Tamanho: 36
+# Itens do menu de evolução.
+Itens:
+  Perfil:
+    Slot: 4
+    Lore:
+      - ''
+      - '&eQuantia de XP: &a{xp}&e.'
+  Looting:
+    Slot: 20
+    CustomSkull: false
+    URL: ''
+    ID: 388
+    Data: 0
+    Glow: true
+    Name: '&eLooting'
+    Lore:
+      - ''
+      - '&7Este encantamento permite multiplicar seus drops.'
+      - ''
+      - '&7Seu nivel: &f{agora} &7(&e{porcentagem_agora}%&7)'
+      - '&7Próximo nivel: &f{proximo} &f / &7{max} &7(&e{porcentagem_prox}%&7)'
+      - '&7Custo: &f{preco}'
+      - ''
+      - '&7Clique para encantar.'
+    Lore max:
+      - ''
+      - '&7Este encantamento permite multiplicar seus drops.'
+      - ''
+      - '&cVocê chegou ao nível máximo.'
+  Dano:
+    Slot: 22
+    CustomSkull: false
+    URL: ''
+    ID: 331
+    Data: 0
+    Glow: true
+    Name: '&eDano'
+    Lore:
+      - ''
+      - '&7Este encantamento permite aumentar seu dano.'
+      - ''
+      - '&7Seu nivel: &f{agora} &7(&e{dano_agora}&c❤&7)'
+      - '&7Próximo nivel: &f{proximo} &f / &7{max} &7(&e{dano_prox}&c❤&7)'
+      - '&7Custo: &f{preco}'
+      - ''
+      - '&7Clique para encantar.'
+    Lore max:
+      - ''
+      - '&7Este encantamento permite aumentar seu dano.'
+      - ''
+      - '&cVocê chegou ao nível máximo.'
+  Sortudo:
+    Slot: 24
+    CustomSkull: false
+    URL: ''
+    ID: 399
+    Data: 0
+    Glow: true
+    Name: '&eSortudo'
+    Lore:
+      - ''
+      - '&7Este encantamento permite aumentar sua chance de'
+      - '&7ganhar recompensas.'
+      - ''
+      - '&7Seu nivel: &f{agora} &7(&e{porcentagem_agora}%&7)'
+      - '&7Próximo nivel: &f{proximo} &f / &7{max} &7(&e{porcentagem_prox}%&7)'
+      - '&7Custo: &f{preco}'
+      - ''
+      - '&7Clique para encantar.'
+    Lore max:
+      - ''
+      - '&7Este encantamento permite aumentar sua chance de'
+      - '&7ganhar recompensas.'
+      - ''
+      - '&cVocê chegou ao nível máximo.'

@@ -1,0 +1,11 @@
+# Cadastro dos mobs e drops dos spawners.
+# Obs: Será necessário configurar o drop na precos.yml.
+# Lista de entidades (1.8.x): https://helpch.at/docs/1.8.8/org/bukkit/entity/EntityType.html
+Mobs:
+  CREEPER:
+    # Drop que será armazenado ao matar este mob.
+    Drop: '289:0'
+    # Quantia de XP que será dada ao matar este mob.
+    XP: 20
+    # Deixe 0 para ser o do vanilla.
+    Quantia: 1

@@ -1,0 +1,35 @@
+Sorteios:
+  VIP:
+    # Permissão que caso o jogador a tenha, não irá participar do sorteio
+    # ou seja: PERMISSÃO DE BLACKLIST
+    # deixe '' (vazio) para não usar
+    Permissao: 'ysorteio.vip.naoparticipar'
+    # Participar do sorteio apenas se estiver vinculado (yDiscordHook)
+    Vinculado: false
+    # Mensagens do sorteio
+    Mensagens:
+      Iniciou:
+        Title: '&bIniciando sorteio...'
+        Actionbar: '&bIniciando sorteio...'
+        Chat: []
+      Sorteando:
+        Title: '&6Sorteando...<nl>&e{player}'
+        Actionbar: '&7Sorteando vencedor...'
+        Chat: []
+      Ganhou global:
+        Title: '&6Vencedor sorteado!<nl>&e{player}'
+        Actionbar: '&6Vencedor do sorteio: &8{player}&6.'
+        Chat:
+          - ''
+          - '&6&lSORTEIO: &fO jogador &e{player}&f ganhou o sorteio do &eVIP&f!'
+          - ''
+      Ganhou player:
+        Title: '&6Vencedor sorteado!<nl>&e{player}'
+        Actionbar: '&6Vencedor do sorteio: &8{player}&6.'
+        Chat:
+          - ''
+          - '&6&lSORTEIO: &fVocê ganhou o sorteio do &eVIP&f!'
+          - ''
+    # chance,recompensa
+    Recompensas:
+      - '100,Reco1'

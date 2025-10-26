@@ -1,0 +1,47 @@
+delay:
+  # em milissegundos
+  default: 5000
+  reduce-per-level: 500
+  maximum: 4000
+  icon-slot: 51
+  icon:
+    material: 'GOLD_INGOT'
+    name: '&eDelay'
+    lore: ['&7Seu delay: &f{delay}', '', '&eCusto {Money} coins. Clique para comprar.']
+  icon-max:
+    material: 'GOLD_INGOT'
+    name: '&eDelay'
+    lore: ['&7Seu delay: &f{delay}']
+  prices:
+    price1:
+      provider: 'Money'
+      display: 'Money'
+      amount: 100.0
+
+multiplier:
+  command: 'lp user {player} permission set yspawnersshop.multiplicador.{multiplier}'
+  maximum: 10
+  icon:
+    material: 'STAINED_GLASS_PANE:14'
+    name: '&eMultiplicador'
+    lore: ['&7Multiplicador: &f{multiplier}', '', '&eCusto {Money} coins. Clique para comprar.']
+  icon-has:
+    material: 'STAINED_GLASS_PANE:4'
+    name: '&eMultiplicador'
+    lore: ['&7Multiplicador: &f{multiplier}', '', '&aClique para usar']
+  icon-using:
+    material: 'STAINED_GLASS_PANE:5'
+    name: '&eMultiplicador'
+    lore: ['&7Multiplicador: &f{multiplier}']
+  prices-default:
+    price1:
+      provider: 'Money'
+      amount: 10000.0
+  prices-per-level:
+    price1:
+      provider: 'Money'
+      amount: 10000.0
+  prices-displays:
+    price1:
+      provider: 'Money'
+      display: 'Money'
