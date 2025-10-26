@@ -1,0 +1,109 @@
+# Comandos e aliases do plugin
+Comando:
+  Comando: 'reinicio'
+  Aliases: [ reiniciar ]
+
+# Opções gerais do plugin
+Opcoes:
+  # Tempo que o servidor irá demorar para reiniciar após o reinício começar
+  # em segundos
+  Tempo: 180
+  # Ativar o modo enviar para outro servidor
+  Bungeecord: true
+  # Lista de lobbies
+  Lobby list: [ 'lobby' ]
+  # Comandos que serão executados ao ligar o servidor
+  Comandos start: [ 'alerta Servidor ligado!' ]
+
+# Autostart do restart
+Autostart:
+  horario1:
+    # nome do arquivo da pasta reinicios sem o .yml
+    Tipo: 'manha'
+    # todos, segunda, terca, quarta, quinta, sexta, sabado, domingo
+    # dia-hora-minuto-segundo
+    Horario: 'todos-00:00:01'
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isto.'
+  Comandos: |
+    &cComandos disponíveis:
+    &f> &c/reinicio forcar <tipo>
+    &f> &c/reinicio editar <tipo>
+    &f> &c/reinicio cancelar
+  Existe: '&cEste tipo não existe. Disponíveis: &7{tipos}&c.'
+  Nao esta: '&cNão está ocorrendo nenhum reinício.'
+  Ja esta: '&cJá está ocorrendo um reinício.'
+  Enviado: '&cO servidor que você estava está reiniciando, por isso te enviamos ao lobby.'
+  Kick: '&c&lyStore<nl><nl>&c&lSERVIDOR REINICIANDO<nl><nl>'
+  Parou: '&cVocê parou o reinício.'
+  Comecou: '&aVocê começou o reinício.'
+  Quebrar: '&cVocê não pode quebrar blocos enquanto o servidor estiver em modo de reinício.'
+  Colocar: '&cVocê não pode colocar blocos enquanto o servidor estiver em modo de reinício.'
+  Pegar: '&cVocê não pode pegar itens enquanto o servidor estiver em modo de reinício.'
+  Dropar: '&cVocê não pode dropar itens enquanto o servidor estiver em modo de reinício.'
+  Enderpearl: '&cVocê não pode jogar enderpearls enquanto o servidor estiver em modo de reinício.'
+  Comandos block: '&cVocê não pode executar comandos enquanto o servidor estiver em modo de reinício.'
+  Comando: '&cVocê não pode executar este comando enquanto o servidor estiver em modo de reinício.'
+  Interagir: '&cVocê não pode interagir com este bloco enquanto o servidor estiver em modo de reinício.'
+  Chat: '&cVocê não pode enviar mensagens enquanto o servidor estiver em modo de reinício.'
+  Pvp: '&cVocê não pode entrar em pvp enquanto o servidor estiver em modo de reinício.'
+  MexerInventario: '&cVocê não pode mexer no inventário enquanto o servidor estiver em modo de reinício.'
+  Agendar-Formato: '&cFormato de hora inválido! Use o formato horas:minutos, por exemplo 2:30 ou 14:45.'
+  Agendar-Contem: '&cJá tem um reinicio agendado para esse horário.'
+  Agendar-Nao-Contem: '&cNão há um reinicio agendado para esse horário. Lista: &f{list}&c.'
+  Agendar-Cancelou: '&cReinicio cancelado.'
+  Agendou: '&aReinicio agendado para às {time}.'
+  Cancelado:
+    - ''
+    - '&b[REINICIO] &fUm administrador cancelou o reinício.'
+    - ''
+  Iniciado:
+    - ''
+    - '&b[REINICIO] &fO servidor irá reiniciar em &b3 minutos&f.'
+    - ''
+
+# Anuncios de restart de acordo aos segundos
+Anuncios:
+  - '120,<nl>&b[REINICIO] &fO servidor irá reiniciar em &b2 minutos&f.<nl>&r'
+  - '60,<nl>&b[REINICIO] &fO servidor irá reiniciar em &b1 minuto&f.<nl>&r'
+  - '30,<nl>&b[REINICIO] &fO servidor irá reiniciar em &b30 segundos&f.<nl>&r'
+  - '15,<nl>&b[REINICIO] &fO servidor irá reiniciar em &b15 segundos&f.<nl>&r'
+  - '5,<nl>&b[REINICIO] &fO servidor irá reiniciar em &b5 segundos&f.<nl>&r'
+  - '4,<nl>&b[REINICIO] &fO servidor irá reiniciar em &b4 segundos&f.<nl>&r'
+  - '3,<nl>&b[REINICIO] &fO servidor irá reiniciar em &b3 segundos&f.<nl>&r'
+  - '2,<nl>&b[REINICIO] &fO servidor irá reiniciar em &b2 segundos&f.<nl>&r'
+  - '1,<nl>&b[REINICIO] &fO servidor irá reiniciar em &b1 segundo&f.<nl>&r'
+
+# Anuncios de restart de acordo aos segundos (na actionbar)
+Actionbar:
+  - '120,&b[REINICIO] &fO servidor irá reiniciar em &b2 minutos&f.&r'
+  - '60,&b[REINICIO] &fO servidor irá reiniciar em &b1 minuto&f.&r'
+  - '30,&b[REINICIO] &fO servidor irá reiniciar em &b30 segundos&f.&r'
+  - '15,&b[REINICIO] &fO servidor irá reiniciar em &b15 segundos&f.&r'
+  - '5,&b[REINICIO] &fO servidor irá reiniciar em &b5 segundos&f.&r'
+  - '4,&b[REINICIO] &fO servidor irá reiniciar em &b4 segundos&f.&r'
+  - '3,&b[REINICIO] &fO servidor irá reiniciar em &b3 segundos&f.&r'
+  - '2,&b[REINICIO] &fO servidor irá reiniciar em &b2 segundos&f.&r'
+  - '1,&b[REINICIO] &fO servidor irá reiniciar em &b1 segundo&f.&r'
+
+# Sons que serão enviados de acordo aos segundos
+Sons:
+  - '120,NOTE_STICKS'
+  - '60,NOTE_STICKS'
+  - '30,NOTE_STICKS'
+  - '15,NOTE_STICKS'
+  - '5,NOTE_STICKS'
+  - '4,NOTE_STICKS'
+  - '3,NOTE_STICKS'
+  - '2,NOTE_STICKS'
+  - '1,NOTE_PLING'
+
+# Anúncios que serão enviados ao discord de acordo aos segundos
+Discord:
+  - '60,aviso1'
+
+# Comandos que serão executados de acordo aos segundos
+Comandos:
+  - '5,alerta Reiniciando em 5s...'

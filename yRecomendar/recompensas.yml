@@ -1,0 +1,59 @@
+Recompensas:
+   1:
+      Display:
+         CustomSkull: false
+         URL: ''
+         ID: 388
+         Data: 0
+         Glow: true
+         Name: '&8Pedra'
+         Lore: 
+         - '&7Seja recomendado por &f1 &7jogador e ganhe'
+         - '&7 -> &a1 pedra.'
+      Item: #se o ( Command -> Use ) tiver true, isso não vai funcionar
+         CustomSkull: false
+         URL: ''
+         ID: 1
+         Data: 0
+         Glow: true
+         Name: '&8Pedra'
+         Amount: 64
+         Lore:
+         - ''
+         - '&aTu ganhou uma pedra.'
+         - ''
+         Enchants: #se não desejar, deixe assim:
+         - ''
+      Recomendacoes: 1
+      Command:
+         Use: false
+         List: #se o ( Use ) tiver false, isso não funcionar.
+         - 'give {player} stone 1'
+   2:
+      Display:
+         CustomSkull: false
+         URL: ''
+         ID: 388
+         Data: 0
+         Glow: true
+         Name: '&8Diamantes'
+         Lore: 
+         - '&7Seja recomendado por &f2 &7jogadores e ganhe'
+         - '&7 -> &a2 diamantes.'
+      Item: #se o ( Command -> Use ) tiver true, isso não vai funcionar
+         CustomSkull: false
+         URL: ''
+         ID: 1
+         Data: 0
+         Glow: true
+         Name: '&8Pedra'
+         Amount: 64
+         Lore:
+         - ''
+         Enchants: #se não desejar, deixe assim:
+         - ''
+      Recomendacoes: 2
+      Command:
+         Use: true
+         List: #se o ( Use ) tiver false, isso não funcionar.
+         - 'give {player} diamond 2'

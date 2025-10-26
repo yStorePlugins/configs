@@ -1,0 +1,34 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aRoleta comandos:
+
+    &a> /roulette give <player> <roleta> <quantia>
+    &a> /roulette reload
+
+  roulette-give: '&aVocê deu &7{amount}x {roulette}&a para o jogador &7{player}&a.'
+  roulette-received: '&aVocê recebeu &7{amount}x {roulette}&a.'
+  roulette-list: |
+    &cRoleta não encontrada.
+    &cRoleta disponíveis: &f{list}
+
+  perm-world: '&cVocê não pode colocar roletas neste mundo.'
+  perm-roulette: '&cVocê não tem permissão para colocar este tipo de roleta.'
+  roulette-opening: '&aVocê está abrindo uma {roulette}&a.'
+  roulette-cant: '&cVocê já está abrindo uma roleta.'

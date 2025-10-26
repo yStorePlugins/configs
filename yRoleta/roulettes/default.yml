@@ -1,0 +1,83 @@
+display: '&eRoleta da Sorte &7(Básica)'
+
+# Permissão para poder usar a roleta
+permission: ''
+
+# Cabeças que irão aparecer na roleta
+# Pode ser qualquer bloco (além da skull)
+skulls:
+  - '8534b17d2d3b5a64c57f5f080dd777945761d9f71d82e8f599f242976e4d0c05'
+  - 'c133414759f9e5315156017023a8b1b31cfbf177dcafb0603b8e9d94036a23f1'
+  - '300c817432585fadcbd9ca8cfedfeedbce5851b7c07d1b073fb52fa8283e8f23'
+  - 'f171a0c0572824da80366d71c5413a7e3355abec79b8f529f1dc9dad2632f485'
+  - '6ab180e820f71629f01f25b62bdeb9c324d50a38af74e6a9321439471046dc41'
+  - '65fed46b39c6c34d491143b72ce728797d16f9b5aa40bbdec61667f5ff9d3d45'
+  - '17bc1b64cba3dc4cefe4e121c3cdbbb0fa99aba0e113b5c916815fc9b304e636'
+  - '29942dd1338abeae8b8274a41ae1dcdf2b7be449f28d6b650ec06e491e70f570'
+
+# Configuração do holograma
+hologram:
+  off-set: 2.2
+  lines: [ '&a{reward}', '[item]{reward_preview}' ]
+
+# Sistema de partículas
+# Lista disponível: https://github.com/retrooper/packetevents/blob/f0b15c3f949ce80577420e64c6ff973ce5a218bd/api/src/main/java/com/github/retrooper/packetevents/protocol/particle/type/ParticleTypes.java#L43
+particles:
+  # Partícula ao aparecer as skulls na roleta
+  appear: 'ENCHANT'
+  # Partícula ao sumir as skulls da roleta
+  disappear: 'LARGE_SMOKE'
+  # Partícula de sorteando a recompensa
+  sorting: 'HAPPY_VILLAGER'
+  # Partícula ao receber a recompensa e apagar a última skull
+  appear-reward: 'CLOUD'
+
+# Sistema de sons
+# Lista disponível:
+sounds:
+  # Som ao aparecer as skulls na roleta
+  appear: 'NOTE_PLING'
+  # Som ao sumir as skulls da roleta
+  disappear: 'NOTE_BASS'
+  # Som enquanto a roleta estiver rodando
+  running: 'NOTE_STICKS'
+  # Som de sorteando a recompensa
+  sorting: 'FIRE_IGNITE'
+  # Som ao receber a recompensa e apagar a última skull
+  appear-reward: 'LEVEL_UP'
+
+# Item da roleta
+# use apenas blocos
+item:
+  material: '8534b17d2d3b5a64c57f5f080dd777945761d9f71d82e8f599f242976e4d0c05'
+  name: '&eRoleta da Sorte &7(Básica)'
+  lore:
+    - '&7Nível: &fBásica'
+    - '&7* você irá ganhar itens comuns.'
+    - ''
+    - '&aColoque no chão para ativar'
+
+# Mensagens da roleta
+messages:
+  # Mensagem ao aparecer as skulls na roleta
+  appear:
+    title: ''
+    actionbar: '&f&l.&c&l.&f&l.'
+    chat: ''
+  # Mensagem enquanto a roleta estiver rodando
+  running:
+    title: ''
+    actionbar: '&f&lG&c&lI&f&lR&c&lA&f&lN&c&lD&f&lO&c&l.'
+    chat: ''
+  # Mensagem de sorteando a recompensa
+  sorting:
+    title: ''
+    actionbar: '&f&lS&c&lO&f&lR&c&lT&f&lE&c&lA&f&lN&c&lD&f&lO&c&l.'
+    chat: ''
+
+# chance,recompensa-raridade
+# a raridade, caso não tenha, deixe: none
+rewards:
+  - '20.0,reward1-none'
+  - '30.0,reward2-none'
+  - '50.0,reward3-none'

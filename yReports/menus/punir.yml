@@ -1,0 +1,14 @@
+Nome: '&8Punir &7{player}'
+Tamanho: 27
+BackSlot: 0
+# Itens para enfeitar o menu
+Itens: {}
+  #Enfeite1:
+  #  Slot: 11
+  #  CustomSkull: false
+  #  URL: ''
+  #  ID: 130
+  #  Data: 0
+  #  Glow: true
+  #  Name: '&aEnfeite!'
+  #  Lore: []

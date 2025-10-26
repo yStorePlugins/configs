@@ -1,0 +1,158 @@
+Nome: '&7Editar {reinicio}'
+Tamanho: 36
+Chat slot: 19
+Colocar slot: 20
+Quebrar slot: 21
+Pegar slot: 22
+Dropar slot: 23
+Comandos slot: 24
+Enderpearl slot: 25
+Pvp slot: 28
+Itens:
+ Chat Ativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 5
+  Glow: false
+  Name: '&fChat'
+  Lore:
+  - '&7Estado: &aLigado'
+ Chat Desativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 14
+  Glow: false
+  Name: '&fChat'
+  Lore:
+  - '&7Estado: &cDesligado'
+ Colocar Ativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 5
+  Glow: false
+  Name: '&fColocar'
+  Lore:
+  - '&7Estado: &aLigado'
+ Colocar Desativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 14
+  Glow: false
+  Name: '&fColocar'
+  Lore:
+  - '&7Estado: &cDesligado'
+ Quebrar Ativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 5
+  Glow: false
+  Name: '&fQuebrar'
+  Lore:
+  - '&7Estado: &aLigado'
+ Quebrar Desativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 14
+  Glow: false
+  Name: '&fQuebrar'
+  Lore:
+  - '&7Estado: &cDesligado'
+ Pegar Ativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 5
+  Glow: false
+  Name: '&fPegar'
+  Lore:
+  - '&7Estado: &aLigado'
+ Pegar Desativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 14
+  Glow: false
+  Name: '&fPegar'
+  Lore:
+  - '&7Estado: &cDesligado'
+ Dropar Ativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 5
+  Glow: false
+  Name: '&fDropar'
+  Lore:
+  - '&7Estado: &aLigado'
+ Dropar Desativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 14
+  Glow: false
+  Name: '&fDropar'
+  Lore:
+  - '&7Estado: &cDesligado'
+ Comandos Ativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 5
+  Glow: false
+  Name: '&fComandos'
+  Lore:
+  - '&7Estado: &aLigado'
+ Comandos Desativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 14
+  Glow: false
+  Name: '&fComandos'
+  Lore:
+  - '&7Estado: &cDesligado'
+ Enderpearl Ativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 5
+  Glow: false
+  Name: '&fEnderpearl'
+  Lore:
+  - '&7Estado: &aLigado'
+ Enderpearl Desativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 14
+  Glow: false
+  Name: '&fEnderpearl'
+  Lore:
+  - '&7Estado: &cDesligado'
+ Pvp Ativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 5
+  Glow: false
+  Name: '&fPvP'
+  Lore:
+  - '&7Estado: &aLigado'
+ Pvp Desativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 14
+  Glow: false
+  Name: '&fPvP'
+  Lore:
+  - '&7Estado: &cDesligado'
+# Itens customizados
+CustomItens: {}
+#VOCÊ PODE ENFEITAR SEU MENU CRIANDO OUTROS ITENS EM CustomItens :)

@@ -1,0 +1,35 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &aReparação comandos:
+
+    &a> /reparar
+    &a> /reparar giverepairitem
+
+  item-none: '&cVocê deve estar segurando algum item.'
+  item-cant: '&cEste item não pode ser reparado.'
+  item-maximum: '&cEste item já está na durabilidade máxima.'
+  repair: '&aVocê reparou este item e gastou &e{money} & {xp} xp'
+  no-balance: '&cVocê não tem money suficiente, necessário: &e{money}'
+  no-balance-xp: '&cVocê não tem xp suficiente, necessário: &e{xp}'
+  enchant-found: '&cVocê não pode reparar este item pois contém encantamentos não cadastrados.'
+  item-found: '&cVocê não pode reparar este item pois ele não está cadastrado.'
+  item-give: '&bVocê deu &f{amount}x item reparador&b ao jogador &f{player}&b.'
+  item-received: '&bVocê recebeu &f{amount}x item reparador&b.'

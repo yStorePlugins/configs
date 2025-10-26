@@ -1,0 +1,84 @@
+ranks:
+  pig3:
+    # Ordem do rank
+    # Registro = padrão 1
+    order: 1
+    # Tag do rank
+    tag: '&d[PorcoIII]'
+    # Nome do rank
+    name: 'Porco III'
+    # Data que o rank será liberado para rankup
+    release-date: '01/01/2020-10:00'
+    # Preços para upar ao rank
+    prices:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    # Ações de rankup
+    rankup:
+      # Comandos que serão executados ao dar rankup
+      # Será executado ao registrar (ordem 1)
+      command: [ 'give {player} stone 1' ]
+      # Mensagens que serão enviadas ao dar rankup
+      # Será executado ao registrar (ordem 1)
+      messages:
+        chat: '&cO jogador &7{player} &cregistrou-se e é agora &7PorcoIII&c.'
+        actionbar: '&cO jogador &7{player} &cregistrou-se e é agora &7PorcoIII'
+        title: ''
+      # Mensagens que serão enviadas AO JOGADOR ao dar rankup
+      private-messages:
+        chat: ''
+        actionbar: ''
+        title: ''
+        balance: |
+          &6&lRANKUP! &fRequisitos para evoluir de rank:
+          &r
+          &8 * &fCoins: &2$&a{money_has}&7/&a{money_need}
+  pig2:
+    order: 2
+    tag: '&d[PorcoII]'
+    name: 'Porco II'
+    release-date: '01/01/2020-10:00'
+    prices:
+      price1:
+        provider: 'money'
+        price: 20000.0
+      price2:
+        provider: 'yrankup-head-pig'
+        price: 100.0
+    rankup:
+      command: [ 'give {player} stone 2' ]
+      messages:
+        chat: '&cO jogador &7{player} &cupou e é agora &7PorcoII&c.'
+        actionbar: '&cO jogador &7{player} &cupou e é agora &7PorcoII'
+        title: ''
+      private-messages:
+        balance: |
+          &6&lRANKUP! &fRequisitos para evoluir de rank:
+          &r
+          &8 * &fCoins: &2$&a{money_has}&7/&a{money_need}
+          &8 * &fCabeças: &5#&d{yrankup-head-pig_has}&7/&d{yrankup-head-pig_need}
+  pig1:
+    order: 3
+    tag: '&d[PorcoI]'
+    name: 'Porco I'
+    release-date: '01/01/2020-10:00'
+    prices:
+      price1:
+        provider: 'money'
+        price: 30000.0
+      price2:
+        provider: 'yrankup-head-pig'
+        price: 200.0
+    rankup:
+      command: [ 'give {player} stone 3' ]
+      messages:
+        chat: '&cO jogador &7{player} &cupou e é agora &7PorcoI&c.'
+        actionbar: '&cO jogador &7{player} &cupou e é agora &7PorcoI'
+        title: ''
+      private-messages:
+        balance: |
+          &6&lRANKUP! &fRequisitos para evoluir de rank:
+          &r
+          &8 * &fCoins: &2$&a{money_has}&7/&a{money_need}
+          &8 * &fCabeças: &5#&d{yrankup-head-pig_has}&7/&d{yrankup-head-pig_need}

@@ -1,0 +1,73 @@
+Opcoes:
+   Nao cadastrado:
+      Bloquear: true
+
+Preco durabilidade base: 10.0 #caso não esteja cadastrado e o bloquear estiver false.
+Preco encantamento base: 10.0 #caso não esteja cadastrado e o bloquear estiver false.
+
+Preco durabilidade base xp: 5 #caso não esteja cadastrado e o bloquear estiver false.
+Preco encantamento base xp: 5 #caso não esteja cadastrado e o bloquear estiver false.
+
+Menu:
+   Tamanho: 27
+   Nome: '&8Reparação'
+   Confirmar:
+      Slot: 11
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/c641682f43606c5c9ad26bc7ea8a30ee47547c9dfd3c6cda49e1c1a2816cf0ba'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aConfirmar'
+      Lore:
+      - ''
+      - '&7Clique para confirmar a reparação.'
+      - ''
+   Cancelar:
+      Slot: 15
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/c641682f43606c5c9ad26bc7ea8a30ee47547c9dfd3c6cda49e1c1a2816cf0ba'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&cCancelar'
+      Lore:
+      - ''
+      - '&7Clique para cancelar a reparação.'
+      - ''
+   Item:
+      Slot: 13
+      Lore:
+      - ''
+      - '&aSeu item possui {quantiaenc} encantamentos. Isto lhe custa: &e{moneyenc} & &e{xpenc} xp'
+      - '&aO seu item está danificado e irá lhe custar: &e{moneydurabilidade} & &e{xpdurabilidade} xp'
+      - '&aDesconto: &e{desconto}'
+      - ''
+      - '&fTotal: &e{money} & {xp} xp'
+      - ''
+      
+Descontos:
+   VIP:
+      Permissao: 'yreparacao.vip'
+      Desconto: 100.0
+
+Encantamentos:
+   Afiacao:
+      ID: DAMAGE_ALL
+      Preco por level: 10.5
+      Preco por level xp: 5
+   Repulsao:
+      ID: KNOCKBACK
+      Preco por level: 40.0
+      Preco por level xp: 20
+
+Durabilidade:
+   Item1:
+      ID: DIAMOND_SWORD
+      Preco por level: 3.0
+      Preco por level xp: 1
+
+Repair-item:
+   material: 'ANVIL'
+   name: '&aReparador'
+   lore: [ '&7Clique em um item para', '&7reparar ele totalmente.' ]

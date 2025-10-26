@@ -1,0 +1,16 @@
+Nome: '&8Quem recomendou'
+Tamanho: 36
+Slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+BackSlot: 31
+AnteriorSlot: 9
+ProximoSlot: 17
+Item:
+  CustomSkull: true
+  URL: '{player}'
+  ID: 0
+  Data: 0
+  Name: '&a{player}'
+  Lore:
+    - ''
+    - '&fVocê foi recomendado 1x por: &a{player}&f.'
+    - ''

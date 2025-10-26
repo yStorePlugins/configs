@@ -1,0 +1,31 @@
+Nome: '&8Informações do reporte'
+Tamanho: 27
+BackSlot: 0
+VoltarSlot: 9
+ProximoSlot: 17
+Slots: [11, 12, 13, 14, 15]
+# Item do jogador que reportou
+Item:
+ CustomSkull: true
+ URL: '{player}'
+ ID: 1
+ Data: 0
+ Glow: false
+ Name: '&aReportador: {player}'
+ Lore:
+   - ''
+   - '&fMotivo: &7{motivo}&f.'
+   - '&fProva: &7{prova}&f.'
+   - ''
+   - '&7Clique para copiar a prova.'
+# Itens para enfeitar o menu
+Itens: {}
+  #Enfeite1:
+  #  Slot: 11
+  #  CustomSkull: false
+  #  URL: ''
+  #  ID: 130
+  #  Data: 0
+  #  Glow: true
+  #  Name: '&aEnfeite!'
+  #  Lore: []

@@ -1,0 +1,43 @@
+Options:
+  URL: ''
+  Username: 'yReports'
+  Ativar: false
+#
+# Placeholders:
+# {motivo} - motivo do report
+# {reportado} - player que foi reportado
+# {reportador} - player que reportou
+# {prova} - prova do report
+# {data} - data do report
+# {hora} - hora do report
+#
+Embeds:
+  newReport: # não mude este nome
+    Title: 'Novo report'
+    Thumbnail: ''
+    Color: '#fff'
+    Content: 'Um novo report foi registrado!\n@everyone'
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Fields:
+      server:
+        Inline: true
+        Header: 'Servidor'
+        Content: 'RankUP'
+      data:
+        Inline: true
+        Header: 'Data'
+        Content: '{data} - {hora}'
+      reportador:
+        Inline: false
+        Header: 'Denunciante'
+        Content: '{reportador}'
+      reportado:
+        Inline: false
+        Header: 'Reportado'
+        Content: '{reportado}'
+      motivo:
+        Inline: false
+        Header: 'Motivo'
+        Content: '{motivo}'

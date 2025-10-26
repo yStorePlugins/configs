@@ -1,0 +1,49 @@
+Nome: '&8Recomendar - Principal'
+Tamanho: 27
+Itens:
+   Recomendar slot: 15
+   Perfil: # primeiro
+      Slot: 10
+      Name: '&f{player}'
+      Lore:
+      - ''
+      - '&7Você foi recomendado &f{vezes} &avezes.'
+      - ''
+   Recompensas: #segundo
+      Slot: 11
+      CustomSkull: false
+      URL: ''
+      ID: 54
+      Data: 0
+      Glow: false
+      Name: '&aRecompensas'
+      Lore:
+      - '&7Clique para gerenciar as recompensas de ser recomendado.'
+   Top: #terceiro
+      Slot: 12
+      CustomSkull: false
+      URL: ''
+      ID: 340
+      Data: 0
+      Glow: false
+      Name: '&aTOP'
+      Lore:
+      - '&7Clique para ver os jogadores mais recomendados.'
+   Recomendar sim: #quarto
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      ID: 0
+      Data: 0
+      Glow: false
+      Name: '&aRecomendar'
+      Lore:
+      - '&7Clique para recomendar um jogador.'
+   Recomendar nao: #quarto
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aRecomendar'
+      Lore:
+      - '&cVocê já recomendou um jogador: &7{player}&c.'

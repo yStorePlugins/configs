@@ -1,0 +1,131 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Reportar:
+    Comando: 'reportar'
+    Aliases: [report, denunciar]
+  Reports:
+    Comando: 'reports'
+    Aliases: [reports, denuncias]
+
+# Ativar a troca do sistema de chat quando estiver no mohist
+# compatível apenas com: UltimateChat, nChat e Legendchat
+mohist-chat: false
+
+# Opções gerais de configuração do plugin
+Opcoes:
+  # Remover o reporte quando for aplicada uma punição
+  # pelo menu de gerenciamento
+  Remover punido: true
+  # Bloquear de reportar staff
+  # Permissão para ser reconhecido como staff: yreports.staff
+  Bloquear staff: true
+  # Habilitar o sistema de provas para reportar
+  Provas: true
+  # Sempre exigir uma prova para reportar
+  Exigir prova: false
+  # Lista de links permitidos para a prova de reporte.
+  Links:
+    - 'https://youtu.be'
+    - 'https://youtube'
+    - 'https://imgur'
+
+# Mensagens que serão enviadas para
+# quem tiver a permissão: yreports.staff
+Staff mensagens:
+  # Quando o jogador for reportado pela primeira vez
+  Novo reporte:
+    - ''
+    - '&aUma denúncia foi registrada contra o jogador &7{player}&a.'
+    - ''
+  # Quando o jogador for reportado 2x ou mais
+  Reportado novamente:
+    - ''
+    - '&aO jogador &7{player}&a foi denunciado novamente.'
+    - ''
+  # Quando o jogador que estiver sido reportado entrar
+  Reportado entrou:
+    - ''
+    - '&aO jogador &7{player}&a foi denúnciado anteriormente e logou novamente no servidor.'
+    - ''
+
+# Mensagens gerais do plugin
+Mensagens:
+  Use: '&c/reportar <player>'
+  Permissao: '&cVocê não tem permissão para isto.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Cancelou: '&cVocê cancelou o report.'
+  Ja reportou: '&cVocê já reportou este jogador.'
+  Link nao: '&cEste link não é permitido. &7Digite &ncancelar&7 para cancelar.'
+  Reportou: '&aVocê reportou o jogador &7{player} &apor &7{motivo}&a.'
+  Teleportado: '&aVocê foi teleportado ao jogador &7{player}&a.'
+  Deletado: '&aDenúncia deletada.'
+  Punicao permissao: '&cVocê não tem permissão para aplicar esta punição.'
+  Reportar staff: '&cVocê não pode reportar staff.'
+  Si mesmo: '&cVocê não pode reportar a si mesmo.'
+  Puniu: '&aVocê puniu o jogador &7{player}&a.'
+  Acrescentar:
+    - ''
+    - '&aVocê deseja inserir alguma prova?'
+    - '&7Digite &nSIM&7 ou &nNAO&7.'
+    - ''
+  Adicionar:
+    - ''
+    - '&aDigite abaixo o link da prova da denúncia.'
+    - '&7Digite &ncancelar&7 para cancelar.'
+    - ''
+  Prova:
+    - '&7Prova: &b{prova}&7.'
+
+# Setas dos menus.
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para ir à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróximo'
+    Lore:
+      - '&7Clique para ir à próxima página.'
+
+# Formatos de quantia e money
+Formats:
+  - ''
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'

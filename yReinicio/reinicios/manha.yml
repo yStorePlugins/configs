@@ -1,0 +1,43 @@
+# Habilitar comandos
+Comandos: true
+# Lista de comandos bloqueados
+# coloque minúsculo
+Comandos bloqueados:
+  - '/pl'
+# Lista de blocos que você não poderá interagir
+# Recomendados:
+# TRAPPED_CHEST(baú com trap), CHEST(baú), ENDERCHEST(baú do fim), ANVIL(bigorna), WORKBENCH(mesa de trabalho),
+# ENCHANTMENT_TABLE(mesa de encantamento), FURNACE(fornalha), DISPENSER, DROPPER, BEACON, LEVER(alavanca), STONE_BUTTON(botão de pedra), WOOD_BUTTON(botão de madeira)
+Interagir bloqueados:
+  - 'TRAPPED_CHEST'
+  - 'CHEST'
+  - 'ENDERCHEST'
+  - 'ANVIL'
+  - 'WORKBENCH'
+  - 'ENCHANTMENT_TABLE'
+  - 'FURNACE'
+  - 'DISPENSER'
+  - 'DROPPER'
+  - 'BEACON'
+  - 'LEVER'
+  - 'STONE_BUTTON'
+  - 'WOOD_BUTTON'
+# Habilitar jogar enderpearl
+Enderpearl: false
+# Habilitar falar no chat
+Chat: false
+# Habilitar dropar itens
+Dropar: false
+# Habilitar pegar itens
+Pegar: false
+# Habilitar colocar blocos
+Colocar: false
+# Habilitar quebrar blocos
+Quebrar: false
+# Habilitar PVP
+Pvp: false
+# Habilitar mexer no inventário
+MexerInventario: true
+# Lista de comandos que serão executados ao começar o reinicio
+Comandos executar:
+  - 'save-all'

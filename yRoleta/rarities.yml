@@ -1,0 +1,9 @@
+rarities:
+  rare:
+    display: '&6Raro'
+    strike: false # pode causar lag
+    bat: false # pode causar lag
+    actionbar: '&e[Roleta] &fO jogador &e{player}&f encontrou uma recompensa rara na Roleta&f.'
+    title: ''
+    chat: |
+      &e[Roleta] &fO jogador &e{player}&f encontrou uma recompensa rara na Roleta&f.

@@ -1,0 +1,83 @@
+Database:
+   Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+   IP: localhost:3306
+   DB: test
+   User: admin
+   Pass: ''
+   Debug: true
+
+Comando:
+   Comando: 'recomendar'
+   Aliases: []
+
+# Ativar a troca do sistema de chat quando estiver no mohist
+# compatível apenas com: UltimateChat, nChat e Legendchat
+mohist-chat: false
+
+Msg coleta: true
+# Permissão para poder ser recomendado
+# Deixe '' para não usar
+Permissao recomendado: ''
+
+# Recomendar apenas se estiver vinculado (yDiscordHook)
+Vinculado: false
+
+Tempo: #exclusivo yTempoOnline
+   Minimo: 60 #em segundos
+   Msg: '&c&lERRO! &cVocê deve estar online por pelo menos 1 minuto antes de recomendar alguém.'
+
+Mensagens:
+   Cancelou: '&cVocê cancelou a ação.'
+   Recomendou: '&aVocê recomendou o jogador &7{player}&a, ele já foi recomendado &7{vezes}&a vezes.'
+   Nao encontrado: '&cJogador não encontrado.'
+   Permissao: '&cVocê não tem permissão para isto.'
+   Coletou: '&aVocê coletou a recompensa.'
+   Si mesmo: '&cVocê não pode recomendar a si mesmo.'
+   Nao pode: '&cEste jogador não pode ser recomendado.'
+   Ja recomendou: '&cVocê já recomendou um jogador.'
+   Chat vinculado: '&cVocê precisa vincular seu discord primeiro. /discord para vincular.'
+   Ajuda: |
+      &cComandos disponíveis:
+      &c -> /recomendar
+      &c -> /recomendar <player>
+      &c -> /recomendar ajuda
+   Digite:
+   - ''
+   - '&aDigite o nome do jogador que deseja recomendar.'
+   - '&7para cancelar digite &ncancelar&7.'
+   - ''
+   
+Setas:
+   Voltar:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&cVoltar'
+      Lore:
+      - ''
+      - '&7Clique para voltar.'
+      - ''
+   Proximo:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&aPróximo'
+      Lore:
+      - ''
+      - '&7Clique para ir à próxima página.'
+      - ''
+      
+Lores:
+   Coletar:
+      Sobrepor: false
+      Lore:
+      - ''
+      - '&aClique para coletar essa recompensa'
+   Ja coletou:
+      Sobrepor: true
+      Lore:
+      - '&cVocê já coletou essa recompensa.'

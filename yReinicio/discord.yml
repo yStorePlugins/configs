@@ -1,0 +1,47 @@
+Options:
+  URL: ''
+  Username: 'yReinicio'
+  Ativar: false
+  # Enviar um webhook no discord assim que o plugin ligar
+  LoadWebhook:
+    Ativar: false
+    Anuncio: 'online'
+Embeds:
+  aviso1:
+    Title: 'Servidor reiniciando em 1 minuto...'
+    Thumbnail: ''
+    Color: '#fff'
+    Content: '@everyone'
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Fields:
+      reiniciando:
+        Inline: false
+        Header: 'Reiniciando em'
+        Content: '1 minuto'
+      server:
+        Inline: false
+        Header: 'Servidor'
+        Content: 'RankUP'
+      data:
+        Inline: false
+        Header: 'Data'
+        Content: '{data} - {hora}'
+  online:
+    Title: 'Servidor online!'
+    Thumbnail: ''
+    Color: '#fff'
+    Content: 'Estamos online novamente!\n@everyone'
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Fields:
+      server:
+        Inline: false
+        Header: 'Servidor'
+        Content: 'RankUP'
+      data:
+        Inline: false
+        Header: 'Data'
+        Content: '{data} - {hora}'

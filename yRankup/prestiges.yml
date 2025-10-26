@@ -1,0 +1,47 @@
+# Rank necessário para dar prestígio
+need-rank: 3
+
+# Deixe -1 para ser infinito
+max: 10
+
+# Tag do prestígio
+tag: '&c[{current}]'
+
+# Tag do prestígio caso o valor for 0
+tag-zero: '&cNenhum prestígio'
+
+# Acrescimo em % para o valor dos ranks (cost-add * current-prestige)
+cost-add: 2.0
+
+# Calcular o custo por potenciação
+pow: false
+
+# Custo para dar prestígio (custo * nível de prestígio)
+prices:
+  price1:
+    provider: 'money'
+    price: 200000.0
+
+# Comandos que serão executados ao dar prestígio
+command: [ 'give {player} diamond 1' ]
+
+# Comandos que serão executados ao alcançar determinado prestígio
+# prestígio-necessário,cmd
+specific-rewards: [ '1,give {player} diamond 2' ]
+
+# Mensagens que serão enviadas ao dar prestígio
+# (broadcast)
+messages:
+  chat: |
+
+    &c{player} upou seu prestigio para {current}
+
+  actionbar: ''
+  title: ''
+
+# Mensagens que serão enviadas ao dar prestígio
+# (privadas)
+private-messages:
+  chat: ''
+  actionbar: '&cVocê upou seu prestigio para {current}'
+  title: '&c+1<nl>&cPrestígio'

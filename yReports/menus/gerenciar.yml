@@ -1,0 +1,38 @@
+Nome: '&8Gerenciar reporte'
+Tamanho: 27
+BackSlot: 0
+# Itens de gerenciamento
+Itens:
+  Punir:
+    Slot: 11
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/8e2c18ab35949bf9f9e7d6a69b885ccd8cc2efb9475946d7d3fb5c3fef61'
+    ID: 1
+    Data: 0
+    Name: '&cPunir'
+    Lore:
+      - '&7Clique para punir o jogador.'
+  Deletar:
+    Slot: 13
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+    ID: 1
+    Data: 0
+    Name: '&aDeletar'
+    Lore:
+      - '&7Clique para deletar o reporte.'
+# Itens customizados
+# Aqui você pode criar quantos quiser
+Itens custom:
+  Jail:
+    Slot: 15
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/b00020b44357c1a51cb81c78a6f47e3fc97f0e9dd89ef4d3b9f710b4bd6a0e21'
+    ID: 1
+    Data: 0
+    Name: '&cPrender'
+    # Coloque '[console],cmd' para o console executar o comando
+    # Coloque '[player],cmd' para o player executar o comando
+    Comando: '[console],/tell {staff} Você clicou para prender {player}.'
+    Lore:
+      - '&7Clique para prender o jogador.'

@@ -1,0 +1,178 @@
+#        ____             _
+#  _   _|  _ \ __ _ _ __ | | ___   _ _ __
+# | | | | |_) / _` | '_ \| |/ / | | | '_ \
+# | |_| |  _ < (_| | | | |   <| |_| | |_) |
+#  \__, |_| \_\__,_|_| |_|_|\_\\__,_| .__/
+#  |___/                            |_|
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Bloquear ranks para staff
+staff-block: false
+
+# Esconder a tag para quem tem a permissão
+# yrankup.hide
+hide-enabled: false
+
+# Comando de /rankup abrir menu
+rankup-cmd-menu: true
+
+# Comando de /prestigio abrir menu
+prestige-cmd-menu: true
+
+# Desativar por completo o sistema de heads
+heads-disabled: false
+
+# Desativar por completo o sistema de coins
+coin-disabled: false
+
+# Sistema de Auto-Rankup
+auto-rankup:
+  enabled: true
+  # Ativado por padrão
+  enabled-default: false
+  # Permissão para conseguir ativar o sistema
+  permission: 'yrankup.autorankup'
+  # Delay para checar o rankup
+  # em segundos
+  delay: 3
+
+# Sistema de fragmentos
+fragment:
+  # Metadata do plugin de mob-stack para multiplicar os fragmentos
+  # Deixe vazio '' para não usar
+  metadata: 'ySpawners-MobStacked'
+  # Ao matar com shift, dropar apenas a quantia de fragmentos configurados.
+  shift-unit: true
+  # Ao matar em pé, dropar apenas a quantia de fragmentos configurados.
+  no-shift-unit: false
+  # Mundos que não irá dropar fragmentos
+  world-blacklist: []
+
+# Sistema de heads
+head:
+  # Metadata do plugin de mob-stack para multiplicar as heads
+  # Deixe vazio '' para não usar
+  metadata: 'ySpawners-MobStacked'
+  # Ao matar com shift, dropar apenas a quantia de heads configurados.
+  shift-unit: true
+  # Ao matar em pé, dropar apenas a quantia de heads configurados.
+  no-shift-unit: false
+  # Mundos que não irá dropar heads
+  world-blacklist: []
+
+items:
+  # Item de coin ativável
+  usable-item:
+    material: '1ba16c3890af39c3f2d576586cff443de07dad32b2315e2ff6f0d5d6a3c663dd'
+    name: '&b+{amount} Fragmentos'
+    lore:
+      - ''
+      - '&fQuantia: &b{amount}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus fragmentos no inventário em 1 só.'
+      - ''
+
+  # Item para evoluir o prestígio
+  prestige-item:
+    material: '885620b88e0de9b34f76027c7f9c1def5e1de5ae542c6920b5f28693a54'
+    name: '&aPrestigio'
+    lore:
+      - '&fEste item equivale à &7+1 &fnível de prestígio.'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+
+  # Item para evoluir o rank
+  rankup-item:
+    material: '1ad6c81f899a785ecf26be1dc48eae2bcfe777a862390f5785e95bd83bd14d'
+    URL: 'http://textures.minecraft.net/texture/1ad6c81f899a785ecf26be1dc48eae2bcfe777a862390f5785e95bd83bd14d'
+    name: '&aRankup'
+    lore:
+      - '&7Este item equivale à &f+1 &7nível de rankup.'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+
+# Sistema de descontos
+discounts:
+  vip:
+    order: 1
+    permission: 'yrankup.vip'
+    discount: 10.0
+
+# Sistema de bônus
+bonus:
+  vip:
+    order: 1
+    permission: 'yrankup.vip'
+    bonus: 10.0
+
+# Sistema de formatos
+formats:
+  # Quando estiver com o progresso 100%
+  progress-bar-full: '&a/rankup &7({progressbar}&7)'
+  percentage-full: '{percentage}'
+  # Quando não tiver próximo rank disponível
+  progress-bar-none: ''
+  percentage-none: ''
+  tag-none: '&cÚltimo'
+  name-none: '&cÚltimo'
+  # Quando não tiver rank disponível
+  actual-tag-none: '&cÚltimo'
+  actual-name-none: '&cÚltimo'
+  # Quando o jogador for um staff e estiverem bloqueados os ranks para staff
+  staff-tag: ''
+  staff-name: ''
+  staff-progressbar: ''
+  staff-percentage: ''
+
+# Configuração da barra de progresso
+progress-bar:
+  amount: 10
+  symbol: ':'
+  color-yes: '&a'
+  color-no: '&7'

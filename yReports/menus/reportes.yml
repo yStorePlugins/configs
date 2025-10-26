@@ -1,0 +1,38 @@
+Nome: '&8Jogadores reportados'
+Tamanho: 27
+VoltarSlot: 9
+ProximoSlot: 17
+Slots: [11, 12, 13, 14, 15]
+# Formato do motivo
+Formato: '&f > {motivo}: &7{quantia}'
+# Item do jogador reportado
+Item:
+ CustomSkull: true
+ URL: '{player}'
+ ID: 1
+ Data: 0
+ Glow: false
+ Name: '&a{player}'
+ Lore:
+   - '&7Informações do jogador reportado:'
+   - ''
+   - '&7Motivos:'
+   - '{motivos}'
+   - ''
+   - '&7Quantia de reportes: &a{quantia}'
+   - '&7Último reporte em: &b{data} &8- &b{hora}'
+   - ''
+   - '&fBotão esquerdo &8- &7teleportar ao jogador.'
+   - '&fBotão direito &8- &7ver quem reportou e as provas.'
+   - '&fBotão Q &8- &7gerenciar o reporte.'
+# Itens para enfeitar o menu
+Itens: {}
+  #Enfeite1:
+  #  Slot: 11
+  #  CustomSkull: false
+  #  URL: ''
+  #  ID: 130
+  #  Data: 0
+  #  Glow: true
+  #  Name: '&aEnfeite!'
+  #  Lore: []

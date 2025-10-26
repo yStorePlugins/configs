@@ -1,0 +1,38 @@
+#   ____                            _
+# |  _ \ _____      ____ _ _ __ __| |___
+# | |_) / _ \ \ /\ / / _` | '__/ _` / __|
+# |  _ <  __/\ V  V / (_| | | | (_| \__ \
+# |_| \_\___| \_/\_/ \__,_|_|  \__,_|___/
+#
+
+daily-rewards:
+  daily_reward1:
+    order: 1
+    display: '&7Membro'
+    permission: ''
+    delay: 60 # em segundos
+    # Tempo online necessário para coletar a recompensa
+    # Em segundos (yTempoOnline)
+    online-time-need: 0
+    item:
+      can:
+        material: 'c5a9cd58d4c67bccc8fb1f5f756a2d381c9ffac2924b7f4cb71aa9fa13fb5c'
+        name: '&aRecompensa de &7Membros'
+        lore: [ '', '&7Recompensa: &f1x Pedra', '', '&aClique para pegar.', '' ]
+      cant:
+        material: 'c5a9cd58d4c67bccc8fb1f5f756a2d381c9ffac2924b7f4cb71aa9fa13fb5c'
+        name: '&aRecompensa de &7Membros'
+        lore: [ '', '&7Recompensa: &f1x Pedra', '', '&cVocê precisa aguardar &f{time}&c antes.', '&cde pegar novamente.', '' ]
+      permission:
+        material: 'c5a9cd58d4c67bccc8fb1f5f756a2d381c9ffac2924b7f4cb71aa9fa13fb5c'
+        name: '&aRecompensa de &7Membros'
+        lore: [ '', '&7Recompensa: &f1x Pedra', '', '&cVocê não tem permissão para pegar.', '' ]
+    message:
+      title: '&aRecompensa &7MEMBRO<nl>&eColetada!'
+      actionbar: '&aRecompensa &7MEMBRO &ecoletada!'
+      chat: |
+        <nl>
+        &aRecompensa &7MEMBRO &ecoletada!
+        <nl>
+    rewards:
+      - '100.0,reward1'

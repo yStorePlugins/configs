@@ -1,0 +1,59 @@
+heads:
+  pig:
+    # Ordem no menu
+    order: 1
+    # Identificação necessária para a API de Economias do yPlugins
+    yplugins-id: 'yrankup-head-pig'
+    # Pode usar cor
+    name: '&dPorco'
+    # Permissão para ativar / receber (caso esteja ativada na config.yml) a head
+    # Deixe vazio ou apague para não usar.
+    permission: ''
+    # Dar a head automatico no menu
+    # false = dar o item pro jogador
+    automatic: false
+    # Ativar o sell
+    sell: true
+    # Ativar a coleta
+    collect: true
+    # Mundos que não droparão a head
+    world-blacklist: []
+    # Preços para vender a head
+    prices:
+      price1:
+        provider: 'money'
+        price: 100.0
+    # Delays
+    delays:
+      delay1:
+        order: 1
+        permission: ''
+        delay: 5
+    # Mensagens de venda
+    messages:
+      chat: '&aVocê vendeu {amount} heads {head} por &6{money} money&a.'
+      actionbar: '&aVocê vendeu {amount} heads {head} por &6{money} money&a.'
+      title: ''
+    # Mensagens de coleta
+    messages-collect:
+      chat: '&aVocê coletou {amount} heads {head}&a.'
+      actionbar: '&aVocê coletou {amount} heads {head}&a.'
+      title: ''
+    # Este item será dado ao jogador
+    item:
+      material: 621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4
+      name: '&dCabeça de porco'
+      lore: [ '&7Quantia armazenada: &f{amount} cabeça(s) de porco.', '', '&7Clique com botão direito para armazenar.' ]
+    # Este irá mostrar no /heads
+    display:
+      material: 621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4
+      name: '&dCabeça de porco'
+      lore: [ '&7Quantidade: &f{amount}&7.', '', '&f Valores:', '&f > &a{money} coins por unidade&f.', '', '&b > ${money_total} coins no total', '', '&7Botão &fESQUERDO&a para vender', '&7Botão &fDIREITO&a para coletar' ]
+
+# Entidades que irão dropar as heads
+entities:
+  pig:
+    entity: 'PIG'
+    head: 'pig'
+    chance: 100.0
+    amount: 1

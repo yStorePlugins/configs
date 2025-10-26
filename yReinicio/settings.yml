@@ -1,0 +1,4 @@
+restart-message: '&c&lyStore<nl>&cVocê foi transferido ao lobby.'
+
+lobby-list:
+  - 'lobby'

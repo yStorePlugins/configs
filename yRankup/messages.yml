@@ -1,0 +1,134 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aRank comandos:
+
+    &a> /rankup
+    &a> /rank
+    &a> /rank <player>
+    &a> /rank top
+    &a> /rank giverankup
+    &a> /rank giveprestigio
+    &a> /rank setrank
+    &a> /rank setprestigio
+    &a> /ranks
+    &a> /heads
+    &a> /prestigio
+
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
+  last-rank: '&cVocê já está no último rank.'
+  last-prestige: '&cVocê já está no último prestígio.'
+  no-balance: '&cVocê não tem {provider_display} suficiente ({need}) para isto. Disponível: {provider_balance}&c.'
+  head-got: '&aVocê ganhou &7{amount}x Heads de {head}&a.'
+  coin-help: |
+
+    &a/fragmentos &8- &7Ver os seus fragmentos.
+    &a/fragmentos <player> &8- &7Ver os fragmentos de alguém.
+    &a/fragmentos enviar <player> <quantia> &8- &7Envia seus fragmentos para alguém.
+    &a/fragmentos give <player/all> <quantia> &8- &7Dar fragmentos a alguém.
+    &a/fragmentos add <player> <quantia> &8- &7Adiciona fragmentos a alguém.
+    &a/fragmentos set <player> <quantia> &8- &7Remove fragmentos de alguém.
+    &a/fragmentos remove <player> <quantia> &8- &7Seta fragmentos a alguém.
+
+  head-help: |
+
+    &a/head &8- &7Ver os seus fragmentos.
+    &a/head give <player/all> <head> <quantia> &8- &7Dar head a alguém.
+    &a/head add <player> <head> <quantia> &8- &7Adiciona head a alguém.
+    &a/head set <player> <head> <quantia> &8- &7Remove head de alguém.
+    &a/head remove <player> <head> <quantia> &8- &7Seta head a alguém.
+
+  player-info: |
+
+    &bInformações de &f{player}&b:
+    &f> &7Rank: {tag} &7(&f{name}&7)&f.
+    &f> &7Próx Rank: {next_tag} &7(&f{next_name}&7)&f.
+
+    &f> &7Prestígio: &7{prestige} &8-> &6{prestige_percentage}%&f.
+    &f> &7Próx prestígio: &a{next_prestige}&f.
+
+  coin: '&bVocê possui &f{coin} fragmentos&b.'
+  coin-player: '&bO jogador &f{player}&b possui &f{coin} fragmentos&b.'
+  coin-added: '&bVocê adicionou &f{coin} fragmentos&b ao jogador &f{player}&b.'
+  coin-removed: '&bVocê removeu &f{coin} fragmentos&b do jogador &f{player}&b.'
+  coin-set: '&bVocê setou &f{coin} fragmentos&b para o jogador &f{player}&b.'
+  coin-sent: '&bVocê enviou &f{coin} fragmentos&b para o jogador &f{player}&b.'
+  coin-received: '&bVocê recebeu &f{coin} fragmentos&b do jogador &f{player}&b.'
+  coin-has: '&cVocê não possui a quantia de &f{coin}&c fragmentos.'
+  converted: '&bVocê compactou todos seus fragmentos em 1.'
+  activated: '&bVocê ativou &f{coin} fragmentos&b.'
+  give: '&bVocê deu &f{coin} &bfragmentos para o jogador &f{player}&b.'
+  give-all: |
+
+    &bO usuário &f{player}&b deu &f{coin} &bfragmentos para todos os jogadores online&b.
+
+  coin-added-all: '&bVocê adicionou &f{coin} fragmentos&b para todos os jogadores&b.'
+  rank-wait: |
+
+    &cEste rank ainda não foi liberado.
+    &cLibera em: &7{date} - {hour}'
+
+  head-wait: '&cVocê deve aguardar {time} para ativar heads novamente.'
+  head-converted: '&aVocê compactou todas as suas heads &7{head}&a em 1.'
+  head-activated: '&aVocê ativou &e{amount} &ade heads &7{head}&a.'
+  head-digit: |
+
+    &aDigite a quantia de heads que deseja vender.
+    &f> Digite &6TUDO&f para vender tudo.
+    &7para cancelar digite &ncancelar&7.
+
+  head-has: '&cVocê não possui essa quantia {amount} de heads.'
+  prestige-need: '&cVocê precisa estar no rank {rank} &cpara dar prestígio.'
+  autorankup-alterned-on: '&aAuto-Rankup ativado.'
+  autorankup-alterned-off: '&cAuto-Rankup desativado.'
+  give-rankup: '&bVocê deu &f{amount} &b+1 Rankup para o jogador &f{player}&b.'
+  give-rankup-all: |
+
+    &bO usuário &f{player}&b deu &f{amount} &b+1 Rankup para todos os jogadores online&b.
+
+  give-prestige: '&bVocê deu &f{amount} &b+1 Prestígio para o jogador &f{player}&b.'
+  give-prestige-all: |
+
+    &bO usuário &f{player}&b deu &f{amount} &b+1 Prestígio para todos os jogadores online&b.
+
+  head-added: '&bVocê adicionou &f{amount} {head}&b ao jogador &f{player}&b.'
+  head-removed: '&bVocê removeu &f{amount} {head}&b do jogador &f{player}&b.'
+  head-set: '&bVocê setou &f{amount} {head}&b para o jogador &f{player}&b.'
+  head-give: '&bVocê deu &f{amount} &b{head} para o jogador &f{player}&b.'
+  head-give-all: |
+
+    &bO usuário &f{player}&b deu &f{amount} &b{head} para todos os jogadores online&b.
+
+  head-added-all: '&bVocê adicionou &f{amount} {head}&b para todos os jogadores&b.'
+  head-list: |
+    &cHead não encontrada.
+    &7Disponíveis: {list}
+  rank-list: |
+    &cRank não encontrado.
+    &7Disponíveis: {list}
+  rank-set: '&bVocê setou o rank do jogador &f{player}&b para &f{rank}&b.'
+  prestige-set: '&bVocê setou o prestígio do jogador &f{player}&b para &f{prestige}&b.'
+  prestige-max: '&cO máximo de prestígio é {max}.'
+  rankup-wait: '&cVocê deve aguardar {time} para dar rankup novamente.'
+  head-collect-digit: |
+    &r
+    &aDigite a quantia de heads que deseja coletar.
+    &f> Digite &6TUDO&f para coletar tudo.
+    &7para cancelar digite &ncancelar&7.
+    &r

@@ -1,0 +1,11 @@
+blocks:
+  stone:
+    material: 'STONE:0'
+    chance: 100.0
+    amount: 10.0
+
+entities:
+  pig:
+    entity: 'PIG'
+    chance: 100.0
+    amount: 10.0

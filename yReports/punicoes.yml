@@ -1,0 +1,52 @@
+Punicoes:
+  1:
+    Display:
+      Slot: 11
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/3c0dae47a7675ba073d7ef55741f0fa5cce8b634e00ace65451c5576c27acc78'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aUso de Hack'
+      Lore:
+        - '&7Clique para punir o jogador'
+        - '&f{player} &7por Uso de Hack.'
+    # Permissão para executar a punição
+    Permissao: 'yreports.punicao.usodehack'
+    # Comandos que serão executados pelo console
+    Comandos:
+      - 'alerta O jogador {player} foi punido por uso de hack'
+  2:
+    Display:
+      Slot: 13
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/a33f4875e72e0e40f3968ba5ad3246417ce7129d0862e65661310511e3d5e654'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aOfensa à Jogador'
+      Lore:
+        - '&7Clique para punir o jogador'
+        - '&f{player} &7por Ofensa à Jogador.'
+    # Permissão para executar a punição
+    Permissao: 'yreports.punicao.ofensaajogador'
+    # Comandos que serão executados pelo console
+    Comandos:
+      - 'alerta O jogador {player} foi punido por ofensa à jogador'
+  3:
+    Display:
+      Slot: 15
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/14a37e5e3a5dae6d2781faef7cd4ee98b01f0d0a4293432ab3bcba5a3bced19b'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&aAnti-Jogo'
+      Lore:
+        - '&7Clique para punir o jogador'
+        - '&f{player} &7por Anti-Jogo.'
+    # Permissão para executar a punição
+    Permissao: 'yreports.punicao.antijogo'
+    # Comandos que serão executados pelo console
+    Comandos:
+      - 'alerta O jogador {player} foi punido por anti-joho'

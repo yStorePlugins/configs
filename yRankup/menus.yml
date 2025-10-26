@@ -1,0 +1,231 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Rank - Principal'
+  size: 27
+  items:
+    profile-slot: 10
+    rankup-slot: 12
+    ranks-slot: 13
+    heads-slot: 14
+    prestige-slot: 15
+    top-slot: 16
+    profile:
+      material: '{player}'
+      name: '&eSeu Perfil'
+      lore:
+        - '&7Confira detalhes do seu'
+        - '&7jogador no ranking.'
+        - ''
+        - '&fAuto-Rankup: &7{autorankup}'
+        - ''
+        - '&fFragmentos: &a{coin}&f.'
+        - '&fSeu rank: {tag} &7(&f{name}&7)&f.'
+        - '&fPróximo rank: {next_tag} &7(&f{next_name}&7)&f.'
+        - '&f> &7({progressbar}&7) {percentage}'
+        - ''
+        - '&fSeu prestígio: &7{prestige} &8-> &6{prestige_percentage}%&f'
+        - '&fPróximo prestígio: &a{next_prestige}&f'
+        - ''
+        - '&fSeu bônus: &a{bonus}%&f.'
+        - '&fSeu desconto: &a{discount}%&f.'
+        - ''
+        - '&aClique para alternar o Auto-Rankup'
+    rankup-can:
+      material: '1ad6c81f899a785ecf26be1dc48eae2bcfe777a862390f5785e95bd83bd14d'
+      name: '&aRankUP'
+      lore:
+        - '&7Clique para acessar o menu de rankup.'
+    rankup-cant:
+      material: '1ad6c81f899a785ecf26be1dc48eae2bcfe777a862390f5785e95bd83bd14d'
+      name: '&aRankUP'
+      lore:
+        - '&cParabéns, você chegou no último rank.'
+    ranks:
+      material: '152353641d287ce9ed30906f938ae9c517ec04caa8da71571954c81b09db454c'
+      name: '&aRanks'
+      lore:
+        - '&7Clique para acessar o menu de ranks.'
+    heads:
+      material: '621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4'
+      name: '&aHeads'
+      lore:
+        - '&7Clique para ver suas heads armazenadas.'
+        - '&7Você possui &f{amount}&7x heads&7.'
+    prestige:
+      material: '3ee29e8d07c128115dd4094bf48dceed236aa21eb2022e3730ff9bf23b9a3891'
+      name: '&aPrestígio'
+      lore:
+        - '&fSeu prestígio: &7{prestige} &8-> &6{prestige_percentage}%&f'
+        - '&fPróximo prestígio: &a{next_prestige}&f'
+        - ''
+        - '***&7Clique para evoluir seu prestígio.'
+    top:
+      material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+      name: '&aTOP Jogadores'
+      lore:
+        - '&7Visualize os jogadores que estão'
+        - '&7se destacando em nosso ranking.'
+        - ''
+        - '&aClique para acessar!'
+
+# Menu de rankup
+rankup:
+  name: '&8Rank - Rankup'
+  size: 27
+  items:
+    confirm-slot: 11
+    cancel-slot: 15
+    rankup-slot: 13
+    confirm:
+      material: 'e9e4bdcf172d5dc77c2bd4e37ad985399a9f2cdebf72463929ea4b666ef6f80'
+      name: '&aConfirmar'
+      lore: [ '&7Clique para upar seu rank.' ]
+    cancel:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&cCancelar'
+      lore: [ '&7Clique para cancelar.' ]
+    rankup:
+      material: '1ad6c81f899a785ecf26be1dc48eae2bcfe777a862390f5785e95bd83bd14d'
+      name: '&aUpar de rank!'
+      lore:
+        - '&8Próximo rank: {rank_tag}'
+        - ''
+        - ' &fPreços'
+        - ' &f•&7 &a{money}&7 coins'
+        - ' &f•&7 &a{yrankup-head-pig}&7 cabeças de porco'
+        - ''
+        - '&fProgresso: &8[{progressbar}&8] &7({percentage})'
+
+# Menu de recompensas
+ranks:
+  name: '&8Rank - ranks'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  #
+  items:
+    pig:
+      material: '621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4'
+      name: '&dRank Porco'
+      lore:
+        - '&7Informações deste rank:'
+        - ''
+        - '&d PorcoIII -> PorcoII &f: &7&a{money_pig2} coins, {yrankup-head-pig_pig2} Cabeças de Porco'
+        - ''
+        - '&d PorcoII -> PorcoI &f: &7&a{money_pig1} coins, {yrankup-head-pig_pig1} Cabeças de Porco'
+        - ''
+
+# Menu de heads
+heads:
+  name: '&8Rank - heads'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  #
+  empty-slot: 22
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Nenhuma cabeça armazenada :c' ]
+
+# Menu de top
+top:
+  name: '&8Rank - TOP'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 30
+  previous-slot: 9
+  next-slot: 17
+  # Seletor dos tops
+  selector:
+    slot: 31
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor do TOP'
+    # Tipos do seletor
+    types:
+      rank:
+        enabled: true
+        name: 'Rank'
+      prestige:
+        enabled: true
+        name: 'Prestígio'
+      coin:
+        enabled: true
+        name: 'Fragmentos'
+    # Formatos do seletor
+    formats:
+      seeing: ' &f• &a{name}'
+      select: ' &f• &7{name}'
+  items:
+    # Item do top rank
+    rank:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - ''
+        - '&fRank: &7{rank}'
+        - '&fPosição: &e{pos}º'
+        - ''
+    # Item do top prestígio
+    prestige:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - ''
+        - '&fPrestígio: &7{prestige}'
+        - '&fPosição: &e{pos}º'
+        - ''
+    # Item do top coin
+    coin:
+      material: '{player}'
+      name: '&7{player}'
+      lore:
+        - ''
+        - '&fFragmentos: &7{amount}'
+        - '&fPosição: &e{pos}º'
+        - ''
+
+# Menu de prestígio
+prestige:
+  name: '&8Rank - Prestígio'
+  size: 27
+  items:
+    confirm-slot: 11
+    cancel-slot: 15
+    confirm:
+      material: 'e9e4bdcf172d5dc77c2bd4e37ad985399a9f2cdebf72463929ea4b666ef6f80'
+      name: '&aConfirmar'
+      lore: [ '&7Clique para dar prestígio.' ]
+    cancel:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&cCancelar'
+      lore: [ '&7Clique para cancelar.' ]
