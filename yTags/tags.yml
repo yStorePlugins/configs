@@ -1,0 +1,69 @@
+Tags:
+   Homem:
+      Tag: '&b[Homem]'
+      Descricao: '&7Esta tag foi dada somente para homens.'
+      Chat: true
+      Placeholder: true
+      # Deixe '' para não usar
+      Permissao: ''
+      # Permitir equipar a tag (mesmo sem comprar) apenas por ter a permissão
+      Equipar-Permissao: false
+      Preco:
+         Compravel: true
+         Tipo: 'MONEY'
+         Preco: 100.0
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: NAME_TAG
+         Data: 0
+         Glow: true
+         Name: '&b[Homem]'
+         Lore:
+         - '&fPreço: &6100 money.'
+         - ''
+         - '&7Clique para comprar esta tag.'
+   Mulher:
+      Tag: '&d[Mulher]'
+      Descricao: '&7Esta tag foi dada somente para mulheres.'
+      Chat: true
+      Placeholder: true
+      Permissao: ''
+      Equipar-Permissao: false
+      Preco:
+         Compravel: true
+         Tipo: 'yPoints'
+         Preco: 100.0
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: NAME_TAG
+         Data: 0
+         Glow: true
+         Name: '&d[Mulher]'
+         Lore:
+         - '&fPreço: &6100 pontos.'
+         - ''
+         - '&7Clique para comprar esta tag.'
+   Beta:
+      Tag: '&e[Beta]'
+      Descricao: '&7Esta tag foi dada para aqueles que participaram da beta.'
+      Chat: true
+      Placeholder: false
+      Permissao: 'ytags.beta'
+      Equipar-Permissao: true
+      Preco:
+         # Mostrar no menu de NaoCompravel
+         Menu: true
+         Compravel: false
+         Tipo: 'yPoints'
+         Preco: 100.0
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: NAME_TAG
+         Data: 0
+         Glow: true
+         Name: '&e[Beta]'
+         Lore:
+         - '&7Esta tag não é compravel.'

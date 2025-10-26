@@ -1,0 +1,51 @@
+Nome: '&7Tags > Principal'
+Tamanho: 27
+Itens:
+   Perfil:
+      Slot: 10
+      CustomSkull: true
+      URL: '{player}'
+      ID: AIR
+      Data: 0
+      Glow: false
+      Name: '&aSuas Informações'
+      Lore:
+         - ''
+         - '&f Tags Adquiridas: &b{tags}&f.'
+         - '&f Tag Equipada: &c{equipada}&f.'
+         - '&f Tag Customizada: &c{custom}&f.'
+         - ''
+         - '&aClique para ver suas tags adquiridas.'
+   Coins:
+      Slot: 12
+      CustomSkull: false
+      URL: ''
+      ID: IRON_INGOT
+      Data: 0
+      Glow: false
+      Name: '&fMoney'
+      Lore:
+         - '&7Clique para ver as tags que podem ser'
+         - '&7compradas usando money.'
+   Cash:
+      Slot: 14
+      CustomSkull: false
+      URL: ''
+      ID: GOLD_INGOT
+      Data: 0
+      Glow: false
+      Name: '&6Cash'
+      Lore:
+         - '&7Clique para ver as tags que podem ser'
+         - '&7compradas usando cash.'
+   Nao compravel:
+      Slot: 16
+      CustomSkull: false
+      URL: ''
+      ID: EMERALD
+      Data: 0
+      Glow: false
+      Name: '&aNão comprável'
+      Lore:
+         - '&7Clique para ver as tags que não podem'
+         - '&7ser compradas.'

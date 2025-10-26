@@ -1,0 +1,19 @@
+# Só funcionam tesouros VIRTUAL ou RECOMPENSA
+Entidades:
+  entidadeRecompensa:
+    # Entidade
+    Entidade: 'CHICKEN'
+    # Tesouros que serão dados
+    # O nome dos tesouros é configurado na tesouros.yml
+    # chance,tesouro
+    Tesouros:
+      - '100,recompensa'
+    # Mundos permitidos
+    Mundos:
+      - 'world'
+  entidadeVirtual:
+    Entidade: 'PIG'
+    Tesouros:
+      - '100,virtual'
+    Mundos:
+      - 'world'

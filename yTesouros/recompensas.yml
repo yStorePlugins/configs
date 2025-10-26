@@ -1,0 +1,79 @@
+Recompensas:
+  Reco1:
+    # Item que aparecerá no preview.
+    Preview:
+      CustomSkull: false
+      URL: ''
+      ID: 1
+      Data: 0
+      Name: '&8Pedra'
+      Amount: 64
+      Lore:
+        - '&aEsta pedra vale muito dinheiro!'
+      # Caso não queira deixe:
+      # Enchants:
+      # - ''
+      Enchants:
+        - ''
+    # Só será dado o item se os comandos estiverem em false.
+    # Item que será dado ao jogador.
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 1
+      Data: 0
+      Name: '&8Pedra'
+      Amount: 64
+      Lore:
+        - '&aEu valho muito!'
+      # Caso não queira deixe:
+      # Enchants:
+      # - ''
+      Enchants:
+        - ''
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      Use: false
+      List:
+        - 'give {player} stone 1'
+  Reco2:
+    Preview:
+      CustomSkull: false
+      URL: ''
+      ID: 264
+      Data: 0
+      Name: '&bDiamante'
+      Amount: 1
+      Lore:
+        - '&bQuem não adora uma pedra preciosa?!'
+      Enchants:
+        - ''
+    Command:
+      Use: true
+      List:
+        - 'give {player} diamond 1'
+  Reco3:
+    # Item que aparecerá no preview.
+    Preview:
+      CustomSkull: false
+      URL: ''
+      ID: 388
+      Data: 0
+      Name: '&aEsmeralda'
+      Amount: 64
+      Lore:
+        - '&aEsmeraldas valem muito?'
+      Enchants:
+        - ''
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 388
+      Data: 0
+      Name: '&aEsmeralda'
+      Amount: 64
+      Lore:
+        - '&aEu valho muito!'
+      Enchants:
+        - ''

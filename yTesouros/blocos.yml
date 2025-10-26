@@ -1,0 +1,42 @@
+Blocos:
+  ##
+  ##
+  ##
+  blocoRecompensa:
+    # ID:DATA
+    ID: 'STONE:0'
+    # Ativar apenas nas minas do yMinas e yMinasPackets
+    Just-mine: false
+    # Tesouros que serão dados
+    # O nome dos tesouros é configurado na tesouros.yml
+    # chance,tesouro
+    Tesouros:
+      - '100,recompensa'
+    # Mundos permitidos
+    Mundos:
+      - 'world'
+  ##
+  ##
+  ##
+  blocoVirtual:
+    ID: 'STONE:0'
+    # Ativar apenas nas minas do yMinas e yMinasPackets
+    Just-mine: false
+    Tesouros:
+      - '100,virtual'
+    Mundos:
+      - 'world'
+  ##
+  ##
+  ##
+  blocoBloco:
+    ID: 'STONE:0'
+    # Ativar apenas nas minas do yMinas e yMinasPackets
+    Just-mine: false
+    Tesouros:
+      - '100,bloco'
+    Mundos:
+      - 'world'
+  ##
+  ##
+  ##

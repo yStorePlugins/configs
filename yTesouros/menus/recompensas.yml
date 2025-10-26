@@ -1,0 +1,41 @@
+Nome: '&8Tesouros - Recompensas'
+Tamanho: 54
+Slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+BackSlot: 9
+VoltarSlot: 18
+ProximoSlot: 26
+# Item para recolher todas as recompensas
+Recolher todos:
+  Slot: 49
+  CustomSkull: true
+  URL: 'http://textures.minecraft.net/texture/1824d454e0508c57e3fe8337030a0bc52e2065e19f02e30b457d352d4a312537'
+  ID: 1
+  Data: 0
+  Glow: false
+  Name: '&6Recolher todos'
+  Lore:
+    - '&7Clique para recolher'
+    - '&7todas as recompensas.'
+# Item que irá mostrar quanto estiver vazio
+Vazio:
+  Slot: 22
+  CustomSkull: false
+  URL: ''
+  ID: 30
+  Data: 0
+  Glow: false
+  Name: '&cVazio!'
+  Lore:
+    - '&7Você não possui nenhuma'
+    - '&7recompensa armazenada.'
+# Itens para customizar seu menu
+Itens: {}
+#  Enfeite:
+#    Slot: 11
+#    CustomSkull: false
+#    URL: ''
+#    ID: 1
+#    Data: 0
+#    Glow: true
+#    Name: '&aENFEITE!'
+#    Lore: []

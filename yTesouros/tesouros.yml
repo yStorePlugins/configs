@@ -1,0 +1,124 @@
+# Tipos de tesouro:
+# BLOCO -> irá spawnar um bloco no lugar do quebrado.
+# VIRTUAL -> irá dar tesouros para serem abertos no /tesouros
+# RECOMPENSA -> irá dar as recompensas diretamente no /recompensas ou /tesouros recompensas
+Tesouros:
+  recompensa:
+    Tipo: 'RECOMPENSA'
+
+    #
+    # Este bloco será o que irá spawnar
+    #Bloco:
+    #  ID: CHEST
+    #  Data: 0
+    #
+
+    #
+    # Item que aparecerá no menu de /tesouros.
+    # Apenas se o tipo for virtual.
+    #Item:
+    #  CustomSkull: false
+    #  URL: ''
+    #  ID: 1
+    #  Data: 0
+    #  Name: '&eTesouro'
+    #  Amount: 64
+    #  Lore:
+    #    - '&fTipo: &aRecompensa&f.'
+    #
+
+    #
+    # Item que será ativável
+    # Apenas se o tipo for virtual.
+    #Ativavel:
+    #  CustomSkull: false
+    #  URL: ''
+    #  ID: 1
+    #  Data: 0
+    #  Name: '&eTesouro'
+    #  Amount: 64
+    #  Lore:
+    #    - '&fTipo: &aRecompensa&f.'
+    #
+
+    # Som de quando encontrar um tesouro
+    Som: 'ORB_PICKUP'
+    # Mensagens que serão enviadas:
+    Mensagens:
+      Chat:
+        Broadcast: false
+        Msg:
+          - '&a[TESOURO] &eVocê encontrou uma recompensa. Digite &8/recompensas &epara reivindicar!'
+      Actionbar: '&eVocê encontrou uma recompensa &aBásico&e!'
+      Title: '&eRecompensa encontrada!<nl>&8/recompensas&e!'
+    # Recompensas do tesouro
+    # As recompensas são cadastradas na recompensas.yml
+    # Use: chance,recompensa
+    Recompensas:
+      # Irá tentar dar todas as recompensas da lista.
+      Passar todas: true
+      Lista:
+        - '100,Reco1'
+  virtual:
+    Tipo: 'VIRTUAL'
+    Som: 'ORB_PICKUP'
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 54
+      Data: 0
+      Name: '&eTesouro Virtual'
+      Amount: 64
+      Lore:
+        - '&fRaridade: &6Raro&f.'
+        - '&fQuantia armazenada: &b{quantia}&f.'
+        - ''
+        - '&7Clique com botão esquerdo para abrir.'
+        - '&7Clique com botão direito para recolher.'
+        - '&7Aperte o botão Q para ver as recompensas.'
+    Ativavel:
+      CustomSkull: false
+      URL: ''
+      ID: 54
+      Data: 0
+      Name: '&eTesouro virtual'
+      Amount: 64
+      Lore:
+        - '&7Clique com &fbotão direito'
+        - '&7para armazenar.'
+    Mensagens:
+      Chat:
+        Broadcast: false
+        Msg:
+          - '&a[TESOURO] &eVocê encontrou um tesouro &aVirtual&e. Digite &8/tesouros &epara reivindicar!'
+      Actionbar: '&eVocê encontrou um tesouro &aVirtual&e!'
+      Title: '&eTesouro Virtual<nl>&8/tesouros&e!'
+    Recompensas:
+      Passar todas: true
+      Lista:
+        - '100,Reco2'
+  bloco:
+    Tipo: 'BLOCO'
+    Bloco:
+      ID: CHEST
+      Data: 0
+    Holograma:
+      Altura: 2.5
+      Holograma:
+        - '[item]DIAMOND'
+        - ''
+        - ''
+        - '&6&lTesouro'
+        - '&7Clique para pegar as recompensas.'
+    Som: 'ORB_PICKUP'
+    Mensagens:
+      Chat:
+        Broadcast: true
+        Msg:
+          - '&a[TESOURO] &eO jogador &7{player} &eencontrou um tesouro &aFísico&e!'
+      Actionbar: '&eVocê encontrou um tesouro &aFísico&e!'
+      Title: '&eTesouro encontrado<nl>&aFísico&e!'
+    Recompensas:
+      Passar todas: true
+      Lista:
+        - '100,Reco3'

@@ -1,0 +1,20 @@
+Pacotes:
+   Genero:
+      Display: '&7Gênero'
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: NAME_TAG
+         Data: 0
+         Glow: true
+         Name: '&ePacote de Tags'
+         Lore:
+            - '&7Ao ativar, você irá ganhar as tags'
+            - '&7de gênero.'
+            - ''
+            - '&fEste pacote inclui:'
+            - '&f > &b[Homem]'
+            - '&f > &d[Mulher]'
+      Tags:
+         - 'Homem'
+         - 'Mulher'

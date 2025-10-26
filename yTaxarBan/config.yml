@@ -1,0 +1,42 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+#Use: yClans, AtlasClans, SimpleClans ou Factions
+Plugin de clan: 'yClans'
+# Palavra que o plugin irá reconhecer quando um jogador for kickado.
+# Se na rasão do kick conter essa palavra, o clan/facção será taxado.
+# Você pode usar cores.
+Palavra chave: 'banido'
+# Quantia de money que irá ser removida dos membros do clan/facção
+# Esta taxa é fixa. Deixe 0 para não usá-la.
+Taxa: 10000.0
+# Porcentagem da quantia do money que irá ser removida dos membros do clan/facção.
+# Esta taxa é em porcentagem, irá descontar ela do money.
+# Deixe 0 para não usá-la.
+Taxa porcentagem: 0.0
+# Opções da função de desfazer o clan
+Desfazer:
+  # Ativar a função
+  Ativar: true
+  # Dias que poderá contabilizar ban seguidos
+  Dias: 7
+  # Bans seguidos necessários no período de dias
+  Bans: 3
+# Mensagens gerais
+Mensagens:
+  Jogador:
+    - ''
+    - '&cO jogador &f{player}&c, membro do seu clan, foi banido e por isso todos os membros do seu clan foram taxados em &4$&c10K de coins.'
+    - ''
+  Desfeito p:
+    - ''
+    - '&cTrês jogadores do seu clan foram banidos num período de 7 dias e por isto, seu clan foi desfeito.'
+    - ''
+  Desfeito:
+    - ''
+    - '&cO clan &f{clan}&c foi desfeito por ter três membros banidos num período de 7 dias.'
+    - ''

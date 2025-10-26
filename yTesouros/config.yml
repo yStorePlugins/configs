@@ -1,0 +1,132 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Comandos e aliases do plugin
+Comando:
+  Tesouro:
+    Comando: 'tesouro'
+    Aliases: [ tesouros ]
+  Recompensa:
+    # Deixe '' para não usar
+    Comando: 'recompensa'
+    Aliases: [ recompensas ]
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+Formatacao: 'LETRA'
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+Limite:
+  Ativar: true
+  # Máximo que irá recolher por vez
+  Maximo: 40
+
+# Mundos onde não pode coletar/abrir tesouros/recompensas
+World blacklist:
+  - 'none'
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não tem permissão para isto.'
+  Inv cheio: '&cSeu inventário está cheio.'
+  Deletou: '&aVocê deletou esta recompensa.'
+  Cancelou: '&cVocê cancelou a operação.'
+  Nao e numero: '&cO argumento não é um número.'
+  Nao encontrado: '&cJogador não encontrado.'
+  Suficiente: '&cVocê não possui tesouros suficiente.'
+  Recolheu: '&aVocê recolheu &e{quantia}&a tesouros.'
+  Deu: '&aVocê deu &e{quantia} &atesouros para o jogador &e{player}&a.'
+  Armazenou: '&aVocê armazenou &e{quantia} &atesouros.'
+  Pertence: '&cEste tesouro pertence à {player}.'
+  Coletou: '&eVocê coletou uma recompensa.'
+  ColetouTodas: '&eVocê coletou todas as suas recompensas.'
+  Mundo: '&cVocê não pode fazer isto neste mundo.'
+  Abriu:
+    - '&aVocê abriu &e{quantia}&a tesouros. Para recolher suas recompensas digite &8/recompensas&e.'
+  Recolher:
+    - ''
+    - '&aDigite a quantia que você quer recolher.'
+    - ''
+    - '&8| &fVocê possui &6{quantia}&f disponível.'
+    - '&8| &fDigite &8TUDO &fpara recolher tudo.'
+    - ''
+    - '&7Para cancelar digite &ncancelar&7.'
+    - ''
+  Abrir:
+    - ''
+    - '&aDigite a quantia que você quer abrir.'
+    - ''
+    - '&8| &fVocê possui &6{quantia}&f disponível.'
+    - '&8| &fDigite &8TUDO &fpara abrir tudo.'
+    - ''
+    - '&7Para cancelar digite &ncancelar&7.'
+    - ''
+
+# Setas dos menus.
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para ir à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróximo'
+    Lore:
+      - '&7Clique para ir à próxima página.'
+
+# Formatos de lores
+Lores:
+  Recompensa:
+    # O sobrepor irá trocar a lore por esta
+    Sobrepor: false
+    Lore:
+      - ''
+      - '&fQuantia armazenada: &6{quantia}&f.'
+      - ''
+      - '&7Aperte o &fBotão Q&7 para &7deletar uma unidade deste item.'
+      - '&7Aperte o &fBotão CTRL+Q&7 para &7deletar todos deste item.'
+
+# Formatos de money e quantia
+Formats:
+  - ''
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'
