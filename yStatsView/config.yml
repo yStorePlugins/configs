@@ -1,0 +1,72 @@
+Comando:
+  Comando: 'statsview'
+  Aliases: []
+
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+Formatacao: 'LETRA'
+
+# Coloque Factions, SimpleClans, yClans, HeroesClans, AtlasClans ou AtlasFactions
+# Deixe Automatico caso queira que o plugin auto-detecte.
+Modo: 'Automatico'
+
+# Opções gerais do plugin
+Opcoes:
+  # Delay da task geral que mostra o status
+  # em ticks -> 20 ticks = 1 segundo
+  Delay: 40
+  # Coloque o raio de verificação em blocos
+  Raio: 5
+  # Ativar o hook com o mcmmo
+  Mcmmo: true
+  # Jogador que tiver a permissão de bypass
+  # não terá seu status mostrado
+  Bypass:
+    Ativar: false
+    Permissao: ''
+  # Mundos onde o statsview não irá aparecer
+  Mundo blacklist:
+    - 'none'
+
+# Placeholders já disponíveis:
+#   > {player} - retorna o nick do jogador
+#   > {money} - retorna o money do jogador (formatado)
+#   > {tag} - retorna a tag do clan/facção do jogador (se tiver)
+#   > {nivel} - retorna o nível total de mcmmo do jogador.
+# Você pode usar também o PlaceholderAPI
+Mensagens:
+  # Mensagem que irá aparecer se tiver clan/faccao
+  Tem: '&aJogador {group}&f{player} Nivel: {nivel} &aClan: &e[{tag}&e] &eMoney: &a{money} &eCash &6%playerpoints_points%'
+  # Mensagem que irá aparecer se nao tiver clan/faccao
+  Sem: '&aJogador {group}&f{player} Nivel: {nivel} &eMoney: &a{money} &eCash: &6%playerpoints_points%'
+
+  # Mensagem que irá aparecer se tiver clan/faccao
+  # para o próprio jogador (quando não estiver mirando para outro player)
+  Tem proprio: '&c%player_health%/%player_max_health%'
+  # Mensagem que irá aparecer se nao tiver clan/faccao
+  # para o próprio jogador (quando não estiver mirando para outro player)
+  Sem proprio: '&c%player_health%/%player_max_health%'
+
+  # Mensagem que irá aparecer ao ganhar XP do mcMMO
+  Mcmmo: '&a{skill}: {level} ({xp_has} / {xp_need}) +{xp_earned}XP'
+
+# Placeholders custom que você poderá utilizar do placeholderapi para por nas mensagens
+Custom:
+  custom1:
+    Placeholder: '{group}'
+    Retorna: '&e[%vault_prefix%&e] '
+
+# Formatos de money e quantia
+Formats:
+  - ''
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'
