@@ -33,6 +33,12 @@ vampire:
   # Tempo total do efeito
   # em segundos
   time: 10
+  # Efeito de mudança do clima
+  weather:
+    # deixe 13000 para a 1.13+
+    night-time: 18000
+    # -1 para pegar o clima anterior ao ativar o encantamento
+    day-time: -1
 
 enchants:
   guardian:
