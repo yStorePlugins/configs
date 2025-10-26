@@ -1,0 +1,189 @@
+# Nome do PET
+display-name: '&6&lLeão &8[Nvl. {level}]'
+
+# Permissão para equipar o PET
+permission: ''
+
+# A cabeça do PET vai ser pequena?
+small: false
+
+# Distância entre o player e o PET
+distance-between: 1.3
+
+# Cabeça do PET
+skull:
+  material: '85b70944ef8967762d53064d21dfe1e260eacfa7b29788c3e3abb45bcf650577'
+
+# Nível padrão do PET
+default-level: 0
+
+# Nível máximo do PET
+max-level: 100
+
+# Quantia BASE de XP necessária para upar
+exp-base: 10.0
+
+# Quantia ADICIONAL POR NÍVEL de XP necessária para upar
+exp-per-level: 10.0
+
+# Quanto de EXP cada comida irá dar
+exp-per-food: 1.0
+
+# Sistema de sons
+# Lista disponível: https://helpch.at/docs/1.8/index.html?org/bukkit/Sound.html
+sounds:
+  # Som ao evoluir o nível
+  up: 'LEVEL_UP'
+
+# Configuração do holograma
+hologram:
+  enabled: false
+  off-set: 2.5
+  lines: [ '&6&lLeão &8[Nvl. {level}]' ]
+
+# Item ativável do PET
+item:
+  material: '85b70944ef8967762d53064d21dfe1e260eacfa7b29788c3e3abb45bcf650577'
+  name: '&6&lPet Leão &8[{tier_display}&8]'
+  lore:
+    - '&7Este pet é um multiplicador'
+    - '&7de &fspawners&7.'
+    - ''
+    - '&6Informações'
+    - ' &fNível: &7{level}'
+    - ' &fBônus &6(spawners)&f: &7{bonus_spawners}%'
+    - ' &fDesconto &6(spawners)&f: &7{discount_spawners}%'
+    - ' &fProgresso: &7{progressbar} &7{percentage}'
+    - ''
+    - ' &8Evolua o seu pet'
+    - ' &8alimentando-o com ração.'
+    - ''
+    - '&6Clique para ativar'
+
+# Item no menu
+icon:
+  material: '85b70944ef8967762d53064d21dfe1e260eacfa7b29788c3e3abb45bcf650577'
+  name: '&6&lPet Leão &8[{tier_display}&8]'
+  lore:
+    - '&7Este pet é um multiplicador'
+    - '&7de &fspawners&7.'
+    - ''
+    - '&6Informações'
+    - ' &fNível: &7{level}'
+    - ' &fBônus &6(spawners)&f: &7{bonus_spawners}%'
+    - ' &fDesconto &6(spawners)&f: &7{discount_spawners}%'
+    - ' &fProgresso: &7{progressbar} &7{percentage}'
+    - ''
+    - ' &8Evolua o seu pet'
+    - ' &8alimentando-o com ração.'
+    - ''
+    - '&6Botão esquerdo &8-> &fEquipar'
+    - '&6Botão direito &8-> &fRecolher'
+
+# Item no menu (equipado)
+icon-equipped:
+  material: '85b70944ef8967762d53064d21dfe1e260eacfa7b29788c3e3abb45bcf650577'
+  name: '&6&lPet Leão &8[{tier_display}&8]'
+  lore:
+    - '&7Este pet é um multiplicador'
+    - '&7de &fspawners&7.'
+    - ''
+    - '&6Informações'
+    - ' &fNível: &7{level}'
+    - ' &fBônus &6(spawners)&f: &7{bonus_spawners}%'
+    - ' &fDesconto &6(spawners)&f: &7{discount_spawners}%'
+    - ' &fProgresso: &7{progressbar} &7{percentage}'
+    - ''
+    - ' &8Evolua o seu pet'
+    - ' &8alimentando-o com ração.'
+    - ''
+    - '&6Botão esquerdo &8-> &fDesequipar'
+
+tiers:
+  tier-1:
+    # Ordenação dos tiers
+    # Padrão: 1
+    order: 1
+    # Nível necessário para formar este tier
+    need-level: 0
+    # Nome do tier
+    display-name: '&7Comum'
+    # Buffs que irá dar ao jogador
+    buffs:
+      base:
+        # Bônus de Venda de drops de Spawners -> ySpawners
+        bonus-spawners: 10.0
+        # Bônus de Venda de drops de Máquinas -> yMaquinas e yMaquinasVirtuais
+        bonus-machines: 0.0
+        # Bônus de Venda na mina -> yMinas e yMinasPackets
+        bonus-mines: 0.0
+        # Bônus de Venda no armazém -> yArmazem
+        bonus-storage: 0.0
+        # Bônus de Venda nas plantas -> yCampo e yPlantacoes
+        bonus-farm: 0.0
+        # Bônus de Venda na floresta -> yFloresta
+        bonus-forest: 0.0
+        # Bônus de Venda -> yVender
+        bonus-sell: 0.0
+        # Bônus de Venda na pesca -> yPesca
+        bonus-fish: 0.0
+        # Bônus de Almas -> yAlmas
+        bonus-almas: 0.0
+        # Desconto na compra de spawners -> ySpawnersShop
+        discount-spawners: 5.0
+        # Desconto na compra de máquinas -> yMaquinas e yMaquinasVirtuais
+        discount-machines: 0.0
+      per-level:
+        bonus-spawners: 0.01
+        bonus-machines: 0.0
+        bonus-mines: 0.0
+        bonus-storage: 0.0
+        bonus-farm: 0.0
+        bonus-forest: 0.0
+        bonus-sell: 0.0
+        bonus-fish: 0.0
+        bonus-almas: 0.0
+        discount-spawners: 0.005
+        discount-machines: 0.0
+      # Lista de efeitos que o jogador irá ter
+      # effect:level
+      effect-list: [ 'INCREASE_DAMAGE:1', 'SPEED:1' ]
+      # Mundos que o jogador irá ter fly
+      fly-worlds: [ 'PlotWorld' ]
+      # Comandos que serão executados ao renascer
+      # Caso queira dar um "kit", por exemplo.
+      respawn-commands: []
+      # Comandos que serão executados ao equipar o pet e ao logar
+      equip-login-commands: []
+      # Comandos que serão executados ao desequipar o pet e ao deslogar
+      unequip-quit-commands: []
+  tier-2:
+    order: 2
+    need-level: 10
+    display-name: '&7Mediano'
+    buffs:
+      base:
+        bonus-spawners: 20.0
+        bonus-machines: 0.0
+        bonus-mines: 0.0
+        bonus-storage: 0.0
+        bonus-farm: 0.0
+        bonus-fish: 0.0
+        bonus-almas: 0.0
+        discount-spawners: 10.0
+        discount-machines: 0.0
+      per-level:
+        bonus-spawners: 0.01
+        bonus-machines: 0.0
+        bonus-mines: 0.0
+        bonus-storage: 0.0
+        bonus-farm: 0.0
+        bonus-fish: 0.0
+        bonus-almas: 0.0
+        discount-spawners: 0.005
+        discount-machines: 0.0
+      effect-list: [ 'INCREASE_DAMAGE:1', 'SPEED:1' ]
+      fly-worlds: [ 'PlotWorld' ]
+      respawn-commands: []
+      equip-login-commands: []
+      unequip-quit-commands: []

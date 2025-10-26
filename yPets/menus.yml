@@ -1,0 +1,180 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Pets'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  previous-slot: 9
+  next-slot: 17
+  items:
+    jar-slot: 30
+    unequip-slot: 32
+    hidden-slot: 33
+    hidden:
+      material: 'ENDER_PEARL'
+      name: '&cOcultar'
+      lore: ['&7Escolhe entre exibir seu pet', '&7a você e outros jogadores, ou', '&7apenas receber os buffs.', '', '&f Oculto: &r{status}', '', '&aClique para alternar']
+    unequip:
+      material: 'BARRIER'
+      name: '&cDesequipar'
+      lore: ['&7Clique aqui para desequipar', '&7o seu pet.']
+    jar-no-has:
+      material: 'FLOWER_POT_ITEM'
+      name: '&ePote de Ração'
+      lore:
+        - '&7Armazene aqui a ração que'
+        - '&7o seu PET irá consumir.'
+        - ''
+        - '&cVocê não possui o pote de ração para PET.'
+    jar:
+      material: 'FLOWER_POT_ITEM'
+      name: '&ePote de Ração'
+      lore:
+        - '&7Armazene aqui a ração que'
+        - '&7o seu PET irá consumir.'
+        - ''
+        - ' &fArmazenado: &a{amount}'
+        - ''
+        - '&8 * Tenha em mente que ao alimentar'
+        - '&8   o seu PET, irá consumir a ração'
+        - '&8   até ela acabar ou seu PET atingir'
+        - '&8   o nível máximo.'
+        - ''
+        - '&7Botão esquerdo &8-> &fAlimentar o PET'
+        - '&7Botão direito &8-> &fArmazenar'
+    slot-empty:
+      material: 'STAINED_GLASS_PANE:5'
+      name: '&aSlot Livre'
+      lore: []
+    slot-need:
+      material: 'STAINED_GLASS_PANE:14'
+      name: '&cSlot Bloqueado'
+      lore: []
+  facing:
+    e0:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e1:
+      slot: 1
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e2:
+      slot: 2
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e3:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e4:
+      slot: 4
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e5:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e6:
+      slot: 6
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e7:
+      slot: 7
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e8:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e9:
+      slot: 10
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e11:
+      slot: 16
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e12:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e13:
+      slot: 19
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e14:
+      slot: 20
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e15:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e16:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e17:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e18:
+      slot: 24
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e19:
+      slot: 25
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e20:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+
+# Menu de armazenar comida
+main-food:
+  name: '&8Pets'
+  size: 54

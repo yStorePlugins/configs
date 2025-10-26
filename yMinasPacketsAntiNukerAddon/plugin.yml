@@ -1,0 +1,7 @@
+name: yMinasPacketsAntiNukerAddon
+version: '${project.version}'
+main: com.ystoreplugins.yminaspacketsantinuker.Main
+depend: [ yPlugins ]
+authors: [ yChusy ]
+website: https://ystoreplugins.com.br
+api-version: 1.13

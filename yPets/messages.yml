@@ -1,0 +1,66 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &aPets comandos:
+
+    &a> /pet givepet <player> <pet> <tier> <quantia>
+    &a> /pet givefood <player> <quantia>
+    &a> /pet giveslot <player> <quantia>
+    &a> /pet givebowl <player> <quantia>
+    &a> /pet reload
+
+  slot-activated: '&aVocê ativou &e{amount} &ade slots.'
+  slot-max: '&cVocê já chegou no máximo.'
+  slot-give: '&aVocê deu &e{amount} &ade slots para o jogador &e{player}&a.'
+  slot-enough: '&cVocê não possui slot disponíveis.'
+  food-give: '&aVocê deu &e{amount} &ade ração para pet para o jogador &e{player}&a.'
+  pet-give: '&aVocê deu &7{amount}x {pet}&a para o jogador &7{player}&a.'
+  pet-received: '&aVocê recebeu &7{amount}x {pet}&a.'
+  pet-list: |
+    &cPet não encontrado.
+    &cPet disponíveis: &f{list}
+  pet-perm: '&cVocê não tem permissão para equipar este tipo de pet.'
+  pet-equipped: '&aVocê está equipando o {pet}&a.'
+  pet-already: '&cVocê já possui um pet deste tipo. Ademais, nenhum upgrade de tier foi possível.'
+  pet-activated: '&aVocê ativou &7{amount}x {pet}&a.'
+  pet-unequipped: '&cVocê desequipou seu PET.'
+  pet-unequipped-none: '&cVocê não está equipando nenhum PET.'
+  pet-collected: '&aVocê recolheu o seu PET.'
+  pet-info: |
+
+    &eInformações do PET
+
+    &8-> &fNome: &r{pet} &8({player})
+    &8-> &fTier: &6{tier} &7- {tier_display}
+
+    &8-> &fEXP: &a{exp_has}&7/&c{exp_need} &8(Lvl. {level}/{level_max})
+    &8-> &fProgresso: &7{progressbar} &7{percentage}
+
+  pet-need-level: '&cOs PETS necessitam estar no mínimo no nível {level} para se juntarem e formarem o novo tier.'
+  pet-equal-level: '&cOs PETS necessitam estar no mesmo nível para se juntarem e formarem o novo tier.'
+  pet-tier-upgrade: '&aVocê evoluiu seu PET &f{pet} &a para o Tier &f{tier}&a.'
+  pet-upgrade: '<nl>&eSeu &f{pet}&e atingiu o &fLvl. {level}&e e aprimorou o seu bônus!<nl>'
+  pet-max: '&cO PET já está no nível máximo.'
+  pet-none: '&cVocê não está equipando nenhum PET.'
+  food-stored: '&aVocê armazenou &f{amount}&a rações para PET.'
+  bowl-give: '&aVocê deu &e{amount} &ade pote de ração para pet para o jogador &e{player}&a.'
+  bowl-already: '&cVocê já possui o pote de ração para PET.'
+  bowl-activated: '&aVocê ativou o pote de ração para PET.'
+  not-main-server: '&cNão é possível abrir o menu de pets, mas o seu bonus continua ativo.'

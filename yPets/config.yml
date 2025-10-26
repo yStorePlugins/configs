@@ -1,0 +1,106 @@
+#         ____      _
+#  _   _|  _ \ ___| |_ ___
+# | | | | |_) / _ \ __/ __|
+# | |_| |  __/  __/ |_\__ \
+#  \__, |_|   \___|\__|___/
+#  |___/
+
+# *** ALERTA
+# ESTE PLUGIN REQUER A OPÇÃO "packet-events" ATIVADA NO SEU yPlugins
+# ***
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Este servidor é o principal?
+  # Exemplo: servidor rankup
+  # Caso esse servidor for uma mina, floresta, campo, etc, deixe false.
+  main-server: true
+  # Poder stackar PETS de tipos e atributos idênticos
+  stack-equal: false
+  # Mundos em que não irá mostrar o PET para outros jogadores
+  target-world-blacklist: []
+
+# Slots de pet
+slots:
+  # Quantia padrão de slots que o jogador irá ter
+  default: 1
+  # Quantia máxima de slots que o jogador poderá ter
+  max: 20
+  # Item do slot que será ativável
+  item:
+    material: 'HOPPER'
+    name: '&bSlots'
+    lore:
+      - ''
+      - '&fQuantia: &a{amount}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+
+# Comida do PET
+food:
+  material: 'INK_SACK:3'
+  name: '&eRação para Pet'
+  lore:
+    - '&7Utilize esta ração para alimentar'
+    - '&7o seu Pet, fazendo-o evoluir.'
+    - ''
+    - '&eComo usar?'
+    - '&fAlimente o seu Pet mirando nele.'
+
+# Item para obter o pote
+bowl:
+  material: 'FLOWER_POT_ITEM'
+  name: '&ePote de Ração'
+  lore:
+    - '&7Utilize este item para obter'
+    - '&7o pote de ração.'
+    - ''
+    - '&aClique para ativar.'
+
+# Configuração da barra de progresso
+progress-bar:
+  amount: 10
+  symbol: ':'
+  color-yes: '&a'
+  color-no: '&7'

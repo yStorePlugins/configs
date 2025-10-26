@@ -1,0 +1,6 @@
+name: yPets
+version: 1.0.8
+main: com.ystoreplugins.ypets.Main
+authors: [ yChusy ]
+website: https://ystoreplugins.com.br
+api-version: 1.13
