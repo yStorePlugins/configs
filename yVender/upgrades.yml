@@ -1,0 +1,81 @@
+# Upgrade de redução de delay
+delay:
+  # Valor padrão
+  default: 0
+  # Valor máximo
+  maximum: 3
+  # Quanto irá reduzir de delay por nível
+  per-level: 1
+  # Aplicar na venda por shift
+  shift-sell: true
+  # Aplicar na venda automática
+  automatic-sell: true
+  # Aplicar na venda manual
+  manual-sell: true
+  # Mensagens
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  upgraded: '&aVocê adquiriu um upgrade de delay.'
+  # Preços por nível
+  # Cálculo: level * price-amount
+  prices-per-level:
+    price1:
+      provider: 'money'
+      amount: 1000.0
+  # Ícones no menu
+  icon:
+    slot: -1
+    material: FIREBALL
+    name: '&aUpgrade de Delay'
+    lore:
+      - ''
+      - ' &fAtual: &7{actual}/{maximum}&f.'
+      - ' &fCusto para -{per-level}: &7{Money} coins&f.'
+      - ''
+      - '&aClique para evoluir.'
+  icon-maximum:
+    material: FIREBALL
+    name: '&aUpgrade de Delay'
+    lore:
+      - ''
+      - ' &fAtual: &7{actual}/{maximum}&f.'
+      - ''
+      - '&cEste upgrade já está no máximo.'
+
+# Upgrade de limite de venda
+limit:
+  # Ativar o sistema de limite
+  enabled: false
+  # Valor padrão
+  default: 0
+  # Valor máximo
+  maximum: 3
+  # Quanto irá adicionar de limite por nível
+  per-level: 100
+  # Mensagens
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  upgraded: '&aVocê adquiriu um upgrade de limite.'
+  # Preços por nível
+  # Cálculo: level * price-amount
+  prices-per-level:
+    price1:
+      provider: 'money'
+      amount: 1000.0
+  # Ícones no menu
+  icon:
+    slot: -1
+    material: SLIME_BALL
+    name: '&aUpgrade de Limite'
+    lore:
+      - ''
+      - ' &fAtual: &7{actual}/{maximum}&f.'
+      - ' &fCusto para +{per-level}: &7{Money} coins&f.'
+      - ''
+      - '&aClique para evoluir.'
+  icon-maximum:
+    material: SLIME_BALL
+    name: '&aUpgrade de Limite'
+    lore:
+      - ''
+      - ' &fAtual: &7{actual}/{maximum}&f.'
+      - ''
+      - '&cEste upgrade já está no máximo.'

@@ -1,0 +1,67 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Opcoes gerais do plugin
+Opcoes:
+  # Ao executar o comando /vender, abrir o menu
+  # se estiver false, ele irá vender diretamente.
+  Abrir menu: true
+  # Ativar a multiplicação pela bolsa
+  Bolsa: true
+  # Vender itens renomeados
+  Vender renomeado: true
+  # Vender itens não renomeados
+  Vender NaoRenomeado: true
+  # Fechar o menu de venda ao vender
+  Vender fecharMenu: false
+  # Permissao para vender manualmente
+  Vender perm: 'yvender.vender'
+  # Permissao para vender pelo shift
+  Shift perm: 'yvender.shift'
+  # Permissao para ativar o autovender
+  Auto perm: 'yvender.auto'
+  # Permissao para ativar o vender ao lotar o inventário
+  Full perm: 'yvender.full'
+  # Pegar os itens das ordens anteriores
+  # que ele tem permissão. Só irá pegar os itens
+  # que a ordem maior não possuir.
+  Anteriores: false
+  # Acumular os bônus que tiver permissão
+  Acumular bonus: false
+  # Mundos que não funcionará a venda
+  Mundos blacklist: []
+
+# Setas dos menus
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróxima'
+    Lore:
+      - '&7Clique para ir à próxima página.'

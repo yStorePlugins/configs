@@ -1,0 +1,31 @@
+Nome: '&8Meus tickets'
+Tamanho: 27
+Slots: [11, 12, 13, 14, 15]
+BackSlot: 9
+VoltarSlot: 9
+ProximoSlot: 17
+
+Item:
+   CustomSkull: false
+   URL: ''
+   ID: 339
+   Data: 0
+   Glow: false
+   Name: '&aTicket &7( #{id} )'
+   Lore:
+   - ''
+   - '&cAssunto: &f{assunto}'
+   - ''
+   - '&fMensagens: &b{mensagens}'
+   - '&fStatus: {status}'
+   - ''
+   - '&7Criado em: &7{data} - {hora}'
+   - ''
+   - '&7Clique com botão esquerdo para enviar mensagem.'
+   - '&7Clique com botão direito para ver as mensagens.'
+   - '&7Clique com botão Q para fechar.'
+   
+Status:
+   Resposta: '&eAguardando resposta...'
+   Sua resposta: '&aResponda!'
+   Suporte: '&cAguardando algum suporte...'

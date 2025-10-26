@@ -1,0 +1,47 @@
+#        _____                     _
+#  _   |_   _|__  _ __ _ __   ___(_) ___  ___
+# | | | || |/ _ \| '__| '_ \ / _ \ |/ _ \/ __|
+# | |_| || | (_) | |  | | | |  __/ | (_) \__ \
+#  \__, ||_|\___/|_|  |_| |_|\___|_|\___/|___/
+#  |___/
+#
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000

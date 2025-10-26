@@ -1,0 +1,32 @@
+Nome: '&8Tickets - Principal'
+Tamanho: 27
+Itens:
+   Perfil: # primeiro
+      Slot: 11
+      material: '{player}'
+      name: '&f{player}'
+      lore:
+      - ''
+      - '&fTickets abertos: &a{abertos}'
+      - '&fTickets fechados: &c{fechados}'
+      - ''
+      - '&fTotal de tickets: &b{total}'
+      - ''
+   Tickets: #segundo
+      Slot: 13
+      material: '4809fae0c129a01a0a40ea3b56e806e962ad2156920b69a508f427af2228906e'
+      name: '&eMeus tickets'
+      lore:
+      - '&7Clique para acessar seus tickets.'
+   Abrir: #terceiro
+      Slot: 15
+      material: 'b056bc1244fcff99344f12aba42ac23fee6ef6e3351d27d273c1572531f'
+      name: '&aAbrir ticket'
+      lore:
+      - '&7Clique para abrir um novo ticket.'
+   Admin: #quarto
+      Slot: 26
+      material: 'a0f8190770e02677d4463849da15f3ff750fb87a7b06cc717eaf1fa9b37337eb'
+      name: '&cPainel do staff'
+      lore:
+      - '&7Clique gerenciar os tickets dos jogadores.'

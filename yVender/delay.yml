@@ -1,0 +1,13 @@
+Delays:
+  membro:
+    Ordem: 1
+    Permissao: ''
+    # Delay de venda do autovender
+    # em ticks
+    Auto delay: 20
+    # Delay de venda do shift
+    # em segundos
+    Shift delay: 10
+    # Delay de venda do vender normal
+    # em segundos
+    Vender delay: 10

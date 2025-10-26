@@ -1,0 +1,24 @@
+Nome: '&8Tickets - Admin'
+Tamanho: 27
+Itens:
+   Aguardando: #primeiro
+      Slot: 13
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/b27da4fff767958ddbc41be544a54d29ca3f7d5a73b68effae6a02f461f772e7'
+      ID: 0
+      Data: 0
+      Glow: false
+      Name: '&cAguardando suporte'
+      Lore:
+      - '&7Clique para acessar os tickets pendente.'
+   Dando: #segundo
+      Slot: 15
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/4acd93a7747281c7d7a92ea09d88bfeb9eadf16ed1d3ff84fa00be942ff99822'
+      ID: 0
+      Data: 0
+      Glow: false
+      Name: '&aDando suporte'
+      Lore:
+      - '&7Clique para acessar os tickets que você'
+      - '&7está dando suporte.'

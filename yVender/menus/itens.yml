@@ -1,0 +1,25 @@
+Nome: '&8Itens do vender'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 18
+VoltarSlot: 27
+ProximoSlot: 35
+Item:
+  Name: '&a{display}'
+  Lore:
+    - ''
+    - ' &fPreço por unidade: &a{unidade_money}&f.'
+    - ' &fPreço por pack: &a{pack_money}&f.'
+    - ' &fSeu bônus: &b{bonus}%&f.'
+    - ''
+# Crie itens customizados
+Itens custom: {}
+#  Enfeite:
+#    Slot: 11
+#    CustomSkull: false
+#    URL: ''
+#    ID: 1
+#    Data: 0
+#    Glow: true
+#    Name: '&aEnfeite'
+#    Lore: []

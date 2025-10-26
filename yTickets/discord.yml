@@ -1,0 +1,78 @@
+Options:
+  URL: '' # URL geral para as embeds que não possuem o próprio
+  Username: 'yTickets'
+  Ativar: false
+#
+# Placeholders:
+# {player} - player que abriu o ticket / enviou mensagem
+# {ticket} - id do ticket
+# {assunto} - assunto do ticket
+# {mensagem} - mensagem que foi enviada no ticket
+# {data} - data do ticket / mensagem
+# {hora} - hora do ticket / mensagem
+#
+Embeds:
+  newTicket: # não mude este nome
+    URL: ''
+    Title: 'Novo ticket'
+    Thumbnail: ''
+    Color: '#fff'
+    Content: 'Um novo ticket foi registrado!\n@everyone'
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Fields:
+      server:
+        Inline: true
+        Header: 'Servidor'
+        Content: 'RankUP'
+      data:
+        Inline: true
+        Header: 'Data'
+        Content: '{data} - {hora}'
+      ticket:
+        Inline: false
+        Header: 'ID'
+        Content: '{ticket}'
+      player:
+        Inline: false
+        Header: 'Player'
+        Content: '{player}'
+      assunto:
+        Inline: false
+        Header: 'Assunto'
+        Content: '{assunto}'
+      mensagem:
+        Inline: false
+        Header: 'Mensagem'
+        Content: '{mensagem}'
+  newMessage: # não mude este nome
+    URL: ''
+    Title: 'Nova mensagem'
+    Thumbnail: ''
+    Color: '#fff'
+    Content: 'Uma nova mensagem foi registrada!\n@everyone'
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Fields:
+      server:
+        Inline: true
+        Header: 'Servidor'
+        Content: 'RankUP'
+      data:
+        Inline: true
+        Header: 'Data'
+        Content: '{data} - {hora}'
+      ticket:
+        Inline: false
+        Header: 'ID'
+        Content: '{ticket}'
+      player:
+        Inline: false
+        Header: 'Player'
+        Content: '{player}'
+      mensagem:
+        Inline: false
+        Header: 'Mensagem'
+        Content: '{mensagem}'

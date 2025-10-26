@@ -1,0 +1,12 @@
+# Este bônus servirá na hora de vender drops.
+# Você pode criar quantos quiser.
+Bonus:
+  VIP:
+    Ordem: 1
+    # O jogador que tiver várias permissões se bônus
+    # será usada a de maior porcentagem
+    #
+    # Permissão do bônus
+    Permissao: 'yvender.vip'
+    # Bônus
+    Bonus: 10.0

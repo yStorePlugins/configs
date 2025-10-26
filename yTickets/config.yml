@@ -1,0 +1,110 @@
+Database:
+   Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+   IP: localhost:3306
+   DB: test
+   User: admin
+   Pass: ''
+   Debug: true
+
+Comando:
+   Comando: 'ticket'
+   Aliases: {}
+   
+Opcoes:
+    Max ativo: 1
+    Formato membro: '&a[{player}]: &f{mensagem}'
+    Formato staff: '&c[{player}]: &f{mensagem}'
+    
+Chamadas:
+   Novo ticket:
+      Chat:
+         Ativar: true
+         Mensagem: '&aUm novo ticket foi aberto, solicitado por: &7{player}&a. ID do ticket: &7( {id} )&a.'
+      Title:
+         Ativar: true
+         Title: '&aNovo ticket &7( {id} )'
+      Actionbar:
+         Ativar: true
+         Mensagem: '&aNovo ticket do jogador: &7{player}&a. ID: &7( {id} )&a.'
+   Nova resposta:
+      Chat:
+         Ativar: true
+         Staff: true
+         Mensagem: '&aVocê tem uma nova resposta no ticket &7( {id} )&a. Enviada por &7{player}&a.'
+      Title:
+         Ativar: true
+         Staff: true
+         Title: '&aNova resposta &7( {id} )'
+      Actionbar:
+         Ativar: true
+         Staff: true
+         Mensagem: '&a&7{player} respondeu o ticket &7( {id} )&a.'
+
+Mensagens:
+   Permissao: '&cVocê não tem permissão para isto.'
+   Max: '&cVocê já está com o máximo de tickets abertos.'
+   Abriu: '&aVocê abriu um novo ticket. Acesse-o em /tickets -> Meus tickets. &7( {id} )'
+   Fechou: '&aVocê fechou o ticket. &7( {id} )'
+   Enviou: '&aVocê enviou uma mensagem para o ticket. &7( {id} )'
+   Iniciou: '&aVocê iniciou o suporte com o ticket. &7( {id} )'
+   Parou: '&aVocê parou o suporte com o ticket. &7( {id} )'
+   Si mesmo: '&cVocê não pode iniciar suporte com seu próprio ticket.'
+   Cancelou: '&cVocê cancelou a ação.'
+   Delay: '&c&lERRO! &cAguarde &e{time} &cpara utilizar isto novamente.'
+   Digite assunto:
+   - ''
+   - '&aDigite o assunto do ticket.'
+   - '&7para cancelar digite &ncancelar&7.'
+   - ''
+   Digite mensagem:
+   - ''
+   - '&aDigite a mensagem para o ticket.'
+   - '&7para cancelar digite &ncancelar&7.'
+   - ''
+   Ajudar:
+   - ''
+   - '&6O jogador &6&l{player}&6 está disponível'
+   - '&6para ajudá-los. &7/ticket&6.'
+   - ''
+   
+Delay ajudar: 10 #segundos (delay /ticket ajudar)
+   
+Setas:
+   Voltar:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&cVoltar'
+      Lore:
+      - ''
+      - '&7Clique para voltar.'
+      - ''
+   Proximo:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&aPróximo'
+      Lore:
+      - ''
+      - '&7Clique para ir à próxima página.'
+      - ''
+
+# Formatos de quantia e money
+Formats:
+   - ''
+   - ''
+   - 'K'
+   - 'M'
+   - 'B'
+   - 'T'
+   - 'Q'
+   - 'QQ'
+   - 'S'
+   - 'SS'
+   - 'O'
+   - 'N'
+   - 'D'

@@ -1,0 +1,36 @@
+itens:
+  membro:
+    # A ordem serve para pegar o maior caso
+    # o jogador tenha permissão de vários grupos
+    ordem: 1
+    # Permissão para vender nesse grupo
+    permissao: 'yvender.membro'
+    itens:
+      item1:
+        # Ordenação do item no menu
+        ordem: 1
+        # Material da venda
+        material: 'STONE:0'
+        # Nome do item
+        display-name: '&7Pedra'
+        # Vender apenas os itens que estiverem renomeados com o display_name
+        require-display-name: false
+        # Permissão para vender esse item
+        permissao: ''
+        # Item no menu
+        display:
+          material: 'STONE:0'
+          name: '&7Pedra'
+          lore:
+            - ''
+            - ' &fPreço por unidade: &a{unidade_money}&f.'
+            - ' &fPreço por pack: &a{pack_money}&f.'
+            - ' &fSeu bônus: &b{bonus}%&f.'
+            - ''
+            - '&aBotão &fESQUERDO &apara vender 64.'
+            - '&aSHIFT+Botão &fESQUERDO &apara vender tudo.'
+        # Preços que a unidade irá dar
+        prices:
+          price1:
+            provider: 'money'
+            amount: 10.0

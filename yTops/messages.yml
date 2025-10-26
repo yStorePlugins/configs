@@ -1,0 +1,29 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  top-type: |
+    &cEste tipo não foi encontrado.
+    &7Disponíveis: {types}&c.
+  top-entity: |
+    &cEsta entidade não foi encontrada.
+    &7Disponíveis: ARMORSTAND, NPC&c.
+  top-index: '&cO TOP deve estar entre 1 e 10.'
+  top-already: '&cEste TOP do tipo, entidade e index, já está setado. Delete-o utilizando: /topentity delete'
+  top-not-set: '&cEste TOP do tipo, entidade e index, não está setado. Defina-o utilizando: /topentity set'
+  top-set: '&aTOP definido com sucesso.'
+  top-deleted: '&aTOP deletado com sucesso.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  reward-forced: '&aRecompensas {mode} entregues forçadamente!'

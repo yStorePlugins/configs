@@ -1,0 +1,126 @@
+# Tipos disponíveis:
+# yMinas (quebrar blocos)
+# yMinasPackets (quebrar blocos)
+# yPlantacoes (quebrar plantacoes)
+# yFloresta (quebrar blocos)
+# yCampo (quebrar plantações)
+# yPesca (pescar peixes)
+# yBosses (matar bosses)
+# yStackBosses (matar bosses)
+# yRankup (upar de rank)
+# ySpawners (matar mobs)
+# yEventos (ganhar eventos)
+
+# minecraft_block_break (quebrar blocos do minecraft)
+# minecraft_place_break (colocar blocos do minecraft)
+# minecraft_mob_kill (matar entidades do minecraft)
+# minecraft_player_kill (matar players do minecraft)
+# minecraft_fish (pescar peixes do minecraft)
+
+# Você pode criar novos tipos para usar em API própria. Defina um nome qualquer abaixo
+
+event-type: 'yMinasPackets'
+
+# Sistemas gerais
+general:
+  # Horários que o evento irá ativar
+  # todos, segunda, terca, quarta, quinta, sexta, sabado, domingo
+  # dia-hora-minuto-segundo;duração
+  # duração = Duração do evento (em segundos)
+  auto-start:
+    - 'todos-12:00:00,60'
+  # Segundos em que os anúncios irão aparecer
+  announces: [ 50, 40, 30, 20, 10 ]
+  # chance,recompensa
+  rewards: [ '100,reward1' ]
+  # Comandos que serão executados pelo console ao iniciar o torneio
+  start-commands: []
+  # Comandos que serão executados pelo console ao acabar/parar o torneio
+  stop-commands: []
+
+# Whitelist para o contabilizador
+whitelist:
+  # Para os torneios de blocos
+  block: [ 'ALL' ]
+  # Para os torneios de entidades
+  entity: [ 'ALL' ]
+
+# Sistema de comprar a ativação do torneio
+buy:
+  # Ativar o sistema
+  enabled: true
+  # Duração que irá ativar ao comprar
+  # em segundos
+  duration: 60
+  # Mensagem de compra
+  message:
+    private: '&aVocê ativou o torneio por &f{money}&a.'
+    broadcast: ''
+  # Preços para comprar
+  prices:
+    price1:
+      provider: 'money'
+      amount: 1000.0
+
+# Ícones no menu
+icons:
+  buy:
+    material: 'LAPIS_ORE'
+    name: '&eTorneio de Mineração &7(yMinasPackets)'
+    lore:
+      - '&7Neste torneio, o jogador que conseguir'
+      - '&7minerar mais blocos irá ganhar uma'
+      - '&7recompensa misteriosa.'
+      - ''
+      - ' &fPreço para ativar: &2$ &a{money} coins'
+      - ''
+      - '&aClique para ativar'
+  running:
+    material: 'LAPIS_ORE'
+    name: '&eTorneio de Mineração &7(yMinasPackets)'
+    lore:
+      - '&7Neste torneio, o jogador que conseguir'
+      - '&7minerar mais blocos irá ganhar uma'
+      - '&7recompensa misteriosa.'
+      - ''
+      - '&f 1º {player_1}: &a{amount_1}'
+      - '&f 2º {player_2}: &a{amount_2}'
+      - '&f 3º {player_3}: &a{amount_3}'
+      - '&f 4º {player_4}: &a{amount_4}'
+      - '&f 5º {player_5}: &a{amount_5}'
+      - ''
+
+# Mensagens do torneio
+messages:
+  already: '&cO torneio já está rolando.'
+  nothing: '&cO torneio não está rolando.'
+  start: |
+
+    &a&lMINERAÇÃO: &eO torneio começou!
+    &bTempo restante: &a{time}
+
+  cancel: |
+
+    &a&lMINERAÇÃO: &eO torneio acabou!
+    &cCANCELADO!
+
+  stop: |
+
+    &a&lMINERAÇÃO: &eO torneio acabou!
+    &bGanhador: &a{player} com {amount} quebradas!
+
+  stop-none: |
+
+    &a&lMINERAÇÃO: &eO torneio acabou!
+    &cNINGUÉM GANHOU!
+
+  announce: |
+
+    &a&lMINERAÇÃO: &eO torneio está rolando!
+    &bTempo restante: &a{time}
+
+    &f> 1# &6{player_1} &7- &e{amount_1}
+    &f> 2# &6{player_2} &7- &e{amount_2}
+    &f> 3# &6{player_3} &7- &e{amount_3}
+    &f> 4# &6{player_4} &7- &e{amount_4}
+    &f> 5# &6{player_5} &7- &e{amount_5}

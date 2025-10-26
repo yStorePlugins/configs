@@ -1,0 +1,31 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+actionbar:
+  sell: '&aVocê vendeu &7{quantia}x {item} &apor &6{money}&a. Bolsa &b{bolsa}%&a &8(+{bonus}%).'
+  wait: '&cAguarde &7{tempo} &cpara vender novamente.'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/vender &8- &7Vende seus itens.
+    &a/vender menu &8- &7Abre o menu principal.
+    &a/vender itens &8- &7Abre o menu de itens cadastrados.
+
+  found: '&cVocê não possui nenhum dos grupos cadastrados.'
+  sell: '&f > &aVocê vendeu &7{quantia}x {item} &apor &6{money}&a. Bolsa &b{bolsa}% &8(+{bonus}%)&a.'
+  none: '&cVocê não possui nenhum item para vender.'
+  world: '&cVocê não pode vender nesse mundo.'

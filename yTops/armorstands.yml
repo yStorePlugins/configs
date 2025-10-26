@@ -1,0 +1,99 @@
+#     _                              ____  _                  _
+#    / \   _ __ _ __ ___   ___  _ __/ ___|| |_ __ _ _ __   __| |___
+#   / _ \ | '__| '_ ` _ \ / _ \| '__\___ \| __/ _` | '_ \ / _` / __|
+#  / ___ \| |  | | | | | | (_) | |   ___) | || (_| | | | | (_| \__ \
+# /_/   \_\_|  |_| |_| |_|\___/|_|  |____/ \__\__,_|_| |_|\__,_|___/
+#
+
+# TOP-TYPE DISPONÍVEIS:
+# VAULT, PLAYERPOINTS, YPLANTACOES_MOEDAS, YMAQUINAS_VALOR, YTEMPOONLINE_TEMPO, YLOJAS_VISITAS, YEVENTOS_GANHADOS, YMINAS_QUEBRADOS, YMINAS_BLOCOS, YBOSSES_MATADOS, YNEWBOSSES_MATADOS, YMISSOES_ORDEM, YALMAS_ALMAS, YKILLRANK_KILLS,
+# YKILLSYSTEM_XP, YKILLSYSTEM_MONEY, YKILLSYSTEM_KILLS, YKILLSYSTEM_KDR, YKILLSYSTEM_RANK, YRANKUP_PRESTIGIO, YRANKUP_FRAGMENTOS, YSPAWNERS_COMPRADOS, YSPAWNERSSHOP_COMPRADOS, YSPAWNERSSHOP_LIMITE, YSPAWNERSSHOP_GASTO, YCLANS_MONEY, YCLANS_KDR, YCLANS_MAQUINAS,
+# YCLANS_SPAWNERS, MCMMO_TODOS, MCMMO_ALQUIMIA, MCMMO_ESPADAS, MCMMO_ARQUERIA, MCMMO_MINERACAO, MCMMO_EXCAVACAO, MCMMO_MACHADOS, MCMMO_REPARACAO, MCMMO_ACROBACIA, YPOINTS_PONTOS, YPESCA_COINS, YPESCA_PESCADOS, YGUERRA_GANHADAS,
+# YGUERRA_CLAN_GANHADAS, YCHAIN_KILL, YCHAIN_KILLSTREAK, YCHAIN_KDR, YCHAIN_TEMPO, YCRATESVIRTUAIS_ABERTAS, YRECOMENDAR_RECOMENDADOS, YCLANS_KILLS, YCLANS_DEATHS, YVIPS_ATIVADOS, YVIPS_CREDITOS, YMITO_TIMES, YMITO_TOTAL_TIME,
+# YCAMPO_COINS, YCAMPO_BROKEN, YCAMPO_TIME, YPAYMENTS_SPENT, YMINASPACKETS_QUEBRADOS, YMINASPACKETS_BLOCOS, YBANCO_RICOS, YPESCASIMPLES_PESCADOS, YSTACKBOSSES_KILLED, YSTACKBOSSES_DAMAGE, YFLORESTA_COIN, YFLORESTA_BROKEN, YFLORESTA_TIME
+
+# PLACEHOLDERS DISPONÍVEIS
+# {index}, {player_<index>}, {value_<index>}, {value_formatted_<index>}, {value_time_<index>}, {value_kdr_<index>}
+
+armorstand:
+  money:
+    top-type: 'VAULT'
+    hologram:
+      offset: 3.1
+      lines: [ '&a&lTOP {index}', '&fJogador: &7{player}', '&fDinheiro: &a{value_formatted}' ]
+    customs:
+      custom_index_1:
+        index: 1
+        baby: true
+        items:
+          chestplate: 'DIAMOND_CHESTPLATE'
+          leggings: 'DIAMOND_LEGGINGS'
+          boots: 'DIAMOND_BOOTS'
+          hand: 'null'
+        euler-positions:
+          head: '0;0;0'
+          body: '0;0;0'
+          left-arm: '0;0;0'
+          right-arm: '0;0;0'
+          left-leg: '0;0;0'
+          right-leg: '0;0;0'
+      custom_index_2:
+        index: 2
+        baby: true
+        items:
+          chestplate: 'GOLD_CHESTPLATE'
+          leggings: 'GOLD_LEGGINGS'
+          boots: 'GOLD_BOOTS'
+          hand: 'null'
+        euler-positions:
+          head: '0;0;0'
+          body: '0;0;0'
+          left-arm: '0;0;0'
+          right-arm: '0;0;0'
+          left-leg: '0;0;0'
+          right-leg: '0;0;0'
+      custom_index_3:
+        index: 3
+        baby: true
+        items:
+          chestplate: 'IRON_CHESTPLATE'
+          leggings: 'IRON_LEGGINGS'
+          boots: 'IRON_BOOTS'
+          hand: 'null'
+        euler-positions:
+          head: '0;0;0'
+          body: '0;0;0'
+          left-arm: '0;0;0'
+          right-arm: '0;0;0'
+          left-leg: '0;0;0'
+          right-leg: '0;0;0'
+      custom_index_4:
+        index: 4
+        baby: true
+        items:
+          chestplate: 'CHAINMAIL_CHESTPLATE'
+          leggings: 'CHAINMAIL_LEGGINGS'
+          boots: 'CHAINMAIL_BOOTS'
+          hand: 'null'
+        euler-positions:
+          head: '0;0;0'
+          body: '0;0;0'
+          left-arm: '0;0;0'
+          right-arm: '0;0;0'
+          left-leg: '0;0;0'
+          right-leg: '0;0;0'
+      custom_index_5:
+        index: 5
+        baby: true
+        items:
+          chestplate: 'LEATHER_CHESTPLATE'
+          leggings: 'LEATHER_LEGGINGS'
+          boots: 'LEATHER_BOOTS'
+          hand: 'null'
+        euler-positions:
+          head: '0;0;0'
+          body: '0;0;0'
+          left-arm: '0;0;0'
+          right-arm: '0;0;0'
+          left-leg: '0;0;0'
+          right-leg: '0;0;0'

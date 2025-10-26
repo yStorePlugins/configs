@@ -1,0 +1,66 @@
+Nome: '&7Vender'
+Tamanho: 27
+Auto slot: 13
+Shift slot: 15
+Full slot: 16
+Itens:
+  Vender:
+    Slot: 10
+    material: 'http://textures.minecraft.net/texture/d883f946202bbdf25f8a1062e8c3317194333128207c89a474bde300c533dc3c'
+    name: '&aVender'
+    lore: [ '&7Clique para vender seus itens.' ]
+  Itens:
+    Slot: 11
+    material: 'http://textures.minecraft.net/texture/e2a46b04ebd3bef3bf77a2c624434945d34a0c947a2ab18a785e633bdceed90'
+    name: '&aItens'
+    lore: [ '&7Clique para ver os itens do seu grupo.' ]
+  Auto sim:
+    material: '351:10'
+    name: '&aVenda automática'
+    lore:
+      - '&fEstado: &aAtivada&f.'
+      - ''
+      - '&7Você está vendendo seus itens'
+      - '&7automaticamente a cada 1 segundo.'
+  Auto nao:
+    material: '351:8'
+    name: '&aVenda automática'
+    lore:
+      - '&fEstado: &cDesativada&f.'
+      - ''
+      - '&7Clique para vender seus itens'
+      - '&7automaticamente a cada 1 segundo.'
+  Shift sim:
+    material: '351:10'
+    name: '&aVenda por Shift'
+    lore:
+      - '&fEstado: &aAtivada&f.'
+      - ''
+      - '&7Você está vendendo seus itens'
+      - '&7ao agaixar.'
+  Shift nao:
+    material: '351:8'
+    name: '&aVenda por Shift'
+    lore:
+      - '&fEstado: &cDesativada&f.'
+      - ''
+      - '&7Clique para vender seus itens'
+      - '&7ao agaixar.'
+  Full sim:
+    material: '351:10'
+    name: '&aVender ao lotar o Inventário'
+    lore:
+      - '&fEstado: &aAtivada&f.'
+      - ''
+      - '&7Você está vendendo seus itens'
+      - '&7quando o inventário ficar cheio.'
+  Full nao:
+    material: '351:8'
+    name: '&aVender ao lotar o Inventário'
+    lore:
+      - '&fEstado: &cDesativada&f.'
+      - ''
+      - '&7Clique para vender seus itens'
+      - '&7quando o inventário ficar cheio.'
+
+## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Magnata:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)
