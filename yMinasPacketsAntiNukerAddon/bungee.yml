@@ -1,3 +1,0 @@
-name: yMinasPacketsAntiNuker
-version: '${project.version}'
-main: com.ystoreplugins.yeventos.yminaspacketsantinuker.MainBungee
