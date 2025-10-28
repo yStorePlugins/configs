@@ -17,6 +17,23 @@ Fortuna:
     price1:
       provider: 'money'
       price: 10000.0
+  # Opções gerais do encantamento
+  Options:
+    # Delay para ativar o encantamento novamente
+    # em segundos
+    delay: 0
+    # Permissão para usar o encantamento
+    # Deixe vazio para não usar
+    permission: ''
+    # Permissão para comprar o encantamento
+    # Deixe vazio para não usar
+    permission-buy: ''
+    # Whitelist de skins que o encantamento irá funciona
+    # Deixe vazio para não usar
+    # Coloque a "order" da skin. Exemplo: [ 1 ]
+    skin-whitelist: [ ]
+    # Mostrar o encantamento mo menu caso o jogador não tenha a skin da whitelist
+    show-skin-whitelist: false
   Displays: # Item que aparecerá no menu de evolução
     Pode: # quando puder evoluir
       Material: GOLD_INGOT
