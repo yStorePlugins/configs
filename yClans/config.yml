@@ -89,6 +89,14 @@ default-values:
     # Cor padrão das letras da tag
     # O líder de cada clan poderá alterar posteriormente
     tag-color: '&7'
+
+    # Dar por padrão a permissão de cores HEX na tag do clan
+    # FORMATOS PARA USO NO CHAT:
+    # <g:FF0000:00FF00>TAG
+    # <gradient:00FFFF:FF00FF>TAG
+    # &#54DAF4t&#549CD5a&#545EB6g
+    hex-color: false
+
     # Descrição padrão do clan
     # O líder de cada clan poderá alterar posteriormente
     description: 'Nenhuma descrição configurada.'
@@ -185,7 +193,7 @@ general:
   # Contabilizar as kills rival no kdr
   kdr-kills-rival: true
   # Cores permitidas nas tags
-  allowed-colors: ['&0', '&1', '&2', '&3', '&4', '&5', '&6', '&7', '&8', '&9', '&a', '&b', '&c', '&d', '&e', '&f']
+  allowed-colors: ['&0', '&1', '&2', '&3', '&4', '&5', '&6', '&7', '&8', '&9', '&a', '&b', '&c', '&d', '&e', '&f', '&#', '<g>', '<gradient>']
   # Palavras proibidas no nome do clan
   # Coloque em minúsculo
   name-blocked-words: []
@@ -274,6 +282,11 @@ special-items:
     material: 'FEATHER'
     name: '&aHabilitar o FLY nas plots'
     lore: ['&7Ative para permitir voar nas plots', '&7dos membros dos clans.']
+  # Item para habilitar o uso de hex colors nas tags
+  hex-color:
+    material: 'NAME_TAG'
+    name: '&aHabilitar a Tag Gradiente'
+    lore: ['&7Ative para conseguir colocar GRADIENTE', '&7na TAG do seu clan.']
 
 # Sistema de tipos de clan
 clan-type:

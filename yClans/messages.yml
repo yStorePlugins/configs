@@ -487,3 +487,5 @@ chat:
   already-fly: '&cSeu clan já possui o FLY liberado nas plots.'
   fly-activated: '&aFLY liberado nas plots dos membros.'
   clan-enter-delay: '&cVocê precisa aguardar &f{time}&c para entrar em um clan novamente.'
+  already-hex-color: '&cSeu clan já possui o HEX-COLOR liberado.'
+  hex-color-activated: '&aHEX-COLOR liberado na TAG do clan.'
