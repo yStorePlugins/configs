@@ -1,0 +1,36 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &bComandos do plugin:
+
+    &b-> &f/gic &8-&7 Dar um item a um jogador
+    &b-> &f/gic top &8-&7 Recarrega as configurações
+
+  inv-full: '&cO seu inventário está cheio.'
+  give: '&aVocê deu &7{amount}x&a {item}&a para o jogador &7{player}&a.'
+  received: '&aVocê recebeu &7{amount}x&a {item}&a do jogador &7{player}&a.'
+  delay: '&cVocê precisa aguardar {time} para usar este item novamente.'
+  found: |
+    &cTipo não encontrado.
+    &cDisponíveis: &7{list}
+  paused-already: '&cEste item já está pausado.'
+  paused: '&aEste item foi pausado.'
+  resumed-already: '&cEste item não está pausado.'
+  resumed: '&aEste item foi despausado.'
+  item-paused: '&cVocê não pode ativar este item no momento.'
