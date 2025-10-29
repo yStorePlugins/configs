@@ -52,3 +52,5 @@ general:
   break-sound: 'ITEM_BREAK'
   # Mundos que não poderão coletar recompensas
   world-reward-collect-blacklist: [ 'none' ]
+  # Dar as recompensas diretamente para o jogddor (sem enviar para o menu)
+  reward-give-inventory: false
