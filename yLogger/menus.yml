@@ -28,8 +28,18 @@ main:
   slots: [ 11, 13, 15 ]
   previous-slot: 9
   next-slot: 17
+  collect-slot: 48
+  give-slot: 59
   items:
     historic:
       material: 'PAPER'
       name: '&eHistórico de Morte &8[{index}]'
       lore: [ '&7Veja os itens que foram perdidos', '&7ao morrer.', '', '&aClique para acessar.' ]
+    collect:
+      material: 'HOPPER'
+      name: '&eColetar os itens'
+      lore: [ '&7Colete os itens que esse jogador', '&7perdeu ao morrer.', '', '&aClique para coletar.' ]
+    give:
+      material: 'CHEST'
+      name: '&eDevolver os itens'
+      lore: [ '&7Devolva os itens que esse jogador', '&7perdeu ao morrer.', '', '&aClique para devolver.' ]

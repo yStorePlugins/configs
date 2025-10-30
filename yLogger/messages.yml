@@ -24,3 +24,5 @@ chat:
     &a> /logger reload
   log-found: '&cNenhuma log de morte encontrada para o jogador {player}.'
   log-found-self: '&cNenhuma log de morte encontrada para você.'
+  log-collected: '&aVocê coletou os itens dessa LOG para seu inventário.'
+  log-give: '&aVocê devolveu os itens para o jogador.'
