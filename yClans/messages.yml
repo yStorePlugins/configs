@@ -36,6 +36,7 @@ chat:
   permission: '&cVocê não tem permissão para fazer isto.'
   console: '&cApenas jogadores in-game podem realizar esta ação.'
   cancelled: '&cVocê cancelou a ação.'
+  not-cancelled: '&cA operação ainda não foi cancelada.'
   help: |
     <nl>
     &bComandos do plugin:
