@@ -251,6 +251,18 @@ earns-message:
     {chat}
     &r
 
+# Enviar a mensagem de montantes ganhos ao ativar o nuclear
+nuclear-report-message:
+  enabled: true
+  chat-format: '&6&l|&f {provider_display}: &2{provider_symbol}&f{provider_value}'
+  message: |
+    &r
+    &e&lGG! &eVocê quebrou &e&l{blocks}&e blocos ao ativar o NUCLEAR.
+    &r
+    &6Confira o lucro dos blocos quebrados:
+    {chat}
+    &r
+
 # Item da custompickaxe
 pickaxe:
   material: DIAMOND_PICKAXE
