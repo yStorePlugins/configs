@@ -29,7 +29,7 @@ main:
   previous-slot: 9
   next-slot: 17
   collect-slot: 48
-  give-slot: 59
+  give-slot: 49
   items:
     historic:
       material: 'PAPER'
