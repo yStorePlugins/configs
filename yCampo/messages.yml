@@ -115,3 +115,5 @@ chat:
   skin-activated: '&aSkin ativada com sucesso.'
   player-not-camping: '&cO jogador {player} não está no campo.'
   already-visualizing: '&cVocê já está visualizando um campo. Digite /sair para sair.'
+  inv-full: '&cSeu inventário está cheio.'
+  skin-removed: '&aSkin removida com sucesso.'

@@ -15,6 +15,7 @@ Skins:
       - '&a+10% ( PEDRA )'
       - ''
     bonus: 10.0
+    bonus-mcmmo: 10.0
     trail:
       particle: 'REDSTONE'
       item: 'STONE:0,REDSTONE:0'
