@@ -33,6 +33,10 @@ database:
     # Senha do usuário de conexão: [EX: 123]
     password: ''
 
+# Quantia máxima de log de itens para cada jogador
+# Recomendado: 3
+max-player-death-logs: 3
+
 # Tipos de logs
 types:
   # Registro ao falar no chat
