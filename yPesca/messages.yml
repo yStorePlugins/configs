@@ -204,3 +204,7 @@ chat:
   npc-set: '&aNPC definido com sucesso.'
   npc-deleted: '&aNPC removido com sucesso.'
   npc-not-set: '&cNPC não está definido.'
+  rod-null: |
+    &cVara não encontrada.
+    &cDisponíveis: &7{list}
+  set: '&aVocê setou a vara do jogador &f{player}&a para o nível &f{level}&a.'
