@@ -245,6 +245,7 @@ feira-rent:
     renew-slot: 13
     auto-renew-slot: 14
     teleport-slot: 15
+    abandon-slot: 16
     renew:
       material: 'GOLD_INGOT'
       name: '&eRenovar'
@@ -284,6 +285,15 @@ feira-rent:
         - '&fEstado: &cINATIVO'
         - ''
         - '&aClique para alternar'
+    abandon:
+      material: 'BARRIER'
+      name: '&cAbandonar'
+      lore:
+        - '&7Desista dessa feira e desfaça o'
+        - '&7aluguel, abrindo mão do dinheiro.'
+        - '&7que foi pago.'
+        - ''
+        - '&cClique para abandonar.'
 
 # Menu de seleção de economias
 providers:

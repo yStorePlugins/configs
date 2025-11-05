@@ -78,3 +78,4 @@ chat:
   feira-renew: '&aVocê renovou o aluguel da feira &e{feira}&a.'
   feira-renew-cant: '&cVocê só pode renovar o aluguel quando a data de vencimento estiver menor ou igual a 10% do tempo total.'
   feira-max: '&cVocê atingiu o limite máximo de feiras ({max}).'
+  feira-abandoned: '&aVocê abandonou o aluguel da sua feira.'
