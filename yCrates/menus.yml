@@ -6,12 +6,6 @@
 #
 # Sistema de menus.
 
-# Ativar o sistema de atualizar o menu principal automaticamente enquanto estiver aberto
-menu-updater: true
-# Tempo para atualizar o menu automaticamente
-# em ticks -> 20 ticks = 1s
-menu-updater-time: 20
-
 # Setas dos menus.
 arrows:
   back:
@@ -27,114 +21,227 @@ arrows:
     name: '&aPróximo'
     lore: ['&7Clique para ir à próxima página.']
 
-# Menu principal
-main:
-  name: '&8Crates'
-  size: 27
-  info-slot: 11
-  rewards-slot: 15
-  #
-  items:
-    info:
-      material: 'd01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f'
-      name: '&eSuas informações'
-      lore: [ '', ' &fChaves abertas: &7{opened}', '', ' &fRecompensas a coletar: &7{rewards}', '' ]
-    rewards:
-      material: 'CHEST'
-      name: '&eSuas recompensas'
-      lore: [ '&7Clique para gerenciar', '&7suas &f{rewards}&7 recompensas.' ]
-
-# Menu de preview
+# Menu de pré-visualização
 preview:
-  name: '&8Crate {crate}'
-  size: 45
-  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
-  previous-slot: 27
-  next-slot: 35
-  filter:
-    slot: 40
-    material: 'HOPPER'
-    name: '&eItens filtrados'
-    lore: [ '&7Clique para gerenciar', '&7os itens filtrados.' ]
-
-# Menu de recompensas
-rewards:
-  name: '&8Crates'
+  name: '&8Caixa'
   size: 54
-  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
+  previous-slot: 9
+  next-slot: 17
+  lore:
+    - ''
+    - '&fChance: &b{chance}%'
+    - '&fRaridade: &7{rarity}&f.'
+    - ''
+
+# Menu principal de edição
+settings:
+  name: '&8Caixa'
+  size: 27
+  items:
+    crate-slot: 13
+    items-slot: 11
+    commands-slot: 15
+    items:
+      material: 'CHEST'
+      name: '&aEditar Itens'
+      lore:
+        - '&7Clique para editar as recompensas'
+        - '&7em forma de itens desta crate.'
+        - ''
+        - '&aClique para abrir'
+    commands:
+      material: 'PAPER'
+      name: '&aEditar Comandos'
+      lore:
+        - '&7Clique para editar as recompensas'
+        - '&7em forma de comandos desta crate.'
+        - ''
+        - '&aClique para abrir'
+
+# Menu de edição de itens
+settings-items:
+  name: '&8Caixa'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
   previous-slot: 18
   next-slot: 26
   back-slot: 48
-  #
-  empty-slot: 22
-  collect-slot: 50
-  #
   items:
-    empty:
-      material: 'WEB'
-      name: '&eVazio...'
-      lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
-    collect:
-      material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
-      name: '&eRecolher tudo'
-      lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+    add-slot: 50
+    lore:
+      - ''
+      - '&fChance: &b{chance}%'
+      - '&fRaridade: &7{rarity}&f.'
+      - ''
+      - '&aBotão &fESQUERDO&a para editar.'
+      - '&aBotão &fDIREITO&a para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar Item'
+      lore: [ '&7Clique para adicionar mais', '&7um item como recompensa.' ]
 
-# Menu de filtro
-filter:
-  name: '&8Crates'
-  size: 45
-  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+# Menu de edição de comandos
+settings-commands:
+  name: '&8Caixa'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
   previous-slot: 18
   next-slot: 26
-  back-slot: 40
+  back-slot: 48
+  items:
+    add-slot: 50
+    lore:
+      - ''
+      - '&fChance: &b{chance}%'
+      - '&fRaridade: &7{rarity}&f.'
+      - ''
+      - '&aBotão &fESQUERDO&a para editar.'
+      - '&aBotão &fDIREITO&a para deletar.'
+    add:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aAdicionar Comando'
+      lore: [ '&7Clique para adicionar mais', '&7um comando como recompensa.' ]
+
+# Menu de adicionar um novo item
+add-item:
+  name: '&8Caixa'
+  size: 27
+  items:
+    input-slot: 13
+    cancel-slot: 18
+    confirm-slot: 26
+    cancel:
+      material: ARROW
+      name: '&cCANCELAR'
+      lore:
+        - '&7Clique para cancelar e voltar'
+        - '&7ao menu de gerenciamento.'
+    confirm:
+      material: ARROW
+      name: '&aCONFIRMAR'
+      lore:
+        - '&7Clique para confirmar e adicionar'
+        - '&7este item como recompensa.'
   facing:
-    e0:
-      slot: 11
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
     e1:
-      slot: 12
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
+      slot: 3
+      material: 'STAINED_GLASS_PANE:15'
     e2:
-      slot: 13
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
+      slot: 4
+      material: 'STAINED_GLASS_PANE:15'
     e3:
-      slot: 14
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
+      slot: 5
+      material: 'STAINED_GLASS_PANE:15'
     e4:
-      slot: 15
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
+      slot: 9
+      material: 'STAINED_GLASS_PANE:15'
     e5:
-      slot: 20
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
+      slot: 10
+      material: 'STAINED_GLASS_PANE:15'
     e6:
-      slot: 21
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
+      slot: 11
+      material: 'STAINED_GLASS_PANE:15'
     e7:
-      slot: 22
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
+      slot: 12
+      material: 'STAINED_GLASS_PANE:15'
     e8:
-      slot: 23
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
+      slot: 14
+      material: 'STAINED_GLASS_PANE:15'
     e9:
-      slot: 24
-      material: 'BARRIER'
-      name: ' '
-      lore: [ ]
+      slot: 15
+      material: 'STAINED_GLASS_PANE:15'
+    e10:
+      slot: 16
+      material: 'STAINED_GLASS_PANE:15'
+    e11:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:15'
+    e12:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:15'
+    e13:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:15'
+    e14:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:15'
+
+# Menu de editar um item
+edit-item:
+  name: '&8Caixa'
+  size: 27
+  back-slot: 9
+  items:
+    item-slot: 13
+    chance-slot: 11
+    rarity-slot: 15
+    chance:
+      material: GOLD_INGOT
+      name: '&aChance'
+      lore:
+        - '&7Altere a chance para ganhar esse'
+        - '&7item na crate.'
+        - ''
+        - '&fChance atual: &a{chance}%'
+        - ''
+        - '&aClique para alterar.'
+    rarity:
+      material: PAPER
+      name: '&aRaridade'
+      lore:
+        - '&7Altere a raridade desse'
+        - '&7item da crate.'
+        - ''
+        - '&fRaridade atual: &a{rarity}'
+        - ''
+        - '&aClique para alterar.'
+
+# Menu de editar um comando
+edit-command:
+  name: '&8Caixa'
+  size: 27
+  back-slot: 9
+  items:
+    item-slot: 14
+    chance-slot: 11
+    rarity-slot: 12
+    command-slot: 16
+    chance:
+      material: GOLD_INGOT
+      name: '&aChance'
+      lore:
+        - '&7Altere a chance para ganhar esse'
+        - '&7comando na crate.'
+        - ''
+        - '&fChance atual: &a{chance}%'
+        - ''
+        - '&aClique para alterar.'
+    rarity:
+      material: NETHER_STAR
+      name: '&aRaridade'
+      lore:
+        - '&7Altere a raridade desse'
+        - '&7comando da crate.'
+        - ''
+        - '&fRaridade atual: &a{rarity}'
+        - ''
+        - '&aClique para alterar.'
+    command:
+      material: PAPER
+      name: '&aComando'
+      lore:
+        - '&7Altere o comando dessa recompensa'
+        - ''
+        - '&fComando atual: &a{command}'
+        - ''
+        - '&aClique para alterar.'
+
+# Menu de seleção de raridade
+rarities:
+  name: '&8Caixa'
+  size: 27
+  previous: 9
+  next: 17
+  back: 18
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]

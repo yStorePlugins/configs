@@ -10,4 +10,4 @@
 # Por exemplo: "gm|gamemode"
 # Você pode criar quantas aliases quiser.
 commands:
-  crate: 'crate|crates|caixa|caixas'
+  crate: 'crate|caixa|caixas|crates'
