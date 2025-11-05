@@ -68,6 +68,9 @@ Agua checker:
 # Ao hitar em algo sair do AFK
 HitSairAfk: false
 
+# Dar efeito de cegueira enquanto estiver AFK
+Blindness: false
+
 Detect:
    X: true # Quando false, não irá resetar o anti-afk ao variar a coordenada X
    Y: false # Quando false, não irá resetar o anti-afk ao variar a coordenada Y
@@ -127,11 +130,16 @@ Bloquear: # Quando o jogador ficar afk
 Title:
    Timer:
       Title: '&cVocê está AFK!<nl>&7Restam &e{tempo}&7.'
+      Sound: ''
    Mover:
       Title: '&cVocê está AFK!<nl>&7Mova-se para retornar.'
+      Sound: ''
    Bloquear:
       Title: '&cVocê está AFK!<nl>&7Essa ação não pode ser realizada.'
+      Sound: ''
    Nao mais:
-      Title: '' # Deixe vazio para apenas limpar a tela
+      # Deixe vazio para apenas limpar a tela
+      Title: ''
+      Sound: ''
 
 Local: 'none'
