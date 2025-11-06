@@ -79,6 +79,11 @@ general:
     - 'DIAMOND_ORE'
     - 'EMERALD_ORE'
 
+# Sistema de hooks
+hooks:
+  # Ativar o AutoPickup nas minas do yMinas
+  yminas: true
+
 # Sistema de auto-pickup para entidades
 entity:
   enabled: true
