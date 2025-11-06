@@ -37,6 +37,9 @@ mining-skill-identify: 'MINING'
 # Permissão para a venda automática
 auto-sell-perm: ''
 
+# Desativar a quebra do plugin e usar apenas o REGEN da mina
+Desativar-quebra: false
+
 # Opções gerais do plugin
 Opcoes:
   # Ativar o sistema de bolsa

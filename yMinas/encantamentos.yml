@@ -110,6 +110,11 @@ Encantamentos:
           - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
           - ''
           - '&cVocê não tem permissão para comprar esse encantamento.'
+    Mensagens:
+      # Som quando comprar o encantamento
+      Buy-Sound: ''
+      # Som quando não for possível comprar o encantamento
+      Cant-Buy-Sound: ''
   Fortuna: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -202,6 +207,11 @@ Encantamentos:
       price2:
         provider: 'yminas'
         price: 100.0
+    Mensagens:
+      # Som quando comprar o encantamento
+      Buy-Sound: ''
+      # Som quando não for possível comprar o encantamento
+      Cant-Buy-Sound: ''
   Nuclear: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -304,6 +314,9 @@ Encantamentos:
       Title: '&cNuclear<nl>&cativado' # deixe '' para não usar
       Actionbar: '' # deixe '' para não usar
       Chat: [ ]
+      Activate-Sound: ''
+      Buy-Sound: ''
+      Cant-Buy-Sound: ''
   Destruidor: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -410,6 +423,9 @@ Encantamentos:
       Title: '&cDestruidor<nl>&cativado' # deixe '' para não usar
       Actionbar: '' # deixe '' para não usar
       Chat: [ ]
+      Activate-Sound: ''
+      Buy-Sound: ''
+      Cant-Buy-Sound: ''
   Sumonador: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -511,6 +527,11 @@ Encantamentos:
       price2:
         provider: 'yminas'
         price: 100.0
+    Mensagens:
+      # Som quando comprar o encantamento
+      Buy-Sound: ''
+      # Som quando não for possível comprar o encantamento
+      Cant-Buy-Sound: ''
   Velocidade: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -603,6 +624,11 @@ Encantamentos:
       price2:
         provider: 'yminas'
         price: 100.0
+    Mensagens:
+      # Som quando comprar o encantamento
+      Buy-Sound: ''
+      # Som quando não for possível comprar o encantamento
+      Cant-Buy-Sound: ''
   Pressa: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -695,6 +721,11 @@ Encantamentos:
       price2:
         provider: 'yminas'
         price: 100.0
+    Mensagens:
+      # Som quando comprar o encantamento
+      Buy-Sound: ''
+      # Som quando não for possível comprar o encantamento
+      Cant-Buy-Sound: ''
   Sortudo: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -792,6 +823,11 @@ Encantamentos:
       price2:
         provider: 'yminas'
         price: 100.0
+    Mensagens:
+      # Som quando comprar o encantamento
+      Buy-Sound: ''
+      # Som quando não for possível comprar o encantamento
+      Cant-Buy-Sound: ''
   Explosao: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -895,6 +931,9 @@ Encantamentos:
       Title: '&cExplosão<nl>&cativada' # deixe '' para não usar
       Actionbar: '' # deixe '' para não usar
       Chat: [ ]
+      Activate-Sound: ''
+      Buy-Sound: ''
+      Cant-Buy-Sound: ''
   Laser: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -998,6 +1037,9 @@ Encantamentos:
       Title: '&cLaser<nl>&cativado' # deixe '' para não usar
       Actionbar: '' # deixe '' para não usar
       Chat: [ ]
+      Activate-Sound: ''
+      Buy-Sound: ''
+      Cant-Buy-Sound: ''
   Furadeira: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -1104,6 +1146,9 @@ Encantamentos:
       Title: '&cFuradeira<nl>&cativado' # deixe '' para não usar
       Actionbar: '' # deixe '' para não usar
       Chat: [ ]
+      Activate-Sound: ''
+      Buy-Sound: ''
+      Cant-Buy-Sound: ''
   Multiplicador: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -1201,6 +1246,11 @@ Encantamentos:
       price2:
         provider: 'yminas'
         price: 100.0
+    Mensagens:
+      # Som quando comprar o encantamento
+      Buy-Sound: ''
+      # Som quando não for possível comprar o encantamento
+      Cant-Buy-Sound: ''
   Eletricidade: # Não mude este nome, ou o encantamento não será reconhecido
     Displays: # Item que aparecerá no menu de evolução
       Pode: # quando puder evoluir
@@ -1298,3 +1348,8 @@ Encantamentos:
       price2:
         provider: 'yminas'
         price: 100.0
+    Mensagens:
+      # Som quando comprar o encantamento
+      Buy-Sound: ''
+      # Som quando não for possível comprar o encantamento
+      Cant-Buy-Sound: ''
