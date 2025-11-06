@@ -90,6 +90,8 @@ skill-identify: 'HERBALISM'
 
 # Sistemas gerais
 general:
+  # Exigir a ferramenta para quebrar as plantas
+  tool-need: true
   # Slot da ferramenta no inventário
   tool-slot: 2
   # Esconder o encantamento na lore da picareta caso o player desative ele
