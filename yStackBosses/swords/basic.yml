@@ -15,6 +15,13 @@ evolute: true
 # Esta espada vai matar o boss instantaneamente?
 hit-kill: false
 
+# Durabilidade que irá consumir da espada ao bater
+# deixe 0 para não usar
+durability-reduce: 0
+
+# Som que irá tocar ao quebrar a espada
+break-sound: 'ITEM_BREAK'
+
 enchants:
   damage:
     default: 2
