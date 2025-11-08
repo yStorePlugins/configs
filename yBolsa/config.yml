@@ -132,3 +132,8 @@ formatter:
   direction:
     high: 'Alta'
     low: 'Baixa'
+  # Formatador do PlaceholderAPI
+  papi:
+    hundred: '&e'
+    under-hundred: '&c'
+    above-hundred: '&a'
