@@ -37,6 +37,8 @@ database:
 general:
   # Mundos permitidos para criar terrenos
   allowed-worlds: [ 'PlotWorld' ]
+  # Regiões (WorldGuard) proibidas para criar terrenos
+  region-blacklist: [ 'spawn' ]
   # Quantia máxima de terrenos que um jogador pode ter
   terrain-max: 2
   # Tamanho mínimo do terreno
