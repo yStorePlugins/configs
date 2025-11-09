@@ -399,6 +399,8 @@ jump-pad:
   offset: 2.0
   # Som que será executado
   sound: 'FIREWORK_LAUNCH'
+  # Mundos que não irá funcionar
+  world-blacklist: []
 
 # Setas dos menus
 Setas:
