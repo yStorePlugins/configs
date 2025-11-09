@@ -44,6 +44,9 @@ Delay: 60
 # Tag do jogador com a loja mais visitada
 Tag: '&5[SHOP]'
 
+# Proibir nome de loja com espaço
+Proibir espaco: true
+
 # Fechar lojas as quais os jogadores logaram há mais de x tempo
 # em segundos
 # Deixe 0 para não usar
@@ -83,6 +86,7 @@ Mensagens:
   Anunciar fechada: '&cVocê não pode anunciar sua loja estando fechada.'
   Nao tem: '&cVocê não possui uma loja.'
   No-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  Nome espaco: '&cO nome da loja não pode conter espaços!'
   Digite nome:
     - ''
     - '&aDigite o nome da loja.'
