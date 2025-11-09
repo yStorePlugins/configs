@@ -208,6 +208,9 @@ evolution:
   previous-slot: 18
   next-slot: 26
   back-slot: 45
+  filter:
+    format: '&f> &c{enchantment}'
+    format-empty: '&cVocê não possui encantamentos no filtro'
   items:
     pickaxe-slot: 47
     profile-slot: 50
@@ -237,6 +240,9 @@ evolution:
       lore:
         - '&7Desabilite encantamentos que não'
         - '&7queira utilizar no momento.'
+        - ''
+        - '&fEncantamentos filtrados:'
+        - '{format}'
         - ''
         - '&aClique para acessar'
     disenchanter:
