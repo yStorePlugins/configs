@@ -94,3 +94,4 @@ chat:
   ban-already: '&cO jogador &f{player}&c já está banido do mercado.'
   unbanned: '&aJogador &f{player}&a desbanido do mercado com sucesso.'
   not-banned: '&cO jogador &f{player}&c não está banido do mercado.'
+  max-value: '&cO valor máximo permitido para anunciar é {max}.'

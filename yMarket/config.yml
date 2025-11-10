@@ -61,6 +61,9 @@ general:
   # Tempo máximo para iniciar uma venda
   # em segundos
   max-time: 21600
+  # Valor máximo que poderá precificar um item
+  # Deixe 0 para não usar limite
+  max-value: 0
   # Custos para destacar o anúncio
   sponsor-prices:
     price1:
