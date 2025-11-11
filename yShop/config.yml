@@ -33,6 +33,10 @@ database:
     # Senha do usuário de conexão: [EX: 123]
     password: ''
 
+# Ativar a troca do sistema de chat quando estiver no mohist
+# compatível apenas com: UltimateChat, nChat e Legendchat
+mohist-chat: false
+
 # Opções gerais
 general:
   # Maximo de itens por compra
