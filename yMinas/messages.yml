@@ -216,3 +216,5 @@ chat:
   mine-maintenance-off: '&cA mina {mina} &cnão está mais em manutenção.'
   mine-kick-all: '&aVocê expulsou todos os jogadores das minas.'
   enchantment-permission: '&cVocê não tem permissão para evoluir este encantamento.'
+  skin-best: '&aEssa já é a melhor skin possível.'
+  skin-upgraded: '&aSkin melhorada com sucesso.'

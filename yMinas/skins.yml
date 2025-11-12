@@ -39,3 +39,7 @@ Skins:
       - ''
     bonus: 10.0
     bonus-blocks: 10.0
+    # Permitir remover a skin do menu
+    allow-collect: true
+    # Permitir juntar outra skin desse mesmo tipo para conseguir uma melhor
+    allow-interact-upgrade: true
