@@ -36,6 +36,7 @@ settings:
     hologram-slot: 23
     warns-slot: 24
     friend-slot: 25
+    bolsa-slot: 26
     item:
       material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
       name: '&aItem que será comercializado'
@@ -192,6 +193,16 @@ settings:
         - '&7acessar o baú dessa loja.'
         - ''
         - '&aClique para gerenciar.'
+    bolsa:
+      material: 'PAPER'
+      name: '&aBolsa'
+      lore:
+        - '&7Permitir a variação da bolsa'
+        - '&7nessa loja loja.'
+        - ''
+        - '&fEstado: &r{status}'
+        - ''
+        - '&aClique para alternar.'
 
 # Menu de seleção de economias
 providers:
