@@ -1,5 +1,8 @@
 Recompensas:
   Reco1:
+    # Quantidade de boosters necessários para receber esta recompensa (0 = recompensa de vinculação normal)
+    # Exemplos: 1 = 1x boost, 2 = 2x boosts, etc.
+    BoosterQuantity: 0
     # Só será dado o item se os comandos estiverem em false.
     # Item que será dado ao jogador.
     Item:
@@ -22,3 +25,40 @@ Recompensas:
       Use: false
       List:
         - 'give {player} stone 1'
+  Booster1x:
+    # Recompensa para quem dá 1 boost no servidor
+    BoosterQuantity: 1
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 264
+      Data: 0
+      Name: '&6Recompensa de 1x Booster'
+      Amount: 16
+      Lore:
+        - '&eObrigado por dar boost no servidor!'
+      Enchants:
+        - ''
+    Command:
+      Use: false
+      List:
+        - 'give {player} diamond 16'
+  Booster2x:
+    # Recompensa para quem dá 2 boosts no servidor
+    BoosterQuantity: 2
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: 264
+      Data: 0
+      Name: '&6Recompensa de 2x Booster'
+      Amount: 64
+      Lore:
+        - '&eObrigado por dar 2 boosts no servidor!'
+        - '&aVocê é incrível!'
+      Enchants:
+        - ''
+    Command:
+      Use: false
+      List:
+        - 'give {player} diamond 64'

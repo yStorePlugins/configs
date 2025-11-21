@@ -83,7 +83,7 @@ Opcoes:
         # caso false, será executado apenas uma vez
         AoLogar: false
         Lista:
-          - 'alert {player} virou server booster'
+          - 'alert {player} é server booster'
       # Ao não ser mais booster
       NaoBooster:
         Lista:
