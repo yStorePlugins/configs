@@ -65,7 +65,7 @@ hologram:
 
 # Configuração do sistema de model engine
 model-engine:
-  enabled: true
+  enabled: false
   # Modelo na pasta do ModalEngine
   model: 'explosive_crate'
 
