@@ -71,10 +71,14 @@ Opcoes:
     URL: ''
     ID: DIAMOND_HOE
     Data: 0
-    Name: '&bEnxada de farm'
+    Name: '&bEnxada de farm &7[Nível {level}]'
     Lore:
       - '&7Inquebrável ∞'
       - '{enchants}'
+      - ''
+      - '&7Experiência: &f{exp}'
+      - '&7Nível Atual: &e{level}'
+      - ''
 
 # Mensagens gerais do plugin
 Mensagens:
@@ -127,6 +131,7 @@ Mensagens:
     - ''
   Reward-collected: '&eItem recolhido com sucesso.'
   Reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  EnxadaLevel: '&cVocê precisa do nível &f{level}&c na enxada para quebrar essa planta.'
 
 # Setas dos menus
 Setas:

@@ -1,0 +1,10 @@
+levels:
+  # A enxada começa no nível 1
+  level1:
+    # Nível da enxada
+    level: 1
+    # EXP necessário para evoluir
+    need-exp: 0.0
+  level2:
+    level: 2
+    need-exp: 100.0

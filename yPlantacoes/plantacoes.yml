@@ -25,8 +25,11 @@ Plantacoes:
     # Permissão para quebrar este tipo de plantação
     # Deixe '' (vazio) para não usar
     Permissao: 'yplantacoes.fungo'
+    # Nível requerido da vara para quebrar essa planta
+    NeedLevel: 0
     # XP que será dado ao jogador
     XP:
+      Farm-EXP: 1.0
       Vanilla: 1.0
       Mcmmo: 1.0 # skill HERBALISM
     # Permitir dar mais de um DROP que tenha permissão

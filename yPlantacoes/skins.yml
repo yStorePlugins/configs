@@ -20,10 +20,13 @@ Skins:
         material: 'STONE'
         name: '&aSkin de Pedra'
         lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&cVocê não possui esta skin' ]
-    name: '&bEnxada de farm'
+    name: '&bEnxada de farm &7[Nível {level}]'
     lore:
       - '&7Inquebrável ∞'
       - '{enchants}'
+      - ''
+      - '&7Experiência: &f{exp}'
+      - '&7Nível Atual: &e{level}'
       - ''
       - '&a+10% ( PEDRA )'
       - ''
