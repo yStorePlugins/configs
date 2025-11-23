@@ -1,0 +1,300 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de edição
+main:
+  name: '&8Presidente'
+  size: 27
+  facing:
+    item1:
+      slot: 16
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: '&r'
+  items:
+    candidates-slot: 10
+    president-slot: 12
+    past-presidents-slot: 14
+    presidencial-taxes-slot: 16
+    candidates:
+      material: 'd717ea0845c8e9ae9967053d54a5ed93f648bb5bf2948e72ed96d693ec676d98'
+      name: '&6Candidatos à Presidência'
+      lore:
+        - '&7Vote nos candidatos concorrendo ao'
+        - '&7cargo de presidente do servidor.'
+        - ''
+        - '&eClique para ver os candidatos'
+    past-presidents:
+      material: 'cda19400e5fe02909835bbb9bb30b54b1fa55e024699259be6287aec3af2bb62'
+      name: '&6Presidentes Anteriores'
+      lore:
+        - '&7Veja todos os jogadores que já'
+        - '&7exerceram o cargo de presidente'
+        - '&7do servidor.'
+        - ''
+        - '&eClique para ver.'
+    president:
+      material: '{player}'
+      name: '&6Presidente'
+      lore:
+        - '&7O servidor possui uma autoridade'
+        - '&7máxima em exercício, o presidente!'
+        - ''
+        - '&fAtual: &e{president}'
+        - ''
+        - '&fTempo restante no cargo:'
+        - '&e> {time_left}'
+        - ''
+        - '&cPróxima eleição: {time_next}'
+    president-none:
+      material: '3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+      name: '&6Presidente'
+      lore:
+        - '&7O servidor não possui atualmente uma'
+        - '&7autoridade máxima em exercício.'
+        - ''
+        - '&cAguardando o começo de uma nova'
+        - '&celeição.'
+    president-election:
+      material: '43c00154c561f3d66ac69b37d056a610f3700f41ea9323cdd40eeba5e6f3df91'
+      name: '&6Presidente'
+      lore:
+        - '&7O servidor possui uma autoridade'
+        - '&7máxima em exercício, o presidente!'
+        - ''
+        - '&fAtual: &e{president}'
+        - ''
+        - '&fTempo restante no cargo:'
+        - '&e> {time_left}'
+        - ''
+        - '&aUma eleição está ocorrendo agora!'
+        - ''
+        - '&fDefinindo novo presidente em:'
+        - '&e> {election_time_left}'
+    president-none-election:
+      material: 'e122148d79ff85d41cfd2595651eed63d1850ae2b07fc54bc0ac68f59f479f16'
+      name: '&6Presidente'
+      lore:
+        - '&7O servidor não possui atualmente uma'
+        - '&7autoridade máxima em exercício.'
+        - ''
+        - '&aUma eleição está ocorrendo agora!'
+        - ''
+        - '&fDefinindo novo presidente em:'
+        - '&e> {election_time_left}'
+    presidencial-menu:
+      material: 'EMERALD'
+      name: '&6Menu da Presidência'
+      lore:
+        - '&7Visualize as opções disponíveis para'
+        - '&7o gerenciamento do governo.'
+        - ''
+        - '&f Total arrecadado: &2$ &a{money}'
+        - ''
+        - '&eClique para ver.'
+    taxes:
+      material: 'e36e94f6c34a35465fce4a90f2e25976389eb9709a12273574ff70fd4daa6852'
+      name: '&6Impostos e Concessões'
+      lore:
+        - '&7Visualize como está a economia'
+        - '&7do governo atual.'
+        - ''
+        - '&f Total arrecadado: &2$ &a{money}'
+        - ''
+        - '&eClique para ver.'
+
+# Menu de taxas e concessões
+taxes:
+  name: '&8Presidente'
+  size: 45
+  historic-format: '&8- {concession} &7(x{amount})'
+  items:
+    back-slot: 40
+    spawner-slot: 11
+    farm-slot: 20
+    mine-slot: 29
+    store-slot: 15
+    historic-slot: 24
+    taxes-slot: 33
+    spawner:
+      material: '647e2e5d55b6d04943519bed2557c6329e33b60b909dee8923cd88b115210'
+      name: '&6Spawners'
+      lore:
+        - '&8Alterado há: {time_since_update}'
+        - ''
+        - ' &7O servidor recolhe como'
+        - ' &7imposto &a{spawner_tax}%&7 dos ganhos'
+        - ' &7obtidos a partir deste meio.'
+        - ''
+    farm:
+      material: 'cecd5cc40356da77fd25572763e393617676710d3b610f65d6f5806246d97777'
+      name: '&6Farms'
+      lore:
+        - '&8Alterado há: {time_since_update}'
+        - ''
+        - ' &7O servidor recolhe como'
+        - ' &7imposto &a{farm_tax}%&7 dos ganhos'
+        - ' &7obtidos a partir deste meio.'
+        - ''
+    mine:
+      material: '1444de1a46d05f93976f8aad107f09bb960d3f29ea759dade00d004d8b1920b6'
+      name: '&6Mineração'
+      lore:
+        - '&8Alterado há: {time_since_update}'
+        - ''
+        - ' &7O servidor recolhe como'
+        - ' &7imposto &a{mine_tax}%&7 dos ganhos'
+        - ' &7obtidos a partir deste meio.'
+        - ''
+    spawner-president:
+      material: '647e2e5d55b6d04943519bed2557c6329e33b60b909dee8923cd88b115210'
+      name: '&6Spawners'
+      lore:
+        - '&8Alterado há: {time_since_update}'
+        - ''
+        - ' &7O servidor recolhe como'
+        - ' &7imposto &a{spawner_tax}%&7 dos ganhos'
+        - ' &7obtidos a partir deste meio.'
+        - ''
+        - '&aClique para alterar.'
+    farm-president:
+      material: 'cecd5cc40356da77fd25572763e393617676710d3b610f65d6f5806246d97777'
+      name: '&6Farms'
+      lore:
+        - '&8Alterado há: {time_since_update}'
+        - ''
+        - ' &7O servidor recolhe como'
+        - ' &7imposto &a{farm_tax}%&7 dos ganhos'
+        - ' &7obtidos a partir deste meio.'
+        - ''
+        - '&aClique para alterar.'
+    mine-president:
+      material: '1444de1a46d05f93976f8aad107f09bb960d3f29ea759dade00d004d8b1920b6'
+      name: '&6Mineração'
+      lore:
+        - '&8Alterado há: {time_since_update}'
+        - ''
+        - ' &7O servidor recolhe como'
+        - ' &7imposto &a{mine_tax}%&7 dos ganhos'
+        - ' &7obtidos a partir deste meio.'
+        - ''
+        - '&aClique para alterar.'
+    store:
+      material: '91be4b5b592fee21a65e0f903038c5333be388234a43731d4adfe5d57d3644e5'
+      name: '&6Concessões'
+      lore:
+        - '&7O presidente pode conceder benefícios'
+        - '&7utilizando os impostos arrecadados.'
+        - ''
+        - ' &fConcessões realizadas: &a{concessions}'
+        - ''
+        - '&aClique para visualizar os produtos.'
+    historic:
+      material: '7f79d3addfdd6c404819a586ef81adfdf77c9f9554bc33d7a50526c40d59ef48'
+      name: '&6Histórico de concessões'
+      lore:
+        - '&7Veja abaixo a lista de compras'
+        - '&7do atual presidente.'
+        - '&r'
+        - '{format}'
+        - '&r'
+    historic-none:
+      material: '7f79d3addfdd6c404819a586ef81adfdf77c9f9554bc33d7a50526c40d59ef48'
+      name: '&6Histórico de concessões'
+      lore:
+        - '&7O presidente ainda não adquiriu'
+        - '&7nenhuma concessão.'
+    taxes:
+      material: 'PAPER'
+      name: '&6Impostômetro'
+      lore:
+        - '&7Visualize como está a arrecadação'
+        - '&7do governo atual.'
+        - ''
+        - '&f Total arrecadado: &2$ &a{money}'
+        - ''
+
+# Menu de concessões
+concessions:
+  name: '&8Presidente'
+  size: 45
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+
+# Menu de candidatos
+candidates:
+  name: '&8Presidente'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+  items:
+    apply-slot: 27
+    apply:
+      material: '8e9b27fccd80921bd263c91dc511d09e9a746555e6c9cad52e8562ed0182a2f'
+      name: '&aCandidatar-se'
+      lore:
+        - '&7Clique aqui para se candidatar'
+        - '&7ao cargo de presidente do servidor.'
+        - ''
+        - '&eExclusivo para &6VIPs&e.'
+    candidate-this:
+      material: '{player}'
+      name: '&e{player}'
+      lore:
+        - ''
+        - '&aVocê votou neste candidato.'
+    candidate-already:
+      material: '{player}'
+      name: '&e{player}'
+      lore:
+        - ''
+        - '&cVocê já votou nessa eleição.'
+    candidate:
+      material: '{player}'
+      name: '&e{player}'
+      lore:
+        - ''
+        - '&aClique para votar neste candidato.'
+
+# Menu de presidentes anteriores
+past-presidents:
+  name: '&8Presidente'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+  items:
+    president:
+      material: '{player}'
+      name: '&e{player}'
+      lore:
+        - '&7Este jogador já foi presidente'
+        - '&7do nosso servidor.'
+        - ''
+        - '&fDuração do(s) mandato(s):'
+        - '&e> {time}'
+        - ''

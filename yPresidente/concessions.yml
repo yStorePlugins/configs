@@ -1,0 +1,53 @@
+concessions:
+  item1:
+    # Nome nos menus
+    display-name: '&b&lDiamantes'
+    # Estoque desse item
+    stock: 10
+    # Delay para reestocar
+    # em ticks (20ticks = 1segundo)
+    restock-delay: 1200
+    # Custo em dinheiro desse item
+    cost: 100000.0
+    # Se todos os jogadores irão receber o item
+    # Caso "false" somente o presidente irá receber
+    give-all: true
+    # Comandos a serem executados ao comprar esse item
+    commands: []
+    # Mensagens que serão enviadas
+    messages:
+      chat: |
+        &r
+        &6&l[PRESIDÊNCIA]&6 O presidente &e{player}&6 comprou &b1 diamante&6 para todos os jogadores!
+        &r
+      actionbar: ''
+      title: ''
+    # Items que serão dados
+    items:
+      item1:
+        material: 'DIAMOND'
+        name: '&bDiamante'
+        lore:
+          - '&7Um precioso diamante.'
+    icons:
+      public:
+        material: 'DIAMOND'
+        name: '&bDiamante'
+        lore:
+          - '&7Todos os jogadores vão ganhar'
+          - '&b1 diamante&7.'
+          - ''
+          - ' &fEstoque: &a{stock} und.'
+          - ' &fCusto: &2$ &a{money}'
+          - ''
+      president:
+        material: 'DIAMOND'
+        name: '&bDiamante'
+        lore:
+          - '&7Todos os jogadores vão ganhar'
+          - '&b1 diamante&7.'
+          - ''
+          - ' &fEstoque: &a{stock} und.'
+          - ' &fCusto: &2$ &a{money}'
+          - ''
+          - '&aClique para comprar este item.'

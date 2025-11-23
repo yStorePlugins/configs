@@ -1,0 +1,75 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &a/presidente &8- &7Abre o menu principal.
+    &a/presidente iniciar &8- &7Iniciar uma nova eleição.
+    &a/presidente parar &8- &7Parar a eleição e definir um novo presidente.
+    &a/presidente set &8- &7Setar um presidente manualmente.
+    &a/presidente reload &8- &7Recarrega as configurações
+    &r
+  election-none: '&cNão há eleição em andamento.'
+  election-force-already: '&cUma eleição já está ocorrendo.'
+  election-force-start: '&aVocê forçou o início da eleição.'
+  election-force-not: '&cNão há eleição em andamento para ser finalizada.'
+  election-force-finish: '&aVocê forçou o fim da eleição!'
+  election-start: |
+    &r
+    &6&l⚡ ELEIÇÕES PRESIDENCIAIS ⚡
+    &e As eleições começaram!
+    &e Registre sua candidatura e vote!
+    &e Tempo de eleição: §f{time_left}
+    &r
+  election-candidate-none: |
+    &r
+    &6&l⚡ RESULTADO DAS ELEIÇÕES ⚡
+    &c Nenhum presidente foi eleito!
+    &c Não houve candidatos registrados.
+    &r
+  election-vote-none: |
+    &r
+    &6&l⚡ RESULTADO DAS ELEIÇÕES ⚡
+    &c Nenhum presidente foi eleito!
+    &c Não houve votos suficientes.
+    &r
+  election-format: '&e- &f{candidate}: &a{votes} &evotos (&f{percentage}%&e)'
+  election-finish: |
+    &r
+    &6&l⚡ RESULTADO DAS ELEIÇÕES ⚡
+    &a Novo presidente eleito: &f{president}
+    &e Duração do mandato: &f{time_left}
+    &r
+    &6&lIntenção de votos:
+    {format}
+    &r
+    &a Total de votos: &f{total}
+    &r
+  election-applied-already: '&cVocê já se candidatou nesta eleição.'
+  election-applied: '&aVocê se candidatou com sucesso nesta eleição!'
+  digit-tax: |
+    &r
+    &aDigite a taxa que você quer definir.
+    &7para cancelar digite &ncancelar&7.
+    &r
+  min-tax: '&cA taxa mínima permitida é {min}%.'
+  max-tax: '&cA taxa máxima permitida é {max}%.'
+  changed-tax: '&aA taxa foi alterada para {amount}%.'
+  concession-cost: '&cO governo não possui verba suficiente. &7({has}/{cost})'
+  concession-stock: '&cEste item está sem estoque.'
+  president-set: '&aVocê definiu &f{player} &acomo presidente do servidor.'
+  need-time: '&cVocê precisa ter jogador por {time}.'

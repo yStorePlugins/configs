@@ -1,0 +1,29 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/ce give &8- &7Dar um encantamento.
+    &a/ce reload &8- &7Recarrega as configurações.
+
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  enchant-found: '&cEncantamento não encontrado.<nl>&cDisponíveis: &7{list}'
+  enchant-give: '&aVocê deu &f{amount}x Livro(s) de &e{enchant}&a para &f{player}&a.'
+  enchant-received: '&aVocê recebeu &f{amount}x Livro(s) de &e{enchant}&a.'
+  enchant-already: '&cEste item já está encantado com o encantamento &f{enchant}&c.'
+  enchant-whitelist: '&cEste item não pode ser encantado com o encantamento &f{enchant}&c.'
+  enchanted: '&aEste item foi encantado com o encantamento &f{enchant}&a.'

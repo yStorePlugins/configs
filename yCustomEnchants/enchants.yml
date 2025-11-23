@@ -1,0 +1,198 @@
+enchants:
+  gravity:
+    # Nome nos itens e mensagens
+    display-name: '&7Anti-Gravidade'
+    # Itens que poderá aplicar o encantamento
+    apply-whitelist: [ 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
+    # Custos para ativação
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação
+    chance: 100.0
+    # Mensagens ao ativar
+    messages:
+      chat: ''
+      actionbar: '&eDano de queda cancelado.'
+      title: ''
+    # Livro do encantamento
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fBotas'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao cair de certas alturas'
+        - '&7o dano será cancelado.'
+  billionaire:
+    display-name: '&7Bilionário'
+    apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 750.0
+    chance: 100.0
+    # Quantia que irá reduzir da vida do jogador inimigo
+    reduce-target-health: 3.0
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fMachados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Durante o combate este encantamento'
+        - '&7possui 100% de chance de remover 3 corações'
+        - '&7do inimigo, mas custa 750 coins por uso.'
+  cheater:
+    display-name: '&7Cheater'
+    apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Efeitos que serão removidos do inimigo
+    remove-target-effects:
+      - 'DAMAGE_RESISTANCE'
+      - 'REGENERATION'
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fEspadas/Machados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Durante o combate este encantamento'
+        - '&7possui uma chance de remover os'
+        - '&7efeitos de regeneração e resistência'
+  critical:
+    display-name: '&7Críticos'
+    apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Multiplicador de dano a mais aplicado no imigo
+    damage-multiplier: 1.25
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fEspadas/Machados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao causar dano com um ataque crítico,'
+        - '&7o inimigo sofrerá +25% do dano suposto.'
+  dementor:
+    display-name: '&7Dementor'
+    apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Efeitos que serão aplicados ao inimigo
+    apply-target-effects:
+      - 'BLINDNESS:1-100'
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fEspadas/Machados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao causar dano em um inimigo'
+        - '&7possui uma chance de aplicar cegueira.'
+  strike:
+    display-name: '&7Strike'
+    apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    reduce-target-health: 3.0
+    strike-lightning: true
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fEspadas/Machados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Durante o combate este encantamento'
+        - '&7possui uma chance de aplicar um'
+        - '&7raio no inimigo causando dano adicional.'
+  shuffle:
+    display-name: '&7Shuffle'
+    apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    shuffle-hotbar: true
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fEspadas/Machados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Durante o combate este encantamento'
+        - '&7possui uma chance de embaralhar'
+        - '&7a hotbar do seu inimigo.'
+  paralyze:
+    display-name: '&7Paralyze'
+    apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    paralyze: true
+    # Tempo de paralisação
+    # em segundos
+    paralyze-delay: 3
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fEspadas/Machados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Durante o combate este encantamento'
+        - '&7possui uma chance de'
+        - '&7paralisar o seu inimigo.'
+  vampire:
+    display-name: '&7Vampire'
+    apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 750.0
+    chance: 100.0
+    # Quantia que irá roubar da vida do jogador inimigo
+    steal-target-health: 3.0
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fMachados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao causar dano em um inimigo,'
+        - '&7possui uma chance de roubar vida do jogador.'
