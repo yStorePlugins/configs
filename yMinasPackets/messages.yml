@@ -307,3 +307,4 @@ chat:
   npc-set: '&aNPC definido com sucesso.'
   npc-deleted: '&aNPC removido com sucesso.'
   npc-not-set: '&cNPC não está definido.'
+  classe-level-need: '&cVocê precisa do nível {level} para comprar esta classe.'

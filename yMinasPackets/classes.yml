@@ -12,6 +12,8 @@ classes:
     permission: ''
     # Efeito:Nível
     effects: ['SPEED:1']
+    # Nível necessário para upar para essa classe
+    need-level: 0
     # Bônus que serão dados
     bonus:
       blocks: 5
