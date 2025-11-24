@@ -1,0 +1,29 @@
+taxes:
+  # Identificador único para a API econômica
+  custom1:
+    # Slot no menu de taxas
+    slot: 12
+    # Ícones nos menus
+    icons:
+      public:
+        material: '2215bdc7ffd061d8414fdab89ebb81b61088740db636218333e12bb53873fea7'
+        name: '&6Taxa Customizada'
+        lore:
+          - '&8Alterado há: {time_since_update}'
+          - ''
+          - ' &7O servidor recolhe como'
+          - ' &7imposto &a{tax}%&7 dos ganhos'
+          - ' &7obtidos a partir deste meio.'
+          - ''
+          - ''
+      president:
+        material: '2215bdc7ffd061d8414fdab89ebb81b61088740db636218333e12bb53873fea7'
+        name: '&6Taxa Customizada'
+        lore:
+          - '&8Alterado há: {time_since_update}'
+          - ''
+          - ' &7O servidor recolhe como'
+          - ' &7imposto &a{tax}%&7 dos ganhos'
+          - ' &7obtidos a partir deste meio.'
+          - ''
+          - '&aClique para alterar.'
