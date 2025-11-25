@@ -68,3 +68,4 @@ chat:
   skin-has: '&aVocê já possui esta skin ativada.'
   skin-activated: '&aSkin ativada com sucesso.'
   cant-place: '&cNão é possível colocar a estrutura aqui.'
+  need-pickaxe: '&cVocê precisa de uma picareta personalizada para minerar aqui.'

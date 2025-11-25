@@ -103,6 +103,8 @@ general:
   no-shift-menu: true
   # Habilitar o menu da mina ao interagir com a mina com shift
   shift-menu: true
+  # Requerer a picareta customizada para minerar na mina privada
+  require-custom-pickaxe: false
   # Materiais que irão ser reconhecidos na skin
   skin-materials:
     - 'WOOD'
