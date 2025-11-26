@@ -56,6 +56,9 @@ general:
   # Delay para checagem da notificação de pagamento (manual)
   # Em segundos
   manual-delay: 30
+  # Delay para realizar novas compras por um mesmo jogador
+  # Em segundos
+  buy-delay: 30
   # Embed do yDiscorHook para enviar a cobrança no privado
   dm-charge-embed: 'ypayments_private'
   # Tempo para enviar a mensagem de alerta de coleta

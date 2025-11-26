@@ -85,6 +85,7 @@ attack-multiples:
 # Sistema de compra de tempo extra
 times:
   time1:
+    order: 1
     # Nome nas mensagens
     display-name: '&e+1 min'
     # Tempo que será comprado
@@ -107,6 +108,7 @@ times:
         - ''
         - '&aClique para comprar'
   time2:
+    order: 2
     display-name: '&e+10 min'
     time-extra: 600
     prices:
@@ -124,6 +126,7 @@ times:
         - ''
         - '&aClique para comprar'
   time3:
+    order: 3
     display-name: '&e+60 min'
     time-extra: 3600
     prices:
