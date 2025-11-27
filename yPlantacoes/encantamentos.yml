@@ -17,6 +17,20 @@ Eficiencia:
     price1:
       provider: 'money'
       price: 10000.0
+  # Opções de give do encantamento
+  options:
+    # Permissão para usar o encantamento
+    # Deixe vazio para não usar
+    permission: ''
+    # Permissão para comprar o encantamento
+    # Deixe vazio para não usar
+    permission-buy: ''
+    # Whitelist de skins que o encantamento irá funciona
+    # Deixe vazio para não usar
+    # Coloque a "order" da skin. Exemplo: [ 1 ]
+    skin-whitelist: []
+    # Mostrar o encantamento mo menu caso o jogador não tenha a skin da whitelist
+    show-skin-whitelist: false
   # Aparecer no menu de evolução
   MostrarMenu: true
   Displays: # Item que aparecerá no menu de evolução
