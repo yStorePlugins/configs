@@ -196,3 +196,38 @@ enchants:
         - '&e*&fComo funciona?'
         - '&7Ao causar dano em um inimigo,'
         - '&7possui uma chance de roubar vida do jogador.'
+  fly:
+    display-name: '&7Anjo'
+    apply-whitelist: [ 'DIAMOND_CHESTPLATE' ]
+    # Mundos que o jogador irá ter fly
+    fly-worlds: [ 'PlotWorld' ]
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fPeitorais de Diamante'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao ir para o seu plot,'
+        - '&7você irá conseguir voar.'
+  defender:
+    display-name: '&7Defensor'
+    apply-whitelist: [ 'DIAMOND_HELMET', 'DIAMOND_CHESTPLATE', 'DIAMOND_LEGGINGS', 'DIAMOND_BOOTS' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 750.0
+    # Lista de efeitos que o jogador irá ter
+    # effect:level
+    buffs-effect-list: [ 'INCREASE_DAMAGE:1', 'SPEED:1' ]
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fArmaduras de Diamante'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao vestir essa armadura,'
+        - '&7você irá ganhar efeitos especiais.'
