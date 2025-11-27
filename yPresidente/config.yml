@@ -66,6 +66,18 @@ general:
   # Tempo necessário para votar ou se candidatar
   # em segundos (yTempoOnline)
   need-time: 10
+  # Comandos que serão executados ao iniciar o mandato
+  start-mandate-commands: []
+  # Comandos que serão executados ao finalizar o mandato
+  end-mandate-commands: []
+
+# Configurações do npc
+npc:
+  # Altura do holograma
+  off-set: 3.1
+  hologram:
+    - '&6&lPRESIDENTE'
+    - '&7Presidente Atual &c{player}&7.'
 
 # Sistema de anúncios
 announces:

@@ -73,3 +73,5 @@ chat:
   concession-stock: '&cEste item está sem estoque.'
   president-set: '&aVocê definiu &f{player} &acomo presidente do servidor.'
   need-time: '&cVocê precisa ter jogador por {time}.'
+  npc-set: '&aVocê definiu o NPC.'
+  npc-delete: '&aVocê deletou o NPC.'
