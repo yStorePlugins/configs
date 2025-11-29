@@ -7,3 +7,8 @@ rarities:
     title: ''
     chat: |
       &e[Lucky Block] &fO jogador &e{player}&f encontrou uma recompensa rara na LuckyBlock&f.
+    # Mensagens que irá retornar para o jogador
+    private-messages:
+      actionbar: ''
+      title: ''
+      chat: ''
