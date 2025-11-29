@@ -7,6 +7,8 @@ Combustiveis:
     Consumir: true
     # Abastecer a máquina completamente sem deixar ela infinita
     CombustivelInfinito: false
+    # Somente o dono do combustível poder usá-lo
+    SomenteDono: false
     Litros: 50
     Item:
       CustomSkull: false

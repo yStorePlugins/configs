@@ -148,3 +148,4 @@ chat:
     &7&l| &fCombustível: &7{combustivel}&f.
     &7&l| &fQuantia: &7{quantia}&f.
     &r
+  machine-fuel-only-owner: '&cApenas o dono do combustível pode usá-lo.'
