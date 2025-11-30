@@ -25,3 +25,59 @@ embeds:
         inline: false
         header: 'Começou em'
         content: '```{date} às {hour}```'
+  parkour_initialize:
+    title: ':mailbox: Um novo Evento inicializou!'
+    thumbnail: ''
+    color: '#fff'
+    content: ''
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      event:
+        inline: false
+        header: 'Evento'
+        content: '```Parkour```'
+      players:
+        inline: false
+        header: 'Participantes'
+        content: '```{players}```'
+      server:
+        inline: false
+        header: 'Servidor'
+        content: '```RankUP```'
+      date_activated:
+        inline: false
+        header: 'Começou em'
+        content: '```{date} às {hour}```'
+  parkour_win:
+    title: ':mailbox: Um novo Evento finalizou!'
+    thumbnail: ''
+    color: '#fff'
+    content: ''
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      event:
+        inline: false
+        header: 'Evento'
+        content: '```Parkour```'
+      players:
+        inline: false
+        header: 'Ganhador'
+        content: '```{players}```'
+      server:
+        inline: false
+        header: 'Servidor'
+        content: '```RankUP```'
+      date_activated:
+        inline: false
+        header: 'Começou em'
+        content: '```{date} às {hour}```'
+      time:
+        inline: false
+        header: 'Tempo decorrido'
+        content: '```{time}```'

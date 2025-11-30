@@ -16,8 +16,13 @@ display: 'Frog'
 max-time: 600
 
 discord:
+  # Webhook ao startar o evento
   # enviar o embed em um chat
-  webhook:
+  start-webhook:
+    enable: true
+    chat-embed: ''
+  # Webhook ao ganhar o evento
+  win-webhook:
     enable: true
     chat-embed: ''
 
