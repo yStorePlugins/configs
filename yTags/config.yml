@@ -6,12 +6,22 @@ Database:
    Pass: ''
    Debug: true
 
+# Configurações do servidor redis
+redis:
+   # Ativar a conexão com o redis
+   enabled: false
+   # Endereço de conexão. [EX: 127.0.0.1]
+   host: 'localhost'
+   # Porta de conexão. [EX: 3306]
+   port: 6379
+   # Usuário de conexão. [EX: root]
+   username: ''
+   # Senha do usuário de conexão: [EX: 123]
+   password: ''
+
 Comando:
    Comando: 'tags'
    Aliases: [tag]
-
-#Coloque Legendchat, OpeNChat (ou nChat), UltimateChat, NoxusChat ou deixe Automatico para o auto-detect
-Plugin de chat: 'Automatico'
 
 Tag propria:
    Chat: true
@@ -60,37 +70,26 @@ Mensagens:
    - ''
    
 Vale tag:
-   CustomSkull: false
-   URL: ''
-   ID: NAME_TAG
-   Data: 0
-   Glow: true
-   Name: '&aVale Tag &8&l- &7{tag}'
-   Lore:
-   - '&7Tag: &f{tag}&7.'
-   - ''
-   - '&7Clique com botão direito para ativar.'
+   material: NAME_TAG
+   glow: true
+   name: '&aVale Tag &8&l- &7{tag}'
+   lore:
+      - '&7Tag: &f{tag}&7.'
+      - ''
+      - '&7Clique com botão direito para ativar.'
          
 Setas:
    Voltar:
-      CustomSkull: false
-      URL: ''
-      ID: ARROW
-      Data: 0
-      Glow: true
-      Name: '&cVoltar'
-      Lore:
-      - '&7Clique para voltar ao menu ou página anterior.'
+      material: ARROW
+      glow: true
+      name: '&cVoltar'
+      lore: [ '&7Clique para voltar ao menu ou página anterior.' ]
    Proximo:
-      CustomSkull: false
-      URL: ''
-      ID: ARROW
-      Data: 0
-      Glow: true
-      Name: '&aPróxima'
-      Lore:
-      - '&7Clique para ir à próxima página.'
-      
+      material: ARROW
+      glow: true
+      name: '&aPróxima'
+      lore: [ '&7Clique para ir à próxima página.' ]
+
 Lores:
    Equipar:
       Sobrepor: true
@@ -100,18 +99,3 @@ Lores:
       Sobrepor: true
       Lore:
       - '&7Clique para desequipar esta tag.'
-      
-Formats:
- - ''
- - ''
- - 'K'
- - 'M'
- - 'B'
- - 'T'
- - 'Q'
- - 'QQ'
- - 'S'
- - 'SS'
- - 'O'
- - 'N'
- - 'D'
