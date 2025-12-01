@@ -112,6 +112,11 @@ Borda:
     Z: 0
   Tamanho: 1000 # tamanho padrão em blocos
   Dano: 5 # dano da borda
+  # Mensagens que serão enviadas quando a borda diminuir
+  Mensagens:
+    Title: ''
+    Actionbar: '&cA borda está diminuindo! Cuidado!'
+    Chat: ''
   # tempo decorrido da guerra, tamanho que vai ficar a borda, duração da diminuição da borda (deixe 0 para diminuir instantaneamente)
   Zonas:
     - '10,100,10'
@@ -178,6 +183,12 @@ Recompensas:
 #
 Efeitos:
   Ativar: false
+  # Efeitos que serão dados no decorrer do evento
+  TempoEfeitos:
+    effect1:
+      Tempo: 30
+      Lista:
+        - '30,INVISIBILITY:1-100' # efeito:level-tempo
   Lista:
     - 'INVISIBILITY:1-100' #efeito:level-tempo
 #
