@@ -231,3 +231,70 @@ enchants:
         - '&e*&fComo funciona?'
         - '&7Ao vestir essa armadura,'
         - '&7você irá ganhar efeitos especiais.'
+  double-jump:
+    # Nome nos itens e mensagens
+    display-name: '&7Pulo-Duplo'
+    # Itens que poderá aplicar o encantamento
+    apply-whitelist: [ 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
+    # Mensagens ao ativar
+    messages:
+      chat: ''
+      actionbar: '&ePulo duplo ativado.'
+      title: ''
+    # Livro do encantamento
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fBotas'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao apertar duas vezes o botão de pulo,'
+        - '&7você será impulsionado mais alto.'
+  defensor:
+    # Nome nos itens e mensagens
+    display-name: '&7Defensor'
+    # Itens que poderá aplicar o encantamento
+    apply-whitelist: [ 'DIAMOND_CHESTPLATE' ]
+    # Custos para ativação
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação
+    chance: 100.0
+    # Mensagens ao ativar
+    messages:
+      chat: ''
+      actionbar: '&eDano recebido cancelado.'
+      title: ''
+    # Livro do encantamento
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fPeitoral de Diamante'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao ser atacado,'
+        - '&7o dano será cancelado.'
+  super-pickaxe:
+    # Nome nos itens e mensagens
+    display-name: '&7Super Picareta'
+    # Itens que poderá aplicar o encantamento
+    apply-whitelist: [ 'DIAMOND_PICKAXE' ]
+    # Tamanho da área que será minerada
+    radius: 3
+    # Livro do encantamento
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fPicareta de Diamante'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao quebrar um bloco de minério,'
+        - '&7uma área 3x3 será minerada.'
