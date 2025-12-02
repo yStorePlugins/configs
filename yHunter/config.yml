@@ -14,6 +14,7 @@ Comando:
 # Opcoes de configuração do NPC
 NPC:
   ID: 923287
+  # Para puxar a SKIN do TOP(1) deixe vazio
   Skin: 'TheThunderGod063'
   Holograma:
     Altura: 3.1
