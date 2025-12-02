@@ -309,3 +309,4 @@ chat:
   remove-player: '&aTodos os VIPs do jogador &f{player}&a foram removidos.'
   player-converted: '&aUUID convertido. Nome antigo: &f{old_name}&a. Novo nome: &f{new_name}&a.'
   inv-full: '&cVocê precisa liberar espaço no seu inventário.'
+  shop-delay: '&cVocê deve aguardar para comprar no shop novamente. Tempo restante: &e{time}&c.'
