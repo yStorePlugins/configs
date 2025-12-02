@@ -37,6 +37,11 @@ mining-skill-identify: 'MINING'
 # Permissão para a venda automática
 auto-sell-perm: ''
 
+# Habilitar o price-multiplier de maneira exponencial
+# Vai multiplicar sempre o x pelo valor do nível anterior já multiplicado
+# Caso false, vai apenas multiplicar o valor atual do encantamento x o multiplicador
+price-multiplier-exponential: false
+
 # Desativar a quebra do plugin e usar apenas o REGEN da mina
 Desativar-quebra: false
 
