@@ -4,6 +4,9 @@ Mochilas:
     # deixe '' para não usar
     permission: ''
     Fileiras: 1
+    # Whitelist de itens que poderão ser colocados na mochila
+    # Deixe [] para não usar
+    item-whitelist: []
     Menu: '&8Mochila Pequena'
     Item:
       material: 'CHEST'

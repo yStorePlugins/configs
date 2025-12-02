@@ -30,3 +30,4 @@ chat:
   backpack-stacked: '&cEsta mochila está agrupada. Desagrupe-a para usar.'
   backpack-shift: '&cVocê não pode usar shift na mochila.'
   backpack-numkeys: '&cVocê não pode usar as teclas numéricas na mochila.'
+  backpack-whitelisted: '&cEste item não pode entrar nessa mochila.'
