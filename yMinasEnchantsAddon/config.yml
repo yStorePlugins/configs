@@ -12,24 +12,3 @@ FAWEOptions:
   DestruidorInvertido: true # -- do destruidor invertido
   Esfera: true # -- da esfera
   X: true # -- do X
-
-# Opções da luckyblock
-Luckyblock:
-  Linear: true # dar lucky block quando o linear for ativado
-  DestruidorInvertido: true # dar lucky block quando o destruidor invertido for ativado
-  Esfera: true # dar lucky block quando a esfera for ativada
-  X: true # dar lucky block quando o X for ativado
-
-# Opções da recompensa
-Recompensa:
-  Linear: true # dar recompensa quando o linear for ativado
-  DestruidorInvertido: true # dar recompensa quando o destruidor invertido for ativado
-  Esfera: true # dar recompensa quando a esfera for ativada
-  X: true # dar recompensa quando o X for ativado
-
-# Opções dos custom-enchants
-Custom-Enchant:
-  Linear: false # dar custom-enchants quando o linear for ativado
-  DestruidorInvertido: true # dar custom-enchants quando o destruidor invertido for ativado
-  Esfera: true # dar custom-enchants quando a esfera for ativada
-  X: true # dar custom-enchants quando o X for ativada

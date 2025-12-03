@@ -70,27 +70,6 @@ Opcoes:
     Explosao: true # -- da explosão
     Furadeira: true # -- da furadeira
     Laser: true # -- do raio do laser
-  # Opções da luckyblock
-  Luckyblock:
-    Nuclear: false # dar lucky block quando o nuclear for ativado
-    Destruidor: true # dar lucky block quando o destruidor for ativado
-    Explosao: true # dar lucky block quando a explosão for ativada
-    Furadeira: true # dar lucky block quando a furadeira for ativada
-    Laser: true # dar lucky block quando o laser for ativado
-  # Opções da recompensa
-  Recompensa:
-    Nuclear: false # dar recompensa quando o nuclear for ativado
-    Destruidor: true # dar recompensa quando o destruidor for ativado
-    Explosao: true # dar recompensa quando a explosão for ativada
-    Furadeira: true # dar recompensa quando a furadeira for ativada
-    Laser: true # dar recompensa quando o laser for ativado
-  # Opções dos custom-enchants
-  Custom-Enchant:
-    Nuclear: false # dar custom-enchants quando o nuclear for ativado
-    Destruidor: true # dar custom-enchants quando o destruidor for ativado
-    Explosao: true # dar custom-enchants quando a explosão for ativada
-    Furadeira: true # dar custom-enchants quando a furadeira for ativada
-    Laser: true # dar custom-enchants quando o laser for ativado
   # Esconder o encantamento na lore da picareta caso o player desative ele
   # caso esteja false, o encantamento ficará riscado na lore da picareta
   DesativadoEsconder: false

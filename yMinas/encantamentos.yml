@@ -15,6 +15,21 @@ Encantamentos:
     MostrarInfinito: false
     # Opções de give do encantamento
     options:
+      # Delay para ativar o encantamento novamente
+      # em segundos
+      delay: 0
+      # Ativar dar economias
+      economy: true
+      # Ativar dar blocos
+      blocks: true
+      # Ativar dar energia
+      energy: true
+      # Ativar os custom enchant
+      custom-enchant: true
+      # Ativar os mine_rewards
+      rewards: true
+      # Ativar as lucky-blocks
+      lucky-block: true
       # Permissão para usar o encantamento
       # Deixe vazio para não usar
       permission: ''
