@@ -77,3 +77,11 @@ wand:
   material: 'GOLD_AXE'
   name: '&eSeleção de Área'
   lore: [ '&7Evento: &f{event}', '', '&aEsquerdo -> POS1', '&aDireito -> POS2' ]
+
+# Formatos de status
+# Para a placeholder %yeventos_status%
+status-format:
+  none: ''
+  watching: '&cAssistindo'
+  waiting: '&eAguardando'
+  playing: '&aJogando'
