@@ -33,6 +33,8 @@ Eficiencia:
     show-skin-whitelist: false
   # Aparecer no menu de evolução
   MostrarMenu: true
+  # Aparecer na lore da ferramenta
+  MostrarLore: true
   Displays: # Item que aparecerá no menu de evolução
     Pode: # quando puder evoluir
       CustomSkull: false
