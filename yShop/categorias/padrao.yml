@@ -29,6 +29,8 @@ Itens:
       # necessário para verificar a quantia disponível no inv
       # deixe 0 para não usar
       InvStackVerify: 64
+      # Ativar o delay para evitar cliques rápidos
+      Delay: true
       Slot: 10
       Display:
          material: BRICK
