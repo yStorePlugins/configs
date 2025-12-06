@@ -58,6 +58,8 @@ general:
   # Delay para alternar a cerca de um terreno
   # em segundos
   fence-delay: 60
+  # Limpar o terreno por completo ao ser deletado
+  clear-delete: true
   # Expansão Inteligente: Quando ativado, permite que o terreno expanda
   # para os lados disponíveis mesmo que haja obstáculos em algumas direções.
   #
