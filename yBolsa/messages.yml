@@ -27,7 +27,7 @@ chat:
     &r
     &bComandos do plugin:
     &r
-    &b-> &f/autopickup &8-&7 Abre o menu principal
+    &b-> &f/bolsa &8-&7 Abre o menu principal
     &r
   paused: '&e⏸Bolsa pausada por mais {time}.<nl>&7Valor atual: &f{value}'
   bull: '&e⏰ Bull-Market finaliza em: {time}.'
