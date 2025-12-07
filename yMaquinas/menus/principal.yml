@@ -137,7 +137,7 @@ Itens:
   Trusteds:
     Slot: 21
     material: '102a3520f3d837649283698cc1cddc79f7ee66b1c202c19d4d1530c0a21ed4f7'
-    name: '&cRemover'
+    name: '&aTrusteds'
     lore:
       - '&7Permitir que todos os jogadores com'
       - '&7permissão no plot, tenha permissão'
@@ -147,7 +147,7 @@ Itens:
       - ''
       - '&aBotão &fESQUERDO&a para alternar.'
   InfinitoRemover:
-    Slot: 22
+    Slot: 12
     material: 'a84ddca766725b8b97413f259c3f7668070f6ae55483a90c8e5525394f9c099'
     name: '&cRemover Combustível Infinito'
     lore:
