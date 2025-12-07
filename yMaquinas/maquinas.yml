@@ -23,6 +23,8 @@ Maquinas:
     # Combustíveis que a máquina aceita
     Combustiveis:
       - 'gasolina'
+    # Combustível infinito que será dado ao remover pelo menu
+    CombustivelInfinito: ''
     # A máquina vai gerar um vidro com uma cabeça dentro?
     Glass: false
     # Tipo do vidro
