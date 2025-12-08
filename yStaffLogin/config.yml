@@ -31,6 +31,13 @@ Limpar chat: true
 # Remover os itens ao logar
 Remover itens: true
 
+# Ações que serão executadas se errar o captcha
+Errou:
+  # Expulsar o jogador
+  Kick: true
+  # Executar comandos no jogador
+  Comandos: []
+
 # Estes são os nomes dos menus caso seu servidor tenha captcha próprio
 Menus liberados:
   - '&7Captcha'
