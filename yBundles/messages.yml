@@ -1,0 +1,43 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &a/bundle start &8- &7Iniciar um bundle.
+    &a/bundle reload &8- &7Recarrega as configurações
+    &r
+  no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
+  inv-full: '&cSeu inventário está cheio.'
+  bundle-found: |
+    &cBundle não encontrado.
+    &cDisponíveis: &7{list}
+  bundle-started: '&aVocê iniciou o bundle &f{bundle}&a para &f{player}&a por &f{time}&a! Limite: &f{limit}&a compra(s).'
+  bundle-all: '&aVocê iniciou o bundle &f{bundle}&a para TODOS ONLINE por &f{time}&a! Limite: &f{limit}&a compra(s).'
+  bundle-all-target: '<nl>&aO bundle &f{bundle}&a foi iniciado para TODOS ONLINE por &f{time}&a!<nl>&aLimite de compras: &f{limit}&a.<nl>'
+  purchase-limit-reached: '&cVocê atingiu o limite de compras para o bundle &f{bundle}&c!'
+  bundles-join-notify: |
+    &r
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    &r
+    &6⚡ BUNDLES DISPONÍVEIS
+    &r
+    &aVocê possui &f{available} bundle(s) disponível(is)&a para compra
+    &ae &f{owned} bundle(s)&a no seu inventário!
+    &r
+    &aAcesse com: &f/bundles
+    &r
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

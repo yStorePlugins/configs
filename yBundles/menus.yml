@@ -1,0 +1,84 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de edição
+main:
+  name: '&8Bundles'
+  size: 27
+  items:
+    shop-slot: 14
+    my-bundles-slot: 12
+    my-bundles:
+      material: '7d628da96666f6ca7e67b12cf5589a881fa6ea355f12abe652f2c62794a1dd7'
+      name: '&6Meus Bundles'
+      lore:
+        - '&7Veja os seus pacotes e ative-os quando'
+        - '&7achar necessário.'
+        - ''
+        - '&fBundles armazenados: &a{amount}'
+        - ''
+        - '&aClique para acessar!'
+    shop:
+      material: 'a64c1490c1254807b7e3fe7b3a5a3b3f15cc699ab3872cc02968e9712570ef99'
+      name: '&6Loja de Bundles'
+      lore:
+        - '&7Adquira pacotes personalizados para'
+        - '&7melhorar sua experiência no servidor.'
+        - ''
+        - '&fBundles disponíveis: &a{amount}'
+        - ''
+        - '&aClique para acessar a loja!'
+
+# Menu de shop
+shop:
+  name: '&8Bundles'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 13
+  next-slot: 26
+  back-slot: 49
+  items:
+    empty-slot: 22
+    empty:
+      material: 'WEB'
+      name: '&cNenhum Bundle Liberado'
+      lore:
+        - '&7Você não possui nenhum bundle'
+        - '&7liberado no momento.'
+
+# Menu de Meus Bundles
+my-bundles:
+  name: '&8Bundles'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33 ]
+  previous-slot: 13
+  next-slot: 26
+  back-slot: 49
+  items:
+    empty-slot: 22
+    empty:
+      material: 'WEB'
+      name: '&cNenhum Bundle Armazenado'
+      lore:
+        - '&7Você não possui nenhum bundle'
+        - '&7armazenado no momento.'

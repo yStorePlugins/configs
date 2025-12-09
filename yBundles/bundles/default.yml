@@ -1,0 +1,87 @@
+# Nome nas mensagens
+display-name: '&eBundle Padrão'
+
+# Ordem no menu
+order: 1
+
+# Mostrar ícone no shop mesmo com a compra desativada
+always-show: true
+
+# Preços do bundle
+prices:
+  price1:
+    # Economia registrada na economies.yml
+    provider: 'money'
+    # Quantia a ser cobrada
+    amount: 1000.0
+
+# Ícones nos menus
+icons:
+  cant:
+    material: 'd421b446e53e9f375111b43d6d77abaa584a8963639ab7d5488efee6fd406a46'
+    name: '&cBundle Padrão'
+    lore:
+      - ''
+      - '&7Você não pode comprar este bundle.'
+      - '&7Motivo: tempo expirado ou limite atingido.'
+      - ''
+  buy:
+    material: 'd421b446e53e9f375111b43d6d77abaa584a8963639ab7d5488efee6fd406a46'
+    name: '&eBundle Padrão'
+    lore:
+      - '&7Este é o Bundle Padrão do servidor'
+      - '&7contendo itens básicos para iniciar.'
+      - ''
+      - '&fPreço: &2$ &a{money} coins&f.'
+      - ''
+      - '&f&lTEMPO RESTANTE: &b&l{time}&f&l.'
+      - '&f&lCOMPRAS RESTANTES: &b&l{remaining}&f&l.'
+      - '&f&lLIMITE: &b&l{limit}&f&l.'
+      - ''
+      - '&aClique para comprar.'
+  owned:
+    material: 'd421b446e53e9f375111b43d6d77abaa584a8963639ab7d5488efee6fd406a46'
+    name: '&eBundle Padrão'
+    lore:
+      - '&7Este é o Bundle Padrão do servidor'
+      - '&7contendo itens básicos para iniciar.'
+      - ''
+      - '&fQuantia Armazenada: &b{amount}'
+      - ''
+      - '&aClique para ativar.'
+
+# Itens que serão dados ao ativar o bundle
+items:
+  item1:
+    material: 'DIAMOND'
+    amount: 1
+    name: '&bItem Exemplo'
+    lore:
+      - '&7Este é um item de exemplo no'
+      - '&7bundle padrão do MLNivel.'
+
+# Comandos que serão dados ao ativar o bundle
+commands:
+  - 'alert {player} Comprou um Bundle Padrão!'
+
+# Mensagens que serão enviadas para o jogador
+messages:
+  started:
+    title: '&aBundle Ativado!'
+    actionbar: '&aUm novo Bundle foi ativado para você.'
+    chat: '<nl>&aUm novo Bundle foi ativado para você!<nl>&aAcesse em: &f/bundles&a.<nl>'
+  buy:
+    title: '&aBundle Comprado!'
+    actionbar: '&aVocê comprou um novo Bundle.'
+    chat: '<nl>&aVocê comprou um novo Bundle!<nl>&aAcesse em: &f/bundles&a.<nl>'
+  collected:
+    title: '&aBundle Coletado!'
+    actionbar: '&aVocê coletado o seu Bundle.'
+    chat: '<nl>&aVocê coletou o seu Bundle!<nl>&aItens enviados para o seu &finventário&a.<nl>'
+
+# Mensagens que serão enviadas para todos os jogadores
+broadcast:
+  buy:
+    title: ''
+    actionbar: ''
+    chat: ''
