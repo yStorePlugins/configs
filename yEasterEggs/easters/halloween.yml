@@ -126,3 +126,4 @@ messages:
   collected-all: '&6[Halloween] Você coletou todas as abóboras! &fRecompensa enviada.'
   already-collected: '&6[Halloween] &cVocê já coletou essa abóbora!'
   already-collected-all: '&6[Halloween] &cVocê já coletou todas as abóboras!'
+  duplicate-ip: '&c&l✗ &7Detectamos que este IP já participou! &e({collected}/{total})'
