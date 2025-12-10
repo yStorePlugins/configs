@@ -211,6 +211,12 @@ general:
   chest-shift: false
   # Habilitar o uso de criativo no baú
   chest-creative: false
+  # Whitelist de itens que poderão ser colocados no baú
+  # Deixe [] para não usar
+  chest-item-whitelist: []
+  # Blacklist de itens que não poderão ser colocados no baú
+  # Deixe [] para não usar
+  chest-item-blacklist: []
   # Prevenir de desfazer o clan com money no banco
   prevent-disband-money: true
   # Mundos em que não irá contabilizar KDR
