@@ -1,0 +1,28 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cO seu inventário está cheio.'
+  help: |
+
+    &aLixeiro comandos:
+
+    &a> /lixeiro
+    &a> /lixeiro forcar
+    &a> /lixeiro reload
+
+  force: '&aVocê forçou a limpeza de itens e entidades.'
+  next: '&r &eTempo para a próxima limpeza: {time}.<nl>&r &8♻ &fNa última limpeza foram limpos &7{items_total}&f itens e &7{entities_total}&f entidades.'

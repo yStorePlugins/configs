@@ -1,0 +1,35 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Lixeiro'
+  size: 27
+  slots: [ 11, 13, 15 ]
+  previous-slot: 9
+  next-slot: 17
+  items:
+    historic:
+      material: 'PAPER'
+      name: '&eHistórico de Limpeza &8[{index}]'
+      lore: [ '&7Veja os itens que foram limpos', '&7nesta limpeza.', '', '&aClique para acessar.' ]
