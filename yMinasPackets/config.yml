@@ -64,9 +64,10 @@ mining-skill-identify: 'MINING'
 auto-sell-perm: ''
 
 # Tipo de reset da mina
-# NOVO: PROTOCOL-LIB = recomendado
-# ANTIGO: PACKET-EVENTS = mais rápido
-reset-type: 'PACKET-EVENTS'
+# PROTOCOL-LIB = Método mais compatível, porém mais lento
+# PACKET-EVENTS = Utiliza a LIB do Packet-Events, mais rápido em alguns casos
+# YPLUGINS = recomendado. Suporta maiores estruturas, rápido e eficiente (utiliza reatividade, batch-system e multi-threads)
+reset-type: 'YPLUGINS'
 
 general:
   # Abrir o menu ao digitar /mina
