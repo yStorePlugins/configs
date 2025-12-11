@@ -154,7 +154,7 @@ glass:
   data: 11
   # Ajuste a cabeça dentro do vidro
   off-set: -1.2
-  # Animação da cabeça dentgro do vidro
+  # Animação da cabeça dentro do vidro
   # Pode gerar lag
   animation-enabled: false
   # Velocidade da animação
@@ -233,6 +233,8 @@ drop:
   collect: true
   # Possibilitar vender o drop no armazém
   sell: true
+  # Vender o drop diretamente, sem ir para o armazém ou dropar no chão
+  auto-sell: false
 
   # Quantia máxima permitida no armazém
   # Deixe 0 para não ter máximo
