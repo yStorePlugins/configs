@@ -59,6 +59,8 @@ general:
 # Actionbar quando ganhar xp
 actionbar:
   enabled: true
+  # Mundos em que a actionbar estará desativada
+  disabled-worlds: []
   # Mensagem que irá aparecer na actionbar ao ganhar XP do mcMMO
   message: '&a{skill}: {level} ({xp_has} / {xp_need}) +{xp_earned}XP'
 

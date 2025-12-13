@@ -31,6 +31,17 @@ skills:
       material: '{player}'
       name: '&a{player}'
       lore: [ '&7Nível total: &f{level}', '&7XP total: &f{xp}' ]
+    actionbar:
+      slot: 53
+      material: '60335c5089b28f7e1261749bf107fa675900c1956ca9e6d851ba55a5e1f8624a'
+      name: '&6Actionbar de Habilidades'
+      lore:
+        - '&7Receber as informações de XP na'
+        - '&7sua actionbar.'
+        - ''
+        - '&fStatus: &r{status}&f.'
+        - ''
+        - '&aClique para alternar.'
     ranking:
       slot: 14
       material: 'BOOK_AND_QUILL'
