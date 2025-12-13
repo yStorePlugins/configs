@@ -29,3 +29,5 @@ chat:
     &b-> &f/mccredits set <player> <quantia>
     &b-> &f/mccredits add <player> <quantia>
     &b-> &f/mccredits remove <player> <quantia>
+  actionbar-disabled: '&cActionbar desativada.'
+  actionbar-enabled: '&aActionbar ativada.'
