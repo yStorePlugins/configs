@@ -72,6 +72,10 @@ general:
   smart-expansion: true
   # Ícone padrão dos terrenos
   default-icon: '69a28ba3ba79be1954710d4db2a3fd22773f619f18fecf5982353fb7ac18393a'
+  # Proibir colocar/quebrar blocos perto de terrenos (em áreas sem dono)
+  # Define a distância em blocos. 0 = desativado
+  # bypass: yterrenos.protection.nearbuild.bypass
+  block-near-terrain-distance: 0
   # Custo para teleportar até um terreno
   teleport-cost:
     # Preços por tamanho

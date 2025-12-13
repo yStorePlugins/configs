@@ -152,3 +152,4 @@ chat:
   terrain-expand-smart: '&eDevido a terrenos próximos, seu terreno foi expandido para &6{size}&e de tamanho &7(ao invés de {requested_size})'
   terrain-delete-all-world: '&aTodos os terrenos do mundo &c{world}&a foram deletados.'
   terrain-region-blocked: '&cAfaste-se desta região protegida!'
+  terrain-too-close: '&cVocê não pode fazer isso a menos de {distance} blocos de um terreno.'
