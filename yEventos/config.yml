@@ -67,6 +67,7 @@ proxy:
 auto-start:
   schedule1:
     # nome do arquivo do evento sem o ".yml"
+    # deixe 'random' para iniciar um aleatório
     type: 'fastclick'
     # todos, segunda, terca, quarta, quinta, sexta, sabado, domingo
     # dia-hora:minuto:segundo
