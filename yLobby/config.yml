@@ -75,6 +75,9 @@ block-sand-fall: true
 # Desativar o spawn de items no servidor
 block-item-spawn: true
 
+# Desativar a chuva/neve no servidor
+block-weather: true
+
 # Ativar o controle de dano do plugin
 control-damage: true
 
