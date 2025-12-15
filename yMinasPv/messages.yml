@@ -69,3 +69,6 @@ chat:
   skin-activated: '&aSkin ativada com sucesso.'
   cant-place: '&cNão é possível colocar a estrutura aqui.'
   need-pickaxe: '&cVocê precisa de uma picareta personalizada para minerar aqui.'
+  mine-reset-limit-reached: '&cSua mina &f{mine}&c atingiu o limite de resets e foi deletada automaticamente.'
+  mine-reset-refilled: '&aVocê recarregou &f{amount}&a resets para sua mina. Resets restantes: &f{remaining}&a.'
+  mine-reset-refill-max: '&cSua mina já possui o máximo de resets disponíveis.'

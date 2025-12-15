@@ -86,6 +86,23 @@ manual-reset:
       provider: 'money'
       amount: 100.0
 
+# Sistema de limite de resets da mina
+# Quando a mina atingir o limite de resets ela será deletada automaticamente
+# NOTA: O reset do load do servidor NÃO é contabilizado
+reset-limit:
+  enabled: true
+  # Máximo de resets antes da mina ser deletada (-1 = ilimitado)
+  max-resets: 100
+  # Sistema de recarga de resets (comprar mais resets)
+  refill:
+    # Quantidade de resets que serão adicionados ao comprar
+    amount: 10
+    # Preços para recarregar
+    prices:
+      price1:
+        provider: 'money'
+        amount: 5000.0
+
 # Mensagens
 messages:
   # Mensagens ao quebrar um bloco

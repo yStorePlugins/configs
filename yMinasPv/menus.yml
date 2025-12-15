@@ -31,6 +31,7 @@ main:
     pickaxe-slot: 13
     friends-slot: 15
     remove-slot: 16
+    refill-slot: 12
     info:
       material: 'PAPER'
       name: '&aInformações'
@@ -41,6 +42,7 @@ main:
         - ' &8> &fBlocos: &c{blocks_mined}&7/&a{blocks_total}'
         - ' &8> &fAmigos: &a{friends}'
         - ' &8> &fTempo para resetar: &a{time}'
+        - ' &8> &fResets restantes: &a{resets_remaining}'
         - ''
     pickaxe:
       material: 'DIAMOND_PICKAXE'
@@ -87,6 +89,35 @@ main:
         - '&fPreço: &a{money}'
         - ''
         - '&aClique para resetar.'
+    # item para recarregar resets
+    refill:
+      material: 'EXPERIENCE_BOTTLE'
+      name: '&aRecarregar Resets'
+      lore:
+        - '&7Recarregue os resets da sua mina'
+        - '&7para evitar que ela seja deletada.'
+        - ''
+        - '&fResets restantes: &a{resets_remaining}'
+        - '&fResets máximos: &a{resets_max}'
+        - ''
+        - '&fPreço: &a{money}'
+        - '&fQuantia: &a+{refill_amount} resets'
+        - ''
+        - '&aClique para recarregar.'
+    refill-disabled:
+      material: 'GLASS_BOTTLE'
+      name: '&cRecarregar Resets'
+      lore:
+        - '&7Esta mina não possui limite de resets.'
+    refill-max:
+      material: 'GLASS_BOTTLE'
+      name: '&cRecarregar Resets'
+      lore:
+        - '&7Sua mina já possui o máximo'
+        - '&7de resets disponíveis.'
+        - ''
+        - '&fResets restantes: &a{resets_remaining}'
+        - '&fResets máximos: &a{resets_max}'
 
 # Menu de evolução
 evolution:
