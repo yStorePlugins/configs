@@ -149,3 +149,7 @@ chat:
     &7&l| &fQuantia: &7{quantia}&f.
     &r
   machine-fuel-only-owner: '&cApenas o dono do combustível pode usá-lo.'
+  booster-drop-received: '&aVocê recebeu &7{quantia} &a booster(s) de drops.'
+  booster-drop-give: '&aVocê deu &7{quantia} &a booster(s) de drops para o jogador &7{player}&a.'
+  booster-drop-already: '&cEssa máquina já está usando um booster.'
+  booster-drop-activated: '&aVocê ativou um booster de drops na máquina. Multiplicador: &e{bonus}&a. Tempo: &e{tempo}&a.'

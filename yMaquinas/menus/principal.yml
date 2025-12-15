@@ -164,5 +164,26 @@ Itens:
       - ''
       - '&cEsta máquina não possui combustível infinito.'
       - ''
+  BoosterNao:
+    Slot: 25
+    material: 'GLASS_BOTTLE'
+    name: '&cBooster de Drops'
+    lore:
+      - '&7Aumente a quantidade de drops'
+      - '&7gerados por rodada nesta máquina.'
+      - ''
+      - '&cNenhum booster ativo no momento.'
+      - ''
+  BoosterSim:
+    material: 'POTION'
+    glow: true
+    name: '&aBooster de Drops'
+    lore:
+      - '&7Aumente a quantidade de drops'
+      - '&7gerados por rodada nesta máquina.'
+      - ''
+      - '&aBooster ativo! &7({tempo} restante)&f.'
+      - '&f>&e +{bonus}% drops por rodada.&f.'
+      - ''
 
 ## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Upgrades:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)
