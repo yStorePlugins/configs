@@ -399,6 +399,22 @@ custom-placeholders:
     return-empty: '%yclans_clan_tag%'
     return-has: '%yclans_own_tag%'
 
+# Sistema de auto-transferência de liderança
+# Quando o líder ficar offline por X dias, a liderança é transferida automaticamente
+auto-leadership-transfer:
+  # Ativar o sistema de auto-transferência de liderança
+  enabled: false
+  # Dias de inatividade do líder para transferir a liderança
+  inactive-days: 30
+  # Intervalo em minutos para verificar líderes inativos
+  check-interval-minutes: 60
+  # Prioridade de transferência: ROLE (cargo mais alto) ou ACTIVITY (mais ativo)
+  priority: 'ROLE'
+  # Notificar membros online quando a transferência ocorrer
+  notify-members: true
+  # Disbanda o clan se não houver nenhum membro elegível para assumir a liderança
+  disband-if-no-successor: false
+
 # Sistema de formatos de money e quantia
 format:
   type: 'LETTER' # Tipos: LETTER - NUMBER
