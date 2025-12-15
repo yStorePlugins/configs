@@ -298,3 +298,385 @@ enchants:
         - '&e*&fComo funciona?'
         - '&7Ao quebrar um bloco de minério,'
         - '&7uma área 3x3 será minerada.'
+
+  haste:
+    display-name: '&7Haste'
+    apply-whitelist: [ 'DIAMOND_PICKAXE', 'GOLD_PICKAXE', 'IRON_PICKAXE', 'STONE_PICKAXE', 'WOOD_PICKAXE', 'WOODEN_PICKAXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Ativa o efeito haste
+    give-haste: true
+    # Nível do haste (2 = Haste II)
+    haste-level: 2
+    # Duração em ticks (100 = 5 segundos)
+    haste-duration: 100
+    messages:
+      chat: ''
+      actionbar: '&eHaste ativado!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em sua'
+        - '&7picareta ou espada, você receberá'
+        - '&7haste 2 ao bater ou minerar.'
+        - ''
+        - '&7Encantamento para:&f Picaretas e Espadas'
+
+  ricochet:
+    display-name: '&7Ricochete'
+    apply-whitelist: [ 'BOW' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação (2.5%)
+    chance: 2.5
+    # Ativa o efeito ricochete
+    ricochet: true
+    # Raio para encontrar segundo alvo (configurável)
+    ricochet-radius: 5.0
+    messages:
+      chat: ''
+      actionbar: '&eRicochete ativado!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7seu arco, você terá uma chance'
+        - '&7de acertar um inimigo próximo'
+        - '&7ao acertar uma flecha.'
+        - ''
+        - '&7Encantamento para:&f Arcos'
+        - '&7Chance: &f2.5%'
+
+  spider:
+    display-name: '&7Aranha'
+    apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação (5%)
+    chance: 5.0
+    # Ativa o efeito de spawnar teia
+    spawn-web: true
+    messages:
+      chat: ''
+      actionbar: '&eTeia ativada!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7sua espada ou machado, você'
+        - '&7terá uma chance de prender'
+        - '&7seu inimigo numa teia.'
+        - ''
+        - '&7Encantamento para:&f Espadas e Machados'
+        - '&7Chance: &f5.0%'
+
+  disarm:
+    display-name: '&7Desarmar'
+    apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação (0.3%)
+    chance: 0.3
+    # Ativa o efeito de destruir armadura
+    destroy-armor: true
+    messages:
+      chat: ''
+      actionbar: '&eArmadura do inimigo destruída!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7sua espada ou machado, você'
+        - '&7terá uma chance de destruir'
+        - '&7uma parte da armadura do'
+        - '&7seu inimigo.'
+        - ''
+        - '&7Encantamento para:&f Espadas e Machados'
+        - '&7Chance: &f0.3%'
+
+  teleporter:
+    display-name: '&7Teletransportador'
+    apply-whitelist: [ 'BOW' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Ativa o efeito de teleporte
+    teleport-to-arrow: true
+    # Delay em segundos entre usos
+    teleport-delay: 8
+    messages:
+      chat: ''
+      actionbar: '&eTeleportado para a flecha!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7seu arco, irá se teleportar para'
+        - '&7o local que usa flecha atingir.'
+        - ''
+        - '&7Encantamento para:&f Arcos'
+        - '&7Delay: &f8 segundos'
+
+  forcefield:
+    display-name: '&7Forcefield'
+    apply-whitelist: [ 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação (6.5%)
+    chance: 6.5
+    # Ativa o efeito forcefield
+    forcefield: true
+    # Força do knockback (8 blocos)
+    forcefield-knockback: 8.0
+    messages:
+      chat: ''
+      actionbar: '&eForcefield ativado!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7seu peitoral, você terá uma'
+        - '&7chance de jogar todos os seus'
+        - '&7inimigos próximos, 8 blocos para tras.'
+        - ''
+        - '&7Encantamento para:&f Peitorais e Calças'
+        - '&7Chance: &f6.5%'
+
+  ninja:
+    display-name: '&7Ninja'
+    apply-whitelist: [ 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Ativa o efeito ninja
+    ninja: true
+    # Delay em segundos entre usos
+    ninja-delay: 10
+    # Raio para detectar inimigo próximo
+    ninja-radius: 5.0
+    messages:
+      chat: ''
+      actionbar: '&eTeleportado para as costas do inimigo!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7seu peitoral, você poderá se'
+        - '&7teleportar para as costas de'
+        - '&7seus inimigos utilizando shift!'
+        - ''
+        - '&7Encantamento para:&f Peitorais e Calças'
+        - '&7Delay: &f10 segundos'
+
+  healer:
+    display-name: '&7Curador'
+    apply-whitelist: [ 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Ativa o efeito curador
+    healer: true
+    # Delay em segundos entre usos
+    healer-delay: 10
+    # Quantidade de vida curada (4 = 2 corações)
+    healer-amount: 4.0
+    messages:
+      chat: ''
+      actionbar: '&eVocê foi curado!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7seu peitoral, você poderá se'
+        - '&7curar no meio de uma batalha'
+        - '&7apenas utilizando shift!'
+        - ''
+        - '&7Encantamento para:&f Peitorais e Calças'
+        - '&7Delay: &f10 segundos'
+
+  arrow-deflect:
+    display-name: '&7Desvio de Flecha'
+    apply-whitelist: [ 'DIAMOND_HELMET', 'GOLD_HELMET', 'IRON_HELMET', 'CHAINMAIL_HELMET', 'LEATHER_HELMET', 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS', 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação (5%)
+    chance: 5.0
+    # Ativa o efeito de desviar flecha
+    deflect-arrow: true
+    messages:
+      chat: ''
+      actionbar: '&eDano de flecha anulado!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7sua armadura, você terá chance'
+        - '&7de anular o dano causado por'
+        - '&7uma flecha de seu inimigo'
+        - ''
+        - '&7Encantamento para:&f Armaduras'
+        - '&7Chance: &f5%'
+
+  scare:
+    display-name: '&7Susto'
+    apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação (2.5%)
+    chance: 2.5
+    # Ativa o efeito susto
+    scare: true
+    # Duração em ticks (100 = 5 segundos)
+    scare-duration: 100
+    messages:
+      chat: ''
+      actionbar: '&eSusto ativado!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7sua espada, você terá a chance'
+        - '&7de trocar o capacete do seu'
+        - '&7inimigo para uma abóbora em'
+        - '&75 segundos de duração!'
+        - ''
+        - '&7Encantamento para:&f Espadas e Machados'
+        - '&7Chance: &f2.5%'
+
+  soulbound:
+    display-name: '&7Vínculo da Morte'
+    # Aplicável em qualquer item
+    apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_PICKAXE', 'GOLD_PICKAXE', 'IRON_PICKAXE', 'STONE_PICKAXE', 'WOOD_PICKAXE', 'WOODEN_PICKAXE', 'DIAMOND_SHOVEL', 'GOLD_SHOVEL', 'IRON_SHOVEL', 'STONE_SHOVEL', 'WOOD_SHOVEL', 'WOODEN_SHOVEL', 'DIAMOND_HOE', 'GOLD_HOE', 'IRON_HOE', 'STONE_HOE', 'WOOD_HOE', 'WOODEN_HOE', 'BOW', 'FISHING_ROD', 'DIAMOND_HELMET', 'GOLD_HELMET', 'IRON_HELMET', 'CHAINMAIL_HELMET', 'LEATHER_HELMET', 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS', 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Ativa o efeito soul-bound
+    soul-bound: true
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7algum item, você não irá perder'
+        - '&7este item ao morrer!'
+        - ''
+        - '&7Encantamento para:&f Qualquer item'
+
+  unbreakable:
+    display-name: '&7Indestrutível'
+    # Aplicável em qualquer item com durabilidade
+    apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_PICKAXE', 'GOLD_PICKAXE', 'IRON_PICKAXE', 'STONE_PICKAXE', 'WOOD_PICKAXE', 'WOODEN_PICKAXE', 'DIAMOND_SHOVEL', 'GOLD_SHOVEL', 'IRON_SHOVEL', 'STONE_SHOVEL', 'WOOD_SHOVEL', 'WOODEN_SHOVEL', 'DIAMOND_HOE', 'GOLD_HOE', 'IRON_HOE', 'STONE_HOE', 'WOOD_HOE', 'WOODEN_HOE', 'BOW', 'FISHING_ROD', 'DIAMOND_HELMET', 'GOLD_HELMET', 'IRON_HELMET', 'CHAINMAIL_HELMET', 'LEATHER_HELMET', 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS', 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Ativa o efeito indestrutível
+    unbreakable: true
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7algum item, o mesmo não irá'
+        - '&7perder a sua durabilidade'
+        - ''
+        - '&7Encantamento para:&f Qualquer item'
+
+  arrow-rain:
+    display-name: '&7Chuva Mortal'
+    apply-whitelist: [ 'BOW' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação (7.5%)
+    chance: 7.5
+    # Ativa o efeito de múltiplas flechas
+    multi-arrow: true
+    # Quantidade total de flechas
+    multi-arrow-count: 5
+    messages:
+      chat: ''
+      actionbar: '&eChuva Mortal ativada!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7seu arco, você terá uma chance'
+        - '&7de atingir 5 flechas de uma vez'
+        - '&7em seu inimigo.'
+        - ''
+        - '&7Encantamento para:&f Arcos'
+        - '&7Chance: &f7.5%'
