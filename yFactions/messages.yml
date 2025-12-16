@@ -639,3 +639,15 @@ chat:
   fly-disabled: '&cVocê desativou o modo de voo.'
   silk-touch-null: '&cVocê precisa segurar um item na mão para encantar.'
   silk-touch-success: '&aItem encantando com sucesso.'
+  # Olho de Deus
+  god-eye-activated: '&5✦ &dOlho de Deus ativado! &7Você pode atravessar paredes por &f{duration}s&7.'
+  god-eye-deactivated: '&5✦ &cOlho de Deus desativado! &7Você voltou ao normal.'
+  god-eye-already-active: '&cVocê já está usando o Olho de Deus!'
+  god-eye-cooldown: '&cVocê precisa aguardar &f{time}s &cpara usar o Olho de Deus novamente.'
+  # Super Creeper
+  super-creeper-spawned: '&a✦ &2Super Creeper spawnado! &7Cuidado com a explosão!'
+  super-creeper-cannot-place: '&cVocê não pode colocar o Super Creeper aqui!'
+  # Raio/Lightning
+  lightning-struck: '&e⚡ &6Raio invocado! &7Devastação total!'
+  lightning-no-target: '&cVocê precisa mirar em um local válido! &7(Máximo: {range} blocos)'
+  lightning-cooldown: '&cVocê precisa aguardar &f{time}s &cpara invocar outro raio.'

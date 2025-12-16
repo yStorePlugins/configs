@@ -538,6 +538,82 @@ special-items:
     glow: true
     name: '&cTNT de Impulsão'
     lore: ['&7Uma TNT especial que ao explodir', '&7não danifica blocos, apenas', '&7impulsiona jogadores próximos!']
+  # Olho de Deus - Permite atravessar paredes e espiar (modo spectator temporário)
+  god-eye:
+    material: 'ENDER_EYE'
+    glow: true
+    name: '&5Olho de Deus'
+    lore: 
+      - '&7Um item místico que permite'
+      - '&7atravessar paredes e espiar'
+      - '&7por um tempo limitado!'
+      - ''
+      - '&eDuração: &f{duration}s'
+  # Super Creeper - Spawna um creeper turbinado
+  super-creeper:
+    material: 'MONSTER_EGG:50'
+    glow: true
+    name: '&aSuper Creeper'
+    lore:
+      - '&7Um ovo especial que spawna'
+      - '&7um Creeper turbinado!'
+      - ''
+      - '&eExplosão: &c{multiplier}x &7mais forte'
+  # Raio - Invoca um raio no local mirado
+  lightning:
+    material: 'BLAZE_ROD'
+    glow: true
+    name: '&eBastão do Trovão'
+    lore:
+      - '&7Invoca um raio devastador'
+      - '&7no local em que você está mirando!'
+      - ''
+      - '&eRaio de dano: &f{radius} blocos'
+
+# Sistema do Olho de Deus
+god-eye:
+  # Duração do modo spectator em segundos
+  duration: 30
+  # Cooldown em segundos para usar novamente
+  cooldown: 300
+  # Mensagem de título ao ativar
+  title: '&5OLHO DE DEUS'
+  # Mensagem de subtítulo ao ativar
+  subtitle: '&7Você pode atravessar paredes por &f{duration}s'
+
+# Sistema do Super Creeper
+super-creeper:
+  # Multiplicador do poder de explosão (1.0 = normal, 2.0 = 2x mais forte)
+  explosion-multiplier: 3.0
+  # Tempo em ticks antes do creeper explodir após spawnar (20 = 1 segundo)
+  fuse-ticks: 30
+  # Se a explosão deve causar fogo
+  create-fire: false
+  # Se a explosão deve quebrar blocos
+  break-blocks: true
+
+# Sistema do Raio
+lightning:
+  # Alcance máximo em blocos para invocar o raio
+  max-range: 100
+  # Raio de dano ao redor do raio em blocos
+  damage-radius: 3.0
+  # Dano causado aos jogadores no raio
+  damage-amount: 8.0
+  # Se deve iniciar fogo no local
+  create-fire: false
+  # Se deve afetar blocos (criar fogo)
+  affect-blocks: false
+  # Cooldown em segundos
+  cooldown: 60
+  # Configurações de dano nos blocos de proteção do plugin
+  protection-block:
+    # Se o raio deve causar dano nos blocos de proteção
+    enabled: true
+    # Raio de busca por blocos de proteção (em blocos)
+    radius: 5
+    # Multiplicador de dano nos blocos de proteção (1 = 1 dano, 2 = 2 dano, etc)
+    damage-multiplier: 2.0
 
 # Sistema de mapa interativo
 map:
