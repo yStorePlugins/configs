@@ -106,6 +106,8 @@ Itens:
         - ''
         - '&fEstoque atual: &b{estoque}&f.'
     Comprar:
+      # Permissão para comprar esse item
+      Permissao: ''
       # Deixe Comandos: [] para não usar
       Comandos: []
       # Ao ativar, cada comando será 1 slot
