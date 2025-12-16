@@ -1,34 +1,27 @@
-# Item dos boosters
-Booster:
-   CustomSkull: false
-   URL: ''
-   ID: 384
-   Data: 0
-   Glow: true
-   Name: '&aBônus de venda'
-   Lore:
-      - ''
-      - '&aTempo: &e{tempo}'
-      - '&aPorcentagem: &e{bonus}%'
-      - ''
-
-# Item dos boosters
-Booster-drop:
-   ID: 384
-   Glow: true
-   Name: '&aBônus de DROP (&7clique na máquina)'
-   Lore:
-      - ''
-      - '&aTempo: &e{tempo}'
-      - '&aPorcentagem: &e{bonus}%'
-      - ''
-
 Boosters:
    Booster1:
+      Item:
+         material: EXP_BOTTLE
+         glow: true
+         name: '&aBônus de venda'
+         lore:
+            - ''
+            - '&aTempo: &e{tempo}'
+            - '&aPorcentagem: &e{bonus}%'
+            - ''
       Tempo: 60 #em segundos
       Bonus: 10.0 #porcentagem a mais
 
 Boosters-drop:
    Booster1:
+      Item:
+         material: EXP_BOTTLE
+         glow: true
+         name: '&aBônus de DROP (&7clique na máquina)'
+         lore:
+            - ''
+            - '&aTempo: &e{tempo}'
+            - '&aPorcentagem: &e{bonus}%'
+            - ''
       Tempo: 60 #em segundos
       Bonus: 10.0 #porcentagem a mais
