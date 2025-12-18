@@ -500,3 +500,6 @@ Outros:
   Cartography: '&aAbrindo cartografo...'
   Grindstone: '&aAbrindo amolador...'
   Loom: '&aAbrindo loom...'
+  Stack: '&aVocê stackou &f{quantia}&a poções com sucesso.'
+  Stack nenhum: '&cVocê não tem poções para stackar.'
+  Stack player: '&aVocê stackou &f{quantia}&a poções no inventário de &f{player}&a.'

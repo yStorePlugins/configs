@@ -37,6 +37,8 @@ Opcoes:
   # Nível máximo permitido para encantar
   # Deixe 0 para não ter máximo
   Max enchant: 0
+  # Limite máximo de stack para o comando /stack (poções)
+  Stack limite: 64
   # Invulnerabilidade ao logar
   # em segundos
   Login-Invulnerabilidade: 0
