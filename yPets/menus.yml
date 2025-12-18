@@ -30,8 +30,26 @@ main:
   next-slot: 17
   items:
     jar-slot: 30
+    slots-info-slot: 31
     unequip-slot: 32
     hidden-slot: 33
+    slots-info:
+      material: 'BOOK'
+      name: '&eInformações de Slots'
+      lore:
+        - ''
+        - '&7Seus slots determinam quantos'
+        - '&7pets você pode ter e equipar.'
+        - ''
+        - '&6Slots de Armazenamento:'
+        - '  &fVocê possui: &a{slots}&f/&a{slots_max}'
+        - '  &8Quantos pets você pode ter.'
+        - ''
+        - '&6Slots de Equipar:'
+        - '  &fVocê possui: &a{equip_slots}&f/&a{equip_slots_max}'
+        - '  &8Quantos pets podem ficar ativos ao mesmo tempo.'
+        - ''
+        - '&7Pets equipados: &e{pets_equipped}'
     hidden:
       material: 'ENDER_PEARL'
       name: '&cOcultar'

@@ -23,6 +23,7 @@ chat:
     &a> /pet givepet <player> <pet> <tier> <quantia>
     &a> /pet givefood <player> <quantia>
     &a> /pet giveslot <player> <quantia>
+    &a> /pet giveequipslot <player> <quantia>
     &a> /pet givebowl <player> <quantia>
     &a> /pet reload
 
@@ -64,3 +65,7 @@ chat:
   bowl-already: '&cVocê já possui o pote de ração para PET.'
   bowl-activated: '&aVocê ativou o pote de ração para PET.'
   not-main-server: '&cNão é possível abrir o menu de pets, mas o seu bonus continua ativo.'
+  equip-slot-full: '&cVocê não tem slots de equip disponíveis! Use /pet para desequipar um pet ou adquira mais slots de equip.'
+  equip-slot-activated: '&aVocê ativou &e{amount} &aslot(s) de equip.'
+  equip-slot-max: '&cVocê já atingiu o máximo de slots de equip.'
+  equip-slot-give: '&aVocê deu &e{amount} &aslot(s) de equip para o jogador &e{player}&a.'

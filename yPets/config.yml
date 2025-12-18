@@ -61,7 +61,7 @@ general:
   # Mundos em que não irá mostrar o PET para outros jogadores
   target-world-blacklist: []
 
-# Slots de pet
+# Slots de pet (quantidade de pets que o jogador pode POSSUIR)
 slots:
   # Quantia padrão de slots que o jogador irá ter
   default: 1
@@ -74,6 +74,27 @@ slots:
     lore:
       - ''
       - '&fQuantia: &a{amount}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+
+# Slots de equip (quantidade de pets que o jogador pode EQUIPAR SIMULTANEAMENTE)
+equip-slots:
+  # Quantia padrão de slots de equip que o jogador irá ter
+  default: 1
+  # Quantia máxima de slots de equip que o jogador poderá ter
+  max: 4
+  # Distância entre cada pet no formato U (atrás do jogador)
+  distance-between: 1.5
+  # Item do slot de equip que será ativável
+  item:
+    material: 'GOLD_INGOT'
+    name: '&6Slot de Equip'
+    lore:
+      - ''
+      - '&fQuantia: &a{amount}'
+      - ''
+      - '&7Permite equipar mais pets'
+      - '&7simultaneamente.'
       - ''
       - '&7Clique com botão direito para ativar.'
 
