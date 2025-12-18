@@ -64,9 +64,10 @@ mining-skill-identify: 'MINING'
 auto-sell-perm: ''
 
 # Tipo de reset da mina
-# NOVO: PROTOCOL-LIB = recomendado
-# ANTIGO: PACKET-EVENTS = mais rápido
-reset-type: 'PACKET-EVENTS'
+# PROTOCOL-LIB = Método mais compatível, porém mais lento
+# PACKET-EVENTS = Utiliza a LIB do Packet-Events, mais rápido em alguns casos
+# YPLUGINS = recomendado. Suporta maiores estruturas, rápido e eficiente (utiliza reatividade, batch-system e multi-threads)
+reset-type: 'YPLUGINS'
 
 general:
   # Abrir o menu ao digitar /mina
@@ -392,3 +393,21 @@ specific-level:
       &r
       &c&lNÍVEL! &cO jogador &f{player} &cevoluiu para o nível &f&l{level}&c.
       &r
+
+# Configurações de performance do plugin.
+# Ajuste conforme a capacidade do seu servidor.
+performance:
+  # Tamanho do lote de blocos processados por vez no reset da mina
+  # Valores maiores = reset mais rápido, porém mais uso de CPU
+  # Recomendado: 50000 para servidores médios, 100000 para servidores potentes
+  batch-size: 50000
+  # Quantidade de blocos processados por jogador no sistema de workload
+  # Valores maiores = mais blocos por tick, porém pode causar lag
+  workload-batch: 100
+  # Quantidade de threads no pool assíncrono
+  # Recomendado: 2-4 para servidores pequenos, 4-8 para servidores grandes
+  async-pool-size: 4
+  # Orçamento de tempo em milissegundos por tick para o sistema de workload
+  # Valores menores = menos lag, porém processamento mais lento
+  # Recomendado: 10-15ms (1 tick = ~50ms)
+  workload-budget-ms: 12
