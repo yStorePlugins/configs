@@ -87,12 +87,14 @@ Itens:
     Name: '&aLucky Block'
     Lore:
       - '&fChance atual: &7{chance}%'
+      - '&fQuantidade de recompensas: &7{quantidade}'
       - ''
       - '&7Esta LuckyBlock irá funcionar apenas'
       - '&7nos blocos que não forem luckyblocks vísiveis.'
       - ''
       - '&aClique com esquerdo para alterar a chance.'
       - '&aClique com direito para alterar as recompensas.'
+      - '&aShift + Clique para alterar a quantidade.'
   Bungee:
     Slot: 23
     CustomSkull: true
