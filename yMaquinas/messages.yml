@@ -73,6 +73,7 @@ chat:
   machine-bought-capacity: '&aVocê adquiriu &f+1 nível&a do upgrade &fcapacidade &apor &f{money} coins&a.'
   machine-bought-drops: '&aVocê adquiriu &f+1 nível&a do upgrade &fdrops &apor &f{money} coins&a.'
   machine-bought-velocity: '&aVocê adquiriu &f+1 nível&a do upgrade &fvelocidade &apor &f{money} coins&a.'
+  machine-bought-durability: '&aVocê adquiriu &f+1 nível&a do upgrade &fdurabilidade &apor &f{money} coins&a.'
   machine-collect-available: '&cEste stack possui apenas {stack} máquinas.'
   machine-block-below: '&cVocê não pode colocar máquinas em cima deste bloco.'
   machine-placed-already: '&cVocê já colocou uma máquina deste tipo.'

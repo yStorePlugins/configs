@@ -103,6 +103,17 @@ Maquinas:
           price1:
             provider: 'yeconomias-token'
             price: 10000.0
+      # Durabilidade da máquina (reduz a chance de quebrar)
+      Durabilidade:
+        PrecoPorLevel: 25.0
+        Maximo: 5
+        Padrao: 0
+        # Quanto de % de chance de quebra é removido por level
+        RemoverPorLevel: 2.0
+        Prices-PerLevel:
+          price1:
+            provider: 'yeconomias-token'
+            price: 15000.0
     # Drop da máquina
     Drop:
       Nome: '&fFerro'
