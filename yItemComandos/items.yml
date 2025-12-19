@@ -68,8 +68,16 @@ Items:
     # Quantia mínima de comandos que o item pode dar
     # Deixe 0 para não ter mínimo
     min-commands: 0
+    # Blocos de comandos para colocar na lista de comandos
+    # Coloque na lista de comandos com [command-block]nome-do-bloco
+    command-blocks:
+      block1:
+        list:
+          - 'give {player} diamond 1'
+          - 'give {player} gold_ingot 5'
     # Comandos a serem executados ao ativar o item
     # Chance, comando
     Comandos:
       - '10,alerta O jogador {player} ganhou uma pedra'
       - '100,give {player} stone 64'
+      - '50,[command-block]block1'

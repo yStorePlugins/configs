@@ -36,3 +36,8 @@ database:
     username: ''
     # Senha do usuário de conexão: [EX: 123]
     password: ''
+
+# Registro ao ativar o item
+log:
+  enabled: true
+  format: '[{date}:{hour}] {player} ativou o item {item} no mundo [{world}] nas coordenadas ({coords})'
