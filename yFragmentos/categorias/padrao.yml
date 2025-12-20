@@ -18,6 +18,8 @@ Icone:
 Items:
    Item1:
        Slot: 10
+       # Permissão para comprar
+       Permissao: ''
        Preco:
         - 'Fragmento1:32'
         - 'Fragmento2:10'
