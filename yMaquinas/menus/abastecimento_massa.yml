@@ -1,0 +1,81 @@
+# Menu de Abastecimento em Massa
+# Configurável: Nome, Tamanho, Itens (Nome, Lore, Slot, Material, etc)
+
+Nome: '&6Abastecimento em Massa - &f{combustivel}'
+Tamanho: 54
+
+Itens:
+  Maquina:
+    Name: '&6{maquina} &7[{stack}]'
+    Lore:
+      - ''
+      - '§fCombustível: §e{combustivel_tem}'
+      - '§fCapacidade: §e{capacidade}'
+      - '§fPrecisa: §e{precisa}'
+      - '§f{progressbar}'
+      - ''
+    # Variáveis disponíveis:
+    # {maquina} = Nome da máquina
+    # {stack} = Quantidade de stack
+    # {combustivel_tem} = Combustível atual
+    # {capacidade} = Capacidade máxima
+    # {precisa} = Quanto precisa para ficar cheio
+    # {progressbar} = Barra de progresso
+    # {porcentagem} = Porcentagem (0-100)
+
+  Combustivel:
+    Slot: 4
+    CustomSkull: false
+    URL: ''
+    ID: COAL
+    Data: 0
+    Glow: false
+    Name: '&aCombustível Disponível'
+    Lore:
+      - ''
+      - ' &fTipo: &e{combustivel}'
+      - ' &fQuantidade: &a{quantidade}L'
+      - ''
+
+  Confirmar:
+    Slot: 49
+    CustomSkull: false
+    URL: ''
+    ID: EMERALD_BLOCK
+    Data: 0
+    Glow: true
+    Name: '&a✓ Confirmar Abastecimento'
+    Lore:
+      - ''
+      - '&7Clique para confirmar e abastecer'
+      - '&7todas as suas máquinas em ordem.'
+      - ''
+      - '&8• Máquinas cheias serão puladas'
+      - '&8• Se faltar combustível, abastece parcialmente'
+      - ''
+
+  Cancelar:
+    Slot: 45
+    CustomSkull: false
+    URL: ''
+    ID: REDSTONE_BLOCK
+    Data: 0
+    Glow: true
+    Name: '&c✗ Cancelar'
+    Lore:
+      - ''
+      - '&7Clique para cancelar esta operação'
+      - '&7sem fazer nada.'
+      - ''
+
+# Você pode adicionar mais itens de decoração abaixo
+# Exemplo:
+#  Decoracao:
+#    Slot: 0
+#    CustomSkull: false
+#    URL: ''
+#    ID: GLASS
+#    Data: 0
+#    Glow: false
+#    Name: ''
+#    Lore: []
