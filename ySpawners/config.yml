@@ -61,6 +61,9 @@ limit:
 general:
   # Permitir colocar spawners apenas nos plots
   plot: false
+  # Limitar a 1 tipo de spawner por plot (evita abuso de amigos com trust)
+  # Isso impede que dois spawners do mesmo tipo sejam colocados no mesmo plot
+  plot-spawner-limit: false
   # Verifica se há mobs (ou outros spawners) por perto antes de colocar o spawner
   # Raio em blocos.
   radius: 5

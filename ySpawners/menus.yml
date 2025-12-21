@@ -39,6 +39,7 @@ main:
     remove-limit-mobs-slot: -1
     stack-spawners-limit-slot: 16
     stack-mobs-limit-slot: 25
+    autosell-slot: 31
     info:
       material: '{spawner}'
       name: '&aInformações Gerais'
@@ -179,6 +180,16 @@ main:
         - ' &fAtual: &7{actual}/{maximum}&f.'
         - ''
         - '&cEste armazém já está no máximo.'
+    autosell:
+      material: GOLD_INGOT
+      name: '&aAutoSell'
+      lore:
+        - '&7Ative ou desative a venda'
+        - '&7automática dos drops deste spawner.'
+        - ''
+        - ' &fStatus: &r{status}&f.'
+        - ''
+        - '&aClique para alternar.'
 
 # Menu de amigos
 friends:

@@ -118,6 +118,8 @@ chat:
     &f-> &b/limitedrop help
     &f-> &b/limitedrop [player]
   spawner-already-placed: '&cVocê já colocou um spawner deste tipo.'
+  plot-spawner-limit: '&cJá existe um spawner do tipo {spawner} neste terreno.'
+  total-limit: '&cVocê atingiu o limite máximo de spawners ({limit}). Você possui {current} spawners.'
   booster-give: '&aVocê deu &7{amount}x Booster(s)&a para o jogador &7{player}&a.'
   booster-received: '&aVocê recebeu &7{amount}x Booster(s)&a.'
   booster-list: |
@@ -140,3 +142,5 @@ chat:
   limit-mobs-fill: '&aVocê aumentou o limite de mobs do spawner para {amount}.'
   upgraded-mobs: '&aVocê adquiriu uma expansão da capacidade de stack mobs do spawner.'
   upgraded-spawners: '&aVocê adquiriu uma expansão da capacidade de stack do spawner.'
+  autosell-toggle: '&aVocê {status} &ao autosell do spawner.'
+  autosell-no-perm: '&cVocê não tem permissão para usar o autosell.'
