@@ -51,6 +51,13 @@ Itens:
       - ' &fDrops armazenados: &a{drops_armazenados}&f.'
       - ''
       - '&aClique para gerenciar.'
+      - ''
+  Drops-Nao:
+    material: '12ef39437d7d43a034c5a40b974e8d2c6734a218c76485d04910f507bdc2e809'
+    name: '&cDrops'
+    lore:
+      - '&cEsta máquina não possui drops'
+      - '&carmazenados.'
   Upgrades:
     Slot: 15
     CustomSkull: true
