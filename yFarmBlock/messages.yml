@@ -1,0 +1,31 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &a/farmblock give &8- &7Dar um bloco de farm.
+    &a/farmblock giveremover &8- &7Dar uma Removedora de Sementes.
+    &a/farmblock reload &8- &7Recarrega as configurações
+    &r
+  block-found: |
+    &cBloco não encontrado.
+    &cDisponíveis: &7{list}
+  block-give: '&aVocê deu &f{amount}x {block}&a para &f{player}&a!'
+  seed-remover-give-give: '&aVocê deu &f{amount}x Removedora de Sementes&a para &f{player}&a!'
+  block-cant-place: '&cVocê não pode colocar este bloco.'
+  block-cant-stack-vertical: '&cVocê não pode empilhar blocos customizados verticais.'
+  block-seed-remover: '&cVocê só pode remover este bloco com a Removedora de Sementes.'

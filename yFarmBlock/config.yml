@@ -1,0 +1,133 @@
+#        _____                    ____  _            _
+#  _   _|  ___|_ _ _ __ _ __ ___ | __ )| | ___   ___| | __
+# | | | | |_ / _` | '__| '_ ` _ \|  _ \| |/ _ \ / __| |/ /
+# | |_| |  _| (_| | |  | | | | | | |_) | | (_) | (__|   <
+#  \__, |_|  \__,_|_|  |_| |_| |_|____/|_|\___/ \___|_|\_\
+#  |___/
+#
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Sistemas gerais
+general:
+  # Permitir quebrar blocos customizados somente com a "Removedora de Sementes"
+  remove-only-with-seed-remover: true
+  # Item da removedora de sementes
+  seed-remover:
+    material: 'IRON_HOE'
+    name: '&cRemovedora de Sementes'
+    lore:
+      - '&7Use esta ferramenta para'
+      - '&7remover blocos plantados'
+  # Lista de blocos que não poderá colocar no chão
+  blocked-place-blocks:
+    - 'CACTUS'
+  # Lista de plantações que crescem verticalmente
+  vertical-crops:
+    - 'CACTUS'
+    - 'SUGAR_CANE'
+    - 'CANES'
+    - 'BAMBOO'
+
+# Mapeamento de materiais para blocos customizados (usado pela API)'
+# Formato: MATERIAL: 'block-key'
+material-mapping:
+  CACTUS: 'cactus'
+  SUGAR_CANE: 'cane'
+  CANES: 'cane'
+  MELON_STEM: 'melon_seeds'
+  PUMPKIN_STEM: 'pumpkin_seeds'
+  POTATO: 'potato'
+  CARROT: 'carrot'
+  CROPS: 'wheat_seeds'
+
+# Blocos customizados
+blocks:
+  cactus:
+    # Nome nas mensagens
+    display-name: '&aCacto Customizado'
+    # Item customizado
+    item:
+      material: 'CACTUS'
+      name: '&aCacto Customizado'
+      lore:
+        - '&7Um cacto especial que'
+        - '&7pode ser plantado no chão.'
+  melon_seeds:
+    display-name: '&aSemente de Melancia Customizada'
+    item:
+      material: 'MELON_SEEDS'
+      name: '&aSemente de Melancia Customizada'
+      lore:
+        - '&7Uma semente de MELANCIA especial que'
+        - '&7pode ser plantada no chão.'
+  pumpkin_seeds:
+    display-name: '&aSemente de Melancia Customizada'
+    item:
+      material: 'PUMPKIN_SEEDS'
+      name: '&aSemente de Abóbora Customizada'
+      lore:
+        - '&7Uma semente de ABÓBORA especial que'
+        - '&7pode ser plantada no chão.'
+  potato:
+    display-name: '&aBatata Customizada'
+    item:
+      material: 'POTATO_ITEM'
+      name: '&aBatata Customizada'
+      lore:
+        - '&7Uma BATATA especial que'
+        - '&7pode ser plantada no chão.'
+  carrot:
+    display-name: '&aCenoura Customizada'
+    item:
+      material: 'CARROT_ITEM'
+      name: '&aCenoura Customizada'
+      lore:
+        - '&7Uma CENOURA especial que'
+        - '&7pode ser plantada no chão.'
+  wheat_seeds:
+    display-name: '&aSemente de Trigo Customizada'
+    item:
+      material: 'SEEDS'
+      name: '&aSemente de Trigo Customizada'
+      lore:
+        - '&7Uma semente de TRIGO especial que'
+        - '&7pode ser plantada no chão.'
