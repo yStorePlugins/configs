@@ -225,3 +225,4 @@ chat:
   enchantment-permission: '&cVocê não tem permissão para evoluir este encantamento.'
   skin-best: '&aEssa já é a melhor skin possível.'
   skin-upgraded: '&aSkin melhorada com sucesso.'
+  balanced-mine: '&aVocê foi enviado para a mina &f{mina}&a (menos lotada).'

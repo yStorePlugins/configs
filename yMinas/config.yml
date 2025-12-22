@@ -104,6 +104,11 @@ Opcoes:
   Numkeys: false
   # Para evoluir as classes ele deverá seguir a ordem delas?
   Classe ordem: true
+  # Sistema de balanceamento automático de jogadores entre minas
+  # Quando ativado, ao usar /mina ir (sem especificar) ou o botão "Ir" do menu,
+  # o sistema distribuirá os jogadores automaticamente entre as minas de mesma prioridade
+  # enviando para a mina com menos jogadores, evitando aglomeração
+  Balanceamento minas: false
   # Checar outras minas ao quebrar o bloco
   # Ideal para fazer 2 minas no mesmo warp
   Checar outras: false
