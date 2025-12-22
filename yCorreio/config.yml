@@ -142,6 +142,17 @@ Lores:
       - '&aBotão Q para deletar'
       - '&aBotão SHIFT+ESQUERDO para coletar todos'
 
+# Tipos de logs
+logs:
+  # Registro ao recolher uma recompensa do correio
+  reward:
+    enabled: true
+    format: '[{date}:{hour}] {player} recolheu a recompensa {reward} no mundo [{world}] nas coordenadas ({coords})'
+  # Registro ao falar no chat
+  package:
+    enabled: true
+    format: '[{date}:{hour}] {player} recolheu a encomenda {item} no mundo [{world}] nas coordenadas ({coords})'
+
 # Setas dos menus
 Setas:
   Voltar:
