@@ -86,6 +86,13 @@ general:
   # Blacklist de metadata que não serão verificadas no raio de "Mobs por perto"
   nearby-metadata-blacklist: [ 'mascote' ]
 
+# Limite de boss por terreno/plot
+# Quando ativado, apenas um tipo de boss pode ser colocado por terreno
+# Isso evita que jogadores ou amigos com trust coloquem múltiplos stacks do mesmo boss
+plot-boss-limit:
+  # Habilitar o limite de boss por terreno
+  enabled: false
+
 effects:
   explosion:
     # Lista da 1.8: https://helpch.at/docs/1.8/org/bukkit/Sound.html

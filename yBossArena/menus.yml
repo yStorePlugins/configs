@@ -175,7 +175,7 @@ rewards-preview:
 # Settings menu
 settings:
   name: '&8Boss configuração'
-  size: 45
+  size: 54
   items:
     name-slot: 10
     icon-slot: 11
@@ -184,9 +184,10 @@ settings:
     health-slot: 16
     rewards-slot: 21
     locations-slot: 23
-    damage-slot: 28
+    damage-slot: 29
     knockback-slot: 31
-    fire-slot: 34
+    fire-slot: 33
+    minions-slot: 40
     name:
       material: 'LEGACY_NAME_TAG'
       name: '&aNome do Boss'
@@ -250,6 +251,15 @@ settings:
         - ''
         - '&7ESQUERDO para alternar o estado'
         - '&7DIREITO para alterar a chance'
+    minions:
+      material: 'MONSTER_EGG:54'
+      name: '&aMinions &7(Mobs Ajudantes)'
+      lore:
+        - ''
+        - '&fEstado: &a{minions_enabled}&f.'
+        - '&fQuantidade inicial: &a{minions_amount}&f.'
+        - ''
+        - '&7Clique para gerenciar'
 
 # Recompensas do boss
 rewards:
@@ -330,6 +340,91 @@ locations:
       name: '&aAdicionar locais'
       lore:
         - '&7Clique para adicionar um novo local'
+
+# Menu de configuração de Minions
+minions:
+  name: '&8Configuração de Minions'
+  size: 45
+  items:
+    back-slot: 36
+    enabled-slot: 10
+    entity-slot: 12
+    amount-slot: 14
+    health-slot: 16
+    damage-slot: 28
+    name-slot: 30
+    spawn-chance-slot: 32
+    spawn-interval-slot: 34
+    enabled:
+      material: 'LEVER'
+      name: '&aAtivar/Desativar Minions'
+      lore:
+        - ''
+        - '&fEstado: &a{enabled}'
+        - ''
+        - '&7Clique para alternar'
+    entity:
+      material: 'MONSTER_EGG:54'
+      name: '&aTipo de Entidade'
+      lore:
+        - ''
+        - '&fAtual: &a{entity}'
+        - ''
+        - '&7Clique para alterar'
+    amount:
+      material: 'PAPER'
+      name: '&aQuantidade Inicial'
+      lore:
+        - ''
+        - '&fAtual: &a{amount}'
+        - ''
+        - '&7Clique para alterar'
+    health:
+      material: 'POTION:69'
+      name: '&aVida dos Minions'
+      lore:
+        - ''
+        - '&fAtual: &a{health}'
+        - ''
+        - '&7Clique para alterar'
+    damage:
+      material: 'DIAMOND_SWORD'
+      name: '&aDano dos Minions'
+      lore:
+        - ''
+        - '&fAtual: &a{damage}'
+        - ''
+        - '&7Clique para alterar'
+    minion-name:
+      material: 'LEGACY_NAME_TAG'
+      name: '&aNome dos Minions'
+      lore:
+        - ''
+        - '&fAtual: &a{name}'
+        - ''
+        - '&7Clique para alterar'
+    spawn-chance:
+      material: 'REDSTONE'
+      name: '&aChance de Spawn Extra'
+      lore:
+        - ''
+        - '&fChance: &a{chance}%'
+        - ''
+        - '&7A cada intervalo, esta é a'
+        - '&7chance de spawnar mais minions.'
+        - ''
+        - '&7Clique para alterar'
+    spawn-interval:
+      material: 'WATCH'
+      name: '&aIntervalo de Spawn Extra'
+      lore:
+        - ''
+        - '&fIntervalo: &a{interval}s'
+        - ''
+        - '&7A cada X segundos, o boss'
+        - '&7tenta spawnar mais minions.'
+        - ''
+        - '&7Clique para alterar'
 
 # Menu de top
 top:

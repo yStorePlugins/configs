@@ -35,6 +35,7 @@ chat:
     &cBoss não encontrado.
     &cBosses disponíveis: &f{list}
   plot-permission: '&cVocê não tem permissão neste terreno.'
+  plot-boss-limit: '&cJá existe um boss do tipo &f{boss}&c neste terreno. Você só pode ter um tipo de boss por terreno.'
   spawners-mobs: '&cHá mobs ou spawners num raio de 5 blocos.'
   sword-list: |
     &cMatadora não encontrada.
