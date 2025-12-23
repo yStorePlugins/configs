@@ -83,6 +83,9 @@ pvp: false
 # em segundos
 auto-sell-delay: 5
 
+# Verificar se o inventário está cheio antes de entrar
+verify-inv: false
+
 # Sistema de npc
 npc:
   skin: 'Pitombaa'
