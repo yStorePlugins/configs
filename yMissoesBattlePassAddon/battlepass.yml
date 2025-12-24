@@ -1,0 +1,227 @@
+# ============================================
+# yMissoes - Sistema de Battle Pass (Addon)
+# ============================================
+# Este sistema funciona de forma independente das missoes normais.
+# Os jogadores ganham XP ao completar missoes e sobem de nivel no passe.
+#
+# MULTI-SEASON: Configure varias temporadas de uma vez!
+# O sistema automaticamente seleciona a temporada ativa baseado nas datas.
+# Quando uma temporada termina, a proxima comeca automaticamente.
+
+# Ativar/Desativar o sistema de Battle Pass
+enabled: true
+
+# Configuracoes do passe premium (global para todas as temporadas)
+premium:
+  # Permissao necessaria para ter o passe premium
+  permission: 'ymissoes.battlepass.premium'
+  # Ou verificar por um placeholder (deixe vazio para usar permissao)
+  placeholder: ''
+  placeholder-value: ''
+
+# XP ganho por acao (global para todas as temporadas)
+xp-rewards:
+  # XP ao completar uma missao normal
+  mission-complete: 50
+  # XP ao completar uma missao flash
+  flash-mission-complete: 100
+  # XP ao completar um milestone de missao
+  milestone-complete: 25
+  # XP ao completar uma conquista secreta
+  secret-achievement: 150
+  # XP bonus por completar missao sem morrer (se a missao tiver essa condicao)
+  no-death-bonus: 25
+  # XP bonus por ser o primeiro a completar uma missao flash
+  first-complete-bonus: 50
+
+# ============================================
+# TEMPORADAS
+# ============================================
+# Configure quantas temporadas quiser!
+# O sistema automaticamente detecta qual esta ativa.
+# Cada temporada tem seus proprios tiers e recompensas.
+
+seasons:
+  # ==========================================
+  # TEMPORADA 1 - Guerreiros
+  # ==========================================
+  season_1:
+    name: '&6&lTemporada 1 - Guerreiros'
+    description:
+      - '&7Complete missoes para ganhar XP'
+      - '&7e desbloquear recompensas exclusivas!'
+    # Data de inicio (formato: dd/MM/yyyy HH:mm)
+    start-date: '01/01/2025 00:00'
+    # Data de termino (formato: dd/MM/yyyy HH:mm)
+    end-date: '01/02/2026 23:59'
+    # Nivel maximo do passe
+    max-level: 50
+    # XP base para subir de nivel
+    base-xp: 100
+    # Multiplicador de XP por nivel
+    xp-multiplier: 1.15
+    # Tiers desta temporada
+    tiers:
+      1:
+        xp-required: 100
+        free-rewards:
+          - '100.0,reward1'
+        premium-rewards:
+          - '100.0,reward2'
+      5:
+        xp-required: 750
+        free-rewards:
+          - '100.0,reward2'
+        premium-rewards:
+          - '100.0,reward3'
+
+# ============================================
+# CONFIGURACOES DO MENU (global)
+# ============================================
+menu:
+  title: '&8Passe de Batalha - {season_name}'
+  rows: 6
+  # Slot do item de informacoes do jogador
+  player-info-slot: 4
+  # Slots dos niveis (esquerda para direita, de cima para baixo)
+  tier-slots:
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+  # Slot de navegacao anterior
+  previous-slot: 45
+  # Slot de navegacao proxima
+  next-slot: 53
+  # Slot para coletar todas as recompensas pendentes
+  collect-all-slot: 49
+
+# Icones do menu
+icons:
+  # Informacoes do jogador
+  player-info:
+    material: "{player}"
+    name: '&6&lSeu Progresso'
+    lore:
+      - ''
+      - '&7Temporada: &f{season_name}'
+      - '&7Nivel: &e{level}&7/&e{max_level}'
+      - '&7XP: &b{xp}&7/&b{xp_next}'
+      - ''
+      - '&7Passe Premium: {premium_status}'
+      - ''
+      - '&7Tempo restante: &c{time_remaining}'
+      - ''
+  # Nivel bloqueado
+  tier-locked:
+    material: 'STAINED_GLASS_PANE:7'
+    name: '&c&lNivel {level} - Bloqueado'
+    lore:
+      - ''
+      - '&7Faltam &c{xp_remaining} XP &7para desbloquear.'
+      - ''
+      - '&7Recompensas Gratis:'
+      - '{free_rewards}'
+      - ''
+      - '&7Recompensas Premium:'
+      - '{premium_rewards}'
+      - ''
+  # Nivel desbloqueado (recompensas disponiveis)
+  tier-unlocked:
+    material: 'STAINED_GLASS_PANE:5'
+    glow: true
+    name: '&a&lNivel {level} - Desbloqueado!'
+    lore:
+      - ''
+      - '&aClique para coletar suas recompensas!'
+      - ''
+      - '&7Recompensas Gratis:'
+      - '{free_rewards}'
+      - ''
+      - '&7Recompensas Premium:'
+      - '{premium_rewards}'
+      - ''
+  # Nivel ja coletado
+  tier-collected:
+    material: 'STAINED_GLASS_PANE:4'
+    name: '&e&lNivel {level} - Coletado'
+    lore:
+      - ''
+      - '&7Voce ja coletou as recompensas deste nivel.'
+      - ''
+      - '&7Recompensas Gratis:'
+      - '{free_rewards}'
+      - ''
+      - '&7Recompensas Premium:'
+      - '{premium_rewards}'
+      - ''
+  # Navegacao anterior
+  previous:
+    material: ARROW
+    name: '&ePagina Anterior'
+    lore:
+      - '&7Clique para voltar.'
+  # Navegacao proxima
+  next:
+    material: ARROW
+    name: '&eProxima Pagina'
+    lore:
+      - '&7Clique para avancar.'
+  # Coletar todas
+  collect-all:
+    material: CHEST
+    name: '&6&lColetar Todas as Recompensas'
+    lore:
+      - ''
+      - '&7Clique para coletar todas as'
+      - '&7recompensas pendentes de uma vez.'
+      - ''
+      - '&eRecompensas pendentes: &f{pending_count}'
+      - ''
+
+# Mensagens
+messages:
+  # Quando ganha XP
+  xp-gained: '&a+{xp} XP &7no Passe de Batalha!'
+  # Quando sobe de nivel
+  level-up: |
+    
+    &6&l★ PASSE DE BATALHA ★
+    &eVoce subiu para o &6&lNivel {level}&e!
+    &7Use &f/missoes passe &7para coletar suas recompensas.
+
+  # Titulo ao subir de nivel
+  level-up-title: '&6&lNIVEL {level}'
+  level-up-subtitle: '&eVoce subiu de nivel no Passe de Batalha!'
+  # Quando coleta recompensas
+  rewards-collected: '&aVoce coletou as recompensas do nivel &e{level}&a!'
+  # Quando tenta coletar sem ter desbloqueado
+  tier-locked-message: '&cVoce ainda nao desbloqueou este nivel!'
+  # Quando tenta coletar ja coletado
+  already-collected: '&cVoce ja coletou as recompensas deste nivel!'
+  # Quando a temporada acabou
+  season-ended: '&cA temporada atual ja terminou! Aguarde a proxima temporada.'
+  # Quando a temporada nao comecou
+  season-not-started: '&cA proxima temporada ainda nao comecou!'
+  # Sem recompensas pendentes
+  no-pending-rewards: '&cVoce nao tem recompensas pendentes para coletar!'
+  # Recompensas premium bloqueadas
+  premium-locked: '&cEsta recompensa requer o Passe Premium!'
+  # Sem temporada ativa
+  no-active-season: '&cNenhuma temporada esta ativa no momento!'
+  # Addon nao ativado
+  addon-not-enabled: '&cO sistema de Battle Pass nao esta ativado.'
+  # Sistema desativado no arquivo de configuracao
+  system-disabled: '&cO sistema de Battle Pass esta desativado.'
+  # Comando apenas para jogadores
+  player-only: '&cEste comando so pode ser usado por jogadores.'
+  # Formato de tempo restante
+  time-ended: '&cEncerrado'
+  # Status premium ativado/desativado
+  premium-enabled: '&a&lATIVADO'
+  premium-disabled: '&c&lDESATIVADO'
+  # Sem recompensas no tier
+  no-rewards: '&7Nenhuma recompensa'
