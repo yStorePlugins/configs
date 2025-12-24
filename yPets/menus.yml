@@ -192,6 +192,159 @@ main:
       name: ' '
       lore: []
 
+# Menu de ações do pet (desativar/recolher)
+pet-actions:
+  name: '&8Ações - {display}'
+  size: 27
+  items:
+    unequip:
+      slot: 11
+      material: 'BARRIER'
+      name: '&cDesativar Pet'
+      lore:
+        - ''
+        - '&7Desativa o pet, mantendo-o'
+        - '&7no seu inventário de pets.'
+        - ''
+        - '&eClique para desativar'
+    collect:
+      slot: 15
+      material: 'CHEST'
+      name: '&aRecolher Pet'
+      lore:
+        - ''
+        - '&7Recolhe o pet para o seu'
+        - '&7inventário como item.'
+        - ''
+        - '&eClique para recolher'
+    back:
+      slot: 22
+      material: 'ARROW'
+      name: '&cVoltar'
+      lore:
+        - '&7Clique para voltar ao menu anterior.'
+  facing:
+    e0:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e1:
+      slot: 1
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e2:
+      slot: 2
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e3:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e4:
+      slot: 4
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e5:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e6:
+      slot: 6
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e7:
+      slot: 7
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e8:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e9:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e10:
+      slot: 10
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e11:
+      slot: 12
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e12:
+      slot: 13
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e13:
+      slot: 14
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e14:
+      slot: 16
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e15:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e16:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e17:
+      slot: 19
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e18:
+      slot: 20
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e19:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e20:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e21:
+      slot: 24
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e22:
+      slot: 25
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+    e23:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:8'
+      name: ' '
+      lore: []
+
 # Menu de armazenar comida
 main-food:
   name: '&8Pets'
