@@ -1,0 +1,150 @@
+# Este arquivo permite criar e configurar cargos customizados para os clans.
+# Você pode criar quantos cargos quiser, cada um com suas próprias permissões.
+#
+# Estrutura de um cargo:
+#   id-do-cargo:
+#     display-name: Nome de exibição
+#     symbol: Símbolo no chat (ex: &c#)
+#     weight: Peso na hierarquia (maior = mais importante)
+#     leader: true/false (apenas um cargo pode ser líder)
+#     default: true/false (cargo padrão para novos membros)
+#     no-clan: true/false (cargo para jogadores sem clan)
+#     default-permissions: Lista de permissões padrão
+#
+# Permissões disponíveis:
+#   - KICK_PLAYERS: Expulsar membros
+#   - ACCESS_CHEST: Acessar o baú do clan
+#   - DEPOSIT_MONEY: Depositar dinheiro no banco
+#   - WITHDRAW_MONEY: Sacar dinheiro do banco
+#   - HOME_GO: Teleportar para a home
+#   - HOME_SET: Definir a home
+#   - HOME_DELETE: Deletar a home
+#   - INVITE_MEMBERS: Convidar membros
+#   - ALLY_ADD: Adicionar aliados
+#   - ALLY_REMOVE: Remover aliados
+#   - RIVAL_ADD: Adicionar rivais
+#   - RIVAL_REMOVE: Remover rivais
+#   - NEWSLETTER_ADD: Adicionar boletins
+#   - FF_MEMBER_CHANGE: Alterar friendly-fire de membros
+#   - FF_ALLY_CHANGE: Alterar friendly-fire de aliados
+#   - CUSTOM_TAG_CHANGE: Alterar tag customizada
+#
+
+roles:
+  # Cargo para jogadores sem clan (obrigatório)
+  nothing:
+    display-name: 'Nenhum'
+    symbol: ''
+    weight: 0
+    leader: false
+    default: false
+    no-clan: true
+    default-permissions: []
+
+  # Cargo padrão para novos membros
+  member:
+    display-name: 'Membro'
+    symbol: '&9-'
+    weight: 10
+    leader: false
+    default: true
+    no-clan: false
+    default-permissions:
+      - HOME_GO
+
+  # Cargo de confiança
+  trusted:
+    display-name: 'Confiável'
+    symbol: '&b='
+    weight: 50
+    leader: false
+    default: false
+    no-clan: false
+    default-permissions:
+      - HOME_GO
+      - ACCESS_CHEST
+      - DEPOSIT_MONEY
+
+  # Cargo de capitão
+  captain:
+    display-name: 'Capitão'
+    symbol: '&e+'
+    weight: 100
+    leader: false
+    default: false
+    no-clan: false
+    default-permissions:
+      - HOME_GO
+      - HOME_SET
+      - ACCESS_CHEST
+      - DEPOSIT_MONEY
+      - WITHDRAW_MONEY
+      - INVITE_MEMBERS
+      - KICK_PLAYERS
+      - NEWSLETTER_ADD
+
+  # Cargo de líder (obrigatório, apenas um)
+  leader:
+    display-name: 'Líder'
+    symbol: '&c#'
+    weight: 1000
+    leader: true
+    default: false
+    no-clan: false
+    # O líder tem TODAS as permissões automaticamente
+    default-permissions: []
+
+# ============================================
+# EXEMPLOS DE CARGOS CUSTOMIZADOS
+# Descomente os cargos abaixo para usar
+# ============================================
+
+#  # Cargo de recruta (abaixo de membro)
+#  recruit:
+#    display-name: 'Recruta'
+#    symbol: '&8*'
+#    weight: 5
+#    leader: false
+#    default: false
+#    no-clan: false
+#    default-permissions: []
+#
+#  # Cargo de veterano (entre confiável e capitão)
+#  veteran:
+#    display-name: 'Veterano'
+#    symbol: '&6★'
+#    weight: 75
+#    leader: false
+#    default: false
+#    no-clan: false
+#    default-permissions:
+#      - HOME_GO
+#      - ACCESS_CHEST
+#      - DEPOSIT_MONEY
+#      - INVITE_MEMBERS
+#
+#  # Cargo de co-líder (abaixo do líder)
+#  co-leader:
+#    display-name: 'Co-Líder'
+#    symbol: '&c★'
+#    weight: 500
+#    leader: false
+#    default: false
+#    no-clan: false
+#    default-permissions:
+#      - KICK_PLAYERS
+#      - ACCESS_CHEST
+#      - DEPOSIT_MONEY
+#      - WITHDRAW_MONEY
+#      - HOME_GO
+#      - HOME_SET
+#      - HOME_DELETE
+#      - INVITE_MEMBERS
+#      - ALLY_ADD
+#      - ALLY_REMOVE
+#      - RIVAL_ADD
+#      - RIVAL_REMOVE
+#      - NEWSLETTER_ADD
+#      - FF_MEMBER_CHANGE
+#      - FF_ALLY_CHANGE
+#      - CUSTOM_TAG_CHANGE

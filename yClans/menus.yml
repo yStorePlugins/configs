@@ -472,10 +472,28 @@ member:
 
 # Menu de gerenciar cargos
 management-roles:
+  # Usar cargos dinâmicos da roles.yml (se true, usa role-template e slots abaixo)
+  dynamic-roles: false
   name: '&8{clan_tag} - {clan_name}'
   size: 27
   back-slot: 11
+  # Slots onde os cargos serão exibidos (usado quando dynamic-roles: true)
+  slots: [ 11, 12, 13, 14, 15, 20, 21, 22, 23, 24 ]
+  previous-slot: 18
+  next-slot: 26
   items:
+    # Template para cargos dinâmicos (usado quando dynamic-roles: true)
+    role-template:
+      material: 'DIAMOND'
+      glow: true
+      name: '{role_symbol} &f{role}'
+      lore:
+        - ''
+        - '&7ID: &f{role_id}'
+        - '&7Peso: &f{role_weight}'
+        - ''
+        - '&aClique para editar as permissões do cargo'
+    # Itens para modo legado (usado quando dynamic-roles: false)
     member:
       slot: 13
       material: '5e71ef39af4e33ebcf69a4be6379543c5015aaec76bab6fc3d862a75dfe3c47'
