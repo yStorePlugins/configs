@@ -188,7 +188,7 @@ Efeitos:
     effect1:
       Tempo: 30
       Lista:
-        - '30,INVISIBILITY:1-100' # efeito:level-tempo
+        - 'INVISIBILITY:1-100' # efeito:level-tempo
   Lista:
     - 'INVISIBILITY:1-100' #efeito:level-tempo
 #
@@ -352,6 +352,8 @@ Actionbar:
   Entrar: '&fDigite &b/guerra &7para &aentrar&f.' #deixe '' para não usar
   Morreu: '&7{morreu} &celiminado por &7{matou}&c, kills: &7{kills}&c. Restam: &7{vivos}&c.' #deixe '' para não usar
 #
+Chat:
+  Morreu: '&7{morreu_clan} &7{morreu} &8[{morreu_kills}] &celiminado por &7{matou_clan} &7{matou} &8[{matou_kills}]&c. Restam: &7{vivos}&c.' #deixe '' para não usar
 # os locais são setados in-game, não altere nada aqui
 Locais:
   Saida: 'none'
