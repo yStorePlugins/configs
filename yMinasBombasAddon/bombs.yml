@@ -19,6 +19,14 @@ bombs:
     luckyblock: true
     # Essa bomba será nuclear? (deletar toda a mina)
     nuclear: false
+    # Ativar dar economias
+    economy: true
+    # Ativar dar blocos
+    blocks: true
+    # Ativar dar energia
+    energy: true
+    # Ativar os custom enchant
+    custom-enchant: true
     # Efeitos da bomba
     effects:
       sound: 'EXPLODE'
