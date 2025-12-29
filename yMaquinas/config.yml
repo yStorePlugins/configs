@@ -59,6 +59,10 @@ Opcoes:
   # deixe 0 para desativar
   Player limite max: 0
 
+  # Limitar a 1 tipo de máquina por plot (evita abuso de amigos com trust)
+  # Isso impede que duas máquinas do mesmo tipo sejam colocados no mesmo plot
+  Plot maquina limite: false
+
   # Ativar a compra usando o limite disponível com o botão "Q"
   # Isto só funciona se o limite estiver ativado
   Compra Q: true
