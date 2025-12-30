@@ -25,7 +25,6 @@ sub-command:
   help: [ 'help', 'ajuda' ]
   force-update: [ 'forceupdate' ]
   check: [ 'check', 'cheque' ]
-  give-media: [ 'givemedia', 'darmedia' ]
 
 usage:
   add: '&cUse: /{command} {arg} <player> <quantia>'
@@ -33,7 +32,6 @@ usage:
   set: '&cUse: /{command} {arg} <player> <quantia>'
   pay: '&cUse: /{command} {arg} <player> <quantia>'
   check: '&cUse: /{command} {arg} <player> <porcentagem> <multiplier>'
-  give-media: '&cUse: /{command} {arg} <player> <porcentagem> <multiplier>'
 
 permission:
   main: 'yeconomias.token.use'
@@ -47,7 +45,6 @@ permission:
   force-update: 'yeconomias.token.forceupdate'
   admin: 'yeconomias.token.admin'
   check: 'yeconomias.token.check'
-  give-media: 'yeconomias.token.givemedia'
 
 general:
   # Quantia que recebe ao registrar
@@ -132,10 +129,6 @@ messages:
     &aVocê juntou seus cheques com sucesso.
   check-activated: |
     &aVocê ativou um cheque de &e{amount}&a {unit}.
-  give-media: |
-    &aVocê enviou &f{currency}&a {unit} para o jogador &7{player}&a.
-  received-media: |
-    &aVocê recebeu &f{currency}&a {unit}&a.
 
 # Item do cheque da média
 check:
