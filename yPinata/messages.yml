@@ -1,0 +1,33 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &a/pinata &8- &7Envia a mensagem geral.
+    &a/pinata setlocation &8- &7Setar o local da pinhata.
+    &a/pinata spawn &8- &7Spawnar a pinhata.
+    &a/pinata reload &8- &7Recarregar as configurações.
+    &r
+  inv-full: '&cSeu inventário está cheio.'
+  pinata-list: |
+    &cPinhata não encontrada.
+    &cDisponíveis: &f{list}&c.
+  pinata-location-set: '&aLocalização da pinhata {pinata}&a definida com sucesso.'
+  pinata-location-not-set: '&cA localização da pinhata {pinata}&c não foi definida.'
+  pinata-already-spawned: '&cJá existe uma pinhata {pinata}&c spawnada.'
+  pinata-spawn: '&aPinhata {pinata}&a spawnada com sucesso.'
+  pinata-hit-delay: '&cAguarde {delay} para bater na pinhata novamente.'

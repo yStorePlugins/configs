@@ -1,0 +1,89 @@
+# Nome nas mensagens
+display-name: '&6&lPinhata'
+
+# Entidade da pinhata
+entity-type: 'SHEEP'
+
+# Quantia total de hits
+hits: 5
+
+# Delay entre hits (em milisegundos)
+hit-delay: 1000
+
+# Ativar o brilho da pinhata
+# 1.19+
+glow: true
+
+# Desativar a inteligência artificial da pinhata
+no-ai: false
+
+# Configuração do holograma
+hologram:
+  off-set: 2.5
+  lines:
+    - '&6&lPINHATA'
+    - '&aQuebre-me para ganhar recompensas!'
+    - '&eHits restantes: &f{remaining_hits}'
+
+# Recompensas configuradas na rewards.yml
+random-rewards:
+  - 'reward1'
+  - 'reward2'
+
+# Recompensas configuradas na rewards.yml
+# use "random" para os da lista acima
+# chance, recompensa
+hit-rewards:
+  - '50.0,random'
+
+# Recompensas configuradas na rewards.yml
+# use "random" para os da lista acima
+# chance, recompensa
+death-rewards:
+  - '100.0,reward3'
+
+# Horários que o evento irá ativar
+# todos, segunda, terca, quarta, quinta, sexta, sabado, domingo
+# dia-hora-minuto-segundo
+auto-start:
+  - 'todos-12:00:00'
+
+# Sistema de knockback ao hitar
+knockback:
+  # Chance de ativar
+  chance: 50.0
+  # Força horizontal do knockback
+  power: 0.8
+  # Força vertical do knockback
+  y-power: 0.5
+  # Som ao aplicar o knockback
+  sound: 'CAT_MEOW'
+  # Particle ao aplicar o knockback
+  particle:
+    type: 'EXPLOSION'
+    amount: 10
+
+# Mensagens do plugin
+messages:
+  spawn:
+    chat: |
+      &r
+      &6&lPinhata!
+      &aUma pinhata apareceu!
+      &r
+    action-bar: '&aUma pinhata apareceu!'
+    title: ''
+  hit:
+    chat: '&eVocê acertou a pinhata! &7({current_hits}/{total_hits})'
+    action-bar: '&eVocê acertou a pinhata! &7({current_hits}/{total_hits})'
+    title: ''
+  death:
+    chat: |
+      &r
+      &6&lPinhata Quebrada!
+      &a{player} quebrou a pinhata e ganhou a recompensa máxima!
+      &r
+    action-bar: '&a{player} quebrou a pinhata e ganhou a recompensa máxima!'
+    title: ''
+
+location: 'none'
