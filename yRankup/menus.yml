@@ -229,3 +229,12 @@ prestige:
       material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
       name: '&cCancelar'
       lore: [ '&7Clique para cancelar.' ]
+    prestige:
+      material: '1ad6c81f899a785ecf26be1dc48eae2bcfe777a862390f5785e95bd83bd14d'
+      name: '&aEvoluir Prestígio!'
+      lore:
+        - '&8Próximo: {next}'
+        - ''
+        - ' &fPreços'
+        - ' &f•&7 &a{money}&7 coins'
+        - ''
