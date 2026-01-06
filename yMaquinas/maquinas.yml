@@ -33,6 +33,44 @@ Maquinas:
     GlassData: 11
     # Ajuste a cabeça dentro do vidro
     Glass-offset: -1.2
+    # Animação da cabeça dentro do vidro
+    # Pode gerar lag
+    Glass-animation-enabled: false
+    # Velocidade da animação
+    Glass-animation-speed: 4
+    # Sistema de partículas
+    particles:
+      # Um linha reta de partículas abaixo da crate
+      stick:
+        enabled: true
+        particle: 'flame'
+        off-set: 0.0
+      # Partículas saltando da crate
+      shiny:
+        enabled: true
+        particle: 'flame'
+        radius: 0.8
+      # Partículas sobem em espiral ao redor da crate
+      spiral:
+        enabled: false
+        particle: 'flame'
+        radius: 0.5
+      # Partículas giram horizontalmente em órbita
+      orbit:
+        enabled: false
+        particle: 'flame'
+        radius: 0.8
+        block-offset-y: 0.5
+      # Duas linhas de partículas entrelaçadas subindo
+      helix:
+        enabled: false
+        particle: 'flame'
+        radius: 0.4
+      # Círculo que expande e contrai ritmicamente
+      pulse:
+        enabled: false
+        particle: 'flame'
+        radius: 0.3
     # Mensagem de venda
     Mensagens:
       Vendeu: '&aVocê vendeu &7{quantia}x {drop}&a por &6{money} coins &8{bonus}&a.'
