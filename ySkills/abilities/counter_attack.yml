@@ -1,0 +1,29 @@
+# Counter Attack - Swords ability
+display-name: '&eContra-Ataque'
+description: 'Chance de refletir parte do dano recebido'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 3
+chance-per-level: 1
+
+max-level: 10
+
+trigger: 'PLAYER_DAMAGE'
+effect: 'COUNTER_ATTACK'
+
+effect-config:
+  reflect-percent-base: 25
+  reflect-percent-per-level: 5
+
+tools:
+  - 'WOODEN_SWORD'
+  - 'STONE_SWORD'
+  - 'IRON_SWORD'
+  - 'GOLDEN_SWORD'
+  - 'DIAMOND_SWORD'
+  - 'NETHERITE_SWORD'
+
+messages:
+  activate: '&eVoce contra-atacou!'
+  deactivate: ''

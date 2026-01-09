@@ -1,0 +1,38 @@
+# Concoctions - Alchemy ability
+display-name: '&dConcoctions'
+description: 'Chance de usar ingredientes extras em pocoes'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 5
+chance-per-level: 3
+
+max-level: 10
+
+trigger: 'BREWING'
+effect: 'CONCOCTIONS'
+
+effect-config:
+  # Ingredientes adicionais desbloqueados por nivel
+  extra-ingredients:
+    level-1:
+      - 'SUGAR'
+      - 'GLISTERING_MELON_SLICE'
+    level-3:
+      - 'SPIDER_EYE'
+      - 'FERMENTED_SPIDER_EYE'
+    level-5:
+      - 'BLAZE_POWDER'
+      - 'MAGMA_CREAM'
+    level-7:
+      - 'GHAST_TEAR'
+      - 'GOLDEN_CARROT'
+    level-10:
+      - 'PHANTOM_MEMBRANE'
+      - 'DRAGON_BREATH'
+  # Bonus de potencia da pocao (% por nivel)
+  potency-bonus-per-level: 5
+
+messages:
+  activate: '&dConcoctions! Ingredientes extras adicionados!'
+  deactivate: ''

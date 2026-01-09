@@ -1,0 +1,35 @@
+# Repair - Swords ability
+display-name: '&bRepair'
+description: 'Chance de reparar a espada ao atacar'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 1
+chance-per-level: 0.8
+
+max-level: 10
+
+trigger: 'PLAYER_ATTACK'
+effect: 'REPAIR'
+
+effect-config:
+  # Porcentagem de durabilidade restaurada por nivel
+  repair-percent-per-level: 2
+  # Maximo de durabilidade restaurada (%)
+  max-repair-percent: 20
+  # Reparar item na mao principal
+  repair-main-hand: true
+  # Reparar armadura equipada
+  repair-armor: false
+
+tools:
+  - 'WOODEN_SWORD'
+  - 'STONE_SWORD'
+  - 'IRON_SWORD'
+  - 'GOLDEN_SWORD'
+  - 'DIAMOND_SWORD'
+  - 'NETHERITE_SWORD'
+
+messages:
+  activate: '&bRepair! Sua espada foi reparada!'
+  deactivate: ''

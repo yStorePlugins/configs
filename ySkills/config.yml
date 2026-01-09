@@ -1,0 +1,298 @@
+#         ____  _    _ _ _
+#  _   _/ ___|| | _(_) | |___
+# | | | \___ \| |/ / | | / __|
+# | |_| |___) |   <| | | \__ \
+#  \__, |____/|_|\_\_|_|_|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Acumular os bônus que tiver permissão
+  accumulate-bonus: false
+  # Formatação das mensagens de bônus
+  formatter-bonus-has: '&a+{bonus}% por ser {display}&a.'
+  # Formatação das mensagens de bônus quando não tiver bônus
+  formatter-bonus-no-has: ''
+
+# Você pode criar quantos bônus quiser
+# Será dado o bônus ao ganhar XP.
+bonus:
+  members:
+    order: 1
+    # Permissão para ser reconhecido
+    permission: 'yskills.bonus.member'
+    # Nome que irá aparecer nas mensagens
+    display: '&7[Membro]'
+    # Quantia do bônus em %
+    bonus: 10.0
+
+#  __  _______    ___       _   _   _
+#  \ \/ /  __ \  | _ ) ___ | |_| |_| | ___
+#   >  <| |__) | | _ \/ _ \|  _|  _| |/ -_)
+#  /_/\_\  ___/  |___/\___/ \__|\__|_|\___|
+#       |_|
+# Sistema de Frasco de XP
+
+xp-bottle:
+  # Item do frasco de XP global (abre menu para escolher skill)
+  global:
+    material: 'EXP_BOTTLE'
+    name: '&a&lFrasco de XP &7(Global)'
+    lore:
+      - '&8&m------------------------'
+      - '&7Quantidade de XP: &a{xp}'
+      - ''
+      - '&7Tipo: &eGlobal'
+      - '&7Escolha uma skill para aplicar.'
+      - '&8&m------------------------'
+      - ''
+      - '&eClique direito para usar!'
+    glow: true
+  
+  # Item do frasco de XP específico (aplica direto na skill)
+  specific:
+    material: 'EXP_BOTTLE'
+    name: '&b&lFrasco de XP &7({skill})'
+    lore:
+      - '&8&m------------------------'
+      - '&7Quantidade de XP: &a{xp}'
+      - ''
+      - '&7Skill: &b{skill}'
+      - '&8&m------------------------'
+      - ''
+      - '&eClique direito para usar!'
+    glow: true
+
+#   ___               _
+#  | _ ) ___  ___ ___| |_ ___ _ _
+#  | _ \/ _ \/ _ (_-<|  _/ -_) '_|
+#  |___/\___/\___/__/ \__\___|_|
+#
+# Sistema de Booster de XP
+
+booster:
+  # Item do booster global (aplica para TODOS os jogadores)
+  global:
+    material: 'NETHER_STAR'
+    name: '&6&lBooster Global &7({multiplier}x)'
+    lore:
+      - '&8&m------------------------'
+      - '&7Multiplicador: &6{multiplier}x'
+      - '&7Duração: &e{duration}'
+      - ''
+      - '&7Skill: &a{skill}'
+      - '&8&m------------------------'
+      - ''
+      - '&6Este booster afeta TODOS'
+      - '&6os jogadores do servidor!'
+      - ''
+      - '&eClique direito para ativar!'
+    glow: true
+  
+  # Item do booster individual (aplica apenas para quem ativar)
+  individual:
+    material: 'BLAZE_POWDER'
+    name: '&e&lBooster Individual &7({multiplier}x)'
+    lore:
+      - '&8&m------------------------'
+      - '&7Multiplicador: &e{multiplier}x'
+      - '&7Duração: &a{duration}'
+      - ''
+      - '&7Skill: &b{skill}'
+      - '&8&m------------------------'
+      - ''
+      - '&eClique direito para ativar!'
+    glow: true
+  
+  # Configurações gerais do booster
+  settings:
+    # Mensagem broadcast quando booster global é ativado
+    broadcast-global: true
+    # Exibir actionbar com tempo restante
+    show-actionbar: true
+    # Formato da actionbar
+    actionbar-format: '&6⚡ Booster {type}: &e{multiplier}x &7| {skill} &7| &aRestam: {time}'
+
+#   ___                  _                         _
+#  | _ \ ___  __ _ _   _(_)___(_)| |_ ___  ___
+#  |   // -_)/ _` | | | | / __| |  _/ _ \/ __|
+#  |_|_\\___|\__, |_,_|_|_|_| \___|_| \___/\__|
+#               |_|
+#
+# Sistema de Requisitos de Nível
+# Bloqueie blocos/mobs para jogadores que não tenham o nível necessário
+
+requirements:
+  # Ativar sistema de requisitos
+  enabled: true
+  
+  # Configurações gerais
+  settings:
+    # Cooldown entre mensagens de requisito (em segundos)
+    message-cooldown: 3
+    # Cancelar evento quando requisito não é atendido
+    cancel-event: true
+    # Dropar o item mesmo se cancelado (apenas para blocos)
+    drop-item-if-cancelled: false
+  
+  # Requisitos para quebrar blocos
+  # Formato: MATERIAL: lista de requisitos
+  blocks:
+    # Exemplo: Diamante requer Mining 20 OU Excavation 30
+    DIAMOND_ORE:
+      # Modo: ANY (qualquer skill atende) ou ALL (todas as skills necessárias)
+      mode: ANY
+      skills:
+        mining: 20
+        excavation: 30
+    
+    # Exemplo: Esmeralda requer Mining 25 E Excavation 15
+    EMERALD_ORE:
+      mode: ALL
+      skills:
+        mining: 25
+        excavation: 15
+    
+    # Exemplo: Obsidiana requer apenas Mining 30
+    OBSIDIAN:
+      mode: ANY
+      skills:
+        mining: 30
+    
+    # Exemplo: Bloco de Diamante requer Mining 40
+    DIAMOND_BLOCK:
+      mode: ANY
+      skills:
+        mining: 40
+    
+    # Exemplo: Ancient Debris requer Mining 50
+    ANCIENT_DEBRIS:
+      mode: ANY
+      skills:
+        mining: 50
+
+    # Versões Deepslate
+    DEEPSLATE_DIAMOND_ORE:
+      mode: ANY
+      skills:
+        mining: 22
+    
+    DEEPSLATE_EMERALD_ORE:
+      mode: ALL
+      skills:
+        mining: 27
+        excavation: 17
+  
+  # Requisitos para matar mobs
+  # Formato: ENTITY_TYPE: lista de requisitos
+  # Você pode configurar o ícone de cada mob no menu usando a seção 'icon'
+  mobs:
+    # Exemplo: Wither requer Combat 40 OU Archery 45
+    WITHER:
+      mode: ANY
+      skills:
+        swords: 40
+        archery: 45
+      icon:
+        material: NETHER_STAR
+        name: '&5Wither'
+        glow: false
+    
+    # Exemplo: Ender Dragon requer Combat 50
+    ENDER_DRAGON:
+      mode: ANY
+      skills:
+        swords: 50
+      icon:
+        material: DRAGON_EGG
+        name: '&dEnder Dragon'
+        glow: false
+    
+    # Exemplo: Warden requer Combat 35 E Acrobatics 20
+    WARDEN:
+      mode: ALL
+      skills:
+        swords: 35
+        acrobatics: 20
+      icon:
+        material: SCULK_SHRIEKER
+        name: '&3Warden'
+        glow: false
+    
+    # Exemplo: Elder Guardian requer Combat 30
+    ELDER_GUARDIAN:
+      mode: ANY
+      skills:
+        swords: 30
+      icon:
+        material: PRISMARINE_SHARD
+        name: '&bElder Guardian'
+        glow: false
+    
+    # Exemplo: Wither Skeleton requer Combat 15
+    WITHER_SKELETON:
+      mode: ANY
+      skills:
+        swords: 15
+      icon:
+        material: WITHER_SKELETON_SKULL
+        name: '&8Wither Skeleton'
+        glow: false

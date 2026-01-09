@@ -1,0 +1,30 @@
+# Shroom Thumb - Herbalism ability
+display-name: '&5Shroom Thumb'
+description: 'Chance de obter cogumelos extras ao colher'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 5
+chance-per-level: 2.5
+
+max-level: 10
+
+trigger: 'BLOCK_BREAK'
+effect: 'SHROOM_THUMB'
+
+effect-config:
+  # Multiplicador de drops de cogumelos
+  multiplier: 2
+  # Cogumelos afetados
+  valid-blocks:
+    - 'RED_MUSHROOM'
+    - 'BROWN_MUSHROOM'
+    - 'CRIMSON_FUNGUS'
+    - 'WARPED_FUNGUS'
+    - 'RED_MUSHROOM_BLOCK'
+    - 'BROWN_MUSHROOM_BLOCK'
+    - 'MUSHROOM_STEM'
+
+messages:
+  activate: '&5Shroom Thumb! Cogumelos extras!'
+  deactivate: ''

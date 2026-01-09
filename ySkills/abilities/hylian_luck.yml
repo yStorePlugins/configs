@@ -1,0 +1,48 @@
+# Hylian Luck - Herbalism ability
+display-name: '&aHylian Luck'
+description: 'Chance de encontrar itens raros ao colher plantas'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 1
+chance-per-level: 0.5
+
+max-level: 10
+
+trigger: 'BLOCK_BREAK'
+effect: 'HYLIAN_LUCK'
+
+effect-config:
+  # Drops raros possiveis
+  rare-drops:
+    - 'EMERALD:1'
+    - 'DIAMOND:1'
+    - 'GOLDEN_APPLE:1'
+    - 'ENCHANTED_BOOK:1'
+  # Blocos que ativam a habilidade
+  valid-blocks:
+    - 'GRASS'
+    - 'TALL_GRASS'
+    - 'FERN'
+    - 'LARGE_FERN'
+    - 'DEAD_BUSH'
+    - 'DANDELION'
+    - 'POPPY'
+    - 'BLUE_ORCHID'
+    - 'ALLIUM'
+    - 'AZURE_BLUET'
+    - 'RED_TULIP'
+    - 'ORANGE_TULIP'
+    - 'WHITE_TULIP'
+    - 'PINK_TULIP'
+    - 'OXEYE_DAISY'
+    - 'CORNFLOWER'
+    - 'LILY_OF_THE_VALLEY'
+    - 'SUNFLOWER'
+    - 'LILAC'
+    - 'ROSE_BUSH'
+    - 'PEONY'
+
+messages:
+  activate: '&aHylian Luck! Voce encontrou algo raro!'
+  deactivate: ''

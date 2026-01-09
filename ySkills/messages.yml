@@ -1,0 +1,59 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &a/skills &8- &7Abre o menu principal.
+    &a/skills abilities <skill> &8- &7Abre o menu de habilidades.
+    &a/skills top &8- &7Abre o menu de ranking.
+    &a/skills requirements &8- &7Abre o menu de requisitos de nível.
+    &a/skills givexp <jogador> <xp> [skill|global] [qtd] &8- &7Dar frascos de XP.
+    &a/skills addxp <jogador> <xp> <skill> &8- &7Adicionar XP direto.
+    &a/skills removexp <jogador> <xp> <skill> &8- &7Remover XP.
+    &a/skills setxp <jogador> <xp> <skill> &8- &7Definir XP.
+    &a/skills booster <jogador|global> <mult> <dur> [skill] [qtd] &8- &7Dar boosters.
+    &a/skills reload &8- &7Recarregar as configurações.
+    &r
+  inv-full: '&cSeu inventário está cheio.'
+  skill-found: |
+    &cSkill não encontrada.
+    &cDisponíveis: &7{list}&c.
+  xp-bottle-used: '&aVocê usou um Frasco de XP e ganhou &e{xp} XP &ana skill &b{skill}&a!'
+  xp-bottle-give-sender: '&aVocê deu &e{amount}x Frasco de XP &7({type}) &apara &b{player}&a.'
+  xp-bottle-give-sender-skill: '&aVocê deu &e{amount}x Frasco de XP &7({skill}) &apara &b{player}&a.'
+  xp-bottle-give-receiver: '&aVocê recebeu &e{amount}x Frasco de XP &7({type})&a!'
+  xp-bottle-give-receiver-skill: '&aVocê recebeu &e{amount}x Frasco de XP &7({skill})&a!'
+  xp-add: '&aVocê adicionou &e{xp} XP &ana skill &b{skill}&a para o jogador &f{player}&a!'
+  xp-remove: '&aVocê removeu &e{xp} XP &ana skill &b{skill}&a do jogador &f{player}&a!'
+  xp-set: '&aVocê definiu &e{xp} XP &ana skill &b{skill}&a para o jogador &f{player}&a!'
+  booster-activated: '&aVocê ativou um Booster &e{type} &7({multiplier}x) &apara &b{skill} &apor &e{duration}&a!'
+  booster-expired: '&cSeu Booster &e{type} &7({multiplier}x) &cpara &b{skill} &cexpirou!'
+  booster-already-active: '&cVocê já possui um booster &e{type} &cativo!'
+  booster-give-sender: '&aVocê deu &e{amount}x Booster {type} &7({multiplier}x) &apara &b{player}&a.'
+  booster-give-sender-skill: '&aVocê deu &e{amount}x Booster {type} &7({multiplier}x - {skill}) &apara &b{player}&a.'
+  booster-give-receiver: '&aVocê recebeu &e{amount}x Booster {type} &7({multiplier}x)&a!'
+  booster-give-receiver-skill: '&aVocê recebeu &e{amount}x Booster {type} &7({multiplier}x - {skill})&a!'
+  booster-broadcast-global: '&6&l⚡ BOOSTER GLOBAL ATIVADO! &e{activator} &6ativou um booster &f{multiplier}x &6para &a{skill} &6por &e{duration}&6!'
+  booster-broadcast-global-expired: '&c&l⚡ BOOSTER GLOBAL EXPIRADO! &eO booster global &7({multiplier}x) &epara &b{skill} &eexpirou!'
+  requirement-block-denied: '&cVocê não tem nível suficiente para quebrar este bloco!'
+  requirement-mob-denied: '&cVocê não tem nível suficiente para causar dano neste mob!'
+  requirement-skill-info: '&7- &f{skill}&7: Nível &c{current}&7/&a{required}'
+  requirement-mode-any: '&cVocê precisa de &euma das skills&c abaixo:'
+  requirement-mode-all: '&cVocê precisa de &etodas as skills&c abaixo:'
+  reset-xp-success: '&aVocê converteu &c{amount} XP &ada skill &b{skill} &aem um Frasco de XP! XP restante: &e{new_xp} &7(Nível {new_level})'
+  reset-xp-no-permission: '&cVocê não tem permissão para converter XP da skill &e{skill}&c.'
+  reset-xp-no-xp: '&cVocê não possui XP na skill &e{skill} &cpara converter.'

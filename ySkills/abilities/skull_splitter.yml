@@ -1,0 +1,29 @@
+# Skull Splitter - Axes ability
+display-name: '&4Quebra-Cranio'
+description: 'Ativa modo de ataque em area com machados'
+type: 'ACTIVE'
+
+# Configuracoes de ativacao
+duration: 10
+cooldown: 180
+
+max-level: 10
+
+trigger: 'RIGHT_CLICK_AIR'
+effect: 'SKULL_SPLITTER'
+
+effect-config:
+  aoe-radius: 2.5
+  damage-reduction-aoe: 50
+
+tools:
+  - 'WOODEN_AXE'
+  - 'STONE_AXE'
+  - 'IRON_AXE'
+  - 'GOLDEN_AXE'
+  - 'DIAMOND_AXE'
+  - 'NETHERITE_AXE'
+
+messages:
+  activate: '&4&lQUEBRA-CRANIO ATIVADO! &7Ataques em area por {duration}s!'
+  deactivate: '&c&lQUEBRA-CRANIO DESATIVADO!'

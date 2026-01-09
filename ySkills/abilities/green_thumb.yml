@@ -1,0 +1,24 @@
+# Green Thumb - Herbalism ability
+display-name: '&aMao Verde'
+description: 'Chance de replantar automaticamente e obter sementes extras'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 10
+chance-per-level: 3
+
+max-level: 10
+
+trigger: 'BLOCK_BREAK'
+effect: 'GREEN_THUMB'
+
+effect-config:
+  auto-replant: true
+  extra-seeds-chance: 25
+  growth-boost: 1
+
+tools: []
+
+messages:
+  activate: '&aVoce replantou automaticamente!'
+  deactivate: ''

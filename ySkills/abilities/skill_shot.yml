@@ -1,0 +1,24 @@
+# Skill Shot - Archery ability
+display-name: '&bTiro Preciso'
+description: 'Aumenta o dano base das flechas'
+type: 'PASSIVE'
+
+# Configuracoes de valor passivo
+base-value: 5
+value-per-level: 3
+
+max-level: 10
+
+trigger: 'PLAYER_ATTACK'
+effect: 'DAMAGE_BOOST'
+
+effect-config:
+  damage-type: 'PERCENT'
+
+tools:
+  - 'BOW'
+  - 'CROSSBOW'
+
+messages:
+  activate: ''
+  deactivate: ''

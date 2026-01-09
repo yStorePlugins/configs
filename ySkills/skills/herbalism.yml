@@ -1,0 +1,189 @@
+# Identificação necessária para a API de TOPS do yPlugins
+yplugins-id: 'yskills-herbalism'
+
+# Nome da skill nos menus e mensagens
+display-name: '&aHerbalismo'
+
+# Nível máximo da skill
+max-level: 100
+
+# Tag para o TOP 1
+tag: '&a[❀]'
+
+# Sistema de ícones
+icons:
+  # Ícone no menu de stats
+  stat:
+    slot: 39
+    material: 'WHEAT'
+    name: '&aHerbalismo'
+    flags: ['*']
+    lore:
+      - '&8&m------------------------'
+      - '&7Jogador: &f{player}'
+      - ''
+      - '&7Nível: &b{level}'
+      - '&7XP Atual: &a{xp}'
+      - '&7XP Necessário -> &fL. {next_level}&7: &c{need_xp}'
+      - ''
+      - '&7Bônus: &6{bonus_display}'
+      - '&7Multiplicador: &e+{bonus}%'
+      - '&8&m------------------------'
+      - '&eClique para ver as habilidades.'
+  # Ícone no menu de stats quando no nível máximo
+  stat-max:
+    material: 'WHEAT'
+    name: '&aHerbalismo'
+    flags: ['*']
+    lore:
+      - '&8&m------------------------'
+      - '&7Jogador: &f{player}'
+      - ''
+      - '&7Nível: &b{level}'
+      - '&aVocê está no nível máximo com {xp} xp!'
+      - ''
+      - '&7Bônus: &6{bonus_display}'
+      - '&7Multiplicador: &e+{bonus}%'
+      - '&8&m------------------------'
+      - '&eClique para ver as habilidades.'
+  # Ícone no menu de seleção de skill (ao clicar no Frasco de XP)
+  bottle:
+    slot: 30
+    material: 'WHEAT'
+    name: '&aHerbalismo'
+    flags: [ '*' ]
+    lore:
+      - ''
+      - '&7Seu nível: &f{level}'
+      - '&7XP atual: &f{xp}/{need_xp}'
+      - ''
+      - '&aClique para aplicar o XP!'
+  # Ícone no menu de TOP
+  top:
+    slot: 30
+    material: 'WHEAT'
+    name: '&aHerbalismo'
+    flags: [ '*' ]
+    lore:
+      - '&f1º: &7{player_1} &8- &7{level_1}'
+      - '&f2º: &7{player_2} &8- &7{level_2}'
+      - '&f3º: &7{player_3} &8- &7{level_3}'
+      - '&f4º: &7{player_4} &8- &7{level_4}'
+      - '&f5º: &7{player_5} &8- &7{level_5}'
+      - '&f6º: &7{player_6} &8- &7{level_6}'
+      - '&f7º: &7{player_7} &8- &7{level_7}'
+      - '&f8º: &7{player_8} &8- &7{level_8}'
+      - '&f9º: &7{player_9} &8- &7{level_9}'
+      - '&f10º: &7{player_10} &8- &7{level_10}'
+      - ''
+      - '&fSua posição: &a{self_pos}º &e- &7{self_level}'
+  # Ícone no menu de selecionar converter XP
+  convert:
+    slot: 30
+    material: 'WHEAT'
+    name: '&aHerbalismo'
+    flags: [ '*' ]
+    lore:
+      - '&8&m------------------------'
+      - '&7Nível: &f{level}'
+      - '&7XP: &f{xp}'
+      - '&8&m------------------------'
+      - '&eClique para converter XP!'
+  # Ícone no menu de converter XP
+  convert-info:
+    slot: 4
+    material: 'WHEAT'
+    name: '&aHerbalismo'
+    flags: [ '*' ]
+    lore:
+      - '&8&m------------------------'
+      - '&7Nível: &f{level}'
+      - '&7XP: &f{xp}'
+      - '&8&m------------------------'
+      - '&eSelecione a quantidade de'
+      - '&eXP que deseja remover.'
+
+# Sistema de evolução por XP
+xp:
+  formula: QUADRATIC
+  base: 100
+  increment: 50
+  scale: 1
+  multiplier: 1.4
+
+# Formas de ganhar xp
+xp-earn:
+  type1:
+    type: 'BLOCK_BREAK'
+    # Lista de ferramentas permitidas (deixe vazio para qualquer ferramenta)
+    # Para herbalism, geralmente qualquer ferramenta ou mão vazia funciona
+    tools: []
+    list:
+      - 'WHEAT:10'
+      - 'CARROTS:10'
+      - 'POTATOES:10'
+      - 'BEETROOTS:10'
+      - 'NETHER_WART:12'
+      - 'MELON:8'
+      - 'PUMPKIN:8'
+      - 'SUGAR_CANE:6'
+      - 'CACTUS:6'
+      - 'BAMBOO:4'
+      - 'COCOA:10'
+      - 'SWEET_BERRY_BUSH:8'
+      - 'KELP:4'
+      - 'SEA_PICKLE:6'
+      - 'BROWN_MUSHROOM:8'
+      - 'RED_MUSHROOM:8'
+      - 'CRIMSON_FUNGUS:10'
+      - 'WARPED_FUNGUS:10'
+      - 'CHORUS_FLOWER:15'
+      - 'CHORUS_PLANT:10'
+      - 'GLOW_BERRIES:12'
+      - 'CAVE_VINES:8'
+      - 'MOSS_BLOCK:6'
+      - 'MOSS_CARPET:4'
+      - 'AZALEA:8'
+      - 'FLOWERING_AZALEA:10'
+      - 'SPORE_BLOSSOM:15'
+      - 'DRIPLEAF:10'
+      - 'SMALL_DRIPLEAF:8'
+
+# Actionbar quando ganhar xp
+actionbar:
+  enabled: true
+  disabled-worlds: []
+  message: '&a{skill}: {level} ({xp_has} / {xp_need}) +{xp_earned}XP'
+
+# Sistema de mensagem ao upar de nível
+level-up:
+  enabled: true
+  level: 100
+  strike: true
+  message: |
+    <nl>
+    &b&lSKILLS: &bO jogador &f{player}&b atingiu o &fnível {level} &bna habilidade &f{skill}&f!
+    <nl>
+
+# Sistema de recompensas ao upar de nível
+rewards:
+  herbalism_lvl100:
+    level: 100
+    reward:
+      - 'give {player} diamond_hoe 1'
+
+# Configuracao de habilidades
+abilities-config:
+  levels-per-ability-level: 10
+
+# Habilidades desta skill
+abilities:
+  green_thumb:
+    level: 10
+    max-level: 10
+  shroom_thumb:
+    level: 25
+    max-level: 10
+  hylian_luck:
+    level: 40
+    max-level: 10

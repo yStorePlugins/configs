@@ -1,0 +1,497 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Habilidades'
+  size: 54
+  items:
+    profile:
+      slot: 12
+      material: '{player}' # Head do jogador
+      name: '&6✦ &a{player}'
+      lore:
+        - '&8&m------------------------'
+        - '&7Perfil do jogador'
+        - ''
+        - '&7Nível Total: &b{level}'
+        - '&7XP Total: &a{xp}'
+        - ''
+        - '&7Bônus Ativo: &6{bonus_display}'
+        - '&7Multiplicador Global: &e+{bonus}%'
+        - '&8&m------------------------'
+    # Ícone de Booster Global
+    booster-global:
+      slot: 45
+      active:
+        material: 'NETHER_STAR'
+        name: '&6⚡ Booster Global Ativo'
+        lore:
+          - '&8&m------------------------'
+          - '&7Multiplicador: &6{multiplier}x'
+          - '&7Skill: &a{skill}'
+          - '&7Tempo restante: &e{time}'
+          - ''
+          - '&7Ativado por: &f{activator}'
+          - '&8&m------------------------'
+        glow: true
+      inactive:
+        material: 'COAL'
+        name: '&7⚡ Sem Booster Global'
+        lore:
+          - '&8&m------------------------'
+          - '&7Nenhum booster global'
+          - '&7está ativo no momento.'
+          - '&8&m------------------------'
+        glow: false
+    # Ícone de Booster Individual
+    booster-individual:
+      slot: 46
+      active:
+        material: 'BLAZE_POWDER'
+        name: '&e⚡ Booster Individual Ativo'
+        lore:
+          - '&8&m------------------------'
+          - '&7Multiplicador: &e{multiplier}x'
+          - '&7Skill: &b{skill}'
+          - '&7Tempo restante: &a{time}'
+          - '&8&m------------------------'
+        glow: true
+      inactive:
+        material: 'COAL'
+        name: '&7⚡ Sem Booster Individual'
+        lore:
+          - '&8&m------------------------'
+          - '&7Você não possui um booster'
+          - '&7individual ativo.'
+          - '&8&m------------------------'
+        glow: false
+    actionbar:
+      slot: 8
+      material: '60335c5089b28f7e1261749bf107fa675900c1956ca9e6d851ba55a5e1f8624a'
+      name: '&6Actionbar de Habilidades'
+      lore:
+        - '&7Receber as informações de XP na'
+        - '&7sua actionbar.'
+        - ''
+        - '&fStatus: &r{status}&f.'
+        - ''
+        - '&aClique para alternar.'
+    ranking:
+      slot: 14
+      material: 'BOOK_AND_QUILL'
+      name: '&eRanking de Habilidades'
+      lore: [ '&7Clique para abrir o TOP de habilidades.' ]
+    # Ícone de Requisitos de Nível
+    requirements:
+      slot: 53
+      material: 'IRON_FENCE'
+      name: '&cRequisitos de Nível'
+      lore:
+        - '&8&m------------------------'
+        - '&7Veja os requisitos de nível'
+        - '&7para quebrar blocos e'
+        - '&7enfrentar mobs especiais.'
+        - '&8&m------------------------'
+        - ''
+        - '&eClique para visualizar!'
+    # Ícone de Converter XP em Frasco
+    reset-xp:
+      slot: 52
+      material: 'EXP_BOTTLE'
+      name: '&aConverter XP em Frasco'
+      lore:
+        - '&8&m------------------------'
+        - '&7Converta XP de suas skills'
+        - '&7em &aFrascos de XP&7!'
+        - ''
+        - '&7Os frascos podem ser usados'
+        - '&7depois ou negociados.'
+        - '&8&m------------------------'
+        - ''
+        - '&eClique para acessar!'
+
+# Menu de TOP de habilidades
+top:
+  name: '&8Habilidades'
+  size: 54
+  back-slot: 49
+  items:
+    first:
+      slot: 4
+      material: '{player}'
+      name: '&61º Lugar - {player}'
+      lore:
+        - ''
+        - '&7Nível: &f{level}'
+        - '&7XP: &f{xp}'
+        - ''
+        - '&fSua posição: &a{self_pos}º &e- &7{self_xp}'
+
+# Menu de habilidades (abilities) de uma skill
+abilities:
+  # Título do menu ({skill} será substituído pelo nome da skill)
+  name: '&8Habilidades - {skill}'
+  size: 54
+  back-slot: 49
+  slots: [19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  items:
+    # Informações da skill
+    skill-info:
+      slot: 4
+      # O material será pego do ícone da skill automaticamente
+      name: '{skill}'
+      lore:
+        - '&7Seu nível: &f{level}'
+        - '&7XP: &f{xp}'
+        - ''
+        - '&7A cada &f{levels_per_ability} &7níveis'
+        - '&7suas habilidades sobem de nível!'
+    # Sem habilidades
+    no-abilities:
+      slot: 22
+      material: 'BARRIER'
+      name: '&cSem Habilidades'
+      lore:
+        - '&7Esta skill não possui habilidades.'
+  # Configuração dos ícones de habilidades
+  ability-icons:
+    # Ícone para habilidade desbloqueada
+    unlocked:
+      # Cores por tipo de habilidade
+      passive:
+        material: 'INK_SACK:10'
+        color: '&a'
+        type-name: 'Passiva'
+      active:
+        material: 'INK_SACK:1'
+        color: '&c'
+        type-name: 'Ativa'
+      chance:
+        material: 'INK_SACK:11'
+        color: '&e'
+        type-name: 'Chance'
+      
+      # Lore base para todas as habilidades desbloqueadas
+      lore:
+        - '&7{description}'
+        - ''
+        - '&7Tipo: {type_color}{type_name}'
+        - ''
+        - '&aNível: &f{ability_level}/{max_level}'
+        - ''
+      
+      # Lore específica por tipo (adicionada após a lore base)
+      passive-lore:
+        - '&7Bônus atual: &e+{value}%'
+      
+      active-lore:
+        - '&7Duração: &f{duration}s'
+        - '&7Cooldown: &f{cooldown}s'
+        - ''
+        - '&bShift + Clique Direito para ativar'
+      
+      chance-lore:
+        - '&7Chance atual: &e{chance}%'
+      
+      # Mensagem de próximo nível
+      next-level-lore:
+        - ''
+        - '&7Próximo nível em &f{levels_to_next} &7níveis da skill'
+    
+    # Ícone para habilidade bloqueada
+    locked:
+      material: 'INK_SACK:8'
+      lore:
+        - '&7{description}'
+        - ''
+        - '&7Tipo: {type_color}{type_name}'
+        - ''
+        - '&c✗ Bloqueada'
+        - ''
+        - '&7Desbloqueie no nível &f{unlock_level}'
+        - '&7Faltam &c{levels_remaining} &7níveis'
+
+# Menu de seleção de skill para Frasco de XP
+xp-bottle-select:
+  name: '&8Selecione uma Skill'
+  size: 54
+  # Slot onde fica o item de informação do frasco
+  info-slot: 4
+  # Slots onde as skills serão exibidas (mesmo padrão do menu principal)
+  items:
+    info:
+      slot: 4
+      material: 'EXP_BOTTLE'
+      name: '&a&lFrasco de XP'
+      lore:
+        - '&8&m------------------------'
+        - '&7Quantidade de XP: &a{xp}'
+        - ''
+        - '&7Selecione uma skill abaixo'
+        - '&7para aplicar o XP.'
+        - '&8&m------------------------'
+    # Ícone de cancelar
+    cancel:
+      slot: 49
+      material: 'BARRIER'
+      name: '&cCancelar'
+      lore:
+        - '&7Clique para cancelar.'
+
+# Menu de seleção de skill para Booster
+booster-select:
+  name: '&8Selecione uma Skill para o Booster'
+  size: 54
+  items:
+    # Informação do booster
+    info:
+      slot: 4
+      global:
+        material: 'NETHER_STAR'
+        name: '&6&lBooster Global'
+        lore:
+          - '&8&m------------------------'
+          - '&7Multiplicador: &6{multiplier}x'
+          - '&7Duração: &e{duration}'
+          - ''
+          - '&7Selecione uma skill abaixo'
+          - '&7ou escolha &aTodas as Skills&7.'
+          - '&8&m------------------------'
+        glow: true
+      individual:
+        material: 'BLAZE_POWDER'
+        name: '&e&lBooster Individual'
+        lore:
+          - '&8&m------------------------'
+          - '&7Multiplicador: &e{multiplier}x'
+          - '&7Duração: &a{duration}'
+          - ''
+          - '&7Selecione uma skill abaixo'
+          - '&7ou escolha &aTodas as Skills&7.'
+          - '&8&m------------------------'
+        glow: true
+    # Opção para todas as skills
+    all-skills:
+      slot: 49
+      material: 'BEACON'
+      name: '&a&lTodas as Skills'
+      lore:
+        - '&8&m------------------------'
+        - '&7Aplicar o booster para'
+        - '&7todas as skills.'
+        - '&8&m------------------------'
+        - ''
+        - '&aClique para selecionar!'
+      glow: true
+    # Ícone de cancelar
+    cancel:
+      slot: 45
+      material: 'BARRIER'
+      name: '&cCancelar'
+      lore:
+        - '&7Clique para cancelar.'
+
+# Menu de Requisitos de Nível
+requirements:
+  name: '&8Requisitos de Nível'
+  size: 54
+  back-slot: 49
+  items:
+    # Informação geral
+    info:
+      slot: 4
+      material: 'BOOK'
+      name: '&cRequisitos de Nível'
+      lore:
+        - '&8&m------------------------'
+        - '&7Alguns blocos e mobs possuem'
+        - '&7requisitos de nível para'
+        - '&7serem quebrados ou derrotados.'
+        - ''
+        - '&7Modo &eANY&7: Qualquer skill atende'
+        - '&7Modo &cALL&7: Todas as skills necessárias'
+        - '&8&m------------------------'
+    # Ícone para aba de blocos
+    blocks-tab:
+      slot: 21
+      material: 'DIAMOND_ORE'
+      name: '&b⛏ Blocos'
+      lore:
+        - '&8&m------------------------'
+        - '&7Requisitos para quebrar'
+        - '&7blocos especiais.'
+        - ''
+        - '&7Total: &f{count} blocos'
+        - '&8&m------------------------'
+        - ''
+        - '&eClique para visualizar!'
+    # Ícone para aba de mobs
+    mobs-tab:
+      slot: 23
+      material: 'SKULL_ITEM:4'
+      name: '&c⚔ Mobs'
+      lore:
+        - '&8&m------------------------'
+        - '&7Requisitos para derrotar'
+        - '&7mobs especiais.'
+        - ''
+        - '&7Total: &f{count} mobs'
+        - '&8&m------------------------'
+        - ''
+        - '&eClique para visualizar!'
+  # Configuração dos itens de requisito
+  requirement-icons:
+    # Ícone para requisito atendido
+    unlocked:
+      lore:
+        - '&8&m------------------------'
+        - '&7Modo: {mode}'
+        - ''
+        - '&7Requisitos:'
+        - '{requirements}'
+        - '&8&m------------------------'
+        - ''
+        - '&a✔ Você atende aos requisitos!'
+    # Ícone para requisito não atendido
+    locked:
+      lore:
+        - '&8&m------------------------'
+        - '&7Modo: {mode}'
+        - ''
+        - '&7Requisitos:'
+        - '{requirements}'
+        - '&8&m------------------------'
+        - ''
+        - '&c✗ Você NÃO atende aos requisitos!'
+
+# Menu de Requisitos - Lista de Blocos
+requirements-blocks:
+  name: '&8Requisitos - Blocos'
+  size: 54
+  back-slot: 49
+  # Slots onde os blocos serão exibidos
+  slots: [19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  items:
+    info:
+      slot: 4
+      material: 'DIAMOND_ORE'
+      name: '&b⛏ Requisitos de Blocos'
+      lore:
+        - '&8&m------------------------'
+        - '&7Lista de blocos que possuem'
+        - '&7requisitos de nível.'
+        - ''
+        - '&aVerde&7: Você atende ao requisito'
+        - '&cVermelho&7: Você não atende'
+        - '&8&m------------------------'
+
+# Menu de Requisitos - Lista de Mobs
+requirements-mobs:
+  name: '&8Requisitos - Mobs'
+  size: 54
+  back-slot: 49
+  # Slots onde os mobs serão exibidos
+  slots: [19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  items:
+    info:
+      slot: 4
+      material: 'SKULL_ITEM:4'
+      name: '&c⚔ Requisitos de Mobs'
+      lore:
+        - '&8&m------------------------'
+        - '&7Lista de mobs que possuem'
+        - '&7requisitos de nível.'
+        - ''
+        - '&aVerde&7: Você atende ao requisito'
+        - '&cVermelho&7: Você não atende'
+        - '&8&m------------------------'
+
+# Menu de Remoção/Reset de XP
+reset-xp:
+  name: '&8Converter XP em Frasco'
+  size: 54
+  back-slot: 49
+  cancel-slot: 49
+  convert-all-slot: 31
+  items:
+    # Informação do menu
+    info:
+      slot: 4
+      material: 'EXP_BOTTLE'
+      name: '&a&lConverter XP em Frasco'
+      lore:
+        - '&8&m------------------------'
+        - '&7Selecione uma skill para'
+        - '&7converter XP em um &aFrasco de XP&7.'
+        - ''
+        - '&7O XP removido será convertido'
+        - '&7em um frasco que você pode'
+        - '&7usar ou negociar!'
+        - '&8&m------------------------'
+    # Ícone do Frasco de XP
+    convert:
+      material: 'EXP_BOTTLE'
+      name: '&a{amount} XP &7-> &bFrasco'
+      lore:
+        - '&7Clique para converter &a{xp} XP&7.'
+        - '&7da skill &f{skill} &7em frasco.'
+        - ''
+        - '&7XP Atual: &a{current_xp}'
+        - '&7XP Após: &e{after_xp}'
+        - ''
+        - '&aVocê receberá um Frasco de XP!'
+        - ''
+        - '&eClique para confirmar!'
+    # Ícone de Coletar Tudo
+    convert-all:
+      material: '39a2780a0f6f207bb5645d560c0802e5dbcfb42de83cd304282028160ccbe77c'
+      name: '&c&lConverter Tudo'
+      lore:
+        - '&7Clique para converter &cTODO &7o XP'
+        - '&7da skill &f{skill} &7em frasco.'
+        - ''
+        - '&7XP Atual: &a{current_xp}'
+        - '&7Nível Atual: &e{current_level}'
+        - ''
+        - '&aVocê receberá um Frasco de XP!'
+        - ''
+        - '&eClique para confirmar!'
+    # Ícone de cancelar
+    cancel:
+      slot: 49
+      material: 'BARRIER'
+      name: '&cCancelar'
+      lore:
+        - '&7Clique para cancelar.'
+  # Quantidades de remoção disponíveis
+  # Valores positivos = quantidade fixa
+  # Valores negativos = porcentagem (ex: -10 = 10%)
+  remove-amounts:
+    - 100.0
+    - 500.0
+    - 1000.0
+    - 5000.0
+    - -10.0
+    - -25.0
+    - -50.0

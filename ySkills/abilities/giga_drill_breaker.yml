@@ -1,0 +1,30 @@
+# Giga Drill Breaker - Excavation ability
+display-name: '&eBroca Gigante'
+description: 'Ativa modo de escavacao rapida com drops triplos'
+type: 'ACTIVE'
+
+# Configuracoes de ativacao
+duration: 10
+cooldown: 120
+
+max-level: 10
+
+trigger: 'RIGHT_CLICK_BLOCK'
+effect: 'GIGA_DRILL_BREAKER'
+
+effect-config:
+  haste-level-base: 2
+  haste-level-per-level: 0.2
+  triple-drop-chance: 20
+
+tools:
+  - 'WOODEN_SHOVEL'
+  - 'STONE_SHOVEL'
+  - 'IRON_SHOVEL'
+  - 'GOLDEN_SHOVEL'
+  - 'DIAMOND_SHOVEL'
+  - 'NETHERITE_SHOVEL'
+
+messages:
+  activate: '&e&lBROCA GIGANTE ATIVADA! &7Escavacao turbo por {duration}s!'
+  deactivate: '&c&lBROCA GIGANTE DESATIVADA!'

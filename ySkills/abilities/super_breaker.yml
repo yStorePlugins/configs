@@ -1,0 +1,30 @@
+# Super Breaker - Mining ability
+display-name: '&cSuper Breaker'
+description: 'Ativa modo de mineracao rapida por tempo limitado'
+type: 'ACTIVE'
+
+# Configuracoes de ativacao
+duration: 10
+cooldown: 120
+
+max-level: 10
+
+trigger: 'RIGHT_CLICK_BLOCK'
+effect: 'SUPER_BREAKER'
+
+effect-config:
+  haste-level-base: 1
+  haste-level-per-level: 0.2
+  triple-drop-chance: 10
+
+tools:
+  - 'WOODEN_PICKAXE'
+  - 'STONE_PICKAXE'
+  - 'IRON_PICKAXE'
+  - 'GOLDEN_PICKAXE'
+  - 'DIAMOND_PICKAXE'
+  - 'NETHERITE_PICKAXE'
+
+messages:
+  activate: '&a&lSUPER BREAKER ATIVADO! &7Mineracao turbo por {duration}s!'
+  deactivate: '&c&lSUPER BREAKER DESATIVADO!'

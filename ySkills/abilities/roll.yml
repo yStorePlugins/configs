@@ -1,0 +1,24 @@
+# Roll - Acrobatics ability
+display-name: '&bRolamento'
+description: 'Chance de rolar ao cair e evitar dano'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 10
+chance-per-level: 3
+
+max-level: 10
+
+trigger: 'PLAYER_DAMAGE'
+effect: 'ROLL'
+
+effect-config:
+  damage-reduction-percent: 100
+  max-fall-distance: 15
+  graceful-roll-bonus: 50
+
+tools: []
+
+messages:
+  activate: '&bVoce rolou e evitou o dano da queda!'
+  deactivate: ''

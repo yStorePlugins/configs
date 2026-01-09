@@ -1,0 +1,29 @@
+# Critical Hit - Axes ability
+display-name: '&cGolpe Critico'
+description: 'Chance de causar dano critico com machados'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 5
+chance-per-level: 2
+
+max-level: 10
+
+trigger: 'PLAYER_ATTACK'
+effect: 'CRITICAL_HIT'
+
+effect-config:
+  damage-multiplier: 1.5
+  armor-ignore-percent: 25
+
+tools:
+  - 'WOODEN_AXE'
+  - 'STONE_AXE'
+  - 'IRON_AXE'
+  - 'GOLDEN_AXE'
+  - 'DIAMOND_AXE'
+  - 'NETHERITE_AXE'
+
+messages:
+  activate: '&c&lGOLPE CRITICO!'
+  deactivate: ''

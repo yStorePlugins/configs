@@ -1,0 +1,25 @@
+# Master Angler - Fishing ability
+display-name: '&3Pescador Mestre'
+description: 'Aumenta chance de pescar itens raros e reduz tempo de espera'
+type: 'PASSIVE'
+
+# Configuracoes de valor passivo
+base-value: 5
+value-per-level: 2
+
+max-level: 10
+
+trigger: 'FISHING'
+effect: 'MASTER_ANGLER'
+
+effect-config:
+  treasure-chance-bonus: 5
+  wait-time-reduction-percent: 10
+  double-catch-chance: 5
+
+tools:
+  - 'FISHING_ROD'
+
+messages:
+  activate: ''
+  deactivate: ''

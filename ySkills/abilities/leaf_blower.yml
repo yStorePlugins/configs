@@ -1,0 +1,43 @@
+# Leaf Blower - Woodcutting ability
+display-name: '&2Leaf Blower'
+description: 'Quebra folhas instantaneamente ao redor'
+type: 'PASSIVE'
+
+# Configuracoes de valor passivo
+base-value: 1
+value-per-level: 0.5
+
+max-level: 10
+
+trigger: 'BLOCK_BREAK'
+effect: 'LEAF_BLOWER'
+
+effect-config:
+  # Raio de destruicao de folhas por nivel
+  radius-per-level: 0.5
+  # Raio maximo
+  max-radius: 5
+  # Folhas afetadas
+  valid-blocks:
+    - 'OAK_LEAVES'
+    - 'SPRUCE_LEAVES'
+    - 'BIRCH_LEAVES'
+    - 'JUNGLE_LEAVES'
+    - 'ACACIA_LEAVES'
+    - 'DARK_OAK_LEAVES'
+    - 'AZALEA_LEAVES'
+    - 'FLOWERING_AZALEA_LEAVES'
+    - 'MANGROVE_LEAVES'
+    - 'CHERRY_LEAVES'
+
+tools:
+  - 'WOODEN_AXE'
+  - 'STONE_AXE'
+  - 'IRON_AXE'
+  - 'GOLDEN_AXE'
+  - 'DIAMOND_AXE'
+  - 'NETHERITE_AXE'
+
+messages:
+  activate: '&2Leaf Blower! Folhas destruidas!'
+  deactivate: ''

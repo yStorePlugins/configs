@@ -1,0 +1,28 @@
+# Double Drop - Mining ability
+display-name: '&6Double Drop'
+description: 'Chance de duplicar drops ao minerar'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 5
+chance-per-level: 2
+
+max-level: 10
+
+trigger: 'BLOCK_BREAK'
+effect: 'DOUBLE_DROP'
+
+effect-config:
+  multiplier: 2
+
+tools:
+  - 'WOODEN_PICKAXE'
+  - 'STONE_PICKAXE'
+  - 'IRON_PICKAXE'
+  - 'GOLDEN_PICKAXE'
+  - 'DIAMOND_PICKAXE'
+  - 'NETHERITE_PICKAXE'
+
+messages:
+  activate: '&aDouble Drop! Voce duplicou os drops!'
+  deactivate: ''

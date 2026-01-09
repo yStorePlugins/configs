@@ -1,0 +1,30 @@
+# Serrated Strikes - Swords ability
+display-name: '&cGolpes Serrilhados'
+description: 'Ativa modo de ataque em area com sangramento'
+type: 'ACTIVE'
+
+# Configuracoes de ativacao
+duration: 8
+cooldown: 180
+
+max-level: 10
+
+trigger: 'RIGHT_CLICK_AIR'
+effect: 'SERRATED_STRIKES'
+
+effect-config:
+  aoe-radius: 3
+  bleed-chance: 50
+  bleed-duration: 40
+
+tools:
+  - 'WOODEN_SWORD'
+  - 'STONE_SWORD'
+  - 'IRON_SWORD'
+  - 'GOLDEN_SWORD'
+  - 'DIAMOND_SWORD'
+  - 'NETHERITE_SWORD'
+
+messages:
+  activate: '&c&lGOLPES SERRILHADOS ATIVADO! &7Ataques em area por {duration}s!'
+  deactivate: '&c&lGOLPES SERRILHADOS DESATIVADO!'

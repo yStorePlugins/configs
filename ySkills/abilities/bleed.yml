@@ -1,0 +1,30 @@
+# Bleed - Swords ability
+display-name: '&4Sangramento'
+description: 'Chance de causar sangramento no inimigo'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 5
+chance-per-level: 1.5
+
+max-level: 10
+
+trigger: 'PLAYER_ATTACK'
+effect: 'BLEED'
+
+effect-config:
+  duration-ticks: 60
+  damage-per-tick: 0.5
+  tick-interval: 20
+
+tools:
+  - 'WOODEN_SWORD'
+  - 'STONE_SWORD'
+  - 'IRON_SWORD'
+  - 'GOLDEN_SWORD'
+  - 'DIAMOND_SWORD'
+  - 'NETHERITE_SWORD'
+
+messages:
+  activate: '&4Voce causou sangramento no inimigo!'
+  deactivate: ''

@@ -1,0 +1,27 @@
+# Daze - Archery ability
+display-name: '&9Atordoamento'
+description: 'Chance de atordoar o alvo ao acertar na cabeca'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 5
+chance-per-level: 2
+
+max-level: 10
+
+trigger: 'PLAYER_ATTACK'
+effect: 'DAZE'
+
+effect-config:
+  headshot-only: true
+  confusion-duration: 60
+  slowness-duration: 40
+  slowness-level: 1
+
+tools:
+  - 'BOW'
+  - 'CROSSBOW'
+
+messages:
+  activate: '&9Voce atordoou o alvo!'
+  deactivate: ''

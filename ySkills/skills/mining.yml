@@ -1,0 +1,249 @@
+# Identificação necessária para a API de TOPS do yPlugins
+yplugins-id: 'yskills-mining'
+
+# Nome da skill nos menus e mensagens
+display-name: '&eMineração'
+
+# Nível máximo da skill
+max-level: 100
+
+# Tag para o TOP 1 de mineração
+tag: '&9[⚒]'
+
+# Sistema de ícones
+icons:
+  # Ícone no menu de stats
+  stat:
+    slot: 30
+    material: 'DIAMOND_PICKAXE'
+    name: '&eMineração'
+    flags: ['*']
+    lore:
+      - '&8&m------------------------'
+      - '&7Jogador: &f{player}'
+      - ''
+      - '&7Nível: &b{level}'
+      - '&7XP Atual: &a{xp}'
+      - '&7XP Necessário -> &fL. {next_level}&7: &c{need_xp}'
+      - ''
+      - '&7Bônus: &6{bonus_display}'
+      - '&7Multiplicador: &e+{bonus}%'
+      - '&8&m------------------------'
+      - '&eClique para ver as habilidades.'
+  # Ícone no menu de stats
+  stat-max:
+    material: 'DIAMOND_PICKAXE'
+    name: '&eMineração'
+    flags: ['*']
+    lore:
+      - '&8&m------------------------'
+      - '&7Jogador: &f{player}'
+      - ''
+      - '&7Nível: &b{level}'
+      - '&aVocê está no nível máximo com {xp} xp!'
+      - ''
+      - '&7Bônus: &6{bonus_display}'
+      - '&7Multiplicador: &e+{bonus}%'
+      - '&8&m------------------------'
+      - '&eClique para ver as habilidades.'
+  # Ícone no menu de seleção de skill (ao clicar no Frasco de XP)
+  bottle:
+    slot: 21
+    material: 'DIAMOND_PICKAXE'
+    name: '&eMineração'
+    flags: ['*']
+    lore:
+      - ''
+      - '&7Seu nível: &f{level}'
+      - '&7XP atual: &f{xp}/{need_xp}'
+      - ''
+      - '&aClique para aplicar o XP!'
+  # Ícone no menu de TOP
+  top:
+    slot: 21
+    material: 'DIAMOND_PICKAXE'
+    name: '&eMineração'
+    flags: ['*']
+    lore:
+      - '&f1º: &7{player_1} &8- &7{level_1}'
+      - '&f2º: &7{player_2} &8- &7{level_2}'
+      - '&f3º: &7{player_3} &8- &7{level_3}'
+      - '&f4º: &7{player_4} &8- &7{level_4}'
+      - '&f5º: &7{player_5} &8- &7{level_5}'
+      - '&f6º: &7{player_6} &8- &7{level_6}'
+      - '&f7º: &7{player_7} &8- &7{level_7}'
+      - '&f8º: &7{player_8} &8- &7{level_8}'
+      - '&f9º: &7{player_9} &8- &7{level_9}'
+      - '&f10º: &7{player_10} &8- &7{level_10}'
+      - ''
+      - '&fSua posição: &a{self_pos}º &e- &7{self_level}'
+  # Ícone no menu de selecionar converter XP
+  convert:
+    slot: 21
+    material: 'DIAMOND_PICKAXE'
+    name: '&eMineração'
+    flags: [ '*' ]
+    lore:
+      - '&8&m------------------------'
+      - '&7Nível: &f{level}'
+      - '&7XP: &f{xp}'
+      - '&8&m------------------------'
+      - '&eClique para converter XP!'
+  # Ícone no menu de converter XP
+  convert-info:
+    slot: 4
+    material: 'DIAMOND_PICKAXE'
+    name: '&eMineração'
+    flags: [ '*' ]
+    lore:
+      - '&8&m------------------------'
+      - '&7Nível: &f{level}'
+      - '&7XP: &f{xp}'
+      - '&8&m------------------------'
+      - '&eSelecione a quantidade de'
+      - '&eXP que deseja remover.'
+
+# Sistema de evolução por XP
+xp:
+  # Tipo de fórmula usada para calcular o XP necessário
+  # Opções disponíveis:
+  #
+  # LINEAR       → Crescimento simples e constante
+  #                Ex: 100, 200, 300, 400...
+  #
+  # QUADRATIC    → Crescimento balanceado (RECOMENDADO)
+  #                Ex: 100, 400, 900, 1600...
+  #
+  # EXPONENTIAL  → Crescimento agressivo (difícil)
+  #                Ex: 100, 500, 2500, 12500...
+  #
+  formula: QUADRATIC
+
+  # XP base usado como referência inicial
+  # No QUADRATIC:   XP do nível 1 → 2 será base * 1²
+  # No LINEAR:      XP aumenta base a cada nível
+  # No EXPONENTIAL: XP do primeiro nível
+  base: 100
+
+  # ----------------------------
+  # USADO APENAS EM LINEAR
+  # ----------------------------
+  # Quantidade de XP adicionada por nível
+  # Exemplo:
+  # base: 100
+  # increment: 50
+  # Resultado:
+  # Lv 1 → 2 = 150 XP
+  # Lv 2 → 3 = 200 XP
+  increment: 50
+
+  # ----------------------------
+  # USADO APENAS EM QUADRATIC
+  # ----------------------------
+  # Multiplicador da fórmula quadrática
+  # Fórmula: XP = base * level² * scale
+  #
+  # Exemplo:
+  # level 10 → 100 * 10² * 1 = 10000 XP
+  scale: 1
+
+  # ----------------------------
+  # USADO APENAS EM EXPONENTIAL
+  # ----------------------------
+  # Multiplicador exponencial
+  # Fórmula: XP = base * multiplier^(level - 1)
+  #
+  # Valores recomendados:
+  # 1.2  → Progressão leve
+  # 1.4  → Progressão média
+  # 1.6+ → Progressão pesada
+  multiplier: 1.4
+
+# Formas de ganhar xp
+xp-earn:
+  type1:
+    # Tipos disponíveis: BLOCK_BREAK, MOB_KILL, FISHING, CRAFTING, SMELTING, ENCHANTING, BREWING, ACROBATICS
+    #
+    # BLOCK_BREAK: Ganhar XP ao minerar blocos específicos
+    # MOB_KILL:    Ganhar XP ao matar mobs específicos
+    # FISHING:     Ganhar XP ao pescar peixes específicos
+    # CRAFTING:    Ganhar XP ao craftar itens específicos
+    # SMELTING:    Ganhar XP ao fundir itens específicos
+    # ENCHANTING:  Ganhar XP ao encantar itens específicos
+    # BREWING:     Ganhar XP ao fazer poções específicas
+    # ACROBATICS:  Ganhar XP ao realizar ações de acrobacia
+    #
+    type: 'BLOCK_BREAK'
+    # Lista de ferramentas permitidas (deixe vazio para qualquer ferramenta)
+    tools:
+      - 'WOODEN_PICKAXE'
+      - 'STONE_PICKAXE'
+      - 'IRON_PICKAXE'
+      - 'GOLDEN_PICKAXE'
+      - 'DIAMOND_PICKAXE'
+      - 'NETHERITE_PICKAXE'
+    list:
+      - 'STONE:5'
+      - 'COAL_ORE:10'
+      - 'IRON_ORE:15'
+      - 'GOLD_ORE:20'
+      - 'DIAMOND_ORE:50'
+      - 'EMERALD_ORE:60'
+      - 'LAPIS_ORE:25'
+      - 'REDSTONE_ORE:30'
+      - 'NETHER_QUARTZ_ORE:15'
+      - 'DEEPSLATE:6'
+      - 'DEEPSLATE_COAL_ORE:12'
+      - 'DEEPSLATE_IRON_ORE:18'
+      - 'DEEPSLATE_GOLD_ORE:25'
+      - 'DEEPSLATE_DIAMOND_ORE:60'
+      - 'DEEPSLATE_EMERALD_ORE:70'
+      - 'DEEPSLATE_LAPIS_ORE:30'
+      - 'DEEPSLATE_REDSTONE_ORE:35'
+      - 'COPPER_ORE:12'
+      - 'DEEPSLATE_COPPER_ORE:15'
+      - 'NETHER_GOLD_ORE:18'
+      - 'ANCIENT_DEBRIS:100'
+
+# Actionbar quando ganhar xp
+actionbar:
+  enabled: true
+  # Mundos em que a actionbar estará desativada
+  disabled-worlds: []
+  # Mensagem que irá aparecer na actionbar ao ganhar XP do mcMMO
+  message: '&a{skill}: {level} ({xp_has} / {xp_need}) +{xp_earned}XP'
+
+# Sistema de mensagem ao upar de nível
+level-up:
+  enabled: true
+  # Enviar mensagem a cada x level (por exemplo, a cada 100 leveis em tal skill: lvl 100, 200...)
+  level: 100
+  strike: true
+  message: |
+    <nl>
+    &b&lSKILLS: &bO jogador &f{player}&b atingiu o &fnível {level} &bna habilidade &f{skill}&f!
+    <nl>
+
+# Sistema de recompensas ao upar de nível
+rewards:
+  mining_lvl100:
+    level: 100
+    reward:
+      - 'give {player} stone 1'
+
+# Configuracao de habilidades
+abilities-config:
+  # A cada X niveis da skill, a habilidade sobe 1 nivel
+  levels-per-ability-level: 10
+
+# Habilidades desta skill
+abilities:
+  double_drop:
+    level: 10      # Nivel necessario para desbloquear
+    max-level: 10  # Nivel maximo da habilidade
+  super_breaker:
+    level: 25
+    max-level: 10
+  repair_mining:
+    level: 40
+    max-level: 10

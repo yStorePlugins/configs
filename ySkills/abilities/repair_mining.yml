@@ -1,0 +1,35 @@
+# Repair - Mining ability
+display-name: '&bRepair'
+description: 'Chance de reparar a picareta ao minerar'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 2
+chance-per-level: 1
+
+max-level: 10
+
+trigger: 'BLOCK_BREAK'
+effect: 'REPAIR'
+
+effect-config:
+  # Porcentagem de durabilidade restaurada por nivel
+  repair-percent-per-level: 3
+  # Maximo de durabilidade restaurada (%)
+  max-repair-percent: 30
+  # Reparar item na mao principal
+  repair-main-hand: true
+  # Reparar armadura equipada
+  repair-armor: false
+
+tools:
+  - 'WOODEN_PICKAXE'
+  - 'STONE_PICKAXE'
+  - 'IRON_PICKAXE'
+  - 'GOLDEN_PICKAXE'
+  - 'DIAMOND_PICKAXE'
+  - 'NETHERITE_PICKAXE'
+
+messages:
+  activate: '&bRepair! Sua picareta foi reparada!'
+  deactivate: ''

@@ -1,0 +1,35 @@
+# Repair - Axes ability
+display-name: '&bRepair'
+description: 'Chance de reparar o machado ao atacar'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 1
+chance-per-level: 0.8
+
+max-level: 10
+
+trigger: 'PLAYER_ATTACK'
+effect: 'REPAIR'
+
+effect-config:
+  # Porcentagem de durabilidade restaurada por nivel
+  repair-percent-per-level: 2
+  # Maximo de durabilidade restaurada (%)
+  max-repair-percent: 20
+  # Reparar item na mao principal
+  repair-main-hand: true
+  # Reparar armadura equipada
+  repair-armor: false
+
+tools:
+  - 'WOODEN_AXE'
+  - 'STONE_AXE'
+  - 'IRON_AXE'
+  - 'GOLDEN_AXE'
+  - 'DIAMOND_AXE'
+  - 'NETHERITE_AXE'
+
+messages:
+  activate: '&bRepair! Seu machado foi reparado!'
+  deactivate: ''

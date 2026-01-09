@@ -1,0 +1,183 @@
+# Identificação necessária para a API de TOPS do yPlugins
+yplugins-id: 'yskills-fishing'
+
+# Nome da skill nos menus e mensagens
+display-name: '&3Pesca'
+
+# Nível máximo da skill
+max-level: 100
+
+# Tag para o TOP 1
+tag: '&3[✦]'
+
+# Sistema de ícones
+icons:
+  # Ícone no menu de stats
+  stat:
+    slot: 41
+    material: 'FISHING_ROD'
+    name: '&3Pesca'
+    flags: ['*']
+    lore:
+      - '&8&m------------------------'
+      - '&7Jogador: &f{player}'
+      - ''
+      - '&7Nível: &b{level}'
+      - '&7XP Atual: &a{xp}'
+      - '&7XP Necessário -> &fL. {next_level}&7: &c{need_xp}'
+      - ''
+      - '&7Bônus: &6{bonus_display}'
+      - '&7Multiplicador: &e+{bonus}%'
+      - '&8&m------------------------'
+      - '&eClique para ver as habilidades.'
+  # Ícone no menu de stats quando no nível máximo
+  stat-max:
+    material: 'FISHING_ROD'
+    name: '&3Pesca'
+    flags: ['*']
+    lore:
+      - '&8&m------------------------'
+      - '&7Jogador: &f{player}'
+      - ''
+      - '&7Nível: &b{level}'
+      - '&aVocê está no nível máximo com {xp} xp!'
+      - ''
+      - '&7Bônus: &6{bonus_display}'
+      - '&7Multiplicador: &e+{bonus}%'
+      - '&8&m------------------------'
+      - '&eClique para ver as habilidades.'
+  # Ícone no menu de seleção de skill (ao clicar no Frasco de XP)
+  bottle:
+    slot: 32
+    material: 'FISHING_ROD'
+    name: '&3Pesca'
+    flags: [ '*' ]
+    lore:
+      - ''
+      - '&7Seu nível: &f{level}'
+      - '&7XP atual: &f{xp}/{need_xp}'
+      - ''
+      - '&aClique para aplicar o XP!'
+  # Ícone no menu de TOP
+  top:
+    slot: 32
+    material: 'FISHING_ROD'
+    name: '&3Pesca'
+    flags: [ '*' ]
+    lore:
+      - '&f1º: &7{player_1} &8- &7{level_1}'
+      - '&f2º: &7{player_2} &8- &7{level_2}'
+      - '&f3º: &7{player_3} &8- &7{level_3}'
+      - '&f4º: &7{player_4} &8- &7{level_4}'
+      - '&f5º: &7{player_5} &8- &7{level_5}'
+      - '&f6º: &7{player_6} &8- &7{level_6}'
+      - '&f7º: &7{player_7} &8- &7{level_7}'
+      - '&f8º: &7{player_8} &8- &7{level_8}'
+      - '&f9º: &7{player_9} &8- &7{level_9}'
+      - '&f10º: &7{player_10} &8- &7{level_10}'
+      - ''
+      - '&fSua posição: &a{self_pos}º &e- &7{self_level}'
+  # Ícone no menu de selecionar converter XP
+  convert:
+    slot: 32
+    material: 'FISHING_ROD'
+    name: '&3Pesca'
+    flags: [ '*' ]
+    lore:
+      - '&8&m------------------------'
+      - '&7Nível: &f{level}'
+      - '&7XP: &f{xp}'
+      - '&8&m------------------------'
+      - '&eClique para converter XP!'
+  # Ícone no menu de converter XP
+  convert-info:
+    slot: 4
+    material: 'FISHING_ROD'
+    name: '&3Pesca'
+    flags: [ '*' ]
+    lore:
+      - '&8&m------------------------'
+      - '&7Nível: &f{level}'
+      - '&7XP: &f{xp}'
+      - '&8&m------------------------'
+      - '&eSelecione a quantidade de'
+      - '&eXP que deseja remover.'
+
+# Sistema de evolução por XP
+xp:
+  formula: QUADRATIC
+  base: 100
+  increment: 50
+  scale: 1
+  multiplier: 1.4
+
+# Formas de ganhar xp
+xp-earn:
+  type1:
+    type: 'FISHING'
+    # Lista de ferramentas permitidas (deixe vazio para qualquer ferramenta)
+    tools: []
+    list:
+      # Peixes
+      - 'COD:10'
+      - 'SALMON:15'
+      - 'TROPICAL_FISH:25'
+      - 'PUFFERFISH:20'
+      # Tesouros
+      - 'BOW:50'
+      - 'ENCHANTED_BOOK:100'
+      - 'FISHING_ROD:40'
+      - 'NAME_TAG:60'
+      - 'NAUTILUS_SHELL:80'
+      - 'SADDLE:50'
+      # Lixo
+      - 'LILY_PAD:5'
+      - 'BOWL:3'
+      - 'LEATHER:5'
+      - 'LEATHER_BOOTS:8'
+      - 'ROTTEN_FLESH:3'
+      - 'STICK:2'
+      - 'STRING:3'
+      - 'POTION:10'
+      - 'BONE:4'
+      - 'INK_SAC:6'
+      - 'TRIPWIRE_HOOK:8'
+
+# Actionbar quando ganhar xp
+actionbar:
+  enabled: true
+  disabled-worlds: []
+  message: '&3{skill}: {level} ({xp_has} / {xp_need}) +{xp_earned}XP'
+
+# Sistema de mensagem ao upar de nível
+level-up:
+  enabled: true
+  level: 100
+  strike: true
+  message: |
+    <nl>
+    &b&lSKILLS: &bO jogador &f{player}&b atingiu o &fnível {level} &bna habilidade &f{skill}&f!
+    <nl>
+
+# Sistema de recompensas ao upar de nível
+rewards:
+  fishing_lvl100:
+    level: 100
+    reward:
+      - 'give {player} fishing_rod 1'
+
+# Configuracao de habilidades
+abilities-config:
+  levels-per-ability-level: 10
+
+# Habilidades desta skill
+abilities:
+  master_angler:
+    level: 1
+    max-level: 10
+  repair:
+    level: 15
+    max-level: 10
+  treasure_hunter:
+    level: 30
+    max-level: 10

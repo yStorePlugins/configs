@@ -1,0 +1,25 @@
+# Graceful Roll - Acrobatics ability
+display-name: '&aGraceful Roll'
+description: 'Roll aprimorado que nega mais dano de queda'
+type: 'PASSIVE'
+
+# Configuracoes de valor passivo
+base-value: 10
+value-per-level: 5
+
+max-level: 10
+
+trigger: 'PLAYER_DAMAGE'
+effect: 'GRACEFUL_ROLL'
+
+effect-config:
+  # Reducao adicional de dano (% por nivel)
+  damage-reduction-per-level: 5
+  # Chance de negar todo o dano
+  full-negate-chance-per-level: 2
+  # Altura maxima para roll (blocos)
+  max-fall-height: 50
+
+messages:
+  activate: '&aGraceful Roll! Voce caiu com estilo!'
+  deactivate: ''

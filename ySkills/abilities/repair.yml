@@ -1,0 +1,27 @@
+# Repair - Fishing ability
+display-name: '&bRepair'
+description: 'Chance de reparar o item equipado ao pescar'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 3
+chance-per-level: 1.5
+
+max-level: 10
+
+trigger: 'FISHING'
+effect: 'REPAIR'
+
+effect-config:
+  # Porcentagem de durabilidade restaurada por nivel
+  repair-percent-per-level: 5
+  # Maximo de durabilidade restaurada (%)
+  max-repair-percent: 50
+  # Reparar item na mao principal
+  repair-main-hand: true
+  # Reparar armadura equipada
+  repair-armor: true
+
+messages:
+  activate: '&bRepair! Seu item foi reparado enquanto pescava!'
+  deactivate: ''

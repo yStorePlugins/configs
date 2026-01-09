@@ -1,0 +1,48 @@
+# Treasure Hunter - Fishing ability
+display-name: '&6Treasure Hunter'
+description: 'Chance de encontrar tesouros raros ao pescar'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 2
+chance-per-level: 1
+
+max-level: 10
+
+trigger: 'FISHING'
+effect: 'TREASURE_HUNTER'
+
+effect-config:
+  # Lista de tesouros possiveis por nivel
+  treasures:
+    common:
+      min-level: 1
+      items:
+        - 'IRON_INGOT:1-3'
+        - 'GOLD_INGOT:1-2'
+        - 'LAPIS_LAZULI:3-8'
+        - 'NAME_TAG:1'
+    uncommon:
+      min-level: 3
+      items:
+        - 'DIAMOND:1'
+        - 'EMERALD:1-2'
+        - 'GOLDEN_APPLE:1'
+        - 'SADDLE:1'
+    rare:
+      min-level: 5
+      items:
+        - 'DIAMOND:1-3'
+        - 'ENCHANTED_GOLDEN_APPLE:1'
+        - 'TRIDENT:1'
+        - 'HEART_OF_THE_SEA:1'
+    legendary:
+      min-level: 8
+      items:
+        - 'NETHERITE_INGOT:1'
+        - 'ELYTRA:1'
+        - 'TOTEM_OF_UNDYING:1'
+
+messages:
+  activate: '&6Treasure Hunter! Voce encontrou um tesouro!'
+  deactivate: ''

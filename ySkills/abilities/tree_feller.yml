@@ -1,0 +1,31 @@
+# Tree Feller - Woodcutting ability
+display-name: '&2Lenhador Supremo'
+description: 'Ativa modo que derruba arvores inteiras de uma vez'
+type: 'ACTIVE'
+
+# Configuracoes de ativacao
+duration: 15
+cooldown: 180
+
+max-level: 10
+
+trigger: 'RIGHT_CLICK_BLOCK'
+effect: 'TREE_FELLER'
+
+effect-config:
+  max-blocks-base: 50
+  max-blocks-per-level: 10
+  damage-tool: true
+  double-drop-chance: 15
+
+tools:
+  - 'WOODEN_AXE'
+  - 'STONE_AXE'
+  - 'IRON_AXE'
+  - 'GOLDEN_AXE'
+  - 'DIAMOND_AXE'
+  - 'NETHERITE_AXE'
+
+messages:
+  activate: '&2&lLENHADOR SUPREMO ATIVADO! &7Derrube arvores inteiras por {duration}s!'
+  deactivate: '&c&lLENHADOR SUPREMO DESATIVADO!'

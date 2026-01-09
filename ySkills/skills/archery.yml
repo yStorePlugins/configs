@@ -1,0 +1,189 @@
+# Identificação necessária para a API de TOPS do yPlugins
+yplugins-id: 'yskills-archery'
+
+# Nome da skill nos menus e mensagens
+display-name: '&6Arquearia'
+
+# Nível máximo da skill
+max-level: 100
+
+# Tag para o TOP 1
+tag: '&6[ARC]'
+
+# Sistema de ícones
+icons:
+  # Ícone no menu de stats
+  stat:
+    slot: 29
+    material: 'BOW'
+    name: '&6Arquearia'
+    flags: ['*']
+    lore:
+      - '&8&m------------------------'
+      - '&7Jogador: &f{player}'
+      - ''
+      - '&7Nível: &b{level}'
+      - '&7XP Atual: &a{xp}'
+      - '&7XP Necessário -> &fL. {next_level}&7: &c{need_xp}'
+      - ''
+      - '&7Bônus: &6{bonus_display}'
+      - '&7Multiplicador: &e+{bonus}%'
+      - '&8&m------------------------'
+      - '&eClique para ver as habilidades.'
+  # Ícone no menu de stats quando no nível máximo
+  stat-max:
+    material: 'BOW'
+    name: '&6Arquearia'
+    flags: ['*']
+    lore:
+      - '&8&m------------------------'
+      - '&7Jogador: &f{player}'
+      - ''
+      - '&7Nível: &b{level}'
+      - '&aVocê está no nível máximo com {xp} xp!'
+      - ''
+      - '&7Bônus: &6{bonus_display}'
+      - '&7Multiplicador: &e+{bonus}%'
+      - '&8&m------------------------'
+      - '&eClique para ver as habilidades.'
+  # Ícone no menu de seleção de skill (ao clicar no Frasco de XP)
+  bottle:
+    slot: 20
+    material: 'BOW'
+    name: '&6Arquearia'
+    flags: [ '*' ]
+    lore:
+      - ''
+      - '&7Seu nível: &f{level}'
+      - '&7XP atual: &f{xp}/{need_xp}'
+      - ''
+      - '&aClique para aplicar o XP!'
+  # Ícone no menu de TOP
+  top:
+    slot: 20
+    material: 'BOW'
+    name: '&6Arquearia'
+    flags: [ '*' ]
+    lore:
+      - '&f1º: &7{player_1} &8- &7{level_1}'
+      - '&f2º: &7{player_2} &8- &7{level_2}'
+      - '&f3º: &7{player_3} &8- &7{level_3}'
+      - '&f4º: &7{player_4} &8- &7{level_4}'
+      - '&f5º: &7{player_5} &8- &7{level_5}'
+      - '&f6º: &7{player_6} &8- &7{level_6}'
+      - '&f7º: &7{player_7} &8- &7{level_7}'
+      - '&f8º: &7{player_8} &8- &7{level_8}'
+      - '&f9º: &7{player_9} &8- &7{level_9}'
+      - '&f10º: &7{player_10} &8- &7{level_10}'
+      - ''
+      - '&fSua posição: &a{self_pos}º &e- &7{self_level}'
+  # Ícone no menu de selecionar converter XP
+  convert:
+    slot: 20
+    material: 'BOW'
+    name: '&6Arquearia'
+    flags: [ '*' ]
+    lore:
+      - '&8&m------------------------'
+      - '&7Nível: &f{level}'
+      - '&7XP: &f{xp}'
+      - '&8&m------------------------'
+      - '&eClique para converter XP!'
+  # Ícone no menu de converter XP
+  convert-info:
+    slot: 4
+    material: 'BOW'
+    name: '&6Arquearia'
+    flags: [ '*' ]
+    lore:
+      - '&8&m------------------------'
+      - '&7Nível: &f{level}'
+      - '&7XP: &f{xp}'
+      - '&8&m------------------------'
+      - '&eSelecione a quantidade de'
+      - '&eXP que deseja remover.'
+
+# Sistema de evolução por XP
+xp:
+  formula: QUADRATIC
+  base: 100
+  increment: 50
+  scale: 1
+  multiplier: 1.4
+
+# Formas de ganhar xp
+xp-earn:
+  type1:
+    type: 'MOB_KILL'
+    # Lista de ferramentas permitidas (deixe vazio para qualquer ferramenta)
+    tools:
+      - 'BOW'
+      - 'CROSSBOW'
+    list:
+      - 'ZOMBIE:15'
+      - 'SKELETON:18'
+      - 'SPIDER:15'
+      - 'CREEPER:20'
+      - 'ENDERMAN:30'
+      - 'WITCH:25'
+      - 'BLAZE:25'
+      - 'GHAST:30'
+      - 'WITHER_SKELETON:35'
+      - 'PIGLIN:20'
+      - 'PIGLIN_BRUTE:30'
+      - 'HOGLIN:25'
+      - 'ZOGLIN:25'
+      - 'DROWNED:18'
+      - 'HUSK:18'
+      - 'STRAY:18'
+      - 'PHANTOM:22'
+      - 'PILLAGER:20'
+      - 'VINDICATOR:25'
+      - 'RAVAGER:60'
+      - 'EVOKER:35'
+      - 'VEX:15'
+      - 'WARDEN:120'
+      - 'ELDER_GUARDIAN:70'
+      - 'GUARDIAN:25'
+      - 'SHULKER:30'
+      - 'WITHER:180'
+      - 'ENDER_DRAGON:250'
+
+# Actionbar quando ganhar xp
+actionbar:
+  enabled: true
+  disabled-worlds: []
+  message: '&6{skill}: {level} ({xp_has} / {xp_need}) +{xp_earned}XP'
+
+# Sistema de mensagem ao upar de nível
+level-up:
+  enabled: true
+  level: 100
+  strike: true
+  message: |
+    <nl>
+    &b&lSKILLS: &bO jogador &f{player}&b atingiu o &fnível {level} &bna habilidade &f{skill}&f!
+    <nl>
+
+# Sistema de recompensas ao upar de nível
+rewards:
+  archery_lvl100:
+    level: 100
+    reward:
+      - 'give {player} bow 1'
+
+# Configuracao de habilidades
+abilities-config:
+  levels-per-ability-level: 10
+
+# Habilidades desta skill
+abilities:
+  skill_shot:
+    level: 1
+    max-level: 10
+  daze:
+    level: 15
+    max-level: 10
+  arrow_retrieval:
+    level: 5
+    max-level: 10

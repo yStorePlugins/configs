@@ -1,0 +1,23 @@
+# Rupture - Swords ability
+display-name: '&4Rupture'
+description: 'Aumenta o dano causado por Bleed'
+type: 'PASSIVE'
+
+# Configuracoes de valor passivo
+base-value: 10
+value-per-level: 5
+
+max-level: 10
+
+trigger: 'PLAYER_ATTACK'
+effect: 'RUPTURE'
+
+effect-config:
+  # Bonus de dano por tick de bleed (% por nivel)
+  bleed-damage-bonus-per-level: 10
+  # Chance de aplicar bleed extra
+  extra-bleed-chance-per-level: 2
+
+messages:
+  activate: '&4Rupture! O sangramento causa mais dano!'
+  deactivate: ''

@@ -1,0 +1,24 @@
+# Arrow Retrieval - Archery ability
+display-name: '&aRecuperacao de Flechas'
+description: 'Chance de recuperar flechas apos acertar'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 10
+chance-per-level: 3
+
+max-level: 10
+
+trigger: 'PLAYER_ATTACK'
+effect: 'ARROW_RETRIEVAL'
+
+effect-config:
+  drop-on-ground: false
+
+tools:
+  - 'BOW'
+  - 'CROSSBOW'
+
+messages:
+  activate: '&aVoce recuperou uma flecha!'
+  deactivate: ''

@@ -1,0 +1,23 @@
+# Catalysis - Alchemy ability
+display-name: '&5Catalise'
+description: 'Aumenta a velocidade de brewing'
+type: 'PASSIVE'
+
+# Configuracoes de valor passivo
+base-value: 10
+value-per-level: 5
+
+max-level: 10
+
+trigger: 'BREWING'
+effect: 'BREWING_SPEED'
+
+effect-config:
+  speed-multiplier-base: 1.1
+  speed-multiplier-per-level: 0.05
+
+tools: []
+
+messages:
+  activate: ''
+  deactivate: ''

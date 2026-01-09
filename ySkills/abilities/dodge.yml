@@ -1,0 +1,28 @@
+# Dodge - Acrobatics ability
+display-name: '&bDodge'
+description: 'Chance de esquivar completamente de ataques'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 2
+chance-per-level: 1
+
+max-level: 10
+
+trigger: 'PLAYER_DAMAGE'
+effect: 'DODGE'
+
+effect-config:
+  # Negar 100% do dano ao esquivar
+  full-dodge: true
+  # Tipos de dano que podem ser esquivados
+  damage-types:
+    - 'ENTITY_ATTACK'
+    - 'PROJECTILE'
+    - 'ENTITY_SWEEP_ATTACK'
+  # Cooldown entre esquivas (segundos)
+  dodge-cooldown: 3
+
+messages:
+  activate: '&bDodge! Voce esquivou do ataque!'
+  deactivate: ''

@@ -1,0 +1,35 @@
+# Armor Impact - Axes ability
+display-name: '&6Armor Impact'
+description: 'Chance de ignorar parte da armadura do inimigo'
+type: 'CHANCE'
+
+# Configuracoes de chance
+base-chance: 5
+chance-per-level: 2.5
+
+max-level: 10
+
+trigger: 'PLAYER_ATTACK'
+effect: 'ARMOR_IMPACT'
+
+effect-config:
+  # Porcentagem de armadura ignorada por nivel
+  armor-ignore-per-level: 5
+  # Maximo de armadura ignorada (%)
+  max-armor-ignore: 50
+  # Chance de danificar a armadura do inimigo
+  damage-armor-chance: 25
+  # Durabilidade removida da armadura
+  armor-durability-damage: 5
+
+tools:
+  - 'WOODEN_AXE'
+  - 'STONE_AXE'
+  - 'IRON_AXE'
+  - 'GOLDEN_AXE'
+  - 'DIAMOND_AXE'
+  - 'NETHERITE_AXE'
+
+messages:
+  activate: '&6Armor Impact! Voce ignorou a armadura do inimigo!'
+  deactivate: ''

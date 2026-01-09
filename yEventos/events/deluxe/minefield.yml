@@ -266,23 +266,22 @@ messages:
   forced: '&aVocê forçou o começo do evento.'
   help: |
     &eComandos do Evento
-    &e-> &f/frog &8- &7Entrar no evento
-    &e-> &f/frog sair &8- &7Sair no evento
+    &e-> &f/campominado &8- &7Entrar no evento
+    &e-> &f/campominado sair &8- &7Sair no evento
   help-staff: |
     &eComandos do Evento
-    &e-> &f/frog &8- &7Entrar no evento
-    &e-> &f/frog sair &8- &7Sair no evento
-    &e-> &f/frog iniciar &8- &7Iniciar o evento
-    &e-> &f/frog parar &8- &7Parar o evento
-    &e-> &f/frog setloc &8- &7Setar algum local do evento
-    &e-> &f/frog addloc &8- &7Adicionar uma entrada no evento
-    &e-> &f/frog delloc &8- &7Deletar um local do evento
-    &e-> &f/frog wand &8- &7Pegar a vara de seleção da área
-    &e-> &f/frog define &8- &7Definir a área
-    &e-> &f/frog addwall &8- &7Adiciona uma parede
-    &e-> &f/frog clearwalls &8- &7Limpa as paredes
-    &e-> &f/frog addsafezone &8- &7Adiciona uma zona segura
-    &e-> &f/frog clearsafezones &8- &7Limpa as zonas seguras
+    &e-> &f/campominado &8- &7Entrar no evento
+    &e-> &f/campominado sair &8- &7Sair no evento
+    &e-> &f/campominado iniciar &8- &7Iniciar o evento
+    &e-> &f/campominado parar &8- &7Parar o evento
+    &e-> &f/campominado setloc &8- &7Setar algum local do evento
+    &e-> &f/campominado addloc &8- &7Adicionar uma entrada no evento
+    &e-> &f/campominado delloc &8- &7Deletar um local do evento
+    &e-> &f/campominado define &8- &7Definir a área
+    &e-> &f/campominado addwall &8- &7Adiciona uma parede
+    &e-> &f/campominado clearwalls &8- &7Limpa as paredes
+    &e-> &f/campominado addsafezone &8- &7Adiciona uma zona segura
+    &e-> &f/campominado clearsafezones &8- &7Limpa as zonas seguras
 
 # Anúncios do plugin
 messages-announces:
