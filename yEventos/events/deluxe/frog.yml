@@ -322,6 +322,9 @@ messages-announces:
 
 # Configurações do frog
 frog:
+  # Delay inicial antes de começar a sumir os blocos
+  # em segundos (tempo para o pessoal fazer o parkour)
+  disappear-delay: 5
   # Tempo que irá levar até quebrar outro bloco
   # em segundos
   break-time: 3
