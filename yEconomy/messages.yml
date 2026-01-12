@@ -17,6 +17,22 @@ rich-new:
   actionbar: ''
   title: '&6{player}<nl>&aé o novo magnata.'
 
+rich-join:
+  chat: |
+
+    &2&l[$]&a O(a) jogador(a) &f{player}&a acabou de entrar no servidor.
+
+  actionbar: ''
+  title: ''
+
+rich-left:
+  chat: |
+
+    &2&l[$]&a O(a) jogador(a) &f{player}&a acabou de sair do servidor.
+
+  actionbar: ''
+  title: ''
+
 chat:
   syntax: '&cUse: /{command} {syntax}'
   target: '&cJogador {player} não encontrado.'
