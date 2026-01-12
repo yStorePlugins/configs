@@ -31,3 +31,13 @@ chat:
   orb-activated: '&aVocê ativou &7{amount}x {orb}&a.'
   orb-world-blacklist: '&cVocê não pode colocar essa orb nesse mundo.'
   orb-radius: '&cHá uma orb muito perto daqui.'
+  orb-info: |
+    
+    &e&lInformações da Orb:
+    &7Orb: &f{orb}
+    &7Dono: &f{owner}
+    &7Ondas restantes: &f{rounds}/{rounds_max}
+    &7Próxima onda em: &f{feed_time}
+    &7Localização: &f{location}
+    
+  orb-removed: '&aVocê removeu a orb &7{orb}&a. Ondas restantes: &7{rounds}&a.'
