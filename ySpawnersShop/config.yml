@@ -54,6 +54,9 @@ DelayQ: 10
 # em segundos
 Delay: 5
 
+# Tag para o que mais comprou spawners
+top-tag: '&6[TOP SPAWNERS]'
+
 # Mensagens gerais do plugin:
 Mensagens:
   Permissao: '&cVocê não tem permissão para fazer isto.'
