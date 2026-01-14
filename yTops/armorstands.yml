@@ -11,6 +11,11 @@
 # YCLANS_SPAWNERS, MCMMO_TODOS, MCMMO_ALQUIMIA, MCMMO_ESPADAS, MCMMO_ARQUERIA, MCMMO_MINERACAO, MCMMO_EXCAVACAO, MCMMO_MACHADOS, MCMMO_REPARACAO, MCMMO_ACROBACIA, YPOINTS_PONTOS, YPESCA_COINS, YPESCA_PESCADOS, YGUERRA_GANHADAS,
 # YGUERRA_CLAN_GANHADAS, YCHAIN_KILL, YCHAIN_KILLSTREAK, YCHAIN_KDR, YCHAIN_TEMPO, YCRATESVIRTUAIS_ABERTAS, YRECOMENDAR_RECOMENDADOS, YCLANS_KILLS, YCLANS_DEATHS, YVIPS_ATIVADOS, YVIPS_CREDITOS, YMITO_TIMES, YMITO_TOTAL_TIME,
 # YCAMPO_COINS, YCAMPO_BROKEN, YCAMPO_TIME, YPAYMENTS_SPENT, YMINASPACKETS_QUEBRADOS, YMINASPACKETS_BLOCOS, YBANCO_RICOS, YPESCASIMPLES_PESCADOS, YSTACKBOSSES_KILLED, YSTACKBOSSES_DAMAGE, YFLORESTA_COIN, YFLORESTA_BROKEN, YFLORESTA_TIME
+#
+# TOP-TYPE SEMANAIS (resetam a cada 7 dias):
+# Basta adicionar o prefixo WEEKLY_ em qualquer tipo acima!
+# Exemplos: WEEKLY_VAULT, WEEKLY_YMINAS_BLOCOS, WEEKLY_YKILLSYSTEM_KILLS, WEEKLY_MCMMO_TODOS
+# Também funciona com tipos CUSTOM registrados via API: WEEKLY_MEU_PLUGIN_CUSTOM
 
 # PLACEHOLDERS DISPONÍVEIS
 # {index}, {player_<index>}, {value_<index>}, {value_formatted_<index>}, {value_time_<index>}, {value_kdr_<index>}
@@ -90,6 +95,59 @@ armorstand:
           leggings: 'LEATHER_LEGGINGS'
           boots: 'LEATHER_BOOTS'
           hand: 'null'
+        euler-positions:
+          head: '0;0;0'
+          body: '0;0;0'
+          left-arm: '0;0;0'
+          right-arm: '0;0;0'
+          left-leg: '0;0;0'
+          right-leg: '0;0;0'
+
+  # Exemplo de TOP Semanal - Blocos minerados na semana
+  weekly_money:
+    top-type: 'WEEKLY_VAULT'
+    hologram:
+      offset: 3.1
+      lines: [ '&b&lTOP SEMANAL {index}', '&fJogador: &7{player}', '&fBlocos: &b{value_formatted}' ]
+    customs:
+      custom_index_1:
+        index: 1
+        baby: true
+        items:
+          chestplate: 'DIAMOND_CHESTPLATE'
+          leggings: 'DIAMOND_LEGGINGS'
+          boots: 'DIAMOND_BOOTS'
+          hand: 'DIAMOND_PICKAXE'
+        euler-positions:
+          head: '0;0;0'
+          body: '0;0;0'
+          left-arm: '0;0;0'
+          right-arm: '0;0;0'
+          left-leg: '0;0;0'
+          right-leg: '0;0;0'
+      custom_index_2:
+        index: 2
+        baby: true
+        items:
+          chestplate: 'GOLD_CHESTPLATE'
+          leggings: 'GOLD_LEGGINGS'
+          boots: 'GOLD_BOOTS'
+          hand: 'IRON_PICKAXE'
+        euler-positions:
+          head: '0;0;0'
+          body: '0;0;0'
+          left-arm: '0;0;0'
+          right-arm: '0;0;0'
+          left-leg: '0;0;0'
+          right-leg: '0;0;0'
+      custom_index_3:
+        index: 3
+        baby: true
+        items:
+          chestplate: 'IRON_CHESTPLATE'
+          leggings: 'IRON_LEGGINGS'
+          boots: 'IRON_BOOTS'
+          hand: 'STONE_PICKAXE'
         euler-positions:
           head: '0;0;0'
           body: '0;0;0'

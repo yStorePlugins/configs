@@ -27,3 +27,5 @@ chat:
   reward-collected: '&eItem recolhido com sucesso.'
   reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
   reward-forced: '&aRecompensas {mode} entregues forçadamente!'
+  weekly-reset: '&aTOP semanal resetado com sucesso!'
+  weekly-status: '&eFaltam &6{time} &epara o próximo reset. &7({types} tipos ativos)'

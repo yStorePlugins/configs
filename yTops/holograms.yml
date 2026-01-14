@@ -11,6 +11,11 @@
 # YCLANS_SPAWNERS, MCMMO_TODOS, MCMMO_ALQUIMIA, MCMMO_ESPADAS, MCMMO_ARQUERIA, MCMMO_MINERACAO, MCMMO_EXCAVACAO, MCMMO_MACHADOS, MCMMO_REPARACAO, MCMMO_ACROBACIA, YPOINTS_PONTOS, YPESCA_COINS, YPESCA_PESCADOS, YGUERRA_GANHADAS,
 # YGUERRA_CLAN_GANHADAS, YCHAIN_KILL, YCHAIN_KILLSTREAK, YCHAIN_KDR, YCHAIN_TEMPO, YCRATESVIRTUAIS_ABERTAS, YRECOMENDAR_RECOMENDADOS, YCLANS_KILLS, YCLANS_DEATHS, YVIPS_ATIVADOS, YVIPS_CREDITOS, YMITO_TIMES, YMITO_TOTAL_TIME,
 # YCAMPO_COINS, YCAMPO_BROKEN, YCAMPO_TIME, YPAYMENTS_SPENT, YMINASPACKETS_QUEBRADOS, YMINASPACKETS_BLOCOS, YBANCO_RICOS, YPESCASIMPLES_PESCADOS, YSTACKBOSSES_KILLED, YSTACKBOSSES_DAMAGE, YFLORESTA_COIN, YFLORESTA_BROKEN, YFLORESTA_TIME
+#
+# TOP-TYPE SEMANAIS (resetam a cada 7 dias):
+# Basta adicionar o prefixo WEEKLY_ em qualquer tipo acima!
+# Exemplos: WEEKLY_VAULT, WEEKLY_YMINAS_BLOCOS, WEEKLY_YKILLSYSTEM_KILLS, WEEKLY_MCMMO_TODOS
+# Também funciona com tipos CUSTOM registrados via API: WEEKLY_MEU_PLUGIN_CUSTOM
 
 # PLACEHOLDERS DISPONÍVEIS
 # {index}, {player_<index>}, {value_<index>}, {value_formatted_<index>}, {value_time_<index>}, {value_kdr_<index>}
@@ -20,3 +25,17 @@ hologram:
     top-type: 'VAULT'
     hologram:
       lines: [ '&a&lTOP MONEY', '', '&f1º: &7{player_1} &f-> &2$&a{value_1_formatted}', '&f2º: &7{player_2} &f-> &2$&a{value_2_formatted}', '&f3º: &7{player_3} &f-> &2$&a{value_3_formatted}', '&f4º: &7{player_4} &f-> &2$&a{value_4_formatted}', '&f5º: &7{player_5} &f-> &2$&a{value_5_formatted}' ]
+
+  # Exemplo de TOP Semanal - Dinheiro ganho na semana
+  weekly_money:
+    top-type: 'WEEKLY_VAULT'
+    hologram:
+      lines:
+        - '&6&lTOP SEMANAL - MONEY'
+        - '&7Reseta em {time_remaining}'
+        - ''
+        - '&f1º: &7{player_1} &f-> &2$&a{value_1_formatted}'
+        - '&f2º: &7{player_2} &f-> &2$&a{value_2_formatted}'
+        - '&f3º: &7{player_3} &f-> &2$&a{value_3_formatted}'
+        - '&f4º: &7{player_4} &f-> &2$&a{value_4_formatted}'
+        - '&f5º: &7{player_5} &f-> &2$&a{value_5_formatted}'
