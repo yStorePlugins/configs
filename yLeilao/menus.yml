@@ -158,6 +158,10 @@ auctions:
   empty-slot: 22
   filter-slot: 50
   #
+  bids-slot: -1
+  auctions-slot: -1
+  courier-slot: -1
+  #
   items:
     empty:
       material: 'WEB'
@@ -166,6 +170,38 @@ auctions:
     filter:
       material: HOPPER
       name: '&aFiltro'
+    bids:
+      material: 'GOLDEN_CARROT'
+      name: '&eMeus lances'
+      lore:
+        - '&7Você possui &f{amount}'
+        - '&7lance(s) no momento. :)'
+        - ''
+        - '&eClique para ver seus lances.'
+    bids-none:
+      material: 'GOLDEN_CARROT'
+      name: '&eMeus lances'
+      lore:
+        - '&7Você não possui nenhum'
+        - '&7lance no momento. :('
+    auctions:
+      material: 'GOLD_BARDING'
+      name: '&eMeus leilões'
+      lore:
+        - '&7Anuncie seus itens na casa de'
+        - '&7leilões para que outros jogadores'
+        - '&7possam comprá-los.'
+        - ''
+        - '&eClique para leiloar.'
+    courier:
+      material: 'CHEST'
+      name: '&eMeu correio'
+      lore:
+        - '&7Colete aqui suas compras, leilões'
+        - '&7cancelados ou expirados e valores'
+        - '&7de lances não efetivados.'
+        - ''
+        - '&eClique para acessar.'
   lore:
     - '&r'
     - ' &fLeiloador: &7{owner}'

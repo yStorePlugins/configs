@@ -59,6 +59,10 @@ chat:
 
     &6&l[Leilão]&e O jogador &f{player}&e adicionou um novo item no leilão.
 
+  auction-new-bid: |
+
+    &6&l[Leilão]&e O jogador &f{player}&e fez um lance no leilão do &f{auction}&e.
+
   max-auctions: '&cA casa de leilões já está com seu limite máximo simultâneo ({max}).'
   player-max-auctions: '&cVocê já está com seu limite máximo simultâneo ({max}).'
   start-auction: '&aVocê iniciou um novo leilão.'

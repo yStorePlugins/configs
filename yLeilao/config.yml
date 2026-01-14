@@ -44,6 +44,9 @@ mohist-chat: false
 
 # Sistemas gerais do plugin
 general:
+  # Abrir o menu auctions diretamente ao digitar /leilao
+  # caso contrário, irá abrir o menu principal
+  open-auctions-menu: false
   # Tempo padrão para começar o leilão
   default-time: 1800
   # Quantia máxima de leilões simultâneos que o servidor pode ter
