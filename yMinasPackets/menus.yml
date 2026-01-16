@@ -38,6 +38,8 @@ main:
     reset-slot: 25
     friend-slot: 12
     friends-mines-slot: 12
+    public-mines-slot: 21
+    public-mine-config-slot: 21
     enchants:
       material: 'b2f79016cad84d1ae21609c4813782598e387961be13c15682752f126dce7a'
       name: '&aEncantamentos'
@@ -164,6 +166,23 @@ main:
         - '&7recebeu acesso.'
         - ''
         - '&aClique para gerenciar.'
+    public-mines:
+      material: 'ENDER_CHEST'
+      name: '&eMinas Públicas'
+      lore:
+        - '&7Veja as minas públicas'
+        - '&7disponíveis para visitar.'
+        - ''
+        - '&aClique para visualizar.'
+    public-mine-config:
+      material: 'SIGN'
+      name: '&eConfigurar Mina Pública'
+      lore:
+        - '&7Configure sua mina para'
+        - '&7que outros jogadores possam'
+        - '&7usá-la pagando uma taxa.'
+        - ''
+        - '&aClique para configurar.'
 
 # Menu de classes
 classes:
@@ -1167,7 +1186,7 @@ friends-mines:
   next-slot: 17
   back-slot: 18
   item:
-    name: '&eMina {mina}&e de &f{player}'
+    name: '&eMina {mine}&e de &f{player}'
     lore:
       - '&7Você recebeu permissão para'
       - '&7minerar nesta mina.'
@@ -1181,3 +1200,73 @@ friends-mines:
       material: 'WEB'
       name: '&eVazio...'
       lore: [ '&7Você não possui nenhuma', '&7mina de amigo para ir.' ]
+
+# Menu de minas públicas
+public-mines:
+  name: '&8Minas Públicas'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 18
+  item:
+    name: '&eMina de &f{player}'
+    lore:
+      - '&7Mina: &f{mine}'
+      - '&7Taxa: &e{tax}%'
+      - '&7Vagas: &f{slots}'
+      - '&7Status: {status}'
+      - ''
+      - '&aClique para ir até esta mina.'
+  items:
+    empty-slot: 22
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Não há minas públicas', '&7disponíveis no momento.' ]
+
+# Menu de configuração de mina pública
+public-mine-config:
+  name: '&8Configurar Mina Pública'
+  size: 27
+  back-slot: 22
+  items:
+    toggle-slot: 11
+    tax-slot: 13
+    max-users-slot: 15
+    toggle-enabled:
+      material: '924757bc9a3171f9d0fdfbd209ac42e15f7744eb5f2db31920ff8af8d94567c6'
+      name: '&aMina Pública Ativada'
+      lore:
+        - '&7Status: {status}'
+        - '&7Visitantes atuais: &f{visitors}'
+        - ''
+        - '&cClique para desativar.'
+    toggle-disabled:
+      material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      name: '&cMina Pública Desativada'
+      lore:
+        - '&7Status: {status}'
+        - ''
+        - '&aClique para ativar.'
+    tax:
+      material: 'GOLD_NUGGET'
+      name: '&eTaxa de Uso'
+      lore:
+        - '&7Taxa atual: &e{tax}%'
+        - ''
+        - '&7Esta porcentagem dos ganhos'
+        - '&7do visitante será sua.'
+        - ''
+        - '&aClique para alterar.'
+    max-users:
+      material: 'SKULL_ITEM:3'
+      name: '&eMáximo de Visitantes'
+      lore:
+        - '&7Máximo atual: &e{max_users}'
+        - ''
+        - '&7Quantos jogadores podem'
+        - '&7usar sua mina ao mesmo tempo.'
+        - '&70 = Ilimitado'
+        - ''
+        - '&aClique para alterar.'

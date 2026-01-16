@@ -308,3 +308,26 @@ chat:
   npc-deleted: '&aNPC removido com sucesso.'
   npc-not-set: '&cNPC não está definido.'
   classe-level-need: '&cVocê precisa do nível {level} para comprar esta classe.'
+  
+  # PUBLIC MINE SYSTEM
+  public-mine-offline: '&cEsta mina pública não está mais disponível.'
+  public-mine-already: '&cVocê já está em uma mina! Saia primeiro com /mina sair'
+  public-mine-full: '&cEsta mina pública está lotada!'
+  public-mine-access: '&aVocê entrou na mina pública de &e{player}&a! Taxa: &e{tax}%'
+  public-mine-enabled: '&aSua mina &e{mine} &afoi definida como pública!'
+  public-mine-disabled: '&cSua mina pública foi &cdesativada&c!'
+  public-mine-tax-set: '&aVocê definiu a taxa da sua mina pública para &e{tax}%&a.'
+  public-mine-max-users-set: '&aVocê definiu o máximo de visitantes para &e{max}&a.'
+  digit-public-mine-tax: |
+    
+    &aDigite a porcentagem de taxa (0-100) que deseja cobrar.
+    &7para cancelar digite &ncancelar&7.
+    
+  digit-public-mine-max-users: |
+    
+    &aDigite o número máximo de visitantes (0 = ilimitado).
+    &7para cancelar digite &ncancelar&7.
+    
+  public-mine-invalid-tax: '&cA taxa deve ser entre 0 e 100.'
+  public-mine-invalid-max-users: '&cO número de visitantes deve ser maior que 0 (ou 0 para ilimitado).'
+  public-mine-max-users-limit: '&cVocê não pode definir mais de &e{limit} &cvagas. Você tentou definir &e{max}&c.'

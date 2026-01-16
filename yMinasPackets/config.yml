@@ -216,6 +216,10 @@ random:
     &bEncantamento adquirido: &f+1 nível de {enchantment}&b.
     &r
 
+# Sistema de mina pública
+public-mine:
+  max-users-limit: 10  # 0 = sem limite, ou número máximo permitido
+
 # Sistema de amigos
 friends:
   # Ativar sistema de amigos
