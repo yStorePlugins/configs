@@ -69,6 +69,11 @@ top-menu:
   time: 600
   player-format: '%ytopspapiaddon_luckperms_prefix% {player}'
 
+# Formatador de tempo
+format-time:
+  with-minutes: "{minutes}m:{seconds}s.{millis}ms"
+  without-minutes: "{seconds}.{millis}ms"
+
 # Mensagem de anúncio de jogadores do top
 top-message:
   enable: true
