@@ -114,6 +114,9 @@ stack-mobs:
   shift-reward: false
   # Dar recompensas ao matar sem shift
   no-shift-reward: false
+  # Dar a quantia de recompensas de mobs matados
+  # em false dará 1 recompensa apenas por stack morto
+  reward-by-amount: false
   # Habilitar os mobs de levar dano do ambiente
   mob-natural-damage: false
   # Habilitar os mobs de atacar players

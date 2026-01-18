@@ -106,6 +106,12 @@ general:
   # Ativar o menu do drop para venda e coleta
   sell-collect-menu: false
 
+# Identificadores das skills
+skills:
+  swords: 'SWORDS'
+  axes: 'AXES'
+  unarmed: 'UNARMED'
+
 # Sistema para detectar matadoras
 sword-detect:
   enabled: false
