@@ -24,6 +24,15 @@ Opcoes:
       - '&cVocê deve aguardar &f{tempo} &cpara pegar'
       - '&ceste kit novamente.'
       - ''
+  # Lore para quando o jogador não tiver a permissão para pegar o kit
+  Lore permissao:
+    # Substituir a lore do kit
+    Sobrepor: true
+    Lore:
+      - ''
+      - '&cVocê não tem permissão para pegar'
+      - '&ceste kit.'
+      - ''
   # Sistema de lore do jogador no kit
   Item Lore:
     Ativar: false
