@@ -23,6 +23,9 @@ Opcoes:
   # Mundos blacklistados
   MundoBlacklist:
     - 'nenhum'
+  # Bloquear de quebrar o bloco de baixo da plantação
+  # sem antes quebrar a plantação
+  Block-BreakBottom: true
   # Ao quebrar com uma enxada no shift não executar o evento do plugin
   ShiftEnxadaBypass: true
   # Ao quebrar uma plantação não crescida (sem shift) irá executar o evento padrão do bukkit (caso esteja sem a enxada na mão)
