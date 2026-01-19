@@ -383,6 +383,13 @@ chat-placeholders:
   role: ' {role} '
   symbol: ' {role_symbol} '
 
+# Sistema de TAGs para os TOP CLANS
+top-tag:
+  money: '&a[$]'
+  spawners: '&d[S]'
+  machines: '&e[M]'
+  kdr: '&b[%]'
+
 # Sistema de placeholders custom
 custom-placeholders:
   custom1:
