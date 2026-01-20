@@ -79,6 +79,10 @@ Detect:
    Lava: false # Quando andar na lava irá resetar o anti-afk
    Veiculo: false # Quando estiver montado em algo, não irá resetar o anti-afk
    Caindo: false # Quando estiver caindo, não irá resetar o anti-afk
+   Pistao: false # Quando empurrado por pistão/slime não irá resetar o anti-afk
+   # Configurações avançadas de detecção de farm de água
+   AguaAreaMax: 5 # Tamanho máximo da área (em blocos) que considera farm de água
+   AguaMovimentosMin: 8 # Quantidade mínima de movimentos para detectar farm em área pequena
 
 # Ordem a ser executada: Bungeecord, Comando, Teleportar, Holograma
 Acoes:
