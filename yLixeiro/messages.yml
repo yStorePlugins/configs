@@ -20,9 +20,10 @@ chat:
 
     &aLixeiro comandos:
 
-    &a> /lixeiro
-    &a> /lixeiro forcar
-    &a> /lixeiro reload
+    &a> /lixeiro &7- Mostra tempo de cada lixeiro
+    &a> /lixeiro list &7- Lista todos os lixeiros
+    &a> /lixeiro forcar [nome] &7- Força limpeza (ou lixeiro específico)
+    &a> /lixeiro reload &7- Recarrega configurações
 
-  force: '&aVocê forçou a limpeza de itens e entidades.'
-  next: '&r &eTempo para a próxima limpeza: {time}.<nl>&r &8♻ &fNa última limpeza foram limpos &7{items_total}&f itens e &7{entities_total}&f entidades.'
+  force: '&aVocê forçou a limpeza de itens e entidades. ({total} removidos)'
+  next: '&r &e[{lixeiro}] Próxima limpeza em: {time}.<nl>&r &8♻ &fÚltima limpeza: &7{items_total}&f itens e &7{entities_total}&f entidades.'

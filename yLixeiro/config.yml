@@ -37,12 +37,16 @@ database:
     password: ''
 
 general:
-  # Tempo para realizar a limpeza
+  # NOTA: Esta seção contém as blacklists COMPARTILHADAS entre todos os lixeiros
+  # As configurações 'time', 'items' e 'entities' são usadas apenas no modo legado
+  # (quando a seção 'lixeiros' não existe ou está vazia)
+  #
+  # Tempo para realizar a limpeza (modo legado)
   # em segundos
   time: 130
-  # Limpar itens
+  # Limpar itens (usado como flag global para todos os lixeiros)
   items: true
-  # Limpar entidades
+  # Limpar entidades (usado como flag global para todos os lixeiros)
   entities: true
   # Não limpar entidades renomeadas
   blacklist-renamed: false
@@ -144,3 +148,36 @@ message-timer:
     - '30,&eLixeiro<nl>&7Limpando em 30 segundos.'
     - '10,&eLixeiro<nl>&7Limpando em 10 segundos.'
     - '0,&eLixeiro<nl>&7{total} itens limpos.'
+
+#      _     _          _
+#     | |   (_)_  _____(_)_ __ ___  ___
+#     | |   | \ \/ / _ \ | '__/ _ \/ __|
+#     | |___| |>  <  __/ | | | (_) \__ \
+#     |_____|_/_/\_\___|_|_|  \___/|___/
+#
+# Sistema de múltiplos lixeiros
+# Você pode criar quantos lixeiros quiser com diferentes tipos e intervalos
+# Tipos disponíveis: ALL (tudo), ENTITIES (apenas criaturas), ITEMS (apenas itens)
+#
+# Se esta seção não existir ou estiver vazia, o plugin usará as configurações
+# legadas da seção 'general' e 'message-timer'
+
+lixeiros:
+  # Lixeiro de entidades - limpa apenas criaturas de 5 em 5 minutos
+  entidades:
+    enabled: true
+    # Tempo em segundos (300 = 5 minutos)
+    time: 300
+    # Tipo: apenas entidades/criaturas
+    type: ENTITIES
+    message-timer:
+      chat:
+        - '30, &6Limpeza de criaturas em 30 segundos!'
+        - '10, &6Limpeza de criaturas em 10 segundos!'
+        - '0, &6Foram removidas &l{entities_total}&6 criaturas do mundo!'
+      actionbar: []
+      title: []
+    sounds:
+      timer:
+        - '30,NOTE_STICKS'
+        - '0,NOTE_PLING'
