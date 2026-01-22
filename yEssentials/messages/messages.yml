@@ -488,6 +488,7 @@ Outros:
   Summon: '&aEntidade &f{entity}&a sumonada para o player &f{player}&a.'
   Invulnerabilidade actionbar: '&cVocê está imune a danos por {time}.'
   Tpa blacklisted: '&cVocê não pode aceitar o TPA nesse mundo.'
+  Tpa regiao desativada: '&cO jogador está em um mundo onde o tpa é desativado.'
   Title: '&aVocê enviou um title para o jogador &f{player}&a.'
   Actionbar: '&aVocê enviou uma actionbar para o jogador &f{player}&a.'
   Title todos: '&aVocê enviou um title para todos online.'

@@ -153,6 +153,10 @@ Opcoes:
   Top blacklist: []
   # Mundos que não serão possíveis receber TPA
   Tpa blacklist: ['none']
+  # Regiões onde não será possível enviar/aceitar TPA (formato: 'mundo:regiao')
+  # bypass: yessentials.tpa.bypass
+  Tpa regiao blacklist:
+    - 'world:spawn'
   # Identificador do kick por spam
   # Permissão para não ser kickado: yessentials.antispam.bypass
   AntiSpam identificador: 'disconnect.spam'
