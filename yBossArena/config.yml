@@ -8,6 +8,29 @@
 # Site: ystoreplugins.com.br
 #
 
+# ======================================
+#     INTEGRAÇÃO COM MYTHICMOBS
+# ======================================
+#
+# O yBossArena suporta integração com MythicMobs!
+#
+# Para usar um mob do MythicMobs como BOSS ou MINION,
+# use o prefixo "mythic:" seguido do ID do mob.
+#
+# Exemplos:
+#   Boss: entity: 'mythic:SkeletonKing'
+#   Minion: minions.entity: 'mythic:UndeadWarrior'
+#
+# Requisitos:
+#   - Plugin MythicMobs instalado no servidor
+#   - Addon yMythicMobsAddon ativado no BukkitBootstrap
+#   - O mob deve existir na configuração do MythicMobs
+#
+# Se o MythicMobs não estiver disponível ou o mob não existir,
+# o sistema automaticamente usará spawn vanilla como fallback.
+#
+# ======================================
+
 # Modo de depuração para correção de problemas no plugin.
 debug-mode: false
 

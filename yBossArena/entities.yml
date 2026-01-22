@@ -1,5 +1,26 @@
+# ======================================
+#       yBossArena - Entidades
+# ======================================
+#
+# Configure aqui as entidades disponíveis para os bosses.
+#
+# INTEGRAÇÃO COM MYTHICMOBS:
+# Para usar um mob do MythicMobs, use o prefixo "mythic:" seguido do ID do mob.
+# Exemplo: entity: 'mythic:SkeletonKing'
+#
+# Isso irá spawnar o mob "SkeletonKing" configurado no MythicMobs.
+# Requisitos:
+#   - Plugin MythicMobs instalado
+#   - Addon yMythicMobsAddon ativado
+#   - O mob deve existir na configuração do MythicMobs
+#
+# Se o MythicMobs não estiver disponível, o sistema usará spawn vanilla como fallback.
+#
+# ======================================
+
 entities:
   creeper:
+    # Use 'ENTITY_TYPE' para mobs vanilla ou 'mythic:MOB_ID' para MythicMobs
     entity: 'CREEPER'
     custom-name: '&aCreeper'
     # Opções das entidades
@@ -19,3 +40,21 @@ entities:
         material: 'MONSTER_EGG:50'
         name: '&aCreeper'
         lore: [ '&7Clique para usar esta entidade.' ]
+
+  # Exemplo de entidade usando MythicMobs (descomente para usar):
+  # skeleton_king:
+  #   entity: 'mythic:SkeletonKing'
+  #   custom-name: '&4&lSkeleton King'
+  #   entity-options:
+  #     wither-skeleton: false
+  #     baby-zombie: false
+  #     slime-size: 1
+  #   display:
+  #     selected:
+  #       material: 'SKULL_ITEM:1'
+  #       name: '&4&lSkeleton King'
+  #       lore: [ '&fVocê está usando: &4Skeleton King&f.', '', '&7Clique para alterar a entidade.' ]
+  #     select:
+  #       material: 'SKULL_ITEM:1'
+  #       name: '&4&lSkeleton King'
+  #       lore: [ '&7Clique para usar esta entidade.' ]
