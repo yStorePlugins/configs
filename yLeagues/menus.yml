@@ -246,6 +246,7 @@ league-clan-players:
         - ' &f> Plantações quebradas: &a{farm_broken} pontos'
         - ' &f> Peixes pescados: &a{fished} pontos'
         - ' &f> Vips ativados: &a{yvips} pontos'
+        - ' &f> Batalhas ganhas: &a{titansbattle} pontos'
         - ''
         - ' &f> Mortes: &c-{deaths} pontos'
         - ' &f> Eventos perdidos: &c-{yeventos_lose} pontos'
