@@ -13,6 +13,10 @@ Comando:
 Anti freekill: true #so ira contabilizar uma kill, quando matar um jogador diferente do morto anteriormente.
 Recompensa auto: true #quando o player atingir a quantia necessária de kills ele já recebe a recompensa automaticamente.
 
+# Bloquear de aparecer a TAG para quem tiver a permissão:
+# ykillrank.staff
+Bloquear staff: false
+
 # Comandos que poderão ser dados ao matar um jogador
 ComandosPorKill:
    - '25.0,give {player} STONE 1'
