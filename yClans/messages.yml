@@ -495,3 +495,5 @@ chat:
   auto-leadership-transfer: '&bA liderança do clan &f{clan_colortag}&b foi transferida automaticamente para &f{player}&b devido à inatividade do líder anterior.'
   auto-leadership-transfer-new-leader: '&aVocê se tornou o novo líder do clan &f{clan_colortag}&b devido à inatividade do líder anterior.'
   auto-leadership-transfer-no-successor: '&cO clan &f{clan_colortag}&c foi desfeito por falta de membros elegíveis para assumir a liderança.'
+  reset-kdr-target: '&bO KDR do jogador &f{player}&b foi resetado.'
+  reset-kdr-target-all: '&bO KDR de todos os jogadores foi resetado.'

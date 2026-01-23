@@ -49,3 +49,4 @@ subcommands:
   reload: 'reload|recarregar'
   spy: 'spy|espionar|espião|espiao'
   givespecialitem: 'givespecialitem|daritemespecial|giveitemespecial'
+  resetkdr: 'resetkdr|resetarkdr'
