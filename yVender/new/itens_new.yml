@@ -9,8 +9,12 @@ itens:
       item1:
         # Ordenação do item no menu
         ordem: 1
-        # Material da venda
+        # Material da venda (formato: MATERIAL:DATA)
         material: 'STONE:0'
+        # CustomModelData do item (opcional, para texturas customizadas)
+        # Se configurado, apenas itens com esse custom-model-data serão vendidos
+        # Deixe em 0 ou remova a linha para vender itens sem textura customizada
+        custom-model-data: 0
         # Nome do item
         display-name: '&7Pedra'
         # Vender apenas os itens que estiverem renomeados com o display_name
@@ -34,3 +38,26 @@ itens:
           price1:
             provider: 'money'
             amount: 10.0
+      
+      # Exemplo de item com textura customizada (custom-model-data)
+      # item_customizado:
+      #   ordem: 2
+      #   material: 'PAPER:0'
+      #   custom-model-data: 1001
+      #   display-name: '&6Item Especial'
+      #   require-display-name: false
+      #   permissao: ''
+      #   display:
+      #     material: 'PAPER:0'
+      #     custom-model-data: 1001
+      #     name: '&6Item Especial'
+      #     lore:
+      #       - ''
+      #       - ' &fPreço por unidade: &a{unidade_money}&f.'
+      #       - ''
+      #       - '&aBotão &fESQUERDO &apara vender 64.'
+      #       - '&aSHIFT+Botão &fESQUERDO &apara vender tudo.'
+      #   prices:
+      #     price1:
+      #       provider: 'money'
+      #       amount: 50.0

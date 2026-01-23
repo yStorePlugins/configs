@@ -35,6 +35,10 @@ Opcoes:
   Acumular bonus: false
   # Mundos que não funcionará a venda
   Mundos blacklist: []
+  # Habilitar o auto-vender ativado como padrão
+  Padrao auto: false
+  # Habilitar o shift-sell ativado como padrão
+  Padrao shift: false
 
 # Setas dos menus
 Setas:
