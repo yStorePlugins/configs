@@ -1,0 +1,61 @@
+Nome: '&8Histórico de Envios'
+Tamanho: 54
+Slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+VoltarSlot: 45
+ProximoSlot: 53
+
+# Item para voltar
+Voltar:
+  Slot: 49
+  CustomSkull: false
+  URL: ''
+  ID: BARRIER
+  Data: 0
+  Glow: false
+  Name: '&cFechar'
+  Lore:
+    - '&7Clique para fechar o menu.'
+
+# Item vazio (sem histórico)
+Empty:
+  Slot: 22
+  CustomSkull: false
+  URL: ''
+  ID: BARRIER
+  Data: 0
+  Name: '&cSem envios'
+  Lore:
+    - '&7Você não possui envios'
+    - '&7no histórico.'
+
+# Formatos de status
+Status:
+  Pendente:
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_CLAY
+    Data: 4
+    Glow: false
+  Recolhido:
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_CLAY
+    Data: 5
+    Glow: true
+  Retornado:
+    CustomSkull: false
+    URL: ''
+    ID: STAINED_CLAY
+    Data: 14
+    Glow: false
+
+# Lore do item no histórico
+Lore:
+  - ''
+  - '{status}'
+  - ''
+  - '{enviado_para}'
+  - '{data_envio}'
+  - '{expira_em}'
+  - ''
+  - '&7Quantidade: &f{quantidade}'

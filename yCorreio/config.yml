@@ -105,6 +105,7 @@ Mensagens:
     - '&f > &a/correio &8- &7Abre o menu principal'
     - '&f > &a/correio ajuda &8- &7Envia esta mensagem'
     - '&f > &a/correio enviar [player] &8- &7Envia itens à um jogador.'
+    - '&f > &a/correio historico &8- &7Vê o histórico dos seus envios.'
     - ''
   Help admin:
     - '&aComandos disponíveis:'
@@ -112,6 +113,8 @@ Mensagens:
     - '&f > &a/correio &8- &7Abre o menu principal'
     - '&f > &a/correio ajuda &8- &7Envia esta mensagem'
     - '&f > &a/correio enviar [player] &8- &7Envia itens à um jogador.'
+    - '&f > &a/correio historico &8- &7Vê o histórico dos seus envios.'
+    - '&f > &a/correio historico [player] &8- &7Vê o histórico de envios para um jogador.'
     - '&f > &a/correio enviartodos &8- &7Envia itens à todos os jogadores online.'
     - '&f > &a/correio enviargrupo [grupo] &8- &7Envia itens à todos os jogadores online de um grupo.'
     - '&f > &a/correio give [player] [categoria] [recompensa] [quantia] &8- &7Dá x recompensa(s) configurada à um jogador.'
@@ -152,6 +155,27 @@ logs:
   package:
     enabled: true
     format: '[{date}:{hour}] {player} recolheu a encomenda {item} no mundo [{world}] nas coordenadas ({coords})'
+
+# Sistema de histórico de envios
+Historico:
+  # Quantos dias o item fica pendente antes de retornar ao remetente
+  Dias expiracao: 7
+  # Limite de entradas no histórico por jogador
+  Limite por jogador: 50
+  # A cada quantos minutos verificar itens expirados
+  Verificar minutos: 60
+  # Permissão para ver histórico de outros jogadores
+  Permissao staff: 'ycorreio.historico.outros'
+  Mensagens:
+    Titulo: '&8Histórico de Envios'
+    Status pendente: '&e⏳ Pendente'
+    Status recolhido: '&a✓ Recolhido'
+    Status retornado: '&c↩ Retornado'
+    Enviado para: '&7Enviado para: &f{destinatario}'
+    Data envio: '&7Data: &f{data}'
+    Expira em: '&7Expira em: &f{tempo}'
+    Sem historico: '&cVocê não tem envios no histórico.'
+    Item retornado: '&e[Correio] &fSeu item &e{item} &fnão foi coletado por &e{player} &fe retornou para você!'
 
 # Setas dos menus
 Setas:
