@@ -1,4 +1,26 @@
 # Apague apenas os encantamentos que não for usar
+
+# ============================================
+# Multiplicador de Economia
+# ============================================
+# Cada encantamento pode ter um multiplicador de ganhos por economia.
+# Isso permite balancear encantamentos que quebram muitos blocos (como Nuclear)
+# vs encantamentos que quebram poucos blocos (como Laser/Explosion).
+#
+# Exemplo de configuração:
+#   economy-multiplier:
+#     yminaspackets: 0.5    # Blocos: jogador recebe 50% do valor base
+#     money: 0.3            # Dinheiro: jogador recebe 30% do valor base
+#
+# Encantamentos SEM essa opção configurada mantêm o comportamento atual.
+# Economias NÃO listadas no economy-multiplier mantêm valor 1.0x (sem alteração).
+#
+# Exemplos práticos:
+#   Nuclear quebra 25000 blocos com multiplier 0.5 = ganho de 12500 blocos
+#   Laser quebra 30 blocos com multiplier 10.0 = ganho de 300 blocos
+#   Explosion quebra 27 blocos com multiplier 1000000 = ganho de 27M blocos
+# ============================================
+
 enchants:
   efficiency: # Não mude este nome, ou o encantamento não será reconhecido
     name: 'Eficiência'
@@ -210,6 +232,14 @@ enchants:
     level:
       default: 0.0
       maximum: 10.0
+    # Multiplicador de ganhos por economia (OPCIONAL)
+    # Permite ajustar os ganhos do encantamento independente da quantidade de blocos quebrados
+    # Se não configurado, o encantamento mantém o comportamento padrão (sem multiplicador)
+    # Exemplo de uso:
+    #   economy-multiplier:
+    #     yminaspackets: 0.5    # Blocos: recebe 50% do valor
+    #     money: 0.3            # Dinheiro: recebe 30% do valor
+    # Economias não listadas mantêm o valor original (1.0x)
     messages:
       title: '&cNuclear<nl>&cativado'
       actionbar: ''
