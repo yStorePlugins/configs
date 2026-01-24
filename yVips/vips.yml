@@ -12,6 +12,8 @@ vips:
     party-vip-value: 10.0
     # Enviar a ativação pro menu de ativações do jogador
     activation-menu: false
+    # Permitir a venda de keys desse vip
+    allow-sell: true
     # Integração com o yLeague
     yleague:
       # Pontos que será dado no yLeague
