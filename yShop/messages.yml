@@ -59,3 +59,4 @@ chat:
   npc-set: '&aNPC do shop setado com sucesso.'
   npc-removed: '&aNPC do shop removido com sucesso'
   npc-found: '&cO NPC não está setado.'
+  opened: '&aVocê abriu o menu &f{menu}&a para o jogador &f{player}&a.'
