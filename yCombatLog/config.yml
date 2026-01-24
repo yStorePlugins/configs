@@ -119,6 +119,13 @@ toggle-register: false
 # Comandos que serão executados no jogador quando ele entrar em combate
 combat-commands: []
 
+# Sistema de tamanho do jogador em combate
+# Requer versão 1.20.5+ do servidor para funcionar
+scale:
+  enabled: false
+  # Tamanho do jogador durante o combate (1.0 = tamanho normal)
+  combat-size: 1.0
+
 # Sistema de barreiras
 barriers:
   enabled: true
