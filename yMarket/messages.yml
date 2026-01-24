@@ -95,3 +95,5 @@ chat:
   unbanned: '&aJogador &f{player}&a desbanido do mercado com sucesso.'
   not-banned: '&cO jogador &f{player}&c não está banido do mercado.'
   max-value: '&cO valor máximo permitido para anunciar é {max}.'
+  staff-collected: '&aVocê coletou o item de &e{player}&a do mercado.'
+  staff-collected-owner: '&c&lATENÇÃO! &cUm staff (&e{staff}&c) removeu seu item do mercado.'
