@@ -63,6 +63,10 @@ proxy:
   # Whitelist de servidores que irão receber os anúncios
   server-whitelist: [ 'mina' ]
 
+# Blacklist de eventos para o auto-start random
+# coloque o nome do evento sem o .yml
+auto-start-random-blacklist: []
+
 # Autostart dos eventos
 auto-start:
   schedule1:
