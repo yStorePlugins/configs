@@ -105,6 +105,8 @@ general:
   delete-zero: false
   # Ativar o menu do drop para venda e coleta
   sell-collect-menu: false
+  # Permissão para conseguir ter o auto-sell
+  auto-sell-permission: ''
 
 # Identificadores das skills
 skills:
