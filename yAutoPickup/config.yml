@@ -52,6 +52,8 @@ login-delay: 20
 
 # Sistemas gerais
 general:
+  # Desativar o auto-pickup caso esteja no criativo
+  block-creative: false
   # Lista de mundos que o plugin não irá funcionar
   world-blacklist: []
   # Lista de blocos que não serão afetados pelo auto-pickup
@@ -89,6 +91,9 @@ entity:
   enabled: true
   # Lista de entidades que não serão afetados pelo auto-pickup
   blacklist: []
+  # Lista de entidades que serão afetados pelo auto-pickup
+  # deixe [] para desativar
+  whitelist: ['ZOMBIE', 'COW', 'SHEEP', 'SKELETON', 'SPIDER', 'PIG', 'PIG_ZOMBIE', 'BLAZE']
   # Lista de entidades com certas metadatas que não serão afetados pelo auto-pickup
   metadata-blacklist:
     - 'ySpawnersV2-MobStacked'
