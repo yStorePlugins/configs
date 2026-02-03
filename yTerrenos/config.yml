@@ -55,6 +55,12 @@ general:
   fence-up-block: true
   # Substituir blocos existentes no caminho da cerca
   fence-overlap: true
+  # Blocos que serão ignorados e substituídos pela cerca
+  fence-ignore-blocks:
+    - 'TALL_GRASS'
+    - 'CROPS'
+    - 'ROSE'
+    - 'DOUBLE_PLANT'
   # Delay para alternar a cerca de um terreno
   # em segundos
   fence-delay: 60
