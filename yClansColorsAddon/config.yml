@@ -13,6 +13,7 @@
 #
 placeholders:
   no-clan: '&7'
+  my-self: '&a'
   same-clan: '&a'
   clan-ally: '&2[A] &a'
   clan-neutral: '&c'
