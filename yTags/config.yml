@@ -19,6 +19,11 @@ redis:
    # Senha do usuário de conexão: [EX: 123]
    password: ''
 
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
 Comando:
    Comando: 'tags'
    Aliases: [tag]
