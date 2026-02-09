@@ -94,3 +94,6 @@ chat:
   friend-add-owner: '&cVocê não pode adicionar o dono como amigo na placa.'
   price-changed: '&cO vendedor alterou os preços da loja enquanto você tentava comprar.'
   cant-sell: '&cEste item não pode ser vendido aqui.'
+  max-shop: '&cVocê atingiu o limite máximo de lojas ({max}).'
+  shop-found: '&cNenhuma loja encontrada para o jogador &f{player}&c.'
+  shop-deleted: '&aTodas as lojas do jogador &f{player}&a foram deletadas.'

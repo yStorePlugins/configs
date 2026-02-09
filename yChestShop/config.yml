@@ -73,6 +73,10 @@ max-price: 0
 # Máximo de amigos por loja
 max-friends: 5
 
+# Quantia máxima de lojas que um jogador pode ter
+# Deixe 0 para ser infinito
+shop-max: 0
+
 # Sistema de blacklist
 black-list:
   # Materiais que estarão na black-list
