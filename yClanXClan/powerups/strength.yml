@@ -1,0 +1,29 @@
+# Configuracao do Power-Up: Forca
+# Aumenta o dano do jogador
+
+enabled: true
+name: '&cForca'
+display-name: '&c&lForca'
+icon: 'REDSTONE'
+
+# Configuracoes do menu
+menu-icon:
+  material: 'REDSTONE'
+  name: '&c&lForca'
+  lore:
+    - ''
+    - '&7Aumenta seu dano de ataque.'
+    - ''
+    - '&eRaridade: &fComum'
+    - '&eDuracao: &f30 segundos'
+
+# Efeito aplicado (formato: EFFECT:LEVEL)
+# Use nomes de PotionEffectType do Bukkit
+effect: 'INCREASE_DAMAGE:2'
+
+# Duracao do efeito em segundos (sobrescreve valor global)
+duration: 30
+
+# Raridade (COMMON, RARE, EPIC, LEGENDARY)
+# Afeta a chance de spawn
+rarity: COMMON

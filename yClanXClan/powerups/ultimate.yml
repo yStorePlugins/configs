@@ -1,0 +1,28 @@
+# Configuracao do Power-Up: Ultimate
+# Combinacao de varios efeitos poderosos
+
+enabled: true
+name: '&6Ultimate'
+display-name: '&6&lULTIMATE'
+icon: 'NETHER_STAR'
+
+# Configuracoes do menu
+menu-icon:
+  material: 'NETHER_STAR'
+  name: '&6&lULTIMATE'
+  lore:
+    - ''
+    - '&7O power-up mais poderoso!'
+    - '&7Combina forca, velocidade e resistencia.'
+    - ''
+    - '&eRaridade: &6&lLendario'
+    - '&eDuracao: &f30 segundos'
+
+# Efeitos aplicados (multiplos separados por virgula)
+effect: 'INCREASE_DAMAGE:3,SPEED:3,DAMAGE_RESISTANCE:2'
+
+# Duracao do efeito em segundos
+duration: 30
+
+# Raridade (lendario = muito raro)
+rarity: LEGENDARY

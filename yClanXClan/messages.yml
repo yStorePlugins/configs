@@ -1,0 +1,973 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &aClan X Clan comandos:
+
+    &a> /clanxclan
+    &a> /clanxclan batalhas
+    &a> /clanxclan armazem
+    &a> /clanxclan top
+    &a> /clanxclan desafiar <clan>
+    &a> /clanxclan aceitar <clan>
+    &a> /clanxclan recusar <clan>
+    &a> /clanxclan cancelar
+
+    &c&lAdmin:
+    &c> /clanxclan arena <create|delete|setspawn1|setspawn2|setspectator|list|tp> [nome]
+    &c> /clanxclan reload
+
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  
+  # Mensagens relacionadas a clans
+  no-clan: '&cVocê não possui um clan.'
+  clan-not-found: '&cClan não encontrado.'
+  clan-offline: '&cO clan {clan} não possui membros online suficientes.'
+  same-clan: '&cVocê não pode desafiar seu próprio clan.'
+  
+  # Mensagens de batalha - Desafio
+  battle-challenge-sent: '&aDesafio enviado para o clan {clan}!'
+  battle-challenge-accepted: '&aDesafio aceito! Preparando batalha em {time} segundos...'
+  battle-challenge-declined: '&cO clan {clan} recusou seu desafio.'
+  battle-challenge-expired: '&cO desafio para o clan {clan} expirou.'
+  battle-no-challenges: '&cVocê não possui desafios pendentes deste clan.'
+  battle-already-challenged: '&cVocê já desafiou este clan recentemente.'
+  battle-in-progress: '&cO clan {clan} já está em uma batalha.'
+  
+  # Mensagens de batalha - Início e Fim
+  battle-ended: '&6⚔ &aA batalha terminou! Vencedor: &f{winner}'
+  battle-draw: '&6⚔ &eA batalha terminou em empate!'
+
+  # Mensagens de rating
+  rating-gained: '&a+{points} &7pontos de rating!'
+  rating-lost: '&c-{points} &7pontos de rating.'
+  
+  # Mensagens de permissão de clan
+  not-leader-or-captain: '&cApenas líderes ou capitães podem usar este comando.'
+  insufficient-members: '&cSeu clan precisa de pelo menos {amount} membros online para batalhar.'
+  
+  # Mensagens gerais
+  feature-disabled: '&cEste recurso está desabilitado.'
+  cooldown-active: '&cAguarde {time} segundos antes de usar este comando novamente.'
+  ctf-own-items-not-allowed: '&cO modo Capture the Flag não permite o uso de itens próprios! Selecione um kit.'
+
+  # Mensagens de seleção
+  selection:
+    mode-selected: '&aModo {mode} selecionado!'
+    kit-selected: '&aKit {kit} selecionado!'
+    ability-selected: '&aHabilidade {ability} selecionada!'
+    progress: '&eProgresso: {completed}/{total}'
+    all-complete: '&a✔ Todas as seleções completas! Pronto para desafiar.'
+    need-mode: '&cVocê precisa selecionar um modo de jogo!'
+    need-kit: '&cVocê precisa selecionar um kit!'
+    need-ability: '&cVocê precisa selecionar uma habilidade!'
+    select-next-kit: '&eAgora selecione um kit!'
+    select-next-ability: '&eAgora selecione uma habilidade!'
+    select-clan: '&eAgora clique em um clan para desafiar!'
+
+  # Mensagens de desafio
+  challenge:
+    target-in-battle: '&cEste clan já está em uma batalha!'
+    
+    # Verificações
+    need-clan: '&cVocê precisa estar em um clan para desafiar outros!'
+    clan-no-members: '&cO clan &f{clan} &cnão possui membros online!'
+    your-clan-in-battle: '&cSeu clan já está em uma batalha!'
+    already-exists: '&cJá existe um desafio ativo com este clan!'
+    arena-unavailable: '&cA arena selecionada não está mais disponível! Selecione outra.'
+    
+    # Verificação de seleções (usadas individualmente)
+    verification-mode: '{status} Modo: &f{value}'
+    verification-kit: '{status} Kit: &f{value}'
+    verification-ability: '{status} Habilidade: &f{value}'
+    verification-arena: '{status} Arena: &f{value}'
+    all-complete: '&a§lTodas as seleções completas!'
+    select-clan: '&eAgora clique em um &fCLAN &epara enviar o desafio.'
+  
+  # Mensagens de aceite de desafio
+  accept:
+    broadcast: '&6⚔ &eBatalha entre &f{clan1} &evs &f{clan2} &eaceita!'
+    challenger-already-in-battle: '&cO clan desafiante já está em outra batalha!'
+    no-arena-available: '&cNenhuma arena disponível no momento. Tente novamente mais tarde.'
+    battle-broadcast: '&e&l⚔ BATALHA INICIADA! &f{clan1} &evs &f{clan2}'
+  
+  # Mensagens de recusa de desafio
+  decline:
+    notified: '&cO clan &f{clan} &crecusou seu desafio!'
+
+  # Mensagens de desafios enviados
+  sent:
+    need-clan: '&cVocê precisa estar em um clan!'
+    challenge-expired: '&cEste desafio não existe mais ou expirou!'
+    challenge-cancelled: '&eVocê cancelou o desafio para &f{clan}&e!'
+  
+  # Mensagens de seleção de membros
+  member-selection:
+    selected: '&a{player} &7foi selecionado para a batalha.'
+    removed: '&c{player} &7foi removido da seleção.'
+    battle-error: '&cErro ao iniciar batalha. Tente novamente.'
+
+  # Mensagens de arena
+  arena:
+    not-found: '&cArena {name} não encontrada!'
+    already-exists: '&cJá existe uma arena com o nome {name}!'
+    save-error: '&cErro ao salvar arena {name}!'
+    
+    # Mensagens de seleção de arena (menu)
+    selected: '&a✔ &7Arena &e{name} &7selecionada!'
+    arena-occupied: '&cA arena &e{name} &cestá ocupada!'
+    arena-disabled: '&cA arena &e{name} &cestá desabilitada!'
+    no-arenas-available: '&cNenhuma arena disponível no momento!'
+    
+    # Mensagens de visibilidade
+    players-hidden: '&7Jogadores de outras batalhas foram ocultados.'
+    players-shown: '&7Jogadores de outras batalhas estão visíveis novamente.'
+    
+    # Mensagens adicionais de seleção de arena
+    deselected: '&c✖ &7Arena &e{arena} &7desselecionada.'
+    random-selected: '&a✔ &7Arena aleatória selecionada: &e{arena}'
+    auto-selected: '&a✔ &7Arena &e{arena} &7foi selecionada automaticamente.'
+    mode-conflict: '&cEsta arena não está disponível para o modo {mode}! Há uma batalha {current_mode} em andamento.'
+    
+    # Mensagens de comandos de admin (mantidos os que são usados)
+    usage-create: '&cUso: /battle arena create <nome>'
+    usage-save: '&cUso: /battle arena save <nome>'
+    usage-delete: '&cUso: /battle arena delete <nome>'
+    usage-pos1: '&cUso: /battle arena pos1 <nome>'
+    usage-pos2: '&cUso: /battle arena pos2 <nome>'
+    usage-spawn1: '&cUso: /battle arena spawn1 <nome>'
+    usage-spawn2: '&cUso: /battle arena spawn2 <nome>'
+    usage-wait1: '&cUso: /battle arena wait1 <nome>'
+    usage-wait2: '&cUso: /battle arena wait2 <nome>'
+    usage-spectator: '&cUso: /battle arena camarote <nome>'
+    usage-exit: '&cUso: /battle arena exit <nome>'
+    usage-powerup: '&cUso: /battle arena powerup <nome>'
+    usage-info: '&cUso: /battle arena info <nome>'
+    usage-tp: '&cUso: /battle arena tp <nome>'
+    mode-invalid: '&cModo inválido! Use: bounds, spawn1, spawn2, wait1, wait2, spectator, exit, powerup'
+    saved-success: '&a✔ &7Arena &e{name} &7salva com sucesso!'
+    deleted-success: '&a✔ &7Arena &e{name} &7deletada!'
+    delete-error: '&cErro ao deletar arena!'
+    location-set: '&a✔ &7{type} definido para &e{name}'
+    location-error: '&cErro ao salvar localização!'
+    powerup-success: '&a✔ &7Ponto de PowerUp &e#{num} &7adicionado!'
+    powerup-error: '&cErro ao salvar ponto de power-up!'
+    tp-success: '&a✔ &7Teleportado para &e{name} &7({location})'
+    tp-no-location: '&cEsta arena não possui locais configurados!'
+
+  # Mensagens de resultado de batalha
+  battle-won: '&a✔ Parabéns! Seu clan venceu a batalha!'
+  battle-lost: '&cSeu clan perdeu a batalha. Boa sorte na próxima!'
+  battle-left: '&cVocê saiu da batalha.'
+  not-in-battle: '&cVocê não está em uma batalha.'
+  player-left-battle: '&e{player} saiu da batalha.'
+  reward-received: '&aVocê recebeu suas recompensas!'
+
+  # Mensagens de batalha (sistema)
+  battle:
+    # Sala de espera
+    cancelled-no-players: '&c✖ &7A batalha foi cancelada por falta de jogadores!'
+    countdown: '{color}{time} &7segundos para começar!'
+    teleported-wait-team1: '&a✔ &7Você foi teleportado para a &asala de espera&7!'
+    teleported-wait-team2: '&c✔ &7Você foi teleportado para a &csala de espera&7!'
+    started-header: '&6&l⚔ A BATALHA COMEÇOU! ⚔'
+    using-own-items: '&7Usando seus próprios itens.'
+    kit-not-found: '&cKit não encontrado, usando próprios itens.'
+    
+    # Durante a batalha
+    kill-message: '&f{victim} &7foi eliminado por &f{killer}&7!'
+    death-message: '&f{player} &7morreu!'
+    respawned: '&a✔ &7Você renasceu! Volte à batalha!'
+    respawn-countdown: '&7Renascendo em &c{time}&7...'
+    friendly-fire: '&c✖ &7Você não pode atacar seu próprio time!'
+    out-of-bounds: '&c✖ &7Você não pode sair da arena!'
+    no-teleport: '&c✖ &7Você não pode teleportar durante a batalha!'
+    player-left: '&c✖ &f{player} &7saiu da batalha!'
+    
+    # Resultado
+    victory-message: '&6&l⚔ VITÓRIA! &eO clan &f{winner} &evenceu a batalha!'
+    defeat-message: '&c&l⚔ DERROTA! &7Seu clan perdeu a batalha.'
+    draw-message: '&e&l⚔ EMPATE! &7A batalha terminou sem vencedor.'
+    eliminated: '&c&l✖ &cVocê foi eliminado! Aguarde o fim da batalha.'
+    end-countdown: '&a&l⚔ &eBatalha encerrada! Teleporte em &a{time}&e segundos...'
+    end-teleporting: '&a&l⚔ &eTeleportando para a saída...'
+    spectator-mode: '&eVocê está em modo espectador! Respawnando em &a{time}&e segundos...'
+    command-blocked: '&cVocê não pode usar este comando durante a batalha!'
+
+  # Mensagens de espectador
+  spectator:
+    use-leave: '&7Use &f/battle leave &7para sair.'
+    cannot-while-battle: '&cVocê não pode assistir batalhas enquanto está em uma!'
+    clan-not-in-battle: '&cO clan &f{clan} &cnão está em batalha!'
+    no-battles: '&cNenhuma batalha em andamento no momento!'
+    list-item: '&7• &f{clan1} &7vs &f{clan2} {status}'
+    list-hint: '  &7Clique: &e/battle spectate {clan}'
+    no-area: '&cEsta batalha não possui área de espectadores!'
+    joined: '&7[&6Espectador&7] &f{player} &7começou a assistir a batalha.'
+    failed: '&cNão foi possível entrar no modo espectador.'
+    command-blocked: '&cVocê não pode usar este comando enquanto espectador!'
+    battle-not-found: '&cBatalha não encontrada!'
+    no-players: '&cNenhum jogador vivo na batalha!'
+    following: '&aAgora seguindo: &f{player}'
+    stats-display: |
+
+      &6&l━━━ ESTATÍSTICAS DA BATALHA ━━━
+
+      &a{clan1}:
+        &7Kills: &f{clan1_kills}
+        &7Mortes: &f{clan1_deaths}
+        &7Jogadores: &f{clan1_players}
+
+      &c{clan2}:
+        &7Kills: &f{clan2_kills}
+        &7Mortes: &f{clan2_deaths}
+        &7Jogadores: &f{clan2_players}
+
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    item-compass: '&aTeleportar para Jogador'
+    item-compass-lore: '&7Clique para alternar entre|&7os jogadores da batalha.'
+    item-paper: '&eEstatísticas da Batalha'
+    item-paper-lore: '&7Clique para ver estatísticas|&7detalhadas da batalha.'
+    item-barrier: '&cSair do Modo Espectador'
+    item-barrier-lore: '&7Clique para sair do modo|&7espectador e voltar ao jogo.'
+
+  # Mensagens de habilidades
+  ability:
+    not-found: '&cHabilidade não encontrada.'
+    disabled: '&cEsta habilidade está desabilitada.'
+    need-battle: '&cVocê precisa estar em uma batalha para usar habilidades.'
+    on-cooldown: '&cHabilidade em cooldown! Aguarde &f{time}&c.'
+    activated: '&aHabilidade &f{ability} &aativada!'
+    not-enough-money: '&cVocê não tem dinheiro suficiente! Custo: &f{cost} {currency} &c(Saldo: &f{balance}&c)'
+    cost-charged: '&eFoi cobrado &f{cost} {currency} &epela habilidade.'
+
+  # Mensagens de power-ups
+  powerup:
+    collected: '&aVocê coletou o power-up &f{name}&a!'
+    collected-by: '&e{player} &7coletou o power-up &f{name}&7!'
+    spawned: '&6&eUm power-up &f{name} &eapareceu na arena!'
+
+  # Mensagens de kit
+  kit:
+    usage: '&cUso: /battle kit preview <nome>'
+    system-unavailable: '&cSistema de kits não disponível!'
+    not-found: '&cKit não encontrado: &f{kit}'
+    use-list: '&7Use &f/battle kit list &7para ver os kits disponíveis.'
+    preview-title: '&8Kit: {kit}'
+    applied: '&a✔ &7Kit &e{kit} &7aplicado!'
+
+  # Seleção de arena (admin) - chat.arena-selection.*
+  arena-selection:
+    mode-changed: '&7Modo de seleção: {mode}'
+    pos1-set: '&a✔ &7POS1 definida: &f{location}'
+    pos2-set: '&a✔ &7POS2 definida: &f{location}'
+    area-size: '&a✔ &7Área selecionada: &f{size} blocos²'
+    spawn1-set: '&a✔ &7Spawn Time 1 definido: &f{location}'
+    spawn2-set: '&c✔ &7Spawn Time 2 definido: &f{location}'
+    wait1-set: '&b✔ &7Sala de Espera Time 1 definida: &f{location}'
+    wait2-set: '&d✔ &7Sala de Espera Time 2 definida: &f{location}'
+    spectator-set: '&9✔ &7Camarote definido: &f{location}'
+    exit-set: '&6✔ &7Saída definida: &f{location}'
+    powerup-set: '&5✔ &7Ponto de PowerUp marcado: &f{location}'
+    cleared: '&c✖ &7Seleções limpas.'
+
+  # Mensagem de ajuda completa de arena (admin)
+  arena-help: |
+    
+    &6&l=== Comandos de Arena ===
+    
+    &e/battle arena wand &7- Receber machado de seleção
+    &e/battle arena mode <modo> &7- Alterar modo de seleção
+    &e/battle arena status &7- Ver seleções atuais
+    &e/battle arena clear &7- Limpar seleções
+    
+    &e/battle arena create <nome> &7- Criar arena
+    &e/battle arena save <nome> &7- Salvar arena das seleções
+    &e/battle arena delete <nome> &7- Deletar arena
+    
+    &e/battle arena pos1 <nome> &7- Definir pos1 (bounds)
+    &e/battle arena pos2 <nome> &7- Definir pos2 (bounds)
+    &e/battle arena spawn1 <nome> &7- Definir spawn time 1
+    &e/battle arena spawn2 <nome> &7- Definir spawn time 2
+    &e/battle arena wait1 <nome> &7- Definir sala espera time 1
+    &e/battle arena wait2 <nome> &7- Definir sala espera time 2
+    &e/battle arena camarote <nome> &7- Definir camarote
+    &e/battle arena exit <nome> &7- Definir saída
+    &e/battle arena powerup <nome> &7- Add ponto de powerup
+    
+    &e/battle arena list &7- Listar arenas
+    &e/battle arena info <nome> &7- Info da arena
+    &e/battle arena tp <nome> &7- Teleportar para arena
+
+# Menu de seleção de membros
+menu:
+  member-selection:
+    title: '&8Selecionar Membros ({selected}/{max})'
+    need-clan: '&cVocê precisa estar em um clan!'
+    item-selected: '&a✓ {player}'
+    item-not-selected: '&7{player}'
+    already-selected: '&aJá selecionado'
+    click-remove: '&7Clique para remover'
+    click-select: '&7Clique para selecionar'
+    limit-reached: '&cLimite máximo atingido'
+    status-online: '&7Status: &aOnline'
+    info-name: '&eInformações da Batalha'
+    info-opponent: '&7Oponente: &f{clan}'
+    info-mode: '&7Modo: &f{mode}'
+    info-max: '&7Máx. membros: &f{max}'
+    info-selected-count: '&7Selecionados: &e{selected}&7/&e{max}'
+    info-hint1: '&7Selecione os membros que'
+    info-hint2: '&7participarão da batalha'
+    confirm-name: '&aConfirmar Seleção'
+    confirm-ready: '&7Clique para iniciar a batalha'
+    confirm-ready2: '&7com os membros selecionados'
+    confirm-need: '&cSelecione pelo menos {min} membros'
+    cancel-name: '&cCancelar'
+    cancel-lore: '&7Cancelar criação da batalha'
+    select-all-name: '&aSelecionar Todos'
+    select-all-lore: '&7Selecionar todos os membros|&7online (respeitando o limite)'
+    clear-all-name: '&cLimpar Seleção'
+    clear-all-lore: '&7Remover todos os membros|&7da seleção atual'
+    no-members-name: '&cNenhum membro online'
+    no-members-lore: '&7Não há outros membros|&7online no seu clan'
+  
+  # Menu de desafios
+  challenges:
+    no-clan-name: '&cSem Clan'
+    no-clan-lore: '&7Você precisa estar em um|&7clan para ver desafios!'
+    received-no-challenges-name: '&eNenhum desafio'
+    received-no-challenges-lore: '&7Você não tem desafios|&7pendentes no momento.'
+    sent-no-challenges-name: '&eNenhum desafio enviado'
+    sent-no-challenges-lore: '&7Você não enviou nenhum|&7desafio no momento.'
+  
+  # Menu de habilidades
+  ability:
+    selected-tag: ' &a&l[SELECIONADA]'
+    free-line: '&a&l✦ GRÁTIS &7(Habilidade do Clan)'
+    cost-header: '&7Custo:'
+    cost-line: '  &f• &e{amount} &7{currency}'
+    free-ability: '&a✦ Gratuita'
+
+# Scoreboard
+# Nota: A configuração da scoreboard por modo está em /modes/<modo>.yml
+scoreboard:
+  battle-title: '&6&l⚔ BATALHA ⚔'
+  spectator-title: '&6&lESPECTADOR'
+
+# Mensagens de batalhas ativas
+battles:
+  none-active: '&cNenhuma batalha ativa no momento.'
+
+# Mensagens de habilidades (info detalhada)
+ability-info:
+  divider: '&8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  title: '&6&l{ability}'
+  effect: '&fEfeito: &7{effect}'
+  duration: '&fDuração: &a{time}'
+  cooldown-info: '&fCooldown: &e{time}'
+  cost: '&fCusto: &6{cost} coins'
+  status-cooldown: '&cEm cooldown: &f{time}'
+  status-available: '&aDisponível! Clique esquerdo para ativar.'
+  status-battle-only: '&7Disponível para uso quando em batalha.'
+  cannot-use: '&cVocê não pode usar esta habilidade agora.'
+
+# Menu de arena (prefixos)
+arena-menu:
+  available-prefix: '&a'
+  occupied-prefix: '&c'
+  disabled-prefix: '&8'
+  selected-suffix: ' &a(Selecionada)'
+
+# Preview de kit
+kit-preview:
+  name: '&6&l{kit}'
+  armor: '&7Armadura: &f{count} peças'
+  items: '&7Itens: &f{count}'
+  id: '&eID: &f{id}'
+
+# Mensagens de Capture the Flag
+ctf:
+  flag-taken: '&c⚑ &f{player} &7pegou a bandeira do &f{team}&7!'
+  flag-dropped: '&e⚑ &f{player} &7deixou cair a bandeira do &f{team}&7!'
+  flag-returned: '&a⚑ &7A bandeira do &f{team} &7retornou para a base!'
+  flag-captured: '&6⚑ &f{player} &7capturou a bandeira do &f{team}&7! &a+1 ponto'
+  flag-score: '&7Placar: &9{team1} &e{score1} &7x &e{score2} &c{team2}'
+  cannot-capture-own: '&cVocê não pode capturar sua própria bandeira!'
+  flag-at-base: '&cSua bandeira precisa estar na base para capturar!'
+  carrying-flag: '&eVocê está carregando a bandeira inimiga! Leve para sua base!'
+  flag-spawned: '&a⚑ &7As bandeiras foram posicionadas!'
+  flag-reset: '&7⚑ A bandeira do &f{team} &7foi resetada.'
+  team-scored: '&6⚑ &ePonto para &f{team}&e! Placar: &f{score1} &ex &f{score2}'
+  victory-by-flags: '&6⚔ &aO clan &f{winner} &avenceu capturando &e{flags} &abandeiras!'
+
+# Mensagens do espectador (adicionais - usadas pelo SpectatorManager)
+spectator-manager:
+  entered: '&aVocê entrou no modo espectador!'
+  leave-hint: '&7Use /battle leave para sair'
+  left: '&cVocê saiu do modo espectador!'
+  battle-started: '&eA batalha começou! Boa sorte aos participantes!'
+  battle-ended: '&eA batalha terminou!'
+  leaving-soon: '&7Você será removido do modo espectador em 10 segundos...'
+
+# Mensagens de inventário
+inventory:
+  not-empty: '&cVocê precisa ter o inventário vazio para participar da batalha!'
+  already-saved: '&cVocê já possui itens salvos! Aguarde a restauração.'
+  saved: '&aInventário salvo! Seus itens serão restaurados após a batalha.'
+  restored: '&aInventário restaurado com sucesso!'
+
+# Mensagens de economia
+economy:
+  not-initialized: '&cSistema de economia não inicializado!'
+  payment-error: '&cErro ao processar pagamento. Tente novamente.'
+  cost-refunded: '&eO custo foi devolvido pois a habilidade falhou.'
+
+# Mensagens de teleporte de habilidade
+ability-teleport:
+  success: '&5&lTELEPORTE! &dVocê apareceu atrás de &f{target}&d!'
+  warning: '&c&lAVISO! &f{player} &cteleportou atrás de você!'
+  no-enemies: '&cNenhum inimigo encontrado para teleportar!'
+  clan-activated: '&6{player} &eativou &f{ability}&e!'
+
+# Mensagens de cancelamento de batalha
+cancel:
+  success: '&cBatalha cancelada com sucesso!'
+  opponent-notification: '&cO clan {clan} cancelou a batalha.'
+  nothing-to-cancel: '&cNão há nada para cancelar.'
+
+# Mensagens de info do clan
+info:
+  display: |
+
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    &6&lINFORMAÇÕES DO CLAN
+
+    &fClan: {clan_tag} &7({clan_name})
+    &fRating: &e{rating} &7({league}&7)
+    &fPosição no Ranking: &a#{position}
+
+    &f&lESTATÍSTICAS:
+    &fVitórias: &a{wins}
+    &fDerrotas: &c{losses}
+    &fEmpates: &7{draws}
+    &fWin Rate: &6{winrate}
+
+    {battle_info}
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+  battle-active: |
+    &f&lBATALHA ATIVA:
+    &fOponente: {opponent}
+    &fScore: &e{score}
+    &fKills: &a{kills}
+  battle-inactive: '&f&lSTATUS: &7Sem batalha ativa'
+  clans-unavailable: '&cSistema de clans não está disponível.'
+
+# Ligas
+league:
+  bronze: '&6Bronze'
+  silver: '&7Prata'
+  gold: '&eOuro'
+  platinum: '&bPlatina'
+  diamond: '&9Diamante'
+  default: '&7Sem Liga'
+
+# Mensagens de kit (info e lista)
+kit-info:
+  display: |
+
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    &6&lKIT SELECIONADO
+
+    &fNome: &e{name}
+    &fDescrição: &7{description}
+    &fItens: &7{count} item(s) ({armor} armadura, {inventory} inventário)
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+  selected: '&7Kit selecionado: &e{kit}'
+  no-description: 'Sem descrição'
+  none-selected: '&7Nenhum kit selecionado.'
+  use-hint: '&7Use &f/clanxclan kit <nome> &7ou o menu.'
+
+kit-list:
+  display: |
+
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    &6&lKITS DISPONÍVEIS
+
+    {format}
+
+    &7Use: &f/clanxclan kit <nome>
+    &7Preview: &f/clanxclan kit preview <nome>
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+  none-configured: '&7Nenhum kit configurado.'
+  item-disabled: '&8✗ &7{name} &8(desabilitado)'
+  item-enabled: '&a✓ &e{name} &7({id})'
+  own-items: 'Próprios itens'
+  none: 'Nenhum'
+
+# Mensagens de habilidade (info e lista)
+ability-info-display:
+  display: |
+
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    &6&lHABILIDADE SELECIONADA
+
+    &fNome: &e{name}
+    &fDescrição: &7{description}
+    &fCooldown: &a{cooldown}
+    &fDuração: &a{duration}
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+  selected: '&7Habilidade selecionada: &e{ability}'
+  config-error: '&c(Habilidade não encontrada na configuração)'
+  none-selected: '&7Nenhuma habilidade selecionada.'
+  use-hint: '&7Use &f/clanxclan ability <nome> &7ou o menu.'
+  not-found-msg: '&cHabilidade não encontrada: &f{ability}'
+  use-list-hint: '&7Use &f/clanxclan ability list &7para ver as disponíveis.'
+  disabled-msg: '&cEsta habilidade está desabilitada.'
+  none-configured: '&cNenhuma habilidade configurada no servidor.'
+
+ability-list:
+  display: |
+
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    &6&lHABILIDADES DISPONÍVEIS
+
+    {format}
+
+    &7Use: &f/clanxclan ability <nome>
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+  none-configured: '&7Nenhuma habilidade configurada.'
+  item-disabled: '&8✗ &7{name} &8(desabilitada)'
+  item-enabled: '{status} &e{name} &7({id})'
+  none: 'Nenhuma'
+
+# Traduções de efeitos de habilidade
+ability-effects:
+  increase-damage: 'Força'
+  speed: 'Velocidade'
+  damage-resistance: 'Resistência'
+  regeneration: 'Regeneração'
+  heal-full: 'Cura Completa'
+  none: 'Nenhum'
+
+# Mensagens de arena (comandos CTF)
+arena-ctf:
+  usage-flag1: '&cUso: /battle arena flag1 <nome>'
+  usage-flag2: '&cUso: /battle arena flag2 <nome>'
+  usage-delivery1: '&cUso: /battle arena delivery1 <nome>'
+  usage-delivery2: '&cUso: /battle arena delivery2 <nome>'
+
+# Mensagens de seleção de arena (CTF)
+arena-selection-ctf:
+  flag1-set: '&9✔ &7Bandeira Time 1 definida: &f{location}'
+  flag2-set: '&c✔ &7Bandeira Time 2 definida: &f{location}'
+  delivery1-set: '&a✔ &7Entrega Time 1 definida: &f{location}'
+  delivery2-set: '&e✔ &7Entrega Time 2 definida: &f{location}'
+  delivery1-pos1-set: '&a✔ &7Entrega T1 Pos1 definida: &f{location}'
+  delivery1-pos2-set: '&a✔ &7Entrega T1 Pos2 definida: &f{location}'
+  delivery2-pos1-set: '&c✔ &7Entrega T2 Pos1 definida: &f{location}'
+  delivery2-pos2-set: '&c✔ &7Entrega T2 Pos2 definida: &f{location}'
+
+# Seleção de arena - modos
+arena-selection-modes:
+  bounds: '&eSelecionando Bounds da Arena'
+  spawn1: '&aSelecionando Spawn Time 1'
+  spawn2: '&cSelecionando Spawn Time 2'
+  wait1: '&bSelecionando Sala de Espera Time 1'
+  wait2: '&dSelecionando Sala de Espera Time 2'
+  spectator: '&9Selecionando Camarote'
+  exit: '&6Selecionando Saída'
+  powerup: '&5Selecionando Ponto de PowerUp'
+  flag1: '&9Selecionando Bandeira Time 1 (CTF)'
+  flag2: '&cSelecionando Bandeira Time 2 (CTF)'
+  delivery1: '&aSelecionando Entrega Time 1 (CTF)'
+  delivery2: '&eSelecionando Entrega Time 2 (CTF)'
+  delivery1-pos1: '&aSelecionando Entrega T1 Pos1 (CTF)'
+  delivery1-pos2: '&aSelecionando Entrega T1 Pos2 (CTF)'
+  delivery2-pos1: '&cSelecionando Entrega T2 Pos1 (CTF)'
+  delivery2-pos2: '&cSelecionando Entrega T2 Pos2 (CTF)'
+
+# Seleção de arena - wand
+arena-wand:
+  name: '&6&lMachado de Seleção'
+  lore-1: '&7Machado para seleção de arenas'
+  lore-2: '&eClique Esquerdo &7- Definir POS1'
+  lore-3: '&eClique Direito &7- Definir POS2'
+  lore-4: '&7Use &f/battle arena mode &7para'
+  lore-5: '&7alternar o modo de seleção.'
+
+# Mensagens de título de batalha
+battle-title:
+  countdown-title: '{color}&l{time}'
+  countdown-subtitle: '&7Prepare-se!'
+  start-title: '&a&lCOMECEM!'
+  start-subtitle: '&7Boa sorte!'
+
+# Mensagens de histórico de batalha
+history:
+  win: 'Vitória'
+  loss: 'Derrota'
+  draw: 'Empate'
+
+# Mensagens de bandeiras CTF
+ctf-flags:
+  team1-name: '&9Bandeira Azul'
+  team2-name: '&cBandeira Vermelha'
+  display-team1: '&9Bandeira [{clan}]'
+  display-team2: '&cBandeira [{clan}]'
+
+# Nomes de economia
+economy-providers:
+  vault: '&aCoins'
+  playerpoints: '&bPoints'
+  ypoints: '&eyPoints'
+  ycash: '&6yCash'
+  free: '&aGrátis'
+
+# Modos de batalha
+battle-modes:
+  classic-name: 'Clássico'
+  classic-desc: 'Batalha tradicional PvP'
+  elimination-name: 'Eliminação'
+  elimination-desc: 'Último clan em pé vence'
+  capture-flag-name: 'Capturar Bandeira'
+  capture-flag-desc: 'Capture a bandeira do inimigo'
+  king-hill-name: 'Rei da Colina'
+  king-hill-desc: 'Controle o ponto central'
+  default: 'Clássico'
+
+# Arena - status
+arena-status:
+  disabled: '&7Desabilitada'
+  incomplete: '&eIncompleta'
+  occupied: '&cOcupada'
+  available: '&aDisponível'
+  not-defined: '&cNão definido'
+
+# Mensagens de modo de batalha (info e lista)
+mode-info:
+  display: |
+
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    &6&lMODO SELECIONADO
+
+    &fNome: &e{name}
+    &fDescrição: &7{description}
+    &fJogadores: &a{min_players}-{max_players} &7por clan
+    &fLimite de Kills: &c{kill_limit}
+    &fTempo Limite: &a{duration}
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+  not-found: '&cModo não encontrado: &f{mode}'
+  use-list-hint: '&7Use &f/clanxclan mode list &7para ver os disponíveis.'
+  disabled: '&cEste modo está desabilitado.'
+  selected: '&7Modo selecionado: &f{mode}'
+  config-error: '&c(Modo não encontrado na configuração)'
+  none-selected: '&7Nenhum modo selecionado.'
+  use-hint: '&7Use &f/clanxclan mode <nome> &7ou o menu.'
+  no-description: 'Sem descrição'
+
+mode-list:
+  display: |
+
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    &6&lMODOS DE BATALHA DISPONÍVEIS
+
+    {format}
+
+    &7Use: &f/clanxclan mode <nome>
+    &7Para detalhes: &f/clanxclan mode info
+    &8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+  none-configured: '&7Nenhum modo configurado.'
+  item-disabled: '&8✗ &7{name} &8(desabilitado)'
+  item-enabled: '{status} &e{name} &7({id}) &8[{min}-{max} jogadores]'
+
+# Mensagem de recusa de desafio
+decline:
+  success: '&cVocê recusou o desafio do clan {clan}.'
+
+# Estatísticas do clan (menu principal)
+stats:
+  display: |
+
+    &e&l=== Estatísticas do Clan ===
+    &7Clan: &f{clan_tag}
+    &7Liga: &f{league}
+    &7Rating: &f{rating}
+    &7Posição: &f#{position}
+
+    &7Total de Batalhas: &f{total_battles}
+    &7Vitórias: &a{wins}
+    &7Derrotas: &c{losses}
+    &7Empates: &e{draws}
+    &7Taxa de Vitória: &f{winrate}
+    &7K/D: &f{kdr}
+    &e&l===========================
+
+# Detalhes de batalha (histórico)
+history-details:
+  display: |
+
+    &e&l━━━━━━━━━ DETALHES DA BATALHA ━━━━━━━━━
+
+    &7Batalha #&f{battle_id}
+    &7Oponente: {opponent}
+    &7Resultado: {result_color}{result_text}
+    &7Modo: &f{mode}
+    &7Data: &f{date}
+
+    {score_info}
+    &e&l━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  score-section: |
+    &e&lPlacar:
+    &7{clan1}: &f{clan1_score} pontos &7({clan1_kills} kills)
+    &7{clan2}: &f{clan2_score} pontos &7({clan2_kills} kills)
+    &7Duração: &f{duration}
+  result-win: 'Vitória'
+  result-loss: 'Derrota'
+  result-draw: 'Empate'
+
+# Mensagens consolidadas (unified displays)
+
+# Wand recebido - consolidado
+arena-selection-wand-display:
+  received: |
+    &a✔ &7Você recebeu o &6Machado de Seleção&7!
+    &7Use &fClique Esquerdo &7para definir &ePOS1
+    &7Use &fClique Direito &7para definir &ePOS2
+    &7Modo atual: &e{mode}
+
+# Accept display - consolidado
+accept-display:
+  full: |
+    &6&l━━━━━━━ BATALHA ACEITA ━━━━━━━
+    &7Clans: &f{clan1} &7vs &f{clan2}
+    &7Modo: &e{mode}
+    &7Kit: &e{kit}
+    &7Arena: &e{arena}
+
+    {accept_message}
+    &6&l━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Challenge received - consolidado
+challenge-received-display:
+  full: |
+
+    &c&l⚔ DESAFIO RECEBIDO! ⚔
+
+    &7O clan {clan} &7desafiou seu clan!
+
+    &eModo: &f{mode}
+    &eKit: &f{kit}
+    &eExpira em: &f{time} minutos
+
+    &aUse &f/clanxclan aceitar {clan_tag} &apara aceitar!
+    &cUse &f/clanxclan recusar {clan_tag} &cpara recusar!
+
+# Spectator controls - consolidado
+spectator-display:
+  enabled: |
+    &a&l✔ Modo Espectador Ativado!
+
+    &7Assistindo: &f{clan1} &7vs &f{clan2}
+
+    &eControles:
+    &7• &fBússola &7- Teleportar para próximo jogador
+    &7• &fPapel &7- Ver estatísticas
+    &7• &fBarreira &7- Sair do modo espectador
+
+  already: |
+    &cVocê já está no modo espectador!
+    &7Use &f/battle leave &7para sair.
+
+# Battle starting - consolidado
+battle-display:
+  starting: |
+    &6&l⚔ BATALHA INICIANDO ⚔
+    &7Preparação: &e{time} &7segundos
+    &7Modo: &f{mode}
+    &7Kit: &f{kit}
+
+  started: |
+    &6&l⚔ A BATALHA COMEÇOU! ⚔
+    &7{clan1} &fvs &7{clan2}
+
+# Kit not found - consolidado
+kit-error:
+  not-found: |
+    &cKit não encontrado: &f{kit}
+    &7Use &f/clanxclan kit list &7para ver os kits disponíveis.
+
+# Kit info error - consolidado
+kit-info-error:
+  none-selected: |
+    &7Nenhum kit selecionado.
+    &7Use &f/clanxclan kit <nome> &7ou o menu.
+
+# Ability not found - consolidado
+ability-error:
+  not-found: |
+    &cHabilidade não encontrada: &f{ability}
+    &7Use &f/clanxclan ability list &7para ver as disponíveis.
+
+# Ability info error - consolidado
+ability-info-error:
+  none-selected: |
+    &7Nenhuma habilidade selecionada.
+    &7Use &f/clanxclan ability <nome> &7ou o menu.
+  config-error: |
+    &7Habilidade selecionada: &e{ability}
+    &c(Habilidade não encontrada na configuração)
+
+# Mode not found - consolidado
+mode-error:
+  not-found: |
+    &cModo não encontrado: &f{mode}
+    &7Use &f/clanxclan mode list &7para ver os disponíveis.
+
+# Mode info error - consolidado
+mode-info-error:
+  none-selected: |
+    &7Nenhum modo selecionado.
+    &7Use &f/clanxclan mode <nome> &7ou o menu.
+  config-error: |
+    &7Modo selecionado: &f{mode}
+    &c(Modo não encontrado na configuração)
+
+# Arena create success - consolidado
+arena-create:
+  success: |
+    &a✔ &7Arena &e{name} &7criada!
+    &7Use os comandos de set para configurar os pontos.
+
+# Arena needs positions - consolidado
+arena-positions:
+  needed: |
+    &cVocê precisa selecionar POS1 e POS2 primeiro!
+    &7Use &e/battle arena wand &7para obter o machado.
+
+# Challenge verification display - consolidado (substitui HEADER + linhas + FOOTER)
+challenge-verification-display:
+  full: |
+    
+    &e&l━━━━━━━ VERIFICAÇÃO DE SELEÇÕES ━━━━━━━
+    {mode_line}
+    {kit_line}
+    {ability_line}
+    {arena_line}
+    &e&l━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+# Challenge sent display - consolidado (substitui HEADER + múltiplas linhas)
+challenge-sent-display:
+  full: |
+    
+    &a&l✔ DESAFIO ENVIADO COM SUCESSO!
+    &eClan alvo: &f{clan}
+    &eModo: &f{mode}
+    &eKit: &f{kit}
+    &eHabilidade: &f{ability}
+    {arena_line}
+    &eExpira em: &f{time} minutos
+
+
+# Challenge received full display - consolidado (substitui múltiplas sendMessage)
+challenge-received-full-display:
+  full: |
+    
+    &c&l⚔ DESAFIO RECEBIDO! ⚔
+    
+    &7O clan {clan} &7desafiou seu clan!
+    
+    &eModo: &f{mode}
+    &eKit: &f{kit}
+    &eHabilidade: &f{ability}
+    {arena_line}
+    &eExpira em: &f{time} minutos
+    
+    &aUse &f/clanxclan aceitar {clan_tag} &apara aceitar!
+    &cUse &f/clanxclan recusar {clan_tag} &cpara recusar!
+
+
+# Spectator list display - consolidado (substitui HEADER + items + FOOTER)
+spectator-list-display:
+  full: |
+    &6&l━━━ BATALHAS EM ANDAMENTO ━━━
+    
+    {battles}
+    
+    &6&l━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  battle-item: '&7• &f{clan1} &7vs &f{clan2} {status}'
+  battle-hint: '  &7Clique: &e/battle spectate {clan}'
+
+# Arena mode list display - consolidado (substitui múltiplos sendMessage em handleMode)
+arena-mode-list-display:
+  full: |
+    &7Modos disponíveis:
+    {modes}
+    &eUso: /battle arena mode <modo>
+
+# Selection status display - consolidado (substitui 15 sendMessage em ArenaSelectionManager)
+selection-status-display:
+  full: |
+    &6&l=== Status da Seleção ===
+    &7Modo atual: {mode}
+    {content}
+  none: '&cNenhuma seleção ativa.'
+  pos1: '&7POS1: {status}'
+  pos2: '&7POS2: {status}'
+  area: '&7Área: &f{size} blocos²'
+  spawn1: '&7Spawn 1: {status}'
+  spawn2: '&7Spawn 2: {status}'
+  wait1: '&7Espera 1: {status}'
+  wait2: '&7Espera 2: {status}'
+  spectator: '&7Camarote: {status}'
+  exit: '&7Saída: {status}'
+  ctf-flag1: '&7Bandeira T1: {status}'
+  ctf-flag2: '&7Bandeira T2: {status}'
+  ctf-delivery1: '&7Entrega T1: {status}'
+  ctf-delivery2: '&7Entrega T2: {status}'
+  ctf-delivery1-pos1: '&7Entrega T1 Pos1: {status}'
+  ctf-delivery1-pos2: '&7Entrega T1 Pos2: {status}'
+  ctf-delivery2-pos1: '&7Entrega T2 Pos1: {status}'
+  ctf-delivery2-pos2: '&7Entrega T2 Pos2: {status}'
+
+# Arena list display - consolidado (substitui header + loop em ArenaArg.handleList)
+arena-list-display:
+  full: |
+    &e&l━━━━━━━ ARENAS ({count}) ━━━━━━━
+    {items}
+    &e&l━━━━━━━━━━━━━━━━━━━━
+  item: '{status} &e{name} &7[{configured}&7] &8- {world}'
+  empty: '&7Nenhuma arena configurada.'
+
+# Battles active display - consolidado (substitui header + loop + total em BattlesMenuListener)
+battles-active-display:
+  full: |
+    &6=== BATALHAS ATIVAS ===
+    {items}
+    &7Total: &f{count} batalha(s)
+  item: '&e#{num} &7{clan1} &fvs &7{clan2} &f({score1}x{score2}) &8[{mode}]'

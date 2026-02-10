@@ -1,0 +1,82 @@
+# Kit Tank - Defesa pesada
+
+# Se o kit esta habilitado
+enabled: true
+
+# Nome de exibicao do kit
+display-name: '&8Tank'
+
+# Descricao do kit
+description:
+  - '&7Kit focado em defesa e resistencia'
+  - '&7com armadura pesada e escudo'
+
+# Icone simples (para referencia)
+icon: 'SHIELD'
+
+# Configuracoes do icone no menu de selecao
+menu-icon:
+  material: 'SHIELD'
+  name: '&8Tank'
+  lore:
+    - '&7Kit focado em defesa e resistencia'
+    - '&7com armadura pesada e escudo.'
+    - ''
+    - '&fItens inclusos:'
+    - '&7- Espada de Ferro'
+    - '&7- Escudo'
+    - '&7- Armadura de Diamante'
+    - '&7- Resistencia Passiva'
+    - ''
+    - '&aClique para selecionar!'
+  flags:
+    - '*'
+  enchantments:
+    - 'DURABILITY:3'
+
+# Itens do inventario de armadura
+armor-items:
+  helmet:
+    material: 'DIAMOND_HELMET'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:4'
+      - 'DURABILITY:3'
+  chestplate:
+    material: 'DIAMOND_CHESTPLATE'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:4'
+      - 'DURABILITY:3'
+  leggings:
+    material: 'DIAMOND_LEGGINGS'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:4'
+      - 'DURABILITY:3'
+  boots:
+    material: 'DIAMOND_BOOTS'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:4'
+      - 'DURABILITY:3'
+
+# Itens do inventario
+inventory-items:
+  item1:
+    slot: 0
+    material: 'IRON_SWORD'
+    name: '&8Espada do Tank'
+    enchantments:
+      - 'DAMAGE_ALL:3'
+      - 'DURABILITY:3'
+  item2:
+    slot: 1
+    material: 'SHIELD'
+    name: '&8Escudo Protetor'
+    enchantments:
+      - 'DURABILITY:3'
+  item3:
+    slot: 2
+    material: 'COOKED_BEEF'
+    amount: 32
+  item4:
+    slot: 3
+    material: 'GOLDEN_APPLE'
+    amount: 12

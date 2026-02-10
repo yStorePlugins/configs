@@ -1,0 +1,59 @@
+# Arena de exemplo - Renomeie este arquivo para criar uma nova arena
+# Formato de localização: 'world;x;y;z;yaw;pitch' ou 'none' se não definido
+# O mundo da arena é determinado automaticamente pela primeira localização definida
+
+# Se a arena está habilitada
+enabled: true
+
+# Nome de exibição da arena (suporta cores)
+display-name: '&eArena de Exemplo'
+
+# Descrição da arena (lista de linhas)
+description:
+  - '&7Uma arena de demonstração'
+  - '&7Configure os spawns para usar'
+
+# Configurações do ícone no menu de seleção
+icon:
+  material: GRASS_BLOCK
+  name: '&eArena de Exemplo'
+  lore:
+    - '&7Clique para selecionar'
+    - ''
+    - '&eStatus: &7Desabilitada'
+
+# Spawn do Time 1 (onde os jogadores do time 1 spawnam na batalha)
+spawn1: 'none'
+
+# Spawn do Time 2 (onde os jogadores do time 2 spawnam na batalha)
+spawn2: 'none'
+
+# Sala de espera do Time 1 (onde os jogadores aguardam antes da batalha)
+wait-room-1: 'none'
+
+# Sala de espera do Time 2 (onde os jogadores aguardam antes da batalha)
+wait-room-2: 'none'
+
+# Spawn de espectadores (camarote)
+spectator-spawn: 'none'
+
+# Saída da arena (para onde os jogadores vão após a batalha)
+exit: 'none'
+
+# Lobby da arena (opcional, compatibilidade)
+lobby: 'none'
+
+# Limites da arena (pos1 e pos2 definem o cubo da arena)
+bounds:
+  pos1: 'none'
+  pos2: 'none'
+
+# Localizações adicionais de espectadores (lista)
+spectator-locations: []
+
+# Pontos de spawn de power-ups durante a batalha (lista)
+powerup-spawns: []
+
+# Configurações de jogadores
+max-players: 10
+min-players: 2

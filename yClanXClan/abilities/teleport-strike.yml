@@ -1,0 +1,43 @@
+# Configuracao da Habilidade: Golpe Teleportador
+# Teleporta o usuario para um inimigo aleatorio
+
+enabled: true
+name: 'teleport-strike'
+display-name: '&5&lGolpe Teleportador'
+description:
+  - '&7Teleporta voce para um inimigo'
+  - '&7aleatorio e aplica dano bonus.'
+icon: 'ENDER_PEARL'
+
+# Permissao necessaria para usar esta habilidade (deixe vazio para nenhuma)
+permission: ''
+
+# Configuracoes do menu
+menu-icon:
+  material: 'ENDER_PEARL'
+  name: '&5&lGolpe Teleportador'
+  lore:
+    - ''
+    - '&7Teleporta voce para um inimigo'
+    - '&7aleatorio e aplica dano bonus.'
+    - ''
+    - '&eCooldown: &f3 minutos'
+    - '&eDuracao: &f10 segundos'
+    - '&eCusto: &f400 moedas'
+  flags: []
+  enchantments: []
+
+# Cooldown em segundos
+cooldown: 180
+
+# Duracao do efeito de dano bonus
+duration: 10
+
+# Custos para comprar
+economies-prices:
+  cost1:
+    provider: 'money'
+    amount: 400.0
+
+# Efeito especial: TELEPORT teleporta + efeitos
+effect: 'TELEPORT:1,INCREASE_DAMAGE:2'

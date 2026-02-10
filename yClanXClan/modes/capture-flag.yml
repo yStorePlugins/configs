@@ -1,0 +1,65 @@
+# Modo Capturar Bandeira - Capture a bandeira inimiga
+
+# Se o modo está habilitado
+enabled: true
+
+# Nome de exibição do modo
+display-name: '&9Capturar Bandeira'
+
+# Descrição do modo
+description:
+  - '&7Capture a bandeira do inimigo'
+  - '&7Primeiro a 3 capturas vence'
+
+# Ícone simples (para referência)
+icon: 'BANNER'
+
+# Configurações do ícone no menu de seleção
+menu-icon:
+  material: 'BANNER:4'
+  name: '&bCapturar Bandeira'
+  lore:
+    - '&7Capture a bandeira inimiga e'
+    - '&7leve para sua base para pontuar.'
+    - ''
+    - '&fConfigurações:'
+    - '&7- Capturas para vencer: &f3'
+    - '&7- Duração: &f20 minutos'
+    - '&7- Respawn: &aHabilitado'
+    - '&7- Jogadores: &f4-10'
+    - ''
+    - '&aClique para selecionar!'
+  flags:
+    - '*'
+  enchantments: []
+
+# Configurações de jogo
+min-players: 4
+max-players: 10
+duration: 1200
+respawn-enabled: true
+kill-limit: 0
+flags-to-win: 3
+
+# Configuração da Scoreboard durante a batalha
+# Placeholders adicionais para CTF:
+#   {clan1_flags} / {clan2_flags} - Bandeiras capturadas por cada clan
+scoreboard:
+  title: '&b&l⚑ CTF ⚑'
+  lines:
+    - '&7&m─────────────'
+    - '&fTempo: &e{time}'
+    - ' '
+    - '&e&lPlacar de Capturas:'
+    - '&9{clan1}: &f{clan1_flags}'
+    - '&c{clan2}: &f{clan2_flags}'
+    - '  '
+    - '{your_color}&lSeu Time: &f{your_clan}'
+    - '&7  Kills: &f{your_kills}'
+    - '&7  Jogadores: &f{your_players}'
+    - '   '
+    - '{enemy_color}&lInimigo: &f{enemy_clan}'
+    - '&7  Kills: &f{enemy_kills}'
+    - '&7  Jogadores: &f{enemy_players}'
+    - '&7&m─────────────&r'
+    - '&eystoreplugins.com.br'

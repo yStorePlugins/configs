@@ -1,0 +1,79 @@
+# Kit Guerreiro - Combate corpo a corpo
+
+# Se o kit esta habilitado
+enabled: true
+
+# Nome de exibicao do kit
+display-name: '&cGuerreiro'
+
+# Descricao do kit
+description:
+  - '&7Kit focado em combate corpo a corpo'
+  - '&7com armadura pesada e espada'
+
+# Icone simples (para referencia)
+icon: 'DIAMOND_SWORD'
+
+# Configuracoes do icone no menu de selecao
+menu-icon:
+  material: 'DIAMOND_SWORD'
+  name: '&cGuerreiro'
+  lore:
+    - '&7Kit focado em combate corpo a corpo'
+    - '&7com armadura pesada e espada.'
+    - ''
+    - '&fItens inclusos:'
+    - '&7- Espada de Diamante'
+    - '&7- Armadura Completa'
+    - '&7- Comida e Pocoes'
+    - ''
+    - '&aClique para selecionar!'
+  flags:
+    - '*'
+  enchantments:
+    - 'DAMAGE_ALL:3'
+    - 'DURABILITY:2'
+
+# Itens do inventario de armadura
+# Usa SetupItem do yPlugins
+armor-items:
+  helmet:
+    material: 'DIAMOND_HELMET'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:3'
+      - 'DURABILITY:2'
+  chestplate:
+    material: 'DIAMOND_CHESTPLATE'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:3'
+      - 'DURABILITY:2'
+  leggings:
+    material: 'DIAMOND_LEGGINGS'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:3'
+      - 'DURABILITY:2'
+  boots:
+    material: 'DIAMOND_BOOTS'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:3'
+      - 'DURABILITY:2'
+
+# Itens do inventario
+# Usa SetupItem do yPlugins
+# slot: posicao no inventario (0-35)
+inventory-items:
+  item1:
+    slot: 0
+    material: 'DIAMOND_SWORD'
+    name: '&cEspada do Guerreiro'
+    enchantments:
+      - 'DAMAGE_ALL:4'
+      - 'DURABILITY:3'
+  item2:
+    slot: 1
+    material: 'COOKED_BEEF'
+    amount: 32
+  item3:
+    slot: 2
+    material: 'GOLDEN_APPLE'
+    amount: 8

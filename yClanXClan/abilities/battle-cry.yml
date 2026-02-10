@@ -1,0 +1,46 @@
+# Configuracao da Habilidade: Grito de Guerra
+# Aplica varios buffs a todos os membros
+
+enabled: true
+name: 'battle-cry'
+display-name: '&6&lGrito de Guerra'
+description:
+  - '&7Inspira todos os membros do clan'
+  - '&7com forca, velocidade e resistencia.'
+icon: 'DRAGON_BREATH'
+
+# Permissao necessaria para usar esta habilidade (deixe vazio para nenhuma)
+permission: ''
+
+# Configuracoes do menu
+menu-icon:
+  material: 'DRAGON_BREATH'
+  name: '&6&lGrito de Guerra'
+  lore:
+    - ''
+    - '&7Inspira todos os membros do clan'
+    - '&7com forca, velocidade e resistencia.'
+    - ''
+    - '&eCooldown: &f7 minutos'
+    - '&eDuracao: &f20 segundos'
+    - '&eCusto: &f1000 moedas + 50 points'
+  flags: []
+  enchantments: []
+
+# Cooldown em segundos
+cooldown: 420
+
+# Duracao do efeito
+duration: 20
+
+# Custos para comprar
+economies-prices:
+  cost1:
+    provider: 'money'
+    amount: 1000.0
+  cost2:
+    provider: 'playerpoints'
+    amount: 50
+
+# Multiplos efeitos combinados
+effect: 'INCREASE_DAMAGE:2,SPEED:2,DAMAGE_RESISTANCE:1'

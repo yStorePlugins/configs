@@ -1,0 +1,43 @@
+# Configuracao da Habilidade: Muralha de Escudos
+# Aumenta a resistencia de todos os membros
+
+enabled: true
+name: 'shield-wall'
+display-name: '&9&lMuralha de Escudos'
+description:
+  - '&7Aumenta a resistencia de todos'
+  - '&7os membros do clan a dano.'
+icon: 'SHIELD'
+
+# Permissao necessaria para usar esta habilidade (deixe vazio para nenhuma)
+permission: ''
+
+# Configuracoes do menu
+menu-icon:
+  material: 'SHIELD'
+  name: '&9&lMuralha de Escudos'
+  lore:
+    - ''
+    - '&7Aumenta a resistencia de todos'
+    - '&7os membros do clan a dano.'
+    - ''
+    - '&eCooldown: &f5 minutos'
+    - '&eDuracao: &f45 segundos'
+    - '&eCusto: &f600 moedas'
+  flags: []
+  enchantments: []
+
+# Cooldown em segundos
+cooldown: 300
+
+# Duracao do efeito
+duration: 45
+
+# Custos para comprar
+economies-prices:
+  cost1:
+    provider: 'money'
+    amount: 600.0
+
+# Efeito de resistencia
+effect: 'DAMAGE_RESISTANCE:2'

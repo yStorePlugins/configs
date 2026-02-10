@@ -1,0 +1,27 @@
+# Configuracao do Power-Up: Regeneracao
+# Regenera vida ao longo do tempo
+
+enabled: true
+name: '&dRegeneracao'
+display-name: '&d&lRegeneracao'
+icon: 'GOLDEN_APPLE'
+
+# Configuracoes do menu
+menu-icon:
+  material: 'GOLDEN_APPLE'
+  name: '&d&lRegeneracao'
+  lore:
+    - ''
+    - '&7Regenera sua vida ao longo do tempo.'
+    - ''
+    - '&eRaridade: &6Raro'
+    - '&eDuracao: &f30 segundos'
+
+# Efeito aplicado (formato: EFFECT:LEVEL)
+effect: 'REGENERATION:1'
+
+# Duracao do efeito em segundos
+duration: 30
+
+# Raridade (mais raro = menor chance de spawn)
+rarity: RARE

@@ -1,0 +1,76 @@
+# Kit Arqueiro - Combate a distancia
+
+# Se o kit esta habilitado
+enabled: true
+
+# Nome de exibicao do kit
+display-name: '&aArqueiro'
+
+# Descricao do kit
+description:
+  - '&7Kit focado em combate a distancia'
+  - '&7com arco e flechas'
+
+# Icone simples (para referencia)
+icon: 'BOW'
+
+# Configuracoes do icone no menu de selecao
+menu-icon:
+  material: 'BOW'
+  name: '&aArqueiro'
+  lore:
+    - '&7Kit focado em combate a distancia'
+    - '&7com arco e flechas infinitas.'
+    - ''
+    - '&fItens inclusos:'
+    - '&7- Arco Encantado'
+    - '&7- Flechas Infinitas'
+    - '&7- Armadura Leve'
+    - '&7- Velocidade Passiva'
+    - ''
+    - '&aClique para selecionar!'
+  flags:
+    - '*'
+  enchantments:
+    - 'ARROW_INFINITE:1'
+    - 'ARROW_DAMAGE:2'
+
+# Itens do inventario de armadura
+armor-items:
+  helmet:
+    material: 'LEATHER_HELMET'
+    glow: true
+  chestplate:
+    material: 'CHAINMAIL_CHESTPLATE'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:2'
+  leggings:
+    material: 'LEATHER_LEGGINGS'
+    glow: true
+  boots:
+    material: 'LEATHER_BOOTS'
+    enchantments:
+      - 'PROTECTION_FALL:3'
+
+# Itens do inventario
+inventory-items:
+  item1:
+    slot: 0
+    material: 'BOW'
+    name: '&aArco do Arqueiro'
+    enchantments:
+      - 'ARROW_DAMAGE:4'
+      - 'ARROW_INFINITE:1'
+      - 'DURABILITY:3'
+  item2:
+    slot: 1
+    material: 'ARROW'
+    amount: 64
+  item3:
+    slot: 2
+    material: 'COOKED_BEEF'
+    amount: 32
+  item4:
+    slot: 3
+    material: 'GOLDEN_APPLE'
+    amount: 4

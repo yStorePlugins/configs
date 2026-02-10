@@ -1,0 +1,43 @@
+# Configuracao da Habilidade: Furia do Berserker
+# Aumenta o dano de todos os membros do clan
+
+enabled: true
+name: 'berserker-fury'
+display-name: '&c&lFuria do Berserker'
+description:
+  - '&7Aumenta o dano de ataque de'
+  - '&7todos os membros do clan.'
+icon: 'BLAZE_POWDER'
+
+# Permissao necessaria para usar esta habilidade (deixe vazio para nenhuma)
+permission: ''
+
+# Configuracoes do menu
+menu-icon:
+  material: 'BLAZE_POWDER'
+  name: '&c&lFuria do Berserker'
+  lore:
+    - ''
+    - '&7Aumenta o dano de ataque de'
+    - '&7todos os membros do clan.'
+    - ''
+    - '&eCooldown: &f5 minutos'
+    - '&eDuracao: &f30 segundos'
+    - '&eCusto: &f500 moedas'
+  flags: []
+  enchantments: []
+
+# Cooldown em segundos antes de poder usar novamente
+cooldown: 300
+
+# Duracao do efeito em segundos
+duration: 30
+
+# Custos para comprar
+economies-prices:
+  cost1:
+    provider: 'money'
+    amount: 500.0
+
+# Efeitos aplicados (formato: EFFECT:LEVEL ou HEAL:FULL)
+effect: 'INCREASE_DAMAGE:3'

@@ -1,0 +1,332 @@
+#          ____ _            __  ______ _
+#  _   _ / ___| | __ _ _ __ \ \/ / ___| | __ _ _ __
+# | | | | |   | |/ _` | '_ \ \  / |   | |/ _` | '_ \
+# | |_| | |___| | (_| | | | |/  \ |___| | (_| | | | |
+#  \__, |\____|_|\__,_|_| |_/_/\_\____|_|\__,_|_| |_|
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Task de atualização das batalhas
+# Partículas e status
+# em ticks
+update-period: 3
+
+# Tempo para expirar um desafio de batalha
+# em segundos
+challenge-expire-time: 300
+
+# Tempo de duração máxima de uma batalha
+# em segundos
+max-battle-duration: 1800
+
+# Configuração geral do sistema de arenas
+arena-settings:
+  # Permitir escolha de arena no menu de desafio
+  allow-arena-selection: true
+  # Esconder jogadores de outras batalhas na mesma arena
+  hide-other-battle-players: true
+  # Permitir múltiplas batalhas na mesma arena (se false, arena fica ocupada)
+  allow-multiple-battles-per-arena: false
+  # Selecionar arena automaticamente se apenas uma disponível
+  auto-select-single-arena: true
+  # Mostrar arenas ocupadas no menu (desabilitadas)
+  show-occupied-arenas: true
+  # Mostrar arenas desabilitadas no menu
+  show-disabled-arenas: false
+
+# Sistema de rating/ranking
+rating:
+  # Rating inicial para novos clans
+  initial-rating: 1000
+  # Rating ganho por vitória
+  win-points: 25
+  # Rating perdido por derrota
+  loss-points: 15
+
+# Sistema de ligas/divisões - Configurado em leagues.yml
+
+# Configurações das batalhas
+battle:
+  # Tempo de preparação antes da batalha começar (segundos)
+  preparation-time: 30
+  # Tempo de proteção após teleportar para spawn (segundos)
+  # Durante este tempo, jogadores ficam invulneráveis para se preparar
+  pvp-warmup-time: 3
+  # Máximo de membros por clan na batalha
+  max-members-per-clan: 10
+  # Cancelar drop de itens ao morrer
+  cancel-death-drop: false
+  # Tempo para respawn após morte (segundos)
+  respawn-time: 5
+  # Permitir fogo amigo (dano entre membros do mesmo clan)
+  allow-friendly-fire: false
+  # Broadcast resultados da batalha para todo o servidor
+  broadcast-results: true
+  # Tempo de celebração após fim da batalha (segundos)
+  end-celebration-time: 5
+  
+  # Recompensas da batalha (IDs dos rewards em rewards.yml)
+  rewards:
+    winner: 'battle_winner'
+    loser: 'battle_loser'
+    participant: 'battle_participant'
+  
+  # Configurações de comandos durante a batalha
+  # Por padrão, TODOS os comandos são bloqueados exceto os listados abaixo
+  commands:
+    # Permitir que admins (yclanxclan.admin) usem qualquer comando
+    admin-bypass: true
+    # Lista de comandos permitidos durante a batalha
+    # Os comandos do plugin (battle, clanxclan, batalha) são sempre permitidos
+    # Adicione aqui comandos adicionais que deseja permitir
+    allowed:
+      - 'msg'
+      - 'r'
+      - 'reply'
+      - 'tell'
+      - 'whisper'
+      - 'w'
+      - 'clan'
+      - 'clans'
+  
+  # Item para abrir as habilidades na batalha
+  ability-item:
+    enabled: true
+    slot: 8
+    material: 'NETHER_STAR'
+    name: '&d&lHabilidades &7(Clique Direito)'
+    lore:
+      - ''
+      - '&7Clique com o &dbotão direito'
+      - '&7para abrir o menu de habilidades.'
+      - ''
+      - '&dUse habilidades especiais'
+      - '&dpara ajudar seu clan!'
+
+  # Item para trocar kit durante a batalha
+  kit-change-item:
+    enabled: true
+    slot: 7
+    # Se true, permite troca de kit em todos os modos
+    # Se false, apenas em CTF
+    allow-all-modes: false
+    material: 'CHEST'
+    name: '&b&lTrocar Kit &7(Clique Direito)'
+    lore:
+      - '&7Clique para trocar seu kit'
+      - '&7durante a batalha!'
+
+# Configurações do modo Capture the Flag (CTF)
+ctf:
+  # Número de capturas necessárias para vencer
+  flags-to-win: 3
+  # Tempo em ticks para a bandeira retornar à base após ser dropada (20 ticks = 1 segundo)
+  flag-reset-delay: 600
+  # Distância em blocos para pegar/entregar a bandeira (se não usar área)
+  pickup-distance: 3
+  delivery-distance: 3
+  # Mensagens de status no action bar
+  show-flag-status-actionbar: true
+  # Bandeira do time azul
+  blue-flag: ''
+  # Bandeira do time vermelho
+  red-flag: ''
+
+# Sistema de cache de inventário
+# Quando ativado, permite que jogadores entrem na batalha mesmo com itens no inventário.
+# Os itens são salvos no banco de dados e restaurados após a batalha.
+# Se desativado, o jogador precisa ter o inventário vazio para participar.
+inventory-cache: true
+
+# Se true, exige inventário vazio para entrar na batalha (quando inventory-cache está desativado)
+# Se false, os itens do jogador são salvos automaticamente antes da batalha
+require-empty-inventory: false
+
+# Sistema de power-ups especiais durante a batalha
+# Os tipos de power-ups sao configurados em arquivos individuais na pasta /powerups/
+powerups:
+  enabled: true
+  # Intervalo para spawn de power-ups (segundos)
+  spawn-interval: 60
+  # Duracao dos efeitos (segundos)  
+  effect-duration: 30
+
+# Ativar as particulas
+particles: true
+
+# Configurações de efeitos visuais das habilidades
+abilities:
+  # Ativar efeitos de partículas ao usar habilidades
+  effects-enabled: true
+  # Ativar sons ao usar habilidades
+  sounds-enabled: true
+
+# Sons do plugin (use 'NONE' para desabilitar um som)
+# Lista de sons: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+sounds:
+  # Sons de desafio
+  challenge:
+    # Som ao receber um desafio
+    received:
+      sound: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+      volume: 1.0
+      pitch: 1.0
+    # Som ao enviar um desafio
+    sent:
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 0.8
+      pitch: 1.2
+    # Som ao aceitar um desafio
+    accepted:
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.0
+    # Som ao recusar um desafio
+    declined:
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+  
+  # Sons de batalha
+  battle:
+    # Countdown (5, 4, 3...)
+    countdown:
+      sound: 'BLOCK_NOTE_BLOCK_PLING'
+      volume: 1.0
+      pitch: 1.0
+    # Countdown final (2, 1)
+    countdown-final:
+      sound: 'BLOCK_NOTE_BLOCK_PLING'
+      volume: 1.0
+      pitch: 1.5
+    # Som de GO! (início da batalha)
+    start:
+      sound: 'ENTITY_ENDER_DRAGON_GROWL'
+      volume: 0.8
+      pitch: 1.2
+    # Som secundário de início
+    start-secondary:
+      sound: 'ENTITY_WITHER_SPAWN'
+      volume: 0.5
+      pitch: 1.5
+    # Som de vitória
+    victory:
+      sound: 'UI_TOAST_CHALLENGE_COMPLETE'
+      volume: 1.0
+      pitch: 1.0
+    # Som de derrota
+    defeat:
+      sound: 'ENTITY_WITHER_DEATH'
+      volume: 0.5
+      pitch: 0.8
+    # Som de empate
+    draw:
+      sound: 'BLOCK_NOTE_BLOCK_BASS'
+      volume: 1.0
+      pitch: 0.5
+    # Som de morte/respawn
+    death:
+      sound: 'ENTITY_PLAYER_DEATH'
+      volume: 1.0
+      pitch: 1.0
+    # Som de respawn
+    respawn:
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 0.5
+      pitch: 1.5
+  
+  # Sons de habilidades
+  ability:
+    # Som ao ativar habilidade
+    activated:
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.5
+    # Som de cooldown
+    on-cooldown:
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 0.5
+      pitch: 1.0
+  
+  # Sons de power-ups
+  powerup:
+    # Som ao coletar power-up
+    collected:
+      sound: 'ENTITY_ITEM_PICKUP'
+      volume: 1.0
+      pitch: 1.2
+    # Som ao spawnar power-up
+    spawned:
+      sound: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+      volume: 0.8
+      pitch: 0.8
+  
+  # Sons de menu
+  menu:
+    # Som ao clicar em item
+    click:
+      sound: 'UI_BUTTON_CLICK'
+      volume: 0.5
+      pitch: 1.0
+    # Som de sucesso (seleção)
+    success:
+      sound: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+      volume: 1.0
+      pitch: 1.5
+    # Som de erro
+    error:
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 0.5
+      pitch: 1.0

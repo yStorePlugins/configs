@@ -1,0 +1,727 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    flags: ['*']
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    flags: ['*']
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    flags: ['*']
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Clan X Clan'
+  size: 36
+  items:
+    rewards-slot: 11
+    battles-slot: 13
+    top-slot: 15
+    stats-slot: 20
+    history-slot: 22
+    rewards:
+      material: 'CHEST'
+      name: '&aRecompensas'
+      flags: ['*']
+      lore:
+        - ''
+        - ' &fRecompensas no armazém: &a{rewards}&f.'
+        - ''
+        - '&7Clique para gerenciar'
+    battles:
+      material: 'DIAMOND_SWORD'
+      name: '&cBatalhas'
+      flags: ['*']
+      lore:
+        - '&7Clique para desafiar outros'
+        - '&7clans para uma batalha épica!'
+        - ''
+        - '&eSeu Rating: &f{rating}'
+        - '&eLiga: {league}'
+        - ''
+    top:
+      material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+      name: '&aTOP Clans'
+      flags: ['*']
+      lore:
+        - '&7Clique para ver os melhores'
+        - '&7clans no ranking de batalhas.'
+        - ''
+        - '&eSua posição: &f#{position}'
+    stats:
+      material: 'BOOK'
+      name: '&eEstatísticas'
+      flags: ['*']
+      enchantments: ['LOOT_BONUS_BLOCKS:1']
+      lore:
+        - '&7Veja suas estatísticas'
+        - '&7detalhadas de batalha!'
+        - ''
+        - '&fBatalhas totais: &e{total_battles}'
+        - '&fVitórias: &a{wins}'
+        - '&fDerrotas: &c{losses}'
+        - '&fEmpates: &7{draws}'
+        - '&fWin Rate: &6{win_rate}%'
+        - '&7K/D: &f{kdr}'
+        - ''
+    history:
+      material: 'WRITTEN_BOOK'
+      name: '&7Histórico'
+      flags: ['*']
+      lore:
+        - '&7Veja o histórico de'
+        - '&7suas batalhas anteriores.'
+        - ''
+        - '&aÚltimas 10 batalhas'
+
+# Menu de recompensas
+main-rewards:
+  name: '&8Clan X Clan'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  #
+  empty-slot: 22
+  collect-slot: 50
+  #
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      flags: ['*']
+      lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
+    collect:
+      material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+      name: '&eRecolher tudo'
+      flags: ['*']
+      lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+
+# Menu de batalhas
+battles:
+  name: '&8Batalhas'
+  size: 36
+  back-slot: 31
+  challenge-slot: 11
+  active-battles-slot: 15
+  items:
+    challenge:
+      material: '749ac6f41bddd0fb63ca716d08c85aa10cb2f332d62c14a34fc8b4b510397108'
+      name: '&aDesafiar Clan'
+      flags: ['*']
+      lore:
+        - '&7Clique para desafiar'
+        - '&7outro clan para uma batalha!'
+    active-battles:
+      material: 'bd69e06e5dadfd84e5f3d1c21063f2553b2fa945ee1d4d7152fdc5425bc12a9'
+      name: '&eBatalhas Ativas'
+      flags: ['*']
+      lore:
+        - '&7Veja as batalhas que'
+        - '&7estão acontecendo agora!'
+        - ''
+        - '&aBatalhas ativas: &f{active_count}'
+
+# Menu de top
+top:
+  name: '&8TOP Clans'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 9
+  next-slot: 17
+  items:
+    # Item do top rating
+    rating:
+      material: '{banner}'
+      name: '&7[{clan_tag}&7] &f{clan_name}'
+      flags: ['*']
+      lore:
+        - ''
+        - '&fRating: &e{rating}'
+        - '&fLiga: {league}'
+        - '&fVitórias: &a{wins}'
+        - '&fDerrotas: &c{losses}'
+        - '&fK/D Ratio: &f{kd_ratio}'
+        - '&fPosição: &e{position}º'
+        - ''
+
+# Menu de modos de batalha
+battle-modes:
+  name: '&8Modos de Batalha'
+  size: 27
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 22
+  items:
+    mode:
+      name: '{mode_name}'
+      lore:
+        - ''
+        - '{mode_description}'
+        - ''
+        - '&fTempo limite: &e{time_limit}'
+        - '&fCondição vitória: &a{win_condition}'
+        - '&fStatus: {status}'
+        - ''
+        - '&aClique para selecionar!'
+
+# Menu de kits
+kits:
+  name: '&8Kits de Batalha'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 18
+  next-slot: 26
+  clear-slot: 22
+  own-items-slot: 4
+  items:
+    clear:
+      material: 'REDSTONE_BLOCK'
+      name: '&cLimpar Seleção'
+      flags: ['*']
+      lore:
+        - '&7Clique para desselecionar'
+        - '&7o kit atual!'
+    own-items:
+      material: 'LEATHER_CHESTPLATE'
+      name: '&6Itens Próprios'
+      flags: ['*']
+      lore:
+        - ''
+        - '&7Use seus próprios itens'
+        - '&7do inventário na batalha!'
+        - ''
+        - '&c⚠ Não válido para CTF'
+        - ''
+        - '&eClique para selecionar!'
+
+# Menu de desafios
+challenges:
+  name: '&8Desafios'
+  size: 45
+  slots: [ 20, 21, 22, 23, 24, 25 ]
+  back-slot: 38
+  pending-slot: 3
+  sent-slot: 5
+  mode-slot: 39
+  kit-slot: 40
+  ability-slot: 41
+  arena-slot: 42
+  items:
+    pending:
+      material: 'IRON_SWORD'
+      name: '&eDesafios Recebidos'
+      flags: ['*']
+      enchantments: ['DAMAGE_ALL:1']
+      lore:
+        - '&7Clique para ver os'
+        - '&7desafios que você recebeu!'
+        - ''
+        - '&aPendentes: &f{pending_count}'
+    sent:
+      material: 'DIAMOND_SWORD'
+      name: '&cDesafios Enviados'
+      flags: ['*']
+      enchantments: ['DAMAGE_ALL:2']
+      lore:
+        - '&7Clique para ver os'
+        - '&7desafios que você enviou!'
+        - ''
+        - '&eEnviados: &f{sent_count}'
+    mode:
+      material: 'DIAMOND_PICKAXE'
+      name: '&aModo de Jogo'
+      flags: ['*']
+      lore:
+        - ''
+        - '&7Modo selecionado:'
+        - '&f{mode}'
+        - ''
+        - '&eClique para mudar!'
+    kit:
+      material: 'CHEST'
+      name: '&aKit de Batalha'
+      flags: ['*']
+      lore:
+        - ''
+        - '&7Kit selecionado:'
+        - '&f{kit}'
+        - ''
+        - '&eClique para mudar!'
+    ability:
+      material: 'BREWING_STAND_ITEM'
+      name: '&aHabilidade do Clan'
+      flags: ['*']
+      lore:
+        - ''
+        - '&7Habilidade selecionada:'
+        - '&f{ability}'
+        - ''
+        - '&eClique para mudar!'
+    arena:
+      material: 'GRASS_BLOCK'
+      name: '&aArena de Batalha'
+      flags: ['*']
+      lore:
+        - ''
+        - '&7Arena selecionada:'
+        - '&f{arena}'
+        - ''
+        - '&eClique para mudar!'
+    no-clan:
+      material: 'BARRIER'
+      name: '&cSem Clan'
+      flags: ['*']
+      lore:
+        - '&7Você precisa estar em um'
+        - '&7clan para desafiar outros!'
+    no-challenges:
+      material: 'WEB'
+      name: '&cNenhum clan disponível'
+      flags: ['*']
+      lore:
+        - '&7Não há clans online'
+        - '&7para desafiar no momento.'
+  challenge-item:
+    material: '{banner}'
+    name: '&7[{clan_tag}&7] &f{clan_name}'
+    flags: ['*']
+    lore:
+      - ''
+      - '&fRating: &e{rating}'
+      - '&fVitórias: &a{wins}'
+      - '&fDerrotas: &c{losses}'
+      - '&fLiga: {league}'
+      - ''
+      - '&aClique para desafiar!'
+
+# Menu de modos
+modes:
+  name: '&8Modos de Batalha'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 31
+  clear-slot: 22
+  items:
+    clear:
+      material: 'REDSTONE_BLOCK'
+      name: '&cLimpar Seleção'
+      flags: ['*']
+      lore:
+        - '&7Clique para desselecionar'
+        - '&7o modo de batalha atual!'
+
+# Menu de histórico
+history:
+  name: '&8Histórico de Batalhas'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 40
+  items:
+    no-clan:
+      material: 'BARRIER'
+      name: '&cSem Clan'
+      flags: ['*']
+      lore:
+        - '&7Você precisa estar em um'
+        - '&7clan para ver o histórico!'
+    no-battles:
+      material: 'WEB'
+      name: '&cNenhuma batalha'
+      flags: ['*']
+      lore:
+        - '&7Seu clan ainda não'
+        - '&7participou de batalhas!'
+  history-item:
+    material: 'WRITTEN_BOOK'
+    name: '&7Batalha #{battle_id}'
+    flags: ['*']
+    lore:
+      - ''
+      - '&7Oponente: &f{opponent}'
+      - '&7Resultado: {result}'
+      - '&7Data: &7{date}'
+      - '&7Modo: &f{mode}'
+      - ''
+      - '&aClique para detalhes!'
+
+# Menu de habilidades
+abilities:
+  name: '&8Habilidades do Clan'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 31
+  clear-slot: 22
+  items:
+    clear:
+      material: 'REDSTONE_BLOCK'
+      name: '&cLimpar Seleção'
+      flags: ['*']
+      lore:
+        - '&7Clique para desselecionar'
+        - '&7a habilidade atual!'
+    no-clan:
+      material: 'BARRIER'
+      name: '&cSem Clan'
+      flags: ['*']
+      lore:
+        - '&7Você precisa estar em um'
+        - '&7clan para usar habilidades!'
+
+# Menu de desafios recebidos
+received-challenges:
+  name: '&8Desafios Recebidos'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 40
+  items:
+    no-clan:
+      material: 'BARRIER'
+      name: '&cSem Clan'
+      flags: ['*']
+      lore:
+        - '&7Você precisa estar em um'
+        - '&7clan para ver desafios!'
+    no-challenges:
+      material: 'WEB'
+      name: '&eNenhum desafio'
+      flags: ['*']
+      lore:
+        - '&7Você não tem desafios'
+        - '&7pendentes no momento.'
+  challenge-item:
+    material: 'IRON_SWORD'
+    name: '&eDesafio de &f{challenger_tag}'
+    flags: ['*']
+    enchantments: ['DAMAGE_ALL:1']
+    lore:
+      - ''
+      - '&7Clan: &f{challenger_name}'
+      - '&7Rating: &e{challenger_rating}'
+      - '&7Liga: {challenger_league}'
+      - ''
+      - '&7Modo: &f{mode}'
+      - '&7Kit: &f{kit}'
+      - '&7Habilidade: &f{ability}'
+      - ''
+      - '&7Recebido: &f{received_time}'
+      - '&7Expira em: &c{expires_in}'
+      - ''
+      - '&aClique esquerdo para aceitar'
+      - '&cClique direito para recusar'
+
+# Menu de desafios enviados
+sent-challenges:
+  name: '&8Desafios Enviados'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 40
+  items:
+    no-clan:
+      material: 'BARRIER'
+      name: '&cSem Clan'
+      flags: ['*']
+      lore:
+        - '&7Você precisa estar em um'
+        - '&7clan para ver desafios!'
+    no-challenges:
+      material: 'WEB'
+      name: '&eNenhum desafio enviado'
+      flags: ['*']
+      lore:
+        - '&7Você não enviou nenhum'
+        - '&7desafio no momento.'
+  challenge-item:
+    material: 'DIAMOND_SWORD'
+    name: '&cDesafio para &f{challenged_tag}'
+    flags: ['*']
+    enchantments: ['DAMAGE_ALL:2']
+    lore:
+      - ''
+      - '&7Clan: &f{challenged_name}'
+      - '&7Rating: &e{challenged_rating}'
+      - '&7Liga: {challenged_league}'
+      - ''
+      - '&7Modo: &f{mode}'
+      - '&7Kit: &f{kit}'
+      - '&7Habilidade: &f{ability}'
+      - ''
+      - '&7Enviado: &f{sent_time}'
+      - '&7Expira em: &c{expires_in}'
+      - ''
+      - '&cClique para cancelar'
+
+# Menu de seleção de arenas
+arena-selection:
+  name: '&8Selecione uma Arena'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 40
+  random-slot: 4
+  items:
+    # Botão de arena aleatória
+    random:
+      material: 'ENDER_EYE'
+      name: '&dArena Aleatória'
+      flags: ['*']
+      enchantments: ['DURABILITY:1']
+      lore:
+        - ''
+        - '&7Clique para selecionar'
+        - '&7uma arena aleatória!'
+        - ''
+        - '&aArenas disponíveis: &f{available_count}'
+        - ''
+        - '&eClique para selecionar!'
+    # Item quando não há arenas
+    no-arenas:
+      material: 'BARRIER'
+      name: '&cNenhuma Arena'
+      flags: ['*']
+      lore:
+        - '&7Não há arenas disponíveis'
+        - '&7no momento.'
+        - ''
+        - '&7Tente novamente mais tarde.'
+    # Item de arena disponível (template)
+    arena-available:
+      # O material será carregado da config da arena
+      material: 'GRASS_BLOCK'
+      name: '&a{arena_name}'
+      flags: ['*']
+      lore:
+        - ''
+        - '{arena_description}'
+        - ''
+        - '&fCapacidade: &e{min_players}-{max_players} jogadores'
+        - '&fMundo: &7{world}'
+        - '&fStatus: &aDisponível'
+        - ''
+        - '&aClique para selecionar!'
+    # Item de arena ocupada
+    arena-occupied:
+      material: 'GRAY_STAINED_GLASS_PANE'
+      name: '&c{arena_name}'
+      flags: ['*']
+      lore:
+        - ''
+        - '{arena_description}'
+        - ''
+        - '&fCapacidade: &e{min_players}-{max_players} jogadores'
+        - '&fMundo: &7{world}'
+        - '&fStatus: &cOcupada'
+        - ''
+        - '&7Batalha em andamento:'
+        - '&7{battle_info}'
+        - ''
+        - '&cArena indisponível!'
+    # Item de arena desabilitada
+    arena-disabled:
+      material: 'BARRIER'
+      name: '&8{arena_name}'
+      flags: ['*']
+      lore:
+        - ''
+        - '{arena_description}'
+        - ''
+        - '&fCapacidade: &e{min_players}-{max_players} jogadores'
+        - '&fMundo: &7{world}'
+        - '&fStatus: &7Desabilitada'
+        - ''
+        - '&7Esta arena está desabilitada'
+        - '&7pelo administrador.'
+     # Item de arena selecionada (mostra qual está selecionada)
+    arena-selected:
+      material: 'GRASS_BLOCK'
+      name: '&a&l{arena_name} &a(Selecionada)'
+      flags: ['*']
+      enchantments: ['DURABILITY:1']
+      lore:
+        - ''
+        - '{arena_description}'
+        - ''
+        - '&fCapacidade: &e{min_players}-{max_players} jogadores'
+        - '&fMundo: &7{world}'
+        - '&fStatus: &aDisponível'
+        - ''
+        - '&a✔ Arena selecionada!'
+        - '&7Clique para desselecionar.'
+
+# Menu de seleção de membros
+member-selection:
+  name: '&8Selecionar Membros ({selected}/{max})'
+  size: 54
+  # Slots para membros (cabeças dos jogadores)
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  # Slots de controle
+  info-slot: 4
+  confirm-slot: 48
+  cancel-slot: 50
+  select-all-slot: 45
+  clear-all-slot: 53
+  no-members-slot: 22
+  items:
+    # Item de informação da batalha
+    info:
+      material: 'PAPER'
+      name: '&eInformações da Batalha'
+      flags: ['*']
+      lore:
+        - '&7Oponente: &f{clan}'
+        - '&7Modo: &f{mode}'
+        - '&7Máx. membros: &f{max}'
+        - ''
+        - '&7Selecionados: &e{selected}&7/&e{max}'
+        - ''
+        - '&7Selecione os membros que'
+        - '&7participarão da batalha'
+    # Item de confirmação
+    confirm:
+      material: 'EMERALD_BLOCK'
+      name: '&aConfirmar Seleção'
+      flags: ['*']
+      lore:
+        - '&7Clique para iniciar a batalha'
+        - '&7com os membros selecionados'
+    # Item de confirmação quando não tem membros suficientes
+    confirm-need-more:
+      material: 'EMERALD_BLOCK'
+      name: '&aConfirmar Seleção'
+      flags: ['*']
+      lore:
+        - '&cSelecione pelo menos {min} membros'
+    # Item de cancelar
+    cancel:
+      material: 'REDSTONE_BLOCK'
+      name: '&cCancelar'
+      flags: ['*']
+      lore:
+        - '&7Cancelar criação da batalha'
+    # Item de selecionar todos
+    select-all:
+      material: 'LIME_STAINED_GLASS_PANE'
+      name: '&aSelecionar Todos'
+      flags: ['*']
+      lore:
+        - '&7Selecionar todos os membros'
+        - '&7online (respeitando o limite)'
+    # Item de limpar seleção
+    clear-all:
+      material: 'RED_STAINED_GLASS_PANE'
+      name: '&cLimpar Seleção'
+      flags: ['*']
+      lore:
+        - '&7Remover todos os membros'
+        - '&7da seleção atual'
+    # Item quando não há membros
+    no-members:
+      material: 'BARRIER'
+      name: '&cNenhum membro online'
+      flags: ['*']
+      lore:
+        - '&7Não há outros membros'
+        - '&7online no seu clan'
+    # Template para membro selecionado
+    member-selected:
+      # Material SKULL_ITEM será usado automaticamente
+      name: '&a✓ {player}'
+      lore:
+        - ''
+        - '&aJá selecionado'
+        - '&7Clique para remover'
+        - ''
+        - '&7Status: &aOnline'
+    # Template para membro não selecionado
+    member-not-selected:
+      name: '&7{player}'
+      lore:
+        - ''
+        - '&7Clique para selecionar'
+        - ''
+        - '&7Status: &aOnline'
+    # Template para limite atingido
+    member-limit-reached:
+      name: '&7{player}'
+      lore:
+        - ''
+        - '&cLimite máximo atingido'
+        - ''
+        - '&7Status: &aOnline'
+
+# Menu de preparação para aceitar desafio
+accept-preparation:
+  name: '&8Preparar para Batalha'
+  size: 27
+  kit-slot: 11
+  ability-slot: 15
+  confirm-slot: 22
+  cancel-slot: 18
+  items:
+    kit:
+      material: 'CHEST'
+      name: '&aSelecionar Kit'
+      flags: ['*']
+      lore:
+        - ''
+        - '&7Kit selecionado:'
+        - '&f{kit}'
+        - ''
+        - '&eClique para escolher!'
+    ability:
+      material: 'BLAZE_POWDER'
+      name: '&aSelecionar Habilidade'
+      flags: ['*']
+      lore:
+        - ''
+        - '&7Habilidade selecionada:'
+        - '&f{ability}'
+        - ''
+        - '&eClique para escolher!'
+    confirm:
+      material: 'EMERALD_BLOCK'
+      name: '&aConfirmar e Aceitar'
+      flags: ['*']
+      lore:
+        - ''
+        - '&7Clique para aceitar o'
+        - '&7desafio de &f{challenger}'
+        - ''
+        - '&aPronto para a batalha!'
+    cancel:
+      material: 'REDSTONE_BLOCK'
+      name: '&cCancelar'
+      flags: ['*']
+      lore:
+        - ''
+        - '&7Voltar ao menu de'
+        - '&7desafios recebidos'
+        - ''

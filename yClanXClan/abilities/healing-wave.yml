@@ -1,0 +1,42 @@
+# Configuracao da Habilidade: Onda de Cura
+# Cura completamente todos os membros do clan
+
+enabled: true
+name: 'healing-wave'
+display-name: '&a&lOnda de Cura'
+description:
+  - '&7Cura completamente todos os'
+  - '&7membros do clan na batalha.'
+icon: 'GOLDEN_APPLE'
+
+# Permissao necessaria para usar esta habilidade (deixe vazio para nenhuma)
+permission: ''
+
+# Configuracoes do menu
+menu-icon:
+  material: 'GOLDEN_APPLE'
+  name: '&a&lOnda de Cura'
+  lore:
+    - ''
+    - '&7Cura completamente todos os'
+    - '&7membros do clan na batalha.'
+    - ''
+    - '&eCooldown: &f5 minutos'
+    - '&eCusto: &f750 moedas'
+  flags: []
+  enchantments: []
+
+# Cooldown em segundos
+cooldown: 300
+
+# Duracao (nao se aplica para cura instantanea)
+duration: 0
+
+# Custos para comprar
+economies-prices:
+  cost1:
+    provider: 'money'
+    amount: 750.0
+
+# Efeito especial: HEAL:FULL cura completamente
+effect: 'HEAL:FULL'

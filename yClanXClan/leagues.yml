@@ -1,0 +1,43 @@
+# ===============================================
+#  Configuração de Ligas - yClanXClan
+# ===============================================
+# Sistema de ligas/divisões baseado no rating dos clans.
+# Cada liga define um intervalo de rating (min-rating e max-rating).
+# O nome suporta cores com & ou códigos hex (#RRGGBB).
+
+leagues:
+  bronze:
+    name: '&6Bronze'
+    min-rating: 0
+    max-rating: 1199
+    # Ícone para menus (opcional)
+    icon: 'BRICK'
+    
+  silver:
+    name: '&7Prata'
+    min-rating: 1200
+    max-rating: 1599
+    icon: 'IRON_INGOT'
+    
+  gold:
+    name: '&eOuro'
+    min-rating: 1600
+    max-rating: 1999
+    icon: 'GOLD_INGOT'
+    
+  platinum:
+    name: '&bPlatina'
+    min-rating: 2000
+    max-rating: 2499
+    icon: 'DIAMOND'
+    
+  diamond:
+    name: '&9Diamante'
+    min-rating: 2500
+    max-rating: 999999
+    icon: 'DIAMOND_BLOCK'
+
+# Liga padrão quando o rating não se encaixa em nenhuma
+default-league:
+  name: '&7Sem Liga'
+  icon: 'BARRIER'

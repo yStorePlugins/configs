@@ -1,0 +1,76 @@
+# Kit Mago - Suporte e pocoes
+
+# Se o kit esta habilitado
+enabled: true
+
+# Nome de exibicao do kit
+display-name: '&9Mago'
+
+# Descricao do kit
+description:
+  - '&7Kit focado em suporte e pocoes'
+  - '&7com efeitos especiais'
+
+# Icone simples (para referencia)
+icon: 'BLAZE_ROD'
+
+# Configuracoes do icone no menu de selecao
+menu-icon:
+  material: 'BLAZE_ROD'
+  name: '&9Mago'
+  lore:
+    - '&7Kit focado em magia e pocoes'
+    - '&7com efeitos especiais.'
+    - ''
+    - '&fItens inclusos:'
+    - '&7- Cajado Magico'
+    - '&7- Pocoes Variadas'
+    - '&7- Armadura Encantada'
+    - '&7- Regeneracao Passiva'
+    - ''
+    - '&aClique para selecionar!'
+  flags:
+    - '*'
+  enchantments:
+    - 'KNOCKBACK:2'
+
+# Itens do inventario de armadura
+armor-items:
+  helmet:
+    material: 'IRON_HELMET'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:2'
+  chestplate:
+    material: 'IRON_CHESTPLATE'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:2'
+  leggings:
+    material: 'IRON_LEGGINGS'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:2'
+  boots:
+    material: 'IRON_BOOTS'
+    enchantments:
+      - 'PROTECTION_ENVIRONMENTAL:2'
+
+# Itens do inventario
+inventory-items:
+  item1:
+    slot: 0
+    material: 'BLAZE_ROD'
+    name: '&9Cajado Magico'
+    glow: true
+    enchantments:
+      - 'KNOCKBACK:3'
+  item2:
+    slot: 1
+    material: 'ENDER_PEARL'
+    amount: 4
+  item3:
+    slot: 2
+    material: 'COOKED_BEEF'
+    amount: 32
+  item4:
+    slot: 3
+    material: 'GOLDEN_APPLE'
+    amount: 8

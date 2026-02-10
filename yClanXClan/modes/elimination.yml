@@ -1,0 +1,60 @@
+# Modo Eliminação - Último clan em pé vence
+
+# Se o modo está habilitado
+enabled: true
+
+# Nome de exibição do modo
+display-name: '&cEliminação'
+
+# Descrição do modo
+description:
+  - '&7Último clan em pé vence'
+  - '&7Sem respawn disponível'
+
+# Ícone simples (para referência)
+icon: 'IRON_SWORD'
+
+# Configurações do ícone no menu de seleção
+menu-icon:
+  material: 'SKULL_ITEM:3'
+  name: '&cEliminação'
+  lore:
+    - '&7Modo hardcore sem respawn.'
+    - '&7Última equipe sobrevivente vence!'
+    - ''
+    - '&fConfigurações:'
+    - '&7- Respawn: &cDesabilitado'
+    - '&7- Duração: &f10 minutos'
+    - '&7- Uma vida apenas'
+    - '&7- Jogadores: &f3-6'
+    - ''
+    - '&aClique para selecionar!'
+  flags:
+    - '*'
+  enchantments: []
+
+# Configurações de jogo
+min-players: 3
+max-players: 6
+duration: 600
+respawn-enabled: false
+kill-limit: 0
+
+# Configuração da Scoreboard durante a batalha
+scoreboard:
+  title: '&c&l☠ ELIMINAÇÃO ☠'
+  lines:
+    - '&7&m─────────────'
+    - '&fTempo: &e{time}'
+    - ' '
+    - '{your_color}&lSeu Time: &f{your_clan}'
+    - '&7  Vivos: &a{your_players}'
+    - '&7  Kills: &f{your_kills}'
+    - '  '
+    - '{enemy_color}&lInimigo: &f{enemy_clan}'
+    - '&7  Vivos: &a{enemy_players}'
+    - '&7  Kills: &f{enemy_kills}'
+    - '   '
+    - '&c&lSem Respawn!'
+    - '&7&m─────────────&r'
+    - '&eystoreplugins.com.br'

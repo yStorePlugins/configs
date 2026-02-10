@@ -1,0 +1,27 @@
+# Configuracao do Power-Up: Invisibilidade
+# Torna o jogador invisivel
+
+enabled: true
+name: '&7Invisibilidade'
+display-name: '&7&lInvisibilidade'
+icon: 'GLASS'
+
+# Configuracoes do menu
+menu-icon:
+  material: 'GLASS'
+  name: '&7&lInvisibilidade'
+  lore:
+    - ''
+    - '&7Torna voce invisivel para os inimigos.'
+    - ''
+    - '&eRaridade: &5Epico'
+    - '&eDuracao: &f30 segundos'
+
+# Efeito aplicado (formato: EFFECT:LEVEL)
+effect: 'INVISIBILITY:1'
+
+# Duracao do efeito em segundos
+duration: 30
+
+# Raridade (epico = bem raro)
+rarity: EPIC

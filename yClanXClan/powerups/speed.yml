@@ -1,0 +1,27 @@
+# Configuracao do Power-Up: Velocidade
+# Aumenta a velocidade de movimento
+
+enabled: true
+name: '&aVelocidade'
+display-name: '&a&lVelocidade'
+icon: 'SUGAR'
+
+# Configuracoes do menu
+menu-icon:
+  material: 'SUGAR'
+  name: '&a&lVelocidade'
+  lore:
+    - ''
+    - '&7Aumenta sua velocidade de movimento.'
+    - ''
+    - '&eRaridade: &fComum'
+    - '&eDuracao: &f30 segundos'
+
+# Efeito aplicado (formato: EFFECT:LEVEL)
+effect: 'SPEED:2'
+
+# Duracao do efeito em segundos
+duration: 30
+
+# Raridade
+rarity: COMMON
