@@ -408,6 +408,24 @@ jump-pad:
   # Mundos que não irá funcionar
   world-blacklist: []
 
+# Sistema de custos de reparação
+repair-costs:
+  # Para somente o item da mão
+  hand:
+    price1:
+      provider: 'money'
+      amount: 10.0
+  # Para o inventário inteiro
+  all:
+    price1:
+      provider: 'money'
+      amount: 1000.0
+  # Para o inventário de armaduras
+  armor:
+    price1:
+      provider: 'money'
+      amount: 30.0
+
 # Setas dos menus
 Setas:
   Anterior:
@@ -437,19 +455,3 @@ Setas:
     Name: '&aPróxima'
     Lore:
       - '&7Clique para ir à próxima página.'
-
-# Formatos de money e quantia
-Formats:
-  - ''
-  - ''
-  - 'K'
-  - 'M'
-  - 'B'
-  - 'T'
-  - 'Q'
-  - 'QQ'
-  - 'S'
-  - 'SS'
-  - 'O'
-  - 'N'
-  - 'D'
