@@ -107,6 +107,8 @@ general:
   sell-collect-menu: false
   # Permissão para conseguir ter o auto-sell
   auto-sell-permission: ''
+  # O auto-sell vir ativado por padrão no spawner
+  auto-sell-default: true
 
 # Identificadores das skills
 skills:
