@@ -14,6 +14,16 @@ Itens:
     material: 'http://textures.minecraft.net/texture/e2a46b04ebd3bef3bf77a2c624434945d34a0c947a2ab18a785e633bdceed90'
     name: '&aItens'
     lore: [ '&7Clique para ver os itens do seu grupo.' ]
+  Venda-Selecionada:
+    Slot: 12
+    material: 'http://textures.minecraft.net/texture/9a2d891c6ae9f6baa8faf3c5e0d2f6a4b9e8c7d1a3f8e2b4c6d8a0e2f4b6c8d0'
+    name: '&aVenda Selecionada'
+    lore:
+      - '&7Clique para abrir o menu de venda'
+      - '&7onde voce pode colocar os itens'
+      - '&7que deseja vender.'
+      - ''
+      - '&eSo aceita itens cadastrados!'
   Auto sim:
     material: '351:10'
     name: '&aVenda automática'
