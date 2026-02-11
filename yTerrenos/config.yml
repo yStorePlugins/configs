@@ -110,6 +110,9 @@ world-protection:
   # Permitir quebrar fora de terrenos
   # bypass: yterrenos.protection.break.bypass
   break: false
+  # Permitir pvp fora de terrenos
+  # bypass: yterrenos.protection.pvp.bypass
+  pvp: false
 
 # Sistema de proteção do terreno
 terrain-protection:
