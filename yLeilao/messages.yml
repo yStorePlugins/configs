@@ -80,3 +80,14 @@ chat:
   npc-set: '&aNPC setado com sucesso.'
   npc-deleted: '&aNPC removido com sucesso.'
   npc-not-set: '&cNPC não está definido.'
+  auction-sold: |
+
+    &a&l[Leilão] &eSeu leilão foi finalizado!
+    &7Comprador: &f{buyer}
+    &7Você recebeu: &6{amount} {provider_abbreviated}
+    &7Taxa aplicada: &c{tax}%
+
+  queue-pending: |
+
+    &a&l[Leilão] &eVocê tem itens ou valores pendentes do leilão!
+    &7Acesse o &f/leilao &7para coletar.
