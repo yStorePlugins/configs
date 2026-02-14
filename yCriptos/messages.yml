@@ -1,0 +1,44 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/criptos &8- &7Abre o menu principal.
+    &a/criptos setnpc &8- &7Seta o local do NPC.
+    &a/criptos delnpc &8- &7Deleta o NPC.
+    &a/criptos add &8- &7Adiciona criptomoedas para um jogador.
+    &a/criptos remove &8- &7Remove criptomoedas de um jogador.
+
+  no-balance: '&cVocê não tem {amount} coins suficiente para isto. Disponível: {provider_balance}&c.'
+  npc-set: '&aNPC setado com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'
+  amount-digit: |
+
+    &aDigite a quantia que você deseja.
+    &7para cancelar digite &ncancelar&7.
+
+  crypto-list: |
+    &cCrypto não encontrada.
+    &7Disponíveis: {list}
+  crypto-added: '&bVocê adicionou &f{amount} &b{crypto} para o jogador &f{player}&b.'
+  crypto-added-all: '&bVocê adicionou &f{amount} {crypto}&b para todos os jogadores&b.'
+  crypto-removed: '&bVocê removeu &f{amount} &b{crypto} do jogador &f{player}&b.'
+  crypto-removed-all: '&bVocê removeu &f{amount} {crypto}&b de todos os jogadores&b.'
+  sufficient: '&cVocê não tem {crypto}&c suficiente para isso. Disponível: &f{has}&c.'
+  bought: '&aVocê comprou {amount} {crypto}&a por &f{price}&a coins.'
+  sold: '&aVocê vendeu {amount} {crypto}&a por &f{price}&a coins.'

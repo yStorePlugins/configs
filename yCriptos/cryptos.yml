@@ -1,0 +1,244 @@
+cryptos:
+  bitcoin:
+    # ID na API do CoinGecko, usado para obter o preço atual
+    coingecko-id: 'bitcoin'
+    # Nome nas mensagens
+    display-name: '&6Bitcoin'
+    # Ordem no menu
+    order: 1
+    # Taxa para vender
+    # em %
+    sell-tax: 5.0
+    # Item no menu
+    item:
+      material: '6fd87e572801fd71ba53ce8c2dab2e75b3eec5bc17c8b734862ad1b0ec6eff52'
+      name: '&6Bitcoin (BTC)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  ethereum:
+    coingecko-id: 'ethereum'
+    display-name: '&5Ethereum'
+    order: 2
+    sell-tax: 5.0
+    item:
+      material: '537d90f8108fe85380c0f7681cdf0b9f4ba27e418ed91ed25eb95bc92a7ac'
+      name: '&5Ethereum (ETH)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  tether:
+    coingecko-id: 'tether'
+    display-name: '&aTether'
+    order: 3
+    sell-tax: 5.0
+    item:
+      material: '60ffad33d293b61765fc86ab55602b955b9e1e757a8e885d502b3dbba5425517'
+      name: '&aTether (USDT)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  binancecoin:
+    coingecko-id: 'binancecoin'
+    display-name: '&eBinance'
+    order: 4
+    sell-tax: 5.0
+    item:
+      material: '31f51d801ce3e665c7d0d5c381acb1a438752cf576e5e86102a4f7ca358a6aad'
+      name: '&eBinance Coin (BNB)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  ripple:
+    coingecko-id: 'ripple'
+    display-name: '&bRipple'
+    order: 5
+    sell-tax: 5.0
+    item:
+      material: 'a7f6257539ac47d0f6216b2209449372455e5799fbbd93efa754164156b249'
+      name: '&bRipple (XRP)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  cardano:
+    coingecko-id: 'cardano'
+    display-name: '&3Cardano'
+    order: 6
+    sell-tax: 5.0
+    item:
+      material: 'e143d7008fd6325fd924470995eaa512659b70ec5fa96a3edd366c2537c34b18'
+      name: '&3Cardano (ADA)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  solana:
+    coingecko-id: 'solana'
+    display-name: '&dSolana'
+    order: 7
+    sell-tax: 5.0
+    item:
+      material: 'd249527f0645b46ac4fd7044c7a4bb184b3b03a6a99816935c2c5c97d94a9d01'
+      name: '&dSolana (SOL)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  dogecoin:
+    coingecko-id: 'dogecoin'
+    display-name: '&eDogecoin'
+    order: 8
+    sell-tax: 5.0
+    item:
+      material: '875a43cf27addff75f6a2fce79228f1d6f15ca909bae84c06502041647c96b39'
+      name: '&eDogecoin (DOGE)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  polkadot:
+    coingecko-id: 'polkadot'
+    display-name: '&5Polkadot'
+    order: 9
+    sell-tax: 5.0
+    item:
+      material: '7c9abb58e3b82068a662a294d0ffd8035a71a2f2067de056a18d7e185c0da3cd'
+      name: '&5Polkadot (DOT)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  litecoin:
+    coingecko-id: 'litecoin'
+    display-name: '&7Litecoin'
+    order: 10
+    sell-tax: 5.0
+    item:
+      material: 'e7eff7f79b1d74132a5f3ce86172e037b4f623749b0763deb6f67af237c77d43'
+      name: '&7Litecoin (LTC)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  chainlink:
+    coingecko-id: 'chainlink'
+    display-name: '&9Chainlink'
+    order: 11
+    sell-tax: 5.0
+    item:
+      material: 'a3bc7b3389d1dc847c66bc39573739d5bca52ce89b48daca5844df152c00df29'
+      name: '&9Chainlink (LINK)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  tron:
+    coingecko-id: 'tron'
+    display-name: '&cTron'
+    order: 12
+    sell-tax: 5.0
+    item:
+      material: 'c4c01642bf488b1c747f8f09139cb6d069cc85fb0becabe0429c3b7b8cb8fbc9'
+      name: '&cTron (TRX)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  avalanche-2:
+    coingecko-id: 'avalanche-2'
+    display-name: '&4Avalanche'
+    order: 13
+    sell-tax: 5.0
+    item:
+      material: 'a802597098888c592e09d59a2ade576d75d3e49465d15724b4a8789d863f5bd4'
+      name: '&4Avalanche (AVAX)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
+
+  polygon:
+    coingecko-id: 'polygon-ecosystem-token'
+    display-name: '&5Polygon'
+    order: 14
+    sell-tax: 5.0
+    item:
+      material: 'd2eec5c5d50302ff10d0bdb62d79e67a0ab1101696ae27ef9d82b37943c2a65c'
+      name: '&5Polygon (MATIC)'
+      lore:
+        - ''
+        - '&7Valor atual: &aR$ {price}'
+        - '&7Quantia: &b{amount}'
+        - ''
+        - '&fSeu Total: &aR$ {total}'
+        - ''
+        - '&aClique para operar'
