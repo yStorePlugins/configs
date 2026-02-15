@@ -14,6 +14,8 @@ Comando:
 
 # Opções gerais do plugin
 Opcoes:
+  # Tag que será dada ao TOP 1 de moedas
+  Tag: '&e[SEMENTUDO]'
   # Pode conflitar com plugins de armazém
   AutoPickup: false
   # Bloquear de quebrar com inventário cheio
