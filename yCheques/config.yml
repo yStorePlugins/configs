@@ -47,6 +47,12 @@ Opcoes:
   # **** Cuidado ao desativar
   UUID: true
 
+# Sistema de webhook no discord
+discord-webhook:
+  enabled: true
+  create-embed: 'create'
+  activate-embed: 'activate'
+
 # Mensagens gerais do plugin
 Mensagens:
   Permissao: '&cVocê não possui permissão para isto.'

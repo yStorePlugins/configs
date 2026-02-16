@@ -1,0 +1,57 @@
+options:
+  url: ''
+  username: 'yCheques'
+
+embeds:
+  create:
+    title: ':mailbox: Novo Cheque Criado!'
+    thumbnail: ''
+    color: '#fff'
+    content: ''
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      player:
+        inline: false
+        header: 'Player'
+        content: '```{player}```'
+      economy:
+        inline: false
+        header: 'Economia'
+        content: '```{economy}```'
+      amount:
+        inline: false
+        header: 'Quantia'
+        content: '```{amount}```'
+      date:
+        inline: false
+        header: 'Criado em'
+        content: '```{date} às {hour}```'
+  activate:
+    title: ':mailbox: Novo Cheque Ativado!'
+    thumbnail: ''
+    color: '#fff'
+    content: ''
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      player:
+        inline: false
+        header: 'Player'
+        content: '```{player}```'
+      economy:
+        inline: false
+        header: 'Economia'
+        content: '```{economy}```'
+      amount:
+        inline: false
+        header: 'Quantia'
+        content: '```{amount}```'
+      date:
+        inline: false
+        header: 'Ativado em'
+        content: '```{date} às {hour}```'
