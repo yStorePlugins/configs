@@ -65,6 +65,10 @@ Mundos permitidos:
 Mundos blacklist:
   - 'nenhum'
 
+# Blacklist de regiões que não entra em combatlog
+region-blacklist:
+  - 'nenhum'
+
 # Blacklist de regiões que o sistema de desativar PVP NÃO irá funcionar
 region-disable-blacklist: []
 
