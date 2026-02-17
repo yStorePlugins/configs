@@ -29,3 +29,6 @@ chat:
   sell: '&f > &aVocê vendeu &7{quantia}x {item} &apor &6{money}&a. Bolsa &b{bolsa}% &8(+{bonus}%)&a.'
   none: '&cVocê não possui nenhum item para vender.'
   world: '&cVocê não pode vender nesse mundo.'
+  npc-set: '&aNPC setado com sucesso.'
+  npc-deleted: '&aNPC removido com sucesso.'
+  npc-not-set: '&cNPC não está definido.'

@@ -40,6 +40,16 @@ Opcoes:
   # Habilitar o shift-sell ativado como padrão
   Padrao shift: false
 
+# Sistema de npc
+npc:
+  skin: 'Pitombaa'
+  hologram:
+    offset: 3.4
+    hologram:
+      - '&6&lVENDER'
+      - '&7Clique para vender seus itens!'
+      - '[item]GOLD_INGOT'
+
 # Setas dos menus
 Setas:
   Voltar:
