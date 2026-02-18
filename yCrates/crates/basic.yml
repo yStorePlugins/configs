@@ -66,7 +66,7 @@ hologram:
 # Configuração do sistema de model engine
 model-engine:
   enabled: false
-  # Modelo na pasta do ModalEngine
+  # Modelo na pasta do ModelEngine
   model: 'explosive_crate'
 
 # Configuração do sistema de head flutuante
@@ -167,6 +167,8 @@ menu-animation:
 # Sistema de animação da roleta física
 roulette:
   enabled: true
+  # Off-set da roleta em relação a crate
+  off-set: 0.0
   # Cabeças que irão aparecer na roleta
   # Pode ser qualquer bloco (além da skull)
   skulls:
