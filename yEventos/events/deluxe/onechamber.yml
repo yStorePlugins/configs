@@ -326,6 +326,9 @@ messages-announces:
 chamber:
   # Pontos por cada jogador
   points-per-kill: 1
+  # Pontos para ganhar
+  # deixe 0 para ganhar ao esgotar o tempo
+  points-to-win: 0
   # Mensagens por morte
   kill:
     actionbar: '&e&l+1'
