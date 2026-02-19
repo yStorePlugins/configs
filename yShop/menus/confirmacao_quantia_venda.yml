@@ -62,12 +62,26 @@ Itens:
       - '&7Clique para &aconfirmar&7 a venda.'
 
    Cancelar:
-      Slot: 42
-      CustomSkull: false
-      URL: ''
-      ID: 35
-      Data: 14
-      Glow: false
-      Name: '&cCancelar'
-      Lore:
-      - '&7Clique para &ccancelar&7 a venda.'
+       Slot: 42
+       CustomSkull: false
+       URL: ''
+       ID: 35
+       Data: 14
+       Glow: false
+       Name: '&cCancelar'
+       Lore:
+       - '&7Clique para &ccancelar&7 a venda.'
+
+   # Botão para digitar a quantia manualmente no chat
+   Quantia manual:
+       Slot: 40
+       CustomSkull: false
+       URL: ''
+       ID: 323
+       Data: 0
+       Glow: false
+       Name: '&eDigitar quantia'
+       Lore:
+       - '&7Clique para digitar a'
+       - '&7quantia manualmente no chat.'
+
