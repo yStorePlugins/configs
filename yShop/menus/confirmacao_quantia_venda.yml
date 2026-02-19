@@ -1,0 +1,73 @@
+Nome: '&8Confirmação de venda'
+Tamanho: 45
+Item slot: 4
+
+# Quantias pré-definidas que aparecem no menu
+Quantias:
+  - 1
+  - 5
+  - 10
+  - 32
+  - 64
+
+# Slots onde os botões de quantia serão posicionados (na ordem das quantias)
+Quantia slots:
+  - 10
+  - 12
+  - 14
+  - 16
+  - 19
+
+Itens:
+   # Template para os botões de quantia (não selecionado)
+   Quantia:
+      CustomSkull: false
+      URL: ''
+      ID: 160
+      Data: 5
+      Glow: false
+      Name: '&a{quantia}x'
+      Lore:
+      - '&7Clique para selecionar'
+      - '&7esta quantia.'
+      - ''
+      - '&7Valor unitário: &e{money_venda}&7.'
+
+   # Template para o botão de quantia selecionado
+   Quantia selecionada:
+      CustomSkull: false
+      URL: ''
+      ID: 160
+      Data: 13
+      Glow: true
+      Name: '&a&l{quantia}x &7(Selecionado)'
+      Lore:
+      - '&aSelecionado!'
+      - ''
+      - '&7Valor total: &e{money_venda}&7.'
+
+   Confirmar:
+      Slot: 38
+      CustomSkull: false
+      URL: ''
+      ID: 35
+      Data: 5
+      Glow: false
+      Name: '&aConfirmar'
+      Lore:
+      - '&7Quantia a ser vendida: &a{quantia}&7.'
+      - '&7Seu bônus: {bonus}&7.'
+      - '&7Valor total: &a{playerpoints_venda} pontos e {money_venda} coins&7.'
+      - ''
+      - '&7Clique para &aconfirmar&7 a venda.'
+
+   Cancelar:
+      Slot: 42
+      CustomSkull: false
+      URL: ''
+      ID: 35
+      Data: 14
+      Glow: false
+      Name: '&cCancelar'
+      Lore:
+      - '&7Clique para &ccancelar&7 a venda.'

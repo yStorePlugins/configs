@@ -17,6 +17,12 @@ Som: ''
 # Só afeta esta categoria
 Quantia chat: true
 
+# Ativar a seleção de quantia via menu
+# Quando ativado, o jogador seleciona quantias pré-definidas no menu
+# em vez de digitar no chat. As quantias são definidas em menus/confirmacao_quantia.yml
+# OBS: Se ativar esta opção, desative "Quantia chat"
+Quantia menu: false
+
 # Ativar a confirmação da compra no menu
 Confirmacao: true
 #
