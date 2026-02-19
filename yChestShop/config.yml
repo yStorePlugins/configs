@@ -77,6 +77,9 @@ max-friends: 5
 # Deixe 0 para ser infinito
 shop-max: 0
 
+# Acumular os bônus que tiver permissão
+accumulate-bonus: false
+
 # Sistema de blacklist
 black-list:
   # Materiais que estarão na black-list
