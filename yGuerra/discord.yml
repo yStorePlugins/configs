@@ -3,8 +3,14 @@ Options:
   Username: 'yGuerra'
   Ativar: false
 Embeds:
-  evento_glad:
+
+  # -------------------------------------------------------
+  # Embed de ANÚNCIO (chamada de entrada) - Evento: anuncio
+  # Disparado quando o evento começa a aceitar jogadores.
+  # -------------------------------------------------------
+  evento_glad_anuncio:
     Tipo: 'gladiador.yml'
+    Evento: 'anuncio'
     Title: 'Evento iniciando...'
     Thumbnail: ''
     Color: '#fff'
@@ -28,5 +34,94 @@ Embeds:
         Content: 'RankUP'
       data:
         Inline: false
+        Header: 'Data'
+        Content: '{data} - {hora}'
+
+  # -------------------------------------------------------
+  # Embed de INÍCIO EM ANDAMENTO - Evento: inicio
+  # Disparado quando o evento começa de fato (PVP liberado).
+  # Placeholders disponíveis:
+  #   {jogadores_lista}   - lista de jogadores participantes
+  #   {jogadores_quantia} - total de jogadores
+  #   {clans_lista}       - lista de tags de clans
+  #   {clans_quantia}     - total de clans
+  #   {evento}            - nome do evento
+  #   {data} / {hora}     - data e hora atual
+  # -------------------------------------------------------
+  evento_glad_inicio:
+    Tipo: 'gladiador.yml'
+    Evento: 'inicio'
+    Title: 'EVENTO GUERRA em ANDAMENTO!'
+    Thumbnail: ''
+    Color: '#e74c3c'
+    Content: 'O evento está acontecendo agora. @everyone'
+    Image: ''
+    Footer:
+      Text: 'Todos os direitos reservados'
+      Image: ''
+    Fields:
+      jogadores:
+        Inline: false
+        Header: 'Jogadores participando'
+        Content: '{jogadores_lista}'
+      quantia:
+        Inline: true
+        Header: 'Total de jogadores'
+        Content: '{jogadores_quantia}'
+      clans:
+        Inline: true
+        Header: 'Clans participando'
+        Content: '{clans_lista}'
+      data:
+        Inline: false
+        Header: 'Data'
+        Content: '{data} - {hora}'
+
+  # -------------------------------------------------------
+  # Embed de FIM / VENCEDOR - Evento: fim
+  # Disparado quando o evento termina com um vencedor.
+  # Placeholders disponíveis:
+  #   {evento}                  - nome do evento
+  #   {duracao}                 - duração formatada do evento
+  #   {mvp}                     - jogador com mais kills
+  #   {mvp_kills}               - kills do mvp
+  #   {jogador_1..10}           - jogadores no ranking por kills
+  #   {jogador_kills_1..10}     - kills de cada jogador no ranking
+  #   {clan_1..10}              - clans no ranking por kills
+  #   {clan_colortag_1..10}     - tag colorida dos clans (SimpleClan)
+  #   {clan_kills_1..10}        - kills de cada clan no ranking
+  #   {clan_jogadores_1..10}    - jogadores de cada clan no ranking
+  #   {data} / {hora}           - data e hora atual
+  # -------------------------------------------------------
+  evento_glad_fim:
+    Tipo: 'gladiador.yml'
+    Evento: 'fim'
+    Title: 'EVENTO GUERRA foi finalizado!'
+    Thumbnail: ''
+    Color: '#f1c40f'
+    Content: 'Confira o vencedor!'
+    Image: ''
+    Footer:
+      Text: 'Duração do evento: {duracao}'
+      Image: ''
+    Fields:
+      primeiro:
+        Inline: false
+        Header: '1° lugar'
+        Content: 'Vencedor: {jogador_1} ({clan_colortag_1})\nJogadores: {clan_jogadores_1}\nKills: {clan_kills_1}'
+      segundo:
+        Inline: false
+        Header: '2° lugar'
+        Content: 'Vencedor: {jogador_2} ({clan_colortag_2})\nJogadores: {clan_jogadores_2}\nKills: {clan_kills_2}'
+      terceiro:
+        Inline: false
+        Header: '3° lugar'
+        Content: 'Vencedor: {jogador_3} ({clan_colortag_3})\nJogadores: {clan_jogadores_3}\nKills: {clan_kills_3}'
+      duracao:
+        Inline: true
+        Header: 'Duração'
+        Content: '{duracao}'
+      data:
+        Inline: true
         Header: 'Data'
         Content: '{data} - {hora}'
