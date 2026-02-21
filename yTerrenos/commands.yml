@@ -12,3 +12,4 @@
 commands:
   terreno: 'terreno|terrain'
   terrenos: 'terrenos|terrains'
+  blocks: 'blocks|block|blocos|bloco'

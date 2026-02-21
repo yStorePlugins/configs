@@ -68,6 +68,7 @@ chat:
     &c/terreno reload - Recarrega as configurações
     &c/terreno chunks <reload|info|status> - Gerenciar chunks
 
+  yourself: '&cVocê não pode realizar esta ação à si mesmo.'
   no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
   terrain-size: '&cO tamanho deve ser entre {min} e {max}.'
   terrain-world: '&cVocê não pode criar terrenos neste mundo.'
@@ -153,3 +154,35 @@ chat:
   terrain-delete-all-world: '&aTodos os terrenos do mundo &c{world}&a foram deletados.'
   terrain-region-blocked: '&cAfaste-se desta região protegida!'
   terrain-too-close: '&cVocê não pode fazer isso a menos de {distance} blocos de um terreno.'
+  selection-tool-off: '&cO sistema de ferramenta de seleção está desativado.'
+  selection-tool-received: '&aVocê recebeu a Ferramenta de Seleção.'
+  selection-corner1: '&aCanto 1 definido em &f({x}, {y}, {z})&a.'
+  selection-corner2: '&aCanto 2 definido. Tamanho: &f{size}x{size} &a(&f{blocks} blocos&a). Clique dentro da área para confirmar.'
+  selection-confirm: '&aTerreno criado com sucesso via ferramenta de seleção.'
+  selection-cancelled: '&cSeleção cancelada.'
+  selection-not-enough-blocks: '&cVocê não tem blocos suficientes. Necessário: &f{needed}&c, disponível: &f{available}&c.'
+  selection-blocks-info: '&7Custo estimado: &f{blocks} blocos&7.'
+  selection-expand-mode: '&emodo de expansão ativado para o terreno &f{name}&e. Selecione os cantos da nova área.'
+  blocks-help: |
+
+    &a/blocos &8- &7Ver os seus blocos.
+    &a/blocos <player> &8- &7Ver os blocos de alguém.
+    &a/blocos enviar <player> <quantia> &8- &7Envia seus blocos para alguém.
+    &a/blocos add <player> <quantia> &8- &7Adiciona blocos a alguém.
+    &a/blocos give <player> <quantia> &8- &7Dá blocos em forma de item a alguém.
+    &a/blocos set <player> <quantia> &8- &7Remove blocos de alguém.
+    &a/blocos remove <player> <quantia> &8- &7Seta blocos a alguém.
+
+  blocks: '&bVocê possui &f{blocks} blocos&b.'
+  blocks-player: '&bO jogador &f{player}&b possui &f{blocks} blocos&b.'
+  blocks-added: '&bVocê adicionou &f{blocks} blocos&b ao jogador &f{player}&b.'
+  blocks-removed: '&bVocê removeu &f{blocks} blocos&b do jogador &f{player}&b.'
+  blocks-set: '&bVocê setou &f{blocks} blocos&b para o jogador &f{player}&b.'
+  blocks-give: '&bVocê deu &f{blocks} &bblocos para o jogador &f{player}&b.'
+  blocks-converted: '&bVocê compactou todos seus blocos em 1.'
+  blocks-activated: '&bVocê ativou &f{blocks} blocos&b.'
+  blocks-sent: '&bVocê enviou &f{blocks} blocos&b para o jogador &f{player}&b.'
+  blocks-received: '&bVocê recebeu &f{blocks} blocos&b do jogador &f{player}&b.'
+  blocks-has: '&cVocê não possui a quantia de &f{blocos}&c blocos.'
+  blocks-give-all: '&bO usuário &f{player}&b deu &f{blocks} &bblocos para todos os jogadores online&b.'
+  blocks-added-all: '&bVocê adicionou &f{blocks} blocos&b para todos os jogadores online.'

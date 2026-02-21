@@ -118,3 +118,39 @@ world-protection:
 terrain-protection:
   # Permitir explosões dentro de terrenos
   explode: false
+
+# Item de blocos ativável
+block:
+  material: '3173cb01a8185f4018e219c2e24c1f72140a7bace55aec93d5087b4d81860364'
+  name: '&b+{amount} Blocos'
+  lore:
+    - ''
+    - '&fQuantia: &b{amount}'
+    - ''
+    - '&7Clique com botão direito para ativar.'
+    - ''
+    - '&7Clique com shift + botão direito para compactar'
+    - '&7todos os seus blocos no inventário em 1 só.'
+    - ''
+
+# Ferramenta de seleção estilo GriefDefender
+# Permite criar/expandir terrenos clicando nos cantos com uma ferramenta especial
+selection-tool:
+  # Ativar o sistema de ferramenta de seleção
+  # Quando desativado, apenas o /terreno criar <tamanho> funciona
+  enabled: true
+  # true  = desconta blocos do jogador
+  # false = usa o sistema buy-cost normal
+  use-blocks: true
+  item:
+    material: 'DIAMOND_AXE'
+    name: '&6Ferramenta de Seleção'
+    lore:
+      - '&7Clique direito: Selecionar canto'
+      - '&7Dentro da área: Confirmar criação'
+  # Material dos fake-blocks usados na prévia da borda
+  preview-material: 'GLASS'
+  # Material usado quando a área está bloqueada (mundo proibido / terreno próximo / dentro de terreno)
+  preview-material-blocked: 'REDSTONE_BLOCK'
+  # Material usado quando o jogador não tem blocos suficientes
+  preview-material-no-blocks: 'BEDROCK'
