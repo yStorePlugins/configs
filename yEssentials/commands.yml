@@ -115,3 +115,4 @@ Commands:
   Grindstone: 'grindstone|amolador'
   Loom: 'loom'
   Stack: 'stack|stackpotions|pilha|stackpotion'
+  ClearEnderchest: 'clearenderchest|clearechest|clearec|limparechest|limparec|limparenderchest'

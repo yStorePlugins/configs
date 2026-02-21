@@ -168,6 +168,11 @@ Opcoes:
   # Permissão de bypass: yessentials.banitem.bypass
   ItensNBT banidos:
     - 'NBTTag-Key-Here'
+  # Itens banidos (Custom-Model-Data)
+  # Permissão de bypass: yessentials.banitem.bypass
+  ItensCMD banidos:
+    - 999999
+    - 999991
   # Palavras inapropriadas no /nick
   # coloque em minúsculo
   PalavrasNick bloqueados:
