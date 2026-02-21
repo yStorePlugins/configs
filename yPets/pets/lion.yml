@@ -78,7 +78,6 @@ icon:
     - ' &8alimentando-o com ração.'
     - ''
     - '&6Botão esquerdo &8-> &fEquipar'
-    - '&6Botão direito &8-> &fRecolher'
 
 # Item no menu (equipado)
 icon-equipped:
@@ -97,7 +96,7 @@ icon-equipped:
     - ' &8Evolua o seu pet'
     - ' &8alimentando-o com ração.'
     - ''
-    - '&6Botão esquerdo &8-> &fDesequipar'
+    - '&6Botão esquerdo &8-> &fGerenciar'
 
 tiers:
   tier-1:
@@ -157,6 +156,21 @@ tiers:
       equip-login-commands: []
       # Comandos que serão executados ao desequipar o pet e ao deslogar
       unequip-quit-commands: []
+    # Sistema de ataque do pet
+    attack:
+      # Habilita o ataque neste tier?
+      enabled: false
+      # Dano causado por ataque
+      damage: 0.0
+      # Raio de busca de entidades (em blocos)
+      radius: 0.0
+      # Intervalo entre ataques (em ticks, 20 = 1 segundo)
+      interval: 20
+      # Whitelist de EntityTypes: se não vazia, o pet ataca APENAS estas entidades.
+      # Lista de tipos: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+      whitelist: []
+      # Blacklist de EntityTypes: entidades que NUNCA serão atacadas.
+      blacklist: []
   tier-2:
     order: 2
     need-level: 10
@@ -187,3 +201,16 @@ tiers:
       respawn-commands: []
       equip-login-commands: []
       unequip-quit-commands: []
+    # Sistema de ataque do pet
+    attack:
+      enabled: true
+      # Dano causado por ataque
+      damage: 4.0
+      # Raio de busca de entidades (em blocos)
+      radius: 5.0
+      # Intervalo entre ataques (em ticks, 20 = 1 segundo)
+      interval: 20
+      # Whitelist vazia = ataca qualquer EntityType (exceto os da blacklist)
+      whitelist: []
+      # Blacklist: nunca ataca estas entidades
+      blacklist: [ 'VILLAGER', 'IRON_GOLEM' ]
