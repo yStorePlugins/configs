@@ -1,6 +1,7 @@
 Cheques:
   Cheque1:
     Tipo: 'Money'
+    Display: 'Coins'
     material: 'http://textures.minecraft.net/texture/8381c529d52e03cd74c3bf38bb6ba3fde1337ae9bf50332faa889e0a28e8081f'
     name: '&aCheque de Money'
     lore:
@@ -20,6 +21,7 @@ Cheques:
         &aVocê criou um cheque de &e{quantia} coins&a com sucesso.
   Cheque2:
     Tipo: 'yPoints'
+    Display: 'Pontos'
     material: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
     name: '&6Cheque de Cash'
     lore:
