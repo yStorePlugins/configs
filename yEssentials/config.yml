@@ -412,16 +412,25 @@ jump-pad:
 repair-costs:
   # Para somente o item da mão
   hand:
+    # Delay para usar o comando novamente
+    # em segundos
+    delay: 30
     price1:
       provider: 'money'
       amount: 10.0
   # Para o inventário inteiro
   all:
+    # Delay para usar o comando novamente
+    # em segundos
+    delay: 30
     price1:
       provider: 'money'
       amount: 1000.0
   # Para o inventário de armaduras
   armor:
+    # Delay para usar o comando novamente
+    # em segundos
+    delay: 30
     price1:
       provider: 'money'
       amount: 30.0

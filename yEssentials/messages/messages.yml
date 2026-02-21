@@ -504,3 +504,4 @@ Outros:
   Stack: '&aVocê stackou &f{quantia}&a poções com sucesso.'
   Stack nenhum: '&cVocê não tem poções para stackar.'
   Stack player: '&aVocê stackou &f{quantia}&a poções no inventário de &f{player}&a.'
+  Repair aguardar: '&cVocê deve aguardar &e{tempo}&c para reparar nesse modo novamente.'
