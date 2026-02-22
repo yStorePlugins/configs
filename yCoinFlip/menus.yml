@@ -1,0 +1,225 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de lista de salas
+room-list:
+  name: '&8CoinFlip — Salas Abertas'
+  size: 54
+  slots: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44 ]
+  previous-slot: 48
+  next-slot: 50
+  create-button:
+    slot: 49
+    material: NETHER_STAR
+    name: '&a&lCriar Sala'
+    lore:
+      - ''
+      - ' &7Clique para criar uma nova'
+      - ' &7sala de CoinFlip.'
+      - ''
+  player-info-item:
+    slot: 45
+    material: '{player}'
+    name: '&6&lSuas Estatísticas'
+    lore:
+      - ''
+      - ' &7Jogador: &f{player}'
+      - ''
+      - ' &7Vitórias: &a{wins}'
+      - ' &7Derrotas: &c{losses}'
+      - ' &7Total ganho: &f{total_won}'
+      - ' &7Total perdido: &f{total_lost}'
+      - ''
+  room-item:
+    material: '{player}'
+    name: '&6&l{player}'
+    lore:
+      - ''
+      - ' &7Economia: &f{provider}'
+      - ' &7Valor: &a{amount}'
+      - ' &7Expira em: &f{expire}'
+      - ''
+      - ' &eClique para aceitar'
+      - ''
+
+# Menu de seleção de economia
+economy-select:
+  name: '&8Selecione a Economia'
+  size: 27
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 0
+  facing:
+    glass1:
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+      slot: 0
+    glass2:
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+      slot: 8
+    glass3:
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+      slot: 18
+    glass4:
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+      slot: 26
+
+# Menu de seleção de valor
+amount-select:
+  name: '&8Selecione o Valor — {provider}'
+  size: 27
+  # Slots onde os itens de preset aparecem (linha do meio, deixando slot 22 para o botão custom)
+  slots: [ 10, 11, 12, 13, 14, 15 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 0
+  custom-amount:
+    slot: 22
+    material: PAPER
+    name: '&eValor Personalizado'
+    lore:
+      - ''
+      - ' &7Clique para digitar um valor'
+      - ' &7personalizado no chat.'
+      - ''
+  presets:
+    - 100.0
+    - 500.0
+    - 1000.0
+    - 5000.0
+    - 10000.0
+    - 50000.0
+  preset-item:
+    material: GOLD_NUGGET
+    name: '&6&l{amount}'
+    lore:
+      - ''
+      - ' &7Clique para apostar'
+      - ' &f{amount} &7{abbreviated}'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass2:
+      slot: 8
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass3:
+      slot: 18
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass4:
+      slot: 26
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+
+# Menu de animação do coinflip
+animation:
+  name: '&8⚡ CoinFlip — {player1} vs {player2}'
+  size: 54
+  # Slots onde as cabeças dos jogadores aparecem durante a animação
+  player1-slot: 20
+  player2-slot: 24
+  center-slot: 22
+  info-item:
+    slot: 4
+    material: PAPER
+    name: '&6&lDetalhes da Partida'
+    lore:
+      - ''
+      - ' &7Jogador 1: &f{player1}'
+      - ' &7Jogador 2: &f{player2}'
+      - ' &7Economia: &f{provider}'
+      - ' &7Valor: &a{amount}'
+      - ''
+  winner-item:
+    slot: 4
+    material: EMERALD
+    name: '&a&l{winner} VENCEU!'
+    lore:
+      - ''
+      - ' &7Parabéns, &f{winner}&7!'
+      - ' &7Você ganhou &a{amount} &7{abbreviated}'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass2:
+      slot: 8
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass3:
+      slot: 45
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass4:
+      slot: 53
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+
+# Menu de confirmação de aceitar sala
+confirm-accept:
+  name: '&8Confirmar CoinFlip'
+  size: 27
+  room-item-slot: 13
+  confirm-slot: 11
+  cancel-slot: 15
+  confirm:
+    material: 'WOOL:5'
+    name: '&aConfirmar'
+    lore:
+      - ''
+      - ' &7Clique para &aconfirmar&7 o CoinFlip.'
+      - ''
+  cancel:
+    material: 'WOOL:14'
+    name: '&cCancelar'
+    lore:
+      - ''
+      - ' &7Clique para &ccancelar&7.'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass2:
+      slot: 8
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass3:
+      slot: 18
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass4:
+      slot: 26
+      material: STAINED_GLASS_PANE:15
+      name: ' '

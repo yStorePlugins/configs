@@ -1,0 +1,120 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+title:
+  win-title: "&6&lVITÓRIA!<nl>&7Você ganhou &f{amount}"
+  lose-title: "&c&lDERROTA!<nl>&7Você perdeu &f{amount}"
+
+chat:
+  no-permission: '&cVocê não tem permissão para isso.'
+  player-only: '&cApenas jogadores podem usar este comando.'
+  player-not-found: '&cJogador &f{player} &cnão encontrado.'
+  invalid-number: '&cNúmero inválido. Digite um valor válido.'
+  reload: '&aPlugin recarregado com sucesso!'
+  help: |
+
+    &8&m-----------------------------
+    &6&lyCoinFlip &7— Comandos
+    &8&m-----------------------------
+
+    &f/coinflip &7— Abrir lista de salas
+    &f/coinflip create &7— Criar uma sala
+    &f/coinflip cancel &7— Cancelar suas salas
+    &f/coinflip stats [jogador] &7— Ver estatísticas
+
+    &f/coinflip reload &7— Recarregar plugin
+
+    &8&m-----------------------------
+
+  room-created: |
+
+    &aSala de CoinFlip criada com sucesso!
+
+    &7Economia: &f{provider}
+    &7Valor: &f{amount}
+    &7ID da sala: &f{id}
+    &7Expiração: &f{expire}
+
+    &7Aguardando outro jogador aceitar...
+
+  room-already-max: '&cVocê já tem o máximo de &f{max} &csala(s) aberta(s) simultaneamente.'
+  room-not-found: '&cSala não encontrada.'
+  room-expired-owner: |
+
+    &cSua sala de CoinFlip expirou e o valor foi devolvido!
+
+    &7Economia: &f{provider}
+    &7Valor devolvido: &f{amount}
+
+  room-cancelled: |
+
+    &cSua sala de CoinFlip foi cancelada e o valor foi devolvido!
+
+    &7Economia: &f{provider}
+    &7Valor devolvido: &f{amount}
+
+  no-balance: |
+
+    &cVocê não tem saldo suficiente!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{required}
+
+  min-amount: '&cO valor mínimo é &f{min}&c.'
+  max-amount: '&cO valor máximo é &f{max}&c.'
+  cannot-accept-own: '&cVocê não pode aceitar sua própria sala.'
+  economy-not-found: '&cEconomia não encontrada. Contate um administrador.'
+  amount-prompt: |
+
+    &6Digite o valor da aposta no chat:
+    &7(Digite &ccancel &7para cancelar)
+
+  amount-prompt-cancel: '&cCriação de sala cancelada.'
+  room-accepted-owner: |
+
+    &6Sua sala de CoinFlip foi aceita por &f{acceptor}&6!
+
+    &7Economia: &f{provider}
+    &7Valor: &f{amount}
+
+    &7A animação está sendo exibida...
+
+  win-message: |
+
+    &a&lVOCÊ GANHOU O COINFLIP!
+
+    &7Oponente: &f{loser}
+    &7Economia: &f{provider}
+    &7Valor ganho: &f{amount}
+
+    &7Vitórias: &f{wins} &8| &7Derrotas: &f{losses}
+
+  lose-message: |
+
+    &c&lVOCÊ PERDEU O COINFLIP!
+
+    &7Oponente: &f{winner}
+    &7Economia: &f{provider}
+    &7Valor perdido: &f{amount}
+
+    &7Vitórias: &f{wins} &8| &7Derrotas: &f{losses}
+
+  stats: |
+
+    &8&m-----------------------------
+    &6&lEstatísticas &7de &f{player}
+    &8&m-----------------------------
+
+    &7Vitórias: &a{wins}
+    &7Derrotas: &c{losses}
+    &7Total ganho: &f{total_won}
+    &7Total perdido: &f{total_lost}
+
+    &8&m-----------------------------
