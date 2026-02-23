@@ -1,0 +1,10 @@
+#     ___                                          _
+#    / __\___  _ __ ___  _ __ ___   __ _ _ __   __| |___
+#   / /  / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` / __|
+#  / /__| (_) | | | | | | | | | | | (_| | | | | (_| \__ \
+#  \____/\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/
+#
+# Utilize "comando|alias" para criar aliases.
+# Por exemplo: "alugar|rent|yalugar"
+commands:
+  yalugaritem: "alugar|rent|yalugar"

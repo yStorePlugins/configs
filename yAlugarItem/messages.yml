@@ -1,0 +1,191 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO valor inserido não é um número válido.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &8&m----------------------------------
+    &6&l  yAlugarItem &7— Comandos
+    &8&m----------------------------------
+
+    &a/alugar &8- &7Abre o menu principal.
+    &a/alugar reload &8- &7Recarrega as configurações.
+
+    &8&m----------------------------------
+
+  inv-full: '&cSeu inventário está cheio! Libere espaço primeiro.'
+  blacklisted: '&cEste item não pode ser alugado.'
+  slot-limit: |
+
+    &cVocê atingiu o limite de listagens simultâneas!
+
+    &7Limite atual: &f{limit}
+    &7Cancele ou aguarde o término de um aluguel existente.
+
+  create-enter-price: |
+
+    &eDigite no chat o preço por hora para o aluguel.
+    &7Digite &ccancel &7para cancelar.
+
+  create-enter-price-invalid: '&cValor inválido. Digite um número maior que zero.'
+  create-success: |
+
+    &aListagem criada com sucesso!
+
+    &7Item: &f{item}
+    &7Preço/hora: &f{price} &7({provider})
+    &7ID: &f{id}
+
+    &7Aguardando locatários no mercado...
+
+  create-cancelled: '&cCriação de listagem cancelada.'
+  create-item-gone: '&cO item selecionado não está mais no seu inventário.'
+  rent-success: |
+
+    &aAluguel realizado com sucesso!
+
+    &7Item: &f{item}
+    &7Dono: &f{owner}
+    &7Duração: &f{duration}
+    &7Total pago: &f{price} &7({provider})
+    &7Expira em: &f{expire}
+
+  rent-no-balance: |
+
+    &cSaldo insuficiente!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{price}
+
+  rent-own-item: '&cVocê não pode alugar o seu próprio item.'
+  rent-already-rented: '&cEste item já está sendo alugado por outro jogador.'
+  rent-notify-owner: |
+
+    &aUm jogador alugou o seu item!
+
+    &7Item: &f{item}
+    &7Locatário: &f{renter}
+    &7Duração: &f{duration}
+    &7Valor recebido: &f{price} &7({provider})
+  renew-success: |
+
+    &aAluguel renovado com sucesso!
+
+    &7Duração adicional: &f{duration}
+    &7Novo vencimento: &f{expire}
+    &7Total pago: &f{price} &7({provider})
+
+  renew-no-balance: |
+
+    &cSaldo insuficiente para renovar!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{price}
+
+  cancel-owner-success: |
+
+    &aListagem cancelada com sucesso!
+
+    &7O item foi devolvido ao seu armazém.
+
+  cancel-owner-rented: |
+
+    &cAtenção — este item está sendo alugado!
+
+    &7Taxa de cancelamento: &f{tax}% &7({tax_amount} {provider})
+    &7Reembolso ao locatário: &f{refund} &7({provider})
+
+    &7Confirme clicando novamente.
+
+  cancel-renter-refund: |
+
+    &eO dono cancelou o aluguel do seu item!
+
+    &7Reembolso recebido: &f{refund} &7({provider})
+    &7O item foi removido do seu inventário.
+
+  expired-renter: |
+
+    &cSeu aluguel expirou!
+
+    &7Item: &f{item}
+    &7O item foi removido do seu inventário.
+
+  expired-owner: |
+
+    &aAluguel concluído! Seu item está disponível no armazém.
+
+    &7Item: &f{item}
+    &7Locatário: &f{renter}
+    &7Total recebido: &f{earned} &7({provider})
+
+  collect-success: |
+
+    &aItem retirado do armazém com sucesso!
+
+    &7Item: &f{item}
+
+  collect-nothing: '&cNão há itens para retirar no momento.'
+  deposit-success: '&aItem depositado no armazém com sucesso.'
+  deposit-already: '&cO item já está no armazém, não está no seu inventário.'
+  retrieve-success: '&aItem recuperado do seu inbox e devolvido ao inventário.'
+  retrieve-already: '&cO item já está no seu inventário.'
+  retrieve-nothing: '&cNão há item depositado para retirar no momento.'
+  inbox-notify: '&eVocê tem &f{count} &eitem(ns) alugado(s) depositado(s). Use /alugar para retirar.'
+  provider-permission: '&cVocê não tem permissão para usar esta economia.'
+  currency-not-found: '&cA economia selecionada não foi encontrada. Escolha uma válida.'
+  edit-enter-price: |
+
+    &eDigite no chat o novo preço por hora para o aluguel.
+    &7Digite &ccancel &7para cancelar.
+
+  edit-price-success: '&aPreço atualizado com sucesso para &f{price} &7({provider})&a.'
+  edit-economy-success: '&aEconomia atualizada com sucesso para &f{provider}&a.'
+  pvp-blocked: '&cVocê não pode atacar jogadores enquanto há um item alugado em campo.'
+  admin-rental-not-found: '&cAluguel &f{id} &cnão encontrado.'
+  admin-force-expire-success: '&aAluguel &f{id} &aexpirado com sucesso.'
+  admin-listing-not-found: '&cListagem &f{id} &cnão encontrada.'
+  admin-listing-rented: '&cEsta listagem está sendo alugada. Use /alugaradmin forceexpire primeiro.'
+  admin-remove-listing-success: '&aListagem &f{id} &aremovida com sucesso.'
+  admin-list: |
+
+    &8&m----------------------------------
+    &6&l  Aluguéis de &f{player}
+    &8&m----------------------------------
+
+    {list}
+
+    &8&m----------------------------------
+
+  admin-list-format: '  &7{id} &8» &f{item}'
+  admin-list-empty: '&7{player} &cnão possui aluguéis ativos.'
+  durability-recalled-renter: |
+
+    &eO item alugado foi recolhido automaticamente!
+
+    &7Item: &f{item}
+    &7Motivo: &cdurabilidade muito baixa ({durability}%).
+    &7O aluguel foi encerrado.
+
+  durability-recalled-owner: |
+
+    &eUm item alugado foi recolhido de volta para o seu armazém!
+
+    &7Item: &f{item}
+    &7Locatário: &f{renter}
+    &7Motivo: &cdurabilidade baixa ({durability}%).
+    &7Retire o item em /alugar.

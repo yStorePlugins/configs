@@ -1,0 +1,427 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore:
+      - ' &7Clique para ir à página anterior.'
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore:
+      - ' &7Clique para ir à próxima página.'
+
+# ── Menu Principal ─────────────────────────────────────────────────────────
+main-menu:
+  name: '&8yAlugarItem — Menu'
+  size: 27
+  browse-slot: 11
+  my-listings-slot: 13
+  my-rentals-slot: 15
+  browse:
+    material: CHEST
+    name: '&6&lMercado de Aluguéis'
+    lore:
+      - ''
+      - ' &7Veja todos os itens disponíveis'
+      - ' &7para aluguel no servidor.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  my-listings:
+    material: ITEM_FRAME
+    name: '&a&lMinhas Listagens'
+    lore:
+      - ''
+      - ' &7Gerencie os itens que você'
+      - ' &7colocou para alugar.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  my-rentals:
+    material: BOOK
+    name: '&b&lMeus Aluguéis'
+    lore:
+      - ''
+      - ' &7Veja os itens que você'
+      - ' &7está alugando atualmente.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# ── Mercado de Aluguéis (paginado) ────────────────────────────────────────
+browse-menu:
+  name: '&8Mercado de Aluguéis'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  create-listing-slot: 45
+  empty-slot: 22
+  create-listing-button:
+    material: NETHER_STAR
+    name: '&a&lCriar Nova Listagem'
+    lore:
+      - ''
+      - ' &7Coloque um item para alugar'
+      - ' &7e ganhe dinheiro!'
+      - ''
+      - ' &eClique para criar'
+      - ''
+  listing-item:
+    material: PAPER
+    name: '&6{item}'
+    lore:
+      - ''
+      - ' &7Dono: &f{owner}'
+      - ' &7Preço/hora: &f{price} &7({provider})'
+      - ' &7Status: &f{status}'
+      - ''
+      - ' &eClique para alugar'
+      - ''
+  empty:
+    material: WEB
+    name: '&cVazio'
+    lore:
+      - '&7Não há itens disponíveis para'
+      - '&7aluguel nesta página.'
+
+# ── Seleção de Duração (paginado) ─────────────────────────────────────────
+duration-select-menu:
+  name: '&8Selecionar Duração — {item}'
+  size: 27
+  slots: [10,11,12,13,14,15,16]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 0
+  duration-item:
+    material: PAPER
+    name: '&6{duration}'
+    lore:
+      - ''
+      - ' &7Duração: &f{duration}'
+      - ' &7Custo total: &f{price} &7({provider})'
+      - ''
+      - ' &eClique para confirmar'
+      - ''
+
+# ── Confirmação de Aluguel (menu fixo 27 slots) ───────────────────────────
+rent-confirm-menu:
+  name: '&8Confirmar Aluguel'
+  size: 27
+  item-slot: 13
+  confirm-slot: 11
+  cancel-slot: 15
+  confirm:
+    material: 'WOOL:5'
+    name: '&aConfirmar Aluguel'
+    lore:
+      - ''
+      - ' &7Item: &f{item}'
+      - ' &7Dono: &f{owner}'
+      - ' &7Duração: &f{duration}'
+      - ' &7Custo total: &f{price} &7({provider})'
+      - ''
+      - ' &aClique para confirmar'
+      - ''
+  cancel:
+    material: 'WOOL:14'
+    name: '&cCancelar'
+    lore:
+      - ''
+      - ' &7Clique para voltar ao mercado.'
+      - ''
+
+# ── Criação de Listagem (54 slots) ────────────────────────────────────────
+create-listing-menu:
+  name: '&8Criar Listagem'
+  size: 54
+  item-slot: 13
+  price-slot: 30
+  economy-slot: 32
+  confirm-slot: 38
+  cancel-slot: 42
+  item-placeholder:
+    material: 'BARRIER'
+    name: '&eSem item selecionado'
+    lore:
+      - ''
+      - ' &7Clique em algum item do seu'
+      - ' &7inventário para selecioná-lo.'
+      - ''
+  price-button:
+    material: 'BARRIER'
+    name: '&6Preço por hora'
+    lore:
+      - ''
+      - ' &7Preço atual: &f{price}'
+      - ''
+      - ' &eClique para definir'
+      - ''
+  economy-button:
+    material: 'EMERALD'
+    name: '&aEconomia'
+    lore:
+      - ''
+      - ' &7Economia: &f{economy}'
+      - ''
+      - ' &eClique para alterar'
+      - ''
+  confirm-cant:
+    material: 'WOOL:14'
+    name: '&cNão é possível confirmar'
+    lore:
+      - ''
+      - ' &7Preencha todos os campos:'
+      - ' &7• Selecione um item'
+      - ' &7• Defina um preço'
+      - ' &7• Escolha uma economia'
+      - ''
+  confirm:
+    material: 'WOOL:5'
+    name: '&aConfirmar Listagem'
+    lore:
+      - ''
+      - ' &7Item: &f{item}'
+      - ' &7Preço/hora: &f{price} &7({provider})'
+      - ''
+      - ' &aClique para confirmar'
+      - ''
+  cancel:
+    material: 'WOOL:14'
+    name: '&cCancelar'
+    lore:
+      - ''
+      - ' &7Clique para cancelar.'
+      - ''
+
+# ── Seleção de Economia ────────────────────────────────────────────────────
+economy-select-menu:
+  name: '&8Selecionar Economia'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 45
+  next-slot: 53
+  back-slot: 49
+
+# ── Minhas Listagens (paginado) ────────────────────────────────────────────
+my-listings-menu:
+  name: '&8Minhas Listagens'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  create-listing-slot: 45
+  empty-slot: 22
+  create-listing-button:
+    material: NETHER_STAR
+    name: '&a&lCriar Nova Listagem'
+    lore:
+      - ''
+      - ' &7Coloque um item para alugar'
+      - ' &7e ganhe dinheiro!'
+      - ''
+      - ' &eClique para criar'
+      - ''
+  listing-item:
+    material: PAPER
+    name: '&6{item}'
+    lore:
+      - ''
+      - ' &7Status: &f{status}'
+      - ' &7Preço/hora: &f{price} &7({provider})'
+      - ' &7Criado em: &f{created}'
+      - ''
+      - ' &eClique &7para gerenciar'
+      - ''
+  empty:
+    material: WEB
+    name: '&cVazio'
+    lore:
+      - '&7Não há itens disponíveis para'
+      - '&7aluguel nesta página.'
+
+# ── Meus Aluguéis (paginado) ──────────────────────────────────────────────
+my-rentals-menu:
+  name: '&8Meus Aluguéis'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  empty-slot: 22
+  rental-item:
+    material: PAPER
+    name: '&6{item}'
+    lore:
+      - ''
+      - ' &7Dono: &f{owner}'
+      - ' &7Expira em: &f{expire}'
+      - ' &7Tempo restante: &f{remaining}'
+      - ' &7Total pago: &f{price} &7({provider})'
+      - ''
+      - ' &eClique &7para gerenciar'
+      - ''
+  empty:
+    material: WEB
+    name: '&cVazio'
+    lore:
+      - '&7Não há itens disponíveis para'
+      - '&7aluguel nesta página.'
+
+# ── Gerenciar Aluguel (menu fixo 27 slots) ───────────────────────────────
+manage-rental-menu:
+  name: '&8Gerenciar Aluguel'
+  size: 27
+  item-slot: 13
+  deposit-slot: 10
+  retrieve-slot: 16
+  renew-slot: 22
+  back-slot: 4
+  deposit:
+    material: CHEST
+    name: '&6Depositar Item'
+    lore:
+      - ''
+      - ' &7Armazena o item alugado enquanto'
+      - ' &7você não está usando.'
+      - ''
+      - ' &eClique para depositar'
+      - ''
+  deposit-cant:
+    material: 'WOOL:14'
+    name: '&cItem já depositado'
+    lore:
+      - ''
+      - ' &7O item já está no armazém.'
+      - ' &7Clique em &eRetirar Item &7para recuperá-lo.'
+      - ''
+  retrieve:
+    material: 'WOOL:5'
+    name: '&aRetirar Item'
+    lore:
+      - ''
+      - ' &7Devolve o item ao seu inventário.'
+      - ''
+      - ' &eClique para retirar'
+      - ''
+  retrieve-cant:
+    material: 'WOOL:14'
+    name: '&cItem no inventário'
+    lore:
+      - ''
+      - ' &7O item já está no seu inventário.'
+      - ' &7Clique em &eDepositar &7para guardá-lo.'
+      - ''
+  renew:
+    material: WATCH
+    name: '&bRenovar Aluguel'
+    lore:
+      - ''
+      - ' &7Expira em: &f{expire}'
+      - ' &7Tempo restante: &f{remaining}'
+      - ''
+      - ' &eClique para renovar'
+      - ''
+
+# ── Gerenciar Listagem (menu fixo 27 slots) ──────────────────────────────
+manage-listing-menu:
+  name: '&8Gerenciar Listagem'
+  size: 27
+  item-slot: 13
+  edit-price-slot: 10
+  edit-economy-slot: 11
+  cancel-slot: 15
+  collect-slot: 16
+  back-slot: 22
+  edit-price:
+    material: GOLD_INGOT
+    name: '&6Editar Preço'
+    lore:
+      - ''
+      - ' &7Preço atual: &f{price} &7({provider})'
+      - ''
+      - ' &eClique para alterar'
+      - ''
+  edit-economy:
+    material: EMERALD
+    name: '&aEditar Economia'
+    lore:
+      - ''
+      - ' &7Economia atual: &f{provider}'
+      - ''
+      - ' &eClique para alterar'
+      - ''
+  cancel:
+    material: 'WOOL:14'
+    name: '&cCancelar Listagem'
+    lore:
+      - ''
+      - ' &7Clique para cancelar esta listagem.'
+      - ''
+  collect:
+    material: 'WOOL:5'
+    name: '&aRetirar Item'
+    lore:
+      - ''
+      - ' &7Clique para retirar o item'
+      - ' &7do armazém para seu inventário.'
+      - ''
+  collect-cant:
+    material: 'WOOL:14'
+    name: '&cItem indisponível'
+    lore:
+      - ''
+      - ' &7O item só pode ser retirado'
+      - ' &7após expirar ou ser cancelado.'
+      - ''
+
+# ── Armazém do Dono ────────────────────────────────────────────────────────
+owner-storage-menu:
+  name: '&8Armazém — {player}'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  storage-item:
+    material: PAPER
+    name: '&6{item}'
+    lore:
+      - ''
+      - ' &7Status: &f{status}'
+      - ''
+      - ' &eClique para retirar o item'
+      - ''

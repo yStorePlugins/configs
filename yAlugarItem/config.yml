@@ -1,0 +1,118 @@
+#            _    _                       ___ _
+#  _   _   / \  | |_   _  __ _  __ _ _ _|_ _| |_ ___ _ __ ___
+# | | | | / _ \ | | | | |/ _` |/ _` | '__| || __/ _ \ '_ ` _ \
+# | |_| |/ ___ \| | |_| | (_| | (_| | |  | || ||  __/ | | | | |
+#  \__, /_/   \_\_|\__,_|\__, |\__,_|_| |___|\__\___|_| |_| |_|
+#  |___/                 |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Máximo de listagens simultâneas por jogador (sem permissão específica)
+  max-listings-default: 3
+  # Taxa de cancelamento (%) cobrada do dono ao cancelar listagem alugada
+  cancel-tax-percent: 10.0
+  # Intervalo (em ticks) para verificar aluguéis expirados (200 ticks = 10 segundos)
+  expiry-check-interval-ticks: 200
+  # Se true, jogadores com item alugado no inventário não podem dar/receber dano PvP
+  pvp-protection: true
+  # Se true, permite mover o item alugado dentro do próprio inventário do locatário
+  # O item nunca pode ser dropado nem colocado em outros contêineres (baú, funil, etc.)
+  allow-inventory-move: true
+  # Recall automático de itens alugáveis por durabilidade baixa
+  durability-recall:
+    # Se true, recolhe o item para o armazém quando a durabilidade cair abaixo de 'percent'%
+    enabled: true
+    # Percentual mínimo de durabilidade (0–100). Ex.: 10 = recolhe ao atingir ≤10% de durabilidade
+    percent: 10.0
+  # Durações pré-definidas em segundos que o locador pode selecionar
+  # 3600=1h, 7200=2h, 21600=6h, 43200=12h, 86400=1dia, 259200=3dias, 604800=7dias
+  duration-presets-seconds:
+    - 3600
+    - 7200
+    - 21600
+    - 43200
+    - 86400
+    - 259200
+    - 604800
+  # Blacklist de materiais que não podem ser alugados
+  black-list:
+    materials: []
+    # Tags NBT que indicam itens bloqueados de outros plugins
+    nbt-tags: []
+  # Whitelist de materiais permitidos (se enabled: true, apenas estes podem ser alugados)
+  white-list:
+    enabled: true
+    materials:
+      - 'DIAMOND_SWORD'
+      - 'DIAMOND_HELMET'
+      - 'DIAMOND_CHESTPLATE'
+      - 'DIAMOND_LEGGINGS'
+      - 'DIAMOND_BOOTS'
+      - 'DIAMOND_PICKAXE'
+      - 'DIAMOND_SPADE'
+      - 'DIAMOND_AXE'
+      - 'BOW'
+
+# Sistema de formatos de status
+status:
+  available: '&aDisponível'
+  rented: '&cAlugado'
+  cancelled: '&eCancelado'
+  expired: '&7Expirado'

@@ -1,0 +1,60 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+
+# Providers disponíveis:
+#
+#   AtlasEconomiaSecundaria, AtlasMinas, AtlasMinasV2,
+#   JH_Shop, LegendaryEconomy, NextCash, PlayerPoints,
+#   StormEconomiaSecundaria, StormMinas, TGCash,
+#   yAlmas, yPoints, yRankup,
+#   Vault
+#
+
+default: 'money'
+
+economies:
+  money:
+    provider: 'Money'
+    display: 'Dinheiro'
+    abbreviated: 'coins'
+    allow-offline: true
+    permission: ''
+    item:
+      material: GOLD_INGOT
+      name: '&aDinheiro'
+      lore:
+        - ''
+        - ' &7Economia: &fVault/Money'
+        - ''
+    item-settings:
+      material: GOLD_INGOT
+      name: '&aDinheiro'
+      lore:
+        - ''
+        - ' &7Tipo: &fMoney'
+        - ' &aClique para alterar'
+        - ''
+  playerpoints:
+    provider: 'PlayerPoints'
+    display: 'PlayerPoints'
+    abbreviated: 'pp'
+    allow-offline: true
+    permission: ''
+    item:
+      material: EMERALD
+      name: '&aPlayerPoints'
+      lore:
+        - ''
+        - ' &7Economia: &fPlayerPoints'
+        - ''
+    item-settings:
+      material: EMERALD
+      name: '&aPlayerPoints'
+      lore:
+        - ''
+        - ' &7Tipo: &fPlayerPoints'
+        - ' &aClique para alterar'
+        - ''
