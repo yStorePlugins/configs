@@ -1,0 +1,41 @@
+Comandos: [ 'shopwarps' ] #comandos para abrir (deixe [] para não usar)
+
+# Aliases compostas para o comando
+# exemplo: /kit membro
+aliases-compostas: ['warps']
+
+Permissao: '' #permissao para abrir
+
+Tamanho: 27 #tamanho do inventário
+
+Nome: '&7Loja padrão' #nome do inventário
+
+# Som ao abrir a loja
+Som: ''
+
+# Ativar a compra de uma quantia customizada via chat
+# Só afeta esta categoria
+Quantia chat: true
+
+# Ativar a seleção de quantia via menu
+# Quando ativado, o jogador seleciona quantias pré-definidas no menu
+# em vez de digitar no chat. As quantias são definidas em menus/confirmacao_quantia.yml
+# OBS: Se ativar esta opção, desative "Quantia chat"
+Quantia menu: false
+
+# Ativar a confirmação da compra no menu
+Confirmacao: true
+#
+Itens:
+   Item1:
+      Slot: 10
+      Display:
+         material: BRICK
+         name: '&cWarp MinaPVP'
+         lore: [ '&7Clique para teleportar' ]
+      # Ação com botão esquerdo
+      Acao:
+      - '[cmd_console]warp minapvp {player}'
+      # Ação com botão direito
+      Acao direito:
+      - '[cmd_console]warp minapvp {player}'

@@ -188,6 +188,7 @@ settings:
     knockback-slot: 31
     fire-slot: 33
     minions-slot: 40
+    single-spawn-slot: 42
     name:
       material: 'LEGACY_NAME_TAG'
       name: '&aNome do Boss'
@@ -260,6 +261,18 @@ settings:
         - '&fQuantidade inicial: &a{minions_amount}&f.'
         - ''
         - '&7Clique para gerenciar'
+    single-spawn:
+      material: 'LEVER'
+      name: '&aSpawn Único'
+      lore:
+        - ''
+        - '&fEstado: &a{single_spawn}&f.'
+        - ''
+        - '&7Quando ativado, só spawna um boss'
+        - '&7por vez. O próximo só aparece'
+        - '&7após o atual ser morto.'
+        - ''
+        - '&7Clique para alternar'
 
 # Recompensas do boss
 rewards:
