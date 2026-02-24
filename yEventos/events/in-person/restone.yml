@@ -126,6 +126,8 @@ general:
   block-effects: [ 'STONE:0,INVISIBILITY:1-100' ]
   # Manter o EXP ao morrer
   keep-exp: true
+  # Dropar itens ao morrer
+  drop-on-death: false
 
 # Custos para ingressar ao evento
 costs:
