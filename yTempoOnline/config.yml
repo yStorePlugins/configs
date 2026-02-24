@@ -6,6 +6,19 @@ Database:
   Pass: ''
   Debug: true
 
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
 # Comandos e aliases do plugin
 Comando:
   Comando: 'tempo'
@@ -15,9 +28,6 @@ Comando:
 # Necessário para usar em servidor de mina separado
 # Recomendado: 20 ticks
 login-delay: 20
-
-#Coloque Legendchat, OpeNChat (ou nChat), UltimateChat, NoxusChat ou deixe Automatico para o auto-detect
-Plugin de chat: 'Automatico'
 
 # Tag que será dada ao TOP 1 do tempo online
 Tag: '&e[VICIADO]'
@@ -88,32 +98,20 @@ Mensagens:
 # Setas dos menus
 Setas:
   Voltar:
-    CustomSkull: false
-    URL: ''
-    ID: 262
-    Data: 0
-    Glow: true
-    Name: '&cVoltar'
-    Lore:
-      - '&7Clique para voltar ao menu anterior.'
+    material: ARROW
+    glow: true
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
   Anterior:
-    CustomSkull: false
-    URL: ''
-    ID: 262
-    Data: 0
-    Glow: true
-    Name: '&cVoltar'
-    Lore:
-      - '&7Clique para voltar a página anterior.'
+    material: ARROW
+    glow: true
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar a página anterior.']
   Proximo:
-    CustomSkull: false
-    URL: ''
-    ID: 262
-    Data: 0
-    Glow: true
-    Name: '&aPróxima'
-    Lore:
-      - '&7Clique para ir à próxima página.'
+    material: ARROW
+    glow: true
+    name: '&aPróxima'
+    lore: ['&7Clique para ir à próxima página.']
 
 # Lores das recompensas
 Lores:
