@@ -1,0 +1,11 @@
+Armor encontrado: '&cEsta armadura não existe. Disponíveis: &7{list}'
+Deu armor: '&bVocê deu uma armadura para o jogador &f{player}&b.'
+
+Armors:
+  basic:
+    item:
+      material: 'DIAMOND_HELMET'
+      name: '&aCapacete Básico'
+      lore: ['&7Você é pobre.', '', '&fBônus: &a10% (todos)']
+    bonus-crops: 10.0
+    bonus-coin: 10.0
