@@ -1,0 +1,68 @@
+#        __  __ _                 _____            _                 _          _       _     _
+#  _   _|  \/  (_)_ __   __ _ ___| ____|_ __   ___| |__   __ _ _ __ | |_ ___   / \   __| | __| | ___  _ __
+# | | | | |\/| | | '_ \ / _` / __|  _| | '_ \ / __| '_ \ / _` | '_ \| __/ __| / _ \ / _` |/ _` |/ _ \| '_ \
+# | |_| | |  | | | | | | (_| \__ \ |___| | | | (__| | | | (_| | | | | |_\__ \/ ___ \ (_| | (_| | (_) | | | |
+#  \__, |_|  |_|_|_| |_|\__,_|___/_____|_| |_|\___|_| |_|\__,_|_| |_|\__|___/_/   \_\__,_|\__,_|\___/|_| |_|
+#  |___/
+#
+
+# Opções do FastAsyncWorldEdit ou WorldEdit (inclui AsyncWorldEdit)
+FAWEOptions:
+  Guardian: true      # -- do guardian
+  Tornado: true       # -- do tornado
+  Magnetismo: true    # -- do magnetismo
+  Crepusculo: false   # -- do crepusculo (passivo, sem loop de blocos)
+  Storm: true         # -- do storm
+  Boomerang: true     # -- do boomerang
+  Midas: true         # -- do midas
+  LayerMidas: true    # -- do layer-midas
+  Flechas: true       # -- das flechas
+  Meteoros: true      # -- dos meteoros
+  BolaDeNeve: true
+  Terremoto: true
+  Rompante: true
+  Implosao: true
+  Fantasma: true
+  Chama: true    # -- da bola de neve
+
+# Encantamento Crepusculo (Vampire)
+Crepusculo:
+  # Duração do buff em segundos
+  vampireTime: 10
+  # Bonus por nível do encantamento
+  vampireBonusPerLevel: 1.0
+  # Tempo de noite para o jogador (ticks de mundo, 18000 = meia-noite)
+  nightTime: 18000
+  # Tempo de dia para restaurar ao fim do buff (-1 = restaurar o tempo original do mundo)
+  dayTime: -1
+  # Partícula da animação em órbita (nome exato do enum org.bukkit.Particle)
+  particle: SPELL_WITCH
+  # Mensagens enviadas enquanto o buff está ativo (após 60 ticks)
+  activeMessages:
+    chat: ''
+    actionbar: '&4&lCrepúsculo &f- &7Você está no crepúsculo!'
+    title: ''
+
+# Sistema de Recompensa por Blocos Quebrados
+BlocoRecompensa:
+  # Ativar o sistema
+  enabled: true
+  # Quantidade de blocos para ganhar a recompensa (meta global, vale para todas as minas)
+  amount: 1000
+  # Actionbar exibida durante a mineração (sobrescreve a de venda a cada 10% do progresso)
+  # Placeholders: {progressbar}, {atual}, {meta}, {porcentagem}
+  actionbar: '&aMina &7[{progressbar}&7] &f{atual}&7/&f{meta}'
+  # Mensagens enviadas ao atingir a meta
+  reward:
+    title: '&a&lRecompensa!'
+    actionbar: '&aVocê completou &f{meta} &ablocos!'
+    chat:
+      - '&aParabéns! Você quebrou {meta} blocos e ganhou uma recompensa!'
+    commands:
+      - 'give {player} diamond 1'
+  # Configuração visual da barra de progresso
+  progressbar:
+    amount: 20
+    symbol: '|'
+    color-yes: '&a'
+    color-no: '&7'

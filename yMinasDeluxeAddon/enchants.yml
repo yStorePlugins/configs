@@ -1,0 +1,1521 @@
+# Apague apenas os encantamentos que não for usar
+Encantamentos:
+  Guardian: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays: # Item que aparecerá no menu de evolução
+      Pode: # quando puder evoluir
+        CustomSkull: true
+        URL: 'c25af966a326f9d98466a7bf8582ca4da6453de271b3bc9e59f57a99b63511c6'
+        ID: AIR
+        Data: 0
+        Name: '&3Guardian'
+        Lore:
+          - '&7Chame o Guardian para proteger'
+          - '&7sua mina e quebrar ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode: # quando não puder evoluir
+        CustomSkull: true
+        URL: 'c25af966a326f9d98466a7bf8582ca4da6453de271b3bc9e59f57a99b63511c6'
+        ID: AIR
+        Data: 0
+        Name: '&3Guardian'
+        Lore:
+          - '&7Chame o Guardian para proteger'
+          - '&7sua mina e quebrar ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo: # quando já estiver no máximo
+        CustomSkull: true
+        URL: 'c25af966a326f9d98466a7bf8582ca4da6453de271b3bc9e59f57a99b63511c6'
+        ID: AIR
+        Data: 0
+        Name: '&3Guardian'
+        Lore:
+          - '&7Chame o Guardian para proteger'
+          - '&7sua mina e quebrar ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission: # quando não tiver permissão
+        CustomSkull: true
+        URL: 'c25af966a326f9d98466a7bf8582ca4da6453de271b3bc9e59f57a99b63511c6'
+        ID: AIR
+        Data: 0
+        Name: '&3Guardian'
+        Lore:
+          - '&7Chame o Guardian para proteger'
+          - '&7sua mina e quebrar ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Guardian'
+    NivelPicareta: 500
+    Ordem: 18
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 1
+    Nivel:
+      Padrao: 0.0
+      Maximo: 3000.0
+      Porcentagem: 0.0002
+    Preco:
+      Padrao: 120000000.0
+      PerLevel: 120000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&3Guardian<nl>&fDisparando lasers...'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Tornado: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: true
+        URL: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        ID: AIR
+        Data: 0
+        Name: '&bTornado'
+        Lore:
+          - '&7Convoque um Tornado para girar'
+          - '&7toda a coluna da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: true
+        URL: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        ID: AIR
+        Data: 0
+        Name: '&bTornado'
+        Lore:
+          - '&7Convoque um Tornado para girar'
+          - '&7toda a coluna da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: true
+        URL: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        ID: AIR
+        Data: 0
+        Name: '&bTornado'
+        Lore:
+          - '&7Convoque um Tornado para girar'
+          - '&7toda a coluna da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: true
+        URL: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        ID: AIR
+        Data: 0
+        Name: '&bTornado'
+        Lore:
+          - '&7Convoque um Tornado para girar'
+          - '&7toda a coluna da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Tornado'
+    NivelPicareta: 700
+    Ordem: 19
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Nivel:
+      Padrao: 0.0
+      Maximo: 4000.0
+      Porcentagem: 0.0001
+    Preco:
+      Padrao: 500000000.0
+      PerLevel: 500000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&bTornado<nl>&fOlha o vento...'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Magnetismo: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: true
+        URL: '9ada2bddc8080af8fd41bcccc2bc77ff011177de1e81a34580acf3bb4525c6a7'
+        ID: AIR
+        Data: 0
+        Name: '&cMagnetismo'
+        Lore:
+          - '&7Ative seu Magnetismo e atraia'
+          - '&7blocos próximos para você.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: true
+        URL: '9ada2bddc8080af8fd41bcccc2bc77ff011177de1e81a34580acf3bb4525c6a7'
+        ID: AIR
+        Data: 0
+        Name: '&cMagnetismo'
+        Lore:
+          - '&7Ative seu Magnetismo e atraia'
+          - '&7blocos próximos para você.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: true
+        URL: '9ada2bddc8080af8fd41bcccc2bc77ff011177de1e81a34580acf3bb4525c6a7'
+        ID: AIR
+        Data: 0
+        Name: '&cMagnetismo'
+        Lore:
+          - '&7Ative seu Magnetismo e atraia'
+          - '&7blocos próximos para você.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: true
+        URL: '9ada2bddc8080af8fd41bcccc2bc77ff011177de1e81a34580acf3bb4525c6a7'
+        ID: AIR
+        Data: 0
+        Name: '&cMagnetismo'
+        Lore:
+          - '&7Ative seu Magnetismo e atraia'
+          - '&7blocos próximos para você.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Magnetismo'
+    NivelPicareta: 120
+    Ordem: 20
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 5
+    Nivel:
+      Padrao: 0.0
+      Maximo: 1000.0
+      Porcentagem: 0.001
+    Preco:
+      Padrao: 1500000.0
+      PerLevel: 1500000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&cMagnetismo<nl>&fAtraindo blocos...'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Crepusculo: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: true
+        URL: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        ID: AIR
+        Data: 0
+        Name: '&4Crepúsculo'
+        Lore:
+          - '&7Entre no estado de Crepúsculo'
+          - '&7e irradie energia sombria.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: true
+        URL: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        ID: AIR
+        Data: 0
+        Name: '&4Crepúsculo'
+        Lore:
+          - '&7Entre no estado de Crepúsculo'
+          - '&7e irradie energia sombria.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: true
+        URL: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        ID: AIR
+        Data: 0
+        Name: '&4Crepúsculo'
+        Lore:
+          - '&7Entre no estado de Crepúsculo'
+          - '&7e irradie energia sombria.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: true
+        URL: '98a4f41d04eb8604c5b66bdee01bc7c1b0ec486ce75856278404ffa90a88036'
+        ID: AIR
+        Data: 0
+        Name: '&4Crepúsculo'
+        Lore:
+          - '&7Entre no estado de Crepúsculo'
+          - '&7e irradie energia sombria.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Crepúsculo'
+    NivelPicareta: 1250
+    Ordem: 21
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Nivel:
+      Padrao: 0.0
+      Maximo: 50000.0
+      Porcentagem: 0.000001
+    Preco:
+      Padrao: 1000000000.0
+      PerLevel: 1000000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&4&lCrepúsculo<nl>'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: false
+      blocks: false
+      energy: false
+      lucky-block: false
+      rewards: false
+      custom-enchant: false
+
+  Storm: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: DIAMOND
+        Data: 0
+        Name: '&9Storm'
+        Lore:
+          - '&7Desencadeie uma tempestade e'
+          - '&7quebre blocos ao redor com raios.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: DIAMOND
+        Data: 0
+        Name: '&9Storm'
+        Lore:
+          - '&7Desencadeie uma tempestade e'
+          - '&7quebre blocos ao redor com raios.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: DIAMOND
+        Data: 0
+        Name: '&9Storm'
+        Lore:
+          - '&7Desencadeie uma tempestade e'
+          - '&7quebre blocos ao redor com raios.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: DIAMOND
+        Data: 0
+        Name: '&9Storm'
+        Lore:
+          - '&7Desencadeie uma tempestade e'
+          - '&7quebre blocos ao redor com raios.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Storm'
+    NivelPicareta: 300
+    Ordem: 22
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 3
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0003
+    Preco:
+      Padrao: 50000000.0
+      PerLevel: 50000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&9Storm<nl>&fTempestade à vista!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Boomerang: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_SWORD
+        Data: 0
+        Name: '&eBoomerang'
+        Lore:
+          - '&7Quebre blocos em espiral'
+          - '&7ao redor do bloco minerado.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_SWORD
+        Data: 0
+        Name: '&eBoomerang'
+        Lore:
+          - '&7Quebre blocos em espiral'
+          - '&7ao redor do bloco minerado.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_SWORD
+        Data: 0
+        Name: '&eBoomerang'
+        Lore:
+          - '&7Quebre blocos em espiral'
+          - '&7ao redor do bloco minerado.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_SWORD
+        Data: 0
+        Name: '&eBoomerang'
+        Lore:
+          - '&7Quebre blocos em espiral'
+          - '&7ao redor do bloco minerado.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Boomerang'
+    NivelPicareta: 200
+    Ordem: 23
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 4
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0003
+    Preco:
+      Padrao: 30000000.0
+      PerLevel: 30000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&eBoomerang<nl>&fVoltando em espiral!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Midas: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: GOLD_INGOT
+        Data: 0
+        Name: '&6Midas'
+        Lore:
+          - '&7Transforme todos os blocos da'
+          - '&7mina em blocos especiais.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: GOLD_INGOT
+        Data: 0
+        Name: '&6Midas'
+        Lore:
+          - '&7Transforme todos os blocos da'
+          - '&7mina em blocos especiais.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: GOLD_INGOT
+        Data: 0
+        Name: '&6Midas'
+        Lore:
+          - '&7Transforme todos os blocos da'
+          - '&7mina em blocos especiais.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: GOLD_INGOT
+        Data: 0
+        Name: '&6Midas'
+        Lore:
+          - '&7Transforme todos os blocos da'
+          - '&7mina em blocos especiais.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Midas'
+    NivelPicareta: 400
+    Ordem: 24
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    # Material do bloco especial que substituirá os blocos da mina
+    BlocoEspecial: GOLD_BLOCK
+    Nivel:
+      Padrao: 0.0
+      Maximo: 3000.0
+      Porcentagem: 0.0002
+    Preco:
+      Padrao: 200000000.0
+      PerLevel: 200000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&6Midas<nl>&fTudo que toca vira ouro!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 5
+      economy: false
+      blocks: false
+      energy: false
+      lucky-block: false
+      rewards: false
+      custom-enchant: false
+
+  LayerMidas: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: GOLD_NUGGET
+        Data: 0
+        Name: '&6LayerMidas'
+        Lore:
+          - '&7Transforme a camada Y atual'
+          - '&7da mina em blocos especiais.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: GOLD_NUGGET
+        Data: 0
+        Name: '&6LayerMidas'
+        Lore:
+          - '&7Transforme a camada Y atual'
+          - '&7da mina em blocos especiais.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: GOLD_NUGGET
+        Data: 0
+        Name: '&6LayerMidas'
+        Lore:
+          - '&7Transforme a camada Y atual'
+          - '&7da mina em blocos especiais.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: GOLD_NUGGET
+        Data: 0
+        Name: '&6LayerMidas'
+        Lore:
+          - '&7Transforme a camada Y atual'
+          - '&7da mina em blocos especiais.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'LayerMidas'
+    NivelPicareta: 200
+    Ordem: 25
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    # Material do bloco especial que substituirá os blocos da camada
+    BlocoEspecial: GOLD_BLOCK
+    Nivel:
+      Padrao: 0.0
+      Maximo: 3000.0
+      Porcentagem: 0.0003
+    Preco:
+      Padrao: 80000000.0
+      PerLevel: 80000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&6LayerMidas<nl>&fCamada dourada!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 3
+      economy: false
+      blocks: false
+      energy: false
+      lucky-block: false
+      rewards: false
+      custom-enchant: false
+
+  Flechas: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: ARROW
+        Data: 0
+        Name: '&eFlechas'
+        Lore:
+          - '&7Dispare flechas que quebram'
+          - '&7blocos ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: ARROW
+        Data: 0
+        Name: '&eFlechas'
+        Lore:
+          - '&7Dispare flechas que quebram'
+          - '&7blocos ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: ARROW
+        Data: 0
+        Name: '&eFlechas'
+        Lore:
+          - '&7Dispare flechas que quebram'
+          - '&7blocos ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: ARROW
+        Data: 0
+        Name: '&eFlechas'
+        Lore:
+          - '&7Dispare flechas que quebram'
+          - '&7blocos ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Flechas'
+    NivelPicareta: 100
+    Ordem: 26
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 3
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0004
+    Preco:
+      Padrao: 10000000.0
+      PerLevel: 10000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&eFlechas<nl>&fFogo à vontade!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Meteoros: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: FIREBALL
+        Data: 0
+        Name: '&cMeteoros'
+        Lore:
+          - '&7Chame meteoros que caem'
+          - '&7e quebram blocos da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: FIREBALL
+        Data: 0
+        Name: '&cMeteoros'
+        Lore:
+          - '&7Chame meteoros que caem'
+          - '&7e quebram blocos da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: FIREBALL
+        Data: 0
+        Name: '&cMeteoros'
+        Lore:
+          - '&7Chame meteoros que caem'
+          - '&7e quebram blocos da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: FIREBALL
+        Data: 0
+        Name: '&cMeteoros'
+        Lore:
+          - '&7Chame meteoros que caem'
+          - '&7e quebram blocos da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Meteoros'
+    NivelPicareta: 150
+    Ordem: 27
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 3
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0004
+    Preco:
+      Padrao: 15000000.0
+      PerLevel: 15000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&cMeteoros<nl>&fImpacto!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  BolaDeNeve: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: SNOW_BALL
+        Data: 0
+        Name: '&bBola de Neve'
+        Lore:
+          - '&7Lance bolas de neve que'
+          - '&7quebram blocos da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: SNOW_BALL
+        Data: 0
+        Name: '&bBola de Neve'
+        Lore:
+          - '&7Lance bolas de neve que'
+          - '&7quebram blocos da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: SNOW_BALL
+        Data: 0
+        Name: '&bBola de Neve'
+        Lore:
+          - '&7Lance bolas de neve que'
+          - '&7quebram blocos da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: SNOW_BALL
+        Data: 0
+        Name: '&bBola de Neve'
+        Lore:
+          - '&7Lance bolas de neve que'
+          - '&7quebram blocos da mina.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Bola de Neve'
+    NivelPicareta: 50
+    Ordem: 28
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 3
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0005
+    Preco:
+      Padrao: 5000000.0
+      PerLevel: 5000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&bBola de Neve<nl>&fNeve na mina!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Terremoto: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: BEDROCK
+        Data: 0
+        Name: '&6Terremoto'
+        Lore:
+          - '&7Desencadeie um terremoto que'
+          - '&7destrói blocos em ondas sísmicas.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: BEDROCK
+        Data: 0
+        Name: '&6Terremoto'
+        Lore:
+          - '&7Desencadeie um terremoto que'
+          - '&7destrói blocos em ondas sísmicas.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: BEDROCK
+        Data: 0
+        Name: '&6Terremoto'
+        Lore:
+          - '&7Desencadeie um terremoto que'
+          - '&7destrói blocos em ondas sísmicas.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: BEDROCK
+        Data: 0
+        Name: '&6Terremoto'
+        Lore:
+          - '&7Desencadeie um terremoto que'
+          - '&7destrói blocos em ondas sísmicas.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Terremoto'
+    NivelPicareta: 350
+    Ordem: 29
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 5
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0003
+    Preco:
+      Padrao: 80000000.0
+      PerLevel: 80000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&6Terremoto<nl>&fA terra treme!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Rompante: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: TNT
+        Data: 0
+        Name: '&cRompante'
+        Lore:
+          - '&7Rompa uma linha inteira de blocos'
+          - '&7em uma direção aleatória.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: TNT
+        Data: 0
+        Name: '&cRompante'
+        Lore:
+          - '&7Rompa uma linha inteira de blocos'
+          - '&7em uma direção aleatória.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: TNT
+        Data: 0
+        Name: '&cRompante'
+        Lore:
+          - '&7Rompa uma linha inteira de blocos'
+          - '&7em uma direção aleatória.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: TNT
+        Data: 0
+        Name: '&cRompante'
+        Lore:
+          - '&7Rompa uma linha inteira de blocos'
+          - '&7em uma direção aleatória.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Rompante'
+    NivelPicareta: 250
+    Ordem: 30
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 6
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0004
+    Preco:
+      Padrao: 40000000.0
+      PerLevel: 40000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&cRompante<nl>&fRasgando tudo!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Implosao: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: ENDER_PEARL
+        Data: 0
+        Name: '&5Implosão'
+        Lore:
+          - '&7Cause uma implosão que suga'
+          - '&7e destrói todos os blocos ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: ENDER_PEARL
+        Data: 0
+        Name: '&5Implosão'
+        Lore:
+          - '&7Cause uma implosão que suga'
+          - '&7e destrói todos os blocos ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: ENDER_PEARL
+        Data: 0
+        Name: '&5Implosão'
+        Lore:
+          - '&7Cause uma implosão que suga'
+          - '&7e destrói todos os blocos ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: ENDER_PEARL
+        Data: 0
+        Name: '&5Implosão'
+        Lore:
+          - '&7Cause uma implosão que suga'
+          - '&7e destrói todos os blocos ao redor.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Implosão'
+    NivelPicareta: 450
+    Ordem: 31
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 4
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0003
+    Preco:
+      Padrao: 120000000.0
+      PerLevel: 120000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&5Implosão<nl>&fTudo para o centro!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Fantasma: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: GHAST_TEAR
+        Data: 0
+        Name: '&fFantasma'
+        Lore:
+          - '&7Atravesse blocos como um fantasma,'
+          - '&7destruindo camadas invisíveis.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: GHAST_TEAR
+        Data: 0
+        Name: '&fFantasma'
+        Lore:
+          - '&7Atravesse blocos como um fantasma,'
+          - '&7destruindo camadas invisíveis.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: GHAST_TEAR
+        Data: 0
+        Name: '&fFantasma'
+        Lore:
+          - '&7Atravesse blocos como um fantasma,'
+          - '&7destruindo camadas invisíveis.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: GHAST_TEAR
+        Data: 0
+        Name: '&fFantasma'
+        Lore:
+          - '&7Atravesse blocos como um fantasma,'
+          - '&7destruindo camadas invisíveis.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Fantasma'
+    NivelPicareta: 600
+    Ordem: 32
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 3
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0002
+    Preco:
+      Padrao: 200000000.0
+      PerLevel: 200000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&fFantasma<nl>&7Atravessando a pedra...'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
+
+  Chama: # Não mude este nome, ou o encantamento não será reconhecido
+    Displays:
+      Pode:
+        CustomSkull: false
+        URL: ''
+        ID: BLAZE_ROD
+        Data: 0
+        Name: '&cChama'
+        Lore:
+          - '&7Incendeie a mina e queime'
+          - '&7blocos com chamas devastadoras.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&aBotão &fesquerdo &apara evoluir 1x'
+          - '&aBotão &fdireito &apara escolher a quantia de evolução'
+          - '&aBotão &fQ &apara evoluir o possível'
+      NaoPode:
+        CustomSkull: false
+        URL: ''
+        ID: BLAZE_ROD
+        Data: 0
+        Name: '&cChama'
+        Lore:
+          - '&7Incendeie a mina e queime'
+          - '&7blocos com chamas devastadoras.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Nível necessário: &a{nivel}&f.'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      Maximo:
+        CustomSkull: false
+        URL: ''
+        ID: BLAZE_ROD
+        Data: 0
+        Name: '&cChama'
+        Lore:
+          - '&7Incendeie a mina e queime'
+          - '&7blocos com chamas devastadoras.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê já está no máximo.'
+      Permission:
+        CustomSkull: false
+        URL: ''
+        ID: BLAZE_ROD
+        Data: 0
+        Name: '&cChama'
+        Lore:
+          - '&7Incendeie a mina e queime'
+          - '&7blocos com chamas devastadoras.'
+          - ''
+          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+    Nome: 'Chama'
+    NivelPicareta: 180
+    Ordem: 33
+    MostrarMenu: true
+    PodeComprar: true
+    MostrarInfinito: false
+    Animacao: true
+    Raio: 4
+    Nivel:
+      Padrao: 0.0
+      Maximo: 5000.0
+      Porcentagem: 0.0004
+    Preco:
+      Padrao: 25000000.0
+      PerLevel: 25000000.0
+      Multiplicador: 1.00
+    Mensagens:
+      Title: '&cChama<nl>&6Fogo na mina!'
+      Actionbar: ''
+      Chat: [ ]
+    options:
+      delay: 0
+      economy: true
+      blocks: true
+      energy: true
+      lucky-block: true
+      rewards: true
+      custom-enchant: true
