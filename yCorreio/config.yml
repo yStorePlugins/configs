@@ -91,6 +91,8 @@ Mensagens:
   Give grupo: '&aVocê deu &f{quantia}x &f{recompensa}&a na categoria &f{categoria}&a para todos os jogadores do grupo &f{grupo}&a.'
   Recebeu player: '&aVocê recebeu &f{quantia}x &f{recompensa}&a na categoria &f{categoria}&a.'
   Recebeu player actionbar: '&a+ &f{quantia}x &f{recompensa}&a na categoria &f{categoria}&a.'
+  Recebeu player all: '&aVocê recebeu recompensas no seu correio.'
+  Recebeu player all actionbar: '&aVocê recebeu recompensas no seu correio.'
   Numero: '&cO argumento não é um número.'
   Limite encomenda: '&cEste jogador atingiu o limite de 40 encomendas.'
   Nenhuma: '&cNenhuma categoria foi configurada.'
