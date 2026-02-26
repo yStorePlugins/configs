@@ -37,6 +37,19 @@ database:
     # Senha do usuário de conexão: [EX: 123]
     password: ''
 
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
 #   __      _   _   _
 #  / _\ ___| |_| |_(_)_ __   __ _ ___
 #  \ \ / _ \ __| __| | '_ \ / _` / __|
