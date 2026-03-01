@@ -304,6 +304,9 @@ Opcoes:
     - '/minerar'
     - '/mine'
     - '/minas'
+  # Lista de comandos bloqueados na mina
+  # Só funciona caso "Comandos permitidos" esteja vazio.
+  Comandos bloqueados: []
   # Lista de comandos para sair da mina
   Comandos saida:
     - '/sair'
