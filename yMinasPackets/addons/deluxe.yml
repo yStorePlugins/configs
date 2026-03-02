@@ -19,6 +19,32 @@ magnet:
   # em segundos
   duration: 20
 
+# Encantamento da abelha explosiva
+bee-explosive:
+  # Quantidade de abelhas spawned
+  amount: 1
+  # Duração da animação
+  # em segundos
+  duration: 6
+  # Mob que será spawnado (nome do EntityType do Bukkit)
+  # Padrão: BEE
+  mob: 'BEE'
+  # Aplicar efeito de brilho (glowing) no mob
+  glowing: true
+
+# Encantamento da magma
+magma-enchant:
+  # Material do bloco visual (nome do Material do Bukkit)
+  block: 'MAGMA_BLOCK'
+  # Quantidade de blocos afetados
+  amount: 30
+  # Delay antes de quebrar os blocos
+  # em segundos
+  delay: 3
+  # Ticks entre cada onda de espalhamento visual
+  # (1 tick = 0.05s — 1-2 blocos por tick, estilo lava)
+  spread-ticks: 1
+
 # Encantamento do vampiro
 vampire:
   # Mensagens que irão aparecer depois de 3s de ativo
@@ -320,3 +346,145 @@ enchants:
           - '&7e irradie energia sombria.'
           - ''
           - '&b&lGG! &bVocê atingiu o máximo.'
+
+  bee-explosive:
+    name: '§eAbelha Explosiva'
+    pickaxe-level: 1500
+    order: 18
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 0.000001
+    radius: 3
+    level:
+      default: 0.0
+      maximum: 50000.0
+    messages:
+      title: '&e&lAbelha Explosiva<nl>&fAs abelhas estão atacando!'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 1500000000.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 1500000000.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 1200000000.0
+    displays:
+      can:
+        material: 'bee_spawn_egg'
+        name: '&eAbelha Explosiva &8➟ &e&l{actual} &7/ &e&l{maximum}'
+        lore:
+          - '&e▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Convoque abelhas explosivas'
+          - '&7para destruir sua mina.'
+          - ''
+          - '&eRequisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&fClique Esquerdo: &71'
+          - '&fPressione Q: &7Evoluir 1000'
+      cant:
+        material: 'bee_spawn_egg'
+        name: '&eAbelha Explosiva &8➟ &e&l{actual} &7/ &e&l{maximum}'
+        lore:
+          - '&e▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Convoque abelhas explosivas'
+          - '&7para destruir sua mina.'
+          - ''
+          - '&eRequisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&eVocê não possui os requisitos.'
+      maximum:
+        material: 'bee_spawn_egg'
+        name: '&eAbelha Explosiva &8➟ &e&l{actual} &7/ &e&l{maximum}'
+        lore:
+          - '&e▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Convoque abelhas explosivas'
+          - '&7para destruir sua mina.'
+          - ''
+          - '&e&lGG! &eVocê atingiu o máximo.'
+
+  magma:
+    name: '§cMagma'
+    pickaxe-level: 0
+    order: 19
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    level-percentage: 10.000001
+    radius: 5
+    level:
+      default: 0.0
+      maximum: 50000.0
+    options:
+      delay: 4
+    messages:
+      title: '&c&lMagma<nl>&fBlocos de magma emergindo!'
+      actionbar: ''
+      chat: ''
+    price-multiplier: 1.00
+    prices-default:
+      price1:
+        provider: 'yminaspackets'
+        price: 0.0
+    prices-per-level:
+      price1:
+        provider: 'yminaspackets'
+        price: 0.0
+    prices-disenchanter:
+      price2:
+        provider: 'yminaspackets'
+        price: 0.0
+    displays:
+      can:
+        material: 'magma_block'
+        name: '&cMagma &8➟ &c&l{actual} &7/ &c&l{maximum}'
+        lore:
+          - '&c▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Convoque blocos de magma'
+          - '&7para destruir sua mina.'
+          - ''
+          - '&cRequisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&fClique Esquerdo: &71'
+          - '&fPressione Q: &7Evoluir 1000'
+      cant:
+        material: 'magma_block'
+        name: '&cMagma &8➟ &c&l{actual} &7/ &c&l{maximum}'
+        lore:
+          - '&c▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Convoque blocos de magma'
+          - '&7para destruir sua mina.'
+          - ''
+          - '&cRequisitos:'
+          - '&fCusto: &e❀{yminaspackets}'
+          - '&fNível exigido: &7{level}'
+          - ''
+          - '&cVocê não possui os requisitos.'
+      maximum:
+        material: 'magma_block'
+        name: '&cMagma &8➟ &c&l{actual} &7/ &c&l{maximum}'
+        lore:
+          - '&c▴ &fProbabilidade: &7{percentage}%'
+          - ''
+          - '&7Convoque blocos de magma'
+          - '&7para destruir sua mina.'
+          - ''
+          - '&c&lGG! &cVocê atingiu o máximo.'
