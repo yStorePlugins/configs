@@ -298,7 +298,6 @@ enchants:
         - '&e*&fComo funciona?'
         - '&7Ao quebrar um bloco de minério,'
         - '&7uma área 3x3 será minerada.'
-
   haste:
     display-name: '&7Haste'
     apply-whitelist: [ 'DIAMOND_PICKAXE', 'GOLD_PICKAXE', 'IRON_PICKAXE', 'STONE_PICKAXE', 'WOOD_PICKAXE', 'WOODEN_PICKAXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
@@ -328,7 +327,6 @@ enchants:
         - '&7haste 2 ao bater ou minerar.'
         - ''
         - '&7Encantamento para:&f Picaretas e Espadas'
-
   ricochet:
     display-name: '&7Ricochete'
     apply-whitelist: [ 'BOW' ]
@@ -359,7 +357,6 @@ enchants:
         - ''
         - '&7Encantamento para:&f Arcos'
         - '&7Chance: &f2.5%'
-
   spider:
     display-name: '&7Aranha'
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
@@ -388,7 +385,6 @@ enchants:
         - ''
         - '&7Encantamento para:&f Espadas e Machados'
         - '&7Chance: &f5.0%'
-
   disarm:
     display-name: '&7Desarmar'
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
@@ -418,7 +414,6 @@ enchants:
         - ''
         - '&7Encantamento para:&f Espadas e Machados'
         - '&7Chance: &f0.3%'
-
   teleporter:
     display-name: '&7Teletransportador'
     apply-whitelist: [ 'BOW' ]
@@ -447,7 +442,6 @@ enchants:
         - ''
         - '&7Encantamento para:&f Arcos'
         - '&7Delay: &f8 segundos'
-
   forcefield:
     display-name: '&7Forcefield'
     apply-whitelist: [ 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS' ]
@@ -478,7 +472,6 @@ enchants:
         - ''
         - '&7Encantamento para:&f Peitorais e Calças'
         - '&7Chance: &f6.5%'
-
   ninja:
     display-name: '&7Ninja'
     apply-whitelist: [ 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS' ]
@@ -510,7 +503,6 @@ enchants:
         - ''
         - '&7Encantamento para:&f Peitorais e Calças'
         - '&7Delay: &f10 segundos'
-
   healer:
     display-name: '&7Curador'
     apply-whitelist: [ 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS' ]
@@ -542,7 +534,6 @@ enchants:
         - ''
         - '&7Encantamento para:&f Peitorais e Calças'
         - '&7Delay: &f10 segundos'
-
   arrow-deflect:
     display-name: '&7Desvio de Flecha'
     apply-whitelist: [ 'DIAMOND_HELMET', 'GOLD_HELMET', 'IRON_HELMET', 'CHAINMAIL_HELMET', 'LEATHER_HELMET', 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS', 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
@@ -571,7 +562,6 @@ enchants:
         - ''
         - '&7Encantamento para:&f Armaduras'
         - '&7Chance: &f5%'
-
   scare:
     display-name: '&7Susto'
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
@@ -603,7 +593,6 @@ enchants:
         - ''
         - '&7Encantamento para:&f Espadas e Machados'
         - '&7Chance: &f2.5%'
-
   soulbound:
     display-name: '&7Vínculo da Morte'
     # Aplicável em qualquer item
@@ -626,7 +615,6 @@ enchants:
         - '&7este item ao morrer!'
         - ''
         - '&7Encantamento para:&f Qualquer item'
-
   unbreakable:
     display-name: '&7Indestrutível'
     # Aplicável em qualquer item com durabilidade
@@ -649,7 +637,6 @@ enchants:
         - '&7perder a sua durabilidade'
         - ''
         - '&7Encantamento para:&f Qualquer item'
-
   arrow-rain:
     display-name: '&7Chuva Mortal'
     apply-whitelist: [ 'BOW' ]
@@ -680,3 +667,95 @@ enchants:
         - ''
         - '&7Encantamento para:&f Arcos'
         - '&7Chance: &f7.5%'
+  moider:
+    display-name: '&7Desnorteador'
+    apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Efeitos que serão aplicados ao inimigo
+    apply-target-effects:
+      - 'CONFUSION:1-100'
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Encantado'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fEspadas/Machados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Ao causar dano em um inimigo'
+        - '&7possui uma chance de aplicar náusea.'
+  master-shooter:
+    display-name: '&bMestre Atirador'
+    apply-whitelist: [ 'BOW' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação (15%)
+    chance: 15.0
+    # Ativa o efeito de mestre atirador
+    master-shooter: true
+    # Multiplicador de dano (3x = triplicar)
+    master-shooter-multiplier: 3.0
+    # Itens que o inimigo precisa estar segurando para o dano ser triplicado
+    master-shooter-target-whitelist: [ 'DIAMOND_SWORD', 'DIAMOND_AXE' ]
+    messages:
+      chat: ''
+      actionbar: '&bMestre Atirador! &7Dano triplicado!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7seu arco, você terá uma chance de'
+        - '&7triplicar o dano causado caso o'
+        - '&7inimigo esteja segurando uma'
+        - '&7espada ou machado de diamante.'
+        - ''
+        - '&7Encantamento para:&f Arcos'
+        - '&7Chance: &f15%'
+  ice-aspect:
+    display-name: '&bAspecto de Gelo'
+    apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    # Chance de ativação (10%)
+    chance: 10.0
+    # Ativa o efeito de arena de gelo
+    ice-arena: true
+    # Raio do círculo de gelo (em blocos)
+    ice-arena-radius: 5
+    # Cooldown em segundos entre usos
+    ice-arena-cooldown: 30
+    # Material dos blocos da arena (ex: ICE, PACKED_ICE, BLUE_ICE, SNOW_BLOCK, OBSIDIAN...)
+    ice-arena-material: 'ICE'
+    messages:
+      chat: ''
+      actionbar: '&bAspecto de Gelo! &7Arena criada!'
+      title: ''
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao utilizar este encantamento em'
+        - '&7sua espada ou machado, você'
+        - '&7terá uma chance de criar uma'
+        - '&7mini arena de gelo ao redor'
+        - '&7dos dois jogadores para um x1!'
+        - '&7A arena só é desfeita quando'
+        - '&7um dos jogadores morrer.'
+        - ''
+        - '&7Encantamento para:&f Espadas e Machados'
+        - '&7Chance: &f10%'
+        - '&7Cooldown: &f30 segundos'
