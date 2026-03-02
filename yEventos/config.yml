@@ -60,6 +60,8 @@ disappear-delay: 8
 proxy:
   # Ativar o sistema
   enabled: true
+  # Nome deste servidor no BungeeCord/Velocity (usado para evitar anúncios duplicados)
+  server-name: 'survival1'
   # Whitelist de servidores que irão receber os anúncios
   server-whitelist: [ 'mina' ]
 
