@@ -27,6 +27,14 @@ Spawners:
     Libera em: '16/10/2020-10:00'
     # Tempo reduzido (não mexa aqui :) )
     Deduced: 0
+    # Controle interno: evita reenviar o broadcast após reinício (não mexa aqui :) )
+    BroadcastSent: false
+    # Mensagem transmitida a todos quando o spawner for liberado
+    # Deixe vazio ([]) para não enviar mensagem
+    spawner-available:
+      - ''
+      - '&fUuh! O &dGerador de Vaca&f foi liberado! Compre em &e/spawners'
+      - ''
     # Valor para somar no gasto do jogador
     Gasto: 1000.0
     # Comando que será executado quando o jogador comprar
