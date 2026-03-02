@@ -51,6 +51,10 @@ clan-menu: true
 always-active-ff: [ 'none' ]
 # Ativar o sistema de chat na proxy (Velocity e BungeeCord)
 proxy-chat: true
+# Servidores da rede em que o proxy-chat NÃO será enviado
+# Os nomes devem ser os mesmos definidos no config.yml do BungeeCord/Velocity
+# Exemplo: proxy-chat-server-blacklist: ['lobby', 'minigames']
+proxy-chat-server-blacklist: []
 
 # Ativar a troca do sistema de chat quando estiver no mohist
 # compatível apenas com: UltimateChat, nChat e Legendchat
