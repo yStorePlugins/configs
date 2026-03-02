@@ -36,6 +36,8 @@ Colocar: false
 Quebrar: false
 # Habilitar PVP
 Pvp: false
+# Habilitar invencibilidade (jogadores não tomam dano nem morrem)
+Invencivel: true
 # Habilitar mexer no inventário
 MexerInventario: true
 # Lista de comandos que serão executados ao começar o reinicio

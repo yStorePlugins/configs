@@ -8,6 +8,7 @@ Dropar slot: 23
 Comandos slot: 24
 Enderpearl slot: 25
 Pvp slot: 28
+Invencivel slot: 29
 Itens:
  Chat Ativado:
   CustomSkull: false
@@ -151,6 +152,24 @@ Itens:
   Data: 14
   Glow: false
   Name: '&fPvP'
+  Lore:
+  - '&7Estado: &cDesligado'
+ Invencivel Ativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 5
+  Glow: false
+  Name: '&fInvencibilidade'
+  Lore:
+  - '&7Estado: &aLigado'
+ Invencivel Desativado:
+  CustomSkull: false
+  URL: ''
+  ID: 160
+  Data: 14
+  Glow: false
+  Name: '&fInvencibilidade'
   Lore:
   - '&7Estado: &cDesligado'
 # Itens customizados
