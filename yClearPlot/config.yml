@@ -62,10 +62,14 @@ general:
   instant: false
   # Ativar para apenas o dono da plot conseguir limpar
   just-owner: true
+  # Quantidade de blocos removidos por tick no modo gradual
+  # Valores menores = menos lag, limpeza mais lenta
+  # Valores maiores = mais rápido, pode gerar lag com muitos limpadores simultâneos
+  blocks-per-tick: 42
   # Mundos que não será possível usar o limpador
   world-blacklist: []
   # Blocos que NÃO SERÃO limpos
-  block-blacklist: ['RAW_NAME:0']
+  block-blacklist: [ 'BEDROCK:0' ]
   # Blocos que SERÃO limpos
   # Deixe [] para não usar
   block-whitelist: []
