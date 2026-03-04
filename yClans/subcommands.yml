@@ -50,3 +50,4 @@ subcommands:
   spy: 'spy|espionar|espião|espiao'
   givespecialitem: 'givespecialitem|daritemespecial|giveitemespecial'
   resetkdr: 'resetkdr|resetarkdr'
+  setowner: 'setowner|definirdono|setdono'

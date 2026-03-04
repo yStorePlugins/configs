@@ -157,6 +157,7 @@ chat:
     &c-> /clan entrar <clan> - Força a entrada em um clan
     &c-> /clan deletar <clan> - Deleta um clan
     &c-> /clan reload - Recarrega os arquivos de configuração
+    &c-> /clan dono <tag_do_clan> <nick> - Define o dono de um clan
     <nl>
   dont-have-money: '&cVocê não possui {money} coins.'
   dont-have-time: '&cVocê não possui o tempo de {time} online.'
@@ -400,6 +401,7 @@ chat:
   clan-verify-already: '&cO clan {clan_tag} já está verificado.'
   clan-verified: '&bO clan {clan_tag} foi verificado.'
   clan-deleted: '&bO clan {clan_tag} foi deletado.'
+  clan-set-owner: '&bA liderança do clan &f{clan_colortag} &f({clan_name})&b foi transferida para &f{player}&b.'
   clan-approved: '&bVocê aprovou a adesão do jogador &f{player}&b.'
   clan-approved-target: '&bVocê foi aprovado para entrar no clan {clan_tag}.'
   clan-denied: '&bVocê negou a adesão do jogador &f{player}&b.'
