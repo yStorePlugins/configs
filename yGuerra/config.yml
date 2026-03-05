@@ -125,6 +125,8 @@ Mensagens:
    Add-added: '&aEste jogador {player} foi adicionado no evento.'
    Pull-all: '&aTodos os jogadores foram puxados.'
    Pull-player: '&aJogador {player} puxado.'
+   Forceinicio-ja-warmup: '&cO evento ja esta na fase de aquecimento ou alem.'
+   Forceinicio-forcado: '&aVoce forcou o inicio do evento.'
    Ajuda:
       - '&b-> Comandos do guerra <-'
       - ''
@@ -135,6 +137,7 @@ Mensagens:
       - '&b > &f/guerra iniciar'
       - '&b > &f/guerra parar'
       - '&b > &f/guerra forcardm'
+      - '&b > &f/guerra forcestart'
       - '&b > &f/guerra kickplayer'
       - '&b > &f/guerra kickclan'
       - '&b > &f/guerra banplayer'
