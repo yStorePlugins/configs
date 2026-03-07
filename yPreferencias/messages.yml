@@ -1,0 +1,32 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Mensagens do plugin
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores podem realizar esta ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &8&m----------------------------------
+    &6&l  Preferencias &7— Comandos
+    &8&m----------------------------------
+
+    &a/preferencias &8- &7Abre o menu de preferências.
+    &a/preferencias reload &8- &7Recarrega as configurações.
+
+    &8&m----------------------------------
+
+  # Mensagens de preferência bloqueada (enviadas ao remetente)
+  disabled-tell: '&cEste jogador desativou o recebimento de mensagens privadas.'
+  disabled-coin: '&cEste jogador desativou o recebimento de coins.'
+  disabled-teleport: '&cEste jogador desativou o recebimento de solicitações de teleporte.'
+  disabled-global: '&cVocê desativou seu chat global.'
+  disabled-local: '&cVocê desativou seu chat local.'

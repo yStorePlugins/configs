@@ -1,47 +1,81 @@
-Database:
- Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
- IP: localhost:3306
- DB: test
- User: admin
- Pass: ''
- Debug: true
+#         ____            __                          _
+#  _   _|  _ \ _ __ ___ / _| ___ _ __ ___ _ __   ___(_) __ _ ___
+# | | | | |_) | '__/ _ \ |_ / _ \ '__/ _ \ '_ \ / __| |/ _` / __|
+# | |_| |  __/| | |  __/  _|  __/ | |  __/ | | | (__| | (_| \__ \
+#  \__, |_|   |_|  \___|_|  \___|_|  \___|_| |_|\___|_|\__,_|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
 
-# Comando e aliases do plugin
-Comando:
- Comando: 'preferencias'
- Aliases: [toggle, opcoes]
+# Modo de depuração
+debug-mode: false
 
-# Delay para carregar os dados depois do login
-# Necessário para usar em servidor de mina separado
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados do jogador após o login.
+# Necessário para uso em servidores de mineração separados.
 # Recomendado: 20 ticks
-Login delay: 20
+login-delay: 20
 
-# Mensagens do plugin
-Mensagens:
- Permissao: '&c&lERRO! &cVocê não tem permissão para isto.'
- Desativou tell: '&cEste jogador desativou o recebimento de mensagens privadas.'
- Desativou coins: '&cEste jogador desativou o recebimento de coins.'
- Desativou teleporte: '&cEste jogador desativou o recebimento de solicitações de teleporte.'
- Desativou global: '&cVocê desativou seu chat global.'
- Desativou local: '&cVocê desativou seu chat local.'
- Nao encontrado: '&cJogador não encontrado.'
+# Nome do canal global (para integração com nChat / LegendChat)
+chat-global-nome: 'global'
 
-# Configurações do chat
-Chat global nome: 'global'
-Chat local nome: 'local'
+# Nome do canal local (para integração com nChat / LegendChat)
+chat-local-nome: 'local'
 
-# Comandos de teleporte
-# Deixe sempre o espaço " " no comando antes do nick
-Comandos tp:
- - '/tpa '
- - '/etpa '
- - '/tpahere '
- - '/etpahere '
+# Comandos de teleporte interceptados (deixe o espaço antes do nick)
+comandos-tp:
+  - '/tpa '
+  - '/etpa '
+  - '/tpahere '
+  - '/etpahere '
 
-# Comandos de money
-# Deixe sempre o espaço " " no comando antes do nick
-Comandos coin:
- - '/pay '
- - '/money pay '
- - '/eco pay '
- - '/bal pay '
+# Comandos de pagamento interceptados (deixe o espaço antes do nick)
+comandos-coin:
+  - '/pay '
+  - '/money pay '
+  - '/eco pay '
+  - '/bal pay '

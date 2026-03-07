@@ -1,0 +1,122 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus do yNPCs.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: [' &7Clique para voltar.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: [' &7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: [' &7Clique para ir à próxima página.']
+
+preferences:
+  name: '&8Preferências'
+  size: 54
+  # Slots onde os itens de preferência serão listados
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  # Slot do botão de página anterior
+  previous-slot: 48
+  # Slot do botão de próxima página
+  next-slot: 50
+  # Slot do botão de fechar (-1 para desativar)
+  back-slot: -1
+  # Ícone padrão ON — {name} será substituído pelo nome da preferência
+  on-item:
+    material: '383a88b593dab7e6218b79f5d95c44bb7ea17427c8e6c8cf6bb51cd2ba6ece2a'
+    name: '{name}'
+    lore:
+      - ''
+      - '&7Estado: &aLigado'
+      - ''
+      - '&eClique para desativar.'
+  # Ícone padrão OFF — {name} será substituído pelo nome da preferência
+  off-item:
+    material: 'ac14600ace50695c7c9bcf09e42afd9f53c9e20daa1524c95db4197dd3116412'
+    name: '{name}'
+    lore:
+      - ''
+      - '&7Estado: &cDesligado'
+      - ''
+      - '&eClique para ativar.'
+  # Nomes exibidos no ícone de cada preferência
+  names:
+    pvp: '&fPvP'
+    teleport: '&fPedidos de teleporte'
+    coin: '&fRecebimento de coins'
+    pickup: '&fColetar itens dropados'
+    # Legendchat / nChat
+    private-chat: '&fMensagens privadas'
+    global-chat: '&fChat global'
+    local-chat: '&fChat local'
+    # yAutoPickup
+    smelt: '&fAuto-fundir ao coletar'
+    compact: '&fAuto-compactar ao coletar'
+    # yVender
+    auto-sell: '&fAuto-venda'
+    shift-sell: '&fVenda rápida (shift)'
+    full-sell: '&fVenda rápida (inv-full)'
+    # yClans
+    clan-invite: '&fConvites de clan'
+  # Itens decorativos fixos (não clicáveis com ação)
+  # Formato: cada entrada tem um slot e os campos do SetupItem
+  facing: {}
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Preferências customizadas
+# Aparecem após as preferências padrão na lista paginada.
+#
+# Cada entrada deve ter:
+#   display-name  — nome exibido no ícone
+#   placeholder   — placeholder PlaceholderAPI resolvido para o jogador
+#   on-value      — valor retornado pelo placeholder quando a pref está ON
+#                   (comparação case-insensitive)
+#   executor      — quem executa os comandos: "console" ou "player"
+#   commands-when-on  — lista de comandos executados ao clicar quando está ON
+#                       (o jogador está vendo o ícone ON e clica para desativar)
+#   commands-when-off — lista de comandos executados ao clicar quando está OFF
+#                       (o jogador está vendo o ícone OFF e clica para ativar)
+#   Use {player} nos comandos para substituir pelo nome do jogador.
+#
+# on-item  — ícone exibido quando a preferência está ON
+# off-item — ícone exibido quando a preferência está OFF
+#
+# Exemplo de preferência de duplo-drop (fictício):
+# ──────────────────────────────────────────────────────────────────────────────
+custom-preferences:
+  example-pref:
+    display-name: '&fDuplo Drop'
+    placeholder: '%yclans_has%'
+    on-value: 'true'
+    executor: console
+    commands-when-on:
+      - 'alerta {player} on'
+    commands-when-off:
+      - 'alerta {player} off'
+    on-item:
+      material: '383a88b593dab7e6218b79f5d95c44bb7ea17427c8e6c8cf6bb51cd2ba6ece2a'
+      name: '&fDuplo Drop'
+      lore:
+        - ''
+        - '&7Estado: &aLigado'
+        - ''
+        - '&eClique para desativar.'
+    off-item:
+      material: 'ac14600ace50695c7c9bcf09e42afd9f53c9e20daa1524c95db4197dd3116412'
+      name: '&fDuplo Drop'
+      lore:
+        - ''
+        - '&7Estado: &cDesligado'
+        - ''
+        - '&eClique para ativar.'
