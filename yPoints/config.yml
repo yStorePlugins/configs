@@ -1,0 +1,158 @@
+Database:
+  Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ''
+  Debug: true
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Comandos e aliases do plugin
+Comando:
+  Points:
+    Comando: 'points'
+    Aliases: [ pontos, cash ]
+
+# ATIVAR O CONVERSOR DA DATABASE ANTIGA DO PLUGIN
+Converter:
+  Ativar: false
+  Tabela: 'indefinida'
+
+# Opções gerais do plugin
+Opcoes:
+  # Formato do points na quantia singular
+  Singular: 'cash'
+  # Formato do points no plural
+  Plural: 'cash'
+  # Ao digitar /points abrir o menu.
+  # False = Vai enviar a quantia de points que ele tem no chat
+  # True = Vai abrir o menu
+  Menu points: true
+  # Tag do mais rico em cash
+  Tag: '&6[$]'
+  # Tempo que irá atualizar o top
+  # Em segundos
+  Top atualizar: 600
+  # Ao ativar irá abrir o menu do top ao digitar /money top
+  Top menu: true
+
+# Configuração do money top em chat
+Top chat:
+  # O plugin irá reconhecer quando isto for apenas espaços e vai removê-los.
+  Magnata formato: '{magnata} '
+  # O plugin irá reconhecer quando isto for apenas espaços e vai removê-los.
+  Prefixo formato: '%luckperms_prefix% '
+  Tags: '{magnata}{prefixo}'
+  Formato: '  &f{pos}º {tags}&7{player}&6: &7(c {points})'
+  Mensagem:
+    - '&6Top 10 Mais Ricos &7(Atualizado de 10 em 10 minutos)'
+    - ''
+    - '{formato}'
+    - ''
+
+# Configurações do Holograma do NPC
+Holograma:
+  # Altura do holograma em cima do NPC
+  Altura: 3.1
+  # Holograma do NPC
+  Holograma:
+    - '&a&lTOP &7&l#{pos}'
+    - ''
+    - '&e{nome}'
+    - '&7Cash: &f{points}'
+    - ''
+
+# Mensagens gerais do plugin
+Mensagens:
+  Permissao: '&cVocê não possui permissão para isto.'
+  Nao encontrado: '&cEste jogador não foi encontrado.'
+  Nao e numero: '&cO argumento não é um número.'
+  Nao possui: '&cVocê não possui esta quantia de cash.'
+  Si mesmo: '&cVocê não pode pagar à si mesmo.'
+  Nenhum top: '&cNão há nenhum top nesta posição ainda.'
+  Setado: '&aNPC setado.'
+  Removido: '&aNPC removido.'
+  ForceUpdate: '&aVocê forçou a atualização do TOP.'
+  Balanco:
+    - '&aVocê possui: &f{points}&a {unidade}.'
+  Balanco target:
+    - '&aO jogador &7{player}&a possui: &f{points}&a {unidade}.'
+  Setou:
+    - '&aVocê setou os pontos do jogador &7{player} &apara: &f{points}&a {unidade}.'
+  Removeu:
+    - '&aVocê removeu &f{points}&a {unidade} do jogador &7{player}&a.'
+  Adicionou:
+    - '&aVocê adicionou &f{points}&a {unidade} para o jogador &7{player}&a.'
+  Enviou:
+    - '&aVocê enviou &f{points}&a {unidade} para o jogador &7{player}&a.'
+  Recebeu:
+    - '&aVocê recebeu &f{points}&a {unidade} do jogador &7{player}&a.'
+  Help:
+    - '&a<--> Comandos de pontos <-->'
+    - ''
+    - '&f > &a/points &8- &7Ver suas informações.'
+    - '&f > &a/points &f<jogador> &8- &7Ver as informações de outro jogador.'
+    - '&f > &a/points enviar &f<jogador> <quantia> &8- &7Enviar cash para um jogador.'
+    - '&f > &a/points top &8- &7Ver o TOP mais ricos em cash.'
+    - ''
+  Help staff:
+    - '&a<--> Comandos de pontos &7(STAFF)&a <-->'
+    - ''
+    - '&f > &a/points &8- &7Ver suas informações.'
+    - '&f > &a/points &f<jogador> &8- &7Ver as informações de outro jogador.'
+    - '&f > &a/points enviar &f<jogador> <quantia> &8- &7Enviar cash para um jogador.'
+    - '&f > &a/points adicionar &f<jogador> <quantia> &8- &7Adicionar cash para um jogador.'
+    - '&f > &a/points remover &f<jogador> <quantia> &8- &7Remover cash de um jogador.'
+    - '&f > &a/points setar &f<jogador> <quantia> &8- &7Setar cash para um jogador.'
+    - '&f > &a/points top &8- &7Ver o TOP mais ricos em cash.'
+    - '&f > &a/points setnpc &f<1/2/3> &8- &7Setar o TOP NPC.'
+    - '&f > &a/points delnpc &f<1/2/3> &8- &7Deletar o TOP NPC.'
+    - '&f > &a/points forceupdate &8- &7Forçar a atualização do TOP.'
+    - '&f > &a/points reload &8- &7Recarregar as configurações.'
+    - ''
+  Novo magnata:
+    - ''
+    - '&6&l[c]&e O jogador &f{player} &eé o novo &e&nRICO&a do servidor.'
+    - '&7O novo rico possui &f{points} &7{unidade}.'
+    - ''
+# Setas dos menus.
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para ir à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: 262
+    Data: 0
+    Glow: true
+    Name: '&aPróximo'
+    Lore:
+      - '&7Clique para ir à próxima página.'

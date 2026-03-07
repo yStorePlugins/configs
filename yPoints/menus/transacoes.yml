@@ -1,0 +1,58 @@
+Nome: '&8Histórico de transações'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 31
+VoltarSlot: 27
+ProximoSlot: 35
+
+Adicionou:
+   CustomSkull: true
+   URL: 'http://textures.minecraft.net/texture/3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&a+ {points}'
+   Lore:
+      - ''
+      - '&7Data: &f{data} &8- &f{hora}&7.'
+      - '&7Quantia adicionada: &a{points}&.'
+      - ''
+
+Recebeu:
+   CustomSkull: true
+   URL: 'http://textures.minecraft.net/texture/3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&a+ {points}'
+   Lore:
+      - ''
+      - '&7Data: &f{data} &8- &f{hora}&7.'
+      - '&7Recebeu de &f{player}&7: &a{points}&.'
+      - ''
+
+Removeu:
+   CustomSkull: true
+   URL: 'http://textures.minecraft.net/texture/bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&c- {points}'
+   Lore:
+      - ''
+      - '&7Data: &f{data} &8- &f{hora}&7.'
+      - '&7Quantia removida: &a{points}&.'
+      - ''
+
+Pagou:
+   CustomSkull: true
+   URL: 'http://textures.minecraft.net/texture/bd8a99db2c37ec71d7199cd52639981a7513ce9cca9626a3936f965b131193'
+   ID: 0
+   Data: 0
+   Glow: true
+   Name: '&c- {points}'
+   Lore:
+      - ''
+      - '&7Data: &f{data} &8- &f{hora}&7.'
+      - '&7Pagou para &f{player}&7: &a{points}&.'
+      - ''

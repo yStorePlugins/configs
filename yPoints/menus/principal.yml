@@ -1,0 +1,71 @@
+Nome: '&8Cash'
+Tamanho: 27
+Itens:
+  Informacoes:
+    Slot: 10
+    CustomSkull: true
+    URL: '{player}'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aSuas informações'
+    Lore:
+      - '&7Veja suas informações'
+      - '&7referente ao cash.'
+      - ''
+      - ' &fSaldo atual: &a{saldo}&f.'
+      - ' &fTransações realizadas: &b{transacoes}&f.'
+      - ''
+  Transacoes:
+    Slot: 11
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/4883d656e49c38c6b5378572f31c63c4c7a5dd4375b6ecbca43f5971c2cc4ff'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aTransações'
+    Lore:
+      - '&7Veja as movimentações que'
+      - '&7você realizou.'
+      - ''
+      - '&aClique para visualizar.'
+  Top:
+    Slot: 15
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+    ID: 0
+    Data: 0
+    Glow: true
+    Name: '&aTop jogadores'
+    Lore:
+      - '&7Veja os jogadores que'
+      - '&7se destacam sendo os'
+      - '&7mais ricos do servidor.'
+      - ''
+      - '&aClique para visualizar.'
+# Itens customizados
+Itens custom:
+  Shop:
+    Slot: 13
+    Comando: 'shop'
+    CustomSkull: false
+    URL: ''
+    ID: 266
+    Data: 0
+    Glow: true
+    Name: '&6Shop'
+    Lore:
+      - '&7Compre alguns itens utilizando'
+      - '&7seu cash disponível.'
+      - ''
+      - '&aClique para visualizar.'
+  Enfeite:
+    Slot: 16
+    Comando: ''
+    CustomSkull: false
+    URL: ''
+    ID: 166
+    Data: 0
+    Glow: true
+    Name: '&cEnfeite'
+    Lore: []
