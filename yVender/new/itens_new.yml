@@ -38,6 +38,15 @@ itens:
           price1:
             provider: 'money'
             amount: 10.0
+        # Regiões do WorldGuard que ao dropar o item será vendido automaticamente
+        regions:
+          regiao1:
+            region: 'spawn'
+            # Preços que a unidade irá dar
+            prices:
+              price1:
+                provider: 'money'
+                amount: 20.0
       
       # Exemplo de item com textura customizada (custom-model-data)
       # item_customizado:
