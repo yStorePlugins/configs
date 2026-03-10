@@ -413,3 +413,15 @@ auto-message:
       actionbar: '&aAcesse nosso site: &fystoreplugins.com.br&a.'
       title: '' # HEADER<nl>FOOTER
       sound: 'LEVEL_UP'
+
+#   ___           _        _
+#  | _ \___  _ __| |_ __ _| |
+#  |  _/ _ \| '_|  _/ _` | |
+#  |_| \___/|_|  \__\__,_|_|
+#
+# Sistema de portais de servidor.
+portal:
+  # Quantidade mínima de blocos internos do portal (área preenchida)
+  min-size: 2
+  # Tamanho máximo de cada lado da área interna (blocos)
+  max-size: 21

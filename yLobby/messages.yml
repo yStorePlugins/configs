@@ -178,3 +178,8 @@ chat:
     &aEncantamentos: &f{enchants}
     &aNBTTags: &f{nbttags}
     &aFlags: &f{flags}
+  portal-set: '&aPortal do servidor &f{server}&a criado com sucesso!'
+  portal-del: '&cPortal(is) do servidor &f{server}&c removido(s).'
+  portal-no-frame: '&cNenhuma moldura válida encontrada ao redor do bloco atual.'
+  portal-too-small: '&cA área interna do portal é muito pequena (mínimo {min} bloco(s)).'
+  portal-too-large: '&cA moldura é muito grande (máximo {max}x{max} blocos internos).'
