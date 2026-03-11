@@ -1,0 +1,118 @@
+# Nome exibido ao jogador.
+display: '&aCaça Comum'
+
+# Chance (0.0 - 100.0) de dropar o livro ao quebrar bloco / matar mob.
+drop-chance: 8.0
+
+# Origens que podem gerar o drop: BLOCK_BREAK, MOB_KILL (ou ambos)
+drop-sources:
+  - BLOCK_BREAK
+  - MOB_KILL
+
+# Nome do mundo onde o baú será gerado.
+world: 'normal_world'
+
+# Raio horizontal (em blocos, a partir de 0,0) para escolher a posição X/Z do baú.
+search-radius: 1000
+
+# Faixa de Y para enterrar o baú.
+min-y: 20
+max-y: 50
+
+# Tempo (em minutos) até o tesouro expirar automaticamente.
+expiry-minutes: 30
+
+# Mobs guardiões que serão spawnados ao redor do baú.
+# Cada entrada é uma key nomeada (ex: zombie, skeleton).
+# Campos obrigatórios:
+#   type:   nome do EntityType do Bukkit (ex: ZOMBIE, SKELETON, SPIDER)
+#   amount: quantidade spawnada
+#
+# Campos opcionais de atributos:
+#   custom-name:  nome exibido acima do mob (suporta &códigos de cor). Padrão: nome do Bukkit.
+#   health:       vida máxima (hearts × 2). Ex: 40.0 = 20 corações. Padrão: padrão do mob.
+#   damage:       dano de ataque. Ex: 8.0. Padrão: padrão do mob.
+#   speed:        velocidade de movimento. Ex: 0.3. Padrão: padrão do mob.
+#   clear-drops:  true para impedir drops ao morrer. Padrão: false.
+#
+# Campos opcionais de equipamento (nome do Material do Bukkit):
+#   helmet, chestplate, leggings, boots, main-hand
+#   equipment-drop-chance: chance (0.0-1.0) de dropar cada peça. Padrão: -1 (padrão Bukkit).
+guardian-mobs:
+  zombie:
+    type: ZOMBIE
+    amount: 3
+    custom-name: '&cZumbi Guardião'
+    health: 40.0
+    damage: 6.0
+    speed: 0.25
+    clear-drops: true
+    helmet:
+      material: IRON_HELMET
+    chestplate:
+      material: IRON_CHESTPLATE
+    leggings:
+      material: IRON_LEGGINGS
+    boots:
+      material: IRON_BOOTS
+    main-hand:
+      material: IRON_SWORD
+    equipment-drop-chance: 0.0
+  skeleton:
+    type: SKELETON
+    amount: 2
+    custom-name: '&7Esqueleto Guardião'
+    health: 30.0
+    damage: 5.0
+    speed: 0.25
+    clear-drops: true
+    helmet:
+      material: CHAINMAIL_HELMET
+    equipment-drop-chance: 0.0
+
+# Nome do mob do MythicMobs para usar como guardião (deixe vazio para desativar).
+mythicmob: ''
+
+# ── Schematic (estrutura colocada ao redor do baú) ─────────────────────────
+# Se não quiser estrutura, remova ou deixe schematic vazio.
+schematic:
+  # Y offset ao colocar a estrutura em relação à localização do tesouro.
+  y-offset: 0
+  # Siglas para cada bloco (sigla,MATERIAL:data).
+  blocks:
+    - 'X,AIR:0'
+  # Camadas da estrutura. Cada camada tem:
+  #   y: offset vertical (1 = ao nível do baú, 2 = uma camada acima, etc.)
+  #   pattern: lista de linhas de texto (cada char = uma sigla)
+  # O centro do pattern é calculado automaticamente (largura/2, profundidade/2).
+  patterns:
+    layer_1:
+      y: 1
+      pattern:
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+    layer_2:
+      y: 2
+      pattern:
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+    layer_3:
+      y: 3
+      pattern:
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+
+# Lista de recompensas: 'chance,recompensa'
+rewards:
+  - '50.0,reward1'
+  - '25.0,reward2'
+  - '10.0,reward3'

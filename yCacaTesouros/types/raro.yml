@@ -1,0 +1,107 @@
+# Nome exibido ao jogador.
+display: '&6&lCaça Rara'
+
+# Chance (0.0 - 100.0) de dropar o livro ao quebrar bloco / matar mob.
+drop-chance: 2.0
+
+# Origens que podem gerar o drop: BLOCK_BREAK, MOB_KILL (ou ambos)
+drop-sources:
+  - MOB_KILL
+
+# Nome do mundo onde o baú será gerado.
+world: 'normal_world'
+
+# Raio horizontal (em blocos, a partir de 0,0) para escolher a posição X/Z do baú.
+search-radius: 2000
+
+# Faixa de Y para enterrar o baú.
+min-y: 5
+max-y: 30
+
+# Tempo (em minutos) até o tesouro expirar automaticamente.
+expiry-minutes: 60
+
+# Mobs guardiões que serão spawnados ao redor do baú.
+guardian-mobs:
+  zombie:
+    type: ZOMBIE
+    amount: 5
+    custom-name: '&4Zumbi Raro'
+    health: 60.0
+    damage: 9.0
+    speed: 0.28
+    clear-drops: true
+    helmet:
+      material: DIAMOND_HELMET
+    chestplate:
+      material: DIAMOND_CHESTPLATE
+    leggings:
+      material: DIAMOND_LEGGINGS
+    boots:
+      material: DIAMOND_BOOTS
+    main-hand:
+      material: DIAMOND_SWORD
+    equipment-drop-chance: 0.0
+  skeleton:
+    type: SKELETON
+    amount: 3
+    custom-name: '&6Arqueiro Raro'
+    health: 40.0
+    damage: 7.0
+    speed: 0.26
+    clear-drops: true
+    helmet:
+      material: IRON_HELMET
+    main-hand: BOW
+    equipment-drop-chance: 0.0
+  spider:
+    type: SPIDER
+    amount: 2
+    custom-name: '&5Aranha Rara'
+    health: 30.0
+    damage: 5.0
+    speed: 0.35
+    clear-drops: true
+
+# Nome do mob do MythicMobs para usar como guardião (deixe vazio para desativar).
+mythicmob: ''
+
+# ── Schematic (estrutura colocada ao redor do baú) ─────────────────────────
+schematic:
+  y-offset: 0
+  blocks:
+    - 'X,AIR:0'
+    - '1,OBSIDIAN:0'
+    - '2,CRYING_OBSIDIAN:0'
+    - '3,NETHER_BRICK:0'
+  patterns:
+    layer_1:
+      y: 1
+      pattern:
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+    layer_2:
+      y: 2
+      pattern:
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+    layer_3:
+      y: 3
+      pattern:
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+        - 'XXXXX'
+
+# Lista de recompensas: 'chance,recompensa'
+rewards:
+  - '50.0,reward1'
+  - '25.0,reward2'
+  - '10.0,reward3'

@@ -1,0 +1,138 @@
+#          ____               _____
+#  _   _ / ___|__ _  ___ __ |_   _|__  ___  ___  _   _ _ __ ___  ___
+# | | | | |   / _` |/ __/ _` || |/ _ \/ __|/ _ \| | | | '__/ _ \/ __|
+# | |_| | |__| (_| | (_| (_| || |  __/\__ \ (_) | |_| | | | (_) \__ \
+#  \__, |\____\__,_|\___\__,_||_|\___||___/\___/ \__,_|_|  \___/|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 6379]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+# Este limite serve para recolher recompensas
+# Desativar ou aumentar o limite pode gerar lag
+# e em alguns casos crashar o servidor.
+limit:
+  enabled: true
+  # Máximo que irá recolher por vez
+  max: 1000
+
+# Sistemas gerais
+general:
+  # Nome do mundo onde os tesouros serão gerados e onde o PVP será forçado.
+  world: 'normal_world'
+  # Forçar PVP ativo no mundo de caça ao tesouro.
+  pvp-force: true
+  # Número máximo de tesouros ativos simultâneos por player.
+  max-active-per-player: 1
+  # Intervalo (em ticks) para checagem de expiração de tesouros ativos. [1 tick = 0.05s]
+  expiry-check-interval-ticks: 200
+  # Raio em blocos em que o baú e os guardiões são spawnados quando o player chega perto.
+  spawn-proximity-radius: 10
+  # Raio em blocos a partir do qual o anúncio global é disparado quando o player se aproxima do baú.
+  announce-proximity-radius: 10
+  # Se true, ao abrir o baú exibe o menu de recompensas em vez de entregar os itens diretamente.
+  reward-open-menu: true
+  # Deletar a recompensa ao clicar com botão direito
+  right-delete-reward: true
+
+# Configurações de anúncio global quando o player chega perto do tesouro.
+announce:
+  # Enviar mensagem no chat global para todos os players.
+  chat: true
+  # Enviar title para todos os players.
+  title: true
+  # Enviar actionbar para todos os players.
+  actionbar: false
+
+# Configurações do top de jogadores.
+top:
+  # Quantidade máxima de jogadores exibidos no top.
+  limite: 10
+
+# Configurações do livro de coordenadas (totalmente configurável).
+book:
+  # Material do item que representa o livro de coordenadas.
+  material: 'WRITTEN_BOOK'
+  # Nome exibido no item.
+  name: '&6&lLivro de Coordenadas'
+  # Lore exibida no item. Suporta: {type}, {x}, {y}, {z}, {world}
+  lore:
+    - ''
+    - ' &7Um misterioso livro que revela'
+    - ' &7o local de um tesouro escondido.'
+    - ''
+    - ' &eTipo: &f{type}'
+    - ' &eLocalização: &f{x}, {y}, {z}'
+    - ' &eMundo: &f{world}'
+    - ''
+    - ' &aDireito para ver as coordenadas'
+    - ''
+  # Título do livro escrito (WrittenBook).
+  book-title: 'Tesouro'
+  # Autor do livro escrito.
+  book-author: 'Caça Tesouros'
+  # Páginas do livro. Suporta: {type}, {x}, {y}, {z}, {world}, {player}
+  book-pages:
+    - |
+      &6&lCaça ao Tesouro
+
+      &7Parabéns, {player}!
+
+      &7Você encontrou um livro misterioso.
+
+      &6Tipo: &f{type}
+
+      &6Coordenadas:
+      &fX: {x}
+      &fY: {y}
+      &fZ: {z}
+
+      &6Mundo: &f{world}
+
+      &7Escave até encontrar o baú e derrote os guardiões!

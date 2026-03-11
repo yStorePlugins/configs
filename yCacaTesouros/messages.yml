@@ -1,0 +1,61 @@
+#    __  __
+#   |  \/  | ___ _ __  ___  __ _  __ _  ___  ___
+#   | |\/| |/ _ \ '_ \/ __|/ _` |/ _` |/ _ \/ __|
+#   | |  | |  __/ | | \__ \ (_| | (_| |  __/\__ \
+#   |_|  |_|\___|_| |_|___/\__,_|\__, |\___||___/
+#                                 |___/
+
+announce:
+  chat: |
+    &r
+    &6[CaçaTesouros] &f{player} &7encontrou a área de um tesouro &f{type}&7!
+    &7Localização: &fX {x}, Y {y}, Z {z}
+    &r
+
+title:
+  open: '&a&lTesouro Aberto!<nl>&7Recompensas coletadas com sucesso!'
+  announce: '&6&lTesouro Encontrado!<nl>&7{player} está na área do tesouro!'
+
+actionbar:
+  announce: '&6Tesouro próximo! &7Distância: &e{distance}m &8| &7Direção: &e{direction}'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  error: '&cOcorreu um erro inesperado.'
+  help: |
+    &r
+    &6/cacatesouros &8- &7Abre o menu principal.
+    &6/cacatesouros give <player> <tipo> &8- &7Dá um livro de tesouro ao jogador.
+    &6/cacatesouros top &8- &7Abre o ranking de caçadores.
+    &6/cacatesouros reload &8- &7Recarregar as configurações.
+    &r
+  target-not-found: '&cJogador &f{player} &cnão encontrado ou está offline.'
+  type-not-found: '&cTipo de tesouro &f{type} &cnão encontrado. Tipos disponíveis: &f{types}'
+  inv-full: '&cInventário do jogador &f{player} &cstá cheio.'
+  already-active: '&cO jogador &f{player} &cjá possui um tesouro ativo.'
+  no-world: '&cO mundo configurado para o tipo &f{type} &cnão foi encontrado no servidor.'
+  give-fail: '&cNão foi possível dar o livro de tesouro para &f{player}&c.'
+  give-success: '&aLivro do tipo &f{type} &aentregue para &f{player}&a com sucesso.'
+  kill-mobs: '&cDerrote todos os guardiões antes de abrir o baú! &7({amount} restantes)'
+  top-empty: '&7Ainda não há jogadores no ranking.'
+  expired: '&cSeu tesouro expirou e o baú foi removido.'
+  no-active-treasure: '&cEste tesouro não está ativo mais.'
+  book-coords: |
+    &6&lCoordenadas do Tesouro
+
+    &7Tipo: &f{type}
+    &7Localização: &fX {x}, Y {y}, Z {z}
+    &7Mundo: &f{mundo}
+
+    &aVá até o local e escave para encontrar o baú!
+  treasure-not-owner: '&cEste tesouro pertence a &f{player}&c.'
+  treasure-guardians-alive: '&cDerrote todos os guardiões antes de abrir o baú! &7({alive} restantes)'
+  treasure-guardians-spawned: '&c&lGuardiões do tesouro apareceram! Derrote-os para abrir o baú!'
+  treasure-open-success: '&aVocê abriu o tesouro e coletou suas recompensas! Digite /ct para acessá-las.'
+  treasure-expired: '&cSeu tesouro expirou e o baú foi removido.'
+  treasure-no-safe-location: '&cNão foi possível encontrar um local seguro para gerar o tesouro. Tente novamente.'
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&aVocê coletou todas as suas recompensas pendentes!'
