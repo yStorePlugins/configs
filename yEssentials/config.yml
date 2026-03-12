@@ -440,6 +440,16 @@ repair-costs:
       provider: 'money'
       amount: 30.0
 
+# Sistema de tags no tablist
+tab-tags:
+  enabled: false
+  member:
+    priority: 1 # decrescente (membros com prioridade maior que dono e admin)
+    permission: 'ylobby.tags.member'
+    prefix: '&7[Membro] &7'
+    suffix: ''
+    order: 'a' # ordem das tags no tab, sendo o "A" o primeiro e o "Z" o último
+
 # Setas dos menus
 Setas:
   Anterior:
