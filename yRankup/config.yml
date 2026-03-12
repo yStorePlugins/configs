@@ -68,6 +68,10 @@ heads-disabled: false
 # Desativar por completo o sistema de coins
 coin-disabled: false
 
+# Cooldown para upar de rank
+# em segundos
+rankup-cooldown: 5
+
 # Sistema de Auto-Rankup
 auto-rankup:
   enabled: true
