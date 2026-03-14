@@ -270,6 +270,8 @@ EditarItem:
   Quantia invalida: '&cA quantia deve ser menor que 64 e maior que 0.'
   Quantia: '&aVocê alterou a quantia deste item para {quantia}.'
   HideAttributes: '&aVocê escondeu os atributos deste item.'
+  CopyName invalido: '&cEste item não possui um nome para copiar.'
+  CopyName: '&aClique para copiar o nome.'
 
 # Mensagens diversas
 Outros:
