@@ -21,6 +21,7 @@ chat:
 
     &a/preferencias &8- &7Abre o menu de preferências.
     &a/preferencias reload &8- &7Recarrega as configurações.
+    &a/preferencias set <jogador> <pref> <on|off> [tempo] &8- &7Força uma preferência.
 
     &8&m----------------------------------
 
@@ -30,3 +31,12 @@ chat:
   disabled-teleport: '&cEste jogador desativou o recebimento de solicitações de teleporte.'
   disabled-global: '&cVocê desativou seu chat global.'
   disabled-local: '&cVocê desativou seu chat local.'
+  set-invalid-pref: '&cPreferência &f{pref} &cinválida. Válidas: &f{valid}'
+  set-invalid-state: '&cEstado &f{state} &cinválido. Use &fon &cou &foff&c.'
+  set-invalid-time: '&cTempo &f{time} &cinválido. Ex: &f30s&c, &f5m&c, &f2h&c, &f300'
+  set-success: '&aPreferência &f{pref} &ade &f{player} &adefinida como &f{state}&a. Duração: &f{duration}'
+  set-notify: '&eUma das suas preferências (&f{pref}&e) foi definida como &f{state} &epor um administrador. Duração: &f{duration}'
+  set-blocked: '&cEsta preferência foi bloqueada por um administrador e não pode ser alterada.'
+  set-on: '&aativado'
+  set-off: '&cdesativado'
+  set-permanent: 'permanente'
