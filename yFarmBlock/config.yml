@@ -50,6 +50,8 @@ redis:
 general:
   # Permitir quebrar blocos customizados somente com a "Removedora de Sementes"
   remove-only-with-seed-remover: true
+  # Dropar a semente ao quebrar sem a "Removedora de Sementes"
+  drop-break-remover: true
   # Item da removedora de sementes
   seed-remover:
     material: 'IRON_HOE'
