@@ -91,7 +91,7 @@ main:
         - '&aClique para resetar.'
     # item para recarregar resets
     refill:
-      material: 'EXPERIENCE_BOTTLE'
+      material: 'EXP_BOTTLE'
       name: '&aRecarregar Resets'
       lore:
         - '&7Recarregue os resets da sua mina'

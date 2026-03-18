@@ -143,6 +143,9 @@ bonus:
     display: '&7[Membro]'
     # Quantia do bônus em %
     bonus: 10.0
+    # Bonus customizados para cada economia
+    #custom-bonus:
+    #  - 'money:10.0'
 
 # Enviar a mensagem de recompensas ganhas a cada x tempo
 reward-message:
