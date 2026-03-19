@@ -1,0 +1,74 @@
+# Rota de exemplo — renomeie este arquivo para definir a chave da rota.
+# A chave da rota é o nome do arquivo sem o .yml (ex: exemplo.yml → chave "exemplo").
+
+display-name: '&3Entregas Amazon'
+description: '&7Colete e entregue encomendas da Amazon.'
+
+# Ícone no menu de rotas
+icon:
+  material: 'e4ea0dab0b7f1e5c4e33aba6e975e9992a887d872dc7dd107d8e3981dc873958'
+  name: '&3Entregas Amazon'
+  lore:
+    - '&7Trabalhe como entregador da maior'
+    - '&7empresa de logística da cidade!'
+    - ''
+    - '&fObjetivo:'
+    - '&7Colete as encomendas nos pontos'
+    - '&7marcados e entregue na base.'
+    - ''
+    - '&aRecompensas:'
+    - '&7Dinheiro, reputação e bônus'
+    - '&7por entregas rápidas.'
+    - ''
+    - '&eDica: Use &e/rotas &epara ver suas rotas.'
+    - '&eDica: Use &e/rotas cancel &epara cancelar.'
+    - '&eDica: Fique atento ao cooldown.'
+    - ''
+    - '&a▶ Clique para iniciar a rota!'
+
+# Configurações do NPC de entrega da rota
+npc:
+  location: 'none'
+  skin: 'AmazonWarehouse'
+  hologram-offset: 2.5
+  hologram-lines:
+  - '&3Entregas Amazon'
+  - '&7Clique para entregar!'
+
+# Permissão necessária para iniciar esta rota. Deixe vazio para liberar a todos.
+permission: ''
+
+# Nome do ponto indicador
+# Placeholders: {point}, {collected}, {total}.
+indicator-label: '&3Encomenda Amazon &c({collected}/{total})'
+
+# Material do ponto indicador
+indicator-material: 'e4ea0dab0b7f1e5c4e33aba6e975e9992a887d872dc7dd107d8e3981dc873958'
+
+# Tempo de cooldown entre entregas completas da rota, em segundos.
+cooldown-seconds: 300
+
+# Pontos de coleta da rota
+points: {}
+
+# Recompensas da rota, entregues ao completar a entrega no NPC. Suporta os tipos:
+# - MONEY: Recompensa em dinheiro (integração com plugin de economia).
+# - COMMAND: Recompensa de comando (executa um comando no console, com {player} como placeholder para o nome do jogador).
+# - ITEM: Recompensa de item (entrega um item personalizado para o jogador).
+
+rewards:
+  reward1:
+    type: MONEY
+    provider: money
+    amount: 500.0
+  reward2:
+    type: COMMAND
+    command: 'broadcast {player} completou a rota da Amazon!'
+  reward3:
+    type: ITEM
+    item:
+      material: DIAMOND
+      amount: 2
+      name: '&bDiamante da Entrega'
+      lore:
+        - '&7Recompensa da rota &3Entregas Amazon&7.'

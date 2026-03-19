@@ -1,0 +1,19 @@
+# Economia padrão utilizada pelo plugin.
+# Deve corresponder a uma das chaves definidas em 'economies' abaixo.
+default: 'money'
+
+economies:
+  money:
+    provider: 'money'
+    display: '&6Dinheiro'
+    abbreviated: '&6R$'
+    symbol: '$'
+    permission: ''
+    allow-offline: true
+    item-settings:
+      material: 'GOLD_NUGGET'
+      name: '&6Dinheiro'
+      lore:
+        - ''
+        - ' &7Saldo: &f{balance}'
+        - ''

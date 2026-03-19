@@ -1,0 +1,82 @@
+#        ____       _
+#  _   _|  _ \ ___ | |_ __ _ ___
+# | | | | |_) / _ \| __/ _` / __|
+# | |_| |  _ < (_) | || (_| \__ \
+#  \__, |_| \_\___/ \__\__,_|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Raio padrão em blocos para detecção de ponto de coleta
+  default-collect-radius: 2.0
+  # Raio padrão em blocos para interagir com o NPC de entrega
+  default-npc-radius: 3.0
+  # Cooldown padrão de rota em segundos (0 = sem cooldown)
+  default-cooldown-seconds: 300
+  progress-bar:
+    filled: '&a|'
+    empty: '&7|'
+    length: 20
+  # Sons reproduzidos ao longo da rota (nomes do enum Sound do Bukkit)
+  sounds:
+    route-started: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    point-collected: 'ENTITY_ITEM_PICKUP'
+    all-collected: 'ENTITY_PLAYER_LEVELUP'
+    delivery-success: 'ENTITY_FIREWORK_ROCKET_LAUNCH'

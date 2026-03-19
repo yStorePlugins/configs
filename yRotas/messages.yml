@@ -1,0 +1,75 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO valor inserido não é um número válido.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &8&m-&r &6&lRotas &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu de rotas.
+    &8&m-&r &e/{cmd} cancel &8- &7Cancela a rota atual.
+    &8&m-&r
+
+  admin-help: |
+    
+    &8&m-&r &6&lRotas Admin &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} addpoint <key> <raio> [nome] &8- &7Adiciona ponto na sua posição.
+    &8&m-&r &e/{cmd} removepoint <key> <ordem> &8- &7Remove um ponto.
+    &8&m-&r &e/{cmd} setnpc <key> &8- &7Define o NPC de entrega na sua posição atual.
+    &8&m-&r &e/{cmd} delnpc <key> &8- &7Remove o NPC de entrega.
+    &8&m-&r &e/{cmd} addreward <key> money <provider> <valor> &8- &7Adiciona recompensa em dinheiro.
+    &8&m-&r &e/{cmd} addreward <key> command <comando> &8- &7Adiciona recompensa de comando.
+    &8&m-&r &e/{cmd} addreward <key> item &8- &7Adiciona item da mão como recompensa.
+    &8&m-&r &e/{cmd} reload &8- &7Recarrega as configurações.
+    &8&m-&r
+
+  route-already-active: '&cVocê já possui uma rota ativa! Use &e/rota cancel &cpara cancelar.'
+  route-on-cooldown: '&cA rota &e{route} &cestá em cooldown. Disponível em: &e{time}&c.'
+  route-no-permission: '&cVocê não tem permissão para iniciar a rota &e{route}&c. (necessário: &f{permission}&c)'
+  route-started: |
+
+    &aRota iniciada: &e{route}
+    &7Colete os &e{points} &7pontos na ordem indicada.
+
+  route-cancelled: '&cRota &e{route} &ccancelada.'
+  route-not-active: '&cVocê não possui nenhuma rota ativa.'
+  point-collected: '&aPonto &e{point} &acoletado! &7({collected}/{total})'
+  all-points-collected: |
+
+    &a&lTodos os pontos coletados!
+    &7Vá até o NPC de entrega da rota &e{route}&7 para receber sua recompensa.
+
+  delivery-success: '&aEntrega da rota &e{route} &arealizada com sucesso! Recompensas enviadas.'
+  delivery-not-complete: '&cVocê ainda não coletou todos os pontos desta rota.'
+  route-created: '&aRota &e{key} &a(&f{name}&a) criada com sucesso!'
+  route-already-exists: '&cJá existe uma rota com a chave &e{key}&c.'
+  route-deleted: '&aRota &e{key} &adeletada com sucesso.'
+  route-not-found: '&cRota &e{key} &cnão encontrada.'
+  point-added: '&aPonto &e#{order} &a(&f{name}&a) adicionado à rota &e{key}&a.'
+  point-removed: '&aPonto &e#{order} &aremovido da rota &e{key}&a.'
+  npc-set: '&aNPC de entrega da rota &e{key} &adefinido na posição &e{location}&a.'
+  npc-deleted: '&aNPC de entrega da rota &e{key} &aremovido.'
+  reward-added: '&aRecompensa do tipo &e{type} &aadicionada à rota &e{key}&a.'
+
+actionbar:
+  progress: '&6{route} &8| &7{bar} &e{collected}&7/&e{total} &8| &7{distance}m'
+  go-deliver: '&6{route} &8| &aVá ao NPC de entrega! &7{distance}m'
+
+# Títulos exibidos ao jogador (use <nl> para separar título e subtítulo)
+title:
+  route-started: '&6Rota iniciada!<nl>&7{route} &8— &e{points} pontos'
+  all-collected: '&a&lTodos os pontos!<nl>&7Vá até o NPC de entrega'
+  delivery-success: '&a&lEntrega concluída!<nl>&7Recompensas da rota &e{route} &7enviadas!'

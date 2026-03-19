@@ -1,0 +1,70 @@
+#         _   _ ____   ____
+#  _   _| \ | |  _ \ / ___|___
+# | | | |  \| | |_) | |   / __|
+# | |_| | |\  |  __/| |___\__ \
+#  \__, |_| \_|_|    \____|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados do jogador após o login.
+# Necessário para uso em servidores de mineração separados.
+# Recomendado: 20 ticks
+login-delay: 20
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Sistemas gerais
+general:
+  # Distância máxima padrão para spawnar o rotating-head para um jogador (em blocos).
+  # Pode ser sobrescrito individualmente por NPC.
+  default-view-distance: 48
+  # Velocidade de rotação padrão do rotating-head (graus por tick).
+  default-rotate-speed: 5.0
+  # Velocidade de subida/descida padrão do rotating-head (step por tick).
+  default-bob-speed: 0.03
+  # Amplitude máxima do efeito de subida/descida (+/- blocos).
+  default-bob-height: 0.4
+  # Cooldown global de clique por NPC (em segundos). 0 = desativado.
+  # Pode ser sobrescrito individualmente por NPC (click-cooldown no arquivo do NPC).
+  click-cooldown: 0

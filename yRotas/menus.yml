@@ -1,0 +1,270 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore:
+      - ' &7Clique para ir à página anterior.'
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore:
+      - ' &7Clique para ir à próxima página.'
+
+# Menu de seleção de rotas
+route-list:
+  name: '&8Rotas Disponíveis'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: -1
+  route-item:
+    material: 'PAPER'
+    name: '&6{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Pontos: &e{points}'
+      - ' &7Cooldown: &e{cooldown}'
+      - ''
+      - ' &eClique para ver detalhes'
+      - ''
+  facing:
+    top1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    top2:
+      slot: 1
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    top3:
+      slot: 2
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    top4:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    info:
+      slot: 4
+      material: 'BOOK'
+      name: '&6&lComo funciona?'
+      lore:
+        - ''
+        - ' &7Escolha uma rota e percorra os'
+        - ' &7pontos de coleta &eem ordem.'
+        - ''
+        - ' &7Após coletar todos os pontos,'
+        - ' &7vá até o &eNPC de entrega&7 para'
+        - ' &7receber suas recompensas.'
+        - ''
+    top6:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    top7:
+      slot: 6
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    top8:
+      slot: 7
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    top9:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    left1:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    left2:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    left3:
+      slot: 27
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    left4:
+      slot: 36
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    right1:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    right2:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    right3:
+      slot: 35
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    right4:
+      slot: 44
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    bot1:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    bot2:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    bot3:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    tips:
+      slot: 49
+      material: 'NETHER_STAR'
+      name: '&e&lDicas'
+      lore:
+        - ''
+        - ' &a✔ &7Os pontos devem ser coletados &eem ordem.'
+        - ' &a✔ &7Use &e/rota cancel &7para abandonar a rota.'
+        - ' &a✔ &7Cada rota tem seu próprio cooldown.'
+        - ' &a✔ &7Um indicador flutuante mostra o'
+        - '   &7próximo ponto a coletar.'
+        - ' &a✔ &7Você só pode ter &euma rota ativa&7 por vez.'
+        - ''
+    bot5:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    bot6:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    bot7:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+
+# Menu de detalhe de rota
+route-detail:
+  name: '&8Rota: {name}'
+  size: 27
+  start-slot: 11
+  cancel-slot: 15
+  start:
+    material: 'WOOL:5'
+    name: '&a&lIniciar Rota'
+    lore:
+      - ''
+      - ' &7Rota: &e{name}'
+      - ' &7Pontos: &e{points}'
+      - ''
+      - ' &aClique para iniciar!'
+      - ''
+  cancel:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ''
+      - ' &7Clique para voltar à lista de rotas.'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 1
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 2
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 4
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass7:
+      slot: 6
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass8:
+      slot: 7
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass9:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass10:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass11:
+      slot: 13
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass12:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass13:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass14:
+      slot: 19
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass15:
+      slot: 20
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass16:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass17:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass18:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass19:
+      slot: 24
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass20:
+      slot: 25
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass21:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '

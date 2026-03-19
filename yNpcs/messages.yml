@@ -1,0 +1,49 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Mensagens do plugin yNPCs
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número válido.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &6/ynpcs &8- &7Abre o menu de gerenciamento de NPCs.
+    &6/ynpcs create <id> &8- &7Cria um novo NPC na sua posição.
+    &6/ynpcs edit <id> &8- &7Abre o menu de edição de um NPC.
+    &6/ynpcs delete <id> &8- &7Remove um NPC existente.
+    &6/ynpcs reload &8- &7Recarrega as configurações.
+    &r
+  npc-not-found: '&cNPC com id &f{id} &cnão encontrado.'
+  npc-already-exists: '&cJá existe um NPC com o id &f{id}&c.'
+  npc-created: '&aNPC &f{id} &acriado com sucesso!'
+  npc-deleted: '&aNPC &f{id} &aremovido com sucesso!'
+  npc-no-location: '&cEste NPC não possui uma localização definida.'
+  npc-saved: '&aNPC &f{id} &asalvo e atualizado com sucesso!'
+  npc-invalid-type: '&cTipo de NPC inválido. Use: &fNORMAL&c, &fROTATING_HEAD&c ou &fGIANT_ITEM&c.'
+  npc-disabled: '&cEste NPC está desativado.'
+  npc-cooldown: '&cAguarde &f{time} &cantes de interagir com este NPC novamente.'
+  edit-chat-skin: '&eDigite no chat a nova skin (nick do jogador ou base64). &7[ou &ccancel &7para cancelar]'
+  edit-chat-name: '&eDigite no chat o novo nome de exibição. &7[ou &ccancel &7para cancelar]'
+  edit-chat-offset: '&eDigite no chat o novo offset do hologram (ex: 2.5). &7[ou &ccancel &7para cancelar]'
+  edit-chat-holo-line: '&eDigite no chat a nova linha do hologram. &7[ou &ccancel &7para cancelar]'
+  edit-chat-command: '&eDigite no chat o comando. Use &f[player]cmd &eou &f[console]cmd&e. &7[ou &ccancel &7para cancelar]'
+  edit-chat-rotate-speed: '&eDigite no chat a velocidade de rotação (graus/tick, ex: 5.0). &7[ou &ccancel &7para cancelar]'
+  edit-chat-bob-speed: '&eDigite no chat a velocidade de subida/descida (ex: 0.03). &7[ou &ccancel &7para cancelar]'
+  edit-chat-bob-height: '&eDigite no chat a amplitude do efeito (ex: 0.4). &7[ou &ccancel &7para cancelar]'
+  edit-chat-view-distance: '&eDigite no chat a distância de visão (blocos, ex: 48). &7[ou &ccancel &7para cancelar]'
+  edit-chat-head-y: '&eDigite no chat o offset Y do armor stand (ex: 1.5). &7[ou &ccancel &7para cancelar]'
+  edit-chat-offset-xyz: '&eDigite o ajuste de posição no formato: &fx y z &e(ex: &f1.5 0 -2.3&e). &7[ou &ccancel &7para cancelar]'
+  edit-chat-cooldown: '&eDigite no chat o cooldown em segundos (0 = usar padrão global, -1 = desativar). &7[ou &ccancel &7para cancelar]'
+  edit-invalid-format: '&cFormato inválido! Use: x y z (ex: 1.5 0 -2.3)'
+  edit-cancelled: '&cEdição cancelada.'
+  edit-invalid: '&cValor inválido. Tente novamente.'
+  create-chat-id: '&eDigite no chat o &fid &edo novo NPC &7(apenas letras, números e hífens). &7[ou &ccancel &7para cancelar]'
