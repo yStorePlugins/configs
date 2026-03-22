@@ -1,0 +1,1454 @@
+#    __  __
+#   |  \/  | ___ _ __  _   _ ___
+#   | |\/| |/ _ \ '_ \| | | / __|
+#   | |  | |  __/ | | | |_| \__ \
+#   |_|  |_|\___|_| |_|\__,_|___/
+#
+
+# Setas de navegacao
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore:
+      - ' &7Clique para ir a pagina anterior.'
+  next:
+    material: 'ARROW:0'
+    name: '&aProximo'
+    lore:
+      - ' &7Clique para ir a proxima pagina.'
+
+# Menu Principal
+main-menu:
+  name: '&8yDungeons'
+  size: 54
+  # Item de stats do jogador (slot 4 - centro topo)
+  stats-item:
+    slot: 4
+    material: '{player}'
+    name: '&6&lSuas Estatisticas'
+    lore:
+      - ''
+      - ' &7Jogador: &f{player}'
+      - ' &7Nivel da Espada: &e{sword_level}'
+      - ' &7Rank: {sword_rank}'
+      - ''
+      - ' &7Mobs Mortos: &c{mob_kills}'
+      - ' &7Bosses Mortos: &4{boss_kills}'
+      - ' &7Dungeons: &a{dungeons_completed}'
+      - ' &7Money: &5{amount}'
+      - ''
+  # Botao para Arenas
+  arenas-button:
+    slot: 20
+    material: 'BEACON'
+    name: '&a&lArenas'
+    lore:
+      - ''
+      - ' &7Clique para ver as arenas'
+      - ' &7disponiveis e entrar na fila.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  # Botao para Recompensas
+  rewards-button:
+    slot: 24
+    material: 'CHEST'
+    name: '&6&lRecompensas'
+    lore:
+      - ''
+      - ' &7Clique para coletar suas'
+      - ' &7recompensas pendentes.'
+      - ''
+      - ' &7Pendentes: &e{reward_count}'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  # Botao para Top
+  top-button:
+    slot: 49
+    material: 'NETHER_STAR'
+    name: '&e&lTop Jogadores'
+    lore:
+      - ''
+      - ' &7Clique para ver o ranking'
+      - ' &7dos melhores jogadores.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  # Botao para Passes (solo)
+  passes-button:
+    slot: 22
+    material: 'PAPER'
+    name: '&d&lPasses de Dungeon'
+    lore:
+      - ''
+      - ' &7Clique para ver seus passes'
+      - ' &7de dungeons solo.'
+      - ''
+      - ' &7Passes disponiveis: &d{passes_total}'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  # Botao para Upgrades (espada + armadura)
+  upgrades-button:
+    slot: 31
+    material: 'ANVIL'
+    name: '&6&lUpgrades'
+    lore:
+      - ''
+      - ' &7Acesse os upgrades de espada'
+      - ' &7e armadura.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  # Decoracao
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 36
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 44
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass7:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass8:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu de Recompensas
+rewards-menu:
+  name: '&8Recompensas'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  # Item exibido quando nao ha recompensas
+  no-rewards-item:
+    slot: 22
+    material: 'STAINED_GLASS_PANE:14'
+    name: '&cSem Recompensas'
+    lore:
+      - ''
+      - ' &7Voce nao possui recompensas'
+      - ' &7pendentes no momento.'
+      - ''
+      - ' &7Continue jogando para ganhar'
+      - ' &7recompensas!'
+      - ''
+  # Botao de recolher todas as recompensas
+  collect-all:
+    slot: 49
+    material: 'EMERALD'
+    name: '&a&lRecolher Tudo'
+    lore:
+      - ''
+      - ' &7Clique para recolher todas'
+      - ' &7as suas recompensas pendentes.'
+      - ''
+      - ' &eClique para recolher'
+      - ''
+  facing:
+    glass1:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 49
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu de Top
+top-menu:
+  name: '&8Top Jogadores'
+  size: 36
+  # Slots onde os itens de ranking serao exibidos (top 9 por categoria)
+  slots: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ]
+  # Slot do botao de voltar
+  back-slot: 27
+  # Seletor de categoria
+  selector:
+    slot: 31
+    material: 'NETHER_STAR'
+    name: '&eSeletor de Categoria'
+    lore:
+      - ''
+      - '{categories}'
+      - ''
+      - ' &7Clique para trocar de categoria.'
+      - ''
+    # Formato da linha de cada categoria na lore do seletor
+    formats:
+      # Categoria que esta sendo visualizada no momento (cor verde)
+      seeing: ' &f• &a{name}'
+      # Categorias disponiveis mas nao selecionadas (cor cinza)
+      select: ' &f• &7{name}'
+  # Nomes das categorias exibidos no seletor (sem cor — a cor vem do formato acima)
+  category-names:
+    BOSS_KILLS: 'Bosses Mortos'
+    MOB_KILLS: 'Mobs Mortos'
+    DUNGEONS_COMPLETED: 'Dungeons Completadas'
+  # Template de item para cada entrada de ranking
+  # Placeholders: {position}, {player}, {value}
+  item:
+    material: '{player}'
+    name: '&e#{position} &f{player}'
+    lore:
+      - ''
+      - ' &7{category}: &f{value}'
+      - ''
+  # Decoracao
+  facing:
+    glass1:
+      slot: 28
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 29
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 30
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 32
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 33
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 34
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass7:
+      slot: 35
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu do Bruxo
+bruxo:
+  name: '&5&lBruxo'
+  size: 54
+  # Informacoes do jogador
+  player-info:
+    slot: 4
+    material: '{player}'
+    name: '&5&lSeu Perfil'
+    lore:
+      - ''
+      - ' &7Jogador: &f{player}'
+      - ''
+      - ' &7Use seu money para comprar'
+      - ' &7buffs e upgrades!'
+      - ''
+  # Slots dos buffs (7 buffs)
+  buff-slots: [19,20,21,22,23,24,25]
+  # Slots dos upgrades (3 upgrades)
+  upgrade-slots: [37,38,39]
+  # Item de slot vazio
+  empty-slot:
+    material: 'STAINED_GLASS_PANE:7'
+    name: ' '
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    glass3:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    glass4:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    glass5:
+      slot: 36
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    glass6:
+      slot: 44
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    glass7:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    glass8:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    sep-buff-upgr1:
+      slot: 27
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    sep-buff-upgr2:
+      slot: 28
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    sep-buff-upgr3:
+      slot: 29
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    sep-buff-upgr4:
+      slot: 30
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    sep-buff-upgr5:
+      slot: 31
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    sep-buff-upgr6:
+      slot: 32
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    sep-buff-upgr7:
+      slot: 33
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    sep-buff-upgr8:
+      slot: 34
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+    sep-buff-upgr9:
+      slot: 35
+      material: 'STAINED_GLASS_PANE:5'
+      name: ' '
+  # Botao fechar
+  close-button:
+    slot: 49
+    material: 'BARRIER'
+    name: '&cFechar'
+    lore:
+      - ''
+      - ' &7Clique para fechar o menu.'
+      - ''
+  # Botao para abrir a loja de upgrades de espada
+  sword-upgrade-button:
+    slot: 40
+    material: 'DIAMOND_SWORD'
+    name: '&6&lLoja de Upgrades de Espada'
+    lore:
+      - ''
+      - ' &7Clique para abrir a loja de'
+      - ' &7upgrades de espada.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  # Botao para abrir a loja de upgrades de armadura
+  armor-upgrade-button:
+    slot: 41
+    material: 'DIAMOND_CHESTPLATE'
+    name: '&3&lLoja de Upgrades de Armadura'
+    lore:
+      - ''
+      - ' &7Clique para abrir a loja de'
+      - ' &7upgrades de armadura.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+
+# Menu de Passes
+passes-menu:
+  name: '&8Passes de Dungeon'
+  size: 54
+  back-slot: 49
+  # Template de item para cada dungeon com passes
+  pass-item:
+    material: 'PAPER'
+    name: '&d&l{dungeon_name}'
+    lore:
+      - ''
+      - ' &7Dungeon: &f{dungeon_name}'
+      - ' &7Passes disponiveis: &d{passes}'
+      - ''
+      - ' &eClique para remover 1 passe'
+      - ''
+  # Item exibido quando nao ha passes
+  no-passes-item:
+    slot: 22
+    material: 'STAINED_GLASS_PANE:14'
+    name: '&cSem Passes'
+    lore:
+      - ''
+      - ' &7Voce nao possui passes para'
+      - ' &7nenhuma dungeon solo.'
+      - ''
+      - ' &7Adquira passes com um admin!'
+      - ''
+  facing:
+    glass1:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 48
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 50
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass7:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass8:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# ---- Menu de Upgrades de Espada
+sword-upgrade:
+  name: '&6&lUpgrades de Espada'
+  size: 54
+  back-slot: 49
+  # Slots para os itens de upgrade (linha 2 e 3, centro)
+  upgrade-slots: [19,20,21,22,23,24,25]
+  # Informacoes do jogador
+  player-info:
+    slot: 4
+    material: '{player}'
+    name: '&6&lSeu Perfil'
+    lore:
+      - ''
+      - ' &7Jogador: &f{player}'
+      - ' &7Nivel da Espada: &e{sword_level}'
+      - ' &7Rank: {sword_rank}'
+      - ''
+  # Item de slot vazio
+  empty-slot:
+    material: 'STAINED_GLASS_PANE:7'
+    name: ' '
+  # Decoracao
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    glass3:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    glass4:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    glass5:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    glass6:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    glass7:
+      slot: 36
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    glass8:
+      slot: 44
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    sep1:
+      slot: 27
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    sep2:
+      slot: 28
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    sep3:
+      slot: 29
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    sep4:
+      slot: 30
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    sep5:
+      slot: 31
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    sep6:
+      slot: 32
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    sep7:
+      slot: 33
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    sep8:
+      slot: 34
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+    sep9:
+      slot: 35
+      material: 'STAINED_GLASS_PANE:1'
+      name: ' '
+
+# Seletor de Arenas
+arenas-selector:
+  name: '&8Arenas'
+  size: 36
+  matchmaking-slot: 11
+  solo-slot: 13
+  party-slot: 15
+  back-slot: 31
+  # Botao para dungeons de matchmaking (grupo)
+  matchmaking-button:
+    material: 'BEACON'
+    name: '&a&lMatchmaking'
+    lore:
+      - ''
+      - ' &7Dungeons em grupo com outros'
+      - ' &7jogadores via fila de espera.'
+      - ''
+      - ' &eClique para ver as arenas'
+      - ''
+  # Botao para dungeons solo
+  solo-button:
+    material: 'PAPER'
+    name: '&d&lSolo'
+    lore:
+      - ''
+      - ' &7Dungeons individuais.'
+      - ' &7Requer um passe para entrar.'
+      - ''
+      - ' &eClique para ver as arenas'
+      - ''
+  # Botao para dungeons em party
+  party-button:
+    material: 'BEACON'
+    name: '&6&lParty'
+    lore:
+      - ''
+      - ' &7Dungeons em grupo com amigos.'
+      - ' &7Cada membro precisa de um passe.'
+      - ''
+      - ' &eClique para criar uma party'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 27
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 35
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu de Arenas Matchmaking
+arenas-matchmaking:
+  name: '&8Arenas — Matchmaking'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  dungeon-item:
+    material: 'BEACON'
+    name: '&a{dungeon_name}'
+    lore:
+      - ''
+      - ' &7Status: {status}'
+      - ' &7Fila: &e{queue_size}&7/&e{max_players}'
+      - ' &7Min jogadores: &e{min_players}'
+      - ''
+      - ' &eClique para entrar na fila'
+      - ''
+  dungeon-item-disabled:
+    material: 'BARRIER'
+    name: '&c{dungeon_name} &8(Desativada)'
+    lore:
+      - ''
+      - ' &7Esta dungeon esta desativada.'
+      - ''
+  facing:
+    glass1:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 49
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu de Arenas Solo
+arenas-solo:
+  name: '&8Arenas — Solo'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  dungeon-item:
+    material: 'PAPER'
+    name: '&d{dungeon_name}'
+    lore:
+      - ''
+      - ' &7Status: {status}'
+      - ' &7Passes disponiveis: &d{passes}'
+      - ''
+      - ' &eClique para entrar'
+      - ''
+  dungeon-item-disabled:
+    material: 'BARRIER'
+    name: '&c{dungeon_name} &8(Desativada)'
+    lore:
+      - ''
+      - ' &7Esta dungeon esta desativada.'
+      - ''
+  facing:
+    glass1:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 49
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Hub de Upgrades
+upgrades-hub:
+  name: '&6&lUpgrades'
+  size: 27
+  sword-button:
+    slot: 11
+    material: 'DIAMOND_SWORD'
+    name: '&6&lEspada'
+    lore:
+      - ''
+      - ' &7Upgrades para sua espada.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  armor-button:
+    slot: 15
+    material: 'DIAMOND_CHESTPLATE'
+    name: '&9&lArmadura'
+    lore:
+      - ''
+      - ' &7Upgrades para sua armadura.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  back-button:
+    slot: 22
+    material: 'ARROW'
+    name: '&cVoltar'
+    lore:
+      - ''
+      - ' &7Clique para voltar.'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu de Upgrades de Armadura
+armor-upgrade:
+  name: '&9&lUpgrades de Armadura'
+  size: 54
+  back-slot: 49
+  upgrade-slots: [19,20,21,22,23,24,25]
+  player-info:
+    slot: 4
+    material: '{player}'
+    name: '&9&lSeu Perfil'
+    lore:
+      - ''
+      - ' &7Jogador: &f{player}'
+      - ' &7Nivel de Armadura: &e{armor_level}'
+      - ' &7Rank: {armor_rank}'
+      - ''
+  empty-slot:
+    material: 'STAINED_GLASS_PANE:7'
+    name: ' '
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    glass3:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    glass4:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    glass5:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    glass6:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    glass7:
+      slot: 36
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    glass8:
+      slot: 44
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    sep1:
+      slot: 27
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    sep2:
+      slot: 28
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    sep3:
+      slot: 29
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    sep4:
+      slot: 30
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    sep5:
+      slot: 31
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    sep6:
+      slot: 32
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    sep7:
+      slot: 33
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    sep8:
+      slot: 34
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+    sep9:
+      slot: 35
+      material: 'STAINED_GLASS_PANE:11'
+      name: ' '
+
+# Menu de Arenas Party
+arenas-party-select:
+  name: '&8Arenas — Party'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  dungeon-item:
+    material: 'BEACON'
+    name: '&6{dungeon_name}'
+    lore:
+      - ''
+      - ' &7Status: {status}'
+      - ' &7Passes disponiveis: &6{passes}'
+      - ''
+      - ' &eClique para selecionar'
+      - ''
+  dungeon-item-disabled:
+    material: 'BARRIER'
+    name: '&c{dungeon_name} &8(Desativada)'
+    lore:
+      - ''
+      - ' &7Esta dungeon esta desativada.'
+      - ''
+  facing:
+    glass1:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 49
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu de Party
+party-menu:
+  name: '&8Party — {dungeon_name}'
+  size: 54
+  dungeon-info-slot: 4
+  invite-slot: 38
+  start-slot: 49
+  leave-slot: 53
+  back-slot: 45
+  member-slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31]
+  dungeon-info-item:
+    material: 'BEACON'
+    name: '&6&l{dungeon_name}'
+    lore:
+      - ''
+      - ' &7Dungeon selecionada para a party.'
+      - ' &7Cada membro precisa de um passe.'
+      - ''
+      - ' &7Membros: &e{members}&7/&e{max_members}'
+      - ''
+  member-item:
+    material: '{player}'
+    name: '&a{player}'
+    lore:
+      - ''
+      - ' &7Status: &aAceito'
+      - ''
+  member-pending-item:
+    material: '{player}'
+    name: '&e{player}'
+    lore:
+      - ''
+      - ' &7Status: &ePendente'
+      - ''
+  invite-button:
+    material: 'BOOK'
+    name: '&aConvidar Jogador'
+    lore:
+      - ''
+      - ' &7Clique para convidar um jogador'
+      - ' &7digitando o nome no chat.'
+      - ''
+  start-button:
+    material: 'NETHER_STAR'
+    name: '&a&lIniciar Dungeon'
+    lore:
+      - ''
+      - ' &7Clique para iniciar a dungeon.'
+      - ' &7Todos os membros precisam ter'
+      - ' &7um passe valido.'
+      - ''
+  leave-button:
+    material: 'BARRIER'
+    name: '&c&lSair da Party'
+    lore:
+      - ''
+      - ' &7Clique para sair da party.'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 36
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 44
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    sep1:
+      slot: 27
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    sep2:
+      slot: 35
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    sep3:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    sep4:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    sep5:
+      slot: 48
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    sep6:
+      slot: 50
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    sep7:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    sep8:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu de Edição de Setup de Dungeon
+dungeon-setup-edit:
+  name: '&8&lSetup da Dungeon &7- &f{dungeon}'
+  size: 54
+  # BLOCO 1 — Configuracoes gerais
+  icon:
+    slot: 9
+    material: 'NETHER_STAR'
+    name: '&e&lIcone da Dungeon'
+    lore:
+      - ''
+      - ' &7Escolha visual do menu e listagem.'
+      - ''
+      - ' &fComo definir:'
+      - ' &8- &7Clique em um item do seu inventario.'
+      - ''
+      - ' &8- &7O item sera salvo como icone da dungeon.'
+      - ''
+  display-name:
+    slot: 10
+    material: 'NAME_TAG'
+    name: '&e&lNome de Exibicao'
+    lore:
+      - ''
+      - ' &7Atual: &f{display_name}'
+      - ''
+      - ' &eClique para editar no chat.'
+      - ' &8- &7Aceita cores com &f& &7(ex: &a&lEpic).' 
+      - ''
+  enabled:
+    slot: 11
+    material: 'LEVER'
+    name: '&a&lDungeon Habilitada'
+    lore:
+      - ''
+      - ' &7Status: {enabled}'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
+  solo:
+    slot: 12
+    material: 'IRON_SWORD'
+    name: '&b&lModo Solo'
+    lore:
+      - ''
+      - ' &7Status: {solo}'
+      - ''
+      - ' &7Quando ligado, entrada somente solo.'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
+  death-mode:
+    slot: 13
+    material: 'SKULL_ITEM:1'
+    name: '&c&lModo de Morte'
+    lore:
+      - ''
+      - ' &7Atual: &f{death_mode}'
+      - ''
+      - ' &7REMOVE &8- &7remove ao morrer'
+      - ' &7SPECTATOR &8- &7vira espectador'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
+  require-empty-inventory:
+    slot: 14
+    material: 'CHEST'
+    name: '&6&lInventario Vazio Obrigatorio'
+    lore:
+      - ''
+      - ' &7Status: {require_empty_inv}'
+      - ''
+      - ' &7Quando ligado, jogador precisa entrar sem itens.'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
+  min-players:
+    slot: 15
+    material: 'REDSTONE'
+    name: '&e&lMinimo de Jogadores'
+    lore:
+      - ''
+      - ' &7Atual: &f{min_players}'
+      - ''
+      - ' &eClique esquerdo &8- &7+1'
+      - ' &eClique direito &8- &7-1'
+      - ''
+  max-players:
+    slot: 16
+    material: 'EMERALD'
+    name: '&e&lMaximo de Jogadores'
+    lore:
+      - ''
+      - ' &7Atual: &f{max_players}'
+      - ''
+      - ' &eClique esquerdo &8- &7+1'
+      - ' &eClique direito &8- &7-1'
+      - ''
+  charge-pass-matchmaking:
+    slot: 17
+    material: 'MAP'
+    name: '&d&lCobrar Passe (Matchmaking)'
+    lore:
+      - ''
+      - ' &7Status: {charge_pass_matchmaking}'
+      - ''
+      - ' &7Controla consumo de passe na fila publica.'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
+  charge-pass-solo-party:
+    slot: 18
+    material: 'BOOK'
+    name: '&d&lCobrar Passe (Solo/Party)'
+    lore:
+      - ''
+      - ' &7Status: {charge_pass_solo_party}'
+      - ''
+      - ' &7Controla consumo de passe no modo solo/party.'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
+
+  # BLOCO 2 — Progressao / rounds
+  create-round:
+    slot: 28
+    material: 'SLIME_BALL'
+    name: '&a&lGerenciar Rounds'
+    lore:
+      - ''
+      - ' &7Rounds atuais: &f{total_rounds}'
+      - ''
+      - ' &7Abre o menu de rounds para criar/editar.'
+      - ''
+      - ' &eClique para abrir.'
+      - ''
+  mobs-config:
+    slot: 29
+    material: 'BOOK_AND_QUILL'
+    name: '&b&lConfigurar Mobs por Round'
+    lore:
+      - ''
+      - ' &7Edite atributos, recompensas e skills.'
+      - ' &7Cada round possui sua propria lista de mobs.'
+      - ''
+      - ' &eClique para abrir.'
+      - ''
+  boss-config:
+    slot: 30
+    material: 'ENCHANTED_BOOK'
+    name: '&5&lConfigurar Boss por Round'
+    lore:
+      - ''
+      - ' &7Edite atributos, recompensas e skills do boss.'
+      - ' &7Cada round possui um boss dedicado.'
+      - ''
+      - ' &eClique para abrir.'
+      - ''
+  mobs-spawn:
+    slot: 31
+    material: 'MONSTER_EGG:54'
+    name: '&3&lSpawn de Mobs'
+    lore:
+      - ''
+      - ' &7Define spawn de mobs na sua posicao atual.'
+      - ''
+      - ' &eClique e informe o round no chat.'
+      - ''
+  boss-spawn:
+    slot: 32
+    material: 'NETHER_STAR'
+    name: '&5&lSpawn de Boss'
+    lore:
+      - ''
+      - ' &7Define spawn de boss na sua posicao atual.'
+      - ''
+      - ' &eClique e informe o round no chat.'
+      - ''
+
+  # BLOCO 3 — Extras
+  gate-material:
+    slot: 33
+    material: 'IRON_BARS'
+    name: '&6&lMaterial dos Portoes'
+    lore:
+      - ''
+      - ' &7Atual: &f{gate_material}'
+      - ''
+      - ' &7Altera o bloco usado em todos os portoes.'
+      - ''
+      - ' &eClique para editar no chat.'
+      - ''
+  whitelist:
+    slot: 34
+    material: 'BOOK'
+    name: '&e&lWhitelist'
+    lore:
+      - ''
+      - ' &7Status: {whitelist}'
+      - ''
+      - ' &7Gerencie jogadores permitidos na dungeon.'
+      - ''
+      - ' &eClique para abrir o submenu.'
+      - ''
+  # close button
+  close-button:
+    slot: 49
+    material: 'ARROW:0'
+    name: '&cFechar'
+    lore:
+      - ''
+      - ' &7Clique para fechar.'
+      - ''
+  # decoracao
+  facing:
+    row1a:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1b:
+      slot: 1
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1c:
+      slot: 2
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1d:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1e:
+      slot: 4
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1f:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1g:
+      slot: 6
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1h:
+      slot: 7
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1i:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6a:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6b:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6c:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6d:
+      slot: 48
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6e:
+      slot: 50
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6f:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6g:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6h:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+
+# Menu de Whitelist da Dungeon
+dungeon-whitelist:
+  name: '&8&lWhitelist da Dungeon &7- &f{dungeon}'
+  size: 54
+  player-slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  toggle:
+    slot: 4
+    material: 'LEVER'
+    name: '&e&lStatus da Whitelist'
+    lore:
+      - ''
+      - ' &7Status: {whitelist}'
+      - ''
+      - ' &7Quando ligada, apenas jogadores da lista entram.'
+      - ''
+      - ' &eClique para ligar/desligar.'
+      - ''
+  add-player:
+    slot: 49
+    material: 'NETHER_STAR'
+    name: '&a&lAdicionar Jogador'
+    lore:
+      - ''
+      - ' &7Adiciona um jogador digitando no chat.'
+      - ' &7Use nick exato para evitar erro.'
+      - ''
+      - ' &eClique para adicionar.'
+      - ''
+  player-entry:
+    material: 'SKULL_ITEM:3'
+    name: '&f{player}'
+    lore:
+      - ''
+      - ' &7UUID: &8{uuid}'
+      - ''
+      - ' &cClique para remover da whitelist.'
+      - ''
+  empty-slot:
+    material: 'STAINED_GLASS_PANE:7'
+    name: ' '
+  previous:
+    slot: 45
+    material: 'ARROW:0'
+    name: '&cPagina Anterior'
+    lore:
+      - ' &7Clique para ir a pagina anterior.'
+  next:
+    slot: 53
+    material: 'ARROW:0'
+    name: '&aProxima Pagina'
+    lore:
+      - ' &7Clique para ir a proxima pagina.'
+  back:
+    slot: 48
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar ao setup.'
+  facing:
+    row1a:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1b:
+      slot: 1
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1c:
+      slot: 2
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1d:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1e:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1f:
+      slot: 6
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1g:
+      slot: 7
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row1h:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6a:
+      slot: 36
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6b:
+      slot: 37
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6c:
+      slot: 38
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6d:
+      slot: 39
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6e:
+      slot: 40
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6f:
+      slot: 41
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6g:
+      slot: 42
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6h:
+      slot: 43
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6i:
+      slot: 44
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6j:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6k:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6l:
+      slot: 50
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6m:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    row6n:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '

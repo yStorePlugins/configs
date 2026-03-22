@@ -1,0 +1,109 @@
+# Upgrades de armadura compraveis durante a dungeon.
+# O custo real por compra e: amount * (nivel_atual + 1)
+# Use {providerId} na lore para exibir o custo (ex: {money} sera substituido pelo valor).
+
+upgrades:
+  pele_de_ferro:
+    display-name: '&7Pele de Ferro'
+    max-level: 4
+    enchant: PROTECTION_ENVIRONMENTAL
+    enchant-level-per-upgrade: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 40.0
+    icon:
+      material: 'IRON_CHESTPLATE'
+      name: '&7Pele de Ferro'
+      lore:
+        - ''
+        - ' &7Adiciona Protecao a toda a armadura.'
+        - ' &7Nivel: &e{level}&7/&e{max_level}'
+        - ' &7Custo: &5{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  escudo_de_fogo:
+    display-name: '&6Escudo de Fogo'
+    max-level: 2
+    enchant: PROTECTION_FIRE
+    enchant-level-per-upgrade: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 50.0
+    icon:
+      material: 'BLAZE_POWDER'
+      name: '&6Escudo de Fogo'
+      lore:
+        - ''
+        - ' &7Adiciona Protecao contra Fogo a armadura.'
+        - ' &7Nivel: &e{level}&7/&e{max_level}'
+        - ' &7Custo: &5{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  reflexo_de_projetil:
+    display-name: '&aReflexo de Projetil'
+    max-level: 4
+    enchant: PROTECTION_PROJECTILE
+    enchant-level-per-upgrade: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 45.0
+    icon:
+      material: 'ARROW'
+      name: '&aReflexo de Projetil'
+      lore:
+        - ''
+        - ' &7Adiciona Protecao contra Projeteis a armadura.'
+        - ' &7Nivel: &e{level}&7/&e{max_level}'
+        - ' &7Custo: &5{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  passos_suaves:
+    display-name: '&bPassos Suaves'
+    max-level: 2
+    enchant: PROTECTION_FALL
+    enchant-level-per-upgrade: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 30.0
+    icon:
+      material: 'FEATHER'
+      name: '&bPassos Suaves'
+      lore:
+        - ''
+        - ' &7Adiciona Queda Suave as botas.'
+        - ' &7Nivel: &e{level}&7/&e{max_level}'
+        - ' &7Custo: &5{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  vigor_profundo:
+    display-name: '&cVigor Profundo'
+    max-level: 3
+    enchant: THORNS
+    enchant-level-per-upgrade: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 60.0
+    icon:
+      material: 'CACTUS'
+      name: '&cVigor Profundo'
+      lore:
+        - ''
+        - ' &7Adiciona Espinhos a toda a armadura.'
+        - ' &7Nivel: &e{level}&7/&e{max_level}'
+        - ' &7Custo: &5{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''

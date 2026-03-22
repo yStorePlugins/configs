@@ -1,0 +1,269 @@
+#  ____         __  __
+# |  _ \       / _|/ _|
+# | |_) |_   _| |_| |_ ___
+# |  _ <| | | |  _|  _/ __|
+# | |_) | |_| | | | | \__ \
+# |____/ \__,_|_| |_| |___/
+#
+# Configuracao dos buffs e upgrades do Bruxo.
+# Disponivel no menu /bruxo (apenas dentro de dungeons).
+
+buffs:
+
+  # ---- BUFFS (temporarios) ----
+
+  buff_dano:
+    type: BUFF
+    buff-type: DANO
+    display-name: '&c+Dano'
+    duration-seconds: 60
+    bonus-damage: 5.0
+    effect-amplifier: 0
+    max-level: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 50.0
+    icon:
+      material: DIAMOND_SWORD
+      name: '&c&lBuff de Dano'
+      lore:
+        - ''
+        - ' &7Garante &c+{bonus_damage} de dano&7 extra'
+        - ' &7durante &e{duration}s&7.'
+        - ''
+        - ' &7Custo: &e{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  buff_resistencia:
+    type: BUFF
+    buff-type: RESISTENCIA
+    display-name: '&9+Resistencia'
+    duration-seconds: 60
+    bonus-damage: 0.0
+    effect-amplifier: 1
+    max-level: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 60.0
+    icon:
+      material: 'IRON_CHESTPLATE'
+      name: '&9&lBuff de Resistencia'
+      lore:
+        - ''
+        - ' &7Garante reducao de dano'
+        - ' &7durante &e{duration}s&7.'
+        - ''
+        - ' &7Custo: &e{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  buff_health_boost:
+    type: BUFF
+    buff-type: HEALTH_BOOST
+    display-name: '&a+Vida'
+    duration-seconds: 60
+    bonus-damage: 0.0
+    effect-amplifier: 3
+    max-level: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 70.0
+    icon:
+      material: 'GOLDEN_APPLE'
+      name: '&a&lBuff de Vida'
+      lore:
+        - ''
+        - ' &7Garante coracoes extras'
+        - ' &7durante &e{duration}s&7.'
+        - ''
+        - ' &7Custo: &e{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  buff_imunidade:
+    type: BUFF
+    buff-type: IMUNIDADE
+    display-name: '&5Imunidade'
+    duration-seconds: 10
+    bonus-damage: 0.0
+    effect-amplifier: 0
+    max-level: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 120.0
+    icon:
+      material: 'NETHER_STAR'
+      name: '&5&lBuff de Imunidade'
+      lore:
+        - ''
+        - ' &7Garante imunidade a dano, efeitos'
+        - ' &7e skills durante &e{duration}s&7.'
+        - ''
+        - ' &7Custo: &e{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  buff_experiente:
+    type: BUFF
+    buff-type: EXPERIENTE
+    display-name: '&bExperiente'
+    duration-seconds: 0
+    bonus-damage: 0.0
+    effect-amplifier: 0
+    max-level: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 80.0
+    icon:
+      material: 'BOOK'
+      name: '&b&lBuff Experiente'
+      lore:
+        - ''
+        - ' &7Garante imunidade a skills'
+        - ' &7de mobs por toda a partida.'
+        - ''
+        - ' &7Custo: &e{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  buff_vida_extra:
+    type: BUFF
+    buff-type: VIDA_EXTRA
+    display-name: '&aVida Extra'
+    duration-seconds: 0
+    bonus-damage: 0.0
+    effect-amplifier: 0
+    max-level: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 100.0
+    icon:
+      material: 'EMERALD'
+      name: '&a&lBuff Vida Extra'
+      lore:
+        - ''
+        - ' &7Garante uma vida extra caso'
+        - ' &7morra na partida.'
+        - ''
+        - ' &7Custo: &e{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  buff_flutuar:
+    type: BUFF
+    buff-type: FLUTUAR
+    display-name: '&eFlutuacao'
+    duration-seconds: 30
+    bonus-damage: 0.0
+    effect-amplifier: 0
+    max-level: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 90.0
+    icon:
+      material: 'FEATHER'
+      name: '&e&lBuff de Flutuacao'
+      lore:
+        - ''
+        - ' &7Garante a habilidade de voar'
+        - ' &7durante &e{duration}s&7.'
+        - ''
+        - ' &7Custo: &e{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  # ---- UPGRADES (por partida) ----
+
+  upgrade_inquebravel:
+    type: UPGRADE
+    upgrade-type: INQUEBRAVEL
+    display-name: '&6Inquebr&lavel'
+    duration-seconds: 0
+    bonus-damage: 0.0
+    effect-amplifier: 0
+    max-level: 5
+    amount-to-give: 0
+    prices:
+      price1:
+        provider: 'money'
+        amount: 40.0
+    icon:
+      material: 'DIAMOND_CHESTPLATE'
+      name: '&6&lUpgrade Inquebrav&lel'
+      lore:
+        - ''
+        - ' &7Adiciona &6Unbreaking&7 na armadura.'
+        - ' &7Stackavel ate &enivel 5&7.'
+        - ''
+        - ' &7Custo: &e{money} &7Money &8(por nivel)'
+        - ' &7Nivel atual: &e{level}/{max_level}'
+        - ''
+        - ' &eClique para comprar proximo nivel'
+        - ''
+
+  upgrade_macas:
+    type: UPGRADE
+    upgrade-type: MACAS
+    display-name: '&cMacas Douradas'
+    duration-seconds: 0
+    bonus-damage: 0.0
+    effect-amplifier: 0
+    max-level: 1
+    amount-to-give: 3
+    prices:
+      price1:
+        provider: 'money'
+        amount: 30.0
+    icon:
+      material: 'GOLDEN_APPLE'
+      name: '&c&lUpgrade Macas'
+      lore:
+        - ''
+        - ' &7Adiciona &c3 macas douradas&7'
+        - ' &7no inventario.'
+        - ''
+        - ' &7Custo: &e{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  upgrade_reparar:
+    type: UPGRADE
+    upgrade-type: REPARAR
+    display-name: '&aReparar'
+    duration-seconds: 0
+    bonus-damage: 0.0
+    effect-amplifier: 0
+    max-level: 1
+    amount-to-give: 0
+    prices:
+      price1:
+        provider: 'money'
+        amount: 50.0
+    icon:
+      material: 'ANVIL'
+      name: '&a&lUpgrade Reparar'
+      lore:
+        - ''
+        - ' &7Repara toda a armadura'
+        - ' &7do jogador.'
+        - ''
+        - ' &7Custo: &e{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''

@@ -1,0 +1,89 @@
+# Upgrades da espada compraveis durante a dungeon.
+# O custo real por compra e: amount * (nivel_atual + 1)
+# Ex: amount: 30.0 -> nivel 0 custa 30, nivel 1 custa 60, nivel 2 custa 90, etc.
+# Use {providerId} na lore para exibir o custo (ex: {money} sera substituido por "30").
+
+upgrades:
+  fio_da_lamina:
+    display-name: '&cFio da Lamina'
+    max-level: 5
+    enchant: DAMAGE_ALL
+    enchant-level-per-upgrade: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 30.0
+    icon:
+      material: 'DIAMOND_SWORD'
+      name: '&cFio da Lamina'
+      lore:
+        - ''
+        - ' &7Aumenta o dano da espada.'
+        - ' &7Nivel: &e{level}&7/&e{max_level}'
+        - ' &7Custo: &5{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  chamas_eternas:
+    display-name: '&6Chamas Eternas'
+    max-level: 2
+    enchant: FIRE_ASPECT
+    enchant-level-per-upgrade: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 50.0
+    icon:
+      material: 'BLAZE_ROD'
+      name: '&6Chamas Eternas'
+      lore:
+        - ''
+        - ' &7Adiciona Fogo a espada.'
+        - ' &7Nivel: &e{level}&7/&e{max_level}'
+        - ' &7Custo: &5{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  recuo_brutal:
+    display-name: '&9Recuo Brutal'
+    max-level: 2
+    enchant: KNOCKBACK
+    enchant-level-per-upgrade: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 20.0
+    icon:
+      material: 'FEATHER'
+      name: '&9Recuo Brutal'
+      lore:
+        - ''
+        - ' &7Aumenta o knockback da espada.'
+        - ' &7Nivel: &e{level}&7/&e{max_level}'
+        - ' &7Custo: &5{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''
+
+  alma_afiada:
+    display-name: '&5Alma Afiada'
+    max-level: 3
+    enchant: DAMAGE_UNDEAD
+    enchant-level-per-upgrade: 1
+    prices:
+      price1:
+        provider: 'money'
+        amount: 60.0
+    icon:
+      material: 'SKULL_ITEM:1'
+      name: '&5Alma Afiada'
+      lore:
+        - ''
+        - ' &7Aumenta o dano contra mortos-vivos.'
+        - ' &7Nivel: &e{level}&7/&e{max_level}'
+        - ' &7Custo: &5{money} &7Money'
+        - ''
+        - ' &eClique para comprar'
+        - ''

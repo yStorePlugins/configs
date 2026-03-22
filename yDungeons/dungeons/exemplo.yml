@@ -1,0 +1,276 @@
+# Exemplo de configuracao de dungeon.
+# Copie este arquivo e edite para criar novas dungeons.
+# Use /dungeon setup para configurar spawn, saida, portoes, mobs e bosses in-game.
+
+# Identificador unico da dungeon (nome do arquivo sem .yml)
+key: 'exemplo'
+
+# Nome exibido no menu
+display-name: '&6Dungeon Exemplo'
+
+# Se a dungeon esta ativada
+enabled: false
+
+# Se a dungeon e solo (um jogador, requer passe)
+solo: false
+
+# Item fisico do passe desta dungeon.
+# Obrigatorio para dungeons solo (solo: true).
+# Suporta os mesmos campos de qualquer item: material, name, lore, etc.
+passe-item:
+  material: 'PAPER'
+  name: '&d&lPasse de Dungeon &8— &f{dungeon_name}'
+  lore:
+    - ''
+    - ' &7Este item e um passe para entrar'
+    - ' &7na dungeon solo &f{dungeon_name}&7.'
+    - ''
+    - ' &dClique com o botao direito para ativar'
+    - ''
+
+# Minimo e maximo de jogadores por sessao
+min-players: 1
+max-players: 4
+
+# Modo de morte: REMOVE (tp para saida) ou SPECTATOR (vira espectador)
+death-mode: 'REMOVE'
+
+# Se verdadeiro, o jogador deve estar com o inventario vazio para entrar na fila ou iniciar a dungeon.
+require-empty-inventory: false
+
+# Whitelist de jogadores (UUIDs). Se vazio, qualquer jogador pode entrar.
+whitelist:
+  enabled: false
+  players: []
+
+# Localizacoes configuradas via /dungeon setup
+# Nao edite manualmente — use o comando de setup
+spawn-location: ''
+exit-location: ''
+
+# Rodadas
+rounds:
+  1:
+    # Locais de spawn dos mobs nesse round (lista de strings serializadas pelo /dungeon setup)
+    mob-spawn-locations: []
+    # Local de spawn do boss nesse round
+    boss-spawn-location: ''
+    mobs:
+      zombie:
+        entity-type: 'ZOMBIE'
+        custom-name: '&cZumbi'
+        amount: 5
+        health: 20.0
+        damage: 3.0
+        speed: 0.3
+        rewards:
+          money: 1
+        sword-xp-on-kill: 1
+        potion-effect:
+          chance: 0.0
+          type: ''
+          duration: 60
+          amplifier: 0
+        skills:
+          repulsao:
+            type: 'REPULSAO'
+            chance: 15.0
+            cooldown-ticks: 60
+            duration-ticks: 40
+            radius: 5.0
+      skeleton:
+        entity-type: 'SKELETON'
+        custom-name: '&7Esqueleto'
+        amount: 3
+        health: 16.0
+        damage: 2.0
+        speed: 0.3
+        rewards:
+          money: 1
+        sword-xp-on-kill: 1
+        potion-effect:
+          chance: 0.0
+          type: ''
+          duration: 60
+          amplifier: 0
+        skills:
+          flechas:
+            type: 'FLECHAS'
+            chance: 25.0
+            cooldown-ticks: 40
+            duration-ticks: 40
+            radius: 5.0
+    boss:
+      enabled: false
+      entity-type: 'ZOMBIE'
+      custom-name: ''
+      health: 20.0
+      damage: 2.0
+      speed: 0.3
+      no-ai: false
+      rewards:
+        money: 10
+      sword-xp-on-kill: 3
+      mythic-mob: ''
+      spawn-broadcast: ''
+      death-broadcast: ''
+      potion-effect:
+        chance: 0.0
+        type: ''
+        duration: 60
+        amplifier: 0
+
+  2:
+    mob-spawn-locations: []
+    boss-spawn-location: ''
+    mobs:
+      zombie_poderoso:
+        entity-type: 'ZOMBIE'
+        custom-name: '&cZumbi Poderoso'
+        amount: 6
+        health: 30.0
+        damage: 5.0
+        speed: 0.3
+        rewards:
+          money: 2
+        sword-xp-on-kill: 1
+        potion-effect:
+          chance: 0.0
+          type: ''
+          duration: 60
+          amplifier: 0
+        skills:
+          enraizar:
+            type: 'ENRAIZAR'
+            chance: 20.0
+            cooldown-ticks: 80
+            duration-ticks: 60
+            radius: 5.0
+          aura_de_fogo:
+            type: 'AURA_DE_FOGO'
+            chance: 10.0
+            cooldown-ticks: 120
+            duration-ticks: 60
+            radius: 5.0
+      aranha:
+        entity-type: 'SPIDER'
+        custom-name: '&2Aranha'
+        amount: 4
+        health: 24.0
+        damage: 4.0
+        speed: 0.3
+        rewards:
+          money: 1
+        sword-xp-on-kill: 1
+        potion-effect:
+          chance: 0.0
+          type: ''
+          duration: 60
+          amplifier: 0
+        skills:
+          desorientar:
+            type: 'DESORIENTAR'
+            chance: 20.0
+            cooldown-ticks: 100
+            duration-ticks: 60
+            radius: 5.0
+      creeper:
+        entity-type: 'CREEPER'
+        custom-name: '&aCreeper'
+        amount: 2
+        health: 20.0
+        damage: 6.0
+        speed: 0.3
+        rewards:
+          money: 2
+        sword-xp-on-kill: 1
+        potion-effect:
+          chance: 0.0
+          type: ''
+          duration: 60
+          amplifier: 0
+        skills:
+          bomba_viva:
+            type: 'BOMBA_VIVA'
+            chance: 30.0
+            cooldown-ticks: 150
+            duration-ticks: 60
+            radius: 5.0
+    boss:
+      enabled: false
+      entity-type: 'ZOMBIE'
+      custom-name: ''
+      health: 20.0
+      damage: 2.0
+      speed: 0.3
+      no-ai: false
+      rewards:
+        money: 10
+      sword-xp-on-kill: 3
+      mythic-mob: ''
+      spawn-broadcast: ''
+      death-broadcast: ''
+      potion-effect:
+        chance: 0.0
+        type: ''
+        duration: 60
+        amplifier: 0
+
+  3:
+    mob-spawn-locations: []
+    boss-spawn-location: ''
+    mobs: {}
+    boss:
+      enabled: true
+      entity-type: 'WITHER_SKELETON'
+      custom-name: '&4&lSenhor das Trevas'
+      health: 200.0
+      damage: 10.0
+      speed: 0.25
+      no-ai: false
+      rewards:
+        money: 20
+      sword-xp-on-kill: 5
+      mythic-mob: ''
+      spawn-broadcast: '&4&lO Senhor das Trevas acordou!'
+      death-broadcast: '&aO Senhor das Trevas foi derrotado!'
+      potion-effect:
+        chance: 0.0
+        type: ''
+        duration: 60
+        amplifier: 0
+      skills:
+        raio:
+          type: 'RAIO'
+          chance: 35.0
+          cooldown-ticks: 60
+          duration-ticks: 40
+          radius: 8.0
+        corrente:
+          type: 'CORRENTE'
+          chance: 20.0
+          cooldown-ticks: 80
+          duration-ticks: 60
+          radius: 8.0
+        teleporte:
+          type: 'TELEPORTE'
+          chance: 15.0
+          cooldown-ticks: 100
+          duration-ticks: 40
+          radius: 8.0
+        dardo_venenoso:
+          type: 'DARDO_VENENOSO'
+          chance: 25.0
+          cooldown-ticks: 70
+          duration-ticks: 60
+          radius: 8.0
+        bola_de_fogo:
+          type: 'BOLA_DE_FOGO'
+          chance: 20.0
+          cooldown-ticks: 90
+          duration-ticks: 60
+          radius: 8.0
+
+# Portoes — configurados via /dungeon setup portao {n}
+# Nao edite manualmente — use o comando de setup
+gates: {}

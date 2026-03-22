@@ -1,0 +1,92 @@
+#   ____                            _
+# |  _ \ _____      ____ _ _ __ __| |___
+# | |_) / _ \ \ /\ / / _` | '__/ _` / __|
+# |  _ <  __/\ V  V / (_| | | | (_| \__ \
+# |_| \_\___| \_/\_/ \__,_|_|  \__,_|___/
+#
+
+rewards:
+
+  mob_kill:
+    display-name: '&7Recompensa de Mob'
+    trigger: MOB_KILL
+    give-item:
+      enabled: true
+      material: 'GOLD_NUGGET'
+      name: '&6Pepita de Ouro'
+      lore:
+        - ''
+        - ' &7Recompensa por matar um mob'
+        - ' &7na dungeon.'
+        - ''
+      amount: 1
+    give-commands:
+      enabled: false
+      commands: []
+    preview-item:
+      material: 'GOLD_NUGGET'
+      name: '&6&lRecompensa de Mob &8x{count}'
+      lore:
+        - ''
+        - ' &7Voce tem &e{count}&7 recompensas'
+        - ' &7de kills de mobs pendentes.'
+        - ''
+        - ' &aClique para coletar'
+        - ''
+
+  boss_kill:
+    display-name: '&cRecompensa de Boss'
+    trigger: BOSS_KILL
+    give-item:
+      enabled: true
+      material: 'DIAMOND'
+      name: '&bDiamante'
+      lore:
+        - ''
+        - ' &7Recompensa por derrotar um'
+        - ' &7boss na dungeon.'
+        - ''
+      amount: 2
+    give-commands:
+      enabled: true
+      commands:
+        - 'eco give {player} 500'
+    preview-item:
+      material: 'DIAMOND'
+      name: '&b&lRecompensa de Boss &8x{count}'
+      lore:
+        - ''
+        - ' &7Voce tem &e{count}&7 recompensas'
+        - ' &7de kills de bosses pendentes.'
+        - ''
+        - ' &aClique para coletar'
+        - ''
+
+  dungeon_complete:
+    display-name: '&aDungeon Completada'
+    trigger: DUNGEON_COMPLETE
+    give-item:
+      enabled: true
+      material: 'EMERALD'
+      name: '&aEsmeralda'
+      lore:
+        - ''
+        - ' &7Recompensa por completar'
+        - ' &7a dungeon com sucesso.'
+        - ''
+      amount: 5
+    give-commands:
+      enabled: true
+      commands:
+        - 'eco give {player} 1000'
+        - 'say {player} completou a Dungeon!'
+    preview-item:
+      material: 'EMERALD'
+      name: '&a&lDungeon Completada &8x{count}'
+      lore:
+        - ''
+        - ' &7Voce tem &e{count}&7 recompensas'
+        - ' &7de dungeons completadas pendentes.'
+        - ''
+        - ' &aClique para coletar'
+        - ''
