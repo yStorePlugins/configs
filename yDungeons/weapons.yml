@@ -1,0 +1,378 @@
+# Cada arma é um item especial dado ao jogador ao entrar na dungeon.
+# Ao clicar com a arma, um projétil invisível é disparado com partículas,
+# causando dano ao atingir mobs/bosses — estilo CS Hypixel.
+#
+# UPGRADES disponíveis por arma:
+#   damage      — aumenta o dano do projétil por nível
+#   cooldown    — reduz o cooldown de disparo por nível
+#   speed       — aumenta a velocidade/alcance do projétil por nível
+#   multishot   — dispara projéteis adicionais por nível
+#   particles   — aumenta a intensidade de partículas por nível
+#   ammo-bullets — aumenta as balas por pente por nível
+#   ammo-mags   — aumenta a quantidade de pentes por nível
+#
+# PARTÍCULAS suportadas (nomes PacketEvents — sempre em minúsculo):
+#   flame, soul_fire_flame, smoke, large_smoke, portal, enchant,
+#   crit, enchanted_hit, witch, end_rod, totem_of_undying,
+#   dragon_breath, explosion, poof, firework, heart, angry_villager,
+#   happy_villager, note, cloud, snowflake, glow, electric_spark, etc.
+#
+# O custo real de cada upgrade é: amount * (nivel_atual + 1)
+# Use {providerId} na lore para exibir o custo (ex: {money} → "50").
+
+weapons:
+
+  varinha_arcana:
+    display-name: '&5&lVarinha Arcana'
+    # Se true, o jogador precisa desbloquear a arma antes de usá-la
+    locked-by-default: false
+    # Slot da hotbar onde a arma será colocada ao entrar na dungeon (0-8)
+    slot: 7
+    item:
+      material: 'BLAZE_ROD'
+      name: '&5&lVarinha Arcana'
+      lore:
+        - ''
+        - ' &7Arma magica que dispara'
+        - ' &7projéteis de energia.'
+        - ''
+        - ' &7Clique &eDireito&7 para disparar.'
+        - ''
+    # Configurações do projétil base (sem upgrades)
+    projectile:
+      # Partícula emitida durante o voo do projétil (nome PacketEvents em minúsculo)
+      particle: 'witch'
+      # Quantidade de partículas por tick de movimento
+      particle-count: 5
+      # Velocidade inicial do projétil (blocos/tick)
+      speed: 1.2
+      # Duração máxima em ticks antes do projétil desaparecer (20 ticks = 1 segundo)
+      lifetime-ticks: 40
+      # Raio de colisão com entidades (blocos)
+      hit-radius: 0.6
+      # Dano base do projétil
+      damage: 6.0
+      # Cooldown base entre disparos (em ticks — 20 = 1 segundo)
+      cooldown-ticks: 20
+      # Quantidade base de projéteis por disparo
+      projectile-count: 1
+      # Balas por pente (0 = sem sistema de munição)
+      bullets-per-mag: 12
+      # Quantidade total de pentes (inclui o pente carregado)
+      total-mags: 3
+    # Upgrades disponíveis para esta arma
+    upgrades:
+      damage:
+        display-name: '&cDano Arcano'
+        max-level: 5
+        # Dano adicional por nível de upgrade
+        damage-per-level: 2.0
+        prices:
+          price1:
+            provider: 'money'
+            amount: 40.0
+        icon:
+          material: 'NETHER_STAR'
+          name: '&cDano Arcano'
+          lore:
+            - ''
+            - ' &7Aumenta o dano do projétil.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      cooldown:
+        display-name: '&aCadência'
+        max-level: 3
+        # Ticks removidos do cooldown por nível (ex: 4 ticks = 0.2s mais rápido por nível)
+        cooldown-reduction-per-level: 4
+        prices:
+          price1:
+            provider: 'money'
+            amount: 35.0
+        icon:
+          material: 'SUGAR'
+          name: '&aCadência'
+          lore:
+            - ''
+            - ' &7Reduz o tempo entre disparos.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      speed:
+        display-name: '&eVelocidade'
+        max-level: 3
+        # Velocidade adicional por nível
+        speed-per-level: 0.2
+        # Ticks adicionais de lifetime por nível (maior alcance)
+        lifetime-per-level: 8
+        prices:
+          price1:
+            provider: 'money'
+            amount: 30.0
+        icon:
+          material: 'FEATHER'
+          name: '&eVelocidade'
+          lore:
+            - ''
+            - ' &7Aumenta a velocidade e o alcance'
+            - ' &7do projétil.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      multishot:
+        display-name: '&bMultishot'
+        max-level: 2
+        # Projéteis adicionais por nível (dispara em leque)
+        projectiles-per-level: 1
+        prices:
+          price1:
+            provider: 'money'
+            amount: 60.0
+        icon:
+          material: 'ARROW'
+          name: '&bMultishot'
+          lore:
+            - ''
+            - ' &7Dispara projéteis adicionais'
+            - ' &7em leque.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      particles:
+        display-name: '&dPartículas Intensas'
+        max-level: 3
+        # Partículas adicionais por nível
+        particles-per-level: 3
+        prices:
+          price1:
+            provider: 'money'
+            amount: 20.0
+        icon:
+          material: 'GLOWSTONE_DUST'
+          name: '&dPartículas Intensas'
+          lore:
+            - ''
+            - ' &7Aumenta a intensidade das'
+            - ' &7partículas do projétil.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      ammo-bullets:
+        display-name: '&ePente Maior'
+        max-level: 3
+        # Balas adicionais por pente por nível
+        bullets-per-mag-per-level: 4
+        prices:
+          price1:
+            provider: 'money'
+            amount: 25.0
+        icon:
+          material: 'GUNPOWDER'
+          name: '&ePente Maior'
+          lore:
+            - ''
+            - ' &7Aumenta as balas por pente.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      ammo-mags:
+        display-name: '&6Mais Pentes'
+        max-level: 3
+        # Pentes adicionais por nível
+        mags-per-level: 1
+        prices:
+          price1:
+            provider: 'money'
+            amount: 30.0
+        icon:
+          material: 'CHEST'
+          name: '&6Mais Pentes'
+          lore:
+            - ''
+            - ' &7Aumenta a quantidade de pentes.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+
+  arco_de_fogo:
+    display-name: '&6&lArco de Fogo'
+    # Se true, o jogador precisa desbloquear a arma antes de usá-la
+    locked-by-default: true
+    # Preço para desbloquear (cobrado uma vez)
+    unlock-price:
+      price1:
+        provider: 'money'
+        amount: 150.0
+    slot: 6
+    item:
+      material: 'BOW'
+      name: '&6&lArco de Fogo'
+      lore:
+        - ''
+        - ' &7Arco encantado com chamas'
+        - ' &7que incendeiam inimigos.'
+        - ''
+        - ' &7Clique &eDireito&7 para disparar.'
+        - ''
+    projectile:
+      particle: 'flame'
+      particle-count: 4
+      speed: 1.5
+      lifetime-ticks: 35
+      hit-radius: 0.5
+      damage: 5.0
+      cooldown-ticks: 25
+      projectile-count: 1
+      # Balas por pente (0 = sem sistema de munição)
+      bullets-per-mag: 8
+      # Quantidade total de pentes (inclui o pente carregado)
+      total-mags: 4
+    upgrades:
+      damage:
+        display-name: '&cChamas Intensas'
+        max-level: 5
+        damage-per-level: 1.5
+        prices:
+          price1:
+            provider: 'money'
+            amount: 35.0
+        icon:
+          material: 'BLAZE_POWDER'
+          name: '&cChamas Intensas'
+          lore:
+            - ''
+            - ' &7Aumenta o dano das chamas.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      cooldown:
+        display-name: '&aDisparo Rápido'
+        max-level: 3
+        cooldown-reduction-per-level: 3
+        prices:
+          price1:
+            provider: 'money'
+            amount: 30.0
+        icon:
+          material: 'SUGAR'
+          name: '&aDisparo Rápido'
+          lore:
+            - ''
+            - ' &7Reduz o tempo entre disparos.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      speed:
+        display-name: '&eFlecha Veloz'
+        max-level: 3
+        speed-per-level: 0.25
+        lifetime-per-level: 6
+        prices:
+          price1:
+            provider: 'money'
+            amount: 25.0
+        icon:
+          material: 'FEATHER'
+          name: '&eFlecha Veloz'
+          lore:
+            - ''
+            - ' &7Aumenta a velocidade e alcance.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      multishot:
+        display-name: '&bSalva de Fogo'
+        max-level: 2
+        projectiles-per-level: 1
+        prices:
+          price1:
+            provider: 'money'
+            amount: 55.0
+        icon:
+          material: 'ARROW'
+          name: '&bSalva de Fogo'
+          lore:
+            - ''
+            - ' &7Dispara flechas adicionais.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      particles:
+        display-name: '&dChamas Espessas'
+        max-level: 3
+        particles-per-level: 2
+        prices:
+          price1:
+            provider: 'money'
+            amount: 18.0
+        icon:
+          material: 'BLAZE_POWDER'
+          name: '&dChamas Espessas'
+          lore:
+            - ''
+            - ' &7Aumenta as chamas visíveis.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      ammo-bullets:
+        display-name: '&eAljava Maior'
+        max-level: 3
+        bullets-per-mag-per-level: 3
+        prices:
+          price1:
+            provider: 'money'
+            amount: 22.0
+        icon:
+          material: 'GUNPOWDER'
+          name: '&eAljava Maior'
+          lore:
+            - ''
+            - ' &7Aumenta as flechas por aljava.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''
+      ammo-mags:
+        display-name: '&6Aljavas Extras'
+        max-level: 3
+        mags-per-level: 1
+        prices:
+          price1:
+            provider: 'money'
+            amount: 28.0
+        icon:
+          material: 'CHEST'
+          name: '&6Aljavas Extras'
+          lore:
+            - ''
+            - ' &7Aumenta a quantidade de aljavas.'
+            - ' &7Nível: &e{level}&7/&e{max_level}'
+            - ' &7Custo: &5{money} &7Money'
+            - ''
+            - ' &eClique para comprar'
+            - ''

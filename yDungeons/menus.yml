@@ -397,6 +397,18 @@ bruxo:
       - ''
       - ' &eClique para abrir'
       - ''
+  # Botao para abrir a loja de upgrades de armas
+  weapon-upgrade-button:
+    slot: 42
+    material: 'BOW'
+    name: '&d&lLoja de Upgrades de Armas'
+    lore:
+      - ''
+      - ' &7Clique para abrir a loja de'
+      - ' &7upgrades de armas.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
 
 # Menu de Passes
 passes-menu:
@@ -460,7 +472,7 @@ passes-menu:
       material: 'STAINED_GLASS_PANE:15'
       name: ' '
 
-# ---- Menu de Upgrades de Espada
+# Menu de Upgrades de Espada
 sword-upgrade:
   name: '&6&lUpgrades de Espada'
   size: 54
@@ -739,6 +751,16 @@ upgrades-hub:
       - ''
       - ' &eClique para abrir'
       - ''
+  weapon-button:
+    slot: 13
+    material: 'BOW'
+    name: '&d&lArmas'
+    lore:
+      - ''
+      - ' &7Upgrades para suas armas.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
   back-button:
     slot: 22
     material: 'ARROW'
@@ -854,7 +876,226 @@ armor-upgrade:
       material: 'STAINED_GLASS_PANE:11'
       name: ' '
 
-# Menu de Arenas Party
+# Menu de Upgrades de Armas
+weapon-upgrade:
+  name: '&d&lUpgrades de Armas — {weapon}'
+  size: 54
+  back-slot: 49
+  # Slot onde o botão de desbloquear aparece quando a arma está bloqueada
+  unlock-slot: 13
+  upgrade-slots: [19,20,21,22,23,24,25]
+  player-info:
+    slot: 4
+    material: '{player}'
+    name: '&d&lSeu Perfil'
+    lore:
+      - ''
+      - ' &7Jogador: &f{player}'
+      - ' &7Arma: &d{weapon}'
+      - ''
+  empty-slot:
+    material: 'STAINED_GLASS_PANE:7'
+    name: ' '
+  # Exibido em cada slot de upgrade quando a arma está bloqueada
+  locked-item:
+    material: 'STAINED_GLASS_PANE:14'
+    name: '&c&lBloqueado'
+    lore:
+      - ''
+      - ' &7Desbloqueie esta arma para'
+      - ' &7ter acesso aos upgrades.'
+      - ''
+  # Botão de desbloquear (aparece no unlock-slot quando bloqueado)
+  unlock-item:
+    material: 'NETHER_STAR'
+    name: '&a&lDesbloquear Arma'
+    lore:
+      - ''
+      - ' &7Arma: &d{weapon}'
+      - ' &7Custo: &6{money} &7Money'
+      - ''
+      - ' &eClique para desbloquear'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass3:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass4:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass5:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass6:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass7:
+      slot: 36
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass8:
+      slot: 44
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    sep1:
+      slot: 27
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    sep2:
+      slot: 28
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    sep3:
+      slot: 29
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    sep4:
+      slot: 30
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    sep5:
+      slot: 31
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    sep6:
+      slot: 32
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    sep7:
+      slot: 33
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    sep8:
+      slot: 34
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    sep9:
+      slot: 35
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+
+# Menu de Selecao de Arma — exibido ao clicar no botao de upgrades de armas
+weapon-select:
+  name: '&d&lSelecionar Arma'
+  size: 27
+  back-slot: 22
+  # Slots onde as armas sao exibidas
+  weapon-slots: [10, 11, 12, 13, 14, 15, 16]
+  # Template para arma disponivel
+  weapon-item:
+    material: 'BLAZE_ROD'
+    name: '&d{weapon}'
+    lore:
+      - ''
+      - ' &7Status: {status}'
+      - ''
+      - ' &eClique para ver upgrades'
+      - ''
+  # Template para arma bloqueada
+  weapon-locked-item:
+    material: 'BLAZE_ROD'
+    name: '&c{weapon} &8(Bloqueada)'
+    lore:
+      - ''
+      - ' &7Status: {status}'
+      - ''
+      - ' &eClique para desbloquear'
+      - ''
+  # Item exibido em slots vazios (sem arma configurada)
+  empty-slot:
+    material: 'STAINED_GLASS_PANE:7'
+    name: ' '
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass2:
+      slot: 1
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass3:
+      slot: 2
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass4:
+      slot: 3
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass5:
+      slot: 4
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass6:
+      slot: 5
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass7:
+      slot: 6
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass8:
+      slot: 7
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass9:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass10:
+      slot: 9
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass11:
+      slot: 17
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass12:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass13:
+      slot: 19
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass14:
+      slot: 20
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass15:
+      slot: 21
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass16:
+      slot: 23
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass17:
+      slot: 24
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass18:
+      slot: 25
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+    glass19:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:13'
+      name: ' '
+
+
 arenas-party-select:
   name: '&8Arenas — Party'
   size: 54
