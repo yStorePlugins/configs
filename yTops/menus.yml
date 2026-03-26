@@ -41,6 +41,7 @@ main:
         - ''
         - '&7Clique para gerenciar'
     money:
+      order: 1
       top-type: 'VAULT'
       material: 'EMERALD'
       name: '&2$ &aTOP Money'
