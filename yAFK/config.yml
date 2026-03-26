@@ -5,7 +5,7 @@ Database:
    User: admin
    Pass: ''
    Debug: true
-#
+
 Comando:
    Comando: 'yafk'
    Aliases: []
