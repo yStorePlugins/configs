@@ -173,6 +173,13 @@ Opcoes:
   ItensCMD banidos:
     - 999999
     - 999991
+  # Itens banidos SOMENTE quando não possuem textura (Custom-Model-Data = 0)
+  # Formato: 'MATERIAL:FLAG'
+  #   MATERIAL:NOMODEL -> bane o item apenas se ele NÃO tiver Custom-Model-Data (sem textura)
+  #   MATERIAL        -> bane o item incondicionalmente (equivalente à lista acima)
+  # Permissão de bypass: yessentials.banitem.bypass
+  Itens banidos sem textura:
+    - 'NETHERITE_SWORD:NOMODEL'
   # Palavras inapropriadas no /nick
   # coloque em minúsculo
   PalavrasNick bloqueados:
@@ -445,7 +452,7 @@ tab-tags:
   enabled: false
   member:
     priority: 1 # decrescente (membros com prioridade maior que dono e admin)
-    permission: 'ylobby.tags.member'
+    permission: 'yessentials.tags.member'
     prefix: '&7[Membro] &7'
     suffix: ''
     order: 'a' # ordem das tags no tab, sendo o "A" o primeiro e o "Z" o último
