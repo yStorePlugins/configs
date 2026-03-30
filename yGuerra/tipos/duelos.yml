@@ -1,0 +1,336 @@
+# Permissão para poder participar do evento
+Permissao: ''
+
+Comando:
+  Comando: 'duelos'
+  Aliases: [ duelo, duel, duels ]
+
+Minimo clans: 2
+Minimo jogadores: 2
+
+# Máximo de clans
+# Deixe 0 para ser infinito
+Maximo clan: 0
+
+# Máximo de jogadores por clan
+# Deixe 0 para ser infinito
+Maximo jogador clan: 0
+
+# Máximo de jogadores no evento
+Maximo jogador: 0
+
+# Precisa de clan pra entrar
+Precisa de clan: true
+
+# Deixa os jogadores apostarem
+Aposta: false
+
+# Ativar o teleporte para a sala de espera
+Sala de espera: true
+
+# O jogador perder os itens ao morrer/deslogar/sair
+Perder itens: true
+
+# Permitir o jogador de dropar itens do inventário no chão
+Player drop: false
+
+# Comando para executar no jogador que mais matou
+Comando mais matou: []
+
+#
+Temporizador:
+  Chamadas:
+    Quantia: 3
+    Tempo: 10
+  Iniciado:
+    Tempo: 20
+  Finalizar:
+    Tempo: 20
+  Informativo: 20
+  Deathmatch:
+    # Deixe 0 para desativar — duelos não usa deathmatch
+    Tempo: 0
+    Delay: 5
+    Minimo clans: 0
+    Minimo jogadores: 0
+
+#
+# Configurações exclusivas do modo Duelos (chaveamento 1v1 de clans)
+Duelos:
+  # Ativa o modo bracket. Se false, o tipo se comporta como uma guerra normal.
+  Ativar: true
+
+  # Quantidade de jogadores por clan em cada duelo individual.
+  # Se o clan tiver menos online, usa quantos estiverem disponíveis.
+  JogadoresPorDuelo: 3
+
+  # Segundos de espera entre o fim de um duelo e o início do próximo.
+  TempoEntreDuelos: 30
+
+  # Local da arena onde os duelos acontecem.
+  # Formato: mundo;x;y;z;yaw;pitch
+  # Defina in-game via /duelos setarena (ou edite manualmente aqui).
+  Local: 'none'
+
+  Mensagens:
+    # {clans_quantia} = número de clans no torneio
+    InicioTorneio: '&6[Duelos] &eTorneio de Clans iniciado com &b{clans_quantia} &eclans!'
+    # {rodada} = número da rodada  {clans_quantia} = clans restantes
+    InicioRodada: '&6[Duelos] &eRodada &b{rodada} &einiciada! &b{clans_quantia} &eclans restantes.'
+    # {clan_a} {clan_b} {rodada}
+    InicioDuelo: '&6[Duelos] &eDuelo Rodada &b{rodada}&e: &b{clan_a} &evs &b{clan_b}&e!'
+    # {vencedor} {perdedor} {rodada}
+    VencedorDuelo: '&6[Duelos] &b{vencedor} &evenceu o duelo contra &c{perdedor}&e! (Rodada {rodada})'
+    # {clan} = clan que avança sem adversário  {rodada}
+    Bye: '&6[Duelos] &b{clan} &epassa automaticamente para a próxima rodada!'
+    # {clan} = campeão  {rodadas} = total de rodadas
+    Campeao: '&6[Duelos] &b{clan} &eé o grande &6&lCAMPEÃO &eapós &b{rodadas} &erodadas!'
+
+#
+Bloqueadores:
+  SpawnMob: false
+  Chat: false
+  Craft: false
+  Fornalha: false
+  Funil: false
+
+#
+ClansPermitidos:
+  Ativar: false
+  Lista: []
+
+#
+AutoStart:
+  Ativar: false
+  Horarios: []
+
+#
+Scoreboard:
+  Ativar: true
+  Title: '&6&lDuelos'
+  Linhas:
+    - '&7         Chaveamento'
+    - ''
+    - '&fClans: &b{clans}&f.'
+    - '&fJogadores: &b{jogadores}&f.'
+    - ''
+    - '&fDuração: &b{duracao}&f.'
+    - ''
+    - '&fFogo Amigo: {fogoamigo}'
+    - '&fItens setados: {setados}'
+    - ''
+    - '&b  ystoreplugins.com.br'
+
+#
+Borda:
+  Ativar: false
+  Mundo: ''
+  Centro:
+    X: 0
+    Z: 0
+  Tamanho: 500
+  Dano: 5
+  Mensagens:
+    Title: ''
+    Actionbar: ''
+    Chat: ''
+  Zonas: []
+
+#
+Display:
+  CustomSkull: false
+  URL: ''
+  ID: 388
+  Data: 0
+  Glow: true
+  Name: '&6Duelos'
+  Lore:
+    - '&7Clique para gerenciar o evento de duelos.'
+
+#
+Custo:
+  Banco: 0.0
+  Jogador: 0.0
+  RemoverBanco: false
+  RemoverJogador: false
+  Tempo online: 0
+  Skills: []
+
+#
+Fogo amigo: false
+Itens setados: true
+Levar itens: false
+Dropar itens: false
+
+#
+Tag:
+  Display: '&6[Duelos]'
+  Setar em:
+    Apenas quem ganhou: true
+    Cargos:
+      Lider: true
+      Capitao: true
+      Confiavel: true
+      Membro: true
+      Sem clan: false
+
+#
+Comandos permitidos:
+  - '/g'
+  - '/l'
+
+#
+Recompensas:
+  Apenas quem ganhou: true
+  Dar para todos: false
+  Cargos:
+    Lider:
+      - 'give {player} emerald 32'
+    Capitao:
+      - 'give {player} diamond 32'
+    Confiavel:
+      - 'give {player} gold_ingot 32'
+    Membro: []
+    Sem clan: []
+
+#
+Efeitos:
+  Ativar: false
+  TempoEfeitos: {}
+  Lista: []
+
+#
+Mensagens:
+  Chamada:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos | &fChamada para participar'
+    - ''
+    - '&fDigite &6/guerra &7para entrar.'
+    - '&fClans participando: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores participando: &b{jogadores}'
+    - ''
+    - '&7Chamada &f{min} &7de &f{max}&7 ({tempo}).'
+    - ''
+    - '&6----------------------------------------------'
+  Iniciado:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos | &fEvento iniciado'
+    - ''
+    - '&fClans participando: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores participando: &b{jogadores}'
+    - ''
+    - '&7Os clans têm &f{tempo} &7segundos para se preparar.'
+    - ''
+    - '&6----------------------------------------------'
+  Liberado:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos | &fChaveamento Liberado'
+    - ''
+    - '&fClans participando: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores participando: &b{jogadores}'
+    - ''
+    - '&7O torneio de duelos vai começar!'
+    - ''
+    - '&6----------------------------------------------'
+  Insuficiente:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos | &fEvento cancelado'
+    - ''
+    - '&fClans ou jogadores insuficientes.'
+    - ''
+    - '&6----------------------------------------------'
+  Deu errado clan:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos | &fEvento cancelado'
+    - ''
+    - '&fAlgo deu errado — todos os clans foram eliminados.'
+    - ''
+    - '&6----------------------------------------------'
+  Deu errado jogador:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos | &fEvento cancelado'
+    - ''
+    - '&fAlgo deu errado — todos os jogadores foram eliminados.'
+    - ''
+    - '&6----------------------------------------------'
+  Operador:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos | &fEvento cancelado'
+    - ''
+    - '&cCancelado por um operador.'
+    - ''
+    - '&6----------------------------------------------'
+  Ganhar clan:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos | &fEvento finalizado'
+    - ''
+    - '&fClan campeão: &6{clan}&f.'
+    - '&fAbates do clan: &b{abates}&f.'
+    - '&fA guerra durou: &b{duracao}&f.'
+    - ''
+    - '&6----------------------------------------------'
+  Ganhar player:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos | &fEvento finalizado'
+    - ''
+    - '&fJogador vencedor: &6{player}&f.'
+    - '&fAbates: &b{abates}&f.'
+    - '&fA guerra durou: &b{duracao}&f.'
+    - ''
+    - '&6----------------------------------------------'
+  Teleportado dm:
+    - ''
+  Informativo:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos'
+    - ''
+    - '&fClans: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores: &b{jogadores}'
+    - '&fTempo decorrido: &b{duracao}&f.'
+    - ''
+    - '&6----------------------------------------------'
+  InfoComando:
+    - '&6----------------------------------------------'
+    - ''
+    - '&6&lDuelos'
+    - ''
+    - '&fClans: &b({clans_quantia}) &8- &7{clans}&f.'
+    - '&fJogadores: &b({jogadores_quantia}) &8- &7{jogadores}&f.'
+    - '&fTempo decorrido: &b{duracao}&f.'
+    - ''
+    - '&6----------------------------------------------'
+
+#
+Actionbar:
+  Iniciando: '&fIniciando duelos em &6{tempo}&f.'
+  Entrar: '&fDigite &6/guerra &7para &aentrar&f.'
+  Morreu: '&7{morreu} &celiminado por &7{matou}&c. Restam: &7{vivos}&c.'
+
+#
+Chat:
+  Morreu: '&7{morreu_clan} &7{morreu} &celiminado por &7{matou_clan} &7{matou}&c. Restam: &7{vivos}&c.'
+
+# Os locais são setados in-game, não altere manualmente.
+Locais:
+  Saida: 'none'
+  Entrada: 'none'
+  Espera: 'none'
+  Camarote: 'none'
+  Deathmatch: 'none'
+
+# Os itens são setados in-game, não altere manualmente.
+Itens:
+Capacete:
+Peitoral:
+Calca:
+Botas:

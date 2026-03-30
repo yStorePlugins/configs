@@ -91,6 +91,8 @@ Embeds:
   #   {clan_colortag_1..10}     - tag colorida dos clans (SimpleClan)
   #   {clan_kills_1..10}        - kills de cada clan no ranking
   #   {clan_jogadores_1..10}    - jogadores de cada clan no ranking
+  #   {jogador_pos_1..10}       - colocação numérica do jogador no ranking (ex: 1, 2, 3...)
+  #   {clan_pos_1..10}          - colocação numérica do clan no ranking
   #   {data} / {hora}           - data e hora atual
   # -------------------------------------------------------
   evento_glad_fim:
@@ -108,15 +110,15 @@ Embeds:
       primeiro:
         Inline: false
         Header: '1° lugar'
-        Content: 'Vencedor: {jogador_1} ({clan_colortag_1})\nJogadores: {clan_jogadores_1}\nKills: {clan_kills_1}'
+        Content: 'Clan: {clan_colortag_1}\nJogadores: {clan_jogadores_1}\nKills: {clan_kills_1}'
       segundo:
         Inline: false
         Header: '2° lugar'
-        Content: 'Vencedor: {jogador_2} ({clan_colortag_2})\nJogadores: {clan_jogadores_2}\nKills: {clan_kills_2}'
+        Content: 'Clan: {clan_colortag_2}\nJogadores: {clan_jogadores_2}\nKills: {clan_kills_2}'
       terceiro:
         Inline: false
         Header: '3° lugar'
-        Content: 'Vencedor: {jogador_3} ({clan_colortag_3})\nJogadores: {clan_jogadores_3}\nKills: {clan_kills_3}'
+        Content: 'Clan: {clan_colortag_3}\nJogadores: {clan_jogadores_3}\nKills: {clan_kills_3}'
       duracao:
         Inline: true
         Header: 'Duração'
