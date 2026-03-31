@@ -2,20 +2,23 @@ Missoes:
    1:
       Display:
          material: EMERALD
-         Glow: true
-         Name: '&8Pedra'
-         Lore: 
+         glow: true
+         name: '&8Pedra'
+         lore:
          - '&7Fique online por &f1 minuto &7e ganhe'
          - '&f  &a1 pão.'
-      Item: #se o ( Command -> Use ) tiver true, isso não vai funcionar
+      Display-Coletado:
+         material: EMERALD
+         name: '&8Pedra'
+         lore:
+         - '&cVocê já coletou essa missão.'
+      # Se o ( Command -> Use ) tiver true, isso não vai funcionar
+      Item:
          material: STONE
-         Glow: true
-         Name: '&8Pedra'
-         Amount: 64
-         Lore:
-         - '&aTu ganhou uma pedra.'
-         Enchants: #se não desejar, deixe assim:
-         - ''
+         glow: true
+         name: '&8Pedra'
+         amount: 64
+         Lore: ['&aTu ganhou uma pedra.']
       Tempo: 60 #em segundos
       # Permissão para coletar a recompensa
       Permissao: ''
@@ -23,28 +26,23 @@ Missoes:
       Mensagem-Perm: '&cVocê não permissão para coletar o desafio 1.'
       Command:
          Use: false
-         List: #se o ( Use ) tiver false, isso não funcionar.
-         - 'give {player} stone 1'
+         List: ['give {player} stone 1']
    2:
       Display:
          material: EMERALD
-         Glow: true
-         Name: '&8Diamantes'
-         Lore: 
+         glow: true
+         name: '&8Diamantes'
+         lore:
          - '&7Fique online por &f1 hora &7e ganhe'
          - '&7 -> &a2 diamantes.'
-      Item: #se o ( Command -> Use ) tiver true, isso não vai funcionar
+      Item:
          material: STONE
-         Glow: true
-         Name: '&8Pedra'
-         Amount: 64
-         Lore:
-         - ''
-         Enchants: #se não desejar, deixe assim:
-         - ''
-      Tempo: 3600 #em segundos
+         glow: true
+         name: '&8Pedra'
+         amount: 64
+         lore: ['']
+      Tempo: 3600
       Permissao: ''
       Command:
          Use: true
-         List: #se o ( Use ) tiver false, isso não funcionar.
-         - 'give {player} diamond 2'
+         List: ['give {player} diamond 2']
