@@ -149,6 +149,20 @@ limit-mobs:
     - '&7todos os seus limites no inventário em 1 só.'
     - ''
 
+# Sistema de bônus de drops por quantidade de spawners na mesma chunk.
+# Conta a soma dos stacks de spawners do mesmo tipo na chunk onde o mob foi morto.
+# Exemplo: 10 spawners na chunk = multiplicador 1.5x nos drops.
+chunk-bonus:
+  # Ativar o sistema
+  enabled: true
+  # Tabela de multiplicadores: [quantidade_minima: multiplicador]
+  # A maior faixa atingida será aplicada.
+  # Deixe vazio para desativar sem precisar desligar o sistema.
+  table:
+    10: 1.5
+    20: 2.0
+    50: 3.0
+
 # Limite de venda de drops de spawners.
 limit-drop:
   # Ativar o sistema
