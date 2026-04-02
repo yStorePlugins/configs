@@ -104,6 +104,8 @@ head:
   shift-unit: true
   # Ao matar em pé, dropar apenas a quantia de heads configurados.
   no-shift-unit: false
+  # Dar diretamente para o inventário ao invés de dropar no chão
+  give-inventory: true
   # Mundos que não irá dropar heads
   world-blacklist: []
 
