@@ -4,13 +4,21 @@ display-name: '&6&lLeão &8[Nvl. {level}]'
 # Permissão para equipar o PET
 permission: ''
 
-# A cabeça do PET vai ser pequena?
-small: false
-
 # Distância entre o player e o PET
 distance-between: 1.3
 
-# Cabeça do PET
+# Tipo de exibição do PET
+# 'skull' (padrão): exibe como ArmorStand com a cabeça customizada definida em 'skull'
+# 'mob'           : exibe como um mob vanilla do Minecraft via packet
+display-type: 'skull'
+
+# Configuração do mob (usado apenas quando display-type: mob)
+# Lista de tipos disponíveis: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+# Exemplos: ZOMBIE, CREEPER, SKELETON, SPIDER, GUARDIAN, ENDER_DRAGON, WOLF, etc.
+#mob:
+#  type: 'ZOMBIE'
+
+# Cabeça do PET (usado apenas quando display-type: skull)
 skull:
   material: '85b70944ef8967762d53064d21dfe1e260eacfa7b29788c3e3abb45bcf650577'
 
