@@ -308,8 +308,6 @@ chat:
   npc-deleted: '&aNPC removido com sucesso.'
   npc-not-set: '&cNPC não está definido.'
   classe-level-need: '&cVocê precisa do nível {level} para comprar esta classe.'
-  
-  # PUBLIC MINE SYSTEM
   public-mine-offline: '&cEsta mina pública não está mais disponível.'
   public-mine-already: '&cVocê já está em uma mina! Saia primeiro com /mina sair'
   public-mine-full: '&cEsta mina pública está lotada!'
@@ -331,3 +329,14 @@ chat:
   public-mine-invalid-tax: '&cA taxa deve ser entre 0 e 100.'
   public-mine-invalid-max-users: '&cO número de visitantes deve ser maior que 0 (ou 0 para ilimitado).'
   public-mine-max-users-limit: '&cVocê não pode definir mais de &e{limit} &cvagas. Você tentou definir &e{max}&c.'
+  bazooka-give: '&aVocê deu &7{amount}x {bazooka}&a para o jogador &7{player}&a.'
+  bazooka-received: '&aVocê recebeu &7{amount}x {bazooka}&a.'
+  bazooka-list: |
+    &cBazuca não encontrada.
+    &cBazucas disponíveis: &f{list}
+  bazooka-wait: '&cVocê precisa aguardar {time} para usar a bazuca novamente.'
+  bazooka-reloading: '&cSua {bazooka} &cestá recarregando. Aguarde &f{time}&c.'
+  bazooka-not-in: '&cVocê precisa estar em uma mina para usar a bazuca.'
+
+actionbar:
+  bazooka-reloading: '&c⚠ {bazooka}&c recarregando: &f{time}'

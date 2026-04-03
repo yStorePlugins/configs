@@ -1,0 +1,80 @@
+bazookas:
+  bazooka-small:
+    # Nome da bazuca nas mensagens
+    # {uses}         → usos restantes do jogador
+    # {max-uses}     → total de usos máximos
+    # {reload-delay} → tempo de recarga em segundos
+    message-display: '&cBAZUCA PEQUENA'
+    # Permissão necessária para usar
+    permission: ''
+    # Quantidade de usos antes de entrar em recarga
+    uses: 3
+    # Tempo de recarga em segundos após esgotar os usos
+    reload-delay: 30
+    # Raio da explosão em blocos
+    radius: 4
+    # Dar recompensas
+    reward: true
+    # Ativar lucky-block nos blocos quebrados
+    luckyblock: true
+    # Efeitos ao explodir
+    effects:
+      sound: 'EXPLODE'
+      effect: 'EXPLOSION_LARGE'
+    # Configurações visuais do míssil
+    missile:
+      # Partícula do rastro
+      trail-particle: 'FLAME'
+      # Segunda partícula do rastro
+      trail-particle-secondary: 'SMOKE_NORMAL'
+      # Número de steps da trajetória (maior = mais suave, mais partículas)
+      steps: 25
+      # Alcance máximo do míssil em blocos
+      range: 30
+      # Gravidade aplicada à trajetória parabólica (quanto maior, mais curva)
+      # Fórmula: arcY = -gravity * step * step
+      # Valores recomendados: 0.001 (quase reto) a 0.005 (curva moderada)
+      gravity: 0.003
+    # Item da bazuca
+    item:
+      # Material do item ou hash de skull (64+ chars = skull)
+      material: 'BLAZE_ROD'
+      name: '&c&lBAZUCA &7({uses}/{max-uses})'
+      lore:
+        - '&7Dispare um míssil explosivo que'
+        - '&7quebra blocos ao redor do impacto.'
+        - ''
+        - '&7 Raio: &c{radius} blocos'
+        - '&7 Usos: &f{uses}/{max-uses}'
+        - '&7 Recarga: &f{reload-delay}s após esgotar'
+        - ''
+        - '&aClique direito para disparar.'
+  bazooka-large:
+    message-display: '&4BAZUCA GRANDE'
+    permission: 'yminaspackets.bazooka.large'
+    uses: 2
+    reload-delay: 60
+    radius: 7
+    reward: true
+    luckyblock: true
+    effects:
+      sound: 'EXPLODE'
+      effect: 'EXPLOSION_HUGE'
+    missile:
+      trail-particle: 'FLAME'
+      trail-particle-secondary: 'SMOKE_LARGE'
+      steps: 30
+      range: 40
+      gravity: 0.003
+    item:
+      material: 'BLAZE_ROD'
+      name: '&4&lBAZUCA GRANDE &7({uses}/{max-uses})'
+      lore:
+        - '&7Dispara um míssil massivo que'
+        - '&7devasta blocos ao redor do impacto.'
+        - ''
+        - '&7 Raio: &c{radius} blocos'
+        - '&7 Usos: &f{uses}/{max-uses}'
+        - '&7 Recarga: &f{reload-delay}s após esgotar'
+        - ''
+        - '&aClique direito para disparar.'
