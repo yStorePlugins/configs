@@ -91,6 +91,12 @@ general:
     - 86400
     - 259200
     - 604800
+  # Penalidade de morte: ao morrer com um item alugado no inventário
+  death-penalty:
+    # Se true, o item dropa no chão (sem proteção) e o aluguel é finalizado imediatamente.
+    # O alugador recebe uma multa no valor da hora do aluguel, creditada ao dono.
+    # Se false, o comportamento padrão é mantido: o item é salvo no inbox e o aluguel continua.
+    enabled: false
   # Blacklist de materiais que não podem ser alugados
   black-list:
     materials: []

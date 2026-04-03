@@ -52,6 +52,7 @@ chat:
 
   create-cancelled: '&cCriação de listagem cancelada.'
   create-item-gone: '&cO item selecionado não está mais no seu inventário.'
+  create-item-locked: '&cVocê não pode listar um item que está atualmente alugado.'
   rent-success: |
 
     &aAluguel realizado com sucesso!
@@ -110,6 +111,14 @@ chat:
     &7Reembolso ao locatário: &f{refund} &7({provider})
 
     &7Confirme clicando novamente.
+
+  cancel-owner-no-balance: |
+
+    &cVocê não tem saldo suficiente para cancelar!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{total} &8({refund} &7reembolso + &8{tax_amount} &7taxa&8)
 
   cancel-renter-refund: |
 
@@ -189,3 +198,20 @@ chat:
     &7Locatário: &f{renter}
     &7Motivo: &cdurabilidade baixa ({durability}%).
     &7Retire o item em /alugar.
+  death-penalty-renter: |
+
+    &cVocê morreu com um item alugado!
+
+    &7Item: &f{item}
+    &7Dono: &f{owner}
+    &7Multa cobrada: &f{fine} &7({provider})
+    &7O aluguel foi encerrado e o item foi dropado no chão.
+
+  death-penalty-owner: |
+
+    &eUm locatário morreu com o seu item alugado!
+
+    &7Item: &f{item}
+    &7Locatário: &f{renter}
+    &7Multa recebida: &f{fine} &7({provider})
+    &7O aluguel foi encerrado. Seu item está disponível no armazém.
