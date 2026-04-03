@@ -106,6 +106,8 @@ head:
   no-shift-unit: false
   # Dar diretamente para o inventário ao invés de dropar no chão
   give-inventory: true
+  # Multiplicar a quantia de heads pelo encantamento de fortuna
+  fortune: false
   # Mundos que não irá dropar heads
   world-blacklist: []
 
