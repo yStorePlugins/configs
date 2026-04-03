@@ -109,6 +109,11 @@ general:
   auto-sell-permission: ''
   # O auto-sell vir ativado por padrão no spawner
   auto-sell-default: true
+  # Quando o stack-spawners está desativado (ou limitado a 1x) e vários spawners
+  # do mesmo tipo ficam próximos, ao invés de cada um spawnar/deletar seu próprio mob,
+  # eles irão compartilhar o mob já existente e somar o stack nele.
+  # Recomendado ativar quando stack-spawners.max: 1
+  share-mob-between-spawners: false
 
 # Identificadores das skills
 skills:
