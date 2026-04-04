@@ -147,9 +147,129 @@ clicks:
   f1: |
     &8> &e&lEvento fast-click.
     &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l <click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f2: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f3: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f4: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
     &7&l [X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X]
     &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
     &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f5: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f6: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f7: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click>
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f8: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f9: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f10: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f11: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f12: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f13: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f14: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click>
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f15: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f16: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f17: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+  f18: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X] &7&l[X]
+  f19: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X] &7&l[X]
+  f20: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click> &7&l[X]
+  f21: |
+    &8> &e&lEvento fast-click.
+    &8> &e&lO primeiro a clicar no &a&l[X] &e&lganha.
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X]
+    &7&l [X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &7&l[X] &a&l<click:run_command:/fastclick {id}>[X]</click>
 
 # Recompensas configuradas na rewards.yml
 # chance,recompensa

@@ -64,3 +64,5 @@ chat:
     &cEvento não encontrado.
     &cDisponíveis: {list}.
   event-give-win: '&aVocê deu &f{amount} vitórias&a para o jogador &f{player}&a.'
+  toggle-msg-enable: '&aVocê voltará a receber os anúncios de eventos.'
+  toggle-msg-disable: '&cVocê não receberá mais os anúncios de eventos.'
