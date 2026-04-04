@@ -1,0 +1,149 @@
+#  NOMES DE ENCANTAMENTOS ACEITOS (aliases amigáveis):
+#    PROTECTION, FIRE_PROTECTION, FEATHER_FALLING,
+#    BLAST_PROTECTION, PROJECTILE_PROTECTION, RESPIRATION,
+#    AQUA_AFFINITY, THORNS, DEPTH_STRIDER, FROST_WALKER,
+#    SHARPNESS, SMITE, BANE_OF_ARTHROPODS, KNOCKBACK,
+#    FIRE_ASPECT, LOOTING, SWEEPING_EDGE, EFFICIENCY,
+#    SILK_TOUCH, UNBREAKING, FORTUNE, POWER, PUNCH,
+#    FLAME, INFINITY, LUCK_OF_THE_SEA, LURE, LOYALTY,
+#    IMPALING, RIPTIDE, CHANNELING, MULTISHOT, QUICK_CHARGE,
+#    PIERCING, MENDING, VANISHING_CURSE, SOUL_SPEED, SWIFT_SNEAK
+#  Ou o nome direto da API do Bukkit (ex: PROTECTION_ENVIRONMENTAL)
+#
+#  COMANDO PARA DAR O LIVRO:
+#    /ce give <jogador> v:<chave-interna> <quantidade>
+#    Ex: /ce give Steve v:protection-x 1
+
+vanilla-books:
+  protection-x:
+    display-name: '&bProtection X'
+    apply-whitelist:
+      - 'DIAMOND_HELMET'
+      - 'DIAMOND_CHESTPLATE'
+      - 'DIAMOND_LEGGINGS'
+      - 'DIAMOND_BOOTS'
+      - 'GOLD_HELMET'
+      - 'GOLD_CHESTPLATE'
+      - 'GOLD_LEGGINGS'
+      - 'GOLD_BOOTS'
+      - 'IRON_HELMET'
+      - 'IRON_CHESTPLATE'
+      - 'IRON_LEGGINGS'
+      - 'IRON_BOOTS'
+      - 'CHAINMAIL_HELMET'
+      - 'CHAINMAIL_CHESTPLATE'
+      - 'CHAINMAIL_LEGGINGS'
+      - 'CHAINMAIL_BOOTS'
+      - 'LEATHER_HELMET'
+      - 'LEATHER_CHESTPLATE'
+      - 'LEATHER_LEGGINGS'
+      - 'LEATHER_BOOTS'
+    # unsafe: true permite aplicar níveis acima do máximo vanilla (IV)
+    unsafe: true
+    enchantments:
+      PROTECTION: 10
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&bLivro Especial &8— &bProtection X'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - '&7Aplicável em: &fArmaduras'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Arraste este livro sobre uma peça'
+        - '&7de armadura para aplicar'
+        - '&7Protection nível 10.'
+  sharpness-x:
+    display-name: '&cSharpness X'
+    apply-whitelist:
+      - 'DIAMOND_SWORD'
+      - 'GOLD_SWORD'
+      - 'IRON_SWORD'
+      - 'STONE_SWORD'
+      - 'WOODEN_SWORD'
+      - 'DIAMOND_AXE'
+      - 'GOLD_AXE'
+      - 'IRON_AXE'
+      - 'STONE_AXE'
+      - 'WOODEN_AXE'
+    unsafe: true
+    enchantments:
+      SHARPNESS: 10
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&cLivro Especial &8— &cSharpness X'
+      lore:
+        - '&7Encantamento: &c{display-name}'
+        - '&7Aplicável em: &fEspadas e Machados'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Arraste este livro sobre uma espada'
+        - '&7ou machado para aplicar'
+        - '&7Sharpness nível 10.'
+  unbreaking-v:
+    display-name: '&6Unbreaking V'
+    apply-whitelist:
+      - 'DIAMOND_SWORD'
+      - 'DIAMOND_AXE'
+      - 'DIAMOND_PICKAXE'
+      - 'DIAMOND_SHOVEL'
+      - 'DIAMOND_HOE'
+      - 'DIAMOND_HELMET'
+      - 'DIAMOND_CHESTPLATE'
+      - 'DIAMOND_LEGGINGS'
+      - 'DIAMOND_BOOTS'
+      - 'BOW'
+    unsafe: true
+    enchantments:
+      UNBREAKING: 5
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&6Livro Especial &8— &6Unbreaking V'
+      lore:
+        - '&7Encantamento: &6{display-name}'
+        - '&7Aplicável em: &fFerramentas e Armaduras'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Arraste este livro sobre um item'
+        - '&7para aplicar Unbreaking nível 5.'
+  pvp-sword-kit:
+    display-name: '&4Kit PvP'
+    apply-whitelist:
+      - 'DIAMOND_SWORD'
+    unsafe: false
+    enchantments:
+      SHARPNESS: 5
+      KNOCKBACK: 2
+      FIRE_ASPECT: 2
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&4Livro Especial &8— &4Kit PvP'
+      lore:
+        - '&7Encantamento: &4{display-name}'
+        - '&7Aplicável em: &fEspada de Diamante'
+        - ''
+        - '&e*&fEncantamentos aplicados:'
+        - '&7- &fSharpness V'
+        - '&7- &fKnockback II'
+        - '&7- &fFire Aspect II'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Arraste este livro sobre uma espada'
+        - '&7de diamante para aplicar o kit completo.'
+  power-x:
+    display-name: '&ePower X'
+    apply-whitelist:
+      - 'BOW'
+    unsafe: true
+    enchantments:
+      POWER: 10
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial &8— &ePower X'
+      lore:
+        - '&7Encantamento: &e{display-name}'
+        - '&7Aplicável em: &fArcos'
+        - ''
+        - '&e*&fComo funciona?'
+        - '&7Arraste este livro sobre um arco'
+        - '&7para aplicar Power nível 10.'

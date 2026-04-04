@@ -759,3 +759,33 @@ enchants:
         - '&7Encantamento para:&f Espadas e Machados'
         - '&7Chance: &f10%'
         - '&7Cooldown: &f30 segundos'
+  curse-of-commands:
+    display-name: '&4Maldição dos Comandos'
+    apply-whitelist: [ 'DIAMOND_SWORD' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    messages:
+      chat: ''
+      actionbar: '&4Maldição ativada!'
+      title: ''
+    # Comandos executados sobre QUEM ATIVOU o enchant
+    self-commands:
+      - 'give {player} diamond 1'
+      - 'broadcast &e{player} &7ativou a maldição em &c{world}!'
+    # Comandos executados sobre QUEM FOI ATINGIDO
+    target-commands:
+      - 'effect give {target} slowness 5 1'
+      - 'tell {target} &cVocê foi amaldiçoado por &e{player}&c!'
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&4Livro Especial'
+      lore:
+        - '&7Encantamento: &c{display-name}'
+        - ''
+        - '&7Ao ativar, executa comandos sobre'
+        - '&7o ativador e sobre o alvo.'
+        - ''
+        - '&7Encantamento para:&f Espadas de Diamante'
