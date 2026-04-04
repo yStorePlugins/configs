@@ -1693,3 +1693,1096 @@ dungeon-whitelist:
       slot: 52
       material: 'STAINED_GLASS_PANE:7'
       name: ' '
+
+# Editor de Rounds
+dungeon-round-editor:
+
+  # Seleção de rounds
+  round-select:
+    name-mob:  '&8Rounds &7(Mobs)'
+    name-boss: '&8Rounds &7(Boss)'
+    size: 54
+    slots: [ 10,11,12,13,14,15,16, 19,20,21,22,23,24,25, 28,29,30,31,32,33,34, 37,38,39,40,41,42,43 ]
+    round-item:
+      material: 'PAPER:0'
+      name: '&eRound &f{round}'
+      lore:
+        - ''
+        - ' &7Clique para editar este round.'
+        - ''
+    create-item:
+      slot: 49
+      material: 'SLIME_BALL:0'
+      name: '&aCriar novo round'
+      lore:
+        - ''
+        - ' &7Cria o proximo round automaticamente.'
+        - ''
+    back-item:
+      slot: 48
+      material: 'ARROW:0'
+      name: '&cVoltar'
+      lore:
+        - ''
+        - ' &7Volta ao setup principal.'
+        - ''
+    facing:
+      g1:
+        slot: 0
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g2:
+        slot: 8
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g3:
+        slot: 9
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g4:
+        slot: 17
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g5:
+        slot: 18
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g6:
+        slot: 26
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g7:
+        slot: 27
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g8:
+        slot: 35
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g9:
+        slot: 36
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g10:
+        slot: 44
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g11:
+        slot: 45
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g12:
+        slot: 46
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g13:
+        slot: 47
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g14:
+        slot: 50
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g15:
+        slot: 51
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g16:
+        slot: 52
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g17:
+        slot: 53
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+
+  # Lista de mobs do round
+  mob-list:
+    name: '&8Mobs do Round &f{round}'
+    size: 54
+    slots: [ 10,11,12,13,14,15,16, 19,20,21,22,23,24,25, 28,29,30,31,32,33,34, 37,38,39,40,41,42,43 ]
+    mob-item:
+      material: 'PAPER:0'
+      name: '&eMob &f#{index} &7({type})'
+      lore:
+        - ''
+        - ' &7Quantidade: &f{amount}'
+        - ' &7Vida: &f{health}'
+        - ' &7Dano: &f{damage}'
+        - ''
+        - ' &eClique para editar.'
+        - ''
+    add-item:
+      slot: 49
+      material: 'EMERALD:0'
+      name: '&aAdicionar mob'
+      lore:
+        - ''
+        - ' &7Cria um novo mob neste round.'
+        - ''
+    back-item:
+      slot: 48
+      material: 'ARROW:0'
+      name: '&cVoltar'
+      lore:
+        - ''
+        - ' &7Volta para selecao de rounds.'
+        - ''
+    facing:
+      g1:
+        slot: 0
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g2:
+        slot: 8
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g3:
+        slot: 9
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g4:
+        slot: 17
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g5:
+        slot: 18
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g6:
+        slot: 26
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g7:
+        slot: 27
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g8:
+        slot: 35
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g9:
+        slot: 36
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g10:
+        slot: 44
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g11:
+        slot: 45
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g12:
+        slot: 46
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g13:
+        slot: 47
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g14:
+        slot: 50
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g15:
+        slot: 51
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g16:
+        slot: 52
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g17:
+        slot: 53
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+
+  # Configuração de um mob
+  mob-config:
+    name: '&8Mob &f#{mob} &8- Round &f{round}'
+    size: 54
+    # Cada campo: slot + item (name/lore). {value} = valor atual.
+    fields:
+      entity-type:
+        slot: 10
+        material: 'PAPER:0'
+        name: '&eEntity Type'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      custom-name:
+        slot: 11
+        material: 'NAME_TAG:0'
+        name: '&eCustom Name'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      amount:
+        slot: 12
+        material: 'BLAZE_POWDER:0'
+        name: '&eAmount'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      health:
+        slot: 13
+        material: 'REDSTONE:0'
+        name: '&eHealth'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      damage:
+        slot: 14
+        material: 'IRON_SWORD:0'
+        name: '&eDamage'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      speed:
+        slot: 15
+        material: 'FEATHER:0'
+        name: '&eSpeed'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      mythic-mob:
+        slot: 16
+        material: 'NETHER_STAR:0'
+        name: '&eMythic Mob'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      sword-xp-on-kill:
+        slot: 19
+        material: 'EXP_BOTTLE:0'
+        name: '&eSword XP on Kill'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      rewards.money:
+        slot: 20
+        material: 'GOLD_NUGGET:0'
+        name: '&eReward Money'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      potion-effect.chance:
+        slot: 21
+        material: 'POTION:0'
+        name: '&ePotion Chance'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      potion-effect.type:
+        slot: 22
+        material: 'POTION:0'
+        name: '&ePotion Type'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      potion-effect.duration:
+        slot: 23
+        material: 'WATCH:0'
+        name: '&ePotion Duration'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      potion-effect.amplifier:
+        slot: 24
+        material: 'SPECKLED_MELON:0'
+        name: '&ePotion Amplifier'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+    skills-item:
+      slot: 31
+      material: 'BOOK_AND_QUILL:0'
+      name: '&bGerenciar Skills'
+      lore:
+        - ''
+        - ' &7Skills configuradas: &f{count}'
+        - ''
+        - ' &eClique para abrir submenu de skills.'
+        - ''
+    back-item:
+      slot: 48
+      material: 'ARROW:0'
+      name: '&cVoltar'
+      lore:
+        - ''
+        - ' &7Volta para lista de mobs.'
+        - ''
+    facing:
+      g1:
+        slot: 0
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g2:
+        slot: 8
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g3:
+        slot: 17
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g4:
+        slot: 18
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g5:
+        slot: 25
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g6:
+        slot: 26
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g7:
+        slot: 27
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g8:
+        slot: 28
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g9:
+        slot: 29
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g10:
+        slot: 30
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g11:
+        slot: 32
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g12:
+        slot: 33
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g13:
+        slot: 34
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g14:
+        slot: 35
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g15:
+        slot: 45
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g16:
+        slot: 46
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g17:
+        slot: 47
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g18:
+        slot: 49
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g19:
+        slot: 50
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g20:
+        slot: 51
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g21:
+        slot: 52
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g22:
+        slot: 53
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+
+  # Configuração do boss
+  boss-config:
+    name: '&8Boss &8- Round &f{round}'
+    size: 54
+    fields:
+      enabled:
+        slot: 10
+        material: 'LEVER:0'
+        name: '&eEnabled'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para alternar.'
+          - ''
+      entity-type:
+        slot: 11
+        material: 'PAPER:0'
+        name: '&eEntity Type'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      custom-name:
+        slot: 12
+        material: 'NAME_TAG:0'
+        name: '&eCustom Name'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      health:
+        slot: 13
+        material: 'REDSTONE:0'
+        name: '&eHealth'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      damage:
+        slot: 14
+        material: 'IRON_SWORD:0'
+        name: '&eDamage'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      speed:
+        slot: 15
+        material: 'FEATHER:0'
+        name: '&eSpeed'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      mythic-mob:
+        slot: 16
+        material: 'NETHER_STAR:0'
+        name: '&eMythic Mob'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      no-ai:
+        slot: 25
+        material: 'REDSTONE_COMPARATOR:0'
+        name: '&eNo AI'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para alternar.'
+          - ''
+      spawn-broadcast:
+        slot: 26
+        material: 'SIGN:0'
+        name: '&eSpawn Broadcast'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      death-broadcast:
+        slot: 27
+        material: 'SIGN:0'
+        name: '&eDeath Broadcast'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      sword-xp-on-kill:
+        slot: 19
+        material: 'EXP_BOTTLE:0'
+        name: '&eSword XP on Kill'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      rewards.money:
+        slot: 20
+        material: 'GOLD_NUGGET:0'
+        name: '&eReward Money'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      potion-effect.chance:
+        slot: 21
+        material: 'POTION:0'
+        name: '&ePotion Chance'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      potion-effect.type:
+        slot: 22
+        material: 'POTION:0'
+        name: '&ePotion Type'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      potion-effect.duration:
+        slot: 23
+        material: 'WATCH:0'
+        name: '&ePotion Duration'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      potion-effect.amplifier:
+        slot: 24
+        material: 'SPECKLED_MELON:0'
+        name: '&ePotion Amplifier'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+    skills-item:
+      slot: 31
+      material: 'BOOK_AND_QUILL:0'
+      name: '&5Gerenciar Skills'
+      lore:
+        - ''
+        - ' &7Skills configuradas: &f{count}'
+        - ''
+        - ' &eClique para abrir submenu de skills.'
+        - ''
+    back-item:
+      slot: 48
+      material: 'ARROW:0'
+      name: '&cVoltar'
+      lore:
+        - ''
+        - ' &7Volta para selecao de rounds.'
+        - ''
+    facing:
+      g1:
+        slot: 0
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g2:
+        slot: 8
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g3:
+        slot: 17
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g4:
+        slot: 18
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g5:
+        slot: 28
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g6:
+        slot: 29
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g7:
+        slot: 30
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g8:
+        slot: 32
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g9:
+        slot: 33
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g10:
+        slot: 34
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g11:
+        slot: 35
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g12:
+        slot: 36
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g13:
+        slot: 37
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g14:
+        slot: 38
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g15:
+        slot: 39
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g16:
+        slot: 40
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g17:
+        slot: 41
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g18:
+        slot: 42
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g19:
+        slot: 43
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g20:
+        slot: 44
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g21:
+        slot: 45
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g22:
+        slot: 46
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g23:
+        slot: 47
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g24:
+        slot: 49
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g25:
+        slot: 50
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g26:
+        slot: 51
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g27:
+        slot: 52
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g28:
+        slot: 53
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+
+  # Lista de skills (mob e boss compartilham layout)
+  skills-list:
+    name-mob:  '&8Skills Mob &f#{mob} &8- Round &f{round}'
+    name-boss: '&8Skills Boss &8- Round &f{round}'
+    size: 54
+    slots: [ 10,11,12,13,14,15,16, 19,20,21,22,23,24,25, 28,29,30,31,32,33,34, 37,38,39,40,41,42,43 ]
+    mob-skill-item:
+      material: 'BOOK:0'
+      name: '&eSkill &f#{index} &7({type})'
+      lore:
+        - ''
+        - ' &7Chance: &f{chance}'
+        - ' &7Cooldown: &f{cooldown} ticks'
+        - ' &7Duracao: &f{duration} ticks'
+        - ' &7Raio: &f{radius}'
+        - ''
+        - ' &eClique esquerdo &7para editar.'
+        - ' &cClique direito &7para remover.'
+        - ''
+    boss-skill-item:
+      material: 'ENCHANTED_BOOK:0'
+      name: '&dSkill &f#{index} &7({type})'
+      lore:
+        - ''
+        - ' &7Chance: &f{chance}'
+        - ' &7Cooldown: &f{cooldown} ticks'
+        - ' &7Duracao: &f{duration} ticks'
+        - ' &7Raio: &f{radius}'
+        - ''
+        - ' &eClique esquerdo &7para editar.'
+        - ' &cClique direito &7para remover.'
+        - ''
+    add-item:
+      slot: 49
+      material: 'EMERALD:0'
+      name: '&aAdicionar skill'
+      lore:
+        - ''
+        - ' &7Cria uma nova skill.'
+        - ''
+    back-item:
+      slot: 48
+      material: 'ARROW:0'
+      name: '&cVoltar'
+      lore:
+        - ''
+        - ' &7Volta para a configuracao anterior.'
+        - ''
+    facing:
+      g1:
+        slot: 0
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g2:
+        slot: 8
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g3:
+        slot: 9
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g4:
+        slot: 17
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g5:
+        slot: 18
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g6:
+        slot: 26
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g7:
+        slot: 27
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g8:
+        slot: 35
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g9:
+        slot: 36
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g10:
+        slot: 44
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g11:
+        slot: 45
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g12:
+        slot: 46
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g13:
+        slot: 47
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g14:
+        slot: 50
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g15:
+        slot: 51
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g16:
+        slot: 52
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g17:
+        slot: 53
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+
+  # Configuração de uma skill
+  skill-config:
+    name-mob:  '&8Editar Skill &f#{skill} &8- Mob &f#{mob}'
+    name-boss: '&8Editar Skill &f#{skill} &8- Boss'
+    size: 54
+    fields:
+      type:
+        slot: 10
+        material: 'BOOK:0'
+        name: '&eTipo'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para ciclar o tipo.'
+          - ''
+      chance:
+        slot: 11
+        material: 'GLOWSTONE_DUST:0'
+        name: '&eChance'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      cooldown-ticks:
+        slot: 12
+        material: 'WATCH:0'
+        name: '&eCooldown (ticks)'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      duration-ticks:
+        slot: 13
+        material: 'REDSTONE:0'
+        name: '&eDuracao (ticks)'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+      radius:
+        slot: 14
+        material: 'COMPASS:0'
+        name: '&eRaio'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &eClique para editar.'
+          - ''
+    back-item:
+      slot: 48
+      material: 'ARROW:0'
+      name: '&cVoltar'
+      lore:
+        - ''
+        - ' &7Volta para lista de skills.'
+        - ''
+    facing:
+      g1:
+        slot: 0
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g2:
+        slot: 8
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g3:
+        slot: 9
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g4:
+        slot: 15
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g5:
+        slot: 16
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g6:
+        slot: 17
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g7:
+        slot: 18
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g8:
+        slot: 19
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g9:
+        slot: 20
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g10:
+        slot: 21
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g11:
+        slot: 22
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g12:
+        slot: 23
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g13:
+        slot: 24
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g14:
+        slot: 25
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g15:
+        slot: 26
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g16:
+        slot: 27
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g17:
+        slot: 28
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g18:
+        slot: 29
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g19:
+        slot: 30
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g20:
+        slot: 31
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g21:
+        slot: 32
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g22:
+        slot: 33
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g23:
+        slot: 34
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g24:
+        slot: 35
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g25:
+        slot: 36
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g26:
+        slot: 37
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g27:
+        slot: 38
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g28:
+        slot: 39
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g29:
+        slot: 40
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g30:
+        slot: 41
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g31:
+        slot: 42
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g32:
+        slot: 43
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g33:
+        slot: 44
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g34:
+        slot: 45
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g35:
+        slot: 46
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g36:
+        slot: 47
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g37:
+        slot: 49
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g38:
+        slot: 50
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g39:
+        slot: 51
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g40:
+        slot: 52
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
+      g41:
+        slot: 53
+        material: 'STAINED_GLASS_PANE:7'
+        name: ' '
