@@ -187,6 +187,10 @@ Opcoes:
       - '10.0,Multiplicador'
       - '10.0,Eletricidade'
     # Mensagens
+    EvoluiuEnchant-Actionbar: '&bSua picareta evoluiu de nível! &f+1 nível de {encantamento}&b.'
+    EvoluiuSemEnchant-Actionbar: '&bSua picareta evoluiu de nível!'
+    EvoluiuEnchant-Title: '&bUP!<nl> &f+1  {encantamento}&b.'
+    EvoluiuSemEnchant-Title: ''
     EvoluiuEnchant:
       - ''
       - '&bSua picareta evoluiu de nível!'
