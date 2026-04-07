@@ -37,6 +37,7 @@ main:
     customize-slot: 40
     title-slot: 42
     delete-slot: 44
+    pvp-slot: 38
     formats:
       prices: '&2{provider_symbol} &r{price} &7({provider_abbreviated})'
       none: '&cNenhuma economia configurada.'
@@ -137,6 +138,16 @@ main:
         - '&7desse terreno.'
         - ''
         - '&cClique para deletar.'
+    pvp:
+      material: 'IRON_SWORD'
+      name: '&cPvP do Terreno'
+      lore:
+        - '&7Controle se o PvP estará ativo'
+        - '&7no seu terreno durante a noite.'
+        - ''
+        - '&f> PvP Noturno: &r{pvp}'
+        - ''
+        - '&cClique para alternar.'
   facing:
     storage:
       slot: 22

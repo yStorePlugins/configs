@@ -92,3 +92,23 @@ border-blocks:
       price1:
         provider: 'money'
         amount: 5000.0
+
+# Sistema de PvP dia/noite nos terrenos.
+day-night:
+  # Mundos onde o sistema será monitorado.
+  # Deixe vazio para monitorar todos os mundos.
+  worlds: ['world']
+  # Tempo do Minecraft para ATIVAR o PvP (início da noite).
+  # Padrão: 13000 (anoitecer)
+  night-time: 13000
+  # Tempo do Minecraft para DESATIVAR o PvP (início do dia).
+  # Padrão: 0 (amanhecer / tick 0 do ciclo)
+  day-time: 0
+  # Som tocado para todos os jogadores ao virar noite.
+  # Lista de sons: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  sound-night: 'ENTITY_WITHER_SPAWN'
+  # Som tocado para todos os jogadores ao virar dia.
+  sound-day: 'BLOCK_NOTE_BLOCK_PLING'
+  # Volume e pitch dos sons (1.0 = padrão)
+  sound-volume: 1.0
+  sound-pitch: 1.0

@@ -67,6 +67,7 @@ chat:
   plot-home-set: '&cA home desse terreno não está definida.'
   plot-just-owner: '&cApenas o dono do terreno pode realizar essa ação.'
   plot-fly-changed: '&aStatus do fly alternado para &7(&r{status}&7)&a.'
+  plot-pvp-changed: '&aStatus do PvP alternado para &7(&r{status}&7)&a.'
   plot-home-changed: '&aLocal da home alterado com sucesso.'
   plot-icon-changed: '&aÍcone alterado com sucesso.'
   plot-price-changed: '&aVocê mudou o valor para {amount}.'
@@ -87,3 +88,17 @@ chat:
   border-block-buy: '&aVocê comprou um novo bloco de borda para o terreno.'
   cleared: '&aTerreno limpo com sucesso.'
   merged: '&aTerrenos agrupado com sucesso.'
+
+# Mensagens do sistema de PvP dia/noite
+
+# Mensagens enviadas ao virar noite (PvP ativo nos terrenos)
+night:
+  chat: '&8[&c☽ Noite&8] &7A noite chegou! O PvP dos terrenos está &cATIVO&7!'
+  actionbar: '&c☽ Noite — PvP ativo nos terrenos!'
+  title: '&c☽ Noite<nl>&7O PvP dos terrenos está ativo.'
+
+# Mensagens enviadas ao virar dia (PvP desativado nos terrenos)
+day:
+  chat: '&8[&e☀ Dia&8] &7O sol nasceu! O PvP dos terrenos está &aINATIVO&7!'
+  actionbar: '&a☀ Dia — PvP inativo nos terrenos!'
+  title: '&a☀ Dia<nl>&7O PvP dos terrenos está desativado.'
