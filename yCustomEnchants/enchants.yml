@@ -737,7 +737,18 @@ enchants:
     # Cooldown em segundos entre usos
     ice-arena-cooldown: 30
     # Material dos blocos da arena (ex: ICE, PACKED_ICE, BLUE_ICE, SNOW_BLOCK, OBSIDIAN...)
-    ice-arena-material: 'ICE'
+    # Use materiais sólidos como OBSIDIAN ou BARRIER para que o jogador não consiga quebrar
+    ice-arena-material: 'OBSIDIAN'
+    # Modo de encerramento da arena:
+    #   "kill"  → a arena dura até um dos dois jogadores morrer ou sair do servidor (padrão)
+    #   "timed" → a arena fica ativa por 'ice-arena-active-duration' segundos, depois some
+    #             e renasce após 'ice-arena-inactive-duration' segundos (ciclo contínuo enquanto
+    #             ambos estiverem online). A morte ainda encerra o ciclo.
+    ice-arena-break-mode: 'kill'
+    # (Apenas modo "timed") Tempo em segundos que a arena fica ativa antes de sumir
+    ice-arena-active-duration: 10
+    # (Apenas modo "timed") Tempo em segundos de pausa antes de recriar a arena
+    ice-arena-inactive-duration: 15
     messages:
       chat: ''
       actionbar: '&bAspecto de Gelo! &7Arena criada!'
@@ -751,10 +762,11 @@ enchants:
         - '&7Ao utilizar este encantamento em'
         - '&7sua espada ou machado, você'
         - '&7terá uma chance de criar uma'
-        - '&7mini arena de gelo ao redor'
-        - '&7dos dois jogadores para um x1!'
-        - '&7A arena só é desfeita quando'
-        - '&7um dos jogadores morrer.'
+        - '&7mini arena ao redor dos dois'
+        - '&7jogadores para um x1! Nenhum'
+        - '&7dos dois consegue quebrar os blocos.'
+        - '&7A arena se encerra quando um'
+        - '&7dos jogadores morrer.'
         - ''
         - '&7Encantamento para:&f Espadas e Machados'
         - '&7Chance: &f10%'
@@ -766,16 +778,24 @@ enchants:
       price1:
         provider: 'money'
         amount: 0.0
+    # Chance usada nos triggers "attack" e "damage" (0-100)
     chance: 100.0
     messages:
       chat: ''
       actionbar: '&4Maldição ativada!'
       title: ''
-    # Comandos executados sobre QUEM ATIVOU o enchant
+    # Triggers de ativação (pode combinar múltiplos):
+    #   Se esta lista estiver vazia o encantamento só ativa pelo ataque padrão com chance.
+    #   "kill"   → executa quando o portador mata outro jogador
+    #   "death"  → executa quando o portador é morto
+    #   "damage" → executa quando o portador RECEBE dano de outro jogador (usa 'chance' acima)
+    command-triggers:
+      - 'kill'
+    # Comandos executados sobre QUEM ATIVOU o enchant ({player}=ativador, {world}=mundo)
     self-commands:
       - 'give {player} diamond 1'
       - 'broadcast &e{player} &7ativou a maldição em &c{world}!'
-    # Comandos executados sobre QUEM FOI ATINGIDO
+    # Comandos executados sobre QUEM FOI ATINGIDO ({target}=alvo, {player}=ativador, {world}=mundo do alvo)
     target-commands:
       - 'effect give {target} slowness 5 1'
       - 'tell {target} &cVocê foi amaldiçoado por &e{player}&c!'
