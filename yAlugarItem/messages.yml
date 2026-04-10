@@ -40,6 +40,13 @@ chat:
     &7Digite &ccancel &7para cancelar.
 
   create-enter-price-invalid: '&cValor inválido. Digite um número maior que zero.'
+  create-enter-item-value: |
+
+    &eDigite no chat o valor de mercado declarado do item.
+    &7Digite &f0 &7para não declarar nenhum valor.
+    &7Digite &ccancel &7para cancelar.
+
+  create-enter-item-value-invalid: '&cValor inválido. Digite um número igual ou maior que zero.'
   create-success: |
 
     &aListagem criada com sucesso!
@@ -215,3 +222,19 @@ chat:
     &7Locatário: &f{renter}
     &7Multa recebida: &f{fine} &7({provider})
     &7O aluguel foi encerrado. Seu item está disponível no armazém.
+
+  item-value-penalty-renter: |
+
+    &cMulta adicional por valor declarado do item!
+
+    &7Item: &f{item}
+    &7Valor declarado: &f{item_value} &7({provider})
+    &7Multa adicional cobrada: &f{item_fine} &7({provider})
+
+  item-value-penalty-owner: |
+
+    &eMulta por valor do item recebida!
+
+    &7Item: &f{item}
+    &7Locatário: &f{renter}
+    &7Multa adicional recebida: &f{item_fine} &7({provider})

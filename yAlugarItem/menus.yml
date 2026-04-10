@@ -168,8 +168,9 @@ create-listing-menu:
   name: '&8Criar Listagem'
   size: 54
   item-slot: 13
-  price-slot: 30
-  economy-slot: 32
+  price-slot: 29
+  item-value-slot: 31
+  economy-slot: 33
   confirm-slot: 38
   cancel-slot: 42
   item-placeholder:
@@ -181,11 +182,27 @@ create-listing-menu:
       - ' &7inventário para selecioná-lo.'
       - ''
   price-button:
-    material: 'BARRIER'
+    material: 'GOLD_INGOT'
     name: '&6Preço por hora'
     lore:
       - ''
       - ' &7Preço atual: &f{price}'
+      - ''
+      - ' &eClique para definir'
+      - ''
+  item-value-button:
+    material: 'DIAMOND'
+    name: '&bValor do Item'
+    lore:
+      - ''
+      - ' &7Declare o valor de mercado do item.'
+      - ' &7Valor atual: &f{item_value}'
+      - ''
+      - ' &7Ao morrer ou ter o item recolhido,'
+      - ' &7o locatário pagará uma multa'
+      - ' &7proporcional a este valor.'
+      - ''
+      - ' &7Deixe em &f0 &7para não aplicar multa.'
       - ''
       - ' &eClique para definir'
       - ''
@@ -215,6 +232,7 @@ create-listing-menu:
       - ''
       - ' &7Item: &f{item}'
       - ' &7Preço/hora: &f{price} &7({provider})'
+      - ' &7Valor do item: &f{item_value} &7({provider})'
       - ''
       - ' &aClique para confirmar'
       - ''

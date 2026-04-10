@@ -97,6 +97,15 @@ general:
     # O alugador recebe uma multa no valor da hora do aluguel, creditada ao dono.
     # Se false, o comportamento padrão é mantido: o item é salvo no inbox e o aluguel continua.
     enabled: false
+  # Multa pelo valor declarado do item
+  # Quando o dono declara o valor do item ao criar a listagem, esta seção define
+  # como a multa é calculada ao ocorrer morte com death-penalty ou recall por durabilidade.
+  item-value-penalty:
+    # Se true, ativa a cobrança de multa baseada no valor declarado do item.
+    # Requer que o dono defina um itemValue na listagem. Se itemValue=0, esta multa não se aplica.
+    enabled: true
+    # Percentual do valor declarado do item cobrado como multa (ex: 50 = 50% do valor do item).
+    percent: 50.0
   # Blacklist de materiais que não podem ser alugados
   black-list:
     materials: []
