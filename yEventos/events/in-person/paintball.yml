@@ -128,6 +128,8 @@ general:
   keep-exp: true
   # Dropar itens ao morrer
   drop-on-death: false
+  # Dano da bola de neve
+  damage: 6
 
 # Custos para ingressar ao evento
 costs:
