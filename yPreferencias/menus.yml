@@ -51,6 +51,7 @@ preferences:
       - ''
       - '&eClique para ativar.'
   # Nomes exibidos no ícone de cada preferência
+  # Deixe vazio ('') para desativar a preferência do menu.
   names:
     pvp: '&fPvP'
     teleport: '&fPedidos de teleporte'
@@ -69,6 +70,25 @@ preferences:
     full-sell: '&fVenda rápida (inv-full)'
     # yClans
     clan-invite: '&fConvites de clan'
+  # Itens customizados por preferência (sobrescreve os on-item e off-item padrão)
+  custom-items:
+    pvp:
+      on-item:
+        material: 'DIAMOND_SWORD:0'
+        name: '&fPvP'
+        lore:
+          - ''
+          - '&7Estado: &aLigado'
+          - ''
+          - '&eClique para desativar.'
+      off-item:
+        material: 'WOOD_SWORD:0'
+        name: '&fPvP'
+        lore:
+          - ''
+          - '&7Estado: &cDesligado'
+          - ''
+          - '&eClique para ativar.'
   # Itens decorativos fixos (não clicáveis com ação)
   # Formato: cada entrada tem um slot e os campos do SetupItem
   facing: {}
