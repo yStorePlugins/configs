@@ -11,6 +11,9 @@ Database:
 redis:
   # Ativar a conexão com o redis
   enabled: false
+  # Delay (em ticks) para juntar múltiplos saves do mesmo jogador
+  # antes de enviar para o Redis.
+  save-debounce-ticks: 4
   # Endereço de conexão. [EX: 127.0.0.1]
   host: 'localhost'
   # Porta de conexão. [EX: 3306]
