@@ -10,6 +10,7 @@ rewards:
   mob_kill:
     display-name: '&7Recompensa de Mob'
     trigger: MOB_KILL
+    chance: 100.0
     give-item:
       enabled: true
       material: 'GOLD_NUGGET'
@@ -37,6 +38,7 @@ rewards:
   boss_kill:
     display-name: '&cRecompensa de Boss'
     trigger: BOSS_KILL
+    chance: 100.0
     give-item:
       enabled: true
       material: 'DIAMOND'
@@ -65,6 +67,7 @@ rewards:
   dungeon_complete:
     display-name: '&aDungeon Completada'
     trigger: DUNGEON_COMPLETE
+    chance: 100.0
     give-item:
       enabled: true
       material: 'EMERALD'

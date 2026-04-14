@@ -43,6 +43,17 @@ whitelist:
   enabled: false
   players: []
 
+# Recompensas por tipo de evento desta dungeon.
+# Use chaves existentes em rewards.yml.
+# Cada recompensa definida em rewards.yml usa seu proprio "chance".
+reward-pool:
+  mob-kill:
+    - 'mob_kill'
+  boss-kill:
+    - 'boss_kill'
+  dungeon-complete:
+    - 'dungeon_complete'
+
 # Localizacoes configuradas via /dungeon setup
 # Nao edite manualmente — use o comando de setup
 spawn-location: ''
