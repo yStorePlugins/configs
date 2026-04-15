@@ -1,0 +1,41 @@
+#
+#   ____                                   _
+#  |  _ \  ___ ___  _ __   ___  _ __ ___ (_) ___  ___
+#  | | | |/ _ / _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+#  | |_| |  __  __/| |_) | (_) | | | | | | |  __/\__ \
+#  |____/ \___\___|| .__/ \___/|_| |_| |_|_|\___||___/
+#                  |_|
+#
+# Economias utilizadas para custo de clique no NPC.
+
+economies:
+  money:
+    provider: 'money'
+    display: '&aMoney'
+    abbreviated: '&a$'
+    symbol: '$'
+    permission: ''
+    item-settings:
+      material: 'GOLD_INGOT'
+      name: '&aMoney'
+      lore:
+        - ''
+        - ' &7Preco atual: &f{price}'
+        - ''
+        - ' &eClique para alterar.'
+        - ''
+  cash:
+    provider: 'cash'
+    display: '&bCash'
+    abbreviated: '&bC'
+    symbol: ''
+    permission: ''
+    item-settings:
+      material: 'EMERALD'
+      name: '&bCash'
+      lore:
+        - ''
+        - ' &7Preco atual: &f{price}'
+        - ''
+        - ' &eClique para alterar.'
+        - ''
