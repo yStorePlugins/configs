@@ -226,3 +226,5 @@ chat:
   skin-best: '&aEssa já é a melhor skin possível.'
   skin-upgraded: '&aSkin melhorada com sucesso.'
   balanced-mine: '&aVocê foi enviado para a mina &f{mina}&a (menos lotada).'
+  transaction-start: '&aCompletando transação...'
+  transaction-wait: '&cAguarde a transação atual terminar.'
