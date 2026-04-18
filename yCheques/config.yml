@@ -55,6 +55,7 @@ Opcoes:
   Juntar: true
   # Taxa para criar cheque (em %)
   # permissão de bypass: ycheques.taxa.bypass
+  # permissão de taxa custom: ycheques.taxa.[taxa]
   Taxa: 20
   # Ativar o sistema de UUID - ANTI-DUPE
   # **** Cuidado ao desativar
