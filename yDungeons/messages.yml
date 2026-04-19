@@ -7,13 +7,27 @@
 #
 # Plugin messages
 
+title:
+  dungeon-win: '&a&lDUNGEON COMPLETA!<nl>&7Parabéns, {player}!'
+  dungeon-fail: '&c&lDUNGEON ENCERRADA<nl>&7Você não sobreviveu...'
+  round-start: '&6Round {round}<nl>&7Prepare-se!'
+  round-warmup: '&6Round {round}<nl>&eIniciando em &6{seconds}&es...'
+  boss-spawn: '&4&lBOSS INVOCADO!<nl>&c{boss}'
+
+actionbar:
+  mob-hp: '&c{name} &7- &c{hp}&7/&c{max_hp} HP'
+  boss-hp: '&4BOSS &f{name} &7- &4{hp}&7/&4{max_hp} HP'
+  round-warmup: '&6Round {round} &7| &eIniciando em &6{seconds}s&e...'
+  weapon-cooldown: '&7{weapon} &8| &cRecarga: &e{seconds}s'
+  weapon-reload-done: '&aRecarregado! &7{bullets} balas &8| &7{mags} balas de reserva'
+
 chat:
-  syntax: "&cUse: /{command} {syntax}"
-  target: "&cJogador {player} não encontrado."
-  number: "&cO valor inserido não é um número válido."
-  permission: "&cVocê não tem permissão para fazer isto."
-  console: "&cApenas jogadores podem realizar esta ação."
-  cancelled: "&cVocê cancelou a ação."
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO valor inserido não é um número válido.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
   help: |
     &r
     &e/dungeonadmin help &8- &7Exibe esta mensagem.
@@ -32,23 +46,23 @@ chat:
     &e/dungeonadmin passe &6<dar|remover|ver> &6... &8- &7Gerencia passes de dungeon.
     &e/dungeonadmin reload &8- &7Recarrega as configurações.
     &r
-  reload: "&aConfigurações recarregadas com sucesso."
-  inv-full: "&cSeu inventário está cheio! Libere espaço primeiro."
-  queue-join: "&aVocê entrou na fila da dungeon &f{dungeon}&a!"
-  queue-leave: "&eVocê saiu da fila da dungeon &f{dungeon}&e."
-  queue-full: "&cA fila da dungeon &f{dungeon} &cestá cheia! &7({current}/{max})"
-  queue-already: "&cVocê já está em uma fila!"
-  queue-whitelist: "&cVocê não está na whitelist desta dungeon."
-  queue-banned: "&cVocê está banido desta dungeon."
-  queue-not-in: "&cVocê não está em nenhuma fila."
-  queue-cmd-blocked: "&cVocê não pode usar este comando enquanto está na fila."
-  queue-countdown: "&6A dungeon &f{dungeon} &6começa em &e{seconds} &6segundo(s)!"
-  queue-countdown-cancelled: "&cA contagem da dungeon &f{dungeon} &cfoi cancelada."
-  queue-cancelled-move: "&cContagem cancelada! Você se moveu nos últimos 5 segundos."
-  queue-damage-removed: "&cVocê foi removido da fila por receber dano."
-  queue-inv-not-empty: "&cSeu inventário deve estar vazio para entrar nesta dungeon."
-  dungeon-start: "&aA dungeon &f{dungeon} &acomeçou!"
-  dungeon-end: "&cA dungeon &f{dungeon} &cencerrou."
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio! Libere espaço primeiro.'
+  queue-join: '&aVocê entrou na fila da dungeon &f{dungeon}&a!'
+  queue-leave: '&eVocê saiu da fila da dungeon &f{dungeon}&e.'
+  queue-full: '&cA fila da dungeon &f{dungeon} &cestá cheia! &7({current}/{max})'
+  queue-already: '&cVocê já está em uma fila!'
+  queue-whitelist: '&cVocê não está na whitelist desta dungeon.'
+  queue-banned: '&cVocê está banido desta dungeon.'
+  queue-not-in: '&cVocê não está em nenhuma fila.'
+  queue-cmd-blocked: '&cVocê não pode usar este comando enquanto está na fila.'
+  queue-countdown: '&6A dungeon &f{dungeon} &6começa em &e{seconds} &6segundo(s)!'
+  queue-countdown-cancelled: '&cA contagem da dungeon &f{dungeon} &cfoi cancelada.'
+  queue-cancelled-move: '&cContagem cancelada! Você se moveu nos últimos 5 segundos.'
+  queue-damage-removed: '&cVocê foi removido da fila por receber dano.'
+  queue-inv-not-empty: '&cSeu inventário deve estar vazio para entrar nesta dungeon.'
+  dungeon-start: '&aA dungeon &f{dungeon} &acomeçou!'
+  dungeon-end: '&cA dungeon &f{dungeon} &cencerrou.'
   dungeon-win: |
 
     &a&lDUNGEON CONCLUÍDA!
@@ -65,74 +79,76 @@ chat:
     &7Dungeon: &f{dungeon}
     &7Round: &f{round}
     &7Mobs mortos: &f{mobs}
-  dungeon-round-start: "&6&l[ Round {round}/{total} ] &aIniciando!"
-  dungeon-round-clear: "&a&l[ Round {round} ] &fCompleto! Preparando o próximo..."
-  dungeon-boss-spawn: "&4&l[ BOSS ] &c{boss} &4foi invocado! Boa sorte!"
-  dungeon-boss-dead: "&a&l[ BOSS ] &f{boss} &afoi derrotado!"
-  dungeon-player-died: "&c{player} &7morreu na dungeon &f{dungeon}&7."
-  dungeon-not-in: "&cVocê não está em uma dungeon."
-  dungeon-disabled: "&cEsta dungeon está desativada no momento."
-  dungeon-souls-earned: "&6+{amount} money!"
-  afk-warning: "&eAviso: você está AFK! Mova-se ou será removido em &f{seconds} &esegundos."
-  afk-removed: "&cVocê foi removido da dungeon por inatividade (AFK)."
-  rewards-collected: "&aRecompensa &f{reward} &acoletada com sucesso!"
-  rewards-collected-all: "&aVocê recolheu &f{total} &arecompensa(s) com sucesso!"
-  rewards-deleted: "&cRecompensa &f{reward} &cdeletada."
-  rewards-nothing: "&cVocê não possui recompensas pendentes."
-  bruxo-not-in-dungeon: "&cVocê precisa estar em uma dungeon para usar o /bruxo."
-  buff-activated: "&aBuff &f{buff} &aativado por &f{duration} &asegundos!"
-  buff-upgrade-done: "&aUpgrade &f{upgrade} &afeito! Nível: &f{level}"
-  buff-no-souls: "&cMoney insuficientes! Você precisa de &f{cost} &cmoney."
-  buff-no-balance: "&cSaldo insuficiente! Você precisa de &f{cost}&c. &7(você tem &f{balance}&7)"
-  buff-max-level: "&cEste upgrade já está no nível máximo!"
-  sword-levelup: "&6&l[ ESPADA ] &fSua espada evoluiu para o nível &e{level}&f!"
-  sword-rankup: "&6&l[ ESPADA ] &fSua espada alcançou o rank &e{rank}&f!"
-  sword-upgrade-done: "&aUpgrade &f{upgrade} &acomprado! Nível: &f{level}"
-  sword-upgrade-max: "&cEste upgrade já está no nível máximo!"
-  sword-upgrade-no-souls: "&cMoney insuficientes! Você precisa de &f{cost} &cmoney. &7(você tem &f{amount}&7)"
-  sword-upgrade-no-balance: "&cSaldo insuficiente! Você precisa de &f{cost}&c. &7(você tem &f{balance}&7)"
-  armor-upgrade-done: "&aUpgrade de armadura &f{upgrade} &acomprado! Nível: &f{level}"
-  armor-upgrade-max: "&cEste upgrade de armadura já está no nível máximo!"
-  armor-upgrade-no-souls: "&cMoney insuficientes! Você precisa de &f{cost} &cmoney. &7(você tem &f{amount}&7)"
-  armor-upgrade-no-balance: "&cSaldo insuficiente! Você precisa de &f{cost}&c. &7(você tem &f{balance}&7)"
-  armor-rankup: "&6&l[ ARMADURA ] &fSua armadura alcançou o rank &e{rank}&f!"
-  weapon-upgrade-done: "&aUpgrade &f{upgrade} &ada arma &f{weapon} &acomprado! Nível: &f{level}"
-  weapon-upgrade-max: "&cEste upgrade de arma já está no nível máximo!"
-  weapon-upgrade-no-souls: "&cMoney insuficientes! Você precisa de &f{cost} &cmoney. &7(você tem &f{amount}&7)"
-  weapon-upgrade-no-balance: "&cSaldo insuficiente! Você precisa de &f{cost}&c. &7(você tem &f{balance}&7)"
-  weapon-cooldown: "&cSua arma ainda está em recarga!"
-  weapon-unlock-done: "&aVocê desbloqueou a arma &f{weapon}&a!"
-  weapon-mag-empty: "&cPente vazio! Clique &eesquerdo &cpara recarregar."
-  weapon-no-mags: "&cSem pentes! Você não tem mais munição."
-  weapon-reload-full: "&cO pente já está cheio!"
-  admin-dungeon-enabled: "&aDungeon &f{dungeon} &aativada com sucesso."
-  admin-dungeon-disabled: "&cDungeon &f{dungeon} &cdesativada."
-  admin-dungeon-finalized: "&aDungeon &f{dungeon} &afinalizada forçadamente."
-  admin-dungeon-created: "&aDungeon &f{dungeon} &acriada com sucesso."
-  admin-dungeon-deleted: "&cDungeon &f{dungeon} &cexcluída."
-  admin-dungeon-not-found: "&cDungeon &f{dungeon} &cnão encontrada."
-  admin-player-kicked: "&aJogador &f{player} &aexpulso da dungeon &f{dungeon}&a."
-  admin-player-banned: "&aJogador &f{player} &abanido da dungeon &f{dungeon}&a."
-  admin-player-unbanned: "&aJogador &f{player} &adésbanido da dungeon &f{dungeon}&a."
-  admin-setup-mode: "&aVocê entrou no modo setup da dungeon &f{dungeon}&a."
-  admin-setup-exit: "&aVocê saiu do modo setup."
-  admin-setup-spawn-set: "&aSpawn da dungeon definido com sucesso."
-  admin-setup-exit-set: "&aSaída da dungeon definida com sucesso."
-  admin-setup-mob-set: "&aLocalização de spawn de mob do round &f{round} &adefinida."
-  admin-setup-boss-set: "&aLocalização de spawn de boss do round &f{round} &adefinida."
-  admin-setup-gate-pos1: "&aPosição 1 do portão &f{gate} &adefinida."
-  admin-setup-gate-pos2: "&aPosição 2 do portão &f{gate} &adefinida."
-  admin-setup-gate-set: "&aPortão &f{gate} &acriado com sucesso."
-  admin-wand-given: "&aVocê recebeu o machado de configuração de portão."
-  setup-edit-prompt-text: "&eEditar &f{field}&e. Valor atual: &f{current}&e. Digite o novo valor ou &fcancelar&e para cancelar."
-  setup-edit-saved: "&aOpção &f{field} &aatualizada para &f{value}&a."
-  setup-edit-invalid-material: "&cMaterial inválido: &f{input}&c. Use um nome válido (ex: IRON_BARS, STONE)."
-  setup-whitelist-prompt: "&eDigite o nome do jogador para adicionar na whitelist de &f{dungeon}&e (ou &fcancelar&e)."
-  setup-whitelist-added: "&aJogador &f{player} &aadicionado à whitelist de &f{dungeon}&a."
-  setup-whitelist-removed: "&cJogador removido da whitelist &7(UUID: &f{uuid}&7)."
-  setup-whitelist-already: "&cO jogador &f{player} &cjá está na whitelist."
-  admin-passe-dado: "&aVocê deu &f{amount} &apasse(s) da dungeon &f{dungeon} &apara &f{player}&a."
-  admin-passe-removido: "&cVocê removeu &f{amount} &cpasse(s) da dungeon &f{dungeon} &cde &f{player}&c."
+  dungeon-round-start: '&6&l[ Round {round}/{total} ] &aIniciando!'
+  dungeon-round-clear: '&a&l[ Round {round} ] &fCompleto! Preparando o próximo...'
+  dungeon-boss-spawn: '&4&l[ BOSS ] &c{boss} &4foi invocado! Boa sorte!'
+  dungeon-boss-dead: '&a&l[ BOSS ] &f{boss} &afoi derrotado!'
+  dungeon-player-died: '&c{player} &7morreu na dungeon &f{dungeon}&7.'
+  dungeon-not-in: '&cVocê não está em uma dungeon.'
+  dungeon-cmd-blocked: '&cVocê não pode usar este comando enquanto está em uma dungeon.'
+  dungeon-reload-interrupted: '&cA dungeon foi encerrada.'
+  dungeon-disabled: '&cEsta dungeon está desativada no momento.'
+  dungeon-souls-earned: '&6+{amount} money!'
+  afk-warning: '&eAviso: você está AFK! Mova-se ou será removido em &f{seconds} &esegundos.'
+  afk-removed: '&cVocê foi removido da dungeon por inatividade (AFK).'
+  rewards-collected: '&aRecompensa &f{reward} &acoletada com sucesso!'
+  rewards-collected-all: '&aVocê recolheu &f{total} &arecompensa(s) com sucesso!'
+  rewards-deleted: '&cRecompensa &f{reward} &cdeletada.'
+  rewards-nothing: '&cVocê não possui recompensas pendentes.'
+  bruxo-not-in-dungeon: '&cVocê precisa estar em uma dungeon para usar o /bruxo.'
+  buff-activated: '&aBuff &f{buff} &aativado por &f{duration} &asegundos!'
+  buff-upgrade-done: '&aUpgrade &f{upgrade} &afeito! Nível: &f{level}'
+  buff-no-souls: '&cMoney insuficientes! Você precisa de &f{cost} &cmoney.'
+  buff-no-balance: '&cSaldo insuficiente! Você precisa de &f{cost}&c. &7(você tem &f{balance}&7)'
+  buff-max-level: '&cEste upgrade já está no nível máximo!'
+  sword-levelup: '&6&l[ ESPADA ] &fSua espada evoluiu para o nível &e{level}&f!'
+  sword-rankup: '&6&l[ ESPADA ] &fSua espada alcançou o rank &e{rank}&f!'
+  sword-upgrade-done: '&aUpgrade &f{upgrade} &acomprado! Nível: &f{level}'
+  sword-upgrade-max: '&cEste upgrade já está no nível máximo!'
+  sword-upgrade-no-souls: '&cMoney insuficientes! Você precisa de &f{cost} &cmoney. &7(você tem &f{amount}&7)'
+  sword-upgrade-no-balance: '&cSaldo insuficiente! Você precisa de &f{cost}&c. &7(você tem &f{balance}&7)'
+  armor-upgrade-done: '&aUpgrade de armadura &f{upgrade} &acomprado! Nível: &f{level}'
+  armor-upgrade-max: '&cEste upgrade de armadura já está no nível máximo!'
+  armor-upgrade-no-souls: '&cMoney insuficientes! Você precisa de &f{cost} &cmoney. &7(você tem &f{amount}&7)'
+  armor-upgrade-no-balance: '&cSaldo insuficiente! Você precisa de &f{cost}&c. &7(você tem &f{balance}&7)'
+  armor-rankup: '&6&l[ ARMADURA ] &fSua armadura alcançou o rank &e{rank}&f!'
+  weapon-upgrade-done: '&aUpgrade &f{upgrade} &ada arma &f{weapon} &acomprado! Nível: &f{level}'
+  weapon-upgrade-max: '&cEste upgrade de arma já está no nível máximo!'
+  weapon-upgrade-no-souls: '&cMoney insuficientes! Você precisa de &f{cost} &cmoney. &7(você tem &f{amount}&7)'
+  weapon-upgrade-no-balance: '&cSaldo insuficiente! Você precisa de &f{cost}&c. &7(você tem &f{balance}&7)'
+  weapon-cooldown: '&cSua arma ainda está em recarga!'
+  weapon-unlock-done: '&aVocê desbloqueou a arma &f{weapon}&a!'
+  weapon-mag-empty: '&cPente vazio! Clique &eesquerdo &cpara recarregar.'
+  weapon-no-mags: '&cSem pentes! Você não tem mais munição.'
+  weapon-reload-full: '&cO pente já está cheio!'
+  admin-dungeon-enabled: '&aDungeon &f{dungeon} &aativada com sucesso.'
+  admin-dungeon-disabled: '&cDungeon &f{dungeon} &cdesativada.'
+  admin-dungeon-finalized: '&aDungeon &f{dungeon} &afinalizada forçadamente.'
+  admin-dungeon-created: '&aDungeon &f{dungeon} &acriada com sucesso.'
+  admin-dungeon-deleted: '&cDungeon &f{dungeon} &cexcluída.'
+  admin-dungeon-not-found: '&cDungeon &f{dungeon} &cnão encontrada.'
+  admin-player-kicked: '&aJogador &f{player} &aexpulso da dungeon &f{dungeon}&a.'
+  admin-player-banned: '&aJogador &f{player} &abanido da dungeon &f{dungeon}&a.'
+  admin-player-unbanned: '&aJogador &f{player} &adésbanido da dungeon &f{dungeon}&a.'
+  admin-setup-mode: '&aVocê entrou no modo setup da dungeon &f{dungeon}&a.'
+  admin-setup-exit: '&aVocê saiu do modo setup.'
+  admin-setup-spawn-set: '&aSpawn da dungeon definido com sucesso.'
+  admin-setup-exit-set: '&aSaída da dungeon definida com sucesso.'
+  admin-setup-mob-set: '&aLocalização de spawn de mob do round &f{round} &adefinida.'
+  admin-setup-boss-set: '&aLocalização de spawn de boss do round &f{round} &adefinida.'
+  admin-setup-gate-pos1: '&aPosição 1 do portão &f{gate} &adefinida.'
+  admin-setup-gate-pos2: '&aPosição 2 do portão &f{gate} &adefinida.'
+  admin-setup-gate-set: '&aPortão &f{gate} &acriado com sucesso.'
+  admin-wand-given: '&aVocê recebeu o machado de configuração de portão.'
+  setup-edit-prompt-text: '&eEditar &f{field}&e. Valor atual: &f{current}&e. Digite o novo valor ou &fcancelar&e para cancelar.'
+  setup-edit-saved: '&aOpção &f{field} &aatualizada para &f{value}&a.'
+  setup-edit-invalid-material: '&cMaterial inválido: &f{input}&c. Use um nome válido (ex: IRON_BARS, STONE).'
+  setup-whitelist-prompt: '&eDigite o nome do jogador para adicionar na whitelist de &f{dungeon}&e (ou &fcancelar&e).'
+  setup-whitelist-added: '&aJogador &f{player} &aadicionado à whitelist de &f{dungeon}&a.'
+  setup-whitelist-removed: '&cJogador removido da whitelist &7(UUID: &f{uuid}&7).'
+  setup-whitelist-already: '&cO jogador &f{player} &cjá está na whitelist.'
+  admin-passe-dado: '&aVocê deu &f{amount} &apasse(s) da dungeon &f{dungeon} &apara &f{player}&a.'
+  admin-passe-removido: '&cVocê removeu &f{amount} &cpasse(s) da dungeon &f{dungeon} &cde &f{player}&c.'
   admin-passe-ver: |
 
     &8&m-------------------------------
@@ -140,14 +156,14 @@ chat:
     &8&m-------------------------------
     {passes}
     &8&m-------------------------------
-  admin-passe-dado-item: "&aVocê deu &f{amount} &aitem(ns) de passe da dungeon &f{dungeon} &apara &f{player}&a."
-  passe-item-received: "&aVocê recebeu &f{amount} &apasse(s) de dungeon &f{dungeon}&a!"
-  passe-item-used: "&eVocê ativou 1 passe da dungeon &f{dungeon}&e. Passes disponíveis: &f{passes}&e."
-  passe-no-passes: "&cVocê não possui passes para nenhuma dungeon."
-  solo-no-passes: "&cVocê não tem passes para a dungeon &f{dungeon}&c."
-  solo-pass-consumed: "&eUm passe da dungeon &f{dungeon} &efoi consumido. Passes restantes: &f{passes}&e."
-  solo-pass-removed: "&eUm passe da dungeon &f{dungeon} &efoi devolvido ao seu inventário. Passes restantes: &f{passes}&e."
-  solo-start: "&aA dungeon solo &f{dungeon} &acomeçou! Passes restantes: &f{passes}&a."
+  admin-passe-dado-item: '&aVocê deu &f{amount} &aitem(ns) de passe da dungeon &f{dungeon} &apara &f{player}&a.'
+  passe-item-received: '&aVocê recebeu &f{amount} &apasse(s) de dungeon &f{dungeon}&a!'
+  passe-item-used: '&eVocê ativou 1 passe da dungeon &f{dungeon}&e. Passes disponíveis: &f{passes}&e.'
+  passe-no-passes: '&cVocê não possui passes para nenhuma dungeon.'
+  solo-no-passes: '&cVocê não tem passes para a dungeon &f{dungeon}&c.'
+  solo-pass-consumed: '&eUm passe da dungeon &f{dungeon} &efoi consumido. Passes restantes: &f{passes}&e.'
+  solo-pass-removed: '&eUm passe da dungeon &f{dungeon} &efoi devolvido ao seu inventário. Passes restantes: &f{passes}&e.'
+  solo-start: '&aA dungeon solo &f{dungeon} &acomeçou! Passes restantes: &f{passes}&a.'
   solo-win: |
 
     &a&lDUNGEON SOLO CONCLUÍDA!
@@ -164,31 +180,31 @@ chat:
     &7Dungeon: &f{dungeon}
     &7Round: &f{round}
     &7Mobs mortos: &f{mobs}
-  party-created: "&aParty criada para a dungeon &f{dungeon}&a! Convide jogadores com &f/dungeons party convidar <jogador>&a."
-  party-disbanded: "&cA party foi dissolvida pelo líder."
-  party-invite-sent: "&aConvite enviado para &f{player}&a."
-  party-invite-received: "&6Você foi convidado por &f{leader} &6para a dungeon &f{dungeon}&6! Use &f/dungeons party aceitar {leader} &6para aceitar."
-  party-invite-accepted-self: "&aVocê entrou na party de &f{leader} &apara a dungeon &f{dungeon}&a!"
-  party-member-joined: "&a{player} &aentrou na party!"
-  party-invite-denied-self: "&cVocê recusou o convite."
-  party-invite-denied-leader: "&c{player} &crecusou o convite."
-  party-left-leader: "&cVocê saiu e a party foi dissolvida."
-  party-left-member: "&cVocê saiu da party."
-  party-member-left: "&c{player} &csaiu da party."
-  party-not-leader: "&cApenas o líder pode realizar esta ação."
-  party-not-in-party: "&cVocê não está em nenhuma party."
-  party-already-in-party: "&cVocê já está em uma party."
-  party-full: "&cA party está cheia!"
-  party-already-member: "&c{player} &cjá está na party."
-  party-target-in-party: "&c{player} &cjá está em outra party."
-  party-target-in-dungeon: "&c{player} &cestá em uma dungeon no momento."
-  party-invalid-dungeon: "&cDungeon inválida ou não é solo."
-  party-too-few: "&cSão necessários pelo menos 2 jogadores aceitos para iniciar."
-  party-member-in-dungeon: "&cUm ou mais membros estão em dungeon. Aguarde."
-  party-member-no-pass: "&c{player} &cnão tem passe para a dungeon &f{dungeon}&c."
-  party-start: "&aA party dungeon &f{dungeon} &acomeçou! Boa sorte!"
-  party-player-left-dungeon: "&c{player} &csaiu da party dungeon."
-  party-no-invite: "&cVocê não possui convite pendente desta party."
+  party-created: '&aParty criada para a dungeon &f{dungeon}&a! Convide jogadores com &f/dungeons party convidar <jogador>&a.'
+  party-disbanded: '&cA party foi dissolvida pelo líder.'
+  party-invite-sent: '&aConvite enviado para &f{player}&a.'
+  party-invite-received: '&6Você foi convidado por &f{leader} &6para a dungeon &f{dungeon}&6! Use &f/dungeons party aceitar {leader} &6para aceitar.'
+  party-invite-accepted-self: '&aVocê entrou na party de &f{leader} &apara a dungeon &f{dungeon}&a!'
+  party-member-joined: '&a{player} &aentrou na party!'
+  party-invite-denied-self: '&cVocê recusou o convite.'
+  party-invite-denied-leader: '&c{player} &crecusou o convite.'
+  party-left-leader: '&cVocê saiu e a party foi dissolvida.'
+  party-left-member: '&cVocê saiu da party.'
+  party-member-left: '&c{player} &csaiu da party.'
+  party-not-leader: '&cApenas o líder pode realizar esta ação.'
+  party-not-in-party: '&cVocê não está em nenhuma party.'
+  party-already-in-party: '&cVocê já está em uma party.'
+  party-full: '&cA party está cheia!'
+  party-already-member: '&c{player} &cjá está na party.'
+  party-target-in-party: '&c{player} &cjá está em outra party.'
+  party-target-in-dungeon: '&c{player} &cestá em uma dungeon no momento.'
+  party-invalid-dungeon: '&cDungeon inválida ou não é solo.'
+  party-too-few: '&cSão necessários pelo menos 2 jogadores aceitos para iniciar.'
+  party-member-in-dungeon: '&cUm ou mais membros estão em dungeon. Aguarde.'
+  party-member-no-pass: '&c{player} &cnão tem passe para a dungeon &f{dungeon}&c.'
+  party-start: '&aA party dungeon &f{dungeon} &acomeçou! Boa sorte!'
+  party-player-left-dungeon: '&c{player} &csaiu da party dungeon.'
+  party-no-invite: '&cVocê não possui convite pendente desta party.'
   party-help: |
 
     &8&m-----------------------------
@@ -204,7 +220,7 @@ chat:
 
     &8&m-----------------------------
 
-  party-invite-prompt: "&eDigite no chat o nome do jogador que deseja convidar:"
+  party-invite-prompt: '&eDigite no chat o nome do jogador que deseja convidar:'
   party-win: |
 
     &a&lPARTY DUNGEON CONCLUÍDA!
@@ -221,15 +237,3 @@ chat:
     &7Dungeon: &f{dungeon}
     &7Round: &f{round}
     &7Mobs mortos: &f{mobs}
-title:
-  dungeon-win: "&a&lDUNGEON COMPLETA!<nl>&7Parabéns, {player}!"
-  dungeon-fail: "&c&lDUNGEON ENCERRADA<nl>&7Você não sobreviveu..."
-  round-start: "&6Round {round}<nl>&7Prepare-se!"
-  round-warmup: "&6Round {round}<nl>&eIniciando em &6{seconds}&es..."
-  boss-spawn: "&4&lBOSS INVOCADO!<nl>&c{boss}"
-actionbar:
-  mob-hp: "&c{name} &7- &c{hp}&7/&c{max_hp} HP"
-  boss-hp: "&4BOSS &f{name} &7- &4{hp}&7/&4{max_hp} HP"
-  round-warmup: "&6Round {round} &7| &eIniciando em &6{seconds}s&e..."
-  weapon-cooldown: "&7{weapon} &8| &cRecarga: &e{seconds}s"
-  weapon-reload-done: "&aRecarregado! &7{bullets} balas &8| &7{mags} balas de reserva"
