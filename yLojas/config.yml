@@ -87,6 +87,7 @@ Mensagens:
   Nao tem: '&cVocê não possui uma loja.'
   No-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
   Nome espaco: '&cO nome da loja não pode conter espaços!'
+  Nome existente: '&cVocê não pode usar esse nome na loja.'
   Digite nome:
     - ''
     - '&aDigite o nome da loja.'
