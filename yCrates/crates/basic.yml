@@ -163,6 +163,9 @@ menu-animation:
     material-finish: 'STAINED_GLASS_PANE:7'
     middle-top: 'STAINED_GLASS_PANE:5'
     middle-bottom: 'STAINED_GLASS_PANE:5'
+  # Se fechar o inventário durante a abertura,
+  # pula a animação e entrega a recompensa instantaneamente
+  skip-on-close-instant-reward: false
 
 # Sistema de animação da roleta física
 roulette:
