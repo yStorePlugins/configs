@@ -97,6 +97,8 @@ Opcoes:
   QMax: 0
   # Acumular os bônus que tiver permissão
   Acumular bonus: false
+  # Enviar recompensas para o armazém de recompensas (menu)
+  RecompensasMenu: true
   # Bloquear de quebrar blocos da mina enquanto o inventário estiver cheio
   Bloquear InvCheio: true
   # Ativar a picareta custom

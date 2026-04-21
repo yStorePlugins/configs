@@ -1,0 +1,27 @@
+Nome: '&8Armazém de recompensas'
+Tamanho: 54
+Slots: [11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34]
+AnteriorSlot: 18
+ProximoSlot: 26
+BackSlot: 48
+EmptySlot: 22
+CollectSlot: 50
+Itens:
+  Empty:
+    CustomSkull: false
+    URL: ''
+    ID: WEB
+    Data: 0
+    Name: '&eVazio...'
+    Lore:
+      - '&7Nenhuma recompensa para coletar.'
+  Collect:
+    CustomSkull: true
+    URL: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+    ID: AIR
+    Data: 0
+    Name: '&eColetar todas'
+    Lore:
+      - '&7Clique para coletar todas as'
+      - '&7recompensas acumuladas.'
+Facing: {}

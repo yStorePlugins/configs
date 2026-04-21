@@ -93,6 +93,18 @@ Itens:
       - '&7dinheiro.'
       - ''
       - '&aClique para abrir o arsenal'
+  Recompensas:
+    Slot: 9
+    CustomSkull: false
+    URL: ''
+    ID: CHEST
+    Data: 0
+    Name: '&aArmazém de recompensas'
+    Lore:
+      - '&7Visualize e colete as recompensas'
+      - '&7acumuladas da sua mineração.'
+      - ''
+      - '&aClique para abrir o armazém.'
   Booster-no:
     CustomSkull: false
     URL: ''
