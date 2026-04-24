@@ -2,6 +2,8 @@ enchants:
   gravity:
     # Nome nos itens e mensagens
     display-name: '&7Anti-Gravidade'
+    custom-lore:
+      - '&e{display-name}'
     # Itens que poderá aplicar o encantamento
     apply-whitelist: [ 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
     # Custos para ativação
@@ -29,6 +31,8 @@ enchants:
         - '&7o dano será cancelado.'
   billionaire:
     display-name: '&7Bilionário'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
     prices:
       price1:
@@ -50,6 +54,8 @@ enchants:
         - '&7do inimigo, mas custa 750 coins por uso.'
   cheater:
     display-name: '&7Cheater'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
     prices:
       price1:
@@ -73,6 +79,8 @@ enchants:
         - '&7efeitos de regeneração e resistência'
   critical:
     display-name: '&7Críticos'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
     prices:
       price1:
@@ -93,6 +101,8 @@ enchants:
         - '&7o inimigo sofrerá +25% do dano suposto.'
   dementor:
     display-name: '&7Dementor'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
     prices:
       price1:
@@ -114,6 +124,8 @@ enchants:
         - '&7possui uma chance de aplicar cegueira.'
   strike:
     display-name: '&7Strike'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
     prices:
       price1:
@@ -135,6 +147,8 @@ enchants:
         - '&7raio no inimigo causando dano adicional.'
   shuffle:
     display-name: '&7Shuffle'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
     prices:
       price1:
@@ -155,6 +169,8 @@ enchants:
         - '&7a hotbar do seu inimigo.'
   paralyze:
     display-name: '&7Paralyze'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
     prices:
       price1:
@@ -178,6 +194,8 @@ enchants:
         - '&7paralisar o seu inimigo.'
   vampire:
     display-name: '&7Vampire'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
     prices:
       price1:
@@ -198,6 +216,8 @@ enchants:
         - '&7possui uma chance de roubar vida do jogador.'
   fly:
     display-name: '&7Anjo'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_CHESTPLATE' ]
     # Mundos que o jogador irá ter fly
     fly-worlds: [ 'PlotWorld' ]
@@ -213,6 +233,8 @@ enchants:
         - '&7você irá conseguir voar.'
   defender:
     display-name: '&7Defensor'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_HELMET', 'DIAMOND_CHESTPLATE', 'DIAMOND_LEGGINGS', 'DIAMOND_BOOTS' ]
     prices:
       price1:
@@ -234,6 +256,8 @@ enchants:
   double-jump:
     # Nome nos itens e mensagens
     display-name: '&7Pulo-Duplo'
+    custom-lore:
+      - '&e{display-name}'
     # Itens que poderá aplicar o encantamento
     apply-whitelist: [ 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
     # Mensagens ao ativar
@@ -255,6 +279,8 @@ enchants:
   defensor:
     # Nome nos itens e mensagens
     display-name: '&7Defensor'
+    custom-lore:
+      - '&e{display-name}'
     # Itens que poderá aplicar o encantamento
     apply-whitelist: [ 'DIAMOND_CHESTPLATE' ]
     # Custos para ativação
@@ -283,6 +309,8 @@ enchants:
   super-pickaxe:
     # Nome nos itens e mensagens
     display-name: '&7Super Picareta'
+    custom-lore:
+      - '&e{display-name}'
     # Itens que poderá aplicar o encantamento
     apply-whitelist: [ 'DIAMOND_PICKAXE' ]
     # Tamanho da área que será minerada
@@ -300,6 +328,8 @@ enchants:
         - '&7uma área 3x3 será minerada.'
   haste:
     display-name: '&7Haste'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_PICKAXE', 'GOLD_PICKAXE', 'IRON_PICKAXE', 'STONE_PICKAXE', 'WOOD_PICKAXE', 'WOODEN_PICKAXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
     prices:
       price1:
@@ -329,6 +359,8 @@ enchants:
         - '&7Encantamento para:&f Picaretas e Espadas'
   ricochet:
     display-name: '&7Ricochete'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'BOW' ]
     prices:
       price1:
@@ -359,6 +391,8 @@ enchants:
         - '&7Chance: &f2.5%'
   spider:
     display-name: '&7Aranha'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
     prices:
       price1:
@@ -387,6 +421,8 @@ enchants:
         - '&7Chance: &f5.0%'
   disarm:
     display-name: '&7Desarmar'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
     prices:
       price1:
@@ -416,6 +452,8 @@ enchants:
         - '&7Chance: &f0.3%'
   teleporter:
     display-name: '&7Teletransportador'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'BOW' ]
     prices:
       price1:
@@ -444,6 +482,8 @@ enchants:
         - '&7Delay: &f8 segundos'
   forcefield:
     display-name: '&7Forcefield'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS' ]
     prices:
       price1:
@@ -474,6 +514,8 @@ enchants:
         - '&7Chance: &f6.5%'
   ninja:
     display-name: '&7Ninja'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS' ]
     prices:
       price1:
@@ -505,6 +547,8 @@ enchants:
         - '&7Delay: &f10 segundos'
   healer:
     display-name: '&7Curador'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS' ]
     prices:
       price1:
@@ -536,6 +580,8 @@ enchants:
         - '&7Delay: &f10 segundos'
   arrow-deflect:
     display-name: '&7Desvio de Flecha'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_HELMET', 'GOLD_HELMET', 'IRON_HELMET', 'CHAINMAIL_HELMET', 'LEATHER_HELMET', 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS', 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
     prices:
       price1:
@@ -564,6 +610,8 @@ enchants:
         - '&7Chance: &f5%'
   scare:
     display-name: '&7Susto'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
     prices:
       price1:
@@ -595,6 +643,8 @@ enchants:
         - '&7Chance: &f2.5%'
   soulbound:
     display-name: '&7Vínculo da Morte'
+    custom-lore:
+      - '&e{display-name}'
     # Aplicável em qualquer item
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_PICKAXE', 'GOLD_PICKAXE', 'IRON_PICKAXE', 'STONE_PICKAXE', 'WOOD_PICKAXE', 'WOODEN_PICKAXE', 'DIAMOND_SHOVEL', 'GOLD_SHOVEL', 'IRON_SHOVEL', 'STONE_SHOVEL', 'WOOD_SHOVEL', 'WOODEN_SHOVEL', 'DIAMOND_HOE', 'GOLD_HOE', 'IRON_HOE', 'STONE_HOE', 'WOOD_HOE', 'WOODEN_HOE', 'BOW', 'FISHING_ROD', 'DIAMOND_HELMET', 'GOLD_HELMET', 'IRON_HELMET', 'CHAINMAIL_HELMET', 'LEATHER_HELMET', 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS', 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
     prices:
@@ -617,6 +667,8 @@ enchants:
         - '&7Encantamento para:&f Qualquer item'
   unbreakable:
     display-name: '&7Indestrutível'
+    custom-lore:
+      - '&e{display-name}'
     # Aplicável em qualquer item com durabilidade
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_PICKAXE', 'GOLD_PICKAXE', 'IRON_PICKAXE', 'STONE_PICKAXE', 'WOOD_PICKAXE', 'WOODEN_PICKAXE', 'DIAMOND_SHOVEL', 'GOLD_SHOVEL', 'IRON_SHOVEL', 'STONE_SHOVEL', 'WOOD_SHOVEL', 'WOODEN_SHOVEL', 'DIAMOND_HOE', 'GOLD_HOE', 'IRON_HOE', 'STONE_HOE', 'WOOD_HOE', 'WOODEN_HOE', 'BOW', 'FISHING_ROD', 'DIAMOND_HELMET', 'GOLD_HELMET', 'IRON_HELMET', 'CHAINMAIL_HELMET', 'LEATHER_HELMET', 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS', 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
     prices:
@@ -639,6 +691,8 @@ enchants:
         - '&7Encantamento para:&f Qualquer item'
   arrow-rain:
     display-name: '&7Chuva Mortal'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'BOW' ]
     prices:
       price1:
@@ -669,6 +723,8 @@ enchants:
         - '&7Chance: &f7.5%'
   moider:
     display-name: '&7Desnorteador'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD' ]
     prices:
       price1:
@@ -690,6 +746,8 @@ enchants:
         - '&7possui uma chance de aplicar náusea.'
   master-shooter:
     display-name: '&bMestre Atirador'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'BOW' ]
     prices:
       price1:
@@ -723,6 +781,8 @@ enchants:
         - '&7Chance: &f15%'
   ice-aspect:
     display-name: '&bAspecto de Gelo'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE' ]
     prices:
       price1:
@@ -773,6 +833,8 @@ enchants:
         - '&7Cooldown: &f30 segundos'
   curse-of-commands:
     display-name: '&4Maldição dos Comandos'
+    custom-lore:
+      - '&e{display-name}'
     apply-whitelist: [ 'DIAMOND_SWORD' ]
     prices:
       price1:
