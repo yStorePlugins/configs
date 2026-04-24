@@ -41,6 +41,7 @@ chat:
   perm-kill: '&cVocê não tem permissão para matar este mob.'
   perm-plot: '&cVocê não tem permissão neste terreno.'
   placed: '&a{amount}x {spawner} &acolocada(s).'
+  spawner-compact-converted: '&aVocê compactou seus spawners em 1 stack de &7{amount}x {spawner}&a.'
   broken: '&a{amount}x {spawner} &aremovida(s).'
   has-spawners: '&cHá spawners num raio de {radius} blocos.'
   silk-touch: '&cVocê precisa de uma picareta com toque suave para quebrar este spawner.'

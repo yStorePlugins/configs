@@ -114,6 +114,8 @@ general:
   # eles irão compartilhar o mob já existente e somar o stack nele.
   # Recomendado ativar quando stack-spawners.max: 1
   share-mob-between-spawners: false
+  # Ativar compactação de spawners no inventário com shift + botão direito
+  compact-spawners-enabled: false
 
 # Identificadores das skills
 skills:
