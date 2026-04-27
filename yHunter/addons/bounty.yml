@@ -1,0 +1,72 @@
+# Ativar o sistema de bounty dinâmica
+enabled: true
+
+placeholders:
+  # Placeholder que retorna o nome do jogador mais rico.
+  # Ajuste para o placeholder do seu ranking/economia.
+  target-name: '%yeconomy_top_player_1%'
+  # Placeholder que retorna a fortuna do alvo.
+  # Use {target} para injetar o nome retornado em target-name.
+  target-money: '%yeconomy_top_value_1%'
+
+reward:
+  # Recompensa dinâmica = fortuna do alvo * (percent-of-fortune / 100)
+  percent-of-fortune: 1.5
+  # Limites de segurança
+  min: 1000.0
+  max: 500000.0
+
+update:
+  # Intervalo de atualização do alvo/recompensa em ticks (20 = 1s)
+  refresh-ticks: 200
+
+combat:
+  # Tempo máximo sem bater no alvo para continuar elegível ao rateio
+  damage-timeout-seconds: 30
+  # Limpa histórico de dano quando o alvo prioritário muda
+  clear-contributors-on-target-change: true
+
+messages:
+  status-active: '&aATIVO'
+  status-inactive: '&cINATIVO'
+  status-no-target: '&cSem alvo'
+  payout: '&aVocê recebeu &eR${money} &ada bounty de &e{target}&a.'
+  new-target-broadcast: |
+    &r
+    &c&lALVO PRIORITARIO ATUALIZADO
+    &7Novo alvo: &f{target}
+    &7Fortuna: &aR${fortune}
+    &7Bounty dinamica: &6R${reward}
+    &r
+  target-killed-broadcast: |
+    &r
+    &a&lALVO PRIORITARIO ELIMINADO
+    &7Alvo: &f{target}
+    &7Abatido por: &f{killer}
+    &7Participantes: &f{participants}
+    &7Bounty distribuida: &6R${reward}
+    &r
+
+menu-item:
+  # Ícone exclusivo no menu principal do hunter
+  enabled: true
+  slot: 22
+  material: '{player}'
+  Name: '&c&lAlvo Prioritário'
+  lore-active:
+    - ''
+    - '&7Status: {status}'
+    - '&7Alvo: &f{target}'
+    - '&7Fortuna: &aR${fortune}'
+    - '&7Bounty atual: &6R${reward}'
+    - ''
+    - '&eAo matar o alvo, o valor é rateado'
+    - '&eentre quem participou do abate.'
+  lore-inactive:
+    - ''
+    - '&7Status: {status}'
+    - '&7Alvo: &f-'
+    - '&7Fortuna: &aR$0'
+    - '&7Bounty atual: &6R$0'
+    - ''
+    - '&cAguardando dados do PlaceholderAPI.'
