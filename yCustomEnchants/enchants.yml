@@ -13,6 +13,8 @@ enchants:
         amount: 0.0
     # Chance de ativação
     chance: 100.0
+    # Mostrar o encantamento na lore do item
+    show-in-lore: true
     # Mensagens ao ativar
     messages:
       chat: ''
@@ -313,8 +315,10 @@ enchants:
       - '&e{display-name}'
     # Itens que poderá aplicar o encantamento
     apply-whitelist: [ 'DIAMOND_PICKAXE' ]
-    # Tamanho da área que será minerada
+    # Tamanho do plano minerado (largura x altura)
     radius: 3
+    # Profundidade para frente (1 = 3x3x1)
+    depth: 1
     # Livro do encantamento
     book:
       material: 'ENCHANTED_BOOK'
@@ -325,7 +329,7 @@ enchants:
         - ''
         - '&e*&fComo funciona?'
         - '&7Ao quebrar um bloco de minério,'
-        - '&7uma área 3x3 será minerada.'
+        - '&7uma área configurável será minerada.'
   haste:
     display-name: '&7Haste'
     custom-lore:
