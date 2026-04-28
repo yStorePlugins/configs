@@ -45,6 +45,7 @@ chat:
 
     &a/feira criar <nome> - Criar uma feira
     &a/feira deletar [nome] - Deletar uma feira
+    &a/feira desalugar [nome] - Desalugar uma feira
     &c/feira reload - Recarrega as configurações
 
   no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
@@ -79,3 +80,4 @@ chat:
   feira-renew-cant: '&cVocê só pode renovar o aluguel quando a data de vencimento estiver menor ou igual a 10% do tempo total.'
   feira-max: '&cVocê atingiu o limite máximo de feiras ({max}).'
   feira-abandoned: '&aVocê abandonou o aluguel da sua feira.'
+  feira-unrented: '&aVocê desalugou a feira &f{feira}&a com sucesso.'
