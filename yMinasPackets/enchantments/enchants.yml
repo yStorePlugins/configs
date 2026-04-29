@@ -49,6 +49,9 @@ enchants:
       xp-mcmmo: true
       # Ativar dar economias
       economy: true
+      # Lista de IDs de economias que este encantamento NAO vai afetar
+      # Exemplo: [ 'money', 'tokens' ]
+      economy-blacklist: []
       # Ativar dar blocos
       blocks: true
       # Ativar dar energia
