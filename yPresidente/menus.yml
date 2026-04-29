@@ -132,6 +132,7 @@ taxes:
     spawner-slot: 11
     farm-slot: 20
     mine-slot: 29
+    market-slot: -1
     store-slot: 15
     historic-slot: 24
     taxes-slot: 33
@@ -165,6 +166,16 @@ taxes:
         - ' &7imposto &a{mine_tax}%&7 dos ganhos'
         - ' &7obtidos a partir deste meio.'
         - ''
+    market:
+      material: 'GOLD_INGOT'
+      name: '&6Vendas'
+      lore:
+        - '&8Alterado há: {time_since_update}'
+        - ''
+        - ' &7O servidor recolhe como'
+        - ' &7imposto &a{mine_tax}%&7 dos ganhos'
+        - ' &7obtidos a partir deste meio.'
+        - ''
     spawner-president:
       material: '647e2e5d55b6d04943519bed2557c6329e33b60b909dee8923cd88b115210'
       name: '&6Spawners'
@@ -190,6 +201,17 @@ taxes:
     mine-president:
       material: '1444de1a46d05f93976f8aad107f09bb960d3f29ea759dade00d004d8b1920b6'
       name: '&6Mineração'
+      lore:
+        - '&8Alterado há: {time_since_update}'
+        - ''
+        - ' &7O servidor recolhe como'
+        - ' &7imposto &a{mine_tax}%&7 dos ganhos'
+        - ' &7obtidos a partir deste meio.'
+        - ''
+        - '&aClique para alterar.'
+    market-president:
+      material: 'GOLD_INGOT'
+      name: '&6Vendas'
       lore:
         - '&8Alterado há: {time_since_update}'
         - ''
