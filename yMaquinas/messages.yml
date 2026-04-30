@@ -156,3 +156,4 @@ chat:
   booster-drop-activated: '&aVocê ativou um booster de drops na máquina. Multiplicador: &e{bonus}&a. Tempo: &e{tempo}&a.'
   machine-total-limit: '&cVocê atingiu o limite total de máquinas permitido ({atual}/{limite}).'
   plot-machine-limit: '&cJá existe uma máquina do tipo {maquina} neste terreno.'
+  machine-compacted: '&aVocê compactou suas máquinas em 1 item com &f{quantia} &aunidades.'
