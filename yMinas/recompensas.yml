@@ -39,6 +39,10 @@ Recompensas:
     # Comandos que serão executados no jogador.
     Command:
       Use: true
+      # quantia padrão da placeholder {amount} no comando (valor base)
+      PlaceholderAmount: 1
+      # multiplicar a placeholder {amount} pela quantia coletada dessa recompensa
+      MultiplyPlaceholder: true
       List:
         - 'blocos add {player} 100'
   Reco2:
@@ -72,5 +76,7 @@ Recompensas:
     # Comandos que serão executados no jogador.
     Command:
       Use: true
+      PlaceholderAmount: 1
+      MultiplyPlaceholder: true
       List:
         - 'points add {player} 10'
