@@ -855,6 +855,7 @@ enchants:
     #   "kill"   → executa quando o portador mata outro jogador
     #   "death"  → executa quando o portador é morto
     #   "damage" → executa quando o portador RECEBE dano de outro jogador (usa 'chance' acima)
+    #   "break"  → executa quando o portador quebra bloco com o item encantado na mão
     command-triggers:
       - 'kill'
     # Comandos executados sobre QUEM ATIVOU o enchant ({player}=ativador, {world}=mundo)
