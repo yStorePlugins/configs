@@ -1,8 +1,3 @@
-# Comandos e aliases do plugin
-Comando:
-  Comando: 'recogivesortudo'
-  Aliases: [ ]
-
 # Mundos que poderão vir recompensas
 Mundos:
   - 'world'
@@ -53,15 +48,6 @@ Encantamento:
     - 'STONE_PICKAXE'
     - 'WOOD_PICKAXE'
 
-Mensagens:
-  Nao encontrado: '&cEste jogador não foi encontrado.'
-  Nao e numero: '&cO argumento não é um número.'
-  Nao pode: '&cEste encantamento não serve para este item.'
-  Ja possui: '&cSeu item já possui este encantamento.'
-  Encantado: '&aSeu item foi encantado com sucesso.'
-  Deu: '&aVocê deu &7{quantia}&a de livros ceifador para o jogador &7{player}&a.'
-  Recebeu: '&aVocê recebeu &7{quantia} &a de livros ceifador.'
-
 Blocos:
   Reco1:
     ID: STONE #id do bloco quebrado
@@ -73,6 +59,25 @@ Blocos:
     Gives:
       - '[daritem] item1'
       - 'say {player} ganhou 1 item na recompensa'
+
+# Novo formato de pacotes de recompensa
+Configuracoes_de_Loot:
+  Mina_Vip_Loot:
+    Region: 'mina_vip_region'
+    Mundo:
+      - 'world'
+    Blocos_Gatilho:
+      STONE:
+        Data: 0
+        Chance_Global: 10.0
+        Recompensas_Possiveis:
+          - '80,item_comum'
+          - '15,item_raro'
+          - '5,item_lendario'
+
+# Vinculos dinamicos feitos por comando
+# /recompensas setregion [nome_da_regiao] [id_do_bloco_recompensa]
+Mapeamento_Region_Loot: { }
 
 Mobs:
   Reco1:
@@ -97,3 +102,39 @@ Items:
       - ''
       - '&7Isto é uma recompensa.'
       - ''
+    Mensagem: '&aVocê encontrou uma recompensa!'
+    Actionbar: '&eRecompensa encontrada'
+    Title: '&eRecompensa encontrada'
+
+  item_comum:
+    CustomSkull: false
+    URL: ''
+    ID: 264
+    Data: 0
+    Glow: false
+    Name: '&aMoeda Estelar'
+    Lore:
+      - '&7Uma moeda comum.'
+    Mensagem: '&aVocê achou uma Moeda Estelar!'
+
+  item_raro:
+    CustomSkull: false
+    URL: ''
+    ID: 388
+    Data: 0
+    Glow: true
+    Name: '&bFragmento Raro'
+    Lore:
+      - '&7Um fragmento raro.'
+    Mensagem: '&bVocê achou um Fragmento Raro!'
+
+  item_lendario:
+    CustomSkull: false
+    URL: ''
+    ID: 399
+    Data: 0
+    Glow: true
+    Name: '&6Reliquia Lendaria'
+    Lore:
+      - '&7Muito dificil de encontrar.'
+    Mensagem: '&6Você achou uma Relíquia Lendária!'

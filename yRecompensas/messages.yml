@@ -1,0 +1,24 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  permission: '&cVoce nao tem permissao para isto.'
+  not-found: '&cEste jogador nao foi encontrado.'
+  not-number: '&cO argumento nao e um numero.'
+  not-allowed-item: '&cEste encantamento nao serve para este item.'
+  already-enchanted: '&cSeu item ja possui este encantamento.'
+  enchanted: '&aSeu item foi encantado com sucesso.'
+  gave-book: '&aVoce deu &7{quantia}&a de livros sortudo para o jogador &7{player}&a.'
+  received-book: '&aVoce recebeu &7{quantia}&a livro(s) sortudo.'
+  reload: '&aConfiguracoes recarregadas com sucesso.'
+  setregion-usage: '&cUse: /{label} setregion <regiao> <loot_id>'
+  setregion-not-found-loot: '&cLoot table nao encontrada: &7{loot}'
+  setregion-warn-pos: '&eAviso: voce nao esta dentro da region &7{region}&e agora.'
+  setregion-saved: '&aVinculo salvo: &7{region} &a-> &7{loot}'
+  enchant-creative: '&cVoce nao pode encantar no criativo.'
