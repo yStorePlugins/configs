@@ -31,6 +31,8 @@ Skins:
       - '&a+10% ( PEDRA )'
       - ''
     bonus: 10.0
+    # Permitir remover/coletar a skin pelo menu (clique direito)
+    allow-collect: true
     trail:
       particle: 'REDSTONE'
       item: 'STONE:0,REDSTONE:0'
