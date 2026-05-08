@@ -287,6 +287,11 @@ chat:
     &aDigite no chat o nome do seu amigo que quer adicionar.'
     &7para cancelar digite &ncancelar&7.'
 
+  digit-pickaxe-loan-borrower: |
+
+    &aDigite no chat o nome do jogador para emprestar sua picareta.
+    &7Para cancelar digite &ncancelar&7.
+
   mine-area-need-level: '&cVocê precisa do nível {level} para comprar esta área.'
   friend-max: '&cEsta mina atingiu o limite máximo de amigos.'
   friend-added: '&aVocê adicionou o jogador &7{player}&a na sua mina.'
@@ -329,6 +334,17 @@ chat:
   public-mine-invalid-tax: '&cA taxa deve ser entre 0 e 100.'
   public-mine-invalid-max-users: '&cO número de visitantes deve ser maior que 0 (ou 0 para ilimitado).'
   public-mine-max-users-limit: '&cVocê não pode definir mais de &e{limit} &cvagas. Você tentou definir &e{max}&c.'
+  pickaxe-loan-created: '&aVocê emprestou sua picareta para &e{player}&a na mina &e{mine}&a. Enquanto estiver emprestada, você fica com a picareta padrão dentro da mina.'
+  pickaxe-loan-received: '&aVocê recebeu a picareta emprestada de &e{player}&a para minerar na mina &e{mine}&a.'
+  pickaxe-loan-revoked: '&aVocê revogou o empréstimo da picareta de &e{player}&a.'
+  pickaxe-loan-revoked-target: '&c{player} revogou o empréstimo da picareta.'
+  pickaxe-loan-none: '&cVocê não possui nenhum empréstimo de picareta ativo.'
+  pickaxe-loan-status: '&aEmpréstimo ativo para &e{player}&a na mina &e{mine}&a.'
+  pickaxe-loan-already-owner: '&cVocê já possui um empréstimo ativo. Revogue antes de criar outro.'
+  pickaxe-loan-already-borrower: '&cO jogador &e{player}&c já está usando uma picareta emprestada.'
+  pickaxe-loan-locked: '&cVocê está com a picareta emprestada para outro jogador. Revogue o empréstimo para upar/evoluir novamente.'
+  pickaxe-loan-select-applied: '&aFonte da picareta ativa atualizada com sucesso.'
+  pickaxe-loan-select-unavailable: '&cEsta fonte de picareta não está mais disponível.'
   bazooka-give: '&aVocê deu &7{amount}x {bazooka}&a para o jogador &7{player}&a.'
   bazooka-received: '&aVocê recebeu &7{amount}x {bazooka}&a.'
   bazooka-list: |

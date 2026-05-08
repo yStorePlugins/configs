@@ -40,6 +40,7 @@ main:
     friends-mines-slot: 12
     public-mines-slot: 21
     public-mine-config-slot: 21
+    pickaxe-loan-slot: 24
     enchants:
       material: 'b2f79016cad84d1ae21609c4813782598e387961be13c15682752f126dce7a'
       name: '&aEncantamentos'
@@ -183,6 +184,14 @@ main:
         - '&7usá-la pagando uma taxa.'
         - ''
         - '&aClique para configurar.'
+    pickaxe-loan:
+      material: 'DIAMOND_PICKAXE'
+      name: '&eEmpréstimo de Picareta'
+      lore:
+        - '&7Gerencie o empréstimo da sua'
+        - '&7picareta para outro jogador.'
+        - ''
+        - '&aClique para gerenciar.'
 
 # Menu de classes
 classes:
@@ -1259,14 +1268,66 @@ public-mine-config:
         - '&7do visitante será sua.'
         - ''
         - '&aClique para alterar.'
-    max-users:
-      material: 'SKULL_ITEM:3'
-      name: '&eMáximo de Visitantes'
+
+# Menu de empréstimo de picareta
+pickaxe-loan-config:
+  name: '&8Empréstimo de Picareta'
+  size: 27
+  back-slot: 22
+  items:
+    status-slot: 11
+    lend-slot: 13
+    revoke-slot: 15
+    status:
+      material: 'BOOK'
+      name: '&eStatus do Empréstimo'
       lore:
-        - '&7Máximo atual: &e{max_users}'
+        - '&7Estado: {status}'
+        - '&7Jogador: &f{borrower}'
+    lend:
+      material: 'EMERALD'
+      name: '&aEmprestar Picareta'
+      lore:
+        - '&7Clique para escolher no chat'
+        - '&7o jogador que vai receber'
+        - '&7seu empréstimo.'
+    revoke:
+      material: 'REDSTONE'
+      name: '&cRevogar Empréstimo'
+      lore:
+        - '&7Clique para revogar o empréstimo'
+        - '&7da picareta ativa.'
+    revoke-disabled:
+      material: 'COAL'
+      name: '&7Revogar Empréstimo'
+      lore:
+        - '&cNenhum empréstimo ativo.'
+    select-slot: 26
+    select:
+      material: 'COMPASS'
+      name: '&bSelecionar Picareta Ativa'
+      lore:
+        - '&7Escolha qual picareta usar'
+        - '&7quando estiver minerando.'
         - ''
-        - '&7Quantos jogadores podem'
-        - '&7usar sua mina ao mesmo tempo.'
-        - '&70 = Ilimitado'
-        - ''
-        - '&aClique para alterar.'
+        - '&aClique para selecionar.'
+
+# Menu de selecao de picareta ativa
+pickaxe-loan-select:
+  name: '&8Selecionar Picareta'
+  size: 36
+  back-slot: 31
+  slots: [10, 11, 12, 13, 14, 15, 16]
+  items:
+    self:
+      material: 'DIAMOND_PICKAXE'
+      name: '&aSua Picareta'
+      lore:
+        - '&7Origem: &f{owner}'
+        - '&7Estado: {selected}'
+    loan:
+      material: 'GOLD_PICKAXE'
+      name: '&ePicareta de {owner}'
+      lore:
+        - '&7Origem: &f{owner}'
+        - '&7Estado: {selected}'
