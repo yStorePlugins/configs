@@ -1,0 +1,21 @@
+Recompensas:
+  Reco1:
+    Chance: 100.0
+    # Item que aparecerá no preview do boss.
+    Preview:
+      material: 'STONE'
+      name: '&8Pedra'
+      amount: 64
+      lore: ['&fChance: &6100%']
+    # Só será dado o item se os comandos estiverem em false.
+    # Item que será dado ao jogador.
+    Item:
+      material: 'STONE'
+      name: '&8Pedra'
+      amount: 64
+      lore: ['&aEu valho muito!']
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      Use: false
+      List: ['give {player} stone 1']

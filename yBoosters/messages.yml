@@ -1,0 +1,63 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &c -> Comandos disponíveis <-
+    &f > &c/booster give <boosterKey> <jogador> <quantia> <duracao> <multiplicador>
+    &f > &c/booster givemcmmo
+    &f > &c/booster givemcmmoglobal
+    &r
+  global-none: '&cNão há nenhum booster global ativado.'
+  global-removed: '&cVocê removeu o booster global.'
+  online: '&cEste jogador não está mais online.'
+  thanked-already: '&cVocê já agradeceu este booster.'
+  thanked: '&aVocê agradeceu o jogador &f{player}&a pelo booster.'
+  thanked-yourself: '&cVocê não pode agradecer a si mesmo.'
+  point-need: '&cVocê deve ter 1 ponto para comprar a "Recompensa Misteriosa".'
+  bought: '&aVocê comprou a &f"Recompensa Misteriosa"&a por &f1 ponto&a.'
+  target-none: '&cO jogador {player} não tem nenhum booster ativado.'
+  target-removed: '&cVocê removeu o booster do player {player}.'
+  skill-received: '&aVocê recebeu um booster de habilidades.'
+  skill-give: '&aVocê deu um booster de habilidades para o jogador &7{player}&a.'
+  skill-not-found: '&cEste booster de habilidades não existe.'
+  skill-list: '&7Boosters de habilidades disponíveis: &f{list}'
+  skill-finished: |
+    &r
+    &cSeu booster de habilidades encerrou.
+    &r
+  skill-finished-global: |
+    &r
+    &cO booster global de habilidades encerrou.
+    &r
+  skill-already: '&cVocê já está usando um booster de habilidades, use &7&n/boosters&c para checar.'
+  skill-already-global: '&cUm booster global de habilidades já está ativo, use &7&n/boosters&c para checar.'
+  activated-skill-global: |
+    &eO jogador &8{player}&e ativou um booster &8Global&e de habilidades.
+    &f > &eSkill: &a{skill}&e.
+    &f > &eDuração: &a{duration}&e.
+    &f > &eMultiplicador: &a{multiplier}&e.
+  activated-skill: |
+    &eVocê ativou um booster de habilidades&e.
+    &f > &eSkill: &a{skill}&e.
+    &f > &eDuração: &a{duration}&e.
+    &f > &eMultiplicador: &a{multiplier}&e.
+  booster-not-found: '&cEste booster não existe.<nl>&cDisponíveis: {list}'
+  booster-invalid-values: '&cQuantia, duração e multiplicador devem ser maiores que zero.'
+  booster-received: '&aVocê recebeu um booster: &f{booster}&a.'
+  booster-given: '&aVocê deu o booster &f{booster} &apara o jogador &f{player}&a.'
+  booster-activated: '&aVocê ativou o booster &f{booster}&a.'

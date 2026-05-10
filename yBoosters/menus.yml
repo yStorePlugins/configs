@@ -1,0 +1,147 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Booster - Principal'
+  size: 27
+  items:
+    points-slot: 10
+    actionbar-slot: 12
+    skill-global-slot: 14
+    skill-slot: 16
+    my-boosters-slot: 22
+    points:
+      material: '24c22b8df0a853a49cb82e90a618d65012122361c8398062fcbaf74d5696c2a9'
+      name: '&aPontos'
+      lore:
+        - '&7Você ganha pontos quando um jogador lhe agradecer'
+        - '&7por você ter ativado um booster global.'
+        - ''
+        - '&f > Você possui: &b{pontos} pontos&f.'
+        - '&f > Custo da "Recompensa Misteriosa": &b1 ponto&f.'
+        - ''
+        - '&fEsquerdo&a para comprar a "Recompensa Misteriosa".'
+        - '&fDireito&a para ver as recompensas da "Recompensa Misteriosa".'
+    actionbar-yes:
+      material: 'STAINED_GLASS_PANE:5'
+      name: '&aActionbar'
+      lore:
+        - '&aVocê está recebendo a notificação'
+        - '&ado tempo restante do seu booster na'
+        - '&aactionbar.'
+    actionbar-no:
+      material: 'STAINED_GLASS_PANE:14'
+      name: '&aActionbar'
+      lore:
+        - '&7Veja os jogadores que'
+        - '&7se destacam sendo os'
+        - '&7mais ricos do servidor.'
+        - ''
+        - '&aClique para visualizar.'
+    skill-global-yes:
+      material: 'EXP_BOTTLE'
+      name: '&aBooster Global de Habilidades'
+      lore:
+        - '&fSkill: &7{skill}&f.'
+        - '&fMultiplicador: &7{multiplier}&f.'
+        - '&fDuração: &7{duration}&f.'
+    skill-global-no:
+      material: 'GLASS_BOTTLE'
+      name: '&aBooster Global de Habilidades'
+      lore:
+        - '&7Não há nenhum booster global'
+        - '&7de habilidades ativo.'
+    skill-yes:
+      material: 'EXP_BOTTLE'
+      name: '&cBooster de Habilidades'
+      lore:
+        - '&fSkill: &7{skill}&f.'
+        - '&fMultiplicador: &7{multiplier}&f.'
+        - '&fDuração: &7{duration}&f.'
+        - ''
+        - '&7Estado: &r{estado}&7.'
+        - ''
+        - '&7Clique para pausar/retomar o booster.'
+    skill-no:
+      material: 'GLASS_BOTTLE'
+      name: '&cBooster de Habilidades'
+      lore:
+        - '&7Não há nenhum booster de'
+        - '&7habilidades ativo.'
+    my-boosters:
+      material: 'ENCHANTED_BOOK'
+      name: '&eMeus Boosters'
+      lore:
+        - '&7Clique para ver seus boosters'
+        - '&7personalizados ativos.'
+
+# Menu de seleção de habilidade
+skill-select:
+  name: '&8Booster - Habilidades'
+  size: 27
+  items:
+    swords:
+      # A skill que o booster irá ativar.
+      skill: 'SWORDS'
+      # Nome da skill para exibir no menu.
+      skill-display: 'Espadas'
+      slot: 11
+      material: 'DIAMOND_SWORD'
+      glow: true
+      name: '&aEspadas'
+      lore:
+        - '&7Ganhe bônus de xp na evolução'
+        - '&7da skill espadas.'
+        - ''
+        - '&aClique para ativar o booster.'
+    excavation:
+      skill: 'EXCAVATION'
+      skill-display: 'Escavação'
+      slot: 12
+      material: 'DIAMOND_SPADE'
+      glow: true
+      name: '&aEscavação'
+      lore:
+        - '&7Ganhe bônus de xp na evolução'
+        - '&7da skill escavação.'
+        - ''
+        - '&aClique para ativar o booster.'
+
+# Menu de preview
+preview:
+  name: '&8Recompensa Misteriosa'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 49
+
+# Menu de meus boosters
+my-boosters:
+  name: '&8Booster - Meus Boosters'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 9
+  next-slot: 17
+  back-slot: 49

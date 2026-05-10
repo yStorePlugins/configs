@@ -1,0 +1,40 @@
+# Plugins compatíveis com boosters:
+# yMinas, yMinasPackets e yMinasPv
+# ySpawners
+# yPlantacoes, yArmazem, yFloresta e yCampo
+# yVender e yChestShop
+# yMaquinas e yMaquinasVirtuais
+
+boosters:
+  mining:
+    # Nome do booster nas mensagens
+    display-name: '&6Booster de Mineração'
+    # Lista de plugins que serão afetados pelo booster
+    apply-to:
+      - 'yMinas'
+      - 'yMinasPackets'
+      - 'yMinasPv'
+    # Item ativável
+    item:
+      material: 'EXP_BOTTLE'
+      name: '&6Booster de Mineração'
+      lore:
+        - '&fDuração: &6{time}'
+        - '&fMultiplicador: &6{multiplier}x'
+        - ''
+        - '&aClique para ativar.'
+    # Ícones no menu
+    icons:
+      # Ícone do booster ativo
+      active:
+        material: 'EXP_BOTTLE'
+        name: '&6Booster de Mineração'
+        lore:
+          - '&fDuração restante: &6{time}'
+          - '&fMultiplicador: &6{multiplier}x'
+      # Ícone do booster inativo
+      inactive:
+        material: 'EXP_BOTTLE'
+        name: '&6Booster de Mineração'
+        lore:
+          - '&fNenhum booster ativo.'
