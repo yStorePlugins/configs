@@ -1,0 +1,11 @@
+# Eventos sazonais simples.
+# days usa nomes de dia em ingles (Calendar/Java DayOfWeek).
+# multipliers:
+# - pack-multiplier: multiplica a quantidade de figurinhas ao abrir packs.
+# - recycle-multiplier: multiplica os Pontos da Copa obtidos ao reciclar.
+events:
+  weekend:
+    enabled: true
+    days: [ 'SATURDAY', 'SUNDAY' ]
+    pack-multiplier: 2.0
+    recycle-multiplier: 2.0

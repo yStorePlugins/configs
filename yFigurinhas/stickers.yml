@@ -1,0 +1,1493 @@
+# Figurinhas do album.
+# Formato:
+#  id-unico:
+#    name: '&aNome #01'
+#    category: 'brazil'
+#    rarity: 'COMMON'
+#    chance: 30.0
+#    first-collect-commands:
+#      - 'say {player} coletou {sticker_name} pela primeira vez!'
+#    item:
+#      material: PAPER
+#      name: '&aNome #01'
+#      lore:
+#        - ' &7Raridade: &fComum'
+
+stickers:
+  brazil-01:
+    name: '&aNeymar #1'
+    category: 'brazil'
+    rarity: 'COMMON'
+    chance: 30.0
+    first-collect-commands:
+      - 'say {player} coletou {sticker_name} pela primeira vez!'
+    item:
+      material: 274a3f150db21bf28701d83dd5a3426a9e5eeaed3d948a44acd7343858ce46e3
+      name: '&aNeymar #1'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-02:
+    name: '&aViniJR #02'
+    category: 'brazil'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: 89d727497b8117f4ef05035ec7af950d395facad24327e940e2c3577dbc78c33
+      name: '&aViniJR #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-03:
+    name: '&aAlisson #03'
+    category: 'brazil'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: 5575f9784eafec8b4a0693c55a6606576302776eacdc90d439bf1296146d7094
+      name: '&aAlisson #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-04:
+    name: '&aDanilo #04'
+    category: 'brazil'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: a771538307ff104f2459f7461d40e4f564b49038e57431db16af0b74ab5f1b74
+      name: '&aDanilo #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-05:
+    name: '&aAlex Sandro #05'
+    category: 'brazil'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: b153739638a484af8eb337df78a7d01d36033232607bca99cc5535864c56e99e
+      name: '&aAlex Sandro #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-06:
+    name: '&aMarquinhos #06'
+    category: '&aMarquinhos #06'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: feaccb837c47a3b64c3bc752e753e6030522bcf5e61e532f3b302f8f15e78431
+      name: '&aBrasil #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-07:
+    name: '&aBremer #07'
+    category: 'brazil'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: 2c9341717bc71418d416a7d587180fbd73e2841090c1f961c38b5a9e425c3ba
+      name: '&aBremer #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-08:
+    name: '&aCasemiro #08'
+    category: 'brazil'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: b7691b9849adf21c279f80a1fcc7a15b2bb921907038a69c6aa1379c8295306c
+      name: '&aCasemiro #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-09:
+    name: '&aLéo Pereira #09'
+    category: 'brazil'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: 394776dc5c46307b1f1b730d3596cc33838ae90634f8100da598bccfe37466fa
+      name: '&aLéo Pereira #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-10:
+    name: '&aLucas Paquetá #10'
+    category: 'brazil'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: 61e8d5bbc1cbc2f4e7cd78eaa10557cc4f8f936c76413760ac00098d4bd45187
+      name: '&aLucas Paquetá #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-11:
+    name: '&aRaphinha #11'
+    category: 'brazil'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: bd9b4a72ea0c410f2dd23a5cf82ba6a2e9b8dc602f98c0b8d920f2aad631ef7c
+      name: '&aRaphinha #11'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+  brazil-12:
+    name: '&aEndrick #12'
+    category: 'brazil'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: ff4a256e2b3ed5e6e9bf53370a48334687854ea5735f2b41bd3f77a8fc2a151e
+      name: '&aEndrick #12'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  argentina-01:
+    name: '&bArgentina #01'
+    category: 'argentina'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&bArgentina #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  argentina-02:
+    name: '&bArgentina #02'
+    category: 'argentina'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&bArgentina #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  argentina-03:
+    name: '&bArgentina #03'
+    category: 'argentina'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&bArgentina #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  argentina-04:
+    name: '&bArgentina #04'
+    category: 'argentina'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&bArgentina #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  argentina-05:
+    name: '&bArgentina #05'
+    category: 'argentina'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&bArgentina #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  argentina-06:
+    name: '&bArgentina #06'
+    category: 'argentina'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&bArgentina #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  argentina-07:
+    name: '&bArgentina #07'
+    category: 'argentina'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&bArgentina #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  argentina-08:
+    name: '&bArgentina #08'
+    category: 'argentina'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&bArgentina #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  argentina-09:
+    name: '&bArgentina #09'
+    category: 'argentina'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&bArgentina #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  argentina-10:
+    name: '&bArgentina #10'
+    category: 'argentina'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&bArgentina #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  france-01:
+    name: '&9Franca #01'
+    category: 'france'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&9Franca #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  france-02:
+    name: '&9Franca #02'
+    category: 'france'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&9Franca #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  france-03:
+    name: '&9Franca #03'
+    category: 'france'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&9Franca #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  france-04:
+    name: '&9Franca #04'
+    category: 'france'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&9Franca #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  france-05:
+    name: '&9Franca #05'
+    category: 'france'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&9Franca #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  france-06:
+    name: '&9Franca #06'
+    category: 'france'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&9Franca #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  france-07:
+    name: '&9Franca #07'
+    category: 'france'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&9Franca #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  france-08:
+    name: '&9Franca #08'
+    category: 'france'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&9Franca #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  france-09:
+    name: '&9Franca #09'
+    category: 'france'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&9Franca #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  france-10:
+    name: '&9Franca #10'
+    category: 'france'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&9Franca #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  germany-01:
+    name: '&eAlemanha #01'
+    category: 'germany'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  germany-02:
+    name: '&eAlemanha #02'
+    category: 'germany'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  germany-03:
+    name: '&eAlemanha #03'
+    category: 'germany'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  germany-04:
+    name: '&eAlemanha #04'
+    category: 'germany'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  germany-05:
+    name: '&eAlemanha #05'
+    category: 'germany'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  germany-06:
+    name: '&eAlemanha #06'
+    category: 'germany'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  germany-07:
+    name: '&eAlemanha #07'
+    category: 'germany'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  germany-08:
+    name: '&eAlemanha #08'
+    category: 'germany'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  germany-09:
+    name: '&eAlemanha #09'
+    category: 'germany'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  germany-10:
+    name: '&eAlemanha #10'
+    category: 'germany'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&eAlemanha #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  portugal-01:
+    name: '&cPortugal #01'
+    category: 'portugal'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&cPortugal #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  portugal-02:
+    name: '&cPortugal #02'
+    category: 'portugal'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&cPortugal #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  portugal-03:
+    name: '&cPortugal #03'
+    category: 'portugal'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&cPortugal #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  portugal-04:
+    name: '&cPortugal #04'
+    category: 'portugal'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&cPortugal #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  portugal-05:
+    name: '&cPortugal #05'
+    category: 'portugal'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&cPortugal #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  portugal-06:
+    name: '&cPortugal #06'
+    category: 'portugal'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&cPortugal #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  portugal-07:
+    name: '&cPortugal #07'
+    category: 'portugal'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&cPortugal #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  portugal-08:
+    name: '&cPortugal #08'
+    category: 'portugal'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&cPortugal #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  portugal-09:
+    name: '&cPortugal #09'
+    category: 'portugal'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&cPortugal #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  portugal-10:
+    name: '&cPortugal #10'
+    category: 'portugal'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&cPortugal #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  spain-01:
+    name: '&6Espanha #01'
+    category: 'spain'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&6Espanha #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  spain-02:
+    name: '&6Espanha #02'
+    category: 'spain'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&6Espanha #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  spain-03:
+    name: '&6Espanha #03'
+    category: 'spain'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&6Espanha #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  spain-04:
+    name: '&6Espanha #04'
+    category: 'spain'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&6Espanha #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  spain-05:
+    name: '&6Espanha #05'
+    category: 'spain'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&6Espanha #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  spain-06:
+    name: '&6Espanha #06'
+    category: 'spain'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&6Espanha #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  spain-07:
+    name: '&6Espanha #07'
+    category: 'spain'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&6Espanha #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  spain-08:
+    name: '&6Espanha #08'
+    category: 'spain'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&6Espanha #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  spain-09:
+    name: '&6Espanha #09'
+    category: 'spain'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&6Espanha #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  spain-10:
+    name: '&6Espanha #10'
+    category: 'spain'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&6Espanha #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  england-01:
+    name: '&fInglaterra #01'
+    category: 'england'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  england-02:
+    name: '&fInglaterra #02'
+    category: 'england'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  england-03:
+    name: '&fInglaterra #03'
+    category: 'england'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  england-04:
+    name: '&fInglaterra #04'
+    category: 'england'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  england-05:
+    name: '&fInglaterra #05'
+    category: 'england'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  england-06:
+    name: '&fInglaterra #06'
+    category: 'england'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  england-07:
+    name: '&fInglaterra #07'
+    category: 'england'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  england-08:
+    name: '&fInglaterra #08'
+    category: 'england'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  england-09:
+    name: '&fInglaterra #09'
+    category: 'england'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  england-10:
+    name: '&fInglaterra #10'
+    category: 'england'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&fInglaterra #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  uruguay-01:
+    name: '&3Uruguay #01'
+    category: 'uruguay'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  uruguay-02:
+    name: '&3Uruguay #02'
+    category: 'uruguay'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  uruguay-03:
+    name: '&3Uruguay #03'
+    category: 'uruguay'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  uruguay-04:
+    name: '&3Uruguay #04'
+    category: 'uruguay'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  uruguay-05:
+    name: '&3Uruguay #05'
+    category: 'uruguay'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  uruguay-06:
+    name: '&3Uruguay #06'
+    category: 'uruguay'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  uruguay-07:
+    name: '&3Uruguay #07'
+    category: 'uruguay'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  uruguay-08:
+    name: '&3Uruguay #08'
+    category: 'uruguay'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  uruguay-09:
+    name: '&3Uruguay #09'
+    category: 'uruguay'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  uruguay-10:
+    name: '&3Uruguay #10'
+    category: 'uruguay'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&3Uruguay #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  stadiums-01:
+    name: '&7Estadios #01'
+    category: 'stadiums'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&7Estadios #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  stadiums-02:
+    name: '&7Estadios #02'
+    category: 'stadiums'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&7Estadios #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  stadiums-03:
+    name: '&7Estadios #03'
+    category: 'stadiums'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&7Estadios #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  stadiums-04:
+    name: '&7Estadios #04'
+    category: 'stadiums'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&7Estadios #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  stadiums-05:
+    name: '&7Estadios #05'
+    category: 'stadiums'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&7Estadios #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  stadiums-06:
+    name: '&7Estadios #06'
+    category: 'stadiums'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&7Estadios #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  stadiums-07:
+    name: '&7Estadios #07'
+    category: 'stadiums'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&7Estadios #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  stadiums-08:
+    name: '&7Estadios #08'
+    category: 'stadiums'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&7Estadios #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  stadiums-09:
+    name: '&7Estadios #09'
+    category: 'stadiums'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&7Estadios #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  stadiums-10:
+    name: '&7Estadios #10'
+    category: 'stadiums'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&7Estadios #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  mascots-01:
+    name: '&dMascotes #01'
+    category: 'mascots'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&dMascotes #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  mascots-02:
+    name: '&dMascotes #02'
+    category: 'mascots'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&dMascotes #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  mascots-03:
+    name: '&dMascotes #03'
+    category: 'mascots'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&dMascotes #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  mascots-04:
+    name: '&dMascotes #04'
+    category: 'mascots'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&dMascotes #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  mascots-05:
+    name: '&dMascotes #05'
+    category: 'mascots'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&dMascotes #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  mascots-06:
+    name: '&dMascotes #06'
+    category: 'mascots'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&dMascotes #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  mascots-07:
+    name: '&dMascotes #07'
+    category: 'mascots'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&dMascotes #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  mascots-08:
+    name: '&dMascotes #08'
+    category: 'mascots'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&dMascotes #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  mascots-09:
+    name: '&dMascotes #09'
+    category: 'mascots'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&dMascotes #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  mascots-10:
+    name: '&dMascotes #10'
+    category: 'mascots'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&dMascotes #10'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  trophies-01:
+    name: '&6Trofeus #01'
+    category: 'trophies'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&6Trofeus #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  trophies-02:
+    name: '&6Trofeus #02'
+    category: 'trophies'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&6Trofeus #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  trophies-03:
+    name: '&6Trofeus #03'
+    category: 'trophies'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&6Trofeus #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  trophies-04:
+    name: '&6Trofeus #04'
+    category: 'trophies'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&6Trofeus #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  trophies-05:
+    name: '&6Trofeus #05'
+    category: 'trophies'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&6Trofeus #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  trophies-06:
+    name: '&6Trofeus #06'
+    category: 'trophies'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&6Trofeus #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  trophies-07:
+    name: '&6Trofeus #07'
+    category: 'trophies'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&6Trofeus #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  trophies-08:
+    name: '&6Trofeus #08'
+    category: 'trophies'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&6Trofeus #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  trophies-09:
+    name: '&6Trofeus #09'
+    category: 'trophies'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&6Trofeus #09'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  trophies-10:
+    name: '&6Trofeus #10'
+    category: 'trophies'
+    rarity: 'GOLDEN'
+    chance: 0.2
+    item:
+      material: PAPER
+      name: '&6Trofeus #10'
+      lore:
+        - ' &7Raridade: &fDourada'
+        - ' &7Edição: &fCopa'
+        - ''
+
+  legends-01:
+    name: '&5Lendas #01'
+    category: 'legends'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&5Lendas #01'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  legends-02:
+    name: '&5Lendas #02'
+    category: 'legends'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&5Lendas #02'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  legends-03:
+    name: '&5Lendas #03'
+    category: 'legends'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&5Lendas #03'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  legends-04:
+    name: '&5Lendas #04'
+    category: 'legends'
+    rarity: 'COMMON'
+    chance: 30.0
+    item:
+      material: PAPER
+      name: '&5Lendas #04'
+      lore:
+        - ' &7Raridade: &fComum'
+        - ' &7Edição: &fCopa'
+        - ''
+  legends-05:
+    name: '&5Lendas #05'
+    category: 'legends'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&5Lendas #05'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  legends-06:
+    name: '&5Lendas #06'
+    category: 'legends'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&5Lendas #06'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  legends-07:
+    name: '&5Lendas #07'
+    category: 'legends'
+    rarity: 'RARE'
+    chance: 15.0
+    item:
+      material: PAPER
+      name: '&5Lendas #07'
+      lore:
+        - ' &7Raridade: &fRara'
+        - ' &7Edição: &fCopa'
+        - ''
+  legends-08:
+    name: '&5Lendas #08'
+    category: 'legends'
+    rarity: 'EPIC'
+    chance: 4.0
+    item:
+      material: PAPER
+      name: '&5Lendas #08'
+      lore:
+        - ' &7Raridade: &fÉpica'
+        - ' &7Edição: &fCopa'
+        - ''
+  legends-09:
+    name: '&5Lendas #09'
+    category: 'legends'
+    rarity: 'LEGENDARY'
+    chance: 1.0
+    item:
+      material: PAPER
+      name: '&5Lendas #09'
+      lore:
+        - ' &7Raridade: &fLendária'
+        - ' &7Edição: &fCopa'
+        - ''
+  legends-10:
+    name: '&5Lendas #10'
+    category: 'legends'
+    rarity: 'GOLDEN'
+    chance: 0.2
+    item:
+      material: PAPER
+      name: '&5Lendas #10'
+      lore:
+        - ' &7Raridade: &fDourada'
+        - ' &7Edição: &fCopa'
+        - ''

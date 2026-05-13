@@ -1,0 +1,42 @@
+# Tipos de pacotes disponiveis.
+# chances define o peso por raridade durante a abertura.
+
+# Item fisico padrao usado ao entregar pacote para o jogador.
+# Placeholders disponiveis: {name}, {type}, {stickers}
+pack-item:
+  material: CHEST
+  name: '&bPacote: {name}'
+  lore:
+    - ''
+    - ' &7Figurinhas: &f{stickers}'
+    - ' &eClique para abrir'
+    - ''
+
+packs:
+  common:
+    name: '&aPacote Comum'
+    stickers: 3
+    # Opcional: sobrescreve o item físico desse tipo especifico.
+    # item:
+    #   material: CHEST
+    #   name: '&aPacote Comum'
+    #   lore:
+    #     - ''
+    #     - ' &7Tipo: &f{type}'
+    #     - ' &7Figurinhas: &f{stickers}'
+    #     - ' &eClique para abrir'
+    #     - ''
+    chances:
+      COMMON: 80
+      RARE: 15
+      EPIC: 4
+      LEGENDARY: 1
+  premium:
+    name: '&6Pacote Premium'
+    stickers: 5
+    chances:
+      COMMON: 50
+      RARE: 30
+      EPIC: 15
+      LEGENDARY: 4
+      GOLDEN: 1

@@ -1,0 +1,9 @@
+# Loja da Copa.
+# price = custo em Cup Points.
+# commands executa no console com {player}.
+shop:
+  premium-pack:
+    name: '&6Pacote Premium'
+    price: 100
+    commands:
+      - 'figurinhas admin givepack {player} premium 1 item'

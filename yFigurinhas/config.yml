@@ -1,0 +1,242 @@
+#         _____ _                  _       _
+#  _   _|  ___(_) __ _ _   _ _ __(_)_ __ | |__   __ _ ___
+# | | | | |_  | |/ _` | | | | '__| | '_ \| '_ \ / _` / __|
+# | |_| |  _| | | (_| | |_| | |  | | | | | | | | (_| \__ \
+#  \__, |_|   |_|\__, |\__,_|_|  |_|_| |_|_| |_|\__,_|___/
+#  |___/         |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+    # Prefixo para diferenciar no redis
+    prefix: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay (ticks) para carregar dados apos login.
+login-delay: 20
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Sistemas gerais.
+general:
+  pack-drops:
+    # Minutos online necessarios para premio automatico.
+    online-minutes: 30
+    # Quantidade de pacotes por premio.
+    amount: 1
+    # Tipo do pacote entregue automaticamente (deve existir em packs.yml).
+    type: 'common'
+  trade:
+    # Cooldown para enviar novo pedido de troca.
+    request-cooldown-seconds: 20
+
+# Categorias do album.
+# A chave da categoria e usada nas figurinhas e deve ser unica.
+categories:
+  brazil:
+    name: '&aBrasil'
+    # Recompensas executadas no console quando o jogador completa 100% desta categoria.
+    # Placeholders: {player}, {category}, {category_name}
+    completion-rewards:
+      - 'say {player} completou a categoria {category_name} nas Figurinhas!'
+    item:
+      material: 9a46475d5dcc815f6c5f2859edbb10611f3e861c0eb14f088161b3c0ccb2b0d9
+      name: '&aBrasil'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  argentina:
+    name: '&bArgentina'
+    item:
+      material: f6d033dc5f675ad51bc06c7a1949c35a1d37e48a2e1c2789c2cf7d30ec58f32c
+      name: '&bArgentina'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  france:
+    name: '&9França'
+    item:
+      material: 6903349fa45bdd87126d9cd3c6c0abba7dbd6f56fb8d78701873a1e7c8ee33cf
+      name: '&9França'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  germany:
+    name: '&eAlemanha'
+    item:
+      material: 5e7899b4806858697e283f084d9173fe487886453774626b24bd8cfecc77b3f
+      name: '&eAlemanha'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  portugal:
+    name: '&cPortugal'
+    item:
+      material: ebd51f4693af174e6fe1979233d23a40bb987398e3891665fafd2ba567b5a53a
+      name: '&cPortugal'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  spain:
+    name: '&6Espanha'
+    item:
+      material: c2d730b6dda16b584783b63d082a80049b5fa70228aba4ae884c2c1fc0c3a8bc
+      name: '&6Espanha'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  england:
+    name: '&fInglaterra'
+    item:
+      material: bee5c850afbb7d8843265a146211ac9c615f733dcc5a8e2190e5c247dea32
+      name: '&fInglaterra'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  uruguay:
+    name: '&3Uruguay'
+    item:
+      material: c3096928c15307ea4d29a5c71341aa35ff7b89f5653b93db49606f5a20f477
+      name: '&3Uruguay'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  stadiums:
+    name: '&7Estádios'
+    item:
+      material: 4528ed45802400f465b5c4e3a6b7a9f2b6a5b3d478b6fd84925cc5d988391c7d
+      name: '&7Estádios'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  mascots:
+    name: '&dMascotes'
+    item:
+      material: 96842d840b41034f090b5b91dac4c50b3f8aed261a4f091cce2dee230c6c6313
+      name: '&dMascotes'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  trophies:
+    name: '&6Troféus'
+    item:
+      material: 567f2bc411dd38f3111fe1a37e179bdcab66e509c2aff2702814d5e07a4faeb6
+      name: '&6Troféus'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+  legends:
+    name: '&5Lendas'
+    item:
+      material: 13dd61e484263c34f1787f660cd600c28cc2fb0de65890274294acd2c3032068
+      name: '&5Lendas'
+      lore:
+        - ' &7Coletadas: &f{collected}&7/&f{total}'
+        - ' &7Progresso: &a{progress}%'
+        - ''
+        - ' &eClique para ver figurinhas'
+
+# Raridades do sistema de figurinhas.
+# As chaves abaixo devem ser usadas em stickers.yml e packs.yml.
+rarities:
+  COMMON:
+    # Nome exibido para o jogador.
+    name: '&7Comum'
+  RARE:
+    name: '&9Rara'
+  EPIC:
+    name: '&5Épica'
+  LEGENDARY:
+    name: '&6Lendária'
+  GOLDEN:
+    name: '&eDourada'
+
+# Recompensas por progresso percentual do album.
+# Cada chave e uma porcentagem (0-100).
+# Os comandos sao executados no console com {player}.
+progress-rewards:
+  '10':
+    - 'say {player} alcancou 10% nas Figurinhas!'
+  '50':
+    - 'say {player} alcancou 50% nas Figurinhas!'
+  '100':
+    - 'say {player} completou as Figurinhas!'
+
+# Recompensas por ordem de conclusao do album completo (100%).
+# A chave representa a posicao de chegada.
+# Placeholders: {player}, {position}
+album-completion-rewards:
+  '1':
+    - 'say {player} foi o 1o a completar o album!'
+  '2':
+    - 'say {player} foi o 2o a completar o album!'
+  '3':
+    - 'say {player} foi o 3o a completar o album!'

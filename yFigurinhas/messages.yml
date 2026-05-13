@@ -1,0 +1,83 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Mensagens a serem enviadas pelo plugin.
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  permission: '&cVocê não tem permissão para esta ação.'
+  console: '&cApenas jogadores in-game podem usar esta ação.'
+  reload: '&aArquivos de configuração recarregados com sucesso.'
+  player-target: '&cJogador {player} não está online.'
+  player-self: '&cVocê não pode usar isso em si mesmo.'
+  number: '&cO valor informado não é um número válido.'
+  help: |
+
+    &8&m---------------------------------
+    &6&lFigurinhas &8- &7Comandos
+    &8&m---------------------------------
+    &e/{command} open &8- &7Abre um pacote comum.
+    &e/{command} album &8- &7Mostra o progresso do álbum.
+    &e/{command} duplicates &8- &7Mostra suas figurinhas repetidas.
+    &e/{command} recycle &8- &7Recicla repetidas em Pontos da Copa.
+    &e/{command} trade <player> &8- &7Envia um pedido de troca.
+    &e/{command} trade accept <player> &8- &7Aceita um pedido e abre o menu.
+    &e/{command} shop &8- &7Abre a Loja da Copa.
+    &e/{command} top &8- &7Mostra o ranking.
+    &e/{command} admin ... &8- &7Comandos administrativos.
+    &8&m---------------------------------
+  no-packs: '&cVocê não possui pacotes disponíveis desse tipo.'
+  pack-opened: |
+
+    &aVocê abriu &f{pack}&a!
+
+    {stickers}
+
+  pack-opened-sticker-format: '&8- &f{name} &8(&7{rarity}&8) &7x{amount}'
+
+  album-status: |
+
+    &6Álbum de &f{player}
+    &7Progresso: &a{progress}%
+    &7Figurinhas: &f{collected}&7/&f{total}
+    &7Repetidas: &e{duplicates}
+
+  duplicates-status: |
+
+    &6Repetidas de &f{player}
+    &7Total de repetidas: &e{duplicates}
+    &7Pontos da Copa: &b{cup_points}
+
+  recycle-success: '&aRepetidas recicladas: &f{converted}&a. Pontos da Copa agora: &f{cup_points}&a.'
+  shop-no-points: '&cPontos da Copa insuficientes. Necessário: &f{price}&c.'
+  shop-buy-success: '&aCompra realizada: &f{offer} &7por &f{price} &bPontos da Copa&a.'
+  top-header: '&6Top Abridores de Pacotes'
+  top-line: '&e#{rank} &f{player} &8- &7{value} pacotes'
+  pack-given: '&aEntregou &f{amount}x {pack} &apacote(s) para &f{player}&a.'
+  pack-invalid: '&cTipo de pacote inválido: &f{pack}&c.<nl>&cDisponíveis: &f{list}&c.'
+  sticker-given: '&aFigurinha entregue para &f{player}&a.'
+  sticker-used: '&aFigurinha adicionada ao álbum: &f{sticker}&a.'
+  sticker-invalid: '&cFigurinha inválida: &f{sticker}&c..<nl>&cDisponíveis: &f{list}&c.'
+  sticker-removed: '&aFigurinha removida de &f{player}&a.'
+  player-reset: '&aDados do jogador resetados: &f{player}&a.'
+  reset-all: '&aReset global concluído. Jogadores resetados: &f{players}&a, registros de figurinhas removidos: &f{ownership}&a.'
+  pack-drop-received: '&aVoce recebeu &f{amount}x {pack} &apor tempo online!'
+  trade-sent: '&aPedido de troca enviado para &f{player}&a.'
+  trade-received: '&e{player} enviou um pedido de troca. Use &f/figurinhas trade accept {player} &epara aceitar.'
+  trade-expired: '&cSeu pedido de troca com &f{player} &cexpirou.'
+  trade-not-found: '&cNenhum pedido de troca pendente encontrado com esse jogador.'
+  trade-started: '&aSessão de troca iniciada com &f{player}&a. Use o menu para adicionar repetidas e confirmar.'
+  trade-already: '&cVocê já possui uma sessão de troca ativa.'
+  trade-cooldown: '&cVocê precisa aguardar &f{seconds}s &cpara enviar outro pedido de troca.'
+  trade-locked: '&cA troca está travada porque um lado já confirmou. Remova a confirmação primeiro.'
+  trade-added: '&aAdicionado &f{amount}x {sticker} &à sua oferta.'
+  trade-confirm-wait: '&eTroca confirmada. Aguardando o outro jogador.'
+  trade-confirmed: '&aTroca concluída com sucesso.'
+  trade-cancelled: '&cTroca cancelada.'
+  trade-not-enough: '&cVocê não possui repetidas suficientes de &f{sticker}&c.'
+  trade-log-empty: '&cNenhum log de troca encontrado para &f{player}&c.'
+  trade-log-header: '&6Logs recentes de troca para &f{player}&6:'
