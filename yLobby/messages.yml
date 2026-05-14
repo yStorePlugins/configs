@@ -183,3 +183,4 @@ chat:
   portal-no-frame: '&cNenhuma moldura válida encontrada ao redor do bloco atual.'
   portal-too-small: '&cA área interna do portal é muito pequena (mínimo {min} bloco(s)).'
   portal-too-large: '&cA moldura é muito grande (máximo {max}x{max} blocos internos).'
+  time-set: '&aTempo do parkour do jogador &f{player}&a setado para &f{time}&a.'
