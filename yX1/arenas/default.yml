@@ -1,0 +1,154 @@
+# Comandos permitidos dentro do X1
+allowed-commands:
+  - 'spawn'
+  - 'home'
+  - 'warp'
+
+# Comandos bloqueados enquanto estiver desafiando alguém
+challenge-blocked-commands:
+  - 'mina'
+  - 'chain'
+  - 'pesca'
+  - 'farm'
+
+# Configurações de temporização
+time:
+  # Tempo para o desafio expirar
+  # em segundos
+  expire: 20
+  # Tempo para liberar o pvp
+  # em segundos
+  pvp: 5
+  # Tempo para recolher os itens da arena
+  # em segundos
+  collect: 10
+  # Delay para desafiar novamente
+  # em segundos
+  challenge-delay: 60
+
+# Configurações de apostas
+bet:
+  # A aposta deve ser obrigatória para desafiar alguém
+  required: false
+  # Mínimo de money para apostar no X1
+  min-prices:
+    price1:
+      provider: 'money'
+      amount: 100.0
+
+# Configurações do sistema de reconhecer o MITO
+mito:
+  # Quantia de vezes que poderá ignorar/recusar o x1 para perder a tag mito (yMito)
+  ignore-limit: 3
+  # Placeholder para retornar o nome do Mito
+  placeholder: '%ymito_mito%'
+  # Comando de sortear o mito
+  draw-command: 'mito setar random'
+
+# Configurações do camarote
+camarote:
+  # Bloquear de levar itens para o camarote
+  block-items: true
+
+# Itens setados para a arena
+custom-items:
+  # Se true, o X1 usa os itens abaixo
+  enabled: false
+  # Inventário (0-35)
+  inventory: {}
+  # Armadura (0-3) [0 boots, 1 leggings, 2 chestplate, 3 helmet]
+  armor: {}
+
+# Ícones da arena no menu /x1 arenas
+menu-icons:
+  free:
+    material: 'DIAMOND_SWORD'
+    flags: ['*']
+    name: '&a{arena}'
+    lore:
+      - ''
+      - ' &7Estado: {state}'
+      - ''
+      - ' &eClique para desafiar alguém nessa arena.'
+      - ''
+  busy:
+    material: 'BLAZE_POWDER'
+    flags: ['*']
+    name: '&c{arena}'
+    lore:
+      - ''
+      - ' &7Estado: {state}'
+      - ' &7Desafiante: &f{challenger}'
+      - ' &7Desafiado: &f{challenged}'
+      - ' &7Aposta: &f{bet}'
+      - ''
+      - ' &eClique para espectar essa batalha.'
+      - ''
+  admin:
+    material: 'COMPASS'
+    name: '&6Arena: &f{arena}'
+    lore:
+      - ''
+      - ' &7Estado: {state}'
+      - ' &7Pos1: {pos1}'
+      - ' &7Pos2: {pos2}'
+      - ' &7Saída: {exit}'
+      - ' &7Camarote: {camarote}'
+      - ''
+      - ' &eClique para abrir o menu de setagens.'
+      - ''
+
+# Mensagens da arena
+messages:
+  location-set: '&aLocal ({local}) setado.'
+  camarote-not-set: '&cO camarote não foi setado.'
+  positions-not-set: '&cAs posições da arena não foram configuradas corretamente.'
+  teleported: '&aTeletransportado para a arena.'
+  not-challenging: '&cVocê não está desafiando ninguém.'
+  not-challenged: '&cVocê não foi desafiado por ninguém.'
+  challenge-cancelled: '&cVocê cancelou o desafio.'
+  delay: '&cVocê deve esperar {time} segundos para desafiar novamente.'
+  camarote-block: '&cVocê não pode levar itens para o camarote.'
+  none-x1: '&cNão há nenhum X1 ocorrendo nessa arena no momento.'
+  already-running: '&cJá há um X1 ocorrendo nessa arena no momento.'
+  pending: |
+    &r
+    &cHá um desafio ou pedido ocorrendo.
+    &f > &7Desafiante: &f{challenger}&7.
+    &f > &7Desafiado: &f{challenged}&7.
+    &f > &7Quantia de money: &f{money}&7.
+    &r
+  challenge: |
+    &r
+    &cO jogador &f{challenger} &cdesafiou o jogador &f{challenged}&c para um X1.
+    &f > &7Quantia apostada: &a{money}&7.
+    &cPara aceitar digite &f&n/x1 aceitar &ce &f&n/x1 negar &cpara negar.
+    &cO desafiado tem &f20&c segundos para decidir.
+    &r
+  accepted: |
+    &r
+    &cO jogador &f{challenged} &caceitou o desafio do jogador &f{challenger}&c para um X1.
+    &f > &7Quantia apostada: &a{money}&7.
+    &cOs jogadores tem &f5&c segundos para se prepararem.
+    &r
+  refused: |
+    &r
+    &cO jogador &f{challenged} &cnegou o desafio do jogador &f{challenger}&c para um X1.
+    &r
+  expired: |
+    &r
+    - '&cO jogador &f{challenged} &cnão aceitou o desafio do jogador &f{challenger}&c para um X1.
+    &r
+  won: |
+    &r
+    &cO jogador &f{winner} &cganhou o X1 contra o jogador &f{loser}&c.
+    &f > &7Tempo para recolher os itens: &f&n10 segundos&7.
+    &r
+  pvp-enabled: '&aO PVP foi liberado.'
+
+# Localizacoes da arena
+locations:
+  pos1: 'none'
+  pos2: 'none'
+  exit: 'none'
+  camarote: 'none'

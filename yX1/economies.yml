@@ -1,0 +1,46 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+
+# Providers disponiveis:
+#
+#   AtlasEconomiaSecundaria, AtlasMinas, AtlasMinasV2,
+#   JH_Shop, LegendaryEconomy, NextCash, PlayerPoints,
+#   StormEconomiaSecundaria, StormMinas, TGCash,
+#   yAlmas, yPoints, yRankup,
+#   Vault
+#
+
+default: 'money'
+
+economies:
+  money:
+    provider: 'Money'
+    display: 'Dinheiro'
+    abbreviated: 'coins'
+    permission: ''
+    symbol: '$'
+    item-settings:
+      material: GOLD_INGOT
+      name: '&aDinheiro'
+      lore:
+        - ''
+        - ' &7Tipo: &fMoney'
+        - ' &aClique para usar'
+        - ''
+  playerpoints:
+    provider: 'PlayerPoints'
+    display: 'Cash'
+    abbreviated: 'cash'
+    permission: ''
+    symbol: '*'
+    item-settings:
+      material: EMERALD
+      name: '&aCash'
+      lore:
+        - ''
+        - ' &7Tipo: &fCash'
+        - ' &aClique para usar'
+        - ''

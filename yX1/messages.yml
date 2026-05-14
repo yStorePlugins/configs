@@ -1,0 +1,146 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+actionbar:
+  pvp-countdown: '&aA batalha começa em &e{time}s &7na arena &f{arena}&7.'
+
+title:
+  pvp-countdown: '&aX1 em {time}s<nl>&fArena: {arena}'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/x1 &8- &7Abre o menu principal do X1.
+    &a/x1 desafiar <jogador> [arena] [provider] <valor> &8- &7Desafia um jogador.
+    &a/x1 aceitar &8- &7Aceita um desafio pendente.
+    &a/x1 negar &8- &7Nega um desafio pendente.
+    &a/x1 cancelar &8- &7Cancela seu desafio pendente.
+    &a/x1 camarote [arena] &8- &7Entra no camarote de uma arena em luta.
+    &a/x1 saircamarote &8- &7Sai do modo espectador do camarote.
+    &a/x1 arenas &8- &7Abre o menu de arenas.
+    &a/x1 top [limite] &8- &7Mostra o top de vitórias.
+    &a/x1 stats [jogador] &8- &7Mostra estatísticas de X1.
+
+  help-admin: |
+
+    &a/x1 &8- &7Abre o menu principal do X1.
+    &a/x1 desafiar <jogador> [arena] [provider] <valor> &8- &7Desafia um jogador.
+    &a/x1 aceitar &8- &7Aceita um desafio pendente.
+    &a/x1 negar &8- &7Nega um desafio pendente.
+    &a/x1 cancelar &8- &7Cancela seu desafio pendente.
+    &a/x1 camarote [arena] &8- &7Entra no camarote de uma arena em luta.
+    &a/x1 saircamarote &8- &7Sai do modo espectador do camarote.
+    &a/x1 setpos1 <arena> &8- &7Seta a posição 1 da arena.
+    &a/x1 setpos2 <arena> &8- &7Seta a posição 2 da arena.
+    &a/x1 setsaida <arena> &8- &7Seta a saída da arena.
+    &a/x1 setcamarote <arena> &8- &7Seta o camarote da arena.
+    &a/x1 itenssetados <arena> &8- &7Ativa/desativa itens setados da arena.
+    &a/x1 setitens <arena> &8- &7Salva seu inventário/armadura como itens setados.
+    &a/x1 arenas &8- &7Abre o menu de arenas.
+    &a/x1 admin &8- &7Abre o menu admin de arenas.
+    &a/x1 top [limite] &8- &7Mostra o top de vitórias.
+    &a/x1 stats [jogador] &8- &7Mostra estatísticas de X1.
+    &a/x1 info [arena] &8- &7Mostra status de uma arena.
+    &a/x1 reload &8- &7Recarrega as configurações.
+
+  arena-not-found: '&cA arena &f{arena} &cnão foi encontrada.'
+  arena-none-running: '&cNão há nenhum X1 ocorrendo no momento.'
+  arena-busy: '&cA arena &f{arena} &cjá está ocupada.'
+  arena-pending: '&cJá existe um desafio pendente na arena &f{arena}&c.'
+  arena-info: |
+
+    &8&m-----------------------------
+    &6&lX1 &7- &f{arena}
+    &8&m-----------------------------
+
+    &7Estado: &f{state}
+    &7Desafiante: &f{challenger}
+    &7Desafiado: &f{challenged}
+    &7Aposta: &f{amount} &7({provider})
+
+    &8&m-----------------------------
+
+  arena-click-hint: '&7Dica: use &f/x1 arenas &7para escolher uma arena.'
+  arena-state-label-idle: '&aLivre'
+  arena-state-label-pending: '&ePendente'
+  arena-state-label-countdown: '&6Contagem'
+  arena-state-label-fighting: '&cLutando'
+  arena-state-label-collecting: '&bColetando'
+  challenge-self: '&cVocê não pode desafiar a si mesmo.'
+  challenge-already-pending: '&cVocê já possui um desafio pendente.'
+  challenge-target-pending: '&cEsse jogador já está envolvido em outro desafio.'
+  challenge-target-no-balance: '&cO jogador alvo não possui saldo suficiente para esta aposta.'
+  challenge-cooldown: '&cAguarde &f{time}s &cpara desafiar novamente nesta arena.'
+  challenge-provider-not-found: '&cA economia &f{provider} &cnão foi encontrada.'
+  challenge-provider-permission: '&cVocê não tem permissão para usar a economia &f{provider}&c.'
+  challenge-minimum: '&cA aposta mínima para a economia &f{provider} &cé &f{amount}&c.'
+  challenge-bet-required: '&cEsta arena exige aposta obrigatória para desafiar.'
+  challenge-no-balance: '&cVocê não possui saldo suficiente para esta aposta.'
+  challenge-created: |
+
+    &cO jogador &f{challenger} &cdesafiou &f{challenged} &cpara um X1 na arena &f{arena}&c.
+    &f > &7Aposta: &a{amount} &7({provider})
+    &f > &7Para aceitar: &f/x1 aceitar
+    &f > &7Para negar: &f/x1 negar
+
+  challenge-accepted: |
+
+    &aO jogador &f{challenged} &aaceitou o desafio contra &f{challenger}&a.
+    &f > &7Arena: &f{arena}
+    &f > &7Aposta: &a{amount} &7({provider})
+    &f > &7PVP em: &f{pvp-time}s
+
+  challenge-denied: |
+
+    &cO jogador &f{challenged} &cnegou o desafio de &f{challenger}&c na arena &f{arena}&c.
+
+  challenge-expired: |
+
+    &cO desafio de &f{challenger} &cpara &f{challenged} &cexpirou na arena &f{arena}&c.
+
+  challenge-cancelled: '&cVocê cancelou seu desafio na arena &f{arena}&c.'
+  challenge-not-found: '&cVocê não possui desafio pendente.'
+  challenge-not-target: '&cVocê não foi desafiado por ninguém.'
+  pvp-countdown-actionbar: '&aA batalha começa em &e{time}s &7na arena &f{arena}&7.'
+  pvp-countdown-title: '&aX1 em {time}s<nl>&fArena: {arena}'
+  pvp-enabled: '&aO PVP foi liberado na arena &f{arena}&a.'
+  match-won: |
+
+    &aO jogador &f{winner} &aganhou o X1 contra &f{loser} &ana arena &f{arena}&a.
+    &f > &7Aposta paga: &a{amount} &7({provider})
+    &f > &7Tempo para recolher itens: &f{collect-time}s
+
+  spectator-not-running: '&cNão ha X1 em andamento nesta arena para camarote.'
+  spectator-entered: '&aVocê entrou no camarote simulado da arena &f{arena}&a.'
+  spectator-left: '&aVocê saiu do camarote.'
+  spectator-already: '&cVocê já está em modo camarote.'
+  spectator-not-in: '&cVocê não está no modo camarote.'
+  spectator-block-items: '&cEsvazie seu inventário para entrar no camarote desta arena.'
+  location-set: '&aLocal &f{location} &asetado na arena &f{arena}&a.'
+  location-missing: '&cAs localizações da arena &f{arena} &cnão estão configuradas corretamente.'
+  teleported: '&aTeleportado para a arena &f{arena}&a.'
+  mito-lost: '&cO mito &f{player} &cperdeu o mito por recusar/ignorar desafios.'
+  top-header: '&6Top vitórias X1'
+  top-format: '&f#{pos} &7- &f{player} &7com &a{wins} &7vitórias.'
+  top-empty: '&cNenhum jogador no top ainda.'
+  stats: '&7Stats de &f{player}&7: &a{wins} vitórias &7| &c{losses} derrotas &7| &f{fights} lutas.'
+  admin-set-help: '&cUse: /x1 setpos1|setpos2|setsaida|setcamarote <arena>'
+  draft-target-input: '&eDigite no chat o nome do jogador para desafiar.'
+  draft-amount-input: '&eDigite no chat o valor para a economia &f{provider}&e.'
+  draft-cancel-input: '&7Digite &fcancelar &7para cancelar.'
+  draft-target-set: '&aJogador selecionado: &f{player}'
+  draft-amount-set: '&aValor definido para &f{provider}&a: &f{amount}'
+  draft-target-missing: '&cSelecione um jogador antes de enviar o desafio.'
