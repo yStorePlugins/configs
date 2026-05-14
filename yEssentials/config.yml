@@ -34,6 +34,8 @@ Opcoes:
   Devolver-ender: false
   # Colocar o vidro abaixo do jogador no RTP
   Vidro-RTP: true
+  # Habilitar o GOD ao entrar no servidor e tiver a permissão "yessentials.god"
+  GOD-Login: false
   # Nível máximo permitido para encantar
   # Deixe 0 para não ter máximo
   Max enchant: 0
