@@ -104,6 +104,8 @@ Opcoes:
   # Delay da compra com Q
   # em segundos
   DelayQ: 10
+  # Ignorar upgrades ao stackar as máquinas
+  IgnorarUpgrade: false
   # Blocos que não podem colocar máquinas em cima
   BlockCima blacklist:
     - 'SANDSTONE:0'
