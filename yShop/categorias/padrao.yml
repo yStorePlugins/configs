@@ -97,6 +97,16 @@ Itens:
       # Sistema de comprar apenas 1x
       Onetime:
          Ativar: false
+         # Configuracao separada por acao
+         # Se nao configurar Comprar.Ativar, usa o valor de Ativar acima
+         Comprar:
+            Ativar: false
+            # false = global, true = uma vez por jogador
+            Por jogador: false
+         Vender:
+            Ativar: false
+            # false = global, true = uma vez por jogador
+            Por jogador: false
          Display:
             material: IRON_INGOT
             name: '&fAlerta de beleza'
