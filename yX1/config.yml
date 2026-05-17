@@ -61,3 +61,13 @@ general:
   default-arena: 'default'
   # Permissão para entrar no camarote
   spectator-see-permission: 'yx1.spectator.see'
+
+# Fila global de X1 (2 jogadores entram -> inicia automaticamente)
+queue:
+  enabled: true
+  expire-seconds: 45
+  check-interval-ticks: 20
+
+# Seleção de jogador para desafio por GUI (cabeças)
+challenge-target-gui:
+  enabled: false

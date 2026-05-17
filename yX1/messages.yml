@@ -144,3 +144,15 @@ chat:
   draft-target-set: '&aJogador selecionado: &f{player}'
   draft-amount-set: '&aValor definido para &f{provider}&a: &f{amount}'
   draft-target-missing: '&cSelecione um jogador antes de enviar o desafio.'
+  queue-joined: '&aVocê entrou na fila global com &f{amount} &7({provider})&a.'
+  queue-left: '&cVocê saiu da fila global.'
+  queue-expired: '&cSeu tempo de fila expirou.'
+  queue-already-in: '&cVocê já está na fila global.'
+  queue-disabled: '&cA fila global está desativada neste momento.'
+  queue-match-found: |
+
+    &aMatch da fila encontrado!
+    &f > &7Jogadores: &f{challenger} &7x &f{challenged}
+    &f > &7Arena: &f{arena}
+    &f > &7Aposta: &a{amount} &7({provider})
+    &f > &7PVP em: &f{pvp-time}s
