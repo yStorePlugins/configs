@@ -103,6 +103,9 @@ death-spawn: true
 # Ativar sistema de auto-reconnect ao ser kickado de um servidor
 auto-reconnect: false
 
+# Kickar o jogador ao reiniciar
+kick-on-restart: true
+
 # Modo de jogo padrão
 gamemode-default: 'ADVENTURE'
 
