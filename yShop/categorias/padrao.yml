@@ -32,6 +32,15 @@ Itens:
       Permissao:
          Permissao: ''
          Mensagem: '&cVocê não tem permissão para comprar este item.'
+      # Sistema de data para comercializar
+      Libera-em:
+         Data: '16/10/2020-10:00'
+         Display:
+            material: BARRIER
+            name: '&cCategoria de blocos'
+            lore:
+               - '&7Este item será liberado em: &f{data} - &f{hora}'
+               - '&7Tempo para liberar: &f{time_formatted}'
       # necessário para verificar a quantia disponível no inv
       # deixe 0 para não usar
       InvStackVerify: 64
