@@ -255,3 +255,23 @@ league-clan-players:
         - ''
         - '&eTotal de pontos: &a{points}'
         - ''
+
+# Menu de historico do clan
+league-history:
+  name: '&8Histórico - {clan}'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+  items:
+    history:
+      material: 'PAPER'
+      name: '&e{date}'
+      lore:
+        - '&7Clan: &f{clan}'
+        - '&7Player: &f{player}'
+        - '&7Origem: &f{source}'
+        - '&7Variação: &f{amount}'
+        - '&7Saldo: &f{before} &8-> &f{after}'
+        - '&7Motivo: &f{reason}'

@@ -21,6 +21,7 @@ chat:
     &a/league add &8- &7Adiciona pontos para um clan.
     &a/league remove &8- &7Remove pontos de um clan.
     &a/league set &8- &7Seta pontos para um clan.
+    &a/league historico <clan> &8- &7Abre o historico de pontos do clan.
 
   reward-collected: '&eItem recolhido com sucesso.'
   reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
