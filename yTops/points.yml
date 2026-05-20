@@ -1,0 +1,11 @@
+points:
+  # Tipo do TOP
+  VAULT:
+    # Posição: quantia de pontos
+    1: 10
+    2: 7
+    3: 5
+  YPOINTS_PONTOS:
+    1: 10
+    2: 7
+    3: 5

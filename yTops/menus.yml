@@ -53,6 +53,15 @@ main:
         - '&84º &f{player_4}&7: &2$ &a{value_formatted_4}'
         - '&85º &f{player_5}&7: &2$ &a{value_formatted_5}'
         - ''
+  points-menu-item:
+    slot: 30
+    material: 'NETHER_STAR'
+    name: '&eRanking de Pontos'
+    lore:
+      - ''
+      - '&7Clique para ver os 10'
+      - '&7jogadores com mais pontos.'
+      - ''
 
 # Menu de recompensas
 main-rewards:
@@ -75,3 +84,18 @@ main-rewards:
       material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
       name: '&eRecolher tudo'
       lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+
+# Menu de colocação
+points-menu:
+  name: '&8Ranking de Pontos'
+  size: 27
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 21, 22, 23 ]
+  back-slot: 18
+  items:
+    top:
+      material: '{player}'
+      name: '&e#{position} &f{player}'
+      lore:
+        - ''
+        - '&7Pontos: &e{points_formatted}'
+        - ''
