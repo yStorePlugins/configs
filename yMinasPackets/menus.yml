@@ -284,6 +284,34 @@ evolution:
         - ''
         - '&aClique para acessar'
 
+  sub-menu:
+    name: '&8Gerenciando encantamento'
+    size: 54
+    back-slot: 45
+    slots: [11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33]
+    amounts: [1, 5, 10, 25, 50]
+    items:
+      can-evolve:
+        material: 'STAINED_GLASS_PANE:5'
+        name: '&dEvoluir {amount} níveis &7({actual}/{maximum})'
+        lore:
+          - ''
+          - '&fPreço:'
+          - '&f> &bBlocos: &3{yminaspackets}'
+          - '&f> &aCoins: &2{money}'
+          - ''
+          - '&aClique para evoluir'
+      cant-evolve:
+        material: 'STAINED_GLASS_PANE:14'
+        name: '&dEvoluir {amount} níveis &7({actual}/{maximum})'
+        lore:
+          - ''
+          - '&fPreço:'
+          - '&f> &bBlocos: &3{yminaspackets}'
+          - '&f> &aCoins: &2{money}'
+          - ''
+          - '&dRecursos insuficientes!'
+
 # Menu de skins
 skins:
   name: '&8Mineração'

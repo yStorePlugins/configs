@@ -93,6 +93,8 @@ general:
   evolute-right: true
   # Evoluir a picareta com a ação do botão Q
   evolute-q: true
+  # Ao clicar em um encantamento, abre submenu com quantias predefinidas
+  evolute-submenu-enabled: false
   # Máximo permitido para evoluir com Q
   evolute-q-max: 1000
   # Máximo permitido para evoluir com Direito
