@@ -4,6 +4,18 @@ name: '&aMáquina de Tokens'
 # Permissão para poder ativar a máquina
 permission: ''
 
+# Sistema de ativador para ativar máquinas
+activator:
+  enabled: false
+  amount: 1
+  # PER_MACHINE = custo por máquina ativada | PER_ACTIVATION = custo por clique de ativação
+  mode: 'PER_MACHINE'
+  item:
+    material: 'NETHER_STAR'
+    name: '&eAtivador de Máquina'
+    lore:
+      - '&7Usado para ativar máquinas.'
+
 # Gerar apenas com o dono ou amigo online
 generate-online: false
 
