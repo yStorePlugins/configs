@@ -8,7 +8,7 @@ permission: ''
 activator:
   enabled: false
   amount: 1
-  # PER_MACHINE = custo por máquina ativada | PER_ACTIVATION = custo por clique de ativação
+  # PER_MACHINE = custo por máquina ativada | PER_ACTIVATION = custo por clique | PER_TYPE = cobra uma vez por tipo (por jogador)
   mode: 'PER_MACHINE'
   item:
     material: 'NETHER_STAR'
