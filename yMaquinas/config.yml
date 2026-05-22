@@ -104,6 +104,9 @@ Opcoes:
   # Delay da compra com Q
   # em segundos
   DelayQ: 10
+  # Delay para colocar máquinas
+  # em segundos (0 para desativar)
+  DelayColocar: 0
   # Ignorar upgrades ao stackar as máquinas
   IgnorarUpgrade: false
   # Blocos que não podem colocar máquinas em cima

@@ -25,7 +25,7 @@ chat:
     &b > &3/combustiveis &8- &fAbre o menu de combustíveis
     &b > &3/combustiveis help &8- &fEnvia essa mensagem
     &b > &3/combustiveis lista &8- &fMostra a lista de combustíveis disponíveis
-    &b > &3/combustiveis give <player/all> <combustivel> <quantia> &8- &fDá combustíveis para um jogador / todos os jogadores
+    &b > &3/combustiveis give <player/all> <combustivel> <quantia> [true/false] &8- &fDá combustíveis para um jogador / todos os jogadores
   help-limit: |
     &bComandos disponíveis:
     &b > &3/limite &8- &fMostra o seu limite
