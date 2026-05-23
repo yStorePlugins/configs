@@ -1,0 +1,48 @@
+# Lista de itens ilegais do sistema.
+#
+# Identificação recomendada:
+# - NBT interno (use-nbt = true na config principal)
+#
+# Placeholders disponíveis para comandos:
+# {player}, {target}, {officer}, {fine}, {quantity}, {contraband}, {contraband_type}
+#
+# Para multas multi-economia, use a seção "fines" em cada item.
+
+contraband-items:
+  # ID interno do contrabando
+  mystery-powder:
+    # Item base
+    material: SUGAR
+    name: '&fPó Misterioso'
+    lore:
+      - '&7Item ilegal'
+      - '&cPode gerar multa se encontrado.'
+    # Custom model data do item (0 = sem uso)
+    custom-model-data: 0
+    # Brilho visual do item
+    glow: false
+    # Multa multi-economia (chave = economia do economies.yml)
+    fines:
+      money: 5000.0
+    # Se true, multa = fine * quantidade
+    fine-per-item: true
+    # Remove o item do alvo ao ser encontrado
+    remove-item: true
+    # Comandos executados ao detectar este contrabando
+    commands:
+      - 'alert &c{player} foi pego com contrabando!'
+
+  # Outro exemplo de item ilegal
+  illegal-weapon:
+    material: IRON_SWORD
+    name: '&cArma Ilegal'
+    lore:
+      - '&7Item de porte ilegal'
+    custom-model-data: 0
+    glow: true
+    fines:
+      money: 10000.0
+    fine-per-item: false
+    remove-item: false
+    commands:
+      - 'alert &c{player} foi pego com ilegalidades!'

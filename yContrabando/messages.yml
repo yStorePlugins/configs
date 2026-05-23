@@ -1,0 +1,76 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Mensagens do plugin.
+# Placeholders comuns: {player}, {officer}, {target}, {fine}, {reward}, {time}, {amount}, {contraband}, {max_officers}, {active_officers}
+
+actionbar:
+  inspection-progress-officer: '&6Revistando &f{target} &8| &7{bar} &8| &e{remaining}s'
+  inspection-progress-target: '&cVocê está sendo revistado por &f{officer} &8| &7{bar} &8| &e{remaining}s'
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO valor informado não é um número válido.'
+  permission: '&cVocê não tem permissão para isso.'
+  console: '&cApenas jogadores podem usar este comando.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &8&m-----------------------------
+    &6&lContrabando &8- &7Comandos
+    &8&m-----------------------------
+    &e/{cmd} &8- &7Abre o menu policial.
+    &e/{cmd} inspect <jogador> &8- &7Revista um jogador.
+    &e/{cmd} leave &8- &7Sai da polícia.
+    &8&m-----------------------------
+  admin-help: |
+    &8&m-----------------------------
+    &6&lContrabando &8- &7Admin
+    &8&m-----------------------------
+    &e/{cmd} reload &8- &7Recarrega o plugin.
+    &e/{cmd} add <jogador> <tempo> &8- &7Adiciona policial.
+    &e/{cmd} remove <jogador> &8- &7Remove policial.
+    &e/{cmd} give <jogador> <contrabando> <quantia> &8- &7Entrega contrabando.
+    &e/{cmd} baton give <jogador> &8- &7Entrega Bastão da Revista.
+    &8&m-----------------------------
+  not-officer: '&cVocê não é um policial.'
+  already-officer: '&cVocê já é um policial.'
+  became-officer: '&aVocê agora é um policial! Seu contrato acaba em {time}.'
+  officer-expired: '&cSeu contrato como policial expirou.'
+  officer-limit-reached: '&cNão há vagas. Vagas: {active_officers}/{max_officers}'
+  not-enough-money: '&cVocê não possui dinheiro suficiente.'
+  officer-left: '&eVocê saiu da polícia.'
+  contract-renewed: '&aSeu contrato policial foi renovado por {time}.'
+  inspection-started: '&eVocê iniciou uma revista em &f{player}&e.'
+  being-inspected: '&cVocê está sendo revistado por &f{officer}&c.'
+  inspection-cancelled: '&cA revista foi cancelada.'
+  inspection-finished: '&aRevista concluída.'
+  inspection-cooldown: '&cAguarde &f{time} &cpara revistar novamente.'
+  inspection-too-far: '&cEste jogador está muito longe.'
+  inspection-self: '&cVocê não pode revistar a si mesmo.'
+  inspection-already-running: '&cVocê já está realizando uma revista.'
+  inspection-baton-received: '&aVocê recebeu o Bastão da Revista.'
+  inspection-baton-given-admin: '&aVocê entregou o Bastão da Revista para {player}.'
+  inspection-baton-target-received: '&aVocê recebeu um Bastão da Revista.'
+  inspection-baton-only-officer: '&cApenas policiais podem portar o Bastão da Revista.'
+  contraband-not-found: '&cTipo de contrabando {contraband} não encontrado.<nl>&cDisponíveis: {list}'
+  contraband-found: '&cContrabando encontrado! Multa aplicada: &f{fine} &7({provider})&c.'
+  no-contraband-found: '&aNenhum contrabando foi encontrado.'
+  officer-cannot-carry: '&cPoliciais não podem carregar contrabando.'
+  contraband-removed: '&cItens ilegais foram removidos do inventário.'
+  reward-received: '&aVocê recebeu {reward} &7({provider}) &apor apreender contrabando.'
+  player-wanted: '&c{player} agora está procurado por {time}.'
+  escaped-inspection: '&c{player} fugiu da revista policial!'
+  wanted-removed: '&a{player} não está mais procurado.'
+  wanted-marked-escape: '&cVocê fugiu da revista e agora está procurado por {time}.'
+  wanted-captured-officer: '&aVocê capturou {player} e aplicou multa de {fine} &7({provider})&a.'
+  wanted-captured-target: '&cVocê foi capturado por {officer} e pagou multa de {fine} &7({provider})&c.'
+  wanted-capture-failed-no-money: '&c{player} não possui saldo para pagar a multa de captura ({fine} - {provider}).'
+  admin-added-officer: '&aVocê adicionou {player} como policial por {time}.'
+  admin-removed-officer: '&aVocê removeu {player} da polícia.'
+  admin-gave-contraband: '&aVocê deu {amount}x {contraband} para {player}.'

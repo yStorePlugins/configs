@@ -1,0 +1,203 @@
+#          ____            _             _                     _
+#  _   _ / ___|___  _ __ | |_ _ __ __ _| |__   __ _ _ __   __| | ___
+# | | | | |   / _ \| '_ \| __| '__/ _` | '_ \ / _` | '_ \ / _` |/ _ \
+# | |_| | |__| (_) | | | | |_| | | (_| | |_) | (_| | | | | (_| | (_) |
+#  \__, |\____\___/|_| |_|\__|_|  \__,_|_.__/ \__,_|_| |_|\__,_|\___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+#
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistema de polícia e contratos.
+police:
+  # Preço para virar policial.
+  contract-price: 50000.0
+  # Economia usada para pagar o contrato (chave do economies.yml).
+  contract-provider: 'money'
+  # Preços multi-economia do contrato (chave = economia do economies.yml).
+  # Se preenchido, tem prioridade sobre contract-price/contract-provider.
+  contract-prices:
+    money: 50000.0
+  # Duração do contrato (s, m, h, d).
+  contract-duration: '7d'
+  # Limite máximo de policiais ativos.
+  max-officers: 10
+  # Remove automaticamente o cargo quando o contrato expira.
+  remove-role-on-expire: true
+  # Permite renovar contrato ativo.
+  allow-renew-contract: true
+  # Permite sair manualmente da polícia.
+  allow-leave: true
+  # Impede policial de portar contrabando.
+  block-contraband: true
+  # Remove item ilegal detectado com policial.
+  remove-contraband-on-detect: true
+  # Remove o cargo do policial quando for pego com contrabando.
+  remove-role-if-caught: false
+  # Comandos executados quando um policial é pego com contrabando.
+  commands-if-officer-caught:
+    - 'alert &cO policial {officer} foi flagrado com contrabando!'
+
+# Regras da revista policial.
+inspection:
+  # Distância máxima entre policial e alvo.
+  max-distance: 5
+  # Tempo da revista (em segundos).
+  duration: 5
+  # Cooldown da revista por policial (em segundos).
+  cooldown: 30
+  # Cancela se o alvo se mover durante a revista.
+  cancel-if-target-moves: false
+  # Cancela se o policial se mover durante a revista.
+  cancel-if-officer-moves: false
+  # Cancela se passar da distância máxima.
+  cancel-if-distance: true
+  # Barra de progresso exibida na actionbar durante a revista.
+  progress-bar:
+    filled: '&a|'
+    empty: '&7|'
+    length: 20
+    # Intervalo de atualização da actionbar em ticks.
+    update-ticks: 10
+
+# Item de revista por clique (alternativa ao /police inspect).
+inspection-baton:
+  # Ativa o sistema do bastão.
+  enabled: true
+  # Entrega o bastão ao virar policial.
+  give-on-become-officer: true
+  # Remove o bastão ao sair da polícia.
+  remove-on-leave: true
+  # Remove o bastão quando o contrato expirar.
+  remove-on-expire: true
+  item:
+    material: 'BLAZE_ROD'
+    name: '&6Bastão da Revista'
+    lore:
+      - ''
+      - ' &7Clique com botão direito'
+      - ' &7em um jogador para revistar.'
+      - ''
+
+# Formas de detectar itens ilegais.
+contraband-detection:
+  # Usa NBT interno para identificação (recomendado).
+  use-nbt: true
+  # Fallback por nome customizado.
+  fallback-by-name: false
+  # Fallback por lore.
+  fallback-by-lore: false
+  # Fallback por custom model data.
+  fallback-by-custom-model-data: false
+
+# Punições aplicadas ao pegar contrabando.
+punishment:
+  # Cobra multa do alvo via economia.
+  charge-fine: true
+  # Multiplica multa pela quantidade de itens.
+  fine-per-item: true
+  # Remove os itens ilegais encontrados.
+  remove-items: true
+  # Executa comandos customizados do contraband.yml.
+  execute-commands: true
+
+# Recompensa recebida pelo policial.
+officer-reward:
+  # Ativa sistema de recompensa.
+  enabled: true
+  # Tipo da recompensa:
+  # - PERCENTAGE: paga uma porcentagem da multa (usa fine-percentage)
+  # - FIXED: paga valor fixo por apreensão (usa fixed-amount)
+  # - COMMAND_ONLY: não paga via Vault; executa apenas os comandos da lista commands
+  # - NONE: não dá recompensa
+  type: PERCENTAGE
+  # Percentual da multa pago ao policial quando type = PERCENTAGE.
+  fine-percentage: 20.0
+  # Valor fixo pago ao policial quando type = FIXED.
+  fixed-amount: 0.0
+  # Economia usada quando type = FIXED (chave do economies.yml).
+  provider: 'money'
+  # Comandos executados quando type = COMMAND_ONLY.
+  # Placeholders: {officer}, {target}, {fine}, {reward}, {amount}, {contraband}
+  commands:
+    - 'money give {officer} {reward}'
+
+# Sistema de procurados.
+wanted:
+  # Ativa o sistema de procurados.
+  enabled: true
+  # Tempo de procurado ao fugir de revista.
+  duration-on-escape: '10m'
+  # Tempo de procurado ao ser pego com contrabando.
+  duration-on-caught: '15m'
+  # Sistema de captura de procurados com Bastão da Revista.
+  capture:
+    enabled: true
+    # Multa multi-economia por captura (chave = economia do economies.yml).
+    fines:
+      money: 25000.0
+    # Comportamento da multa de captura:
+    # - FULL_REQUIRED: só captura se o alvo tiver saldo total da multa.
+    #   Se não tiver, permanece procurado.
+    # - PARTIAL_ALLOWED: cobra o saldo disponível (parcial) e captura mesmo assim.
+    # - FREE_CAPTURE: captura sem cobrar multa.
+    behavior: 'FULL_REQUIRED'
+    # Remove o status de procurado após captura bem-sucedida.
+    remove-after-capture: true
+    # Anuncia a captura no chat global.
+    broadcast: false

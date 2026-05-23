@@ -1,0 +1,42 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+
+# Providers disponíveis:
+#
+#   AtlasEconomiaSecundaria, AtlasMinas, AtlasMinasV2,
+#   JH_Shop, LegendaryEconomy, NextCash, PlayerPoints,
+#   StormEconomiaSecundaria, StormMinas, TGCash,
+#   yAlmas, yPoints, yRankup,
+#   Vault
+#
+
+# A chave em "default" deve existir em "economies".
+default: 'money'
+
+economies:
+  # Economia padrão via Vault.
+  money:
+    # Nome interno do provider (usado para transações).
+    provider: 'money'
+    # Nome exibido em menus e mensagens.
+    display: '&6Dinheiro'
+    # Nome abreviado para lore e interfaces compactas.
+    abbreviated: '&6R$'
+    # Símbolo monetário opcional.
+    symbol: '$'
+    # Permissão para usar esta economia (vazio = sem restrição).
+    permission: ''
+    # Permite operações com jogador offline.
+    allow-offline: true
+    # Item usado em menus de seleção/configuração.
+    # Placeholder disponível: {balance}
+    item-settings:
+      material: 'GOLD_NUGGET'
+      name: '&6Dinheiro'
+      lore:
+        - ''
+        - ' &7Saldo: &f{balance}'
+        - ''
