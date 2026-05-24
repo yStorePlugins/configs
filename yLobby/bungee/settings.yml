@@ -1,0 +1,8 @@
+restart-message: '&c&lyStore<nl>&cVocê foi transferido ao lobby.'
+sending: '&aEnviando você para o lobby...'
+not-found: '&cNenhum lobby encontrado.'
+
+register-command: true
+
+lobby-list:
+  - 'lobby'
