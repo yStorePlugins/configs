@@ -190,6 +190,10 @@ pack-select-menu:
 trade-menu:
   name: '&8Troca - {player}'
   size: 27
+  status-new: '&aNova para você'
+  status-duplicate: '&eRepetida para você'
+  status-mixed-format: '&a{new} nova &7+ &e{duplicate} repetida'
+  summary-entry-format: '{name} x{amount} ({status})'
   your-offer-slot: 9
   add-slot: 13
   other-offer-slot: 17
