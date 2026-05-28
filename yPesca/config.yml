@@ -99,6 +99,9 @@ auto-sell-delay: 5
 # Verificar se o inventário está cheio antes de entrar
 verify-inv: false
 
+# Desativar o menu de evolução
+disable-evolute-menu: false
+
 # Sistema de npc
 npc:
   skin: 'Pitombaa'
