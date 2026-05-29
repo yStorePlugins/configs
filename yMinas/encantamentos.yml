@@ -1,19 +1,19 @@
-# Apague apenas os encantamentos que não for usar
+﻿# Apague apenas os encantamentos que nÃ£o for usar
 Encantamentos:
-  Eficiencia: # Não mude este nome, ou o encantamento não será reconhecido
-    Nome: 'Eficiência'
-    # Nível da picareta necessário para poder evoluir o encantamento
+  Eficiencia: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Nome: 'EficiÃªncia'
+    # NÃ­vel da picareta necessÃ¡rio para poder evoluir o encantamento
     NivelPicareta: 0
-    # Ordem do ícone no menu
+    # Ordem do Ã­cone no menu
     Ordem: 1
-    # Aparecer no menu de evolução
+    # Aparecer no menu de evoluÃ§Ã£o
     MostrarMenu: true
-    # Poder evoluir pagando no menu de evolução
+    # Poder evoluir pagando no menu de evoluÃ§Ã£o
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
-    # Opções de give do encantamento
+    # OpÃ§Ãµes de give do encantamento
     options:
       # Delay para ativar o encantamento novamente
       # em segundos
@@ -30,33 +30,37 @@ Encantamentos:
       rewards: true
       # Ativar as lucky-blocks
       lucky-block: true
-      # Permissão para usar o encantamento
-      # Deixe vazio para não usar
+      # PermissÃ£o para usar o encantamento
+      # Deixe vazio para nÃ£o usar
       permission: ''
-      # Permissão para comprar o encantamento
-      # Deixe vazio para não usar
+      # PermissÃ£o para comprar o encantamento
+      # Deixe vazio para nÃ£o usar
       permission-buy: ''
-      # Whitelist de skins que o encantamento irá funciona
-      # Deixe vazio para não usar
+      # Whitelist de skins que o encantamento irÃ¡ funciona
+      # Deixe vazio para nÃ£o usar
       # Coloque a "order" da skin. Exemplo: [ 1 ]
       skin-whitelist: []
-      # Mostrar o encantamento mo menu caso o jogador não tenha a skin da whitelist
+      # Mostrar o encantamento mo menu caso o jogador nÃ£o tenha a skin da whitelist
       show-skin-whitelist: false
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -64,7 +68,7 @@ Encantamentos:
       price2:
         provider: 'yminas'
         price: 100.0
-    Displays: # Item que aparecerá no menu de evolução
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: false
         URL: ''
@@ -72,66 +76,66 @@ Encantamentos:
         Data: 0
         Name: '&aEficiencia'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7minere com mais agilidade.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: false
         URL: ''
         ID: DIAMOND_PICKAXE
         Data: 0
         Name: '&aEficiencia'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7minere com mais agilidade.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: false
         URL: ''
         ID: DIAMOND_PICKAXE
         Data: 0
         Name: '&aEficiencia'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7minere com mais agilidade.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: false
         URL: ''
         ID: DIAMOND_PICKAXE
         Data: 0
         Name: '&aEficiencia'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7minere com mais agilidade.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Mensagens:
       # Som quando comprar o encantamento
       Buy-Sound: ''
-      # Som quando não for possível comprar o encantamento
+      # Som quando nÃ£o for possÃ­vel comprar o encantamento
       Cant-Buy-Sound: ''
-  Fortuna: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Fortuna: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: false
         URL: ''
@@ -139,82 +143,86 @@ Encantamentos:
         Data: 0
         Name: '&aFortuna'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: false
         URL: ''
         ID: GOLD_INGOT
         Data: 0
         Name: '&aFortuna'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: false
         URL: ''
         ID: GOLD_INGOT
         Data: 0
         Name: '&aFortuna'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: false
         URL: ''
         ID: GOLD_INGOT
         Data: 0
         Name: '&aFortuna'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Fortuna'
     NivelPicareta: 0
     Ordem: 2
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -225,10 +233,10 @@ Encantamentos:
     Mensagens:
       # Som quando comprar o encantamento
       Buy-Sound: ''
-      # Som quando não for possível comprar o encantamento
+      # Som quando nÃ£o for possÃ­vel comprar o encantamento
       Cant-Buy-Sound: ''
-  Nuclear: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Nuclear: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: true
         URL: '7faf3efbff6d7ef465ecacbc517f4dad5cc1a2261ea7a609f216aae48784'
@@ -236,88 +244,100 @@ Encantamentos:
         Data: 0
         Name: '&aNuclear'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar a mina inteira.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: true
         URL: '7faf3efbff6d7ef465ecacbc517f4dad5cc1a2261ea7a609f216aae48784'
         ID: AIR
         Data: 0
         Name: '&aNuclear'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar a mina inteira.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '7faf3efbff6d7ef465ecacbc517f4dad5cc1a2261ea7a609f216aae48784'
         ID: AIR
         Data: 0
         Name: '&aNuclear'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar a mina inteira.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '7faf3efbff6d7ef465ecacbc517f4dad5cc1a2261ea7a609f216aae48784'
         ID: AIR
         Data: 0
         Name: '&aNuclear'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar a mina inteira.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Nuclear'
     NivelPicareta: 0
     Ordem: 2
     Animacao: true
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
-      Porcentagem: 0.00015 # porcentagem adquirida por nível
+      Porcentagem: 0.00015 # porcentagem adquirida por nÃ­vel
+    # Multiplicador de ganhos por economia (OPCIONAL)
+    # Permite ajustar os ganhos do encantamento independente da quantidade de blocos quebrados
+    # Se não configurado, o encantamento mantém o comportamento padrão (sem multiplicador)
+    # Exemplo de uso:
+    #   economy-multiplier:
+    #     yminaspackets: 0.5    # Blocos: recebe 50% do valor
+    #     money: 0.3            # Dinheiro: recebe 30% do valor
+    # Economias não listadas mantêm o valor original (1.0x)
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -326,14 +346,14 @@ Encantamentos:
         provider: 'yminas'
         price: 100.0
     Mensagens:
-      Title: '&cNuclear<nl>&cativado' # deixe '' para não usar
-      Actionbar: '' # deixe '' para não usar
+      Title: '&cNuclear<nl>&cativado' # deixe '' para nÃ£o usar
+      Actionbar: '' # deixe '' para nÃ£o usar
       Chat: [ ]
       Activate-Sound: ''
       Buy-Sound: ''
       Cant-Buy-Sound: ''
-  Destruidor: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Destruidor: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: true
         URL: '8da332abde333a15a6c6fcfeca83f0159ea94b68e8f274bafc04892b6dbfc'
@@ -341,92 +361,96 @@ Encantamentos:
         Data: 0
         Name: '&aDestruidor'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar a camada inteira.'
           - '&7de blocos.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: true
         URL: '8da332abde333a15a6c6fcfeca83f0159ea94b68e8f274bafc04892b6dbfc'
         ID: AIR
         Data: 0
         Name: '&aDestruidor'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar a camada inteira.'
           - '&7de blocos.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '8da332abde333a15a6c6fcfeca83f0159ea94b68e8f274bafc04892b6dbfc'
         ID: AIR
         Data: 0
         Name: '&aDestruidor'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar a camada inteira.'
           - '&7de blocos.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '8da332abde333a15a6c6fcfeca83f0159ea94b68e8f274bafc04892b6dbfc'
         ID: AIR
         Data: 0
         Name: '&aDestruidor'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar a camada inteira.'
           - '&7de blocos.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Destruidor'
     NivelPicareta: 0
     Ordem: 3
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Animacao: true
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
-      Porcentagem: 0.0015 # porcentagem adquirida por nível
+      Porcentagem: 0.0015 # porcentagem adquirida por nÃ­vel
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -435,14 +459,14 @@ Encantamentos:
         provider: 'yminas'
         price: 100.0
     Mensagens:
-      Title: '&cDestruidor<nl>&cativado' # deixe '' para não usar
-      Actionbar: '' # deixe '' para não usar
+      Title: '&cDestruidor<nl>&cativado' # deixe '' para nÃ£o usar
+      Actionbar: '' # deixe '' para nÃ£o usar
       Chat: [ ]
       Activate-Sound: ''
       Buy-Sound: ''
       Cant-Buy-Sound: ''
-  Sumonador: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Sumonador: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: false
         URL: ''
@@ -450,91 +474,95 @@ Encantamentos:
         Data: 0
         Name: '&aSumonador'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de transformar um bloco.'
-          - '&7em LuckyBlock ao quebrá-lo.'
+          - '&7em LuckyBlock ao quebrÃ¡-lo.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: false
         URL: ''
         ID: NETHER_STAR
         Data: 0
         Name: '&aSumonador'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de transformar um bloco.'
-          - '&7em LuckyBlock ao quebrá-lo.'
+          - '&7em LuckyBlock ao quebrÃ¡-lo.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: false
         URL: ''
         ID: NETHER_STAR
         Data: 0
         Name: '&aSumonador'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de transformar um bloco.'
-          - '&7em LuckyBlock ao quebrá-lo.'
+          - '&7em LuckyBlock ao quebrÃ¡-lo.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: false
         URL: ''
         ID: NETHER_STAR
         Data: 0
         Name: '&aSumonador'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de transformar um bloco.'
-          - '&7em LuckyBlock ao quebrá-lo.'
+          - '&7em LuckyBlock ao quebrÃ¡-lo.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Sumonador'
     NivelPicareta: 0
     Ordem: 4
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
-      Porcentagem: 0.01 # porcentagem adquirida por nível
+      Porcentagem: 0.01 # porcentagem adquirida por nÃ­vel
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -545,10 +573,10 @@ Encantamentos:
     Mensagens:
       # Som quando comprar o encantamento
       Buy-Sound: ''
-      # Som quando não for possível comprar o encantamento
+      # Som quando nÃ£o for possÃ­vel comprar o encantamento
       Cant-Buy-Sound: ''
-  Velocidade: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Velocidade: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: false
         URL: ''
@@ -556,82 +584,86 @@ Encantamentos:
         Data: 0
         Name: '&aVelocidade'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha o efeito de velocidade na mina.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: false
         URL: ''
         ID: FEATHER
         Data: 0
         Name: '&aVelocidade'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha o efeito de velocidade na mina.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: false
         URL: ''
         ID: FEATHER
         Data: 0
         Name: '&aVelocidade'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha o efeito de velocidade na mina.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: false
         URL: ''
         ID: FEATHER
         Data: 0
         Name: '&aVelocidade'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha o efeito de velocidade na mina.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Velocidade'
     NivelPicareta: 0
     Ordem: 5
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Nivel:
       Padrao: 0.0
       Maximo: 1.0 # Use -1 para ser infinito
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -642,10 +674,10 @@ Encantamentos:
     Mensagens:
       # Som quando comprar o encantamento
       Buy-Sound: ''
-      # Som quando não for possível comprar o encantamento
+      # Som quando nÃ£o for possÃ­vel comprar o encantamento
       Cant-Buy-Sound: ''
-  Pressa: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Pressa: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: true
         URL: 'ae77ae4f3652f671203cf45ff3c7f7e6328e921c374a7a311b3e48444fd892'
@@ -653,82 +685,86 @@ Encantamentos:
         Data: 0
         Name: '&aPressa'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha o efeito de pressa na mina.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: true
         URL: 'ae77ae4f3652f671203cf45ff3c7f7e6328e921c374a7a311b3e48444fd892'
         ID: AIR
         Data: 0
         Name: '&aPressa'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha o efeito de pressa na mina.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: 'ae77ae4f3652f671203cf45ff3c7f7e6328e921c374a7a311b3e48444fd892'
         ID: AIR
         Data: 0
         Name: '&aPressa'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha o efeito de pressa na mina.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: 'ae77ae4f3652f671203cf45ff3c7f7e6328e921c374a7a311b3e48444fd892'
         ID: AIR
         Data: 0
         Name: '&aPressa'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha o efeito de pressa na mina.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Pressa'
     NivelPicareta: 0
     Ordem: 6
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Nivel:
       Padrao: 0.0
       Maximo: 1.0 # Use -1 para ser infinito
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -739,10 +775,10 @@ Encantamentos:
     Mensagens:
       # Som quando comprar o encantamento
       Buy-Sound: ''
-      # Som quando não for possível comprar o encantamento
+      # Som quando nÃ£o for possÃ­vel comprar o encantamento
       Cant-Buy-Sound: ''
-  Sortudo: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Sortudo: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: true
         URL: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
@@ -750,87 +786,91 @@ Encantamentos:
         Data: 0
         Name: '&aSortudo'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha mais sorte ao quebrar uma LuckyBlock.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: true
         URL: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
         ID: AIR
         Data: 0
         Name: '&aSortudo'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha mais sorte ao quebrar uma LuckyBlock.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
         ID: AIR
         Data: 0
         Name: '&aSortudo'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha mais sorte ao quebrar uma LuckyBlock.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: 'd8188345dc6a1bf08663385b99f2bd1551a49292a93b84e0a97b917b565bf41a'
         ID: AIR
         Data: 0
         Name: '&aSortudo'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha mais sorte ao quebrar uma LuckyBlock.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Sortudo'
     NivelPicareta: 0
     Ordem: 7
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
-      Porcentagem: 0.01 # porcentagem adquirida por nível
+      Porcentagem: 0.01 # porcentagem adquirida por nÃ­vel
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -841,10 +881,10 @@ Encantamentos:
     Mensagens:
       # Som quando comprar o encantamento
       Buy-Sound: ''
-      # Som quando não for possível comprar o encantamento
+      # Som quando nÃ£o for possÃ­vel comprar o encantamento
       Cant-Buy-Sound: ''
-  Explosao: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Explosao: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: true
         URL: '713b78b520781b5970c4e117274e9363e66721efd7bbe1959e266b98e37759ce'
@@ -852,69 +892,69 @@ Encantamentos:
         Data: 0
         Name: '&aExplosao'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar um buraco.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: true
         URL: '713b78b520781b5970c4e117274e9363e66721efd7bbe1959e266b98e37759ce'
         ID: AIR
         Data: 0
         Name: '&aExplosao'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar um buraco.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '713b78b520781b5970c4e117274e9363e66721efd7bbe1959e266b98e37759ce'
         ID: AIR
         Data: 0
         Name: '&aExplosao'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar um buraco.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '713b78b520781b5970c4e117274e9363e66721efd7bbe1959e266b98e37759ce'
         ID: AIR
         Data: 0
         Name: '&aExplosao'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar um buraco.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Explosao'
     NivelPicareta: 0
     Ordem: 8
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Animacao: true
@@ -922,19 +962,23 @@ Encantamentos:
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
-      Porcentagem: 0.01 # porcentagem adquirida por nível
+      Porcentagem: 0.01 # porcentagem adquirida por nÃ­vel
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -943,14 +987,14 @@ Encantamentos:
         provider: 'yminas'
         price: 100.0
     Mensagens:
-      Title: '&cExplosão<nl>&cativada' # deixe '' para não usar
-      Actionbar: '' # deixe '' para não usar
+      Title: '&cExplosÃ£o<nl>&cativada' # deixe '' para nÃ£o usar
+      Actionbar: '' # deixe '' para nÃ£o usar
       Chat: [ ]
       Activate-Sound: ''
       Buy-Sound: ''
       Cant-Buy-Sound: ''
-  Laser: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Laser: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: true
         URL: 'f073d84d6fda6a3404e77ad8d0f190893ae66d195fbb44d3c4607a6b71d9b9d5'
@@ -958,69 +1002,69 @@ Encantamentos:
         Data: 0
         Name: '&aLaser'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar um +.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: true
         URL: 'f073d84d6fda6a3404e77ad8d0f190893ae66d195fbb44d3c4607a6b71d9b9d5'
         ID: AIR
         Data: 0
         Name: '&aLaser'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar um +.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: 'f073d84d6fda6a3404e77ad8d0f190893ae66d195fbb44d3c4607a6b71d9b9d5'
         ID: AIR
         Data: 0
         Name: '&aLaser'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar um +.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: 'f073d84d6fda6a3404e77ad8d0f190893ae66d195fbb44d3c4607a6b71d9b9d5'
         ID: AIR
         Data: 0
         Name: '&aLaser'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de quebrar um +.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Laser'
     NivelPicareta: 0
     Ordem: 9
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Animacao: true
@@ -1028,19 +1072,23 @@ Encantamentos:
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
-      Porcentagem: 0.01 # porcentagem adquirida por nível
+      Porcentagem: 0.01 # porcentagem adquirida por nÃ­vel
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -1049,14 +1097,14 @@ Encantamentos:
         provider: 'yminas'
         price: 100.0
     Mensagens:
-      Title: '&cLaser<nl>&cativado' # deixe '' para não usar
-      Actionbar: '' # deixe '' para não usar
+      Title: '&cLaser<nl>&cativado' # deixe '' para nÃ£o usar
+      Actionbar: '' # deixe '' para nÃ£o usar
       Chat: [ ]
       Activate-Sound: ''
       Buy-Sound: ''
       Cant-Buy-Sound: ''
-  Furadeira: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Furadeira: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: true
         URL: 'b59a2e83f20260e9caac53b4b3a6566b92d7dda3c42313363fa25443052b93d'
@@ -1064,92 +1112,96 @@ Encantamentos:
         Data: 0
         Name: '&aFuradeira'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de varar a mina a partir'
-          - '&7do bloco que você quebrou.'
+          - '&7do bloco que vocÃª quebrou.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: true
         URL: 'b59a2e83f20260e9caac53b4b3a6566b92d7dda3c42313363fa25443052b93d'
         ID: AIR
         Data: 0
         Name: '&aFuradeira'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de varar a mina a partir'
-          - '&7do bloco que você quebrou.'
+          - '&7do bloco que vocÃª quebrou.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: 'b59a2e83f20260e9caac53b4b3a6566b92d7dda3c42313363fa25443052b93d'
         ID: AIR
         Data: 0
         Name: '&aFuradeira'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de varar a mina a partir'
-          - '&7do bloco que você quebrou.'
+          - '&7do bloco que vocÃª quebrou.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: 'b59a2e83f20260e9caac53b4b3a6566b92d7dda3c42313363fa25443052b93d'
         ID: AIR
         Data: 0
         Name: '&aFuradeira'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7tenha chances de varar a mina a partir'
-          - '&7do bloco que você quebrou.'
+          - '&7do bloco que vocÃª quebrou.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Furadeira'
     NivelPicareta: 0
     Ordem: 10
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Animacao: true
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
-      Porcentagem: 0.01 # porcentagem adquirida por nível
+      Porcentagem: 0.01 # porcentagem adquirida por nÃ­vel
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -1158,14 +1210,14 @@ Encantamentos:
         provider: 'yminas'
         price: 100.0
     Mensagens:
-      Title: '&cFuradeira<nl>&cativado' # deixe '' para não usar
-      Actionbar: '' # deixe '' para não usar
+      Title: '&cFuradeira<nl>&cativado' # deixe '' para nÃ£o usar
+      Actionbar: '' # deixe '' para nÃ£o usar
       Chat: [ ]
       Activate-Sound: ''
       Buy-Sound: ''
       Cant-Buy-Sound: ''
-  Multiplicador: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Multiplicador: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: true
         URL: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
@@ -1173,87 +1225,91 @@ Encantamentos:
         Data: 0
         Name: '&aMultiplicador'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais blocos ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Multiplicador Atual: &b{multiplicador}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: true
         URL: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
         ID: AIR
         Data: 0
         Name: '&aMultiplicador'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais blocos ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{multiplicador}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
         ID: AIR
         Data: 0
         Name: '&aMultiplicador'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais blocos ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{multiplicador}%&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
         ID: AIR
         Data: 0
         Name: '&aMultiplicador'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais blocos ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{multiplicador}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Multiplicador'
     NivelPicareta: 0
     Ordem: 11
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
-      Multiplicador: 0.01 # multiplicador adquirido por nível
+      Multiplicador: 0.01 # multiplicador adquirido por nÃ­vel
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -1264,10 +1320,10 @@ Encantamentos:
     Mensagens:
       # Som quando comprar o encantamento
       Buy-Sound: ''
-      # Som quando não for possível comprar o encantamento
+      # Som quando nÃ£o for possÃ­vel comprar o encantamento
       Cant-Buy-Sound: ''
-  Eletricidade: # Não mude este nome, ou o encantamento não será reconhecido
-    Displays: # Item que aparecerá no menu de evolução
+  Eletricidade: # NÃ£o mude este nome, ou o encantamento nÃ£o serÃ¡ reconhecido
+    Displays: # Item que aparecerÃ¡ no menu de evoluÃ§Ã£o
       Pode: # quando puder evoluir
         CustomSkull: true
         URL: '9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38'
@@ -1275,87 +1331,91 @@ Encantamentos:
         Data: 0
         Name: '&aEletricidade'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais energia ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evoluÃ§Ã£o'
+          - '&aBotÃ£o &fQ &apara evoluir o possÃ­vel'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: true
         URL: '9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38'
         ID: AIR
         Data: 0
         Name: '&aEletricidade'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&7ganhe mais energia ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - ''
           - '&f > Custo: &a{blocos} blocos&f.'
-          - '&f > Nível necessário: &a{nivel}&f.'
+          - '&f > NÃ­vel necessÃ¡rio: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
-      Maximo: # quando já estiver no máximo
+          - '&cVocÃª nÃ£o tem blocos ou nÃ­vel suficientes.'
+      Maximo: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38'
         ID: AIR
         Data: 0
         Name: '&aEletricidade'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - '&7ganhe mais energia ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê já está no máximo.'
-      Permission: # quando já estiver no máximo
+          - '&cVocÃª jÃ¡ estÃ¡ no mÃ¡ximo.'
+      Permission: # quando jÃ¡ estiver no mÃ¡ximo
         CustomSkull: true
         URL: '9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38'
         ID: AIR
         Data: 0
         Name: '&aEletricidade'
         Lore:
-          - '&7Este encantamento permite que você'
+          - '&7Este encantamento permite que vocÃª'
           - '&f > Porcentagem Atual: &b{porcentagem}%&f.'
           - '&7ganhe mais energia ao minerar.'
           - ''
-          - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
+          - '&f > NÃ­vel: &b{atual}&f/&b{maximo}&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocÃª nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Eletricidade'
     NivelPicareta: 0
     Ordem: 12
     MostrarMenu: true
     PodeComprar: true
-    # Mostrar um ícone de infinito no lugar do nível
+    # Mostrar um Ã­cone de infinito no lugar do nÃ­vel
     # do encantamento na lore
     MostrarInfinito: false
     Nivel:
       Padrao: 0.0
       Maximo: 10.0 # Use -1 para ser infinito
-      Porcentagem: 0.01 # porcentagem adquirida por nível
+      Porcentagem: 0.01 # porcentagem adquirida por nÃ­vel
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -1366,5 +1426,5 @@ Encantamentos:
     Mensagens:
       # Som quando comprar o encantamento
       Buy-Sound: ''
-      # Som quando não for possível comprar o encantamento
+      # Som quando nÃ£o for possÃ­vel comprar o encantamento
       Cant-Buy-Sound: ''
