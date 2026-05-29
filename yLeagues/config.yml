@@ -130,6 +130,12 @@ titans-battle:
   win:
     - 'name:10'
 
+# Sistema de pontos para o yGuerra
+yguerra:
+  # Nome do evento:quantia de pontos
+  win:
+    - 'name:10'
+
 # Sistema de medalhas
 medals:
   # Maior número de mortes ao final da temporada
