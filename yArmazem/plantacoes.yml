@@ -9,6 +9,21 @@ Plantacoes:
     Data: 0
     # Nome que irá aparecer no menu e nas mensagens
     Display: '&aCacto'
+    # Mensagens por plantação (opcional)
+    # Se não definir, usa Vendeu/Coletou da config.yml
+    Mensagens:
+      Vendeu: ''
+      Coletou: ''
+    # Title por plantação (opcional)
+    # Se não definir, usa Title.Vendeu/Coletou da config.yml
+    Title:
+      Vendeu: ''
+      Coletou: ''
+    # Actionbar por plantação (opcional)
+    # Se não definir, usa Actionbar.Vendeu/Coletou da config.yml
+    Actionbar:
+      Vendeu: ''
+      Coletou: ''
     # Preço por cada unidade (para a sessão de comando)
     Preco: 10.0
     # Preços por cada unidade
