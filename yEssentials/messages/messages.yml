@@ -507,3 +507,16 @@ Outros:
   Stack nenhum: '&cVocê não tem poções para stackar.'
   Stack player: '&aVocê stackou &f{quantia}&a poções no inventário de &f{player}&a.'
   Repair aguardar: '&cVocê deve aguardar &e{tempo}&c para reparar nesse modo novamente.'
+  Whitelist help: |
+    &a&l* &aComandos disponíveis:
+    &a/whitelist add <player> &f- &7Adiciona um jogador na whitelist.
+    &a/whitelist remove <player> &f- &7Remove um jogador da whitelist.
+    &a/whitelist list &f- &7Lista jogadores da whitelist no chat.
+    &a/whitelist elist &f- &7Abre o menu da whitelist.
+  Whitelist adicionado: '&aJogador &f{player}&a adicionado na whitelist.'
+  Whitelist removido: '&aJogador &f{player}&a removido da whitelist.'
+  Whitelist ja: '&cO jogador &f{player}&c já está na whitelist.'
+  Whitelist nao esta: '&cO jogador &f{player}&c não está na whitelist.'
+  Whitelist lista: '&aWhitelist ({quantia}): &f[ &7{players}&f ]'
+  Whitelist vazia: '&cA whitelist está vazia.'
+  Whitelist invalido: '&cNão foi possível obter este jogador: &f{player}&c.'

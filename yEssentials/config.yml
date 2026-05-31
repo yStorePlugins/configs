@@ -285,6 +285,11 @@ Opcoes:
     Limite: 300
     Reservadas: 10
     Mensagem: '&b&lyStore<nl><nl>&cServidor lotado'
+  # Sistema de whitelist do yEssentials
+  # bypass: yessentials.whitelist.bypass
+  Whitelist:
+    Ativar: false
+    Kick mensagem: '&cVocê não está na whitelist deste servidor.'
   # Adicionar lore quando renomear na bigorna
   # permissão: yessentials.forjado
   Forjado:

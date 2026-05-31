@@ -116,3 +116,4 @@ Commands:
   Loom: 'loom'
   Stack: 'stack|stackpotions|pilha|stackpotion'
   ClearEnderchest: 'clearenderchest|clearechest|clearec|limparechest|limparec|limparenderchest'
+  Whitelist: 'whitelist|wlist'

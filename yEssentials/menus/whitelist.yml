@@ -1,0 +1,13 @@
+Nome: '&8Whitelist'
+Tamanho: 27
+AnteriorSlot: 9
+ProximoSlot: 17
+BackSlot: 18
+Slots: [ 11, 12, 13, 14, 15 ]
+Item:
+  Nome: '&e{player}'
+  Lore:
+    - '&7UUID: &f{uuid}'
+    - ''
+    - '&cClique esquerdo para remover'
+Itens: {}
