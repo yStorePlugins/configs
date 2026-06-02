@@ -6,9 +6,6 @@ Database:
   Pass: ''
   Debug: true
 
-# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
-Formatacao: 'LETRA'
-
 # Ativar a troca do sistema de chat quando estiver no mohist
 # compatível apenas com: UltimateChat, nChat e Legendchat
 mohist-chat: false
@@ -393,6 +390,10 @@ Motd:
   Ativar: true
   Normal: "&b&lyStorePlugins &fwww.ystoreplugins.com.br\n&bos melhores plugins da comunidade!"
   Manutencao: "&cServidor em manutenção!\nSem previsão de voltar."
+
+# Conversões adicionais do /derreter no formato 'ORIGEM->DESTINO'
+derreter-outros:
+  - 'SAND->GRASS'
 
 # Sistema de perder % do money ao morrer
 lose-on-death:
