@@ -61,6 +61,8 @@ general:
   buy-delay: 30
   # Embed do yDiscorHook para enviar a cobrança no privado
   dm-charge-embed: 'ypayments_private'
+  # Embed do yDiscordHook para enviar a pré-compra no privado
+  dm-pre-charge-embed: 'ypayments_pre_charge'
   # Tempo para enviar a mensagem de alerta de coleta
   # em minutos
   alert-message-time: 600
