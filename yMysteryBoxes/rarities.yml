@@ -20,3 +20,8 @@ rarities:
   
         &b[CAIXA MISTERIOSA] &fO jogador &b{player}&f encontrou uma recompensa rara na caixa &b{box}&f.
         &b> &7{item}
+    # Mensagens que irá retornar para o jogador
+    private-messages:
+      actionbar: ''
+      title: ''
+      chat: ''

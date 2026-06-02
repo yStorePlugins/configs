@@ -13,6 +13,10 @@ worlds: []
 # Ativar o sistema de UUID (para não estacar caixas sem ser pelo comando de give)
 uuid: false
 
+# Se ativado, o jogador ganha 1 recompensa para cada raridade presente na caixa.
+# Exemplo: comum + raro + ultra-raro = 3 recompensas.
+one-item-per-rarity: false
+
 # Configurações de animação da roleta
 animation:
   # Ativar a animação

@@ -46,7 +46,7 @@ confirm:
       material: 'WOOL:5'
       name: '&aConfirmar (Leia abaixo)'
       lore:
-        - '&7Você ganhará 1 item ao abrir esta caixa.'
+        - '&7Você receberá as recompensas desta caixa.'
         - ''
         - '&7Clique para confirmar a abertura da caixa.'
     cancel:
