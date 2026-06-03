@@ -138,6 +138,9 @@ announces:
   amount: 5
   # Tempo entre anúncios
   time-between: 15
+  # Público dos anúncios
+  # SERVER ou PARTICIPANTS
+  target: 'SERVER'
 
 # Aquecimento
 warm-up:

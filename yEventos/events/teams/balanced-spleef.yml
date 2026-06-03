@@ -136,6 +136,9 @@ announces:
   # Tempo entre os anúncios
   # em segundos
   time-between: 10
+  # Público dos anúncios
+  # SERVER ou PARTICIPANTS
+  target: 'SERVER'
 
 warm-up:
   # Quantia total de anúncios antes de finalizar o evento
