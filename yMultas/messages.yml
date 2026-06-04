@@ -1,0 +1,83 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número válido.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  fine-not-found: '&cMulta {id} não encontrada.'
+  fine-not-pending: '&cEsta multa não está pendente.'
+  no-pending: '&aVocê não possui multas pendentes.'
+  command-blocked: '&cVocê possui multa pendente e não pode usar este comando. Use &f/multas &cpara pagar.'
+  no-balance: |
+
+    &cVocê não tem saldo suficiente para pagar esta multa!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{required}
+
+  fine-applied: |
+
+    &aMulta aplicada com sucesso!
+
+    &7Jogador: &f{player}
+    &7ID: &f{id}
+    &7Valor: &f{amount}
+    &7Economia: &f{provider}
+    &7Motivo: &f{reason}
+
+  fine-received: |
+
+    &cVocê recebeu uma multa!
+
+    &7ID: &f{id}
+    &7Valor: &f{amount}
+    &7Economia: &f{provider}
+    &7Motivo: &f{reason}
+
+    &eUse /multas para visualizar e pagar.
+
+  fine-paid: |
+
+    &aMulta paga com sucesso!
+
+    &7ID: &f{id}
+    &7Valor pago: &f{amount}
+    &7Economia: &f{provider}
+
+  fine-removed: |
+
+    &aMulta removida com sucesso!
+
+    &7Jogador: &f{player}
+    &7ID: &f{id}
+
+  help: |
+
+    &8&m-&r &6&lMultas &8- &7Comandos
+    &8&m-&r
+    &e/{cmd} &8- &7Abre o menu de multas.
+    &e/{cmd} pagar <id> &8- &7Paga uma multa pendente.
+    &e/{cmd} historico &8- &7Abre seu histórico de infrações.
+    &e/{cmd} top &8- &7Ranking de maiores devedores.
+    &8&m-&r
+
+  admin-help: |
+
+    &8&m-&r &6&lMultas Admin &8- &7Comandos
+    &8&m-&r
+    &e/{cmd} aplicar <player> <valor> <motivo> &8- &7Aplica uma multa.
+    &e/{cmd} remover <player> <id> &8- &7Remove uma multa.
+    &e/{cmd} cofre &8- &7Mostra o cofre arrecadado.
+    &e/{cmd} reload &8- &7Recarrega as configurações.
+    &8&m-&r

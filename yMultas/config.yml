@@ -1,0 +1,93 @@
+#         __  __       _ _
+#  _   _|  \/  |_   _| | |_ __ _ ___
+# | | | | |\/| | | | | | __/ _` / __|
+# | |_| | |  | | |_| | | || (_| \__ \
+#  \__, |_|  |_|\__,_|_|\__\__,_|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Economia padrão usada ao aplicar multas sem provider explícito.
+  default-provider: 'money'
+  # Prazo padrão para vencimento de uma multa, em segundos. 0 = sem vencimento.
+  default-due-seconds: 604800
+  # Juros diários aplicados sobre multas vencidas, em percentual. 0 = sem juros.
+  interest:
+    # Ativar a aplicação de juros sobre multas vencidas.
+    enable: true
+    # Valor percentual de juros diários aplicados sobre multas vencidas. 0 = sem juros.
+    daily-percent: 5.0
+    # Intervalo de checagem de multas vencidas para aplicação de juros, em ticks. 20 ticks = 1 segundo.
+    check-interval-ticks: 1200
+  # Bloequios relacionados às multas.
+  blocks:
+    # Quando a multa tá pendente.
+    fine-pending:
+      # Ativar o bloqueio.
+      enable: true
+      # Comandos bloqueados para jogadores com multas pendentes.
+      commands:
+        - '/g'
+        - '/trade'
+        - '/leilao'
+  vault:
+    # Comandos executados quando uma multa é paga.
+    commands-on-pay: []
+
+# Sons personalizados para ações relacionadas às multas.
+sounds:
+  # Quando aplica a multa.
+  fine-applied: 'ENTITY_VILLAGER_NO'
+  # Quando o jogador paga a multa.
+  fine-paid: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+  # Quando o jogador tenta pagar uma multa, mas não tem dinheiro suficiente.
+  action-fail: 'ENTITY_VILLAGER_NO'
