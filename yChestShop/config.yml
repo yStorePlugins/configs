@@ -70,6 +70,10 @@ just-plot: false
 # deixe 0 para não ter limite.
 max-price: 0
 
+# Quantia máximo suportada para comprar na loja
+# deixe 0 para não ter limite.
+max-amount: 0
+
 # Máximo de amigos por loja
 max-friends: 5
 
