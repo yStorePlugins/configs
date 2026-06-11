@@ -93,6 +93,8 @@ Opcoes:
   FecharQuebrada: true
   # Checar se a máquina possui combustível infinito para poder colocar somente em um stack que for combustível infinito
   ChecarInfinito: true
+  # Permitir colocar máquinas sem combustível infinito em um stack que já possui combustível infinito
+  PermitirStackarEmInfinita: false
   # Dár máquina com combustível infinito se a quebrada possuir
   QuebrarInfinito: true
   # Mostrar máquinas de amigos no /maquina drops
