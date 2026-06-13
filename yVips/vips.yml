@@ -106,6 +106,8 @@ vips:
     group-command:
       add: [ 'lp user {player} parent add vip_ferro' ]
       remove: [ 'lp user {player} parent remove vip_ferro' ]
+      addtime: [ 'lp user {player} parent addtemp vip_ferro {time} accumulate' ]
+      removetime: [ 'lp user {player} parent removetemp vip_ferro {time}' ]
     activation-commands: [ '100.0,give {player} iron_ingot 64' ]
     activation-items:
       item-1:
@@ -217,6 +219,8 @@ vips:
     group-command:
       add: [ 'lp user {player} parent add vip_ouro' ]
       remove: [ 'lp user {player} parent remove vip_ouro' ]
+      addtime: [ 'lp user {player} parent addtemp vip_ouro {time} accumulate' ]
+      removetime: [ 'lp user {player} parent removetemp vip_ouro {time}' ]
     activation-commands: [ '100.0,give {player} gold_ingot 64' ]
     activation-items:
       item-1:
@@ -323,6 +327,8 @@ vips:
     group-command:
       add: [ 'lp user {player} parent add vip_diamante' ]
       remove: [ 'lp user {player} parent remove vip_diamante' ]
+      addtime: [ 'lp user {player} parent addtemp vip_diamante {time} accumulate' ]
+      removetime: [ 'lp user {player} parent removetemp vip_diamante {time}' ]
     activation-commands: [ '100.0,give {player} diamond 22' ]
     activation-items:
       item-1:
@@ -421,6 +427,8 @@ vips:
     group-command:
       add: [ 'lp user {player} parent add vip_esmeralda' ]
       remove: [ 'lp user {player} parent remove vip_esmeralda' ]
+      addtime: [ 'lp user {player} parent addtemp vip_esmeralda {time} accumulate' ]
+      removetime: [ 'lp user {player} parent removetemp vip_esmeralda {time}' ]
     activation-commands: [ '100.0,give {player} emerald 64' ]
     activation-items:
       item-1:
