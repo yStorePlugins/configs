@@ -58,6 +58,9 @@ general:
   main-server: true
   # Poder stackar PETS de tipos e atributos idênticos
   stack-equal: false
+  # Quantos pets do mesmo tipo o jogador pode possuir e equipar ao mesmo tempo
+  # Use 0 para permitir ilimitado, respeitando apenas slots e equip-slots.
+  same-type-limit: 1
   # Mundos em que não irá mostrar o PET para outros jogadores
   target-world-blacklist: []
 
