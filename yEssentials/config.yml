@@ -41,6 +41,8 @@ Opcoes:
   # Invulnerabilidade ao logar
   # em segundos
   Login-Invulnerabilidade: 0
+  # Mundos onde a invulnerabilidade ao logar não irá funcionar
+  Login-Invulnerabilidade-Blacklist: [ 'world_pvp' ]
   # Invulnerabilidade ao teleportar via TPA
   # em segundos
   Tpa-Invulnerabilidade: 0
