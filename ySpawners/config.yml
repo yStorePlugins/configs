@@ -118,6 +118,8 @@ general:
   spawn-only-when-chunk-loaded: false
   # Ativar compactação de spawners no inventário com shift + botão direito
   compact-spawners-enabled: false
+  # Desatiar contabilizar a looting padrão do minecraft (encantamento)
+  disable-vanilla-looting: false
 
 # Identificadores das skills
 skills:
