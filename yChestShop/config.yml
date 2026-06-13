@@ -92,6 +92,9 @@ black-list:
   nbt-tags: []
   # NBTTags que serão ignoradas ao verificar se os itens são idênticos
   nbt-tags-bypass: []
+  # Mundos que não poderá criar lojas
+  # Bypass: ychestshop.world.bypass
+  worlds: [ 'world_nether', 'world_the_end' ]
 
 # Tipo padrão da placa
 # BUY - Players compram
