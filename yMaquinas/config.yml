@@ -170,6 +170,27 @@ Limite stack:
     - '&7todos os seus limites no inventário em 1 só.'
     - ''
 
+# Limite de máquinas colocadas por jogador.
+# Soma com a permissão ymaquinas.maquina_limite.[numero].
+# Exemplo: permissão 100000 + item 100000 = 200000.
+# comando: /limite givemaquina
+Maquina limite:
+  # Máximo que o jogador pode ativar por item.
+  # Deixe 0 para ser infinito.
+  Max: 0
+  Item:
+    material: '667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    name: '&bLimite de máquinas'
+    lore:
+      - ''
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+
 # Configurações gerais dos itens
 Items:
   # Quando a máquina não foi liberado na data ainda.

@@ -33,6 +33,7 @@ chat:
     &b > &3/limite help &8- &fEnvia essa mensagem
     &b > &3/limite top &8- &fAbre o menu do top limite
     &b > &3/limite give <player> <quantia> &8- &fDá limite em item para um jogador
+    &b > &3/limite givemaquina <player> <quantia> &8- &fDá limite de máquinas em item para um jogador
     &b > &3/limite remove <player> <quantia> &8- &fRemove limite de um jogador
     &b > &3/limite add <player> <quantia> &8- &fAdiciona limite para um jogador
     &b > &3/limite set <player> <quantia> &8- &fSeta o limite de um jogador
@@ -86,6 +87,8 @@ chat:
   limit-max: '&cVocê já chegou no máximo.'
   limit-stack-full: '&cEsta máquina está no limite de stack máximo ({limite}).'
   limit-stack-activated: '&aVocê aumentou o limite de stack da máquina para {limite}.'
+  machine-limit-activated: '&aVocê ativou &e{quantia} &ade limite de máquinas. Total ativado: &e{limite}&a.'
+  machine-limit-max: '&cVocê já chegou no máximo de limite de máquinas ativável.'
   limit-sent: '&bVocê enviou &f{limite} limite&b para o jogador &f{player}&b.'
   limit-received: '&bVocê recebeu &f{limite} limite&b do jogador &f{player}&b.'
   limit-has: '&bVocê não possui &f{limite} limite&b.'
