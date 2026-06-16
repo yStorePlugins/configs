@@ -1,3 +1,6 @@
+# Nome exibido em menus e mensagens
+display-name: '&aPadrão'
+
 # Comandos permitidos dentro do X1
 allowed-commands:
   - 'spawn'
