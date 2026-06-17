@@ -70,6 +70,7 @@ Commands:
   # HOME
   Home: 'home'
   Homes: 'homes'
+  Homelist: 'homelist'
   Sethome: 'sethome'
   Delhome: 'delhome'
   Privada: 'privada|private'
