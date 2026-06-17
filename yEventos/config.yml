@@ -56,6 +56,13 @@ camarote-allowed-commands:
 # em ticks (20t = 1s)
 disappear-delay: 8
 
+# Limite de jogadores simultaneos por IP nos eventos com participantes.
+ip-limit:
+  # Ativar a limitacao
+  enabled: true
+  # Quantos jogadores do mesmo IP podem participar do mesmo evento
+  max-players: 1
+
 # Sistema de anúncios na proxy
 proxy:
   # Ativar o sistema
