@@ -25,7 +25,7 @@ chat:
     &cBloco não encontrado.
     &cDisponíveis: &7{list}
   block-give: '&aVocê deu &f{amount}x {block}&a para &f{player}&a!'
-  seed-remover-give-give: '&aVocê deu &f{amount}x Removedora de Sementes&a para &f{player}&a!'
+  seed-remover-give: '&aVocê deu &f{amount}x Removedora de Sementes&a para &f{player}&a!'
   block-cant-place: '&cVocê não pode colocar este bloco.'
   block-cant-stack-vertical: '&cVocê não pode empilhar blocos customizados verticais.'
   block-seed-remover: '&cVocê só pode remover este bloco com a Removedora de Sementes.'
