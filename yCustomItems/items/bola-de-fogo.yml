@@ -1,0 +1,48 @@
+display-name: '&cBola de Fogo'
+permission: 'ycustomitems.item.boladefogo'
+trigger: RIGHT_CLICK
+consume: true
+cooldown-seconds: 60
+chance: 100.0
+combat:
+  block-in-combat: false
+item:
+  material: 'FIREBALL'
+  name: '&c&lBola de Fogo'
+  lore:
+    - ''
+    - ' &7Incendeia jogadores'
+    - ' &7próximos ao impacto.'
+    - ''
+    - ' &eClique direito para lançar.'
+    - ''
+icon:
+  material: 'FIREBALL'
+  name: '&c&lBola de Fogo'
+  lore:
+    - ''
+    - ' &7Tipo: &fFIRE'
+    - ' &7Cooldown: &f60s'
+    - ' &7Duração: &f5s'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.7
+ability:
+  type: FIRE
+  radius: 5.0
+  fire-ticks: 100
+  affect-self: false
+target-commands:
+  - 'tell {target} &cVocê está queimando por causa de &e{player}&c!'
+messages:
+  chat: '&cBola de fogo lançada!'
+  target-chat: '&cVocê foi incendiado por &e{player}&c!'
+  actionbar: '&cFogo lançado!'
+  title: ''
+sounds:
+  success: 'ITEM_FIRECHARGE_USE'
+  fail: 'ENTITY_VILLAGER_NO'

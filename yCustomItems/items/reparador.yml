@@ -1,0 +1,67 @@
+# Nome exibido em menus e mensagens. Aceita cores com &.
+display-name: '&6Reparador'
+
+# Permissão necessária para usar o item. Deixe '' para liberar para todos.
+permission: 'ycustomitems.item.reparador'
+
+# Tipo de clique que ativa o item.
+# Valores aceitos: RIGHT_CLICK, LEFT_CLICK, ANY_CLICK.
+trigger: RIGHT_CLICK
+
+# Se true, consome 1 unidade do item ao ativar com sucesso.
+consume: true
+
+# Tempo de espera, em segundos, para usar este item novamente.
+cooldown-seconds: 120
+
+# Chance de ativação em porcentagem. 100.0 = sempre ativa.
+chance: 100.0
+
+# Regras ligadas ao estado de combate do jogador.
+combat:
+  # Se true, bloqueia o uso caso o jogador esteja marcado em combate.
+  block-in-combat: true
+
+# Item físico entregue ao jogador e identificado por NBT pelo plugin.
+item:
+  # Material do Bukkit. Também aceita MATERIAL:DATA em versões legadas.
+  material: 'ANVIL'
+  # Nome do item no inventário.
+  name: '&6&lReparador'
+  # Lore do item no inventário.
+  lore:
+    - ''
+    - ' &7Repara os equipamentos do jogador.'
+    - ' &7Não pode ser usado em combate.'
+    - ''
+    - ' &eClique direito para ativar.'
+    - ''
+
+# Icone exibido no menu de lista.
+# Nao precisa ser igual ao item fisico entregue ao jogador.
+icon:
+  material: 'ANVIL'
+  name: '&6&lReparador'
+  lore:
+    - ''
+    - ' &7Tipo: &fREPAIRER'
+    - ' &7Cooldown: &f120s'
+    - ' &7Reparo: &f100%'
+    - ' &7Combate: &cBloqueado'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+
+# Configuração da habilidade executada ao usar o item.
+ability:
+  # REPAIRER repara os itens do inventário e a armadura do jogador.
+  type: REPAIRER
+  # Percentual de reparo. 100 = restaura totalmente a durabilidade.
+  repair-percent: 100
+
+# Sons tocados ao jogador que usa o item.
+sounds:
+  # Som quando a habilidade é ativada com sucesso.
+  success: 'BLOCK_ANVIL_USE'
+  # Som quando a chance de ativação falha.
+  fail: 'ENTITY_VILLAGER_NO'

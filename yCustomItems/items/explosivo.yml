@@ -1,0 +1,50 @@
+display-name: '&4Explosivo'
+permission: 'ycustomitems.item.explosivo'
+trigger: RIGHT_CLICK
+consume: true
+cooldown-seconds: 100
+chance: 100.0
+combat:
+  block-in-combat: false
+item:
+  material: 'TNT'
+  name: '&4&lExplosivo'
+  lore:
+    - ''
+    - ' &7Cria uma explosão configurável'
+    - ' &7no local de impacto.'
+    - ''
+    - ' &eClique direito para lançar.'
+    - ''
+icon:
+  material: 'TNT'
+  name: '&4&lExplosivo'
+  lore:
+    - ''
+    - ' &7Tipo: &fEXPLOSION'
+    - ' &7Cooldown: &f100s'
+    - ' &7Quebra blocos: &ffalse'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+projectile:
+  enabled: true
+  type: EGG
+  power: 1.4
+ability:
+  type: EXPLOSION
+  radius: 6.0
+  explosion-power: 2.5
+  explosion-fire: false
+  explosion-break-blocks: false
+  affect-self: false
+target-effects:
+  - 'SLOW:1:80'
+messages:
+  chat: '&4Explosivo lançado!'
+  target-chat: '&cVocê foi atingido pela explosão de &e{player}&c!'
+  actionbar: '&4Explosivo armado!'
+  title: ''
+sounds:
+  success: 'ENTITY_TNT_PRIMED'
+  fail: 'ENTITY_VILLAGER_NO'

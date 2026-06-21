@@ -1,0 +1,55 @@
+# Item de exemplo focado em comandos sobre ativador e alvo atingido.
+display-name: '&5Maldição'
+permission: 'ycustomitems.item.maldicao'
+trigger: RIGHT_CLICK
+consume: true
+cooldown-seconds: 80
+chance: 100.0
+combat:
+  block-in-combat: false
+item:
+  material: 'BLAZE_ROD'
+  name: '&5&lMaldição'
+  lore:
+    - ''
+    - ' &7Atinge um jogador e executa'
+    - ' &7comandos configuráveis.'
+    - ''
+    - ' &eClique direito para lançar.'
+    - ''
+icon:
+  material: 'BLAZE_ROD'
+  name: '&5&lMaldição'
+  lore:
+    - ''
+    - ' &7Tipo: &fCOMMANDS'
+    - ' &7Cooldown: &f80s'
+    - ' &7Executa comandos no alvo.'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.7
+ability:
+  type: COMMANDS
+self-commands:
+  - 'give {player} diamond 1'
+  - 'broadcast &e{player} &7ativou a maldição em &c{world}!'
+target-commands:
+  - 'effect give {target} slowness 5 1'
+  - 'tell {target} &cVocê foi amaldiçoado por &e{player}&c!'
+self-effects:
+  - 'SPEED:1:80'
+target-effects:
+  - 'SLOW:1:100'
+  - 'BLINDNESS:0:60'
+messages:
+  chat: '&5Você lançou a maldição!'
+  target-chat: '&cVocê foi atingido pela maldição de &e{player}&c!'
+  actionbar: '&5Maldição lançada!'
+  title: '&5Maldição!<nl>&7Procure um alvo'
+sounds:
+  success: 'ENTITY_WITHER_SHOOT'
+  fail: 'ENTITY_VILLAGER_NO'

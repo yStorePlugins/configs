@@ -1,0 +1,61 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+# Mensagens enviadas no chat.
+# Placeholders comuns:
+# {cmd} = comando usado pelo jogador
+# {command} = comando usado em mensagens de sintaxe
+# {syntax} = formato esperado do comando
+# {player} = jogador alvo
+# {item} = nome do item especial
+# {amount} = quantidade de itens
+# {time} = tempo restante formatado
+# {items} = lista de chaves dos itens carregados
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio.'
+
+  help: |
+
+    &8&m-&r &6&lCustomItems &8- &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu de itens especiais.
+    &8&m-&r
+
+  admin-help: |
+
+    &8&m-&r &6&lCustomItems Admin &8- &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu de itens especiais.
+    &8&m-&r &e/{cmd} give <jogador> <item> [quantia] &8- &7Envia um item.
+    &8&m-&r &e/{cmd} list &8- &7Lista os itens carregados.
+    &8&m-&r &e/{cmd} reload &8- &7Recarrega configurações e itens.
+    &8&m-&r
+
+  item-not-found: '&cItem especial &e{item} &cnão encontrado.'
+  item-list: |
+
+    &6Itens especiais carregados: &f{amount}
+    &7{items}
+
+  item-give: '&aVocê enviou &f{amount}x &e{item} &apara &f{player}&a.'
+  item-receive: '&aVocê recebeu &f{amount}x &e{item}&a.'
+  item-no-permission: '&cVocê não tem permissão para usar o item &e{item}&c.'
+  item-world-blocked: '&cEste item não pode ser usado neste mundo.'
+  item-cooldown: '&cAguarde &e{time} &cpara usar &e{item} &cnovamente.'
+  item-combat-blocked: '&cEste item não pode ser usado em combate.'
+  item-activated: '&aVocê ativou &e{item}&a.'
+  item-fail: '&cO item &e{item} &cfalhou ao ativar.'
+  item-repaired: '&aSeus equipamentos foram reparados.'

@@ -1,0 +1,84 @@
+# Nome exibido em menus e mensagens. Aceita cores com &.
+display-name: '&5Vórtice Sombrio'
+
+# Permissão necessária para usar o item. Deixe '' para liberar para todos.
+permission: 'ycustomitems.item.vorticesombrio'
+
+# Tipo de clique que ativa o item.
+# Valores aceitos: RIGHT_CLICK, LEFT_CLICK, ANY_CLICK.
+trigger: RIGHT_CLICK
+
+# Se true, consome 1 unidade do item ao ativar com sucesso.
+consume: true
+
+# Tempo de espera, em segundos, para usar este item novamente.
+cooldown-seconds: 90
+
+# Chance de ativação em porcentagem. 100.0 = sempre ativa.
+chance: 100.0
+
+# Regras ligadas ao estado de combate do jogador.
+combat:
+  # Se true, bloqueia o uso caso o jogador esteja marcado em combate.
+  block-in-combat: false
+
+# Item físico entregue ao jogador e identificado por NBT pelo plugin.
+item:
+  # Material do Bukkit. Também aceita MATERIAL:DATA em versões legadas.
+  material: 'EYE_OF_ENDER'
+  # Nome do item no inventário.
+  name: '&5&lVórtice Sombrio'
+  # Lore do item no inventário.
+  lore:
+    - ''
+    - ' &7Cria um vórtice que puxa'
+    - ' &7jogadores próximos para o centro.'
+    - ''
+    - ' &eClique direito para lançar.'
+    - ''
+
+# Icone exibido no menu de lista.
+# Nao precisa ser igual ao item fisico entregue ao jogador.
+icon:
+  material: 'EYE_OF_ENDER'
+  name: '&5&lVórtice Sombrio'
+  lore:
+    - ''
+    - ' &7Tipo: &fDARK_VORTEX'
+    - ' &7Cooldown: &f90s'
+    - ' &7Duração: &f5s'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+
+# Configuração do projétil lançado pelo item.
+# Para DARK_VORTEX, o vórtice nasce no local de impacto.
+projectile:
+  # Se true, o item lança um projétil em vez de executar no jogador.
+  enabled: true
+  # Tipos suportados pelo manager atual: SNOWBALL, ARROW, EGG, ENDER_PEARL.
+  # SNOWBALL é recomendado para não causar efeitos nativos como teleporte.
+  type: SNOWBALL
+  # Velocidade/força do projétil.
+  power: 1.4
+
+# Configuração da habilidade executada no local de impacto.
+ability:
+  # DARK_VORTEX puxa jogadores próximos para o centro durante alguns ticks.
+  type: DARK_VORTEX
+  # Raio, em blocos, da área de puxão.
+  radius: 7.0
+  # Duração do vórtice em ticks. 20 ticks = 1 segundo.
+  duration-ticks: 100
+  # Força horizontal do puxão a cada tick.
+  pull-strength: 0.45
+  # Se true, permite puxar também quem ativou o item.
+  # Esta opção ainda respeita general.ignore-owner-in-area-effects.
+  affect-self: false
+
+# Sons tocados ao jogador que usa o item.
+sounds:
+  # Som quando a habilidade é ativada com sucesso.
+  success: 'ENTITY_ENDERMAN_TELEPORT'
+  # Som quando a chance de ativação falha.
+  fail: 'ENTITY_VILLAGER_NO'

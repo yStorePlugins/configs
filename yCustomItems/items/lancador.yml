@@ -1,0 +1,65 @@
+# Nome exibido em menus e mensagens. Aceita cores com &.
+display-name: '&aLançador'
+
+# Permissão necessária para usar o item. Deixe '' para liberar para todos.
+permission: 'ycustomitems.item.lancador'
+
+# Tipo de clique que ativa o item.
+# Valores aceitos: RIGHT_CLICK, LEFT_CLICK, ANY_CLICK.
+trigger: RIGHT_CLICK
+
+# Se true, consome 1 unidade do item ao ativar com sucesso.
+consume: true
+
+# Tempo de espera, em segundos, para usar este item novamente.
+cooldown-seconds: 45
+
+# Chance de ativação em porcentagem. 100.0 = sempre ativa.
+chance: 100.0
+
+# Regras ligadas ao estado de combate do jogador.
+combat:
+  # Se true, bloqueia o uso caso o jogador esteja marcado em combate.
+  block-in-combat: false
+
+# Item físico entregue ao jogador e identificado por NBT pelo plugin.
+item:
+  # Material do Bukkit. Também aceita MATERIAL:DATA em versões legadas.
+  material: 'SLIME_BALL'
+  # Nome do item no inventário.
+  name: '&a&lLançador'
+  # Lore do item no inventário.
+  lore:
+    - ''
+    - ' &7Lança o jogador para o alto.'
+    - ' &7Cooldown: &f45s'
+    - ''
+    - ' &eClique direito para ativar.'
+    - ''
+
+# Icone exibido no menu de lista.
+# Nao precisa ser igual ao item fisico entregue ao jogador.
+icon:
+  material: 'SLIME_BALL'
+  name: '&a&lLançador'
+  lore:
+    - ''
+    - ' &7Tipo: &fLAUNCHER'
+    - ' &7Cooldown: &f45s'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+
+# Configuração da habilidade executada ao usar o item.
+ability:
+  # LAUNCHER arremessa o próprio jogador para cima.
+  type: LAUNCHER
+  # Força vertical aplicada ao jogador. 2.8 equivale a um lançamento alto.
+  power: 2.8
+
+# Sons tocados ao jogador que usa o item.
+sounds:
+  # Som quando a habilidade é ativada com sucesso.
+  success: 'ENTITY_FIREWORK_ROCKET_LAUNCH'
+  # Som quando a chance de ativação falha.
+  fail: 'ENTITY_VILLAGER_NO'

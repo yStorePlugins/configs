@@ -1,0 +1,780 @@
+yCustomItems - Tipos de habilidades e configs opcionais
+
+Este arquivo lista todos os tipos de habilidade suportados pelo plugin e todos os campos de configuracao lidos dos arquivos items/*.yml.
+
+============================================================
+CONFIGS GERAIS DE QUALQUER ITEM
+============================================================
+
+display-name: '&aNome do Item'
+  Nome exibido em menus e mensagens.
+  Aceita cores com &.
+  Default: chave do arquivo sem .yml
+
+permission: 'ycustomitems.item.exemplo'
+  Permissao necessaria para usar o item.
+  Use '' para liberar para todos.
+  Default: ''
+
+trigger: RIGHT_CLICK
+  Tipo de clique que ativa o item.
+  Valores aceitos:
+    RIGHT_CLICK - clique direito no ar ou bloco
+    LEFT_CLICK - clique esquerdo no ar ou bloco
+    ANY_CLICK - qualquer clique
+  Default: RIGHT_CLICK
+
+consume: true
+  Se true, consome 1 unidade do item ao ativar com sucesso.
+  Default: true
+
+cooldown-seconds: 30
+  Tempo de espera, em segundos, para usar o item novamente.
+  Use 0 para desativar cooldown.
+  Default: 30
+
+chance: 100.0
+  Chance de ativacao em porcentagem.
+  100.0 = sempre ativa.
+  50.0 = metade das tentativas.
+  Default: 100.0
+
+combat:
+  block-in-combat: false
+    Se true, bloqueia o uso caso o jogador esteja marcado em combate.
+    O tempo de combate vem de config.yml em general.combat-tag-seconds.
+    Default: false
+
+item:
+  material: 'PAPER'
+    Material do item entregue ao jogador.
+    Aceita MATERIAL ou MATERIAL:DATA em versoes legadas.
+
+  name: '&aNome'
+    Nome do item no inventario.
+
+  lore:
+    - ' &7Linha da lore'
+    Lore do item no inventario.
+
+icon:
+  material: 'PAPER'
+    Material do icone exibido no menu de lista.
+    Aceita MATERIAL ou MATERIAL:DATA em versoes legadas.
+    Se icon nao existir, o menu usa o fallback de menus.yml em item-list.item.
+    Se tambem nao existir fallback no menu, usa uma copia de item:.
+
+  name: '&aNome no menu'
+    Nome do icone no menu.
+
+  lore:
+    - ' &7Linha da lore do menu'
+    Lore do icone no menu.
+
+  Observacao:
+    item: e o item fisico entregue ao jogador e usado para ativar a habilidade.
+    icon: e apenas o item visual exibido no menu /customitems.
+    O icon tambem recebe NBT automaticamente para o clique do menu funcionar.
+
+projectile:
+  enabled: false
+    Se true, o item lanca um projetil e a habilidade acontece no impacto ou no jogador atingido.
+    Default: false
+
+  type: SNOWBALL
+    Tipo do projetil lancado.
+    Valores suportados pelo codigo atual:
+      SNOWBALL
+      ARROW
+      EGG
+      ENDER_PEARL
+    Default: SNOWBALL
+
+  power: 1.5
+    Velocidade/forca do projetil.
+    Default: 1.5
+
+sounds:
+  success: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    Som tocado para o jogador quando a habilidade ativa com sucesso.
+    Use '' para nao tocar som.
+    Default: ''
+
+  fail: 'ENTITY_VILLAGER_NO'
+    Som tocado quando a chance de ativacao falha.
+    Use '' para nao tocar som.
+    Default: ''
+
+self-commands:
+  - 'give {player} diamond 1'
+  - 'broadcast &e{player} &7ativou a maldicao em &c{world}!'
+    Comandos executados pelo console quando o item ativa com sucesso.
+    Placeholders:
+      {player} = jogador que ativou
+      {world} = mundo do jogador que ativou
+      {item} = nome colorido do item
+      {key} = chave do item
+    Default: []
+
+target-commands:
+  - 'effect give {target} slowness 5 1'
+  - 'tell {target} &cVoce foi amaldicoado por &e{player}&c!'
+    Comandos executados pelo console sobre quem foi atingido ou afetado.
+    Em habilidades de area, executa para cada jogador afetado.
+    Placeholders:
+      {target} = jogador atingido/afetado
+      {player} = jogador que ativou
+      {world} = mundo do alvo
+      {item} = nome colorido do item
+      {key} = chave do item
+    Default: []
+
+self-effects:
+  - 'SPEED:1:100'
+    Efeitos aplicados em quem ativou o item.
+    Formato: EFFECT:LEVEL:DURATION_TICKS
+    LEVEL e o amplificador do Bukkit.
+    20 ticks = 1 segundo.
+    Default: []
+
+target-effects:
+  - 'SLOW:1:100'
+  - 'BLINDNESS:0:60'
+    Efeitos aplicados em quem foi atingido ou afetado.
+    Em habilidades de area, aplica para cada jogador afetado.
+    Formato: EFFECT:LEVEL:DURATION_TICKS
+    Default: []
+
+messages:
+  chat: '&aVoce ativou &e{item}&a!'
+    Mensagem de chat enviada para quem ativou.
+    Se vazio, usa a mensagem padrao de messages.yml.
+
+  target-chat: '&cVoce foi atingido por &e{player}&c!'
+    Mensagem de chat enviada para quem foi atingido/afetado.
+    Se vazio, nao envia mensagem ao alvo.
+
+  actionbar: '&e{item} &7ativado!'
+    Actionbar enviada para quem ativou.
+    Se vazio, nao envia actionbar.
+
+  title: '&6Item ativado!<nl>&7{item}'
+    Titulo enviado para quem ativou.
+    Use <nl> para separar titulo e subtitulo.
+    Se vazio, nao envia titulo.
+
+  Placeholders das mensagens:
+    {player} = jogador que ativou
+    {target} = alvo, quando existir
+    {world} = mundo aplicavel
+    {item} = nome colorido do item
+    {key} = chave do item
+
+============================================================
+RESUMO RAPIDO DAS HABILIDADES
+============================================================
+
+NONE
+  Item sem efeito fixo.
+
+LAUNCHER
+  Lanca o jogador que ativou para cima.
+
+TRAP
+  Cria teias temporarias no local aplicado.
+
+ZERO_GRAVITY
+  Arremessa jogadores proximos para cima.
+
+PURIFIER
+  Remove efeitos de potion do alvo atingido.
+
+DARK_VORTEX
+  Cria um vortice continuo que puxa jogadores para o centro.
+
+REPAIRER
+  Repara itens e armaduras do jogador.
+
+COMMANDS
+  Executa comandos, efeitos e mensagens configuraveis.
+
+POTION_SELF
+  Item focado em aplicar self-effects no ativador.
+
+POTION_TARGET
+  Item focado em aplicar target-effects no alvo ou area.
+
+LIGHTNING
+  Cria raio visual ou real no alvo/local.
+
+EXPLOSION
+  Cria explosao configuravel no alvo/local.
+
+PUSH
+  Empurra jogadores proximos para longe do centro.
+
+PULL
+  Puxa jogadores proximos uma vez para o centro.
+
+HEAL
+  Cura o ativador ou o alvo atingido.
+
+FIRE
+  Coloca fogo no alvo ou jogadores proximos.
+
+============================================================
+TIPOS DE HABILIDADE
+============================================================
+
+NONE
+------------------------------------------------------------
+Sem efeito.
+Pode ser usado para criar um item visual/inativo ou reservar uma configuracao futura.
+
+Exemplo:
+ability:
+  type: NONE
+
+Configs opcionais especificas:
+  Nenhuma.
+
+
+LAUNCHER
+------------------------------------------------------------
+Lanca o proprio jogador para cima.
+
+Exemplo:
+ability:
+  type: LAUNCHER
+  power: 2.8
+
+Configs opcionais especificas:
+  ability.power: 2.0
+    Forca vertical aplicada ao jogador.
+    Quanto maior o valor, maior o lancamento.
+    Default: 2.0
+
+
+TRAP
+------------------------------------------------------------
+Cria teias temporarias no local onde a habilidade e aplicada.
+Normalmente deve ser usado com projectile.enabled: true para criar a armadilha no local de impacto.
+
+Exemplo:
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.6
+ability:
+  type: TRAP
+  web-radius: 2
+  temporary-block-ticks: 100
+
+Configs opcionais especificas:
+  ability.web-radius: 2
+    Raio horizontal de teias ao redor do ponto de impacto.
+    Default: 2
+
+  ability.temporary-block-ticks: 100
+    Tempo, em ticks, para restaurar os blocos originais.
+    20 ticks = 1 segundo.
+    Default: 100
+
+
+ZERO_GRAVITY
+------------------------------------------------------------
+Arremessa jogadores proximos para cima.
+
+Exemplo:
+ability:
+  type: ZERO_GRAVITY
+  radius: 8.0
+  power: 1.8
+  affect-self: false
+
+Configs opcionais especificas:
+  ability.radius: 6.0
+    Raio, em blocos, para encontrar jogadores proximos.
+    Default: 6.0
+
+  ability.power: 2.0
+    Forca vertical aplicada aos jogadores afetados.
+    Default: 2.0
+
+  ability.affect-self: false
+    Se true, permite afetar tambem o jogador que ativou o item.
+    Observacao: ainda respeita config.yml em general.ignore-owner-in-area-effects.
+    Default: false
+
+
+PURIFIER
+------------------------------------------------------------
+Remove efeitos de potion do jogador atingido.
+Recomendado com projectile.enabled: true, pois a habilidade precisa de um alvo.
+
+Exemplo removendo todos os efeitos:
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.7
+ability:
+  type: PURIFIER
+  remove-all-effects: true
+  remove-effects: []
+
+Exemplo removendo efeitos especificos:
+ability:
+  type: PURIFIER
+  remove-all-effects: false
+  remove-effects:
+    - 'SPEED'
+    - 'INCREASE_DAMAGE'
+
+Configs opcionais especificas:
+  ability.remove-all-effects: true
+    Se true, remove todos os efeitos ativos do alvo.
+    Default: true
+
+  ability.remove-effects: []
+    Lista de PotionEffectType removidos quando remove-all-effects=false.
+    Os nomes devem ser nomes validos do Bukkit, como SPEED, SLOW, POISON, INCREASE_DAMAGE.
+    Default: []
+
+
+DARK_VORTEX
+------------------------------------------------------------
+Cria um vortice que puxa jogadores proximos para o centro durante alguns ticks.
+Pode ativar na posicao do jogador ou no local de impacto quando usado com projetil.
+
+Exemplo:
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.4
+ability:
+  type: DARK_VORTEX
+  radius: 7.0
+  duration-ticks: 100
+  pull-strength: 0.45
+  affect-self: false
+
+Configs opcionais especificas:
+  ability.radius: 6.0
+    Raio, em blocos, da area do vortice.
+    Default: 6.0
+
+  ability.duration-ticks: 100
+    Duracao do vortice em ticks.
+    20 ticks = 1 segundo.
+    Default: 100
+
+  ability.pull-strength: 0.45
+    Forca horizontal do puxao aplicado a cada tick.
+    Default: 0.45
+
+  ability.affect-self: false
+    Se true, permite puxar tambem quem ativou o item.
+    Observacao: ainda respeita config.yml em general.ignore-owner-in-area-effects.
+    Default: false
+
+
+REPAIRER
+------------------------------------------------------------
+Repara itens do inventario e armaduras do jogador.
+
+Exemplo:
+combat:
+  block-in-combat: true
+ability:
+  type: REPAIRER
+  repair-percent: 100
+
+Configs opcionais especificas:
+  ability.repair-percent: 100
+    Percentual de reparo aplicado a cada item com durabilidade.
+    100 = restaura totalmente.
+    50 = reduz metade da durabilidade danificada equivalente ao maximo do item.
+    Default: 100
+
+  combat.block-in-combat: true
+    Opcional geral do item, mas recomendado para REPAIRER para impedir uso durante PvP.
+    Default: false
+
+
+COMMANDS
+------------------------------------------------------------
+Nao possui efeito fixo proprio.
+Serve para criar itens baseados em comandos, efeitos e mensagens configuraveis.
+Se usado com projetil e atingir um jogador, executa tambem target-commands/target-effects/target-chat no alvo.
+
+Exemplo:
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.7
+ability:
+  type: COMMANDS
+self-commands:
+  - 'give {player} diamond 1'
+target-commands:
+  - 'effect give {target} slowness 5 1'
+  - 'tell {target} &cVoce foi amaldicoado por &e{player}&c!'
+
+Configs opcionais especificas:
+  Nenhuma. Use self-commands, target-commands, self-effects, target-effects e messages.
+
+Exemplo completo com comandos no ativador e no alvo:
+display-name: '&5Maldicao'
+permission: 'ycustomitems.item.maldicao'
+trigger: RIGHT_CLICK
+consume: true
+cooldown-seconds: 80
+chance: 100.0
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.7
+ability:
+  type: COMMANDS
+self-commands:
+  - 'give {player} diamond 1'
+  - 'broadcast &e{player} &7ativou a maldicao em &c{world}!'
+target-commands:
+  - 'effect give {target} slowness 5 1'
+  - 'tell {target} &cVoce foi amaldicoado por &e{player}&c!'
+self-effects:
+  - 'SPEED:1:80'
+target-effects:
+  - 'SLOW:1:100'
+messages:
+  chat: '&5Voce lancou a maldicao!'
+  target-chat: '&cVoce foi atingido pela maldicao de &e{player}&c!'
+
+
+POTION_SELF
+------------------------------------------------------------
+Aplica self-effects em quem ativou o item.
+Observacao: self-effects tambem ja sao aplicados em qualquer item ao ativar; este tipo existe para itens puramente de buff.
+
+Exemplo:
+ability:
+  type: POTION_SELF
+self-effects:
+  - 'SPEED:1:120'
+  - 'REGENERATION:0:100'
+
+Configs opcionais especificas:
+  Nenhuma. Configure self-effects.
+
+
+POTION_TARGET
+------------------------------------------------------------
+Aplica target-effects em quem foi atingido ou nos jogadores dentro do raio quando usado em area.
+
+Exemplo:
+projectile:
+  enabled: true
+  type: SNOWBALL
+ability:
+  type: POTION_TARGET
+  radius: 4.0
+target-effects:
+  - 'SLOW:1:100'
+
+Configs opcionais especificas:
+  ability.radius: 6.0
+    Raio usado quando a habilidade e aplicada em um local sem alvo direto.
+    Default: 6.0
+
+
+LIGHTNING
+------------------------------------------------------------
+Cria um raio no alvo ou local de impacto.
+
+Exemplo:
+projectile:
+  enabled: true
+  type: SNOWBALL
+ability:
+  type: LIGHTNING
+  radius: 4.0
+  lightning-damage: false
+
+Configs opcionais especificas:
+  ability.radius: 6.0
+    Raio usado para target-actions quando o raio cair em um local sem alvo direto.
+    Default: 6.0
+
+  ability.lightning-damage: false
+    Se true, usa raio real com dano.
+    Se false, usa apenas efeito visual do raio.
+    Default: false
+
+Exemplo completo:
+display-name: '&eRaio Divino'
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.8
+ability:
+  type: LIGHTNING
+  radius: 4.0
+  lightning-damage: false
+target-effects:
+  - 'SLOW:0:60'
+target-commands:
+  - 'tell {target} &eUm raio caiu proximo de voce!'
+messages:
+  chat: '&eVoce invocou um raio divino.'
+  target-chat: '&eVoce foi marcado pelo raio de &f{player}&e.'
+
+
+EXPLOSION
+------------------------------------------------------------
+Cria uma explosao no alvo ou local de impacto.
+
+Exemplo:
+projectile:
+  enabled: true
+  type: EGG
+ability:
+  type: EXPLOSION
+  radius: 6.0
+  explosion-power: 2.5
+  explosion-fire: false
+  explosion-break-blocks: false
+
+Configs opcionais especificas:
+  ability.radius: 6.0
+    Raio usado para target-actions depois da explosao.
+    Default: 6.0
+
+  ability.explosion-power: 2.0
+    Forca da explosao.
+    Default: 2.0
+
+  ability.explosion-fire: false
+    Se true, a explosao pode criar fogo.
+    Default: false
+
+  ability.explosion-break-blocks: false
+    Se true, a explosao pode quebrar blocos.
+    Default: false
+
+Exemplo completo:
+display-name: '&4Explosivo'
+projectile:
+  enabled: true
+  type: EGG
+  power: 1.4
+ability:
+  type: EXPLOSION
+  radius: 6.0
+  explosion-power: 2.5
+  explosion-fire: false
+  explosion-break-blocks: false
+target-effects:
+  - 'SLOW:1:80'
+messages:
+  chat: '&4Explosivo lancado!'
+  target-chat: '&cVoce foi atingido pela explosao de &e{player}&c!'
+
+
+PUSH
+------------------------------------------------------------
+Empurra jogadores proximos para longe do centro.
+
+Exemplo:
+ability:
+  type: PUSH
+  radius: 6.0
+  push-strength: 1.8
+  affect-self: false
+
+Configs opcionais especificas:
+  ability.radius: 6.0
+    Raio de jogadores afetados.
+    Default: 6.0
+
+  ability.push-strength: 1.2
+    Forca do empurrao.
+    Default: 1.2
+
+  ability.affect-self: false
+    Se true, permite afetar quem ativou.
+    Ainda respeita general.ignore-owner-in-area-effects.
+    Default: false
+
+Exemplo completo:
+display-name: '&cGranada de Impacto'
+projectile:
+  enabled: true
+  type: EGG
+  power: 1.6
+ability:
+  type: PUSH
+  radius: 6.0
+  push-strength: 1.8
+  affect-self: false
+target-effects:
+  - 'CONFUSION:0:80'
+messages:
+  chat: '&cGranada lancada!'
+  target-chat: '&cVoce foi arremessado pela granada de &e{player}&c!'
+
+
+PULL
+------------------------------------------------------------
+Puxa jogadores proximos uma vez para o centro, sem vortice continuo.
+
+Exemplo:
+ability:
+  type: PULL
+  radius: 6.0
+  pull-strength: 0.8
+  affect-self: false
+
+Configs opcionais especificas:
+  ability.radius: 6.0
+    Raio de jogadores afetados.
+    Default: 6.0
+
+  ability.pull-strength: 0.45
+    Forca do puxao.
+    Default: 0.45
+
+  ability.affect-self: false
+    Se true, permite afetar quem ativou.
+    Ainda respeita general.ignore-owner-in-area-effects.
+    Default: false
+
+
+HEAL
+------------------------------------------------------------
+Cura o jogador que ativou ou, se usado em projetil contra jogador, cura o alvo.
+
+Exemplo:
+ability:
+  type: HEAL
+  heal-amount: 12.0
+self-effects:
+  - 'REGENERATION:1:100'
+
+Configs opcionais especificas:
+  ability.heal-amount: 6.0
+    Quantidade de vida curada. 2.0 = 1 coracao.
+    Default: 6.0
+
+Exemplo completo:
+display-name: '&aBencao'
+ability:
+  type: HEAL
+  heal-amount: 12.0
+self-effects:
+  - 'REGENERATION:1:100'
+  - 'DAMAGE_RESISTANCE:0:100'
+self-commands:
+  - 'tell {player} &aVoce recebeu uma bencao em &f{world}&a.'
+messages:
+  chat: '&aVoce recebeu uma bencao.'
+  actionbar: '&aBencao ativada!'
+  title: '&aBencao<nl>&7Voce foi curado'
+
+
+FIRE
+------------------------------------------------------------
+Coloca fogo no alvo ou nos jogadores proximos ao local aplicado.
+
+Exemplo:
+projectile:
+  enabled: true
+  type: SNOWBALL
+ability:
+  type: FIRE
+  radius: 5.0
+  fire-ticks: 100
+  affect-self: false
+
+Configs opcionais especificas:
+  ability.radius: 6.0
+    Raio usado quando a habilidade e aplicada em local sem alvo direto.
+    Default: 6.0
+
+  ability.fire-ticks: 100
+    Tempo em ticks que o alvo fica pegando fogo.
+    20 ticks = 1 segundo.
+    Default: 100
+
+  ability.affect-self: false
+    Se true, permite afetar quem ativou.
+    Ainda respeita general.ignore-owner-in-area-effects.
+    Default: false
+
+Exemplo completo:
+display-name: '&cBola de Fogo'
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.7
+ability:
+  type: FIRE
+  radius: 5.0
+  fire-ticks: 100
+  affect-self: false
+target-commands:
+  - 'tell {target} &cVoce esta queimando por causa de &e{player}&c!'
+messages:
+  chat: '&cBola de fogo lancada!'
+  target-chat: '&cVoce foi incendiado por &e{player}&c!'
+
+============================================================
+ITENS PADRAO INCLUIDOS
+============================================================
+
+lancador.yml
+  Habilidade: LAUNCHER
+  Lanca quem ativou para cima.
+
+armadilha.yml
+  Habilidade: TRAP
+  Lanca projetil que cria teias temporarias no impacto.
+
+gravidade-zero.yml
+  Habilidade: ZERO_GRAVITY
+  Arremessa jogadores proximos para cima.
+
+purificador.yml
+  Habilidade: PURIFIER
+  Remove efeitos do jogador atingido por projetil.
+
+vortice-sombrio.yml
+  Habilidade: DARK_VORTEX
+  Cria vortice que puxa jogadores para o centro.
+
+reparador.yml
+  Habilidade: REPAIRER
+  Repara equipamentos e bloqueia uso em combate no exemplo.
+
+maldicao.yml
+  Habilidade: COMMANDS
+  Demonstra self-commands, target-commands, self-effects, target-effects e mensagens por item.
+
+raio-divino.yml
+  Habilidade: LIGHTNING
+  Cria raio visual no impacto e aplica efeitos/comandos nos afetados.
+
+granada-de-impacto.yml
+  Habilidade: PUSH
+  Empurra jogadores proximos para longe do impacto.
+
+bencao.yml
+  Habilidade: HEAL
+  Cura e aplica efeitos no ativador.
+
+bola-de-fogo.yml
+  Habilidade: FIRE
+  Incendeia alvos proximos ao impacto.
+
+explosivo.yml
+  Habilidade: EXPLOSION
+  Cria explosao configuravel no local de impacto.

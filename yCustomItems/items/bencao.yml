@@ -1,0 +1,45 @@
+display-name: '&aBenção'
+permission: 'ycustomitems.item.bencao'
+trigger: RIGHT_CLICK
+consume: true
+cooldown-seconds: 90
+chance: 100.0
+combat:
+  block-in-combat: false
+item:
+  material: 'EMERALD'
+  name: '&a&lBenção'
+  lore:
+    - ''
+    - ' &7Cura e aplica efeitos'
+    - ' &7em quem ativou.'
+    - ''
+    - ' &eClique direito para ativar.'
+    - ''
+icon:
+  material: 'EMERALD'
+  name: '&a&lBenção'
+  lore:
+    - ''
+    - ' &7Tipo: &fHEAL'
+    - ' &7Cooldown: &f90s'
+    - ' &7Cura: &f6 corações'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+ability:
+  type: HEAL
+  heal-amount: 12.0
+self-effects:
+  - 'REGENERATION:1:100'
+  - 'DAMAGE_RESISTANCE:0:100'
+self-commands:
+  - 'tell {player} &aVocê recebeu uma benção em &f{world}&a.'
+messages:
+  chat: '&aVocê recebeu uma benção.'
+  target-chat: ''
+  actionbar: '&aBenção ativada!'
+  title: '&aBenção<nl>&7Você foi curado'
+sounds:
+  success: 'ENTITY_PLAYER_LEVELUP'
+  fail: 'ENTITY_VILLAGER_NO'

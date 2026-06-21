@@ -1,0 +1,71 @@
+# Nome exibido em menus e mensagens. Aceita cores com &.
+display-name: '&bGravidade Zero'
+
+# Permissão necessária para usar o item. Deixe '' para liberar para todos.
+permission: 'ycustomitems.item.gravidadezero'
+
+# Tipo de clique que ativa o item.
+# Valores aceitos: RIGHT_CLICK, LEFT_CLICK, ANY_CLICK.
+trigger: RIGHT_CLICK
+
+# Se true, consome 1 unidade do item ao ativar com sucesso.
+consume: true
+
+# Tempo de espera, em segundos, para usar este item novamente.
+cooldown-seconds: 75
+
+# Chance de ativação em porcentagem. 100.0 = sempre ativa.
+chance: 100.0
+
+# Regras ligadas ao estado de combate do jogador.
+combat:
+  # Se true, bloqueia o uso caso o jogador esteja marcado em combate.
+  block-in-combat: false
+
+# Item físico entregue ao jogador e identificado por NBT pelo plugin.
+item:
+  # Material do Bukkit. Também aceita MATERIAL:DATA em versões legadas.
+  material: 'FEATHER'
+  # Nome do item no inventário.
+  name: '&b&lGravidade Zero'
+  # Lore do item no inventário.
+  lore:
+    - ''
+    - ' &7Arremessa jogadores próximos'
+    - ' &7para o alto.'
+    - ''
+    - ' &eClique direito para ativar.'
+    - ''
+
+# Icone exibido no menu de lista.
+# Nao precisa ser igual ao item fisico entregue ao jogador.
+icon:
+  material: 'FEATHER'
+  name: '&b&lGravidade Zero'
+  lore:
+    - ''
+    - ' &7Tipo: &fZERO_GRAVITY'
+    - ' &7Cooldown: &f75s'
+    - ' &7Raio: &f8 blocos'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+
+# Configuração da habilidade executada ao usar o item.
+ability:
+  # ZERO_GRAVITY arremessa jogadores próximos para cima.
+  type: ZERO_GRAVITY
+  # Raio, em blocos, para encontrar jogadores próximos.
+  radius: 8.0
+  # Força vertical aplicada aos jogadores afetados.
+  power: 1.8
+  # Se true, permite afetar também quem ativou o item.
+  # Esta opção ainda respeita general.ignore-owner-in-area-effects.
+  affect-self: false
+
+# Sons tocados ao jogador que usa o item.
+sounds:
+  # Som quando a habilidade é ativada com sucesso.
+  success: 'ENTITY_ENDER_DRAGON_FLAP'
+  # Som quando a chance de ativação falha.
+  fail: 'ENTITY_VILLAGER_NO'

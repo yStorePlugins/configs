@@ -1,0 +1,82 @@
+# Nome exibido em menus e mensagens. Aceita cores com &.
+display-name: '&fPurificador'
+
+# Permissão necessária para usar o item. Deixe '' para liberar para todos.
+permission: 'ycustomitems.item.purificador'
+
+# Tipo de clique que ativa o item.
+# Valores aceitos: RIGHT_CLICK, LEFT_CLICK, ANY_CLICK.
+trigger: RIGHT_CLICK
+
+# Se true, consome 1 unidade do item ao ativar com sucesso.
+consume: true
+
+# Tempo de espera, em segundos, para usar este item novamente.
+cooldown-seconds: 50
+
+# Chance de ativação em porcentagem. 100.0 = sempre ativa.
+chance: 100.0
+
+# Regras ligadas ao estado de combate do jogador.
+combat:
+  # Se true, bloqueia o uso caso o jogador esteja marcado em combate.
+  block-in-combat: false
+
+# Item físico entregue ao jogador e identificado por NBT pelo plugin.
+item:
+  # Material do Bukkit. Também aceita MATERIAL:DATA em versões legadas.
+  material: 'MILK_BUCKET'
+  # Nome do item no inventário.
+  name: '&f&lPurificador'
+  # Lore do item no inventário.
+  lore:
+    - ''
+    - ' &7Dispara um projétil que remove'
+    - ' &7efeitos do jogador atingido.'
+    - ''
+    - ' &eClique direito para lançar.'
+    - ''
+
+# Icone exibido no menu de lista.
+# Nao precisa ser igual ao item fisico entregue ao jogador.
+icon:
+  material: 'MILK_BUCKET'
+  name: '&f&lPurificador'
+  lore:
+    - ''
+    - ' &7Tipo: &fPURIFIER'
+    - ' &7Cooldown: &f50s'
+    - ' &7Remove: &fTodos os efeitos'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+
+# Configuração do projétil lançado pelo item.
+# Para PURIFIER, o efeito acontece no jogador atingido pelo projétil.
+projectile:
+  # Se true, o item lança um projétil em vez de executar no jogador.
+  enabled: true
+  # Tipos suportados pelo manager atual: SNOWBALL, ARROW, EGG, ENDER_PEARL.
+  type: SNOWBALL
+  # Velocidade/força do projétil.
+  power: 1.7
+
+# Configuração da habilidade executada ao atingir um jogador.
+ability:
+  # PURIFIER remove efeitos do jogador atingido.
+  type: PURIFIER
+  # Se true, remove todos os efeitos ativos do alvo.
+  remove-all-effects: true
+  # Usado somente quando remove-all-effects: false.
+  # Exemplo:
+  # remove-effects:
+  #   - 'SPEED'
+  #   - 'INCREASE_DAMAGE'
+  remove-effects: []
+
+# Sons tocados ao jogador que usa o item.
+sounds:
+  # Som quando a habilidade é ativada com sucesso.
+  success: 'ENTITY_SPLASH_POTION_BREAK'
+  # Som quando a chance de ativação falha.
+  fail: 'ENTITY_VILLAGER_NO'

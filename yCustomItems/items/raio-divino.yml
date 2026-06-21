@@ -1,0 +1,49 @@
+display-name: '&eRaio Divino'
+permission: 'ycustomitems.item.raiodivino'
+trigger: RIGHT_CLICK
+consume: true
+cooldown-seconds: 70
+chance: 100.0
+combat:
+  block-in-combat: false
+item:
+  material: 'GOLD_HOE'
+  name: '&e&lRaio Divino'
+  lore:
+    - ''
+    - ' &7Invoca um raio no local'
+    - ' &7atingido pelo projétil.'
+    - ''
+    - ' &eClique direito para lançar.'
+    - ''
+icon:
+  material: 'GOLD_HOE'
+  name: '&e&lRaio Divino'
+  lore:
+    - ''
+    - ' &7Tipo: &fLIGHTNING'
+    - ' &7Cooldown: &f70s'
+    - ' &7Dano real: &ffalse'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+projectile:
+  enabled: true
+  type: SNOWBALL
+  power: 1.8
+ability:
+  type: LIGHTNING
+  radius: 4.0
+  lightning-damage: false
+target-effects:
+  - 'SLOW:0:60'
+target-commands:
+  - 'tell {target} &eUm raio caiu próximo de você!'
+messages:
+  chat: '&eVocê invocou um raio divino.'
+  target-chat: '&eVocê foi marcado pelo raio de &f{player}&e.'
+  actionbar: '&eRaio Divino ativado!'
+  title: ''
+sounds:
+  success: 'ENTITY_LIGHTNING_THUNDER'
+  fail: 'ENTITY_VILLAGER_NO'

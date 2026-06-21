@@ -1,0 +1,43 @@
+#          ____          _                  ___ _
+#  _   _ / ___|   _ ___| |_ ___  _ __ ___ |_ _| |_ ___ _ __ ___  ___
+# | | | | |  | | | / __| __/ _ \| '_ ` _ \ | || __/ _ \ '_ ` _ \/ __|
+# | |_| | |__| |_| \__ \ || (_) | | | | | || || ||  __/ | | | | \__ \
+#  \__, |\____\__,_|___/\__\___/|_| |_| |_|___|\__\___|_| |_| |_|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+# Sistemas gerais
+general:
+  # Permite utilizar itens especiais mesmo estando no modo criativo.
+  # Desative se quiser impedir testes/abusos em servidores de produção.
+  allow-use-in-creative: true
+  # Permite utilizar itens especiais no modo espectador.
+  # Normalmente fica desativado para evitar interação invisível com o PvP.
+  allow-use-in-spectator: false
+  # Se true, efeitos em área não afetam o jogador que ativou o item.
+  # Ex.: Gravidade Zero e Vórtice Sombrio ignoram o dono quando este valor está ativo.
+  ignore-owner-in-area-effects: true
+  # Tempo de combate usado por itens que bloqueiam uso durante PvP.
+  # Itens com combat.block-in-combat: true respeitam este tempo.
+  combat-tag-seconds: 15
+  # Lista de mundos onde nenhum item especial pode ser utilizado.
+  # Exemplo:
+  # world-black-list:
+  #   - 'arena'
+  #   - 'spawn'
+  world-black-list: []
+  # Whitelist de mundos permitidos.
+  # Se enabled: true, itens especiais só funcionam nos mundos listados abaixo.
+  world-white-list:
+    enabled: false
+    # Mundos liberados quando a whitelist está ativa.
+    # Exemplo:
+    # worlds:
+    #   - 'world'
+    #   - 'factions'
+    worlds: []

@@ -1,0 +1,78 @@
+# Nome exibido em menus e mensagens. Aceita cores com &.
+display-name: '&fArmadilha'
+
+# Permissão necessária para usar o item. Deixe '' para liberar para todos.
+permission: 'ycustomitems.item.armadilha'
+
+# Tipo de clique que ativa o item.
+# Valores aceitos: RIGHT_CLICK, LEFT_CLICK, ANY_CLICK.
+trigger: RIGHT_CLICK
+
+# Se true, consome 1 unidade do item ao ativar com sucesso.
+consume: true
+
+# Tempo de espera, em segundos, para usar este item novamente.
+cooldown-seconds: 60
+
+# Chance de ativação em porcentagem. 100.0 = sempre ativa.
+chance: 100.0
+
+# Regras ligadas ao estado de combate do jogador.
+combat:
+  # Se true, bloqueia o uso caso o jogador esteja marcado em combate.
+  block-in-combat: false
+
+# Item físico entregue ao jogador e identificado por NBT pelo plugin.
+item:
+  # Material do Bukkit. Também aceita MATERIAL:DATA em versões legadas.
+  material: 'WEB'
+  # Nome do item no inventário.
+  name: '&f&lArmadilha'
+  # Lore do item no inventário.
+  lore:
+    - ''
+    - ' &7Dispara um projétil que cria'
+    - ' &7teias temporárias ao atingir o local.'
+    - ''
+    - ' &eClique direito para lançar.'
+    - ''
+
+# Icone exibido no menu de lista.
+# Nao precisa ser igual ao item fisico entregue ao jogador.
+icon:
+  material: 'WEB'
+  name: '&f&lArmadilha'
+  lore:
+    - ''
+    - ' &7Tipo: &fTRAP'
+    - ' &7Cooldown: &f60s'
+    - ' &7Raio das teias: &f2'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+
+# Configuração do projétil lançado pelo item.
+# Use quando a habilidade precisa acontecer no local de impacto ou no alvo atingido.
+projectile:
+  # Se true, o item lança um projétil em vez de executar no jogador.
+  enabled: true
+  # Tipos suportados pelo manager atual: SNOWBALL, ARROW, EGG, ENDER_PEARL.
+  type: SNOWBALL
+  # Velocidade/força do projétil.
+  power: 1.6
+
+# Configuração da habilidade executada ao usar o item.
+ability:
+  # TRAP cria teias temporárias no local atingido pelo projétil.
+  type: TRAP
+  # Raio horizontal de teias ao redor do impacto.
+  web-radius: 2
+  # Tempo, em ticks, para restaurar os blocos originais. 20 ticks = 1 segundo.
+  temporary-block-ticks: 100
+
+# Sons tocados ao jogador que usa o item.
+sounds:
+  # Som quando a habilidade é ativada com sucesso.
+  success: 'ENTITY_SPIDER_AMBIENT'
+  # Som quando a chance de ativação falha.
+  fail: 'ENTITY_VILLAGER_NO'

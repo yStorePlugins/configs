@@ -1,0 +1,48 @@
+display-name: '&cGranada de Impacto'
+permission: 'ycustomitems.item.granadadeimpacto'
+trigger: RIGHT_CLICK
+consume: true
+cooldown-seconds: 65
+chance: 100.0
+combat:
+  block-in-combat: false
+item:
+  material: 'FIREWORK_CHARGE'
+  name: '&c&lGranada de Impacto'
+  lore:
+    - ''
+    - ' &7Empurra jogadores próximos'
+    - ' &7para longe do impacto.'
+    - ''
+    - ' &eClique direito para lançar.'
+    - ''
+icon:
+  material: 'FIREWORK_CHARGE'
+  name: '&c&lGranada de Impacto'
+  lore:
+    - ''
+    - ' &7Tipo: &fPUSH'
+    - ' &7Cooldown: &f65s'
+    - ' &7Raio: &f6 blocos'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+projectile:
+  enabled: true
+  type: EGG
+  power: 1.6
+ability:
+  type: PUSH
+  radius: 6.0
+  push-strength: 1.8
+  affect-self: false
+target-effects:
+  - 'CONFUSION:0:80'
+messages:
+  chat: '&cGranada lançada!'
+  target-chat: '&cVocê foi arremessado pela granada de &e{player}&c!'
+  actionbar: '&cImpacto lançado!'
+  title: ''
+sounds:
+  success: 'ENTITY_GENERIC_EXPLODE'
+  fail: 'ENTITY_VILLAGER_NO'
