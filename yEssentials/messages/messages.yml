@@ -169,6 +169,7 @@ Tp:
   Tp: '&aVocê foi teleportado para o jogador &f{player}&a.'
   Tp player: '&aVocê teleportou o jogador &f{player1}&a para o jogador &f{player2}&a.'
   Tpa: '&aSolicitação de teleporte enviada para &f{player}&a.'
+  Tpahere: '&aSolicitação para &f{player}&a vir até você enviada.'
   Tpa ja: '&cVocê já enviou uma solicitação de teleporte para o jogador {player}.'
   Tpa si: '&cVocê não pode enviar solicitação de teleporte à si mesmo.'
   Tpa nao: '&c{player} não lhe enviou uma solicitação de teleporte.'

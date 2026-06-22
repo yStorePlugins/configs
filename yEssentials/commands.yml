@@ -63,6 +63,7 @@ Commands:
   Tpall: 'tpall'
   Tp: 'tp'
   Tpa: 'tpa'
+  Tpahere: 'tpahere'
   Tpaccept: 'tpaccept|tpaaceitar|tpaceitar'
   Tpdeny: 'tpdeny|tpcancel|tpnegar|tpcancelar|tpanegar|tpacancel|tpacancelar'
   Tptoggle: 'tptoggle'
