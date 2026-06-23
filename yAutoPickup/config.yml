@@ -127,6 +127,17 @@ auto-smelt-list:
   - 'IRON_ORE,IRON_INGOT-1'
   - 'GOLD_ORE,GOLD_INGOT-1'
 
+# Sistema de drops customizados por bloco
+# block: BLOCO ou BLOCO:DATA
+# drops: MATERIAL-QUANTIA ou MATERIAL:DATA-QUANTIA
+# Exemplo de drop com data: 'INK_SACK:3-1'
+custom-drops:
+  trigo:
+    block: 'CROPS:7'
+    drops:
+      - 'WHEAT-1'
+      - 'SEEDS-1'
+
 # Sistema de auto-compactar itens
 auto-compact:
   item1:
