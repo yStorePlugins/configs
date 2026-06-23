@@ -304,6 +304,15 @@ Opcoes:
   # Mundos onde não poderá voltar usando /back
   BackWorld blacklist:
     - 'none'
+  # Cobrar custo para usar /back
+  Back-Cost:
+    Ativar: false
+    # Jogadores com esta permissão não pagam e não veem o menu de confirmação
+    Bypass: 'yessentials.back.custo.bypass'
+    Custos:
+      custo1:
+        Provider: 'money'
+        Amount: 500.0
   # NBTTags que não poderão ser reparadas
   NBTTag blacklist:
     - 'yNewBosses-Matadora'

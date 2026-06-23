@@ -1,0 +1,24 @@
+Nome: '&8Confirmar /back'
+Tamanho: 27
+
+Confirmar:
+  Slot: 11
+  ID: 'EMERALD_BLOCK'
+  Data: 0
+  Glow: true
+  Name: '&aConfirmar'
+  Lore:
+    - '&7Clique para voltar ao local anterior.'
+    - ''
+    - '&7Custo: &f{cost}'
+
+Cancelar:
+  Slot: 15
+  ID: 'REDSTONE_BLOCK'
+  Data: 0
+  Glow: false
+  Name: '&cCancelar'
+  Lore:
+    - '&7Clique para cancelar.'
+
+Itens: {}
