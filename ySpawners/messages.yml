@@ -119,7 +119,7 @@ chat:
     &f-> &b/limitedrop help
     &f-> &b/limitedrop [player]
   spawner-already-placed: '&cVocê já colocou um spawner deste tipo.'
-  plot-spawner-limit: '&cJá existe um spawner do tipo {spawner} neste terreno.'
+  plot-spawner-limit: '&cEste terreno atingiu o limite de spawners do tipo {spawner}: {current}/{limit}.'
   total-limit: '&cVocê atingiu o limite máximo de spawners ({limit}). Você possui {current} spawners.'
   booster-give: '&aVocê deu &7{amount}x Booster(s)&a para o jogador &7{player}&a.'
   booster-received: '&aVocê recebeu &7{amount}x Booster(s)&a.'
