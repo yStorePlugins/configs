@@ -1,4 +1,4 @@
-# Você pode criar quantos quiser
+﻿# Você pode criar quantos quiser
 Encantamentos:
   Chaveiro:
     Displays: # Item que aparecerá no menu de evolução
@@ -18,10 +18,10 @@ Encantamentos:
           - '&f > Custo: &a{blocos} blocos&f.'
           - '&f > Nível necessário: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evolução'
+          - '&aBotÃ£o &fQ &apara evoluir o possível'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: false
         URL: ''
         ID: TRIPWIRE_HOOK
@@ -37,7 +37,7 @@ Encantamentos:
           - '&f > Custo: &a{blocos} blocos&f.'
           - '&f > Nível necessário: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
+          - '&cVocê nÃ£o tem blocos ou nível suficientes.'
       Maximo: # quando já estiver no máximo
         CustomSkull: false
         URL: ''
@@ -65,7 +65,7 @@ Encantamentos:
           - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocê nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Chaveiro'
     # Nível da picareta necessário para poder evoluir o encantamento
     NivelPicareta: 0
@@ -76,25 +76,29 @@ Encantamentos:
     Comandos:
       - '20,give {player} tripwire_hook 1'
     Mensagens:
-      Title: '&aChave<nl>&eencontrada' # deixe '' para não usar
-      Actionbar: '' # deixe '' para não usar
+      Title: '&aChave<nl>&eencontrada' # deixe '' para nÃ£o usar
+      Actionbar: '' # deixe '' para nÃ£o usar
       Chat: [ ]
     Nivel:
       Padrao: 1.0
       Maximo: 1.0 # Use -1 para ser infinito
       Porcentagem: 0.0 # porcentagem adquirida por nível (ele acrescenta na chance do comando)
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
@@ -120,10 +124,10 @@ Encantamentos:
           - '&f > Custo: &a{blocos} blocos&f.'
           - '&f > Nível necessário: &a{nivel}&f.'
           - ''
-          - '&aBotão &fesquerdo &apara evoluir 1x'
-          - '&aBotão &fdireito &apara escolher a quantia de evolução'
-          - '&aBotão &fQ &apara evoluir o possível'
-      NaoPode: # quando não puder evoluir
+          - '&aBotÃ£o &fesquerdo &apara evoluir 1x'
+          - '&aBotÃ£o &fdireito &apara escolher a quantia de evolução'
+          - '&aBotÃ£o &fQ &apara evoluir o possível'
+      NaoPode: # quando nÃ£o puder evoluir
         CustomSkull: false
         URL: ''
         ID: QUARTZ
@@ -139,7 +143,7 @@ Encantamentos:
           - '&f > Custo: &a{blocos} blocos&f.'
           - '&f > Nível necessário: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
+          - '&cVocê nÃ£o tem blocos ou nível suficientes.'
       Maximo: # quando já estiver no máximo
         CustomSkull: false
         URL: ''
@@ -167,7 +171,7 @@ Encantamentos:
           - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem A+ Atual: &b{porcentagem}%&f.'
           - ''
-          - '&cVocê não tem permissão para comprar esse encantamento.'
+          - '&cVocê nÃ£o tem permissÃ£o para comprar esse encantamento.'
     Nome: 'Aventureiro'
     # Nível da picareta necessário para poder evoluir o encantamento
     NivelPicareta: 0
@@ -178,25 +182,29 @@ Encantamentos:
     Comandos:
       - '20,give {player} quartz 1'
     Mensagens:
-      Title: '&aLimite<nl>&eencontrado' # deixe '' para não usar
-      Actionbar: '' # deixe '' para não usar
+      Title: '&aLimite<nl>&eencontrado' # deixe '' para nÃ£o usar
+      Actionbar: '' # deixe '' para nÃ£o usar
       Chat: [ ]
     Nivel:
       Padrao: 1.0
       Maximo: 1.0 # Use -1 para ser infinito
       Porcentagem: 0.0 # porcentagem adquirida por nível (ele acrescenta na chance do comando)
     Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
       Multiplicador: 1.00
     Prices-Default:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 100.0
     Prices-PerLevel:
       price1:
         provider: 'money'
         price: 10000.0
+      price2:
+        provider: 'yminas'
+        price: 200.0
     Prices-Desencantador:
       price1:
         provider: 'money'
