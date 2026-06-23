@@ -130,8 +130,14 @@ titans-battle:
   win:
     - 'name:10'
 
-# Sistema de pontos para o yGuerra
+# Sistema de pontos para o yGuerra (jogador)
 yguerra:
+  # Nome do evento:quantia de pontos
+  win:
+    - 'name:10'
+
+# Sistema de pontos para o yGuerra (clan)
+yguerra-clans:
   # Nome do evento:quantia de pontos
   win:
     - 'name:10'
