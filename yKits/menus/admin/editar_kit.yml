@@ -29,6 +29,19 @@ Itens:
       - '&7Atual: &f{nome}&7.'
       - ''
       - '&aClique para alterar o nome.'
+  Shulker:
+    Slot: 29
+    CustomSkull: false
+    URL: ''
+    ID: SHULKER_BOX
+    Data: 0
+    Glow: false
+    Name: '&aCaixa Shulker'
+    Lore:
+      - ''
+      - '&7Atual: &f{shulker}&7.'
+      - ''
+      - '&aClique para ativar/desativar.'
   Icone:
     Slot: 31
     CustomSkull: false

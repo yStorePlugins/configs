@@ -54,6 +54,7 @@ Mensagens:
   Mudou nome: '&aVocê alterou o nome do kit para &e{nome}&a.'
   Mudou delay: '&aVocê alterou o tempo de reset do kit &f{kit}&a para &f{delay}&a.'
   Mudou permissao: '&aVocê alterou a permissao do kit &f{kit}&a para {permissao}.'
+  Mudou shulker: '&aEntrega em shulker do kit &f{kit}&a: &f{shulker}&a.'
   Cancelou: '&cOperação cancelada.'
   Item nao: '&cO item não pode ser nulo.'
   Icone mudou: '&aÍcone do kit &f{kit}&a alterado com sucesso.'
