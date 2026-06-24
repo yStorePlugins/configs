@@ -11,6 +11,9 @@ Loja ativar: true
 # Abrir a loja ao clicar com botão direito no fragmento
 Loja interagir: true
 
+# Permitir quebrar blocos com o fragmento na mão
+Quebrar: false
+
 # Dropar os fragmentos no chão ao conseguí-los
 Dropar: false
 
