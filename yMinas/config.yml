@@ -99,6 +99,8 @@ Opcoes:
   Acumular bonus: false
   # Enviar recompensas para o armazém de recompensas (menu)
   RecompensasMenu: true
+  # Quando o LuckyBlock for encontrado, garantir que pelo menos uma recompensa seja entregue
+  LuckyBlockSemprePremiar: false
   # Bloquear de quebrar blocos da mina enquanto o inventário estiver cheio
   Bloquear InvCheio: true
   # Ativar a picareta custom
