@@ -159,6 +159,10 @@ xp:
   # 1.6+ → Progressão pesada
   multiplier: 1.4
 
+xp-blacklist:
+  worlds: []
+  regions: []
+
 # Formas de ganhar xp
 xp-earn:
   type1:

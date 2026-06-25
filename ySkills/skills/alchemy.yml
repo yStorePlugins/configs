@@ -111,6 +111,10 @@ xp:
   scale: 1
   multiplier: 1.4
 
+xp-blacklist:
+  worlds: []
+  regions: []
+
 # Formas de ganhar xp
 xp-earn:
   type1:
