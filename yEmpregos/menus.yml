@@ -1,0 +1,288 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu inicial com categorias e atalhos principais.
+category-menu:
+  # Título do menu inicial.
+  name: '&8Turnos'
+  # Tamanho do inventário. Use múltiplos de 9.
+  size: 54
+  # Slots usados para exibir as categorias abaixo.
+  slots: [ 20,21,22,23,24 ]
+  # Atalho para abrir o turno ativo do jogador.
+  my-turn-slot: 46
+  # Atalho para abrir o ranking.
+  top-slot: 48
+  # Atalho para abrir jogadores em turno ativo.
+  working-slot: 50
+  # Atalho de status/histórico do jogador.
+  history-slot: 52
+  # Categorias exibidas no menu inicial.
+  # A chave da categoria deve ser a mesma usada em jobs/<turno>.yml em category:.
+  # Placeholders: {category}, {jobs}, {working}.
+  categories:
+    mineracao:
+      material: 'DIAMOND_PICKAXE'
+      name: '&bMineração'
+      lore:
+        - ''
+        - ' &7Turnos disponíveis: &f{jobs}'
+        - ' &7Clique para abrir.'
+        - ''
+    pesca:
+      material: 'FISHING_ROD'
+      name: '&bPesca'
+      lore:
+        - ''
+        - ' &7Turnos disponíveis: &f{jobs}'
+        - ' &7Clique para abrir.'
+        - ''
+  # Atalhos abaixo aceitam {working} e {profession_xp_<nome>}.
+  # Exemplo: {profession_xp_minerador} mostra o XP salvo na profissão minerador.
+  my-turn:
+    material: 'WATCH'
+    name: '&eMeu Turno'
+    lore:
+      - ''
+      - ' &7Clique para abrir seu turno atual.'
+      - ''
+  top:
+    material: 'GOLD_INGOT'
+    name: '&6Ranking de Turnos'
+    lore:
+      - ''
+      - ' &7Clique para ver os melhores jogadores.'
+      - ''
+  working:
+    material: 'COMPASS'
+    name: '&aJogadores Trabalhando'
+    lore:
+      - ''
+      - ' &7Trabalhando agora: &f{working}'
+      - ' &7Clique para visualizar.'
+      - ''
+  history:
+    material: 'BOOK'
+    name: '&dStatus do Jogador'
+    lore:
+      - ''
+      - ' &7Veja suas estatísticas de turnos.'
+      - ''
+      - ' &7XP Minerador: &b{profession_xp_minerador}'
+      - ' &7XP Pescador: &b{profession_xp_pescador}'
+      - ''
+
+# Menu paginado com todos os turnos carregados da pasta jobs/.
+# O item exibido para cada turno fica em jobs/<turno>.yml na secao icon:.
+turn-list:
+  # Titulo do inventario.
+  name: '&8Turnos'
+  # Tamanho do inventario. Use multiplos de 9.
+  size: 54
+  # Slots onde os turnos serao exibidos pelo Scroller.
+  slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+  # Slot do botao de pagina anterior.
+  previous-slot: 45
+  # Slot do botao de proxima pagina.
+  next-slot: 53
+  # Slot do botao de voltar. Use -1 para desativar.
+  back-slot: 49
+  # Slot do botão para abrir o ranking.
+  top-slot: 48
+  # Slot do botão para ver jogadores trabalhando.
+  working-slot: 50
+  # Botão que abre o ranking de turnos concluídos.
+  top:
+    material: 'GOLD_INGOT'
+    name: '&6Ranking de Turnos'
+    lore:
+      - ''
+      - ' &7Clique para ver os melhores'
+      - ' &7jogadores dos turnos.'
+      - ''
+  # Botão que abre a lista de jogadores em turno ativo.
+  working:
+    material: 'COMPASS'
+    name: '&aJogadores Trabalhando'
+    lore:
+      - ''
+      - ' &7Veja quem está trabalhando agora.'
+      - ' &7Trabalhando: &f{working}'
+      - ''
+
+# Menu fixo de detalhes de um turno.
+# O item informativo central usa jobs/<turno>.yml na seção detail-icon:.
+turn-detail:
+  # Titulo. Placeholder disponivel: {turn}.
+  name: '&8Turno'
+  # Tamanho do inventario.
+  size: 27
+  # Slot do item informativo.
+  info-slot: 13
+  # Slot do botao para entrar.
+  enter-slot: 11
+  # Slot do botão para sair do turno ativo ou cancelar/retornar.
+  leave-slot: 15
+  # Slot do botão de recompensas.
+  rewards-slot: 22
+  # Slot da seta de voltar exibida quando o jogador está neste turno ativo.
+  back-slot: 18
+  # Botão para entrar no turno exibido.
+  enter:
+    material: 'WOOL:5'
+    name: '&aEntrar no turno'
+    lore:
+      - ''
+      - ' &7Clique para assumir este turno.'
+      - ''
+  # Botão exibido apenas quando o jogador está neste turno ativo.
+  leave:
+    material: 'WOOL:14'
+    name: '&cSair do turno'
+    lore:
+      - ''
+      - ' &7Clique para abandonar seu turno atual.'
+      - ''
+  # Botão exibido quando o jogador não está neste turno.
+  cancel:
+    material: 'WOOL:14'
+    name: '&cCancelar e retornar'
+    lore:
+      - ''
+      - ' &7Clique para voltar à lista de turnos.'
+      - ''
+  # Seta exibida quando o jogador está no turno ativo e quer voltar sem sair.
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ''
+      - ' &7Clique para voltar ao menu anterior.'
+      - ''
+  # Botão que abre a prévia de recompensas do turno.
+  rewards:
+    material: 'CHEST'
+    name: '&eRecompensas'
+    lore:
+      - ''
+      - ' &7Clique para ver as recompensas'
+      - ' &7possíveis deste turno.'
+      - ''
+
+# Menu paginado do ranking de turnos concluídos.
+top-menu:
+  # Titulo do inventario.
+  name: '&8Turnos'
+  # Tamanho do inventario.
+  size: 54
+  # Slots onde os jogadores do ranking serao exibidos.
+  slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+  # Slot do botao de pagina anterior.
+  previous-slot: 45
+  # Slot do botao de proxima pagina.
+  next-slot: 53
+  # Slot do botao de voltar para a lista de turnos.
+  back-slot: 49
+  # Template de jogador no ranking.
+  # Placeholders: {pos}, {player}, {completed}, {abandoned}, {total_time}.
+  top-item:
+    material: '{player}'
+    name: '&6&l#{pos} &f{player}'
+    lore:
+      - ''
+      - ' &7Turnos concluídos: &a{completed}'
+      - ' &7Abandonos: &c{abandoned}'
+      - ' &7Tempo total: &f{total_time}'
+      - ''
+
+# Menu de histórico do jogador.
+history-menu:
+  # Título do inventário.
+  name: '&8Meu Histórico'
+  # Tamanho do inventário.
+  size: 27
+  # Slots usados para exibir os itens do histórico.
+  slots: [ 13 ]
+  # Slot do botão de voltar ao menu inicial.
+  back-slot: 22
+  # Ícone de status do jogador.
+  # Placeholders: {completed}, {abandoned}, {total_time}, {last_turn}, {daily_streak}, {best_daily_streak}, {profession_xp_<nome>}.
+  item:
+    material: 'BOOK'
+    name: '&dSeu Histórico'
+    lore:
+      - ''
+      - ' &7Turnos concluídos: &a{completed}'
+      - ' &7Abandonos: &c{abandoned}'
+      - ' &7Tempo total: &f{total_time}'
+      - ' &7Último turno: &f{last_turn}'
+      - ' &7Sequência diária: &e{daily_streak}'
+      - ' &7Melhor sequência: &6{best_daily_streak}'
+      - ''
+      - ' &7Profissões:'
+      - ' &f-> &7Minerador: &b{profession_xp_minerador} XP'
+      - ' &f-> &7Pescador: &b{profession_xp_pescador} XP'
+      - ''
+
+# Menu de prévia das recompensas do turno.
+# Os itens exibidos vêm de rewards.yml -> rewards.<id>.preview.
+# No preview da recompensa, use {chance} e {reward} para mostrar chance e id.
+turn-rewards-menu:
+  # Título. Placeholder: {turn}.
+  name: '&8Recompensas - {turn}'
+  # Tamanho do inventário.
+  size: 54
+  # Slots usados para exibir as recompensas.
+  slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+  # Slot do botão de página anterior.
+  previous-slot: 45
+  # Slot do botão de próxima página.
+  next-slot: 53
+  # Slot do botão de voltar ao detalhe do turno.
+  back-slot: 49
+
+# Menu paginado com jogadores que estão em turno ativo.
+working-players-menu:
+  # Titulo do inventario.
+  name: '&8Jogadores Trabalhando'
+  # Tamanho do inventario.
+  size: 54
+  # Slots onde os jogadores serão exibidos.
+  slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+  # Slot do botao de pagina anterior.
+  previous-slot: 45
+  # Slot do botao de proxima pagina.
+  next-slot: 53
+  # Slot do botao de voltar para a lista de turnos.
+  back-slot: 49
+  # Template de jogador trabalhando.
+  # Placeholders: {player}, {turn}, {turn_id}, {time}, {progress}.
+  player-item:
+    material: '{player}'
+    name: '&a{player}'
+    lore:
+      - ''
+      - ' &7Turno: &f{turn}'
+      - ' &7Tempo restante: &f{time}'
+      - ' &7Progresso: &f{progress}'
+      - ''

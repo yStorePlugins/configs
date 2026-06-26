@@ -1,0 +1,44 @@
+#   ____                            _
+# |  _ \ _____      ____ _ _ __ __| |___
+# | |_) / _ \ \ /\ / / _` | '__/ _` / __|
+# |  _ <  __/\ V  V / (_| | | | (_| \__ \
+# |_| \_\___| \_/\_/ \__,_|_|  \__,_|___/
+#
+
+rewards:
+  # ID da recompensa usada em jobs/*.yml.
+  reward1:
+    # Item apenas visual, usado como pre-visualizacao em menus futuros.
+    preview:
+      material: 'EMERALD'
+      name: '&aRecompensa padrao'
+      lore:
+        - ' &7Recompensa entregue ao concluir um turno.'
+        - ' &7Chance: &f{chance}%'
+    # Item entregue ao jogador quando item.give for true.
+    item:
+      # Se true, entrega este item ao jogador.
+      give: false
+      # Material do item. Tambem aceita MATERIAL:DATA em versoes antigas.
+      material: 'EMERALD'
+      # Nome do item entregue.
+      name: '&aRecompensa de Turno'
+      # Lore do item entregue. Placeholder disponivel: {player}.
+      lore:
+        - ' &7Recebida por cumprir uma funcao.'
+    # Item visual de coleta, reservado para menus de recompensas.
+    collect:
+      material: 'CHEST'
+      name: '&aColetar recompensa'
+      lore: []
+    # Comandos executados no console ao entregar a recompensa.
+    command:
+      # Se true, executa os comandos da lista.
+      give: true
+      # Se true, multiplica placeholder-amount pela quantidade entregue.
+      multiply-placeholder: false
+      # Valor usado no placeholder {amount}.
+      placeholder-amount: 1000
+      # Lista de comandos. Placeholders disponiveis: {player}, {amount}.
+      list:
+        - 'eco give {player} {amount}'

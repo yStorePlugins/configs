@@ -1,0 +1,93 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio.'
+  help: |
+    &r
+    &8&m-&r &6&lTurnos &8- &7Comandos
+    &8&m-&r
+    &e/{cmd} &8- &7Abre o menu de turnos.
+    &e/{cmd} entrar <id> &8- &7Entra em um turno.
+    &e/{cmd} sair &8- &7Sai do turno atual.
+    &e/{cmd} progresso &8- &7Mostra seu progresso.
+    &e/{cmd} top &8- &7Mostra o ranking.
+    &e/{cmd} historico &8- &7Mostra seu histórico.
+    &8&m-&r
+  admin-help: |
+    &r
+    &8&m-&r &6&lTurnos Admin &8- &7Comandos
+    &8&m-&r
+    &e/{cmd} iniciar <id> &8- &7Abre um turno para você testar.
+    &e/{cmd} global iniciar <id> &8- &7Abre um turno global.
+    &e/{cmd} global parar <id> &8- &7Fecha um turno global.
+    &e/{cmd} reload &8- &7Recarrega o plugin.
+    &8&m-&r
+    &r
+  turn-not-found: '&cTurno {turn}&c não encontrado.'
+  already-active: '&cVocê já está no turno {turn}&c.'
+  no-active: '&cVocê não está em nenhum turno.'
+  limit-reached: '&cO turno {turn}&c está cheio.'
+  cooldown: '&cAguarde {time} para entrar novamente neste turno.'
+  schedule-closed: '&cNão é possível entrar no turno {turn}&c neste horário.'
+  entered: |
+    &r
+    &aVocê entrou no {turn}&a!
+    &r
+    &7Duração: &f{duration}
+    &7Objetivo: &f{progress}
+    &r
+  left: '&eVocê saiu do turno {turn}&e.'
+  completed: |
+    &r
+    &aVocê completou o {turn}&a!
+    &r
+    &7Turnos concluídos: &f{completed}
+    &7Tempo total: &f{total_time}
+    &r
+  failed: '&cSeu turno {turn}&c terminou sem completar os objetivos.'
+  progress: |
+    &r
+    &6&lProgresso do Turno
+    &r
+    &7Turno: &f{turn}
+    &7Tempo restante: &f{time}
+    &7Progresso: &f{progress}
+    &r
+  objective-progress: '&aProgresso: &f{objective} &8- &e{current}&7/&e{amount}'
+  reward-not-found: '&cRecompensa {reward} não encontrada.'
+  queue-joined: '&eO turno {turn}&e está cheio. Você entrou na fila na posição &f#{position}&e.'
+  queue-available: '&aAbriu uma vaga no turno {turn}&a. Use o menu para entrar.'
+  requirement-money: '&cVocê precisa ter {money} coins para entrar neste turno.'
+  requirement-item: '&cVocê não possui o item necessário para entrar neste turno.'
+  requirement-completed: '&cVocê precisa concluir {amount} turnos antes de entrar neste.'
+  requirement-profession-xp: '&cVocê precisa de {xp} XP na profissão deste turno.'
+  requirement-world: '&cVocê não pode entrar neste turno neste mundo.'
+  remaining: '&eFaltam {time} para acabar o turno {turn}&e.'
+
+# Mensagens públicas.
+broadcast:
+  completed: '&a{player} completou o turno {turn}&a!'
+  global-start: '&6O turno global {turn}&6 foi aberto para todos!'
+  global-stop: '&cO turno global {turn}&c foi encerrado.'
+
+# Mensagens de actionbar.
+actionbar:
+  active: '&6{turn} &8| &7{bar} &e{done}&7/&e{total} &8| &f{time}'
+
+# Títulos exibidos na tela. Use <nl> para separar título e subtítulo.
+title:
+  completed: '&a&lTurno completo!<nl>&7Você concluiu {turn}'

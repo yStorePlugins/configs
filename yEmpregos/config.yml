@@ -1,0 +1,103 @@
+#
+#██╗░░░██╗███████╗███╗░░░███╗██████╗░██████╗░███████╗░██████╗░░█████╗░░██████╗
+#╚██╗░██╔╝██╔════╝████╗░████║██╔══██╗██╔══██╗██╔════╝██╔════╝░██╔══██╗██╔════╝
+#░╚████╔╝░█████╗░░██╔████╔██║██████╔╝██████╔╝█████╗░░██║░░██╗░██║░░██║╚█████╗░
+#░░╚██╔╝░░██╔══╝░░██║╚██╔╝██║██╔═══╝░██╔══██╗██╔══╝░░██║░░╚██╗██║░░██║░╚═══██╗
+#░░░██║░░░███████╗██║░╚═╝░██║██║░░░░░██║░░██║███████╗╚██████╔╝╚█████╔╝██████╔╝
+#░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝░╚═════╝░░╚════╝░╚═════╝░
+#
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais do plugin.
+general:
+  # Quantidade maxima de jogadores exibidos no menu de ranking.
+  top-limit: 100
+  # Envia actionbar periodica para jogadores em turno ativo.
+  active-actionbar: true
+  # Fila para turnos cheios.
+  queue:
+    # Se true, jogadores entram em uma fila quando o turno está cheio.
+    enabled: true
+    # Se true, o próximo da fila entra automaticamente quando abrir vaga.
+    auto-enter: false
+  # Sequência diária de turnos concluídos.
+  streak:
+    # Se true, registra sequência diária ao concluir turnos.
+    enabled: true
+    # Bônus por sequência aplicado na quantidade entregue pelas recompensas.
+    # 0.05 = +5% por dia de sequência acima do primeiro.
+    reward-multiplier: 0.05
+  # Anúncios automáticos.
+  announces:
+    # Anuncia quando um jogador completa um turno.
+    completed: false
+    # Anuncia quando um turno global é iniciado.
+    global-start: true
+    # Anuncia quando um turno global é encerrado.
+    global-stop: true
+    # Envia mensagens ao jogador quando restar esse tempo no turno ativo.
+    # Formatos aceitos: 30s, 5m, 1h.
+    remaining-times: [ '5m', '1m', '10s' ]
+  # Barra usada na actionbar de progresso.
+  progress-bar:
+    # Simbolo/coloracao da parte concluida.
+    filled: '&a|'
+    # Simbolo/coloracao da parte pendente.
+    empty: '&7|'
+    # Tamanho total da barra.
+    length: 20
+  # Sons executados em acoes importantes.
+  # Use nomes do enum Sound do Bukkit/Spigot.
+  sounds:
+    # Som ao entrar em um turno.
+    turn-started: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    # Som ao ganhar progresso em objetivo.
+    progress: 'ENTITY_ITEM_PICKUP'
+    # Som ao completar um turno.
+    completed: 'ENTITY_PLAYER_LEVELUP'
+    # Som ao falhar/expirar um turno.
+    failed: 'ENTITY_VILLAGER_NO'

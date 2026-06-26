@@ -1,0 +1,165 @@
+# Nome exibido em menus, mensagens e placeholders.
+name: '&bTurno de Pescador'
+
+# Categoria exibida no menu inicial em menus.yml -> category-menu.categories.
+category: 'pesca'
+
+# Profissão livre configurada por YAML.
+# O jogador ganha profession-xp ao concluir este turno.
+# required-profession-xp define quanto XP nesta profissão o jogador precisa ter para entrar.
+profession: 'pescador'
+profession-xp: 10
+required-profession-xp: 0
+
+# Ícone usado nos menus turn-list e turn-detail.
+# Placeholders: {id}, {turn}, {duration}, {players}, {limit}, {cooldown}, {objectives}, {multiplier},
+# {category}, {profession}, {profession_xp}, {player_profession_xp}, {required_profession_xp}, {global},
+# {requirement_money}, {requirement_completed}, {requirement_profession_xp}, {requirement_item}, {requirement_worlds}.
+icon:
+  material: 'FISHING_ROD'
+  name: '&6&l{turn}'
+  lore:
+    - ''
+    - ' &7Duração: &f{duration}'
+    - ' &7Jogadores: &c{players}&7/&a{limit}'
+    - ' &7Cooldown: &b{cooldown}'
+    - ' &7Objetivos: &f{objectives}'
+    - ' &7Bônus: &ax{multiplier}'
+    - ' &7Profissão: &f{profession}'
+    - ' &7Seu XP: &b{player_profession_xp}&7/&e{required_profession_xp}'
+    - ''
+    - ' &7Horários:'
+    - ' &f-> &adas 06:00 às 10:00'
+    - ' &f-> &adas 14:00 às 18:00'
+    - ''
+    - ' &eClique para ver detalhes.'
+    - ''
+
+# Ícone usado no item central do menu turn-detail.
+# Além dos placeholders do icon:, aceita placeholders por objetivo:
+# {objective_name}, {objective_current}, {objective_amount}, {objective_percent}, {objective_bar}.
+detail-icon:
+  material: 'FISHING_ROD'
+  name: '&6&lDetalhes do {turn}'
+  lore:
+    - ''
+    - ' &7Duração: &f{duration}'
+    - ' &7Jogadores: &c{players}&7/&a{limit}'
+    - ' &7Cooldown: &b{cooldown}'
+    - ''
+    - ' &7Objetivos:'
+    - ' &f-> &e{objective_name}: &f{objective_current}&7/&f{objective_amount} &8[{objective_bar}&8] &e{objective_percent}%'
+    - ''
+    - ' &7Bônus: &ax{multiplier}'
+    - ' &7Profissão: &f{profession} &8(+{profession_xp} XP)'
+    - ' &7Seu XP: &b{player_profession_xp}&7/&e{required_profession_xp}'
+    - ' &7Global aberto: &f{global}'
+    - ''
+    - ' &7Requisitos:'
+    - ' &f-> &7Dinheiro: &a{requirement_money}'
+    - ' &f-> &7Turnos concluídos: &a{requirement_completed}'
+    - ' &f-> &7XP de profissão: &a{player_profession_xp}&7/&e{required_profession_xp}'
+    - ' &f-> &7Item: &cNenhum'
+    - ' &f-> &7Mundos: &cNenhum'
+    - ''
+    - ' &7Horários de entrada:'
+    - ' &f-> &adas 06:00 às 10:00'
+    - ' &f-> &adas 14:00 às 18:00'
+    - ''
+
+# Permissão extra para entrar neste turno.
+# Deixe vazio para permitir qualquer jogador com yempregos.use.
+permission: ''
+
+# Duração do turno.
+# Formatos aceitos: 30s, 30m, 1h, 1h30m, 1d.
+duration: '20m'
+
+# Limite de jogadores simultaneos neste turno.
+# Use 0 para ilimitado.
+player-limit: 8
+
+# Tempo para o jogador poder entrar novamente após concluir, falhar ou abandonar.
+cooldown: '45m'
+
+# Horários em que jogadores podem ENTRAR neste turno.
+# Quem já estiver no turno continua até concluir, abandonar ou expirar.
+entry-times:
+  # Se false, jogadores podem entrar a qualquer horário.
+  enabled: true
+  # Formato 24h: HH:mm-HH:mm.
+  # Também aceita janelas que passam da meia-noite, exemplo: 22:00-02:00.
+  times:
+    - '06:00-10:00'
+    - '14:00-18:00'
+
+# Bônus aplicado enquanto o jogador está neste turno.
+bonus:
+  # Tipos validos: NONE, MINING_DROPS, FISHING_DROPS, WOODCUTTING_DROPS, HUNTING_DROPS, FARMING_DROPS.
+  type: FISHING_DROPS
+  # Multiplicador dos drops. 1.25 = 25% a mais em média.
+  multiplier: 1.25
+
+# Requisitos para entrar no turno.
+requirements:
+  # Dinheiro necessário para entrar. Usa Vault se houver economia registrada.
+  money: 0
+  # Quantidade total de turnos concluídos necessária.
+  completed-turns: 0
+  # XP necessário na profissão configurada em profession:.
+  profession-xp: 0
+  # Lista de mundos onde é permitido entrar. Deixe [] para permitir todos.
+  worlds: []
+  # Item necessário no inventário para entrar.
+  item:
+    # Se false, ignora o requisito de item.
+    enabled: false
+    # Material necessário.
+    material: 'FISHING_ROD'
+    # Quantidade necessária.
+    amount: 1
+
+# Efeitos e comandos aplicados enquanto o jogador está no turno.
+# active-effects usa FORMATO: EFEITO:AMPLIFICADOR. Exemplo: SPEED:1.
+active-effects: []
+# Comandos executados pelo console ao entrar. Placeholders: {player}, {turn}, {duration_seconds}.
+start-commands: []
+# Comandos executados pelo console ao sair, concluir, falhar ou desconectar.
+end-commands: []
+
+# Proteções contra abuso no progresso.
+anti-abuse:
+  # Se preenchido, só conta progresso nesses mundos.
+  allowed-worlds: []
+  # Mundos onde progresso nunca será contado.
+  blocked-worlds: []
+  # Se false, blocos colocados por jogadores não contam progresso.
+  count-player-placed-blocks: true
+  # Cooldown por objetivo para somar progresso. Use 0s para desativar.
+  objective-cooldown: '0s'
+
+# Objetivos necessários para concluir o turno.
+objective:
+  types:
+    fish:
+      # Nome exibido em mensagens, placeholders e lore dos menus.
+      display-name: 'Pescar Peixes'
+      # Tipos válidos: BREAK_BLOCK, FISH, KILL_MOB, KILL_PLAYER, HARVEST_CROP,
+      # YMINAS, YMINASPACKETS, YPESCA, YCAMPO, YPLANTACOES, YFLORESTA.
+      type: FISH
+      # Para pesca, deixe vazio para aceitar qualquer captura.
+      white-list: []
+      # Quantidade de peixes/capturas necessaria.
+      amount: 50
+
+# Recompensas entregues ao concluir o turno.
+# Formato: 'chance,rewardId', onde rewardId vem do rewards.yml.
+reward:
+  - '100.0,reward1'
+
+# Penalidade ao abandonar o turno com /turno sair ou desconectar.
+penalty:
+  # Se true, executa os comandos abaixo.
+  enabled: false
+  # Placeholders disponíveis: {player}, {turn}.
+  commands: []

@@ -1,0 +1,56 @@
+Tipos de objetivos disponíveis
+
+Cada objetivo em turns/<turno>.yml aceita display-name para alterar o nome exibido em mensagens e menus.
+As white-lists aceitam a chave exata e também a base sem data, por exemplo STONE:0 ou STONE.
+Exemplo:
+objective:
+  types:
+    stone:
+      display-name: 'Pedras'
+      type: BREAK_BLOCK
+      white-list: [ 'STONE:0' ]
+      amount: 50
+
+BREAK_BLOCK
+- Progresso ao quebrar blocos vanilla do Minecraft.
+- White-list: material do bloco, exemplo STONE ou STONE:0.
+
+FISH
+- Progresso ao pescar pelo sistema vanilla do Minecraft.
+- White-list: deixe vazia para aceitar qualquer peixe.
+
+KILL_MOB
+- Progresso ao matar mobs vanilla do Minecraft.
+- White-list: tipo da entidade, exemplo ZOMBIE.
+
+KILL_PLAYER
+- Progresso ao matar jogadores.
+- White-list: deixe vazia para aceitar qualquer jogador.
+
+HARVEST_CROP
+- Progresso ao quebrar colheitas vanilla do Minecraft.
+- White-list: material da plantacao, exemplo WHEAT ou CARROT.
+
+YMINAS
+- Progresso ao quebrar blocos no yMinas.
+- White-list: material do bloco, exemplo STONE ou STONE:0.
+
+YMINASPACKETS
+- Progresso ao quebrar blocos no yMinasPackets.
+- White-list: material do bloco, exemplo STONE ou STONE:0.
+
+YPESCA
+- Progresso ao pescar peixes no yPesca.
+- White-list: key do peixe configurado no yPesca.
+
+YCAMPO
+- Progresso ao quebrar blocos no yCampo.
+- White-list: material do bloco, exemplo WHEAT ou WHEAT:7.
+
+YPLANTACOES
+- Progresso ao quebrar plantacoes no yPlantacoes.
+- White-list: material do bloco, exemplo SUGAR_CANE_BLOCK ou SUGAR_CANE_BLOCK:0.
+
+YFLORESTA
+- Progresso ao quebrar blocos no yFloresta.
+- White-list: material do bloco, exemplo LOG ou LOG:0.
