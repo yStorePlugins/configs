@@ -51,6 +51,17 @@ redis:
   username: ''
   # Senha do usuário de conexão: [EX: 123]
   password: ''
+  # Timeout de rede em milissegundos
+  timeout-ms: 2000
+  # Configuração do pool de conexões
+  pool:
+    max-total: 64
+    max-idle: 24
+    min-idle: 8
+    max-wait-ms: 1500
+    test-on-borrow: true
+    test-while-idle: true
+    eviction-run-ms: 30000
 
 #   __      _   _   _
 #  / _\ ___| |_| |_(_)_ __   __ _ ___
@@ -156,3 +167,22 @@ npc:
     - '&e{nome}'
     - '&7Money: &f{money}'
     - ''
+
+# Sistema de perder % do money ao morrer
+lose-on-death:
+  enabled: false
+  # Máximo de money que poderá ser perdido
+  # Deixe 0 para não ter limite
+  max-money: 0
+  # Porcentagens de acordo com o rank
+  percents:
+    member:
+      order: 1
+      permission: ''
+      percent: 10.0
+      message: '&cVocê morreu e perdeu 10% do seu money. &7($ {amount})'
+    vip:
+      order: 2
+      permission: 'yessentials.deathlose.vip'
+      percent: 5.0
+      message: '&cVocê morreu e perdeu 5% do seu money. &7($ {amount})'
