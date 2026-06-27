@@ -12,6 +12,7 @@ vips:
     party-vip-value: 10.0
     # Enviar a ativação pro menu de ativações do jogador
     activation-menu: false
+    activation-collect-message: '&aVocê recolheu a ativação do {vip_display}&a.'
     # Permitir a venda de keys desse vip
     allow-sell: true
     # Integração com o yLeague
@@ -55,6 +56,24 @@ vips:
 
         &a&lVIPS
         &7Recolha sua ativação no /vip
+
+    bungee-announces:
+      bungee1:
+        server: ''
+        sound: ''
+        effect: ''
+        actionbar: '&7{player}&b acaba de ativar o &fVIP Ferro'
+        title: '&7{player}&b ativou o<nl>&fVIP Ferro'
+        chat: |
+
+          &a&lVIPS
+          &bO jogador &7{player} &bacaba de
+          &bse tornar &7(&fVIP Ferro&7)&b.
+
+        chat-private: |
+
+          &a&lVIPS
+          &7Recolha sua ativação no /vip
 
     discord:
       # exclusivo yDiscordHook
@@ -134,6 +153,7 @@ vips:
     party-vip-value: 20.0
     # Enviar a ativação pro menu de ativações do jogador
     activation-menu: false
+    activation-collect-message: '&aVocê recolheu a ativação do {vip_display}&a.'
     # Sistema de upar o vip
     upgrade:
       vip-type: 'diamante'
@@ -168,6 +188,24 @@ vips:
 
         &a&lVIPS
         &7Recolha sua ativação no /vip
+
+    bungee-announces:
+      bungee1:
+        server: ''
+        sound: ''
+        effect: ''
+        actionbar: '&a{player}&f acaba de ativar o &e&lVIP OURO'
+        title: '&a{player}&f ativou o <nl> &e&lVIP OURO'
+        chat: |
+
+          &a&lVIPS
+          &fO jogador &a{player} &facaba de
+          &fse tornar &e&lVIP OURO&f.
+
+        chat-private: |
+
+          &a&lVIPS
+          &7Recolha sua ativação no /vip
 
     discord:
       # exclusivo yDiscordHook
@@ -242,6 +280,7 @@ vips:
     party-vip-value: 30.0
     # Enviar a ativação pro menu de ativações do jogador
     activation-menu: false
+    activation-collect-message: '&aVocê recolheu a ativação do {vip_display}&a.'
     # Sistema de upar o vip
     upgrade:
       vip-type: 'esmeralda'
@@ -276,6 +315,24 @@ vips:
 
         &a&lVIPS
         &7Recolha sua ativação no /vip
+
+    bungee-announces:
+      bungee1:
+        server: ''
+        sound: ''
+        effect: ''
+        actionbar: '&a{player}&f acaba de ativar o &b&lVIP DIAMANTE'
+        title: '&a{player}&f ativou o <nl> &b&lVIP DIAMANTE'
+        chat: |
+
+          &a&lVIPS
+          &fO jogador &a{player} &facaba de
+          &fse tornar &b&lVIP DIAMANTE&f.
+
+        chat-private: |
+
+          &a&lVIPS
+          &7Recolha sua ativação no /vip
 
     discord:
       # exclusivo yDiscordHook
@@ -350,6 +407,7 @@ vips:
     party-vip-value: 50.0
     # Enviar a ativação pro menu de ativações do jogador
     activation-menu: false
+    activation-collect-message: '&aVocê recolheu a ativação do {vip_display}&a.'
     # Sistema de upar o vip
     upgrade:
       vip-type: ''
@@ -376,6 +434,24 @@ vips:
 
         &a&lVIPS
         &7Recolha sua ativação no /vip
+
+    bungee-announces:
+      bungee1:
+        server: ''
+        sound: ''
+        effect: ''
+        actionbar: '&a{player}&f acaba de ativar o &a&lVIP ESMERALDA'
+        title: '&a{player}&f ativou o <nl> &a&lVIP ESMERALDA'
+        chat: |
+
+          &a&lVIPS
+          &fO jogador &a{player} &facaba de
+          &fse tornar &a&lVIP ESMERALDA&f.
+
+        chat-private: |
+
+          &a&lVIPS
+          &7Recolha sua ativação no /vip
 
     discord:
       # exclusivo yDiscordHook
