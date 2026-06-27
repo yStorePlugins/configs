@@ -116,6 +116,38 @@ mob-spawning-whitelist: [ 'GIANT', 'ARMOR_STAND' ]
 # Cada coração são 2.0 pontos de vida
 player-health: 2.0
 
+# Velocidade direta do jogador no lobby, sem usar poções.
+# Valores válidos: de -1.0 até 1.0. Padrão do Minecraft: walk 0.2, fly 0.1
+walk-speed: 0.2
+fly-speed: 0.1
+
+# Sons executados em ações específicas.
+# Deixe vazio ou 'none' para desativar. Exemplos: 'LEVEL_UP', 'CLICK', 'ORB_PICKUP'
+sounds:
+  join: ''
+  npc-click: ''
+  menu-open: ''
+  queue-enter: ''
+
+# Configuração da boss-bar.
+boss-bar:
+  # Ativar a boss-bar nos sistemas que suportam esse envio.
+  enabled: true
+  # Delay de atualização em segundos, seguindo o padrão do yMinasPackets.
+  delay: 3
+  # Tempo em segundos que a boss-bar ficará visível em mensagens/anúncios.
+  duration: 5
+  # Porcentagem de preenchimento da barra. Valores de 0.0 até 1.0.
+  progress: 1.0
+
+# Efeitos aplicados automaticamente ao entrar/retornar ao lobby.
+# Formato dos efeitos: 'EFEITO:NIVEL'. Exemplo: 'SPEED:2'
+# Caso o jogador tenha mais de uma permissão, será usado o último grupo compatível abaixo.
+effects:
+  member:
+    permission: 'ylobby.member.effects'
+    effect-list: []
+
 # Recompensas por kill nas arenas
 # kill-reward: [ 'points add {player} 1' ]
 kill-reward: []
@@ -230,6 +262,8 @@ join:
   clear-chat: true
   # Enviar anúncio que o player entrou (deixe vazio para não usar)
   announce: '&a+ %vault_prefix% &f{player}&a entrou.'
+  # Enviar anúncio de entrada em boss-bar (deixe vazio para não usar)
+  announce-bossbar: ''
   # Mundos que não irá receber os Join-Items
   join-item-world-blacklist: []
 
@@ -419,6 +453,7 @@ auto-message:
         <nl>
       actionbar: '&aAcesse nosso site: &fwww.ystoreplugins.com.br&a.'
       title: '' # HEADER<nl>FOOTER
+      bossbar: '&aAcesse nosso site: &fwww.ystoreplugins.com.br&a.'
       sound: 'LEVEL_UP'
     msg2:
       priority: 2
@@ -428,6 +463,7 @@ auto-message:
         <nl>
       actionbar: '&aAcesse nosso site: &fystoreplugins.com.br&a.'
       title: '' # HEADER<nl>FOOTER
+      bossbar: '&aAdquira VIP em nosso servidor!'
       sound: 'LEVEL_UP'
 
 #   ___           _        _
