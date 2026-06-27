@@ -130,6 +130,7 @@ Mensagens:
     - '&f > &a/correio enviar [player] &8- &7Envia itens à um jogador.'
     - '&f > &a/correio historico &8- &7Vê o histórico dos seus envios.'
     - '&f > &a/correio historico [player] &8- &7Vê o histórico de envios para um jogador.'
+    - '&f > &a/correio admin [player] &8- &7Vê e remove itens/recompensas do correio de um jogador.'
     - '&f > &a/correio enviartodos &8- &7Envia itens à todos os jogadores online.'
     - '&f > &a/correio enviargrupo [grupo] &8- &7Envia itens à todos os jogadores online de um grupo.'
     - '&f > &a/correio give [player] [categoria] [recompensa] [quantia] &8- &7Dá x recompensa(s) configurada à um jogador.'
@@ -183,7 +184,7 @@ Historico:
   Permissao staff: 'ycorreio.historico.outros'
   Mensagens:
     Titulo: '&8Histórico de Envios'
-    Status pendente: '&e⏳ Pendente'
+    Status pendente: '&ePendente'
     Status recolhido: '&a✓ Recolhido'
     Status retornado: '&c↩ Retornado'
     Enviado para: '&7Enviado para: &f{destinatario}'
