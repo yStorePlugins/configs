@@ -30,6 +30,18 @@ chat:
   cancelled: '&cVocê cancelou a ação.'
   help: |
     &r
+    &e/dungeon &8- &7Abre o menu principal.
+    &e/bruxo &8- &7Abre o menu do bruxo (somente na dungeon).
+    &e/dungeon party criar &8- &7Cria uma nova party.
+    &e/dungeon party convidar &8- &7Convida alguém para a party.
+    &e/dungeon party aceitar &8- &7Aceita o convite de party.
+    &e/dungeon party recusar &8- &7Recusa o convite de party.
+    &e/dungeon party sair &8- &7Sair de uma party.
+    &e/dungeon party iniciar &8- &7Inicia a sala da party.
+    &e/dungeon help &8- &7Exibe esta mensagem.
+    &r
+  help-admin: |
+    &r
     &e/dungeonadmin help &8- &7Exibe esta mensagem.
     &e/dungeonadmin criar &6<dungeon> &8- &7Cria uma nova dungeon.
     &e/dungeonadmin deletar &6<dungeon> &8- &7Deleta uma dungeon.
