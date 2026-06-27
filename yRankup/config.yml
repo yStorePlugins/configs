@@ -83,6 +83,17 @@ auto-rankup:
   # em segundos
   delay: 3
 
+# Sistema de Auto-Prestígio
+auto-prestige:
+  enabled: true
+  # Ativado por padrão
+  enabled-default: false
+  # Permissão para conseguir ativar o sistema
+  permission: 'yrankup.autoprestige'
+  # Delay para checar o prestígio
+  # em segundos
+  delay: 3
+
 # Sistema de fragmentos
 fragment:
   # Metadata do plugin de mob-stack para multiplicar os fragmentos

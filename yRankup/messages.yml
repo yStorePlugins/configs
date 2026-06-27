@@ -27,6 +27,8 @@ chat:
     &a> /rank giveprestigio
     &a> /rank setrank
     &a> /rank setprestigio
+    &a> /rank autorankup
+    &a> /rank autoprestigio
     &a> /ranks
     &a> /heads
     &a> /prestigio

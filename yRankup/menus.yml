@@ -27,6 +27,7 @@ main:
   size: 27
   items:
     profile-slot: 10
+    auto-prestige-slot: 11
     rankup-slot: 12
     ranks-slot: 13
     heads-slot: 14
@@ -40,6 +41,7 @@ main:
         - '&7jogador no ranking.'
         - ''
         - '&fAuto-Rankup: &7{autorankup}'
+        - '&fAuto-Prestígio: &7{autoprestige}'
         - ''
         - '&fFragmentos: &a{coin}&f.'
         - '&fSeu rank: {tag} &7(&f{name}&7)&f.'
@@ -53,6 +55,16 @@ main:
         - '&fSeu desconto: &a{discount}%&f.'
         - ''
         - '&aClique para alternar o Auto-Rankup'
+    auto-prestige:
+      material: '3ee29e8d07c128115dd4094bf48dceed236aa21eb2022e3730ff9bf23b9a3891'
+      name: '&aAuto-Prestígio'
+      lore:
+        - '&7Prestigia automaticamente ao'
+        - '&7chegar no último rank.'
+        - ''
+        - '&fStatus: &7{autoprestige}'
+        - ''
+        - '&aClique para alternar.'
     rankup-can:
       material: '1ad6c81f899a785ecf26be1dc48eae2bcfe777a862390f5785e95bd83bd14d'
       name: '&aRankUP'
