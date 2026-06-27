@@ -173,6 +173,8 @@ general:
   command-whitelist:
     - 'teampvp'
     - 'team'
+  # Comandos permitidos apenas na sala de espera
+  waiting-command-whitelist: []
   # Efeitos
   effects:
     - 'SPEED:0-99999'

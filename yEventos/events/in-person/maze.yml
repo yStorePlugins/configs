@@ -121,6 +121,8 @@ general:
   warmup-move: false
   # Lista de comandos que será possível executar no evento
   command-whitelist: [ '/g', '/.' ]
+  # Lista de comandos que será possível executar apenas na sala de espera
+  waiting-command-whitelist: []
   # Efeitos que o player irá ter no evento
   # effect:level-time
   effects: [ 'INVISIBILITY:1-999999' ]
