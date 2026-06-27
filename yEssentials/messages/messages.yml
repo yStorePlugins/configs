@@ -510,6 +510,8 @@ Outros:
   Repair aguardar: '&cVocê deve aguardar &e{tempo}&c para reparar nesse modo novamente.'
   Whitelist help: |
     &a&l* &aComandos disponíveis:
+    &a/whitelist on &f- &7Ativa a whitelist.
+    &a/whitelist off &f- &7Desativa a whitelist.
     &a/whitelist add <player> &f- &7Adiciona um jogador na whitelist.
     &a/whitelist remove <player> &f- &7Remove um jogador da whitelist.
     &a/whitelist list &f- &7Lista jogadores da whitelist no chat.
@@ -521,3 +523,5 @@ Outros:
   Whitelist lista: '&aWhitelist ({quantia}): &f[ &7{players}&f ]'
   Whitelist vazia: '&cA whitelist está vazia.'
   Whitelist invalido: '&cNão foi possível obter este jogador: &f{player}&c.'
+  Whitelist ativada: '&aWhitelist ativada com sucesso.'
+  Whitelist desativada: '&cWhitelist desativada com sucesso.'
