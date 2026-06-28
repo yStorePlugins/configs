@@ -86,6 +86,9 @@ general:
   top-delay: 600
   # Tag do magnata no chat
   top-tag: '&2[$]'
+  # NBT-Tag dos cheques
+  # altere caso queira inutilizar os cheques antigos
+  check-nbt-tag: 'yEconomy-Cheque'
 
 # Preferências obrigatórias do sistema de coins
 coin-preferences:
