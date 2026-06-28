@@ -40,6 +40,8 @@ displays:
   order: 3
   # Aparecer no TOP
   appear-top: true
+  # Aparecer no menu de eventos
+  appear-events: true
   events:
     material: 'GLASS_BOTTLE'
     name: '&eEsconde Esconde'

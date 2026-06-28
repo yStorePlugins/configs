@@ -40,6 +40,8 @@ displays:
   order: 1
   # Aparecer no TOP
   appear-top: true
+  # Aparecer no menu de eventos
+  appear-events: true
   events:
     material: 'GLOWSTONE'
     name: '&eAnão e Gigante'

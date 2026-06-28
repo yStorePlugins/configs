@@ -40,6 +40,8 @@ displays:
   order: 2
   # Aparecer no TOP
   appear-top: true
+  # Aparecer no menu de eventos
+  appear-events: true
   events:
     material: 'WOOL:14'
     name: '&eFrog'

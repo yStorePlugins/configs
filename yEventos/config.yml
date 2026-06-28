@@ -46,6 +46,9 @@ camarote-fly: false
 # Calcular o KnockBack (repulsão) pelo próprio plugin
 calculate-knockback: false
 
+# Tag que será dada ao TOP 1 de eventos ganhos
+tag: '&e[EVENT-MASTER]'
+
 # Comandos liberados no camarote
 camarote-allowed-commands:
   - '/g'

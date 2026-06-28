@@ -40,6 +40,8 @@ displays:
   order: 10
   # Aparecer no TOP
   appear-top: true
+  # Aparecer no menu de eventos
+  appear-events: true
   events:
     material: 'SNOW_BALL'
     name: '&ePaint Ball'

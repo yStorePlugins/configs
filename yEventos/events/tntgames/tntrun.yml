@@ -40,6 +40,8 @@ displays:
   order: 18
   # Aparecer no TOP
   appear-top: true
+  # Aparecer no menu de eventos
+  appear-events: true
   events:
     material: 'TNT'
     name: '&eTNT Run'
