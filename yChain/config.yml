@@ -32,6 +32,13 @@ Opcoes:
   Kits menu: true
   # Evitar reparar itens, regenerar, ganhar itens, ganhar recompensas, killstreak ao matar o jogador 2x ou mais seguidas.
   AntiFreeKill: true
+  # true = o jogador precisa estar com inventário vazio para entrar em arenas com itens setados
+  # false = o plugin limpa o inventário do jogador ao entrar e entrega o kit da arena
+  Entrar inventario vazio: true
+  # Permitir que jogadores dropem itens dentro do chain
+  Permitir dropar itens: false
+  # Permitir que jogadores movam itens no próprio inventário dentro do chain
+  Permitir mover itens: false
   # Comandos que poderão ser usados na arena
   Command whitelist:
     - '/g'
@@ -96,6 +103,8 @@ Mensagens:
   Mudou nome: '&aVocê alterou o nome da arena para &e{nome}&a.'
   Mudou kit: '&aVocê alterou o kit da arena para &e{kit}&a.'
   Inv cheio: '&cSeu inventário está cheio.'
+  Kit salvo: '&aSeu kit personalizado foi salvo.'
+  Kit resetado: '&aSeu kit personalizado foi resetado.'
   Digite nome:
     - ''
     - '&aDigite o nome para qual deseja alterar.'
@@ -114,6 +123,9 @@ Mensagens:
     - '&b -> &f/chain &8- &7Abre o menu principal'
     - '&b -> &f/chain entrar &8- &7Entra na arena chain'
     - '&b -> &f/chain sair &8- &7Sai da arena chain'
+    - '&b -> &f/rekit &8- &7Recebe novamente o kit da arena'
+    - '&b -> &f/chain salvarkit &8- &7Salva seu kit personalizado da arena atual'
+    - '&b -> &f/chain resetarkit &8- &7Reseta seu kit personalizado da arena atual'
     - '&b -> &f/chain arenas - Vê todas as arenas do servidor'
     - '&b -> &f/chain ajuda - Vê todos os comandos'
     - '&b -> &f/chain kits - Vê os kits configurados'
@@ -132,6 +144,9 @@ Mensagens:
     - '&b -> &f/chain &8- &7Abre o menu principal'
     - '&b -> &f/chain entrar &8- &7Entra na arena chain'
     - '&b -> &f/chain sair &8- &7Sai da arena chain'
+    - '&b -> &f/rekit &8- &7Recebe novamente o kit da arena'
+    - '&b -> &f/chain salvarkit &8- &7Salva seu kit personalizado da arena atual'
+    - '&b -> &f/chain resetarkit &8- &7Reseta seu kit personalizado da arena atual'
     - '&b -> &f/chain arenas - Vê todas as arenas do servidor'
     - '&b -> &f/chain ajuda - Vê todos os comandos'
     - '&b -> &f/chain kits - Vê os kits configurados'
