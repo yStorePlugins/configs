@@ -1,0 +1,91 @@
+Nome: '&8Escolher quantia'
+Tamanho: 45
+Item slot: 4
+
+# Quantias pré-definidas que aparecem no menu.
+# A quantia escolhida ainda considera o multiplicador ativo do jogador.
+Quantias:
+  - 1
+  - 5
+  - 10
+  - 32
+  - 64
+
+# Slots onde os botões de quantia serão posicionados, na mesma ordem da lista acima.
+Quantia slots:
+  - 10
+  - 12
+  - 14
+  - 16
+  - 22
+
+Itens:
+  Quantia:
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 5
+    Glow: false
+    Name: '&a{quantia}x'
+    Lore:
+      - '&7Clique para selecionar'
+      - '&7esta quantia.'
+      - ''
+      - '&fVocê receberá: &a{quantia_total}x&f.'
+      - '&fMultiplicador: &a{multiplicador}x&f.'
+      - '&fValor total: &a{Money}&f.'
+
+  Quantia selecionada:
+    CustomSkull: false
+    URL: ''
+    ID: 160
+    Data: 13
+    Glow: true
+    Name: '&a&l{quantia}x &7(Selecionado)'
+    Lore:
+      - '&aSelecionado!'
+      - ''
+      - '&fVocê receberá: &a{quantia_total}x&f.'
+      - '&fMultiplicador: &a{multiplicador}x&f.'
+      - '&fValor total: &a{Money}&f.'
+
+  Confirmar:
+    Slot: 38
+    CustomSkull: false
+    URL: ''
+    ID: 35
+    Data: 5
+    Glow: false
+    Name: '&aConfirmar'
+    Lore:
+      - '&7Quantia escolhida: &a{quantia}&7.'
+      - '&7Quantia final: &a{quantia_total}&7.'
+      - '&7Multiplicador: &a{multiplicador}x&7.'
+      - '&7Valor total: &a{Money}&7.'
+      - ''
+      - '&7Clique para &aconfirmar&7 a compra.'
+
+  Cancelar:
+    Slot: 42
+    CustomSkull: false
+    URL: ''
+    ID: 35
+    Data: 14
+    Glow: false
+    Name: '&cCancelar'
+    Lore:
+      - '&7Clique para voltar.'
+
+  # Botão opcional para digitar a quantia manualmente no chat.
+  # Só aparece se a opção "Compra chat" estiver ativada.
+  Quantia manual:
+    Slot: 40
+    CustomSkull: false
+    URL: ''
+    ID: 323
+    Data: 0
+    Glow: false
+    Name: '&eDigitar quantia'
+    Lore:
+      - '&7Clique para digitar a'
+      - '&7quantia manualmente no chat.'

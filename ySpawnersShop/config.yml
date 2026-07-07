@@ -44,6 +44,10 @@ Compra Q: true
 # caso desativado, comprará apenas 1 unidade (sem contar o multiplicador)
 Compra chat: true
 
+# Ativar a escolha de quantia por menu ao clicar com botão esquerdo
+# Caso desativado, usará a compra via chat se a opção acima estiver ativada
+Compra menu: true
+
 # Quantia máxima que pode ter de multiplicador
 Multiplicador max: 10
 
@@ -58,12 +62,12 @@ VerificarInv: false
 Menu updater: true
 
 # Delay da compra com Q
-# em segundos
-DelayQ: 10
+# em ticks
+DelayQ: 200
 
 # Delay da compra exceto botão Q
-# em segundos
-Delay: 5
+# em ticks
+Delay: 100
 
 # Tag para o que mais comprou spawners
 top-tag: '&6[TOP SPAWNERS]'
