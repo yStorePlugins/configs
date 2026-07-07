@@ -357,6 +357,8 @@ Outros:
   Vanish aviso: '&aO jogador &f{player}&a acabou de entrar no modo vanish.'
   Sudo: '&aSudo realizado no jogador &f{player}&a.'
   Sudo todos: '&aSudo realizado em todos os jogadores&a.'
+  Sudo raio: '&aSudo realizado em &f{quantia}&a jogador(es) em um raio de &f{raio}&a blocos.'
+  Sudo raio nao: '&cNão há jogadores no raio configurado.'
   Sudo si: '&cVocê não pode executar o sudo à si mesmo.'
   Near nao: '&cNão há jogadores por perto.'
   Near: |

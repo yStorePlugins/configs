@@ -63,6 +63,9 @@ Opcoes:
   # Raio de verificação do /near
   # em blocos
   Near raio: 100
+  # Raio de verificação do /sudo perto, /sudo raio e /sudo near
+  # em blocos
+  Sudo raio: 10
   # Enviar mensagem de kit recebido caso for executado por um admin
   KitAdmin recebeu: false
   # Ícone default das homes
