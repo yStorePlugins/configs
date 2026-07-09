@@ -165,6 +165,15 @@ Comandos permitidos:
 Recompensas:
   Apenas quem ganhou: false
   Dar para todos: true #dar recompensas até para os que já haviam morrido, porém só para os que continuam online
+  # Para dividir valores entre os participantes do clan, use o formato abaixo no cargo desejado:
+  # Capitao:
+  #   Numeros:
+  #     - 1: 9000 # {numero1} = 9000 dividido pela quantidade de participantes do clan
+  #     - 2: 9    # {numero2} = 9 dividido pela quantidade de participantes do clan
+  #   Arredondar decimal: true
+  #   Comandos:
+  #     - 'cash add {player} {numero1}'
+  # Isso só funciona com 'Precisa de clan: true'.
   Cargos:
     Lider:
       - 'give {player} emerald 64'

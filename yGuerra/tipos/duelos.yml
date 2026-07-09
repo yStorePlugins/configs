@@ -70,7 +70,11 @@ Duelos:
   # Local da arena onde os duelos acontecem.
   # Formato: mundo;x;y;z;yaw;pitch
   # Defina in-game via /duelos setarena (ou edite manualmente aqui).
+  # Se quiser arena diferente para cada lado do duelo, use:
+  # /duelos setarena team1 e /duelos setarena team2
   Local: 'none'
+  LocalTeam1: 'none'
+  LocalTeam2: 'none'
 
   Mensagens:
     # {clans_quantia} = número de clans no torneio
@@ -181,17 +185,92 @@ Comandos permitidos:
 
 #
 Recompensas:
-  Apenas quem ganhou: true
-  Dar para todos: false
-  Cargos:
-    Lider:
-      - 'give {player} emerald 32'
-    Capitao:
-      - 'give {player} diamond 32'
-    Confiavel:
-      - 'give {player} gold_ingot 32'
-    Membro: []
-    Sem clan: []
+  Primeiro:
+    Colocacao: 1
+    Cargos:
+      Lider:
+        - 'give {player} emerald 64'
+      Capitao:
+        Numeros:
+          - 1: 9000
+        Arredondar decimal: true
+        Comandos:
+          - 'give {player} emerald 64'
+          - 'cash add {player} {numero1}'
+      Confiavel:
+        Numeros:
+          - 1: 9000
+        Arredondar decimal: true
+        Comandos:
+          - 'give {player} emerald 64'
+          - 'cash add {player} {numero1}'
+      Membro:
+        Numeros:
+          - 1: 9000
+        Arredondar decimal: true
+        Comandos:
+          - 'give {player} emerald 64'
+          - 'cash add {player} {numero1}'
+      Sem clan:
+        - 'give {player} wood 64'
+
+  Segundo:
+    Colocacao: 2
+    Cargos:
+      Lider:
+        - 'give {player} diamond 64'
+      Capitao:
+        Numeros:
+          - 1: 9000
+        Arredondar decimal: true
+        Comandos:
+          - 'give {player} diamond 64'
+          - 'cash add {player} {numero1}'
+      Confiavel:
+        Numeros:
+          - 1: 9000
+        Arredondar decimal: true
+        Comandos:
+          - 'give {player} diamond 64'
+          - 'cash add {player} {numero1}'
+      Membro:
+        Numeros:
+          - 1: 4500
+        Arredondar decimal: true
+        Comandos:
+          - 'give {player} diamond 64'
+          - 'cash add {player} {numero1}'
+      Sem clan:
+        - 'give {player} wood 32'
+
+  Terceiro:
+    Colocacao: 3
+    Cargos:
+      Lider:
+        - 'give {player} gold_ingot 64'
+      Capitao:
+        Numeros:
+          - 1: 9000
+        Arredondar decimal: true
+        Comandos:
+          - 'give {player} gold_ingot 64'
+          - 'cash add {player} {numero1}'
+      Confiavel:
+        Numeros:
+          - 1: 9000
+        Arredondar decimal: true
+        Comandos:
+          - 'give {player} gold_ingot 64'
+          - 'cash add {player} {numero1}'
+      Membro:
+        Numeros:
+          - 1: 2000
+        Arredondar decimal: true
+        Comandos:
+          - 'give {player} gold_ingot 64'
+          - 'cash add {player} {numero1}'
+      Sem clan:
+        - 'give {player} wood 16'
 
 #
 Efeitos:
