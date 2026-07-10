@@ -17,6 +17,34 @@ messages:
   checkpoint-none: '&cVocê ainda não passou por nenhum checkpoint!'
   checkpoint-teleported: '&aTeleportado para o checkpoint!'
 
+# Cronômetro em tempo real na action bar.
+actionbar:
+  enabled: true
+  format: '&eTempo do parkour: &f{time}'
+
+# Oculta os outros jogadores para quem iniciou o parkour.
+visibility:
+  enabled: true
+
+# Feedback audiovisual das placas do parkour.
+# Deixe sound ou particle como ''/none para desativar individualmente.
+effects:
+  start:
+    sound: 'LEVEL_UP'
+    volume: 1.0
+    pitch: 1.0
+    particle: 'VILLAGER_HAPPY'
+  checkpoint:
+    sound: 'ORB_PICKUP'
+    volume: 1.0
+    pitch: 1.2
+    particle: 'CRIT'
+  complete:
+    sound: 'LEVEL_UP'
+    volume: 1.0
+    pitch: 1.0
+    particle: 'FIREWORKS_SPARK'
+
 # Itens que serão dados ao jogador quando entrar no parkour
 items:
   parkour-checkpoint:
