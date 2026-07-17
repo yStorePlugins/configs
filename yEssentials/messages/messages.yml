@@ -152,6 +152,7 @@ Warp:
   Nao existe: '&cEsta warp {warp} não existe.'
   Criado: '&aWarp {warp} criada com sucesso.'
   Deletado: '&aWarp {warp} deletada com sucesso.'
+  Movido: '&aWarp {warp} movida com sucesso.'
   Teleportar outros: '&cVocê não tem permissão para teleportar este jogador {player} à esta warp {warp}.'
   Teleportar: '&cVocê não tem permissão para ir até esta warp {warp}.'
   Teleportado: '&aJogador teleportado até a warp {warp}.'

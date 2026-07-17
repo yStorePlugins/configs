@@ -42,6 +42,7 @@ Commands:
   SetWarp: 'setwarp|setarwarp'
   DelWarp: 'delwarp|deletarwarp'
   Warp: 'warp'
+  WarpMove: 'warpmove|moverwarp'
   Warps: 'warps'
   #
   # KIT
