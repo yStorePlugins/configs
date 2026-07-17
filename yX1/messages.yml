@@ -54,12 +54,17 @@ chat:
     &a/x1 top [limite] &8- &7Mostra o top de vitórias.
     &a/x1 stats [jogador] &8- &7Mostra estatísticas de X1.
     &a/x1 info [arena] &8- &7Mostra status de uma arena.
+    &a/x1 criar <arena> &8- &7Cria uma nova arena a partir do default.
     &a/x1 reload &8- &7Recarrega as configurações.
 
   arena-not-found: '&cA arena &f{arena} &cnão foi encontrada.'
   arena-none-running: '&cNão há nenhum X1 ocorrendo no momento.'
   arena-busy: '&cA arena &f{arena} &cjá está ocupada.'
   arena-pending: '&cJá existe um desafio pendente na arena &f{arena}&c.'
+  arena-created: '&aArena &f{arena} &acriada com sucesso.'
+  arena-exists: '&cA arena &f{arena} &cjá existe.'
+  arena-invalid-name: '&cNome de arena inválido: &f{arena}&c. Use apenas letras, números, _ e -.'
+  arena-create-fail: '&cNão foi possível criar a arena &f{arena}&c. Verifique se o default.yml existe.'
   arena-info: |
 
     &8&m-----------------------------
