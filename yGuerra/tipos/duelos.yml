@@ -31,6 +31,9 @@ Sala de espera: true
 # O jogador perder os itens ao morrer/deslogar/sair
 Perder itens: true
 
+# Desclassificar o jogador ao cair no void (false = teleporta para a entrada)
+Desclassificar no void: true
+
 # Permitir o jogador de dropar itens do inventário no chão
 Player drop: false
 
