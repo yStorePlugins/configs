@@ -36,6 +36,19 @@ database:
     # Senha do usuário de conexão: [EX: 123]
     password: ''
 
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 6379]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
 #   __      _   _   _
 #  / _\ ___| |_| |_(_)_ __   __ _ ___
 #  \ \ / _ \ __| __| | '_ \ / _` / __|
@@ -51,6 +64,11 @@ login-delay: 20
 
 # Blacklist de mundos que os efeitos (poções) não irão funcionar
 world-blacklist: []
+
+# Permite remover joias. (Essencial desativar para servidores de mina, etc)
+remove-jewelries: true
+# Permite equipar joias. (Essencial desativar para servidores de mina, etc)
+equip-jewelries: true
 
 slots:
   # Quantia padrão de slots que o jogador irá ter

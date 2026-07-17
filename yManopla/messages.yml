@@ -32,6 +32,8 @@ chat:
   jewelry-activated: '&aVocê ativou a joia {jewelry}&a.'
   jewelry-removed: '&aVocê removeu a joia {jewelry}&a.'
   jewelry-expired: '&cSua joia &f{jewelry} expirou&c.'
+  jewelry-equip-disabled: '&cNão é possível equipar joias neste servidor.'
+  jewelry-remove-disabled: '&cNão é possível remover joias neste servidor.'
   slots-need: '&cVocê precisa de mais slots livres.'
   slot-activated: '&aVocê ativou &e{amount} &ade slots.'
   slot-max: '&cVocê já chegou no máximo.'
