@@ -297,6 +297,11 @@ special-items:
     material: 'NAME_TAG'
     name: '&aHabilitar a Tag Gradiente'
     lore: ['&7Ative para conseguir colocar GRADIENTE', '&7na TAG do seu clan.']
+  # Item para verificar o clan
+  verify-clan:
+    material: 'EMERALD'
+    name: '&aVerificador de Clan'
+    lore: ['&7Ative para verificar o seu clan.']
 
 # Sistema de tipos de clan
 clan-type:
