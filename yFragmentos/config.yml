@@ -39,7 +39,7 @@ Mensagens:
   Suficiente: '&cVocê não possui fragmentos suficiente.'
   Comprou: '&aVocê adquiriu coisas na loja de fragmentos.'
   Recebeu: '&aVocê recebeu &7{quantia} &ade fragmentos.' #deixe '' para não usar
-  Money: '&cVocê não possui &f{money} &ccoins.'
+  Money: '&cVocê não possui &f{money} &cde {provider_display}&c. Saldo: &f{provider_balance}'
 
 # Blacklist de mundos
 World blacklist:

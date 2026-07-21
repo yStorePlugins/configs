@@ -23,7 +23,16 @@ Items:
        Preco:
         - 'Fragmento1:32'
         - 'Fragmento2:10'
-       Money: 0
+       # Compatibilidade: Money ainda funciona (equivale a provider money)
+       # Money: 0
+       # Multi-economy (economies.yml) — todos os custos são cobrados
+       economies-prices:
+         cost1:
+           provider: 'money'
+           amount: 0.0
+         # cost2:
+         #   provider: 'ypoints'
+         #   amount: 50.0
        Item:
           CustomSkull: false
           URL: ''
@@ -49,7 +58,10 @@ Items:
        Slot: 12
        Preco:
         - 'Fragmento1:64'
-       Money: 0
+       economies-prices:
+         cost1:
+           provider: 'money'
+           amount: 0.0
        Item:
           CustomSkull: false
           URL: ''
