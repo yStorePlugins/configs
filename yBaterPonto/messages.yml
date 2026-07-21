@@ -1,0 +1,82 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &8&m-----------------------------
+    &6&lBater Ponto &7— Comandos
+    &8&m-----------------------------
+
+    &e/{cmd} &8- &7Abre o menu da equipe.
+    &e/{cmd} info &8- &7Ver o seu ponto.
+    &e/{cmd} historico &8- &7Histórico das suas sessões.
+    &e/{cmd} top &8- &7Ranking de tempo da equipe.
+    &r
+  admin-help: |
+
+    &8&m-----------------------------
+    &6&lBater Ponto Admin &7— Comandos
+    &8&m-----------------------------
+
+    &e/{cmd} &8- &7Abre o menu da equipe.
+    &e/{cmd} info &8- &7Ver o seu ponto.
+    &e/{cmd} ver <jogador> &8- &7Ver o ponto de um membro.
+    &e/{cmd} historico [jogador] &8- &7Histórico de sessões.
+    &e/{cmd} top &8- &7Ranking de tempo da equipe.
+    &e/{cmd} reload &8- &7Recarregar as configurações.
+    &r
+  not-staff: |
+
+    &cVocê não faz parte da equipe rastreada.
+
+    &7É necessária a permissão &f{permission}&7.
+  no-data: |
+
+    &cNenhum registro de ponto encontrado para &f{player}&c.
+  info: |
+
+    &8&m-----------------------------
+    &6&lPonto &7de &f{player}
+    &8&m-----------------------------
+
+    &7Status: {status}
+    &7Dia: &f{day}
+    &7Entrada (sessão): &f{login}
+    &7Saída (última): &f{logout}
+    &7Sessão atual: &f{session}
+    &7Tempo hoje: &f{today}
+    &7Tempo total: &f{total}
+    &7Sessões registradas: &f{sessions}
+
+    &8&m-----------------------------
+  session-start: |
+
+    &aPonto registrado! Você entrou em expediente.
+
+    &7Dia: &f{day}
+    &7Horário de entrada: &f{login}
+  session-end: |
+
+    &ePonto registrado! Você saiu do expediente.
+
+    &7Dia: &f{day}
+    &7Entrada: &f{login}
+    &7Saída: &f{logout}
+    &7Duração da sessão: &f{duration}
+    &7Tempo hoje: &f{today}
+  never: 'Nunca'
+  still-online: 'Ainda online'
