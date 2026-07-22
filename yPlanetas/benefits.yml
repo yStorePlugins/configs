@@ -1,0 +1,121 @@
+#
+# Benefícios concedidos à facção proprietária de cada planeta.
+# Referencie as chaves abaixo no campo "benefits" de cada planeta.
+#
+# Campos:
+#   display-name  → nome em mensagens/menus
+#   value         → bônus percentual (10.0 = +10% = multiplicador 1.10)
+#   multiplier    → opcional; se definido, sobrescreve value (ex.: 1.15)
+#   apply-to      → plugins que recebem o bônus (via eventos da API yPlugins)
+#   item          → ícone SetupItem no menu de detalhes
+#
+# Plugins suportados em apply-to:
+#   yMinas, yMinasPackets, yMinasPv
+#   yPlantacoes, yArmazem, yCampo
+#   ySpawners, ySpawnersV2
+#   yVender, yChestShop
+#   ySkills
+#
+# API (ServicesManager):
+#   PlanetasAPIHolder api = Bukkit.getServicesManager().load(PlanetasAPIHolder.class);
+#   double multi = api.getMultiplier(player, "yMinas");
+#
+
+benefits:
+  economy:
+    display-name: '&6Bônus de Economia'
+    description:
+      - '&7Membros da facção dona recebem'
+      - '&7bônus em vendas e mineração.'
+    value: 10.0
+    apply-to:
+      - 'yMinas'
+      - 'yMinasPackets'
+      - 'yMinasPv'
+      - 'yArmazem'
+      - 'yVender'
+      - 'yChestShop'
+      - 'ySpawners'
+      - 'ySpawnersV2'
+    commands-on-capture: []
+    item:
+      material: 'GOLD_INGOT'
+      name: '{benefit}'
+      lore:
+        - ''
+        - '{description}'
+        - ''
+        - ' &fBônus: &e+{value}%'
+        - ''
+  xp:
+    display-name: '&aBônus de XP'
+    description:
+      - '&7Membros da facção dona recebem'
+      - '&7bônus de experiência (ySkills).'
+    value: 15.0
+    apply-to:
+      - 'ySkills'
+    commands-on-capture: []
+    item:
+      material: 'EXP_BOTTLE'
+      name: '{benefit}'
+      lore:
+        - ''
+        - '{description}'
+        - ''
+        - ' &fBônus: &e+{value}%'
+        - ''
+  farm:
+    display-name: '&eBônus de Farms'
+    description:
+      - '&7Aumenta ganhos de plantações'
+      - '&7e armazém da facção dona.'
+    value: 20.0
+    apply-to:
+      - 'yPlantacoes'
+      - 'yArmazem'
+      - 'yCampo'
+    commands-on-capture: []
+    item:
+      material: 'WHEAT'
+      name: '{benefit}'
+      lore:
+        - ''
+        - '{description}'
+        - ''
+        - ' &fBônus: &e+{value}%'
+        - ''
+  pvp:
+    display-name: '&cBônus de PvP'
+    description:
+      - '&7Reservado para integrações de PvP.'
+      - '&7Use a API getBenefitValue(player, "pvp").'
+    value: 5.0
+    apply-to: []
+    commands-on-capture: []
+    item:
+      material: 'DIAMOND_SWORD'
+      name: '{benefit}'
+      lore:
+        - ''
+        - '{description}'
+        - ''
+        - ' &fBônus: &e+{value}%'
+        - ''
+  upgrade:
+    display-name: '&bRedução de Upgrades'
+    description:
+      - '&7Reservado para integrações de custo.'
+      - '&7Use a API getBenefitValue(player, "upgrade").'
+    value: 10.0
+    apply-to: []
+    commands-on-capture: []
+    item:
+      material: 'ANVIL'
+      name: '{benefit}'
+      lore:
+        - ''
+        - '{description}'
+        - ''
+        - ' &fBônus: &e+{value}%'
+        - ''

@@ -1,0 +1,325 @@
+#
+#  ____  _                  _
+# |  _ \| | __ _ _ __   ___| |_ __ _
+# | |_) | |/ _` | '_ \ / _ \ __/ _` |
+# |  __/| | (_| | | | |  __/ || (_| |
+# |_|   |_|\__,_|_| |_|\___|\__\__,_|
+#
+# Arquivo de configuração de um planeta.
+
+# Identificador único do planeta (sem espaços). Usado em comandos e PlaceholderAPI.
+key: marte
+
+# ID interno para integração com yTops / rankings (geralmente yplanetas-<key>).
+ypluginsId: yplanetas-marte
+
+# Ícone do planeta nos menus (formato SetupItem completo).
+# Placeholders no name/lore da lista: {planet} {owner} {owner_color_tag} {status} {benefits}
+icon:
+  material: 'NETHER_STAR'
+  name: '&c&lMarte'
+  lore:
+    - ''
+    - ' &7O planeta vermelho.'
+    - ' &7Conquiste e obtenha benefícios exclusivos.'
+    - ''
+
+# Ícone específico no seletor de TOP (/planetas top e botão TOP).
+# Se omitido, usa o icon normal (ou GOLD_INGOT padrão).
+top-icon:
+  material: 'GOLD_BLOCK'
+  name: '&e&lTOP &cMarte'
+  lore:
+    - ''
+    - ' &7Ranking de conquistas do'
+    - ' &7planeta &cMarte&7.'
+    - ''
+    - ' &eClique para ver o TOP'
+    - ''
+
+# Nome colorido exibido em hologramas, BossBar e mensagens.
+displayName: '&c&lMarte'
+
+# Formato de cada linha do ranking no holograma durante a captura.
+# Placeholders: {index} {clan_tag} {clan_color_tag} {clan_name} {value} {value_time} {value_formatted}
+indexFormat: '&c{index}º - &7[&r{clan_color_tag}&7] &7{clan_name}&c: {value_time}'
+
+# Centro da esfera de captura. Formato: mundo,x,y,z,yaw,pitch
+# Altere in-game com: /planetas alterarloc marte
+center: 'world,0.5,64.0,0.5,0.0,0.0'
+
+# Raio (em blocos) da zona de captura a partir do center.
+radius: 10
+
+# Local de entrada (teleporte do menu de detalhes).
+# Formato: mundo,x,y,z,yaw,pitch
+# Altere in-game com: /planetas setentry marte
+entry: 'world,0.5,65.0,8.5,180.0,0.0'
+
+# Duração padrão do evento de captura, em segundos.
+# Pode ser sobrescrita com: /planetas iniciar marte <tempo>
+time: 600
+
+# Quantidade máxima de posições exibidas no holograma de ranking durante a captura.
+maxIndex: 5
+
+# Offset vertical do holograma em relação ao center (blocos para cima).
+hologramOffset: 3.5
+
+# Lista de chaves de benefícios (definidos em benefits.yml) concedidos à facção
+# dona deste planeta até o próximo evento.
+# Exemplos: economy, xp, farm, pvp, upgrade
+benefits:
+  - economy
+  - xp
+  - farm
+
+# Tag da facção/clan proprietária atual.
+# Preenchido automaticamente ao fim do evento. Deixe vazio se ninguém for dono.
+ownerClanTag: ''
+
+# Use <nl> para quebrar linha. Placeholders comuns:
+# {planet} {value_time} {clan_tag} {clan_color_tag} {clan_name} {benefits}
+# {owner_tag} {owner_color_tag} {owner_name} {amount}
+
+# Anúncio global ao iniciar o evento.
+messageStart: | 
+  &c&l[PLANETAS]
+  &cA conquista de &f{planet} &ccomeçou!
+  &7Duração: &f{value_time}
+  &7Use &f/planetas &7para ver detalhes e teleportar.
+
+# Anúncio global ao encerrar com vencedor (define o dono).
+messageStop: |
+  &c&l[PLANETAS]
+  &aO planeta &f{planet} &afoi conquistado!
+  &7Vencedor: &7[&r{clan_color_tag}&7] &f{clan_name}
+  &7Tempo de domínio: &f{value_time}
+  &7Benefícios: &e{benefits}
+
+# Anúncio global se o evento for cancelado ou terminar sem vencedor.
+messageCanceled: |
+  &c&l[PLANETAS]
+  &cO evento de &f{planet} &cfoi cancelado.
+
+# Mensagem periódica (config.yml → message-time) enquanto alguém domina.
+messageDominating: |
+  &c&l[PLANETAS]
+  &7[&r{clan_color_tag}&7] &f{clan_name} &cestá dominando &f{planet}&c!
+
+# Actionbar para jogadores na zona quando há 2+ clans batalhando.
+actionbarBattling: '&cBatalha entre &f{amount} &cclans em &f{planet}&c!'
+
+# Actionbar para quem não é do clan que está dominando.
+actionbarDominating: '&c&7[&r{clan_color_tag}&7] &f{clan_name} &cdomina &f{planet}'
+
+# Actionbar para membros do clan que está dominando.
+actionbarYourDominating: '&aSeu clan está dominando &f{planet}&a!'
+
+# Linhas do holograma. Prefixo [item]MATERIAL define o ícone no topo.
+# {format} é substituído pelas linhas do ranking (indexFormat × maxIndex).
+# Placeholders: {time} {clan_tag} {clan_color_tag} {clan_name} {format}
+#               {owner_tag} {owner_color_tag} {owner_name} {benefits} {planet}
+
+# Evento ativo, ninguém dominando.
+hologramLinesNone:
+  - '[item]NETHER_STAR'
+  - '&c&lMARTE'
+  - '&fStatus: &7Nenhum clan dominando.'
+  - ''
+  - '&cTempo restante: &f{time}'
+
+# Evento ativo, 2+ clans na zona (batalha).
+hologramLinesBattling:
+  - '[item]NETHER_STAR'
+  - '&c&lMARTE'
+  - '&fStatus: &cClans batalhando.'
+  - ''
+  - '{format}'
+  - ''
+  - '&cTempo restante: &f{time}'
+
+# Evento ativo, um clan dominando sozinho.
+hologramLines:
+  - '[item]NETHER_STAR'
+  - '&c&lMARTE'
+  - '&fStatus: &cClan &7[&r{clan_color_tag}&7] &7{clan_name}&c dominando.'
+  - ''
+  - '{format}'
+  - ''
+  - '&cTempo restante: &f{time}'
+
+# Evento inativo — mostra o dono atual do planeta.
+hologramLinesOwned:
+  - '[item]NETHER_STAR'
+  - '&c&lMARTE'
+  - '&fProprietário: &7[&r{owner_color_tag}&7] &7{owner_name}'
+  - '&fBenefícios: &e{benefits}'
+  - ''
+  - '&7Aguarde o próximo evento para capturar.'
+
+# BossBar via Adventure/kyori (mesmo padrao do yMinasPackets).
+# Placeholders: {planet} {clan} {clan_tag} {clan_color_tag}
+# {clan_name} {time} {owner_tag} {owner_color_tag} {owner_name}
+bossBarTitle: '&c{planet} &8| &7{clan} &8| &f{time}'
+
+# Cor (Adventure): PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+bossBarColor: RED
+
+# Overlay (Adventure): PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
+# Legado Bukkit aceito: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+bossBarStyle: NOTCHED_10
+
+# Exibidas na esfera de captura durante o evento (se particles: true na config.yml).
+particlesBattling: FLAME
+particlesEmpty: ASH
+particlesDominated: GLOW
+
+# Formato: "chance,id" — chance de 0 a 100, id definido em rewards.yml
+# Ex.: "100,reward1" = 100% de chance de receber reward1
+rewards:
+  - '100,reward1'
+  - '50,reward2'
+
+# Horários automáticos de início do evento.
+# Formato: dia-hora:minuto:segundo
+# Dias: domingo, segunda, terca, quarta, quinta, sexta, sabado, todos
+autostart:
+  - 'sabado-20:0:0'
+
+# ── Ranking histórico ────────────────────────────────────────────────────────
+top: []
+
+# ── Minions (protegem o planeta durante o evento) ────────────────────────────
+#
+# Cada chave sob "minions" e um tipo de minion (ex.: guard, elite).
+# Spawnam automaticamente ao INICIAR o evento e sao removidos ao
+# TERMINAR ou CANCELAR (minions restantes sao limpos).
+#
+# Comandos in-game (na posicao do jogador):
+#   /planetas addspawn <planeta> [minion]              → adiciona spawn
+#   /planetas removespawn <planeta> [minion] [n|all]   → remove spawn #n ou todos
+#   /planetas listspawn <planeta> [minion]              → lista spawns
+#
+# MythicMobs (soft-depend, padrao yDungeons):
+#   Defina mythic-mob com o nome interno do mob.
+#   Se mythic-mob estiver vazio, usa entity-type vanilla.
+#
+minions:
+  # Chave unica deste tipo de minion (usada nos comandos addspawn/removespawn)
+  guard:
+    # Tipo vanilla (EntityType). Ignorado se mythic-mob estiver preenchido.
+    # Exemplos: ZOMBIE, SKELETON, WITHER_SKELETON, IRON_GOLEM, PIG_ZOMBIE
+    entity-type: 'ZOMBIE'
+
+    # Nome interno do MythicMobs. Deixe '' para usar vanilla.
+    # Ex.: 'SkeletonKing', 'SkeletalKnight'
+    mythic-mob: ''
+
+    # Nome colorido acima da cabeca. Vazio = sem custom name.
+    custom-name: '&c&lGuardiao de Marte'
+
+    # Exibir o custom-name acima da entidade.
+    custom-name-visible: true
+
+    # Vida maxima do minion.
+    health: 60.0
+
+    # Dano base de ataque (atributo GENERIC_ATTACK_DAMAGE, 1.9+).
+    damage: 6.0
+
+    # Velocidade de movimento (atributo GENERIC_MOVEMENT_SPEED, 1.9+).
+    # Valores tipicos: 0.2 ~ 0.35
+    speed: 0.28
+
+    # Quantidade de entidades deste tipo a spawnar no inicio do evento.
+    amount: 4
+
+    # Se true, spawna versao baby (quando o EntityType suportar).
+    baby: false
+
+    # Se true, o mob e removido ao se afastar muito de jogadores.
+    remove-when-far-away: false
+
+    # Locais de spawn. Formato: mundo,x,y,z,yaw,pitch
+    # Lista vazia = gera pontos em circulo ao redor do center do planeta.
+    # Prefira usar /planetas addspawn em vez de editar a mao.
+    spawn-locations: []
+    # spawn-locations:
+    #   - 'world,10.5,65.0,0.5,90.0,0.0'
+    #   - 'world,-10.5,65.0,0.5,-90.0,0.0'
+
+    # Equipamento do minion (apenas vanilla; MythicMobs usa o kit do mob).
+    # Aceita:
+    #   - string de material: 'DIAMOND_SWORD' ou 'WOOL:14'
+    #   - secao SetupItem completa (material, name, lore, enchants...)
+    equipment:
+      # Capacete
+      helmet: 'IRON_HELMET'
+      # Peitoral
+      chestplate: 'IRON_CHESTPLATE'
+      # Calcas
+      leggings: 'IRON_LEGGINGS'
+      # Botas
+      boots: 'IRON_BOOTS'
+      # Mao principal
+      hand: 'IRON_SWORD'
+      # Mao secundaria (escudo, tocha, etc.) — 1.9+
+      off-hand: 'SHIELD'
+      # Chance de dropar cada peca ao morrer (0.0 = nunca, 1.0 = sempre)
+      drop-chance:
+        helmet: 0
+        chestplate: 0
+        leggings: 0
+        boots: 0
+        hand: 0
+        off-hand: 0
+
+    # Efeitos de pocoes aplicados no spawn (permanentes se duration alto).
+    # Formato curto (lista):
+    #   - 'TIPO:amplifier'
+    #   - 'TIPO:amplifier:duration_em_ticks'
+    # Formato completo (secao):
+    #   nome:
+    #     type: 'SPEED'
+    #     amplifier: 0
+    #     duration: 999999
+    #     ambient: false
+    #     particles: true
+    # Tipos: SPEED, INCREASE_DAMAGE, DAMAGE_RESISTANCE, FIRE_RESISTANCE,
+    #        REGENERATION, JUMP, INVISIBILITY, etc. (PotionEffectType)
+    effects:
+      - 'SPEED:0'
+      - 'FIRE_RESISTANCE:0'
+
+  # ── Exemplo MythicMobs (descomente e ajuste o nome interno) ────────────────
+  # elite:
+  #   entity-type: 'ZOMBIE'          # fallback se MythicMobs falhar
+  #   mythic-mob: 'SkeletonKing'     # nome interno do MythicMobs
+  #   custom-name: '&4&lElite de Marte'
+  #   custom-name-visible: true
+  #   health: 120.0
+  #   damage: 10.0
+  #   speed: 0.30
+  #   amount: 1
+  #   baby: false
+  #   remove-when-far-away: false
+  #   spawn-locations:
+  #     - 'world,0.5,65.0,0.5,0.0,0.0'
+  #   equipment:
+  #     # SetupItem completo na mao:
+  #     hand:
+  #       material: 'DIAMOND_SWORD'
+  #       name: '&cLamina de Marte'
+  #       lore:
+  #         - '&7Espada do guardiao.'
+  #     drop-chance:
+  #       hand: 0
+  #   effects:
+  #     strength:
+  #       type: 'INCREASE_DAMAGE'
+  #       amplifier: 1
+  #       duration: 999999
+  #       ambient: false
+  #       particles: true
+

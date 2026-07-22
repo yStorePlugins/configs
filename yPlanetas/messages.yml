@@ -1,0 +1,57 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &8&m-&r &6&lPlanetas &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu de planetas.
+    &8&m-&r &e/{cmd} armazem &8- &7Abre o armazém de recompensas.
+    &8&m-&r &e/{cmd} top &8- &7Abre o ranking de conquistas.
+    &8&m-&r &e/{cmd} iniciar <planeta> [tempo] &8- &7Inicia o evento.
+    &8&m-&r &e/{cmd} parar <planeta> &8- &7Encerra o evento.
+    &8&m-&r &e/{cmd} criar <nome> &8- &7Cria um planeta na sua posição.
+    &8&m-&r &e/{cmd} deletar <planeta> &8- &7Remove um planeta.
+    &8&m-&r &e/{cmd} alterarloc <planeta> &8- &7Altera a zona de captura.
+    &8&m-&r &e/{cmd} setentry <planeta> &8- &7Define o local de entrada/teleporte.
+    &8&m-&r &e/{cmd} addspawn <planeta> [minion] &8- &7Adiciona spawn de minion na sua posição.
+    &8&m-&r &e/{cmd} removespawn <planeta> [minion] [index|all] &8- &7Remove spawn de minion.
+    &8&m-&r &e/{cmd} listspawn <planeta> [minion] &8- &7Lista spawns de minions.
+    &8&m-&r &e/{cmd} reload &8- &7Recarrega as configurações.
+    &8&m-&r
+
+  reward-collected: '&eItem recolhido com sucesso.'
+  reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
+  planet-found: '&cPlaneta não encontrado.<nl>&cDisponíveis: &7{list}'
+  planet-active: '&cEste planeta {planet} não está ativo.'
+  planet-already: '&cEste planeta {planet} já está ativo.'
+  planet-exists: '&cEste planeta {planet} já existe.'
+  planet-stop: '&cPlaneta {planet} parado com sucesso.'
+  planet-start: '&aPlaneta {planet} foi iniciado com sucesso.'
+  planet-created: '&aPlaneta {planet} foi criado com sucesso.'
+  planet-deleted: '&aPlaneta {planet} foi deletado com sucesso.'
+  planet-changed: '&aA localização do planeta {planet} foi alterada com sucesso.'
+  planet-teleport: '&aTeleportado para &f{planet}&a!'
+  planet-no-entry: '&cO planeta {planet} ainda não possui local de entrada definido.'
+  planet-entry-set: '&aLocal de entrada de &f{planet} &adefinido com sucesso.'
+  minion-none: '&cO planeta {planet} não possui minions configurados no YAML.'
+  minion-found: '&cMinion &f{minion} &cnão encontrado em {planet}.<nl>&cDisponíveis: &7{list}'
+  minion-spawn-add: '&aSpawn &e#{index} &aadicionado para &f{minion} &aem {planet}&a. &7(Total: {total})'
+  minion-spawn-remove: '&cSpawn &e#{index} &cremovido de &f{minion} &cem {planet}&c. &7(Restam: {total})'
+  minion-spawn-clear: '&cTodos os &f{total} &cspawns de &f{minion} &cem {planet} &cforam removidos.'
+  minion-spawn-empty: '&cO minion &f{minion} &cdo planeta {planet} não possui spawns definidos.'
+  minion-spawn-index: '&cÍndice &f{index} &cinválido para &f{minion}&c. &7Total: {total}'

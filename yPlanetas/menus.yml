@@ -1,0 +1,242 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Planetas'
+  size: 27
+  items:
+    rewards-slot: 11
+    top-slot: 13
+    planets-slot: 15
+    rewards:
+      material: 'CHEST'
+      name: '&aRecompensas'
+      lore:
+        - ''
+        - ' &fRecompensas no armazém: &a{rewards}&f.'
+        - ''
+        - '&7Clique para gerenciar'
+    top:
+      material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+      name: '&aTOP Clans'
+      lore:
+        - '&7Clique para ver os melhores'
+        - '&7clans em relação às conquistas.'
+    planets:
+      material: 'NETHER_STAR'
+      name: '&bPlanetas'
+      lore:
+        - ''
+        - ' &7Veja todos os planetas'
+        - ' &7e seus proprietários.'
+        - ''
+        - '&eClique para abrir'
+
+# Menu de recompensas
+main-rewards:
+  name: '&8Planetas — Recompensas'
+  size: 54
+  slots: [ 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 25, 28, 29, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 48
+  empty-slot: 22
+  collect-slot: 50
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore: [ '&7Nenhuma recompensa para', '&7coletar.' ]
+    collect:
+      material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+      name: '&eRecolher tudo'
+      lore: [ '&7Clique para recolher', '&7todas as recompensas.' ]
+
+# Menu de planetas (aberto por /planetas)
+planetas:
+  name: '&8Planetas'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 9
+  next-slot: 17
+  # Menu principal: sem voltar (fecha)
+  back-slot: -1
+  # Seletor de TOP: volta ao menu principal de planetas
+  top-back-slot: 31
+  # Botoes fixos do rodape (menu principal)
+  top-slot: 30
+  storage-slot: 32
+  item-name: '{planet}'
+  lore:
+    - ''
+    - ' &fPlaneta: &b{planet}'
+    - ' &fProprietário: &7[{owner_color_tag}&7] &f{owner}'
+    - ' &fStatus: {status}'
+    - ' &fBenefícios: &e{benefits}'
+    - ''
+    - '&eClique para ver detalhes.'
+  top:
+    material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+    name: '&a&lTOP Clans'
+    lore:
+      - ''
+      - ' &7Veja o ranking de conquistas'
+      - ' &7por planeta.'
+      - ''
+      - '&eClique para abrir'
+      - ''
+  storage:
+    material: 'CHEST'
+    name: '&6&lArmazém'
+    lore:
+      - ''
+      - ' &7Recompensas de eventos'
+      - ' &7aguardando coleta.'
+      - ''
+      - '&eClique para abrir'
+      - ''
+  top-back:
+    material: 'ARROW:0'
+    name: '&c&lVoltar'
+    lore:
+      - ''
+      - ' &7Voltar ao menu de planetas.'
+      - ''
+  facing:
+    g0:  { slot: 27, material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    g1:  { slot: 28, material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    g2:  { slot: 29, material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    g3:  { slot: 33, material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    g4:  { slot: 34, material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    g5:  { slot: 35, material: 'STAINED_GLASS_PANE:15', name: ' ' }
+
+# Sub-menu de detalhes do planeta
+# Layout 27 (3 linhas):
+#  [borda]  beneficios centrados  [borda]
+#  [borda]  info (centro) | teleport   [borda]
+#  [borda]  voltar (centro)            [borda]
+planet-detail:
+  name: '&8{planet}'
+  size: 27
+  # Info do planeta (centro)
+  info-slot: 13
+  # Teleporte (direita do info)
+  teleport-slot: 15
+  # Voltar (rodapé centro)
+  back-slot: 22
+  # Benefícios na linha superior, centrados (até 5)
+  benefit-slots: [ 2, 3, 4, 5, 6 ]
+  info:
+    material: 'NETHER_STAR'
+    name: '&b&l{planet}'
+    lore:
+      - ''
+      - ' &8&m------------------'
+      - ' &fStatus: {status}'
+      - ' &fProprietário: &7[{owner_color_tag}&7] &f{owner}'
+      - ' &fDominando: {dominating}'
+      - ' &fTempo restante: &e{time}'
+      - ' &fRaio da zona: &e{radius}'
+      - ' &8&m------------------'
+      - ' &fBenefícios: &e{benefits}'
+      - ''
+  teleport:
+    material: 'ENDER_PEARL'
+    name: '&a&lTeleportar'
+    lore:
+      - ''
+      - ' &7Clique para ir ao local'
+      - ' &7de entrada de &f{planet}&7.'
+      - ''
+      - ' &eClique para teleportar'
+      - ''
+  teleport-disabled:
+    material: 'BARRIER'
+    name: '&c&lTeleporte indisponível'
+    lore:
+      - ''
+      - ' &7Este planeta ainda não'
+      - ' &7possui local de entrada.'
+      - ''
+      - ' &8Peça a um admin usar'
+      - ' &8/planetas setentry'
+      - ''
+  back:
+    material: 'ARROW:0'
+    name: '&c&lVoltar'
+    lore:
+      - ''
+      - ' &7Voltar à lista de planetas.'
+      - ''
+  benefit-item:
+    material: 'EMERALD'
+    name: '{benefit}'
+    lore:
+      - ''
+      - '{description}'
+      - ''
+      - ' &7Chave: &f{key}'
+      - ''
+  facing:
+    # Linha superior
+    g0:  { slot: 0,  material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    g1:  { slot: 1,  material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g7:  { slot: 7,  material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g8:  { slot: 8,  material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    # Linha do meio
+    g9:  { slot: 9,  material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    g10: { slot: 10, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g11: { slot: 11, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g12: { slot: 12, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g14: { slot: 14, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g16: { slot: 16, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g17: { slot: 17, material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    # Linha inferior
+    g18: { slot: 18, material: 'STAINED_GLASS_PANE:15', name: ' ' }
+    g19: { slot: 19, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g20: { slot: 20, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g21: { slot: 21, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g23: { slot: 23, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g24: { slot: 24, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g25: { slot: 25, material: 'STAINED_GLASS_PANE:14', name: ' ' }
+    g26: { slot: 26, material: 'STAINED_GLASS_PANE:15', name: ' ' }
+
+# Menu de top (por planeta)
+top:
+  name: '&8TOP — {planet}'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  back-slot: 31
+  previous-slot: 9
+  next-slot: 17
+  items:
+    dominations:
+      # Use PAPER; o plugin troca por banner do clan automaticamente
+      material: 'PAPER'
+      name: '&7[{clan_color_tag}&7] &f{clan_name}'
+      lore:
+        - ''
+        - ' &fConquistas: &e{amount}'
+        - ' &fPosição: &e{pos}º'
+        - ''
