@@ -76,6 +76,9 @@ limit:
 # Mundos que não poderão coletar recompensas
 world-reward-collect-blacklist: [ 'none' ]
 
+# Regiões do WorldGuard onde não é permitido ativar crates (requer yPlotCore)
+blocked-regions: [ 'minapvp' ]
+
 # Sistema de abertura automatica
 automatic-open:
   enabled: true

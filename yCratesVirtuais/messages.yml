@@ -44,4 +44,5 @@ chat:
   crate-define-leave: '&eVocê saiu do modo definição.'
   crate-define: '&cVocê está no modo definir. Para sair: /crate definir'
   world-blacklisted: '&cVocê não pode coletar recompensas neste mundo.'
+  region-blocked: '&cVocê não pode ativar crates nesta região.'
   wait-collect: '&cAguarde parar recolher recompensas novamente.'
