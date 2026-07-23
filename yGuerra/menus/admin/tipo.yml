@@ -22,7 +22,7 @@ Itens:
       Name: '&aItens setados'
       Lore:
       - '&7Estado: {estado}&7.'
-    Dropar itens:
+   Dropar itens:
        Slot: 15
        CustomSkull: true
        URL: 'http://textures.minecraft.net/texture/9302fd2222c6c112d85992e094777906a3cfdc84888b38cf962689b11e157f17'
@@ -32,7 +32,7 @@ Itens:
        Name: '&aDropar itens'
        Lore:
        - '&7Estado: {estado}&7.'
-    Desclassificar no void:
+   Desclassificar no void:
        Slot: 12
        CustomSkull: true
        URL: 'http://textures.minecraft.net/texture/c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56'
@@ -44,7 +44,7 @@ Itens:
        - '&7Estado: {estado}&7.'
        - '&7Se ativado, o jogador é desclassificado'
        - '&7ao cair no void.'
-    Itens:
+   Itens:
       Slot: 16
       CustomSkull: true
       URL: 'http://textures.minecraft.net/texture/e467a7b9d76ba6d0fed743602533fc98c87af0c60f80f38da774f7a01a2093fa'
