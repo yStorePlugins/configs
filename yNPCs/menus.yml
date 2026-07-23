@@ -289,6 +289,21 @@ npc-edit:
       - ''
       - ' &eClique para configurar valores por economia.'
       - ''
+  # Botão: Sistema de trocas (ShopKeepers)
+  trades-button:
+    slot: 40
+    material: 'EMERALD'
+    name: '&6Sistema de Trocas'
+    lore:
+      - ''
+      - ' &7Status: &f{trades_status}'
+      - ' &7Trocas: &f{trades_count}'
+      - ''
+      - ' &7O jogador entrega um item e'
+      - ' &7recebe outro (estilo villager).'
+      - ''
+      - ' &eClique para configurar.'
+      - ''
   # Voltar
   back-button:
     slot: 49
@@ -508,6 +523,205 @@ npc-type-select:
       name: ' '
     glass4:
       slot: 26
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu admin: lista de trocas do NPC
+npc-trades-edit:
+  name: '&8Trocas &7— &f{id}'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  add-button:
+    slot: 49
+    material: 'NETHER_STAR'
+    name: '&aAdicionar Troca'
+    lore:
+      - ''
+      - ' &7Clique para criar uma nova troca.'
+      - ''
+  toggle-button:
+    slot: 46
+    enabled-material: 'EMERALD'
+    disabled-material: 'REDSTONE'
+    enabled-name: '&aTrocas Ativadas'
+    disabled-name: '&cTrocas Desativadas'
+    lore:
+      - ''
+      - ' &7Trocas configuradas: &f{trades_count}'
+      - ''
+      - ' &7Clique para {toggle_action} o sistema'
+      - ' &7de trocas neste NPC.'
+      - ''
+  trade-item:
+    material: 'PAPER'
+    name: '&eTroca #{index}'
+    lore:
+      - ''
+      - ' &7Status: &f{status}'
+      - ' &7Entrega: &f{input_amount}x {input}'
+      - ' &7Recebe: &f{output_amount}x {output}'
+      - ''
+      - ' &eClique para editar.'
+      - ' &cShift+Clique para remover.'
+      - ''
+  facing:
+    glass1:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu admin: editar uma troca (input → output)
+npc-trade-edit:
+  name: '&8Editar Troca &7#{index}'
+  size: 27
+  input-slot: 11
+  arrow-slot: 13
+  output-slot: 15
+  save-slot: 22
+  delete-slot: 24
+  back-slot: 18
+  empty-input:
+    material: 'STAINED_GLASS_PANE:14'
+    name: '&cItem de Custo'
+    lore:
+      - ''
+      - ' &7Coloque o item que o jogador'
+      - ' &7deve entregar nesta troca.'
+      - ''
+      - ' &eClique com o item no cursor.'
+      - ''
+  empty-output:
+    material: 'STAINED_GLASS_PANE:5'
+    name: '&aItem de Recompensa'
+    lore:
+      - ''
+      - ' &7Coloque o item que o jogador'
+      - ' &7receberá nesta troca.'
+      - ''
+      - ' &eClique com o item no cursor.'
+      - ''
+  arrow-item:
+    material: 'ARROW'
+    name: '&e→'
+    lore:
+      - ''
+      - ' &7Custo → Recompensa'
+      - ''
+  save-button:
+    material: 'EMERALD'
+    name: '&aSalvar Troca'
+    lore:
+      - ''
+      - ' &7Entrega: &f{input_amount}x {input}'
+      - ' &7Recebe: &f{output_amount}x {output}'
+      - ''
+      - ' &eClique para salvar e voltar.'
+      - ''
+  delete-button:
+    material: 'BARRIER'
+    name: '&cRemover Troca'
+    lore:
+      - ''
+      - ' &cClique para remover esta troca.'
+      - ''
+  back-button:
+    material: 'ARROW'
+    name: '&cVoltar'
+    lore:
+      - ''
+      - ' &7Clique para voltar à lista.'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# Menu do jogador: trocas paginadas (estilo villager)
+npc-trade:
+  name: '&8Trocas &7— &f{id} &8({page}/{pages})'
+  size: 54
+  previous-slot: 45
+  next-slot: 53
+  arrow-item:
+    material: 'ARROW'
+    name: '&e→'
+    lore:
+      - ' &7Entrega → Recebe'
+  empty-slot:
+    material: 'STAINED_GLASS_PANE:7'
+    name: ' '
+  rows:
+    row1:
+      input-slot: 10
+      arrow-slot: 11
+      output-slot: 12
+    row2:
+      input-slot: 14
+      arrow-slot: 15
+      output-slot: 16
+    row3:
+      input-slot: 19
+      arrow-slot: 20
+      output-slot: 21
+    row4:
+      input-slot: 23
+      arrow-slot: 24
+      output-slot: 25
+    row5:
+      input-slot: 28
+      arrow-slot: 29
+      output-slot: 30
+    row6:
+      input-slot: 32
+      arrow-slot: 33
+      output-slot: 34
+    row7:
+      input-slot: 37
+      arrow-slot: 38
+      output-slot: 39
+    row8:
+      input-slot: 41
+      arrow-slot: 42
+      output-slot: 43
+  facing:
+    glass-mid:
+      slot: 13
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass-mid2:
+      slot: 22
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass-mid3:
+      slot: 31
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass-mid4:
+      slot: 40
       material: 'STAINED_GLASS_PANE:15'
       name: ' '
 
