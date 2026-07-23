@@ -60,12 +60,18 @@ Opcoes:
   # Ativar o sistema de UUID - ANTI-DUPE
   # **** Cuidado ao desativar
   UUID: true
+  # Regiões do WorldGuard onde não é permitido ativar cheques
+  Regioes bloqueadas: [ 'minapvp' ]
 
 # Sistema de webhook no discord
 discord-webhook:
   enabled: true
   create-embed: 'create'
   activate-embed: 'activate'
+
+# Atualização da média para /cheque criarcheque
+TopEconomia:
+  Atualizar em segundos: 120
 
 # Mensagens gerais do plugin
 Mensagens:
@@ -84,8 +90,12 @@ Mensagens:
   Configurado: '&cNão foi encontrado nenhum cheque configurado na cheques.yml para o plugin &f{plugin}&c.'
   Aguarde: '&cVocê atingiu seu limite diário deste cheque, aguarde &7{tempo}&c para realizar essa operação novamente.'
   Criou: '&aVocê criou um cheque de &7{quantia}&a com sucesso.'
+  Criou media: '&aVocê criou um cheque de &7{quantia}&a usando &7{porcentagem}%&a da média de &7{media}&a.'
   Converteu: '&aVocê juntou seus cheques com sucesso.'
   UUID: '&cEste cheque está duplicado e já utilizado.'
+  Regiao bloqueada: '&cVocê não pode ativar cheques nesta região.'
+  Media addon indisponivel: '&cO addon de média não está disponível no momento.'
+  Media sem dados: '&cNão foi possível calcular a média econômica dos TOPs.'
   Cheque:
     - ''
     - '&aDigite no chat a quantia que quer criar um cheque.'
