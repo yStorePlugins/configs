@@ -57,6 +57,9 @@ load-delay: 20
 # Máximo permitido para evoluir com Q
 q-max: 0
 
+# Regiões do WorldGuard onde não é permitido ativar fragmentos (requer yPlotCore)
+regioes-bloqueadas: [ 'minapvp' ]
+
 # Sistema de botões do menu
 menu:
   # Mostrar todas as chaves no menu (mesmo se o jogador não tiver)

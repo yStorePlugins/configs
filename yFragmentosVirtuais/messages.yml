@@ -34,6 +34,7 @@ chat:
     <nl>
   fragmento-activated: '&eForam adicionados &f{amount}x fragmento(s) &r{fragmento}&e em seu /fragmentos.'
   fragmento-collected: '&eVocê retirou &f{amount}x fragmento(s) &r{fragmento}&e.'
+  region-blocked: '&cVocê não pode ativar fragmentos nesta região.'
   shop-has: '&cVocê não possui &f{amount}x fragmento(s) &r{fragmento}&c.'
   shop-buy: '&aVocê adquiriu itens no shop fragmentos.'
   yourself: '&cVocê não pode pagar à si mesmo.'
