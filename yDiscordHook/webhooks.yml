@@ -1,0 +1,5 @@
+# Webhooks do Discord
+# Use a key no comando: /discordhook enviar <embed> <key>
+# Ou informe a URL completa diretamente no lugar da key
+Webhooks:
+  exemplo: 'https://discord.com/api/webhooks/ID/TOKEN'

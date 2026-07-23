@@ -106,3 +106,44 @@ Embeds:
         Inline: false
         Header: 'Data'
         Content: '{data} - {hora}'
+
+  ypayments_pre_charge:
+    Title: 'Sua compra foi gerada'
+    Url: '{url}'
+    Thumbnail: 'https://minotar.net/body/{player}/100.png'
+    Image: 'attachment://qrcode.png'
+    Color: '#57F287'
+    Author:
+      Name: 'yPayments'
+      Url: 'https://ystoreplugins.com.br'
+      IconUrl: ''
+    Footer:
+      Text: '{date} às {hour}'
+      Image: ''
+    Description: 'Escaneie o QR Code abaixo ou clique no título desta mensagem para abrir o pagamento no navegador.'
+    Timestamp: 'now'
+    Fields:
+      jogador:
+        Inline: true
+        Header: 'Jogador'
+        Content: '{player}'
+      produto:
+        Inline: true
+        Header: 'Produto'
+        Content: '{product}'
+      preco:
+        Inline: true
+        Header: 'Preço'
+        Content: 'R$ {price}'
+      gateway:
+        Inline: true
+        Header: 'Gateway'
+        Content: '{gateway}'
+      referencia:
+        Inline: false
+        Header: 'Referência'
+        Content: '{reference}'
+      link:
+        Inline: false
+        Header: 'Link do pagamento'
+        Content: '{url}'

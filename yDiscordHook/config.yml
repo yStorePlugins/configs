@@ -17,6 +17,9 @@ Comando:
   Discord:
     Comando: 'discord'
     Aliases: [ ]
+  DiscordHook:
+    Comando: 'discordhook'
+    Aliases: [ ]
 
 # Comando no discord
 Discord-Command:
@@ -149,3 +152,10 @@ Mensagens:
     - '&aConta: &f{discord_tag}&a.'
     - '&aID: &f{discord_id}&a.'
     - ''
+  Webhook:
+    Uso: '&cUse: /{comando} enviar <embed> <webhook|url>'
+    Embed invalido: '&cEmbed &f{embed}&c não encontrado na discord.yml.'
+    Webhook invalido: '&cWebhook &f{webhook}&c não encontrado. Use uma key da webhooks.yml ou a URL completa.'
+    Enviando: '&aEnviando embed &f{embed}&a para &f{webhook}&a...'
+    Sucesso: '&aEmbed &f{embed}&a enviado com sucesso para &f{webhook}&a.'
+    Erro: '&cFalha ao enviar o embed &f{embed}&c para &f{webhook}&c.'
