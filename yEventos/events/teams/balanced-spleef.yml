@@ -64,11 +64,50 @@ team-system:
     enabled: true
     # Requerer spawns configurados
     require: true
+  # Seleção de times (jogadores escolhem o time)
+  selection:
+    enabled: true
+    open-on-join: true
+    menu-title: '&8Selecionar Time'
+    item-name: '&fTime {team_color}'
+    item-lore:
+      - '&7Jogadores: &f{team_size}/{team_max}'
+      - '&7Membros: &f{team_members}'
+      - ''
+      - '&7Status: {team_status}'
+      - ''
+      - '&aClique para escolher este time'
+    success: '&aVocê entrou no time {team_color}&a!'
+    full: '&cO time {team_color}&c está cheio!'
+    locked: '&cNão é possível trocar de time após o início do evento!'
+    already: '&eVocê já está no time {team_color}&e!'
   # Mensagens do sistema de times
   team-messages:
     formation: '&aVocê foi adicionado ao time &e{team_color}&a!'
     join: '&a{player} entrou no seu time!'
     eliminated: '&cO time &e{team_color}&c foi eliminado!'
+
+# Scoreboard do evento
+scoreboard:
+  enabled: true
+  title: '&6&l>> &e&lSpleef &6&l<<'
+  lines:
+    - '&8&m--------------------'
+    - '&f&l  {display}'
+    - '&8&m--------------------'
+    - ''
+    - '&7 Jogadores: &a{players_size}'
+    - '&7 Tempo: &e{time_left}'
+    - '&7 Times vivos: &a{teams_alive}'
+    - ''
+    - '{teams}'
+    - ''
+    - '&7 Seu time: {team_color}'
+    - ''
+    - '&8&m--------------------'
+    - '&6  ystoreplugins.com'
+  team-line: '&8 | {team_color}&7: &f{team_size}&8/&7{team_max}'
+  team-eliminated-line: '&8 | &8&m{team_name}&r &cX'
 
 # Itens nos menus
 displays:
@@ -76,8 +115,6 @@ displays:
   order: 17
   # Aparecer no TOP
   appear-top: true
-  # Aparecer no menu de eventos
-  appear-events: true
   events:
     material: 'IRON_SPADE'
     name: '&eBalanced Spleef'
@@ -138,9 +175,6 @@ announces:
   # Tempo entre os anúncios
   # em segundos
   time-between: 10
-  # Público dos anúncios
-  # SERVER ou PARTICIPANTS
-  target: 'SERVER'
 
 warm-up:
   # Quantia total de anúncios antes de finalizar o evento
@@ -165,8 +199,6 @@ general:
   warmup-move: true
   # Lista de comandos que será possível executar no evento
   command-whitelist: [ '/g', '/.' ]
-  # Lista de comandos que será possível executar apenas na sala de espera
-  waiting-command-whitelist: []
   # Efeitos que o player irá ter no evento
   # effect:level-time
   effects: [ 'INVISIBILITY:1-999999' ]

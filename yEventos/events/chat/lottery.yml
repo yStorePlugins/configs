@@ -36,8 +36,6 @@ displays:
   order: 23
   # Aparecer no TOP
   appear-top: true
-  # Aparecer no menu de eventos
-  appear-events: true
   events:
     material: 'NAME_TAG'
     name: '&eLoteria'

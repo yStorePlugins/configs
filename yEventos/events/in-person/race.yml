@@ -34,14 +34,17 @@ yleague:
   # Deixe '' para não enviar
   embed-title: 'Ganhou a Corrida'
 
+# Scoreboard do evento
+scoreboard:
+  enabled: true
+  title: '&6&l>> &e&lCorrida &6&l<<'
+
 # Itens nos menus
 displays:
   # Ordem nos menus
   order: 12
   # Aparecer no TOP
   appear-top: true
-  # Aparecer no menu de eventos
-  appear-events: true
   events:
     material: 'DIAMOND_BOOTS'
     name: '&eCorrida'
@@ -96,9 +99,6 @@ announces:
   # Tempo entre os anúncios
   # em segundos
   time-between: 10
-  # Público dos anúncios
-  # SERVER ou PARTICIPANTS
-  target: 'SERVER'
 
 warm-up:
   # Quantia total de anúncios antes de finalizar o evento
@@ -123,8 +123,6 @@ general:
   warmup-move: false
   # Lista de comandos que será possível executar no evento
   command-whitelist: [ '/g', '/.' ]
-  # Lista de comandos que será possível executar apenas na sala de espera
-  waiting-command-whitelist: []
   # Efeitos que o player irá ter no evento
   # effect:level-time
   effects: [ 'INVISIBILITY:1-999999' ]
@@ -133,8 +131,6 @@ general:
   block-effects: [ 'STONE:0,INVISIBILITY:1-100' ]
   # Manter o EXP ao morrer
   keep-exp: true
-  # Dropar itens ao morrer
-  drop-on-death: false
 
 # Custos para ingressar ao evento
 costs:

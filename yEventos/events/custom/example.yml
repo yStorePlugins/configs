@@ -34,6 +34,11 @@ yleague:
   # Deixe '' para não enviar
   embed-title: 'Ganhou o Custom'
 
+# Scoreboard do evento
+scoreboard:
+  enabled: true
+  title: '&6&l>> &e&lExample &6&l<<'
+
 # Itens nos menus
 displays:
   events:
@@ -90,9 +95,6 @@ announces:
   # Tempo entre os anúncios
   # em segundos
   time-between: 10
-  # Público dos anúncios
-  # SERVER ou PARTICIPANTS
-  target: 'SERVER'
 
 warm-up:
   # Quantia total de anúncios antes de finalizar o evento
@@ -117,8 +119,6 @@ general:
   warmup-move: true
   # Lista de comandos que será possível executar no evento
   command-whitelist: [ '/g', '/.' ]
-  # Lista de comandos que será possível executar apenas na sala de espera
-  waiting-command-whitelist: []
   # Efeitos que o player irá ter no evento
   # effect:level-time
   effects: [ 'INVISIBILITY:1-999999' ]
