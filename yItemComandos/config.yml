@@ -37,6 +37,10 @@ database:
     # Senha do usuário de conexão: [EX: 123]
     password: ''
 
+# Regiões do WorldGuard onde não é permitido ativar itens
+# Requer yPlotCore + WorldGuard
+regioes-bloqueadas: [ 'minapvp' ]
+
 # Registro ao ativar o item
 log:
   enabled: true

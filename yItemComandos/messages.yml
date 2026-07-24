@@ -34,3 +34,4 @@ chat:
   resumed-already: '&cEste item não está pausado.'
   resumed: '&aEste item foi despausado.'
   item-paused: '&cVocê não pode ativar este item no momento.'
+  region-blocked: '&cVocê não pode ativar itens nesta região.'
