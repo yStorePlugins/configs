@@ -5,9 +5,6 @@ Explosao:
   Maximo: -1
   NivelPorcentagem: 10.0 # em porcentagem
   Raio: 3 # em ticks
-  Preco:
-    Padrao: 100.0
-    PerLevel: 200.0
   Prices-Default:
     price1:
       provider: 'money'
@@ -68,9 +65,6 @@ Laser:
   Maximo: -1
   NivelPorcentagem: 10.0 # em porcentagem
   Raio: 10 # em ticks
-  Preco:
-    Padrao: 100.0
-    PerLevel: 200.0
   Prices-Default:
     price1:
       provider: 'money'
@@ -130,9 +124,6 @@ Boomerang:
   Padrao: 0
   Maximo: -1
   NivelPorcentagem: 10.0 # em porcentagem
-  Preco:
-    Padrao: 100.0
-    PerLevel: 200.0
   Prices-Default:
     price1:
       provider: 'money'

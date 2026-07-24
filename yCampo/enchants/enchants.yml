@@ -6,9 +6,6 @@ Fortuna:
   Padrao: 0
   Maximo: -1
   BonusPorLevel: 10.0 # em porcentagem
-  Preco:
-    Padrao: 100.0
-    PerLevel: 200.0
   Prices-Default:
     price1:
       provider: 'money'
@@ -81,9 +78,6 @@ Sortudo:
   Padrao: 0
   Maximo: -1
   BonusPorLevel: 10.0 # em porcentagem
-  Preco:
-    Padrao: 100.0
-    PerLevel: 200.0
   Prices-Default:
     price1:
       provider: 'money'
@@ -139,9 +133,6 @@ Multiplicador:
   Padrao: 0
   Maximo: -1
   BonusPorLevel: 10.0 # em porcentagem
-  Preco:
-    Padrao: 100.0
-    PerLevel: 200.0
   Prices-Default:
     price1:
       provider: 'money'
@@ -198,9 +189,6 @@ Velocidade:
   Maximo: -1
   NivelPorcentagem: 10.0 # em porcentagem
   Duracao: 200 # em ticks
-  Preco:
-    Padrao: 100.0
-    PerLevel: 200.0
   Prices-Default:
     price1:
       provider: 'money'

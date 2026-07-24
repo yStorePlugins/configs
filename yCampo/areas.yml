@@ -22,7 +22,18 @@ areas:
           - ''
           - '&7Preço: &2$&f{money}'
           - ''
-          - '&aClique para comprar'
+          - '&aClique para evoluir'
+      # Sem saldo/requisitos suficientes (menu principal e upgrade)
+      cant-buy:
+        material: 'WHEAT'
+        name: '&cÁrea {order} &8(Trigo)'
+        lore:
+          - '&7Área: &b{order}'
+          - '&7Plantação: &bTrigo'
+          - ''
+          - '&7Preço: &2$&f{money}'
+          - ''
+          - '&cSaldo insuficiente'
       previous:
         material: 'WHEAT'
         name: '&aÁrea {order} &8(Trigo)'

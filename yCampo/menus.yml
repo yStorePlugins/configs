@@ -97,6 +97,7 @@ main:
       lore:
         - '&7Clique para sair da'
         - '&7área de campo'
+    # Ícone padrão (fallback). A próxima evolução usa os ícones da areas.yml
     areas:
       material: TNT
       name: '&bÁreas'
@@ -104,7 +105,16 @@ main:
         - '&7Evolua sua área de campo'
         - '&7e tenha plantações diferenciadas.'
         - ''
-        - '&aClique para fazer o upgrade'
+        - '&aClique para evoluir'
+    # Ícone quando o jogador já comprou todas as áreas
+    areas-max:
+      material: 'BEACON'
+      name: '&aÁreas maximizadas'
+      lore:
+        - '&7Você já evoluiu todas'
+        - '&7as áreas disponíveis.'
+        - ''
+        - '&aParabéns!'
 
 # Menu de recompensas
 main-rewards:

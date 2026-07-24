@@ -5,9 +5,6 @@ Encantamentos:
     Padrao: 0
     Maximo: -1
     BonusPorLevel: 10.0 # em porcentagem
-    Preco:
-      Padrao: 100.0
-      PerLevel: 200.0
     Prices-Default:
       price1:
         provider: 'money'

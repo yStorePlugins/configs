@@ -16,6 +16,13 @@ Skins:
       - ''
     bonus: 10.0
     bonus-mcmmo: 10.0
+    # Recompensas exclusivas desta skin (cadastradas em rewards.yml)
+    # Formato: chance,rewardKey  |  0.5 = 0.5%
+    reward-amount: 1
+    reward-ground: false
+    rewards: []
+    # Exemplo diamante:
+    # rewards: [ '0.5,chaveouro1' ]
     trail:
       particle: 'REDSTONE'
       item: 'STONE:0,REDSTONE:0'
