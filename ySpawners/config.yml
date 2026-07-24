@@ -118,10 +118,12 @@ general:
   # Quando o stack-spawners está desativado (ou limitado a 1x) e vários spawners
   # do mesmo tipo ficam próximos, ao invés de cada um spawnar/deletar seu próprio mob,
   # eles irão compartilhar o mob já existente e somar o stack nele.
-  # Recomendado ativar quando stack-spawners.max: 1
+  # Recomendado ativar quando stack-spawners.max: 1 (reduz entidades e risco de crash)
   share-mob-between-spawners: false
   # Gerar/somar mobs apenas quando a chunk do spawner estiver carregada por algum jogador
   spawn-only-when-chunk-loaded: false
+  # Limite de entidades stackadas vivas por chunk (0 = sem limite). Use 32-64 se houver flood/crash.
+  max-stacked-mobs-per-chunk: 0
   # Ativar compactação de spawners no inventário com shift + botão direito
   compact-spawners-enabled: false
   # Desatiar contabilizar a looting padrão do minecraft (encantamento)
