@@ -1,0 +1,311 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar está ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  action-delay: '&cAguarde &f{time}s &cpara usar isso novamente.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio.'
+
+  help: |
+
+    &8&m-&r &6&lPlots &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8| &e/{cmd} menu &8- &7Menu principal.
+    &8&m-&r &e/{cmd} panel &8- &7Painel do terreno atual.
+    &8&m-&r &e/{cmd} info &8- &7Informações do terreno atual.
+    &8&m-&r &e/{cmd} home [n|jogador] [n] &8- &7Teleporta para o terreno.
+    &8&m-&r &e/{cmd} sethome &8- &7Define o spawn do terreno.
+    &8&m-&r &e/{cmd} middle &8- &7Teleporta para o centro do terreno.
+    &8&m-&r &e/{cmd} visit <jogador> [n] &8- &7Visita o terreno de alguém.
+    &8&m-&r &e/{cmd} claim &8- &7Reivindica o terreno atual.
+    &8&m-&r &e/{cmd} auto &8- &7Reivindica o próximo terreno livre.
+    &8&m-&r &e/{cmd} merge &8- &7Agrupa com terrenos vizinhos seus.
+    &8&m-&r &e/{cmd} clear &8- &7Limpa/reseta o terreno atual.
+    &8&m-&r &e/{cmd} delete &8- &7Deleta o terreno atual.
+    &8&m-&r &e/{cmd} list &8- &7Lista seus terrenos.
+    &8&m-&r &e/{cmd} market &8- &7Abre o mercado de terrenos.
+    &8&m-&r &e/{cmd} favorites &8- &7Lista favoritos.
+    &8&m-&r &e/{cmd} favorite &8- &7Favorita o terreno atual.
+    &8&m-&r &e/{cmd} members &8- &7Menu de membros.
+    &8&m-&r &e/{cmd} add <jogador> &8- &7Adiciona como Negado (ilimitado).
+    &8&m-&r &e/{cmd} trust <jogador> &8- &7Adiciona como Confiável (limite).
+    &8&m-&r &e/{cmd} remove|deny|undeny <jogador> &8- &7Remove/nega/desnega.
+    &8&m-&r &e/{cmd} flags|settings|biome|customize &8- &7Menus do terreno.
+    &8&m-&r &e/{cmd} sell [preço|cancel] &8- &7Vende o terreno.
+    &8&m-&r &e/{cmd} buy &8- &7Compra o terreno à venda.
+    &8&m-&r &e/{cmd} transfer <jogador> &8- &7Transfere a propriedade.
+    &8&m-&r
+
+  admin-help: |
+
+    &8&m-&r &6&lPlots &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8| &e/{cmd} menu &8- &7Menu principal.
+    &8&m-&r &e/{cmd} panel &8- &7Painel do terreno atual.
+    &8&m-&r &e/{cmd} info &8- &7Informações do terreno atual.
+    &8&m-&r &e/{cmd} home [n|jogador] [n] &8- &7Teleporta para o terreno.
+    &8&m-&r &e/{cmd} sethome &8- &7Define o spawn do terreno.
+    &8&m-&r &e/{cmd} middle &8- &7Teleporta para o centro do terreno.
+    &8&m-&r &e/{cmd} visit <jogador> [n] &8- &7Visita o terreno de alguém.
+    &8&m-&r &e/{cmd} claim &8- &7Reivindica o terreno atual.
+    &8&m-&r &e/{cmd} auto &8- &7Reivindica o próximo terreno livre.
+    &8&m-&r &e/{cmd} merge &8- &7Agrupa com terrenos vizinhos seus.
+    &8&m-&r &e/{cmd} clear &8- &7Limpa/reseta o terreno atual.
+    &8&m-&r &e/{cmd} delete &8- &7Deleta o terreno atual.
+    &8&m-&r &e/{cmd} list &8- &7Lista seus terrenos.
+    &8&m-&r &e/{cmd} market &8- &7Abre o mercado de terrenos.
+    &8&m-&r &e/{cmd} favorites &8- &7Lista favoritos.
+    &8&m-&r &e/{cmd} favorite &8- &7Favorita o terreno atual.
+    &8&m-&r &e/{cmd} members &8- &7Menu de membros.
+    &8&m-&r &e/{cmd} add <jogador> &8- &7Adiciona como Negado (ilimitado).
+    &8&m-&r &e/{cmd} trust <jogador> &8- &7Adiciona como Confiável (limite).
+    &8&m-&r &e/{cmd} remove|deny|undeny <jogador> &8- &7Remove/nega/desnega.
+    &8&m-&r &e/{cmd} flags|settings|biome|customize &8- &7Menus do terreno.
+    &8&m-&r &e/{cmd} sell [preço|cancel] &8- &7Vende o terreno.
+    &8&m-&r &e/{cmd} buy &8- &7Compra o terreno à venda.
+    &8&m-&r &e/{cmd} transfer <jogador> &8- &7Transfere a propriedade.
+    &8&m-&r
+    &8&m-&r &6&lPlots Admin &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} reload &8- &7Recarrega as configurações.
+    &8&m-&r &e/{cmd} createworld <mundo> &8- &7Cria um mundo de terrenos.
+    &8&m-&r &e/{cmd} deleteworld <mundo> &8- &7Remove configuração do mundo.
+    &8&m-&r &e/{cmd} regenworld [mundo] &8- &7Regenera mundo (apaga plots + chunks).
+    &8&m-&r &e/{cmd} setowner <jogador> &8- &7Define dono do terreno.
+    &8&m-&r &e/{cmd} forceclaim &8- &7Força claim no terreno atual.
+    &8&m-&r &e/{cmd} forcedelete &8- &7Força delete do terreno.
+    &8&m-&r &e/{cmd} tp <x>;<z> [mundo] &8- &7Teleporta para coordenadas.
+    &8&m-&r &e/{cmd} purge <jogador> &8- &7Remove todos terrenos do jogador.
+    &8&m-&r &e/{cmd} roadschem &8- &7Schematics de rua (capture/reload).
+    &8&m-&r
+
+  not-plot-world: '&cVocê não está em um mundo de terrenos.'
+  not-on-plot: '&cVocê não está em um terreno.'
+  plot-not-found: '&cTerreno não encontrado.'
+  plot-already-claimed: '&cEste terreno já possui dono.'
+  plot-not-yours: '&cEste terreno não é seu.'
+  plot-max-reached: |
+
+    &cVocê atingiu o limite de terrenos!
+
+    &7Máximo: &f{max}
+    &7Atual: &f{current}
+
+  plot-claimed: |
+
+    &aTerreno reivindicado com sucesso!
+
+    &7Nº: &f{number}
+    &7ID: &f{id}
+    &7Posição: &f{x};{z}
+    &7Mundo: &f{world}
+
+  plot-auto-claimed: |
+
+    &aTerreno livre encontrado e reivindicado!
+
+    &7Nº: &f{number}
+    &7ID: &f{id}
+    &7Posição: &f{x};{z}
+
+  plot-deleted: |
+
+    &cTerreno deletado com sucesso!
+
+    &7Nº: &f{number}
+    &7ID: &f{id}
+    &7Posição: &f{x};{z}
+
+  plot-no-plots: '&cVocê não possui terrenos.'
+  plot-teleporting: '&aTeleportando em &f{seconds}s&a...'
+  plot-teleported: '&aTeleportado para o terreno &f{name}&a!'
+  plot-teleport-cancelled: '&cTeleporte cancelado.'
+  plot-enter: '&7Você entrou no terreno de &f{owner} &8({name})'
+  plot-enter-own: '&7Você entrou no seu terreno &8({name})'
+  plot-enter-free: '&7Terreno livre &8({x};{z}) &7— use o menu para reivindicar.'
+  plot-exit: '&7Você saiu do terreno.'
+  plot-denied: '&cVocê não tem permissão para entrar neste terreno.'
+  plot-protected: '&cVocê não pode fazer isso aqui.'
+  plot-renamed: '&aNome do terreno alterado para &f{name}&a.'
+  plot-description: '&aDescrição do terreno alterada.'
+  plot-biome-set: '&aBiome alterado para &f{biome}&a.'
+  plot-biome-no-perm: '&cVocê não tem permissão para o biome &f{biome}&c. &7({permission})'
+  plot-biome-invalid: '&cBiome inválido: &f{biome}'
+  plot-biome-same: '&eEste terreno já está com o biome &f{biome}&e.'
+  plot-spawn-set: '&aSpawn do terreno definido na sua posição.'
+  plot-reset: '&aTerreno resetado com sucesso!'
+  plot-cleared: '&aTerreno limpo com sucesso!'
+  wall-block-buy: '&aVocê comprou o bloco de parede &f{key}&a.'
+  wall-block-set: '&aParede do terreno alterada para &f{key}&a.'
+  border-block-buy: '&aVocê comprou o bloco de borda &f{key}&a.'
+  border-block-set: '&aBorda do terreno alterada para &f{key}&a.'
+  plot-icon-set: '&aÍcone do terreno alterado.'
+  plot-fly-changed: '&aModo de voo do terreno: &f{status}&a.'
+  plot-fly-locked: '&cCompre o voo deste terreno ou tenha a permissão &fyplots.fly.own&c.'
+  plot-fly-bought: '&aVoo desbloqueado neste terreno!'
+  plot-title-changed: '&aTitle ao entrar: &f{status}&a.'
+  plot-actionbar-changed: '&aActionbar ao entrar: &f{status}&a.'
+  plot-pvp-changed: '&aPvP noturno do terreno: &f{status}&a.'
+  plot-merged: '&aTerrenos agrupados! &7ID: &f{id} &8(&f{count} &7plots)'
+  plot-merge-none: '&cNenhum terreno vizinho seu para agrupar.'
+  plot-merge-already: '&eEstes terrenos já estão agrupados. &7ID: &f{id}'
+  plot-merge-limit: '&cLimite de merge: &f{max} &cplots. &7(grupo tem &f{count}&7) Compre slots no menu ou use &fyplots.merge.X&7.'
+  plot-merge-slot-bought: '&aSlot de merge comprado! &7Máximo agora: &f{max}'
+  plot-merge-slot-max: '&cVocê já está no limite máximo de merge (&f{max}&c).'
+
+  plot-flag-set: '&aFlag &f{flag} &aalterada para &f{value}&a.'
+  plot-flag-no-perm: '&cVocê não tem permissão para alterar a flag &f{flag}&c. &7({permission})'
+  plot-member-added: '&aJogador &f{player} &aadicionado como &f{role}&a.'
+  plot-member-removed: '&cJogador &f{player} &cremovido do terreno.'
+  plot-member-exists: '&cEste jogador já é membro do terreno.'
+  plot-member-not-found: '&cEste jogador não é membro do terreno.'
+  # Limite de MEMBER/TRUSTED (negados ilimitados). {max} {current}
+  plot-member-limit: '&cLimite de membros: &f{max}&c. &7(atual: &f{current}&7) Compre slots no menu ou use &fyplots.members.X&7.'
+  plot-member-slot-bought: '&aSlot de membro comprado! &7Máximo agora: &f{max}'
+  plot-member-slot-max: '&cVocê já está no limite máximo de membros (&f{max}&c).'
+  plot-transfer: '&aPropriedade transferida para &f{player}&a.'
+  plot-transfer-self: '&cVocê não pode transferir para si mesmo.'
+  plot-for-sale: |
+
+    &eTerreno colocado à venda!
+
+    &7Preço: &f{price} {economy}
+    &7ID: &f{id}
+
+  plot-sale-cancelled: '&aVenda cancelada. Terreno removido do mercado.'
+  plot-bought: |
+
+    &aTerreno comprado com sucesso!
+
+    &7ID: &f{id}
+    &7Preço: &f{price} {economy}
+    &7Vendedor: &f{seller}
+
+  plot-sold: |
+
+    &aSeu terreno foi vendido!
+
+    &7ID: &f{id}
+    &7Preço: &f{price} {economy}
+    &7Comprador: &f{buyer}
+
+  plot-not-for-sale: '&cEste terreno não está à venda.'
+  plot-cannot-buy-own: '&cVocê não pode comprar seu próprio terreno.'
+  no-balance: |
+
+    &cVocê não tem saldo suficiente!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{required}
+
+  chat-input-name: '&eDigite o novo nome do terreno no chat &7(ou &ccancelar&7).'
+  chat-input-description: '&eDigite a nova descrição no chat &7(ou &ccancelar&7).'
+  chat-input-icon-head: '&eDigite o nick para usar a cabeça como ícone &7(ou &ccancelar&7).'
+  chat-input-price: '&eDigite o preço de venda no chat &7(ou &ccancelar&7).'
+  chat-input-member: '&eDigite o nome do jogador no chat &7(ou &ccancelar&7). &8Será adicionado como Negado.'
+
+  world-created: '&aMundo de terrenos &f{world} &acriado/configurado!'
+  world-deleted: '&cConfiguração do mundo &f{world} &cremovida.'
+  world-exists: '&cEste mundo já está configurado como terreno.'
+  world-not-found: '&cMundo não encontrado.'
+  world-regen-start: '&eRegenerando mundo &f{world}&e... &7(todos os plots serão apagados)'
+  world-regen-done: |
+
+    &aMundo &f{world} &aregenerado com sucesso!
+
+    &7Plots removidos: &f{count}
+    &7Chunks serão gerados do zero (schematics na geração se ativos).
+
+  world-regen-fail: '&cFalha ao regenerar o mundo &f{world}&c. Veja o console.'
+  owner-set: '&aDono do terreno definido para &f{player}&a.'
+  purged: '&cTodos os terrenos de &f{player} &cforam removidos (&f{count}&c).'
+  favorite-added: '&aTerreno adicionado aos favoritos.'
+  favorite-removed: '&cTerreno removido dos favoritos.'
+
+  roadschem-help: |
+
+    &8&m-&r &6&lRoad Schematics &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} roadschem capture road &8- &7Captura a rua reta sob você.
+    &8&m-&r &e/{cmd} roadschem capture intersection &8- &7Captura o cruzamento.
+    &8&m-&r &e/{cmd} roadschem paste &8- &7Aplica schematic na tile atual.
+    &8&m-&r &e/{cmd} roadschem reload &8- &7Recarrega schematics.
+    &8&m-&r &e/{cmd} roadschem enable/disable &8- &7Ativa/desativa no mundo atual.
+    &8&m-&r &e/{cmd} roadschem info &8- &7Status dos schematics.
+    &8&m-&r
+    &7Arquivos em: &fplugins/yPlots/schematics/
+    &7Formatos: &f.ypschem &7| &f.schematic &7(WE clássico) | &f.schem &7(Sponge/PlotSquared).
+    &8&m-&r
+
+  roadschem-reloaded: '&aSchematics de rua recarregados.'
+  roadschem-captured: |
+
+    &aSchematic &f{type} &acapturado!
+
+    &7Arquivo: &f{file}
+    &7Tamanho: &f{w}x{h}x{l}
+    &7Pasta: &fplugins/yPlots/schematics/
+
+    &7Novos chunks usarão este schematic.
+    &7Chunks já gerados não mudam sozinhos.
+
+  roadschem-error: '&cErro ao salvar schematic: &f{error}'
+  roadschem-enabled: '&aSchematics ativados no mundo &f{world}&a.'
+  roadschem-disabled: '&cSchematics desativados no mundo &f{world}&c.'
+  roadschem-pasted: '&aSchematic aplicado na tile &f{x};{z} &7(&f{count} &7blocos).'
+
+  info: |
+
+    &8&m-----------------------------
+    &6&lTerreno &f#{number} &8(&f{id}&8)
+    &8&m-----------------------------
+
+    &7Nº do dono: &f{number}
+    &7Posição: &f{x};{z}
+    &7Mundo: &f{world}
+    &7Dono: &f{owner}
+    &7Nome: &f{name}
+    &7Biome: &f{biome}
+    &7Membros: &f{members}
+    &7Status: &f{status}
+    &7Criado em: &f{created}
+
+    &8&m-----------------------------
+
+night:
+  chat: '&8[&cNoite&8] &7A noite chegou! O PvP dos terrenos está &cATIVO&7!'
+  actionbar: '&cNoite — PvP ativo nos terrenos!'
+  title: '&cNoite<nl>&7O PvP dos terrenos está ativo.'
+
+day:
+  chat: '&8[&eDia&8] &7O sol nasceu! O PvP dos terrenos está &aINATIVO&7!'
+  actionbar: '&aDia — PvP inativo nos terrenos!'
+  title: '&aDia<nl>&7O PvP dos terrenos está desativado.'
+
+title:
+  claimed: '&a&lTerreno Reivindicado!<nl>&7{name}'
+  teleported: '&aTeleportado!<nl>&7{name}'
+  bought: '&a&lTerreno Comprado!<nl>&7{price} {economy}'
+  enter: '&eTerreno de {owner}<nl>&7{name}'
+  enter-own: '&aSeu terreno<nl>&7{name}'
+  enter-free: '&7Terreno livre<nl>&8{x};{z}'
+  exit: '&7Você saiu do terreno<nl>&8 '
+
+actionbar:
+  enter: '&7Entrou no terreno de &f{owner} &8({name})'
+  enter-own: '&aEntrou no seu terreno &8({name})'
+  enter-free: '&7Terreno livre &8({x};{z}) &7— use o menu para reivindicar'
+  exit: '&7Você saiu do terreno'

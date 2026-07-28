@@ -1,0 +1,81 @@
+# Configuração de mundo de terrenos
+# Arquivo: plugins/yPlots/worlds/<nome>.yml
+
+# Nome do mundo no servidor
+world-name: 'plots'
+
+# Ativar este mundo
+enabled: true
+
+# Tamanho do terreno (blocos de lado a lado, sem contar a rua)
+plot-size: 42
+
+# Largura da rua entre terrenos
+road-width: 7
+
+# Altura do chão do terreno
+plot-height: 64
+
+# Biome padrão
+biome: 'PLAINS'
+
+# Blocos da geração
+blocks:
+  # Camada de bedrock
+  bedrock: 'BEDROCK'
+  # Preenchimento abaixo do chão (Y 1 até plot-height-1)
+  fill: 'DIRT'
+  # Superfície do terreno
+  floor: 'GRASS'
+  # Superfície da rua
+  road: 'QUARTZ_BLOCK'
+  # Borda do terreno (parede)
+  wall: 'STONE_SLAB2'
+  # Borda quando reivindicado
+  wall-claimed: 'STONE_SLAB2'
+  # Parede inferior da borda
+  wall-filling: 'STONE'
+
+# Preço para reivindicar neste mundo (sobrescreve default)
+claim-price: 0.0
+
+# Economia para claim neste mundo
+claim-economy: 'money'
+
+# Spawn do mundo (centro do plot 0;0)
+# Deixe vazio para calcular automaticamente
+spawn: ''
+
+# ── Schematics de rua (estilo PlotSquared) ──────────────────────────────────
+# Coloque os arquivos em: plugins/yPlots/schematics/
+# Formatos:
+#   .ypschem   - nativo yPlots
+#   .schematic - WorldEdit clássico (1.8)
+#   .schem     - Sponge/PlotSquared/FAWE (v1–v3)
+#
+# road          → trecho reto da rua (NS canônico)
+#                 tamanho ideal: road-width  x  altura  x  plot-size
+# intersection  → cruzamento das ruas
+#                 tamanho ideal: road-width  x  altura  x  road-width
+#
+# Exemplos inclusos (PlotSquared): sideroad.schem, intersection.schem
+#
+# Como capturar in-game (admin):
+#   /plots roadschem capture road
+#   /plots roadschem capture intersection
+#   /plots roadschem reload
+schematics:
+  # Ativar schematics neste mundo
+  enabled: false
+  # Aplicar na geração de chunks (novas áreas)
+  use-in-generator: true
+  # Offset Y relativo ao chão da rua (plot-height). 0 = começa no chão.
+  y-offset: 0
+  # Arquivo do trecho reto (aceita .ypschem / .schematic / .schem)
+  road: 'road.ypschem'
+  # Arquivo do cruzamento
+  intersection: 'intersection.ypschem'
+  # Gerar ruas retas como void total (sem bedrock). Ignora bloco road e schematic de road.
+  road-void: false
+  # Gerar cruzamentos como void total (sem bedrock). Ignora schematic de intersection.
+  intersection-void: false

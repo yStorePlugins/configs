@@ -1,0 +1,296 @@
+#         ____  _       _
+#  _   _|  _ \| | ___ | |_ ___
+# | | | | |_) | |/ _ \| __/ __|
+# | |_| |  __/| | (_) | |_\__ \
+#  \__, |_|   |_|\___/ \__|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 6379]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Máximo de terrenos por jogador (sem permissão yplots.plots.X)
+  max-plots-default: 1
+  # Preço padrão para reivindicar terreno livre (0 = grátis)
+  default-claim-price: 0.0
+  # Economia padrão para compra/venda (chave em economies.yml)
+  default-economy: 'money'
+  # Delay de teleporte em segundos (0 = instantâneo)
+  teleport-delay-seconds: 3
+  # Cancelar teleporte se o jogador se mover
+  teleport-cancel-on-move: true
+  # Mostrar menu de compra ao entrar em terreno livre
+  auto-claim-menu: true
+  # Cooldown do menu auto-claim (segundos)
+  auto-claim-cooldown-seconds: 30
+  # Mensagem ao entrar/sair de terreno
+  enter-exit-messages: true
+  # Permitir voo em terrenos próprios (ainda depende de flag/desbloqueio)
+  allow-fly: true
+  # Limpar inventário ao resetar terreno
+  clear-on-reset: false
+  # Taxa de venda para o servidor (% do preço; 0 = sem taxa)
+  sell-tax-percent: 5.0
+  # Altura máxima de proteção Y (blocos acima disso não são protegidos)
+  max-build-height: 256
+  # Altura mínima de proteção Y (blocos abaixo disso não são protegidos)
+  min-build-height: 0
+  # Mostrar bordas com partículas
+  border-particles: true
+  # Intervalo de partículas (ticks) — 20 = 1 segundo
+  border-particle-interval: 20
+
+  # Custo para limpar/resetar terreno (personalização / clear)
+  clear-cost: 0.0
+  # Economia usada no clear-cost (chave em economies.yml)
+  clear-economy: 'money'
+
+  # Custo para agrupar (merge) terrenos vizinhos
+  merge-cost: 1000.0
+  # Economia usada no merge-cost
+  merge-economy: 'money'
+  # Máximo de plots num merge (sem slots comprados / perms yplots.merge.X)
+  merge-max-default: 2
+  # Teto absoluto de plots no merge (0 = sem teto extra). Ex: 16
+  merge-max-hard-cap: 0
+  # Custo para comprar +1 slot de merge no menu
+  merge-slot-cost: 5000.0
+  # Economia usada no merge-slot-cost
+  merge-slot-economy: 'money'
+
+  # Máximo de membros/confiáveis por plot (sem slots comprados / perms yplots.members.X)
+  # Negados NÃO contam e são ilimitados.
+  max-members-default: 3
+  # Teto absoluto de membros (0 = sem teto extra). Ex: 20
+  member-max-hard-cap: 0
+  # Custo para comprar +1 slot de membro no menu
+  member-slot-cost: 2500.0
+  # Economia usada no member-slot-cost
+  member-slot-economy: 'money'
+
+  # Custo para desbloquear fly no terreno (0 = grátis se tiver perm yplots.fly*)
+  fly-cost: 5000.0
+  # Economia usada no fly-cost
+  fly-economy: 'money'
+
+  # Cooldowns por ação em segundos (0 = sem cooldown)
+  delays:
+    # Delay entre claims
+    claim-seconds: 0
+    # Delay entre clear/reset
+    clear-seconds: 0
+    # Delay entre deletes
+    delete-seconds: 0
+    # Delay ao trocar bloco de parede
+    wall-seconds: 0
+    # Delay ao trocar bloco de borda
+    border-seconds: 0
+
+  # Sons do plugin (nomes Bukkit Sound, ex: ENTITY_PLAYER_LEVELUP)
+  sounds:
+    # Som ao reivindicar terreno com sucesso
+    claim-success: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    # Som ao falhar claim (sem saldo, limite, etc.)
+    claim-fail: 'ENTITY_VILLAGER_NO'
+    # Som ao teleportar para terreno
+    teleport: 'ENTITY_ENDERMAN_TELEPORT'
+    # Som ao clicar em menus
+    menu-click: 'UI_BUTTON_CLICK'
+    # Som ao vender terreno / concluir venda
+    sell-success: 'ENTITY_PLAYER_LEVELUP'
+    # Som ao deletar terreno
+    delete: 'ENTITY_ITEM_BREAK'
+
+# PvP dia/noite nos terrenos (sistema global de anúncio + flag night-pvp por terreno)
+day-night:
+  # Ativar o ciclo dia/noite do plugin
+  enabled: true
+  # Mundos monitorados (vazio = todos os mundos)
+  worlds: []
+  # Tick do mundo considerado início da noite (Minecraft: 13000 ≈ sunset)
+  night-time: 13000
+  # Tick do mundo considerado início do dia
+  day-time: 0
+  # Som ao virar noite
+  sound-night: 'ENTITY_WITHER_SPAWN'
+  # Som ao virar dia
+  sound-day: 'NOTE_PLING'
+  # Volume dos sons (0.0 a 1.0+)
+  sound-volume: 1.0
+  # Pitch dos sons (0.5 a 2.0)
+  sound-pitch: 1.0
+
+# Blocos compráveis para a PAREDE do terreno (camada y=altura na borda)
+# Cada chave é o id interno do cosmético.
+# material: MATERIAL ou MATERIAL:data (1.8)
+# prices: lista de preços (provider = economia em economies.yml, amount = valor)
+wall-blocks:
+  # Parede padrão (grátis)
+  stone:
+    material: 'STONE'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+  diamond:
+    material: 'DIAMOND_BLOCK'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+  emerald:
+    material: 'EMERALD_BLOCK'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 5000.0
+  gold:
+    material: 'GOLD_BLOCK'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 2500.0
+  quartz:
+    material: 'QUARTZ_BLOCK'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1500.0
+
+# Blocos compráveis para a BORDA (slab/topo y=altura+1)
+# Mesma estrutura de wall-blocks
+border-blocks:
+  # Borda padrão (grátis)
+  slab:
+    material: 'STONE_SLAB2'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+  diamond:
+    material: 'DIAMOND_BLOCK'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 1000.0
+  emerald:
+    material: 'EMERALD_BLOCK'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 5000.0
+  gold:
+    material: 'GOLD_BLOCK'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 2500.0
+  glass:
+    material: 'GLASS'
+    prices:
+      price1:
+        provider: 'money'
+        amount: 800.0
+
+# Flags padrão para terrenos novos (true = permitido para visitantes/sem cargo)
+default-flags:
+  # Permite PvP no terreno
+  pvp: false
+  # Permite explosões (TNT, creepers, etc.)
+  explosion: false
+  # Permite fogo e propagação
+  fire: false
+  # Permite spawn de monstros
+  mob-spawn: false
+  # Permite spawn de animais
+  animal-spawn: true
+  # Permite redstone
+  redstone: true
+  # Permite fluxo de líquidos (água/lava)
+  liquid-flow: true
+  # Permite crescimento de plantas
+  plant-grow: true
+  # Permite queda de blocos (areia/cascalho)
+  block-fall: true
+  # Permite dropar itens
+  item-drop: true
+  # Permite coletar itens
+  item-pickup: true
+  # Permite interação geral
+  interact: false
+  # Permite usar portas
+  use-doors: false
+  # Permite usar botões
+  use-buttons: false
+  # Permite usar alavancas
+  use-levers: false
+  # Permite usar baús e contêineres
+  use-containers: false
+  # Permite voar (flag do terreno; separado do fly comprável)
+  fly: true
+  # Permite usar elytra
+  elytra: true
+  # Permite veículos
+  vehicle: false
+  # Permite projéteis
+  projectile: false
+  # Permite efeitos climáticos
+  weather: true
+  # Permite trocar com aldeões
+  villager-trade: false
+  # Permite quebrar quadros/suportes
+  hanging-break: false
+  # Permite interagir com armor stands
+  armor-stand: false
+  # Permite usar baldes
+  bucket: false
+
+# Textos de status exibidos em menus/info/placeholders
+status:
+  # Terreno com dono
+  claimed: '&aReivindicado'
+  # Terreno sem dono
+  free: '&7Livre'
+  # Terreno listado no mercado
+  for-sale: '&eÀ venda'
+  # Jogador negado no terreno
+  denied: '&cNegado'

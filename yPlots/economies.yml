@@ -1,0 +1,32 @@
+# Economia padrão utilizada pelo plugin.
+default: 'money'
+
+economies:
+  money:
+    provider: 'money'
+    display: '&6Dinheiro'
+    abbreviated: '&6R$'
+    symbol: '$'
+    permission: ''
+    allow-offline: true
+    item-settings:
+      material: 'GOLD_NUGGET'
+      name: '&6Dinheiro'
+      lore:
+        - ''
+        - ' &7Saldo: &f{balance}'
+        - ''
+  playerpoints:
+    provider: 'playerpoints'
+    display: '&bPlayerPoints'
+    abbreviated: '&bpp'
+    symbol: 'PP'
+    permission: ''
+    allow-offline: true
+    item-settings:
+      material: 'EMERALD'
+      name: '&bPlayerPoints'
+      lore:
+        - ''
+        - ' &7Saldo: &f{balance}'
+        - ''
