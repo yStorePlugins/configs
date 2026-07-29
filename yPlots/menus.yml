@@ -373,7 +373,21 @@ plot-panel:
         - ' &8| &7Voo no terreno: &r{fly}'
         - ' &8| &7Desbloqueado: &r{fly_unlocked}'
         - ''
-        - ' &b> Alternar / comprar'
+        - ' &b> Clique para alternar'
+        - ''
+    fly-locked:
+      slot: 28
+      material: BARRIER
+      name: '&c&lModo de Voo &7(Bloqueado)'
+      lore:
+        - ''
+        - ' &8| &7Desbloqueie o voo neste terreno'
+        - ' &8| &7para você e visitantes.'
+        - ''
+        - ' &8| &7Custo: &a{fly_cost} &7{fly_economy}'
+        - ' &8| &7Desbloqueado: &r{fly_unlocked}'
+        - ''
+        - ' &e> Clique para comprar'
         - ''
     title:
       slot: 29

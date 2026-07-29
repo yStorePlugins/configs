@@ -161,35 +161,41 @@ day-night:
 
 # Blocos compráveis para a PAREDE do terreno (camada y=altura na borda)
 # Cada chave é o id interno do cosmético.
+# display-name: nome no ícone do menu (suporta & cores)
 # material: MATERIAL ou MATERIAL:data (1.8)
 # prices: lista de preços (provider = economia em economies.yml, amount = valor)
 wall-blocks:
   # Parede padrão (grátis)
   stone:
+    display-name: '&7Pedra'
     material: 'STONE'
     prices:
       price1:
         provider: 'money'
         amount: 0.0
   diamond:
+    display-name: '&bBloco de Diamante'
     material: 'DIAMOND_BLOCK'
     prices:
       price1:
         provider: 'money'
         amount: 1000.0
   emerald:
+    display-name: '&aBloco de Esmeralda'
     material: 'EMERALD_BLOCK'
     prices:
       price1:
         provider: 'money'
         amount: 5000.0
   gold:
+    display-name: '&6Bloco de Ouro'
     material: 'GOLD_BLOCK'
     prices:
       price1:
         provider: 'money'
         amount: 2500.0
   quartz:
+    display-name: '&fBloco de Quartzo'
     material: 'QUARTZ_BLOCK'
     prices:
       price1:
@@ -201,30 +207,35 @@ wall-blocks:
 border-blocks:
   # Borda padrão (grátis)
   slab:
+    display-name: '&7Laje de Pedra Vermelha'
     material: 'STONE_SLAB2'
     prices:
       price1:
         provider: 'money'
         amount: 0.0
   diamond:
+    display-name: '&bBloco de Diamante'
     material: 'DIAMOND_BLOCK'
     prices:
       price1:
         provider: 'money'
         amount: 1000.0
   emerald:
+    display-name: '&aBloco de Esmeralda'
     material: 'EMERALD_BLOCK'
     prices:
       price1:
         provider: 'money'
         amount: 5000.0
   gold:
+    display-name: '&6Bloco de Ouro'
     material: 'GOLD_BLOCK'
     prices:
       price1:
         provider: 'money'
         amount: 2500.0
   glass:
+    display-name: '&fVidro'
     material: 'GLASS'
     prices:
       price1:

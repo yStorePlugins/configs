@@ -79,3 +79,8 @@ schematics:
   road-void: false
   # Gerar cruzamentos como void total (sem bedrock). Ignora schematic de intersection.
   intersection-void: false
+  #
+  # Dica (ilhas): com road-void/intersection-void = false e schematic ativo,
+  # blocos AIR no .schem / .schematic / .ypschem viram void de verdade.
+  # AIR no chão da rua (plot-height) remove fill+bedrock da coluna — ideal para
+  # mapas de ilha com pontes/caminhos só onde o schem tem blocos sólidos.
