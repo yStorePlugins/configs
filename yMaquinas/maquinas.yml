@@ -71,9 +71,10 @@ Maquinas:
         enabled: false
         particle: 'flame'
         radius: 0.3
-    # Mensagem de venda
+    # Mensagem de venda e coleta
     Mensagens:
       Vendeu: '&aVocê vendeu &7{quantia}x {drop}&a por &6{money} coins &8{bonus}&a.'
+      Coletou: '&aVocê coletou &7{quantia}x drops&7.'
     # Item da máquina
     Item:
       CustomSkull: false
