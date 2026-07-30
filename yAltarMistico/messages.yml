@@ -26,6 +26,7 @@ chat:
     &b-> &f/altaradmin deletar [altar] &8-&7 Deleta um altar
     &b-> &f/altaradmin editar [altar] &8-&7 Edita um altar
     &b-> &f/altaradmin dar [altar] &8-&7 Pega um altar
+    &b-> &f/altaradmin forcar [altar] &8-&7 Força a liberação de itens dos altares setados
     &b-> &f/altaradmin reload &8-&7 Recarrega as configurações
 
   altar-found: '&cEste altar não existe. Disponíveis: {list}'
@@ -35,6 +36,7 @@ chat:
   altar-gived: '&aVocê pegou o item para por o altar {altar} no chão.'
   altar-placed: '&aVocê colocou o altar {altar} no chão.'
   altar-breaked: '&aVocê removeu o altar {altar} do chão.'
+  altar-forced: '&aForçada a liberação de itens em {amount} altar(es) do tipo {altar}.'
   digit-symbol: |
 
     &aDigite o SÍMBOLO que você quer.
