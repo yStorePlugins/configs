@@ -299,3 +299,8 @@ drop:
     # formatar a quantia que será executada no comando. Ex: 1k, 10k, 1M
     amount-format: true
     commands: [ 'give {player} iron_ingot {quantia}' ]
+
+# Mensagens customizadas para esse spawner
+messages:
+  sell: '&aVocê vendeu &7{amount}x {drop}&a por &6{money} coins &8{bonus}&a.'
+  collect: '&aVocê coletou &7{amount}x {drop} (&8{bonus})&a.'
