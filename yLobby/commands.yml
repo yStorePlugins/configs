@@ -37,4 +37,5 @@ commands:
   sudo: 'sudo'
   preferences: 'preferences|preferencias'
   colors: 'colors|cores'
+  music: 'music|musica|musicas'
   iteminfo: 'iteminfo|infoitem|ii'

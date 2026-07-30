@@ -122,12 +122,25 @@ walk-speed: 0.2
 fly-speed: 0.1
 
 # Sons executados em ações específicas.
-# Deixe vazio ou 'none' para desativar. Exemplos: 'LEVEL_UP', 'CLICK', 'ORB_PICKUP'
+# Deixe vazio ou 'none' para desativar. Exemplos: 'LEVEL_UP', 'CLICK', 'ORB_PICKUP', 'UI_BUTTON_CLICK'
 sounds:
   join: ''
   npc-click: ''
   menu-open: ''
+  menu-click: ''
   queue-enter: ''
+  preference-toggle: ''
+  visibility-toggle: ''
+  color-select: ''
+  music-select: ''
+  music-stop: ''
+
+# Sistema de músicas individuais (discos do Minecraft).
+# O som toca apenas para o jogador. Preferência salva no banco.
+music:
+  enabled: true
+  # Restaurar automaticamente a música salva ao entrar no lobby
+  auto-play: true
 
 # Configuração da boss-bar.
 boss-bar:
@@ -180,6 +193,9 @@ tablist:
     member:
       priority: 1 # decrescente (membros com prioridade maior que dono e admin)
       permission: 'ylobby.tags.member'
+      # A cor final do prefixo define a cor do nick na tablist (Team.setColor).
+      # Exemplos: '&7[Membro] &7' | '&a[VIP] &a' | '#55FF55[VIP] &a'
+      # Degradê MiniMessage no prefixo: '<gradient:#55FF55:#00AAFF>[VIP] </gradient>&b'
       prefix: '&7[Membro] &7'
       suffix: ''
       order: 'a' # ordem das tags no tab, sendo o "A" o primeiro e o "Z" o último
@@ -312,6 +328,14 @@ items:
     name: '&cCombate'
     lore:
       - '&7Se divirta em um belo PvP.'
+  # Item utilizado para abrir o menu de músicas
+  music:
+    material: 'MUSIC_DISC_CAT'
+    slot: 6
+    name: '&aMúsicas'
+    lore:
+      - '&7Escolha uma música para tocar'
+      - '&7apenas para você no lobby.'
   # Item utilizado para ativar a visibilidade
   visibility-off:
     material: INK_SACK:8

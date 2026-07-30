@@ -51,9 +51,10 @@ preferences:
   items:
     visibility-slot: 10
     chat-slot: 11
-    tell-slot: 13
-    fly-slot: 15
-    combat-slot: 16
+    tell-slot: 12
+    fly-slot: 14
+    combat-slot: 15
+    music-slot: 16
     visibility-off:
       material: 'INK_SACK:8'
       name: '&aVisibilidade de Jogadores'
@@ -104,6 +105,295 @@ preferences:
       name: '&aConvite para Batalhas'
       lore:
         - '&fEstado: &aON'
+    music:
+      material: 'MUSIC_DISC_CAT'
+      name: '&aMúsicas'
+      lore:
+        - '&7Escolha uma música para tocar'
+        - '&7apenas para você no lobby.'
+        - ''
+        - '&aClique para abrir.'
+
+# Menu de músicas do lobby
+# Sons/materiais 1.13+: MUSIC_DISC_CAT, MUSIC_DISC_13, MUSIC_DISC_PIGSTEP...
+# Versões antigas: RECORD_CAT, RECORD_13, GREEN_RECORD, GOLD_RECORD...
+# O plugin resolve automaticamente RECORD_* <-> MUSIC_DISC_*
+music:
+  name: '&8Músicas'
+  size: 54
+  items:
+    stop-slot: 49
+    stop:
+      material: BARRIER
+      name: '&cParar música'
+      lore:
+        - '&7Clique para parar a reprodução'
+        - '&7e limpar sua preferência salva.'
+  tracks:
+    cat:
+      sound: 'MUSIC_DISC_CAT'
+      permission: 'ylobby.music.cat'
+      slot: 10
+      icons:
+        permission:
+          material: 'MUSIC_DISC_CAT'
+          name: '&aCat'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_CAT'
+          name: '&aCat'
+          lore:
+            - '&7Toque a música Cat apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_CAT'
+          name: '&aCat &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    blocks:
+      sound: 'MUSIC_DISC_BLOCKS'
+      permission: 'ylobby.music.blocks'
+      slot: 11
+      icons:
+        permission:
+          material: 'MUSIC_DISC_BLOCKS'
+          name: '&aBlocks'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_BLOCKS'
+          name: '&aBlocks'
+          lore:
+            - '&7Toque a música Blocks apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_BLOCKS'
+          name: '&aBlocks &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    chirp:
+      sound: 'MUSIC_DISC_CHIRP'
+      permission: 'ylobby.music.chirp'
+      slot: 12
+      icons:
+        permission:
+          material: 'MUSIC_DISC_CHIRP'
+          name: '&aChirp'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_CHIRP'
+          name: '&aChirp'
+          lore:
+            - '&7Toque a música Chirp apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_CHIRP'
+          name: '&aChirp &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    far:
+      sound: 'MUSIC_DISC_FAR'
+      permission: 'ylobby.music.far'
+      slot: 13
+      icons:
+        permission:
+          material: 'MUSIC_DISC_FAR'
+          name: '&aFar'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_FAR'
+          name: '&aFar'
+          lore:
+            - '&7Toque a música Far apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_FAR'
+          name: '&aFar &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    mall:
+      sound: 'MUSIC_DISC_MALL'
+      permission: 'ylobby.music.mall'
+      slot: 14
+      icons:
+        permission:
+          material: 'MUSIC_DISC_MALL'
+          name: '&aMall'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_MALL'
+          name: '&aMall'
+          lore:
+            - '&7Toque a música Mall apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_MALL'
+          name: '&aMall &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    mellohi:
+      sound: 'MUSIC_DISC_MELLOHI'
+      permission: 'ylobby.music.mellohi'
+      slot: 15
+      icons:
+        permission:
+          material: 'MUSIC_DISC_MELLOHI'
+          name: '&aMellohi'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_MELLOHI'
+          name: '&aMellohi'
+          lore:
+            - '&7Toque a música Mellohi apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_MELLOHI'
+          name: '&aMellohi &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    stal:
+      sound: 'MUSIC_DISC_STAL'
+      permission: 'ylobby.music.stal'
+      slot: 16
+      icons:
+        permission:
+          material: 'MUSIC_DISC_STAL'
+          name: '&aStal'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_STAL'
+          name: '&aStal'
+          lore:
+            - '&7Toque a música Stal apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_STAL'
+          name: '&aStal &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    strad:
+      sound: 'MUSIC_DISC_STRAD'
+      permission: 'ylobby.music.strad'
+      slot: 19
+      icons:
+        permission:
+          material: 'MUSIC_DISC_STRAD'
+          name: '&aStrad'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_STRAD'
+          name: '&aStrad'
+          lore:
+            - '&7Toque a música Strad apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_STRAD'
+          name: '&aStrad &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    ward:
+      sound: 'MUSIC_DISC_WARD'
+      permission: 'ylobby.music.ward'
+      slot: 20
+      icons:
+        permission:
+          material: 'MUSIC_DISC_WARD'
+          name: '&aWard'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_WARD'
+          name: '&aWard'
+          lore:
+            - '&7Toque a música Ward apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_WARD'
+          name: '&aWard &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    '11':
+      sound: 'MUSIC_DISC_11'
+      permission: 'ylobby.music.11'
+      slot: 21
+      icons:
+        permission:
+          material: 'MUSIC_DISC_11'
+          name: '&a11'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_11'
+          name: '&a11'
+          lore:
+            - '&7Toque a música 11 apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_11'
+          name: '&a11 &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    wait:
+      sound: 'MUSIC_DISC_WAIT'
+      permission: 'ylobby.music.wait'
+      slot: 22
+      icons:
+        permission:
+          material: 'MUSIC_DISC_WAIT'
+          name: '&aWait'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_WAIT'
+          name: '&aWait'
+          lore:
+            - '&7Toque a música Wait apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_WAIT'
+          name: '&aWait &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
+    '13':
+      sound: 'MUSIC_DISC_13'
+      permission: 'ylobby.music.13'
+      slot: 23
+      icons:
+        permission:
+          material: 'MUSIC_DISC_13'
+          name: '&a13'
+          lore:
+            - '&cVocê não tem permissão para esta música.'
+        equip:
+          material: 'MUSIC_DISC_13'
+          name: '&a13'
+          lore:
+            - '&7Toque a música 13 apenas para você.'
+            - ''
+            - '&aClique para selecionar.'
+        equipped:
+          material: 'MUSIC_DISC_13'
+          name: '&a13 &7(selecionada)'
+          lore:
+            - '&7Você está ouvindo esta música.'
 
 # Menu de batalha
 battle:
