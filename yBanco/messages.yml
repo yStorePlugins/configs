@@ -1,0 +1,197 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a operação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio.'
+  help: |
+
+    &8&m-&r &6&lBanco &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu do banco.
+    &8&m-&r
+
+  admin-help: |
+
+    &8&m-&r &6&lBanco Admin &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu do banco.
+    &8&m-&r &e/{cmd} reload &8- &7Recarrega as configurações.
+    &8&m-&r &e/{cmd} setnpc &8- &7Define o NPC na sua posição.
+    &8&m-&r &e/{cmd} delnpc &8- &7Remove o NPC do banco.
+    &8&m-&r &e/{cmd} set <jogador> <economia> <valor> &8- &7Define saldo bancário.
+    &8&m-&r &e/{cmd} add <jogador> <economia> <valor> &8- &7Adiciona saldo bancário.
+    &8&m-&r &e/{cmd} remove <jogador> <economia> <valor> &8- &7Remove saldo bancário.
+    &8&m-&r &e/{cmd} <jogador> &8- &7Consulta saldos do jogador.
+    &8&m-&r
+
+  no-hand-balance: |
+
+    &cVocê não possui saldo suficiente em mãos!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{required}
+
+  no-bank-balance: |
+
+    &cVocê não possui saldo suficiente no banco!
+
+    &7Economia: &f{provider}
+    &7Saldo no banco: &f{balance}
+    &7Necessário: &f{required}
+
+  below-minimum: |
+
+    &cEsta operação requer um mínimo de &f{amount}&c!
+
+    &7Economia: &f{provider}
+    &7Mínimo: &f{amount}
+
+  deposit-success: |
+
+    &aDepósito realizado com sucesso!
+
+    &7Economia: &f{provider}
+    &7Valor depositado: &f{amount}
+    &7Taxa: &f{tax}%
+    &7Saldo no banco: &f{bank}
+
+  withdraw-success: |
+
+    &aSaque realizado com sucesso!
+
+    &7Economia: &f{provider}
+    &7Valor sacado: &f{amount}
+    &7Taxa: &f{tax}%
+    &7Recebido: &f{received}
+    &7Saldo no banco: &f{bank}
+
+  cheque-success: |
+
+    &aCheque criado com sucesso!
+
+    &7Economia: &f{provider}
+    &7Valor: &f{amount}
+    &7Taxa: &f{tax}%
+    &7Valor do cheque: &f{received}
+
+  cheque-redeem: |
+
+    &aVocê ativou um cheque!
+
+    &7Economia: &f{provider}
+    &7Valor: &f{amount}
+
+  limit-reached: |
+
+    &cVocê atingiu o limite desta operação!
+
+    &7Aguarde: &f{time}
+    &7Usado: &f{used}&7/&f{max}
+
+  max-balance: |
+
+    &cSeu tier não permite depositar este valor!
+
+    &7Tier: &f{tier}
+    &7Saldo máximo: &f{max}
+    &7Saldo atual: &f{bank}
+
+  interest: |
+
+    &aSeu dinheiro no banco rendeu!
+
+    &7Economia: &f{provider}
+    &7Montante antigo: &c{old}
+    &7Montante atual: &a{new}
+    &7Rendimento: &e{yield}
+    &7Tier: &f{tier}
+
+  bolsa-interest: |
+
+    &aSeu dinheiro no banco rendeu com a bolsa!
+
+    &7Economia: &f{provider}
+    &7Montante antigo: &c{old}
+    &7Montante atual: &a{new}
+    &7Bolsa: &e{bolsa}%
+    &7Rendimento: &e{yield}
+
+  upgrade-success: |
+
+    &aConta evoluída com sucesso!
+
+    &7Novo tier: &f{tier}
+    &7Custo: &f{cost}
+
+  upgrade-fail: |
+
+    &cNão foi possível evoluir sua conta!
+
+    &7Motivo: &f{reason}
+    &7Custo: &f{cost}
+    &7Seu saldo: &f{balance}
+
+  upgrade-max: '&cVocê já está no tier máximo.'
+  economy-not-found: '&cEconomia não encontrada.'
+  economy-disabled: '&cEsta economia não está habilitada no banco.'
+  player-balance: |
+
+    &8&m-----------------------------
+    &6&lBanco &7de &f{player}
+    &8&m-----------------------------
+
+    &7Tier: &f{tier}
+    {balances}
+
+    &8&m-----------------------------
+
+  balance-line: '&7{provider}: &f{amount}'
+  altered: '&aSaldo de &f{player} &a({provider}) alterado para &f{amount}&a.'
+  added: '&aAdicionado &f{amount} &a({provider}) ao banco de &f{player}&a.'
+  removed: '&aRemovido &f{amount} &a({provider}) do banco de &f{player}&a.'
+  npc-set: '&aNPC do banco setado com sucesso.'
+  npc-removed: '&aNPC do banco removido com sucesso.'
+  npc-not-set: '&cNPC do banco não está setado.'
+  not-cancelled: '&cAção não cancelada. Digite &ncancelar&c para cancelar.'
+  input-timeout: '&cTempo esgotado! A operação foi cancelada automaticamente.'
+  digit-deposit: |
+
+    &aDigite o VALOR que deseja DEPOSITAR.
+    &7para cancelar digite &ncancelar&7.
+    &7Use &fTUDO&7 para depositar todo o saldo em mãos.
+
+  digit-withdraw: |
+
+    &aDigite o VALOR que deseja SACAR.
+    &cTaxa atual: &7{tax}%&c.
+    &7para cancelar digite &ncancelar&7.
+    &7Use &fTUDO&7 para sacar todo o saldo do banco.
+
+  digit-cheque: |
+
+    &aDigite o VALOR do CHEQUE.
+    &cTaxa atual: &7{tax}%&c.
+    &7para cancelar digite &ncancelar&7.
+    &7Use &fTUDO&7 para usar todo o saldo do banco.
+
+actionbar:
+  not-cancelled: '&cDigite &ncancelar&c para cancelar a operação.'
+
+title:
+  deposit: '&aDepósito!<nl>&7{amount} {provider}'
+  withdraw: '&aSaque!<nl>&7{amount} {provider}'
+  upgrade: '&6Upgrade!<nl>&7Tier {tier}'

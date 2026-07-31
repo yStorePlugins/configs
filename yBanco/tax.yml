@@ -1,0 +1,10 @@
+# Taxa base de saque/cheque por grupo de permissão.
+# Taxa efetiva = max(0, porcentagem_do_grupo - desconto_do_tier).
+# Se a economia definir withdraw-tax/cheque-tax em economies.yml,
+# esse valor tem prioridade e o desconto do tier ainda se aplica.
+
+groups:
+  member:
+    order: 1
+    permission: 'ybanco.membro'
+    percentage: 10.0

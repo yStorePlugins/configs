@@ -1,0 +1,176 @@
+#  _____ _
+# |_   _(_) ___ _ __ ___
+#   | | | |/ _ \ '__/ __|
+#   | | | |  __/ |  \__ \
+#   |_| |_|\___|_|  |___/
+#
+# Sistema de Upgrades e Juros Regressivos
+#
+# Quantidade de tiers: ILIMITADA — crie quantos quiser (chaves '1', '2', '3'...).
+# Basta adicionar/remover seções em 'tiers:' e recarregar (/banco reload).
+#
+# Juros por faixas (brackets): o saldo é dividido em faixas e cada faixa
+# rende à sua própria taxa (regressivo — faixas altas rendem menos %).
+#   max: teto da faixa em valor absoluto (-1 = ilimitado / resto do saldo)
+#   rate: % de rendimento daquela faixa por ciclo
+#
+# max-yield-per-cycle: teto de rendimento por ciclo (anti-inflação).
+# max-balance: 0 = ilimitado.
+# upgrade-cost: custo para ALCANÇAR este tier (pago na economia com upgrade-currency: true).
+#               O tier inicial (default-tier) deve ter upgrade-cost: 0.
+# withdraw-tax-discount: % de desconto na taxa de saque/cheque.
+
+default-tier: 1
+
+tiers:
+  '1':
+    name: '&7Inicial'
+    permission: ''
+    upgrade-cost: 0
+    max-balance: 50000000
+    max-yield-per-cycle: 250000
+    withdraw-tax-discount: 0.0
+    interest-brackets:
+      - max: 10000000
+        rate: 2.0
+      - max: 15000000
+        rate: 1.0
+    icon:
+      material: 'IRON_INGOT'
+      name: '&7Nível 1 — Inicial'
+      lore:
+        - ''
+        - ' &7Saldo máximo: &f{max_balance}'
+        - ' &7Rendimento máximo: &f{max_yield}'
+        - ' &7Desconto de taxa: &f{tax_discount}%'
+        - ''
+        - ' &7Juros por faixa:'
+        - ' &8• &f0-10kk &8→ &a2%'
+        - ' &8• &f10kk-15kk &8→ &a1%'
+        - ''
+
+  '2':
+    name: '&6Gold'
+    permission: ''
+    upgrade-cost: 5000000
+    max-balance: 100000000
+    max-yield-per-cycle: 300000
+    withdraw-tax-discount: 0.0
+    interest-brackets:
+      - max: 10000000
+        rate: 2.0
+      - max: 15000000
+        rate: 1.0
+    icon:
+      material: 'GOLD_INGOT'
+      name: '&6Nível 2 — Gold'
+      lore:
+        - ''
+        - ' &7Saldo máximo: &f{max_balance}'
+        - ' &7Rendimento máximo: &f{max_yield}'
+        - ' &7Desconto de taxa: &f{tax_discount}%'
+        - ' &7Custo do upgrade: &e{upgrade_cost}'
+        - ''
+        - ' &7Juros por faixa:'
+        - ' &8• &f0-10kk &8→ &a2%'
+        - ' &8• &f10kk-15kk &8→ &a1%'
+        - ''
+
+  '3':
+    name: '&bDeluxe'
+    permission: ''
+    upgrade-cost: 10000000
+    max-balance: 250000000
+    max-yield-per-cycle: 350000
+    withdraw-tax-discount: 0.0
+    interest-brackets:
+      - max: 10000000
+        rate: 2.0
+      - max: 20000000
+        rate: 1.0
+      - max: 30000000
+        rate: 0.5
+    icon:
+      material: 'DIAMOND'
+      name: '&bNível 3 — Deluxe'
+      lore:
+        - ''
+        - ' &7Saldo máximo: &f{max_balance}'
+        - ' &7Rendimento máximo: &f{max_yield}'
+        - ' &7Desconto de taxa: &f{tax_discount}%'
+        - ' &7Custo do upgrade: &e{upgrade_cost}'
+        - ''
+        - ' &7Juros por faixa:'
+        - ' &8• &f0-10kk &8→ &a2%'
+        - ' &8• &f10kk-20kk &8→ &a1%'
+        - ' &8• &f20kk-30kk &8→ &a0.5%'
+        - ''
+
+  '4':
+    name: '&3Super Deluxe'
+    permission: ''
+    upgrade-cost: 20000000
+    max-balance: 500000000
+    max-yield-per-cycle: 390000
+    withdraw-tax-discount: 0.0
+    interest-brackets:
+      - max: 10000000
+        rate: 2.0
+      - max: 20000000
+        rate: 1.0
+      - max: 30000000
+        rate: 0.5
+      - max: 50000000
+        rate: 0.2
+    icon:
+      material: 'DIAMOND_BLOCK'
+      name: '&3Nível 4 — Super Deluxe'
+      lore:
+        - ''
+        - ' &7Saldo máximo: &f{max_balance}'
+        - ' &7Rendimento máximo: &f{max_yield}'
+        - ' &7Desconto de taxa: &f{tax_discount}%'
+        - ' &7Custo do upgrade: &e{upgrade_cost}'
+        - ''
+        - ' &7Juros por faixa:'
+        - ' &8• &f0-10kk &8→ &a2%'
+        - ' &8• &f10kk-20kk &8→ &a1%'
+        - ' &8• &f20kk-30kk &8→ &a0.5%'
+        - ' &8• &f30kk-50kk &8→ &a0.2%'
+        - ''
+
+  '5':
+    name: '&d&lPremium'
+    permission: ''
+    upgrade-cost: 30000000
+    max-balance: 1000000000
+    max-yield-per-cycle: 500000
+    withdraw-tax-discount: 0.0
+    interest-brackets:
+      - max: 10000000
+        rate: 2.0
+      - max: 20000000
+        rate: 1.0
+      - max: 30000000
+        rate: 0.5
+      - max: 50000000
+        rate: 0.2
+      - max: 100000000
+        rate: 0.1
+    icon:
+      material: 'NETHER_STAR'
+      name: '&d&lNível 5 — Premium'
+      lore:
+        - ''
+        - ' &7Saldo máximo: &f{max_balance}'
+        - ' &7Rendimento máximo: &f{max_yield}'
+        - ' &7Desconto de taxa: &f{tax_discount}%'
+        - ' &7Custo do upgrade: &e{upgrade_cost}'
+        - ''
+        - ' &7Juros por faixa:'
+        - ' &8• &f0-10kk &8→ &a2%'
+        - ' &8• &f10kk-20kk &8→ &a1%'
+        - ' &8• &f20kk-30kk &8→ &a0.5%'
+        - ' &8• &f30kk-50kk &8→ &a0.2%'
+        - ' &8• &f50kk-100kk &8→ &a0.1%'
+        - ''

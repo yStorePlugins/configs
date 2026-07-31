@@ -1,0 +1,97 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+#
+# Multi-economy do yBanco.
+# Cada economia possui limites, taxas e mínimos próprios (seção bank).
+
+default: 'money'
+
+economies:
+  money:
+    provider: 'Money'
+    display: '&6Dinheiro'
+    abbreviated: '&6R$'
+    symbol: '$'
+    permission: ''
+    allow-offline: true
+    item:
+      material: GOLD_INGOT
+      name: '&6Dinheiro'
+      lore:
+        - ''
+        - ' &7Saldo no banco: &f{bank}'
+        - ' &7Saldo em mãos: &f{hand}'
+        - ''
+        - ' &eClique para gerenciar'
+        - ''
+    item-settings:
+      material: GOLD_INGOT
+      name: '&6Dinheiro'
+      lore:
+        - ''
+        - ' &7Tipo: &fMoney'
+        - ''
+    # Configurações bancárias desta economia
+    bank:
+      enabled: true
+      # Tag do #1 do top desta economia (chat / PAPI %ybanco_tag_money%)
+      top-tag: '&6[RICO]'
+      # Render de juros (selic/bolsa) para esta economia
+      interest-enabled: true
+      # Teto de rendimento por ciclo (0 = usa o do tier)
+      max-render: 0
+      # Mínimos
+      min-deposit: 1000.0
+      min-withdraw: 2000.0
+      min-cheque: 2000.0
+      # Taxa base de saque/cheque em % (desconto do tier é aplicado em cima)
+      withdraw-tax: 10.0
+      cheque-tax: 10.0
+      deposit-tax: 0.0
+      # Limites por ciclo (reset em general.limit-reset-seconds)
+      withdraw-limit: 10
+      cheque-limit: 10
+      # Economia usada para pagar upgrade de tier (apenas a default costuma ser true)
+      upgrade-currency: true
+
+  playerpoints:
+    provider: 'PlayerPoints'
+    display: '&aPlayerPoints'
+    abbreviated: '&app'
+    symbol: 'PP'
+    permission: ''
+    allow-offline: true
+    item:
+      material: EMERALD
+      name: '&aPlayerPoints'
+      lore:
+        - ''
+        - ' &7Saldo no banco: &f{bank}'
+        - ' &7Saldo em mãos: &f{hand}'
+        - ''
+        - ' &eClique para gerenciar'
+        - ''
+    item-settings:
+      material: EMERALD
+      name: '&aPlayerPoints'
+      lore:
+        - ''
+        - ' &7Tipo: &fPlayerPoints'
+        - ''
+    bank:
+      enabled: true
+      top-tag: '&a[PP-RICH]'
+      interest-enabled: false
+      max-render: 0
+      min-deposit: 10.0
+      min-withdraw: 10.0
+      min-cheque: 10.0
+      withdraw-tax: 5.0
+      cheque-tax: 5.0
+      deposit-tax: 0.0
+      withdraw-limit: 20
+      cheque-limit: 20
+      upgrade-currency: false

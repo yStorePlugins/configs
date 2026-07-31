@@ -1,0 +1,4 @@
+version: '2.0.0'
+
+# Local do NPC do banco (world;x;y;z;yaw;pitch) ou 'none'
+npc-location: 'none'

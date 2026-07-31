@@ -1,0 +1,14 @@
+# Ao morrer, o jogador perde esta % do money em mãos (Vault).
+# O saldo do banco NÃO é afetado.
+
+groups:
+  member:
+    order: 1
+    permission: 'ybanco.membro'
+    percentage: 10.0
+    message:
+      - ''
+      - '&cVocê morreu e perdeu 10% de todo seu money em mãos.'
+      - '&fMontante antigo: &7{antigo}&f.'
+      - '&fMontante atual: &7{atual}&f.'
+      - ''
