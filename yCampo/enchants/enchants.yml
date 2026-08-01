@@ -133,6 +133,7 @@ Multiplicador:
   Padrao: 0
   Maximo: -1
   BonusPorLevel: 10.0 # em porcentagem
+  providers-multiplier: [ 'money' ]
   Prices-Default:
     price1:
       provider: 'money'

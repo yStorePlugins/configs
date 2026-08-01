@@ -1,0 +1,5 @@
+name: yCampo
+version: '${project.version}'
+main: com.ystoreplugins.ycampo.bungee.MainBungee
+authors: [ yChusy ]
+website: https://ystoreplugins.com.br
