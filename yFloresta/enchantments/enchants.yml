@@ -506,6 +506,7 @@ enchants:
       price2:
         provider: 'yfloresta'
         price: 100.0
+    providers-multiplier: [ 'yfloresta', 'money' ]
     displays:
       can:
         material: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
