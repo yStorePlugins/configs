@@ -72,6 +72,12 @@ Opcoes:
   Home icon: 'GRASS'
   # Nome default das homes
   Home name: '&e{home}'
+  # Comando(s) executado(s) no console ao usar /darhome
+  # Placeholders: {player} {quantia} (novo limite) {antigo} (limite atual) {add} (quantia adicionada)
+  # LuckPerms: 'lp user {player} permission set yessentials.limite.home.{quantia} true'
+  # PermissionsEx: 'pex user {player} add yessentials.limite.home.{quantia}'
+  DarHome comandos:
+    - 'lp user {player} permission set yessentials.limite.home.{quantia} true'
   # Ativar o sistema de spawners do plugin
   Spawners: true
   # Chance de o spawner dropar ao explodir

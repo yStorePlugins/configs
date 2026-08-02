@@ -79,6 +79,7 @@ Commands:
   Publica: 'publica|public'
   Publicas: 'publicas|publics'
   Gerenciar: 'gerenciar|manage'
+  Darhome: 'darhome|givehome'
   #
   Sudo: 'sudo'
   Near: 'near|perto'
