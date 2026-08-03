@@ -43,7 +43,7 @@ general:
   max-buy: 64
   # Fechar o menu depois de confirmar
   close-confirm: false
-  # Delay entre operações de compra e venda
+  # Delay entre operações de compra e venda (por jogador)
   # em segundos
   delay: 3
   # Formato do desconto nas mensagens

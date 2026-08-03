@@ -32,6 +32,7 @@ chat:
   sold: '&aVocê vendeu produtos no shop.' #deixe '' para não usar
   sell-has: '&aVocê não tem {amount} itens para vender.'
   delay: '&c&lERRO! &cAguarde &e{time} &cpara comercializar na loja novamente.'
+  delay-global: '&c&lERRO! &cEste item está em delay global. Aguarde &e{time}&c.'
   digit: |
     &r
     &aDigite a quantia que deseja comprar do item {item}&a.

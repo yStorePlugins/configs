@@ -44,8 +44,11 @@ Itens:
       # necessário para verificar a quantia disponível no inv
       # deixe 0 para não usar
       InvStackVerify: 64
-      # Ativar o delay para evitar cliques rápidos
+      # Ativar o delay para evitar cliques rápidos (por jogador)
       Delay: true
+      # Delay global do item em segundos (0 = desativado)
+      # Após comprar, NENHUM jogador pode comprar o mesmo item até acabar o tempo
+      Delay-Global: 0
       Slot: 10
       Display:
          material: BRICK
