@@ -213,6 +213,26 @@ items:
       - '&fSua classe: &7{classe}'
       - ''
       - '&aClique para upar sua classe'
+  # Item utilizado para ativar a visibilidade
+  visibility-off:
+    material: INK_SACK:8
+    slot: 8
+    name: '&eVisibilidade'
+    lore:
+      - '&7Atualmente a visibilidade dos'
+      - '&7jogadores está desabilitada.'
+      - ''
+      - '&aClique para habilitar.'
+  # Item utilizado para desativar a visibilidade
+  visibility-on:
+    material: INK_SACK:10
+    slot: 8
+    name: '&eVisibilidade'
+    lore:
+      - '&7Atualmente a visibilidade dos'
+      - '&7jogadores está habilitada.'
+      - ''
+      - '&aClique para desabilitar.'
   # Siga o exemplo abaixo para criar itens custom
   #custom:
   #  material: BARRIER:0
