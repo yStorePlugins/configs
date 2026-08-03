@@ -37,16 +37,19 @@ chat:
 
     &a/feira - Abre o menu principal
     &a/feira [nome] - Abre o menu da sua feira ou teleporta para uma feira
+    &a/feira anunciar [nome] - Anuncia a sua feira
 
   help-staff: |
 
     &a/feira - Abre o menu principal
     &a/feira [nome] - Abre o menu da sua feira ou teleporta para uma feira
+    &a/feira anunciar [nome] - Anuncia a sua feira
 
     &a/feira criar <nome> - Criar uma feira
     &a/feira deletar [nome] - Deletar uma feira
     &a/feira desalugar [nome] - Desalugar uma feira
     &c/feira reload - Recarrega as configurações
+
 
   no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
   item-no: '&cO item não pode ser nulo.'
@@ -81,3 +84,10 @@ chat:
   feira-max: '&cVocê atingiu o limite máximo de feiras ({max}).'
   feira-abandoned: '&aVocê abandonou o aluguel da sua feira.'
   feira-unrented: '&aVocê desalugou a feira &f{feira}&a com sucesso.'
+  announce-none: '&cVocê não tem uma feira alugada para anunciar.'
+  announce-delay: '&cVocê deve aguardar {tempo} para anunciar sua feira novamente.'
+  # Mensagens de anúncio (sorteia uma aleatória). Placeholders: {player}, {feira}, {feira_key}
+  announce-message:
+    - '&a[Anuncio] O jogador &7{player}&a está anunciando a feira &e{feira}&a!<nl>&aClique &7&l<click:run_command:/feira {feira_key}>AQUI</click>&a para ir até a feira dele!'
+    - '&b[Anuncio] O jogador &f{player}&b está anunciando a feira &e{feira}&b!<nl>&bClique &f&l<click:run_command:/feira {feira_key}>AQUI</click>&b para ir até a feira dele!'
+

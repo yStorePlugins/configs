@@ -39,6 +39,9 @@ general:
   renew-percent: 10.0
   # Quantia máxima de feiras que um jogador pode ter
   feira-max: 2
+  # Delay padrão (em segundos) para anunciar a feira
+  # Pode ser sobrescrito com a permissão yfeiras.anuncio_delay.<segundos>
+  announce-delay: 60
   hologram-lines:
     rent:
       - '[item]{icon}'

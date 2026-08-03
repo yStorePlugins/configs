@@ -11,3 +11,4 @@
 # Você pode criar quantas aliases quiser.
 commands:
   feira: 'feira|feiras|tienda|tiendas'
+  anunciar: 'anunciarfeira|anunciarfeiras'
