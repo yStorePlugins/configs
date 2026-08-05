@@ -73,6 +73,11 @@ redis:
 #
 # Sistemas principais.
 
+# Mundos onde o yLobby NÃO aplica mecânicas (inventário, dano, jump, scoreboard, etc).
+# Útil em servidores multi-mundo / minigames no mesmo server.
+# Exemplo: [ 'world_pvp', 'bedwars', 'skywars' ]
+blacklist-worlds: []
+
 # Ativar o sistema do NPC ficar olhando para o player
 npc-look-close: true
 
@@ -280,7 +285,7 @@ join:
   announce: '&a+ %vault_prefix% &f{player}&a entrou.'
   # Enviar anúncio de entrada em boss-bar (deixe vazio para não usar)
   announce-bossbar: ''
-  # Mundos que não irá receber os Join-Items
+  # Mundos que não irão receber os Join-Items (além de blacklist-worlds)
   join-item-world-blacklist: []
 
 # Sistema de day cycle
