@@ -1,0 +1,17 @@
+# Addon MultiSV (opcional)
+Ativar: false
+
+# LOBBY = servidor de entrada / EVENTO = servidor onde a guerra ocorre
+Role: 'EVENTO'
+
+# Nome exato deste servidor no proxy
+ServerName: 'evento'
+
+# Nome exato do servidor de guerra no proxy
+EventServer: 'evento'
+
+# TTL das sessões (segundos)
+SessionTTLSeconds: 120
+
+# Reservado para mensagens forward customizadas
+Channel: 'yguerra:multisv'

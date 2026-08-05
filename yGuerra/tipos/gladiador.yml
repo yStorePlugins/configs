@@ -191,6 +191,19 @@ Recompensas:
     #
     Sem clan:
       - 'give {player} wood 64'
+  #
+  # Recompensa opcional para quem entrou e ficou do início ao fim.
+  # Quem sair no meio (menu, quit, kick) não recebe. Morrer ainda conta.
+  # Por padrão, quem já ganhou recompensa de vitória/colocação não recebe esta.
+  Participacao:
+    Ativar: false
+    Dar para colocados: false
+    Cargos:
+      Lider: [ ]
+      Capitao: [ ]
+      Confiavel: [ ]
+      Membro: [ ]
+      Sem clan: [ ]
 #
 #
 Efeitos:
