@@ -350,3 +350,10 @@ chamber:
 # chance,recompensa
 rewards:
   - '100.0,reward1'
+# Recompensa por participação (opcional)
+# Deixe a lista vazia ou remova para desativar
+# chance,recompensa — só quem fica do início ao fim (eliminação conta; sair/desconectar não)
+# Vencedores NÃO recebem por padrão
+participation-rewards-give-to-winners: false
+participation-rewards: []
+#  - '100.0,reward2'

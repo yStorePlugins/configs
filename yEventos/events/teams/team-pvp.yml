@@ -393,3 +393,10 @@ messages-announces:
   actionbar-warmup: '&fAquecimento: &c{time}s'
   # Actionbar - Inicializado
   actionbar-initialized: '&fTempo restante: &c{time_left}s'
+# Recompensa por participação (opcional)
+# Deixe a lista vazia ou remova para desativar
+# chance,recompensa — só quem fica do início ao fim (eliminação conta; sair/desconectar não)
+# Vencedores NÃO recebem por padrão
+participation-rewards-give-to-winners: false
+participation-rewards: []
+#  - '100.0,reward2'
