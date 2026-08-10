@@ -51,3 +51,4 @@ subcommands:
   givespecialitem: 'givespecialitem|daritemespecial|giveitemespecial'
   resetkdr: 'resetkdr|resetarkdr'
   setowner: 'setowner|definirdono|setdono'
+  force: 'force|forcar|forçar'
