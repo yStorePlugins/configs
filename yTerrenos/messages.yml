@@ -37,6 +37,9 @@ chat:
     &a/terreno pvp [nome] - Alternar PvP no terreno
     &a/terreno fly [nome] - Alternar FLY no terreno
     &a/terreno cerca [nome] - Alternar CERCA do terreno
+    &a/terreno entrada [nome] [on/off] - Alternar entrada de visitantes
+    &a/terreno mensagem <mensagem> [on/off] - Mensagem de entrada
+    &a/terreno merge - Juntar terrenos próximos
     &a/terreno vender [nome] - Colocar terreno à venda
     &a/terreno comprar [nome] [player] - Comprar terreno
     &a/terreno lista - Listar seus terrenos
@@ -53,6 +56,9 @@ chat:
     &a/terreno pvp [nome] - Alternar PvP no terreno
     &a/terreno fly [nome] - Alternar FLY no terreno
     &a/terreno cerca [nome] - Alternar CERCA do terreno
+    &a/terreno entrada [nome] [on/off] - Alternar entrada de visitantes
+    &a/terreno mensagem <mensagem> [on/off] - Mensagem de entrada
+    &a/terreno merge - Juntar terrenos próximos
     &a/terreno vender [nome] - Colocar terreno à venda
     &a/terreno comprar [nome] - Comprar terreno
     &a/terreno lista - Listar seus terrenos
@@ -97,6 +103,7 @@ chat:
     &aAmigos: &c{friends}
   terrain-created: '&aTerreno criado com sucesso.'
   terrain-deleted: '&aTerreno deletado com sucesso.'
+  terrain-blocks-refunded: '&aVocê recebeu de volta &f{blocks} blocos &ado terreno deletado.'
   terrain-owner: '&cVocê não é dono deste terreno.'
   terrain-owner-target: '&c{player} não é dono deste terreno.'
   terrain-pvp: '&cO PVP está desabilitado neste terreno.'
@@ -116,6 +123,14 @@ chat:
   terrain-fence-changed: '&aStatus da cerca alternado para &7(&r{status}&7)&a.'
   terrain-pvp-changed: '&aStatus do pvp alternado para &7(&r{status}&7)&a.'
   terrain-fly-changed: '&aStatus do fly alternado para &7(&r{status}&7)&a.'
+  terrain-entry-changed: '&aEntrada de visitantes alternada para &7(&r{status}&7)&a.'
+  terrain-entry-denied: '&cA entrada neste terreno está fechada para visitantes.'
+  terrain-entry-message-changed: '&aMensagem de entrada atualizada com sucesso.'
+  terrain-entry-message-status: '&aMensagem de entrada alternada para &7(&r{status}&7)&a.'
+  terrain-merge-size: '&cO merge ultrapassaria o tamanho máximo ({size}/{max}).'
+  terrain-merge-other: '&cNão foi possível juntar. A nova área ficaria próxima ou sobre outro terreno.'
+  terrain-merge-near: '&cNão há terrenos seus próximos para juntar.'
+  terrain-merged: '&aTerrenos juntados com sucesso. Terreno final: &f{name} &a({size}x{size}). Área nova: &f{blocks}&a blocos.'
   terrain-home-changed: '&aLocal da home alterado com sucesso.'
   terrain-icon-changed: '&aÍcone alterado com sucesso.'
   terrain-price-changed: '&aVocê mudou o valor para {amount}.'
