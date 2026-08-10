@@ -55,6 +55,9 @@ camarote-allowed-commands:
   - '/l'
   - '/.'
 
+# Eventos que não serão carregados no plugin
+disabled-events: []
+
 # Delay de desaparecimento de blocos da arena (TNTRUN ou similar)
 # em ticks (20t = 1s)
 disappear-delay: 8
