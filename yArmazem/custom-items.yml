@@ -1,0 +1,50 @@
+# Plantacoes com itens customizados (material, name, lore, etc)
+# Carregadas automaticamente no PlantacaoDao / Plantacao
+Plantacoes:
+  diamante_especial:
+    Ordem: 100
+    # Item real (depositar/coletar) - material, name, lore...
+    Item:
+      material: 'DIAMOND:0'
+      name: '&bDiamante Especial'
+      lore:
+        - '&7Item customizado do armazém'
+      glow: true
+    Display: '&bDiamante Especial'
+    Mensagens:
+      Vendeu: ''
+      Coletou: ''
+    Title:
+      Vendeu: ''
+      Coletou: ''
+    Actionbar:
+      Vendeu: ''
+      Coletou: ''
+    Preco: 50.0
+    Precos:
+      preco1:
+        Provider: 'Money'
+        Amount: 50.0
+    PermissionVender: ''
+    PermissionRecolher: ''
+    MostrarPrincipal: true
+    ItemDisplay:
+      material: 'DIAMOND:0'
+      glow: true
+      name: '&bDiamante Especial'
+      lore:
+        - '&fQuantia: &a{quantia}&f.'
+        - '&fPreço unitário: &a{unitario}&f.'
+        - '&fPreço total: &a{total}&f.'
+        - ''
+        - '&7Clique com esquerdo para vender.'
+        - '&7Clique com direito para coletar.'
+    Recompensas: []
+    Vender botao: 'LEFT'
+    Recolher botao: 'RIGHT'
+    Comando:
+      Ativar: false
+      UsarQuantia: true
+      MultiplicarQuantiaPreco: true
+      InvBypass: true
+      Comandos: []

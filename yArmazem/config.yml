@@ -11,9 +11,6 @@ Comando:
   Comando: 'armazem'
   Aliases: [ ]
 
-# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
-Formatacao: 'LETRA'
-
 # Mundos que irá funcionar o armazem
 # Deixe ALL para todos
 Mundos plot:
@@ -181,19 +178,3 @@ Setas:
     Name: '&aPróxima'
     Lore:
       - '&7Clique para ir à próxima página.'
-
-# Formatos de money e quantia
-Formats:
-  - ''
-  - ''
-  - 'K'
-  - 'M'
-  - 'B'
-  - 'T'
-  - 'Q'
-  - 'QQ'
-  - 'S'
-  - 'SS'
-  - 'O'
-  - 'N'
-  - 'D'
