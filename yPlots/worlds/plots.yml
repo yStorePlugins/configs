@@ -20,6 +20,8 @@ plot-height: 64
 biome: 'PLAINS'
 
 # Blocos da geração
+# Formato: MATERIAL ou MATERIAL:data  (ex: 'DIRT:2', 'WOOL:14', 'STONE_SLAB2:0')
+# Use aspas para garantir o data value no YAML.
 blocks:
   # Camada de bedrock
   bedrock: 'BEDROCK'

@@ -8,5 +8,4 @@
 
 # Utilize "comando|alias" para criar aliases.
 commands:
-  plots: "plots|plot|p|terreno|terrenos|yplots"
-  merge: "ymerge|plotmerge|agrupar"
+  plots: 'plots|plot|p|terreno|terrenos|yplots'

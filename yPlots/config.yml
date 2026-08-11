@@ -70,9 +70,9 @@ general:
   clear-on-reset: false
   # Taxa de venda para o servidor (% do preço; 0 = sem taxa)
   sell-tax-percent: 5.0
-  # Altura máxima de proteção Y (blocos acima disso não são protegidos)
-  max-build-height: 256
-  # Altura mínima de proteção Y (blocos abaixo disso não são protegidos)
+  # Altura máxima (Y) em que o jogador pode construir no plot world. 0 = ilimitado
+  max-build-height: 0
+  # Altura mínima (Y) em que o jogador pode construir. 0 = sem limite mínimo
   min-build-height: 0
   # Mostrar bordas com partículas
   border-particles: true
@@ -107,10 +107,16 @@ general:
   # Economia usada no member-slot-cost
   member-slot-economy: 'money'
 
-  # Custo para desbloquear fly no terreno (0 = grátis se tiver perm yplots.fly*)
+  # Custo para desbloquear fly no terreno (painel). 0 = grátis para todos.
+  # yplots.fly.free / yplots.admin desbloqueiam sem pagar mesmo com custo > 0.
   fly-cost: 5000.0
   # Economia usada no fly-cost
   fly-economy: 'money'
+
+  # Limite de caracteres do nome do terreno (0 = sem limite)
+  max-name-length: 24
+  # Limite de caracteres da descrição do terreno (0 = sem limite)
+  max-description-length: 48
 
   # Cooldowns por ação em segundos (0 = sem cooldown)
   delays:
@@ -164,6 +170,7 @@ day-night:
 # display-name: nome no ícone do menu (suporta & cores)
 # material: MATERIAL ou MATERIAL:data (1.8)
 # prices: lista de preços (provider = economia em economies.yml, amount = valor)
+# material aceita MATERIAL ou MATERIAL:data (ex: 'DIRT:2', 'WOOL:14') — use aspas
 wall-blocks:
   # Parede padrão (grátis)
   stone:
@@ -203,7 +210,7 @@ wall-blocks:
         amount: 1500.0
 
 # Blocos compráveis para a BORDA (slab/topo y=altura+1)
-# Mesma estrutura de wall-blocks
+# Mesma estrutura de wall-blocks — material: 'STONE_SLAB2' ou 'WOOL:14'
 border-blocks:
   # Borda padrão (grátis)
   slab:
@@ -250,10 +257,10 @@ default-flags:
   explosion: false
   # Permite fogo e propagação
   fire: false
-  # Permite spawn de monstros
+  # Permite spawn natural de monstros (zombie, creeper, slime, etc.)
   mob-spawn: false
-  # Permite spawn de animais
-  animal-spawn: true
+  # Permite spawn natural de animais e passivos (vaca, ovelha, squid, morcego, etc.)
+  animal-spawn: false
   # Permite redstone
   redstone: true
   # Permite fluxo de líquidos (água/lava)
