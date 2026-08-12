@@ -312,6 +312,11 @@ Opcoes:
   # Mundos onde não poderá voltar usando /back
   BackWorld blacklist:
     - 'none'
+  # Cooldown próprio do /back em segundos (0 = desativado)
+  # não usa o sistema de Delay commands
+  # bypass: yessentials.back.cooldown.bypass
+  Back cooldown: 0
+  Back cooldown bypass: 'yessentials.back.cooldown.bypass'
   # Cobrar custo para usar /back
   Back-Cost:
     Ativar: false

@@ -299,6 +299,7 @@ Outros:
   Back nao: '&cVocê não tem nenhum local para voltar.'
   Back target: '&aJogador &f{player}&ateleportado para o local anterior.'
   Back nao target: '&cO jogador &f{player}&c não tem nenhum local para voltar.'
+  Back delay: '&cVocê precisa aguardar {delay} para usar o /back novamente.'
   Hat: '&aVocê equipou um chapéu.'
   Hat segurando: '&cVocê deve estar segurando um item.'
   Skull: '&aVocê pegou a cabeça do jogador &f{player}&a.'
