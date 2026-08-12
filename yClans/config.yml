@@ -75,6 +75,10 @@ chats:
   ally-format: '&a[A] &7[{clan_colortag}&7] &b{role} &f{player}: &7{message}'
   clan-spy-format: '&8[C] [{clan_colortag}&8] [{clan_name}] [{role}&8]{player}: {message}'
   ally-spy-format: '&8[A] &8- [{clan_colortag}&8] [{clan_name}] [{role}&8]{player}: {message}'
+  # Desativa códigos de formatação na mensagem do jogador (clan/aliado)
+  # Remove: bold (&l), underline (&n), italic (&o), strikethrough (&m), obfuscated (&k) e reset (&r)
+  # Cores (&0-&f, hex) continuam permitidas
+  disable-formats: true
 
 # Sistema de comandos que serão executados em determinadas ações
 execute-commands:
