@@ -120,6 +120,24 @@ Mensagens:
     - '&7para cancelar digite &ncancelar&7.'
     - ''
 
+# Sons gerais do plugin
+# Lista de sons: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+Sons:
+  # Ativar os sons
+  Usar: true
+  # Som ao abrir o menu principal
+  Abrir menu: 'BLOCK_CHEST_OPEN'
+  # Som ao abrir uma categoria
+  Abrir categoria: 'UI_BUTTON_CLICK'
+  # Som ao recolher/pegar o kit
+  Recolher kit: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+  # Som ao abrir o preview do kit
+  Preview: 'UI_BUTTON_CLICK'
+  # Som ao voltar no menu
+  Voltar: 'UI_BUTTON_CLICK'
+  # Som ao falhar (permissão, delay, inventário cheio, etc)
+  Erro: 'ENTITY_VILLAGER_NO'
+
 # Setas dos menus
 Setas:
   Voltar:
