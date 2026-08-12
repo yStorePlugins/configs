@@ -282,3 +282,9 @@ arena-targets-menu:
   previous-slot: 18
   next-slot: 26
   back-slot: 40
+  item:
+    material: '{player}'
+    name: '&a{player}'
+    lore:
+      - '&7Clique para selecionar.'
+      - '&7Arena: &f{arena}'
