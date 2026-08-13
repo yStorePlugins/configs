@@ -58,6 +58,9 @@ GastarLimite: false
 # Caso esteja false, irá verificar se possui apenas 1 slot disponível (ideal para servidores que vendem spawners stackados)
 VerificarInv: false
 
+# Fechar o menu ao comprar spawners com o botão Q
+q-close: true
+
 # Ativar o sistema de atualizar o menu
 Menu updater: true
 
