@@ -6,6 +6,8 @@ areas:
     permission: ''
     # NÃO ALTERAR
     location: 'none'
+    # Whitelist de flowers (keys da flowers.yml). Vazio = reconhece todas
+    flowers: []
     # Preços para comprar a área
     costs:
       price1:
