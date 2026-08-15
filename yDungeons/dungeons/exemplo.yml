@@ -38,6 +38,16 @@ death-mode: 'REMOVE'
 # Se verdadeiro, o jogador deve estar com o inventario vazio para entrar na fila ou iniciar a dungeon.
 require-empty-inventory: false
 
+# Opcoes de equipamentos custom da dungeon
+# Desativa a armadura evolutiva custom do plugin nesta dungeon
+disable-armor: false
+# Desativa as armas (weapons) custom do plugin nesta dungeon
+disable-weapons: false
+# Desativa a espada evolutiva custom do plugin nesta dungeon
+disable-sword: false
+# Se verdadeiro, jogadores entram com os proprios itens (sem kit custom: espada/armadura/armas/start-items)
+keep-own-items: false
+
 # Whitelist de jogadores (UUIDs). Se vazio, qualquer jogador pode entrar.
 whitelist:
   enabled: false

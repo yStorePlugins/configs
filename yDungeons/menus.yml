@@ -1384,6 +1384,55 @@ dungeon-setup-edit:
       - ''
       - ' &eClique para alternar instantaneamente.'
       - ''
+  disable-armor:
+    slot: 19
+    material: 'DIAMOND_CHESTPLATE'
+    name: '&c&lDesativar Armaduras'
+    lore:
+      - ''
+      - ' &7Status: {disable_armor}'
+      - ''
+      - ' &7Quando ligado, nao entrega armadura custom.'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
+  disable-weapons:
+    slot: 20
+    material: 'BOW'
+    name: '&c&lDesativar Weapons'
+    lore:
+      - ''
+      - ' &7Status: {disable_weapons}'
+      - ''
+      - ' &7Quando ligado, nao entrega armas custom.'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
+  disable-sword:
+    slot: 21
+    material: 'DIAMOND_SWORD'
+    name: '&c&lDesativar Espada'
+    lore:
+      - ''
+      - ' &7Status: {disable_sword}'
+      - ''
+      - ' &7Quando ligado, nao entrega a espada custom.'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
+  keep-own-items:
+    slot: 22
+    material: 'ENDER_CHEST'
+    name: '&a&lItens Proprios (Global)'
+    lore:
+      - ''
+      - ' &7Status: {keep_own_items}'
+      - ''
+      - ' &7Quando ligado, jogadores entram com'
+      - ' &7seus proprios itens (sem kit custom).'
+      - ''
+      - ' &eClique para alternar instantaneamente.'
+      - ''
 
   # BLOCO 2 — Progressao / rounds
   create-round:
