@@ -23,9 +23,10 @@ trail:
 # {bonus_almas}
 # {discount_spawners}
 # {discount_machines}
+# {level} {progress} {progress_needed} {max_level} (sistema de fragmentos)
 item:
   material: 'DIAMOND_HELMET'
-  name: '&aCapacete Básico'
+  name: '&aCapacete Básico &7[Nv. {level}]'
   lore:
     - '&7Este capacete garante buffs'
     - '&7nos &fspawners&7.'
@@ -33,6 +34,10 @@ item:
     - '&6Informações'
     - ' &fBônus &6(spawners)&f: &7{bonus_spawners}%'
     - ' &fDesconto &6(spawners)&f: &7{discount_spawners}%'
+    - ''
+    - '&6Evolução'
+    - ' &fNível: &7{level}&8/&7{max_level}'
+    - ' &fProgresso: &7{progress}%&8/&7{progress_needed}%'
     - ''
 
 buffs:

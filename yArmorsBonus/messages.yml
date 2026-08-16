@@ -21,6 +21,7 @@ chat:
     &aArmors-Bonus comandos:
 
     &a> /armors give <player> <armor>
+    &a> /armors givefragment <player> <fragment> [amount]
     &a> /armors reload
 
   armor-give: '&aVocê deu &71x {armor}&a para o jogador &7{player}&a.'
@@ -28,3 +29,13 @@ chat:
   armor-list: |
     &cArmadura não encontrada.
     &cArmaduras disponíveis: &f{list}
+
+  fragment-give: '&aVocê deu &7{amount}x {fragment}&a para o jogador &7{player}&a.'
+  fragment-received: '&aVocê recebeu &7{amount}x {fragment}&a.'
+  fragment-list: |
+    &cFragmento não encontrado.
+    &cFragmentos disponíveis: &f{list}
+  fragment-disabled: '&cO sistema de fragmentos está desativado.'
+  fragment-applied: '&aFragmento aplicado! Progresso: &f{progress}%&a/&f{progress_needed}% &7| &aNível: &f{level}&a/&f{max_level}'
+  fragment-levelup: '&aSua armadura subiu para o nível &f{level}&a!'
+  fragment-max-level: '&cEsta armadura já está no nível máximo (&f{max_level}&c).'

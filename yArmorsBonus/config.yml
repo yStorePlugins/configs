@@ -12,3 +12,21 @@
 general:
   # Permitir equipar como capacete ao clicar com botão direito
   equip-helmet: true
+
+# Sistema opcional de Fragmentos e Níveis
+# Arraste fragmentos na armadura para subir o progresso (%).
+# Ao chegar em 100% a armadura sobe de nível e ganha mais bônus.
+fragments-system:
+  # Ativar/desativar o sistema
+  enabled: false
+
+  # Nível máximo da armadura
+  max-level: 10
+
+  # Progresso necessário para subir 1 nível
+  progress-needed: 100.0
+
+  # Multiplicador de bônus por nível (%)
+  # Fórmula: bônus_final = bônus_base * (1 + nível * bonus-multiplier-per-level / 100)
+  # Exemplo com 10.0: nível 1 = +10% nos bônus base, nível 5 = +50%, nível 10 = +100%
+  bonus-multiplier-per-level: 10.0

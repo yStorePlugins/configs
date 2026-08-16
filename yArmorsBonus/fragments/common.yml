@@ -1,0 +1,16 @@
+# Nome do fragmento
+display-name: '&aFragmento Comum'
+
+# Quantidade de progresso (%) adicionada ao arrastar na armadura
+percent: 5.0
+
+# Item do fragmento
+# Placeholders: {percent} {display}
+item:
+  material: 'PRISMARINE_SHARD'
+  name: '&aFragmento Comum'
+  lore:
+    - '&7Arraste este fragmento em uma armadura'
+    - '&7para adicionar &f{percent}% &7de progresso.'
+    - ''
+    - '&eClique com o fragmento na armadura!'
