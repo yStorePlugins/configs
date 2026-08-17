@@ -1,0 +1,28 @@
+#  ____
+# / ___|  ___  __ _ ___  ___  _ __
+# \___ \ / _ \/ _` / __|/ _ \| '_ \
+#  ___) |  __/ (_| \__ \ (_) | | | |
+# |____/ \___|\__,_|___/\___/|_| |_|
+#
+# Temporada padrão (sempre ativa se nenhuma outra estiver no período).
+
+display-name: '&7Padrão'
+# Ative/desative a temporada
+enabled: true
+# true = temporada padrão (fallback quando nenhuma outra está no período)
+# Pode renomear o arquivo; o que importa é default: true
+default: true
+# Maior valor vence se várias temporadas estiverem ativas
+priority: 0
+# Formato MM-dd (ex: 12-01). Vazio = sempre
+start-date: ''
+# Formato MM-dd (ex: 12-01). Vazio = sempre
+end-date: ''
+# Nome do Effect/Particle do Bukkit
+particle: 'CLOUD'
+# Prefixo nas mensagens de airdrop
+messages-prefix: ''
+# Multiplica a quantidade de rolls de loot
+loot-multiplier: 1.0
+# Sufixo no holograma/nome da caixa
+visual-suffix: ''

@@ -1,0 +1,28 @@
+#  ____
+# / ___|  ___  __ _ ___  ___  _ __
+# \___ \ / _ \/ _` / __|/ _ \| '_ \
+#  ___) |  __/ (_| \__ \ (_) | | | |
+# |____/ \___|\__,_|___/\___/|_| |_|
+#
+# Temporada de Natal (1 a 31 de dezembro).
+# Defina enabled: true para ativar no período.
+
+display-name: '&c&lNatal'
+# Ative manualmente quando quiser a temporada
+enabled: false
+# false = não é a temporada padrão
+default: false
+# Prioridade sobre a temporada default
+priority: 10
+# Período no formato MM-dd
+start-date: '12-01'
+# Período no formato MM-dd
+end-date: '12-31'
+# Partícula exibida no evento
+particle: 'SNOWBALL'
+# Prefixo nas mensagens públicas
+messages-prefix: '&c❄ '
+# Multiplicador de loot (1.5 = +50%)
+loot-multiplier: 1.5
+# Sufixo visual no holograma
+visual-suffix: ' &c❄'

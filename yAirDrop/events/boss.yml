@@ -1,0 +1,146 @@
+#  _____                 _
+# | ____|_   _____ _ __ | |_ ___
+# |  _| \ \ / / _ \ '_ \| __/ __|
+# | |___ \ V /  __/ | | | |_\__ \
+# |_____| \_/ \___|_| |_|\__|___/
+#
+# Evento: Airdrop Boss
+# Spawna um boss; a caixa só abre após derrotá-lo.
+#
+# type: NORMAL | LIGHTNING | GLOBAL | SECRET | VIP | PVP | COOPERATIVE | BOSS | WAVES
+# lock: segundos extras de tranca na captura (0 = sem tranca extra / instantaneo se capture-seconds tambem for 0)
+# animation: NONE | PARACHUTE | BALLOON
+# loot.type: ITEM | MONEY | COMMAND
+# MONEY.provider = chave de economies.yml
+
+# Nome colorido (mensagens, menus, holograma fallback)
+display-name: '&5Airdrop Boss'
+# Descrição curta (admin/menus)
+description: 'Derrote o boss para abrir a caixa.'
+# Tipo lógico do evento
+type: BOSS
+# false = não entra no auto-spawn e não pode ser iniciado
+enabled: true
+# Peso no sorteio automático (maior = mais frequente)
+weight: 10
+# true = anuncia início no chat global
+announce: true
+# true = inclui coordenadas na mensagem pública
+global-location: true
+# true = airdrop secreto (sem coords; radar só após descobrir)
+secret: false
+# Permissão VIP para abrir (vazio = qualquer um). Ex: yairdrop.vip
+vip-permission: ''
+# Segundos até a caixa expirar se ninguém abrir
+expire-seconds: 900
+# Segundos segurando botão direito para capturar
+capture-seconds: 5
+# Segundos extras de tranca na captura (0 = sem extra)
+lock: 0
+# Quantas vezes pode ser recolhido no total (sempre 1x por jogador)
+max-collects: 1
+# Animação de queda do céu
+animation: METEORITE
+
+# Visual da caixa no chão
+crate:
+  # Material Bukkit: CHEST, BARREL, BEACON, ENDER_CHEST, TRAPPED_CHEST, etc.
+  material: ENDER_CHEST
+  # CustomModelData (1.14+). 0 = desativado
+  custom-model-data: 0
+  # Offset do holograma em relacao a caixa (blocos)
+  hologram-offset:
+    x: 0.0
+    y: 1.6
+    z: 0.0
+  # Linhas do holograma acima da caixa (& cores)
+  # Placeholders: {left} {max-collects} {collects}
+  hologram:
+    - '&5&lAirdrop Boss'
+    - '&7Coletas: &e{left}&7/&e{max-collects}'
+    - '&7Derrote o boss!'
+
+# Requisitos para abrir a caixa
+requirements:
+  # ID da chave NBT (dê com /airdrop givekey <jogador> <id>). Vazio = sem chave
+  key: ''
+  # Senha digitada no chat ao clicar. Vazio = sem senha. "cancelar" aborta
+  password: ''
+  # Material exigido no inventário (ex: TRIPWIRE_HOOK). Vazio = nenhum
+  item: ''
+  # Permissão Bukkit exigida. Vazio = nenhuma
+  permission: ''
+  # Nível mínimo do jogador (0 = desativado)
+  level: 0
+  # Custo em economia para abrir (0 = grátis)
+  money: 0
+  # Provider da economia (chave de economies.yml). Ex: money, playerpoints
+  money-provider: money
+  # Chave de missão que deve estar concluída (missions.yml). Vazio = nenhuma
+  mission: ''
+
+# Minigame de hackeamento ao clicar
+hack:
+  # true = abre minigame antes da captura
+  enabled: false
+  # SEQUENCE = digitar sequência de números no chat
+  type: SEQUENCE
+  # Quantidade de dígitos na sequência
+  length: 4
+
+# Zona PvP ao aterrissar
+pvp:
+  # true = ativa zona de combate
+  enabled: false
+  # Raio da zona em blocos a partir da caixa
+  radius: 20
+
+# Exige vários jogadores próximos para abrir
+cooperative:
+  # true = modo cooperativo
+  enabled: false
+  # Quantidade mínima de jogadores no raio
+  players: 5
+  # Raio em blocos ao redor da caixa
+  radius: 8
+
+# Boss que deve ser derrotado antes de abrir
+boss:
+  # true = spawna boss no aterrissar
+  enabled: true
+  # ID MythicMobs (se plugin presente). Vazio = usa vanilla-type
+  mythic-mob: ''
+  # EntityType vanilla: WITHER, ZOMBIE, SKELETON, etc.
+  vanilla-type: WITHER
+  # Vida máxima do boss
+  health: 200
+  # Nome colorido do boss (opcional)
+  name: '&5&lGuardião do Airdrop'
+
+# Ondas de mobs antes de liberar a caixa
+waves:
+  # true = sistema de ondas ativo
+  enabled: false
+  # Ondas (keys livres). Ver waves.yml
+  waves: {}
+
+# Tabela de loot sorteada ao abrir
+loot:
+  # Quantidade mínima de rolls por abertura
+  min-rolls: 3
+  # Quantidade máxima de rolls por abertura
+  max-rolls: 6
+  # Possíveis recompensas (keys livres)
+  entries:
+    item1:
+      type: ITEM
+      material: DIAMOND
+      amount: 8
+      chance: 40
+      weight: 10
+    money:
+      type: MONEY
+      provider: money
+      amount: 5000
+      chance: 60
+      weight: 12

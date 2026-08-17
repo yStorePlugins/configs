@@ -1,0 +1,48 @@
+#  __  __ _               _
+# |  \/  (_)___ ___  __ _| | ___  ___
+# | |\/| | / __/ __|/ _` | |/ _ \/ __|
+# | |  | | \__ \__ \ (_| | |  __/\__ \
+# |_|  |_|_|___/___/\__,_|_|\___||___/
+#
+# Missões de airdrop.
+# type: OPEN | WIN
+# rewards type: ITEM | MONEY | COMMAND (MONEY.provider = economies.yml)
+# Placeholders em comandos: {player}, {uuid}
+
+missions:
+  open5:
+    name: '&aAbra 5 Airdrops'
+    description: 'Abra 5 airdrops quaisquer.'
+    # OPEN = ao abrir | WIN = ao ser o primeiro
+    type: OPEN
+    # Quantidade necessária para concluir
+    target: 5
+    # Recompensas (keys livres)
+    rewards:
+      money:
+        type: MONEY
+        provider: money
+        amount: 1000
+      announce:
+        type: COMMAND
+        command: 'say {player} completou a missão Open5!'
+  open20:
+    name: '&aAbra 20 Airdrops'
+    description: 'Abra 20 airdrops quaisquer.'
+    type: OPEN
+    target: 20
+    rewards:
+      money:
+        type: MONEY
+        provider: money
+        amount: 5000
+  win3:
+    name: '&eVença 3 Airdrops'
+    description: 'Seja o primeiro a abrir 3 airdrops.'
+    type: WIN
+    target: 3
+    rewards:
+      money:
+        type: MONEY
+        provider: money
+        amount: 2500

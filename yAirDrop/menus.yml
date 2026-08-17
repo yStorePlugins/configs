@@ -1,0 +1,122 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Navegação
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore:
+      - ' &7Clique para ir à página anterior.'
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore:
+      - ' &7Clique para ir à próxima página.'
+
+# Menu principal
+main:
+  name: '&8AirDrop'
+  size: 27
+  stats-slot: 11
+  active-slot: 13
+  missions-slot: 15
+  # Ícone de estatísticas do player (cabeça + placeholders)
+  # Placeholders: {player} {opened} {wins} {loot} {fastest}
+  stats:
+    material: '{player}'
+    name: '&6&l{player}'
+    lore:
+      - ''
+      - ' &7Abertos: &a{opened}'
+      - ' &7Vitórias: &a{wins}'
+      - ' &7Loot: &f{loot}'
+      - ' &7Mais rápido: &e{fastest}s'
+      - ''
+  active:
+    material: 'CHEST'
+    name: '&a&lAirdrops Ativos'
+    lore:
+      - ''
+      - ' &7Lista todos os airdrops ativos.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  missions:
+    material: 'BOOK'
+    name: '&e&lMissões'
+    lore:
+      - ''
+      - ' &7Veja e complete missões.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+
+# Placeholders do item: {event} {id} {status} {x} {y} {z} {world} {expire}
+# Lista paginada de airdrops ativos
+active-list:
+  name: '&8Airdrops Ativos'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 45
+  next-slot: 53
+  back-slot: 49
+  # Slot do botão para pegar a bússola/radar (config.yml → compass-buy)
+  compass-slot: 47
+  compass:
+    material: 'COMPASS'
+    name: '&6&lPegar Bússola'
+    lore:
+      - ''
+      - ' &7Receba o radar de airdrop'
+      - ' &7para rastrear drops ativos.'
+      - ''
+      - ' &eClique para pegar'
+      - ''
+  # Placeholders: {event} {id} {status} {x} {y} {z} {world} {expire}
+  # {collects} {left} {max-collects}
+  item:
+    material: 'CHEST'
+    name: '&6&l{event}'
+    lore:
+      - ''
+      - ' &7ID: &f{id}'
+      - ' &7Status: &f{status}'
+      - ' &7Local: &f{x}, {y}, {z}'
+      - ' &7Mundo: &f{world}'
+      - ' &7Expira: &f{expire}s'
+      - ' &7Coletas: &e{left}&7/&e{max-collects}'
+      - ''
+      - ' &eClique para apontar a bússola'
+      - ''
+
+# Placeholders: {name} {description} {current} {target} {status}
+# Lista paginada de missões
+missions:
+  name: '&8Missões de AirDrop'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 45
+  next-slot: 53
+  back-slot: 49
+  item:
+    material: 'BOOK'
+    name: '&e&l{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Progresso: &e{current}&7/&e{target}'
+      - ' &7Status: &f{status}'
+      - ''
+

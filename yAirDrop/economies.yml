@@ -1,0 +1,42 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|\___||___/
+#
+# Economias usadas em requisitos e loot de airdrop.
+# Providers (via PointsManager): Money (Vault), PlayerPoints, yPoints,
+# TokenManager, yCash, TGCash, LegendaryEconomy, NextCash, e outros.
+
+# Economia padrão (deve ser uma chave de 'economies' abaixo)
+default: 'money'
+
+economies:
+  money:
+    # String passada ao PointsManager (lowercased internamente)
+    provider: 'Money'
+    # Nome legível nas mensagens
+    display: 'Dinheiro'
+    # Forma curta em lore/mensagens
+    abbreviated: 'coins'
+    # Permitir transações com jogador offline
+    allow-offline: true
+    # Permissão para usar esta economia (vazio = todos)
+    permission: ''
+    # Ícone exibido em menus
+    item:
+      material: GOLD_INGOT
+      name: '&aDinheiro'
+      lore:
+        - ''
+        - ' &7Economia: &fVault/Money'
+        - ''
+    # Ícone de seleção/configuração (NBT YAirDrop-Provider)
+    item-settings:
+      material: GOLD_INGOT
+      name: '&aDinheiro'
+      lore:
+        - ''
+        - ' &7Tipo: &fMoney'
+        - ' &aClique para alterar'
+        - ''

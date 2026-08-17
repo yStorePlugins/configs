@@ -1,0 +1,28 @@
+#  ____
+# / ___|  ___  __ _ ___  ___  _ __
+# \___ \ / _ \/ _` / __|/ _ \| '_ \
+#  ___) |  __/ (_| \__ \ (_) | | | |
+# |____/ \___|\__,_|___/\___/|_| |_|
+#
+# Temporada de Halloween (20/10 a 02/11).
+# Defina enabled: true para ativar no período.
+
+display-name: '&6&lHalloween'
+# Ative manualmente quando quiser a temporada
+enabled: false
+# false = não é a temporada padrão
+default: false
+# Prioridade sobre a temporada default
+priority: 10
+# Período no formato MM-dd
+start-date: '10-20'
+# Período no formato MM-dd
+end-date: '11-02'
+# Partícula exibida no evento
+particle: 'SMOKE_NORMAL'
+# Prefixo nas mensagens públicas
+messages-prefix: '&6H '
+# Multiplicador de loot (1.4 = +40%)
+loot-multiplier: 1.4
+# Sufixo visual no holograma
+visual-suffix: ' &6H'

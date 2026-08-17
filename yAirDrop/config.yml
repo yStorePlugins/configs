@@ -1,0 +1,343 @@
+#            _    _      ____
+#  _   _   / \  (_)_ __|  _ \ _ __ ___  _ __
+# | | | | / _ \ | | '__| | | | '__/ _ \| '_ \
+# | |_| |/ ___ \| | |  | |_| | | | (_) | |_) |
+#  \__, /_/   \_\_|_|  |____/|_|  \___/| .__/
+#  |___/                               |_|
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+  # Dados para conexão ao banco de dados MYSQL/HIKARI.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão. [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 6379]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão. [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas gerais do airdrop.
+general:
+  # Máximo de airdrops ativos simultâneos no servidor
+  max-active-airdrops: 5
+  # Tempo (segundos) padrão até a caixa expirar se não for aberta
+  default-expire-seconds: 600
+  # Tempo (segundos) de captura padrão (segurar botão direito)
+  default-capture-seconds: 5
+  # Jogadores necessários no modo cooperativo (fallback se o evento não definir)
+  cooperative-players: 5
+  # Raio (blocos) para considerar jogadores no cooperativo
+  cooperative-radius: 8.0
+  # Intervalo de checagem de captura (ticks)
+  capture-check-ticks: 5
+  # Intervalo (ticks) da lógica pesada (expiração, chuva). Queda roda todo tick.
+  tick-interval: 10
+
+  # Proteção básica contra hacks ao interagir com a caixa
+  hack-protection:
+    # Se true, valida reach e cliques por segundo
+    enabled: true
+    # Máximo de cliques por segundo permitidos
+    max-clicks-per-second: 20
+    # Distância máxima (blocos) para clicar na caixa
+    max-reach: 6.0
+    # Se true, cancela a ação ao detectar comportamento suspeito
+    cancel-on-detect: true
+
+  # Sistema de localização do spawn do airdrop
+  location:
+    # Mundos onde o airdrop pode nascer (nome exato do mundo)
+    worlds:
+      - world
+    # Altitude mínima / máxima do chão sólido
+    min-y: 40
+    max-y: 180
+    # Distância do spawn do mundo (usada se não achar perto de players)
+    min-distance-from-spawn: 10
+    max-distance-from-spawn: 400
+    # Distância de jogadores online
+    min-distance-from-players: 5
+    max-distance-from-players: 250
+    # true = prioriza spawn perto de jogadores (recomendado)
+    near-players: true
+    # Se true, só usa chunks já carregadas
+    only-loaded-chunks: false
+    # Se true, carrega a chunk ao escolher o local
+    load-chunk: true
+    # Tentativas por fase de busca (total ~3-4x isso)
+    max-attempts: 80
+    # Biomas permitidos (vazio = todos). Ex: [DESERT, PLAINS]
+    biomes: []
+    # Regiões WorldGuard permitidas (vazio = qualquer). Ex: [arena, pvp]
+    regions: []
+
+  # Locais onde o airdrop NUNCA deve nascer
+  anti-abuse:
+    # Bloquear lava
+    block-lava: true
+    # Bloquear água
+    block-water: true
+    # Bloquear folhas
+    block-leaves: true
+    # Bloquear árvores
+    block-trees: true
+    # Bloquear cavernas
+    block-caves: true
+    # Bloquear teto
+    block-ceiling: true
+    # Bloquear void
+    block-void: true
+
+  # Proteção da caixa enquanto fechada
+  protection:
+    # Impede quebrar o bloco
+    break: true
+    # Impede TNT destruir
+    tnt: true
+    # Impede creeper destruir
+    creeper: true
+    # Impede pistão mover
+    piston: true
+    # Impede água/lava empurrar
+    water: true
+    # Impede fogo queimar
+    fire: true
+
+  # Configuração padrão da animação de queda
+  fall:
+    # Altura inicial acima do alvo (blocos)
+    height: 40
+    # Velocidade de queda em blocos por tick (0.4 ≈ suave; 0.8 = mais rápido)
+    speed: 0.45
+    # Exibir partículas durante a queda
+    particles: true
+    # Efeito de fogo
+    fire: false
+    # Efeito de fumaça
+    smoke: true
+    # Raio ao aterrissar
+    lightning: false
+    # Explosão visual (sem dano) ao aterrissar
+    explosion: false
+    # Materiais do visual PARACHUTE
+    parachute:
+      # Itens da cúpula (cicla entre eles nas gores)
+      canopy:
+        1:
+          material: '1cde44e8f80e56610c0ffc64c08e1943517fdaf800f5ee75ef6986c5a8966e9c'
+        2:
+          material: 'c3a03c06ffe2356ce00aef5b708878d2fe4365a97bc4dae1e1542c27b2eb30dd'
+        3:
+          material: '3da29fe23b69f76bc49474102226b0699ca2a5ad11f7a48542b13ad9cabaf89d'
+      # Topo da cúpula
+      top:
+        material: '1cde44e8f80e56610c0ffc64c08e1943517fdaf800f5ee75ef6986c5a8966e9c'
+      # Detalhe no topo
+      accent:
+        material: '41b5fdefffffa708381e70f3503a275772b45296cf9f1625a87edc6b62549ef6'
+      # Cordas
+      rope:
+        material: 'IRON_FENCE'
+      # Ponta da corda (junto à cúpula)
+      rope-tip:
+        material: 'TRIPWIRE_HOOK'
+    # Materiais do visual BALLOON
+    balloon:
+      # Corpo do balão (cicla nas camadas)
+      body:
+        1:
+          material: 'c3a03c06ffe2356ce00aef5b708878d2fe4365a97bc4dae1e1542c27b2eb30dd'
+        2:
+          material: 'ee30480ed2834f5b7cc81dcb1dc7e4766792430c49dad4dbcd10a93c5e1457bc'
+        3:
+          material: '3da29fe23b69f76bc49474102226b0699ca2a5ad11f7a48542b13ad9cabaf89d'
+      top:
+        material: '1cde44e8f80e56610c0ffc64c08e1943517fdaf800f5ee75ef6986c5a8966e9c'
+      flame:
+        material: 'TORCH'
+      rope:
+        material: 'IRON_FENCE'
+    # Materiais do visual PLANE
+    plane:
+      body:
+        material: '343e83588e965c8359e64bbc7fe53f481cca4f7fc6c27714e4eace9f5e9b08bd'
+      wing:
+        material: 'c92b2b0414cee36b24d83f5cfa071d8638527249c2dcddfa580be37e07c60e08'
+      nose:
+        material: '41b5fdefffffa708381e70f3503a275772b45296cf9f1625a87edc6b62549ef6'
+      tail:
+        material: '88988523f2631de5cb01fdea38705b64eb906667d8d99bcb859a0a16db591a78'
+    # Materiais do visual HELICOPTER
+    helicopter:
+      body:
+        material: '343e83588e965c8359e64bbc7fe53f481cca4f7fc6c27714e4eace9f5e9b08bd'
+      glass:
+        material: 'fc9fdeb0e12b7c31f8c4c0613df51067bb3d00115d20723329290439558ca8cb'
+      rotor:
+        material: 'STEP'
+      hub:
+        material: '32010732433653ce93d0acec607e0e862aa7f0cf6334e4f7259df8e30ff136f7'
+      skid:
+        material: 'IRON_FENCE'
+    # Materiais do visual UFO
+    ufo:
+      disc:
+        material: '343e83588e965c8359e64bbc7fe53f481cca4f7fc6c27714e4eace9f5e9b08bd'
+      rim:
+        material: 'ac67f32cecbf798d6ae51bda96ee63a9bb191d6754b3b27008958fddd9d732cf'
+      dome:
+        material: 'fc9fdeb0e12b7c31f8c4c0613df51067bb3d00115d20723329290439558ca8cb'
+      light:
+        material: 'ac67f32cecbf798d6ae51bda96ee63a9bb191d6754b3b27008958fddd9d732cf'
+    # Materiais do visual ROCKET
+    rocket:
+      body:
+        material: '343e83588e965c8359e64bbc7fe53f481cca4f7fc6c27714e4eace9f5e9b08bd'
+      tip:
+        material: '88988523f2631de5cb01fdea38705b64eb906667d8d99bcb859a0a16db591a78'
+      fin:
+        material: 'c92b2b0414cee36b24d83f5cfa071d8638527249c2dcddfa580be37e07c60e08'
+      flame:
+        material: 'TORCH'
+    # Materiais do visual SHIP
+    ship:
+      hull:
+        material: '2560ebc068f27c4fa85225251fddd7762d0919410e45cd8d372534c0ac3b61f1'
+      sail:
+        material: '1cde44e8f80e56610c0ffc64c08e1943517fdaf800f5ee75ef6986c5a8966e9c'
+      mast:
+        material: 'STICK'
+
+  # Sistema de radar (item bússola)
+  radar:
+    # Intervalo de atualização (ticks)
+    update-ticks: 20
+    # Distância máxima de rastreio (blocos)
+    max-distance: 500
+    # Exibir bossbar (se suportado)
+    bossbar: true
+    # Exibir actionbar com distância/direção
+    actionbar: true
+
+  # Ativar sistema de temporadas (pasta seasons/)
+  seasons-enabled: true
+  # Temas por bioma (efeitos visuais)
+  biome-themes-enabled: true
+  # Efeitos especiais com chuva/tempestade
+  weather-effects-enabled: true
+  # Multiplicador de chance de spawn automático à noite
+  night-chance-multiplier: 1.5
+
+  # Sons (nomes de Sound do Bukkit)
+  sounds:
+    drop-start: 'ENTITY_FIREWORK_ROCKET_LAUNCH'
+    drop-land: 'ENTITY_GENERIC_EXPLODE'
+    open-success: 'ENTITY_PLAYER_LEVELUP'
+    open-fail: 'ENTITY_VILLAGER_NO'
+    capture-tick: 'BLOCK_NOTE_BLOCK_PLING'
+    hack-success: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    wave-spawn: 'ENTITY_ZOMBIE_AMBIENT'
+    boss-spawn: 'ENTITY_WITHER_SPAWN'
+    rain-start: 'WEATHER_RAIN'
+
+# Auto-start: vários tipos independentes, cada um com whitelist de eventos
+# events: chaves de events/*.yml (ex: normal). Vazio = todos enabled
+autostart:
+  # Ligar/desligar o sistema inteiro
+  enabled: true
+  types:
+    # Tipo comum — airdrops básicos
+    comum:
+      enabled: true
+      interval-min-seconds: 300
+      interval-max-seconds: 600
+      min-players: 1
+      amount: 1
+      chance: 100
+      warn-seconds: 30
+      worlds: []
+      events:
+        - normal
+        - lightning
+        - secret
+    # Tipo especial — boss / waves / global
+    especial:
+      enabled: true
+      interval-min-seconds: 900
+      interval-max-seconds: 1200
+      min-players: 3
+      amount: 1
+      chance: 80
+      warn-seconds: 60
+      worlds: []
+      events:
+        - boss
+        - waves
+        - global
+        - pvp
+        - cooperative
+        - vip
+
+# Bússola/radar comprável no menu de airdrops ativos (/ad list)
+compass-buy:
+  # Permissão para pegar a bússola no menu (vazio = todos)
+  permission: 'yairdrop.compass'
+  # Economias cobradas ao pegar (chave de economies.yml → valor).
+  # Deixe vazio ou comente as linhas para grátis.
+  costs:
+    money: 1000
+    # cash: 50
+
+# Textos coloridos dos status exibidos ao jogador
+status:
+  falling: '&eCaindo'
+  landed: '&aNo chão'
+  capturing: '&6Capturando'
+  locked: '&cTrancado'
+  opened: '&bAberto'
+  expired: '&7Expirado'
+  fighting: '&cCombate'
+  boss: '&5Boss'
+  waves: '&dOndas'

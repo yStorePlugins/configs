@@ -1,0 +1,248 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+# Mensagens de chat
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio.'
+  help: |
+
+    &8&m-----------------------------
+    &6&lAirDrop &8— &7Comandos
+    &8&m-----------------------------
+
+    &e/{cmd} &8- &7Abre o menu principal.
+    &e/{cmd} list &8- &7Lista airdrops ativos.
+    &e/{cmd} stats [jogador] &8- &7Mostra estatísticas.
+    &e/{cmd} missions &8- &7Abre o menu de missões.
+    &e/{cmd} radar &8- &7Recebe um radar de airdrop.
+    &e/{cmd} compass &8- &7Aponta a bússola ao airdrop mais próximo.
+
+    &8&m-----------------------------
+
+  admin-help: |
+
+    &8&m-----------------------------
+    &6&lAirDrop Admin &8— &7Comandos
+    &8&m-----------------------------
+
+    &e/{cmd} start <evento> [mundo] &8- &7Inicia um airdrop.
+    &e/{cmd} stop <id|all> &8- &7Para airdrop(s).
+    &e/{cmd} rain <evento> <minutos> [mundo] &8- &7Chuva de airdrops.
+    &e/{cmd} combo <evento> <qtd> [mundo] &8- &7Combo de caixas.
+    &e/{cmd} givekey <jogador> <chave> [qtd] &8- &7Dá chave.
+    &e/{cmd} giveradar <jogador> [qtd] &8- &7Dá radar.
+    &e/{cmd} list &8- &7Lista airdrops ativos.
+    &e/{cmd} reload &8- &7Recarrega configurações.
+
+    &8&m-----------------------------
+
+  event-not-found: |
+
+    &cEvento de airdrop não encontrado!
+
+    &7Informado: &f{event}
+    &7Disponíveis: &e{events}
+
+  event-list: '&7Eventos: &e{events}'
+  key-invalid: |
+
+    &cChave inválida: &f{key}
+
+    &7Chaves usadas nos airdrops: &e{keys}
+
+  key-none: '&cNenhum airdrop exige chave no momento.'
+  key-list: '&7Chaves disponíveis: &e{keys}'
+
+  started: |
+
+    &a&lAIRDROP INICIADO!
+
+    &7Tipo: &f{event}
+    &7ID: &f{id}
+    &7Local: &f{x}, {y}, {z} &8({world})
+    &7Expira em: &f{expire}s
+
+  started-secret: '&7Um airdrop secreto surgiu em algum lugar...'
+  started-global: |
+
+    &6&lAIRDROP GLOBAL!
+
+    &7Tipo: &f{event}
+    &7Local: &f{x}, {y}, {z} &8({world})
+    &7Corra para reivindicar o loot!
+
+  landed: |
+
+    &e&lAIRDROP ATERRISSOU!
+
+    &7Tipo: &f{event}
+    &7Local: &f{x}, {y}, {z}
+
+  opened: |
+
+    &a&lVocê abriu o airdrop!
+
+    &7Tipo: &f{event}
+    &7Itens: &f{items}
+
+  open-fail: |
+
+    &cNão foi possível abrir este airdrop!
+
+    &7Motivo: &f{reason}
+
+  need-key: |
+
+    &cVocê precisa de uma chave para abrir!
+
+    &7Chave: &f{key}
+
+  need-permission: '&cVocê não tem permissão para abrir este airdrop.'
+  need-money: |
+
+    &cSaldo insuficiente!
+
+    &7Necessário: &f{required}
+    &7Saldo: &f{balance}
+
+  need-level: '&cVocê precisa ser nível &f{level}&c ou superior.'
+  need-password: '&eDigite a senha no chat para abrir o airdrop. Digite &ccancelar &epara abortar.'
+  password-wrong: '&cSenha incorreta!'
+  password-ok: '&aSenha correta! Abrindo airdrop...'
+  capture-start: '&eSegure o botão direito por &f{seconds}s &epara capturar.'
+  capture-progress: '&6Capturando... &e{progress}&7/&e{total}s'
+  capture-cancel: '&cCaptura cancelada! Você saiu do bloco.'
+  capture-done: '&aCaptura concluída!'
+  cooperative-need: |
+
+    &eAirdrop cooperativo!
+
+    &7Necessário: &f{required} &7jogadores próximos
+    &7Atuais: &f{current}
+
+  vip-only: '&cEste airdrop é exclusivo para VIPs.'
+  pvp-enabled: |
+
+    &c&lPvP ATIVADO na zona do airdrop!
+
+    &7Lute pela recompensa.
+
+  boss-spawn: |
+
+    &5&lBOSS SPAWNADO!
+
+    &7Derrote o boss para abrir a caixa.
+
+  boss-killed: '&aBoss derrotado! A caixa está liberada.'
+  wave-start: '&dOnda &f{wave}&d/&f{total} &diniciada!'
+  wave-clear: '&aOnda &f{wave} &alimpada!'
+  rain-start: |
+
+    &b&lCHUVA DE AIRDROPS!
+
+    &7Duração: &f{minutes} minuto(s)
+    &7Evento: &f{event}
+    &7Mundo: &f{world}
+
+  rain-end: '&7A chuva de airdrops terminou.'
+  rain-admin: '&aChuva iniciada: &f{event} &apor &f{minutes} &aminuto(s) &7(&f{world}&7).'
+  combo-start: '&6&lCOMBO! &e{amount} caixas caindo! &7(&f{world}&7)'
+  combo-result: '&aCombo: &f{started}&a/&f{amount} &ade &f{event} &7(&f{world}&7).'
+  world-not-found: |
+
+    &cMundo não encontrado: &f{world}
+
+    &7Disponíveis: &e{worlds}
+
+  expired: '&7O airdrop &f{id} &7expirou.'
+  stopped: '&cAirdrop &f{id} &cfoi removido.'
+  stopped-all: '&cTodos os airdrops foram removidos. (&f{amount}&c)'
+  list-header: |
+
+    &8&m-----------------------------
+    &6&lAirdrops Ativos &8(&f{amount}&8)
+    &8&m-----------------------------
+
+  list-line: '&8- &e{id} &7| &f{event} &7| &f{status} &7| &f{x},{y},{z}'
+  list-empty: '&7Nenhum airdrop ativo no momento.'
+  stats: |
+
+    &8&m-----------------------------
+    &6&lEstatísticas &7de &f{player}
+    &8&m-----------------------------
+
+    &7Airdrops abertos: &a{opened}
+    &7Airdrops criados (admin): &f{created}
+    &7Vitórias: &a{wins}
+    &7Loot obtido: &f{loot}
+    &7Abertura mais rápida: &e{fastest}s
+
+    &8&m-----------------------------
+
+  mission-complete: |
+
+    &a&lMISSÃO CONCLUÍDA!
+
+    &7Missão: &f{mission}
+    &7Recompensa enviada!
+
+  mission-progress: '&7Missão &f{mission}&7: &e{current}&7/&e{total}'
+  radar-given: '&aVocê recebeu um radar de airdrop!'
+  radar-none: '&cNenhum airdrop ativo para rastrear.'
+  radar-track: '&6Radar &8| &7{event} &8| &e{distance}m &8| &f{direction}'
+  compass-already: '&cVocê já possui uma bússola de airdrop no inventário.'
+  compass-bought: '&aBússola adquirida! Segure na mão para rastrear.'
+  compass-need-money: |
+
+    &cSaldo insuficiente para a bússola!
+
+    &7Falta: &f{required} {provider}
+    &7Seu saldo: &f{balance}
+
+  key-given: '&aVocê deu &f{amount}x {key} &apara &f{player}&a.'
+  key-received: '&aVocê recebeu &f{amount}x {key}&a.'
+  hack-start: '&eMinigame de hackeamento! Memorize a sequência: &f{sequence}'
+  hack-prompt: '&eDigite a sequência no chat (ex: 1 3 2 4):'
+  hack-fail: '&cSequência incorreta!'
+  hack-win: '&aVocê hackeou o airdrop primeiro!'
+  hack-detect: '&cComportamento suspeito detectado. Ação cancelada.'
+  lock-level: '&7Tranca: &e{lock}s &8(total &e{seconds}s&8)'
+  location-fail: '&cNão foi possível encontrar um local válido para o airdrop.'
+  max-active: '&cLimite de airdrops ativos atingido (&f{max}&c).'
+  autostart-warn: |
+
+    &6&lAIRDROP EM BREVE!
+
+    &7Tipo: &f{type}
+    &7Um airdrop cairá em &e{seconds}s&7.
+    &7Prepare-se e fique atento!
+
+  already-collected: '&cVocê já recolheu este airdrop.'
+  collects-left: '&7Coletas restantes neste airdrop: &e{left}&7/&e{max}'
+
+
+# Actionbars (atualizadas em loop)
+actionbar:
+  capture: '&6Capturando &8| &7{bar} &e{progress}&7/&e{total}s'
+  radar: '&6{event} &8| &e{distance}m &8| &f{direction}'
+  falling: '&eAirdrop caindo... &f{y}m'
+
+# Títulos (<nl> separa título e subtítulo)
+title:
+  drop-start: '&6&lAIRDROP!<nl>&7{event}'
+  drop-land: '&a&lATERRISSOU!<nl>&7{x}, {y}, {z}'
+  open-success: '&a&lABERTO!<nl>&7Loot recebido'
+  rain-start: '&b&lCHUVA DE AIRDROPS!<nl>&7{minutes} minuto(s)'
