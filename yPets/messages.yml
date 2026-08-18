@@ -60,6 +60,8 @@ chat:
   pet-upgrade: '<nl>&eSeu &f{pet}&e atingiu o &fLvl. {level}&e e aprimorou o seu bônus!<nl>'
   pet-max: '&cO PET já está no nível máximo.'
   pet-none: '&cVocê não está equipando nenhum PET.'
+  pet-effect-activated: '&aEfeitos do {pet}&a ativados por &e{duration}s&a! Cooldown: &e{cooldown}s&a.'
+  pet-effect-cooldown: '&cAguarde &e{time}s &cpara ativar os efeitos do {pet}&c novamente.'
   food-stored: '&aVocê armazenou &f{amount}&a rações para PET.'
   bowl-give: '&aVocê deu &e{amount} &ade pote de ração para pet para o jogador &e{player}&a.'
   bowl-already: '&cVocê já possui o pote de ração para PET.'

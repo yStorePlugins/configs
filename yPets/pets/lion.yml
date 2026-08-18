@@ -155,6 +155,17 @@ tiers:
       # Lista de efeitos que o jogador irá ter
       # effect:level
       effect-list: [ 'INCREASE_DAMAGE:1', 'SPEED:1' ]
+      # false = efeitos sempre ativos (comportamento padrão)
+      # true = aplica os efeitos por effects-duration e só reativa após effects-cooldown
+      effects-timed: false
+      # true = clicar no pet (dono) ativa os efeitos (usa duration + cooldown abaixo)
+      # false = clique não ativa efeitos (só info / alimentar)
+      effects-click: false
+      # Duração dos efeitos em segundos (ex: 30 = 30s de regeneração)
+      effects-duration: 10
+      # Cooldown em segundos entre ativações (ex: 300 = 5 minutos)
+      # Usado quando effects-timed e/ou effects-click estão true
+      effects-cooldown: 300
       # Mundos que o jogador irá ter fly
       fly-worlds: [ 'PlotWorld' ]
       # Comandos que serão executados ao renascer
@@ -205,6 +216,10 @@ tiers:
         discount-spawners: 0.005
         discount-machines: 0.0
       effect-list: [ 'INCREASE_DAMAGE:1', 'SPEED:1' ]
+      effects-timed: false
+      effects-click: false
+      effects-duration: 10
+      effects-cooldown: 300
       fly-worlds: [ 'PlotWorld' ]
       respawn-commands: []
       equip-login-commands: []
