@@ -358,6 +358,29 @@ providers:
         - ''
         - '&aClique para alternar.'
 
+# Menu de top de blocos
+blocks-top:
+  name: '&8Top Blocos'
+  size: 54
+  previous-slot: 45
+  next-slot: 53
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  items:
+    empty-slot: 22
+    player:
+      material: '{player}'
+      name: '&e#{position} &f{player}'
+      lore:
+        - ''
+        - '&f> Blocos: &b{blocks}'
+        - ''
+    empty:
+      material: 'WEB'
+      name: '&cVazio'
+      lore:
+        - '&7Nenhum jogador possui'
+        - '&7blocos no momento.'
+
 # Menu de terrenos a venda
 selling:
   name: '&8Terrenos'

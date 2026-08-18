@@ -182,6 +182,7 @@ chat:
 
     &a/blocos &8- &7Ver os seus blocos.
     &a/blocos <player> &8- &7Ver os blocos de alguém.
+    &a/blocos top &8- &7Ver o ranking de blocos.
     &a/blocos enviar <player> <quantia> &8- &7Envia seus blocos para alguém.
     &a/blocos add <player> <quantia> &8- &7Adiciona blocos a alguém.
     &a/blocos give <player> <quantia> &8- &7Dá blocos em forma de item a alguém.

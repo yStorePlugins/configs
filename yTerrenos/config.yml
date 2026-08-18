@@ -41,6 +41,10 @@ general:
   region-blacklist: [ 'spawn' ]
   # Quantia máxima de terrenos que um jogador pode ter
   terrain-max: 2
+  # Quando true, o limite de terrenos por mundo é definido na permissão
+  # yterrenos.terreno.world.<mundo>.<quantia>
+  # Exemplo: yterrenos.terreno.world.plotworld.3
+  world-limit-permission: false
   # Tamanho mínimo do terreno
   terrain-min-size: 8
   # Tamanho máximo do terreno
