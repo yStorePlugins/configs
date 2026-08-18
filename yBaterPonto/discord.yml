@@ -1,0 +1,78 @@
+options:
+  # Ativar envio de webhooks
+  enable: true
+  # URL do webhook do canal Discord (Integrações > Webhooks)
+  url: ''
+  # Nome exibido no Discord
+  username: 'yBaterPonto'
+
+embeds:
+  # Enviado quando o staff inicia o expediente (login / bater ponto)
+  session-start:
+    title: ':green_circle: Staff entrou em expediente'
+    thumbnail: 'https://minotar.net/helm/{player}/100.png'
+    color: '#57F287'
+    content: ''
+    footer:
+      text: 'yBaterPonto © Controle de ponto'
+      image: ''
+    fields:
+      player:
+        inline: true
+        header: 'Staff'
+        content: '```{player}```'
+      date:
+        inline: true
+        header: 'Data'
+        content: '```{date}```'
+      login:
+        inline: true
+        header: 'Entrada'
+        content: '```{login}```'
+      sessions:
+        inline: true
+        header: 'Sessões'
+        content: '```{sessions}```'
+
+  # Enviado quando o staff encerra o expediente (logout / sair)
+  session-end:
+    title: ':red_circle: Staff saiu do expediente'
+    thumbnail: 'https://minotar.net/helm/{player}/100.png'
+    color: '#ED4245'
+    content: ''
+    footer:
+      text: 'yBaterPonto © Controle de ponto'
+      image: ''
+    fields:
+      player:
+        inline: true
+        header: 'Staff'
+        content: '```{player}```'
+      date:
+        inline: true
+        header: 'Data'
+        content: '```{date}```'
+      login:
+        inline: true
+        header: 'Entrada'
+        content: '```{login}```'
+      logout:
+        inline: true
+        header: 'Saída'
+        content: '```{logout}```'
+      duration:
+        inline: true
+        header: 'Duração'
+        content: '```{duration}```'
+      today:
+        inline: true
+        header: 'Hoje'
+        content: '```{today}```'
+      total:
+        inline: true
+        header: 'Total'
+        content: '```{total}```'
+      sessions:
+        inline: true
+        header: 'Sessões'
+        content: '```{sessions}```'
