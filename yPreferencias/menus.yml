@@ -70,6 +70,9 @@ preferences:
     full-sell: '&fVenda rápida (inv-full)'
     # yClans
     clan-invite: '&fConvites de clan'
+    # yMarket / yLeilao
+    market-broadcast: '&fAnúncios do mercado'
+    leilao-broadcast: '&fAnúncios de leilão'
   # Itens customizados por preferência (sobrescreve os on-item e off-item padrão)
   custom-items:
     pvp:
