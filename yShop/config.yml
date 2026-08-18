@@ -37,6 +37,10 @@ database:
 # compatível apenas com: UltimateChat, nChat e Legendchat
 mohist-chat: false
 
+# Ativar o sistema de bolsa (yBolsa, NextEconomy, StormEconomy e HeroBolsa)
+# Também é necessário ativar por item com Bolsa: true
+bolsa: false
+
 # Opções gerais
 general:
   # Maximo de itens por compra

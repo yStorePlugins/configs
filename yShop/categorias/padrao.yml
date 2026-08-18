@@ -100,6 +100,8 @@ Itens:
    Item2:
       Slot: 11
       InvStackVerify: 64
+      # Permitir variação da bolsa neste item (padrão: false)
+      Bolsa: false
       Display:
          material: IRON_INGOT
          name: '&fAlerta de beleza'
