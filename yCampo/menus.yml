@@ -219,6 +219,7 @@ evolute:
   # Slot onde ficará a tesoura do jogador
   tool-slot: 31
   profile-slot: 33
+  skin-slot: 30
   remove-skin-slot: 35
   items:
     profile:
@@ -228,6 +229,14 @@ evolute:
         - ''
         - '&fFertilizantes: &b{coin}'
         - ''
+    skin:
+      material: '731f3279fc112b7f18bd0a2229934fcb5605c62823ce698b8b503ecccf0a3ac4'
+      name: '&aSkins'
+      lore:
+        - '&7Configure a skin da sua ferramenta'
+        - '&7e ganhe alguns bônus.'
+        - ''
+        - '&aClique para acessar'
     remove-skin:
       material: '68d40935279771adc63936ed9c8463abdf5c5ba78d2e86cb1ec10b4d1d225fb'
       name: '&cRemover Skin'
@@ -236,6 +245,17 @@ evolute:
         - '&7e colete ela para o inventário.'
         - ''
         - '&cClique para remover.'
+
+# Menu de skins
+skins:
+  name: '&8Campo - Skins'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    tool-slot: 31
 
 # Menu de upgrade de área
 upgrade-areas:
