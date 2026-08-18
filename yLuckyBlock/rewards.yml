@@ -37,6 +37,12 @@ rewards:
       # multiplicar a placeholder {amount} pela quantia de recompensas do mesmo tipo
       multiply-placeholder: true
       list: [ 'give {player} stone {amount}' ]
+    # Mensagens enviadas ao player ao receber a recompensa
+    # Placeholders: {player}, {reward}, {amount}, {stack}
+    messages:
+      chat: ''
+      title: ''
+      actionbar: ''
   reward2:
     preview:
       material: 'DIAMOND:0'
@@ -55,6 +61,10 @@ rewards:
       placeholder-amount: 1
       multiply-placeholder: true
       list: [ 'give {player} diamond {amount}' ]
+    messages:
+      chat: ''
+      title: ''
+      actionbar: ''
   reward3:
     preview:
       material: 'EMERALD:0'
@@ -75,3 +85,7 @@ rewards:
       amount: 1
       lore: [ '&aEu valho muito!' ]
       enchants: []
+    messages:
+      chat: ''
+      title: ''
+      actionbar: ''
