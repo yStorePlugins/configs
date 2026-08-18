@@ -58,6 +58,9 @@ Opcoes:
   # Ativar a permissão de bypass para não receber cargos
   # Permissão: ydiscordhook.bypass
   Bypass: false
+  # Remover cargos do Discord quando o jogador perder a permissão
+  # true = remove o cargo | false = só seta, nunca remove
+  RemoverCargos: true
   # Tamanho mínimo do ID
   TamanhoMinimo: 18
   # Enviar mensagem no chat apenas se estiver vinculado
