@@ -105,6 +105,7 @@ top:
     name: '&aSeletor do TOP'
     # Formatos do seletor
     formats:
+      global: 'Global'
       seeing: ' &f• &a{name}'
       select: ' &f• &7{name}'
   items:
