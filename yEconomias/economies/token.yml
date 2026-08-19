@@ -25,6 +25,7 @@ sub-command:
   help: [ 'help', 'ajuda' ]
   force-update: [ 'forceupdate' ]
   check: [ 'check', 'cheque' ]
+  give-media: [ 'givemedia', 'darmedia' ]
 
 usage:
   add: '&cUse: /{command} {arg} <player> <quantia>'
@@ -32,6 +33,7 @@ usage:
   set: '&cUse: /{command} {arg} <player> <quantia>'
   pay: '&cUse: /{command} {arg} <player> <quantia>'
   check: '&cUse: /{command} {arg} <player> <porcentagem> <multiplier>'
+  give-media: '&cUse: /{command} {arg} <player> <porcentagem> <multiplier>'
 
 permission:
   main: 'yeconomias.token.use'
@@ -45,10 +47,13 @@ permission:
   force-update: 'yeconomias.token.forceupdate'
   admin: 'yeconomias.token.admin'
   check: 'yeconomias.token.check'
+  give-media: 'yeconomias.token.givemedia'
 
 general:
   # Quantia que recebe ao registrar
   default: 0
+  # Delay em segundos entre usos dos comandos desta economia (0 = desativado)
+  command-delay: 0
   # Abrir menu ao digitar /token
   main-menu: true
   # Abrir menu ao digitar /token top
@@ -83,6 +88,7 @@ messages:
   number: '&cO argumento não é um número.'
   has: '&cVocê não possui esta quantia de tokens.'
   yourself: '&cVocê não pode pagar à si mesmo.'
+  delay: '&cAguarde {time}s para usar este comando novamente.'
   force-update: '&aVocê forçou a atualização do TOP.'
   balance: |
     &aVocê possui: &f{currency}&a {unit}.
@@ -129,6 +135,10 @@ messages:
     &aVocê juntou seus cheques com sucesso.
   check-activated: |
     &aVocê ativou um cheque de &e{amount}&a {unit}.
+  give-media: |
+    &aVocê enviou &f{currency}&a {unit} para o jogador &7{player}&a.
+  received-media: |
+    &aVocê recebeu &f{currency}&a {unit}&a.
 
 # Item do cheque da média
 check:
