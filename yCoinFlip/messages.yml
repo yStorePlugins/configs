@@ -43,6 +43,8 @@ chat:
 
     &7Aguardando outro jogador aceitar...
 
+  room-created-global: '&6&lCoinFlip &8» &f{player} &7abriu uma sala de &f{amount} &7({provider})&7! Use &f/coinflip &7para aceitar.'
+
   room-already-max: '&cVocê já tem o máximo de &f{max} &csala(s) aberta(s) simultaneamente.'
   room-not-found: '&cSala não encontrada.'
   room-expired-owner: |
