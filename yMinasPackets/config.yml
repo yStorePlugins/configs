@@ -279,6 +279,7 @@ pickaxe:
     - '{enchants}'
     - ''
     - ' &fNível: &7{level}'
+    - ' &fPrestígio: &7{prestige}'
     - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
 
 # Item de blocos ativável
@@ -375,6 +376,44 @@ npc:
       - '&6&lMINERAÇÃO'
       - '&7Minere e fique rico!'
       - '[item]GOLD_INGOT'
+
+# Prestígio da picareta (requer yMinasPacketsPickaxesAddon)
+# Ao prestigiar: reseta nível e encantamentos da picareta e concede bônus de mineração.
+prestige:
+  enabled: true
+  # Nível mínimo da picareta para prestigiar
+  min-level: 100
+  # Máximo de prestígios (-1 = ilimitado)
+  max: -1
+  # Permissão (deixe vazio para todos)
+  permission: 'yminaspackets.pickaxe.prestige'
+  # Modo do bônus:
+  # per-level  -> bonus = prestígio * bonus-per-level
+  # formula    -> usa bonus-formula / bonus-block-formula com {prestige}
+  # levels     -> usa a tabela prestige.levels (nível exato ou o maior <= prestígio)
+  mode: per-level
+  # Usado no modo per-level (e fallback)
+  bonus-per-level: 5.0
+  bonus-block-per-level: 5.0
+  # Usado no modo formula (suporta + - * / e parênteses)
+  bonus-formula: '{prestige} * 5'
+  bonus-block-formula: '{prestige} * 5'
+  # Usado no modo levels (bônus total naquele prestígio)
+  levels:
+    '1':
+      bonus: 5.0
+      bonus-block: 5.0
+    '2':
+      bonus: 10.0
+      bonus-block: 10.0
+    '3':
+      bonus: 15.0
+      bonus-block: 15.0
+  # Comandos ao prestigiar (console)
+  commands: []
+  # Exemplo:
+  # commands:
+  #   - 'broadcast &e{player} &atingiu o prestígio &f{prestige}&e!'
 
 # Você pode criar quantos bônus quiser
 # Será dado o bônus ao minerar.

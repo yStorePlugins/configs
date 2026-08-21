@@ -41,6 +41,7 @@ main:
     public-mines-slot: 21
     public-mine-config-slot: 21
     pickaxe-loan-slot: 24
+    prestige-slot: 15
     enchants:
       material: 'b2f79016cad84d1ae21609c4813782598e387961be13c15682752f126dce7a'
       name: '&aEncantamentos'
@@ -192,6 +193,18 @@ main:
         - '&7picareta para outro jogador.'
         - ''
         - '&aClique para gerenciar.'
+    prestige:
+      material: 'NETHER_STAR'
+      name: '&dPrestígio &7[{prestige}]'
+      lore:
+        - '&7Resete nível e encantamentos'
+        - '&7da picareta por bônus permanente.'
+        - ''
+        - '&fPrestígio: &d{prestige}'
+        - '&fBônus coins: &a+{bonus}%'
+        - '&fBônus blocos: &a+{bonus-block}%'
+        - ''
+        - '&aClique para abrir.'
 
 # Menu de classes
 classes:
@@ -1296,6 +1309,51 @@ public-mine-config:
         - '&7do visitante será sua.'
         - ''
         - '&aClique para alterar.'
+
+# Menu de prestígio da picareta
+prestige:
+  name: '&8Prestígio da Picareta'
+  size: 27
+  back-slot: 22
+  items:
+    info-slot: 11
+    confirm-slot: 15
+    info:
+      material: 'BOOK'
+      name: '&dInformações do Prestígio'
+      lore:
+        - '&7Prestígio atual: &d{prestige}'
+        - '&7Próximo prestígio: &d{next_prestige}'
+        - ''
+        - '&7Nível atual: &f{level}'
+        - '&7Nível necessário: &f{need}'
+        - ''
+        - '&7Bônus atual coins: &a+{bonus}%'
+        - '&7Bônus atual blocos: &a+{bonus-block}%'
+        - '&7Bônus próximo coins: &a+{next_bonus}%'
+        - '&7Bônus próximo blocos: &a+{next_bonus-block}%'
+        - ''
+        - '&cAo prestigiar você perde:'
+        - '&c- Nível da picareta'
+        - '&c- Encantamentos da picareta'
+    confirm:
+      material: 'EMERALD_BLOCK'
+      name: '&aConfirmar Prestígio'
+      lore:
+        - '&7Clique para prestigiar a picareta.'
+        - ''
+        - '&7Você irá para o prestígio &d{next_prestige}&7.'
+        - '&7Novo bônus: &a+{next_bonus}% &7coins'
+        - '&7e &a+{next_bonus-block}% &7blocos.'
+    locked:
+      material: 'REDSTONE_BLOCK'
+      name: '&cNão pode prestigiar'
+      lore:
+        - '&7Requisitos não atendidos.'
+        - ''
+        - '&7Nível atual: &f{level}'
+        - '&7Nível necessário: &f{need}'
+        - '&7Prestígio: &d{prestige}'
 
 # Menu de empréstimo de picareta
 pickaxe-loan-config:

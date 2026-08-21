@@ -55,6 +55,7 @@ chat:
     &a/mina ir &8- &7Vai até uma mina.
     &a/mina ir friend <jogador> [mina] &8- &7Vai até a mina de um amigo.
     &a/mina sair &8- &7Sai de uma mina.
+    &a/mina prestigio &8- &7Abre o menu de prestígio da picareta.
 
 
   yourself: '&cVocê não pode realizar esta ação à si mesmo.'
@@ -85,6 +86,7 @@ chat:
     &c> /minaadmin resetar <mina>
     &c> /minaadmin wand <mina>
     &c> /minaadmin resetarpicareta <player>
+    &c> /minaadmin setprestige <player> <quantia>
     &c> /minaadmin darnivel <player> <quantia>
     &c> /minaadmin removernivel <player> <quantia>
     &c> /minaadmin darenergia <player> <quantia>
@@ -345,6 +347,11 @@ chat:
   pickaxe-loan-locked: '&cVocê está com a picareta emprestada para outro jogador. Revogue o empréstimo para upar/evoluir novamente.'
   pickaxe-loan-select-applied: '&aFonte da picareta ativa atualizada com sucesso.'
   pickaxe-loan-select-unavailable: '&cEsta fonte de picareta não está mais disponível.'
+  prestige-success: '&aVocê prestigou sua picareta! Prestígio: &d{prestige} &a┃ Bônus: &e+{bonus}% coins &ae &e+{bonus-block}% blocos&a.'
+  prestige-need-level: '&cVocê precisa estar no nível &f{need}&c para prestigiar. (Atual: &f{level}&c)'
+  prestige-max: '&cVocê já atingiu o prestígio máximo (&f{max}&c).'
+  prestige-disabled: '&cO sistema de prestígio está desativado.'
+  prestige-set: '&aVocê definiu o prestígio de &f{player}&a para &d{prestige}&a.'
   bazooka-give: '&aVocê deu &7{amount}x {bazooka}&a para o jogador &7{player}&a.'
   bazooka-received: '&aVocê recebeu &7{amount}x {bazooka}&a.'
   bazooka-list: |
