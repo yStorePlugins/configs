@@ -37,6 +37,16 @@ room-list:
       - ' &7Clique para criar uma nova'
       - ' &7sala de CoinFlip.'
       - ''
+  cancel-button:
+    slot: 47
+    material: BARRIER
+    name: '&c&lCancelar Apostas'
+    lore:
+      - ''
+      - ' &7Clique para cancelar todas'
+      - ' &7as suas salas de CoinFlip.'
+      - ' &7O valor será devolvido.'
+      - ''
   player-info-item:
     slot: 45
     material: '{player}'
@@ -60,6 +70,17 @@ room-list:
       - ' &7Expira em: &f{expire}'
       - ''
       - ' &eClique para aceitar'
+      - ''
+  own-room-item:
+    material: '{player}'
+    name: '&6&l{player}'
+    lore:
+      - ''
+      - ' &7Economia: &f{provider}'
+      - ' &7Valor: &a{amount}'
+      - ' &7Expira em: &f{expire}'
+      - ''
+      - ' &cClique para cancelar'
       - ''
 
 # Menu de seleção de economia

@@ -98,6 +98,8 @@ chat:
 
     &7Vitórias: &f{wins} &8| &7Derrotas: &f{losses}
 
+  win-message-global: '&6&lCoinFlip &8» &f{winner} &7venceu &f{loser} &7e ganhou &f{amount} &7({provider})&7!'
+
   lose-message: |
 
     &c&lVOCÊ PERDEU O COINFLIP!
