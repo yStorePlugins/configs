@@ -11,3 +11,4 @@
 # Você pode criar quantas aliases quiser.
 commands:
   mission: 'mission|missions|missao|missoes'
+  battlepass: 'battlepass|bp|passe|passedebatalha|passebatalha|pb'

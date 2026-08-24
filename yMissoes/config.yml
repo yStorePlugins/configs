@@ -80,6 +80,8 @@ general:
   give-reward-all: true
   # Enviar as recompensas de missões concluídas para o armazém de recompensas
   send-complete-storage: false
+  # Atualizar o countdown de liberação nos menus abertos
+  menu-updater: true
 
 # Configuração da barra de progresso
 progress-bar:

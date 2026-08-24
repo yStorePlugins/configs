@@ -9,6 +9,10 @@ display-name: '&aSpawners 1'
 # criada na categories.yml
 category: 'spawners'
 
+# Data de liberação. Formato: dd/MM/yyyy-HH:mm
+# Use '0' para liberar imediatamente
+Libera em: '0'
+
 # Ícones nos menus
 displays:
   # Ícone de missão atual
@@ -53,6 +57,33 @@ displays:
       - '&c*Essa missão ainda não foi liberada.'
       - '&cConclua a anterior.'
       - ''
+  # Ícone de missão bloqueada por data
+  locked:
+    material: 'BARRIER'
+    name: '&aSpawners &eMETA 1'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fVacas&7 para ajudar no progresso'
+      - '&7dessa missão.'
+      - ''
+      - '&c*Essa missão ainda não foi liberada.'
+      - '&7Ela será liberada em: &f{data} - &f{hora}'
+      - '&7Tempo para liberar: &f{time_formatted}'
+      - ''
+  # Ícone de missão bloqueada por data (no menu principal)
+  locked-main:
+    material: 'BARRIER'
+    name: '&aMetas de Spawners'
+    lore:
+      - '&7Os jogadores do servidor precisarão'
+      - '&7matar &fMOBS&7 para ajudar no progresso'
+      - '&7dessa missão.'
+      - ''
+      - '&c*Essa missão ainda não foi liberada.'
+      - '&7Ela será liberada em: &f{data} - &f{hora}'
+      - '&7Tempo para liberar: &f{time_formatted}'
+      - ''
+      - '&aClique para ver mais informações.'
   # Ícone de missão concluída
   completed:
     material: 'MOB_SPAWNER'
