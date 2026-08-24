@@ -141,11 +141,20 @@ fishing:
     limit-max: 200
     # Limite adquirido por upgrade na sacola
     limit-per-level: 10
+    # Multiplicar o preço pelo nível do upgrade
+    # Cálculo: (nível + 1) * amount
+    multiply-per-level: false
     # Preços para upar a sacola de peixe
+    # Todas as economias listadas serão cobradas (AND)
+    # Providers: economies.yml (money, ypesca, playerpoints, ...)
+    # Placeholders no menu: {<provider>} (ex: {money}, {ypesca})
     limit-prices:
       price1:
         provider: 'money'
         amount: 100.0
+      #price2:
+      #  provider: 'ypesca'
+      #  amount: 50.0
   # Sistema de sell-all
   sell-all:
     # Ativar o sell-all em async

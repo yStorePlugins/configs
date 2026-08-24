@@ -60,6 +60,7 @@ main:
       lore:
         - ''
         - '&b* Peixes armazenados: &f{fishs}'
+        - '&b* Limite: &f{limit}&7/&f{limit_max}'
         - ''
         - '&7Clique para gerenciar seus drops'
     top:
@@ -308,10 +309,11 @@ fishing-net:
         - '&7Confira o estado atual da sua'
         - '&7sacola de peixes.'
         - ''
-        - '&f> Limite: &b{limit}'
+        - '&f> Limite: &b{limit}&7/&b{limit_max}'
         - ''
         - '&eUpgrade &a(+{limit_per_level}):'
         - '&e> &2$ &f{money}'
+        - '&e> &bMoedas: &f{ypesca}'
         - ''
         - '&aClique para dar upgrade.'
     info-max:
@@ -321,7 +323,7 @@ fishing-net:
         - '&7Confira o estado atual da sua'
         - '&7sacola de peixes.'
         - ''
-        - '&f> Limite: &b{limit}'
+        - '&f> Limite: &b{limit}&7/&b{limit_max}'
         - ''
         - '&aSua sacola está no limite máximo.'
     auto-sell:
