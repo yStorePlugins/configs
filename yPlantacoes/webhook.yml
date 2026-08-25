@@ -1,0 +1,54 @@
+# Sistema de Webhook do Discord
+# Envia automaticamente um aviso quando uma plantação for liberada
+#
+# Placeholders disponíveis:
+# {plantacao} - Nome de exibição da plantação
+# {plantacao_id} - ID da plantação (key)
+# {dia} - Dia da liberação
+# {horario} - Horário da liberação (HH:mm)
+# {data} - Data atual (dd/MM/yyyy)
+# {hora} - Hora atual (HH:mm)
+#
+# Formato dos horários: dia-hora:minuto:segundo
+# Dias: todos, segunda, terca, quarta, quinta, sexta, sabado, domingo
+
+Options:
+  URL: ''
+  Username: 'yPlantacoes'
+
+Plantacoes:
+  fungo:
+    Ativar: true
+    # Deixe vazio para usar Options.URL / Options.Username
+    URL: ''
+    Username: ''
+    Display: 'Fungo'
+    Horarios:
+      - 'segunda-12:00:00'
+      - 'quarta-18:00:00'
+      - 'sexta-22:00:00'
+    Title: ':seedling: A plantação {plantacao} foi liberada!'
+    Thumbnail: ''
+    Color: '#57F287'
+    Content: ''
+    Footer:
+      Text: 'yPlantacoes • {dia} às {horario}'
+      Image: ''
+    Fields:
+      plantacao:
+        Inline: true
+        Header: 'Plantação'
+        Content: '```{plantacao}```'
+      dia:
+        Inline: true
+        Header: 'Dia'
+        Content: '```{dia}```'
+      horario:
+        Inline: true
+        Header: 'Horário'
+        Content: '```{horario}```'
+    Mensagens:
+      Chat:
+        - '&aA plantação &f{plantacao}&a foi liberada! &7({dia} às {horario})'
+      Title: ''
+      Actionbar: ''
