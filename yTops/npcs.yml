@@ -14,10 +14,16 @@
 
 # PLACEHOLDERS DISPONÍVEIS
 # {index}, {player_<index>}, {value_<index>}, {value_formatted_<index>}, {value_time_<index>}, {value_kdr_<index>}
+#
+# CLICK-COMMAND: comando executado ao clicar com o botão direito no NPC
+# Placeholders: {player}, {index}, {top_player}, {value}, {value_formatted}
+# Use [console] no início para executar como console
+# Exemplos: 'money top'  |  '[console] broadcast {player} clicou no top'
 
 npc:
   money:
     top-type: 'VAULT'
+    click-command: ''
     hologram:
       offset: 3.1
       lines: [ '&a&lTOP {index}', '&fJogador: &7{player}', '&fDinheiro: &a{value_formatted}' ]
