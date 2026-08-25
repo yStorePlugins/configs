@@ -1,0 +1,65 @@
+# Enviado automaticamente quando um spawner é liberado.
+# Placeholders: {spawner} {display} {id} {nome} {rank} {dia} {data} {hora}
+
+options:
+  # Ativar o envio para o Discord
+  ativar: true
+  # URL do webhook (Canal do Discord > Integrações > Webhooks)
+  url: ''
+  # Nome exibido no Discord
+  username: 'ySpawnersShop'
+  # Avatar do webhook (deixe vazio para o padrão)
+  avatar: ''
+  # Embed padrão usado quando o spawner não define outro
+  embed: 'liberado'
+
+# Formatos de data/hora/dia (SimpleDateFormat)
+formatos:
+  data: 'dd/MM/yyyy'
+  hora: 'HH:mm'
+  dia: 'EEEE'
+
+# Embeds 100% editáveis
+embeds:
+  liberado:
+    title: ':mailbox: Um novo gerador foi liberado!'
+    description: 'O gerador **{spawner}** já está disponível na loja.'
+    thumbnail: ''
+    image: ''
+    # Cor em hex (#57F287) ou RGB (87;242;135)
+    color: '#57F287'
+    # Mensagem acima do embed (mencione cargos com <@&ID>)
+    content: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      spawner:
+        inline: true
+        header: 'Gerador'
+        content: '```{spawner}```'
+      dia:
+        inline: true
+        header: 'Dia'
+        content: '```{dia}```'
+      data:
+        inline: true
+        header: 'Data'
+        content: '```{data}```'
+      hora:
+        inline: true
+        header: 'Horário'
+        content: '```{hora}```'
+      rank:
+        inline: true
+        header: 'Rank'
+        content: '```{rank}```'
+
+# Configuração por spawner (a chave deve ser a mesma do spawners.yml)
+# Se o spawner não estiver listado, usa options.embed e options.url
+spawners:
+  1:
+    ativar: true
+    embed: 'liberado'
+    # URL exclusiva deste spawner (vazio = options.url)
+    url: ''
