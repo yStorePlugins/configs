@@ -42,6 +42,7 @@ main:
     public-mine-config-slot: 21
     pickaxe-loan-slot: 24
     prestige-slot: 15
+    collect-pickaxe-slot: 17
     enchants:
       material: 'b2f79016cad84d1ae21609c4813782598e387961be13c15682752f126dce7a'
       name: '&aEncantamentos'
@@ -205,6 +206,17 @@ main:
         - '&fBônus blocos: &a+{bonus-block}%'
         - ''
         - '&aClique para abrir.'
+    collect-pickaxe:
+      material: 'CHEST'
+      name: '&aColetar Picareta'
+      lore:
+        - '&7Retire sua picareta como item'
+        - '&7físico, com encantamentos e skins.'
+        - ''
+        - '&7Pode ser dropada para outro'
+        - '&7jogador depositar com o direito.'
+        - ''
+        - '&aClique para coletar.'
 
 # Menu de classes
 classes:
@@ -258,6 +270,7 @@ evolution:
     skin-slot: 48
     filter-slot: 52
     disenchanter-slot: 53
+    select-pickaxe-slot: 46
     profile:
       material: '{player}'
       name: '&a{player}'
@@ -296,6 +309,14 @@ evolution:
         - '&7de volta.'
         - ''
         - '&aClique para acessar'
+    select-pickaxe:
+      material: 'COMPASS'
+      name: '&bSelecionar Picareta'
+      lore:
+        - '&7Escolha qual picareta usar'
+        - '&7entre as picaretas disponíveis.'
+        - ''
+        - '&aClique para selecionar.'
 
   sub-menu:
     name: '&8Gerenciando encantamento'
@@ -1417,3 +1438,33 @@ pickaxe-loan-select:
       lore:
         - '&7Origem: &f{owner}'
         - '&7Estado: {selected}'
+
+# Menu de selecao de picaretas coletadas
+pickaxe-select:
+  name: '&8Selecionar Picareta &7({stored}/{max})'
+  size: 36
+  back-slot: 31
+  previous-slot: 18
+  next-slot: 26
+  slots: [10, 11, 12, 13, 14, 15, 16]
+  items:
+    current:
+      material: 'DIAMOND_PICKAXE'
+      name: '&aPicareta Ativa'
+      lore:
+        - '&7Nível: &f{level}'
+        - '&7Prestígio: &d{prestige}'
+        - '&7Estado: {selected}'
+        - ''
+        - '&7Esta é a picareta padrão/ativa.'
+        - '&cNão é possível retirar.'
+    stored:
+      material: 'IRON_PICKAXE'
+      name: '&ePicareta Armazenada'
+      lore:
+        - '&7Nível: &f{level}'
+        - '&7Prestígio: &d{prestige}'
+        - '&7Estado: {selected}'
+        - ''
+        - '&aEsquerdo: selecionar'
+        - '&eDireito: retirar'

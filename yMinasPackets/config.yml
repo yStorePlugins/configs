@@ -415,6 +415,15 @@ prestige:
   # commands:
   #   - 'broadcast &e{player} &atingiu o prestígio &f{prestige}&e!'
 
+# Coleta de picareta (requer yMinasPacketsPickaxesAddon)
+# Fora da mina, o jogador pode coletar a picareta como item físico (dropável) e depositar com botão direito.
+pickaxe-collect:
+  # Limite de picaretas no armazém (depósito com botão direito)
+  max-stored: 9
+  item-lore:
+    - '&7Picareta coletada'
+    - '&eClique direito para depositar'
+
 # Você pode criar quantos bônus quiser
 # Será dado o bônus ao minerar.
 bonus:
