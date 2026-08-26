@@ -386,6 +386,8 @@ combat:
   held-slot: 0
   # Resetar os itens ao matar um jogador (Arena FFA)
   reset: true
+  # Ocultar jogadores do lobby ao entrar na arena FFA
+  hide-players: true
   # Comandos permitidos na arena
   allowed-commands: [ '/battle', '/batalhar' ]
   # Armadura pré-definida.
