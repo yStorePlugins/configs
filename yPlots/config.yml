@@ -58,6 +58,8 @@ general:
   teleport-delay-seconds: 3
   # Cancelar teleporte se o jogador se mover
   teleport-cancel-on-move: true
+  # Colocar vidro sob o jogador no TP/home se não houver chão
+  teleport-place-glass: true
   # Mostrar menu de compra ao entrar em terreno livre
   auto-claim-menu: true
   # Cooldown do menu auto-claim (segundos)

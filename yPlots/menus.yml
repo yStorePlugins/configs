@@ -1177,6 +1177,16 @@ confirm:
         - ''
         - ' &cConstruções seráo apagadas.'
         - ''
+    merge:
+      material: 9d1eb9bec1b9cd8e1c5d5480d4d895f0b8b765d53bd0f4819b640014de75bdb
+      name: '&e&lAgrupar Terrenos'
+      lore:
+        - ''
+        - ' &8| &7{info}'
+        - ' &8| &7ID: &f{id}'
+        - ''
+        - ' &eAgrupa com terrenos vizinhos seus.'
+        - ''
 
 # Claim
 claim:
@@ -1423,7 +1433,7 @@ wall-blocks:
       - ' &8| &7Desbloqueie este bloco'
       - ' &8| &7para a parede do terreno.'
       - ''
-      - ' &8| &7Custo: &a{money}'
+      - ' &8| &7Custo: &a{money} &7{economy}'
       - ''
       - ' &a> Clique para comprar'
       - ''
@@ -1452,7 +1462,7 @@ border-blocks:
       - ' &8| &7Desbloqueie este bloco'
       - ' &8| &7para a borda do terreno.'
       - ''
-      - ' &8| &7Custo: &a{money}'
+      - ' &8| &7Custo: &a{money} &7{economy}'
       - ''
       - ' &a> Clique para comprar'
       - ''

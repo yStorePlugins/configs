@@ -1,4 +1,14 @@
-# Economia padrão utilizada pelo plugin.
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|\___||___/
+#
+# Economias usadas em requisitos e loot de airdrop.
+# Providers (via PointsManager): Money (Vault), PlayerPoints, yPoints,
+# TokenManager, yCash, TGCash, LegendaryEconomy, NextCash, e outros.
+
+# Economia padrão (deve ser uma chave de 'economies' abaixo)
 default: 'money'
 
 economies:
