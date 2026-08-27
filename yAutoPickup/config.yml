@@ -54,6 +54,12 @@ login-delay: 20
 general:
   # Desativar o auto-pickup caso esteja no criativo
   block-creative: false
+  # Ativar o auto-pickup ao logar
+  auto-pickup-on-login: false
+  # Ativar o auto-smelt ao logar
+  auto-smelt-on-login: false
+  # Ativar o auto-compact ao logar
+  auto-compact-on-login: false
   # Lista de mundos que o plugin não irá funcionar
   world-blacklist: []
   # Lista de blocos que não serão afetados pelo auto-pickup
