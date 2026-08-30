@@ -31,3 +31,4 @@ chat:
   npc-set: '&aNPC setado com sucesso.'
   npc-deleted: '&aNPC removido com sucesso.'
   npc-not-set: '&cNPC não está definido.'
+  category-locked: '&cComplete a categoria {category} para desbloquear esta.'

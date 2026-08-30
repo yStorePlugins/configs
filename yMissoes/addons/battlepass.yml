@@ -225,3 +225,5 @@ messages:
   premium-disabled: '&c&lDESATIVADO'
   # Sem recompensas no tier
   no-rewards: '&7Nenhuma recompensa'
+  # Quando um admin da XP via comando
+  xp-given: '&aVoce deu &e{xp} XP &aa &f{player}&a no Passe de Batalha.'

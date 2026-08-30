@@ -16,5 +16,12 @@ YPLANTACOES -> Quebrar plantas em plot (yPlantacoes)
 YPESCA -> Pescar peixes (yPesca)
 YPESCASIMPLES -> Pescar recompensas (yPescaSimples)
 
-YBOSSES -> Matar bosses (yBosses)
-YSTACKBOSSES -> Matar stack de bosses (yStackBosses)
+ YBOSSES -> Matar bosses (yBosses)
+ YSTACKBOSSES -> Matar stack de bosses (yStackBosses)
+
+ YRANKUP -> Subir ranks (yRankup)
+  type: ALL = quantidade de rankups | key ou ordem do rank = chegar naquele rank
+ YTEMPOONLINE -> Tempo online (yTempoOnline)
+  type: ALL | amount em segundos
+ YBOSSARENA -> Matar bosses na arena (yBossArena)
+  type: ALL_ENTITIES ou a key do boss

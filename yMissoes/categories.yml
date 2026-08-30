@@ -8,6 +8,12 @@ categories:
     # Comando customizado para abrir diretamente esta categoria
     # Deixe vazio para não usar
     command: ''
+    # Permissão Bukkit para acessar esta categoria
+    # Deixe vazio para não exigir
+    permission: ''
+    # Categoria que precisa estar 100% completa para desbloquear esta
+    # Deixe vazio para não exigir
+    requires-category: ''
     # Ícone no menu
     display:
       material: 'MOB_SPAWNER'
@@ -19,6 +25,13 @@ categories:
         - ''
         - '&c*Nenhuma missão encontrada para esta categoria.'
         - ''
+    # Ícone no menu (quando a categoria estiver bloqueada por permissão ou requires-category)
+    # Se não definir, usa o ícone display
+    # display-locked:
+    #   material: 'BARRIER'
+    #   name: '&cCategoria bloqueada'
+    #   lore:
+    #     - '&7Complete a categoria anterior para desbloquear.'
     # Ícone no menu (quando tiver todas completas)
     display-completed:
       material: 'MOB_SPAWNER'
