@@ -1,0 +1,77 @@
+display-name: '&2Asas de Dragão'
+description: 'Asas esmeralda de um dragão ancestral.'
+type: WINGS
+rarity: MYTHIC
+permission: 'ycosmeticos.cosmetic.dragon_wings'
+enabled: true
+icon:
+  material: c23c4375dfd081b5efefef7a5cfe6cb01b8187e8b7f8eb4f54e6f0c12f068e49
+  name: '&2Asas de Dragão'
+  lore:
+    - ''
+    - ' &7Asas largas com partículas'
+    - ' &7de portal.'
+    - ''
+item:
+  material: c23c4375dfd081b5efefef7a5cfe6cb01b8187e8b7f8eb4f54e6f0c12f068e49
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: FLOATING
+  speed: 0.9
+  height: 0.18
+particles:
+  enabled: true
+  type: PORTAL
+  count: 2
+  extra: 0.0
+  offset-x: 0.02
+  offset-y: 0.02
+  offset-z: 0.02
+  shape: WING
+  radius: 1.55
+
+icons:
+  equipped:
+    material: 'c23c4375dfd081b5efefef7a5cfe6cb01b8187e8b7f8eb4f54e6f0c12f068e49'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: 'c23c4375dfd081b5efefef7a5cfe6cb01b8187e8b7f8eb4f54e6f0c12f068e49'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

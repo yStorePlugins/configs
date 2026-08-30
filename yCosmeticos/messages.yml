@@ -1,0 +1,62 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &8&m-&r &6&lCosméticos &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu de cosméticos.
+    &8&m-&r &e/{cmd} unequip [tipo] &8- &7Remove o cosmético equipado.
+    &8&m-&r
+
+  admin-help: |
+
+    &8&m-&r &6&lCosméticos Admin &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu de cosméticos.
+    &8&m-&r &e/{cmd} unequip [tipo] &8- &7Remove o cosmético equipado.
+    &8&m-&r &e/{cmd} give <item/direto> <jogador> <id> &8- &7Dá um cosmético ao jogador.
+    &8&m-&r &e/{cmd} reload &8- &7Recarrega as configurações.
+    &8&m-&r
+
+  equipped: |
+
+    &aVocê equipou &f{cosmetic}&a!
+
+    &7Tipo: &f{type}
+
+  unequipped: |
+
+    &eVocê desequipou &f{cosmetic}&e.
+
+    &7Tipo: &f{type}
+
+  unequipped-all: '&eTodos os cosméticos foram desequipados.'
+  not-owned: '&cVocê não possui o cosmético {cosmetic}.'
+  not-found: '&cCosmético {cosmetic} não encontrado.<nl>&cLista: &f{list}&c.'
+  already-equipped: '&cEste cosmético já está equipado.'
+  given: '&aVocê deu {cosmetic} para {player}.'
+  given-target: '&aVocê recebeu o cosmético {cosmetic} de {sender}.'
+  given-item: '&aVocê deu o item de {cosmetic} para {player}.'
+  given-item-target: '&aVocê recebeu o item do cosmético {cosmetic} de {sender}.'
+  item-activated: '&aVocê ativou o cosmético {cosmetic}!'
+  item-not-configured: '&cO cosmético {cosmetic} não possui item configurado.'
+  already-owned: '&c{player} já possui {cosmetic}.'
+  already-owned-self: '&cVocê já possui o cosmético {cosmetic}.'
+  inv-full: '&cO inventário de {player} está cheio.'
+  type-invalid: '&cTipo {type} inválido. Use: WINGS, AURA, TRAIL, PET, HAT, EFFECT.'
+  hidden: '&cVocê não pode usar cosméticos agora (PvP, arena, parkour ou vanish).'

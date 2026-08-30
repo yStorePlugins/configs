@@ -1,0 +1,77 @@
+display-name: '&eHalo Angelical'
+description: 'Um anel de luz sobre a cabeça.'
+type: HAT
+rarity: RARE
+permission: 'ycosmeticos.cosmetic.halo_hat'
+enabled: true
+icon:
+  material: b1f3e3d688ebeafa109dbd1a29ad20ebcc09d1fcd576ede99dd85eb76ca32d8d
+  name: '&eHalo Angelical'
+  lore:
+    - ''
+    - ' &7Um halo brilhante flutua'
+    - ' &7acima de você.'
+    - ''
+item:
+  material: b1f3e3d688ebeafa109dbd1a29ad20ebcc09d1fcd576ede99dd85eb76ca32d8d
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: ROTATE
+  speed: 1.2
+  height: 0.0
+particles:
+  enabled: true
+  type: ENCHANTMENT_TABLE
+  count: 1
+  extra: 0.0
+  offset-x: 0.0
+  offset-y: 0.0
+  offset-z: 0.0
+  shape: HALO
+  radius: 0.45
+
+icons:
+  equipped:
+    material: 'b1f3e3d688ebeafa109dbd1a29ad20ebcc09d1fcd576ede99dd85eb76ca32d8d'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: 'b1f3e3d688ebeafa109dbd1a29ad20ebcc09d1fcd576ede99dd85eb76ca32d8d'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

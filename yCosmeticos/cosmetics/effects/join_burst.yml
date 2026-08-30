@@ -1,0 +1,77 @@
+display-name: '&fExplosão de Entrada'
+description: 'Partículas explodem ao entrar ou teleportar.'
+type: EFFECT
+rarity: UNCOMMON
+permission: 'ycosmeticos.cosmetic.join_burst'
+enabled: true
+icon:
+  material: 8d620e4e3d3abfed6ad81a58a56bcd085d9e9efc803cabb21fa6c9e3969e2d2e
+  name: '&fExplosão de Entrada'
+  lore:
+    - ''
+    - ' &7Uma explosão visual quando'
+    - ' &7você entra no servidor.'
+    - ''
+item:
+  material: 8d620e4e3d3abfed6ad81a58a56bcd085d9e9efc803cabb21fa6c9e3969e2d2e
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: NONE
+  speed: 1.0
+  height: 0.0
+particles:
+  enabled: true
+  type: FIREWORKS_SPARK
+  count: 4
+  extra: 0.05
+  offset-x: 0.4
+  offset-y: 0.6
+  offset-z: 0.4
+  shape: BURST
+  radius: 1.4
+
+icons:
+  equipped:
+    material: '8d620e4e3d3abfed6ad81a58a56bcd085d9e9efc803cabb21fa6c9e3969e2d2e'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: '8d620e4e3d3abfed6ad81a58a56bcd085d9e9efc803cabb21fa6c9e3969e2d2e'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

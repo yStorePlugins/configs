@@ -1,0 +1,77 @@
+display-name: '&dTrail Arco-íris'
+description: 'Um rastro colorido enquanto você corre.'
+type: TRAIL
+rarity: RARE
+permission: 'ycosmeticos.cosmetic.rainbow_trail'
+enabled: true
+icon:
+  material: ad8dd9fb7eb4d832ad0a2c66776520c9e4f92c27a25fdd13d6ecb272e7260e43
+  name: '&dTrail Arco-íris'
+  lore:
+    - ''
+    - ' &7Partículas coloridas'
+    - ' &7seguem seus passos.'
+    - ''
+item:
+  material: ad8dd9fb7eb4d832ad0a2c66776520c9e4f92c27a25fdd13d6ecb272e7260e43
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: WAVE
+  speed: 1.4
+  height: 0.15
+particles:
+  enabled: true
+  type: REDSTONE
+  count: 2
+  extra: 0.0
+  offset-x: 0.2
+  offset-y: 0.15
+  offset-z: 0.2
+  shape: WAVE
+  radius: 0.8
+
+icons:
+  equipped:
+    material: 'ad8dd9fb7eb4d832ad0a2c66776520c9e4f92c27a25fdd13d6ecb272e7260e43'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: 'ad8dd9fb7eb4d832ad0a2c66776520c9e4f92c27a25fdd13d6ecb272e7260e43'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

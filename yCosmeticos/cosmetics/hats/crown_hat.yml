@@ -1,0 +1,77 @@
+display-name: '&6Coroa Real'
+description: 'Uma coroa dourada sobre a cabeça.'
+type: HAT
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.crown_hat'
+enabled: true
+icon:
+  material: 6eaad1457a321630d130746a860e4027b4080f4a53923db8e5837be368ed6f30
+  name: '&6Coroa Real'
+  lore:
+    - ''
+    - ' &7Partículas douradas formam'
+    - ' &7uma coroa.'
+    - ''
+item:
+  material: 6eaad1457a321630d130746a860e4027b4080f4a53923db8e5837be368ed6f30
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: ROTATE
+  speed: 0.8
+  height: 0.0
+particles:
+  enabled: true
+  type: CRIT
+  count: 1
+  extra: 0.0
+  offset-x: 0.0
+  offset-y: 0.0
+  offset-z: 0.0
+  shape: HALO
+  radius: 0.45
+
+icons:
+  equipped:
+    material: '6eaad1457a321630d130746a860e4027b4080f4a53923db8e5837be368ed6f30'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: '6eaad1457a321630d130746a860e4027b4080f4a53923db8e5837be368ed6f30'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

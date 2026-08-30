@@ -1,0 +1,77 @@
+display-name: '&aExplosão de Brilhos'
+description: 'Faíscas coloridas ao redor do corpo.'
+type: AURA
+rarity: RARE
+permission: 'ycosmeticos.cosmetic.sparkle_burst'
+enabled: true
+icon:
+  material: d9f4f6805e0441462b0c4344e05c112f80ea5232a04fac7d5157c55092f779d5
+  name: '&aExplosão de Brilhos'
+  lore:
+    - ''
+    - ' &7Brilhos estouram ao seu'
+    - ' &7redor continuamente.'
+    - ''
+item:
+  material: d9f4f6805e0441462b0c4344e05c112f80ea5232a04fac7d5157c55092f779d5
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: PULSE
+  speed: 1.5
+  height: 0.0
+particles:
+  enabled: true
+  type: VILLAGER_HAPPY
+  count: 1
+  extra: 0.0
+  offset-x: 0.05
+  offset-y: 0.05
+  offset-z: 0.05
+  shape: BURST
+  radius: 1.1
+
+icons:
+  equipped:
+    material: 'd9f4f6805e0441462b0c4344e05c112f80ea5232a04fac7d5157c55092f779d5'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: 'd9f4f6805e0441462b0c4344e05c112f80ea5232a04fac7d5157c55092f779d5'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

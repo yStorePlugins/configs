@@ -1,0 +1,341 @@
+================================================================================
+ yCosmeticos — Como criar um cosmético
+================================================================================
+
+Arquivo: plugins/yCosmeticos/cosmetics/<pasta>/<id>.yml
+O ID do cosmético é o NOME DO ARQUIVO sem .yml
+Exemplo: cosmetics/asas/phoenix_wings.yml  →  ID = phoenix_wings
+
+Pastas por categoria (recomendado):
+  cosmetics/asas/        type: WINGS
+  cosmetics/auras/       type: AURA
+  cosmetics/trails/      type: TRAIL
+  cosmetics/pets/        type: PET
+  cosmetics/chapeus/     type: HAT
+  cosmetics/efeitos/     type: EFFECT
+
+Depois de criar/editar: /cosmeticos reload
+Dar para o jogador:     /cosmeticos give <item/direto> <jogador> <id>
+
+
+--------------------------------------------------------------------------------
+ 1. CAMPOS PRINCIPAIS
+--------------------------------------------------------------------------------
+
+display-name: '&6Asas de Fênix'
+  Nome colorido do cosmético. Aceita & e hex.
+
+description: 'Texto curto.'
+  Descrição. Usada no placeholder {description} dos ícones.
+
+type: asas
+  ID da categoria em config.yml (seção categories:).
+  Também aceita o behavior: WINGS, AURA, TRAIL, PET, HAT, EFFECT.
+  Categorias (ícone + slot + nome) são criadas em config.yml:
+
+    categories:
+      asas:
+        display: '&6Asas'
+        behavior: WINGS
+        slot: 10
+        icon:
+          material: FEATHER
+          name: '&6&lAsas'
+          lore:
+            - ' &eClique para abrir'
+
+  behavior:
+    WINGS   — asas de partículas atrás do jogador
+    AURA    — partículas ao redor do corpo
+    TRAIL   — rastro só enquanto anda
+    PET     — armor stand invisível + head orbitando
+    HAT     — anel/partículas na cabeça (halo)
+    EFFECT  — explosão ao entrar/teleportar
+
+rarity: legendary
+  ID da raridade em config.yml (seção rarities:).
+  Crie quantas quiser, por exemplo:
+    rarities:
+      common: '&7Comum'
+      legendary: '&6Lendário'
+      seasonal: '&bSazonal'
+  No YAML do cosmético use a chave: rarity: seasonal
+
+permission: 'ycosmeticos.cosmetic.phoenix_wings'
+  Se o jogador tiver essa permissão, pode usar sem /give.
+  Admin (ycosmeticos.admin) sempre pode.
+  Se give-all-by-default: true na config.yml, todos podem.
+
+enabled: true
+  false = não carrega / não aparece no menu.
+
+
+--------------------------------------------------------------------------------
+ 2. ICON (menu — fallback)
+--------------------------------------------------------------------------------
+
+Usado se icons.equipped / owned / locked não existirem.
+Formato SetupItem (material, name, lore, glow, skull, etc.):
+
+icon:
+  material: BLAZE_POWDER
+  name: '&6Asas de Fênix'
+  lore:
+    - ''
+    - ' &7Texto.'
+    - ''
+
+
+--------------------------------------------------------------------------------
+ 3. ICONS (obrigatório para o menu por estado)
+--------------------------------------------------------------------------------
+
+Cada cosmético deve ter os 3 estados. Placeholders:
+  {name} {description} {rarity} {type} {equipped} {owned}
+
+icons:
+  equipped:          # já está usando
+    material: 'BLAZE_POWDER'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+
+  owned:             # possui, mas não está equipado
+    material: 'BLAZE_POWDER'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+
+  locked:            # não possui
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''
+
+--------------------------------------------------------------------------------
+ 4. ANIMATION
+--------------------------------------------------------------------------------
+
+animation:
+  type: FLOATING
+  speed: 1.2
+  height: 0.15
+
+type:
+  NONE      — sem movimento extra
+  FLOATING  — sobe/desce (usas em asas)
+  BOUNCE    — igual FLOATING
+  ORBIT     — gira em volta
+  ROTATE    — gira o formato (círculo/halo)
+  PULSE     — aumenta/diminui o raio
+  WAVE      — onda
+  FOLLOW    — segue/orbita (pets)
+
+speed:  velocidade da animação (1.0 = normal)
+height: amplitude do sobe/desce (FLOATING/BOUNCE/FOLLOW)
+
+
+--------------------------------------------------------------------------------
+ 5. PARTICLES
+--------------------------------------------------------------------------------
+
+particles:
+  enabled: true
+  type: FLAME
+  count: 1
+  extra: 0.0
+  offset-x: 0.0
+  offset-y: 0.0
+  offset-z: 0.0
+  shape: WING
+  radius: 1.35
+
+enabled:  liga/desliga partículas
+type:     nome da partícula (veja lista abaixo)
+count:    quantidade por ponto
+extra:    velocidade extra da partícula (0 = parada no lugar)
+offset-*: espalhamento (0 = no ponto exato; trail usa 0.02)
+shape:    formato
+radius:   tamanho do formato
+
+shape:
+  CIRCLE  — anel na altura do peito (auras)
+  ORBIT   — dois pontos girando
+  SPIRAL  — hélice subindo
+  WING    — silhueta de asas nas costas (WINGS)
+  BURST   — explosão aleatória (EFFECT)
+  HEART   — coração na frente
+  WAVE    — onda (não use em TRAIL; trail tem rastro próprio)
+  HALO    — anel ACIMA da cabeça (HAT)
+  FOLLOW  — órbita (pets também usam o armor stand)
+
+TRAIL ignora o shape e sempre deixa rastro nos pés, só andando.
+PET usa armor stand + partículas no ponto do pet.
+EFFECT dispara uma vez no join/teleporte.
+
+
+--------------------------------------------------------------------------------
+ 6. HEAD (só PET)
+--------------------------------------------------------------------------------
+
+Head do armor stand invisível. SetupItem.setupMenuItem.
+
+head:
+  material: STONE
+  name: '&aPet Slime'
+
+Padrão: STONE se não definir.
+Pode ser qualquer bloco/item (DIAMOND_BLOCK, SLIME_BLOCK, SKULL_ITEM:3, etc.).
+
+
+--------------------------------------------------------------------------------
+ 7. PARTÍCULAS (particles.type)
+--------------------------------------------------------------------------------
+
+Nomes comuns (maiúsculo ou minúsculo):
+
+  FLAME              fogo
+  SNOWFLAKE          flocos (1.8 vira brilho)
+  HEART              corações
+  NOTE               notas
+  PORTAL             portal / ender
+  CRIT               crit
+  ENCHANT            encantamento (ENCHANTMENT_TABLE também vale)
+  END_ROD            end rod / halo (1.8 vira fireworks)
+  CLOUD / SMOKE      fumaça
+  LAVA               lava
+  VILLAGER_HAPPY     brilho verde
+  FIREWORKS_SPARK    faíscas
+  REDSTONE           (mapeado para flame)
+  SLIME              (mapeado para villager_happy)
+
+Outros nomes PacketEvents também funcionam (flame, heart, portal, witch,
+happy_villager, firework, snowflake, end_rod, ...).
+
+
+--------------------------------------------------------------------------------
+  8. ITEM (give item — ativável)
+--------------------------------------------------------------------------------
+
+Item físico enviado com /cosmeticos give item <jogador> <id>.
+O jogador clica com o direito para ativar e receber o cosmético.
+Formato SetupItem. Placeholders: {name} {description} {rarity}
+
+item:
+  material: BLAZE_POWDER
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+
+Se item: não existir, usa o icon: como fallback.
+
+
+--------------------------------------------------------------------------------
+  9. EXEMPLO COMPLETO (WINGS)
+--------------------------------------------------------------------------------
+
+display-name: '&6Asas de Fênix'
+description: 'Asas flamejantes de uma fênix lendária.'
+type: WINGS
+rarity: LEGENDARY
+permission: 'ycosmeticos.cosmetic.phoenix_wings'
+enabled: true
+icon:
+  material: BLAZE_POWDER
+  name: '&6Asas de Fênix'
+  lore:
+    - ' &7Asas de fogo.'
+icons:
+  equipped:
+    material: BLAZE_POWDER
+    name: '&a{name}'
+    lore:
+      - ' &7{description}'
+      - ' &aEquipado'
+  owned:
+    material: BLAZE_POWDER
+    name: '&e{name}'
+    lore:
+      - ' &7{description}'
+      - ' &eClique para equipar'
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ' &cBloqueado'
+animation:
+  type: FLOATING
+  speed: 1.2
+  height: 0.12
+particles:
+  enabled: true
+  type: FLAME
+  count: 1
+  extra: 0.0
+  offset-x: 0.0
+  offset-y: 0.0
+  offset-z: 0.0
+  shape: WING
+  radius: 1.35
+
+
+--------------------------------------------------------------------------------
+ 10. EXEMPLO PET
+--------------------------------------------------------------------------------
+
+type: PET
+head:
+  material: STONE
+animation:
+  type: FOLLOW
+  speed: 1.0
+  height: 0.2
+particles:
+  type: SLIME
+  shape: FOLLOW
+  radius: 1.15
+
+
+--------------------------------------------------------------------------------
+ 11. COMANDOS
+--------------------------------------------------------------------------------
+
+/cosmeticos                      abre o menu
+/cosmeticos unequip [tipo]       remove (WINGS, AURA, TRAIL, PET, HAT, EFFECT)
+/cosmeticos give <item/direto> <jogador> <id>  dá o cosmético (item ativável ou direto)
+/cosmeticos reload               recarrega YAMLs
+
+Permissões:
+  ycosmeticos.use
+  ycosmeticos.admin
+  ycosmeticos.give
+  ycosmeticos.reload
+  + a permission: de cada YAML
+================================================================================

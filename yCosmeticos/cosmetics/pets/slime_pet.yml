@@ -1,0 +1,80 @@
+display-name: '&aPet Slime'
+description: 'Um slime flutuante que orbita você.'
+type: PET
+rarity: UNCOMMON
+permission: 'ycosmeticos.cosmetic.slime_pet'
+enabled: true
+icon:
+  material: 341c0c31b162efd64f687fbbf5378f6283866eee81affa3d0ba3fefcd0cf1b07
+  name: '&aPet Slime'
+  lore:
+    - ''
+    - ' &7Um companheiro verde'
+    - ' &7que gira ao seu lado.'
+    - ''
+item:
+  material: 341c0c31b162efd64f687fbbf5378f6283866eee81affa3d0ba3fefcd0cf1b07
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: FOLLOW
+  speed: 1.0
+  height: 0.2
+particles:
+  enabled: true
+  type: SLIME
+  count: 2
+  extra: 0.0
+  offset-x: 0.08
+  offset-y: 0.08
+  offset-z: 0.08
+  shape: FOLLOW
+  radius: 1.15
+head:
+  material: 341c0c31b162efd64f687fbbf5378f6283866eee81affa3d0ba3fefcd0cf1b07
+  name: '&aPet Slime'
+
+icons:
+  equipped:
+    material: '341c0c31b162efd64f687fbbf5378f6283866eee81affa3d0ba3fefcd0cf1b07'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: '341c0c31b162efd64f687fbbf5378f6283866eee81affa3d0ba3fefcd0cf1b07'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

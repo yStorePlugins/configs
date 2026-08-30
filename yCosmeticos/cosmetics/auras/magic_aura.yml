@@ -1,0 +1,77 @@
+display-name: '&bAura Mágica'
+description: 'Círculos mágicos de encantamento.'
+type: AURA
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.magic_aura'
+enabled: true
+icon:
+  material: 6c34d12f7ac939b1151d12146d0239ef0188e403ee1966d3db199e664ff38283
+  name: '&bAura Mágica'
+  lore:
+    - ''
+    - ' &7Espirais de magia giram'
+    - ' &7ao redor de você.'
+    - ''
+item:
+  material: 6c34d12f7ac939b1151d12146d0239ef0188e403ee1966d3db199e664ff38283
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: ROTATE
+  speed: 1.1
+  height: 0.05
+particles:
+  enabled: true
+  type: ENCHANTMENT_TABLE
+  count: 1
+  extra: 0.0
+  offset-x: 0.0
+  offset-y: 0.0
+  offset-z: 0.0
+  shape: SPIRAL
+  radius: 0.9
+
+icons:
+  equipped:
+    material: '6c34d12f7ac939b1151d12146d0239ef0188e403ee1966d3db199e664ff38283'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: '6c34d12f7ac939b1151d12146d0239ef0188e403ee1966d3db199e664ff38283'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

@@ -1,0 +1,77 @@
+display-name: '&6Asas de Fênix'
+description: 'Asas flamejantes de uma fênix lendária.'
+type: WINGS
+rarity: LEGENDARY
+permission: 'ycosmeticos.cosmetic.phoenix_wings'
+enabled: true
+icon:
+  material: 2dfe58dca44688809a44c27367fcc2880897792af8838f93f2b585afcbe8f137
+  name: '&6Asas de Fênix'
+  lore:
+    - ''
+    - ' &7Asas de fogo que batem'
+    - ' &7conforme você se move.'
+    - ''
+item:
+  material: 2dfe58dca44688809a44c27367fcc2880897792af8838f93f2b585afcbe8f137
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: FLOATING
+  speed: 1.2
+  height: 0.12
+particles:
+  enabled: true
+  type: FLAME
+  count: 1
+  extra: 0.0
+  offset-x: 0.0
+  offset-y: 0.0
+  offset-z: 0.0
+  shape: WING
+  radius: 1.35
+
+icons:
+  equipped:
+    material: '2dfe58dca44688809a44c27367fcc2880897792af8838f93f2b585afcbe8f137'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: '2dfe58dca44688809a44c27367fcc2880897792af8838f93f2b585afcbe8f137'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

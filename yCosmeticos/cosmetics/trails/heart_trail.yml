@@ -1,0 +1,77 @@
+display-name: '&cTrail de Corações'
+description: 'Deixa corações pelo caminho.'
+type: TRAIL
+rarity: UNCOMMON
+permission: 'ycosmeticos.cosmetic.heart_trail'
+enabled: true
+icon:
+  material: 93c171842f43af3d9e1905093167a9bc1348da0da0c6be4cc64c5221efe10d30
+  name: '&cTrail de Corações'
+  lore:
+    - ''
+    - ' &7Corações surgem enquanto'
+    - ' &7você anda.'
+    - ''
+item:
+  material: 93c171842f43af3d9e1905093167a9bc1348da0da0c6be4cc64c5221efe10d30
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: WAVE
+  speed: 1.0
+  height: 0.1
+particles:
+  enabled: true
+  type: HEART
+  count: 1
+  extra: 0.0
+  offset-x: 0.1
+  offset-y: 0.1
+  offset-z: 0.1
+  shape: WAVE
+  radius: 0.7
+
+icons:
+  equipped:
+    material: '93c171842f43af3d9e1905093167a9bc1348da0da0c6be4cc64c5221efe10d30'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: '93c171842f43af3d9e1905093167a9bc1348da0da0c6be4cc64c5221efe10d30'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

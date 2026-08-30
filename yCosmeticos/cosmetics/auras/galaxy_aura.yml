@@ -1,0 +1,77 @@
+display-name: '&5Aura Galáxia'
+description: 'Poeira estelar orbitando o jogador.'
+type: AURA
+rarity: LEGENDARY
+permission: 'ycosmeticos.cosmetic.galaxy_aura'
+enabled: true
+icon:
+  material: 69dc3e9142201972e0367322dd64e07249fc9191611f9cd954a84f8ac34f28fe
+  name: '&5Aura Galáxia'
+  lore:
+    - ''
+    - ' &7Portais e estrelas giram'
+    - ' &7em órbita.'
+    - ''
+item:
+  material: 69dc3e9142201972e0367322dd64e07249fc9191611f9cd954a84f8ac34f28fe
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: ORBIT
+  speed: 1.3
+  height: 0.2
+particles:
+  enabled: true
+  type: PORTAL
+  count: 2
+  extra: 0.0
+  offset-x: 0.05
+  offset-y: 0.05
+  offset-z: 0.05
+  shape: ORBIT
+  radius: 1.05
+
+icons:
+  equipped:
+    material: '69dc3e9142201972e0367322dd64e07249fc9191611f9cd954a84f8ac34f28fe'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: '69dc3e9142201972e0367322dd64e07249fc9191611f9cd954a84f8ac34f28fe'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

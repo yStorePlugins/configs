@@ -1,0 +1,77 @@
+display-name: '&cAura de Fogo'
+description: 'Chamas orbitando o seu corpo.'
+type: AURA
+rarity: RARE
+permission: 'ycosmeticos.cosmetic.fire_aura'
+enabled: true
+icon:
+  material: 31b75368db9a76332dc6d9e5c00e232fd4238ca1a3019e7b521f14ffc8330e7b
+  name: '&cAura de Fogo'
+  lore:
+    - ''
+    - ' &7Um anel de fogo gira'
+    - ' &7ao seu redor.'
+    - ''
+item:
+  material: 31b75368db9a76332dc6d9e5c00e232fd4238ca1a3019e7b521f14ffc8330e7b
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: ROTATE
+  speed: 1.4
+  height: 0.0
+particles:
+  enabled: true
+  type: FLAME
+  count: 1
+  extra: 0.0
+  offset-x: 0.0
+  offset-y: 0.0
+  offset-z: 0.0
+  shape: CIRCLE
+  radius: 0.85
+
+icons:
+  equipped:
+    material: '31b75368db9a76332dc6d9e5c00e232fd4238ca1a3019e7b521f14ffc8330e7b'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: '31b75368db9a76332dc6d9e5c00e232fd4238ca1a3019e7b521f14ffc8330e7b'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

@@ -1,0 +1,77 @@
+display-name: '&eTrail de Confete'
+description: 'Confetes explodem ao caminhar.'
+type: TRAIL
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.confetti_trail'
+enabled: true
+icon:
+  material: fcdb635ca250a08b837136503d49ccbabf9078975ecf1d28b4ad245ad0ed2136
+  name: '&eTrail de Confete'
+  lore:
+    - ''
+    - ' &7Pedacinhos coloridos caem'
+    - ' &7enquanto você se move.'
+    - ''
+item:
+  material: fcdb635ca250a08b837136503d49ccbabf9078975ecf1d28b4ad245ad0ed2136
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: NONE
+  speed: 1.0
+  height: 0.0
+particles:
+  enabled: true
+  type: VILLAGER_HAPPY
+  count: 3
+  extra: 0.0
+  offset-x: 0.02
+  offset-y: 0.02
+  offset-z: 0.02
+  shape: WAVE
+  radius: 0.35
+
+icons:
+  equipped:
+    material: 'fcdb635ca250a08b837136503d49ccbabf9078975ecf1d28b4ad245ad0ed2136'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: 'fcdb635ca250a08b837136503d49ccbabf9078975ecf1d28b4ad245ad0ed2136'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

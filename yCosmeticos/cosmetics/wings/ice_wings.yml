@@ -1,0 +1,77 @@
+display-name: '&bAsas de Gelo'
+description: 'Cristais de gelo que formam um par de wings.'
+type: WINGS
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.ice_wings'
+enabled: true
+icon:
+  material: 6d6355d1ddab3dca844354c56673acc3c8ffeb16dc3c86986b31ff5e305f4d71
+  name: '&bAsas de Gelo'
+  lore:
+    - ''
+    - ' &7Asas congeladas com'
+    - ' &7brilho glacial.'
+    - ''
+item:
+  material: 6d6355d1ddab3dca844354c56673acc3c8ffeb16dc3c86986b31ff5e305f4d71
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+animation:
+  type: FLOATING
+  speed: 1.0
+  height: 0.1
+particles:
+  enabled: true
+  type: SNOWFLAKE
+  count: 1
+  extra: 0.0
+  offset-x: 0.0
+  offset-y: 0.0
+  offset-z: 0.0
+  shape: WING
+  radius: 1.15
+
+icons:
+  equipped:
+    material: '6d6355d1ddab3dca844354c56673acc3c8ffeb16dc3c86986b31ff5e305f4d71'
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: '6d6355d1ddab3dca844354c56673acc3c8ffeb16dc3c86986b31ff5e305f4d71'
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

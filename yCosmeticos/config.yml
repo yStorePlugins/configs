@@ -1,0 +1,175 @@
+#          ____                         _   _
+#  _   _ / ___|___  ___ _ __ ___   ___| |_(_) ___ ___  ___
+# | | | | |   / _ \/ __| '_ ` _ \ / _ \ __| |/ __/ _ \/ __|
+# | |_| | |__| (_) \__ \ | | | | |  __/ |_| | (_| (_) \__ \
+#  \__, |\____\___/|___/_| |_| |_|\___|\__|_|\___\___/|___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Intervalo (em ticks) do motor de animação. 1 = a cada tick
+  render-tick-interval: 1
+  # Distância máxima de visualização dos effects
+  view-distance: 48.0
+  # Esconder cosméticos quando o jogador está vanished
+  hide-on-vanish: true
+  # Se true, todos os jogadores podem usar qualquer cosmético sem precisar receber
+  give-all-by-default: false
+  # Esconder cosméticos no 1v1 do yLobby
+  hide-in-battle: true
+  # Esconder cosméticos no FFA/arena do yLobby
+  hide-in-ffa: true
+  # Esconder cosméticos no parkour do yLobby
+  hide-in-parkour: true
+  # Esconder cosméticos no vanish do yLobby
+  hide-in-vanish: true
+  # Esconder cosméticos no modo espectador
+  hide-in-spectator: true
+  # Bloquear menu/equipar enquanto estiver em combate/parkour/vanish
+  block-menu-when-hidden: true
+  # Mundos onde os cosméticos não aparecem
+  disabled-worlds: []
+  sounds:
+    equip: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    unequip: 'ENTITY_ITEM_BREAK'
+    fail: 'ENTITY_VILLAGER_NO'
+
+# Categorias — crie quantas quiser.
+categories:
+  asas:
+    display: '&6Asas'
+    # behavior: WINGS | AURA | TRAIL | PET | HAT | EFFECT
+    # No YAML do cosmético use type: <id da categoria> (ou o behavior, ex: WINGS)
+    behavior: WINGS
+    slot: 10
+    icon:
+      material: f1e508f3873ce46427269acae036c4eae0ad7e74155552af09579839eeaa266b
+      name: '&6&lAsas'
+      lore:
+        - ''
+        - ' &7Equipe wings animadas'
+        - ' &7ao redor do personagem.'
+        - ''
+        - ' &eClique para abrir'
+        - ''
+  auras:
+    display: '&dAuras'
+    behavior: AURA
+    slot: 11
+    icon:
+      material: 38919ff0454c800f2209cc6f962b17a4db0165c1bb61ae326f3b9aaf0cea3ddb
+      name: '&d&lAuras'
+      lore:
+        - ''
+        - ' &7Círculos e partículas'
+        - ' &7que acompanham você.'
+        - ''
+        - ' &eClique para abrir'
+        - ''
+  trails:
+    display: '&bTrails'
+    behavior: TRAIL
+    slot: 12
+    icon:
+      material: f70d7a8fee1d9e36f40a91dcc91848e6410a95ff2067e416fc8ffada128bc519
+      name: '&b&lTrails'
+      lore:
+        - ''
+        - ' &7Deixe um rastro enquanto'
+        - ' &7você caminha.'
+        - ''
+        - ' &eClique para abrir'
+        - ''
+  pets:
+    display: '&aPets'
+    behavior: PET
+    slot: 14
+    icon:
+      material: ec4410791995cd77207e5c307782ea60d50bcfbb4d4b3101427ddf97ae75b0
+      name: '&a&lPets'
+      lore:
+        - ''
+        - ' &7Companheiros flutuantes'
+        - ' &7que orbitam você.'
+        - ''
+        - ' &eClique para abrir'
+        - ''
+  chapeus:
+    display: '&eChapéus'
+    behavior: HAT
+    slot: 15
+    icon:
+      material: f2dc08de0cdd2340d7f5f84ddeb4a56652c4e9c1d3f98f720cfe612440fc18f0
+      name: '&e&lChapéus'
+      lore:
+        - ''
+        - ' &7Cosméticos na cabeça:'
+        - ' &7coroas, halos e mais.'
+        - ''
+        - ' &eClique para abrir'
+        - ''
+  efeitos:
+    display: '&fEfeitos'
+    behavior: EFFECT
+    slot: 16
+    icon:
+      material: b55ea43e592785d016acdeea9a4a6f9cf22c2753e695405e8c83d2e09ebcf647
+      name: '&f&lEfeitos'
+      lore:
+        - ''
+        - ' &7Efeitos de entrada e'
+        - ' &7teleporte.'
+        - ''
+        - ' &eClique para abrir'
+        - ''
+
+# Raridades — crie quantas quiser.
+# A chave é o ID usado no YAML do cosmético (rarity: legendary).
+rarities:
+  common: '&7Comum'
+  uncommon: '&aIncomum'
+  rare: '&9Raro'
+  epic: '&5Épico'
+  legendary: '&6Lendário'
+  mythic: '&cMítico'
