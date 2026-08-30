@@ -114,6 +114,8 @@ xp:
 xp-blacklist:
   worlds: []
   regions: []
+  # IDs das claims/plots onde o XP não será dado
+  claims: []
 
 # Formas de ganhar xp
 xp-earn:
@@ -165,13 +167,16 @@ actionbar:
 
 # Sistema de mensagem ao upar de nível
 level-up:
-  enabled: true
-  level: 100
-  strike: true
-  message: |
-    <nl>
-    &b&lSKILLS: &bO jogador &f{player}&b atingiu o &fnível {level} &bna habilidade &f{skill}&f!
-    <nl>
+  # Pode criar várias mensagens (cada chave = um anúncio)
+  # level: a cada X níveis (ex: 100 = 100, 200, 300...)
+  default:
+    enabled: true
+    level: 100
+    strike: true
+    message: |
+      <nl>
+      &b&lSKILLS: &bO jogador &f{player}&b atingiu o &fnível {level} &bna habilidade &f{skill}&f!
+      <nl>
 
 # Sistema de recompensas ao upar de nível
 rewards:

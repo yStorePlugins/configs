@@ -67,6 +67,9 @@ login-delay: 20
 general:
   # Acumular os bônus que tiver permissão
   accumulate-bonus: false
+  # IDs das claims/plots onde o XP não será dado
+  # Também pode ser definido por skill em skills/*.yml → xp-blacklist.claims
+  xp-blacklist-claims: []
   # Formatação das mensagens de bônus
   formatter-bonus-has: '&a+{bonus}% por ser {display}&a.'
   # Formatação das mensagens de bônus quando não tiver bônus
