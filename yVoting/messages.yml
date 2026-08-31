@@ -1,0 +1,65 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  stars: '&cA quantidade de estrelas deve ser um número inteiro entre 1 e 5.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &a/voto &8- &7Abre o menu de votos.
+    &a/voto armazem &8- &7Abre o armazém de recompensas.
+    &a/voto historico &8- &7Abre o histórico de votos.
+    &a/voto perfil &8- &7Abre o seu perfil de votos.
+    &a/voto top &8- &7Abre o ranking de votos.
+    &a/voto dar <jogador> <estrelas> &8- &7Computa um voto manual (admin).
+    &a/voto reload &8- &7Recarregar as configurações.
+    &r
+  inv-full: '&cSeu inventário está cheio.'
+  vote-received: |
+
+    &aVocê votou no servidor no FlipTop!
+
+    &7Nick: &f{player}
+    &7Total de votos: &f{votes}
+    &7Recompensas no armazém: &f{pending}
+
+    &7Use &f/voto armazem &7para coletar.
+  vote-offline: |
+
+    &aSeu voto no FlipTop foi computado!
+
+    &7Entre no servidor e use &f/voto armazem
+    &7para coletar as recompensas.
+  vote-duplicate: '&cEste voto já foi computado.'
+  vote-invalid-ad: '&cO ID do anúncio do voto não confere com a config.yml.'
+  vote-not-configured: '&cO ID do anúncio FlipTop não está configurado na config.yml.'
+  reward-collected: '&aRecompensa coletada com sucesso.'
+  reward-collected-all: '&aTodas as recompensas disponíveis foram coletadas.'
+  reward-empty: '&cVocê não possui recompensas no armazém.'
+  reward-deleted: '&eRecompensa removida do armazém.'
+  admin-give: |
+
+    &aVoto computado manualmente.
+
+    &7Jogador: &f{player}
+    &7Estrelas: &e{stars}
+    &7Total de votos: &f{votes}
+  url: |
+    &r
+    &a&l[VOTE] &7Clique para votar no servidor!:
+    &e&l<click:open_url:{url}><hover:show_text:"<red>{url}<newline>Clique para votar</red>">CLIQUE AQUI</hover></click>
+
+title:
+  vote-received: '&a&lVoto computado!<nl>&7Colete no armazém com /voto'

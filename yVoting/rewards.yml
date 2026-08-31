@@ -1,0 +1,64 @@
+#   ____                            _
+# |  _ \ _____      ____ _ _ __ __| |___
+# | |_) / _ \ \ /\ / / _` | '__/ _` / __|
+# |  _ <  __/\ V  V / (_| | | | (_| \__ \
+# |_| \_\___| \_/\_/ \__,_|_|  \__,_|___/
+#
+# Recompensas enviadas ao armazém a cada voto.
+
+rewards:
+  money:
+    preview:
+      material: 'GOLD_INGOT:0'
+      name: '&6Dinheiro'
+      lore:
+        - ' &7Recompensa em coins.'
+    collect:
+      material: 'GOLD_INGOT:0'
+      name: '&6Dinheiro'
+      lore:
+        - ''
+        - ' &7Quantidade: &f{amount}'
+        - ''
+        - ' &eClique esquerdo para coletar'
+        - ' &eClique direito para remover'
+        - ''
+    item:
+      give: false
+      material: 'GOLD_INGOT:0'
+      name: '&6Dinheiro'
+      amount: 1
+    command:
+      give: true
+      placeholder-amount: 1000
+      multiply-placeholder: true
+      list:
+        - 'eco give {player} {amount}'
+  diamond:
+    preview:
+      material: 'DIAMOND:0'
+      name: '&bDiamante de Voto'
+      lore:
+        - ' &7Recompensa por votar no FlipTop.'
+    collect:
+      material: 'DIAMOND:0'
+      name: '&bDiamante de Voto'
+      lore:
+        - ''
+        - ' &7Quantidade: &f{amount}'
+        - ''
+        - ' &eClique esquerdo para coletar'
+        - ' &eClique direito para remover'
+        - ''
+    item:
+      give: true
+      material: 'DIAMOND:0'
+      name: '&bDiamante de Voto'
+      amount: 1
+      lore:
+        - ' &7Obrigado por votar!'
+    command:
+      give: false
+      placeholder-amount: 1
+      multiply-placeholder: false
+      list: []
