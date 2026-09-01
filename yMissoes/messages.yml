@@ -32,3 +32,4 @@ chat:
   npc-deleted: '&aNPC removido com sucesso.'
   npc-not-set: '&cNPC não está definido.'
   category-locked: '&cComplete a categoria {category} para desbloquear esta.'
+  category-unlocked: '<nl>&a&l[MISSÃO]&a A categoria {category} foi desbloqueada.'
