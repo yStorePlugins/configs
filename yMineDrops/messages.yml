@@ -1,0 +1,36 @@
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &a/{cmd} &8- &7Abre o menu principal.
+    &a/{cmd} ir &8- &7Teleportar para a mina.
+    &a/{cmd} armazem &8- &7Abre o armazém de recompensas.
+    &r
+  inv-full: '&cSeu inventário está cheio.'
+  already-in-mine: '&cVocê já está na mina.'
+  delay: '&cAguarde &e{time} &cpara usar o comando novamente.'
+  command-blocked: '&cEste comando está bloqueado neste mundo.'
+  enter: |
+
+    &aVocê entrou na mina
+
+  biome-debug: '&cSeu bioma: {biome}'
+  reward-sent: '&aRecompensa enviada ao armazém. Use /minerar para coletar.'
+  reward-collected: '&aRecompensa coletada com sucesso.'
+  reward-collected-all: '&aTodas as recompensas disponíveis foram coletadas.'
+  reward-empty: '&cVocê não possui recompensas no armazém.'
+  reward-deleted: '&eRecompensa removida do armazém.'

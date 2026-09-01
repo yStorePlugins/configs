@@ -1,0 +1,74 @@
+#   ____                            _
+# |  _ \ _____      ____ _ _ __ __| |___
+# | |_) / _ \ \ /\ / / _` | '__/ _` / __|
+# |  _ <  __/\ V  V / (_| | | | (_| \__ \
+# |_| \_\___| \_/\_/ \__,_|_|  \__,_|___/
+#
+# Recompensas extras ao minerar.
+# Se general.warehouse.enabled estiver true, a recompensa vai para o armazém.
+# Se false, é entregue imediatamente.
+
+rewards:
+  stone:
+    chance: 10.0
+    permission: ''
+    actionbar: '&aVocê encontrou uma recompensa minerando'
+    title: '&aRecompensa <nl>&aencontrada!'
+    preview:
+      material: 'STONE:0'
+      name: '&fPedra'
+      lore:
+        - ' &7Recompensa ao minerar.'
+    collect:
+      material: 'STONE:0'
+      name: '&fPedra'
+      lore:
+        - ''
+        - ' &7Quantidade: &f{amount}'
+        - ''
+        - ' &eClique esquerdo para coletar'
+        - ' &eClique direito para remover'
+        - ''
+    item:
+      give: false
+      material: 'STONE:0'
+      name: '&fPedra'
+      amount: 1
+    command:
+      give: true
+      placeholder-amount: 1
+      multiply-placeholder: false
+      list:
+        - 'give {player} stone 1'
+  diamond:
+    chance: 2.0
+    permission: ''
+    actionbar: '&bVocê encontrou um diamante minerando'
+    title: '&bDiamante <nl>&7encontrado!'
+    preview:
+      material: 'DIAMOND:0'
+      name: '&bDiamante'
+      lore:
+        - ' &7Recompensa rara ao minerar.'
+    collect:
+      material: 'DIAMOND:0'
+      name: '&bDiamante'
+      lore:
+        - ''
+        - ' &7Quantidade: &f{amount}'
+        - ''
+        - ' &eClique esquerdo para coletar'
+        - ' &eClique direito para remover'
+        - ''
+    item:
+      give: true
+      material: 'DIAMOND:0'
+      name: '&bDiamante'
+      amount: 1
+      lore:
+        - ' &7Encontrado na mina.'
+    command:
+      give: false
+      placeholder-amount: 1
+      multiply-placeholder: false
+      list: []

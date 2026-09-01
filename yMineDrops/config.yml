@@ -1,50 +1,89 @@
-# Comandos e aliases do plugin
-Comandos:
-  Minerar:
-    Comando: 'minerar'
-    Aliases: [ mine, mina ]
+#        __  __ _          ____
+#  _   _|  \/  (_)_ __   __|  _ \ _ __ ___  _ __  ___
+# | | | | |\/| | | '_ \ / _` | | | '__/ _ \| '_ \/ __|
+# | |_| | |  | | | | | | (_| | |_| | | (_) | |_) \__ \
+#  \__, |_|  |_|_|_| |_|\__,_|____/|_|  \___/| .__/|___/
+#  |___/                                     |_|
 #
-Mensagens:
-  Ja esta: '&cVocê já está na mina.'
-  Delay: '&cAguarde &e{time} &cpara usar o comando novamente.'
-  Comando bloqueado: '&cEste comando está bloqueado neste mundo.'
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
 
-Mundo:
-  Gerar: true
-  # Mundo desenhado pelo plugin
-  Custom: true
-  Nomes:
-    - 'world_mining'
-  # Mundos onde ao minerar ORES não droparão nada
-  Ore block:
-    - 'world'
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
 
-Opcoes:
-  # XP (vanila) que será dado ao quebrar o bloco
-  XP: 3
-  # XP (mcmmo) que será dado ao quebrar o bloco
-  XP mcmmo: 3
-  # Ativar o PVP no mundo
-  Pvp: false
-  # Deixar o jogador invencivel
-  Invencibilidade: false
-  # Se ativo, só irá vir esmeraldas na Extreme Hills
-  Esmeralda extremehills: true
-  # Se ativo, irá proibir o spawn de mobs
-  Desabilitar mobs: true
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Ativar o PvP no mundo da mina
+  pvp: false
+  # Deixar o jogador invencível na mina
+  invincibility: false
+  # Se ativo, esmeraldas só dropam em biomas Extreme Hills
+  emerald-extreme-hills: true
+  # Proibir spawn de mobs no mundo da mina
+  disable-mobs: true
   # Enviar os itens direto para o inventário do jogador
-  Autopickup: true
-  # Bloco que ao quebrar irá dar minérios
-  Bloco: 'STONE'
-  Remover drops:
+  auto-pickup: true
+  # Ao ativar, envia no chat o bioma do jogador ao quebrar um bloco
+  biome-debug: false
+  # Skill do mcMMO / AuraSkills / ySkills que recebe o XP
+  mcmmo-skill: 'MINING'
+  # Bloco que ao quebrar irá dropar minérios
+  block: 'STONE'
+  # Porcentagem base da Fortune ao dropar minérios
+  fortune-percent: 3
+  # Delay (em segundos) para usar o comando /minerar novamente
+  command-cooldown: 120
+  # Se true, recompensas vão para o armazém (menu). Se false, são entregues imediatamente.
+  warehouse:
+    enabled: true
+  # Drops que serão removidos ao nascer no mundo da mina
+  remove-drops:
     - 'COBBLESTONE'
     - 'STONE'
-  Bloquear comandos:
+  # Comandos bloqueados dentro do mundo da mina
+  blocked-commands:
     - '/g oi'
-  # Ao ativar, quando um jogador quebrar um bloco, enviará para ele no chat o bioma que está.
-  Bioma debug: false
-  # Biomas que serão considerados extreme hills
-  Biomas:
+  # Efeitos aplicados nos jogadores da mina. Formato: EFEITO:AMPLIFIER
+  effects:
+    - 'FAST_DIGGING:1'
+    - 'INVISIBILITY:1'
+  # Biomas considerados Extreme Hills (usado com emerald-extreme-hills)
+  extreme-hills-biomes:
     - 'EXTREME_HILLS'
     - 'EXTREME_HILLS_PLUS'
     - 'EXTREME_HILLS_MOUNTAINS'
@@ -62,68 +101,18 @@ Opcoes:
     - 'MEGA_SPRUCE_TAIGA_HILLS'
     - 'MEGA_TAIGA_HILLS'
     - 'TAIGA_HILLS'
-  # Efeitos que serão aplicados nos jogadores
-  # EFEITO:AMPLIFIER
-  Efeitos:
-    - 'FAST_DIGGING:1'
-    - 'INVISIBILITY:1'
-
-Comando:
-  Cooldown: 120 #em segundos
-  Entrar:
-    - ''
-    - '&aVoce entrou na mina'
-    - ''
-  Raio:
-    X: 2000
-    Z: 2000
-
-Recompensas:
-  Recompensa1:
-    Permissao: ''
-    Actionbar: '&aVocê encontrou uma recompensa minerando'
-    Title: '&aRecompensa <nl>&aencontrada!'
-    Chance: 10.0
-    Comandos:
-      - 'give {player} stone 1'
-
-Fortune:
-  Porcentagem: 3
-
-Minerios:
-  COAL:
-    Data: 0
-    Camada: 63
-    Chance: 40.0
-    Fortune: true
-    Actionbar: '' # deixe '' para não usar
-  IRON_INGOT:
-    Data: 0
-    Camada: 63
-    Chance: 20.0
-    Fortune: false
-    Actionbar: '' # deixe '' para não usar
-  GOLD_INGOT:
-    Data: 0
-    Camada: 31
-    Chance: 15.0
-    Fortune: false
-    Actionbar: '' # deixe '' para não usar
-  INK_SACK:
-    Data: 4
-    Camada: 30
-    Chance: 10.0
-    Fortune: true
-    Actionbar: '' # deixe '' para não usar
-  REDSTONE:
-    Data: 0
-    Camada: 15
-    Chance: 10.0
-    Fortune: true
-    Actionbar: '' # deixe '' para não usar
-  DIAMOND:
-    Data: 0
-    Camada: 15
-    Chance: 5.0
-    Fortune: true
-    Actionbar: '' # deixe '' para não usar
+  world:
+    # Regenerar o mundo da mina ao iniciar o servidor (somente se não houver jogadores)
+    generate: true
+    # Mundo desenhado pelo plugin
+    custom: true
+    # Nomes dos mundos da mina
+    names:
+      - 'world_mining'
+    # Mundos onde ao minerar ORES não droparão nada
+    ore-block:
+      - 'world'
+    # Raio de teleport do comando /minerar
+    radius:
+      x: 2000
+      z: 2000

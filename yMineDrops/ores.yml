@@ -1,0 +1,74 @@
+#    ___
+#   /___\_ __ ___  ___
+#  //  // '__/ _ \/ __|
+# / \_//| | |  __/\__ \
+# \___/ |_|  \___||___/
+#
+# Lista de minérios dropados ao quebrar o bloco configurado.
+
+ores:
+  coal:
+    material: 'COAL'
+    data: 0
+    # Camada que o minério pode dropar
+    layer: 63
+    # A chance é em porcentagem (0 a 100). layer é a camada máxima (Y) em que o minério pode dropar.
+    chance: 40.0
+    # Se true, a Fortune irá aumentar a chance de dropar o minério. Se false, a Fortune não terá efeito.
+    fortune: true
+    # XP (vanilla) dado ao dropar este minério
+    xp: 1
+    # XP (mcMMO) dado ao dropar este minério
+    xp-mcmmo: 1
+    actionbar: ''
+    # Se definido, este item substitui o drop do material.
+    # custom-item:
+    #   material: 'COAL:0'
+    #   name: '&8Carvão Custom'
+    #   lore:
+    #     - ' &7Drop customizado.'
+  iron:
+    material: 'IRON_INGOT'
+    data: 0
+    layer: 63
+    chance: 20.0
+    fortune: false
+    xp: 2
+    xp-mcmmo: 2
+    actionbar: ''
+  gold:
+    material: 'GOLD_INGOT'
+    data: 0
+    layer: 31
+    chance: 15.0
+    fortune: false
+    xp: 3
+    xp-mcmmo: 3
+    actionbar: ''
+  lapis:
+    material: 'INK_SACK'
+    data: 4
+    layer: 30
+    chance: 10.0
+    fortune: true
+    xp: 3
+    xp-mcmmo: 3
+    actionbar: ''
+  redstone:
+    material: 'REDSTONE'
+    data: 0
+    layer: 15
+    chance: 10.0
+    fortune: true
+    xp: 3
+    xp-mcmmo: 3
+    actionbar: ''
+  diamond:
+    material: 'DIAMOND'
+    data: 0
+    layer: 15
+    chance: 5.0
+    fortune: true
+    xp: 5
+    xp-mcmmo: 5
+    actionbar: ''
