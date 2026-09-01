@@ -79,7 +79,7 @@ general:
 categories:
   asas:
     display: '&6Asas'
-    # behavior: WINGS | AURA | TRAIL | PET | HAT | EFFECT
+    # behavior: WINGS | AURA | TRAIL | PET | HAT | EFFECT | ARMOR | MOUNT | GADGET
     # No YAML do cosmético use type: <id da categoria> (ou o behavior, ex: WINGS)
     behavior: WINGS
     slot: 10
@@ -118,6 +118,20 @@ categories:
         - ''
         - ' &7Deixe um rastro enquanto'
         - ' &7você caminha.'
+        - ''
+        - ' &eClique para abrir'
+        - ''
+  roupas:
+    display: '&cRoupas'
+    behavior: ARMOR
+    slot: 13
+    icon:
+      material: LEATHER_CHESTPLATE
+      name: '&c&lRoupas'
+      lore:
+        - ''
+        - ' &7Armaduras customizadas'
+        - ' &7no seu personagem.'
         - ''
         - ' &eClique para abrir'
         - ''
@@ -160,6 +174,34 @@ categories:
         - ''
         - ' &7Efeitos de entrada e'
         - ' &7teleporte.'
+        - ''
+        - ' &eClique para abrir'
+        - ''
+  montarias:
+    display: '&2Montarias'
+    behavior: MOUNT
+    slot: 22
+    icon:
+      material: SADDLE
+      name: '&2&lMontarias'
+      lore:
+        - ''
+        - ' &7Animais para montar'
+        - ' &7e cavalgar.'
+        - ''
+        - ' &eClique para abrir'
+        - ''
+  engenhocas:
+    display: '&6Engenhocas'
+    behavior: GADGET
+    slot: 21
+    icon:
+      material: BLAZE_ROD
+      name: '&6&lEngenhocas'
+      lore:
+        - ''
+        - ' &7Armas visuais: partículas,'
+        - ' &7TNT e outros efeitos.'
         - ''
         - ' &eClique para abrir'
         - ''

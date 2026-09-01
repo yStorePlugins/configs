@@ -1,0 +1,97 @@
+display-name: '&6Traje Real'
+description: 'Uma armadura dourada digna da realeza.'
+type: ARMOR
+rarity: LEGENDARY
+permission: 'ycosmeticos.cosmetic.royal_suit'
+enabled: true
+icon:
+  material: LEATHER_CHESTPLATE
+  name: '&6Traje Real'
+  lore:
+    - ''
+    - ' &7Vista o traje dourado'
+    - ' &7da realeza.'
+    - ''
+item:
+  material: LEATHER_CHESTPLATE
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+armor:
+  color: '212:175:55'
+  helmet:
+    material: LEATHER_HELMET
+    name: '&6Elmo Real'
+    lore:
+      - ''
+      - ' &7Peça do Traje Real.'
+      - ''
+  chestplate:
+    material: LEATHER_CHESTPLATE
+    name: '&6Peitoral Real'
+    lore:
+      - ''
+      - ' &7Peça do Traje Real.'
+      - ''
+  leggings:
+    material: LEATHER_LEGGINGS
+    name: '&6Calças Reais'
+    lore:
+      - ''
+      - ' &7Peça do Traje Real.'
+      - ''
+  boots:
+    material: LEATHER_BOOTS
+    name: '&6Botas Reais'
+    lore:
+      - ''
+      - ' &7Peça do Traje Real.'
+      - ''
+particles:
+  enabled: false
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: LEATHER_CHESTPLATE
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: LEATHER_CHESTPLATE
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

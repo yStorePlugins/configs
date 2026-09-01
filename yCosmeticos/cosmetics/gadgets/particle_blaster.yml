@@ -1,0 +1,79 @@
+display-name: '&bBlaster de Partículas'
+description: 'Dispara um feixe de partículas na direção do olhar.'
+type: GADGET
+rarity: RARE
+permission: 'ycosmeticos.cosmetic.particle_blaster'
+enabled: true
+icon:
+  material: BLAZE_ROD
+  name: '&bBlaster de Partículas'
+  lore:
+    - ''
+    - ' &7Clique no ar para disparar'
+    - ' &7um feixe de partículas.'
+    - ''
+item:
+  material: BLAZE_ROD
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+gadget:
+  action: BEAM
+  cooldown: 2.0
+  range: 20.0
+  speed: 1.0
+particles:
+  enabled: false
+  type: CRIT
+  count: 2
+  extra: 0.0
+  offset-x: 0.05
+  offset-y: 0.05
+  offset-z: 0.05
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: BLAZE_ROD
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique no ar para disparar'
+      - ' &eClique aqui para desequipar'
+      - ''
+  owned:
+    material: BLAZE_ROD
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

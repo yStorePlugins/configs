@@ -75,7 +75,7 @@ enabled: true
 --------------------------------------------------------------------------------
 
 Usado se icons.equipped / owned / locked não existirem.
-Formato SetupItem (material, name, lore, glow, skull, etc.):
+Formato (material, name, lore, glow, skull, etc.):
 
 icon:
   material: BLAZE_POWDER
@@ -199,7 +199,7 @@ EFFECT dispara uma vez no join/teleporte.
  6. HEAD (só PET)
 --------------------------------------------------------------------------------
 
-Head do armor stand invisível. SetupItem.setupMenuItem.
+Head do armor stand invisível.
 
 head:
   material: STONE
@@ -240,7 +240,7 @@ happy_villager, firework, snowflake, end_rod, ...).
 
 Item físico enviado com /cosmeticos give item <jogador> <id>.
 O jogador clica com o direito para ativar e receber o cosmético.
-Formato SetupItem. Placeholders: {name} {description} {rarity}
+Placeholders: {name} {description} {rarity}
 
 item:
   material: BLAZE_POWDER

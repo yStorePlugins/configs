@@ -1,0 +1,97 @@
+display-name: '&cTraje do Nether'
+description: 'Uma armadura vermelha forjada no nether.'
+type: ARMOR
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.nether_suit'
+enabled: true
+icon:
+  material: LEATHER_CHESTPLATE
+  name: '&cTraje do Nether'
+  lore:
+    - ''
+    - ' &7Vista o traje flamejante'
+    - ' &7do nether.'
+    - ''
+item:
+  material: LEATHER_CHESTPLATE
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+armor:
+  color: '140:20:20'
+  helmet:
+    material: LEATHER_HELMET
+    name: '&cElmo do Nether'
+    lore:
+      - ''
+      - ' &7Peça do Traje do Nether.'
+      - ''
+  chestplate:
+    material: LEATHER_CHESTPLATE
+    name: '&cPeitoral do Nether'
+    lore:
+      - ''
+      - ' &7Peça do Traje do Nether.'
+      - ''
+  leggings:
+    material: LEATHER_LEGGINGS
+    name: '&cCalças do Nether'
+    lore:
+      - ''
+      - ' &7Peça do Traje do Nether.'
+      - ''
+  boots:
+    material: LEATHER_BOOTS
+    name: '&cBotas do Nether'
+    lore:
+      - ''
+      - ' &7Peça do Traje do Nether.'
+      - ''
+particles:
+  enabled: false
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: LEATHER_CHESTPLATE
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: LEATHER_CHESTPLATE
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

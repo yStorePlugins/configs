@@ -1,0 +1,71 @@
+display-name: '&fLobo'
+description: 'Um lobo para montar.'
+type: MOUNT
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.wolf_mount'
+enabled: true
+icon:
+  material: BONE
+  name: '&fLobo'
+  lore:
+    - ''
+    - ' &7Monte neste lobo'
+    - ' &7e saia andando.'
+    - ''
+item:
+  material: BONE
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+mount:
+  entity: WOLF
+  baby: false
+  jump: 0.7
+particles:
+  enabled: false
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: BONE
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: BONE
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

@@ -1,0 +1,76 @@
+display-name: '&cCanhão de TNT'
+description: 'Dispara uma TNT visual que explode em partículas.'
+type: GADGET
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.tnt_cannon'
+enabled: true
+icon:
+  material: TNT
+  name: '&cCanhão de TNT'
+  lore:
+    - ''
+    - ' &7Clique no ar para disparar'
+    - ' &7uma TNT (somente visual).'
+    - ''
+item:
+  material: TNT
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+gadget:
+  action: TNT
+  cooldown: 4.0
+  range: 22.0
+  speed: 1.0
+  fuse-ticks: 28
+particles:
+  enabled: false
+  type: FLAME
+  count: 2
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: TNT
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique no ar para disparar'
+      - ' &eClique aqui para desequipar'
+      - ''
+  owned:
+    material: TNT
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''
