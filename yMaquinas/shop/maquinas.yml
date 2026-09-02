@@ -35,6 +35,8 @@ Maquinas:
     Libera em: '16/10/2020-10:00'
     # Placeholder {rank} na lore da compra indisponível
     Rank: '&7[Membro]'
+    # Ativar o preview do drop no menu do shop (shift + botão direito)
+    Preview: true
     Comprar:
       Custos:
         Custo1:
