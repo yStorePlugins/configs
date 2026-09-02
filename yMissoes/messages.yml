@@ -20,8 +20,14 @@ chat:
 
     &a/missoes &8- &7Abre o menu principal
     &a/missoes <categoria> &8- &7Abre o menu de missões em determinada categoria.
+    &a/missoes recompensa &8- &7Abre o menu de recompensas.
     &a/missoes ajuda &8- &7Envia a mensagem de ajuda.
     &a/missoes reload &8- &7Recarrega as configurações.
+    &a/missoes complete <jogador> <missao> &8- &7Completa a missão do jogador.
+    &a/missoes set missao <jogador> <missao> &8- &7Define a missão atual do jogador.
+    &a/missoes giverecompensa <jogador> <recompensa> &8- &7Dá uma recompensa ao jogador.
+    &a/missoes reset <jogador> &8- &7Reseta o progresso de missões do jogador.
+    &a/missoes remove <jogador> <missao> &8- &7Remove a missão do jogador.
 
   reward-collected: '&eItem recolhido com sucesso.'
   reward-collected-all: '&eTodas as recompensas possíveis foram recolhidas com sucesso.'
@@ -33,3 +39,15 @@ chat:
   npc-not-set: '&cNPC não está definido.'
   category-locked: '&cComplete a categoria {category} para desbloquear esta.'
   category-unlocked: '<nl>&a&l[MISSÃO]&a A categoria {category} foi desbloqueada.'
+  mission-found: |
+    &cMissão não encontrada.
+    &cDisponíveis: {list}.
+  mission-completed: '&aMissão {mission} completada para {player}.'
+  mission-already-completed: '&c{player} já completou a missão {mission}.'
+  mission-set: '&aMissão de {player} definida para {mission}.'
+  mission-removed: '&aMissão {mission} removida de {player}.'
+  player-reset: '&aProgresso de missões de {player} resetado.'
+  reward-found: |
+    &cRecompensa não encontrada.
+    &cDisponíveis: {list}.
+  reward-given: '&aRecompensa {reward} dada para {player}.'

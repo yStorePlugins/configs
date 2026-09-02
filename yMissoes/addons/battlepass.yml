@@ -227,3 +227,10 @@ messages:
   no-rewards: '&7Nenhuma recompensa'
   # Quando um admin da XP via comando
   xp-given: '&aVoce deu &e{xp} XP &aa &f{player}&a no Passe de Batalha.'
+  xp-removed: '&aVoce removeu &e{xp} XP &ade &f{player}&a no Passe de Batalha.'
+  xp-set: '&aVoce definiu o XP de &f{player} &apara &e{xp}&a no Passe de Batalha.'
+  tier-given: '&aVoce definiu o tier &e{tier} &ado Passe de Batalha para &f{player}&a.'
+  tier-removed: '&aVoce removeu o tier &e{tier} &ado Passe de Batalha de &f{player}&a.'
+  tier-not-found: '&cTier invalido. Use um nivel entre 1 e {max}.'
+  pass-completed: '&aVoce completou o Passe de Batalha de &f{player}&a.'
+  pass-reset: '&aVoce resetou o Passe de Batalha de &f{player}&a.'
