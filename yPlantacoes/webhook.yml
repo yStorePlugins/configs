@@ -9,8 +9,9 @@
 # {data} - Data atual (dd/MM/yyyy)
 # {hora} - Hora atual (HH:mm)
 #
-# Formato dos horários: dia-hora:minuto:segundo
+# Formato dos horários: dia-hora:minuto:segundo ou data-hora:minuto:segundo
 # Dias: todos, segunda, terca, quarta, quinta, sexta, sabado, domingo
+# Data específica: 15/09/2026-18:00:00
 
 Options:
   URL: ''
@@ -29,6 +30,7 @@ Plantacoes:
       - 'sexta-22:00:00'
     Title: ':seedling: A plantação {plantacao} foi liberada!'
     Thumbnail: ''
+    Image: ''
     Color: '#57F287'
     Content: ''
     Footer:
