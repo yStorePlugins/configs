@@ -1,0 +1,97 @@
+display-name: '&bTraje Oceano'
+description: 'Uma armadura azul das profundezas.'
+type: ARMOR
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.ocean_suit'
+enabled: true
+icon:
+  material: LEATHER_CHESTPLATE
+  name: '&bTraje Oceano'
+  lore:
+    - ''
+    - ' &7Vista o traje azul'
+    - ' &7do oceano.'
+    - ''
+item:
+  material: LEATHER_CHESTPLATE
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+armor:
+  color: '30:90:180'
+  helmet:
+    material: LEATHER_HELMET
+    name: '&bElmo Oceano'
+    lore:
+      - ''
+      - ' &7Peça do Traje Oceano.'
+      - ''
+  chestplate:
+    material: LEATHER_CHESTPLATE
+    name: '&bPeitoral Oceano'
+    lore:
+      - ''
+      - ' &7Peça do Traje Oceano.'
+      - ''
+  leggings:
+    material: LEATHER_LEGGINGS
+    name: '&bCalças Oceano'
+    lore:
+      - ''
+      - ' &7Peça do Traje Oceano.'
+      - ''
+  boots:
+    material: LEATHER_BOOTS
+    name: '&bBotas Oceano'
+    lore:
+      - ''
+      - ' &7Peça do Traje Oceano.'
+      - ''
+particles:
+  enabled: false
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: LEATHER_CHESTPLATE
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: LEATHER_CHESTPLATE
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

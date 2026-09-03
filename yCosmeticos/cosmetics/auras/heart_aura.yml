@@ -1,19 +1,19 @@
-display-name: '&aPet Slime'
-description: 'Um slime flutuante que orbita você.'
-type: PET
+display-name: '&cAura de Corações'
+description: 'Corações orbitando o seu corpo.'
+type: AURA
 rarity: UNCOMMON
-permission: 'ycosmeticos.cosmetic.slime_pet'
+permission: 'ycosmeticos.cosmetic.heart_aura'
 enabled: true
 icon:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: APPLE
+  name: '&cAura de Corações'
   lore:
     - ''
-    - ' &7Um companheiro verde'
-    - ' &7que gira ao seu lado.'
+    - ' &7Corações giram ao seu'
+    - ' &7redor.'
     - ''
 item:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
+  material: APPLE
   name: '&e{name}'
   lore:
     - ''
@@ -24,26 +24,23 @@ item:
     - ' &eClique com o direito para ativar'
     - ''
 animation:
-  type: FOLLOW
+  type: ROTATE
   speed: 1.0
-  height: 0.2
+  height: 0.05
 particles:
   enabled: true
-  type: SLIME
-  count: 2
+  type: HEART
+  count: 1
   extra: 0.0
-  offset-x: 0.08
-  offset-y: 0.08
-  offset-z: 0.08
-  shape: FOLLOW
-  radius: 1.15
-head:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  offset-x: 0.0
+  offset-y: 0.0
+  offset-z: 0.0
+  shape: CIRCLE
+  radius: 0.9
 
 icons:
   equipped:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: APPLE
     name: '&a{name}'
     lore:
       - ''
@@ -55,7 +52,7 @@ icons:
       - ' &eClique para desequipar'
       - ''
   owned:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: APPLE
     name: '&e{name}'
     lore:
       - ''

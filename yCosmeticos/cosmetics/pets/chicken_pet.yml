@@ -1,19 +1,19 @@
-display-name: '&aPet Slime'
-description: 'Um slime flutuante que orbita você.'
+display-name: '&ePet Galinha'
+description: 'Uma galinha flutuante que orbita você.'
 type: PET
-rarity: UNCOMMON
-permission: 'ycosmeticos.cosmetic.slime_pet'
+rarity: COMMON
+permission: 'ycosmeticos.cosmetic.chicken_pet'
 enabled: true
 icon:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: c64d623d30c278e2ec44cbc6dce6780268d50526d6a496d266b21e90ef107dca
+  name: '&ePet Galinha'
   lore:
     - ''
-    - ' &7Um companheiro verde'
+    - ' &7Um companheiro emplumado'
     - ' &7que gira ao seu lado.'
     - ''
 item:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
+  material: c64d623d30c278e2ec44cbc6dce6780268d50526d6a496d266b21e90ef107dca
   name: '&e{name}'
   lore:
     - ''
@@ -25,25 +25,25 @@ item:
     - ''
 animation:
   type: FOLLOW
-  speed: 1.0
-  height: 0.2
+  speed: 1.4
+  height: 0.22
 particles:
   enabled: true
-  type: SLIME
-  count: 2
+  type: CLOUD
+  count: 1
   extra: 0.0
-  offset-x: 0.08
-  offset-y: 0.08
-  offset-z: 0.08
+  offset-x: 0.05
+  offset-y: 0.05
+  offset-z: 0.05
   shape: FOLLOW
-  radius: 1.15
+  radius: 1.1
 head:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: c64d623d30c278e2ec44cbc6dce6780268d50526d6a496d266b21e90ef107dca
+  name: '&ePet Galinha'
 
 icons:
   equipped:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: c64d623d30c278e2ec44cbc6dce6780268d50526d6a496d266b21e90ef107dca
     name: '&a{name}'
     lore:
       - ''
@@ -55,7 +55,7 @@ icons:
       - ' &eClique para desequipar'
       - ''
   owned:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: c64d623d30c278e2ec44cbc6dce6780268d50526d6a496d266b21e90ef107dca
     name: '&e{name}'
     lore:
       - ''

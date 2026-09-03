@@ -1,0 +1,97 @@
+display-name: '&2Traje Floresta'
+description: 'Uma armadura verde da floresta.'
+type: ARMOR
+rarity: RARE
+permission: 'ycosmeticos.cosmetic.forest_suit'
+enabled: true
+icon:
+  material: LEATHER_CHESTPLATE
+  name: '&2Traje Floresta'
+  lore:
+    - ''
+    - ' &7Vista o traje verde'
+    - ' &7da floresta.'
+    - ''
+item:
+  material: LEATHER_CHESTPLATE
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+armor:
+  color: '30:120:40'
+  helmet:
+    material: LEATHER_HELMET
+    name: '&2Elmo Floresta'
+    lore:
+      - ''
+      - ' &7Peça do Traje Floresta.'
+      - ''
+  chestplate:
+    material: LEATHER_CHESTPLATE
+    name: '&2Peitoral Floresta'
+    lore:
+      - ''
+      - ' &7Peça do Traje Floresta.'
+      - ''
+  leggings:
+    material: LEATHER_LEGGINGS
+    name: '&2Calças Floresta'
+    lore:
+      - ''
+      - ' &7Peça do Traje Floresta.'
+      - ''
+  boots:
+    material: LEATHER_BOOTS
+    name: '&2Botas Floresta'
+    lore:
+      - ''
+      - ' &7Peça do Traje Floresta.'
+      - ''
+particles:
+  enabled: false
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: LEATHER_CHESTPLATE
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique para desequipar'
+      - ''
+  owned:
+    material: LEATHER_CHESTPLATE
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

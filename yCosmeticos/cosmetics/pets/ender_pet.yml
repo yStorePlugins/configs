@@ -1,19 +1,19 @@
-display-name: '&aPet Slime'
-description: 'Um slime flutuante que orbita você.'
+display-name: '&5Pet Ender'
+description: 'Um orbe do end que orbita você.'
 type: PET
-rarity: UNCOMMON
-permission: 'ycosmeticos.cosmetic.slime_pet'
+rarity: LEGENDARY
+permission: 'ycosmeticos.cosmetic.ender_pet'
 enabled: true
 icon:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: f62c4804f677c4680add8d7f3ae65115760f092d63ad338a0ae3227aa1d43537
+  name: '&5Pet Ender'
   lore:
     - ''
-    - ' &7Um companheiro verde'
+    - ' &7Um orbe púrpura'
     - ' &7que gira ao seu lado.'
     - ''
 item:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
+  material: f62c4804f677c4680add8d7f3ae65115760f092d63ad338a0ae3227aa1d43537
   name: '&e{name}'
   lore:
     - ''
@@ -25,25 +25,25 @@ item:
     - ''
 animation:
   type: FOLLOW
-  speed: 1.0
-  height: 0.2
+  speed: 1.05
+  height: 0.24
 particles:
   enabled: true
-  type: SLIME
-  count: 2
+  type: PORTAL
+  count: 3
   extra: 0.0
   offset-x: 0.08
   offset-y: 0.08
   offset-z: 0.08
   shape: FOLLOW
-  radius: 1.15
+  radius: 1.2
 head:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: f62c4804f677c4680add8d7f3ae65115760f092d63ad338a0ae3227aa1d43537
+  name: '&5Pet Ender'
 
 icons:
   equipped:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: f62c4804f677c4680add8d7f3ae65115760f092d63ad338a0ae3227aa1d43537
     name: '&a{name}'
     lore:
       - ''
@@ -55,7 +55,7 @@ icons:
       - ' &eClique para desequipar'
       - ''
   owned:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: f62c4804f677c4680add8d7f3ae65115760f092d63ad338a0ae3227aa1d43537
     name: '&e{name}'
     lore:
       - ''

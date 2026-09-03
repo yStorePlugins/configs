@@ -1,19 +1,19 @@
-display-name: '&aPet Slime'
-description: 'Um slime flutuante que orbita você.'
-type: PET
-rarity: UNCOMMON
-permission: 'ycosmeticos.cosmetic.slime_pet'
+display-name: '&6Trail de Chamas'
+description: 'Deixa fogo pelo caminho.'
+type: TRAIL
+rarity: RARE
+permission: 'ycosmeticos.cosmetic.flame_trail'
 enabled: true
 icon:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: BLAZE_POWDER
+  name: '&6Trail de Chamas'
   lore:
     - ''
-    - ' &7Um companheiro verde'
-    - ' &7que gira ao seu lado.'
+    - ' &7Chamas surgem enquanto'
+    - ' &7você anda.'
     - ''
 item:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
+  material: BLAZE_POWDER
   name: '&e{name}'
   lore:
     - ''
@@ -24,26 +24,23 @@ item:
     - ' &eClique com o direito para ativar'
     - ''
 animation:
-  type: FOLLOW
-  speed: 1.0
-  height: 0.2
+  type: WAVE
+  speed: 1.2
+  height: 0.1
 particles:
   enabled: true
-  type: SLIME
+  type: FLAME
   count: 2
   extra: 0.0
-  offset-x: 0.08
+  offset-x: 0.12
   offset-y: 0.08
-  offset-z: 0.08
-  shape: FOLLOW
-  radius: 1.15
-head:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  offset-z: 0.12
+  shape: WAVE
+  radius: 0.7
 
 icons:
   equipped:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: BLAZE_POWDER
     name: '&a{name}'
     lore:
       - ''
@@ -55,7 +52,7 @@ icons:
       - ' &eClique para desequipar'
       - ''
   owned:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: BLAZE_POWDER
     name: '&e{name}'
     lore:
       - ''

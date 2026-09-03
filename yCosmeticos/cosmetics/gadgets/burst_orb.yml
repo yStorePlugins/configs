@@ -1,0 +1,79 @@
+display-name: '&aOrbe Explosivo'
+description: 'Solta uma explosão de partículas à frente.'
+type: GADGET
+rarity: RARE
+permission: 'ycosmeticos.cosmetic.burst_orb'
+enabled: true
+icon:
+  material: MAGMA_CREAM
+  name: '&aOrbe Explosivo'
+  lore:
+    - ''
+    - ' &7Clique no ar para soltar'
+    - ' &7uma explosão de partículas.'
+    - ''
+item:
+  material: MAGMA_CREAM
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+gadget:
+  action: BURST
+  cooldown: 2.5
+  range: 12.0
+  speed: 0.8
+particles:
+  enabled: false
+  type: VILLAGER_HAPPY
+  count: 4
+  extra: 0.0
+  offset-x: 0.2
+  offset-y: 0.2
+  offset-z: 0.2
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: MAGMA_CREAM
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique no ar para disparar'
+      - ' &eClique aqui para desequipar'
+      - ''
+  owned:
+    material: MAGMA_CREAM
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

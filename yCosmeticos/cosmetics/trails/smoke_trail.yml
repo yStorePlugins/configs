@@ -1,19 +1,19 @@
-display-name: '&aPet Slime'
-description: 'Um slime flutuante que orbita você.'
-type: PET
-rarity: UNCOMMON
-permission: 'ycosmeticos.cosmetic.slime_pet'
+display-name: '&8Trail de Fumaça'
+description: 'Deixa fumaça pelos passos.'
+type: TRAIL
+rarity: COMMON
+permission: 'ycosmeticos.cosmetic.smoke_trail'
 enabled: true
 icon:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: COAL
+  name: '&8Trail de Fumaça'
   lore:
     - ''
-    - ' &7Um companheiro verde'
-    - ' &7que gira ao seu lado.'
+    - ' &7Fumaça segue seus'
+    - ' &7passos.'
     - ''
 item:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
+  material: COAL
   name: '&e{name}'
   lore:
     - ''
@@ -24,26 +24,23 @@ item:
     - ' &eClique com o direito para ativar'
     - ''
 animation:
-  type: FOLLOW
+  type: NONE
   speed: 1.0
-  height: 0.2
+  height: 0.0
 particles:
   enabled: true
-  type: SLIME
+  type: SMOKE_NORMAL
   count: 2
   extra: 0.0
-  offset-x: 0.08
-  offset-y: 0.08
-  offset-z: 0.08
-  shape: FOLLOW
-  radius: 1.15
-head:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  offset-x: 0.1
+  offset-y: 0.05
+  offset-z: 0.1
+  shape: WAVE
+  radius: 0.5
 
 icons:
   equipped:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: COAL
     name: '&a{name}'
     lore:
       - ''
@@ -55,7 +52,7 @@ icons:
       - ' &eClique para desequipar'
       - ''
   owned:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: COAL
     name: '&e{name}'
     lore:
       - ''

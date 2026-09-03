@@ -1,0 +1,75 @@
+display-name: '&eVarinha do Trovão'
+description: 'Invoca um raio visual na direção do olhar.'
+type: GADGET
+rarity: LEGENDARY
+permission: 'ycosmeticos.cosmetic.lightning_wand'
+enabled: true
+icon:
+  material: BLAZE_ROD
+  name: '&eVarinha do Trovão'
+  lore:
+    - ''
+    - ' &7Clique no ar para invocar'
+    - ' &7um raio (somente visual).'
+    - ''
+item:
+  material: BLAZE_ROD
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+gadget:
+  action: LIGHTNING
+  cooldown: 5.0
+  range: 24.0
+  speed: 1.0
+particles:
+  enabled: false
+  type: CRIT_MAGIC
+  count: 2
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: BLAZE_ROD
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique no ar para disparar'
+      - ' &eClique aqui para desequipar'
+      - ''
+  owned:
+    material: BLAZE_ROD
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

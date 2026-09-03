@@ -1,19 +1,19 @@
-display-name: '&aPet Slime'
-description: 'Um slime flutuante que orbita você.'
-type: PET
-rarity: UNCOMMON
-permission: 'ycosmeticos.cosmetic.slime_pet'
+display-name: '&6Burro'
+description: 'Um burro para cavalgar.'
+type: MOUNT
+rarity: RARE
+permission: 'ycosmeticos.cosmetic.donkey_mount'
 enabled: true
 icon:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: CHEST
+  name: '&6Burro'
   lore:
     - ''
-    - ' &7Um companheiro verde'
-    - ' &7que gira ao seu lado.'
+    - ' &7Monte neste burro'
+    - ' &7e saia andando.'
     - ''
 item:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
+  material: CHEST
   name: '&e{name}'
   lore:
     - ''
@@ -23,27 +23,19 @@ item:
     - ''
     - ' &eClique com o direito para ativar'
     - ''
-animation:
-  type: FOLLOW
-  speed: 1.0
-  height: 0.2
+mount:
+  entity: HORSE
+  variant: DONKEY
+  baby: false
+  jump: 0.7
 particles:
-  enabled: true
-  type: SLIME
-  count: 2
-  extra: 0.0
-  offset-x: 0.08
-  offset-y: 0.08
-  offset-z: 0.08
-  shape: FOLLOW
-  radius: 1.15
-head:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  enabled: false
+animation:
+  type: NONE
 
 icons:
   equipped:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: CHEST
     name: '&a{name}'
     lore:
       - ''
@@ -55,7 +47,7 @@ icons:
       - ' &eClique para desequipar'
       - ''
   owned:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: CHEST
     name: '&e{name}'
     lore:
       - ''

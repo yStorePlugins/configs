@@ -1,0 +1,75 @@
+display-name: '&dCanhão de Fogos'
+description: 'Dispara um foguete visual na direção do olhar.'
+type: GADGET
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.firework_cannon'
+enabled: true
+icon:
+  material: NETHER_STAR
+  name: '&dCanhão de Fogos'
+  lore:
+    - ''
+    - ' &7Clique no ar para disparar'
+    - ' &7um foguete (somente visual).'
+    - ''
+item:
+  material: NETHER_STAR
+  name: '&e{name}'
+  lore:
+    - ''
+    - ' &7{description}'
+    - ''
+    - ' &7Raridade: {rarity}'
+    - ''
+    - ' &eClique com o direito para ativar'
+    - ''
+gadget:
+  action: FIREWORK
+  cooldown: 3.5
+  range: 20.0
+  speed: 1.1
+particles:
+  enabled: false
+  type: FIREWORKS_SPARK
+  count: 2
+animation:
+  type: NONE
+
+icons:
+  equipped:
+    material: NETHER_STAR
+    name: '&a{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aEquipado'
+      - ''
+      - ' &eClique no ar para disparar'
+      - ' &eClique aqui para desequipar'
+      - ''
+  owned:
+    material: NETHER_STAR
+    name: '&e{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &aPossuído'
+      - ''
+      - ' &eClique para equipar'
+      - ''
+  locked:
+    material: BARRIER
+    name: '&c{name}'
+    lore:
+      - ''
+      - ' &7{description}'
+      - ''
+      - ' &7Raridade: {rarity}'
+      - ' &cBloqueado'
+      - ''
+      - ' &7Você ainda não possui este cosmético.'
+      - ''

@@ -1,19 +1,19 @@
-display-name: '&aPet Slime'
-description: 'Um slime flutuante que orbita você.'
+display-name: '&fPet Cachorro'
+description: 'Um cachorro flutuante que orbita você.'
 type: PET
 rarity: UNCOMMON
-permission: 'ycosmeticos.cosmetic.slime_pet'
+permission: 'ycosmeticos.cosmetic.dog_pet'
 enabled: true
 icon:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: b0349b1679c02706acf747a6d68e67bfae96b7934448a672254df22962726af8
+  name: '&fPet Cachorro'
   lore:
     - ''
-    - ' &7Um companheiro verde'
+    - ' &7Um companheiro leal'
     - ' &7que gira ao seu lado.'
     - ''
 item:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
+  material: b0349b1679c02706acf747a6d68e67bfae96b7934448a672254df22962726af8
   name: '&e{name}'
   lore:
     - ''
@@ -25,25 +25,25 @@ item:
     - ''
 animation:
   type: FOLLOW
-  speed: 1.0
+  speed: 1.2
   height: 0.2
 particles:
   enabled: true
-  type: SLIME
-  count: 2
+  type: HEART
+  count: 1
   extra: 0.0
-  offset-x: 0.08
-  offset-y: 0.08
-  offset-z: 0.08
+  offset-x: 0.06
+  offset-y: 0.06
+  offset-z: 0.06
   shape: FOLLOW
-  radius: 1.15
+  radius: 1.2
 head:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: b0349b1679c02706acf747a6d68e67bfae96b7934448a672254df22962726af8
+  name: '&fPet Cachorro'
 
 icons:
   equipped:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: b0349b1679c02706acf747a6d68e67bfae96b7934448a672254df22962726af8
     name: '&a{name}'
     lore:
       - ''
@@ -55,7 +55,7 @@ icons:
       - ' &eClique para desequipar'
       - ''
   owned:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: b0349b1679c02706acf747a6d68e67bfae96b7934448a672254df22962726af8
     name: '&e{name}'
     lore:
       - ''

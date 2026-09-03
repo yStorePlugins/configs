@@ -1,19 +1,19 @@
-display-name: '&aPet Slime'
-description: 'Um slime flutuante que orbita você.'
+display-name: '&7Pet Fantasma'
+description: 'Um espírito flutuante que orbita você.'
 type: PET
-rarity: UNCOMMON
-permission: 'ycosmeticos.cosmetic.slime_pet'
+rarity: EPIC
+permission: 'ycosmeticos.cosmetic.ghost_pet'
 enabled: true
 icon:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: c70c7e7e4932e7f8bedae6fea90d8e31ae7c1f25eef6ac5e92a94d7ec1c753af
+  name: '&7Pet Fantasma'
   lore:
     - ''
-    - ' &7Um companheiro verde'
+    - ' &7Um espírito pálido'
     - ' &7que gira ao seu lado.'
     - ''
 item:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
+  material: c70c7e7e4932e7f8bedae6fea90d8e31ae7c1f25eef6ac5e92a94d7ec1c753af
   name: '&e{name}'
   lore:
     - ''
@@ -25,25 +25,25 @@ item:
     - ''
 animation:
   type: FOLLOW
-  speed: 1.0
-  height: 0.2
+  speed: 0.85
+  height: 0.28
 particles:
   enabled: true
-  type: SLIME
+  type: CLOUD
   count: 2
   extra: 0.0
   offset-x: 0.08
   offset-y: 0.08
   offset-z: 0.08
   shape: FOLLOW
-  radius: 1.15
+  radius: 1.25
 head:
-  material: 6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664
-  name: '&aPet Slime'
+  material: c70c7e7e4932e7f8bedae6fea90d8e31ae7c1f25eef6ac5e92a94d7ec1c753af
+  name: '&7Pet Fantasma'
 
 icons:
   equipped:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: c70c7e7e4932e7f8bedae6fea90d8e31ae7c1f25eef6ac5e92a94d7ec1c753af
     name: '&a{name}'
     lore:
       - ''
@@ -55,7 +55,7 @@ icons:
       - ' &eClique para desequipar'
       - ''
   owned:
-    material: '6bf0374e4d0dc7744d7ed81c4043b98cbe72ceb720ba86f6d3dc131fdba62664'
+    material: c70c7e7e4932e7f8bedae6fea90d8e31ae7c1f25eef6ac5e92a94d7ec1c753af
     name: '&e{name}'
     lore:
       - ''
