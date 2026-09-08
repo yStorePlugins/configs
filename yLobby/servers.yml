@@ -124,8 +124,36 @@ servers:
       #   EX: SkeletonKnight
       #
       skin-or-material: 'TheMage'
+      # Apenas Citizens
+      glow:
+        # Ativar o contorno/brilho do NPC.
+        enabled: false
+        # Cor do contorno. Valores: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED,
+        # DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED,
+        # LIGHT_PURPLE, YELLOW, WHITE. Tambem aceita codigos como '&a'.
+        color: GREEN
       hologram:
         offset: 3.1
+        # Apenas FancyHolograms
+        background:
+          # true = fundo transparente, false = fundo opaco.
+          transparent: true
+          # Cor do fundo quando transparent for false. Aceita HEX, ex: '#000000'.
+          color: '#000000'
+          # Opacidade do fundo de 0 a 255.
+          opacity: 200
+        # Apenas FancyHolograms
+        # Ativar sombra no texto do holograma.
+        text-shadow: false
+        # Apenas FancyHolograms
+        # Distancia de renderizacao do holograma.
+        visibility-distance: 70
+        # Apenas FancyHolograms
+        # Linhas vazias extras entre cada linha do holograma.
+        line-spacing: 0
+        # Apenas FancyHolograms
+        # Escala/tamanho do holograma. Tambem aceita scale-x, scale-y e scale-z.
+        scale: 1.0
         lines:
           - '&aMina'
           - '{status}'

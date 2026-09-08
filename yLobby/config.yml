@@ -212,6 +212,20 @@ scoreboard:
   # Delay para atualizar a scoreboard (em segundos)
   delay: 3
   title: '&b&lyStore'
+  animation:
+    # Ativar animações na scoreboard.
+    enabled: true
+    # Intervalo para alternar os textos animados (em segundos).
+    interval: 1
+    # Animação do título. Se deixar vazio/remover, será usado o title acima.
+    title:
+      - '&b&lyStore'
+      - '&f&lyStore'
+    # Animações por linha. Use a posição em "lines" de cima para baixo.
+    lines:
+      12:
+        - '&eystoreplugins.com.br'
+        - '&bystoreplugins.com.br'
   lines:
     - ''
     - '&a⋄ &fCargo: %vault_prefix%'
@@ -225,6 +239,19 @@ scoreboard:
     - '&a⋄ &fOnline: &a{rede}'
     - ''
     - '&eystoreplugins.com.br'
+
+# Sistema de texto abaixo do nome dos jogadores.
+below-name:
+  # Ativar ou desativar o sistema de below name.
+  enabled: true
+  # Delay para atualizar o texto (em segundos).
+  delay: 3
+  # Texto global do objective. Em servidores antigos aparece junto do numero.
+  title: ''
+  # Texto por jogador exibido em protocolos modernos. Suporta PlaceholderAPI.
+  text: '&e%player_ping%ms'
+  # Numero usado como fallback em protocolos antigos, onde o below name só aceita inteiro.
+  fallback-score: '%player_ping%'
 
 # Sistema de jump pads
 jump-pad:
