@@ -31,8 +31,8 @@ chat:
     &8&m-&r &e/{cmd} visit <jogador> [n] &8- &7Visita o terreno de alguém.
     &8&m-&r &e/{cmd} claim &8- &7Reivindica o terreno atual.
     &8&m-&r &e/{cmd} auto &8- &7Reivindica o próximo terreno livre.
-    &8&m-&r &e/{cmd} merge &8- &7Agrupa com terrenos vizinhos seus.
-    &8&m-&r &e/{cmd} unmerge &8- &7Desfaz o agrupamento (merge) atual.
+    &8&m-&r &e/{cmd} merge [all] &8- &7Agrupa o terreno à frente (ou todos).
+    &8&m-&r &e/{cmd} unmerge [all] &8- &7Separa o terreno à frente (ou o grupo).
     &8&m-&r &e/{cmd} clear &8- &7Limpa/reseta o terreno atual.
     &8&m-&r &e/{cmd} delete &8- &7Deleta o terreno atual.
     &8&m-&r &e/{cmd} list &8- &7Lista seus terrenos.
@@ -63,8 +63,8 @@ chat:
     &8&m-&r &e/{cmd} visit <jogador> [n] &8- &7Visita o terreno de alguém.
     &8&m-&r &e/{cmd} claim &8- &7Reivindica o terreno atual.
     &8&m-&r &e/{cmd} auto &8- &7Reivindica o próximo terreno livre.
-    &8&m-&r &e/{cmd} merge &8- &7Agrupa com terrenos vizinhos seus.
-    &8&m-&r &e/{cmd} unmerge &8- &7Desfaz o agrupamento (merge) atual.
+    &8&m-&r &e/{cmd} merge [all] &8- &7Agrupa o terreno à frente (ou todos).
+    &8&m-&r &e/{cmd} unmerge [all] &8- &7Separa o terreno à frente (ou o grupo).
     &8&m-&r &e/{cmd} clear &8- &7Limpa/reseta o terreno atual.
     &8&m-&r &e/{cmd} delete &8- &7Deleta o terreno atual.
     &8&m-&r &e/{cmd} list &8- &7Lista seus terrenos.
@@ -163,7 +163,7 @@ chat:
   plot-fly-locked: '&cSaldo insuficiente ou voo bloqueado. &7Compre no painel ou use &fyplots.fly.free&7.'
   plot-fly-bought: '&aVoo desbloqueado neste terreno!'
   plot-fly-self: '&aModo de voo: &f{status}&a.'
-  plot-fly-no-perm: '&cVocê não pode voar neste terreno. &7Perms: &fyplots.fly&7, &fyplots.fly.own&7, &fyplots.fly.others&7 ou desbloqueie no painel.'
+  plot-fly-no-perm: '&cVocê não pode voar neste terreno. &7Perms: &fyplots.fly&7, &fyplots.fly.own&7, &fyplots.fly.others&7, &fyplots.bypass.plot.fly&7 ou desbloqueie no painel.'
   plot-fly-disabled: '&cO voo em terrenos está desativado no servidor.'
   plot-fly-gamemode: '&cNão é possível alternar o voo neste modo de jogo.'
   plot-title-changed: '&aTitle ao entrar: &f{status}&a.'
@@ -171,12 +171,14 @@ chat:
   plot-pvp-changed: '&aPvP noturno do terreno: &f{status}&a.'
   plot-merged: '&aTerrenos agrupados! &7ID: &f{id} &8(&f{count} &7plots)'
   plot-merge-none: '&cNenhum terreno vizinho seu para agrupar.'
+  plot-merge-dir-none: '&cNenhum terreno seu nesse lado para agrupar.'
   plot-merge-already: '&eEstes terrenos já estão agrupados. &7ID: &f{id}'
   plot-merge-limit: '&cLimite de merge: &f{max} &cplots. &7(grupo tem &f{count}&7) Compre slots no menu ou use &fyplots.merge.X&7.'
   plot-merge-slot-bought: '&aSlot de merge comprado! &7Máximo agora: &f{max}'
   plot-merge-slot-max: '&cVocê já está no limite máximo de merge (&f{max}&c).'
   plot-unmerged: '&aGrupo desfeito! &7{count} &aterreno(s) separados. &8(&f{id}&8)'
   plot-unmerge-none: '&cEste terreno não está agrupado.'
+  plot-unmerge-dir-none: '&cNenhum terreno agrupado nesse lado para separar.'
 
   plot-flag-set: '&aFlag &f{flag} &aalterada para &f{value}&a.'
   plot-flag-no-perm: '&cVocê não tem permissão para alterar a flag &f{flag}&c. &7({permission})'

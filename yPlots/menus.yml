@@ -954,6 +954,7 @@ flags:
   next-slot: 50
   back-slot: 45
   permission-prefix: 'yplots.flag.'
+  # Remova uma flag desta lista para ela desaparecer do menu.
   permissions:
     pvp: 'yplots.flag.pvp'
     explosion: 'yplots.flag.explosion'
