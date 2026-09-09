@@ -37,6 +37,9 @@ mobs:
           - '&e   | Desarmado: &b1'
           - ''
           - '&aVocê possui este mob desbloqueado.'
+          - '&fStatus: {status_color}{status}&f.'
+          - ''
+          - '{toggle_color}Clique para {toggle_action}.'
       buy:
         material: 'b1634b0c8e3bb99a49a2e3044b6dbcc619e4ee4a72f23a818d88ea1f094e8ef8'
         name: '&eVaca'

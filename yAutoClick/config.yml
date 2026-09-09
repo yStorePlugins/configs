@@ -52,8 +52,8 @@ login-delay: 20
 
 # Sistemas gerais
 general:
-  # Mundos onde será permitido o auto-click
-  world-whitelist: [ 'world' ]
+  # Mundos onde será proibido o auto-click
+  world-blacklist: [ 'world' ]
   # Permitir o auto-click somente no terreno
   plot: false
   # Delay para atacar os mobs

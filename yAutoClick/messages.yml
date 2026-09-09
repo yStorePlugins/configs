@@ -39,5 +39,7 @@ chat:
   permission-buy: '&cVocê não tem permissão para desbloquear este mob.'
   already: '&cVocê já possui este mob desbloqueado.'
   bought: '&aMob desbloqueado com sucesso.'
+  mob-enabled: '&aMob ativado no auto-click.'
+  mob-disabled: '&cMob desativado no auto-click.'
   bought-time: '&a{time} &aadquirido com sucesso.'
   bought-upgrade: '&e+1 upgrade &aadquirido com sucesso.'
