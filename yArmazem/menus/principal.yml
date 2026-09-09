@@ -97,5 +97,16 @@ Itens:
       - '&7seu armazém.'
       - ''
       - '&aClique para abrir e depositar.'
+  Armazenamento:
+    Slot: 31
+    material: 'LEVER'
+    name: '&aArmazenamento'
+    lore:
+      - '&7Ative ou desative o armazenamento'
+      - '&7automático deste armazém.'
+      - ''
+      - ' &fAtivado: &a{status}&f.'
+      - ''
+      - '&aClique para alternar.'
 
 ## CASO QUEIRA CRIAR OUTROS ITENS PARA ENFEITAR TEU MENU, ABAIXO DE ITENS: -> Vender:, COPIE E COLE E MUDE O NOME E AS INFORMAÇÕES :)
