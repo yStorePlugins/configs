@@ -64,6 +64,8 @@ general:
   min-amount: 1.0
   # Valor máximo permitido para criar uma sala (0 = sem limite)
   max-amount: 0.0
+  # Taxa em porcentagem aplicada sobre o pote final pago ao vencedor (0 = sem taxa)
+  winner-tax-percent: 10.0
   # Intervalo em ticks para atualizar os itens do menu de salas (20 ticks = 1 segundo)
   menu-update-interval-ticks: 40
 
