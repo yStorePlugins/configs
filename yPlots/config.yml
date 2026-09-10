@@ -263,6 +263,8 @@ default-flags:
   mob-spawn: false
   # Permite spawn natural de animais e passivos (vaca, ovelha, squid, morcego, etc.)
   animal-spawn: false
+  # Permite visitantes baterem em monstros e animais
+  entity-damage: false
   # Permite redstone
   redstone: true
   # Permite fluxo de líquidos (água/lava)

@@ -961,6 +961,7 @@ flags:
     fire: 'yplots.flag.fire'
     mob-spawn: 'yplots.flag.mob-spawn'
     animal-spawn: 'yplots.flag.animal-spawn'
+    entity-damage: 'yplots.flag.entity-damage'
     redstone: 'yplots.flag.redstone'
     liquid-flow: 'yplots.flag.liquid-flow'
     plant-grow: 'yplots.flag.plant-grow'
