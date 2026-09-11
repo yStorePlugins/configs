@@ -126,6 +126,7 @@ Repair:
   All: '&aVocê reparou os itens no seu inventário.'
   Nenhum player: '&cO jogador {player} não tem nenhum item que possa ser reparado.'
   All player: '&aVocê reparou os itens no inventário do jogador {player}.'
+  Combat: '&cNão é possível fazer isso com o jogador estando em combate.'
 
 # Mensagens do sistema de speed
 Speed:

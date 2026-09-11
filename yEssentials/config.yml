@@ -498,6 +498,8 @@ repair-costs:
     # Delay para usar o comando novamente
     # em segundos
     delay: 30
+    # Poder reparar tudo se estiver em combate (yCombatLog)
+    combat-log: false
     price1:
       provider: 'money'
       amount: 1000.0
