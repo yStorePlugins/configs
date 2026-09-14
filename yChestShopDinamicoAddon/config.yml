@@ -21,6 +21,16 @@ maximum:
 # deixe 0 para não ter normalização sem novas transações
 time-reduce: 60
 
+# Subir o preço após um tempo sem transações
+# Útil para placas só de compra ou só de venda
+# deixe time: 0 para desativar
+idle-rise:
+  # Tempo em segundos sem nenhuma transação para o preço subir
+  time: 3600
+  # Porcentagem que o preço sobe a cada intervalo
+  # Sobe até o teto configurado em maximum.add
+  percent: 5.0
+
 # Atualizar a placa e o holograma na mudança de preços
 # PODE CAUSAR LAG
 update-sign: false
