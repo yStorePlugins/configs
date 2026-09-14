@@ -96,6 +96,22 @@ Sair porcentagem: 0.0
 # -1 para ser infinito
 Valor maximo: -1
 
+# Penalidade ao morrer em combate
+# Desconta qualquer economia configurada em economies.yml
+# type: PERCENTAGE (porcentagem do saldo) ou FIXED (valor fixo)
+death-penalty:
+  enabled: false
+  penalties:
+    money:
+      type: PERCENTAGE
+      value: 10.0
+      # Valor máximo descontado (-1 = sem limite)
+      max: -1
+    # playerpoints:
+    #   type: FIXED
+    #   value: 50
+    #   max: -1
+
 # Tirar o fly quando entrar em combate
 Remover fly: true
 
@@ -155,6 +171,8 @@ Mensagens:
     - '&c[Combate] O jogador &7{player} &cdeslogou em combate.'
   Saiu:
     - '&aVocê não está mais em combate. Pode deslogar sem perigo.'
+  Morte:
+    - '&cVocê morreu em combate e perdeu &f{amount} {display}&c.'
   Teleportar:
     - '&cVocê não pode teleportar em combate.'
   Comando:
