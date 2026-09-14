@@ -216,6 +216,25 @@ discounts:
     # Quantia do desconto em %
     discount: 10.0
 
+# Sistema de ranking (1 a 10)
+# Placeholders (PlaceholderAPI):
+#   %ychestshop_top_seller_1%  | %ychestshop_top_vendedor_1%
+#   %ychestshop_top_buyer_1%   | %ychestshop_top_comprador_1%
+#   %ychestshop_top_sold_1%    | %ychestshop_top_vendidos_1%
+#   %ychestshop_top_bought_1%  | %ychestshop_top_comprados_1%
+# Campos extras: _name, _value, _item, _amount  (ex: %ychestshop_top_seller_1_name%)
+top:
+  empty: '-'
+  symbol: '$'
+  seller: '{position}° {player} | {symbol}{value}'
+  buyer: '{position}° {player} | {symbol}{value}'
+  sold: '{position}° {item} | {amount} unidades'
+  bought: '{position}° {item} | {amount} unidades'
+  header-seller: '&aTOP Vendedor'
+  header-buyer: '&aTOP Comprador'
+  header-sold: '&aTOP Vendidos'
+  header-bought: '&aTOP Comprados'
+
 # Sistema de formatos de money e quantia
 format:
   type: 'NUMBER' # Tipos: LETTER - NUMBER

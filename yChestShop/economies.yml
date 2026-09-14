@@ -34,6 +34,11 @@ economies:
     bonus-allowed: true
     # Habilitar o sistema de desconto na economia
     discount-allowed: true
+    # Taxa (%) cobrada do vendedor em cada venda
+    # O comprador paga o valor integral da placa
+    # O vendedor recebe o valor menos esta taxa
+    # Exemplo: 10 = venda de 1M, vendedor recebe 900K
+    tax: 0
     # Permissão para o usuário conseguir definir esta economia
     permission: 'ychestshop.provider.money'
     # ‘Item’ que aparecerá para os jogadores ao interagir com a placa
