@@ -1,0 +1,183 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/agiota &8- &7Abre o menu principal.
+    &a/agiota reload &8- &7Recarregar as configurações.
+
+  inv-full: '&cSeu inventário está cheio.'
+  currency-not-found: '&cEconomia não encontrada.'
+  provider-permission: '&cVocê não tem permissão para usar esta economia.'
+  plugin-missing: '&cO plugin {plugin} não está carregado neste servidor.'
+  collateral-disabled: '&cEste tipo de garantia está desativado.'
+  slot-limit: |
+
+    &cVocê atingiu o limite de empréstimos simultâneos!
+
+    &7Limite atual: &f{limit}
+
+  enter-amount: |
+
+    &eDigite no chat o valor do empréstimo.
+    &7Digite &ccancel &7para cancelar.
+
+  enter-amount-invalid: '&cValor inválido. Digite um número maior que zero.'
+  enter-amount-min: '&cO valor mínimo é &f{min}&c.'
+  enter-amount-max: '&cO valor máximo é &f{max}&c.'
+  enter-interest: |
+
+    &eDigite no chat a taxa de juros (%) que deseja pagar.
+    &7Mínimo: &f{min}%
+    &7Digite &ccancel &7para cancelar.
+
+  enter-interest-invalid: '&cTaxa inválida. Digite um número maior ou igual a zero.'
+  enter-interest-min: '&cA taxa mínima de juros é &f{min}%&c.'
+  no-item: '&cSelecione um item do seu inventário como garantia.'
+  no-asset: '&cNenhum bem encontrado. Olhe para o bloco ou selecione na lista.'
+  not-owner: '&cVocê não é dono deste bem.'
+  already-locked: '&cEste bem já está em garantia de outro empréstimo.'
+  item-gone: '&cO item selecionado não está mais no seu inventário.'
+  blacklisted: '&cEste item não pode ser usado como garantia.'
+  request-created: |
+
+    &aPedido de empréstimo criado!
+
+    &7ID: &f{id}
+    &7Valor: &f{amount} &7({provider})
+    &7Juros: &f{interest}%
+    &7A pagar: &f{due}
+    &7Prazo: &f{duration}
+    &7Garantia: &f{collateral}
+
+    &7Aguardando um agiota aceitar...
+
+  request-cancelled: |
+
+    &cPedido cancelado e a garantia foi liberada.
+
+    &7ID: &f{id}
+
+  request-expired: |
+
+    &cSeu pedido de empréstimo expirou e a garantia foi liberada.
+
+    &7ID: &f{id}
+
+  server-success: |
+
+    &aEmpréstimo do servidor aprovado!
+
+    &7ID: &f{id}
+    &7Valor recebido: &f{amount} &7({provider})
+    &7Juros: &f{interest}%
+    &7A pagar: &f{due}
+    &7Prazo: &f{duration}
+    &7Garantia: &f{collateral}
+
+  lend-success: |
+
+    &aVocê emprestou com sucesso!
+
+    &7Devedor: &f{borrower}
+    &7Valor: &f{amount} &7({provider})
+    &7A receber: &f{due}
+    &7Prazo: &f{duration}
+    &7ID: &f{id}
+
+  lend-notify: |
+
+    &aSeu empréstimo foi aceito!
+
+    &7Agiota: &f{lender}
+    &7Valor recebido: &f{amount} &7({provider})
+    &7A pagar: &f{due}
+    &7Prazo: &f{duration}
+    &7ID: &f{id}
+
+  lend-own: '&cVocê não pode aceitar o próprio pedido.'
+  lend-taken: '&cEste pedido já foi aceito ou não está mais disponível.'
+  no-balance: |
+
+    &cVocê não tem saldo suficiente!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{required}
+
+  pay-success: |
+
+    &aPagamento realizado!
+
+    &7Pago agora: &f{paid} &7({provider})
+    &7Restante: &f{remaining}
+    &7ID: &f{id}
+
+  pay-full: |
+
+    &aEmpréstimo quitado! A garantia foi liberada.
+
+    &7Total pago: &f{paid} &7({provider})
+    &7ID: &f{id}
+
+  pay-notify: |
+
+    &aO jogador &f{borrower} &apagou &f{paid} &a({provider}).
+
+    &7Restante: &f{remaining}
+    &7ID: &f{id}
+
+  pay-full-notify: |
+
+    &aO jogador &f{borrower} &aquitou o empréstimo &f{id}&a.
+    &7Você recebeu &f{paid} &7({provider}).
+
+  defaulted-borrower: |
+
+    &cVocê deu calote no empréstimo &f{id}&c!
+
+    &7A garantia &f{collateral} &7foi transferida para &f{lender}&7.
+
+  defaulted-lender: |
+
+    &aO jogador &f{borrower} &adeu calote.
+
+    &7A garantia &f{collateral} &7é sua.
+    &7ID: &f{id}
+
+  collect-success: '&aItem da garantia coletado.'
+  collect-nothing: '&cNão há itens para coletar.'
+  inbox-notify: '&eVocê tem itens de garantia para coletar no menu do agiota.'
+  not-found: '&cEmpréstimo não encontrado.'
+  not-borrower: '&cEste empréstimo não é seu.'
+  not-active: '&cEste empréstimo não está ativo.'
+  server-disabled: '&cO empréstimo do servidor está desativado.'
+  server-amount-fixed: '&eO valor do empréstimo do servidor é definido pela tabela de preços da garantia.'
+  server-interest-fixed: '&eOs juros do empréstimo do servidor são definidos automaticamente.'
+  server-no-price: |
+
+    &cEsta garantia não tem preço configurado no servidor.
+
+    &7Tipo: &f{type}
+    &7Ajuste general.server.prices na config.yml.
+  plot-asset-locked: '&cEste terreno possui garantia de empréstimo (máquina, spawner ou mina) e não pode ser transferido, deletado ou limpo.'
+  credit-denied: |
+
+    &cSeu score de crédito não permite empréstimo do servidor.
+
+    &7Score: &f{score}
+    &7Mínimo: &f{min}

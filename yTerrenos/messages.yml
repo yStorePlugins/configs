@@ -105,6 +105,7 @@ chat:
   terrain-deleted: '&aTerreno deletado com sucesso.'
   terrain-blocks-refunded: '&aVocê recebeu de volta &f{blocks} blocos &ado terreno deletado.'
   terrain-owner: '&cVocê não é dono deste terreno.'
+  agiota-locked: '&cEste terreno está em garantia de empréstimo e não pode ser transferido, deletado ou limpo.'
   terrain-owner-target: '&c{player} não é dono deste terreno.'
   terrain-pvp: '&cO PVP está desabilitado neste terreno.'
   terrain-break: '&cVocê não tem permissão para quebrar blocos neste terreno.'

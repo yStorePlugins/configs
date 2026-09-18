@@ -57,6 +57,7 @@ chat:
   machine-placed: '&a{quantia}x {maquina} &acolocada(s).'
   machine-removed: '&a{quantia}x {maquina} &aremovida(s).'
   machine-just-owner: '&cSomente o dono da máquina pode realizar esta ação.'
+  agiota-locked: '&cEsta máquina está em garantia de empréstimo e não pode ser removida.'
   machine-gamemode: '&cEssa ação só pode ser realizada no modo survival.'
   machine-infinity-fuel: '&cEsta máquina possui combustível infinito.'
   machine-full: '&cEsta máquina está totalmente abastecida.'

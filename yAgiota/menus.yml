@@ -1,0 +1,526 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore: [ ' &7Clique para voltar.' ]
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore: [ ' &7Clique para ir à página anterior.' ]
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore: [ ' &7Clique para ir à próxima página.' ]
+
+# Menu principal (/agiota)
+main-menu:
+  name: '&7Agiota'
+  size: 27
+  request-slot: 10
+  browse-slot: 12
+  server-slot: 14
+  my-loans-slot: 16
+  my-contracts-slot: 21
+  inbox-slot: 23
+  credit-slot: 13
+  request:
+    material: '86c5734e7927fc04f8844fb7605ccbf641a5ac1834c32b4bf58dd40913aefb91'
+    name: '&6&lPedir empréstimo'
+    lore:
+      - ''
+      - ' &7Ofereça um bem como garantia'
+      - ' &7e peça money a outro jogador.'
+      - ''
+      - ' &eClique para pedir'
+      - ''
+  browse:
+    material: 'a280d9e5a4a4c98af0ae94cf109808a91d0a80b5cd3fbbffdf64ad5924210ed7'
+    name: '&a&lEmprestar'
+    lore:
+      - ''
+      - ' &7Veja pedidos abertos e'
+      - ' &7empreste com garantia.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  server:
+    material: 'bc0e6d9e242735481918c5fd14498bd760bb9f4ff6430ad4696b38e8a883da97'
+    name: '&b&lEmpréstimo do servidor'
+    lore:
+      - ''
+      - ' &7Oferta baseada no seu crédito.'
+      - ''
+      - ' {tier} &8· &f{score}'
+      - ' &7Juros &f{interest}%'
+      - ' &7Valor {amount_bonus}'
+      - ''
+      - ' &eClique para pedir'
+      - ''
+  my-loans:
+    material: 'c2eb6fece185f1490185f3980e80c6899bfd40ce7be2a9465b010151d882ff'
+    name: '&e&lMeus empréstimos'
+    lore:
+      - ''
+      - ' &7Pedidos e dívidas em que'
+      - ' &7você é o devedor.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  my-contracts:
+    material: 'f809d2e69610f1e6b75fe0d4598e441e560325d2d52d97cf66859c44fa3d8a79'
+    name: '&d&lMeus contratos'
+    lore:
+      - ''
+      - ' &7Empréstimos em que você'
+      - ' &7é o agiota.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  inbox:
+    material: 'fcd5c0c6b00e4814727f0d764ad525a7380ac461c3760e24ec2b50281d84da79'
+    name: '&c&lArmazém de garantias'
+    lore:
+      - ''
+      - ' &7Itens retidos por calote'
+      - ' &7para você coletar.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  credit:
+    material: 'c2eb6fece185f1490185f3980e80c6899bfd40ce7be2a9465b010151d882ff'
+    name: '&f&lCrédito'
+    lore:
+      - ''
+      - ' {tier}'
+      - ' &f{score}&8/100'
+      - ''
+      - ' &7Quitados &a{paid}'
+      - ' &7No prazo &a{ontime}'
+      - ' &7Calotes &c{defaults}'
+      - ''
+      - ' &7Tomado &f{borrowed}'
+      - ' &7Pago &a{repaid}'
+      - ''
+      - ' &7Oferta do servidor'
+      - ' &8Valor {amount_bonus}'
+      - ' &8Juros {interest}% &7({interest_bonus})'
+      - ''
+
+# Escolha do tipo de garantia (item, máquina, terreno, plot, spawner, mina)
+collateral-type-menu:
+  name: '&8Tipo de garantia'
+  size: 27
+  item-slot: 10
+  maquina-slot: 11
+  terreno-slot: 12
+  plot-slot: 14
+  spawner-slot: 15
+  mina-slot: 16
+  back-slot: 22
+  item:
+    material: '4445a940a297ae88d2f515b498796dd75f5713a7a5f83650e100e9e648f632f6'
+    name: '&f&lItem'
+    lore:
+      - ''
+      - ' &7Deixe um item do inventário'
+      - ' &7como garantia do empréstimo.'
+      - ''
+      - ' &8Retido até pagar ou calote.'
+      - ''
+      - ' &eClique para selecionar'
+      - ''
+  maquina:
+    material: '1d226137af099ef5720e08446be3a548392630d7fd76ed1b5f906142dbe30ea5'
+    name: '&6&lMáquina'
+    lore:
+      - ''
+      - ' &7Use uma máquina do yMaquinas'
+      - ' &7como garantia do empréstimo.'
+      - ''
+      - ' &8Não pode ser removida enquanto'
+      - ' &8o contrato estiver ativo.'
+      - ''
+      - ' &eClique para selecionar'
+      - ''
+  terreno:
+    material: 'a4ea7df5a643f64967693baa2b89ecd955af1f22a4fab61cfb6f4f4e468c8fd2'
+    name: '&a&lTerreno'
+    lore:
+      - ''
+      - ' &7Use um terreno do yTerrenos'
+      - ' &7como garantia do empréstimo.'
+      - ''
+      - ' &8Não pode ser vendido ou deletado'
+      - ' &8enquanto o contrato estiver ativo.'
+      - ''
+      - ' &eClique para selecionar'
+      - ''
+  plot:
+    material: '4c36045208f9b5ddcf8c4433e424b1ca17b94f6b96202fb1e5270ee8d53881b1'
+    name: '&e&lPlot'
+    lore:
+      - ''
+      - ' &7Use um plot do yPlots'
+      - ' &7como garantia do empréstimo.'
+      - ''
+      - ' &8Não pode ser transferido, limpo'
+      - ' &8ou deletado com o contrato ativo.'
+      - ''
+      - ' &eClique para selecionar'
+      - ''
+  spawner:
+    material: MOB_SPAWNER
+    name: '&c&lSpawner'
+    lore:
+      - ''
+      - ' &7Use um spawner do ySpawners'
+      - ' &7como garantia do empréstimo.'
+      - ''
+      - ' &8Não pode ser quebrado enquanto'
+      - ' &8o contrato estiver ativo.'
+      - ''
+      - ' &eClique para selecionar'
+      - ''
+  mina:
+    material: 'b6ea2135838461534372f2da6c862d21cd5f3d2c7119f2bb674bbd42791'
+    name: '&b&lMina'
+    lore:
+      - ''
+      - ' &7Use uma mina do yMinasPv'
+      - ' &7como garantia do empréstimo.'
+      - ''
+      - ' &8Não pode ser removida enquanto'
+      - ' &8o contrato estiver ativo.'
+      - ''
+      - ' &eClique para selecionar'
+      - ''
+
+# Lista os bens do jogador para usar como garantia
+asset-select-menu:
+  name: '&8Selecionar garantia'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  target-slot: 49
+  target-button:
+    material: 'b8a065588c7dbf1294595aba77791c3ad65f19bf1c9ad7a5c23da40b82860b7'
+    name: '&e&lUsar o que estou olhando'
+    lore:
+      - ''
+      - ' &7Olhe para o bloco do bem'
+      - ' &7e clique aqui.'
+      - ''
+  item:
+    material: PAPER
+    name: '&6&l{name}'
+    lore:
+      - ''
+      - ' &8▪ &7Tipo: &f{type}'
+      - ' &8▪ &7ID: &f{key}'
+      - ''
+      - ' &eClique para usar como garantia'
+      - ''
+
+# Seleção da economia (economies.yml)
+economy-select-menu:
+  name: '&8Selecionar economia'
+  size: 27
+  slots: [10,11,12,13,14,15,16]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 22
+
+# Prazos de general.duration-presets-seconds
+duration-select-menu:
+  name: '&8Selecionar prazo'
+  size: 27
+  slots: [10,11,12,13,14,15,16]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 22
+  duration-item:
+    material: 'f499a231bc518bf6e48d3fa0b95336a3d0b41853bfb1d010eb64306c7b9d8ff2'
+    name: '&6&l{duration}'
+    lore:
+      - ''
+      - ' &7Clique para definir este prazo.'
+      - ''
+
+# Resumo do pedido. No empréstimo do servidor o valor vem da tabela de preços.
+create-loan-menu:
+  name: '&8Confirmar pedido'
+  size: 45
+  collateral-slot: 13
+  amount-slot: 29
+  interest-slot: 22
+  economy-slot: 31
+  duration-slot: 33
+  confirm-slot: 39
+  cancel-slot: 41
+  collateral-placeholder:
+    material: BARRIER
+    name: '&7Nenhuma garantia'
+    lore:
+      - ''
+      - ' &7Você ainda não escolheu um bem.'
+      - ' &7Volte e selecione a garantia.'
+      - ''
+  collateral-selected:
+    material: PAPER
+    name: '&a&l{collateral}'
+    lore:
+      - ''
+      - ' &8▪ &7Tipo: &f{type}'
+      - ''
+      - ' &aGarantia selecionada.'
+      - ''
+  amount-button:
+    material: 'f2681152447a3dbd75841a96e3f7ac52a88c0715c877cea4becd9b5d0380dc86'
+    name: '&6Valor: &f{amount}'
+    lore:
+      - ''
+      - ' {tier} &8· &f{score}'
+      - ' &7Oferta {amount_bonus}'
+      - ''
+      - ' &eClique para alterar'
+      - ''
+  interest-button:
+    material: GOLD_NUGGET
+    name: '&6Juros: &f{interest}%'
+    lore:
+      - ''
+      - ' &7Taxa que você se dispõe a pagar.'
+      - ' &7Mínimo: &f{min}%'
+      - ''
+      - ' &eClique para alterar'
+      - ''
+  economy-button:
+    material: '49f613d20b46f0cb89ec374faf4f4730fa5dc1090a0f52dffbc3c0cd59462894'
+    name: '&aEconomia: &f{economy}'
+    lore:
+      - ''
+      - ' &7Moeda usada neste empréstimo.'
+      - ''
+      - ' &eClique para alterar'
+      - ''
+  duration-button:
+    material: 'f499a231bc518bf6e48d3fa0b95336a3d0b41853bfb1d010eb64306c7b9d8ff2'
+    name: '&ePrazo: &f{duration}'
+    lore:
+      - ''
+      - ' &7Tempo para quitar a dívida.'
+      - ''
+      - ' &eClique para alterar'
+      - ''
+  confirm:
+    material: 'WOOL:5'
+    name: '&a&lConfirmar pedido'
+    lore:
+      - ''
+      - ' {tier} &8· &f{score}'
+      - ''
+      - ' &7{collateral}'
+      - ''
+      - ' &f{amount} &8{provider}'
+      - ' &7Pagar &c{due} &8(+{interest}%)'
+      - ' &8{duration}'
+      - ''
+      - ' &aClique para confirmar'
+      - ''
+  confirm-cant:
+    material: 'WOOL:8'
+    name: '&7Preencha todos os campos'
+    lore:
+      - ''
+      - ' &7Ainda faltam informações:'
+      - ' &8▪ &7Garantia'
+      - ' &8▪ &7Valor'
+      - ' &8▪ &7Economia'
+      - ' &8▪ &7Prazo'
+      - ''
+  cancel:
+    material: 'WOOL:14'
+    name: '&cVoltar'
+    lore:
+      - ''
+      - ' &7Clique para voltar'
+      - ' &7ao menu anterior.'
+      - ''
+
+# Pedidos P2P abertos para emprestar
+browse-menu:
+  name: '&8Pedidos abertos'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  item:
+    material: GOLD_INGOT
+    name: '&6{borrower}'
+    lore:
+      - ''
+      - ' &f{amount} &8{provider}'
+      - ' &7Recebe &a{due} &8(+{interest}%)'
+      - ''
+      - ' &7{collateral}'
+      - ' &8{duration}'
+      - ''
+      - ' &eClique para emprestar'
+      - ''
+
+# Empréstimos em que o jogador é o devedor
+my-loans-menu:
+  name: '&8Meus empréstimos'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  filter-slot: 45
+  filter-all: '&fTodos'
+  filter:
+    material: HOPPER
+    name: '&f{filter}'
+    lore:
+      - ''
+      - ' &7Clique para filtrar por status.'
+      - ''
+  item:
+    material: BOOK
+    name: '&f{lender}'
+    lore:
+      - ''
+      - ' {status}'
+      - ''
+      - ' &c{remaining} &8{provider}'
+      - ' &7{collateral}'
+      - ' &8{expire}'
+      - ''
+      - ' &eClique para gerenciar'
+      - ''
+
+# Empréstimos em que o jogador é o agiota
+my-contracts-menu:
+  name: '&8Meus contratos'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  filter-slot: 45
+  filter-all: '&fTodos'
+  filter:
+    material: HOPPER
+    name: '&f{filter}'
+    lore:
+      - ''
+      - ' &7Clique para filtrar por status.'
+      - ''
+  item:
+    material: PAPER
+    name: '&f{borrower}'
+    lore:
+      - ''
+      - ' {status}'
+      - ''
+      - ' &a{remaining} &8{provider}'
+      - ' &7{collateral}'
+      - ' &8{expire}'
+      - ''
+      - ' &eClique para ver'
+      - ''
+
+# Detalhe, pagamento e cancelamento de pedido
+manage-loan-menu:
+  name: '&8Empréstimo {id}'
+  size: 27
+  info-slot: 13
+  pay-slot: 11
+  cancel-slot: 15
+  back-slot: 22
+  info:
+    material: BOOK
+    name: '&f{borrower}'
+    lore:
+      - ''
+      - ' {status}'
+      - ''
+      - ' &8Agiota &f{lender}'
+      - ''
+      - ' &7Valor &f{amount}'
+      - ' &7Pago &a{paid}'
+      - ' &7Falta &c{remaining} &8{provider}'
+      - ''
+      - ' &7{collateral}'
+      - ' &8{expire}'
+      - ''
+  pay:
+    material: 'c245036782c6a7e25ff84c5087a65966d650c033ba37e00965e8b99021b3ecae'
+    name: '&aPagar'
+    lore:
+      - ''
+      - ' &c{remaining} &8{provider}'
+      - ''
+      - ' &eClique para quitar'
+      - ''
+  cancel-request:
+    material: 'c3a03c06ffe2356ce00aef5b708878d2fe4365a97bc4dae1e1542c27b2eb30dd'
+    name: '&cCancelar pedido'
+    lore:
+      - ''
+      - ' &7Libera a garantia.'
+      - ''
+
+# Confirmação ao aceitar um pedido P2P
+confirm-menu:
+  name: '&8Confirmar empréstimo'
+  size: 27
+  info-slot: 13
+  confirm-slot: 11
+  cancel-slot: 15
+  info:
+    material: GOLD_INGOT
+    name: '&6{borrower}'
+    lore:
+      - ''
+      - ' &f{amount} &8{provider}'
+      - ' &7Você recebe &a{due}'
+      - ' &8Juros {interest}% · {duration}'
+      - ''
+      - ' &7{collateral}'
+      - ''
+  confirm:
+    material: 'c245036782c6a7e25ff84c5087a65966d650c033ba37e00965e8b99021b3ecae'
+    name: '&aConfirmar'
+    lore:
+      - ''
+      - ' &7Clique para emprestar.'
+      - ''
+  cancel:
+    material: 'c3a03c06ffe2356ce00aef5b708878d2fe4365a97bc4dae1e1542c27b2eb30dd'
+    name: '&cCancelar'
+    lore:
+      - ''
+      - ' &7Clique para voltar.'
+      - ''
+
+# Itens retidos por calote para o agiota coletar
+inbox-menu:
+  name: '&8Armazém de garantias'
+  size: 54
+  slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49

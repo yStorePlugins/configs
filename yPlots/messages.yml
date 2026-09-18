@@ -142,6 +142,7 @@ chat:
   plot-exit: '&7Você saiu do terreno.'
   plot-denied: '&cVocê não tem permissão para entrar neste terreno.'
   plot-protected: '&cVocê não pode fazer isso aqui.'
+  plot-agiota-locked: '&cEste terreno está em garantia de empréstimo e não pode ser transferido, deletado ou limpo.'
   plot-build-height: '&cVocê não pode construir nesta altura. &7(Y {y} · limite {min}-{max})'
   plot-renamed: '&aNome do terreno alterado para &f{name}&a.'
   plot-description: '&aDescrição do terreno alterada.'

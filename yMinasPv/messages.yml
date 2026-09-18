@@ -36,6 +36,7 @@ chat:
   mine-reset: '&aVocê resetou sua mina.'
   mine-remove-empty: '&cA mina precisa está resetada para conseguir removê-la.'
   mine-remove-owner: '&cSomente o dono da mina consegue removê-la.'
+  agiota-locked: '&cEsta mina está em garantia de empréstimo e não pode ser removida.'
   mine-removed: '&aMina removida com sucesso.'
   mine-just-owner: '&cSomente o dono da mina consegue realizar essa ação.'
   mine-friend-digit-add: |

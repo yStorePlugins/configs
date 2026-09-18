@@ -46,6 +46,7 @@ chat:
   has-spawners: '&cHá spawners num raio de {radius} blocos.'
   silk-touch: '&cVocê precisa de uma picareta com toque suave para quebrar este spawner.'
   just-owner: '&cSomente o dono do spawner pode realizar esta ação.'
+  agiota-locked: '&cEste spawner está em garantia de empréstimo e não pode ser removido.'
   repair: '&aVocê reparou seu spawner por {money} coins.'
   digit-remove: |
 

@@ -57,6 +57,9 @@ generate-online: false
 # Gerar com o amigo online
 generate-friend-online: false
 
+# Desativar o menu ao interagir
+menu-disabled: false
+
 # EXP (vanilla) que será dado ao jogador
 exp: 1
 

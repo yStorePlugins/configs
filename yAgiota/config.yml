@@ -1,0 +1,193 @@
+#            _         _       _
+#  _   _   / \   __ _(_) ___ | |_ __ _
+# | | | | / _ \ / _` | |/ _ \| __/ _` |
+# | |_| |/ ___ \ (_| | | (_) | || (_| |
+#  \__, /_/   \_\__, |_|\___/ \__\__,_|
+#  |___/        |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Máximo de empréstimos simultâneos (REQUEST + ACTIVE) por jogador sem permissão yagiota.slots.N
+  max-loans-default: 3
+  # Juros mínimos (%) que o jogador deve oferecer no pedido P2P
+  # O pedinte pode oferecer uma taxa maior para atrair agiotas
+  player-interest-percent: 15.0
+  # Tempo (em segundos) para um pedido P2P expirar sem ninguém aceitar
+  request-expire-seconds: 3600
+  # Intervalo (em ticks) para verificar pedidos/empréstimos expirados (200 ticks = 10 segundos)
+  expiry-check-interval-ticks: 200
+  # Se true, permite pagamento parcial (atualmente o menu quita o restante de uma vez)
+  allow-partial-pay: true
+  # Valor mínimo que o jogador pode pedir em empréstimo P2P
+  min-amount: 1.0
+  # Valor máximo que o jogador pode pedir em empréstimo P2P
+  max-amount: 10000000.0
+  # Prazos pré-definidos em segundos que o jogador pode selecionar
+  # 3600=1h, 7200=2h, 21600=6h, 86400=1dia
+  duration-presets-seconds:
+    - 3600
+    - 7200
+    - 21600
+    - 86400
+
+  # Empréstimo direto com o servidor (não usa outro jogador como agiota)
+  server:
+    # Se false, o botão de empréstimo do servidor fica bloqueado
+    enabled: true
+    # Juros (%) cobrados pelo servidor
+    interest-percent: 20.0
+    # Teto absoluto do valor emprestado pelo servidor (0 = sem teto extra além da tabela)
+    max-amount: 500000.0
+    # Tabela de preços: valor que o servidor empresta conforme a garantia.
+    # O jogador NÃO escolhe o valor — ele é definido por esta tabela.
+    # Use 'default' para o valor padrão do tipo.
+    # Use 'types' para valores específicos (key da máquina/spawner/estrutura da mina).
+    prices:
+      item:
+        # Valor emprestado ao deixar um item como garantia
+        default: 5000.0
+      maquina:
+        # Valor padrão para qualquer máquina yMaquinas
+        default: 25000.0
+        # Valores por tipo da máquina (a key usada no yMaquinas)
+        types:
+          exemplo: 50000.0
+      terreno:
+        # Valor emprestado ao deixar um terreno yTerrenos como garantia
+        default: 80000.0
+      plot:
+        # Valor emprestado ao deixar um plot yPlots como garantia
+        default: 60000.0
+      spawner:
+        # Valor padrão para qualquer spawner ySpawners
+        default: 20000.0
+        # Valores por tipo do spawner (a key usada no ySpawners)
+        types:
+          exemplo: 35000.0
+      mina:
+        # Valor padrão para qualquer mina yMinasPv
+        default: 70000.0
+        # Valores por estrutura da mina (a key usada no yMinasPv)
+        types:
+          exemplo: 120000.0
+
+  # Histórico de crédito: melhora (ou piora) as ofertas do servidor
+  credit:
+    enabled: true
+    # Score inicial de quem nunca pegou empréstimo
+    starting-score: 50
+    # Pontos ganhos ao quitar um empréstimo
+    paid-bonus: 8
+    # Pontos extras se quitar antes do prazo
+    on-time-bonus: 4
+    # Pontos perdidos ao dar calote
+    default-penalty: 25
+    min-score: 0
+    max-score: 100
+    # Score mínimo para pegar empréstimo do servidor (0 = sem bloqueio)
+    server-min-score: 0
+    # Faixas usadas no empréstimo do servidor (a maior faixa que o score alcançar)
+    # amount-multiplier: multiplica o valor da tabela de preços
+    # interest-multiplier: multiplica os juros do servidor
+    tiers:
+      excelente:
+        min-score: 80
+        display: '&2Excelente'
+        amount-multiplier: 1.5
+        interest-multiplier: 0.7
+      bom:
+        min-score: 60
+        display: '&aBom'
+        amount-multiplier: 1.25
+        interest-multiplier: 0.85
+      regular:
+        min-score: 40
+        display: '&eRegular'
+        amount-multiplier: 1.0
+        interest-multiplier: 1.0
+      ruim:
+        min-score: 0
+        display: '&cRuim'
+        amount-multiplier: 0.6
+        interest-multiplier: 1.4
+
+  # Quais tipos de garantia estão habilitados neste servidor
+  collateral:
+    # Item do inventário (fica retido no plugin até quitar ou dar calote)
+    item: true
+    # Máquina do yMaquinas (não pode quebrar/remover enquanto em garantia)
+    maquina: true
+    # Terreno do yTerrenos (não pode deletar/vender enquanto em garantia)
+    terreno: true
+    # Plot do yPlots (não pode transferir/deletar enquanto em garantia)
+    plot: true
+    # Spawner do ySpawners (não pode quebrar/remover enquanto em garantia)
+    spawner: true
+    # Mina do yMinasPv (não pode remover enquanto em garantia)
+    mina: true
+
+# Sistema de formatos de status
+status:
+  request: '&eAguardando'
+  active: '&aAtivo'
+  paid: '&2Quitado'
+  defaulted: '&cCalote'
+  cancelled: '&7Cancelado'
+  expired: '&8Expirado'
