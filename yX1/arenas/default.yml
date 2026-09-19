@@ -45,8 +45,11 @@ mito:
   ignore-limit: 3
   # Placeholder para retornar o nome do Mito
   placeholder: '%ymito_mito%'
-  # Comando de sortear o mito
-  draw-command: 'mito setar random'
+  # Comando executado ao perder o mito
+  # Placeholders: {player} = último desafiante, {mito} = mito que perdeu
+  # Dar o mito para quem desafiou por último: 'mito setar {player}'
+  # Sortear o mito entre os online: 'mito random'
+  draw-command: 'mito setar {player}'
 
 # Configurações do camarote
 camarote:
