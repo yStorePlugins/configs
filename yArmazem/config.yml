@@ -82,6 +82,10 @@ Opcoes:
   Auto-Sell-Friends: false
   # Ativar o menu da plantacao para venda e coleta
   sell-collect-menu: false
+  # Dropar plantações normalmente quando não estiverem em um terreno/claim
+  # false = os itens somem
+  # true = os itens dropam no chão
+  Dropar fora claim: true
 
 # Sistema de auto-break quando crescer um bloco
 AutoBreak:

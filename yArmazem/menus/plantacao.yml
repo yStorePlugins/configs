@@ -8,10 +8,22 @@ items:
     - '&fQuantia: &a{quantia}&f.'
     - '&fPreço unitário: &a{unitario}&f.'
     - '&fPreço total: &a{total}&f.'
+    - '&fArmazenamento: &a{status}&f.'
     - ''
   sell-slot: 11
   collect-slot: 15
   item-slot: 13
+  armazenamento-slot: 22
+  armazenamento:
+    material: 'LEVER'
+    name: '&aArmazenamento'
+    lore:
+    - '&7Ative ou desative o armazenamento'
+    - '&7automático desta plantação.'
+    - ''
+    - ' &fAtivado: &a{status}&f.'
+    - ''
+    - '&aClique para alternar.'
   sell:
     material: '20c1e2b1d46cec8db5cd905a5915283d1613f0a91cec6f39bb503345000f3c7f'
     name: '&aVender'

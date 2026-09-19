@@ -11,8 +11,11 @@ Plantacao:
     - '&fPreço unitário: &a{unitario}&f.'
     - '&fPreço total: &a{total}&f.'
     - ''
+    - '&fArmazenamento: &a{status}&f.'
+    - ''
     - '&7Clique com esquerdo para vender.'
     - '&7Clique com direito para coletar.'
+    - '&7Shift + clique para ativar/desativar.'
 Itens:
   Informacoes:
     Slot: 30
