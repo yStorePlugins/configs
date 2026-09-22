@@ -1,0 +1,176 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+#
+# Mensagens de chat em bloco usam | com linha em branco no topo.
+# Títulos usam <nl> para separar título e subtítulo.
+# Placeholders comuns: {player} {command} {syntax} {coins} {cost} {level} {amount}
+
+# Mensagens de chat — agrupadas por recurso
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+    &r
+    &a/fazenda &8- &7Abre o menu principal.
+    &a/fazenda ir [jogador] &8- &7Vai para a fazenda.
+    &a/fazenda sair &8- &7Sai da fazenda.
+    &a/fazenda amigos &8- &7Abre o menu de amigos.
+    &a/fazenda enchants &8- &7Abre os encantamentos.
+    &a/fazenda animais &8- &7Abre os animais.
+    &a/fazenda top &8- &7Abre o ranking.
+    &r
+  admin-help: |
+    &r
+    &a/{command} wand <fazenda> [expansao] &8- &7Wand pos1/pos2.
+    &a/{command} define <fazenda> [expansao] &8- &7Define plantações.
+    &a/{command} criar <id> &8- &7Cria fazenda.
+    &a/{command} deletar <fazenda> &8- &7Apaga fazenda.
+    &a/{command} setar <spawn|saida> &8- &7Spawn/saída.
+    &a/{command} darmoeda <jogador> <qtd> &8- &7Dar moedas (1k, 1m).
+    &a/{command} setmoeda <jogador> <qtd> &8- &7Setar moedas.
+    &a/{command} removermoeda <jogador> <qtd>
+    &a/{command} darnivel/setnivel/removernivel <jogador> <qtd>
+    &a/{command} darxp/setxp/removerxp <jogador> <qtd>
+    &a/{command} darenchant <jogador> <enchant> <qtd>
+    &a/{command} removerenchant <jogador> <enchant> <qtd>
+    &a/{command} daranimal <jogador> <animal> <qtd>
+    &a/{command} removeranimal <jogador> <animal> <qtd>
+    &a/{command} resetar <jogador>
+    &a/{command} enxada [jogador]
+    &a/{command} reload
+    &r
+  inv-full: '&cSeu inventário está cheio.'
+  # Entrada / saída da fazenda. {owner} {farm}
+  farm-not-set: '&cA fazenda ainda não foi configurada. Peça a um staff para setar as posições.'
+  farm-enter: |
+
+    &aVocê entrou na fazenda de &f{owner}&a!
+
+    &7Use a enxada para colher as plantações.
+  farm-exit: '&eVocê saiu da fazenda.'
+  farm-no-access: '&cVocê não tem permissão para usar esta fazenda.'
+  farm-already: '&cVocê já está em uma fazenda.'
+  hoe-required: '&cVocê precisa da enxada da fazenda para colher.'
+  # Expansões. {expansion} {cost} {coins} {level}
+  expansion-success: '&aExpansão {expansion} comprada com sucesso!'
+  expansion-no-balance: |
+
+    &cVocê não tem saldo suficiente!
+
+    &7Economia: &f{provider}
+    &7Necessário: &f{cost}
+    &7Atual: &f{coins}
+  expansion-owned: '&aVocê já possui esta expansão.'
+  expansion-locked: '&cVocê precisa comprar a expansão anterior ou alcançar o nível {level}.'
+  expansion-not-set: '&cA área da expansão {expansion} ainda não foi definida.'
+  # Plantações. {crop} {cost} {coins} {level}
+  crop-success: '&aPlantação {crop} desbloqueada!'
+  crop-no-balance: |
+
+    &cVocê não tem saldo suficiente!
+
+    &7Economia: &f{provider}
+    &7Necessário: &f{cost}
+    &7Atual: &f{coins}
+  crop-owned: '&aVocê já possui esta plantação.'
+  crop-locked: '&cDesbloqueie a plantação anterior ou alcance o nível {level}.'
+  # Amigos. {player} {max}
+  friend-add: '&eDigite no chat o nick do jogador. Escreva &ccancelar &epara cancelar.'
+  friend-added: '&a{player} foi adicionado à sua fazenda.'
+  friend-remove: '&c{player} foi removido da sua fazenda.'
+  friend-limit: '&cVocê atingiu o limite de {max} amigos.'
+  friend-self: '&cVocê não pode adicionar a si mesmo.'
+  friend-already: '&c{player} já é seu amigo.'
+  friend-not: '&c{player} não está na lista.'
+  friend-notify: '&a{player} adicionou você na fazenda dele.'
+  # Pública / taxa. {tax}
+  public-on: '&aSua fazenda agora é pública.'
+  public-off: '&eSua fazenda agora é privada.'
+  tax-prompt: '&eDigite no chat a taxa (0-100). Atual aplicada: {tax}%'
+  tax-set: '&aTaxa definida para {tax}%.'
+  tax-invalid: '&cA taxa precisa ser entre 0 e 100.'
+  # Animais. {animal} {amount} {product} {cost} {coins}
+  animal-buy: '&aVocê comprou {animal}! Total: &f{amount}'
+  animal-no-balance: |
+
+    &cVocê não tem saldo suficiente!
+
+    &7Economia: &f{provider}
+    &7Necessário: &f{cost}
+    &7Atual: &f{coins}
+  animal-max: '&cLimite máximo deste animal atingido.'
+  animal-collect: '&aVocê coletou &f{amount}x {product}&a!'
+  animal-empty: '&cVocê não tem produtos para coletar.'
+  animal-sell: '&aVocê vendeu {product} por &f{coins} &amoedas!'
+  # Encantamentos. {enchant} {level} {cost} {coins}
+  enchant-buy: '&a{enchant} evoluído para o nível {level}! &7(+{amount})'
+  enchant-disenchant: '&aVocê removeu &f{amount} &aníveis de {enchant}. Nível atual: &f{level}'
+  enchant-amount: '&eDigite no chat a quantidade de níveis de {enchant}. Escreva &ccancelar &epara cancelar.'
+  enchant-no-balance: |
+
+    &cVocê não tem moedas suficientes!
+
+    &7Necessário: &f{cost}
+    &7Atual: &f{coins}
+  enchant-max: '&cEste encantamento já está no nível máximo.'
+  enchant-locked: '&cVocê precisa do nível {level} para este encantamento.'
+  tool-select: '&aVocê selecionou a ferramenta {tool}.'
+  tool-locked: '&cVocê precisa do nível {level} para esta ferramenta.'
+  tool-owned: '&aEsta ferramenta já está selecionada.'
+  # Admin. {player} {amount} {farm} {pos} {location}
+  give-currency: '&aVocê deu {amount} moedas para {player}.'
+  give-hoe: '&aEnxada entregue para {player}.'
+  admin-set-currency: '&aMoedas de {player} definidas para {amount}.'
+  admin-remove-currency: '&aRemovido {amount} moedas de {player}.'
+  admin-give-level: '&aVocê deu {amount} níveis para {player}.'
+  admin-set-level: '&aNível de {player} definido para {amount}.'
+  admin-remove-level: '&aRemovido {amount} níveis de {player}.'
+  admin-give-xp: '&aVocê deu {amount} XP para {player}.'
+  admin-set-xp: '&aXP de {player} definido para {amount}.'
+  admin-remove-xp: '&aRemovido {amount} XP de {player}.'
+  admin-give-enchant: '&aVocê deu {amount} níveis de {enchant} para {player} (nível {level}).'
+  admin-remove-enchant: '&aVocê removeu {amount} níveis de {enchant} de {player} (nível {level}).'
+  admin-enchant-found: '&cEncantamento não encontrado. Lista: {list}'
+  admin-give-animal: '&aVocê deu {amount}x {animal} para {player}.'
+  admin-remove-animal: '&aVocê removeu {amount}x {animal} de {player}.'
+  admin-animal-found: '&cAnimal não encontrado. Lista: {list}'
+  admin-reset: '&aDados da fazenda de {player} resetados.'
+  admin-delete: '&aFazenda {farm} deletada.'
+  admin-created: '&aFazenda {farm} criada. Use a wand e /fazendaadmin setar.'
+  admin-exists: '&cA fazenda {farm} já existe.'
+  admin-pos: '&a{pos} da fazenda {farm} definida em {location}'
+  admin-wand: '&aWand da fazenda {farm} recebida. Esquerdo = pos1, Direito = pos2. Depois use /fazendaadmin define {farm}'
+  admin-wand-exp: '&aWand da expansão {expansion} ({farm}) recebida. Esquerdo = pos1, Direito = pos2. Depois use /fazendaadmin define {farm} {expansion}'
+  admin-expansion-found: '&cExpansão não encontrada. Lista: {list}'
+  admin-saved: '&a{pos} da fazenda {farm} salva.'
+  admin-farm-found: '&cFazenda não encontrada. Disponíveis: {list}'
+  admin-need-pos: '&cDefina pos1 e pos2 da fazenda {farm} com a wand antes de usar define.'
+  admin-define: '&a{amount} plantação(ões) definidas na fazenda {farm}.'
+  admin-define-empty: '&cNenhum bloco de plantação encontrado na área da fazenda {farm}. Confira general.plant-blocks.'
+  # Level. {level}
+  level-up: |
+
+    &a&lLEVEL UP!
+
+    &7Você alcançou o nível &f{level}&7!
+
+# Actionbar da colheita. {coins} {crop} {amount} {tax} {xp}
+actionbar:
+  harvest: '&6+{coins} &8| &7{crop} x{amount} &8| &e+{xp} XP'
+
+# Títulos (<nl> separa título e subtítulo). {owner} {enchant} {level}
+title:
+  enter: '&aFazenda<nl>&7{owner}'
+  enchant: '&6&lENCANTAMENTO<nl>&e{enchant}'
+  level: '&a&lNÍVEL {level}<nl>&7Continue colhendo!'

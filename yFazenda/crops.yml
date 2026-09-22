@@ -1,0 +1,186 @@
+# Plantações (apenas sementes e fungos)
+#
+# Cada chave em "crops" é o ID interno da plantação.
+#
+# Campos:
+#   display        - nome colorido exibido ao jogador
+#   material       - bloco de packet maduro. Formato MATERIAL ou MATERIAL:DATA (ex.: CROPS:7 = trigo maduro)
+#   to-material    - opcional. Bloco após colher (ex.: CROPS:0 = trigo sem crescer). Vazio = some (ar)
+#   seed           - semente/fungo associado (informativo / drops)
+#   unlock-level   - nível mínimo da fazenda para desbloquear
+#   order          - ordem de evolução (precisa comprar na sequência)
+#   chance         - peso (%) desta plantação aparecer na área após desbloqueada
+#   value          - moedas da fazenda ganhas por colheita
+#   xp             - XP da fazenda ganho por colheita
+#   grow-ticks     - tempo em ticks para a plantação voltar a nascer (20 ticks = 1s)
+#   prices-default - provider + price para desbloquear (yfazenda, money, etc.)
+#   icon           - item do menu de plantações
+#   drops          - drops especiais na colheita (chance 0-100)
+#     chance       - probabilidade (%) de dropar
+#     commands     - comandos no console. Placeholder: {player}
+#     item         - item dado ao jogador (SetupItem)
+#
+# Placeholders do icon lore: {value} {cost} {level} {status} {yfazenda} {money}
+
+crops:
+  wheat:
+    display: '&eTrigo'
+    material: 'CROPS:7'
+    to-material: 'CROPS:0'
+    seed: 'SEEDS'
+    unlock-level: 1
+    order: 1
+    chance: 100
+    value: 1.0
+    xp: 1.0
+    grow-ticks: 40
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 0
+      vault:
+        provider: 'money'
+        price: 0
+    icon:
+      material: 'WHEAT'
+      name: '&eTrigo'
+      lore:
+        - ''
+        - ' &7Valor: &f{value}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ' &7Nível: &f{level}'
+        - ' {status}'
+        - ''
+    drops:
+      seed:
+        chance: 5.0
+        commands: []
+        item:
+          material: 'SEEDS'
+          name: '&eSemente Extra'
+          amount: 1
+  potato:
+    display: '&6Batata'
+    material: 'POTATO:7'
+    to-material: 'POTATO:0'
+    seed: 'POTATO_ITEM'
+    unlock-level: 3
+    order: 2
+    chance: 80
+    value: 2.5
+    xp: 2.0
+    grow-ticks: 50
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 250
+      vault:
+        provider: 'money'
+        price: 0
+    icon:
+      material: 'POTATO_ITEM'
+      name: '&6Batata'
+      lore:
+        - ''
+        - ' &7Valor: &f{value}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ' &7Nível: &f{level}'
+        - ' {status}'
+        - ''
+  carrot:
+    display: '&6Cenoura'
+    material: 'CARROT:7'
+    to-material: 'CARROT:0'
+    seed: 'CARROT_ITEM'
+    unlock-level: 5
+    order: 3
+    chance: 70
+    value: 4.0
+    xp: 3.0
+    grow-ticks: 50
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 750
+      vault:
+        provider: 'money'
+        price: 0
+    icon:
+      material: 'CARROT_ITEM'
+      name: '&6Cenoura'
+      lore:
+        - ''
+        - ' &7Valor: &f{value}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ' &7Nível: &f{level}'
+        - ' {status}'
+        - ''
+  netherwart:
+    display: '&cFungo do Nether'
+    material: 'NETHER_WARTS:3'
+    to-material: 'NETHER_WARTS:0'
+    seed: 'NETHER_STALK'
+    unlock-level: 8
+    order: 4
+    chance: 50
+    value: 8.0
+    xp: 5.0
+    grow-ticks: 70
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 2500
+      vault:
+        provider: 'money'
+        price: 0
+    icon:
+      material: 'NETHER_STALK'
+      name: '&cFungo do Nether'
+      lore:
+        - ''
+        - ' &7Valor: &f{value}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ' &7Nível: &f{level}'
+        - ' {status}'
+        - ''
+  mushroom:
+    display: '&dCogumelo'
+    material: 'RED_MUSHROOM'
+    to-material: ''
+    seed: 'RED_MUSHROOM'
+    unlock-level: 12
+    order: 5
+    chance: 35
+    value: 14.0
+    xp: 8.0
+    grow-ticks: 80
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 8000
+      vault:
+        provider: 'money'
+        price: 0
+    icon:
+      material: 'RED_MUSHROOM'
+      name: '&dCogumelo'
+      lore:
+        - ''
+        - ' &7Valor: &f{value}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ' &7Nível: &f{level}'
+        - ' {status}'
+        - ''
+    drops:
+      rare:
+        chance: 1.0
+        commands: []
+        item:
+          material: 'GOLDEN_APPLE'
+          name: '&6Maçã Dourada'
+          amount: 1

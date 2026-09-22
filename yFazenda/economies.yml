@@ -1,0 +1,51 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+
+# Providers disponíveis:
+#
+#   AtlasEconomiaSecundaria, AtlasMinas, AtlasMinasV2,
+#   JH_Shop, LegendaryEconomy, NextCash, PlayerPoints,
+#   StormEconomiaSecundaria, StormMinas, TGCash,
+#   yAlmas, yPoints, yRankup,
+#   Vault / Money
+#
+
+# Economia padrão (chave em "economies") usada quando nenhuma for especificada.
+default: 'money'
+
+economies:
+  yfazenda:
+    provider: 'yfazenda'
+    display: 'Moedas da Fazenda'
+    abbreviated: 'fazenda'
+    allow-offline: true
+    permission: ''
+    item-settings:
+      material: WHEAT
+      name: '&aMoedas da Fazenda'
+      lore:
+        - ''
+        - ' &7Economia interna da fazenda'
+        - ''
+  money:
+    # Provider interno (Money = Vault).
+    provider: 'Money'
+    # Nome exibido nos menus e mensagens.
+    display: 'Dinheiro'
+    # Abreviação usada em lores.
+    abbreviated: 'coins'
+    # Permitir transações com jogadores offline.
+    allow-offline: true
+    # Permissão para usar esta economia. Vazio = todos.
+    permission: ''
+    # Ícone no menu de seleção de economia.
+    item-settings:
+      material: GOLD_INGOT
+      name: '&aDinheiro'
+      lore:
+        - ''
+        - ' &7Tipo: &fMoney'
+        - ''

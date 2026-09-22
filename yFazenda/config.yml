@@ -1,0 +1,147 @@
+#            _    _                       ___ _
+#  _   _   / \  | |_   _  __ _  __ _ _ _|_ _| |_ ___ _ __ ___
+# | | | | / _ \ | | | | |/ _` |/ _` | '__| || __/ _ \ '_ ` _ \
+# | |_| |/ ___ \| | |_| | (_| | (_| | |  | || ||  __/ | | | | |
+#  \__, /_/   \_\_|\__,_|\__, |\__,_|_| |___|\__\___|_| |_| |_|
+#  |___/                 |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 6379]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais da fazenda
+general:
+  # XP base usado no cálculo do próximo nível. Fórmula: xp-base * (nível ^ xp-exponent)
+  xp-base: 100.0
+  # Expoente da curva de XP. Valores maiores deixam o level-up mais difícil.
+  xp-exponent: 1.45
+  # Taxa padrão (%) cobrada de visitantes/amigos sobre o ganho da colheita. Destinada ao dono.
+  default-tax: 10.0
+  # Máximo de amigos que um jogador pode autorizar na fazenda.
+  max-friends: 10
+  # Se true, só é possível colher usando a enxada da fazenda (NBT yFazenda-Hoe).
+  hoe-required: true
+  # Se true, entrega a enxada automaticamente ao entrar na fazenda.
+  give-hoe-on-enter: true
+  # Se true, remove a enxada do inventário ao sair da fazenda.
+  remove-hoe-on-exit: true
+  # Limite de colheitas por segundo (anti-abuso). 0 = sem limite.
+  harvest-limit-per-second: 20
+  # Intervalo (em ticks) para processar a produção dos animais virtuais. 100 ticks = 5 segundos.
+  animal-check-interval-ticks: 100
+  # Intervalo (em ticks) para regenerar plantações colhidas. 20 ticks = 1 segundo.
+  regen-check-interval-ticks: 20
+  # Se true, entrar na cuboid da fazenda carrega os packets automaticamente. Desativado: só /fazenda ir e /fazenda sair.
+  auto-enter: false
+  # Menu de encantamentos ao clicar com a enxada
+  hoe-enchants-menu:
+    # Se true, botão direito na enxada abre o menu de encantamentos
+    enabled: true
+    # Se true, precisa shift + botão direito. Se false, só botão direito.
+    require-shift: true
+  # Holograma em packet ao colher
+  hologram:
+    # Se true, mostra holograma em packet ao colher
+    enabled: true
+    # Offset Y da primeira linha acima do bloco colhido
+    offset: -1
+    # Espaço entre linhas do holograma
+    line-spacing: 0.25
+    # Linhas do holograma. Placeholders: {crop} {amount} {coins} {tax} {xp} {player}
+    lines:
+      - '&6+{coins}'
+      - '&7{crop} &fx{amount}'
+      - '&e+{xp} XP'
+  # Máximo de visitantes simultâneos em fazendas públicas.
+  max-public-visitors: 8
+  # Fly ao entrar na fazenda (desliga ao sair).
+  fly: true
+  # Materiais usados no /fazendaadmin define para achar onde cada planta fica.
+  # A plantação em packet é colocada 1 bloco ACIMA deste material.
+  # 1.8: SOIL  |  1.13+: FARMLAND
+  plant-blocks:
+    - SOIL
+    - FARMLAND
+  # Sons (nomes de Sound do Bukkit). Use aspas.
+  sounds:
+    # Som ao concluir uma ação com sucesso (compra, level-up, entrar).
+    action-success: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    # Som ao falhar uma ação (sem saldo, sem permissão).
+    action-fail: 'ENTITY_VILLAGER_NO'
+    # Som ao colher uma plantação.
+    harvest: 'BLOCK_GRASS_BREAK'
+    # Som ao ativar encantamento com animação.
+    enchant: 'ENTITY_LIGHTNING_THUNDER'
+
+scoreboard:
+  enabled: true
+  title: '&a&lFazenda'
+  lines:
+    - '&7     Área de cultivo'
+    - ''
+    - '&f Fazenda: &7{farm}'
+    - '&f Dono: &7{owner}'
+    - ''
+    - '&e Progresso'
+    - '&8  ❘&f Nível: &7{level}'
+    - '&8  ❘&f XP: &7{xp}/{xp_next}'
+    - '&8  ❘&f Colhido: &7{harvested}'
+    - ''
+    - '&f Moedas: &a{coins}'
+    - '&f Plantação: &7{crop}'
+    - '&f Expansão: &7{expansion}'
+    - ''
+    - '&a    ystoreplugins.com.br'

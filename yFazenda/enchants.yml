@@ -1,0 +1,713 @@
+# Encantamentos da enxada (animações em packets)
+#
+# Não apague a chave (ID) dos encantamentos que for usar — o type precisa bater com o código.
+#
+# Types (animações diferenciadas legacy/newest):
+#   harvest     - colhe área ao redor (quadrado no mesmo Y)
+#   storm       - raios em packet + colheita em esfera
+#   rain        - chuva de partículas + colheita em área
+#   tornado     - redemoinho de partículas + colheita em esfera
+#   burst       - explosão de partículas + colheita em esfera
+#   linear      - colhe em linha (eixo X)
+#   meteor      - meteoros de fogo caindo + colheita em esfera
+#   helix       - dupla hélice subindo + colheita em área
+#   wave        - onda no chão se expandindo
+#   bloom       - floração de partículas
+#   nova        - implosão + explosão
+#   pulse       - anéis pulsantes
+#   blizzard    - nevasca
+#   vortex      - vórtice de portal
+#   fortune     - bônus de drops (sem área / sem animação)
+#   multiplier  - bônus de moedas (sem área / sem animação)
+#
+# Campos:
+#   display            - nome no menu e na lore da enxada
+#   type               - tipo listado acima
+#   chat / title / actionbar - mensagens ao ativar. Title usa <nl> para subtítulo. Vazio = não envia
+#   sound              - Sound do Bukkit ao ativar. Vazio = sem som
+#   order              - ordem no menu
+#   unlock-level       - nível mínimo da fazenda para comprar
+#   max-level          - nível máximo do encantamento
+#   chance-per-level   - chance (%) de ativar por nível na colheita. 0 = passivo (fortune/multiplier)
+#   radius             - raio base da área. Cresce +1 por nível extra
+#   cost-multiplier    - multiplicador por nível (price * multiplier ^ (nível-1))
+#   delay-seconds      - delay entre ativações
+#   animation          - se true, dispara a animação em packets
+#   icon               - item do menu
+#
+# Placeholders do icon lore: {level} {max} {level_next} {chance} {chance_next} {radius} {radius_next} {cost} {yfazenda} {money}
+# prices-default / prices-per-level / prices-disenchanter: provider + price (yfazenda = moedas da fazenda)
+
+enchants:
+  harvest:
+    display: '&aColheita'
+    type: harvest
+    chat: '&aColheita em área ativada!'
+    title: '&a&lCOLHEITA<nl>&7Área expandida'
+    actionbar: '&aColheita em área!'
+    sound: 'ENTITY_PLAYER_LEVELUP'
+    order: 1
+    unlock-level: 1
+    max-level: 10
+    chance-per-level: 2.5
+    radius: 1
+    cost-multiplier: 1.35
+    delay-seconds: 2
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 100
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 25
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 40
+    icon:
+      material: 'DIAMOND_HOE'
+      name: '&aColheita'
+      lore:
+        - ''
+        - ' &7Colhe uma área ao redor.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  storm:
+    display: '&bTempestade'
+    type: storm
+    chat: '&bTempestade na plantação!'
+    title: '&b&lTEMPESTADE<nl>&7Raios na fazenda'
+    actionbar: '&bRaios colhendo plantações!'
+    sound: 'ENTITY_LIGHTNING_THUNDER'
+    order: 2
+    unlock-level: 5
+    max-level: 8
+    chance-per-level: 1.2
+    radius: 2
+    cost-multiplier: 1.45
+    delay-seconds: 6
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 100
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 25
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 40
+    icon:
+      material: 'BLAZE_ROD'
+      name: '&bTempestade'
+      lore:
+        - ''
+        - ' &7Raios em packets colhem a área.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  rain:
+    display: '&3Chuva Fértil'
+    type: rain
+    chat: '&3A chuva fértil começou!'
+    title: '&3&lCHUVA<nl>&7Gotas douradas'
+    actionbar: '&3Chuva fértil!'
+    sound: 'WEATHER_RAIN'
+    order: 3
+    unlock-level: 4
+    max-level: 8
+    chance-per-level: 1.5
+    radius: 2
+    cost-multiplier: 1.4
+    delay-seconds: 5
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 100
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 25
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 40
+    icon:
+      material: 'WATER_BUCKET'
+      name: '&3Chuva Fértil'
+      lore:
+        - ''
+        - ' &7Chuva em packets colhe a área.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  tornado:
+    display: '&7Tornado'
+    type: tornado
+    chat: '&7Um tornado varreu a fazenda!'
+    title: '&7&lTORNADO<nl>&fRedemoinho de colheita'
+    actionbar: '&7Tornado!'
+    sound: 'ENTITY_ENDERDRAGON_FLAP'
+    order: 4
+    unlock-level: 8
+    max-level: 6
+    chance-per-level: 1.0
+    radius: 3
+    cost-multiplier: 1.5
+    delay-seconds: 8
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 100
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 25
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 40
+    icon:
+      material: 'FEATHER'
+      name: '&7Tornado'
+      lore:
+        - ''
+        - ' &7Redemoinho em packets.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  burst:
+    display: '&6Explosão'
+    type: burst
+    chat: '&6Explosão de colheita!'
+    title: '&6&lBURST<nl>&eExplosão fértil'
+    actionbar: '&6Burst!'
+    sound: 'ENTITY_GENERIC_EXPLODE'
+    order: 5
+    unlock-level: 10
+    max-level: 6
+    chance-per-level: 0.9
+    radius: 3
+    cost-multiplier: 1.55
+    delay-seconds: 10
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 100
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 25
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 40
+    icon:
+      material: 'TNT'
+      name: '&6Explosão'
+      lore:
+        - ''
+        - ' &7Explosão em packets na área.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  fortune:
+    display: '&eFortuna'
+    type: fortune
+    chat: ''
+    title: ''
+    actionbar: ''
+    sound: ''
+    order: 6
+    unlock-level: 2
+    max-level: 10
+    chance-per-level: 0
+    radius: 0
+    cost-multiplier: 1.3
+    delay-seconds: 0
+    animation: false
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 200
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 40
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 80
+    icon:
+      material: 'GOLD_INGOT'
+      name: '&eFortuna'
+      lore:
+        - ''
+        - ' &7Aumenta os drops da colheita.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  multiplier:
+    display: '&dMultiplicador'
+    type: multiplier
+    chat: ''
+    title: ''
+    actionbar: ''
+    sound: ''
+    order: 7
+    unlock-level: 3
+    max-level: 10
+    chance-per-level: 0
+    radius: 0
+    cost-multiplier: 1.32
+    delay-seconds: 0
+    animation: false
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 200
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 40
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 80
+    icon:
+      material: 'EMERALD'
+      name: '&dMultiplicador'
+      lore:
+        - ''
+        - ' &7Aumenta as moedas ganhas.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  linear:
+    display: '&fSulco'
+    type: linear
+    chat: '&fSulco perfeito!'
+    title: '&f&lSULCO<nl>&7Linha de colheita'
+    actionbar: '&fSulco!'
+    sound: 'BLOCK_GRASS_BREAK'
+    order: 8
+    unlock-level: 6
+    max-level: 8
+    chance-per-level: 1.8
+    radius: 4
+    cost-multiplier: 1.38
+    delay-seconds: 4
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 100
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 25
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 40
+    icon:
+      material: 'IRON_HOE'
+      name: '&fSulco'
+      lore:
+        - ''
+        - ' &7Colhe em linha reta.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  meteor:
+    display: '&cMeteoro'
+    type: meteor
+    chat: '&cMeteoros na plantação!'
+    title: '&c&lMETEORO<nl>&7Chuva de fogo'
+    actionbar: '&cMeteoros!'
+    sound: 'GHAST_FIREBALL'
+    order: 9
+    unlock-level: 12
+    max-level: 6
+    chance-per-level: 0.8
+    radius: 3
+    cost-multiplier: 1.55
+    delay-seconds: 10
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 2500
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 500
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 800
+    icon:
+      material: 'FIREBALL'
+      name: '&cMeteoro'
+      lore:
+        - ''
+        - ' &7Meteoros de fogo caem na área.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  helix:
+    display: '&5Hélice'
+    type: helix
+    chat: '&5Hélice mágica!'
+    title: '&5&lHÉLICE<nl>&7Dupla espiral'
+    actionbar: '&5Hélice!'
+    sound: 'PORTAL_TRAVEL'
+    order: 10
+    unlock-level: 7
+    max-level: 8
+    chance-per-level: 1.4
+    radius: 2
+    cost-multiplier: 1.4
+    delay-seconds: 5
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 800
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 160
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 250
+    icon:
+      material: 'ENDER_PEARL'
+      name: '&5Hélice'
+      lore:
+        - ''
+        - ' &7Dupla hélice sobe na colheita.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  wave:
+    display: '&bOnda'
+    type: wave
+    chat: '&bOnda fértil!'
+    title: '&b&lONDA<nl>&7Expansão no solo'
+    actionbar: '&bOnda!'
+    sound: 'SPLASH'
+    order: 11
+    unlock-level: 4
+    max-level: 8
+    chance-per-level: 1.6
+    radius: 3
+    cost-multiplier: 1.38
+    delay-seconds: 4
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 450
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 90
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 150
+    icon:
+      material: 'PRISMARINE_SHARD'
+      name: '&bOnda'
+      lore:
+        - ''
+        - ' &7Onda se expande no chão.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  bloom:
+    display: '&dFloração'
+    type: bloom
+    chat: '&dA plantação floresceu!'
+    title: '&d&lFLORAÇÃO<nl>&7Pétalas mágicas'
+    actionbar: '&dFloração!'
+    sound: 'LEVEL_UP'
+    order: 12
+    unlock-level: 3
+    max-level: 8
+    chance-per-level: 1.7
+    radius: 2
+    cost-multiplier: 1.35
+    delay-seconds: 4
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 350
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 70
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 120
+    icon:
+      material: 'RED_ROSE'
+      name: '&dFloração'
+      lore:
+        - ''
+        - ' &7Pétalas e corações na área.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  nova:
+    display: '&6Nova'
+    type: nova
+    chat: '&6Nova estelar!'
+    title: '&6&lNOVA<nl>&eImplosão fértil'
+    actionbar: '&6Nova!'
+    sound: 'EXPLODE'
+    order: 13
+    unlock-level: 14
+    max-level: 6
+    chance-per-level: 0.7
+    radius: 3
+    cost-multiplier: 1.58
+    delay-seconds: 12
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 3000
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 600
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 900
+    icon:
+      material: 'NETHER_STAR'
+      name: '&6Nova'
+      lore:
+        - ''
+        - ' &7Implode e explode a área.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  pulse:
+    display: '&ePulso'
+    type: pulse
+    chat: '&ePulso energético!'
+    title: '&e&lPULSO<nl>&7Anéis de energia'
+    actionbar: '&ePulso!'
+    sound: 'NOTE_PLING'
+    order: 14
+    unlock-level: 5
+    max-level: 8
+    chance-per-level: 1.5
+    radius: 2
+    cost-multiplier: 1.4
+    delay-seconds: 5
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 550
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 110
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 180
+    icon:
+      material: 'REDSTONE_TORCH_ON'
+      name: '&ePulso'
+      lore:
+        - ''
+        - ' &7Anéis pulsantes na colheita.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  blizzard:
+    display: '&fNevasca'
+    type: blizzard
+    chat: '&fNevasca na fazenda!'
+    title: '&f&lNEVASCA<nl>&bGelo fértil'
+    actionbar: '&fNevasca!'
+    sound: 'DIG_SNOW'
+    order: 15
+    unlock-level: 9
+    max-level: 7
+    chance-per-level: 1.1
+    radius: 3
+    cost-multiplier: 1.48
+    delay-seconds: 7
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 1400
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 280
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 420
+    icon:
+      material: 'SNOW_BALL'
+      name: '&fNevasca'
+      lore:
+        - ''
+        - ' &7Neve cai e colhe a área.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+  vortex:
+    display: '&8Vórtice'
+    type: vortex
+    chat: '&8Vórtice aberto!'
+    title: '&8&lVÓRTICE<nl>&5Portal sucção'
+    actionbar: '&8Vórtice!'
+    sound: 'ENDERMAN_TELEPORT'
+    order: 16
+    unlock-level: 15
+    max-level: 6
+    chance-per-level: 0.6
+    radius: 3
+    cost-multiplier: 1.6
+    delay-seconds: 12
+    animation: true
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 3500
+      vault:
+        provider: 'money'
+        price: 0
+    prices-per-level:
+      farm:
+        provider: 'yfazenda'
+        price: 700
+    prices-disenchanter:
+      farm:
+        provider: 'yfazenda'
+        price: 1000
+    icon:
+      material: 'EYE_OF_ENDER'
+      name: '&8Vórtice'
+      lore:
+        - ''
+        - ' &7Portal suga e colhe em esfera.'
+        - ' &7Nível: &f{level}/{max}'
+        - ' &7Chance: &f{chance}% &8→ &a{chance_next}%'
+        - ' &7Raio: &f{radius} &8→ &a{radius_next}'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''

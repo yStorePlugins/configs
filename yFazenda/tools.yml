@@ -1,0 +1,103 @@
+# Enxadas da fazenda (seleção no menu de encantamentos)
+#
+# Cada chave em "tools" é o ID da ferramenta.
+#   display        - nome no menu de seleção
+#   order          - ordem no menu
+#   unlock-level   - nível mínimo da fazenda
+#   bonus.currency - bônus de moedas na colheita (0.10 = +10%)
+#   bonus.xp       - bônus de XP na colheita
+#   bonus.fortune  - bônus extra no multiplicador de colheita
+#   bonus.enchant-chance - chance extra (%) de ativar encantamento de área
+#   material/name/lore - item da enxada (SetupItem)
+#
+# Placeholders: {player} {level} {coins} {harvested} {enchants} {tool} {unlock} {status}
+#               {bonus_currency} {bonus_xp} {bonus_fortune} {bonus_enchant}
+# Cabeça custom: material: 'http://textures.minecraft.net/texture/<hash>'
+
+tools:
+  hoe:
+    display: '&bEnxada de Diamante'
+    order: 1
+    unlock-level: 1
+    bonus:
+      currency: 0.05
+      xp: 0.00
+      fortune: 0.00
+      enchant-chance: 0.0
+    material: DIAMOND_HOE
+    name: '&aEnxada da Fazenda &7[{harvested}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fMoedas: &7{coins}'
+      - ' &fColhido: &7{harvested}'
+      - ''
+      - ' &a+{bonus_currency}% moedas'
+  iron:
+    display: '&fEnxada de Ferro'
+    order: 2
+    unlock-level: 5
+    bonus:
+      currency: 0.12
+      xp: 0.08
+      fortune: 0.05
+      enchant-chance: 0.5
+    material: IRON_HOE
+    name: '&fEnxada de Ferro &7[{harvested}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fMoedas: &7{coins}'
+      - ' &fColhido: &7{harvested}'
+      - ''
+      - ' &a+{bonus_currency}% moedas'
+      - ' &a+{bonus_xp}% XP'
+      - ' &a+{bonus_fortune}% fortuna'
+  gold:
+    display: '&6Enxada de Ouro'
+    order: 3
+    unlock-level: 10
+    bonus:
+      currency: 0.20
+      xp: 0.15
+      fortune: 0.10
+      enchant-chance: 2.0
+    material: GOLD_HOE
+    name: '&6Enxada de Ouro &7[{harvested}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fMoedas: &7{coins}'
+      - ' &fColhido: &7{harvested}'
+      - ''
+      - ' &a+{bonus_currency}% moedas'
+      - ' &a+{bonus_xp}% XP'
+      - ' &a+{bonus_fortune}% fortuna'
+      - ' &a+{bonus_enchant}% chance de encantamento'
+  stone:
+    display: '&7Enxada de Pedra'
+    order: 4
+    unlock-level: 3
+    bonus:
+      currency: 0.08
+      xp: 0.05
+      fortune: 0.00
+      enchant-chance: 0.0
+    material: STONE_HOE
+    name: '&7Enxada de Pedra &7[{harvested}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fMoedas: &7{coins}'
+      - ' &fColhido: &7{harvested}'
+      - ''
+      - ' &a+{bonus_currency}% moedas'
+      - ' &a+{bonus_xp}% XP'

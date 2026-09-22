@@ -1,0 +1,141 @@
+# Animais virtuais (GUI, sem entidades no mundo)
+#
+# Os animais são comprados no menu, empilhados (ex.: Vaca x10) e produzem
+# itens virtuais com o tempo. A quantidade aumenta a produção proporcionalmente.
+#
+# Cada chave em "animals" é o ID interno do animal.
+#
+# Campos:
+#   display           - nome colorido no menu
+#   unlock-level      - nível mínimo da fazenda para comprar
+#   order             - ordem no menu
+#   prices-default    - provider + price para comprar (yfazenda, money, etc.)
+#   max-stack         - máximo acumulável deste animal
+#   produce-key       - ID interno do produto (usado no armazenamento virtual)
+#   produce-display   - nome do produto exibido
+#   produce-prices    - provider + price ao vender 1 unidade (yfazenda, money, etc.)
+#   produce-amount    - quantidade produzida por animal a cada intervalo
+#   interval-seconds  - intervalo de produção em segundos
+#   produce-item      - item físico ao coletar (em vez de vender)
+#   icon              - item do menu. Cabeça custom: material: '<hash>'
+#
+# Placeholders do icon lore: {amount} {max} {produce} {interval} {cost} {yfazenda} {money}
+
+animals:
+  cow:
+    display: '&fVaca'
+    unlock-level: 1
+    order: 1
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 150
+      vault:
+        provider: 'money'
+        price: 0
+    max-stack: 64
+    produce-key: 'milk'
+    produce-display: '&fLeite'
+    produce-prices:
+      farm:
+        provider: 'yfazenda'
+        price: 2.0
+      vault:
+        provider: 'money'
+        price: 0
+    produce-amount: 1
+    interval-seconds: 30
+    produce-item:
+      material: 'MILK_BUCKET'
+      name: '&fLeite'
+    icon:
+      material: '5d6c6eda94a44911f6a5176b4c869a4b1dd2cc86d7d8b469f082f5c57d5c8'
+      name: '&fVaca'
+      lore:
+        - ''
+        - ' &7Quantidade: &f{amount}/{max}'
+        - ' &7Produz: &f{produce}'
+        - ' &7Intervalo: &f{interval}s'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+        - ' &eClique para comprar 1'
+        - ''
+  chicken:
+    display: '&eGalinha'
+    unlock-level: 2
+    order: 2
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 80
+      vault:
+        provider: 'money'
+        price: 0
+    max-stack: 64
+    produce-key: 'egg'
+    produce-display: '&eOvo'
+    produce-prices:
+      farm:
+        provider: 'yfazenda'
+        price: 1.0
+      vault:
+        provider: 'money'
+        price: 0
+    produce-amount: 1
+    interval-seconds: 20
+    produce-item:
+      material: 'EGG'
+      name: '&eOvo'
+    icon:
+      material: '1638469a599ceef72075341da1167c51acb8169ca0f4142476070c4e143533'
+      name: '&eGalinha'
+      lore:
+        - ''
+        - ' &7Quantidade: &f{amount}/{max}'
+        - ' &7Produz: &f{produce}'
+        - ' &7Intervalo: &f{interval}s'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+        - ' &eClique para comprar 1'
+        - ''
+  sheep:
+    display: '&7Ovelha'
+    unlock-level: 4
+    order: 3
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 200
+      vault:
+        provider: 'money'
+        price: 0
+    max-stack: 64
+    produce-key: 'wool'
+    produce-display: '&7Lã'
+    produce-prices:
+      farm:
+        provider: 'yfazenda'
+        price: 3.0
+      vault:
+        provider: 'money'
+        price: 0
+    produce-amount: 1
+    interval-seconds: 40
+    produce-item:
+      material: 'WOOL'
+      name: '&7Lã'
+    icon:
+      material: 'f31f9ccc6b3e32ecf13b8a11ac29cd33d18c95fc73db8a66c5d657ccb8be70'
+      name: '&7Ovelha'
+      lore:
+        - ''
+        - ' &7Quantidade: &f{amount}/{max}'
+        - ' &7Produz: &f{produce}'
+        - ' &7Intervalo: &f{interval}s'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ''
+        - ' &eClique para comprar 1'
+        - ''

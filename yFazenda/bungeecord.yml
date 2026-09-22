@@ -1,0 +1,18 @@
+# Ativar o sistema de bungeecord
+enabled: false
+
+# Modo deste servidor
+# LOBBY (ex: servidor de RankUP)
+# SERVER (ex: servidor que contém a fazenda)
+mode: 'LOBBY'
+
+# Nome do servidor na config do BungeeCord em que o jogador vai ao sair da fazenda
+exit: 'rankup'
+
+# Delay (ticks) para entrar na fazenda ao chegar no servidor SERVER
+delay: 3
+
+# Bloquear ações neste servidor caso esteja fora da fazenda
+# Somente se o modo for SERVER
+# permissão de bypass: yfazenda.blocked.bypass
+block-actions: true

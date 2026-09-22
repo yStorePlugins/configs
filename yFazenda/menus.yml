@@ -1,0 +1,360 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+#
+# Material: MATERIAL ou MATERIAL:DATA (ex.: STAINED_GLASS_PANE:15, WOOL:5)
+# Cabeças de jogador: SKULL_ITEM:3 ou '{player}'
+# Cabeça custom (minecraft-heads): material: '<hash>'
+# facing: itens decorativos. Cada entrada precisa de slot.
+# Scroller: slots = área rolável; previous-slot / next-slot fora dela; back-slot: -1 = sem voltar
+# Lore com espaço inicial ' &7...' é o padrão visual.
+
+# Setas dos menus (carregadas em Config.setup).
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore:
+      - ' &7Clique para ir à página anterior.'
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore:
+      - ' &7Clique para ir à próxima página.'
+
+# Menu principal (fixo). Placeholders: {player} {coins} {level} {xp} {harvested} {expansion} {crop}
+principal:
+  name: '&8Fazenda'
+  size: 45
+  go-slot: 13
+  expansions-slot: 20
+  crops-slot: 21
+  friends-slot: 22
+  animals-slot: 23
+  enchants-slot: 24
+  settings-slot: 30
+  top-slot: 32
+  go:
+    material: '7e3deb57eaa2f4d403ad57283ce8b41805ee5b6de912ee2b4ea736a9d1f465a7'
+    name: '&aIr para a Fazenda'
+    lore:
+      - ''
+      - ' &7Jogador: &f{player}'
+      - ' &7Moedas: &f{coins}'
+      - ' &7Nível: &f{level}'
+      - ' &7Colhido: &f{harvested}'
+      - ''
+      - ' &eClique para teleportar.'
+      - ''
+  expansions:
+    material: '3857d6b17901fd3f0109bd9bdcc28021b65947fce0a958327247d26d92915b85'
+    name: '&bExpansões'
+    lore:
+      - ''
+      - ' &7Atual: &f{expansion}'
+      - ' &eClique para expandir a área.'
+      - ''
+  crops:
+    material: 'd1700e0c21dec131901a5a38595a577402af0c7b1631f060c3235416e4f0a688'
+    name: '&ePlantações'
+    lore:
+      - ''
+      - ' &7Atual: &f{crop}'
+      - ' &eClique para melhorar os cultivos.'
+      - ''
+  friends:
+    material: 'SKULL_ITEM:3'
+    name: '&dAmigos'
+    lore:
+      - ''
+      - ' &7Gerencie quem pode usar sua fazenda.'
+      - ''
+  animals:
+    material: '8321bd865442f7af8f3aae159cb42d78e8fe63b21f51b367dfb0a4e642273ec3'
+    name: '&6Animais'
+    lore:
+      - ''
+      - ' &7Compre animais virtuais.'
+      - ''
+  enchants:
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&5Encantamentos'
+    lore:
+      - ''
+      - ' &7Melhore sua enxada.'
+      - ''
+  settings:
+    material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    name: '&7Configurações'
+    lore:
+      - ''
+      - ' &7Pública, taxa e permissões.'
+      - ''
+  top:
+    material: '152353641d287ce9ed30906f938ae9c517ec04caa8da71571954c81b09db454c'
+    name: '&6Ranking'
+    lore:
+      - ''
+      - ' &7Os melhores fazendeiros.'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: STAINED_GLASS_PANE:5
+      name: ' '
+    glass2:
+      slot: 8
+      material: STAINED_GLASS_PANE:5
+      name: ' '
+    glass3:
+      slot: 36
+      material: STAINED_GLASS_PANE:5
+      name: ' '
+    glass4:
+      slot: 44
+      material: STAINED_GLASS_PANE:5
+      name: ' '
+
+# Menu de expansões (Scroller). Itens vêm de farms/*.yml
+expansions:
+  name: '&8Expansões'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+
+# Menu de plantações (Scroller). Itens vêm de crops.yml
+crops:
+  name: '&8Plantações'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+
+# Menu de amigos (Scroller). add-slot abre chat; visit-slot abre friends-farms
+friends:
+  name: '&8Amigos'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  add-slot: 49
+  visit-slot: 53
+  add:
+    material: 'b14697ee6fa322f61955fb8b7bda8d9c538bc9686dbbce7e3a5bb10f308c50302bc4'
+    name: '&aAdicionar amigo'
+    lore:
+      - ''
+      - ' &7Clique e digite o nick no chat.'
+      - ''
+  visit:
+    material: '15a7ee9a86de203674a93b570bc8992e500363dd32f2b9813daaeeabccf92151'
+    name: '&bVisitar fazendas'
+    lore:
+      - ''
+      - ' &7Amigos e fazendas públicas.'
+      - ''
+
+# Lista de fazendas de amigos + públicas para visitar
+friends-farms:
+  name: '&8Fazendas de Amigos'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+
+# Menu de animais (Scroller). collect-slot abre animal-collect
+animals:
+  name: '&8Animais'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  collect-slot: 49
+  collect:
+    material: '3857d6b17901fd3f0109bd9bdcc28021b65947fce0a958327247d26d92915b85'
+    name: '&aColetar produtos'
+    lore:
+      - ''
+      - ' &7Colete ou venda a produção.'
+      - ''
+
+# Coleta/venda de produtos virtuais. Clique = coletar item; sell-all = vender tudo em moedas
+animal-collect:
+  name: '&8Coletar Produtos'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  sell-all-slot: 49
+  sell-all:
+    material: '97a530f5c5742bf19e175a4d78ad435ac0f4396d3b5464bd6182ab382aca417d'
+    name: '&6Vender tudo'
+    lore:
+      - ''
+      - ' &7Vende todos os produtos.'
+      - ''
+
+# Menu de encantamentos da enxada (Scroller). Itens vêm de enchants.yml
+enchants:
+  name: '&8Encantamentos'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  filter-slot: 52
+  disenchanter-slot: 53
+  tools-slot: 47
+  filter:
+    material: HOPPER
+    name: '&aFiltro'
+    lore:
+      - ''
+      - ' &7Desative encantamentos.'
+      - ''
+      - ' &fFiltrados:'
+      - ' {format}'
+      - ''
+  disenchanter:
+    material: ANVIL
+    name: '&aDesencantador'
+    lore:
+      - ''
+      - ' &7Remova níveis e receba o valor.'
+      - ''
+  tools:
+    material: DIAMOND_HOE
+    name: '&aFerramentas'
+    lore:
+      - ''
+      - ' &7Troque o visual da enxada.'
+      - ''
+
+# Seleção de enxada (tools.yml)
+tools:
+  name: '&8Ferramentas'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+
+amount-select:
+  name: '&8Quantidade — {enchant}'
+  size: 27
+  slots: [10, 11, 12, 13, 14, 15, 16]
+  previous-slot: -1
+  next-slot: -1
+  back-slot: 18
+  custom-slot: 22
+  presets: [1, 5, 10, 25, 50]
+  preset-item:
+    material: EXP_BOTTLE
+    name: '&a+{amount} níveis'
+    lore:
+      - ''
+      - ' &7Encantamento: &f{enchant}'
+      - ' &7Moedas: &f{yfazenda}'
+      - ' &7Dinheiro: &f{money}'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+  custom:
+    material: PAPER
+    name: '&eQuantidade personalizada'
+    lore:
+      - ''
+      - ' &7Clique e digite no chat.'
+      - ''
+
+filter:
+  name: '&8Filtro'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  item:
+    name: '&a{enchant}'
+    lore:
+      - ''
+      - ' &7Status: {status}'
+      - ' &eClique para alternar'
+      - ''
+
+disenchanter:
+  name: '&8Desencantador'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  item:
+    name: '&a{enchant}'
+    lore:
+      - ''
+      - ' &7Níveis: &f{level}'
+      - ' &7Reembolso 1: &f{yfazenda}'
+      - ' &7Reembolso todos: &f{total_yfazenda}'
+      - ''
+      - ' &aEsquerdo: 1 nível'
+      - ' &aDireito: todos'
+      - ''
+
+# Menu fixo: fazenda pública e taxa. Placeholders: {public} {tax}
+settings:
+  name: '&8Configurações'
+  size: 27
+  public-slot: 11
+  tax-slot: 15
+  public:
+    material: 'REDSTONE_TORCH_ON'
+    name: '&eFazenda pública'
+    lore:
+      - ''
+      - ' &7Status: {public}'
+      - ' &eClique para alternar.'
+      - ''
+  tax:
+    material: 'GOLD_NUGGET'
+    name: '&6Taxa de utilização'
+    lore:
+      - ''
+      - ' &7Taxa atual: &f{tax}%'
+      - ' &eClique para alterar no chat.'
+      - ''
+
+# Ranking de colheita (Scroller)
+# Placeholders do item: {player} {pos} {harvested} {coins} {level} {xp}
+top:
+  name: '&8Ranking'
+  size: 54
+  slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  item:
+    material: '{player}'
+    name: '&e#{pos} &f{player}'
+    lore:
+      - ''
+      - ' &7Colhido: &f{harvested}'
+      - ' &7Moedas: &f{coins}'
+      - ' &7Nível: &f{level}'
+      - ''

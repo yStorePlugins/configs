@@ -1,0 +1,114 @@
+# Fazenda padrão (packets).
+#
+# Setup:
+#   1. /fazendaadmin wand default
+#   2. Clique esquerdo = pos1 / direito = pos2 da área
+#   3. Coloque o material de plantação (SOIL/FARMLAND) nos blocos
+#   4. /fazendaadmin define default
+#   5. /fazendaadmin setar spawn
+#   6. /fazendaadmin setar saida
+# Expansão:
+#   /fazendaadmin wand default <id>
+#   Esquerdo = pos1 / direito = pos2 da expansão
+#   /fazendaadmin define default <id>
+#
+# Formato de posição: mundo;x;y;z;yaw;pitch  |  "none" = ainda não definido
+# plants: gerado pelo define (1 bloco acima do material configurado)
+#
+# expansions:
+#   Cada expansão precisa de pos1/pos2 próprios para aumentar a área visível.
+#   plants: gerado por /fazendaadmin define <fazenda> <expansao>
+#   Se pos1/pos2 for "none", usa a cuboid principal da fazenda.
+#   order precisa ser sequencial (1, 2, 3...). O jogador compra na ordem.
+#   Placeholders do icon lore: {cost} {status}
+
+# Nome colorido da fazenda.
+display: '&aFazenda Principal'
+# Permissão para entrar. Vazio = todos.
+permission: ''
+# Local de teleport ao usar /fazenda ir
+spawn: none
+# Local de teleport ao sair (/fazenda sair ou sair da cuboid). /fazendaadmin setar saida
+exit: none
+# Canto 1 da área (wand esquerdo)
+pos1: none
+# Canto 2 da área (wand direito)
+pos2: none
+# Posições das plantas (preenchido por /fazendaadmin define)
+plants: []
+# Proxy: se true e bungeecord.yml enabled, /fazenda ir manda para um destes servidores
+bungeecord-enabled: false
+bungeecord-servers: []
+
+expansions:
+  1:
+    display: '&aPequena'
+    # Ordem de compra. 1 = área inicial.
+    order: 1
+    # Nível mínimo da fazenda.
+    unlock-level: 1
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 0
+      vault:
+        provider: 'money'
+        price: 0
+    pos1: none
+    pos2: none
+    icon:
+      material: GRASS
+      name: '&aPequena'
+      lore:
+        - ''
+        - ' &7Área inicial da fazenda.'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ' {status}'
+        - ''
+  2:
+    display: '&eMédia'
+    order: 2
+    unlock-level: 5
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 1500
+      vault:
+        provider: 'money'
+        price: 0
+    pos1: none
+    pos2: none
+    icon:
+      material: DIRT
+      name: '&eMédia'
+      lore:
+        - ''
+        - ' &7Expande a área de cultivo.'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ' {status}'
+        - ''
+  3:
+    display: '&6Grande'
+    order: 3
+    unlock-level: 10
+    prices-default:
+      farm:
+        provider: 'yfazenda'
+        price: 8000
+      vault:
+        provider: 'money'
+        price: 0
+    pos1: none
+    pos2: none
+    icon:
+      material: HAY_BLOCK
+      name: '&6Grande'
+      lore:
+        - ''
+        - ' &7Grande área de cultivo.'
+        - ' &7Moedas: &f{yfazenda}'
+        - ' &7Dinheiro: &f{money}'
+        - ' {status}'
+        - ''

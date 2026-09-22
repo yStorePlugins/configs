@@ -43,3 +43,4 @@ chat:
   increase: '&aVocê aumentou em &f{time}&a a pena do jogador &f{player}&a por &f{money} coins&a.'
   increase-broadcast: '&f{player}&a aumentou em &f{time}&a a pena do jogador &f{target}&a e pagou &f{money} coins&a.'
   increase-command: '&aVocê aumentou em &f{time}&a a pena do jogador &f{player}&a.'
+  max-time: '&cVocê só pode prender por até &f{time}&c.'

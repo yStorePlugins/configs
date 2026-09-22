@@ -66,6 +66,22 @@ arrest-ip: false
 # Ativar incrementar a pena apenas 1x por usuário para cada preso
 increase-once: true
 
+# Tempo limite para prender por permissão.
+# Será usado o maior tempo entre as permissões que o staff possui.
+# Use -1 para sem limite.
+# Console não possui limite.
+# Caso o staff não tenha nenhuma destas permissões, não haverá limite.
+max-arrest-time:
+  admin:
+    permission: 'yjail.maxtime.admin'
+    time: 1d
+  moderator:
+    permission: 'yjail.maxtime.moderator'
+    time: 12h
+  helper:
+    permission: 'yjail.maxtime.helper'
+    time: 30m
+
 # Tag para o jogador preso
 # é uma placeholder relacional
 # Placeholder: %rel_yjail_arrested_tag%
