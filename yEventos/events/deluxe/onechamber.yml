@@ -38,6 +38,22 @@ yleague:
 scoreboard:
   enabled: true
   title: '&6&l>> &e&lOne In The Chamber &6&l<<'
+  lines:
+    - '&8&m--------------------'
+    - '&f&l  {display}'
+    - '&8&m--------------------'
+    - ''
+    - '&7 Jogadores: &a{players_size}'
+    - '&7 Tempo: &e{time_left}'
+    - '&7 Seus pontos: &e{points}'
+    - ''
+    - '&6 Top 3'
+    - '&e#1 &f{top_1} &7({top_1_points})'
+    - '&e#2 &f{top_2} &7({top_2_points})'
+    - '&e#3 &f{top_3} &7({top_3_points})'
+    - ''
+    - '&8&m--------------------'
+    - '&6  ystoreplugins.com'
 
 # Itens nos menus
 displays:

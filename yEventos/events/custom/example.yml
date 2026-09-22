@@ -41,6 +41,8 @@ scoreboard:
 
 # Itens nos menus
 displays:
+  # Aparecer no TOP
+  appear-top: true
   events:
     material: 'STONE'
     name: '&eExample'

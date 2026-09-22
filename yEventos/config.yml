@@ -58,6 +58,10 @@ camarote-allowed-commands:
 # Eventos que não serão carregados no plugin
 disabled-events: []
 
+# Eventos que não aparecerão no seletor do TOP
+# coloque o nome do evento sem o .yml
+disabled-top-events: []
+
 # Delay de desaparecimento de blocos da arena (TNTRUN ou similar)
 # em ticks (20t = 1s)
 disappear-delay: 8

@@ -235,6 +235,7 @@ armor-items:
 inventory-items:
   item1:
     material: 'SNOW_BALL'
+    amount: 16
     nbt-tag: [ 'yEventos-PaintBall=>sim' ]
     glow: true
     name: '&eBola de Neve'

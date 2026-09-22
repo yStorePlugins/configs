@@ -81,6 +81,7 @@ team-system:
     full: '&cO time {team_color}&c está cheio!'
     locked: '&cNão é possível trocar de time após o início do evento!'
     already: '&eVocê já está no time {team_color}&e!'
+    unbalanced: '&cEscolha o time com menos jogadores para equilibrar a partida!'
   # Mensagens do sistema de times
   team-messages:
     formation: '&aVocê foi adicionado ao time &e{team_color}&a!'
