@@ -180,6 +180,25 @@ level-up:
       &b&lSKILLS: &bO jogador &f{player}&b atingiu o &fnível {level} &bna habilidade &f{skill}&f!
       <nl>
 
+# Mensagem privada (apenas o jogador) ao upar de nível
+level-up-private:
+  enabled: true
+  # A cada X níveis (1 = todos os níveis)
+  level: 1
+  chat:
+    enabled: true
+    message: |
+      <nl>
+      &aVocê subiu para o &fnível {level} &ana habilidade &f{skill}&a!
+      <nl>
+  actionbar:
+    enabled: true
+    message: '&a{skill} &8» &fNível {level}'
+  title:
+    enabled: true
+    # Use <nl> para separar título e subtítulo
+    message: '&a&lNÍVEL {level}<nl>&7{skill}'
+
 # Sistema de recompensas ao upar de nível
 rewards:
   woodcutting_lvl100:
