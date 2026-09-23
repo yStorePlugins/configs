@@ -73,6 +73,15 @@ ip-limit:
   # Quantos jogadores do mesmo IP podem participar do mesmo evento
   max-players: 1
 
+# Limite de eventos ocorrendo ao mesmo tempo.
+# Ao ultrapassar o limite, o evento entra na fila (/eventos fila)
+# e é iniciado automaticamente quando outro evento termina.
+concurrent-limit:
+  # Ativar a limitacao
+  enabled: true
+  # Quantos eventos podem ocorrer simultaneamente
+  max: 10
+
 # Sistema de anúncios na proxy
 proxy:
   # Ativar o sistema

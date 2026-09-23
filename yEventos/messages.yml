@@ -18,6 +18,7 @@ chat:
   help: |
 
     &a/evento &8- &7Abre o menu principal.
+    &a/evento fila &8- &7Lista a fila de espera de eventos.
     &a/evento reload &8- &7Recarrega as configurações.
 
   no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
@@ -67,3 +68,12 @@ chat:
   toggle-msg-enable: '&aVocê voltará a receber os anúncios de eventos.'
   toggle-msg-disable: '&cVocê não receberá mais os anúncios de eventos.'
   ip-limit: '&cJá existe {amount} jogador(es) deste IP participando deste evento. Limite: {max}.'
+  queue-added: '&eO limite de eventos simultâneos foi atingido (&f{active}&e/&f{max}&e). O evento &f{event} &eentrou na fila de espera. Posição: &f{position}&e. Use /eventos fila'
+  queue-empty: '&cNão há eventos na fila de espera.'
+  queue-header: |
+
+    &eFila de espera &7({amount}) &8- &7Em andamento: &f{active}&7/&f{max}
+  queue-line: '&7{position}. &f{event}'
+  queue-removed: '&aEvento &f{event} &aremovido da fila.'
+  queue-not-found: '&cEste evento não está na fila.'
+  queue-cleared: '&aFila de eventos limpa.'
