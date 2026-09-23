@@ -8,7 +8,7 @@ Database:
 #
 #
 #
-#Use: yClans, AtlasClans, SimpleClans, AtlasFactions, AtlasFactionsV2, UltimateClans, StormClans ou Factions
+#Use: yClans, yFactions, AtlasClans, SimpleClans, AtlasFactions, AtlasFactionsV2, UltimateClans, StormClans ou Factions
 Plugin de clan: 'yClans'
 
 # Bloquear o teleporte se estiver no evento
@@ -76,7 +76,11 @@ Mensagens:
    Sem clan: '&cVocê não possui clan.'
    Sem money banco: '&cSeu clan não tem money no banco suficiente: &f{money}&c.'
    Entrou: '&aVocê entrou no evento.'
-   Ja ocorrendo: '&cJá há um evento ocorrendo.'
+    Ja ocorrendo: '&cJá há um evento deste tipo ocorrendo.'
+    Ja participando: '&cVocê já está participando de outro evento.'
+    Varios eventos: '&cHá vários eventos ocorrendo. Informe o tipo: &f{tipos}'
+    Borda conflito: '&cJá há um evento com borda no mesmo mundo.'
+    Duelos ocorrendo: '&cJá há um evento de duelos ocorrendo.'
    Local nulo: '&cAlgum dos principais locais (Saída, Espera, Entrada) estão nulos.'
    Iniciado: '&aEvento &7{tipo}&a iniciado.'
    Esta banido: '&cVocê está banido deste evento.'

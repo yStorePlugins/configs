@@ -1,7 +1,11 @@
-Nome: '&8Guerra - Ocorrendo'
+Nome: '&8Guerra - {tipo}'
 Tamanho: 27
 Back slot: 18
 EntrarSair slot: 16
+Lista:
+  Nome: '&8Guerra - Ocorrendo'
+  Tamanho: 27
+  Slots: [10, 11, 12, 13, 14, 15, 16]
 Itens:
    Informacoes:
       Slot: 10
@@ -10,7 +14,7 @@ Itens:
       ID: 276
       Data: 0
       Glow: false
-      Name: '&aInformações'
+       Name: '&aInformações &7({tipo})'
       Lore:
       - ''
       - '&7Fogo amigo: &f{fogoamigo}&7.'
