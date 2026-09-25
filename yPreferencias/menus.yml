@@ -73,6 +73,8 @@ preferences:
     # yMarket / yLeilao
     market-broadcast: '&fAnúncios do mercado'
     leilao-broadcast: '&fAnúncios de leilão'
+    # yArmazem
+    armazem: '&fArmazém'
   # Itens customizados por preferência (sobrescreve os on-item e off-item padrão)
   custom-items:
     pvp:
