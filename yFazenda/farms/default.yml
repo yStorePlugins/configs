@@ -36,6 +36,12 @@ pos1: none
 pos2: none
 # Posições das plantas (preenchido por /fazendaadmin define)
 plants: []
+# Posições dos animais em packet. /fazendaadmin setar animal <id>
+# Formato: mundo;x;y;z;yaw;pitch  |  "none" = ainda não definido
+animals:
+  cow: none
+  chicken: none
+  sheep: none
 # Proxy: se true e bungeecord.yml enabled, /fazenda ir manda para um destes servidores
 bungeecord-enabled: false
 bungeecord-servers: []

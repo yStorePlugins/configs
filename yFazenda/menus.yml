@@ -193,6 +193,62 @@ animals:
       - ' &7Colete ou venda a produção.'
       - ''
 
+# Menu ao clicar no animal em packet. Placeholders: {animal} {amount} {max} {produce} {product} {interval} {yfazenda} {money} {cost}
+animal-view:
+  name: '&8{animal}'
+  size: 27
+  info-slot: 11
+  collect-slot: 13
+  upgrade-slot: 15
+  back-slot: 22
+  info:
+    material: PAPER
+    name: '&f{animal}'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}/{max}'
+      - ' &7Produz: &f{produce}'
+      - ' &7Intervalo: &f{interval}s'
+      - ' &7Estoque: &f{product}'
+      - ''
+  collect:
+    material: CHEST
+    name: '&aColetar'
+    lore:
+      - ''
+      - ' &7Estoque: &f{product}x {produce}'
+      - ''
+      - ' &eClique para coletar'
+      - ''
+  upgrade:
+    material: EMERALD
+    name: '&aMelhorar'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}/{max}'
+      - ' &7Moedas: &f{yfazenda}'
+      - ' &7Dinheiro: &f{money}'
+      - ''
+      - ' &eClique para comprar +1'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass2:
+      slot: 8
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass3:
+      slot: 18
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+    glass4:
+      slot: 26
+      material: STAINED_GLASS_PANE:15
+      name: ' '
+
 # Coleta/venda de produtos virtuais. Clique = coletar item; sell-all = vender tudo em moedas
 animal-collect:
   name: '&8Coletar Produtos'

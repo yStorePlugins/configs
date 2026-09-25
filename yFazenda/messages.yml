@@ -36,7 +36,8 @@ chat:
     &a/{command} define <fazenda> [expansao] &8- &7Define plantações.
     &a/{command} criar <id> &8- &7Cria fazenda.
     &a/{command} deletar <fazenda> &8- &7Apaga fazenda.
-    &a/{command} setar <spawn|saida> &8- &7Spawn/saída.
+     &a/{command} setar <spawn|saida> &8- &7Spawn/saída.
+     &a/{command} setar animal <animal> [fazenda] &8- &7Posição do animal.
     &a/{command} darmoeda <jogador> <qtd> &8- &7Dar moedas (1k, 1m).
     &a/{command} setmoeda <jogador> <qtd> &8- &7Setar moedas.
     &a/{command} removermoeda <jogador> <qtd>
@@ -110,6 +111,7 @@ chat:
     &7Necessário: &f{cost}
     &7Atual: &f{coins}
   animal-max: '&cLimite máximo deste animal atingido.'
+  animal-locked: '&cVocê precisa do nível {level} para este animal.'
   animal-collect: '&aVocê coletou &f{amount}x {product}&a!'
   animal-empty: '&cVocê não tem produtos para coletar.'
   animal-sell: '&aVocê vendeu {product} por &f{coins} &amoedas!'
@@ -145,6 +147,7 @@ chat:
   admin-give-animal: '&aVocê deu {amount}x {animal} para {player}.'
   admin-remove-animal: '&aVocê removeu {amount}x {animal} de {player}.'
   admin-animal-found: '&cAnimal não encontrado. Lista: {list}'
+  admin-animal-set: '&aPosição do animal {animal} definida na fazenda {farm} ({location}).'
   admin-reset: '&aDados da fazenda de {player} resetados.'
   admin-delete: '&aFazenda {farm} deletada.'
   admin-created: '&aFazenda {farm} criada. Use a wand e /fazendaadmin setar.'

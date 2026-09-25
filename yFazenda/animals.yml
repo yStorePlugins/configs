@@ -1,12 +1,17 @@
-# Animais virtuais (GUI, sem entidades no mundo)
+# Animais da fazenda (GUI + entidade/holograma em packet)
 #
-# Os animais são comprados no menu, empilhados (ex.: Vaca x10) e produzem
-# itens virtuais com o tempo. A quantidade aumenta a produção proporcionalmente.
+# Os animais são comprados no menu ou no clique da entidade, empilhados
+# (ex.: Vaca x10) e produzem itens virtuais com o tempo.
+# Posição no mapa: /fazendaadmin setar animal <id>
+# Entidade e holograma só aparecem para jogadores no raio configurado.
 #
 # Cada chave em "animals" é o ID interno do animal.
 #
 # Campos:
 #   display           - nome colorido no menu
+#   entity            - EntityType da entidade em packet (COW, CHICKEN, SHEEP...)
+#   hologram-offset   - offset Y do holograma acima do animal
+#   hologram          - linhas do holograma em packet
 #   unlock-level      - nível mínimo da fazenda para comprar
 #   order             - ordem no menu
 #   prices-default    - provider + price para comprar (yfazenda, money, etc.)
@@ -19,11 +24,17 @@
 #   produce-item      - item físico ao coletar (em vez de vender)
 #   icon              - item do menu. Cabeça custom: material: '<hash>'
 #
-# Placeholders do icon lore: {amount} {max} {produce} {interval} {cost} {yfazenda} {money}
+# Placeholders do icon/holograma: {amount} {max} {produce} {product} {interval} {cost} {yfazenda} {money} {animal}
 
 animals:
   cow:
     display: '&fVaca'
+    entity: COW
+    hologram-offset: 0.5
+    hologram:
+      - '&f{animal} &7x{amount}/{max}'
+      - '&7Produzido: &f{product}x {produce}'
+      - '&eClique para gerenciar'
     unlock-level: 1
     order: 1
     prices-default:
@@ -63,6 +74,12 @@ animals:
         - ''
   chicken:
     display: '&eGalinha'
+    entity: CHICKEN
+    hologram-offset: 1.35
+    hologram:
+      - '&e{animal} &7x{amount}/{max}'
+      - '&7Produzido: &f{product}x {produce}'
+      - '&eClique para gerenciar'
     unlock-level: 2
     order: 2
     prices-default:
@@ -102,6 +119,12 @@ animals:
         - ''
   sheep:
     display: '&7Ovelha'
+    entity: SHEEP
+    hologram-offset: 1.55
+    hologram:
+      - '&7{animal} &7x{amount}/{max}'
+      - '&7Produzido: &f{product}x {produce}'
+      - '&eClique para gerenciar'
     unlock-level: 4
     order: 3
     prices-default:
