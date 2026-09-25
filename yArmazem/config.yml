@@ -110,6 +110,21 @@ Actionbar:
   Vendeu tudo: '&a&lVENDA! &fVocê recebeu &2$&a{money}&f de coins.'
   Coletou: '&a&lCOLETA! &fVocê coletou &2$&a{quantia}&f plantas.'
 
+# Alerta quando o armazém chegar no limite
+# Placeholders: {limite} {armazenado} {display}
+# Deixe vazio ('') para desativar aquele tipo de alerta
+# Toggle pelo yPreferencias ou /armazem toggle
+# PlaceholderAPI: %yarmazem_ativo%
+AlertaLimite:
+  Ativar: true
+  # Delay entre alertas do mesmo terreno (em segundos)
+  Delay: 30
+  # Nome do Sound do Bukkit. 1.8: ORB_PICKUP | 1.13+: ENTITY_EXPERIENCE_ORB_PICKUP
+  Som: 'ORB_PICKUP'
+  Title: '&c&lARMAZÉM CHEIO!<nl>&fSeu armazém atingiu o limite.'
+  Actionbar: '&c&lARMAZÉM CHEIO! &fVenda ou expanda o limite.'
+  Chat: '&cSeu armazém atingiu o limite de armazenamento!'
+
 # Mensagens do plugin
 Mensagens:
   Permissao: '&cVocê não tem permissão para isto.'
@@ -138,6 +153,8 @@ Mensagens:
   booster-already: '&cVocê já está usando um booster.'
   booster-activated: '&aVocê ativou um booster de armazém. Multiplicador: &e{bonus}% coins&a. Tempo: &e{time}&a.'
   deposit-full: '&cLimite atingido. Alguns itens foram devolvidos.'
+  armazem-toggle-on: '&aVocê ligou o armazém.'
+  armazem-toggle-off: '&cVocê desligou o armazém.'
   Coletar:
     - ''
     - '&aDigite a quantia que você quer coletar.'
@@ -162,6 +179,7 @@ Mensagens:
     - '&e/armazem remove'
     - '&e/armazem givelimitevenda'
     - '&e/armazem givelimitearmazem'
+    - '&e/armazem toggle'
 
 # Formatador de mensagens
 Formatador:
