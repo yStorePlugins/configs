@@ -43,6 +43,7 @@ item:
     - '&7* você irá ganhar itens comuns e raros'
     - ''
     - '&aColoque no chão para ativar'
+    - '&eShift + coloque para abrir várias'
 
 # chance,recompensa-raridade
 # a raridade, caso não tenha, deixe: none

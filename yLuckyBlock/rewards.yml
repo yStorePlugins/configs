@@ -39,6 +39,7 @@ rewards:
       list: [ 'give {player} stone {amount}' ]
     # Mensagens enviadas ao player ao receber a recompensa
     # Placeholders: {player}, {reward}, {amount}, {stack}
+    # Em abertura múltipla (shift), as mensagens são empilhadas pelo formato em config.yml (general.animated-multi-open.stack-*)
     messages:
       chat: ''
       title: ''

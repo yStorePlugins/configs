@@ -48,6 +48,22 @@ general:
   # Quantia máxima que irá abrir automaticamente
   open-automatic-amount: 1
 
+  # Shift + colocar lucky block animada para abrir várias simultaneamente
+  animated-multi-open:
+    enabled: true
+    # Quantia máxima aberta de uma vez (limitada pelo stack na mão)
+    max-amount: 16
+    # Raio para espalhar as animações ao redor do bloco
+    radius: 2.0
+    # Empilhar mensagens de recompensa em uma única mensagem
+    stack-messages: true
+    # {rewards} = lista formatada | {amount} = quantia de lucky blocks abertas | {player}
+    stack-format: '&aVocê recebeu: {rewards}'
+    # {amount} = quantia da recompensa | {reward} | {player} | {stack}
+    stack-reward-format: '&7{amount}x {reward}'
+    # Use <nl> para quebrar linha
+    stack-reward-separator: '&8, '
+
 # Abridor de lucky blocks.
 opener:
   material: 'LEASH'
