@@ -216,6 +216,28 @@ discounts:
     # Quantia do desconto em %
     discount: 10.0
 
+# Taxa padrão na loja admin (sem permissão de taxa)
+# Compra: o jogador paga o preço + taxa%
+# Venda: o jogador recebe o preço - taxa%
+default-tax: 0.0
+
+# Sistema de taxas (loja admin)
+# Você pode criar quantas taxas quiser
+# Será cobrada a taxa ao comprar e vender na loja do servidor.
+# Será usada a taxa de maior prioridade que o jogador tiver permissão.
+# Sem permissão, usa default-tax.
+taxes:
+  member:
+    priority: 1
+    # Permissão para ser reconhecido
+    permission: 'ychestshop.tax.member'
+    # Quantia da taxa em %
+    tax: 10.0
+  vip:
+    priority: 2
+    permission: 'ychestshop.tax.vip'
+    tax: 5.0
+
 # Sistema de ranking (1 a 10)
 # Placeholders (PlaceholderAPI):
 #   %ychestshop_top_seller_1%  | %ychestshop_top_vendedor_1%

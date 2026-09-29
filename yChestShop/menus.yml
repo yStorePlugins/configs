@@ -255,6 +255,7 @@ buy:
         - ' &7Preço: &f{price} {provider_abbreviated}&7 a cada &f{amount}'
         - ' &7Preço: &f{price_unity} {provider_abbreviated}&7 a cada &f1 unidade'
         - ' &7Preço: &f{price_inv} {provider_abbreviated}&7 a cada &f1 inventário &7(2304)'
+        - ' &7Taxa: &f{tax}%'
         - ''
         - ' &7Estoque atual: &f{stock}'
         - ''
@@ -288,6 +289,7 @@ sell:
         - ' &7Preço: &f{price} {provider_abbreviated}&7 a cada &f{amount}'
         - ' &7Preço: &f{price_unity} {provider_abbreviated}&7 a cada &f1 unidade'
         - ' &7Preço: &f{price_inv} {provider_abbreviated}&7 a cada &f1 inventário &7(2304)'
+        - ' &7Taxa: &f{tax}%'
         - ''
         - '&aBotão &fESQUERDO&a para vender &f{amount}'
     amount:
@@ -320,6 +322,7 @@ buy-sell:
         - ' &7Preço: &f{price} {provider_abbreviated}&7 a cada &f{amount}'
         - ' &7Preço: &f{price_unity} {provider_abbreviated}&7 a cada &f1 unidade'
         - ' &7Preço: &f{price_inv} {provider_abbreviated}&7 a cada &f1 inventário &7(2304)'
+        - ' &7Taxa: &f{tax}%'
         - ''
         - ' &7Estoque atual: &f{stock}'
         - ''
@@ -333,6 +336,7 @@ buy-sell:
         - ' &7Preço: &f{price} {provider_abbreviated}&7 a cada &f{amount}'
         - ' &7Preço: &f{price_unity} {provider_abbreviated}&7 a cada &f1 unidade'
         - ' &7Preço: &f{price_inv} {provider_abbreviated}&7 a cada &f1 inventário &7(2304)'
+        - ' &7Taxa: &f{tax}%'
         - ''
         - '&aBotão &fESQUERDO&a para vender &f{amount}'
     amount:
