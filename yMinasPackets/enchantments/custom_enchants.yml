@@ -4,6 +4,7 @@ enchants:
     name: 'Chaveiro'
     pickaxe-level: 0
     order: 14
+    categories: [ 'especial' ]
     show-menu: true
     can-buy: true
     show-infinity: false

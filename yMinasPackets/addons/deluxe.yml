@@ -71,6 +71,7 @@ enchants:
     name: '§aGuardian'
     pickaxe-level: 500
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -141,6 +142,7 @@ enchants:
     name: '§aTornado'
     pickaxe-level: 700
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -211,6 +213,7 @@ enchants:
     name: '§aMagnetismo'
     pickaxe-level: 120
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -281,6 +284,7 @@ enchants:
     name: '§aCrepúsculo'
     pickaxe-level: 1250
     order: 18
+    categories: [ 'especial' ]
     show-menu: true
     can-buy: true
     show-infinity: false

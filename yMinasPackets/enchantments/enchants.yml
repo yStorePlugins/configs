@@ -28,6 +28,8 @@ enchants:
     pickaxe-level: 0
     # Ordem do ícone no menu
     order: 1
+    # Categorias no seletor do menu (IDs de evolution.selector.types em menus.yml)
+    categories: [ 'bonus' ]
     # Aparecer no menu de evolução
     show-menu: true
     # Poder evoluir pagando no menu de evolução
@@ -153,6 +155,7 @@ enchants:
     name: 'Fortuna'
     pickaxe-level: 0
     order: 2
+    categories: [ 'bonus' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -228,6 +231,7 @@ enchants:
     name: 'Nuclear'
     pickaxe-level: 0
     order: 3
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -321,6 +325,7 @@ enchants:
     name: 'Destruidor'
     pickaxe-level: 0
     order: 4
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -410,6 +415,7 @@ enchants:
     name: 'Sumonador'
     pickaxe-level: 0
     order: 5
+    categories: [ 'especial' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -494,6 +500,7 @@ enchants:
     name: 'Velocidade'
     pickaxe-level: 0
     order: 6
+    categories: [ 'bonus' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -569,6 +576,7 @@ enchants:
     name: 'Pressa'
     pickaxe-level: 0
     order: 7
+    categories: [ 'bonus' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -644,6 +652,7 @@ enchants:
     name: 'Sortudo'
     pickaxe-level: 0
     order: 8
+    categories: [ 'bonus' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -725,6 +734,7 @@ enchants:
     name: 'Explosão'
     pickaxe-level: 0
     order: 9
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -811,6 +821,7 @@ enchants:
     name: 'Laser'
     pickaxe-level: 0
     order: 10
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -897,6 +908,7 @@ enchants:
     name: 'Furadeira'
     pickaxe-level: 0
     order: 11
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -986,6 +998,7 @@ enchants:
     name: 'Multiplicador'
     pickaxe-level: 0
     order: 12
+    categories: [ 'bonus' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -1067,6 +1080,7 @@ enchants:
     name: 'Eletricidade'
     pickaxe-level: 0
     order: 13
+    categories: [ 'bonus' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -1148,6 +1162,7 @@ enchants:
     name: 'Esfera'
     pickaxe-level: 0
     order: 14
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -1238,6 +1253,7 @@ enchants:
     name: 'x'
     pickaxe-level: 0
     order: 15
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -1327,6 +1343,7 @@ enchants:
     name: 'Linear'
     pickaxe-level: 0
     order: 16
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -1416,6 +1433,7 @@ enchants:
     name: 'Destruidor Invertido'
     pickaxe-level: 0
     order: 17
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false

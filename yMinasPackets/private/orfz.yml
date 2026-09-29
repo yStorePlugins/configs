@@ -42,6 +42,7 @@ enchants:
     name: '§eAbelha Explosiva'
     pickaxe-level: 1500
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -111,6 +112,7 @@ enchants:
     name: '§cMagma'
     pickaxe-level: 0
     order: 19
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -182,6 +184,7 @@ enchants:
     name: '§6Explosão I'
     pickaxe-level: 0
     order: 20
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -251,6 +254,7 @@ enchants:
     name: '§cExplosão II'
     pickaxe-level: 0
     order: 21
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false

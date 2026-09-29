@@ -4,6 +4,7 @@ enchants:
     name: 'Layer-Midas'
     pickaxe-level: 0
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -95,6 +96,7 @@ enchants:
     name: 'Midas'
     pickaxe-level: 0
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -186,6 +188,7 @@ enchants:
     name: 'Meteoros'
     pickaxe-level: 0
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -275,6 +278,7 @@ enchants:
     name: 'Arrows'
     pickaxe-level: 0
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -364,6 +368,7 @@ enchants:
     name: 'Boomerang'
     pickaxe-level: 0
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false
@@ -454,6 +459,7 @@ enchants:
     name: 'Storm'
     pickaxe-level: 0
     order: 18
+    categories: [ 'quebra' ]
     show-menu: true
     can-buy: true
     show-infinity: false

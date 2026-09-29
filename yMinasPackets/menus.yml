@@ -317,6 +317,28 @@ evolution:
         - '&7entre as picaretas disponíveis.'
         - ''
         - '&aClique para selecionar.'
+  # Seletor de categorias dos encantamentos
+  selector:
+    slot: 49
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aSeletor de categoria'
+    types:
+      all:
+        enabled: true
+        name: 'Todos'
+        all: true
+      quebra:
+        enabled: true
+        name: 'Quebra'
+      bonus:
+        enabled: true
+        name: 'Bônus'
+      especial:
+        enabled: true
+        name: 'Especial'
+    formats:
+      seeing: ' &8• &f{name}'
+      select: ' &8• &7{name}'
 
   sub-menu:
     name: '&8Gerenciando encantamento'
