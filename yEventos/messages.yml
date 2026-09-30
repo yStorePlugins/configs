@@ -19,6 +19,9 @@ chat:
 
     &a/evento &8- &7Abre o menu principal.
     &a/evento fila &8- &7Lista a fila de espera de eventos.
+    &a/evento ban <jogador> [global|<evento>] [motivo] &8- &7Bane um jogador de um evento ou de todos.
+    &a/evento unban <jogador> [global|<evento>] &8- &7Remove o ban de um jogador.
+    &a/evento banlist [jogador] &8- &7Lista os bans de eventos.
     &a/evento reload &8- &7Recarrega as configurações.
 
   no-balance: '&cVocê não tem {provider_display} suficiente para isto. Disponível: {provider_balance}&c.'
@@ -77,3 +80,28 @@ chat:
   queue-removed: '&aEvento &f{event} &aremovido da fila.'
   queue-not-found: '&cEste evento não está na fila.'
   queue-cleared: '&aFila de eventos limpa.'
+  banned: '&cVocê está banido do evento {event}.'
+  banned-global: '&cVocê está banido de todos os eventos.'
+  ban-success: '&aVocê baniu &f{player} &ado evento &f{event}&a.'
+  ban-success-global: '&aVocê baniu &f{player} &ade todos os eventos.'
+  ban-already: '&cO jogador {player} já está banido do evento {event}.'
+  ban-already-global: '&cO jogador {player} já está banido de todos os eventos.'
+  ban-target: '&cVocê foi banido do evento {event}.'
+  ban-target-global: '&cVocê foi banido de todos os eventos.'
+  unban-success: '&aVocê desbaniu &f{player} &ado evento &f{event}&a.'
+  unban-success-global: '&aVocê desbaniu &f{player} &ade todos os eventos.'
+  unban-all: '&aVocê removeu todos os bans de eventos de &f{player}&a.'
+  unban-not: '&cO jogador {player} não está banido do evento {event}.'
+  unban-not-global: '&cO jogador {player} não está banido globalmente.'
+  unban-none: '&cO jogador {player} não possui nenhum ban de eventos.'
+  unban-global-active: '&cO jogador {player} está banido globalmente. Use /eventos unban {player} global'
+  unban-target: '&aVocê foi desbanido do evento {event}.'
+  unban-target-global: '&aVocê foi desbanido do ban global de eventos.'
+  unban-target-all: '&aTodos os seus bans de eventos foram removidos.'
+  ban-list-empty: '&cNenhum jogador banido de eventos.'
+  ban-list-header: |
+
+    &eBans de eventos &7({amount})
+  ban-list-line: '&7{position}. &f{player} &8- &7{scope} &8- &f{reason}'
+  ban-list-player: '&eBans de &f{player}&e: &7{scope} &8- &f{reason}'
+  ban-list-player-none: '&cO jogador {player} não possui bans de eventos.'
