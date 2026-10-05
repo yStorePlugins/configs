@@ -19,11 +19,10 @@ displays:
   current:
     material: 'MOB_SPAWNER'
     glow: true
-    name: '&aSpawners &eMETA 1'
+    name: '&aSpawners &eMISSÃO 1'
     lore:
-      - '&7Os jogadores do servidor precisarão'
-      - '&7matar &fVacas&7 para ajudar no progresso'
-      - '&7dessa missão.'
+      - '&7Você precisará matar &7Vacas&7 para'
+      - '&7progredir nessa missão.'
       - ''
       - '&f *Progresso: &a{yspawners_actual}&7/&c{yspawners_total} &8({yspawners_percentage})'
       - '&f -> &7[{yspawners_progressbar}&7]'
@@ -33,11 +32,10 @@ displays:
   # Ícone de missão atual (no menu principal)
   current-main:
     material: 'MOB_SPAWNER'
-    name: '&aMetas de Spawners'
+    name: '&aMissões de Spawners'
     lore:
-      - '&7Os jogadores do servidor precisarão'
-      - '&7matar &fMOBS&7 para ajudar no progresso'
-      - '&7dessa missão.'
+      - '&7Você precisará matar &7Vacas&7 para'
+      - '&7progredir nessa missão.'
       - ''
       - '&f *Progresso: &a{yspawners_actual}&7/&c{yspawners_total} &8({yspawners_percentage})'
       - '&f -> &7[{yspawners_progressbar}&7]'
@@ -48,11 +46,10 @@ displays:
   # Ícone de próxima missão
   next:
     material: 'BARRIER'
-    name: '&aSpawners &eMETA 1'
+    name: '&aSpawners &eMISSÃO 1'
     lore:
-      - '&7Os jogadores do servidor precisarão'
-      - '&7matar &fVacas&7 para ajudar no progresso'
-      - '&7dessa missão.'
+      - '&7Você precisará matar &7Vacas&7 para'
+      - '&7progredir nessa missão.'
       - ''
       - '&c*Essa missão ainda não foi liberada.'
       - '&cConclua a anterior.'
@@ -60,11 +57,10 @@ displays:
   # Ícone de missão bloqueada por data
   locked:
     material: 'BARRIER'
-    name: '&aSpawners &eMETA 1'
+    name: '&aSpawners &eMISSÃO 1'
     lore:
-      - '&7Os jogadores do servidor precisarão'
-      - '&7matar &fVacas&7 para ajudar no progresso'
-      - '&7dessa missão.'
+      - '&7Você precisará matar &7Vacas&7 para'
+      - '&7progredir nessa missão.'
       - ''
       - '&c*Essa missão ainda não foi liberada.'
       - '&7Ela será liberada em: &f{data} - &f{hora}'
@@ -73,11 +69,10 @@ displays:
   # Ícone de missão bloqueada por data (no menu principal)
   locked-main:
     material: 'BARRIER'
-    name: '&aMetas de Spawners'
+    name: '&aMissões de Spawners'
     lore:
-      - '&7Os jogadores do servidor precisarão'
-      - '&7matar &fMOBS&7 para ajudar no progresso'
-      - '&7dessa missão.'
+      - '&7Você precisará matar &7Vacas&7 para'
+      - '&7progredir nessa missão.'
       - ''
       - '&c*Essa missão ainda não foi liberada.'
       - '&7Ela será liberada em: &f{data} - &f{hora}'
@@ -87,11 +82,10 @@ displays:
   # Ícone de missão concluída
   completed:
     material: 'MOB_SPAWNER'
-    name: '&aSpawners &eMETA 1'
+    name: '&aSpawners &eMISSÃO 1'
     lore:
-      - '&7Os jogadores do servidor precisarão'
-      - '&7matar &fVacas&7 para ajudar no progresso'
-      - '&7dessa missão.'
+      - '&7Você precisará matar &7Vacas&7 para'
+      - '&7progredir nessa missão.'
       - ''
       - '&c*Essa missão já foi concluída.'
       - '&cConcluída em: &7{end_date} às {end_hour}'
@@ -99,11 +93,10 @@ displays:
   # Ícone de missão concluída (com recompensa para coletar)
   to-collect:
     material: 'MOB_SPAWNER'
-    name: '&aSpawners &eMETA 1'
+    name: '&aSpawners &eMISSÃO 1'
     lore:
-      - '&7Os jogadores do servidor precisarão'
-      - '&7matar &fVacas&7 para ajudar no progresso'
-      - '&7dessa missão.'
+      - '&7Você precisará matar &7Vacas&7 para'
+      - '&7progredir nessa missão.'
       - ''
       - '&c*Essa missão já foi concluída.'
       - '&cConcluída em: &7{end_date} às {end_hour}'
