@@ -22,6 +22,7 @@ chat:
     &a> /luckyblock giveopener <player <usos> <quantia>
     &a> /luckyblock giveanimated <player> <luckyblock> <quantia>
     &a> /luckyblock give <player> <luckyblock> <usos> <quantia>
+    &a> /luckyblock filter
     &a> /luckyblock reload
 
   animated-luckyblock-give: '&aVocê deu &7{amount}x {luckyblock}&a para o jogador &7{player}&a.'

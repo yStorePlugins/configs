@@ -71,6 +71,11 @@ opener:
   lore:
     - '&fUsos restantes: &e{uses}'
 
+# Sistema de lores
+lore:
+  filter-add: [ '&eClique para adicionar ao filtro' ]
+  filter-remove: [ '&cClique para remover do filtro' ]
+
 # Configuração da barra de progresso
 progress-bar:
   amount: 10
