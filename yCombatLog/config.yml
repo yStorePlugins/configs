@@ -136,6 +136,64 @@ Permissao quitou: ''
 # Ao registrar no servidor, desativar o PVP automaticamente (PVP TOGGLE)
 toggle-register: false
 
+# Sistema diario de /desativarpvp
+desativar-pvp:
+  enabled: true
+  # Permissao para usar. Deixe vazio para liberar para todos.
+  permission: ''
+  # Tempo diario disponivel para ficar com o PVP desativado.
+  duration-seconds: 3600
+  status:
+    enabled: '&aPVP ATIVADO'
+    disabled: '&cPVP DESATIVADO'
+  messages:
+    only-player: '&cApenas jogadores podem executar este comando.'
+    no-permission: '&cVoce nao possui permissao para isto.'
+    disabled: '&cEste sistema esta desativado.'
+    activated: '&aVoce desativou seu PVP. Tempo restante: &f{tempo}&a.'
+    deactivated: '&aVoce ativou seu PVP novamente. Tempo restante hoje: &f{tempo}&a.'
+    expired: '&eSeu tempo diario com PVP desativado acabou.'
+    no-time: '&cVoce ja usou todo o tempo de PVP desativado de hoje.'
+    already-active: '&cSeu PVP ja esta desativado. Tempo restante: &f{tempo}&c.'
+    not-active: '&cSeu PVP ja esta ativado.'
+    in-combat: '&cVoce nao pode desativar o PVP em combate.'
+    blocked-location: '&cVoce nao pode desativar o PVP neste local.'
+  menu:
+    title: '&8Desativar PVP'
+    size: 27
+    filler:
+      enabled: true
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    info:
+      slot: 13
+      material: 'WATCH'
+      name: '&eSeu tempo diario'
+      lore:
+        - '&7Status: {status}'
+        - '&7Tempo restante: &f{tempo}'
+        - ''
+        - '&8O tempo reseta diariamente.'
+    deactivate:
+      slot: 11
+      material: 'INK_SACK:10'
+      name: '&aDesativar PVP'
+      lore:
+        - '&7Use seu tempo diario para farmar.'
+        - '&7Enquanto estiver ativo voce fica invisivel'
+        - '&7e nao consegue pegar itens dropados.'
+        - ''
+        - '&eClique para desativar.'
+    activate:
+      slot: 15
+      material: 'INK_SACK:1'
+      name: '&cAtivar PVP'
+      lore:
+        - '&7Remove a protecao e o vanish.'
+        - '&7O tempo nao usado continua disponivel hoje.'
+        - ''
+        - '&eClique para ativar.'
+
 # Comandos que serão executados no jogador quando ele entrar em combate
 combat-commands: []
 
