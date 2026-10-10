@@ -115,6 +115,10 @@ death-penalty:
 # Tirar o fly quando entrar em combate
 Remover fly: true
 
+# Tirar apenas o efeito de invisibilidade ao entrar em combate
+# Aciona somente no momento em que o jogador entra em combate, nao a cada hit
+Remover invisibilidade: true
+
 # Staff poder entrar em combate (permissão: ycombatlog.staff)
 Staff combate: false
 
