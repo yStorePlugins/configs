@@ -93,6 +93,7 @@ chat:
     &8&m-&r &e/{cmd} tp <x>;<z> [mundo] &8- &7Teleporta para coordenadas.
     &8&m-&r &e/{cmd} purge <jogador> &8- &7Remove todos terrenos do jogador.
     &8&m-&r &e/{cmd} roadschem &8- &7Schematics de rua (capture/reload).
+    &8&m-&r &e/{cmd} migrateps [confirm] &8- &7Migra dados do PlotSquared.
     &8&m-&r
 
   not-plot-world: '&cVocê não está em um mundo de terrenos.'
@@ -180,6 +181,10 @@ chat:
   plot-unmerged: '&aGrupo desfeito! &7{count} &aterreno(s) separados. &8(&f{id}&8)'
   plot-unmerge-none: '&cEste terreno não está agrupado.'
   plot-unmerge-dir-none: '&cNenhum terreno agrupado nesse lado para separar.'
+  plot-merge-error: '&cNão foi possível agrupar os terrenos. Tente novamente.'
+  plot-unmerge-error: '&cNão foi possível desagrupar os terrenos. Tente novamente.'
+  plot-merge-invalid: '&cTerreno inválido.'
+  plot-economy-error: '&cErro ao processar a economia. Tente novamente.'
 
   plot-flag-set: '&aFlag &f{flag} &aalterada para &f{value}&a.'
   plot-flag-no-perm: '&cVocê não tem permissão para alterar a flag &f{flag}&c. &7({permission})'
@@ -283,6 +288,53 @@ chat:
   roadschem-enabled: '&aSchematics ativados no mundo &f{world}&a.'
   roadschem-disabled: '&cSchematics desativados no mundo &f{world}&c.'
   roadschem-pasted: '&aSchematic aplicado na tile &f{x};{z} &7(&f{count} &7blocos).'
+
+  migrateps-help: |
+
+    &8&m-&r &6&lMigração PlotSquared
+    &8&m-&r
+    &8&m-&r &e/{cmd} migrateps &8- &7Simulação (não grava nada).
+    &8&m-&r &e/{cmd} migrateps confirm &8- &7Aplica a migração.
+    &8&m-&r &e/{cmd} migrateps <arquivo.db> confirm &8- &7Usa um .db específico.
+    &8&m-&r
+    &7Não altera blocos, baús nem itens.
+    &7O mundo PlotSquared vira mundo yPlots (mesmo tamanho/rua).
+    &7Pare o PlotSquared antes de confirmar.
+    &8&m-&r
+
+  migrateps-not-found: |
+
+    &cNenhum banco PlotSquared encontrado.
+
+    &7Procurei em: &fplugins/PlotSquared/
+    &7Ou use: &f/{cmd} migrateps <arquivo.db> confirm
+
+  migrateps-running: '&cJá existe uma migração em andamento.'
+  migrateps-mode-dry: 'simulada'
+  migrateps-mode-apply: 'concluída'
+  migrateps-hint-dry: '&7Nada foi gravado. Use &f/{cmd} migrateps confirm &7para aplicar.'
+  migrateps-hint-done: '&7Reinicie o servidor e remova o PlotSquared depois.'
+  migrateps-done: |
+
+    &aMigração PlotSquared {mode}!
+
+    &7Fonte: &f{source}
+    &7Mundos: &f{worlds}
+    &7Terrenos: &f{plots}
+    &7Membros: &f{members}
+    &7Merges: &f{merges}
+    &7Já existiam (pulados): &f{skipped}
+    &7Sem dono/inválidos: &f{invalid}
+    &7Erros: &f{errors}
+
+    &7Blocos e itens: &anão foram alterados.
+    {hint}
+
+  migrateps-fail: |
+
+    &cFalha na migração PlotSquared.
+
+    &7Motivo: &f{error}
 
   info: |
 
