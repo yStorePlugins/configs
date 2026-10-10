@@ -1,0 +1,139 @@
+#
+#    /\/\  (_)___ ___  ___   ___  ___
+#   /    \ | / __/ __|/ _ \ / _ \/ __|
+#  / /\/\ \ | \__ \__ \ (_) |  __/\__ \
+#  \/    \/_|_|___/___/\___/ \___||___/
+#
+# Sistema de missões (ySpawnersMissoesAddon).
+# O jogador completa missões matando mobs do spawner.
+# O progresso é por tipo de spawner (ex: cow, zombie).
+#
+# Placeholders:
+#  {progress}  - progresso atual do jogador
+#  {amount}    - quantia necessária
+#  {spawner}   - nome do spawner
+#
+# spawners: []  = vale para todos os tipos
+# spawners: ['cow']  = somente o tipo informado (nome do arquivo em spawners/)
+
+missoes:
+  1:
+    amount: 100
+    spawners: []
+    display:
+      material: BOOK
+      name: '&aIniciante'
+      lore:
+        - '&7Mate {amount} mobs deste spawner.'
+        - ''
+        - ' &fProgresso: &7{progress}/{amount}&f.'
+        - ''
+        - '&7Continue matando para completar.'
+    display-complete:
+      material: BOOK
+      name: '&aIniciante'
+      lore:
+        - '&7Mate {amount} mobs deste spawner.'
+        - ''
+        - ' &fProgresso: &a{progress}/{amount}&f.'
+        - ''
+        - '&aClique para coletar a recompensa.'
+    display-collected:
+      material: BOOK
+      name: '&aIniciante'
+      lore:
+        - '&7Mate {amount} mobs deste spawner.'
+        - ''
+        - ' &fProgresso: &a{progress}/{amount}&f.'
+        - ''
+        - '&aVocê já coletou esta missão.'
+    item:
+      give: false
+      material: DIAMOND
+      amount: 1
+      name: '&bDiamante'
+      lore: []
+    command:
+      give: true
+      list:
+        - 'give {player} diamond 1'
+  2:
+    amount: 1000
+    spawners: []
+    display:
+      material: BOOK
+      name: '&eIntermediário'
+      lore:
+        - '&7Mate {amount} mobs deste spawner.'
+        - ''
+        - ' &fProgresso: &7{progress}/{amount}&f.'
+        - ''
+        - '&7Continue matando para completar.'
+    display-complete:
+      material: BOOK
+      name: '&eIntermediário'
+      lore:
+        - '&7Mate {amount} mobs deste spawner.'
+        - ''
+        - ' &fProgresso: &a{progress}/{amount}&f.'
+        - ''
+        - '&aClique para coletar a recompensa.'
+    display-collected:
+      material: BOOK
+      name: '&eIntermediário'
+      lore:
+        - '&7Mate {amount} mobs deste spawner.'
+        - ''
+        - ' &fProgresso: &a{progress}/{amount}&f.'
+        - ''
+        - '&aVocê já coletou esta missão.'
+    item:
+      give: false
+      material: GOLD_INGOT
+      amount: 16
+      name: '&6Ouro'
+      lore: []
+    command:
+      give: true
+      list:
+        - 'give {player} gold_ingot 16'
+  3:
+    amount: 10000
+    spawners: []
+    display:
+      material: BOOK
+      name: '&6Avançado'
+      lore:
+        - '&7Mate {amount} mobs deste spawner.'
+        - ''
+        - ' &fProgresso: &7{progress}/{amount}&f.'
+        - ''
+        - '&7Continue matando para completar.'
+    display-complete:
+      material: BOOK
+      name: '&6Avançado'
+      lore:
+        - '&7Mate {amount} mobs deste spawner.'
+        - ''
+        - ' &fProgresso: &a{progress}/{amount}&f.'
+        - ''
+        - '&aClique para coletar a recompensa.'
+    display-collected:
+      material: BOOK
+      name: '&6Avançado'
+      lore:
+        - '&7Mate {amount} mobs deste spawner.'
+        - ''
+        - ' &fProgresso: &a{progress}/{amount}&f.'
+        - ''
+        - '&aVocê já coletou esta missão.'
+    item:
+      give: false
+      material: EMERALD
+      amount: 8
+      name: '&aEsmeralda'
+      lore: []
+    command:
+      give: true
+      list:
+        - 'give {player} emerald 8'

@@ -146,6 +146,9 @@ chat:
   upgraded-spawners: '&aVocê adquiriu uma expansão da capacidade de stack do spawner.'
   autosell-toggle: '&aVocê {status} &ao autosell do spawner.'
   autosell-no-perm: '&cVocê não tem permissão para usar o autosell.'
+  missao-collected: '&aVocê coletou a recompensa da missão.'
+  missao-already: '&cVocê já coletou esta missão.'
+  missao-incomplete: '&cVocê ainda não completou esta missão.'
 
 actionbar:
   sell: '&aVocê vendeu &7{amount}x {drop}&a por &6{money} coins &8{bonus}&a.'

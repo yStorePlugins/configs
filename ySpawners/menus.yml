@@ -40,6 +40,7 @@ main:
     stack-spawners-limit-slot: 16
     stack-mobs-limit-slot: 25
     autosell-slot: 31
+    missoes-slot: 32
     info:
       material: '{spawner}'
       name: '&aInformações Gerais'
@@ -190,6 +191,14 @@ main:
         - ' &fStatus: &r{status}&f.'
         - ''
         - '&aClique para alternar.'
+    missoes:
+      material: ENCHANTED_BOOK
+      name: '&aMissões'
+      lore:
+        - '&7Complete missões matando'
+        - '&7mobs deste spawner.'
+        - ''
+        - '&aClique para acessar.'
 
 # Menu de amigos
 friends:
@@ -278,6 +287,15 @@ upgrades:
 # Menu de drops
 drops:
   name: '&8Spawner'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 49
+
+# Menu de missões
+missoes:
+  name: '&8Missões'
   size: 54
   slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
   previous-slot: 18
