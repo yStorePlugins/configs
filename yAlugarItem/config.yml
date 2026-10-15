@@ -124,6 +124,11 @@ general:
       - 'DIAMOND_SPADE'
       - 'DIAMOND_AXE'
       - 'BOW'
+  # Tags NBT usadas para identificar o item na remoção do inventário.
+  # Se o item registrado possuir alguma destas tags, ao expirar/cancelar/etc
+  # o item será removido pela tag (chave e valor idênticos), e não pelo material.
+  # Exemplo: ['CustomItemId', 'SpecialSword']
+  removal-nbt-tags: []
 
 # Sistema de formatos de status
 status:
