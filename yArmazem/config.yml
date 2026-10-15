@@ -86,6 +86,8 @@ Opcoes:
   # false = os itens somem
   # true = os itens dropam no chão
   Dropar fora claim: true
+  # Ativar o sistema que permite jogadores filtrar quais plantações vai armazenar
+  Filtro: false
 
 # Sistema de auto-break quando crescer um bloco
 AutoBreak:
