@@ -1,0 +1,140 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&c« Voltar'
+    lore:
+      - ''
+      - ' &7Clique para voltar.'
+      - ''
+  previous:
+    material: 'ARROW:0'
+    name: '&d« Anterior'
+    lore:
+      - ''
+      - ' &7Clique para ir à página anterior.'
+      - ''
+  next:
+    material: 'ARROW:0'
+    name: '&dPróximo »'
+    lore:
+      - ''
+      - ' &7Clique para ir à próxima página.'
+      - ''
+
+dragon-list:
+  name: '&5&l✦ &dDragões &5&l✦'
+  size: 54
+  slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: -1
+  ranking-button:
+    slot: 51
+    material: GOLD_INGOT
+    name: '&6&l✦ Ranking'
+    lore:
+      - ''
+      - ' &7Os jogadores que mais causaram'
+      - ' &7dano nos dragões do servidor.'
+      - ''
+      - ' &e▶ Clique para abrir'
+      - ''
+  rewards-button:
+    slot: 47
+    material: CHEST
+    name: '&e&l✦ Armazém'
+    lore:
+      - ''
+      - ' &7Recolha as recompensas'
+      - ' &7ganhas nas batalhas.'
+      - ''
+      - ' &e▶ Clique para abrir'
+      - ''
+  info-button:
+    slot: 49
+    material: ENDER_PEARL
+    name: '&d&l✦ Evento Atual'
+    lore:
+      - ''
+      - ' &7Status: &f{status}'
+      - ' &7Dragão: &d{dragon}'
+      - ''
+      - ' &7Próximo spawn: &f{next}'
+      - ''
+  dragon-item:
+    material: DRAGON_EGG
+    name: '&5&l{name}'
+    lore:
+      - ''
+      - ' &8▪ &7Vida: &c{health}'
+      - ' &8▪ &7Dano: &c{damage}'
+      - ' &8▪ &7Raro: &f{rare}'
+      - ''
+      - ' &8▪ &7Próximo: &f{next}'
+      - ''
+      - ' &e▶ Clique para ver as recompensas'
+      - ''
+
+ranking:
+  name: '&6&l✦ &eRanking &6&l✦'
+  size: 54
+  slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  player-item:
+    material: '{player}'
+    name: '&6#{position} &f{player}'
+    lore:
+      - ''
+      - ' &8▪ &7Dano total: &c{damage}'
+      - ' &8▪ &7Abates: &f{kills}'
+      - ' &8▪ &eTop 1: &f{top1}'
+      - ' &8▪ &7Top 2: &f{top2}'
+      - ' &8▪ &6Top 3: &f{top3}'
+      - ''
+
+main-rewards:
+  name: '&6&l✦ &eArmazém &6&l✦'
+  size: 54
+  slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  empty-slot: 22
+  collect-slot: 49
+  items:
+    empty:
+      material: 'WEB'
+      name: '&eVazio...'
+      lore:
+        - ''
+        - ' &7Nenhuma recompensa para coletar.'
+        - ''
+    collect:
+      material: 'HOPPER'
+      name: '&a&l✦ Recolher tudo'
+      lore:
+        - ''
+        - ' &7Clique para recolher'
+        - ' &7todas as recompensas.'
+        - ''
+        - ' &a▶ Clique para coletar'
+        - ''
+
+rewards-preview:
+  name: '&5&l✦ &d{name} &5&l✦'
+  size: 54
+  slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45

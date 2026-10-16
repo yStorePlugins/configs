@@ -1,0 +1,141 @@
+#         ____
+#  _   _|  _ \ _ __ __ _  __ _  ___  _ __
+# | | | | | | | '__/ _` |/ _` |/ _ \| '_ \
+# | |_| | |_| | | | (_| | (_| | (_) | | | |
+#  \__, |____/|_|  \__,_|\__, |\___/|_| |_|
+#  |___/                 |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Este limite serve para recolher recompensas do armazém.
+# Desativar ou aumentar o limite pode gerar lag.
+limit:
+  # Se true, limita quantas recompensas são recolhidas por clique.
+  enabled: true
+  # Máximo que irá recolher por vez. [EX: 1000]
+  max: 1000
+
+# Textos de status exibidos em menus, mensagens e placeholders.
+status:
+  # Evento sem dragão spawnado
+  waiting: '&eAguardando'
+  # Evento com dragão vivo
+  fighting: '&aEm andamento'
+  # Dragão específico em combate (/dragon info)
+  combat: '&cEm combate'
+  # Dragão habilitado/desabilitado
+  enabled: '&aAtivo'
+  disabled: '&cInativo'
+  # Sim/não (raro, vivo, etc.)
+  yes: '&asim'
+  no: '&cnao'
+  # Spawn sem horário automático
+  manual: '&7Manual'
+  # Formato do próximo spawn no menu. Placeholders: {name} {time}
+  next-format: '{name} &8— &7{time}'
+  # Nomes dos modos de spawn
+  spawn-interval: '&fIntervalo'
+  spawn-daily: '&fDiário'
+  spawn-schedule: '&fHorários'
+  spawn-manual: '&7Manual'
+  # Nomes dos grupos de ranking/recompensa
+  rank-top1: '&eTop 1'
+  rank-top2: '&7Top 2'
+  rank-top3: '&6Top 3'
+  rank-participation: '&fParticipação'
+
+# Sistemas gerais
+general:
+  # Distância (blocos) para envio de partículas via PacketEvents
+  view-distance: 48
+  # Jogadores mínimos online no mundo da arena para o spawn automático ocorrer
+  min-players: 1
+  # Se true, tenta spawnar um dragão ao ligar o servidor (ainda respeita min-players)
+  spawn-on-enable: false
+  # Segundos de contagem regressiva global antes do spawn automático
+  countdown-seconds: 30
+  # Chance (%) de substituir o dragão agendado por um dragão raro
+  rare-chance: 5.0
+  # Delay mínimo (ms) entre hits contabilizados no ranking (anti-lag)
+  hit-delay-ms: 150
+  # Deletar a recompensa do armazém ao clicar com botão direito
+  right-delete-reward: true
+  # Arena padrão (pode ser redefinida com /dragon setarena)
+  arena:
+    # Raio da área de batalha em blocos
+    radius: 80
+    # Teleporta o jogador de volta se sair da arena durante o evento
+    keep-players: true
+    # Teleporta o dragão de volta se sair da arena
+    keep-dragon: true
+  # Mecânicas / anti-exploit
+  mechanics:
+    # Desativa explosão de camas na arena durante o evento
+    disable-bed-damage: true
+    # Desativa âncoras de respawn na arena durante o evento
+    disable-anchor-damage: true
+    # Impede colocar cristais do end na arena
+    block-crystal-place: true
+    # Cancela spawn vanilla de Ender Dragon (cristais / portal)
+    block-vanilla-respawn: true
+    # Se false, cristais não causam dano no dragão do evento
+    allow-crystal-damage: false
+    # Impede o dragão de quebrar blocos
+    prevent-block-destroy: true
+  progress-bar:
+    filled: '&5|'
+    empty: '&7|'
+    length: 20
+  sounds:
+    spawn: 'ENTITY_ENDERDRAGON_GROWL'
+    death: 'ENTITY_ENDERDRAGON_DEATH'
+    ability: 'ENTITY_ENDERDRAGON_SHOOT'
+    win: 'ENTITY_PLAYER_LEVELUP'
+    fail: 'ENTITY_VILLAGER_NO'

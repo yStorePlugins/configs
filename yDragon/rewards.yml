@@ -1,0 +1,129 @@
+#   ____                            _
+# |  _ \ _____      ____ _ _ __ __| |___
+# | |_) / _ \ \ /\ / / _` | '__/ _` / __|
+# |  _ <  __/\ V  V / (_| | | | (_| \__ \
+# |_| \_\___| \_/\_/ \__,_|_|  \__,_|___/
+#
+# Catálogo global de recompensas
+# Os dragões referenciam estas chaves em dragons/*.yml no formato chance,id
+# Exemplo: '100,diamond'
+
+rewards:
+  diamond:
+    # Item que aparece no preview do dragão.
+    preview:
+      material: 'DIAMOND:0'
+      name: '&bDiamante'
+      amount: 16
+      lore:
+        - ' &7Recompensa do Ender Dragon.'
+        - ' &7Chance: &f{chance}%'
+        - ''
+        - ' &7Quem ganha? &f{rank}'
+      enchants: []
+    # Item que aparece no armazém para coletar.
+    collect:
+      material: 'DIAMOND:0'
+      name: '&bDiamante'
+      amount: 16
+      lore:
+        - ' &7Recompensa do Ender Dragon.'
+        - ''
+        - ' &7> &fQuantidade: &7{amount}'
+        - ''
+        - ' &eClique esquerdo para receber'
+        - ' &eClique direito para deletar'
+      enchants: []
+    # Item físico dado ao coletar / receber na hora.
+    item:
+      give: true
+      material: 'DIAMOND:0'
+      name: '&bDiamante do Dragão'
+      amount: 16
+      lore:
+        - ' &7Obtido no evento yDragon.'
+      enchants: []
+    command:
+      give: false
+      placeholder-amount: 1
+      multiply-placeholder: true
+      list: []
+    money:
+      give: false
+      provider: money
+      amount: 0
+  money:
+    preview:
+      material: GOLD_INGOT
+      name: '&6Dinheiro'
+      amount: 1
+      lore:
+        - ' &7Recompensa em money (Vault).'
+        - ' &7Chance: &f{chance}%'
+        - ''
+        - ' &7Quem ganha? &f{rank}'
+      enchants: []
+    collect:
+      material: GOLD_INGOT
+      name: '&6Dinheiro'
+      amount: 1
+      lore:
+        - ' &7Recompensa em money (Vault).'
+        - ''
+        - ' &7> &fQuantidade: &7{amount}'
+        - ''
+        - ' &eClique esquerdo para receber'
+        - ' &eClique direito para deletar'
+      enchants: []
+    item:
+      give: false
+      material: GOLD_INGOT
+      name: '&6Dinheiro'
+      amount: 1
+      lore: []
+      enchants: []
+    command:
+      give: false
+      placeholder-amount: 1
+      multiply-placeholder: true
+      list: []
+    # Economia via PointsManager. provider deve existir em economies.yml.
+    money:
+      give: true
+      provider: money
+      amount: 5000.0
+  emerald:
+    preview:
+      material: 'EMERALD:0'
+      name: '&aEsmeralda'
+      amount: 8
+      lore:
+        - ' &7Recompensa intermediária.'
+        - ' &7Chance: &f{chance}%'
+        - ''
+        - ' &7Quem ganha? &f{rank}'
+      enchants: []
+    collect:
+      material: 'EMERALD:0'
+      name: '&aEsmeralda'
+      amount: 8
+      lore:
+        - ' &7Recompensa intermediária.'
+        - ''
+        - ' &7> &fQuantidade: &7{amount}'
+        - ''
+        - ' &eClique esquerdo para receber'
+        - ' &eClique direito para deletar'
+      enchants: []
+    item:
+      give: true
+      material: 'EMERALD:0'
+      name: '&aEsmeralda'
+      amount: 8
+      lore: []
+      enchants: []
+    command:
+      give: false
+      placeholder-amount: 1
+      multiply-placeholder: true
+      list: []

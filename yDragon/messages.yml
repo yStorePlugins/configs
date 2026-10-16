@@ -1,0 +1,124 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio. Itens extras foram dropados no chão.'
+  help: |
+
+    &8&m-&r &5&lDragon &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu de dragões.
+    &8&m-&r &e/{cmd} top &8- &7Abre o ranking de dano.
+    &8&m-&r &e/{cmd} armazem &8- &7Abre o armazém de recompensas.
+    &8&m-&r &e/{cmd} info [dragão] &8- &7Mostra informações do evento.
+    &8&m-&r
+
+  admin-help: |
+
+    &8&m-&r &5&lDragon Admin &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu de dragões.
+    &8&m-&r &e/{cmd} top &8- &7Abre o ranking de dano.
+    &8&m-&r &e/{cmd} armazem &8- &7Abre o armazém de recompensas.
+    &8&m-&r &e/{cmd} info [dragão] &8- &7Mostra informações do evento.
+    &8&m-&r &e/{cmd} spawn [dragão] &8- &7Spawna o dragão manualmente.
+    &8&m-&r &e/{cmd} stop &8- &7Encerra o evento atual.
+    &8&m-&r &e/{cmd} setarena <dragão> [raio] &8- &7Define a arena desse dragão.
+    &8&m-&r &e/{cmd} setspawn <dragão> &8- &7Define o spawn desse dragão.
+    &8&m-&r &e/{cmd} list &8- &7Lista os dragões carregados.
+    &8&m-&r &e/{cmd} reload &8- &7Recarrega as configurações.
+    &8&m-&r
+
+  dragon-not-found: '&cDragão {dragon} não encontrado.'
+  dragon-disabled: '&cO dragão {dragon} está desativado.'
+  already-active: '&cJá existe um evento de dragão em andamento.'
+  not-active: '&cNão há evento de dragão ativo.'
+  arena-not-set: '&cA arena do dragão {dragon} ainda não foi definida. Use /{cmd} setarena {dragon}'
+  spawn-not-set: '&cO spawn do dragão {dragon} ainda não foi definido. Use /{cmd} setspawn {dragon}'
+  arena-set: '&aArena de &f{dragon} &adefinida em &f{location} &acom raio &f{radius}&a.'
+  spawn-set: '&aSpawn de &f{dragon} &adefinido em &f{location}&a.'
+  event-stopped: '&cO evento do dragão foi encerrado por um administrador.'
+  dragon-list: |
+
+    &5&lDragões carregados:
+    &7{list}
+
+  dragon-info: |
+
+    &8&m-----------------------------
+    &5&l{name} &8(&7{key}&8)
+    &8&m-----------------------------
+
+    &7Vida: &c{health}
+    &7Dano: &c{damage}
+    &7Defesa: &f{defense}
+    
+    &7Raro: &f{rare}
+    
+    &7Próximo spawn: &f{next}
+    &7Status: &f{status}
+
+    &8&m-----------------------------
+
+  spawned: |
+
+    &5&lO DRAGÃO APARECEU!
+
+    &7Tipo: &f{name}
+    &7Vida: &c{health}
+    &7Local: &f{location}
+
+    &7Cause dano para subir no ranking!
+
+  countdown: '&5Evento do Dragão em &f{seconds}s&5! Tipo: &f{name}'
+  death-broadcast: |
+
+    &5&lO DRAGÃO FOI DERROTADO!
+
+    &7Tipo: &f{name}
+    &7Duração: &f{duration}
+
+    &6Top 5 dano:
+    {ranking}
+
+  ranking-line: '&e#{position} &f{player} &8- &c{damage}'
+  ranking-empty: '&7Ninguém causou dano.'
+  reward-received: |
+
+    &aVocê ficou em &f#{position} &ano ranking do dragão!
+
+    &7Dragão: &f{name}
+    &7Seu dano: &c{damage}
+
+  participation-reward: |
+
+    &aVocê participou da batalha contra &f{name}&a!
+
+    &7Seu dano: &c{damage}
+
+  no-players: '&cNão há jogadores suficientes para spawnar o dragão.'
+  ability-announce: '&5{name} &7usou &f{ability}&7!'
+  reward-collected: '&aRecompensa coletada com sucesso.'
+  reward-collected-all: '&aTodas as recompensas foram coletadas.'
+
+actionbar:
+  fight: '&5&l{name} &8| {bar} &c{health}&7/&c{max} &8| &7Dano: &c{damage}'
+  next-spawn: '&5Próximo dragão: &f{name} &8| &7{time}'
+
+title:
+  spawned: '&5&lDRAGÃO SPAWNADO!<nl>&7{name}'
+  death: '&a&lDRAGÃO DERROTADO!<nl>&7Top 1: &e{player}'
+  countdown: '&5&l{seconds}<nl>&7{name} está chegando'

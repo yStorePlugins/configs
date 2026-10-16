@@ -1,0 +1,221 @@
+# Arquivo de configuração de um dragão.
+# O nome do arquivo (sem .yml) é o ID usado em /dragon spawn <id>
+# Exemplo: ender.yml → /dragon spawn ender
+
+# Nome colorido exibido para os jogadores. [EX: &5&lEnder Dragon]
+display-name: '&5&lEnder Dragon'
+
+# Se false, este dragão não spawna automaticamente e não aparece no menu.
+enabled: true
+
+# Se true, este dragão é considerado raro e pode substituir o spawn normal
+# de acordo com general.rare-chance na config.yml.
+rare: false
+
+# Deixe vazio para spawnar o Ender Dragon vanilla.
+# Para MythicMobs, informe o ID do mob. [EX: SkeletonKing]
+mythic-mob: ''
+
+# Ícone exibido no menu de dragões (formato SetupItem).
+icon:
+  # Material do item. [EX: DRAGON_EGG, SKULL_ITEM:1]
+  material: DRAGON_EGG
+  # Nome do item no menu.
+  name: '&5&lEnder Dragon'
+  # Descrição do item no menu.
+  lore:
+    - ''
+    - ' &7O dragão padrão do evento.'
+    - ''
+
+# Atributos de combate do dragão.
+stats:
+  # Vida máxima customizada (não usa o limite vanilla). [EX: 2000.0]
+  health: 2000.0
+  # Dano causado aos jogadores por ataque. [EX: 8.0]
+  damage: 8.0
+  # Redução de dano recebido. Valores válidos: 0.0 a 1.0 (0.10 = 10%)
+  defense: 0.10
+  # Multiplicador de velocidade. [EX: 1.0]
+  speed: 1.0
+
+# BossBar exibida para os jogadores dentro da arena.
+# Placeholders: {name} {health} {max}
+bossbar:
+  # Se false, a BossBar não é criada (1.8 continua só com actionbar).
+  enabled: true
+  # Título da BossBar.
+  title: '&5&l{name} &8| &c{health}&7/&c{max}'
+  # Cor. Valores válidos: [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE]
+  color: PURPLE
+  # Estilo. Valores válidos: [SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20]
+  style: SOLID
+
+# Fases do dragão. A fase ativa é a de menor health-percent ainda acima da vida atual.
+# abilities: lista de chaves definidas na seção 'abilities' abaixo.
+phases:
+  phase1:
+    # Percentual de vida para entrar nesta fase. [EX: 100]
+    health-percent: 100
+    abilities:
+      - fireball-rain
+  phase2:
+    health-percent: 60
+    abilities:
+      - fireball-rain
+      - summon-mobs
+      - explosion
+  phase3:
+    health-percent: 25
+    abilities:
+      - fireball-rain
+      - summon-mobs
+      - explosion
+      - heal
+      - teleport
+      - debuff
+      - lightning
+
+# Habilidades disponíveis. Tipos válidos:
+# FIREBALL_RAIN, SUMMON_MOBS, AREA_EXPLOSION, HEAL, DEBUFF,
+# TELEPORT_PLAYERS, LIGHTNING, KNOCKBACK, DRAGON_BREATH
+#
+# Campos comuns:
+#   type              — tipo da habilidade
+#   cooldown-seconds  — intervalo mínimo entre usos
+#   chance            — chance (%) de executar quando o cooldown acaba
+#   particle          — partícula PacketEvents [EX: flame, portal, explosion]
+#   sound             — som Bukkit (opcional)
+#   announce          — mensagem global na arena (opcional)
+abilities:
+  fireball-rain:
+    type: FIREBALL_RAIN
+    cooldown-seconds: 16
+    chance: 100
+    # Quantidade de fireballs por jogador.
+    amount: 6
+    # Dano base de cada fireball (metadado; o impacto vanilla ainda ocorre).
+    damage: 6.0
+    particle: flame
+    sound: ENTITY_ENDERDRAGON_SHOOT
+    announce: '&5Chuva de fireballs!'
+  summon-mobs:
+    type: SUMMON_MOBS
+    cooldown-seconds: 25
+    chance: 80
+    # Quantidade de mobs invocados.
+    amount: 4
+    # Tipo da entidade Bukkit. [EX: ENDERMAN, BLAZE, ZOMBIE]
+    entity-type: ENDERMAN
+    particle: portal
+    announce: '&5Servos do void foram invocados!'
+  explosion:
+    type: AREA_EXPLOSION
+    cooldown-seconds: 20
+    chance: 70
+    # Raio em blocos ao redor de cada jogador.
+    radius: 5.0
+    damage: 10.0
+    particle: explosion
+    announce: '&cExplosão em área!'
+  heal:
+    type: HEAL
+    cooldown-seconds: 35
+    chance: 50
+    # Percentual da vida máxima restaurada. [EX: 8.0 = 8%]
+    heal-percent: 8.0
+    particle: happy_villager
+    announce: '&aO dragão se regenerou!'
+  teleport:
+    type: TELEPORT_PLAYERS
+    cooldown-seconds: 30
+    chance: 40
+    # Raio usado para efeitos visuais.
+    radius: 20.0
+    particle: portal
+    announce: '&5Os jogadores foram teleportados!'
+  debuff:
+    type: DEBUFF
+    cooldown-seconds: 22
+    chance: 60
+    # Efeito de poção Bukkit. [EX: WEAKNESS, SLOW, WITHER, POISON]
+    potion-type: WEAKNESS
+    # Duração em segundos.
+    potion-duration: 8
+    # Amplificador (0 = nível 1).
+    potion-amplifier: 1
+    particle: witch
+    announce: '&8O dragão aplicou um debuff!'
+  lightning:
+    type: LIGHTNING
+    cooldown-seconds: 18
+    chance: 50
+    damage: 6.0
+    particle: firework
+    announce: '&eRaios caíram na arena!'
+  knockback:
+    type: KNOCKBACK
+    cooldown-seconds: 14
+    chance: 40
+    # Intensidade do recuo.
+    amount: 2
+    particle: cloud
+  dragon-breath:
+    type: DRAGON_BREATH
+    cooldown-seconds: 12
+    chance: 70
+    radius: 6.0
+    damage: 4.0
+    particle: dragon_breath
+
+# Sistema de spawn automático deste dragão.
+spawn:
+  # Modo de spawn. Valores válidos:
+  #   INTERVAL  — a cada X horas (usa interval-hours)
+  #   DAILY     — todos os dias nos horários de 'times'
+  #   SCHEDULE  — nos horários de 'times' (mesmo comportamento do DAILY)
+  #   MANUAL    — apenas por comando /dragon spawn
+  mode: INTERVAL
+  # Intervalo em horas quando mode = INTERVAL. [EX: 3]
+  interval-hours: 3
+  # Horários no formato HH:mm usados em DAILY/SCHEDULE. [EX: 20:00]
+  times:
+    - '20:00'
+    - '12:00'
+  # Evento semanal extra (independente do mode).
+  weekly:
+    # Se true, spawna neste dia/horário.
+    enabled: false
+    # Dia da semana. [EX: SUNDAY, SATURDAY, FRIDAY]
+    day: SUNDAY
+    # Horário. [EX: 18:00]
+    time: '18:00'
+  # Evento mensal extra (independente do mode).
+  monthly:
+    # Se true, spawna neste dia do mês/horário.
+    enabled: false
+    # Dia do mês (1-28 recomendado). [EX: 1]
+    day: 1
+    # Horário. [EX: 20:00]
+    time: '20:00'
+
+# Quantidade de rolls bem-sucedidos por jogador neste grupo.
+reward-amount: 1
+# Se true, dropa no chão da arena em vez do armazém.
+reward-ground: false
+# Se true, entrega no inventário na hora (ignora armazém).
+reward-player: false
+
+# Recompensas do catálogo (rewards.yml). Formato: 'chance,id'
+# Grupos: top1, top2, top3 e participation.
+rewards:
+  top1:
+    - '100,diamond'
+    - '100,money'
+  top2:
+    - '100,emerald'
+    - '80,money'
+  top3:
+    - '100,emerald'
+  participation:
+    - '100,emerald'
