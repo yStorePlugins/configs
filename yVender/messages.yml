@@ -24,6 +24,7 @@ chat:
     &a/vender &8- &7Vende seus itens.
     &a/vender menu &8- &7Abre o menu principal.
     &a/vender itens &8- &7Abre o menu de itens cadastrados.
+    &a/vender filtro &8- &7Abre o filtro de itens.
 
   found: '&cVocê não possui nenhum dos grupos cadastrados.'
   sell: '&f > &aVocê vendeu &7{quantia}x {item} &apor &6{money}&a. Bolsa &b{bolsa}% &8(+{bonus}%)&a.'

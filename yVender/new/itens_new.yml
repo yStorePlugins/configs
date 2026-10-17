@@ -18,6 +18,7 @@ itens:
         # Nome do item
         display-name: '&7Pedra'
         # Vender apenas os itens que estiverem renomeados com o display_name
+        # Com true, o mesmo material pode ser cadastrado mais de uma vez com display-name diferente
         require-display-name: false
         # Permissão para vender esse item
         permissao: ''

@@ -24,6 +24,15 @@ Itens:
       - '&7que deseja vender.'
       - ''
       - '&eSo aceita itens cadastrados!'
+  Filtro:
+    Slot: 14
+    material: 'HOPPER'
+    name: '&eFiltro de Itens'
+    lore:
+      - '&7Clique para gerenciar'
+      - '&7quais itens podem ser vendidos.'
+      - ''
+      - '&7Itens desativados: &f{filtered}'
   Auto sim:
     material: '351:10'
     name: '&aVenda automática'

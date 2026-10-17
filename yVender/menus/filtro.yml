@@ -1,0 +1,20 @@
+Nome: '&8Filtro de Itens'
+Tamanho: 45
+Slots: [10, 11, 12, 13, 14, 15, 16]
+BackSlot: 18
+VoltarSlot: 27
+ProximoSlot: 35
+Item:
+  Name: '&a{display}'
+  Lore:
+    - ''
+    - ' &fPreço por unidade: &a{unidade_money}&f.'
+    - ' &fPreço por pack: &a{pack_money}&f.'
+    - ''
+  Lore-ativado:
+    - '&fVenda: &aAtivada'
+    - '&eClique para desativar a venda deste item.'
+  Lore-desativado:
+    - '&fVenda: &cDesativada'
+    - '&aClique para ativar a venda deste item.'
+Itens custom: {}
