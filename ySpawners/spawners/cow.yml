@@ -307,3 +307,7 @@ drop:
 messages:
   sell: '&aVocê vendeu &7{amount}x {drop}&a por &6{money} coins &8{bonus}&a.'
   collect: '&aVocê coletou &7{amount}x {drop} (&8{bonus})&a.'
+  # Actionbar ao bater no mob
+  # Placeholders: {health} {damage} {progressbar} {stack} {mob}
+  hit:
+    actionbar: '&f{mob} &7(x{stack}) > &c❤ {health} &4[-{damage}] {progressbar}'
