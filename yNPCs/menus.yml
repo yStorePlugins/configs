@@ -289,6 +289,50 @@ npc-edit:
       - ''
       - ' &eClique para configurar valores por economia.'
       - ''
+  hologram-options-button:
+    slot: 20
+    material: 'BOOK'
+    name: '&6Opções do Holograma'
+    lore:
+      - ''
+      - ' &7Escala: &f{holo_scale}'
+      - ' &7Billboard: &f{holo_billboard}'
+      - ''
+      - ' &7Fundo, sombra, escala, billboard'
+      - ' &7e outras opções visuais.'
+      - ''
+      - ' &eClique para configurar.'
+      - ''
+  glow-button:
+    slot: 28
+    material: 'GLOWSTONE_DUST'
+    name: '&6Glow'
+    lore:
+      - ''
+      - ' &7Status: &f{glow}'
+      - ''
+      - ' &eClique para alternar.'
+      - ''
+  nametag-button:
+    slot: 29
+    material: 'NAME_TAG'
+    name: '&6Nametag'
+    lore:
+      - ''
+      - ' &7Status: &f{show_nametag}'
+      - ''
+      - ' &eClique para alternar.'
+      - ''
+  look-close-button:
+    slot: 30
+    material: 'COMPASS'
+    name: '&6Olhar para o Jogador'
+    lore:
+      - ''
+      - ' &7Status: &f{look_close}'
+      - ''
+      - ' &eClique para alternar.'
+      - ''
   # Botão: Sistema de trocas (ShopKeepers)
   trades-button:
     slot: 40
@@ -312,6 +356,140 @@ npc-edit:
     lore:
       - ''
       - ' &7Clique para voltar à lista.'
+      - ''
+  facing:
+    glass-top-left:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    glass-top-right:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    glass-bot-left:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+    glass-bot-right:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:7'
+      name: ' '
+
+# Menu de opções visuais do holograma
+npc-edit-hologram-options:
+  name: '&8Holograma &7— &f{id}'
+  size: 54
+  transparent-button:
+    slot: 10
+    material: 'GLASS'
+    name: '&6Fundo Transparente'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_transparent}'
+      - ''
+      - ' &eClique para alternar.'
+      - ''
+  background-color-button:
+    slot: 11
+    material: 'INK_SACK'
+    name: '&6Cor do Fundo'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_bg_color}'
+      - ''
+      - ' &7Usado quando o fundo não é transparente.'
+      - ''
+      - ' &eClique para alterar.'
+      - ''
+  background-opacity-button:
+    slot: 12
+    material: 'POTION'
+    name: '&6Opacidade do Fundo'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_bg_opacity}'
+      - ''
+      - ' &eClique para alterar (0-255).'
+      - ''
+  text-shadow-button:
+    slot: 13
+    material: 'COAL'
+    name: '&6Sombra do Texto'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_text_shadow}'
+      - ''
+      - ' &eClique para alternar.'
+      - ''
+  see-through-button:
+    slot: 14
+    material: 'THIN_GLASS'
+    name: '&6Ver Através'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_see_through}'
+      - ''
+      - ' &eClique para alternar.'
+      - ''
+  text-opacity-button:
+    slot: 15
+    material: 'GLASS_BOTTLE'
+    name: '&6Opacidade do Texto'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_text_opacity}'
+      - ''
+      - ' &eClique para alterar (0-255).'
+      - ''
+  visibility-button:
+    slot: 16
+    material: 'EYE_OF_ENDER'
+    name: '&6Distância de Visão'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_visibility} blocos'
+      - ''
+      - ' &eClique para alterar.'
+      - ''
+  line-spacing-button:
+    slot: 19
+    material: 'LADDER'
+    name: '&6Espaçamento das Linhas'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_line_spacing}'
+      - ''
+      - ' &eClique para alterar.'
+      - ''
+  scale-button:
+    slot: 20
+    material: 'SLIME_BALL'
+    name: '&6Escala'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_scale}'
+      - ''
+      - ' &eClique para alterar.'
+      - ''
+  billboard-button:
+    slot: 21
+    material: 'PAINTING'
+    name: '&6Billboard'
+    lore:
+      - ''
+      - ' &7Atual: &f{holo_billboard}'
+      - ''
+      - ' &7CENTER, FIXED, VERTICAL, HORIZONTAL'
+      - ''
+      - ' &eClique para alternar.'
+      - ''
+  back-button:
+    slot: 49
+    material: 'ARROW'
+    name: '&cVoltar'
+    lore:
+      - ''
+      - ' &7Clique para voltar.'
       - ''
   facing:
     glass-top-left:
@@ -476,7 +654,7 @@ npc-type-select:
   name: '&8Selecionar Tipo'
   size: 27
   normal-button:
-    slot: 11
+    slot: 10
     material: 'SKULL_ITEM:3'
     name: '&aNormal'
     lore:
@@ -487,7 +665,7 @@ npc-type-select:
       - ' &eClique para selecionar.'
       - ''
   rotating-head-button:
-    slot: 13
+    slot: 12
     material: 'SKULL_ITEM:3'
     name: '&dRotating Head'
     lore:
@@ -498,13 +676,24 @@ npc-type-select:
       - ' &eClique para selecionar.'
       - ''
   giant-item-button:
-    slot: 15
+    slot: 14
     material: 'DIAMOND'
     name: '&bGiant Item'
     lore:
       - ''
       - ' &7Item gigante flutuante (estilo yLobby).'
       - ' &7Entidade real no mundo com hitbox clicável.'
+      - ''
+      - ' &eClique para selecionar.'
+      - ''
+  hologram-button:
+    slot: 16
+    material: 'SIGN'
+    name: '&eHolograma'
+    lore:
+      - ''
+      - ' &7Apenas holograma, sem entidade em baixo.'
+      - ' &7Útil para textos, itens e displays.'
       - ''
       - ' &eClique para selecionar.'
       - ''
