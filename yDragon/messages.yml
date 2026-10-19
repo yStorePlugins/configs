@@ -73,27 +73,7 @@ chat:
 
     &8&m-----------------------------
 
-  spawned: |
-
-    &5&lO DRAGÃO APARECEU!
-
-    &7Tipo: &f{name}
-    &7Vida: &c{health}
-    &7Local: &f{location}
-
-    &7Cause dano para subir no ranking!
-
   countdown: '&5Evento do Dragão em &f{seconds}s&5! Tipo: &f{name}'
-  death-broadcast: |
-
-    &5&lO DRAGÃO FOI DERROTADO!
-
-    &7Tipo: &f{name}
-    &7Duração: &f{duration}
-
-    &6Top 5 dano:
-    {ranking}
-
   ranking-line: '&e#{position} &f{player} &8- &c{damage}'
   ranking-empty: '&7Ninguém causou dano.'
   reward-received: |
@@ -119,6 +99,4 @@ actionbar:
   next-spawn: '&5Próximo dragão: &f{name} &8| &7{time}'
 
 title:
-  spawned: '&5&lDRAGÃO SPAWNADO!<nl>&7{name}'
-  death: '&a&lDRAGÃO DERROTADO!<nl>&7Top 1: &e{player}'
   countdown: '&5&l{seconds}<nl>&7{name} está chegando'

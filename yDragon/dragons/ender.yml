@@ -42,7 +42,7 @@ stats:
 # BossBar exibida para os jogadores dentro da arena.
 # Placeholders: {name} {health} {max}
 bossbar:
-  # Se false, a BossBar não é criada (1.8 continua só com actionbar).
+  # Se false, a BossBar não é criada.
   enabled: true
   # Título da BossBar.
   title: '&5&l{name} &8| &c{health}&7/&c{max}'
@@ -50,6 +50,34 @@ bossbar:
   color: PURPLE
   # Estilo. Valores válidos: [SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20]
   style: SOLID
+
+# Mensagens de spawn e morte deste dragão.
+# Títulos usam <nl> para separar título e subtítulo.
+# Placeholders spawn: {name} {health} {location}
+# Placeholders morte: {name} {duration} {ranking} {player}
+messages:
+  spawn: |
+
+    &5&lO DRAGÃO APARECEU!
+
+    &7Tipo: &f{name}
+    &7Vida: &c{health}
+    &7Local: &f{location}
+
+    &7Cause dano para subir no ranking!
+
+  spawn-title: '&5&lDRAGÃO SPAWNADO!<nl>&7{name}'
+  death: |
+
+    &5&lO DRAGÃO FOI DERROTADO!
+
+    &7Tipo: &f{name}
+    &7Duração: &f{duration}
+
+    &6Top 5 dano:
+    {ranking}
+
+  death-title: '&a&lDRAGÃO DERROTADO!<nl>&7Top 1: &e{player}'
 
 # Fases do dragão. A fase ativa é a de menor health-percent ainda acima da vida atual.
 # abilities: lista de chaves definidas na seção 'abilities' abaixo.
