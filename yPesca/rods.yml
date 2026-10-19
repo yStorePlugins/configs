@@ -27,7 +27,7 @@ rods:
     break-heavy: true
     # Permitir essa vara ativar o auto-sell
     # para quem tem a permissão: ypesca.autosell
-    allow-auto-sell: false
+    allow-auto-sell: true
     # Preço em coin (moeda do plugin) para reparar a vara
     repair-coin-cost: 0
     # Preço para reparar a vara
@@ -84,6 +84,9 @@ rods:
     supported-weight: 15
     delay: 5
     break-heavy: true
+    # Permitir essa vara ativar o auto-sell
+    # para quem tem a permissão: ypesca.autosell
+    allow-auto-sell: true
     # Preço em coin (moeda do plugin) para reparar a vara
     repair-coin-cost: 10
     repair-cost:
