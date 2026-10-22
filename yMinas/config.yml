@@ -77,6 +77,8 @@ Opcoes:
   # Quantia que irá somar no nível da fortuna
   # essencial para definir valores a partir da fortuna 1
   Fortuna-Acrescer: 0.5
+  # Blacklist de blocos que a fortuna do vanilla (picareta padrão do minecraft) não irá aplicar
+  Fortuna-Vanilla-Blacklist: [ 'STONE', 'SAND' ]
   # Ativar o sistema de reset do FastAsyncWorldEdit ou WorldEdit (inclui AsyncWorldEdit)
   FAWE: true
   # Opções do FastAsyncWorldEdit ou WorldEdit (inclui AsyncWorldEdit)
