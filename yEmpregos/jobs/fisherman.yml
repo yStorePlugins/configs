@@ -1,6 +1,9 @@
 # Nome exibido em menus, mensagens e placeholders.
 name: '&bTurno de Pescador'
 
+# Ordem do ícone nos menus. Menor número aparece primeiro (1, 2, 3...).
+order: 2
+
 # Categoria exibida no menu inicial em menus.yml -> category-menu.categories.
 category: 'pesca'
 
