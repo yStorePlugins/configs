@@ -116,6 +116,93 @@ main:
       material: 'BARRIER'
       name: '&cSlot de Destaque'
 
+# Menu único paginado
+# Ativado por general.paginated-menu na config.yml
+paginated:
+  name: '&8Mercado'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  previous-slot: 18
+  next-slot: 26
+  empty-slot: 22
+  items:
+    sponsored-slot: 45
+    currencies-slot: 46
+    personal-slot: 49
+    own-slot: 52
+    empty:
+      material: 'WEB'
+      name: '&cVazio...'
+      lore: [ '&7Não há nenhum anúncio ocorrendo!' ]
+    sponsored:
+      material: 'NETHER_STAR'
+      name: '&aDestaques!'
+      lore:
+        - '&7Aqui você pode encontrar os'
+        - '&7melhores itens que estão anunciados'
+        - '&7no nosso servidor.'
+        - ''
+        - '&f* &bAtualmente possuímos &f&n{amount}'
+        - '&bitens(s) em destaque. :)'
+        - ''
+        - '&eClique para ver os anúncios.'
+    personal:
+      material: '{player}'
+      name: '&aMercado Pessoal'
+      lore:
+        - '&7Aqui você pode encontrar os'
+        - '&7itens que outros jogadores'
+        - '&7anunciaram exclusivamente para você.'
+        - ''
+        - '&7Você possui &f&n{amount}'
+        - '&7anúncio(s) exclusivo(s) no momento. :)'
+        - ''
+        - '&eClique para ver os anúncios.'
+    own:
+      material: 'b544a770e894a1fab11e2a2bac15fe3d96946fa52396b531978eb37ac64b8a90'
+      name: '&eMeus Anúncios'
+      lore:
+        - '&7Veja aqui os itens colocados'
+        - '&7a venda por você.'
+        - ''
+        - '&7Você possui &f&n{amount}'
+        - '&7itens(s) no momento. :)'
+        - ''
+        - '&eClique para ver seus anúncios.'
+    currencies-none:
+      material: 'GOLD_INGOT'
+      name: '&cValores'
+      lore: [ '&7Você não tem nenhum valor para coletar!' ]
+    currencies:
+      material: 'GOLD_INGOT'
+      name: '&eValores'
+      lore:
+        - '&r'
+        - ' &eValores a receber:'
+        - ' {format}'
+        - ''
+        - '&eClique para coletar os valores.'
+  formats:
+    currency: ' &7> &f{amount} {provider_abbreviated}'
+  lore:
+    - '&r'
+    - ' &fVendedor: &7{owner}'
+    - ''
+    - '&8> &fPreço: &a{amount} {provider_abbreviated}'
+    - '&8> &fExpira em: &7{time}'
+    - ''
+    - '&eClique para adquirir este item.'
+  lore-sponsored:
+    - '&r'
+    - ' &f* &bITEM EM DESTAQUE &f*'
+    - ''
+    - ' &fVendedor: &7{owner}'
+    - ''
+    - '&8> &fPreço: &a{amount} {provider_abbreviated}'
+    - '&8> &fExpira em: &7{time}'
+    - ''
+    - '&eClique para adquirir este item.'
+
 # Menu de criação
 create:
   name: '&8Mercado'

@@ -47,7 +47,7 @@ chat:
 
   market-cancelled: |
 
-    &cOPS! Um leilão no qual você participava foi cancelado pelo leiloador, o seu lance foi devolvido.
+    &cOPS! A venda foi cancelada!
 
   market-bought: |
 
