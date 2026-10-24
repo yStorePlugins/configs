@@ -57,5 +57,6 @@ chat:
   treasure-open-success: '&aVocê abriu o tesouro e coletou suas recompensas! Digite /ct para acessá-las.'
   treasure-expired: '&cSeu tesouro expirou e o baú foi removido.'
   treasure-no-safe-location: '&cNão foi possível encontrar um local seguro para gerar o tesouro. Tente novamente.'
+  protection-blocked: '&cVocê não pode proteger esta área porque existe um tesouro nela.'
   reward-collected: '&eItem recolhido com sucesso.'
   reward-collected-all: '&aVocê coletou todas as suas recompensas pendentes!'

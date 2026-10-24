@@ -80,6 +80,15 @@ general:
   reward-open-menu: true
   # Deletar a recompensa ao clicar com botão direito
   right-delete-reward: true
+  # Respeitar proteções de terreno/plot (yPlotCore) e WorldGuard.
+  # Tesouros não nascem em áreas já protegidas.
+  # Áreas com tesouro ativo não podem ser protegidas (yTerrenos/yPlots).
+  protections:
+    enabled: true
+    # Tentativas para encontrar um local livre de proteção.
+    spawn-attempts: 50
+    # IDs de regiões do WorldGuard que podem receber tesouros.
+    ignore-worldguard-regions: []
 
 # Configurações de anúncio global quando o player chega perto do tesouro.
 announce:
