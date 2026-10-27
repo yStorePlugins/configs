@@ -29,7 +29,10 @@ general:
   # Lista de materiais que não serão stackados
   material-blacklist: []
   # Lista de NBT-TAGS que não serão stackadas
-  nbt-tag-blacklist: []
+  nbt-tag-blacklist: [ 'yMinasBombas' ]
+  # Nomes custom para itens sem display-name baseado no seu material:data
+  custom-names:
+    - 'STONE:0,&7Pedra'
 
 # Sistema de black-list de spawn natural de itens
 # por exemplo, o cacto gerado pela farm
