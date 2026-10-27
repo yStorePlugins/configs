@@ -264,6 +264,8 @@ jump-pad:
   offset: 2.0
   # Som que será executado
   sound: 'FIREWORK_LAUNCH'
+  # Regions do WorldGuard onde o jump pad funciona. Vazio = funciona em qualquer lugar
+  regions: []
 
 # Sistema de double jump
 double-jump:
