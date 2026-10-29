@@ -1,0 +1,48 @@
+# Evento de exemplo — renomeie este arquivo para definir a chave do evento.
+# A chave do evento é o nome do arquivo sem o .yml (ex: boom.yml → chave "boom").
+
+# Nome colorido exibido no broadcast e nas mensagens.
+display-name: '&aBoom Econômico'
+# Descrição curta do evento.
+description: 'O mercado aquece e todos os ativos sobem.'
+# Se false, o evento não dispara automaticamente nem por comando.
+enabled: true
+# Chance (0–100) de disparar a cada intervalo de general.events.check-interval-ticks.
+chance: 4.0
+# Duração do evento em segundos. [EX: 240 = 4 minutos]
+duration-seconds: 240
+# Multiplicador aplicado sobre o mercado dos ativos afetados. [EX: 1.25 = +25%]
+multiplier: 1.25
+# Chaves dos ativos afetados (nome do arquivo em assets/ sem .yml).
+# Deixe vazio e affected-risks vazio para afetar todos os ativos.
+affected-assets: []
+# Riscos afetados. Valores válidos: [LOW, MEDIUM, HIGH]
+affected-risks: []
+# Se true, envia broadcast e título para todos os jogadores online.
+broadcast: true
+
+# Slot no menu principal. -1 = não exibe.
+slot: 42
+# Ícone quando o evento está inativo.
+# Placeholders: {event}, {description}, {multiplier}, {duration}, {remaining}, {status}
+icon-inactive:
+  material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+  name: '&7Boom Econômico'
+  lore:
+    - '&7Este evento não está ativo.'
+    - ''
+    - ' &8▶ &fMultiplicador: &7{multiplier}x'
+    - ' &8▶ &fDuração: &7{duration}'
+    - ''
+    - '&7O mercado aquece e todos os ativos sobem.'
+# Ícone quando o evento está ativo.
+icon-active:
+  material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+  name: '&a&lBoom Econômico'
+  lore:
+    - '&aEvento em andamento!'
+    - ''
+    - ' &8▶ &fMultiplicador: &a{multiplier}x'
+    - ' &8▶ &fRestante: &e{remaining}'
+    - ''
+    - '&7O mercado aquece e todos os ativos sobem.'

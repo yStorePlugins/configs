@@ -1,0 +1,144 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+# Chat messages — mensagens enviadas no chat
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &8&m-&r &6&lInvestimento &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu principal.
+    &8&m-&r &e/{cmd} carteira &8- &7Abre sua carteira de investimentos.
+    &8&m-&r &e/{cmd} historico &8- &7Abre o histórico de aplicações.
+    &8&m-&r &e/{cmd} relatorio &8- &7Abre o relatório de desempenho.
+    &8&m-&r &e/{cmd} investir [ativo] &8- &7Abre o mercado ou um ativo.
+    &8&m-&r &e/{cmd} sacar <id> &8- &7Resgata um investimento.
+    &8&m-&r
+
+  admin-help: |
+
+    &8&m-&r &6&lInvestimento Admin &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu principal.
+    &8&m-&r &e/{cmd} carteira &8- &7Abre sua carteira de investimentos.
+    &8&m-&r &e/{cmd} historico &8- &7Abre o histórico de aplicações.
+    &8&m-&r &e/{cmd} relatorio &8- &7Abre o relatório de desempenho.
+    &8&m-&r &e/{cmd} investir [ativo] &8- &7Abre o mercado ou um ativo.
+    &8&m-&r &e/{cmd} sacar <id> &8- &7Resgata um investimento.
+    &8&m-&r &e/{cmd} evento <key> &8- &7Dispara um evento econômico.
+    &8&m-&r &e/{cmd} mercado <ativo> <mult> &8- &7Define o multiplicador do ativo.
+    &8&m-&r &e/{cmd} reload &8- &7Recarrega as configurações.
+    &8&m-&r
+
+  inv-full: '&cSeu inventário está cheio.'
+  world-blocked: '&cVocê não pode usar o sistema de investimentos neste mundo.'
+  region-blocked: '&cVocê não pode usar o sistema de investimentos nesta região.'
+  asset-not-found: '&cAtivo {asset} não encontrado.'
+  asset-disabled: '&cO ativo {asset} está desativado.'
+  asset-permission: '&cVocê não tem permissão para investir em {asset}.'
+  amount-min: '&cO valor mínimo para {asset} é {min}.'
+  amount-max: '&cO valor máximo para {asset} é {max}.'
+  amount-invalid: '&cDigite um número maior que zero.'
+  invest-limit: |
+
+    &cVocê atingiu o limite de investimentos ativos!
+
+    &7Limite atual: &f{limit}
+    &7Ativo: &f{asset}
+
+  invest-success: |
+
+    &aInvestimento realizado com sucesso!
+
+    &7Ativo: &f{asset}
+    &7Economia: &f{provider}
+    &7Valor aplicado: &f{amount}
+    &7Taxa de entrada: &f{fee}
+    &7Retorno estimado: &f{return}
+    &7Vencimento: &f{expire}
+    &7ID: &f{id}
+
+  no-balance: |
+
+    &cVocê não tem saldo suficiente!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{required}
+
+  economy-not-found: '&cEconomia {provider} não encontrada.'
+  economy-permission: '&cVocê não tem permissão para usar esta economia.'
+  economy-offline: '&cEsta economia não permite transações offline.'
+  enter-amount: |
+
+    &eDigite no chat o valor que deseja investir.
+    &7Digite &ccancelar &7para cancelar.
+
+  withdraw-success: |
+
+    &eInvestimento resgatado antecipadamente!
+
+    &7Ativo: &f{asset}
+    &7Valor resgatado: &f{payout}
+    &7Taxa de saída: &f{fee}
+    &7ID: &f{id}
+
+  withdraw-not-found: '&cInvestimento {id} não encontrado.'
+  withdraw-not-owner: '&cEste investimento não pertence a você.'
+  withdraw-already: '&cEste investimento já foi encerrado.'
+  collect-success: |
+
+    &aVocê coletou o retorno do investimento!
+
+    &7Ativo: &f{asset}
+    &7Valor aplicado: &f{amount}
+    &7Valor recebido: &f{payout}
+    &7Lucro: &f{profit}
+    &7ID: &f{id}
+
+  collect-not-ready: '&cEste investimento ainda não venceu.'
+  event-not-found: '&cEvento {event} não encontrado.<nl>&cDisponíveis: {list}'
+  event-disabled: '&cO evento {event} está desativado.'
+  event-triggered: '&aEvento {event} disparado por {duration}.'
+  event-broadcast: |
+
+    &6&lEVENTO ECONÔMICO
+
+    &7{event}
+    &7{description}
+    &7Multiplicador: &f{multiplier}x
+    &7Duração: &f{duration}
+
+  market-set: '&aMultiplicador de {asset} definido para {multiplier}x.'
+  market-asset-not-found: '&cAtivo {asset} não encontrado no mercado.<nl>&cDisponíveis: {list}'
+  maintenance-fail: '&cTaxa de manutenção de {asset} não cobrada por saldo insuficiente.'
+  matured: |
+
+    &aSeu investimento venceu!
+
+    &7Ativo: &f{asset}
+    &7Valor aplicado: &f{amount}
+    &7Retorno: &f{payout}
+    &7ID: &f{id}
+
+    &7Abra a carteira para coletar.
+
+# Títulos exibidos ao jogador (use <nl> para separar título e subtítulo)
+title:
+  invest-success: '&aInvestimento aplicado!<nl>&7{asset} &8— &e{amount}'
+  collect: '&aRetorno coletado!<nl>&7{asset} &8— &e{payout}'
+  matured: '&eInvestimento vencido!<nl>&7{asset} &8— &e{id}'
+  event: '&6Evento econômico!<nl>&7{event}'

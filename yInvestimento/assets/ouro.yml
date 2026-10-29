@@ -1,0 +1,50 @@
+# Ativo de exemplo — renomeie este arquivo para definir a chave do ativo.
+# A chave do ativo é o nome do arquivo sem o .yml (ex: ouro.yml → chave "ouro").
+
+# Nome colorido exibido nos menus e mensagens.
+display-name: '&6Ouro'
+# Descrição curta do ativo.
+description: 'Aplicação em ouro com risco médio e oscilação de mercado.'
+# Se false, o ativo não aparece no mercado e não aceita novos investimentos.
+enabled: true
+# Classificação de risco. Valores válidos: [LOW, MEDIUM, HIGH]
+risk: MEDIUM
+# Retorno base em % ao vencer. É multiplicado pelo risco e pelo mercado.
+base-return-percent: 12.0
+# Duração do investimento em segundos. [EX: 7200 = 2 horas]
+duration-seconds: 7200
+# Oscilação por tick do mercado (0.04 = 4%). Também é multiplicada pelo risco.
+volatility: 0.04
+# Valor mínimo e máximo que o jogador pode aplicar neste ativo.
+min-amount: 500.0
+max-amount: 500000.0
+# Permissão necessária para investir. Deixe vazio para liberar a todos.
+permission: ''
+# Economia travada neste ativo. Deixe vazio para o jogador escolher no menu.
+provider: ''
+# Taxa de entrada cobrada no momento do investimento (% do valor aplicado).
+entry-fee-percent: 2.0
+# Taxa de saída cobrada no resgate antecipado (% do valor atual).
+withdrawal-fee-percent: 6.0
+# Taxa de manutenção cobrada periodicamente (% do valor aplicado). 0 = desativada.
+maintenance-fee-percent: 0.2
+# Limite de aplicações ativas deste ativo por jogador. 0 = ilimitado.
+max-active-per-player: 0
+
+# Ícone no menu de mercado.
+# Placeholders: {risk}, {return}, {multiplier}, {duration}, {min}, {max}
+icon:
+  material: '3da29fe23b69f76bc49474102226b0699ca2a5ad11f7a48542b13ad9cabaf89d'
+  name: '&6&lOuro'
+  lore:
+    - '&7Ativo de risco médio ligado'
+    - '&7às oscilações do mercado.'
+    - ''
+    - ' &8▶ &fRisco: &7{risk}'
+    - ' &8▶ &fRetorno base: &a{return}%'
+    - ' &8▶ &fMercado: &7{multiplier}x'
+    - ' &8▶ &fDuração: &7{duration}'
+    - ' &8▶ &fMínimo: &7{min}'
+    - ' &8▶ &fMáximo: &7{max}'
+    - ''
+    - '&eInvista agora!'

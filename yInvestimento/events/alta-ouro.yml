@@ -1,0 +1,49 @@
+# Evento de exemplo — renomeie este arquivo para definir a chave do evento.
+# A chave do evento é o nome do arquivo sem o .yml (ex: alta-ouro.yml → chave "alta-ouro").
+
+# Nome colorido exibido no broadcast e nas mensagens.
+display-name: '&6Alta no Ouro'
+# Descrição curta do evento.
+description: 'O preço do ouro dispara no mercado.'
+# Se false, o evento não dispara automaticamente nem por comando.
+enabled: true
+# Chance (0–100) de disparar a cada intervalo de general.events.check-interval-ticks.
+chance: 8.0
+# Duração do evento em segundos. [EX: 300 = 5 minutos]
+duration-seconds: 300
+# Multiplicador aplicado sobre o mercado dos ativos afetados. [EX: 1.45 = +45%]
+multiplier: 1.45
+# Chaves dos ativos afetados (nome do arquivo em assets/ sem .yml).
+# Deixe vazio e affected-risks vazio para afetar todos os ativos.
+affected-assets:
+  - ouro
+# Riscos afetados. Valores válidos: [LOW, MEDIUM, HIGH]
+affected-risks: []
+# Se true, envia broadcast e título para todos os jogadores online.
+broadcast: true
+
+# Slot no menu principal. -1 = não exibe.
+slot: 38
+# Ícone quando o evento está inativo.
+# Placeholders: {event}, {description}, {multiplier}, {duration}, {remaining}, {status}
+icon-inactive:
+  material: '945f47feb4d75cb333914bfdb999a489c9d0e320d548f310419ad738d1e24b9'
+  name: '&7Alta no Ouro'
+  lore:
+    - '&7Este evento não está ativo.'
+    - ''
+    - ' &8▶ &fMultiplicador: &7{multiplier}x'
+    - ' &8▶ &fDuração: &7{duration}'
+    - ''
+    - '&7O preço do ouro dispara no mercado.'
+# Ícone quando o evento está ativo.
+icon-active:
+  material: '1cde44e8f80e56610c0ffc64c08e1943517fdaf800f5ee75ef6986c5a8966e9c'
+  name: '&6&lAlta no Ouro'
+  lore:
+    - '&aEvento em andamento!'
+    - ''
+    - ' &8▶ &fMultiplicador: &6{multiplier}x'
+    - ' &8▶ &fRestante: &e{remaining}'
+    - ''
+    - '&7O preço do ouro dispara no mercado.'

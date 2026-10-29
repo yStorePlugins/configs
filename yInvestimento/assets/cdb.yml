@@ -1,0 +1,50 @@
+# Ativo de exemplo — renomeie este arquivo para definir a chave do ativo.
+# A chave do ativo é o nome do arquivo sem o .yml (ex: cdb.yml → chave "cdb").
+
+# Nome colorido exibido nos menus e mensagens.
+display-name: '&aCDB'
+# Descrição curta do ativo.
+description: 'Certificado de depósito bancário com baixo risco e retorno estável.'
+# Se false, o ativo não aparece no mercado e não aceita novos investimentos.
+enabled: true
+# Classificação de risco. Valores válidos: [LOW, MEDIUM, HIGH]
+risk: LOW
+# Retorno base em % ao vencer. É multiplicado pelo risco e pelo mercado.
+base-return-percent: 5.0
+# Duração do investimento em segundos. [EX: 3600 = 1 hora]
+duration-seconds: 3600
+# Oscilação por tick do mercado (0.01 = 1%). Também é multiplicada pelo risco.
+volatility: 0.01
+# Valor mínimo e máximo que o jogador pode aplicar neste ativo.
+min-amount: 100.0
+max-amount: 1000000.0
+# Permissão necessária para investir. Deixe vazio para liberar a todos.
+permission: ''
+# Economia travada neste ativo. Deixe vazio para o jogador escolher no menu.
+provider: ''
+# Taxa de entrada cobrada no momento do investimento (% do valor aplicado).
+entry-fee-percent: 1.0
+# Taxa de saída cobrada no resgate antecipado (% do valor atual).
+withdrawal-fee-percent: 3.0
+# Taxa de manutenção cobrada periodicamente (% do valor aplicado). 0 = desativada.
+maintenance-fee-percent: 0.0
+# Limite de aplicações ativas deste ativo por jogador. 0 = ilimitado.
+max-active-per-player: 0
+
+# Ícone no menu de mercado.
+# Placeholders: {risk}, {return}, {multiplier}, {duration}, {min}, {max}
+icon:
+  material: '8381c529d52e03cd74c3bf38bb6ba3fde1337ae9bf50332faa889e0a28e8081f'
+  name: '&a&lCDB'
+  lore:
+    - '&7Aplicação de baixo risco com'
+    - '&7retorno previsível.'
+    - ''
+    - ' &8▶ &fRisco: &7{risk}'
+    - ' &8▶ &fRetorno base: &a{return}%'
+    - ' &8▶ &fMercado: &7{multiplier}x'
+    - ' &8▶ &fDuração: &7{duration}'
+    - ' &8▶ &fMínimo: &7{min}'
+    - ' &8▶ &fMáximo: &7{max}'
+    - ''
+    - '&eInvista agora!'

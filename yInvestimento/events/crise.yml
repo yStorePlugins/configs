@@ -1,0 +1,50 @@
+# Evento de exemplo — renomeie este arquivo para definir a chave do evento.
+# A chave do evento é o nome do arquivo sem o .yml (ex: crise.yml → chave "crise").
+
+# Nome colorido exibido no broadcast e nas mensagens.
+display-name: '&cCrise Econômica'
+# Descrição curta do evento.
+description: 'O mercado entra em colapso temporário.'
+# Se false, o evento não dispara automaticamente nem por comando.
+enabled: true
+# Chance (0–100) de disparar a cada intervalo de general.events.check-interval-ticks.
+chance: 5.0
+# Duração do evento em segundos. [EX: 600 = 10 minutos]
+duration-seconds: 600
+# Multiplicador aplicado sobre o mercado dos ativos afetados. [EX: 0.7 = -30%]
+multiplier: 0.7
+# Chaves dos ativos afetados (nome do arquivo em assets/ sem .yml).
+# Deixe vazio e affected-risks vazio para afetar todos os ativos.
+affected-assets: []
+# Riscos afetados. Valores válidos: [LOW, MEDIUM, HIGH]
+affected-risks:
+  - HIGH
+  - MEDIUM
+# Se true, envia broadcast e título para todos os jogadores online.
+broadcast: true
+
+# Slot no menu principal. -1 = não exibe.
+slot: 40
+# Ícone quando o evento está inativo.
+# Placeholders: {event}, {description}, {multiplier}, {duration}, {remaining}, {status}
+icon-inactive:
+  material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+  name: '&7Crise Econômica'
+  lore:
+    - '&7Este evento não está ativo.'
+    - ''
+    - ' &8▶ &fMultiplicador: &7{multiplier}x'
+    - ' &8▶ &fDuração: &7{duration}'
+    - ''
+    - '&7O mercado entra em colapso temporário.'
+# Ícone quando o evento está ativo.
+icon-active:
+  material: '68d40935279771adc63936ed9c8463abdf5c5ba78d2e86cb1ec10b4d1d225fb'
+  name: '&c&lCrise Econômica'
+  lore:
+    - '&cEvento em andamento!'
+    - ''
+    - ' &8▶ &fMultiplicador: &c{multiplier}x'
+    - ' &8▶ &fRestante: &e{remaining}'
+    - ''
+    - '&7O mercado entra em colapso temporário.'

@@ -1,0 +1,157 @@
+#         ___                     _   _                      _
+#  _   _|_ _|_ ____   _____  ___| |_(_)_ __ ___   ___ _ __ | |_ ___
+# | | | || || '_ \ \ / / _ \/ __| __| | '_ ` _ \ / _ \ '_ \| __/ _ \
+# | |_| || || | | \ V /  __/\__ \ |_| | | | | | |  __/ | | | || (_) |
+#  \__, |___|_| |_|\_/ \___||___/\__|_|_| |_| |_|\___|_| |_|\__\___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Máximo de investimentos ativos simultâneos por jogador (sem permissão yinvestimento.slots.N)
+  max-active-default: 5
+  # Intervalo (em ticks) para verificar vencimentos (200 ticks = 10 segundos)
+  maturity-check-interval-ticks: 200
+  # Intervalo (em ticks) para cobrar taxa de manutenção dos ativos
+  maintenance-interval-ticks: 6000
+  # Valores pré-definidos exibidos no menu de valor. [EX: 1000.0 = 1K]
+  amount-presets:
+    - 1000.0
+    - 5000.0
+    - 10000.0
+    - 25000.0
+    - 50000.0
+    - 100000.0
+  # Oscilação automática do mercado (bolsa de valores)
+  market:
+    # Intervalo (em ticks) da oscilação de cada ativo (200 ticks = 10 segundos)
+    tick-interval-ticks: 200
+    # Multiplicador mínimo permitido no mercado. [EX: 0.4 = 40% do valor]
+    min-multiplier: 0.4
+    # Multiplicador máximo permitido no mercado. [EX: 1.8 = 180% do valor]
+    max-multiplier: 1.8
+    # Quantidade de pontos armazenados no gráfico de histórico
+    history-size: 20
+  # Eventos econômicos aleatórios (arquivos em plugins/yInvestimento/events/)
+  events:
+    # Se true, o plugin tenta disparar eventos no intervalo abaixo
+    enabled: true
+    # Intervalo (em ticks) para tentar disparar um evento (1200 = 60 segundos)
+    check-interval-ticks: 1200
+  # Controle de mundos em que o sistema pode ser usado
+  worlds:
+    # Se enabled: true, o sistema só funciona nos mundos listados
+    white-list:
+      enabled: false
+      list: []
+    # Mundos bloqueados mesmo com a whitelist desativada. [EX: world_nether]
+    black-list: []
+  # Controle de regiões do WorldGuard em que o sistema pode ser usado
+  regions:
+    # Se enabled: true, o jogador precisa estar em uma das regiões listadas
+    white-list:
+      enabled: false
+      list: []
+    # Regiões bloqueadas mesmo com a whitelist desativada
+    black-list: []
+  # Barra de progresso exibida na carteira (tempo restante do investimento)
+  progress-bar:
+    filled: '&a█'
+    empty: '&7█'
+    length: 20
+  # Caracteres do gráfico de mercado (up = alta, mid = estável, down = baixa)
+  graph:
+    up: '&a█'
+    mid: '&e█'
+    down: '&c█'
+    length: 20
+  # Sons reproduzidos nas ações do plugin (nomes do enum Sound do Bukkit)
+  sounds:
+    invest-success: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    invest-fail: 'ENTITY_VILLAGER_NO'
+    collect: 'ENTITY_PLAYER_LEVELUP'
+    withdraw: 'ENTITY_ITEM_BREAK'
+    event: 'ENTITY_LIGHTNING_THUNDER'
+    matured: 'ENTITY_FIREWORK_ROCKET_LAUNCH'
+
+# Sistema de formatos de status
+status:
+  active: '&aAtivo'
+  completed: '&eVencido'
+  withdrawn: '&cResgatado'
+  collected: '&2Coletado'
+
+# Classificação de risco (retorno e volatilidade proporcionais ao ativo)
+# Valores válidos nos arquivos de ativo: [LOW, MEDIUM, HIGH]
+risk:
+  low:
+    # Texto colorido exibido nos menus e mensagens
+    display: '&aBaixo'
+    # Multiplicador aplicado sobre o retorno base do ativo
+    return-multiplier: 0.7
+    # Multiplicador aplicado sobre a volatilidade do ativo
+    volatility-multiplier: 0.4
+  medium:
+    display: '&eMédio'
+    return-multiplier: 1.0
+    volatility-multiplier: 1.0
+  high:
+    display: '&cAlto'
+    return-multiplier: 1.6
+    volatility-multiplier: 1.8

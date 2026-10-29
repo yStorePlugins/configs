@@ -1,0 +1,73 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+
+# Providers disponíveis:
+#
+#   AtlasEconomiaSecundaria, AtlasMinas, AtlasMinasV2,
+#   JH_Shop, LegendaryEconomy, NextCash, PlayerPoints,
+#   StormEconomiaSecundaria, StormMinas, TGCash,
+#   yAlmas, yPoints, yRankup,
+#   Vault
+#
+
+# Economia padrão utilizada pelo plugin.
+# Deve corresponder a uma das chaves definidas em 'economies' abaixo.
+default: 'money'
+
+economies:
+  money:
+    # Coloque o nome do plugin
+    # Para money deixe Money
+    provider: 'Money'
+    # Formato inteiro
+    display: 'Dinheiro'
+    # Formato abreviado
+    abbreviated: 'coins'
+    # Símbolo exibido em lores e mensagens
+    symbol: '$'
+    # Permitir transações com o jogador offline
+    allow-offline: true
+    # Permissão para o jogador usar esta economia. Deixe vazio para liberar a todos.
+    permission: ''
+    # Ícone exibido ao comprador / jogador
+    item:
+      material: '209299a117bee88d3262f6ab98211fba344ecae39b47ec848129706dedc81e4f'
+      name: '&aDinheiro'
+      lore:
+        - ''
+        - ' &7Economia: &fVault/Money'
+        - ''
+    # Ícone exibido no menu de seleção de economia
+    item-settings:
+      material: '209299a117bee88d3262f6ab98211fba344ecae39b47ec848129706dedc81e4f'
+      name: '&aDinheiro'
+      lore:
+        - ''
+        - ' &7Tipo: &fMoney'
+        - ' &aClique para selecionar'
+        - ''
+  playerpoints:
+    provider: 'PlayerPoints'
+    display: 'PlayerPoints'
+    abbreviated: 'pp'
+    symbol: 'PP'
+    allow-offline: true
+    permission: ''
+    item:
+      material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+      name: '&aPlayerPoints'
+      lore:
+        - ''
+        - ' &7Economia: &fPlayerPoints'
+        - ''
+    item-settings:
+      material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+      name: '&aPlayerPoints'
+      lore:
+        - ''
+        - ' &7Tipo: &fPlayerPoints'
+        - ' &aClique para selecionar'
+        - ''

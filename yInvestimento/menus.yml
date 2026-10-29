@@ -1,0 +1,407 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Ativar o sistema de atualizar os menus automaticamente enquanto estiverem abertos
+menu-updater: true
+# Tempo para atualizar o menu automaticamente
+# em ticks -> 20 ticks = 1s | 100 ticks = 5s
+menu-updater-time: 100
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - '&7Clique para voltar ao menu anterior.'
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore:
+      - '&7Clique para ir à página anterior.'
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore:
+      - '&7Clique para ir à próxima página.'
+
+# ── Menu Principal (menu fixo) ─────────────────────────────────────────────
+main-menu:
+  name: '&8Bolsa de Valores'
+  size: 45
+  market-slot: 22
+  portfolio-slot: 23
+  history-slot: 24
+  report-slot: 25
+  market:
+    material: '209299a117bee88d3262f6ab98211fba344ecae39b47ec848129706dedc81e4f'
+    name: '&6Mercado'
+    lore:
+      - '&7Veja os ativos disponíveis'
+      - '&7para investir na bolsa.'
+      - ''
+      - ' &8▶ &fCDB, Ouro, Imobiliário e Fundos'
+      - ''
+      - '&eClique para acessar!'
+  portfolio:
+    material: 'a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067'
+    name: '&aCarteira'
+    lore:
+      - '&7Gerencie seus investimentos'
+      - '&7ativos e colete os vencidos.'
+      - ''
+      - '&aClique para acessar!'
+  history:
+    material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+    name: '&eHistórico'
+    lore:
+      - '&7Consulte aplicações encerradas'
+      - '&7e resgates anteriores.'
+      - ''
+      - '&eClique para acessar!'
+  report:
+    material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+    name: '&bRelatório'
+    lore:
+      - '&7Acompanhe o desempenho dos'
+      - '&7ativos e da sua carteira.'
+      - ''
+      - '&bClique para acessar!'
+  facing:
+    retorno:
+      slot: 10
+      material: 'cd91f51266eddc6207f12ae8d7a49c5db0415ada04dab92bb7686afdb17f4d4e'
+      name: '&aRetorno base'
+      lore:
+        - '&7É o percentual esperado ao vencer'
+        - '&7o investimento, definido no ativo.'
+        - ''
+        - ' &8▶ &fExemplo: &a5% &7no CDB'
+        - ' &8▶ &fO risco aumenta ou reduz esse valor'
+        - ' &8▶ &fO mercado aplica um multiplicador'
+        - ''
+        - '&7Valor final ≈ aplicado × (1 + retorno)'
+        - '&7× multiplicador do mercado.'
+    mercado:
+      slot: 11
+      material: 'cd91f51266eddc6207f12ae8d7a49c5db0415ada04dab92bb7686afdb17f4d4e'
+      name: '&6Mercado'
+      lore:
+        - '&7A bolsa oscila sozinha, como uma'
+        - '&7bolsa real. Cada ativo tem um'
+        - '&7multiplicador que sobe e desce.'
+        - ''
+        - ' &8▶ &f1.00x &7= valor estável'
+        - ' &8▶ &fAcima de 1.00x &7= alta'
+        - ' &8▶ &fAbaixo de 1.00x &7= baixa'
+        - ''
+        - '&7A volatilidade do ativo define'
+        - '&7o tamanho dessas oscilações.'
+    risco:
+      slot: 19
+      material: 'd01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f'
+      name: '&cRisco'
+      lore:
+        - '&7Classifica o ativo e ajusta o'
+        - '&7retorno e a volatilidade.'
+        - ''
+        - ' &8▶ &aBaixo &7— retorno menor, mais estável'
+        - ' &8▶ &eMédio &7— equilíbrio'
+        - ' &8▶ &cAlto &7— retorno maior, mais oscilação'
+        - ''
+        - '&7Ativos de alto risco podem'
+        - '&7render mais, mas também cair mais.'
+    taxas:
+      slot: 20
+      material: 'd01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f'
+      name: '&eTaxas'
+      lore:
+        - '&7Custos cobrados nas operações.'
+        - ''
+        - ' &8▶ &fEntrada &7— cobrada ao investir'
+        - ' &8▶ &fSaída &7— cobrada no resgate antecipado'
+        - ' &8▶ &fManutenção &7— cobrada periodicamente'
+        - ''
+        - '&7O total debitado no investimento'
+        - '&7é o valor aplicado + taxa de entrada.'
+    eventos:
+      slot: 28
+      material: 'cd91f51266eddc6207f12ae8d7a49c5db0415ada04dab92bb7686afdb17f4d4e'
+      name: '&6Eventos econômicos'
+      lore:
+        - '&7Ocorrências aleatórias que alteram'
+        - '&7o mercado por alguns minutos.'
+        - ''
+        - ' &8▶ &6Alta no Ouro &7— ouro sobe'
+        - ' &8▶ &cCrise &7— médio e alto risco caem'
+        - ' &8▶ &aBoom &7— todos os ativos sobem'
+        - ''
+        - '&7O multiplicador do evento é'
+        - '&7aplicado em cima do mercado.'
+    vencimento:
+      slot: 29
+      material: 'cd91f51266eddc6207f12ae8d7a49c5db0415ada04dab92bb7686afdb17f4d4e'
+      name: '&aVencimento e resgate'
+      lore:
+        - '&7Ao vencer, o investimento fica'
+        - '&7disponível para coleta na carteira.'
+        - ''
+        - ' &8▶ &fVencido &7— colete o retorno'
+        - ' &8▶ &fResgate antecipado &7— recebe o'
+        - ' &7valor atual menos a taxa de saída'
+        - ''
+        - '&7O valor atual acompanha o mercado'
+        - '&7enquanto a aplicação estiver ativa.'
+
+# ── Mercado de Ativos (paginado) ───────────────────────────────────────────
+asset-list:
+  name: '&8Mercado — Ativos'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  empty-slot: 22
+  empty:
+    material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    name: '&cNenhum ativo disponível'
+    lore:
+      - '&7Nenhum investimento configurado.'
+
+# ── Detalhe do Ativo (menu fixo) ───────────────────────────────────────────
+asset-detail:
+  name: '&8Ativo — {asset}'
+  size: 27
+  icon-slot: 13
+  invest-slot: 11
+  back-slot: 15
+  graph-slot: 4
+  invest:
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aInvestir'
+    lore:
+      - '&7Aplique seu saldo neste ativo'
+      - '&7e acompanhe o retorno no mercado.'
+      - ''
+      - ' &8▶ &fAtivo: &7{asset}'
+      - ''
+      - '&aInvista agora!'
+  graph:
+    material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+    name: '&bGráfico de mercado'
+    lore:
+      - '&7Oscilação recente deste ativo.'
+      - ''
+      - ' {graph}'
+      - ''
+      - ' &8▶ &fMercado: &7{multiplier}x'
+      - ' &8▶ &fEvento: &7{event}x'
+      - ''
+
+# ── Seleção de Valor (paginado) ────────────────────────────────────────────
+amount-select:
+  name: '&8Valor — {asset}'
+  size: 27
+  slots: [10, 11, 12, 13, 14, 15, 16]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 0
+  custom-slot: 22
+  preset-item:
+    material: '945f47feb4d75cb333914bfdb999a489c9d0e320d548f310419ad738d1e24b9'
+    name: '&6{amount}'
+    lore:
+      - '&7Clique para aplicar este valor.'
+      - ''
+      - ' &8▶ &fInvestir: &7{amount} {abbreviated}'
+      - ' &8▶ &fTaxa de entrada: &7{fee}'
+      - ' &8▶ &fTotal debitado: &7{total}'
+      - ''
+      - '&eClique para selecionar!'
+  custom-amount:
+    material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+    name: '&eValor personalizado'
+    lore:
+      - '&7Digite no chat o valor que'
+      - '&7deseja investir neste ativo.'
+      - ''
+      - '&eClique para informar!'
+
+# ── Seleção de Economia (paginado) ─────────────────────────────────────────
+economy-select:
+  name: '&8Selecionar Economia'
+  size: 27
+  slots: [10, 11, 12, 13, 14, 15, 16]
+  previous-slot: 18
+  next-slot: 26
+  back-slot: 0
+
+# ── Confirmação de Investimento (menu fixo) ────────────────────────────────
+confirm-invest:
+  name: '&8Confirmar Investimento'
+  size: 27
+  info-slot: 13
+  confirm-slot: 11
+  cancel-slot: 15
+  info:
+    material: '8381c529d52e03cd74c3bf38bb6ba3fde1337ae9bf50332faa889e0a28e8081f'
+    name: '&6{asset}'
+    lore:
+      - '&7Confira os dados da aplicação.'
+      - ''
+      - ' &8▶ &fValor: &7{amount}'
+      - ' &8▶ &fTaxa de entrada: &7{fee}'
+      - ' &8▶ &fTotal debitado: &7{total}'
+      - ' &8▶ &fRetorno estimado: &7{return}'
+      - ' &8▶ &fEconomia: &7{provider}'
+      - ''
+  confirm:
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aConfirmar'
+    lore:
+      - '&7Confirme para aplicar o valor.'
+      - ''
+      - ' &8▶ &fAtivo: &7{asset}'
+      - ' &8▶ &fValor: &7{amount}'
+      - ' &8▶ &fTaxa: &7{fee}'
+      - ' &8▶ &fTotal: &7{total}'
+      - ' &8▶ &fRetorno estimado: &7{return}'
+      - ''
+      - '&aClique para confirmar!'
+  cancel:
+    material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    name: '&cCancelar'
+    lore:
+      - '&7Clique para cancelar.'
+
+# ── Confirmação de Resgate (menu fixo) ─────────────────────────────────────
+confirm-withdraw:
+  name: '&8Confirmar Resgate'
+  size: 27
+  info-slot: 13
+  confirm-slot: 11
+  cancel-slot: 15
+  info:
+    material: '8381c529d52e03cd74c3bf38bb6ba3fde1337ae9bf50332faa889e0a28e8081f'
+    name: '&6{asset}'
+    lore:
+      - '&7Confira o resgate antecipado.'
+      - ''
+      - ' &8▶ &fValor atual: &7{value}'
+      - ' &8▶ &fTaxa de saída: &7{fee}'
+      - ' &8▶ &fVocê recebe: &7{payout}'
+      - ''
+  confirm:
+    material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+    name: '&aConfirmar resgate'
+    lore:
+      - '&7O resgate antecipado aplica taxa.'
+      - ''
+      - ' &8▶ &fAtivo: &7{asset}'
+      - ' &8▶ &fValor atual: &7{value}'
+      - ' &8▶ &fTaxa de saída: &7{fee}'
+      - ' &8▶ &fVocê recebe: &7{payout}'
+      - ''
+      - '&aClique para confirmar!'
+  cancel:
+    material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    name: '&cCancelar'
+    lore:
+      - '&7Clique para cancelar.'
+
+# ── Carteira (paginado) ────────────────────────────────────────────────────
+portfolio:
+  name: '&8Carteira — Investimentos'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  empty-slot: 22
+  item:
+    material: '209299a117bee88d3262f6ab98211fba344ecae39b47ec848129706dedc81e4f'
+    name: '&6{asset} &8#{id}'
+    lore:
+      - '&7Gerencie esta aplicação.'
+      - ''
+      - ' &8▶ &fStatus: &7{status}'
+      - ' &8▶ &fValor aplicado: &7{amount}'
+      - ' &8▶ &fValor atual: &7{value}'
+      - ' &8▶ &fEconomia: &7{provider}'
+      - ' &8▶ &fRestante: &7{remaining}'
+      - ''
+      - ' {bar}'
+      - ''
+      - '&eClique para gerenciar!'
+  empty:
+    material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    name: '&cNenhum investimento ativo'
+    lore:
+      - '&7Aplique no mercado para começar.'
+
+# ── Histórico (paginado) ───────────────────────────────────────────────────
+history:
+  name: '&8Histórico'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  empty-slot: 22
+  item:
+    material: '61a8e6d27b96c0aa4df5b8347260eb051c56944c97d837f22655d8ecbc449137'
+    name: '&e{asset} &8#{id}'
+    lore:
+      - '&7Resumo desta aplicação encerrada.'
+      - ''
+      - ' &8▶ &fStatus: &7{status}'
+      - ' &8▶ &fValor aplicado: &7{amount}'
+      - ' &8▶ &fValor final: &7{payout}'
+      - ' &8▶ &fLucro: &7{profit}'
+      - ' &8▶ &fEconomia: &7{provider}'
+      - ''
+  empty:
+    material: '5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+    name: '&cNenhum histórico'
+    lore:
+      - '&7Você ainda não encerrou aplicações.'
+
+# ── Relatório de Desempenho (paginado) ─────────────────────────────────────
+report:
+  name: '&8Relatório de Desempenho'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 49
+  player-slot: 45
+  player-info:
+    material: '{player}'
+    name: '&6Carteira de {player}'
+    lore:
+      - '&7Resumo da sua carteira.'
+      - ''
+      - ' &8▶ &fInvestido: &7{invested}'
+      - ' &8▶ &fRetornado: &7{returned}'
+      - ' &8▶ &fLucro: &a{profit}'
+      - ' &8▶ &fPrejuízo: &c{lost}'
+      - ' &8▶ &fAplicações: &7{count}'
+      - ' &8▶ &fAtivos agora: &7{active}'
+      - ''
+  item:
+    material: '351137e11443a8fbb05fcd3ccc1af9bd2303918f35448185e3ed96ef184da'
+    name: '&6{asset}'
+    lore:
+      - '&7Desempenho deste ativo no mercado.'
+      - ''
+      - ' &8▶ &fRisco: &7{risk}'
+      - ' &8▶ &fMercado: &7{multiplier}x'
+      - ' &8▶ &fEvento: &7{event}x'
+      - ''
+      - ' {graph}'
+      - ''
