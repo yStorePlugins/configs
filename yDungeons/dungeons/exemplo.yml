@@ -135,6 +135,10 @@ rounds:
       mythic-mob: ''
       spawn-broadcast: ''
       death-broadcast: ''
+      # Se true, o boss so nasce depois que todos os mobs do round forem mortos.
+      spawn-after-mobs: false
+      # Mobs que nascem junto com o boss (defensores).
+      defenders: {}
       potion-effect:
         chance: 0.0
         type: ''
@@ -231,6 +235,8 @@ rounds:
       mythic-mob: ''
       spawn-broadcast: ''
       death-broadcast: ''
+      spawn-after-mobs: false
+      defenders: {}
       potion-effect:
         chance: 0.0
         type: ''
@@ -255,6 +261,23 @@ rounds:
       mythic-mob: ''
       spawn-broadcast: '&4&lO Senhor das Trevas acordou!'
       death-broadcast: '&aO Senhor das Trevas foi derrotado!'
+      spawn-after-mobs: true
+      defenders:
+        guarda:
+          entity-type: 'WITHER_SKELETON'
+          custom-name: '&8Guarda do Senhor'
+          amount: 2
+          health: 40.0
+          damage: 6.0
+          speed: 0.3
+          rewards:
+            money: 3
+          sword-xp-on-kill: 2
+          potion-effect:
+            chance: 0.0
+            type: ''
+            duration: 60
+            amplifier: 0
       potion-effect:
         chance: 0.0
         type: ''

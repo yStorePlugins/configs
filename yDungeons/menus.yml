@@ -1848,6 +1848,7 @@ dungeon-round-editor:
   # Lista de mobs do round
   mob-list:
     name: '&8Mobs do Round &f{round}'
+    name-defenders: '&8Defensores do Boss &8- Round &f{round}'
     size: 54
     slots: [ 10,11,12,13,14,15,16, 19,20,21,22,23,24,25, 28,29,30,31,32,33,34, 37,38,39,40,41,42,43 ]
     mob-item:
@@ -2356,6 +2357,20 @@ dungeon-round-editor:
           - ''
           - ' &eClique para editar.'
           - ''
+      spawn-after-mobs:
+        slot: 28
+        material: 'LEVER:0'
+        name: '&eSpawn apos mobs'
+        lore:
+          - ''
+          - ' &7Atual: &f{value}'
+          - ''
+          - ' &7Se ligado, o boss so nasce'
+          - ' &7depois que todos os mobs'
+          - ' &7do round forem mortos.'
+          - ''
+          - ' &eClique para alternar.'
+          - ''
     skills-item:
       slot: 31
       material: 'BOOK_AND_QUILL:0'
@@ -2365,6 +2380,18 @@ dungeon-round-editor:
         - ' &7Skills configuradas: &f{count}'
         - ''
         - ' &eClique para abrir submenu de skills.'
+        - ''
+    defenders-item:
+      slot: 32
+      material: 'IRON_CHESTPLATE:0'
+      name: '&6Defensores do Boss'
+      lore:
+        - ''
+        - ' &7Defensores configurados: &f{count}'
+        - ''
+        - ' &7Nascem junto com o boss.'
+        - ''
+        - ' &eClique para gerenciar.'
         - ''
     back-item:
       slot: 48
@@ -2392,22 +2419,14 @@ dungeon-round-editor:
         material: 'STAINED_GLASS_PANE:7'
         name: ' '
       g5:
-        slot: 28
-        material: 'STAINED_GLASS_PANE:7'
-        name: ' '
-      g6:
         slot: 29
         material: 'STAINED_GLASS_PANE:7'
         name: ' '
-      g7:
+      g6:
         slot: 30
         material: 'STAINED_GLASS_PANE:7'
         name: ' '
-      g8:
-        slot: 32
-        material: 'STAINED_GLASS_PANE:7'
-        name: ' '
-      g9:
+      g7:
         slot: 33
         material: 'STAINED_GLASS_PANE:7'
         name: ' '
