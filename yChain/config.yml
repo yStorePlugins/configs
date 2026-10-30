@@ -39,6 +39,14 @@ Opcoes:
   Permitir dropar itens: false
   # Permitir que jogadores movam itens no próprio inventário dentro do chain
   Permitir mover itens: false
+  # Tempo de proteção ao entrar/renascer na arena (em segundos)
+  # Durante este tempo o jogador não causa nem recebe dano
+  # Deixe 0 para desativar
+  Protecao spawn: 3
+  # Comandos executados automaticamente ao entrar na arena (pelo console)
+  # Placeholders: {player} {arena}
+  # Deixe Comandos ao entrar: [] para não usar
+  Comandos ao entrar: []
   # Comandos que poderão ser usados na arena
   Command whitelist:
     - '/g'
@@ -84,7 +92,12 @@ Mensagens:
   Nao setado: '&cO local &7{local} &cda arena chain não está setado.'
   Setado kit: '&aO kit da arena chain foi setado com sucesso. &7(Todos os itens do seu inventário foram reconhecidos)'
   Recebeu kit: '&aVocê recebeu o kit da arena chain.'
-  Entrou: '&aVocê entrou na arena chain.'
+  # Mensagem enviada ao entrar na arena. Pode ser uma linha ou uma lista.
+  # Placeholders: {player} {arena} {display} {tempo}
+  Entrou:
+    - '&aVocê entrou na arena chain.'
+  # Mensagem enviada quando a proteção de spawn acaba. Deixe '' para não usar.
+  Protecao acabou: '&cSua proteção acabou. Você já pode lutar!'
   Saiu: '&aVocê saiu da arena chain.'
   Ja esta: '&cVocê já está na arena chain.'
   Nao esta: '&cVocê não está na arena chain.'
