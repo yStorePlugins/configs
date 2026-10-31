@@ -1,0 +1,88 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio.'
+  help: |
+
+    &a/{cmd} &8- &7Abre a ajuda.
+    &a/{cmd} verconteudo <crate> &8- &7Abre o menu da crate.
+
+  admin-help: |
+
+    &a/{cmd} &8- &7Abre a ajuda.
+    &a/{cmd} verconteudo <crate> &8- &7Abre o menu da crate.
+    &a/{cmd} givekey <jogador> <crate> <qtd> &8- &7Dá chaves virtuais.
+    &a/{cmd} keyall <crate> <qtd> [item/direto] &8- &7Dá chaves para todos online.
+    &a/{cmd} giveitem <jogador> <crate> <qtd> &8- &7Dá o item físico da chave.
+    &a/{cmd} givecrate <jogador> <crate> <qtd> &8- &7Dá o item para colocar a crate.
+    &a/{cmd} set <crate> &8- &7Define a crate na sua posição.
+    &a/{cmd} remove &8- &7Remove a crate que você está olhando.
+    &a/{cmd} edit <crate> &8- &7Edita as recompensas in-game.
+    &a/{cmd} restock <crate|all> [qtd] &8- &7Reabastece o estoque de chaves.
+    &a/{cmd} reload &8- &7Recarrega as configurações.
+
+  crate-found: |
+
+    &cEsta crate não foi encontrada.
+    &7Disponíveis: {list}
+
+  crate-give: '&aVocê deu &7{amount}x {crate} &apara o jogador &7{player}&a.'
+  crate-received: '&aVocê recebeu &7{amount}x {crate}&a.'
+  crate-malformed: '&cEsta crate não existe ou está mal configurada.'
+  crate-set: '&aCrate &7{crate} &asetada.'
+  crate-removed: '&aCrate &7{crate} &aremovida.'
+  crate-not-looking: '&cOlhe para uma crate para removê-la.'
+  crate-no-permission: '&cVocê não tem permissão para abrir a crate &7{crate}&c.'
+  key-give: '&aVocê deu &7{amount}x &achave(s) da crate &7{crate} &apara o jogador &7{player}&a.'
+  key-received: '&aVocê recebeu &7{amount}x &achave(s) da crate &7{crate}&a.'
+  key-give-all: '&aVocê deu &7{amount}x &achave(s) da crate &7{crate}&a para &7({players}) &ajogadores online.'
+  key-received-all: '&aTodos os jogadores receberam &7{amount}x &achave(s) da crate &7{crate}&a.'
+  key-activated: '&aVocê ativou &7{amount}x &achave(s) da crate &7{crate}&a.'
+  key-holding: '&cVocê precisa de uma chave válida para ativar.'
+  no-keys: '&cVocê não possui chaves ativas para a crate &7{crate}&c.'
+  collected: '&aVocê coletou &7{reward} &ada crate &7{crate}&a.'
+  bought: '&aVocê comprou &7{amount}x &achave(s) da crate &7{crate} &apor &7{price} {economy}&a.'
+  no-balance: |
+
+    &cVocê não tem saldo suficiente!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{required}
+
+  economy-permission: '&cVocê não tem permissão para usar a economia {provider}.'
+  digit-chance: |
+
+    &aDigite a chance para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  digit-command: |
+
+    &aDigite o comando para qual deseja alterar.
+    &7para cancelar digite &ncancelar&7.
+
+  change-chance: '&aVocê alterou a chance para {chance}.'
+  change-command: '&aVocê alterou o comando para {command}.'
+  invalid-chance: '&cA chance não pode ser maior que 100 nem menor que 0.'
+  item-no: '&cO item não pode ser nulo.'
+  sold-out: '&cA crate &7{crate} &cestá esgotada.'
+  stock-not-enough: '&cEstoque insuficiente. Restam &7{stock} &cchave(s) na crate &7{crate}&c.'
+  restocked: '&aEstoque da crate &7{crate} &areabastecido: &f{stock}&7/&f{max}&a.'
+  restock-all: '&aEstoque reabastecido em &7{crates} &acrate(s).'
+  stock-disabled: '&cA crate &7{crate} &cnão usa estoque limitado.'
+  icon-set: '&aÍcone do menu alterado. O item dado ao jogador continua o mesmo.'
+  icon-cleared: '&aÍcone resetado. O menu volta a mostrar o item da recompensa.'

@@ -1,0 +1,54 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+#
+# Providers disponíveis:
+#
+#   AtlasEconomiaSecundaria, AtlasMinas, AtlasMinasV2,
+#   JH_Shop, LegendaryEconomy, NextCash, PlayerPoints,
+#   StormEconomiaSecundaria, StormMinas, TGCash,
+#   yAlmas, yPoints, yRankup,
+#   Vault / Money
+#
+
+# Economia padrão utilizada pelo plugin.
+# Deve corresponder a uma das chaves definidas em 'economies' abaixo.
+default: 'money'
+
+economies:
+  money:
+    # String usada no PointsManager (é convertida para minúsculo internamente)
+    provider: 'Money'
+    # Nome exibido nas mensagens e no menu
+    display: 'Coins'
+    # Forma curta usada no lore / preços
+    abbreviated: 'coins'
+    symbol: ''
+    # Permitir transações com jogador offline
+    allow-offline: true
+    # Permissão para usar esta economia. Vazio = todos.
+    permission: ''
+    # Ícone no seletor de economia do menu da crate
+    item-settings:
+      material: GOLD_INGOT
+      name: '&aCoins'
+      lore:
+        - ''
+        - ' &7Saldo: &f{balance}'
+        - ''
+  playerpoints:
+    provider: 'PlayerPoints'
+    display: 'PlayerPoints'
+    abbreviated: 'pp'
+    symbol: ''
+    allow-offline: true
+    permission: ''
+    item-settings:
+      material: EMERALD
+      name: '&aPlayerPoints'
+      lore:
+        - ''
+        - ' &7Saldo: &f{balance}'
+        - ''

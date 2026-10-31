@@ -1,0 +1,151 @@
+# Nome que aparecerá nas mensagens e hologramas
+display: '&6Normal'
+
+# Crates do mesmo grupo aparecem juntas como abas no menu ao interagir
+group: 'basicas'
+
+# Verificar se o inventário está lotado antes de coletar
+verify-inv: true
+
+# Permissão para abrir esta crate. Deixe vazio para não usar.
+permission: ''
+
+# Item admin para colocar a crate no chão
+item:
+  material: CHEST
+  glow: true
+  name: '&eCaixa &6Normal&e.'
+  lore:
+    - '&7Coloque-a no chão para gerar a crate.'
+
+# Sistema de chaves
+key:
+  # Item físico da chave (clique direito para ativar e enviar ao menu)
+  item:
+    material: TRIPWIRE_HOOK
+    glow: true
+    name: '&aChave Normal'
+    lore:
+      - '&7Use esta chave para'
+      - '&7abrir a crate &eNormal&7.'
+      - ''
+      - '&aClique para ativar.'
+  # Preço unitário por economia (chaves de economies.yml)
+  prices:
+    money: 50.0
+    playerpoints: 10.0
+  # Pacotes de compra no menu: quantia: percentual de desconto
+  buy:
+    1: 0
+    5: 0
+    10: 10
+    25: 25
+
+# Ícone da aba desta crate no menu de escolha
+icon:
+  material: d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+  name: '&6Caixa Normal'
+  lore: []
+
+# Holograma que irá aparecer em cima da crate
+hologram:
+  enabled: true
+  # Altura em relação à crate
+  off-set: 2.5
+  # X em relação à crate
+  off-set-x: 0.5
+  # Z em relação à crate
+  off-set-z: 0.5
+  lines:
+    - '&eCrate &6Normal&e.'
+    - '&7Escolha a recompensa que quiser.'
+    - '&7Estoque: &f{stock}&7/&f{max} &8| {status}'
+    - ''
+    - '&7Clique para abrir o menu.'
+    # Use [item]MATERIAL para colocar um item no holograma
+    # - '[item]DIAMOND_BLOCK'
+  # Linhas usadas quando o estoque chega a 0 (stock.enabled: true)
+  sold-out-lines:
+    - '&eCrate &6Normal&e.'
+    - '&c&lESGOTADO'
+    - '&7Volte mais tarde.'
+  # Texto do placeholder {status}
+  status-available: '&aDisponível'
+  status-sold-out: '&cEsgotado'
+  # Visual do holograma (FancyHolograms / backend que suportar)
+  # Fundo transparente. Se false, usa background-color + background-opacity
+  transparent-background: true
+  background-color: '#000000'
+  # 0 a 255
+  background-opacity: 200
+  text-shadow: false
+  see-through: false
+  # Opacidade do texto (0 a 255)
+  text-opacity: 255
+  # Distância máxima de visão (blocos)
+  visibility-distance: 70
+  line-spacing: 0.0
+  # Tamanho do holograma
+  scale: 1.0
+  # Escala por eixo (se omitido, usa 'scale')
+  # scale-x: 1.0
+  # scale-y: 1.0
+  # scale-z: 1.0
+  # CENTER, FIXED, VERTICAL, HORIZONTAL
+  billboard: CENTER
+
+# Estoque limitado de chaves desta crate (compra no menu consome)
+stock:
+  enabled: false
+  # Quantidade máxima de chaves
+  max: 100
+  # Estoque atual (alterado em runtime — não edite)
+  current: 100
+  restock:
+    # Reabastecer automaticamente no intervalo
+    enabled: false
+    # Intervalo em segundos
+    interval-seconds: 3600
+    # Quantidade adicionada a cada restock (0 = enche até o max)
+    amount: 0
+  # Timestamp do último restock (alterado em runtime)
+  last-restock: 0
+
+# Tipo da entidade da crate no mundo
+# Valores: BLOCK, NPC, ARMORSTAND, ROTATING_HEAD, GIANT, MYTHICMOBS, DISPLAY_ENTITY
+entity:
+  type: BLOCK
+  # Skin do NPC (nick ou TEXTURE:SIGNATURE)
+  skin: 'Steve'
+  # NPC olhar para o jogador
+  look-close: true
+  # Mostrar nametag do NPC
+  nametag: false
+  # Item no capacete do ArmorStand / mão do Giant / ItemDisplay
+  item: 'CHEST'
+  # Escala do ItemDisplay (1.19.4+)
+  scale: 1.0
+  # Se true, o ItemDisplay gira acompanhando o jogador (billboard). Se false, fica fixo na direção da crate.
+  follow-player: false
+  # Nome interno do MythicMobs (se type = MYTHICMOBS)
+  mythicmob: ''
+  # Velocidade da rotação (ROTATING_HEAD)
+  speed: 4
+  # Altura do ArmorStand / cabeça
+  height: -1.2
+
+# Sistema de bloco de vidro (quando type = BLOCK)
+glass:
+  # A crate vai gerar um vidro com uma cabeça dentro?
+  enabled: false
+  # Material do vidro
+  material: 'STAINED_GLASS'
+  # Material da cabeça dentro do vidro
+  head: 'CHEST'
+  # Data da cor do vidro
+  data: 4
+  # Ajuste da cabeça dentro do vidro
+  off-set: -1.2
+
+# Locais das caixas. Não altere nada aqui.
+locations: []
