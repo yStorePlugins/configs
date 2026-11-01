@@ -14,6 +14,9 @@ ranks:
       price1:
         provider: 'money'
         price: 10000.0
+    # Se false, as economias NÃO serão cobradas ao upar.
+    # O saldo permanece e a progressão continua a partir do valor anterior.
+    consume: true
     # Ações de rankup
     rankup:
       # Comandos que serão executados ao dar rankup
@@ -46,6 +49,7 @@ ranks:
       price2:
         provider: 'yrankup-head-pig'
         price: 100.0
+    consume: true
     rankup:
       command: [ 'give {player} stone 2' ]
       messages:
@@ -70,6 +74,7 @@ ranks:
       price2:
         provider: 'yrankup-head-pig'
         price: 200.0
+    consume: true
     rankup:
       command: [ 'give {player} stone 3' ]
       messages:
