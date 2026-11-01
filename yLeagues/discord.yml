@@ -29,3 +29,75 @@ embeds:
         inline: false
         header: 'Ação'
         content: '```{points}```'
+  clan_up:
+    title: ':arrow_up: Subiu no ranking!'
+    thumbnail: ''
+    color: '#57F287'
+    content: ':arrow_up: O clã **{clan}** ultrapassou o clã **{passed_clan}** e agora ocupa a posição #{position}!'
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      clan:
+        inline: true
+        header: 'Clã'
+        content: '```{clan}```'
+      position:
+        inline: true
+        header: 'Posição'
+        content: '```#{position}```'
+  clan_down:
+    title: ':arrow_down: Desceu no ranking!'
+    thumbnail: ''
+    color: '#ED4245'
+    content: ':arrow_down: O clã **{clan}** perdeu posição e agora ocupa #{position}! (antes #{old_position})'
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      clan:
+        inline: true
+        header: 'Clã'
+        content: '```{clan}```'
+      position:
+        inline: true
+        header: 'Posição'
+        content: '```#{position}```'
+  clan_top3:
+    title: ':star2: Entrou no Top 3!'
+    thumbnail: ''
+    color: '#FEE75C'
+    content: ':star2: O clã **{clan}** entrou no Top 3 e agora ocupa a posição #{position}!'
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      clan:
+        inline: true
+        header: 'Clã'
+        content: '```{clan}```'
+      position:
+        inline: true
+        header: 'Posição'
+        content: '```#{position}```'
+  milestone:
+    title: ':trophy: Marco de pontuação!'
+    thumbnail: ''
+    color: '#FEE75C'
+    content: ':trophy: O clã **{clan}** alcançou {points} pontos na Liga!'
+    image: ''
+    footer:
+      text: 'yStore © Todos os direitos reservados'
+      image: ''
+    fields:
+      clan:
+        inline: true
+        header: 'Clã'
+        content: '```{clan}```'
+      points:
+        inline: true
+        header: 'Pontos'
+        content: '```{points}```'

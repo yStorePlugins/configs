@@ -148,3 +148,60 @@ medals:
   enemy-of-life: '&c[X]'
   # Maior número de kills ao final da temporada
   hard-to-kill: '&a[V]'
+
+#     _____                _
+#    | ____|_   _____ _ __ | |_ ___
+#    |  _| \ \ / / _ \ '_ \| __/ __|
+#    | |___ \ V /  __/ | | | |_\__ \
+#    |_____| \_/ \___|_| |_|\__|___/
+#
+# Monitoramento do Top 10 e marcos de pontuação.
+# A URL do webhook é a mesma de discord.yml (options.url).
+# Placeholders: {clan} {clan_tag} {clan_name} {clan_colortag} {leader}
+#               {position} {old_position} {passed_clan} {passed_clan_name}
+#               {points} {league} {league_key}
+events:
+  enabled: true
+  ranking:
+    enabled: true
+    top: 10
+  milestones:
+    enabled: true
+    values:
+      - 100
+      - 500
+      - 1000
+  messages:
+    clan_up: '&a▲ O clã &f{clan} &aultrapassou o clã &f{passed_clan} &ae agora ocupa a posição #{position}!'
+    clan_down: '&c▼ O clã &f{clan} &cperdeu posição e agora ocupa #{position}&c! (antes #{old_position})'
+    clan_top3: '&6★ O clã &f{clan} &6entrou no Top 3 e agora ocupa a posição #{position}!'
+    milestone: '&6🏆 O clã &f{clan} &6alcançou {points} pontos na Liga!'
+    # Mensagem específica por marco (opcional). Ex: '1000': '&6&l🏆 ...'
+    milestones: {}
+  webhook:
+    # Deixe embed vazio para usar a message. Ou informe o nome da embed em discord.yml.
+    clan_up:
+      enabled: true
+      message: ':arrow_up: O clã **{clan}** ultrapassou o clã **{passed_clan}** e agora ocupa a posição #{position}!'
+      embed: ''
+    clan_down:
+      enabled: true
+      message: ':arrow_down: O clã **{clan}** perdeu posição e agora ocupa #{position}! (antes #{old_position})'
+      embed: ''
+    clan_top3:
+      enabled: true
+      message: ':star2: O clã **{clan}** entrou no Top 3 e agora ocupa a posição #{position}!'
+      embed: ''
+    milestone:
+      enabled: true
+      message: ':trophy: O clã **{clan}** alcançou {points} pontos na Liga!'
+      embed: ''
+  commands:
+    clan_up: []
+    clan_down: []
+    clan_top3: []
+    milestone: []
+    milestones:
+      '100': []
+      '500': []
+      '1000': []
