@@ -482,6 +482,9 @@ jump-pad:
   sound: 'FIREWORK_LAUNCH'
   # Mundos que não irá funcionar
   world-blacklist: []
+  # Regions (WorldGuard) onde o jump pad irá funcionar
+  # Se vazio, funciona em qualquer região
+  region-whitelist: []
 
 # Sistema de custos de reparação
 repair-costs:
