@@ -1,0 +1,50 @@
+# Comandos desbloqueados por objetivos.
+# O progresso avança junto com as missões (não é separado por missão).
+
+enabled: false
+
+# Permissão para ignorar os requisitos
+bypass-permission: 'ymissoes.commands.bypass'
+
+messages:
+  # {command} {goals}
+  locked: |
+    &eComplete essas tarefas para usar o comando &f/{command}&e:
+    {goals}
+  # {name} {actual} {total}
+  goal: |
+    &7- {name}
+    &7  Progresso: &f{actual}&7/&c{total}
+  unlocked: '&aVocê desbloqueou o comando &f/{command}&a!'
+
+commands:
+  # Identificador interno
+  1v1:
+    enabled: false
+    # Comando e aliases: "comando|alias"
+    command: '1v1'
+    # Permissão que libera o comando (opcional)
+    permission: ''
+    # Comandos executados no console ao desbloquear
+    unlock-commands: []
+    goals:
+      break_blocks:
+        name: 'Quebrar blocos'
+        # disponível em: goals.txt
+        goal-type: BREAK_BLOCKS
+        # ALL, ALL_BLOCKS, ALL_ENTITIES ou material/entidade
+        type: ALL_BLOCKS
+        amount: 500
+      kill_mobs:
+        name: 'Matar mobs'
+        goal-type: KILL_MOBS
+        type: ALL_ENTITIES
+        amount: 100
+      playtime:
+        name: 'Horas Jogadas'
+        goal-type: YTEMPOONLINE
+        type: ALL
+        # amount em segundos (14400 = 4 horas)
+        amount: 14400
+        # hours = exibe em horas (2.66 horas/4 horas)
+        format: hours
