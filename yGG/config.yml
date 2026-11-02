@@ -1,0 +1,69 @@
+#          ____  ____
+#  _   _ / ___|/ ___|
+# | | | | |  _| |  _
+# | |_| | |_| | |_| |
+#  \__, |\____|\____|
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Valor da meta para liberar a onda de GG
+  goal: 500.0
+  # Duração da onda de GG em segundos
+  wave-duration-seconds: 10
+  # Quantidade mínima de letras (GG, GGG, GO, GOOO...)
+  min-letters: 2
+  # A comemoração vai ter um texto bold?
+  message-bold: true
+  # A comemoração vai ter um texto hex?
+  message-hex: true
+  # Formato da comemoração
+  message-format: '&f%vault_prefix% &7{player}: &r{message}'
+  # Comandos executados como console ao recompensar o jogador ({player})
+  rewards:
+    - 'give {player} diamond 1'
+  sounds:
+    wave-start: 'ENTITY_PLAYER_LEVELUP'
+    wave-end: 'ENTITY_FIREWORK_ROCKET_LAUNCH'
+    reward: 'ENTITY_EXPERIENCE_ORB_PICKUP'

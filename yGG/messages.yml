@@ -1,0 +1,66 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &a/{cmd} status &8- &7Mostra o progresso da meta.
+    &r
+  admin-help: |
+
+    &a/{cmd} status &8- &7Mostra o progresso da meta.
+    &a/{cmd} addvalor <valor> &8- &7Adiciona valor à meta.
+    &a/{cmd} setvalor <valor> &8- &7Define o valor atual da meta.
+    &a/{cmd} remvalor <valor> &8- &7Remove valor da meta.
+    &a/{cmd} reload &8- &7Recarrega as configurações.
+    &r
+  status: |
+
+    &6&lStatus da meta GG
+
+    &7Valor atual: &f{current}
+    &7Meta: &f{goal}
+    &7Faltando: &f{remaining}
+    &7Onda: {wave}
+
+  wave-active: '&aAtiva'
+  wave-inactive: '&cInativa'
+  value-added: |
+
+    &aValor adicionado com sucesso!
+
+    &7Adicionado: &f{amount}
+    &7Atual: &f{current}&7/&f{goal}
+    &7Faltando: &f{remaining}
+
+  value-set: |
+
+    &aValor definido com sucesso!
+
+    &7Atual: &f{current}&7/&f{goal}
+    &7Faltando: &f{remaining}
+
+  value-removed: |
+
+    &aValor removido com sucesso!
+
+    &7Removido: &f{amount}
+    &7Atual: &f{current}&7/&f{goal}
+    &7Faltando: &f{remaining}
+
+  wave-start: '&a&lONDA DE GG INICIADA! &7Digite &aGG &7no chat para ganhar recompensas!'
+  wave-end: '&a&lONDA DE GG FINALIZADA!'
+  reward: '&aVocê foi recompensado por participar da onda de GG!'
