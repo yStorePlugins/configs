@@ -112,7 +112,11 @@ xp:
   multiplier: 1.4
 
 xp-blacklist:
+  # Mundos inteiros sem XP. Só bloqueia o mundo TODO se regions estiver vazio.
+  # Com worlds + regions: bloqueia só as regions listadas nesses mundos.
   worlds: []
+  # IDs das regions do WorldGuard. Funciona sozinho (qualquer mundo).
+  # Não precisa preencher worlds para as regions funcionarem.
   regions: []
   # IDs das claims/plots onde o XP não será dado
   claims: []
@@ -131,7 +135,9 @@ xp-earn:
       - 'POTATOES:10'
       - 'BEETROOTS:10'
       - 'NETHER_WART:12'
+      - 'NETHER_WARTS:12'
       - 'MELON:8'
+      - 'MELON_BLOCK:8'
       - 'PUMPKIN:8'
       - 'SUGAR_CANE:6'
       - 'CACTUS:6'
@@ -142,6 +148,11 @@ xp-earn:
       - 'SEA_PICKLE:6'
       - 'BROWN_MUSHROOM:8'
       - 'RED_MUSHROOM:8'
+      - 'BROWN_MUSHROOM_BLOCK:8'
+      - 'RED_MUSHROOM_BLOCK:8'
+      - 'MUSHROOM_STEM:8'
+      - 'HUGE_MUSHROOM_1:8'
+      - 'HUGE_MUSHROOM_2:8'
       - 'CRIMSON_FUNGUS:10'
       - 'WARPED_FUNGUS:10'
       - 'CHORUS_FLOWER:15'

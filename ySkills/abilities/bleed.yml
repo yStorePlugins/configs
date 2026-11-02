@@ -16,6 +16,10 @@ effect-config:
   duration-ticks: 60
   damage-per-tick: 0.5
   tick-interval: 20
+  # Se o sangramento desgasta a armadura (false = nao usa a formula vanilla de ~dano/4)
+  damage-armor: false
+  # Durabilidade removida de cada peca por tick de sangramento
+  armor-durability-damage: 0
 
 tools:
   - 'WOODEN_SWORD'

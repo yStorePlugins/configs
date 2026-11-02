@@ -160,7 +160,11 @@ xp:
   multiplier: 1.4
 
 xp-blacklist:
+  # Mundos inteiros sem XP. Só bloqueia o mundo TODO se regions estiver vazio.
+  # Com worlds + regions: bloqueia só as regions listadas nesses mundos.
   worlds: []
+  # IDs das regions do WorldGuard. Funciona sozinho (qualquer mundo).
+  # Não precisa preencher worlds para as regions funcionarem.
   regions: []
   # IDs das claims/plots onde o XP não será dado
   claims: []

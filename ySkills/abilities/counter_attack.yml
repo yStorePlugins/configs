@@ -15,6 +15,9 @@ effect: 'COUNTER_ATTACK'
 effect-config:
   reflect-percent-base: 25
   reflect-percent-per-level: 5
+  # Se o dano refletido desgasta a armadura do atacante
+  damage-armor: false
+  armor-durability-damage: 0
 
 tools:
   - 'WOODEN_SWORD'

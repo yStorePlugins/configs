@@ -74,6 +74,11 @@ general:
   formatter-bonus-has: '&a+{bonus}% por ser {display}&a.'
   # Formatação das mensagens de bônus quando não tiver bônus
   formatter-bonus-no-has: ''
+  # Se o dano extra das habilidades (sangramento, área, bônus de hit) desgasta a armadura
+  # false = o dano extra NÃO usa a fórmula vanilla (que tira ~dano/4 por peça, ex: 20)
+  ability-extra-damage-affects-armor: false
+  # Durabilidade extra removida de cada peça quando a habilidade causar dano (0 = nenhum)
+  ability-armor-durability-damage: 1
 
 # Você pode criar quantos bônus quiser
 # Será dado o bônus ao ganhar XP.

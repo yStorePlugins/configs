@@ -16,6 +16,10 @@ effect-config:
   aoe-radius: 3
   bleed-chance: 50
   bleed-duration: 40
+  # Se o dano em area desgasta a armadura
+  damage-armor: false
+  # Durabilidade removida de cada peca no dano em area
+  armor-durability-damage: 1
 
 tools:
   - 'WOODEN_SWORD'

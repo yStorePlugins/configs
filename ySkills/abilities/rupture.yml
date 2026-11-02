@@ -17,6 +17,9 @@ effect-config:
   bleed-damage-bonus-per-level: 10
   # Chance de aplicar bleed extra
   extra-bleed-chance-per-level: 2
+  # Se o bonus de dano desgasta a armadura alem do hit original
+  damage-armor: false
+  armor-durability-damage: 1
 
 messages:
   activate: '&4Rupture! O sangramento causa mais dano!'
