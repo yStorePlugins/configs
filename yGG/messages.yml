@@ -25,6 +25,7 @@ chat:
     &a/{cmd} addvalor <valor> &8- &7Adiciona valor à meta.
     &a/{cmd} setvalor <valor> &8- &7Define o valor atual da meta.
     &a/{cmd} remvalor <valor> &8- &7Remove valor da meta.
+    &a/{cmd} iniciar &8- &7Inicia uma onda de GG sem alterar a meta.
     &a/{cmd} reload &8- &7Recarrega as configurações.
     &r
   status: |
@@ -62,5 +63,6 @@ chat:
     &7Faltando: &f{remaining}
 
   wave-start: '&a&lONDA DE GG INICIADA! &7Digite &aGG &7no chat para ganhar recompensas!'
+  wave-already: '&cJá existe uma onda de GG em andamento.'
   wave-end: '&a&lONDA DE GG FINALIZADA!'
   reward: '&aVocê foi recompensado por participar da onda de GG!'
