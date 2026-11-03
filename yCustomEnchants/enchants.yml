@@ -648,7 +648,7 @@ enchants:
   soulbound:
     display-name: '&7Vínculo da Morte'
     custom-lore:
-      - '&e{display-name}'
+      - '&e{display-name} &7({uses} uso(s))'
     # Aplicável em qualquer item
     apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_PICKAXE', 'GOLD_PICKAXE', 'IRON_PICKAXE', 'STONE_PICKAXE', 'WOOD_PICKAXE', 'WOODEN_PICKAXE', 'DIAMOND_SHOVEL', 'GOLD_SHOVEL', 'IRON_SHOVEL', 'STONE_SHOVEL', 'WOOD_SHOVEL', 'WOODEN_SHOVEL', 'DIAMOND_HOE', 'GOLD_HOE', 'IRON_HOE', 'STONE_HOE', 'WOOD_HOE', 'WOODEN_HOE', 'BOW', 'FISHING_ROD', 'DIAMOND_HELMET', 'GOLD_HELMET', 'IRON_HELMET', 'CHAINMAIL_HELMET', 'LEATHER_HELMET', 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS', 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
     prices:
@@ -658,6 +658,8 @@ enchants:
     chance: 100.0
     # Ativa o efeito soul-bound
     soul-bound: true
+    # Quantidade de mortes que o vínculo protege. 0 = infinito
+    soul-bound-uses: 0
     book:
       material: 'ENCHANTED_BOOK'
       name: '&eLivro Especial'
@@ -667,6 +669,9 @@ enchants:
         - '&7Ao utilizar este encantamento em'
         - '&7algum item, você não irá perder'
         - '&7este item ao morrer!'
+        - '&7Após a morte, o encantamento é'
+        - '&7consumido e precisa ser aplicado'
+        - '&7novamente.'
         - ''
         - '&7Encantamento para:&f Qualquer item'
   unbreakable:
