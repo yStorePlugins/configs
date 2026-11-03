@@ -95,6 +95,17 @@ chunk-limiter:
   whitelist:
     - 'COW:10'
 
+# Limitador de spawners vanilla por Chunk
+spawner-limiter:
+  # Ativar o sistema
+  enabled: false
+  # Limite geral de spawners por chunk. -1 = ilimitado
+  max-per-chunk: 8
+  # Limite por tipo de mob. Tipos não listados seguem apenas o limite geral.
+  per-type:
+    - 'ZOMBIE:4'
+    - 'SKELETON:4'
+
 # Configuração dos sons
 sounds:
   # Som que será enviado ao executar o /lixeiro

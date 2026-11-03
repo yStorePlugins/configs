@@ -27,3 +27,5 @@ chat:
 
   force: '&aVocê forçou a limpeza de itens e entidades. ({total} removidos)'
   next: '&r &e[{lixeiro}] Próxima limpeza em: {time}.<nl>&r &8♻ &fÚltima limpeza: &7{items_total}&f itens e &7{entities_total}&f entidades.'
+  spawner-limit: '&cVocê atingiu o limite de spawners neste chunk. ({current}/{max})'
+  spawner-limit-type: '&cVocê atingiu o limite de spawners de {type} neste chunk. ({current}/{max})'
