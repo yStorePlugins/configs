@@ -372,6 +372,24 @@ chat:
   bazooka-wait: '&cVocê precisa aguardar {time} para usar a bazuca novamente.'
   bazooka-reloading: '&cSua {bazooka} &cestá recarregando. Aguarde &f{time}&c.'
   bazooka-not-in: '&cVocê precisa estar em uma mina para usar a bazuca.'
+  digit-pickaxe-name: |
+
+    &aDigite o novo nome da picareta.
+    &7Use & para cores. Limite: {max} caracteres.
+    &7Para resetar digite &nresetar&7.
+    &7Para cancelar digite &ncancelar&7.
+  pickaxe-name-set: '&aNome da picareta alterado para {name}&a.'
+  pickaxe-name-reset: '&aNome da picareta resetado.'
+  pickaxe-name-long: '&cO nome excede o limite de {max} caracteres.'
+  pickaxe-name-empty: '&cO nome não pode ser vazio.'
+  pickaxe-particle-activated: '&aPartícula {particle}&a ativada com sucesso.'
+  pickaxe-particle-removed: '&aPartícula da picareta removida com sucesso.'
+  pickaxe-particle-bought: '&aVocê comprou e ativou a partícula {particle}&a.'
+  pickaxe-particle-need-level: '&cVocê precisa do nível {level} na picareta para ativar esta partícula.'
+  particle-found: '&cEsta partícula não existe. Disponíveis: &7{list}'
+  particle-give: '&bVocê deu a partícula {particle} &bpara o jogador &f{player}&b.'
+  particle-received: '&aVocê recebeu a partícula {particle}&a.'
+  particle-has: '&aVocê já possui esta partícula.'
 
 actionbar:
   bazooka-reloading: '&c⚠ {bazooka}&c recarregando: &f{time}'

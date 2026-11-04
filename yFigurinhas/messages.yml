@@ -81,3 +81,4 @@ chat:
   trade-not-enough: '&cVocê não possui repetidas suficientes de &f{sticker}&c.'
   trade-log-empty: '&cNenhum log de troca encontrado para &f{player}&c.'
   trade-log-header: '&6Logs recentes de troca para &f{player}&6:'
+  trade-invalid: '&cA troca não pôde ser concluída. Revise a oferta e confirme novamente.'

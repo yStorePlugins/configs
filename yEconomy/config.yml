@@ -62,6 +62,7 @@ redis:
     test-on-borrow: true
     test-while-idle: true
     eviction-run-ms: 30000
+  prefix: ''
 
 #   __      _   _   _
 #  / _\ ___| |_| |_(_)_ __   __ _ ___

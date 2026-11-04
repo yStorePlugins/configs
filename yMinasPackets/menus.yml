@@ -378,6 +378,8 @@ skins:
   next-slot: 26
   items:
     pickaxe-slot: 31
+    rename-slot: -1
+    particles-slot: -1
 
 # Menu de filtro
 filter:
@@ -1490,3 +1492,12 @@ pickaxe-select:
         - ''
         - '&aEsquerdo: selecionar'
         - '&eDireito: retirar'
+particles:
+  name: '&8Mineração'
+  size: 36
+  slots: [ 11, 12, 13, 14, 15 ]
+  back-slot: 29
+  previous-slot: 18
+  next-slot: 26
+  items:
+    pickaxe-slot: 31

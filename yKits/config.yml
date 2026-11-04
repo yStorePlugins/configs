@@ -119,6 +119,7 @@ Mensagens:
     - '&aDigite o tamanho para qual deseja alterar.'
     - '&7para cancelar digite &ncancelar&7.'
     - ''
+  Mudou item lore: '&aLore do jogador no kit &f{kit}&a: &f{itemlore}&a.'
 
 # Sons gerais do plugin
 # Lista de sons: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html

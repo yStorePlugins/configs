@@ -72,6 +72,7 @@ Opcoes:
       Ativar: true
       Lista:
         - 'SPEED:1-100' # Efeito:LEVEL-segundos
+  legacy-pvp: false
 # Mensagens em actionbar do plugin
 Actionbar:
   # Deixe vazio ( '' ) caso não queira usar alguma

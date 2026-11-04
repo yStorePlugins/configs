@@ -100,3 +100,16 @@ Itens:
     Lore:
       - '&aClique &fesquerdo&a para alterar os itens.'
       - '&aClique &fdireito&a para ver os itens.'
+  ItemLore:
+    Slot: 35
+    CustomSkull: false
+    URL: ''
+    ID: BOOK
+    Data: 0
+    Glow: false
+    Name: '&aLore do jogador'
+    Lore:
+      - ''
+      - '&7Atual: &f{itemlore}&7.'
+      - ''
+      - '&aClique para ativar/desativar.'

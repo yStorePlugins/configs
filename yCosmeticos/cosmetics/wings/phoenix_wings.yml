@@ -75,3 +75,6 @@ icons:
       - ''
       - ' &7Você ainda não possui este cosmético.'
       - ''
+texture:
+  custom-model-data: 1011
+  model: phoenix_wings

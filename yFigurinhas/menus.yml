@@ -86,6 +86,7 @@ album-categories-menu:
       - ''
       - ' &eClique para ver figurinhas'
       - ''
+  force-template-lore: true
 
 category-stickers-menu:
   name: '&8Álbum de Figurinhas'
@@ -105,6 +106,7 @@ category-stickers-menu:
     - ' &7Status: {status}'
     - ' &7Repetidas: &e{duplicates}'
     - ''
+  force-template-lore: true
 
 duplicates-menu:
   name: '&8Álbum de Figurinhas'
@@ -133,6 +135,7 @@ duplicates-menu:
       - ''
       - ' &aClique para reciclar agora'
       - ''
+  force-template-lore: true
 
 top-menu:
   name: '&8Álbum de Figurinhas'
@@ -257,6 +260,7 @@ trade-duplicates-menu:
       - ''
       - ' &aClique para adicionar +1'
       - ''
+  force-template-lore: true
 
 trade-amount-menu:
   name: '&8Quantidade - {sticker}'

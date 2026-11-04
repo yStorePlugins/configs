@@ -167,3 +167,20 @@ auto-compact:
       hidePlacedOn: false
       hideEnchants: false
       disableMetadata: true
+crops:
+  fortune-only-if-mature: true
+  mature-age:
+    COCOA: 2
+    COCOA_PLANT: 2
+    NETHER_WARTS: 3
+    NETHER_WART: 3
+    NETHER_STALK: 3
+    CROPS: 7
+    WHEAT: 7
+    CARROT: 7
+    CARROTS: 7
+    POTATO: 7
+    POTATOES: 7
+    BEETROOT_BLOCK: 3
+    BEETROOTS: 3
+    SWEET_BERRY_BUSH: 3

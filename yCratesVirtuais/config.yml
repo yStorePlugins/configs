@@ -137,3 +137,4 @@ format:
     - 'O'
     - 'N'
     - 'D'
+open-batch-size: 20000

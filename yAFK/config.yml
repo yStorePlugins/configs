@@ -83,6 +83,7 @@ Detect:
    # Configurações avançadas de detecção de farm de água
    AguaAreaMax: 5 # Tamanho máximo da área (em blocos) que considera farm de água
    AguaMovimentosMin: 8 # Quantidade mínima de movimentos para detectar farm em área pequena
+   Pesca: false
 
 # Ordem a ser executada: Bungeecord, Comando, Teleportar, Holograma
 Acoes:

@@ -145,6 +145,7 @@ general:
     - '/sair'
     - '/spawn'
     - '/exit'
+  pickaxe-name-max: 32
 
 # Sistema de resetar a própria mina
 reset:

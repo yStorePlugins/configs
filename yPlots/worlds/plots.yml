@@ -86,3 +86,6 @@ schematics:
   # blocos AIR no .schem / .schematic / .ypschem viram void de verdade.
   # AIR no chão da rua (plot-height) remove fill+bedrock da coluna — ideal para
   # mapas de ilha com pontes/caminhos só onde o schem tem blocos sólidos.
+grid: yplots
+road-offset-x: 0
+road-offset-z: 0
