@@ -54,6 +54,18 @@ general:
       - '&7Renovação a cada: &f{time_to_renew}'
       - '&aFeira disponível para alugar!'
 
+# Proteção da estrutura da feira
+protection:
+  # Se true, o locatário pode quebrar/colocar qualquer bloco da feira
+  allow-owner-build: false
+  # Blocos que o locatário pode colocar e quebrar (placas de loja)
+  allowed-blocks:
+    - SIGN
+    - WALL_SIGN
+    - SIGN_POST
+    # - CHEST
+    # - TRAPPED_CHEST
+
 # Configuração do item da varinha
 wand:
   material: 'GOLD_AXE'
