@@ -1,6 +1,7 @@
 # Identificação necessária para a API de TOP do yPlugins
 yplugins-id: 'yleagues-iron'
 
+# Ordem da liga no menu
 order: 1
 
 # Data de ínicio da liga
