@@ -253,6 +253,29 @@ npc-edit:
       - ''
       - ' &eClique para ajustar.'
       - ''
+  # Botão: Escala (só aparece para DISPLAY_ENTITY)
+  display-scale-button:
+    slot: 28
+    material: 'SLIME_BALL'
+    name: '&bEscala do Display'
+    lore:
+      - ''
+      - ' &7Escala atual: &f{display_scale}'
+      - ''
+      - ' &eClique para alterar.'
+      - ''
+  # Botão: Seguir jogador / billboard (só aparece para DISPLAY_ENTITY)
+  follow-player-button:
+    slot: 29
+    material: 'COMPASS'
+    name: '&bSeguir Jogador'
+    lore:
+      - ''
+      - ' &7Status: &f{follow_player}'
+      - ' &7CENTER se ativado, FIXED se desativado.'
+      - ''
+      - ' &eClique para alternar.'
+      - ''
   # Botão: Partícula (todos os tipos de NPC)
   particle-button:
     slot: 34
@@ -694,6 +717,17 @@ npc-type-select:
       - ''
       - ' &7Apenas holograma, sem entidade em baixo.'
       - ' &7Útil para textos, itens e displays.'
+      - ''
+      - ' &eClique para selecionar.'
+      - ''
+  display-entity-button:
+    slot: 22
+    material: 'ITEM_FRAME'
+    name: '&bDisplay Entity'
+    lore:
+      - ''
+      - ' &7ItemDisplay 1.19.4+ com escala e billboard.'
+      - ' &7Hitbox invisível para cliques.'
       - ''
       - ' &eClique para selecionar.'
       - ''
