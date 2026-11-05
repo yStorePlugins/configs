@@ -86,6 +86,63 @@ general:
     - 'GLOWING_REDSTONE_ORE'
     - 'DIAMOND_ORE'
     - 'EMERALD_ORE'
+    - 'LAPIS_ORE'
+    - 'STONE'
+    - 'GLASS'
+    - 'GLOWSTONE'
+    - 'QUARTZ_ORE'
+    - 'NETHER_QUARTZ_ORE'
+    - 'NETHER_GOLD_ORE'
+    - 'CRIMSON_NYLIUM'
+    - 'WARPED_NYLIUM'
+    - 'NETHER_WART_BLOCK'
+    - 'WARPED_WART_BLOCK'
+
+# Cálculo da fortuna (blocos) e looting (mobs)
+calculation:
+  fortune:
+    # VANILLA: chance de não receber bônus = no-bonus-numerator / (nível + no-bonus-offset)
+    #          se receber bônus, multiplica entre bonus-min e (nível + bonus-max-offset - 1)
+    #          Padrão (Fortuna 3): 40% de 1x e 60% de 2x a 4x
+    # MULTIPLY: quantidade * nível da fortuna * multiplier
+    mode: VANILLA
+    no-bonus-numerator: 2.0
+    no-bonus-offset: 2
+    bonus-min: 2
+    bonus-max-offset: 2
+    multiplier: 1.0
+    # Multiplicar a XP dropada pelo nível da fortuna
+    multiply-xp: true
+  looting:
+    # VANILLA: quantidade aleatória entre (nível + min-offset) e [max-multiplier * (nível + max-offset) - 1]
+    #          Padrão (Looting 3): aleatório entre 4 e 11
+    # MULTIPLY: quantidade * nível do looting * multiplier
+    mode: VANILLA
+    min-offset: 1
+    max-offset: 1
+    max-multiplier: 3
+    multiplier: 1.0
+    # Multiplicar a XP dropada pelo nível do looting
+    multiply-xp: true
+
+# Plantações: fortuna só aplica se estiver madura
+crops:
+  fortune-only-if-mature: true
+  mature-age:
+    COCOA: 2
+    COCOA_PLANT: 2
+    NETHER_WARTS: 3
+    NETHER_WART: 3
+    NETHER_STALK: 3
+    CROPS: 7
+    WHEAT: 7
+    CARROT: 7
+    CARROTS: 7
+    POTATO: 7
+    POTATOES: 7
+    BEETROOT_BLOCK: 3
+    BEETROOTS: 3
+    SWEET_BERRY_BUSH: 3
 
 # Sistema de hooks
 hooks:
@@ -167,20 +224,3 @@ auto-compact:
       hidePlacedOn: false
       hideEnchants: false
       disableMetadata: true
-crops:
-  fortune-only-if-mature: true
-  mature-age:
-    COCOA: 2
-    COCOA_PLANT: 2
-    NETHER_WARTS: 3
-    NETHER_WART: 3
-    NETHER_STALK: 3
-    CROPS: 7
-    WHEAT: 7
-    CARROT: 7
-    CARROTS: 7
-    POTATO: 7
-    POTATOES: 7
-    BEETROOT_BLOCK: 3
-    BEETROOTS: 3
-    SWEET_BERRY_BUSH: 3
