@@ -305,6 +305,9 @@ queue:
   delay: 3
   # Sempre mostrar a posição na fila na actionbar
   always-show: true
+  # Cooldown em segundos para o comando /fila. Use 0 para desativar.
+  # Permissão de bypass: ylobby.queue.cooldown.bypass
+  command-cooldown: 3
 
 # Sistema de entrar no lobby
 join:

@@ -91,6 +91,7 @@ chat:
     &c/queue sair &f- &7Sai da fila de um servidor.
     &c/queue info &f- &7Vê sua informação na fila.
   queue-found: '&cVocê não está na fila de nenhum servidor.'
+  queue-cooldown: '&cAguarde {time} para usar este comando novamente.'
   vanish-already: '&cVocê já está com o vanish ativo.'
   vanish-already-player: '&cEste jogador já está com o vanish ativo.'
   vanish-not: '&cVocê não está com o vanish ativo.'
