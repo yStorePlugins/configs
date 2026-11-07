@@ -1,0 +1,247 @@
+#
+#     ____                  _       _   ___ _
+#    / ___| _ __   ___  ___(_) __ _| | |_ _| |_ ___ _ __ ___  ___
+#    \___ \| '_ \ / _ \/ __| |/ _` | |  | || __/ _ \ '_ ` _ \/ __|
+#     ___) | |_) |  __/ (__| | (_| | |  | || ||  __/ | | | | \__ \
+#    |____/| .__/ \___|\___|_|\__,_|_| |___|\__\___|_| |_| |_|___/
+#          |_|
+#
+# Itens especiais.
+#
+# enabled: se false, o item não ativa o comportamento especial.
+# cooldown: segundos entre usos (0 = sem cooldown).
+# duration: duração em segundos (TNT = pavio, ponte = tempo do ovo).
+# range: alcance em blocos.
+# damage / knockback: dano e recuo horizontal.
+# knockback-vertical: impulso vertical mínimo.
+# knockback-vertical-bonus: extra no Y somado à velocidade atual (fireball).
+# knockback-min: força horizontal mínima (fireball).
+# knockback-radius: raio do empurrão em blocos (fireball).
+# max-amount: 0 = ilimitado. No percevejo = quantos podem existir no chão ao mesmo tempo (compra na loja continua livre).
+# destroy-blocks: se explosões/habilidades podem quebrar blocos da partida.
+# nbt-key: tag NBT usada para identificar o item.
+
+fireball:
+  enabled: true
+  cooldown: 1
+  duration: 0
+  range: 64
+  damage: 2.0
+  knockback: 1.8
+  knockback-vertical: 0.55
+  knockback-vertical-bonus: 0.42
+  knockback-min: 1.0
+  knockback-radius: 4.0
+  max-amount: 0
+  destroy-blocks: true
+  nbt-key: 'ybw-fireball'
+
+bridge-egg:
+  enabled: true
+  cooldown: 0
+  duration: 4
+  range: 30
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-bridge-egg'
+
+tnt:
+  enabled: true
+  cooldown: 0
+  duration: 3
+  range: 4
+  damage: 4.0
+  knockback: 1.5
+  max-amount: 0
+  destroy-blocks: true
+  nbt-key: 'ybw-tnt'
+
+ender-pearl:
+  enabled: true
+  cooldown: 0
+  duration: 0
+  range: 64
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-ender-pearl'
+
+golden-apple:
+  enabled: true
+  cooldown: 0
+  duration: 5
+  range: 0
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-golden-apple'
+
+sponge:
+  enabled: true
+  cooldown: 0
+  duration: 0
+  range: 4
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-sponge'
+
+water-bucket:
+  enabled: true
+  cooldown: 0
+  duration: 0
+  range: 1
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-water-bucket'
+
+knockback-stick:
+  enabled: true
+  cooldown: 0
+  duration: 0
+  range: 3
+  damage: 0.0
+  knockback: 1.0
+  max-amount: 1
+  destroy-blocks: false
+  nbt-key: 'ybw-knockback-stick'
+
+invisibility:
+  enabled: true
+  cooldown: 0
+  duration: 30
+  range: 0
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-invisibility'
+
+dream-defender:
+  enabled: true
+  cooldown: 0
+  duration: 240
+  range: 16
+  damage: 4.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-dream-defender'
+
+smoke-bomb:
+  enabled: true
+  cooldown: 5
+  duration: 8
+  range: 5
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-smoke-bomb'
+
+emergency-platform:
+  enabled: true
+  cooldown: 10
+  duration: 10
+  range: 1
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-emergency-platform'
+
+home-teleport:
+  enabled: true
+  cooldown: 0
+  duration: 3
+  range: 0
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-home-teleport'
+
+invis-detector:
+  enabled: true
+  cooldown: 15
+  duration: 10
+  range: 20
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-invis-detector'
+
+bed-shield:
+  enabled: true
+  cooldown: 0
+  duration: 30
+  range: 4
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 1
+  destroy-blocks: false
+  nbt-key: 'ybw-bed-shield'
+
+bedbug:
+  enabled: true
+  cooldown: 0
+  duration: 15
+  range: 8
+  damage: 1.0
+  knockback: 0.0
+  max-amount: 1
+  destroy-blocks: false
+  nbt-key: 'ybw-bedbug'
+
+slingshot:
+  enabled: true
+  cooldown: 4
+  duration: 0
+  range: 0
+  damage: 0.0
+  knockback: 2.35
+  knockback-vertical: 0.72
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-slingshot'
+
+compact-tower:
+  enabled: true
+  cooldown: 0
+  duration: 0
+  range: 5
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-compact-tower'
+
+magic-milk:
+  enabled: true
+  cooldown: 0
+  duration: 30
+  range: 0
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 0
+  destroy-blocks: false
+  nbt-key: 'ybw-magic-milk'
+
+tracker:
+  enabled: true
+  cooldown: 0
+  duration: 0
+  range: 128
+  damage: 0.0
+  knockback: 0.0
+  max-amount: 1
+  destroy-blocks: false
+  nbt-key: 'ybw-tracker'

@@ -1,0 +1,19 @@
+#
+#      _     _     _           _   _ ___   ___
+#     | |   | |   | |__  _   _| \ | | _ \ / __|
+#     | |   | |   | '_ \| | | |  \| |  _/| |  _
+#     | |___| |___| |_) | |_| | |\  | |  | |_| |
+#     |_____|_____|_.__/ \__, |_| \_|_|   \____|
+#                        |___/
+#
+# Posições dos NPCs de fila do lobby.
+#
+# Use /bwadmin setnpc <solo|doubles|trios|squads|duel> no lugar do NPC.
+# Use /bwadmin delnpc <tipo> para remover.
+#
+# Formato da location: world;x;y;z;yaw;pitch
+# Skins e hologramas ficam em config.yml → general.lobby-npcs.<tipo>
+#
+# solo: world;0.5;64;0.5;90;0
+# doubles: world;2.5;64;0.5;90;0
+#

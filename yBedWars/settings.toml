@@ -1,0 +1,6 @@
+sending = "&aEnviando você para o BedWars..."
+not-found = "&cNenhuma sala de BedWars disponível."
+# false = /bw tratado no backend (lobby Redis). true = MatchTracker no proxy.
+register-command = false
+lobby-server = "lobby"
+bedwars-servers = ["game1", "game2"]

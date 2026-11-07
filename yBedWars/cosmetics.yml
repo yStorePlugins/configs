@@ -1,0 +1,299 @@
+#
+#     ____                        _   _
+#    / ___|___  ___ _ __ ___   ___| |_(_) ___ ___
+#   | |   / _ \/ __| '_ ` _ \ / _ \ __| |/ __/ __|
+#   | |__| (_) \__ \ | | | | |  __/ |_| | (__\__ \
+#    \____\___/|___/_| |_| |_|\___|\__|_|\___|___/
+#
+# Cosméticos do Bed Wars.
+#
+# Cada entrada:
+#   display: nome no menu.
+#   description: lore do item (lista).
+#   permission: vazio = liberado. Se preenchido, precisa da perm OU comprar.
+#   price: coins para comprar (0 = não vende). Quem tem a permission não paga.
+#   icon: item do menu (MATERIAL ou MATERIAL:DATA).
+#   message: chat do abate. {player} {killer} {final}
+#   particle: partícula 1.8 (happy_villager, crit, heart, flame, spell, cloud).
+#   sound: Sound do Bukkit 1.8.
+#   firework: true solta fogos na vitória.
+#   animation (packet-events): none | mush | storm | helix | spiral | rain | tornado | nova | burst | pulse | lightning
+#   skin: nick da skin (NPC da ilha) ou dono da cabeça (balão).
+#   material: bloco/item na cabeça do balão. [EX: WOOL:14]
+#   count: quantidade de balões (1-4).
+#   offset: altura acima do spawn da ilha.
+#
+
+# Mensagens de abate.
+kill:
+  default:
+    display: '&7Padrão'
+    icon: IRON_SWORD
+    description:
+      - '&7Mensagem de abate padrão do servidor.'
+    message: ''
+  rage:
+    display: '&cRaiva'
+    permission: 'ybedwars.cosmetic.kill.rage'
+    price: 800
+    icon: REDSTONE
+    description:
+      - '&7Anuncia o abate com uma'
+      - '&7mensagem agressiva.'
+    message: '&c{killer} dizimou {player}.'
+  ice:
+    display: '&bGelo'
+    permission: 'ybedwars.cosmetic.kill.ice'
+    price: 800
+    icon: SNOW_BALL
+    description:
+      - '&7Congela o nome da vítima'
+      - '&7no chat de abate.'
+    message: '&b{killer} congelou {player}.'
+
+# Efeito ao quebrar a cama inimiga (packet-events, estilo Mush).
+bed:
+  default:
+    display: '&7Padrão'
+    icon: BED
+    description:
+      - '&7Raio, anel e hélice ao'
+      - '&7destruir a cama inimiga.'
+    particle: firework
+    animation: mush
+    sound: WITHER_DEATH
+  thunder:
+    display: '&eTrovão'
+    permission: 'ybedwars.cosmetic.bed.thunder'
+    price: 1200
+    icon: BLAZE_ROD
+    description:
+      - '&7Tempestade com raios e'
+      - '&7partículas de crítico.'
+    particle: crit
+    animation: storm
+    sound: AMBIENCE_THUNDER
+  fire:
+    display: '&cInferno'
+    permission: 'ybedwars.cosmetic.bed.fire'
+    price: 1500
+    icon: BLAZE_POWDER
+    description:
+      - '&7Tornado de fogo no local'
+      - '&7da cama destruída.'
+    particle: flame
+    animation: tornado
+    sound: GHAST_FIREBALL
+  heart:
+    display: '&dCorações'
+    permission: 'ybedwars.cosmetic.bed.heart'
+    price: 1400
+    icon: REDSTONE
+    description:
+      - '&7Explosão de corações ao'
+      - '&7quebrar a cama.'
+    particle: heart
+    animation: nova
+  magic:
+    display: '&5Magia'
+    permission: 'ybedwars.cosmetic.bed.magic'
+    price: 1600
+    icon: ENCHANTMENT_TABLE
+    description:
+      - '&7Hélice encantada sobe'
+      - '&7da cama quebrada.'
+    particle: enchant
+    animation: helix
+
+# Animações de vitória (packet-events).
+win:
+  default:
+    display: '&7Padrão'
+    icon: FIREWORK
+    description:
+      - '&7Sem animação extra na vitória.'
+    firework: false
+    animation: none
+  show:
+    display: '&aShow'
+    permission: 'ybedwars.cosmetic.win.show'
+    price: 1500
+    icon: FIREWORK
+    description:
+      - '&7Fogos e explosão de'
+      - '&7partículas na vitória.'
+    firework: true
+    animation: nova
+    particle: firework
+  spiral:
+    display: '&dEspiral'
+    permission: 'ybedwars.cosmetic.win.spiral'
+    price: 2000
+    icon: NETHER_STAR
+    description:
+      - '&7Hélice mágica gira em'
+      - '&7volta de você.'
+    firework: true
+    animation: helix
+    particle: witch
+  thunder:
+    display: '&eTrovão'
+    permission: 'ybedwars.cosmetic.win.thunder'
+    price: 1800
+    icon: BLAZE_POWDER
+    description:
+      - '&7Raios e tempestade no'
+      - '&7momento da vitória.'
+    animation: storm
+    particle: crit
+    sound: AMBIENCE_THUNDER
+  rain:
+    display: '&bChuva de partículas'
+    permission: 'ybedwars.cosmetic.win.rain'
+    price: 1600
+    icon: WATER_BUCKET
+    description:
+      - '&7Chuva de partículas cai'
+      - '&7sobre o vencedor.'
+    animation: rain
+    particle: cloud
+  tornado:
+    display: '&fTornado'
+    permission: 'ybedwars.cosmetic.win.tornado'
+    price: 2200
+    icon: FEATHER
+    description:
+      - '&7Um tornado de nuvens sobe'
+      - '&7ao redor de você.'
+    animation: tornado
+    particle: cloud
+
+# Skin dos NPCs da ilha (loja e melhorias) — só o time do jogador.
+# rarity: maior vence se o time tiver mais de uma skin.
+npc:
+  default:
+    display: '&7Padrão'
+    icon: SKULL_ITEM
+    description:
+      - '&7Skin padrão da loja e'
+      - '&7das melhorias da ilha.'
+    skin: ''
+    rarity: 0
+  villager:
+    display: '&aAldeão'
+    permission: 'ybedwars.cosmetic.npc.villager'
+    price: 1800
+    rarity: 1
+    icon: EMERALD
+    description:
+      - '&7Troca a skin do NPC da'
+      - '&7sua ilha por um aldeão.'
+    skin: Villager
+  ender:
+    display: '&5Enderman'
+    permission: 'ybedwars.cosmetic.npc.ender'
+    price: 2200
+    rarity: 2
+    icon: ENDER_PEARL
+    description:
+      - '&7NPC da ilha com a skin'
+      - '&7de Enderman.'
+    skin: Enderman
+  herobrine:
+    display: '&8Herobrine'
+    permission: 'ybedwars.cosmetic.npc.herobrine'
+    price: 2500
+    rarity: 3
+    icon: SKULL_ITEM
+    description:
+      - '&7A skin mais rara: Herobrine'
+      - '&7nos NPCs do seu time.'
+    skin: Herobrine
+
+# Grito de morte (ouvido por perto).
+scream:
+  default:
+    display: '&7Nenhum'
+    icon: NOTE_BLOCK
+    description:
+      - '&7Sem grito extra ao morrer.'
+    sound: ''
+  ghast:
+    display: '&cGrito do Ghast'
+    permission: 'ybedwars.cosmetic.scream.ghast'
+    price: 900
+    icon: GHAST_TEAR
+    description:
+      - '&7Quem está perto ouve o'
+      - '&7grito de um Ghast.'
+    sound: GHAST_SCREAM
+  wolf:
+    display: '&7Uivo'
+    permission: 'ybedwars.cosmetic.scream.wolf'
+    price: 700
+    icon: BONE
+    description:
+      - '&7Uivo de lobo ao morrer.'
+    sound: WOLF_HOWL
+  dragon:
+    display: '&5Dragão'
+    permission: 'ybedwars.cosmetic.scream.dragon'
+    price: 2000
+    icon: DRAGON_EGG
+    description:
+      - '&7Rugido do dragão ecoa'
+      - '&7na sua morte.'
+    sound: ENDERDRAGON_GROWL
+
+# Balões presos na ilha (enfeitam o spawn do time).
+balloon:
+  default:
+    display: '&7Nenhum'
+    icon: WOOL
+    description:
+      - '&7Sem balões na ilha.'
+    material: ''
+  heart:
+    display: '&cCoração'
+    permission: 'ybedwars.cosmetic.balloon.heart'
+    price: 1500
+    icon: 'WOOL:14'
+    description:
+      - '&7Balões vermelhos flutuam'
+      - '&7no spawn da sua ilha.'
+    material: 'WOOL:14'
+    count: 3
+    offset: 2.6
+  gold:
+    display: '&6Ouro'
+    permission: 'ybedwars.cosmetic.balloon.gold'
+    price: 1500
+    icon: GOLD_BLOCK
+    description:
+      - '&7Balões de ouro enfeitam'
+      - '&7a ilha do time.'
+    material: GOLD_BLOCK
+    count: 2
+    offset: 2.8
+  diamond:
+    display: '&bDiamante'
+    permission: 'ybedwars.cosmetic.balloon.diamond'
+    price: 2200
+    icon: DIAMOND_BLOCK
+    description:
+      - '&7Balões de diamante giram'
+      - '&7acima do spawn.'
+    material: DIAMOND_BLOCK
+    count: 3
+    offset: 2.7
+  slime:
+    display: '&aSlime'
+    permission: 'ybedwars.cosmetic.balloon.slime'
+    price: 1200
+    icon: SLIME_BALL
+    description:
+      - '&7Balões de slime pulam'
+      - '&7na sua ilha.'
+    material: SLIME_BLOCK
+    count: 2
+    offset: 2.5

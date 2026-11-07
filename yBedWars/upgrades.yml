@@ -1,0 +1,176 @@
+#
+#     _   _                           _
+#    | | | |_ __   __ _ _ __ __ _  __| | ___  ___
+#    | | | | '_ \ / _` | '__/ _` |/ _` |/ _ \/ __|
+#    | |_| | |_) | (_| | | | (_| | (_| |  __/\__ \
+#     \___/| .__/ \__, |_|  \__,_|\__,_|\___||___/
+#          |_|    |___/
+#
+# Loja de upgrades da equipe.
+#
+# slot: posição no menu Melhorias do Time.
+# description: linhas da lore.
+# max-level 1 mostra "Preço:"; vários níveis mostram "X Nível n:".
+# queueable: true = armadilha (máx. 3 na fila). false = upgrade permanente.
+# currency: iron | gold | diamond | emerald
+# prices: lista por nível (índice 0 = nível 1).
+
+sharpness:
+  id: sharpness
+  display: '&fAfiação nas Espadas I'
+  material: IRON_SWORD
+  slot: 9
+  description:
+    - 'O seu time ganha Afiação permanente'
+    - 'em todas as espadas.'
+  max-level: 2
+  currency: diamond
+  prices: [ 4, 16 ]
+  queueable: false
+  level-names:
+    1: 'Afiação I'
+    2: 'Afiação II'
+  effects:
+    1: SHARPNESS_1
+    2: SHARPNESS_2
+
+protection:
+  id: protection
+  display: '&fArmadura Reforçada'
+  material: IRON_CHESTPLATE
+  slot: 10
+  description:
+    - 'O seu time ganha Proteção permanente'
+    - 'em todas as armaduras.'
+  max-level: 4
+  currency: diamond
+  prices: [ 2, 4, 8, 16 ]
+  queueable: false
+  level-names:
+    1: 'Proteção I'
+    2: 'Proteção II'
+    3: 'Proteção III'
+    4: 'Proteção IV'
+  effects:
+    1: PROTECTION_1
+    2: PROTECTION_2
+    3: PROTECTION_3
+    4: PROTECTION_4
+
+haste:
+  id: haste
+  display: '&fMinerador Maníaco'
+  material: GOLD_PICKAXE
+  slot: 11
+  description:
+    - 'Ganhe Pressa permanente enquanto'
+    - 'quebra blocos.'
+  max-level: 2
+  currency: diamond
+  prices: [ 2, 4 ]
+  queueable: false
+  level-names:
+    1: 'Pressa I'
+    2: 'Pressa II'
+  effects:
+    1: HASTE_1
+    2: HASTE_2
+
+forge:
+  id: forge
+  display: '&fForja I'
+  material: FURNACE
+  slot: 12
+  description:
+    - 'Aumente o número de recursos que nascem'
+    - 'em sua ilha.'
+  max-level: 4
+  currency: diamond
+  prices: [ 2, 4, 6, 8 ]
+  queueable: false
+  level-names:
+    1: '+50% de Recursos'
+    2: '+100% de Recursos'
+    3: 'Nasce Esmeraldas'
+    4: '+200% de Recursos'
+  effects:
+    1: FASTER_IRON
+    2: IRON_GOLD
+    3: EMERALDS
+    4: FASTER
+
+heal-pool:
+  id: heal-pool
+  display: '&fRegeneração na Ilha'
+  material: BEACON
+  slot: 13
+  description:
+    - 'Crie um campo de Regeneração'
+    - 'em volta de sua ilha.'
+  max-level: 1
+  currency: diamond
+  prices: [ 1 ]
+  queueable: false
+  effects:
+    1: HEAL_POOL
+
+trap_its:
+  id: trap_its
+  display: '&fÉ uma Cilada!'
+  material: TRIPWIRE_HOOK
+  slot: 14
+  description:
+    - 'Cause Cegueira e Lentidão'
+    - 'por 8 segundos em invasores.'
+  max-level: 1
+  currency: diamond
+  prices: [ 1 ]
+  queueable: true
+  effects:
+    1: BLINDNESS_SLOWNESS
+
+trap_fatigue:
+  id: trap_fatigue
+  display: '&fFadiga I'
+  material: REDSTONE_COMPARATOR
+  slot: 15
+  description:
+    - 'Cause Fadiga em invasores.'
+  max-level: 2
+  currency: diamond
+  prices: [ 1, 2 ]
+  queueable: true
+  level-names:
+    1: 'Fadiga I por 7 segundos'
+    2: 'Fadiga I por 10 segundos'
+  effects:
+    1: MINING_FATIGUE
+    2: MINING_FATIGUE
+
+trap_alarm:
+  id: trap_alarm
+  display: '&fArmadilha de Alarme'
+  material: REDSTONE_TORCH_ON
+  slot: 16
+  description:
+    - 'Revela invasores na sua ilha.'
+  max-level: 1
+  currency: diamond
+  prices: [ 1 ]
+  queueable: true
+  effects:
+    1: ALARM
+
+dragon-buff:
+  id: dragon-buff
+  display: '&fBônus do Dragão'
+  material: DRAGON_EGG
+  slot: 17
+  description:
+    - 'Seu dragão fica mais forte.'
+  max-level: 1
+  currency: diamond
+  prices: [ 5 ]
+  queueable: false
+  effects:
+    1: DRAGON_BUFF

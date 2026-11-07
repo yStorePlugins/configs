@@ -1,0 +1,158 @@
+#
+#      ____ _
+#     / ___| | __ _ ___ ___  ___  ___
+#    | |   | |/ _` / __/ __|/ _ \/ __|
+#    | |___| | (_| \__ \__ \  __/\__ \
+#     \____|_|\__,_|___/___/\___||___/
+#
+# Classes por nível de estrela. Ao atingir o nível, o jogador
+# pode coletar coins (Bed Wars) e cash (Vault) no menu.
+#
+# icon: bloco SetupItem (material, name, lore, glow).
+#   material: MATERIAL, MATERIAL:DATA ou hash de https://minecraft-heads.com/custom-heads
+#   Placeholders: {display} {level} {coins} {cash} {status}
+#
+
+menu:
+  name: '&8Classes'
+  size: 27
+
+status:
+  locked: '&cBloqueada'
+  claimed: '&aRecompensa coletada'
+  claim: '&eClique para coletar.'
+  unlocked: '&aDesbloqueada'
+
+classes:
+  bronze:
+    min-level: 10
+    display: '&6Bronze'
+    slot: 10
+    reward-coins: 100
+    reward-cash: 0
+    icon:
+      material: CLAY_BRICK
+      name: '{display}'
+      lore:
+        - ''
+        - ' &7Nível: &b{level}*'
+        - ''
+        - '&fRecompensas:'
+        - ' &7Coins: &6{coins}'
+        - ''
+        - ' {status}'
+        - ''
+  silver:
+    min-level: 25
+    display: '&7Prata'
+    slot: 11
+    reward-coins: 250
+    reward-cash: 5
+    icon:
+      material: IRON_INGOT
+      name: '{display}'
+      lore:
+        - ''
+        - ' &7Nível: &b{level}*'
+        - ''
+        - '&fRecompensas:'
+        - ' &7Coins: &6{coins}'
+        - ' &7Cash: &a{cash}'
+        - ''
+        - ' {status}'
+        - ''
+  gold:
+    min-level: 50
+    display: '&eOuro'
+    slot: 12
+    reward-coins: 500
+    reward-cash: 15
+    icon:
+      material: GOLD_INGOT
+      name: '{display}'
+      lore:
+        - ''
+        - ' &7Nível: &b{level}*'
+        - ''
+        - '&fRecompensas:'
+        - ' &7Coins: &6{coins}'
+        - ' &7Cash: &a{cash}'
+        - ''
+        - ' {status}'
+        - ''
+  diamond:
+    min-level: 75
+    display: '&bDiamante'
+    slot: 13
+    reward-coins: 1000
+    reward-cash: 30
+    icon:
+      material: DIAMOND
+      name: '{display}'
+      lore:
+        - ''
+        - ' &7Nível: &b{level}*'
+        - ''
+        - '&fRecompensas:'
+        - ' &7Coins: &6{coins}'
+        - ' &7Cash: &a{cash}'
+        - ''
+        - ' {status}'
+        - ''
+  emerald:
+    min-level: 100
+    display: '&aEsmeralda'
+    slot: 14
+    reward-coins: 2000
+    reward-cash: 60
+    icon:
+      material: EMERALD
+      name: '{display}'
+      lore:
+        - ''
+        - ' &7Nível: &b{level}*'
+        - ''
+        - '&fRecompensas:'
+        - ' &7Coins: &6{coins}'
+        - ' &7Cash: &a{cash}'
+        - ''
+        - ' {status}'
+        - ''
+  master:
+    min-level: 150
+    display: '&5Mestre'
+    slot: 15
+    reward-coins: 4000
+    reward-cash: 120
+    icon:
+      material: NETHER_STAR
+      name: '{display}'
+      lore:
+        - ''
+        - ' &7Nível: &b{level}*'
+        - ''
+        - '&fRecompensas:'
+        - ' &7Coins: &6{coins}'
+        - ' &7Cash: &a{cash}'
+        - ''
+        - ' {status}'
+        - ''
+  legend:
+    min-level: 200
+    display: '&c&lLenda'
+    slot: 16
+    reward-coins: 8000
+    reward-cash: 250
+    icon:
+      material: BEACON
+      name: '{display}'
+      lore:
+        - ''
+        - ' &7Nível: &b{level}*'
+        - ''
+        - '&fRecompensas:'
+        - ' &7Coins: &6{coins}'
+        - ' &7Cash: &a{cash}'
+        - ''
+        - ' {status}'
+        - ''

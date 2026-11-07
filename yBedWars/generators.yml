@@ -1,0 +1,61 @@
+#
+#      ____                           _
+#     / ___| ___ _ __   ___ _ __ __ _| |_ ___  _ __ ___
+#    | |  _ / _ \ '_ \ / _ \ '__/ _` | __/ _ \| '__/ __|
+#    | |_| |  __/ | | |  __/ | | (_| | || (_) | |  \__ \
+#     \____|\___|_| |_|\___|_|  \__,_|\__\___/|_|  |___/
+#
+# Geradores de recursos.
+#
+# interval-ticks: intervalo entre drops (20 ticks = 1 segundo).
+# amount: quantidade dropada por ciclo.
+# max-stacked: limite de itens acumulados no chão.
+# material: material Bukkit do item gerado.
+
+iron:
+  interval-ticks: 20
+  amount: 1
+  max-stacked: 48
+  material: IRON_INGOT
+
+gold:
+  interval-ticks: 80
+  amount: 1
+  max-stacked: 16
+  material: GOLD_INGOT
+
+diamond:
+  interval-ticks: 600
+  amount: 1
+  max-stacked: 8
+  material: DIAMOND
+
+emerald:
+  interval-ticks: 800
+  amount: 1
+  max-stacked: 4
+  material: EMERALD
+
+# Holograma dos geradores de diamante/esmeralda.
+# Placeholders: {level} {time} {resource}
+hologram:
+  enabled: true
+  offset: 2.5
+  diamond:
+    - '&aNível {level}'
+    - '&bDiamante'
+    - '&eGera em &c{time} &e{unit}'
+  emerald:
+    - '&aNível {level}'
+    - '&aEsmeralda'
+    - '&eGera em &c{time} &e{unit}'
+
+# Multiplicador do intervalo por nível (eventos diamond-ii / emerald-iii).
+# 1.0 = velocidade normal, 0.5 = duas vezes mais rápido.
+levels:
+  1:
+    interval-multiplier: 1.0
+  2:
+    interval-multiplier: 0.75
+  3:
+    interval-multiplier: 0.5

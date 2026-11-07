@@ -1,0 +1,334 @@
+#         ____           ___        __
+#  _   _| __ )  ___  __| \ \      / /_ _ _ __ ___
+# | | | |  _ \ / _ \/ _` |\ \ /\ / / _` | '__/ __|
+# | |_| | |_) |  __/ (_| | \ V  V / (_| | |  \__ \
+#  \__, |____/ \___|\__,_|  \_/\_/ \__,_|_|  |___/
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+  # Prefixo das chaves / canais Redis (multi-server).
+  channel-prefix: 'ybedwars:'
+  # Intervalo (segundos) do heartbeat publicado no Redis.
+  heartbeat-seconds: 5
+  # TTL (segundos) da reserva de slot ao conectar via proxy.
+  reservation-seconds: 30
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Nome deste servidor (usado no proxy / redis).
+  server-name: 'bedwars-1'
+  # Se true, envia o jogador ao lobby via BungeeCord/Velocity ao sair da partida.
+  bungeecord-mode: false
+  # Servidor de lobby no proxy. [EX: lobby]
+  lobby-server: 'lobby'
+  # Modo de execução das salas. Valores: [SHARED_WORLD, SEPARATE_WORLDS, SERVER_INSTANCE, HYBRID]
+  # SERVER_INSTANCE / HYBRID usam Redis para roteamento entre servidores (quando redis.enabled).
+  # HYBRID = SEPARATE_WORLDS localmente + roteamento cross-server.
+  execution-mode: SHARED_WORLD
+  # Papel deste backend no proxy. Valores: [LOBBY, GAME, BOTH]
+  server-role: BOTH
+  # Limite global de instancias ativas (todas as arenas).
+  max-instances-global: 20
+  # Maximo padrao de instancias por arena (SEPARATE_WORLDS). SHARED_WORLD fica em 1.
+  default-max-instances: 5
+  # Tempo (segundos) aguardando jogadores antes da contagem de início.
+  waiting-countdown: 20
+  # Tempo (segundos) da contagem regressiva após atingir o mínimo de jogadores.
+  starting-countdown: 10
+  # Delay (ticks) da fase PREPARING antes de soltar os jogadores.
+  preparing-ticks: 40
+  # Duração máxima da partida em segundos. [EX: 1800 = 30 min]
+  game-max-duration: 1800
+  # Quantidade mínima de jogadores para iniciar a contagem.
+  min-players-to-start: 2
+  # Tempo (segundos) para renascer enquanto a cama estiver intacta.
+  respawn-seconds: 5
+  # Altura Y abaixo da qual o jogador morre no void.
+  void-y: 0
+  # Altura máxima para construir.
+  max-build-y: 110
+  # Tempo (segundos) de celebração após a vitória, antes do reset.
+  win-celebration-seconds: 8
+  # Tempo (segundos) para reconectar após disconnect durante a partida.
+  reconnect-seconds: 60
+  # Tamanho máximo de uma party.
+  party-max-size: 4
+  # Intervalo (ticks) do task global de geradores. Recomendado: 1
+  generator-tick-interval: 1
+  # Limite de itens acumulados no chão por gerador.
+  max-stacked-iron: 48
+  max-stacked-gold: 16
+  max-stacked-diamond: 8
+  max-stacked-emerald: 4
+  # Se true, explosões não destroem camas.
+  bed-explosion-protected: true
+  # Se true, permite quebrar blocos originais do mapa. Se false, só blocos colocados pelos jogadores.
+  allow-map-break: false
+  # TNT só quebra blocos colocados por jogadores.
+  # unbreakable: materiais que a TNT nunca quebra (mesmo se o jogador colocou). Formato: MATERIAL ou MATERIAL:DATA
+  tnt:
+    unbreakable:
+      - OBSIDIAN
+      - BEDROCK
+      - BARRIER
+      - GLASS
+      - STAINED_GLASS
+      - THIN_GLASS
+      - STAINED_GLASS_PANE
+      - GLASS_PANE
+  # Sistema de espectador após eliminação definitiva.
+  spectator-enabled: true
+  spectator-fly: true
+  # Fogos de artifício na vitória.
+  win-fireworks: true
+  # NPCs da loja/upgrades (skin de jogador).
+  npc:
+    shop-skin: 'Steve'
+    upgrade-skin: 'Alex'
+    hologram-offset: 2.2
+  # Permissão para selecionar mapa na fila.
+  vip-permission: 'ybedwars.vip'
+  # Chat da partida. Sem prefixo = equipe [T]. Prefixar com ! (ou /g) = global [G].
+  # Placeholders: {vip} {level} {player} {message}
+  chat:
+    team-format: '&c[T] {vip}{level}&f{player}&f: {message}'
+    global-format: '&a[G] {vip}{level}&f{player}&f: {message}'
+    waiting-format: '{vip}{level}&f{player}&f: {message}'
+    spectator-format: '&7[SPEC] {vip}{level}&f{player}&f: {message}'
+    vip-tag: '&6[V] '
+    level-tag: '&6{class} &b[{level}*] '
+    global-prefix: '!'
+  # NPCs de fila no lobby. Posições em lobby-npcs.yml (/bwadmin setnpc).
+  lobby-npcs:
+    hologram-offset: 2.4
+    solo:
+      skin: Steve
+      hologram-offset: 2.4
+      hologram:
+        - '&b&lSOLO'
+        - '&e{count} jogando'
+    doubles:
+      skin: Steve
+      hologram-offset: 2.4
+      hologram:
+        - '&b&lDUPLAS'
+        - '&e{count} jogando'
+    trios:
+      skin: Steve
+      hologram-offset: 2.4
+      hologram:
+        - '&e&lTRIOS'
+        - '&e{count} jogando'
+    squads:
+      skin: Steve
+      hologram-offset: 2.4
+      hologram:
+        - '&a&lQUARTETOS'
+        - '&e{count} jogando'
+    duel:
+      skin: Steve
+      hologram-offset: 2.8
+      hologram:
+        - '&6&lUTILIZE'
+        - '&e/duel <nome>'
+        - '&71v1/2v2/3v3/4v4/4s'
+        - '&e{count} jogando'
+  # Holograma ao colocar baú / ender chest.
+  chest-hologram:
+    offset: 1.45
+    chest:
+      - '&eBata para'
+      - '&eguardar!'
+    ender:
+      - '&eBata para'
+      - '&eguardar!'
+  # Área de regeneração da ilha (upgrade heal-pool).
+  heal-pool:
+    radius: 10
+    particle: 'happy_villager'
+  # Política de split por recurso. Valores: [INDIVIDUAL, TEAM_BANK, EQUAL_SPLIT, NEARBY_EQUAL]
+  # remainder: o que sobra da divisão. Valores: [COLLECTOR, ROUND_ROBIN, TEAM_BANK]
+  split:
+    iron: NEARBY_EQUAL
+    gold: NEARBY_EQUAL
+    diamond: INDIVIDUAL
+    emerald: INDIVIDUAL
+    # Raio (blocos) para NEARBY_EQUAL.
+    nearby-radius: 12.0
+    remainder: COLLECTOR
+  # Modos de jogo padrão (usados ao criar arena pelo menu).
+  modes:
+    solo:
+      enabled: true
+      teams: 8
+      team-size: 1
+      min-players: 2
+    doubles:
+      enabled: true
+      teams: 8
+      team-size: 2
+      min-players: 2
+    trios:
+      enabled: true
+      teams: 4
+      team-size: 3
+      min-players: 3
+    squads:
+      enabled: true
+      teams: 4
+      team-size: 4
+      min-players: 4
+  # Recompensas persistidas nas estatísticas do jogador.
+  rewards:
+    win-coins: 50
+    kill-coins: 5
+    final-kill-coins: 10
+    bed-coins: 15
+    participate-coins: 5
+    win-xp: 100
+    kill-xp: 10
+    bed-xp: 25
+  # Scoreboard da partida. Placeholders: {date} {arena} {players} {max} {mode} {countdown} {status} {winstreak} {event} {event_time} {teams} {kills} {final_kills} {beds} {alive}
+  # waiting-solo / playing-solo / spectator-solo: layout só do modo Solo. Vazio = usa o geral.
+  scoreboard:
+    enabled: true
+    # Intervalo (ticks) para atualizar a scoreboard. [EX: 20 = 1 segundo]
+    delay: 20
+    title: '&a&lBED WARS'
+    animation:
+      # Ativar animações na scoreboard (título e linhas).
+      enabled: true
+      # Intervalo para alternar os textos animados (em segundos).
+      interval: 1
+      # Animação do título. Se vazio, usa o title acima.
+      title:
+        - '&a&lBED WARS'
+        - '&f&lBED WARS'
+      # Animações por linha do template (1 = primeira linha do YAML, de cima para baixo).
+      # waiting-lines / playing-lines / spectator-lines. "lines" vale para todos se o específico estiver vazio.
+      playing-lines: {}
+      waiting-lines:
+        10:
+          - '&aystoreplugins.com.br'
+          - '&fystoreplugins.com.br'
+      spectator-lines: {}
+      playing-solo-lines: {}
+      waiting-solo-lines: {}
+      spectator-solo-lines: {}
+    waiting:
+      - ''
+      - '&fMapa: &a{arena}'
+      - '&fJogadores: &a{players}/{max}'
+      - ''
+      - '&e{status}'
+      - ''
+      - '&fModo: &a{mode}'
+      - '&fWinstreak: &a{winstreak}'
+      - ''
+      - '&aystoreplugins.com.br'
+    playing:
+      - ''
+      - ''
+      - '&f{event} em {event_time}'
+      - ''
+      - '{teams}'
+      - ''
+      - '&aKills: {kills}. Finais: {final_kills}'
+      - '&aCamas Quebradas: {beds}'
+      - ''
+      - '&aystoreplugins.com.br'
+    # Scoreboard só do modo Solo. Se vazio, usa waiting/playing/spectator.
+    waiting-solo:
+      - ''
+      - '&fMapa: &a{arena}'
+      - '&fJogadores: &a{players}/{max}'
+      - ''
+      - '&e{status}'
+      - ''
+      - '&fModo: &aSolo'
+      - '&fWinstreak: &a{winstreak}'
+      - ''
+      - '&aystoreplugins.com.br'
+    playing-solo:
+      - ''
+      - '&7{date}'
+      - ''
+      - '&f{event} em &a{event_time}'
+      - ''
+      - '{teams}'
+      - ''
+      - '&fAbates: &a{kills}'
+      - ''
+      - '&aystoreplugins.com.br'
+    spectator-solo:
+      - ''
+      - '&7{date}'
+      - ''
+      - '&f{event} em &a{event_time}'
+      - ''
+      - '{teams}'
+      - ''
+      - '&7Assistindo'
+      - ''
+      - '&aystoreplugins.com.br'
+    spectator:
+      - ''
+      - ''
+      - '&f{event} em {event_time}'
+      - ''
+      - '{teams}'
+      - ''
+      - '&aKills: {kills}. Finais: {final_kills}'
+      - '&aCamas Quebradas: {beds}'
+      - ''
+      - '&aystoreplugins.com.br'
+  # Sons (nomes de Sound do Bukkit). Nomes inválidos são ignorados.
+  sounds:
+    countdown: 'NOTE_PLING'
+    game-start: 'ENDERDRAGON_GROWL'
+    kill: 'ORB_PICKUP'
+    bed-break: 'WITHER_DEATH'
+    buy: 'ORB_PICKUP'
+    buy-fail: 'VILLAGER_NO'
+    win: 'LEVEL_UP'
+    trap: 'WITHER_SPAWN'
+    generator: 'ITEM_PICKUP'

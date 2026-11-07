@@ -1,0 +1,54 @@
+#
+#      ___                  _
+#     / _ \ _   _  ___  ___| |_ ___
+#    | | | | | | |/ _ \/ __| __/ __|
+#    | |_| | |_| |  __/\__ \ |_\__ \
+#     \__\_\\__,_|\___||___/\__|___/
+#
+# Missões diárias. O progresso zera à meia-noite (UTC).
+#
+# type: KILLS | BEDS | WINS | FINALS
+# display: nome no menu (aceita &).
+# description: lore do item (lista).
+# amount: meta da missão.
+# reward-xp: XP de estrela ao concluir.
+# reward-coins: coins ao concluir.
+#
+
+quests:
+  kills:
+    type: KILLS
+    display: '&aAssassino'
+    description:
+      - '&7Elimine jogadores nas partidas.'
+      - '&7Meta: &f15 abates&7 no dia.'
+    amount: 15
+    reward-xp: 80
+    reward-coins: 40
+  beds:
+    type: BEDS
+    display: '&cDestruidor de Camas'
+    description:
+      - '&7Destrua camas inimigas.'
+      - '&7Meta: &f3 camas&7 no dia.'
+    amount: 3
+    reward-xp: 100
+    reward-coins: 50
+  wins:
+    type: WINS
+    display: '&6Vencedor'
+    description:
+      - '&7Vença uma partida hoje.'
+    amount: 1
+    reward-xp: 150
+    reward-coins: 80
+  finals:
+    type: FINALS
+    display: '&eAbates Finais'
+    description:
+      - '&7Dê o último golpe em'
+      - '&7jogadores sem cama.'
+      - '&7Meta: &f5 abates finais&7.'
+    amount: 5
+    reward-xp: 90
+    reward-coins: 45

@@ -1,0 +1,78 @@
+#
+#     _____                 _
+#    | ____|_   _____ _ __ | |_ ___
+#    |  _| \ \ / / _ \ '_ \| __/ __|
+#    | |___ \ V /  __/ | | | |_\__ \
+#    |_____| \_/ \___|_| |_|\__|___/
+#
+# Timeline de eventos da partida (segundos após o início).
+#
+# time: segundos após o início da partida.
+# type: GENERATOR_DIAMOND | GENERATOR_EMERALD | BED_DESTRUCTION | SUDDEN_DEATH | DRAGON | FINAL_COUNTDOWN
+# message: chat da partida.
+# sound: nome de Sound do Bukkit.
+# title: título. Use <nl> para separar título e subtítulo.
+
+diamond-ii:
+  display: 'Diamante II'
+  time: 360
+  type: GENERATOR_DIAMOND
+  message: '&bGeradores de Diamante melhorados para o nível II!'
+  sound: NOTE_PLING
+  title: '&bDiamante II<nl>&7Geradores melhorados'
+
+diamond-iii:
+  display: 'Diamante III'
+  time: 720
+  type: GENERATOR_DIAMOND
+  message: '&bGeradores de Diamante melhorados para o nível III!'
+  sound: NOTE_PLING
+  title: '&bDiamante III<nl>&7Geradores melhorados'
+
+emerald-ii:
+  display: 'Esmeralda II'
+  time: 420
+  type: GENERATOR_EMERALD
+  message: '&aGeradores de Esmeralda melhorados para o nível II!'
+  sound: NOTE_PLING
+  title: '&aEsmeralda II<nl>&7Geradores melhorados'
+
+emerald-iii:
+  display: 'Esmeralda III'
+  time: 780
+  type: GENERATOR_EMERALD
+  message: '&aGeradores de Esmeralda melhorados para o nível III!'
+  sound: NOTE_PLING
+  title: '&aEsmeralda III<nl>&7Geradores melhorados'
+
+bed-destruction:
+  display: 'Destruição de Camas'
+  time: 1200
+  type: BED_DESTRUCTION
+  message: '&c&lTodas as camas foram destruídas!'
+  sound: WITHER_DEATH
+  title: '&cCamas Destruídas<nl>&7Ninguém irá mais renascer'
+
+sudden-death:
+  display: 'Morte Súbita'
+  time: 1500
+  type: SUDDEN_DEATH
+  message: '&c&lMorte Súbita! Todas as ilhas serão destruídas!'
+  sound: WITHER_SPAWN
+  title: '&c&lMORTE SÚBITA<nl>&7Sobreviva!'
+
+dragon:
+  display: 'Dragões'
+  time: 1680
+  type: DRAGON
+  message: '&5&lDragões foram soltos na arena!'
+  sound: ENDERDRAGON_GROWL
+  title: '&5&lDRAGÕES<nl>&7Cuidado!'
+
+final-countdown:
+  display: 'Fim de Jogo'
+  time: 1740
+  type: FINAL_COUNTDOWN
+  message: '&eA partida encerrará em breve!'
+  sound: NOTE_PLING
+  title: '&eContagem Final<nl>&7A partida vai encerrar'

@@ -1,0 +1,1216 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+#
+# material: MATERIAL ou MATERIAL:DATA (ex: WOOL:5). Cabeça de jogador: '{player}'.
+# slots: área rolável do Scroller. previous-slot / next-slot ficam fora dela.
+# back-slot: -1 desativa o botão voltar.
+# facing: itens decorativos. Cada entrada precisa de slot.
+
+# Varinha de seleção (pos1/pos2 e safezone).
+wand:
+  material: GOLD_AXE
+  name: '&6Varinha yBedWars'
+  lore:
+    - ''
+    - ' &eBotão esquerdo &7— Posição 1'
+    - ' &eBotão direito &7— Posição 2'
+    - ''
+    - ' &7Depois use Definir limites'
+    - ' &7ou Safezone no editor.'
+    - ''
+
+# Setas dos menus (carregadas em Config.setup).
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore:
+      - ' &7Clique para ir à página anterior.'
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore:
+      - ' &7Clique para ir à próxima página.'
+
+# Itens da sala de espera (WAITING / STARTING).
+# A chave (team, leave, cosmetic, quests) vira a ação NBT YBedWars-Wait.
+# slot: slot do inventário do jogador (0-8 = hotbar).
+lobby-items:
+  team:
+    slot: 0
+    material: WOOL
+    name: '&aTime {color}{team}'
+    lore:
+      - '&7Time atual: {color}{team}'
+      - '&7Clique para trocar.'
+  class:
+    slot: 2
+    material: GOLD_INGOT
+    name: '&6Classes'
+    lore:
+      - '&7Níveis, classes e recompensas.'
+  cosmetic:
+    slot: 4
+    material: FIREWORK
+    name: '&dCosméticos'
+    lore:
+      - '&7Mensagens, camas e vitória.'
+  quests:
+    slot: 7
+    material: BOOK
+    name: '&eMissões'
+    lore:
+      - '&7Missões diárias.'
+  leave:
+    slot: 8
+    material: BED
+    name: '&cSair'
+    lore:
+      - '&7Sair da partida.'
+
+# ── Cosméticos ─────────────────────────────────────────────────────────────
+# {current} {type} {display} {price} {status} {action} {description}
+cosmetics:
+  name: '&8Cosméticos'
+  size: 36
+  types:
+    kill:
+      slot: 11
+      material: IRON_SWORD
+      name: '&aMensagem de abate'
+      lore:
+        - '&7Atual: {current}'
+        - ''
+        - '&eClique para alterar.'
+    bed:
+      slot: 13
+      material: BED
+      name: '&aQuebra de cama'
+      lore:
+        - '&7Atual: {current}'
+        - ''
+        - '&eClique para alterar.'
+    win:
+      slot: 15
+      material: FIREWORK
+      name: '&aVitória'
+      lore:
+        - '&7Atual: {current}'
+        - ''
+        - '&eClique para alterar.'
+    npc:
+      slot: 20
+      material: SKULL_ITEM
+      name: '&aNPC da ilha'
+      lore:
+        - '&7Atual: {current}'
+        - ''
+        - '&eClique para alterar.'
+    scream:
+      slot: 22
+      material: NOTE_BLOCK
+      name: '&aGrito de morte'
+      lore:
+        - '&7Atual: {current}'
+        - ''
+        - '&eClique para alterar.'
+    balloon:
+      slot: 24
+      material: WOOL
+      name: '&aBalões da ilha'
+      lore:
+        - '&7Atual: {current}'
+        - ''
+        - '&eClique para alterar.'
+  list:
+    name: '&8Cosméticos'
+    size: 27
+    slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25 ]
+    back-slot: 18
+    status-owned: '&aDisponível'
+    status-price: '&6Preço: &e{price} coins'
+    status-locked: '&cBloqueado'
+    action-selected: '&eSelecionado'
+    action-select: '&eClique para selecionar.'
+    action-buy: '&eClique para comprar.'
+    item:
+      material: STONE
+      name: '{display}'
+      lore:
+        - '{description}'
+        - ''
+        - '{status}'
+        - '{action}'
+
+# ── Seleção de time (espera) ───────────────────────────────────────────────
+# {team} {color} {players} {max} {members} {player}
+team-select:
+  name: '&8Selecionar Time'
+  size: 36
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19 ]
+  member-line: ' &8- &f{player}'
+  team-item:
+    material: 1884d5dabe073e28e6b7eb166ff61247905c79f838b6f5752e7ad406091eeaf3
+    name: '{color}{team}'
+    lore:
+      - ''
+      - ' &7Jogadores: &f{players}/{max}'
+      - '{members}'
+      - ''
+      - ' &eClique para entrar.'
+      - ''
+  heads:
+    RED: '68d40935279771adc63936ed9c8463abdf5c5ba78d2e86cb1ec10b4d1d225fb'
+    BLUE: 'e1194fe9edf583c0ebe7dc1d34309beefb229bb15b6a8c3c7b0c76de27c8b7bf'
+    GREEN: '1e38fa3131e2da04a8f8d50872a8232d7d9dea340d06c9097ffa3cc48208df1d'
+    YELLOW: 'f7cce0f7cd91b9c16280b09b12e7982947ba12a38e37d02a047d1053c3239ddc'
+    AQUA: '2d6a8b47da923b7d10142447fdbdcfd1e8e82eb484964252bb36ddb5f73b51c2'
+    WHITE: '1884d5dabe073e28e6b7eb166ff61247905c79f838b6f5752e7ad406091eeaf3'
+    PINK: '9957d594bd3631a941421c14afca8f53ef03d3c86a184f083170b38656e3d'
+    GRAY: '1b9c45d6c7cd0116436c31ed4d8dc825de03e806edb64e9a67f540b8aaae85'
+    ORANGE: '2090d09e173ee34138c3b01b48ee0be534bbb1ace0ddf5ff98e66f7b02113995'
+    PURPLE: '9b82e72b8e4832e5a114ab0fc127c8acb83f31fd4d266d08b2cacc5b6401a400'
+    BLACK: '2a52d579afe2fdf7b8ecfa746cd016150d96beb75009bb2733ade15d487c42a1'
+    LIME: '1391203d3752afc71d8f8cb0da8dbc7f13a3baafe0bf5f911cb21c38341f87db'
+
+# ── Seleção de mapas (jogador) ─────────────────────────────────────────────
+arena-select:
+  name: '&8Bed Wars {mode} ({page}/{pages})'
+  size: 54
+  back-slot: 47
+  favorite-slot: 48
+  next-slot: 49
+  search-slot: 53
+  item:
+    material: PAPER
+    name: '&f{arena} &7({id})'
+    lore:
+      - '&7Salas:'
+      - ' &7Disponíveis: &a{available}'
+      - ' &7Total: &f{total}'
+      - ''
+      - '&bClique com o direito'
+      - '&bpara adicionar aos favoritos.'
+      - ''
+      - '&eClique para solicitar uma sala!'
+  back:
+    material: ARROW
+    name: '&cVoltar'
+    lore:
+      - '&7Para Bed Wars {mode}'
+  previous:
+    material: ARROW
+    name: '&aPágina {page}'
+  next:
+    material: ARROW
+    name: '&aPágina {page}'
+  random-favorite:
+    material: NAME_TAG
+    name: '&aMapa favorito aleatório'
+    lore:
+      - '&7Entre um mapa aleatório'
+      - '&7de seus favoritos.'
+      - ''
+      - '&eClique para entrar!'
+  search:
+    material: HOPPER
+    name: '&dPesquisar'
+    lore:
+      - '&7Filtre os mapas por nome.'
+      - ''
+      - '&eClique para ver mais.'
+
+# ── Seleção de modos ───────────────────────────────────────────────────────
+mode-select:
+  name: '&8BedWars — Modos'
+  size: 27
+  solo:
+    slot: 10
+    material: IRON_SWORD
+    name: '&aSolo'
+    lore:
+      - ''
+      - ' &71 jogador por equipe.'
+      - ' &78 equipes.'
+      - ''
+      - ' &eClique para jogar'
+      - ''
+  doubles:
+    slot: 12
+    material: IRON_CHESTPLATE
+    name: '&aDuplas'
+    lore:
+      - ''
+      - ' &72 jogadores por equipe.'
+      - ' &78 equipes.'
+      - ''
+      - ' &eClique para jogar'
+      - ''
+  trios:
+    slot: 14
+    material: DIAMOND_SWORD
+    name: '&aTrios'
+    lore:
+      - ''
+      - ' &73 jogadores por equipe.'
+      - ' &74 equipes.'
+      - ''
+      - ' &eClique para jogar'
+      - ''
+  squads:
+    slot: 16
+    material: DIAMOND_CHESTPLATE
+    name: '&aQuartetos'
+    lore:
+      - ''
+      - ' &74 jogadores por equipe.'
+      - ' &74 equipes.'
+      - ''
+      - ' &eClique para jogar'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# ── Filas (NPC lobby) ──────────────────────────────────────────────────────
+# controls: botões comuns (voltar / poção) em todos os menus de fila.
+# 1v1/2v2/...: só o título; itens play/map vêm de queue.solo se não existirem.
+queue:
+  controls:
+    back:
+      slot: 22
+      material: ARROW
+      name: '&cVoltar'
+    potion:
+      slot: 26
+      material: POTION
+      name: '&dEstatísticas'
+      lore:
+        - '&7Veja suas estatísticas.'
+  1v1:
+    name: '&8Bed Wars 1v1'
+  2v2:
+    name: '&8Bed Wars 2v2'
+  3v3:
+    name: '&8Bed Wars 3v3'
+  4v4:
+    name: '&8Bed Wars 4v4'
+  4s:
+    name: '&8Bed Wars 4s'
+  solo:
+    name: '&8Bed Wars Solo'
+    size: 27
+    play:
+      slot: 11
+      material: EYE_OF_ENDER
+      name: '&aBed Wars ({mode})'
+      lore:
+        - '&a{playing} jogando agora!'
+        - ''
+        - '&6&lTOP WINSTREAK DIARIO:'
+        - '&e1º &f{top1} &6{top1_streak}'
+        - '&62º &d{top2} &5{top2_streak}'
+        - '&63º &d{top3} &5{top3_streak}'
+        - ''
+        - '&eClique para jogar.'
+    map:
+      slot: 15
+      material: PAPER
+      name: '&aSelecionar mapa'
+      lore:
+        - '&7Escolha o mapa que você'
+        - '&7quer jogar.'
+        - ''
+        - '&cExclusivo para VIPs'
+  doubles:
+    name: '&8Bed Wars Duplas'
+    size: 27
+    play:
+      slot: 11
+      material: EYE_OF_ENDER
+      name: '&aBed Wars ({mode})'
+      lore:
+        - '&a{playing} jogando agora!'
+        - ''
+        - '&6&lTOP WINSTREAK DIARIO:'
+        - '&e1º &f{top1} &6{top1_streak}'
+        - '&62º &d{top2} &5{top2_streak}'
+        - '&63º &d{top3} &5{top3_streak}'
+        - ''
+        - '&eClique para jogar.'
+    map:
+      slot: 15
+      material: PAPER
+      name: '&aSelecionar mapa'
+      lore:
+        - '&7Escolha o mapa que você'
+        - '&7quer jogar.'
+        - ''
+        - '&cExclusivo para VIPs'
+  trios:
+    name: '&8Bed Wars Trios'
+    size: 27
+    play:
+      slot: 11
+      material: EYE_OF_ENDER
+      name: '&aBed Wars ({mode})'
+      lore:
+        - '&a{playing} jogando agora!'
+        - ''
+        - '&6&lTOP WINSTREAK DIARIO:'
+        - '&e1º &f{top1} &6{top1_streak}'
+        - '&62º &d{top2} &5{top2_streak}'
+        - '&63º &d{top3} &5{top3_streak}'
+        - ''
+        - '&eClique para jogar.'
+    map:
+      slot: 15
+      material: PAPER
+      name: '&aSelecionar mapa'
+      lore:
+        - '&7Escolha o mapa que você'
+        - '&7quer jogar.'
+        - ''
+        - '&cExclusivo para VIPs'
+  squads:
+    name: '&8Bed Wars Quartetos'
+    size: 27
+    play:
+      slot: 11
+      material: EYE_OF_ENDER
+      name: '&aBed Wars ({mode})'
+      lore:
+        - '&a{playing} jogando agora!'
+        - ''
+        - '&6&lTOP WINSTREAK DIARIO:'
+        - '&e1º &f{top1} &6{top1_streak}'
+        - '&62º &d{top2} &5{top2_streak}'
+        - '&63º &d{top3} &5{top3_streak}'
+        - ''
+        - '&eClique para jogar.'
+    map:
+      slot: 15
+      material: PAPER
+      name: '&aSelecionar mapa'
+      lore:
+        - '&7Escolha o mapa que você'
+        - '&7quer jogar.'
+        - ''
+        - '&cExclusivo para VIPs'
+  duel:
+    name: '&8Bed Wars 1v1/2v2/3v3/4v4/4s'
+    size: 27
+    items:
+      1v1:
+        slot: 9
+        amount: 1
+        mode: ONE_VS_ONE
+        material: BED
+        name: '&c1v1'
+        lore:
+          - '&a{playing} jogando agora!'
+      2v2:
+        slot: 11
+        amount: 2
+        mode: TWO_VS_TWO
+        material: BED
+        name: '&c2v2'
+        lore:
+          - '&a{playing} jogando agora!'
+      3v3:
+        slot: 13
+        amount: 3
+        mode: THREE_VS_THREE
+        material: BED
+        name: '&c3v3'
+        lore:
+          - '&a{playing} jogando agora!'
+      4v4:
+        slot: 15
+        amount: 4
+        mode: FOUR_VS_FOUR
+        material: BED
+        name: '&c4v4'
+        lore:
+          - '&a{playing} jogando agora!'
+      4s:
+        slot: 17
+        amount: 4
+        mode: FOURS
+        material: BED
+        name: '&d4s'
+        lore:
+          - '&a{playing} jogando agora!'
+
+# ── Estatísticas ───────────────────────────────────────────────────────────
+stats:
+  name: '&8Estatísticas'
+  size: 27
+  item:
+    slot: 13
+    material: '{player}'
+    name: '&6&l{player}'
+    lore:
+      - ''
+      - ' &7Vitórias: &a{wins}'
+      - ' &7Derrotas: &c{losses}'
+      - ' &7Abates: &e{kills}'
+      - ' &7Abates finais: &e{final_kills}'
+      - ' &7Mortes: &c{deaths}'
+      - ' &7Camas: &a{beds}'
+      - ' &7KDR: &f{kdr}'
+      - ' &7Winstreak: &6{winstreak}'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# ── Loja de itens da partida ───────────────────────────────────────────────
+shop:
+  name: '&8Compra rápida'
+  category-title: '&8Loja: {category}'
+  quick-category: special
+  size: 54
+  back-slot: 45
+  hotbar-slot: 53
+  selected-offset: 9
+  selected:
+    material: 'STAINED_GLASS_PANE:5'
+    name: ' '
+  unselected:
+    material: 'STAINED_GLASS_PANE:15'
+    name: ' '
+  fill:
+    material: 'STAINED_GLASS_PANE:15'
+    name: ' '
+  item-fill:
+    material: 'STAINED_GLASS_PANE:14'
+    name: ' '
+  item-slots: [ 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
+  hotbar:
+    material: BLAZE_POWDER
+    name: '&aEditor de hotbar'
+    lore:
+      - ''
+      - ' &7Altere as predefinições'
+      - ' &7da hotbar.'
+      - ''
+      - ' &eClique para ver mais.'
+      - ''
+  categories:
+    special:
+      slot: 0
+      material: NETHER_STAR
+      name: '&bCompra rápida'
+      title: 'Compra rápida'
+      lore:
+        - '&7Clique para ver.'
+    blocks:
+      slot: 1
+      material: HARD_CLAY
+      name: '&fBlocos'
+      title: 'Blocos'
+      lore:
+        - '&7Clique para ver.'
+    melee:
+      slot: 2
+      material: GOLD_SWORD
+      name: '&fCombate'
+      title: 'Combate'
+      lore:
+        - '&7Clique para ver.'
+    armor:
+      slot: 3
+      material: CHAINMAIL_BOOTS
+      name: '&fArmadura'
+      title: 'Armadura'
+      lore:
+        - '&7Clique para ver.'
+    tools:
+      slot: 4
+      material: STONE_PICKAXE
+      name: '&fFerramentas'
+      title: 'Ferramentas'
+      lore:
+        - '&7Clique para ver.'
+    ranged:
+      slot: 5
+      material: BOW
+      name: '&fArcos'
+      title: 'Arcos'
+      lore:
+        - '&7Clique para ver.'
+    potions:
+      slot: 6
+      material: POTION
+      name: '&fPoções'
+      title: 'Poções'
+      lore:
+        - '&7Clique para ver.'
+    utility:
+      slot: 7
+      material: CHEST
+      name: '&fUtilidades'
+      title: 'Utilidades'
+      lore:
+        - '&7Clique para ver.'
+  facing:
+    glass3:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 48
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass7:
+      slot: 49
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass8:
+      slot: 50
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass9:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass10:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# ── Missões diárias ────────────────────────────────────────────────────────
+# {display} {progress} {amount} {xp} {coins} {status} {description}
+quests:
+  name: '&8Missões diárias'
+  size: 27
+  slots: [ 11, 12, 13, 14, 15 ]
+  status-done: '&aConcluída'
+  status-progress: '&eEm andamento'
+  item:
+    material: PAPER
+    name: '{display}'
+    lore:
+      - '{description}'
+      - ''
+      - ' &7Progresso: &f{progress}/{amount}'
+      - ' &7XP: &b{xp} &8| &7Coins: &6{coins}'
+      - ''
+      - ' {status}'
+      - ''
+  done-item:
+    material: STORAGE_MINECART
+    name: '{display}'
+    lore:
+      - '{description}'
+      - ''
+      - ' &7Progresso: &f{progress}/{amount}'
+      - ' &7XP: &b{xp} &8| &7Coins: &6{coins}'
+      - ''
+      - ' {status}'
+      - ''
+
+# ── Teleportador de espectador ─────────────────────────────────────────────
+# {player} {health} {team} {color}
+spectate:
+  name: '&8Teleportador'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+  player-item:
+    material: '{player}'
+    name: '&a{player}'
+    lore:
+      - ''
+      - ' &7Vida: &f{health}%'
+      - ' &7Time: {color}{team}'
+      - ''
+      - ' &eClique para teleportar.'
+      - ''
+
+# Itens do modo espectador.
+spectator-items:
+  teleport:
+    slot: 0
+    material: COMPASS
+    name: '&aTeleportador'
+    lore:
+      - ''
+      - ' &7Clique para teleportar'
+      - ' &7até um jogador.'
+      - ''
+  random:
+    slot: 1
+    material: IRON_SWORD
+    name: '&aTeleportar: Jogador aleatório'
+    lore:
+      - ''
+      - ' &7Teleporta para um jogador vivo.'
+      - ''
+  combat:
+    slot: 2
+    material: DIAMOND_SWORD
+    name: '&aTeleportar: Jogador em combate'
+    lore:
+      - ''
+      - ' &7Teleporta para alguém em luta.'
+      - ''
+  play-again:
+    slot: 7
+    material: PAPER
+    name: '&aJogar novamente'
+    lore:
+      - ''
+      - ' &7Busca outra partida.'
+      - ''
+  lobby:
+    slot: 8
+    material: BED
+    name: '&cVoltar ao Lobby'
+    lore:
+      - ''
+      - ' &7Sai da partida.'
+      - ''
+
+hotbar-editor:
+  name: '&8Editando hotbar...'
+  size: 27
+  slot-start: 9
+  back-slot: 22
+  slot-item:
+    material: 'STAINED_GLASS_PANE:14'
+    name: '&fSlot #{slot}'
+    lore:
+      - ''
+      - '&eBotão esquerdo: Adicionar'
+  fill:
+    material: 'STAINED_GLASS_PANE:15'
+    name: ' '
+  back:
+    material: ARROW
+    name: '&aVoltar'
+    lore:
+      - '&7Para Compra Rápida'
+
+hotbar-add:
+  name: '&8Adicionado no slot #{slot}...'
+  size: 27
+  categories-slot: 0
+  items-slot: 1
+  selected-offset: 9
+  back-slot: 26
+  category-slots: [ 19, 20, 21, 22, 23, 24, 25 ]
+  item-slots: [ 19, 20, 21, 22, 23, 24, 25 ]
+  selected:
+    material: 'STAINED_GLASS_PANE:5'
+    name: ' '
+  unselected:
+    material: 'STAINED_GLASS_PANE:15'
+    name: ' '
+  fill:
+    material: 'STAINED_GLASS_PANE:15'
+    name: ' '
+  categories-item:
+    material: BOOK
+    name: '&aCategorias'
+  items-item:
+    material: DIAMOND_PICKAXE
+    name: '&aItens'
+    lore:
+      - '&7Clique para ver mais.'
+  category-lore:
+    - '&7Inclui todos os itens desta categoria.'
+    - ''
+    - '&eClique para adicionar.'
+  item-lore:
+    - '&eClique para adicionar.'
+  back:
+    material: ARROW
+    name: '&aVoltar'
+    lore:
+      - '&7Para Editando hotbar...'
+
+# ── Editor de arenas (admin, /bwadmin) ─────────────────────────────────────
+# Clique na estrela para criar. Clique na arena para editar.
+arena-admin:
+  name: '&8Editor de Arenas'
+  size: 54
+  slots: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44 ]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: -1
+  # Slot do botão de criar arena.
+  create-slot: 49
+  item:
+    material: BED
+    name: '&6{arena}'
+    lore:
+      - ''
+      - ' &7ID: &f{id}'
+      - ' &7Modo: &f{mode}'
+      - ' &7Estado: &f{state}'
+      - ' &7Configurada: &f{configured}'
+      - ''
+      - ' &eClique para editar'
+      - ''
+  create:
+    material: NETHER_STAR
+    name: '&a&lCriar Arena'
+    lore:
+      - ''
+      - ' &7Clique para criar uma nova'
+      - ' &7arena na sua posição.'
+      - ''
+  facing:
+    glass1:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# ── Edição da arena ────────────────────────────────────────────────────────
+# Clique define a localização na posição atual do jogador.
+# Shift + clique teleporta (quando aplicável).
+arena-edit:
+  name: '&8Editar — {arena}'
+  size: 54
+  lobby-slot: 10
+  spectator-slot: 11
+  exit-slot: 28
+  wand-slot: 12
+  bounds-slot: 13
+  diamond-slot: 14
+  emerald-slot: 15
+  mode-slot: 16
+  enable-slot: 19
+  teams-slot: 20
+  name-slot: 21
+  teleport-slot: 22
+  save-slot: 23
+  delete-slot: 24
+  back-slot: 45
+  lobby:
+    material: COMPASS
+    name: '&aLobby'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &eClique para definir aqui'
+      - ' &7Shift + clique para ir'
+      - ''
+  spectator:
+    material: EYE_OF_ENDER
+    name: '&bEspectador'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &eClique para definir aqui'
+      - ' &7Shift + clique para ir'
+      - ''
+  exit:
+    material: WOOD_DOOR
+    name: '&cSaída'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &eClique para definir aqui'
+      - ' &7Shift + clique para ir'
+      - ''
+  wand:
+    material: GOLD_AXE
+    name: '&6Varinha'
+    lore:
+      - ''
+      - ' &7Esquerdo = Posição 1'
+      - ' &7Direito = Posição 2'
+      - ''
+      - ' &eClique para receber'
+      - ''
+  bounds:
+    material: EMERALD
+    name: '&aDefinir limites'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &eClique para aplicar a seleção'
+      - ' &7da varinha (pos1 / pos2).'
+      - ' &7Shift + clique para ir ao pos1'
+      - ''
+  diamond:
+    material: DIAMOND
+    name: '&bGeradores de Diamante'
+    lore:
+      - ''
+      - ' &7Total: &f{total}'
+      - ''
+      - ' &eClique para adicionar aqui'
+      - ' &cShift + clique para limpar'
+      - ''
+  emerald:
+    material: EMERALD
+    name: '&aGeradores de Esmeralda'
+    lore:
+      - ''
+      - ' &7Total: &f{total}'
+      - ''
+      - ' &eClique para adicionar aqui'
+      - ' &cShift + clique para limpar'
+      - ''
+  mode:
+    material: IRON_SWORD
+    name: '&eModo: &f{mode}'
+    lore:
+      - ''
+      - ' &7Times: &f{teams}'
+      - ' &7Jogadores/time: &f{size}'
+      - ''
+      - ' &eClique para alternar'
+      - ''
+  enable:
+    material: 'WOOL:5'
+    name: '&aHabilitada: &f{enabled}'
+    lore:
+      - ''
+      - ' &7Configurada: &f{configured}'
+      - ''
+      - ' &eClique para alternar'
+      - ''
+  teams:
+    material: BED
+    name: '&6Times'
+    lore:
+      - ''
+      - ' &7Configurados: &f{ready}/{total}'
+      - ''
+      - ' &eClique para editar'
+      - ''
+  display-name:
+    material: NAME_TAG
+    name: '&fNome: &e{name}'
+    lore:
+      - ''
+      - ' &eClique para alterar no chat'
+      - ''
+  teleport:
+    material: ENDER_PEARL
+    name: '&dIr ao lobby'
+    lore:
+      - ''
+      - ' &7Teleportar para o lobby'
+      - ' &7da arena.'
+      - ''
+  save:
+    material: EMERALD_BLOCK
+    name: '&aSalvar'
+    lore:
+      - ''
+      - ' &7Salva a arena no disco.'
+      - ''
+  delete:
+    material: REDSTONE_BLOCK
+    name: '&cDeletar'
+    lore:
+      - ''
+      - ' &7Remove esta arena.'
+      - ''
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+
+# ── Lista de times da arena ────────────────────────────────────────────────
+arena-team:
+  name: '&8Times — {arena}'
+  size: 54
+  slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23 ]
+  back-slot: 45
+  item:
+    material: WOOL
+    name: '{team}'
+    lore:
+      - ''
+      - ' &7Spawn: &f{spawn}'
+      - ' &7Cama: &f{bed}'
+      - ' &7Gerador: &f{generator}'
+      - ' &7Loja: &f{shop}'
+      - ' &7Upgrade: &f{upgrade}'
+      - ''
+      - ' &eClique para editar'
+      - ''
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+
+# ── Edição de um time (spawn, cama, gerador, lojas) ────────────────────────
+arena-team-edit:
+  name: '&8Time {team}'
+  size: 27
+  spawn-slot: 10
+  bed-slot: 11
+  generator-slot: 12
+  shop-slot: 13
+  upgrade-slot: 14
+  safezone-slot: 15
+  teleport-slot: 16
+  back-slot: 22
+  spawn:
+    material: COMPASS
+    name: '&aSpawn'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &eClique para definir aqui'
+      - ' &7Shift + clique para ir'
+      - ''
+  bed:
+    material: BED
+    name: '&cCama'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &eClique para definir aqui'
+      - ' &7Shift + clique para ir'
+      - ''
+  generator:
+    material: FURNACE
+    name: '&6Gerador da ilha'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &eClique para definir aqui'
+      - ''
+  shop:
+    material: EMERALD
+    name: '&aLoja'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &eClique para definir aqui'
+      - ''
+  upgrade:
+    material: DIAMOND
+    name: '&bLoja de upgrades'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &eClique para definir aqui'
+      - ''
+  safezone:
+    material: IRON_FENCE
+    name: '&eSafezone do spawn'
+    lore:
+      - ''
+      - ' &7{location}'
+      - ''
+      - ' &7Área onde não se coloca bloco.'
+      - ' &eClique para aplicar a seleção'
+      - ' &7da varinha.'
+      - ' &7Shift + clique para ir'
+      - ''
+  teleport:
+    material: ENDER_PEARL
+    name: '&dIr ao spawn'
+    lore:
+      - ''
+      - ' &7Teleportar para o spawn'
+      - ' &7deste time.'
+      - ''
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+
+# ── Loja de upgrades da equipe ─────────────────────────────────────────────
+upgrade-shop:
+  name: '&8Melhorias do Time'
+  size: 27
+  slots: [ 9, 10, 11, 12, 13, 14, 15 ]
+  back-slot: 36
+  item:
+    material: DIAMOND
+    name: '&b{upgrade}'
+    lore:
+      - ''
+      - ' &7Nível: &f{level}/{max}'
+      - ' &7Preço: &b{price} Diamante(s)'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 40
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 44
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# ── Ranking ────────────────────────────────────────────────────────────────
+top:
+  name: '&8Ranking'
+  size: 54
+  slots: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44 ]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: -1
+  item:
+    material: '{player}'
+    name: '&e#{position} &6{player}'
+    lore:
+      - ''
+      - ' &7Valor: &f{value}'
+      - ''
+  facing:
+    glass1:
+      slot: 45
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 46
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 47
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 49
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass5:
+      slot: 51
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass6:
+      slot: 52
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass7:
+      slot: 53
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+
+# ── Confirmação (ex: deletar arena) ────────────────────────────────────────
+confirm:
+  name: '&8Confirmar'
+  size: 27
+  confirm-slot: 11
+  cancel-slot: 15
+  confirm:
+    material: 'WOOL:5'
+    name: '&aConfirmar'
+    lore:
+      - ''
+      - ' &7Clique para &aconfirmar&7.'
+      - ''
+  cancel:
+    material: 'WOOL:14'
+    name: '&cCancelar'
+    lore:
+      - ''
+      - ' &7Clique para &ccancelar&7.'
+      - ''
+  facing:
+    glass1:
+      slot: 0
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass2:
+      slot: 8
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass3:
+      slot: 18
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '
+    glass4:
+      slot: 26
+      material: 'STAINED_GLASS_PANE:15'
+      name: ' '

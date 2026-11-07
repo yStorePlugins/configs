@@ -1,0 +1,15 @@
+# Mensagem ao enviar o jogador.
+sending: '&aEnviando você para o BedWars...'
+not-found: '&cNenhuma sala de BedWars disponível.'
+
+# Se true, registra /bedwars|/bw no proxy (MatchTracker legado).
+# Em modo multi-server com Redis no lobby, deixe false para o backend tratar /bw join.
+register-command: false
+
+# Servidor de lobby (para onde o jogador volta ao sair da partida).
+lobby-server: lobby
+
+# Servidores Bukkit com o módulo common do yBedWars.
+bedwars-servers:
+  - game1
+  - game2

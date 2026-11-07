@@ -1,0 +1,286 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+#
+# chat: mensagens de chat (uma por ação).
+# actionbar: barras persistentes (2+ variantes).
+# title: títulos. Use <nl> para separar título e subtítulo.
+
+# Mensagens de chat — agrupadas por funcionalidade.
+chat:
+  syntax: '&cUse: /{cmd} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  inv-full: '&cSeu inventário está cheio.'
+  help: |
+
+    &6&lComandos do jogador
+    &a/{cmd} &8- &7Abre o menu de modos.
+    &a/{cmd} help &8- &7Mostra esta ajuda.
+    &a/{cmd} join [arena|modo] &8- &7Entra na fila ou em um mapa.
+    &a/{cmd} leave &8- &7Sai da partida.
+    &a/{cmd} spectate [arena] &8- &7Assiste uma partida.
+    &a/{cmd} stats [jogador] &8- &7Ver estatísticas.
+    &a/{cmd} classe &8- &7Classes e recompensas.
+    &a/{cmd} top &8- &7Ranking de vitórias.
+    &a/{cmd} reconectar &8- &7Volta após cair da partida.
+    &a/{cmd} party &8- &7Cria uma party.
+    &a/{cmd} party invite <jogador> &8- &7Convida para a party.
+    &a/{cmd} party accept &8- &7Aceita o convite.
+    &a/{cmd} party leave &8- &7Sai da party.
+    &a/reconectar &8- &7Atalho para reconectar.
+    &a/g <msg> &8- &7Chat global da partida.
+    &a/t <msg> &8- &7Chat da equipe.
+    &7Aliases: &fentrar, sair, spec, ranking, class, rc
+  admin-help: |
+
+    &6&lComandos admin &7(/bwadmin)
+    &a/{cmd} &8- &7Abre o editor de arenas.
+    &a/{cmd} help &8- &7Mostra esta ajuda.
+    &a/{cmd} reload &8- &7Recarrega as configurações.
+    &a/{cmd} start [arena] &8- &7Inicia a partida.
+    &a/{cmd} end [arena] &8- &7Encerra a partida.
+    &a/{cmd} list &8- &7Lista as arenas.
+    &a/{cmd} create <id> [modo] &8- &7Cria uma arena.
+    &a/{cmd} delete <id> &8- &7Apaga a arena.
+    &a/{cmd} enable <id> &8- &7Ativa a arena.
+    &a/{cmd} disable <id> &8- &7Desativa a arena.
+    &a/{cmd} save [id] &8- &7Salva a arena.
+    &a/{cmd} select <id> &8- &7Seleciona a arena (não precisa repetir o id).
+    &a/{cmd} edit [id] &8- &7Abre o editor da arena.
+    &a/{cmd} tp [id] [lobby|exit|spec|spawn] [time] &8- &7Teleporta.
+    &a/{cmd} wand &8- &7Varinha de seleção (pos1/pos2).
+    &a/{cmd} setpos1 [id] &8- &7Pos1 na sua posição.
+    &a/{cmd} setpos2 [id] &8- &7Pos2 na sua posição.
+    &a/{cmd} define [id] &8- &7Aplica os limites da varinha.
+    &a/{cmd} setlobby [id] &8- &7Lobby na sua posição.
+    &a/{cmd} setexit [id] &8- &7Saída na sua posição.
+    &a/{cmd} setspectator [id] &8- &7Espectador na sua posição.
+     &a/{cmd} setspawn [id] <time> &8- &7Spawn do time.
+     &a/{cmd} setbed [id] <time> &8- &7Cama do time.
+     &a/{cmd} setchest [id] <time> &8- &7Baú do time (olhando para ele).
+     &a/{cmd} setenderchest [id] <time> &8- &7Ender chest do time (olhando para ele).
+    &a/{cmd} setshop [id] <time> &8- &7NPC da loja.
+    &a/{cmd} setupgrade [id] <time> &8- &7NPC de melhorias.
+    &a/{cmd} setgenerator [id] <time|diamond|emerald> &8- &7Gerador.
+    &a/{cmd} setsafezone [id] <time> &8- &7Safezone da varinha.
+    &a/{cmd} setnpc <solo|doubles|trios|squads|duel> &8- &7NPC de fila.
+    &a/{cmd} delnpc <tipo> &8- &7Remove o NPC de fila.
+    &a/{cmd} instances &8- &7Lista instâncias ativas.
+    &a/{cmd} instances stop <id> &8- &7Encerra uma instância.
+    &a/{cmd} servers &8- &7Status da rede.
+    &7Jogador: &f/bw help
+  arena-not-found: '&cArena {arena} não encontrada.'
+  instances-full: '&cTodas as instancias de &f{arena} &cestao cheias ou em jogo. &7(max {max})'
+  instance-create-fail: '&cFalha ao criar instancia para &f{arena}&c.'
+  instances-list-header: '&6&lInstancias ativas &7({count})'
+  instances-list-line: '&e{arena} &7#{slot} &8| &f{world} &8| &a{state} &8| &f{players}/{max} &8| &7id:{id}'
+  instances-list-empty: '&7Nenhuma instancia ativa.'
+  instance-stop-ok: '&aInstancia &f{id} &aencerrada.'
+  instance-stop-fail: '&cInstancia nao encontrada: &f{id}'
+  servers-list-header: '&6&lServidores rede &7({count})'
+  servers-list-line: '&e{server} &8| &a{role} &8| &f{online}/{max} &8| &7hb {ago}s'
+  servers-list-empty: '&7Nenhum servidor no Redis (ou redis desligado).'
+  servers-inst-line: '&7  &f{arena} &8| &a{state} &8| &f{players}/{max} &8| &7{map} &8| &bid:{id}'
+  network-no-route: '&cNenhum servidor de jogo disponivel para &f{arena}&c.'
+  network-connecting: '&aConectando em &f{server} &7({arena})&a...'
+  network-reserve-fail: '&cFalha ao reservar vaga. Tente novamente.'
+  network-disabled: '&cRede multi-server indisponivel (Redis).'
+  vip-only: '&cExclusivo para VIPs.'
+  npc-set: '&aNPC de fila &f{type} &adefinido aqui.'
+  favorite-added: '&aMapa {arena} adicionado aos favoritos.'
+  favorite-removed: '&cMapa {arena} removido dos favoritos.'
+  favorite-empty: '&cVocê não tem mapas favoritos neste modo.'
+  map-search: '&eDigite o nome do mapa no chat. &7(cancelar para abortar)'
+  map-search-none: '&cNenhum mapa encontrado.'
+  npc-removed: '&cNPC de fila &f{type} &cremovido.'
+  npc-unknown: '&cTipo de NPC inválido: &f{type}&c. Use solo, doubles, trios, squads ou duel.'
+  arena-full: '&cEsta arena está cheia.'
+  arena-in-game: '&cEsta arena já está em jogo.'
+  arena-disabled: '&cEsta arena está desabilitada.'
+  arena-created: '&aArena {arena} criada com sucesso.'
+  arena-deleted: '&cArena {arena} removida com sucesso.'
+  arena-enabled: '&aArena {arena} habilitada com sucesso.'
+  arena-disabled-ok: '&aArena {arena} desabilitada com sucesso.'
+  arena-already-exists: '&cJá existe uma arena com o id {arena}.'
+  arena-not-configured: '&cA arena {arena} não está configurada corretamente.'
+  arena-spawn-set: '&aSpawn do time {team} definido na arena {arena}.'
+  arena-lobby-set: '&aLobby definido na arena {arena}.'
+  arena-spectator-set: '&aSpawn de espectador definido na arena {arena}.'
+  arena-bed-set: '&aCama do time {team} definida na arena {arena}.'
+  arena-chest-set: '&aBaú do time {team} definido na arena {arena}.'
+  arena-ender-chest-set: '&aEnder chest do time {team} definido na arena {arena}.'
+  look-at-chest: '&cOlhe para um baú ou ender chest e execute o comando.'
+  arena-generator-set: '&aGerador definido na arena {arena}.'
+  arena-shop-set: '&aLoja do time {team} definida na arena {arena}.'
+  arena-upgrade-set: '&aLoja de upgrades do time {team} definida na arena {arena}.'
+  arena-bounds-set: '&aLimites definidos na arena {arena}.'
+  arena-saved: '&aArena {arena} salva com sucesso.'
+  arena-selected: '&aArena selecionada: &f{arena}&a. Agora pode usar &f/{cmd} setspawn red &asem o id.'
+  arena-no-selected: '&cNenhuma arena selecionada. Use /{cmd} select <id>.'
+  arena-exit-set: '&aSaída da arena {arena} definida.'
+  wand-received: '&aVarinha recebida. Esquerdo = pos1, direito = pos2.'
+  wand-pos1: '&aPosição 1: &f{x}, {y}, {z}'
+  wand-pos2: '&aPosição 2: &f{x}, {y}, {z}'
+  wand-need-selection: '&cSelecione pos1 e pos2 com a varinha primeiro.'
+  safezone-set: '&aSafezone do time {team} definida na arena {arena}.'
+  join-success: '&aVocê entrou na arena {arena}.'
+  leave-success: '&cVocê saiu da partida.'
+  leave-not-in-game: '&cVocê não está em nenhuma partida.'
+  player-joined: '&a{player} entrou na sala ({current}/{max})'
+  player-left: '&c{player} saiu da sala ({current}/{max})'
+  game-starting: '&eO jogo inicia em &b{time} &e{unit}!'
+  game-started: '&a&lA partida começou! Proteja sua cama!'
+  game-cancelled: '&cPartida cancelada por falta de jogadores.'
+  game-not-enough: '&cNão há jogadores suficientes para iniciar.'
+  game-not-joinable: '&cEsta partida não aceita novos jogadores no momento.'
+  game-winner: '&6&lO time {team} venceu a partida!'
+  game-draw: '&eA partida terminou em empate!'
+  game-force-start: '&aA partida foi iniciada forçadamente por um admin.'
+  game-force-end: '&cA partida foi encerrada forçadamente por um admin.'
+  countdown-seconds: '&eO jogo inicia em &b{time} {unit}!'
+  bed-destroyed: '&d&lCAMA DESTRUÍDA &8> &7A Cama do {team} foi destruída por {player}.'
+  bed-destroyed-own: '&cSua cama foi destruída por {player}!'
+  bed-own-break: '&cVocê não pode destruir a cama do seu próprio time!'
+  bed-shielded: '&cEsta cama está protegida por um escudo!'
+  special-cooldown: '&cAguarde para usar este item novamente.'
+  already-destroyed: '&cEsta cama já foi destruída.'
+  team-eliminated: '&d&lTIME ELIMINADO &8> &7O Time {team} foi eliminado.'
+  team-join: '&aVocê entrou no time {team}.'
+  team-full: '&cO time {team} está cheio.'
+  height-limit: '&cVocê não pode construir acima de Y {y}.'
+  chest-locked: '&cVocê só pode abrir o baú desse time depois de eliminá-los.'
+  trap-alarm: '&cALARME<nl>&7{player} invadiu sua ilha'
+  quest-complete: '&aMissão concluída: {quest} &8(&b+{xp} XP&8, &6+{coins} coins&8)'
+  cosmetic-select: '&aCosmético selecionado: {name}'
+  cosmetic-buy: '&aVocê comprou {name} &8(&6{price} coins&8)'
+  cosmetic-no-coins: '&cCoins insuficientes. Precisa &6{price}&c, você tem &6{coins}&c.'
+  cosmetic-locked: '&cVocê não possui este cosmético.'
+  class-claim: '&aVocê coletou a classe {class} &8(&6+{coins} coins&8, &a+{cash} cash&8)'
+  class-locked: '&cA classe {class} &cexige nível &b{level}*&c.'
+  class-already: '&cVocê já coletou a recompensa de {class}&c.'
+  class-unlock: '&aVocê tem &f{amount} &arecompensa(s) de classe para coletar. &7/bw classe'
+  first-kill: '&7{player} morreu para {killer}. &e&lPRIMEIRA KILL!'
+  first-final-kill: '&7{player} morreu para {killer}. &e&lPRIMEIRA KILL FINAL!'
+  final-kill: '&7{player} morreu para {killer}.'
+  kill-message: '&7{player} morreu para {killer}.'
+  death-void: '&7{player} morreu.'
+  death-final: '&7{player} morreu.'
+  spectator-no-player: '&cNenhum jogador disponível para teleportar.'
+  play-again: '&aBuscando uma nova partida...'
+  respawn-in: '&eVocê irá renascer em &c{time}s&e.'
+  buy-success: '&aVocê comprou &f{item}&a.'
+  buy-fail: '&cNão foi possível comprar este item.'
+  buy-limit: '&cVocê atingiu o limite de compra deste item.'
+  no-resources: '&cVocê não tem {currency} suficiente. Necessário: {price}.'
+  tracker-locked: '&cDisponível apenas quando não há camas inimigas restantes.'
+  tracker-no-enemy: '&cNenhum inimigo para rastrear.'
+  upgrade-bought: '&aUpgrade {upgrade} comprado! Nível {level}/{max}.'
+  upgrade-max: '&cEste upgrade já está no nível máximo.'
+  upgrade-already: '&cSua equipe já possui este upgrade.'
+  split-received: '&7Você recebeu &a{amount} {resource} &7(split).'
+  spectator-join: '&7Você entrou no modo espectador.'
+  spectator-leave: '&aVocê saiu do modo espectador.'
+  party-created: '&aParty criada com sucesso.'
+  party-invite: '&e{player} &7convidou você para a party. Use &f/{cmd} party accept&7.'
+  party-joined: '&aVocê entrou na party de {player}.'
+  party-left: '&cVocê saiu da party.'
+  party-disbanded: '&cA party foi desfeita.'
+  party-full: '&cA party está cheia.'
+  party-not-leader: '&cApenas o líder da party pode fazer isto.'
+  party-not-in: '&cVocê não está em nenhuma party.'
+  stats: |
+
+    &8&m-----------------------------
+    &6&lEstatísticas &7de &f{player}
+    &8&m-----------------------------
+
+    &7Nível: &b{level}*
+    &7Classe: {class}
+    &7Coins: &6{coins}
+    &7Vitórias: &a{wins}
+    &7Derrotas: &c{losses}
+    &7Abates: &e{kills}
+    &7Abates finais: &e{final_kills}
+    &7Mortes: &c{deaths}
+    &7Camas: &a{beds}
+    &7KDR: &f{kdr}
+    &7Winstreak: &6{winstreak}
+
+    &8&m-----------------------------
+  top-empty: '&cNenhum jogador no ranking.'
+  top-header: '&6&lRanking &7— &f{type}'
+  matchmaking-queued: '&aVocê entrou na fila de {mode}.'
+  matchmaking-left: '&cVocê saiu da fila.'
+  matchmaking-found: '&aPartida encontrada! Entrando em {arena}...'
+  reconnect: '&aVocê reconectou à partida.'
+  reconnect-expired: '&cO tempo de reconexão expirou.'
+  reconnect-none: '&cVocê não tem uma partida para reconectar.'
+  player-disconnected: '&e{player} &7desconectou. &e{seconds}s &7para reconectar.'
+  player-reconnected: '&a{player} reconectou à partida.'
+  player-reconnect-timeout: '&c{player} não reconectou a tempo.'
+  generator-upgrade: '&bOs geradores de {resource} foram melhorados para o nível {level}!'
+  trap-triggered: '&cSua armadilha foi ativada por {player}!'
+  shop-npc: '&eBata para abrir!'
+  upgrade-npc: '&eMelhorias do Time'
+  arena-type-id: '&eDigite o ID da nova arena no chat. &7(cancelar para abortar)'
+  arena-type-name: '&eDigite o nome de exibição da arena &f{arena}&e. &7(cancelar para abortar)'
+  arena-invalid-id: '&cID inválido. Use apenas letras, números, - e _.'
+  arena-set-here: '&a{field} definido na sua posição atual.'
+  arena-teleport: '&aTeleportado para {field}.'
+  arena-generator-added: '&aGerador de {resource} adicionado na sua posição. &7Total: {total}'
+  arena-generator-cleared: '&cGeradores de {resource} removidos.'
+  arena-mode-set: '&aModo da arena definido para &f{mode}&a.'
+
+# Actionbar — variantes persistentes.
+actionbar:
+  respawn: '&eRenascendo em &c{time}s'
+  collecting: '&7+{amount} {resource}'
+  stored-ender: '&aVocê guardou: {item} em seu baú do fim.'
+  stored-chest: '&aVocê guardou: {item} em seu baú.'
+  tracker: '&e{player} &8- &f{distance}m'
+  slingshot: '&eEstilingue: &c{time}s'
+
+# Títulos exibidos ao jogador (use <nl> para separar título e subtítulo).
+title:
+  countdown: '&e{time}<nl>&7A partida inicia'
+  start: '&a&lLUTAR!<nl>&7Proteja sua cama'
+  bed-lost: '&cCAMA DESTRUÍDA!<nl>&7Você não irá mais renascer'
+  you-died: '&cVocê morreu!'
+  victory: '&6&lVITÓRIA!<nl>&7Equipe {team}'
+  defeat: '&c&lDERROTA<nl>&7Sua cama foi destruída'
+  draw: '&e&lEMPATE<nl>&7O tempo acabou'
+
+# Recap do fim da partida (chat).
+# {result} {team} {time} {top_finals} {top_beds} {prefix} {player} {value} {place}
+recap:
+  center: true
+  result-win: '&eVencedor: Time {team}'
+  result-draw: '&eEmpate'
+  top-size: 3
+  top-line: '{prefix} &f{player} &e- {value}'
+  top-prefixes:
+    - '&e1º'
+    - '&d2º'
+    - '&63º'
+  lines:
+    - ''
+    - '&b&lBED WARS'
+    - '{result}'
+    - '&eTempo de partida: {time}'
+    - ''
+    - '&b&lTOP KILLS FINAIS:'
+    - '{top_finals}'
+    - ''
+    - '&b&lTOP CAMAS QUEBRADAS:'
+    - '{top_beds}'
+    - ''

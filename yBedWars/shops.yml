@@ -1,0 +1,935 @@
+#
+#     __ _
+#    / _\ |__   ___  _ __  ___
+#    \ \| '_ \ / _ \| '_ \/ __|
+#    _\ \ | | | (_) | |_) \__ \
+#    \__/_| |_|\___/| .__/|___/
+#                   |_|
+#
+# Loja de itens.
+#
+# categories: ícones da barra de categorias (slot no menu da loja).
+# items:
+#   category: blocks | melee | armor | tools | ranged | potions | utility | special
+#   currency: iron | gold | diamond | emerald
+#   amount: quantidade entregue.
+#   slot: slot no menu da categoria.
+#   limit: 0 = ilimitado por partida.
+#   restock-on-death: se o item volta ao morrer.
+#   team-colorize: pinta lã/argila com a cor do time.
+
+categories:
+  special:
+    name: '&bCompra rápida'
+    material: NETHER_STAR
+    slot: 0
+  blocks:
+    name: '&aBlocos'
+    material: 'WOOL:0'
+    slot: 1
+  melee:
+    name: '&cCorpo a corpo'
+    material: GOLD_SWORD
+    slot: 2
+  tools:
+    name: '&eFerramentas'
+    material: STONE_PICKAXE
+    slot: 3
+  armor:
+    name: '&bArmaduras'
+    material: IRON_CHESTPLATE
+    slot: 4
+  ranged:
+    name: '&6À distância'
+    material: BOW
+    slot: 5
+  potions:
+    name: '&dPoções'
+    material: POTION
+    slot: 6
+  utility:
+    name: '&cUtilitários'
+    material: TNT
+    slot: 7
+
+items:
+  wool:
+    id: wool
+    category: blocks
+    material: 'WOOL:0'
+    name: '&fLã'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 4
+    currency: iron
+    amount: 16
+    slot: 19
+    limit: 0
+    restock-on-death: false
+    team-colorize: true
+  sandstone:
+    id: sandstone
+    category: blocks
+    material: SANDSTONE
+    name: '&eArenito'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 12
+    currency: iron
+    amount: 16
+    slot: 20
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  stained_clay:
+    id: stained_clay
+    category: blocks
+    material: 'STAINED_CLAY:0'
+    name: '&6Argila'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 12
+    currency: iron
+    amount: 16
+    slot: 21
+    limit: 0
+    restock-on-death: false
+    team-colorize: true
+  end_stone:
+    id: end_stone
+    category: blocks
+    material: ENDER_STONE
+    name: '&fPedra do Fim'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 24
+    currency: iron
+    amount: 12
+    slot: 22
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  ladder:
+    id: ladder
+    category: blocks
+    material: LADDER
+    name: '&6Escada'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 4
+    currency: iron
+    amount: 16
+    slot: 23
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  oak_wood:
+    id: oak_wood
+    category: blocks
+    material: 'WOOD:0'
+    name: '&6Madeira de Carvalho'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 4
+    currency: gold
+    amount: 16
+    slot: 24
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  stained_glass:
+    id: stained_glass
+    category: blocks
+    material: 'STAINED_GLASS:0'
+    name: '&bVidro à Prova de Explosão'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 12
+    currency: iron
+    amount: 4
+    slot: 25
+    limit: 0
+    restock-on-death: false
+    team-colorize: true
+  stone_sword:
+    id: stone_sword
+    category: melee
+    material: STONE_SWORD
+    name: '&7Espada de Pedra'
+    lore:
+      - ''
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 10
+    currency: iron
+    amount: 1
+    slot: 19
+    limit: 1
+    restock-on-death: false
+    team-colorize: false
+  iron_sword:
+    id: iron_sword
+    category: melee
+    material: IRON_SWORD
+    name: '&fEspada de Ferro'
+    lore:
+      - ''
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 7
+    currency: gold
+    amount: 1
+    slot: 20
+    limit: 1
+    restock-on-death: false
+    team-colorize: false
+  diamond_sword:
+    id: diamond_sword
+    category: melee
+    material: DIAMOND_SWORD
+    name: '&bEspada de Diamante'
+    lore:
+      - ''
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 4
+    currency: emerald
+    amount: 1
+    slot: 21
+    limit: 1
+    restock-on-death: false
+    team-colorize: false
+  knockback_stick:
+    id: knockback_stick
+    category: melee
+    material: STICK
+    name: '&6Cajado de Repulsão'
+    lore:
+      - ''
+      - ' &7Repulsão I'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 5
+    currency: gold
+    amount: 1
+    slot: 22
+    limit: 1
+    restock-on-death: false
+    team-colorize: false
+  chainmail_armor:
+    id: chainmail_armor
+    category: armor
+    material: CHAINMAIL_BOOTS
+    name: '&7Armadura de Malha'
+    lore:
+      - ''
+      - ' &7Permanente até o fim da partida.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 40
+    currency: iron
+    amount: 1
+    slot: 19
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  iron_armor:
+    id: iron_armor
+    category: armor
+    material: IRON_BOOTS
+    name: '&fArmadura de Ferro'
+    lore:
+      - ''
+      - ' &7Permanente até o fim da partida.'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 12
+    currency: gold
+    amount: 1
+    slot: 20
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  diamond_armor:
+    id: diamond_armor
+    category: armor
+    material: DIAMOND_BOOTS
+    name: '&bArmadura de Diamante'
+    lore:
+      - ''
+      - ' &7Permanente até o fim da partida.'
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 6
+    currency: emerald
+    amount: 1
+    slot: 21
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  shears:
+    id: shears
+    category: tools
+    material: SHEARS
+    name: '&fTesoura'
+    lore:
+      - ''
+      - ' &7Retorna ao morrer.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 20
+    currency: iron
+    amount: 1
+    slot: 19
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  wooden_pickaxe:
+    id: wooden_pickaxe
+    category: tools
+    material: WOOD_PICKAXE
+    name: '&6Picareta de Madeira'
+    lore:
+      - ''
+      - ' &7Retorna ao morrer.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 10
+    currency: iron
+    amount: 1
+    slot: 20
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  stone_pickaxe:
+    id: stone_pickaxe
+    category: tools
+    material: STONE_PICKAXE
+    name: '&7Picareta de Pedra'
+    lore:
+      - ''
+      - ' &7Retorna ao morrer.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 20
+    currency: iron
+    amount: 1
+    slot: 21
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  iron_pickaxe:
+    id: iron_pickaxe
+    category: tools
+    material: IRON_PICKAXE
+    name: '&fPicareta de Ferro'
+    lore:
+      - ''
+      - ' &7Retorna ao morrer.'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 10
+    currency: gold
+    amount: 1
+    slot: 22
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  wooden_axe:
+    id: wooden_axe
+    category: tools
+    material: WOOD_AXE
+    name: '&6Machado de Madeira'
+    lore:
+      - ''
+      - ' &7Retorna ao morrer.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 10
+    currency: iron
+    amount: 1
+    slot: 23
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  stone_axe:
+    id: stone_axe
+    category: tools
+    material: STONE_AXE
+    name: '&7Machado de Pedra'
+    lore:
+      - ''
+      - ' &7Retorna ao morrer.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 10
+    currency: iron
+    amount: 1
+    slot: 24
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  iron_axe:
+    id: iron_axe
+    category: tools
+    material: IRON_AXE
+    name: '&fMachado de Ferro'
+    lore:
+      - ''
+      - ' &7Retorna ao morrer.'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 10
+    currency: gold
+    amount: 1
+    slot: 25
+    limit: 1
+    restock-on-death: true
+    team-colorize: false
+  bow:
+    id: bow
+    category: ranged
+    material: BOW
+    name: '&6Arco'
+    lore:
+      - ''
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 12
+    currency: gold
+    amount: 1
+    slot: 19
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  arrows:
+    id: arrows
+    category: ranged
+    material: ARROW
+    name: '&fFlechas'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 2
+    currency: gold
+    amount: 8
+    slot: 20
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  bow_power:
+    id: bow_power
+    category: ranged
+    material: BOW
+    name: '&6Arco Poder I'
+    lore:
+      - ''
+      - ' &7Poder I'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 24
+    currency: gold
+    amount: 1
+    slot: 21
+    limit: 1
+    restock-on-death: false
+    team-colorize: false
+  bow_punch:
+    id: bow_punch
+    category: ranged
+    material: BOW
+    name: '&6Arco Impacto'
+    lore:
+      - ''
+      - ' &7Poder I, Impacto I'
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 6
+    currency: emerald
+    amount: 1
+    slot: 22
+    limit: 1
+    restock-on-death: false
+    team-colorize: false
+  potion_speed:
+    id: potion_speed
+    category: potions
+    material: POTION
+    name: '&bPoção de Velocidade II'
+    lore:
+      - ''
+      - ' &7Duração: &f45s'
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    effect: SPEED
+    effect-level: 2
+    effect-duration: 45
+    splash: true
+    price: 1
+    currency: emerald
+    amount: 1
+    slot: 19
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  potion_jump:
+    id: potion_jump
+    category: potions
+    material: POTION
+    name: '&aPoção de Super Pulo V'
+    lore:
+      - ''
+      - ' &7Duração: &f45s'
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    effect: JUMP
+    effect-level: 5
+    effect-duration: 45
+    splash: true
+    price: 1
+    currency: emerald
+    amount: 1
+    slot: 20
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  potion_invis:
+    id: potion_invis
+    category: potions
+    material: POTION
+    name: '&5Poção de Invisibilidade'
+    lore:
+      - ''
+      - ' &7Duração: &f30s'
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    effect: INVISIBILITY
+    effect-level: 1
+    effect-duration: 30
+    splash: true
+    price: 2
+    currency: emerald
+    amount: 1
+    slot: 21
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  golden_apple:
+    id: golden_apple
+    category: utility
+    material: GOLDEN_APPLE
+    name: '&6Maçã Dourada'
+    lore:
+      - ''
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 3
+    currency: gold
+    amount: 1
+    slot: 19
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  fireball:
+    id: fireball
+    category: utility
+    material: FIREBALL
+    name: '&cBola de Fogo'
+    lore:
+      - ''
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 40
+    currency: iron
+    amount: 1
+    slot: 20
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  tnt:
+    id: tnt
+    category: utility
+    material: TNT
+    name: '&cTNT'
+    lore:
+      - ''
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 4
+    currency: gold
+    amount: 1
+    slot: 21
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  ender_pearl:
+    id: ender_pearl
+    category: utility
+    material: ENDER_PEARL
+    name: '&5Pérola do Fim'
+    lore:
+      - ''
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 4
+    currency: emerald
+    amount: 1
+    slot: 22
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  water_bucket:
+    id: water_bucket
+    category: utility
+    material: WATER_BUCKET
+    name: '&9Balde de Água'
+    lore:
+      - ''
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 3
+    currency: gold
+    amount: 1
+    slot: 23
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  bridge_egg:
+    id: bridge_egg
+    category: utility
+    material: EGG
+    name: '&aOvo de Ponte'
+    lore:
+      - ''
+      - ' &7Cria uma ponte no trajeto.'
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 2
+    currency: emerald
+    amount: 1
+    slot: 24
+    limit: 0
+    restock-on-death: false
+    team-colorize: true
+  sponge:
+    id: sponge
+    category: utility
+    material: SPONGE
+    name: '&eEsponja'
+    lore:
+      - ''
+      - ' &7Quantidade: &f{amount}'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 3
+    currency: gold
+    amount: 4
+    slot: 25
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  dream_defender:
+    id: dream_defender
+    category: utility
+    material: MONSTER_EGG
+    name: '&fDefensor dos Sonhos'
+    lore:
+      - ''
+      - ' &7Invoca um Golem de Ferro.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 120
+    currency: iron
+    amount: 1
+    slot: 28
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  invis_detector:
+    id: invis_detector
+    category: special
+    material: COMPASS
+    name: '&bDetector de Invisíveis'
+    lore:
+      - ''
+      - ' &7Revela jogadores invisíveis.'
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 2
+    currency: emerald
+    amount: 1
+    slot: 19
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  emergency_platform:
+    id: emergency_platform
+    category: special
+    material: SLIME_BLOCK
+    name: '&aPlataforma de Emergência'
+    lore:
+      - ''
+      - ' &7Cria uma plataforma abaixo de você.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 24
+    currency: iron
+    amount: 1
+    slot: 20
+    limit: 0
+    restock-on-death: false
+    team-colorize: true
+  home_teleport:
+    id: home_teleport
+    category: special
+    material: EYE_OF_ENDER
+    name: '&5Teleporte para Base'
+    lore:
+      - ''
+      - ' &7Retorna à ilha da sua equipe.'
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 2
+    currency: emerald
+    amount: 1
+    slot: 21
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  bed_shield:
+    id: bed_shield
+    category: special
+    material: BED
+    name: '&dEscudo da Cama'
+    lore:
+      - ''
+      - ' &7Protege a cama temporariamente.'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 4
+    currency: gold
+    amount: 1
+    slot: 22
+    limit: 1
+    restock-on-death: false
+    team-colorize: false
+  smoke_bomb:
+    id: smoke_bomb
+    category: special
+    material: SULPHUR
+    name: '&8Bomba de Fumaça'
+    lore:
+      - ''
+      - ' &7Cria uma nuvem de fumaça.'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 4
+    currency: gold
+    amount: 1
+    slot: 23
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  bedbug:
+    id: bedbug
+    category: utility
+    material: SNOW_BALL
+    name: '&cPercevejo'
+    lore:
+      - ''
+      - ' &7Invoque uma traça onde sua Bola'
+      - ' &7de Neve cair para distrair os'
+      - ' &7seus inimigos. Dura 15 segundos.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 24
+    currency: iron
+    amount: 1
+    slot: 29
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  compact_tower:
+    id: compact_tower
+    category: utility
+    material: CHEST
+    name: '&6Torre Compacta'
+    lore:
+      - ''
+      - ' &7Coloca uma mini torre.'
+      - ' &7Preço: &f{price} Ferro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 16
+    currency: iron
+    amount: 1
+    slot: 30
+    limit: 0
+    restock-on-death: false
+    team-colorize: true
+  slingshot:
+    id: slingshot
+    category: utility
+    material: MAGMA_CREAM
+    name: '&cEstilingue'
+    lore:
+      - ''
+      - ' &7Dê um leve impulso.'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 7
+    currency: gold
+    amount: 1
+    slot: 31
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  magic_milk:
+    id: magic_milk
+    category: utility
+    material: MILK_BUCKET
+    name: '&fLeite Mágico'
+    lore:
+      - ''
+      - ' &7Fique imune às Armadilhas por'
+      - ' &730 segundos após o consumo.'
+      - ' &7Preço: &f{price} Ouro'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 2
+    currency: gold
+    amount: 1
+    slot: 32
+    limit: 0
+    restock-on-death: false
+    team-colorize: false
+  tracker:
+    id: tracker
+    category: utility
+    material: COMPASS
+    name: '&cRastreador'
+    lore:
+      - ''
+      - ' &7Localize o time inimigo. Uso único.'
+      - ' &7Preço: &f{price} Esmeralda'
+      - ''
+      - ' &eClique para comprar'
+      - ''
+    price: 2
+    currency: emerald
+    amount: 1
+    slot: 33
+    limit: 1
+    restock-on-death: false
+    team-colorize: false
