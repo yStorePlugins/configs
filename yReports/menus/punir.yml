@@ -1,6 +1,9 @@
 Nome: '&8Punir &7{player}'
 Tamanho: 27
 BackSlot: 0
+VoltarSlot: 9
+ProximoSlot: 17
+Slots: [11, 12, 13, 14, 15]
 # Itens para enfeitar o menu
 Itens: {}
   #Enfeite1:
