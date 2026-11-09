@@ -1,5 +1,8 @@
 Nome: '&8Reportar &7{player}'
 Tamanho: 27
+VoltarSlot: 9
+ProximoSlot: 17
+Slots: [11, 12, 13, 14, 15]
 # Itens para enfeitar o menu
 Itens: {}
   #Enfeite1:
