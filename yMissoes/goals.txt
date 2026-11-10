@@ -1,7 +1,13 @@
 KILL_MOBS -> Matar mobs (incluindo ySpawners e Vanilla)
 KILL_PLAYERS -> Matar jogadores
+PLAYER_KILL_STREAK -> Sequência de kills em jogadores (reseta ao morrer)
+  type: ALL
 DEATH -> Morrer
 CRAFT_ITEM -> Craftar itens
+CHAT_MESSAGE -> Enviar mensagens no chat
+  type: ALL = qualquer mensagem | texto da mensagem = mensagem específica
+COMMAND_USAGE -> Usar comandos
+  type: ALL = qualquer comando | label do comando (ex: help)
 
 BREAK_BLOCKS -> Quebrar blocos normais
 PLACE_BLOCKS -> Colocar blocos normais
@@ -16,12 +22,14 @@ YPLANTACOES -> Quebrar plantas em plot (yPlantacoes)
 YPESCA -> Pescar peixes (yPesca)
 YPESCASIMPLES -> Pescar recompensas (yPescaSimples)
 
- YBOSSES -> Matar bosses (yBosses)
- YSTACKBOSSES -> Matar stack de bosses (yStackBosses)
+YBOSSES -> Matar bosses (yBosses)
+YSTACKBOSSES -> Matar stack de bosses (yStackBosses)
 
- YRANKUP -> Subir ranks (yRankup)
+YALMAS -> Ganhar almas (yAlmas)
+
+YRANKUP -> Subir ranks (yRankup)
   type: ALL = quantidade de rankups | key ou ordem do rank = chegar naquele rank
- YTEMPOONLINE -> Tempo online (yTempoOnline)
+YTEMPOONLINE -> Tempo online (yTempoOnline)
   type: ALL | amount em segundos
- YBOSSARENA -> Matar bosses na arena (yBossArena)
+YBOSSARENA -> Matar bosses na arena (yBossArena)
   type: ALL_ENTITIES ou a key do boss
