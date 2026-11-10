@@ -880,4 +880,59 @@ enchants:
         - '&7Ao ativar, executa comandos sobre'
         - '&7o ativador e sobre o alvo.'
         - ''
-        - '&7Encantamento para:&f Espadas de Diamante'
+         - '&7Encantamento para:&f Espadas de Diamante'
+  dragon-wisdom:
+    display-name: '&6Sabedoria do Dragão'
+    custom-lore:
+      - '&e{display-name}'
+    apply-whitelist: [ 'DIAMOND_SWORD', 'GOLD_SWORD', 'IRON_SWORD', 'STONE_SWORD', 'WOOD_SWORD', 'WOODEN_SWORD', 'DIAMOND_AXE', 'GOLD_AXE', 'IRON_AXE', 'STONE_AXE', 'WOOD_AXE', 'WOODEN_AXE', 'DIAMOND_PICKAXE', 'GOLD_PICKAXE', 'IRON_PICKAXE', 'STONE_PICKAXE', 'WOOD_PICKAXE', 'WOODEN_PICKAXE', 'DIAMOND_SHOVEL', 'GOLD_SHOVEL', 'IRON_SHOVEL', 'STONE_SHOVEL', 'WOOD_SHOVEL', 'WOODEN_SHOVEL', 'DIAMOND_HOE', 'GOLD_HOE', 'IRON_HOE', 'STONE_HOE', 'WOOD_HOE', 'WOODEN_HOE', 'BOW', 'FISHING_ROD', 'DIAMOND_HELMET', 'GOLD_HELMET', 'IRON_HELMET', 'CHAINMAIL_HELMET', 'LEATHER_HELMET', 'DIAMOND_CHESTPLATE', 'GOLD_CHESTPLATE', 'IRON_CHESTPLATE', 'CHAINMAIL_CHESTPLATE', 'LEATHER_CHESTPLATE', 'DIAMOND_LEGGINGS', 'GOLD_LEGGINGS', 'IRON_LEGGINGS', 'CHAINMAIL_LEGGINGS', 'LEATHER_LEGGINGS', 'DIAMOND_BOOTS', 'GOLD_BOOTS', 'IRON_BOOTS', 'CHAINMAIL_BOOTS', 'LEATHER_BOOTS' ]
+    prices:
+      price1:
+        provider: 'money'
+        amount: 0.0
+    chance: 100.0
+    # Aumenta em 1 todos os encantamentos vanilla do item ao aplicar
+    dragon-wisdom: true
+    # Nível máximo que cada encantamento vanilla pode atingir com este boost.
+    # Encantamentos fora desta lista sobem +1 sem limite extra.
+    # Se o nível atual já for maior ou igual ao máximo, não sobe.
+    enchant-maximums:
+      - 'PROTECTION:5'
+      - 'FIRE_PROTECTION:5'
+      - 'FEATHER_FALLING:5'
+      - 'BLAST_PROTECTION:5'
+      - 'PROJECTILE_PROTECTION:5'
+      - 'RESPIRATION:4'
+      - 'AQUA_AFFINITY:2'
+      - 'THORNS:4'
+      - 'DEPTH_STRIDER:4'
+      - 'SHARPNESS:6'
+      - 'SMITE:6'
+      - 'BANE_OF_ARTHROPODS:6'
+      - 'KNOCKBACK:3'
+      - 'FIRE_ASPECT:3'
+      - 'LOOTING:4'
+      - 'EFFICIENCY:6'
+      - 'SILK_TOUCH:2'
+      - 'UNBREAKING:6'
+      - 'FORTUNE:4'
+      - 'POWER:6'
+      - 'PUNCH:3'
+      - 'FLAME:2'
+      - 'INFINITY:2'
+      - 'LUCK_OF_THE_SEA:4'
+      - 'LURE:4'
+    book:
+      material: 'ENCHANTED_BOOK'
+      name: '&eLivro Especial'
+      lore:
+        - '&7Encantamento: &b{display-name}'
+        - ''
+        - '&7Ao aplicar este encantamento,'
+        - '&7todos os encantamentos padrão'
+        - '&7do item sobem 1 nível.'
+        - ''
+        - '&7Exemplo: Efficiency 5, Unbreaking 5'
+        - '&7e Afiação 5 viram nível 6.'
+        - ''
+        - '&7Encantamento para:&f Ferramentas, armas e armaduras'
