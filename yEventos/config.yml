@@ -55,6 +55,17 @@ camarote-allowed-commands:
   - '/l'
   - '/.'
 
+# Permissões globais (opcionais)
+# yeventos.general.participate - entrar nos eventos listados
+# yeventos.general.exit - usar /<evento> sair nos eventos listados
+# Use '*' para todos os eventos
+# Coloque o nome do evento sem o .yml
+general-permissions:
+  participate:
+    - '*'
+  exit:
+    - '*'
+
 # Eventos que não serão carregados no plugin
 disabled-events: []
 
