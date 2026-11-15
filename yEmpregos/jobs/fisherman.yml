@@ -102,6 +102,8 @@ bonus:
   type: FISHING_DROPS
   # Multiplicador dos drops. 1.25 = 25% a mais em média.
   multiplier: 1.25
+  # Mundos onde o bônus não será aplicado. Deixe [] para aplicar em todos.
+  blacklist-worlds: []
 
 # Requisitos para entrar no turno.
 requirements:
