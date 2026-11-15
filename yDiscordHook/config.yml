@@ -67,6 +67,11 @@ Opcoes:
   ChatVinculado: false
   # Habilitar o jogador desvincular o discord
   Desvincular: true
+  # Comandos executados automaticamente ao desvincular a conta
+  # Placeholders: {player}, {discord_id}, {discord_tag}
+  # Exemplo:
+  # - 'lp user {player} parent remove discord'
+  DesvincularComandos: []
   # Delay para carregar os dados depois do login
   # Necessário para usar em servidor de mina separado
   # Recomendado: 20 ticks
