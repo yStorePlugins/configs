@@ -1,0 +1,76 @@
+#         ____            _
+#  _   _|  _ \ __ _ _ __| |_ _   _
+# | | | | |_) / _` | '__| __| | | |
+# | |_| |  __/ (_| | |  | |_| |_| |
+#  \__, |_|   \__,_|_|   \__|\__, |
+#  |___/                     |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Sistemas gerais
+general:
+  # Limite padrão de membros por party (incluindo o líder)
+  max-members: 8
+  # Tempo em segundos para o convite expirar
+  invite-expire-seconds: 60
+  # Desfazer a party se o líder sair do servidor
+  disband-on-leader-quit: false
+  # Transferir liderança automaticamente se o líder sair
+  transfer-on-leader-quit: true
+  # Remover o jogador da party ao desconectar
+  remove-on-quit: false
+  # Prefixo para enviar mensagem no chat da party sem o toggle (vazio = desativado)
+  chat-prefix: '!'
+  sounds:
+    invite: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    join: 'ENTITY_PLAYER_LEVELUP'
+    leave: 'ENTITY_ITEM_BREAK'
+    success: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    fail: 'ENTITY_VILLAGER_NO'
+
+# Status exibidos aos jogadores
+status:
+  leader: '&cLíder'
+  moderator: '&6Moderador'
+  member: '&7Membro'
+  open: '&aAberta'
+  closed: '&cFechada'

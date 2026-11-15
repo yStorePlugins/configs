@@ -1,0 +1,186 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW:0'
+    name: '&cVoltar'
+    lore:
+      - ' &7Clique para voltar.'
+  previous:
+    material: 'ARROW:0'
+    name: '&cAnterior'
+    lore:
+      - ' &7Clique para ir à página anterior.'
+  next:
+    material: 'ARROW:0'
+    name: '&aPróximo'
+    lore:
+      - ' &7Clique para ir à próxima página.'
+
+# ── Menu principal da party ────────────────────────────────────────────────
+party-menu:
+  name: '&8Party'
+  size: 27
+  info-slot: 4
+  members-slot: 11
+  chat-slot: 12
+  tp-slot: 13
+  toggle-slot: 14
+  leave-slot: 15
+  disband-slot: 22
+  info:
+    material: '{player}'
+    name: '&d&lSua Party'
+    lore:
+      - ''
+      - ' &7Líder: &f{leader}'
+      - ' &7Membros: &f{size}/{max}'
+      - ' &7Status: {status}'
+      - ' &7Seu cargo: {role}'
+      - ''
+  members:
+    material: BOOK
+    name: '&e&lMembros'
+    lore:
+      - ''
+      - ' &7Veja e gerencie os membros'
+      - ' &7da sua party.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  chat:
+    material: PAPER
+    name: '&b&lChat da Party'
+    lore:
+      - ''
+      - ' &7Status: {chat}'
+      - ''
+      - ' &eClique para alternar'
+      - ''
+  tp:
+    material: ENDER_PEARL
+    name: '&a&lTeleportar'
+    lore:
+      - ''
+      - ' &7Teleporta você para o ponto'
+      - ' &7de espectador da sessão do líder.'
+      - ''
+      - ' &eClique para teleportar'
+      - ''
+  toggle-open:
+    material: 'WOOL:5'
+    name: '&a&lParty Aberta'
+    lore:
+      - ''
+      - ' &7Qualquer jogador pode entrar.'
+      - ''
+      - ' &eClique para fechar'
+      - ''
+  toggle-closed:
+    material: 'WOOL:14'
+    name: '&c&lParty Fechada'
+    lore:
+      - ''
+      - ' &7Somente com convite.'
+      - ''
+      - ' &eClique para abrir'
+      - ''
+  leave:
+    material: REDSTONE
+    name: '&c&lSair'
+    lore:
+      - ''
+      - ' &7Sai da party atual.'
+      - ''
+      - ' &cClique para sair'
+      - ''
+  disband:
+    material: BARRIER
+    name: '&4&lDesfazer'
+    lore:
+      - ''
+      - ' &7Desfaz a party e remove'
+      - ' &7todos os membros.'
+      - ''
+      - ' &cClique para desfazer'
+      - ''
+
+# ── Lista de membros (Scroller) ────────────────────────────────────────────
+members-menu:
+  name: '&8Membros da Party'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  previous-slot: 48
+  next-slot: 50
+  back-slot: 45
+  item:
+    material: '{player}'
+    name: '&f{player}'
+    lore:
+      - ''
+      - ' &7Cargo: {role}'
+      - ' &7Status: {online}'
+      - ''
+  item-manage:
+    material: '{player}'
+    name: '&f{player}'
+    lore:
+      - ''
+      - ' &7Cargo: {role}'
+      - ' &7Status: {online}'
+      - ''
+      - ' &eClique para gerenciar'
+      - ''
+
+# ── Gerenciar membro ───────────────────────────────────────────────────────
+member-manage:
+  name: '&8Gerenciar — {player}'
+  size: 27
+  head-slot: 4
+  promote-slot: 11
+  demote-slot: 12
+  transfer-slot: 13
+  kick-slot: 15
+  back-slot: 22
+  head:
+    material: '{player}'
+    name: '&f{player}'
+    lore:
+      - ''
+      - ' &7Cargo: {role}'
+      - ''
+  promote:
+    material: 'WOOL:5'
+    name: '&aPromover'
+    lore:
+      - ''
+      - ' &7Promove {player} a moderador.'
+      - ''
+  demote:
+    material: 'WOOL:1'
+    name: '&eRebaixar'
+    lore:
+      - ''
+      - ' &7Rebaixa {player} a membro.'
+      - ''
+  transfer:
+    material: GOLD_INGOT
+    name: '&6Transferir liderança'
+    lore:
+      - ''
+      - ' &7Transfere a liderança para {player}.'
+      - ''
+  kick:
+    material: 'WOOL:14'
+    name: '&cExpulsar'
+    lore:
+      - ''
+      - ' &7Expulsa {player} da party.'
+      - ''

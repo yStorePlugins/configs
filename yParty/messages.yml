@@ -1,0 +1,137 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &dComandos da party:
+
+    &d-> &f/{cmd} &8-&7 Abre o menu da party
+    &d-> &f/{cmd} <jogador> &8-&7 Convida um jogador
+    &d-> &f/{cmd} invite <jogador> &8-&7 Convida um jogador
+    &d-> &f/{cmd} aceitar [jogador] &8-&7 Aceita um convite
+    &d-> &f/{cmd} negar [jogador] &8-&7 Recusa um convite
+    &d-> &f/{cmd} sair &8-&7 Sai da party
+    &d-> &f/{cmd} membros &8-&7 Lista os membros da party
+    &d-> &f/{cmd} chat [mensagem] &8-&7 Ativa o chat da party ou envia uma mensagem
+    &d-> &f/{cmd} tp &8-&7 Teleporta para a sessão do líder
+    &d-> &f/{cmd} kick <jogador> &8-&7 Expulsa um membro
+    &d-> &f/{cmd} transferir <jogador> &8-&7 Transfere a liderança
+    &d-> &f/{cmd} promover <jogador> &8-&7 Promove a moderador
+    &d-> &f/{cmd} rebaixar <jogador> &8-&7 Rebaixa a membro
+    &d-> &f/{cmd} abrir &8-&7 Abre a party (entrada livre)
+    &d-> &f/{cmd} fechar &8-&7 Fecha a party (somente convite)
+    &d-> &f/{cmd} desfazer &8-&7 Desfaz a party
+
+  admin-help: |
+
+    &dComandos da party:
+
+    &d-> &f/{cmd} &8-&7 Abre o menu da party
+    &d-> &f/{cmd} <jogador> &8-&7 Convida um jogador
+    &d-> &f/{cmd} invite <jogador> &8-&7 Convida um jogador
+    &d-> &f/{cmd} aceitar [jogador] &8-&7 Aceita um convite
+    &d-> &f/{cmd} negar [jogador] &8-&7 Recusa um convite
+    &d-> &f/{cmd} sair &8-&7 Sai da party
+    &d-> &f/{cmd} membros &8-&7 Lista os membros da party
+    &d-> &f/{cmd} chat [mensagem] &8-&7 Ativa o chat da party ou envia uma mensagem
+    &d-> &f/{cmd} tp &8-&7 Teleporta para a sessão do líder
+    &d-> &f/{cmd} kick <jogador> &8-&7 Expulsa um membro
+    &d-> &f/{cmd} transferir <jogador> &8-&7 Transfere a liderança
+    &d-> &f/{cmd} promover <jogador> &8-&7 Promove a moderador
+    &d-> &f/{cmd} rebaixar <jogador> &8-&7 Rebaixa a membro
+    &d-> &f/{cmd} abrir &8-&7 Abre a party (entrada livre)
+    &d-> &f/{cmd} fechar &8-&7 Fecha a party (somente convite)
+    &d-> &f/{cmd} desfazer &8-&7 Desfaz a party
+    &d-> &f/{cmd} reload &8-&7 Recarrega as configurações
+
+
+  already-in-party: '&cVocê já está em uma party.'
+  target-in-party: '&c{player} já está em uma party.'
+  not-in-party: '&cVocê não está em uma party.'
+  not-leader: '&cApenas o líder pode fazer isto.'
+  no-permission-party: '&cVocê não tem permissão para gerenciar esta party.'
+  party-full: '&cA party está cheia. ({size}/{max})'
+  cannot-self: '&cVocê não pode fazer isto em si mesmo.'
+  target-not-member: '&c{player} não faz parte da sua party.'
+
+  invite-sent: |
+
+    &aConvite enviado para &f{player}&a.
+    &7Expira em: &f{time}s
+
+  invite-received: |
+
+    &d{player} &7convidou você para a party.
+    &a&l<click:run_command:/{cmd} aceitar {player}><hover:show_text:"<green>Clique para ACEITAR</green>">[ACEITAR]</hover></click> &c&l<click:run_command:/{cmd} negar {player}><hover:show_text:"<red>Clique para NEGAR</red>">[NEGAR]</hover></click>
+
+  invite-expired: '&cO convite de {player} expirou.'
+  invite-not-found: '&cVocê não possui um convite pendente.'
+  invite-denied: '&cVocê recusou o convite de {player}.'
+  invite-denied-sender: '&c{player} recusou o seu convite.'
+  no-invites: '&cVocê não possui convites pendentes.'
+  already-invited: '&c{player} já possui um convite pendente da sua party.'
+
+  joined: '&aVocê entrou na party de {player}.'
+  joined-broadcast: '&a{player} &7entrou na party.'
+  left: '&cVocê saiu da party.'
+  left-broadcast: '&c{player} &7saiu da party.'
+  disbanded: '&cVocê desfez a party.'
+  disbanded-broadcast: '&cA party foi desfeita por {player}.'
+  kicked: '&aVocê expulsou {player} da party.'
+  kicked-broadcast: '&c{player} &7foi expulso da party.'
+  kicked-target: '&cVocê foi expulso da party por {player}.'
+  cannot-kick: '&cVocê não pode expulsar este jogador.'
+
+  transferred: '&aVocê transferiu a liderança para {player}.'
+  transferred-broadcast: '&e{player} &7agora é o líder da party.'
+  promoted: '&aVocê promoveu {player} a moderador.'
+  promoted-broadcast: '&e{player} &7foi promovido a moderador.'
+  demoted: '&aVocê rebaixou {player} a membro.'
+  demoted-broadcast: '&e{player} &7foi rebaixado a membro.'
+  already-mod: '&c{player} já é moderador.'
+  already-member-role: '&c{player} já é membro.'
+  cannot-promote: '&cVocê não pode promover este jogador.'
+  cannot-demote: '&cVocê não pode rebaixar este jogador.'
+
+  opened: '&aA party agora está aberta. Qualquer jogador pode entrar.'
+  closed: '&cA party agora está fechada. É necessário convite.'
+  already-open: '&cA party já está aberta.'
+  already-closed: '&cA party já está fechada.'
+
+  chat-enabled: '&aChat da party ativado. Suas mensagens irão apenas para a party.'
+  chat-disabled: '&cChat da party desativado.'
+  chat-format: '&d[Party] {role} {player}&8: &f{message}'
+  chat-empty: '&cDigite uma mensagem para enviar no chat da party.'
+
+  tp-no-session: '&cO líder não está em uma sessão de minigame.'
+  tp-no-spectator: '&cA sessão do líder não possui um ponto de espectador válido.'
+  tp-in-match: '&cVocê já está participando de uma partida.'
+  tp-success: '&aVocê foi teleportado para a sessão de {player}.'
+  tp-leader-offline: '&cO líder da party está offline.'
+  tp-self-leader: '&cVocê já é o líder da party.'
+
+  members: |
+
+    &dParty &8— &7{size}/{max} &8| {status}
+
+    &7Líder: &f{leader}
+    &7Membros: &f{members}
+
+  party-created: '&aParty criada. Convide jogadores com /{cmd} invite <jogador>.'
+  leader-quit-transfer: '&eO líder saiu. {player} agora é o líder da party.'
+  player-quit: '&7{player} saiu do servidor.'
+  joined-open: '&aVocê entrou na party aberta de {player}.'
