@@ -134,6 +134,9 @@ Opcoes:
   # Checar outras minas ao quebrar o bloco
   # Ideal para fazer 2 minas no mesmo warp
   Checar outras: false
+  # Forçar inserção do jogador na mina caso ele entre na área da mina
+  # ou quebre os blocos da mina estando fora da mina pelo plugin
+  Forcar-entrada: false
   # Valor padrão (sem contar o multiplicador) que irá dar de blocos ao quebrar na mina
   BlocosDefault: 1
   # Dropar o EXP do auto-sell (para a picareta do minecraft, sem ser a customizada) no chão

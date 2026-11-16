@@ -1231,7 +1231,7 @@ Encantamentos:
           - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
           - '&f > Multiplicador Atual: &b{multiplicador}%&f.'
           - ''
-          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Custo: &a{blocos} blocos &f+ &a${money}&f.'
           - '&f > Nível necessário: &a{nivel}&f.'
           - ''
           - '&aBotão &fesquerdo &apara evoluir 1x'
@@ -1250,10 +1250,10 @@ Encantamentos:
           - '&f > Nível: &b{atual}&f/&b{maximo}&f.'
           - '&f > Porcentagem Atual: &b{multiplicador}%&f.'
           - ''
-          - '&f > Custo: &a{blocos} blocos&f.'
+          - '&f > Custo: &a{blocos} blocos &f+ &a${money}&f.'
           - '&f > Nível necessário: &a{nivel}&f.'
           - ''
-          - '&cVocê não tem blocos ou nível suficientes.'
+          - '&cVocê não tem blocos, dinheiro ou nível suficientes.'
       Maximo: # quando já estiver no máximo
         CustomSkull: true
         URL: '5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde'
