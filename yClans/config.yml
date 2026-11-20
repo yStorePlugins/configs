@@ -369,6 +369,12 @@ newsletters:
       material: 'EMPTY_MAP'
       name: '&aMudança de nome'
       lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
+  tag:
+    message: '&bO jogador &f{player} &balterou a tag do clan para {clan_tag}.'
+    item:
+      material: 'EMPTY_MAP'
+      name: '&aMudança de tag'
+      lore: [ '', '&7{newsletter}', '&7Enviado em: &f{date} - {hour}', '' ]
   description:
     message: '&bO jogador &f{player} &balterou a descrição do clan para {clan_description}.'
     item:

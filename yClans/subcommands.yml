@@ -12,7 +12,8 @@
 subcommands:
   create: 'create|criar'
   modtag: 'modtag|mudartag'
-  modname: 'modname|mudarnome'
+  modname: 'modname|mudarnome|changename'
+  changetag: 'changetag|alterartag'
   moddesc: 'moddesc|moddescription|mudardesc|mudardescricao'
   modbanner: 'modbanner|mudarbanner'
   resetbanner: 'resetbanner|resetarbanner'

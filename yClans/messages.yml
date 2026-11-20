@@ -62,7 +62,9 @@ chat:
     &b-> &f/clan resetbanner &8-&7 Reseta o banner do clan
     &b-> &f/clan moddescription &8-&7 Modifica a descrição do clan
     &b-> &f/clan modname &8-&7 Modifica o nome do clan
-    &b-> &f/clan modtag &8-&7 Modifica a tag do clan
+    &b-> &f/clan changename &8-&7 Modifica o nome do clan
+    &b-> &f/clan modtag &8-&7 Modifica a cor da tag do clan
+    &b-> &f/clan changetag &8-&7 Altera a TAG do clan
     &b-> &f/clan modowntag &8-&7 Modifica a tag de um jogador
     &b-> &f/clan modrole <player> &8-&7 Modifica o cargo de um jogador
     &b-> &f/clan roleperm &8-&7 Modifica as permissões de um cargo
@@ -119,7 +121,9 @@ chat:
     &b-> &f/clan resetbanner &8-&7 Reseta o banner do clan
     &b-> &f/clan moddescription &8-&7 Modifica a descrição do clan
     &b-> &f/clan modname &8-&7 Modifica o nome do clan
-    &b-> &f/clan modtag &8-&7 Modifica a tag do clan
+    &b-> &f/clan changename &8-&7 Modifica o nome do clan
+    &b-> &f/clan modtag &8-&7 Modifica a cor da tag do clan
+    &b-> &f/clan changetag &8-&7 Altera a TAG do clan
     &b-> &f/clan modowntag &8-&7 Modifica a tag de um jogador
     &b-> &f/clan modrole <player> &8-&7 Modifica o cargo de um jogador
     &b-> &f/clan roleperm &8-&7 Modifica as permissões de um cargo
