@@ -80,6 +80,7 @@ Mensagens:
     &aVisto por último: &7{data} às {hora}&a.
     <nl>
   Resetou: '&aVocê resetou o tempo do jogador &7{player}&a.'
+  Resetou todos: '&aVocê resetou o tempo de todos os jogadores.'
   Tempo:
     - ''
     - '&a&lTEMPO! &aVocê recebeu uma recompensa de tempo'
@@ -92,6 +93,7 @@ Mensagens:
     - ' &f> &7/tempo'
     - ' &f> &7/tempo <player>'
     - ' &f> &7/tempo resetar <player>'
+    - ' &f> &7/tempo resetar all'
     - ' &f> &7/tempo setnpc'
     - ' &f> &7/tempo delnpc'
     - ''
@@ -120,7 +122,3 @@ Lores:
     Lore:
       - ''
       - '&aClique para coletar essa recompensa'
-  Ja coletou:
-    Sobrepor: true
-    Lore:
-      - '&cVocê já coletou essa recompensa.'
