@@ -41,7 +41,8 @@ NPC:
 # Opções gerais do plugin
 Opcoes:
   NPC-Name-Hide: false
-  # Mundos onde não pode coletar encomendas/recompensas
+  # Mundos onde não pode coletar encomendas
+  # Recompensas só são bloqueadas nestes mundos se BloquearMundos: true em recompensas.yml
   World blacklist:
     - 'none'
   # Enviar aviso de recompensas/encomendas no correio ao logar
@@ -80,6 +81,7 @@ Mensagens:
   Recolheu encomenda: '&aVocê recolheu &f{quantia}x &aencomendas com sucesso.'
   Recolheu recompensa: '&aVocê recolheu &f{quantia}x &arecompensas da categoria &f{categoria}&a com sucesso.'
   Mundo: '&cVocê não pode coletar neste mundo.'
+  Mundo recompensa: '&cVocê não pode resgatar esta recompensa neste mundo! &eVá até o /spawn para resgatá-la.'
   Recompensas: '&aLista de recompensas disponíveis: &f{lista}&a.'
   Grupos: '&aLista de grupos disponíveis: &f{lista}&a.'
   Categorias: '&aLista de categorias disponíveis: &f{lista}&a.'

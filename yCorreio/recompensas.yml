@@ -1,9 +1,12 @@
 Recompensas:
   Reco1:
-    # Nome que aparecerá nas mensagens
-    Nome: '&6Pedra mística'
-    # Item que aparecerá no preview do menu.
-    Preview:
+     # Nome que aparecerá nas mensagens
+     Nome: '&6Pedra mística'
+     # Impede o resgate desta recompensa nos mundos da blacklist
+     # (config.yml > Opcoes.World blacklist). Padrão: false
+     BloquearMundos: false
+     # Item que aparecerá no preview do menu.
+     Preview:
       CustomSkull: false
       URL: ''
       ID: STONE
