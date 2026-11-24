@@ -1,0 +1,55 @@
+# Plantações extras: copie este arquivo, altere a chave (nome do arquivo)
+# e os materiais. Não é necessário recompilar o plugin.
+
+# Nome colorido exibido em menus e mensagens.
+display-name: '&6Cacau'
+
+# Se false, o plugin ignora esta plantação (crescimento vanilla).
+enabled: true
+
+# Velocidade de crescimento.
+# 0.0 = bloqueado | 0.5 = 2x mais lento | 1.0 = vanilla | 2.0 = 2x mais rápido
+multiplier: 1.0
+
+# Tipo de crescimento. Valores: [AGEABLE, VERTICAL, STEM]
+growth-type: AGEABLE
+
+# Idade máxima do cacau (0-2).
+max-age: 2
+
+# Deslocamento de bits da idade no data do bloco (1.8).
+# Cacau guarda a direção nos bits 0-1 e a idade a partir do bit 2.
+age-shift: 2
+
+# Máscara de bits da idade no data do bloco (1.8).
+age-mask: 3
+
+# Altura máxima (usado apenas em VERTICAL).
+max-height: 1
+
+# Se true, multiplicador > 1.0 pode avançar estágios extras no mesmo evento.
+allow-extra-stages: true
+
+# Se true, exige ar nos 4 lados ao crescer para cima (cacto).
+check-adjacent-air: false
+
+# Mundos permitidos. Lista vazia = todos os mundos.
+worlds: []
+
+# Multiplicador específico por mundo. Sobrescreve 'multiplier' nesse mundo.
+world-multipliers: {}
+
+# Materiais do bloco. Materiais inexistentes na versão são ignorados.
+materials:
+  - COCOA
+  - COCOA_BEANS
+
+# Ícone do menu. Placeholders: {multiplier} {status} {name} {key} {type} {worlds}
+icon:
+  material: 'INK_SACK:3'
+  name: '&6Cacau'
+  lore:
+    - ''
+    - ' &7Multiplicador: &f{multiplier}x'
+    - ' &7Status: {status}'
+    - ''

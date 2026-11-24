@@ -1,0 +1,56 @@
+# Plantações extras: copie este arquivo, altere a chave (nome do arquivo)
+# e os materiais. Não é necessário recompilar o plugin.
+# Bambu existe a partir da 1.14. Em versões anteriores o material é ignorado.
+
+# Nome colorido exibido em menus e mensagens.
+display-name: '&aBambu'
+
+# Se false, o plugin ignora esta plantação (crescimento vanilla).
+enabled: true
+
+# Velocidade de crescimento.
+# 0.0 = bloqueado | 0.5 = 2x mais lento | 1.0 = vanilla | 2.0 = 2x mais rápido
+multiplier: 1.0
+
+# Tipo de crescimento. Valores: [AGEABLE, VERTICAL, STEM]
+# VERTICAL = cresce para cima (cana, cacto, bambu, alga).
+growth-type: VERTICAL
+
+# Idade máxima do bambu (0-1 no bloco).
+max-age: 1
+
+# Deslocamento de bits da idade no data do bloco (1.8).
+age-shift: 0
+
+# Máscara de bits da idade no data do bloco (1.8).
+age-mask: 1
+
+# Altura máxima da planta. Extra crescimento nunca passa deste valor.
+max-height: 16
+
+# Se true, multiplicador > 1.0 pode colocar blocos extras para cima no mesmo evento.
+allow-extra-stages: true
+
+# Se true, exige ar nos 4 lados ao crescer para cima (cacto).
+check-adjacent-air: false
+
+# Mundos permitidos. Lista vazia = todos os mundos.
+worlds: []
+
+# Multiplicador específico por mundo. Sobrescreve 'multiplier' nesse mundo.
+world-multipliers: {}
+
+# Materiais do bloco (1.14+). Materiais inexistentes na versão são ignorados.
+materials:
+  - BAMBOO
+  - BAMBOO_SAPLING
+
+# Ícone do menu. Placeholders: {multiplier} {status} {name} {key} {type} {worlds}
+icon:
+  material: 'SUGAR_CANE'
+  name: '&aBambu'
+  lore:
+    - ''
+    - ' &7Multiplicador: &f{multiplier}x'
+    - ' &7Status: {status}'
+    - ''

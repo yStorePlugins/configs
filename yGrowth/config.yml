@@ -1,0 +1,112 @@
+#          ____                   _   _
+#  _   _ / ___|_ __ _____      _| |_| |__
+# | | | | |  _| '__/ _ \ \ /\ / / __| '_ \
+# | |_| | |_| | | | (_) \ V  V /| |_| | | |
+#  \__, |\____|_|  \___/ \_/\_/  \__|_| |_|
+#  |___/
+#
+# Discord: discord.ystoreplugins.com.br
+# Site: ystoreplugins.com.br
+
+# Modo de depuração para correção de problemas no plugin.
+debug-mode: false
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Configurações do servidor redis
+redis:
+  # Ativar a conexão com o redis
+  enabled: false
+  # Endereço de conexão. [EX: 127.0.0.1]
+  host: 'localhost'
+  # Porta de conexão. [EX: 3306]
+  port: 6379
+  # Usuário de conexão. [EX: root]
+  username: ''
+  # Senha do usuário de conexão: [EX: 123]
+  password: ''
+
+#   __      _   _   _
+#  / _\ ___| |_| |_(_)_ __   __ _ ___
+#  \ \ / _ \ __| __| | '_ \ / _` / __|
+#  _\ \  __/ |_| |_| | | | | (_| \__ \
+#  \__/\___|\__|\__|_|_| |_|\__, |___/
+#
+# Sistemas principais.
+
+# Sistemas gerais
+general:
+  # Liga ou desliga o gerenciamento de crescimento em todo o servidor.
+  enabled: true
+  # Multiplicador mínimo permitido (0 = crescimento bloqueado).
+  min-multiplier: 0.0
+  # Multiplicador máximo permitido.
+  max-multiplier: 20.0
+  # Limite de estágios extras aplicados em um único evento de crescimento.
+  extra-stages-cap: 8
+  # Mundos onde o plugin não interfere no crescimento (lista vazia = nenhum).
+  disabled-worlds: []
+  # Presets usados no menu ao clicar no multiplicador.
+  multiplier-presets:
+    - 0.5
+    - 1.0
+    - 2.0
+    - 5.0
+    - 10.0
+  # Sons (nomes do enum Sound do Bukkit). Nomes inválidos são ignorados.
+  sounds:
+    action-success: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    action-fail: 'ENTITY_VILLAGER_NO'
+  # Loja de upgrades por terreno (yPlotCore).
+  shop:
+    # Liga o menu /growth e o sistema de upgrades por plot.
+    enabled: true
+    # Se true, o jogador precisa estar em um terreno para abrir a loja.
+    require-plot: true
+    # Se true, apenas o dono do terreno compra upgrades (membros não).
+    only-owner: true
+    # Se true, plantação bloqueada no terreno não cresce até ser desbloqueada.
+    locked-cancels-growth: true
+    # Preço padrão para desbloquear o crescimento (usado se o YAML da planta não tiver shop.unlock-price).
+    default-unlock-price: 10000.0
+    # Níveis padrão de multiplicador. Podem ser sobrescritos em crops/<planta>.yml na seção shop.levels.
+    default-levels:
+      1:
+        multiplier: 1.5
+        price: 25000.0
+      2:
+        multiplier: 2.0
+        price: 50000.0
+      3:
+        multiplier: 5.0
+        price: 100000.0
+
+# Textos de status exibidos nos menus e mensagens.
+status:
+  enabled: '&aAtivo'
+  disabled: '&cDesativado'
+  locked: '&cBloqueado'
+  unlocked: '&aDesbloqueado'

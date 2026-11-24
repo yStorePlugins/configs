@@ -1,0 +1,54 @@
+# Plantações extras: copie este arquivo, altere a chave (nome do arquivo)
+# e os materiais. Não é necessário recompilar o plugin.
+
+# Nome colorido exibido em menus e mensagens.
+display-name: '&eBatata'
+
+# Se false, o plugin ignora esta plantação (crescimento vanilla).
+enabled: true
+
+# Velocidade de crescimento.
+# 0.0 = bloqueado | 0.5 = 2x mais lento | 1.0 = vanilla | 2.0 = 2x mais rápido
+multiplier: 1.0
+
+# Tipo de crescimento. Valores: [AGEABLE, VERTICAL, STEM]
+growth-type: AGEABLE
+
+# Idade máxima do bloco (batata = 7).
+max-age: 7
+
+# Deslocamento de bits da idade no data do bloco (1.8).
+age-shift: 0
+
+# Máscara de bits da idade no data do bloco (1.8).
+age-mask: 7
+
+# Altura máxima (usado apenas em VERTICAL).
+max-height: 1
+
+# Se true, multiplicador > 1.0 pode avançar estágios extras no mesmo evento.
+allow-extra-stages: true
+
+# Se true, exige ar nos 4 lados ao crescer para cima (cacto).
+check-adjacent-air: false
+
+# Mundos permitidos. Lista vazia = todos os mundos.
+worlds: []
+
+# Multiplicador específico por mundo. Sobrescreve 'multiplier' nesse mundo.
+world-multipliers: {}
+
+# Materiais do bloco (nomes 1.8 e 1.13+). Materiais inexistentes na versão são ignorados.
+materials:
+  - POTATO
+  - POTATOES
+
+# Ícone do menu. Placeholders: {multiplier} {status} {name} {key} {type} {worlds}
+icon:
+  material: 'POTATO_ITEM'
+  name: '&eBatata'
+  lore:
+    - ''
+    - ' &7Multiplicador: &f{multiplier}x'
+    - ' &7Status: {status}'
+    - ''

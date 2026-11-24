@@ -1,0 +1,147 @@
+#
+#    /\/\   ___ ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ / __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___|___/___/\__,_|\__, |\___||___/
+#                             |___/
+#
+# Plugin messages
+
+chat:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador {player} não encontrado.'
+  number: '&cO argumento não é um número válido.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancelled: '&cVocê cancelou a ação.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  help: |
+
+    &8&m-&r &6&lGrowth &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/{cmd} &8- &7Abre o menu de plantações.
+    &8&m-&r &e/{cmd} list &8- &7Lista as plantações carregadas.
+    &8&m-&r &e/{cmd} info <planta> &8- &7Mostra os dados de uma plantação.
+    &8&m-&r
+
+  admin-help: |
+
+    &8&m-&r &6&lGrowth Admin &8— &7Comandos
+    &8&m-&r
+    &8&m-&r &e/growth &8- &7Menu do jogador (precisa estar no terreno).
+    &8&m-&r &e/{cmd} &8- &7Abre o menu admin de plantações.
+    &8&m-&r &e/{cmd} list &8- &7Lista as plantações carregadas.
+    &8&m-&r &e/{cmd} info <planta> &8- &7Mostra os dados de uma plantação.
+    &8&m-&r &e/{cmd} set <planta> <multiplicador> &8- &7Define o multiplicador.
+    &8&m-&r &e/{cmd} toggle <planta> &8- &7Ativa ou desativa uma plantação.
+    &8&m-&r &e/{cmd} world <planta> add <mundo> &8- &7Libera a plantação no mundo.
+    &8&m-&r &e/{cmd} world <planta> remove <mundo> &8- &7Remove o mundo da lista.
+    &8&m-&r &e/{cmd} world <planta> clear &8- &7Libera a plantação em todos os mundos.
+    &8&m-&r &e/{cmd} world <planta> list &8- &7Lista os mundos da plantação.
+    &8&m-&r &e/{cmd} world <planta> set <mundo> <mult> &8- &7Multiplicador por mundo.
+    &8&m-&r &e/{cmd} reload &8- &7Recarrega as configurações.
+    &8&m-&r
+
+  list: |
+
+    &8&m-&r &6&lPlantações &8— &7{total} carregada(s)
+    &8&m-&r{list}
+    &8&m-&r
+
+  list-format: ' &e{crop} &8- {name} &8| &7{multiplier}x &8| {status}'
+  list-empty: '&cNenhuma plantação foi carregada.'
+  crop-not-found: '&cA plantação {crop} não foi encontrada.'
+  crop-info: |
+
+    &8&m-&r &6&l{name} &8— &7{key}
+    &8&m-&r
+    &8&m-&r &7Status: {status}
+    &8&m-&r &7Multiplicador: &f{multiplier}x
+    &8&m-&r &7Tipo: &f{type}
+    &8&m-&r &7Idade máxima: &f{max_age}
+    &8&m-&r &7Altura máxima: &f{max_height}
+    &8&m-&r &7Mundos: &f{worlds}
+    &8&m-&r &7Multiplicadores por mundo: &f{world_multipliers}
+    &8&m-&r &7Materiais: &f{materials}
+    &8&m-&r
+
+  crop-set: |
+
+    &aMultiplicador atualizado com sucesso!
+
+    &7Plantação: &f{name}
+    &7Multiplicador: &f{multiplier}x
+
+  crop-toggle: |
+
+    &aStatus da plantação atualizado!
+
+    &7Plantação: &f{name}
+    &7Status: {status}
+
+  crop-world-add: |
+
+    &aMundo adicionado à plantação!
+
+    &7Plantação: &f{name}
+    &7Mundo: &f{world}
+
+  crop-world-remove: |
+
+    &aMundo removido da plantação!
+
+    &7Plantação: &f{name}
+    &7Mundo: &f{world}
+
+  crop-world-clear: |
+
+    &aA plantação agora vale para todos os mundos!
+
+    &7Plantação: &f{name}
+
+  crop-world-list: |
+
+    &8&m-&r &6&lMundos &8— &7{name}
+    &8&m-&r
+    &8&m-&r &7Permitidos: &f{worlds}
+    &8&m-&r &7Multiplicadores: &f{world_multipliers}
+    &8&m-&r
+
+  crop-world-multiplier: |
+
+    &aMultiplicador do mundo atualizado!
+
+    &7Plantação: &f{name}
+    &7Mundo: &f{world}
+    &7Multiplicador: &f{multiplier}x
+
+  crop-world-empty: '&7Todos'
+  crop-world-none: '&7Nenhum'
+  not-on-plot: '&cVocê precisa estar em um terreno para abrir este menu.'
+  not-plot-owner: '&cApenas o dono do terreno pode gerenciar o crescimento.'
+  already-unlocked: '&cO crescimento de {name} já está desbloqueado neste terreno.'
+  locked: '&cDesbloqueie o crescimento de {name} antes de comprar upgrades.'
+  max-level: '&c{name} já está no nível máximo neste terreno.'
+  economy-not-found: '&cA economia configurada não foi encontrada.'
+  unlock-success: |
+
+    &aCrescimento desbloqueado!
+
+    &7Plantação: &f{name}
+    &7Terreno: &f{plot}
+
+  upgrade-success: |
+
+    &aUpgrade comprado com sucesso!
+
+    &7Plantação: &f{name}
+    &7Nível: &f{level}
+    &7Multiplicador: &f{multiplier}x
+
+  no-balance: |
+
+    &cVocê não tem saldo suficiente!
+
+    &7Economia: &f{provider}
+    &7Saldo atual: &f{balance}
+    &7Necessário: &f{required}
